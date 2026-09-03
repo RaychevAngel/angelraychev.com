@@ -1,0 +1,36 @@
+---
+const { title, description } = Astro.props;
+const full = title ? `${title} — Angel Raychev` : "Angel Raychev";
+import "../styles/global.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{full}</title>
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={full} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, "https://angelraychev.com")} />
+    <link rel="alternate" type="application/rss+xml" title="Angel Raychev" href="/rss.xml" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a class="name sans" href="/">Angel Raychev</a>
+        <nav class="sans">
+          <a href="/writing">Writing</a>
+          <a href="/about">About</a>
+        </nav>
+      </header>
+      <main><slot /></main>
+      <footer class="site sans">
+        <span>&copy; {new Date().getFullYear()} Angel Raychev</span>
+        <span><a href="/rss.xml">RSS</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

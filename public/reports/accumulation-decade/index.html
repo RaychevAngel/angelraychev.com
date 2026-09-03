@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Accumulation Decade - Angel Raychev">
+<link rel="canonical" href="https://angelraychev.com/reports/accumulation-decade/">
+<title>The Accumulation Decade</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper:    #f5f4f1;
+    --surface:  #fcfcfa;
+    --surface2: #eceae5;
+    --ink:      #17181a;
+    --ink2:     #55575c;
+    --ink3:     #8b8d92;
+    --hair:     #e0ded8;
+    --rule:     #bcbab3;
+    --band-under: #2a78d6;
+    --band-good:  #0ca30c;
+    --band-dim:   #b8860b;
+    --band-cost:  #d03b3b;
+    --under-bg: #e7effa;
+    --good-bg:  #e4f4e4;
+    --dim-bg:   #faf0d8;
+    --cost-bg:  #fbe8e8;
+    --border:   rgba(23,24,26,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --paper:    #101113;
+      --surface:  #1a1b1e;
+      --surface2: #232528;
+      --ink:      #f2f2f0;
+      --ink2:     #b4b6ba;
+      --ink3:     #82858a;
+      --hair:     #2b2d31;
+      --rule:     #3e4145;
+      --band-under: #5598e7;
+      --band-good:  #2fbf2f;
+      --band-dim:   #e0a92a;
+      --band-cost:  #e56b6b;
+      --under-bg: #15243a;
+      --good-bg:  #122c14;
+      --dim-bg:   #33280c;
+      --cost-bg:  #35191a;
+      --border:   rgba(242,242,240,0.14);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:    #101113;
+    --surface:  #1a1b1e;
+    --surface2: #232528;
+    --ink:      #f2f2f0;
+    --ink2:     #b4b6ba;
+    --ink3:     #82858a;
+    --hair:     #2b2d31;
+    --rule:     #3e4145;
+    --band-under: #5598e7;
+    --band-good:  #2fbf2f;
+    --band-dim:   #e0a92a;
+    --band-cost:  #e56b6b;
+    --under-bg: #15243a;
+    --good-bg:  #122c14;
+    --dim-bg:   #33280c;
+    --cost-bg:  #35191a;
+    --border:   rgba(242,242,240,0.14);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink); margin: 0; padding: 0 20px 110px;
+    font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 16.5px; line-height: 1.62; -webkit-font-smoothing: antialiased;
+  }
+  .geo { font-family: Futura, "Century Gothic", "Avenir Next", "Trebuchet MS", system-ui, sans-serif; }
+  .m { font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace; }
+  .wrap { max-width: 830px; margin: 0 auto; }
+  .wide { max-width: 1080px; margin: 0 auto; }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 2.5px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-color: var(--ink); }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  header.mast { padding: 78px 0 0; }
+  .kicker { font-size: 10.5px; letter-spacing: .28em; text-transform: uppercase; color: var(--ink3); margin: 0 0 24px; }
+  h1 { font-size: clamp(34px, 7vw, 74px); font-weight: 700; letter-spacing: -.02em; line-height: 1.0; margin: 0 0 22px; text-transform: uppercase; text-wrap: balance; }
+  .deck { font-size: 19.5px; line-height: 1.5; color: var(--ink2); max-width: 58ch; margin: 0 0 30px; }
+  .deck b { color: var(--ink); font-weight: 600; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px,100%),1fr)); gap: 1px; background: var(--hair); border-block: 1px solid var(--hair); }
+  .facts > div { background: var(--paper); padding: 15px 16px; }
+  .facts dt { font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink3); margin-bottom: 5px; }
+  .facts dd { margin: 0; font-size: 13.5px; line-height: 1.45; }
+
+  section { margin-top: 76px; }
+  .part { border-top: 3px solid var(--ink); padding-top: 14px; margin-bottom: 28px; }
+  .part .pn { font-size: 11px; letter-spacing: .22em; color: var(--ink3); display: block; margin-bottom: 9px; }
+  h2 { font-size: clamp(26px, 4.6vw, 42px); font-weight: 700; letter-spacing: -.015em; margin: 0 0 8px; text-transform: uppercase; line-height: 1.05; text-wrap: balance; }
+  .psub { font-size: 16.5px; color: var(--ink2); margin: 0; max-width: 62ch; }
+  h3 { font-size: 19px; font-weight: 700; letter-spacing: -.01em; margin: 42px 0 12px; padding-bottom: 7px; border-bottom: 1px solid var(--hair); }
+  h4 { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 26px 0 8px; color: var(--ink2); }
+  p { max-width: 68ch; }
+  .lede { font-size: 18.5px; line-height: 1.55; }
+  .note { font-size: 14.5px; color: var(--ink2); max-width: 74ch; }
+  .fine { font-size: 12.5px; color: var(--ink3); line-height: 1.6; max-width: 82ch; }
+  ul, ol { padding-left: 22px; max-width: 70ch; }
+  li { margin-bottom: 9px; }
+  strong { font-weight: 650; }
+
+  .box { background: var(--surface); border: 1px solid var(--hair); border-left: 3px solid var(--ink); padding: 16px 20px; margin: 24px 0; max-width: 72ch; }
+  .box .bl { font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink3); margin-bottom: 8px; }
+  .box p { margin: 0; font-size: 15.5px; } .box p + p { margin-top: 9px; }
+  .box.cost { border-left-color: var(--band-cost); } .box.cost .bl { color: var(--band-cost); }
+  .box.good { border-left-color: var(--band-good); } .box.good .bl { color: var(--band-good); }
+
+  .tw { overflow-x: auto; border: 1px solid var(--hair); background: var(--surface); margin: 22px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th { text-align: left; font-size: 9.5px; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; color: var(--ink3);
+       padding: 12px 12px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: bottom; }
+  td { padding: 11px 12px; border-bottom: 1px solid var(--hair); vertical-align: top; line-height: 1.5; }
+  tbody tr:last-child td { border-bottom: none; }
+  .nm { font-weight: 650; }
+  .mc { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .src { font-size: 11.5px; color: var(--ink3); }
+  th.c, td.c { text-align: center; }
+
+  .tier { font-family: ui-monospace, Menlo, monospace; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 2px; white-space: nowrap; letter-spacing: .04em; }
+  .t1 { background: var(--ink); color: var(--paper); }
+  .t2 { background: var(--surface2); color: var(--ink); }
+  .t3 { background: transparent; border: 1px solid var(--rule); color: var(--ink2); }
+
+  .bank { font-family: ui-monospace, Menlo, monospace; font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; white-space: nowrap; }
+  .banked { background: var(--ink); color: var(--paper); }
+  .partly { background: transparent; border: 1px solid var(--ink2); color: var(--ink2); }
+  .rented { background: transparent; border: 1px dashed var(--rule); color: var(--ink3); }
+
+  figure { margin: 26px 0 8px; }
+  .fig { background: var(--surface); border: 1px solid var(--hair); padding: 20px; overflow-x: auto; }
+  figcaption { font-size: 12.5px; color: var(--ink3); margin-top: 11px; line-height: 1.55; max-width: 84ch; }
+  svg { display: block; }
+  svg text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+
+  .sm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px,100%), 1fr)); gap: 18px; min-width: 0; }
+  .sm { background: var(--paper); border: 1px solid var(--hair); padding: 13px 14px 10px; }
+  .sm .st { font-size: 12.5px; font-weight: 700; margin-bottom: 2px; }
+  .sm .ss { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 9px; font-family: ui-monospace, Menlo, monospace; }
+  .sm .sn { font-size: 12px; color: var(--ink2); line-height: 1.45; margin-top: 9px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px,100%), 1fr)); gap: 15px; margin: 22px 0; }
+  .card { background: var(--surface); border: 1px solid var(--hair); padding: 17px 19px; }
+  .card .ch { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 3px; }
+  .card .ct { font-size: 16.5px; font-weight: 700; letter-spacing: -.01em; }
+  .card .cd { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); margin-bottom: 11px; font-family: ui-monospace, Menlo, monospace; }
+  .card p { font-size: 14px; margin: 0; color: var(--ink2); max-width: none; line-height: 1.55; }
+  .card p + p { margin-top: 9px; }
+  .card b { color: var(--ink); font-weight: 650; }
+  .card .tgt { font-family: ui-monospace, Menlo, monospace; font-size: 12px; background: var(--surface2); padding: 7px 10px; margin: 10px 0 0; display: block; line-height: 1.5; }
+
+  .week { overflow-x: auto; border: 1px solid var(--hair); background: var(--surface); margin: 22px 0; }
+  .week table { font-size: 13px; min-width: 700px; }
+  .week td { vertical-align: top; }
+  .day { font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-family: ui-monospace, Menlo, monospace; }
+  .load { display: inline-block; font-family: ui-monospace, Menlo, monospace; font-size: 9.5px; letter-spacing: .06em; padding: 1px 6px; border-radius: 2px; }
+  .hi { background: var(--cost-bg); color: var(--band-cost); }
+  .mid { background: var(--dim-bg); color: var(--band-dim); }
+  .lo { background: var(--good-bg); color: var(--band-good); }
+
+  #tip { position: fixed; z-index: 20; pointer-events: none; display: none; background: var(--ink); color: var(--paper);
+         font-family: ui-monospace, Menlo, monospace; font-size: 11.5px; padding: 8px 11px; border-radius: 3px; max-width: 310px; line-height: 1.5; }
+
+  @media (max-width: 640px) { header.mast { padding-top: 46px; } body { font-size: 16px; } .deck { font-size: 17.5px; } }
+</style>
+</head>
+<body>
+<a href="/writing" style="position:fixed;top:14px;left:14px;z-index:99;font:12px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink3,#888);background:var(--surface,#fff);border:1px solid var(--hair,#ddd);padding:7px 11px;border-radius:3px">&larr; Writing</a>
+
+
+<div class="wrap">
+  <header class="mast">
+    <p class="kicker m">Project Ultimate Athleticism &middot; Operating Manual &middot; Age 23</p>
+    <h1 class="geo">The Accumulation Decade</h1>
+    <p class="deck">What to measure, where the evidence ranks it, how to drive each number up, and the week that does it &mdash; written for the phase you are actually in. <b>Your peak sets the intercept. Your current training sets the slope. You need both, and only one of them has a deadline.</b></p>
+  </header>
+  <div class="facts">
+    <div><dt class="m">Budget</dt><dd>6&ndash;9 h/week, trained multi-sport</dd></div>
+    <div><dt class="m">Evidence</dt><dd>22 research agents across 2 sweeps, all headline numbers adversarially re-verified</dd></div>
+    <div><dt class="m">Verdict on the thesis</dt><dd>Half right &mdash; and not the half most people argue for</dd></div>
+  </div>
+
+  <!-- ============ PART I ============ -->
+  <section>
+    <div class="part"><span class="pn m">PART I</span><h2 class="geo">The Panel</h2>
+      <p class="psub">Twelve measurables that carry real mortality or healthspan evidence, ranked by how much a unit of change is worth &mdash; and tagged by whether a high peak keeps paying after you stop.</p></div>
+
+    <p>Three tiers. <strong>Tier 1</strong> has a large, replicated, per-unit mortality gradient and is meaningfully trainable. <strong>Tier 2</strong> has solid evidence but a smaller gradient, a proxy problem, or a low ceiling on how far training moves it. <strong>Tier 3</strong> is diagnostic &mdash; worth measuring, not worth training toward directly.</p>
+
+    <div class="box">
+      <div class="bl m">Reading the banked / rented column</div>
+      <p><span class="bank banked">banked</span> a high value keeps paying after the training stops &nbsp;&middot;&nbsp; <span class="bank partly">partly</span> partially retained, decays slowly &nbsp;&middot;&nbsp; <span class="bank rented">rented</span> reverts on detraining &mdash; you are renting it for life.</p>
+      <p>This is the column your hill-climb thesis lives or dies on, and it is more mixed than either of us assumed. Only two things on this panel are unambiguously banked, and one of them is not trainable at all.</p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Measurable</th><th class="c">Tier</th><th>Target for you at 23</th><th>What a unit is worth</th><th class="c">Peak</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="nm">VO&#8322;max</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">&ge;60 ml/kg/min (M)<br>&ge;50 (F)<br><span class="src">50th pctile at 20&ndash;29 is 48&ndash;49 (M), 38&ndash;41 (F)</span></td>
+            <td>13&ndash;14% lower all-cause mortality <em>per MET</em>. Each 1 ml/kg/min of midlife VO&#8322;max &asymp; <strong>45 extra days of life</strong> over 46 years of follow-up. Elite fitness beats merely-high fitness (HR 0.77) with <strong>no upper limit detected</strong> &mdash; the only measure here with no ceiling of benefit.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Resting blood pressure</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">&le;115/75<br><span class="src">not merely &lt;130/80</span></td>
+            <td>The purest cumulative-exposure asset on the panel. Every year spent under 120/80 is arterial damage permanently not incurred, and CARDIA shows exposure accumulated in your twenties predicts middle-age LV dysfunction and coronary atherosclerosis <em>independent of midlife BP</em>. Training moves it ~0.75 mmHg in a normotensive 23-year-old &mdash; the point is preventing drift, not lowering it.</td>
+            <td class="c"><span class="bank banked">banked</span></td>
+          </tr>
+          <tr>
+            <td class="nm">ApoB</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">&lt;80 mg/dL<br><span class="src">measure now, in nmol/L for Lp(a)</span></td>
+            <td>Causal in atherosclerosis, and risk is an <em>area under the curve</em> over decades &mdash; which makes 23 the decisive age to know the number. There is no exercise hill here: if it is high, you treat the number, not the training. Pretending training fixes it is the most expensive error available in this domain.</td>
+            <td class="c"><span class="bank banked">banked</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Maximal relative strength</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">squat 2.0&times;BW<br>deadlift 2.5&times;BW<br>bench 1.5&times;BW <span class="src">(M)</span></td>
+            <td>Muscle-strengthening activity: 10&ndash;17% lower all-cause mortality, CVD, cancer and diabetes. Combined with aerobic guidelines: <strong>41&ndash;47% lower</strong> all-cause mortality &mdash; the combination beats either alone by a wide margin. Note the caution: elite <em>power-sport</em> athletes show SMR 1.04, no survival benefit at all.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Muscle mass (ALMI)</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">&ge;10.9 kg/m&sup2; (M, 80th)<br>&ge;12.1 (M, 90th)</td>
+            <td>Sarcopenia predicts ~60% higher all-cause mortality, and muscle is the dominant site of insulin-stimulated glucose disposal &mdash; it is simultaneously the strength asset and the metabolic sink. Peak lean mass is achieved in the 20s&ndash;30s and every subsequent decade is defence. <strong>This is the cleanest accumulation case on the panel.</strong></td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Muscle power (CMJ, W/kg)</td><td class="c"><span class="tier t1">1</span></td>
+            <td class="mc">jump &ge;60 cm (M)<br>&ge;40 cm (F)</td>
+            <td>Out-predicts strength for mortality head-to-head: lowest relative power HR 5.88 (M) / 6.90 (F) in a cohort where grip strength lost significance after adjustment. Aging destroys the fast side selectively &mdash; type II fibres &minus;29% by age 71 while type I is spared &mdash; and weightlifting records decline curvilinearly where powerlifting records decline linearly.</td>
+            <td class="c"><span class="bank rented">rented</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Lactate threshold<br><span class="src">as % of VO&#8322;max</span></td><td class="c"><span class="tier t2">2</span></td>
+            <td class="mc">75&ndash;85% of VO&#8322;max<br><span class="src">recreational 65&ndash;75%</span></td>
+            <td>The number that separates two people with identical VO&#8322;max. Driven by low-intensity aerobic volume, not by threshold work. Independent mortality evidence is thin outside clinical populations &mdash; it ranks here for what it lets you <em>do</em> with your VO&#8322;max, not for its own gradient.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Grip strength</td><td class="c"><span class="tier t2">2</span></td>
+            <td class="mc">&ge;54 kg (M, 75th)<br>&ge;64 kg (M, 95th)</td>
+            <td>Every 5 kg lower grip: 16% higher all-cause mortality &mdash; a stronger predictor than systolic blood pressure in 140,000 people across 17 countries. But it is a <em>proxy</em> for whole-body strength and health, not a lever: train the deadlift, and grip follows.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Visceral fat / waist-to-height</td><td class="c"><span class="tier t2">2</span></td>
+            <td class="mc">WHtR &lt; 0.5</td>
+            <td>The most robust, least norms-dependent target in the metabolic set. 12&ndash;16 weeks of 3&times;/week aerobic work cuts VAT ~6% <em>with zero weight change</em> &mdash; but adding volume past ~150 min/week buys no further VAT benefit.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Sport-specific anticipation</td><td class="c"><span class="tier t2">2</span></td>
+            <td class="mc">one or two open<br>skills, kept for life</td>
+            <td>No mortality number exists and none can &mdash; but it is the one neuromotor asset that <strong>compounds across decades rather than decaying</strong>, because it behaves like semantic memory: a library of opponent-movement patterns. A bimanual polyrhythm was retained intact after 8 years with no practice.</td>
+            <td class="c"><span class="bank partly">partly</span></td>
+          </tr>
+          <tr>
+            <td class="nm">Tendon stiffness</td><td class="c"><span class="tier t2">2</span></td>
+            <td class="mc">no norms exist &mdash;<br>track your own trend</td>
+            <td>Ranked for a structural reason rather than an epidemiological one: <strong>tendon sets the speed limit on every other climb.</strong> Material adaptation lags muscle by 8&ndash;12 weeks, the degenerative core never returns, and loading below 70% MVC produces an adaptation effect size of 0.04 &mdash; nothing.</td>
+            <td class="c"><span class="bank rented">rented</span></td>
+          </tr>
+          <tr>
+            <td class="nm">HbA1c &middot; fasting insulin &middot; hs-CRP &middot; RHR &middot; HRV</td><td class="c"><span class="tier t3">3</span></td>
+            <td class="mc">HbA1c 4.8&ndash;5.3%<br>hs-CRP &lt;1.0 mg/L<br>HRV: your own band</td>
+            <td>Diagnostic instruments, not targets. Do not train to lower CRP &mdash; Mendelian randomisation says the number itself buys nothing. Do not train HRV; use it to regulate the training that moves the Tier 1 items. Fasting insulin has a ~48-hour half-life, which is why <em>frequency beats volume</em> for it.</td>
+            <td class="c"><span class="bank rented">rented</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">Strength standards are from a 195-million-lift consumer dataset (practitioner-tier, not peer-reviewed). VO&#8322;max percentiles are FRIEND registry clinical CPET; screened-healthy Norwegian norms run 10&ndash;20% higher. ALMI percentiles are DXA, ~95% Caucasian sample. Where a verifier could not confirm a normative source, the target is given as a range and flagged rather than dropped.</p>
+
+    <div class="box cost">
+      <div class="bl m">Two things that are NOT on this panel, and why</div>
+      <p><strong>Bone density.</strong> I put it at the top of your urgent list two days ago and that was wrong. Peak bone mass is attained late teens to mid-twenties, the high-yield accretion window is late childhood and peripuberty, and lifestyle accounts for only 20&ndash;40% of adult peak bone mass. The evidence is genuinely dramatic &mdash; a 10% higher peak BMD delays osteoporosis onset by <strong>13 years</strong> versus ~2 years for changing the rate of loss &mdash; but that leverage was mostly spent before you could act on it. Bone stays in the program as impact loading and as the pacer on progression speed; it is off the urgent list.</p>
+      <p><strong>Balance, as a general capacity.</strong> Balance training produces SMD 0.79 in the trained task and &minus;0.07 to 0.18 in untrained ones. There is no general balance to climb. What you can train are specific tasks and reactive stepping &mdash; and those belong in Part II as skills, not here as a measurable.</p>
+    </div>
+  </section>
+
+  <!-- ============ PART II ============ -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="part"><span class="pn m">PART II</span><h2 class="geo">The Climbs</h2>
+        <p class="psub">One conceptual unit per axis: what raises it, how fast, and what the acquisition dose is versus what it costs to hold afterward.</p></div>
+
+      <p class="lede">The governing discovery, and the one that makes the whole strategy work: <strong>acquisition and maintenance differ by roughly an order of magnitude, and the variable you must never cut is intensity.</strong></p>
+    </div>
+
+    <figure>
+      <div class="fig">
+        <svg viewBox="0 0 860 200" width="100%" style="min-width:640px" role="img" aria-label="Acquisition versus maintenance dose for strength and VO2max.">
+          <text class="m" x="0" y="16" style="fill:var(--ink3);font-size:10px;letter-spacing:.14em">STRENGTH &amp; MUSCLE &mdash; 16 WEEKS BUILT, 32 WEEKS HELD</text>
+          <rect x="0" y="28" width="600" height="26" rx="2" style="fill:var(--band-cost);opacity:.85"></rect>
+          <text class="m" x="612" y="46" style="fill:var(--ink);font-size:12px;font-weight:700">27 sets/wk</text>
+          <text class="m" x="8" y="46" style="fill:#fff;font-size:11px">ACQUISITION</text>
+          <rect x="0" y="60" width="67" height="26" rx="2" style="fill:var(--band-good);opacity:.9"></rect>
+          <text class="m" x="79" y="78" style="fill:var(--ink);font-size:12px;font-weight:700">3 sets/wk &mdash; held gains for 32 weeks, and the 1/3 dose added more</text>
+
+          <text class="m" x="0" y="122" style="fill:var(--ink3);font-size:10px;letter-spacing:.14em">VO&#8322;MAX &mdash; 10 WEEKS BUILT (+25%), 15 WEEKS HELD</text>
+          <rect x="0" y="134" width="600" height="26" rx="2" style="fill:var(--band-cost);opacity:.85"></rect>
+          <text class="m" x="612" y="152" style="fill:var(--ink);font-size:12px;font-weight:700">6 sessions/wk, 40 min</text>
+          <text class="m" x="8" y="152" style="fill:#fff;font-size:11px">ACQUISITION</text>
+          <rect x="0" y="166" width="200" height="26" rx="2" style="fill:var(--band-good);opacity:.9"></rect>
+          <text class="m" x="212" y="184" style="fill:var(--ink);font-size:12px;font-weight:700">2 sessions/wk &mdash; or 13 min/session. Cut intensity instead and it collapses.</text>
+        </svg>
+      </div>
+      <figcaption>Maintenance costs roughly one-ninth the volume for strength and one-third for aerobic power &mdash; but in both experiments load and intensity were held constant while frequency and duration were cut. Intensity is the non-negotiable variable.</figcaption>
+    </figure>
+
+    <div class="wrap" style="margin-left:0">
+      <div class="box good">
+        <div class="bl m">The operating strategy this licenses</div>
+        <p><strong>Run one quality at a time in a bounded 8&ndash;16 week acquisition block. Then drop it to a one-third maintenance dose and spend the freed hours acquiring the next quality.</strong> At 6&ndash;9 h/week you cannot climb everything at once, but you do not need to &mdash; you need to climb one thing at a time and never let anything fall back to zero, because the penalty for zero is real (&minus;4% VO&#8322;max within a month of full cessation, &minus;9% beyond) while the penalty for a third is nil.</p>
+      </div>
+
+      <h3>The climbs, one card each</h3>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ch"><span class="ct">Aerobic power</span><span class="bank partly">partly</span></div>
+        <div class="cd m">VO&#8322;max &middot; the no-ceiling axis</div>
+        <p>5&ndash;6 sessions, 5&ndash;8 h/week, <b>polarised roughly 80/20</b> &mdash; 80% of session time below the first threshold, ~20% at or above the second. The polarised arm gained 11.7% VO&#8322;peak in already-trained athletes while threshold-heavy and volume-heavy arms gained nothing.</p>
+        <p>Key sessions: Norwegian 4&times;4 at ~90% HRmax, or 5&times;3 min. Add volume as easy zone 1, <b>never as more hard sessions</b> &mdash; world-class skiers do the same ~45 min/week of high-intensity work as national-class ones.</p>
+        <span class="tgt">HOLD AT: 2 sessions/wk with 1&ndash;2 genuinely hard efforts</span>
+      </div>
+
+      <div class="card">
+        <div class="ch"><span class="ct">Maximal strength</span><span class="bank partly">partly</span></div>
+        <div class="cd m">the metabolic armour</div>
+        <p>Squat, bench, deadlift or close variants, <b>2&ndash;3&times;/week each</b>. Per lift per week: one heavy exposure at 85&ndash;95% 1RM for 1&ndash;4 reps across 2&ndash;4 sets, plus 1&ndash;2 volume exposures at 65&ndash;80% for 5&ndash;10 reps stopping 1&ndash;3 reps short of failure. <b>10&ndash;20 hard sets per muscle group per week.</b></p>
+        <p>Injury cost is remarkably low &mdash; powerlifting runs 1.0&ndash;5.8 injuries per 1000 h against 7.7&ndash;17.8 for running and 20&ndash;24 for soccer matches. This is among the safest things you can do per hour.</p>
+        <span class="tgt">HOLD AT: 1&ndash;2 sessions/wk, 3&ndash;6 hard sets at &ge;80% 1RM</span>
+      </div>
+
+      <div class="card">
+        <div class="ch"><span class="ct">Power &amp; explosiveness</span><span class="bank rented">rented</span></div>
+        <div class="cd m">the first thing to go</div>
+        <p>Three stimuli, 2&ndash;3&times;/week: <b>heavy with maximal intent</b> (80&ndash;90% 1RM, 3&ndash;5&times;2&ndash;4, every concentric attempted fast); <b>ballistic</b> (jump squats or trap-bar jumps at 20&ndash;40% 1RM, or Olympic derivatives, 4&ndash;6&times;3 with full recovery); and <b>plyometric</b> impact.</p>
+        <p>Terminate every set the moment bar or jump velocity drops &mdash; this quality is trained by quality, and fatigued reps are a different exercise. It is also the axis where same-session interference actually bites (SMD &minus;0.28), so it goes first in the session or in its own.</p>
+        <span class="tgt">HOLD AT: never fully &mdash; keep 1 exposure/wk year-round</span>
+      </div>
+
+      <div class="card">
+        <div class="ch"><span class="ct">Muscle mass</span><span class="bank partly">partly</span></div>
+        <div class="cd m">the cleanest accumulation case</div>
+        <p>10&ndash;20 hard sets per muscle group per week across 2&ndash;3 sessions. Rep range 5&ndash;30 taken to 0&ndash;3 reps in reserve &mdash; <b>load is largely irrelevant to hypertrophy when effort is matched</b>, so keep heavy work for strength and let hypertrophy work sit wherever it is most recoverable.</p>
+        <p>Peak lean mass arrives in the 20s&ndash;30s and every decade after is defence. Myonuclear permanence is real in humans (+33% type II myonuclei retained through detraining) but produced <b>no superior retraining response</b> in either good trial &mdash; so build it because you cannot build it later, not because you expect a discount on rebuilding.</p>
+        <span class="tgt">HOLD AT: ~1/3 volume, intensity unchanged</span>
+      </div>
+
+      <div class="card">
+        <div class="ch"><span class="ct">Tendon &amp; connective tissue</span><span class="bank rented">rented</span></div>
+        <div class="cd m">the pacer &mdash; runs on years</div>
+        <p><b>Heavy slow resistance</b>: 3&ndash;5 sets &times; 4&ndash;5 reps, ~3 s up and 3 s down, at loads producing 4.5&ndash;6.5% tendon strain. Below 70% MVC the adaptation effect size is 0.04 &mdash; light work does nothing here.</p>
+        <p>Because material adaptation lags muscle by <b>8&ndash;12 weeks</b> and the degenerative core never regenerates, tendon &mdash; not your lungs or your motivation &mdash; sets the true speed limit on every progression. Your cardiorespiratory and neural readiness will run months ahead of it.</p>
+        <span class="tgt">HOLD AT: permanent habit, not a block</span>
+      </div>
+
+      <div class="card">
+        <div class="ch"><span class="ct">Open skill</span><span class="bank partly">partly</span></div>
+        <div class="cd m">the only compounding asset</div>
+        <p>Pick <b>one or two open skills and keep them for life</b>. Anticipation is a knowledge structure &mdash; a library of opponent movement patterns &mdash; and it behaves like semantic memory, which is why it is the single asset here that gains value across decades instead of decaying.</p>
+        <p>It also carries the neuromotor, reactive-stepping and social dose in one activity, and it is the component people are still doing at 70. Choose a low-head-impact one: racket sports and grappling deliver the coverage without the axis you cannot titrate.</p>
+        <span class="tgt">HOLD AT: it holds itself &mdash; that is the point</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PART III ============ -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="part"><span class="pn m">PART III</span><h2 class="geo">The Week</h2>
+        <p class="psub">Eight hours that climb three axes concurrently, hold the rest at maintenance, and respect the two sequencing rules that have real evidence behind them.</p></div>
+      <p>Two constraints shape the layout. <strong>Separate competing high-intensity stimuli by at least 3 hours within a day</strong> &mdash; that alone abolishes the measured explosive-strength interference &mdash; and <strong>leave 48&ndash;72 hours between high-CNS days hitting the same system</strong>. Resistance before endurance when they share a session produced 6.9% greater lower-body dynamic strength gain over programs of 5+ weeks.</p>
+    </div>
+
+    <div class="week">
+      <table>
+        <thead><tr><th>Day</th><th>Session</th><th class="c">Load</th><th class="c">Time</th><th>Climbing</th></tr></thead>
+        <tbody>
+          <tr><td class="day">Mon</td><td><strong>Strength A &mdash; lower.</strong> Squat heavy 85&ndash;95%, trap-bar or RDL, jumps first while fresh. Every concentric at maximum intent.</td><td class="c"><span class="load hi">high</span></td><td class="c mc">75 min</td><td class="src">strength &middot; power &middot; mass &middot; bone</td></tr>
+          <tr><td class="day">Tue</td><td><strong>Easy aerobic.</strong> Zone 1&ndash;2, conversational throughout. If you can't talk, it is the wrong session.</td><td class="c"><span class="load lo">low</span></td><td class="c mc">60 min</td><td class="src">LT &middot; capillarity &middot; mitochondria</td></tr>
+          <tr><td class="day">Wed</td><td><strong>VO&#8322;max intervals.</strong> 4&times;4 min at ~90% HRmax with 3 min easy, or 5&times;3 min. Warm up properly &mdash; this is the highest-yield 25 minutes of the week.</td><td class="c"><span class="load hi">high</span></td><td class="c mc">50 min</td><td class="src">VO&#8322;max</td></tr>
+          <tr><td class="day">Thu</td><td><strong>Strength B &mdash; upper + carries.</strong> Press, weighted pull-up, row, farmer's walks with straps off. Different system from Monday, so it fits here.</td><td class="c"><span class="load mid">mod</span></td><td class="c mc">70 min</td><td class="src">strength &middot; grip &middot; mass</td></tr>
+          <tr><td class="day">Fri</td><td><strong>Easy aerobic + floor work.</strong> Zone 1&ndash;2 plus 15 min of loaded end-range: deep goblet holds, knee-to-wall, overhead work, get-ups.</td><td class="c"><span class="load lo">low</span></td><td class="c mc">55 min</td><td class="src">aerobic base &middot; mobility</td></tr>
+          <tr><td class="day">Sat</td><td><strong>Sport &mdash; open skill.</strong> Racket sport or grappling. Reactive stepping, coordination under fatigue, anticipation, other humans. Non-negotiable and not optional fun.</td><td class="c"><span class="load mid">mod</span></td><td class="c mc">90 min</td><td class="src">anticipation &middot; agility &middot; adherence</td></tr>
+          <tr><td class="day">Sun</td><td><strong>Long easy.</strong> The volume that builds threshold as a fraction of VO&#8322;max. Strictly zone 1&ndash;2.</td><td class="c"><span class="load lo">low</span></td><td class="c mc">90 min</td><td class="src">LT &middot; economy &middot; fat oxidation</td></tr>
+          <tr><td class="day">Daily</td><td><strong>Standing charges.</strong> 8,000+ steps; no sitting bout past 30 min; 10 min floor time; 60 s of monitoring (Part IV).</td><td class="c"><span class="load lo">&mdash;</span></td><td class="c mc">&mdash;</td><td class="src">insulin sensitivity &middot; VAT</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrap" style="margin-left:0">
+      <p class="fine"><strong>Total ~8.2 h.</strong> Three genuinely hard sessions, one moderate sport day, three easy. Intensity distribution lands near 80/20 by time. Monday's lower-body high-CNS work is 5 days clear of Saturday's sport; Wednesday's metabolic session sits between two different strength systems. If you have to cut a week short, <strong>cut Tuesday and Friday, never Wednesday or Monday</strong> &mdash; volume is the cheap variable and intensity is the one that holds everything.</p>
+
+      <h3>The block layer on top</h3>
+      <p>The week above is the steady state. Over a year, run <strong>two or three 8&ndash;16 week acquisition blocks</strong>, each elevating one quality to full acquisition dose while the others drop to their maintenance line from Part II. A plausible year: strength/mass block through winter, aerobic power block in spring, skill and power emphasis through summer. Grow total annual volume by no more than <strong>8&ndash;10% per year</strong>, and after any layoff re-enter at 40&ndash;60% of your previous peak week and rebuild over 8&ndash;12 weeks &mdash; which is exactly what elite programs do.</p>
+      <div class="box">
+        <div class="bl m">Deliberate overreaching: don't</div>
+        <p>About 45&ndash;50% of athletes given a 30% volume increase for three weeks become functionally overreached &mdash; and <strong>those who do gain less from the subsequent taper than those who don't</strong>. A plain 41&ndash;60% volume cut over 8&ndash;14 days, with intensity and frequency untouched, delivers ~2.2% performance improvement for free. There is no version of this where deliberately digging a hole pays.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PART IV ============ -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="part"><span class="pn m">PART IV</span><h2 class="geo">The Boundary</h2>
+        <p class="psub">Where healthy stress becomes harmful stress &mdash; which turns out not to be one line, and not to be located where the question assumes.</p></div>
+
+      <p class="lede">Your question was whether sustaining an exceptional level costs more than it returns. The answer is that <strong>&ldquo;stress&rdquo; is not one quantity with one threshold.</strong> It decomposes into axes with genuinely different dose-response shapes, and you can be far past one while nowhere near another. That is why the question feels unanswerable in aggregate.</p>
+    </div>
+
+    <figure>
+      <div class="fig">
+        <div class="sm-grid" id="shapes"></div>
+      </div>
+      <figcaption>Six stress axes, six different shapes. The vertical line marks where 6&ndash;9 h/week places you. The axes on the top row plateau &mdash; more is neither better nor worse. The axes on the bottom row do not plateau, and those are the only ones that should shape your decisions.</figcaption>
+    </figure>
+
+    <div class="wrap" style="margin-left:0">
+      <h3>What this resolves</h3>
+      <p><strong>Volume is not your line.</strong> At 6&ndash;9 h/week you are structurally incapable of reaching any documented population-level descending limb. The largest mortality dataset puts the nadir at 3&ndash;5&times; guidelines and still returns HR 0.69 at ten times the minimum &mdash; an attenuation, never an inversion. Every alarming cardiac imaging finding comes from men training 10&ndash;11 h/week for thirty-plus years.</p>
+      <p><strong>Intensity distribution is your line.</strong> The single most relevant finding for a 3:00/1000m goal: in athletes followed 6.3 years with repeat cardiac CT, <em>intensity and not volume</em> predicted coronary plaque progression &mdash; and vigorous intensity was associated with <em>less</em> progression while only very-vigorous was associated with more. A hard goal built on an 80% easy base is a fundamentally different exposure from the same goal chased at threshold every day.</p>
+      <p><strong>And the honest scale of the mechanism debate:</strong> the hormesis literature does show that the stress itself is the signal &mdash; blocking the oxidative signature with 1,000 mg vitamin C plus vitamin E blunts insulin sensitivity gains, PGC-1&alpha; and mitochondrial biogenesis. But the same supplementation left VO&#8322;max completely unaffected (+8% in both arms). <strong>A molecular inverted-U does not propagate to the endpoint you care about.</strong> Which is the empirical answer to whether mechanism studies should govern your dosing: they should not.</p>
+
+      <div class="box cost">
+        <div class="bl m">The four axes that actually govern you</div>
+        <p><strong>1. Cartilage.</strong> Mileage is not the threat &mdash; recreational runners have 3.5% hip/knee OA versus 10.2% in the sedentary. A single ACL or meniscus event is: meniscectomy takes 10-year OA from ~16% to ~50%, and a knee injury in your twenties carries RR 5.17 for later knee OA. Buy landing and neuromuscular training; treat pivoting-sport exposure as the expensive item, not running volume.</p>
+        <p><strong>2. Tendon.</strong> Respect the 8&ndash;12 week material lag, cap week-to-week progression in high-strain modalities, and load above 70% MVC or don't bother. The degenerative core never comes back.</p>
+        <p><strong>3. Head impact.</strong> The only axis with no threshold, no reversibility and no early-warning signal. Manage by elimination, not titration &mdash; no voluntary subconcussive dosing. Former power-sport athletes, notably boxers, carried HR 4.20 for dementia mortality.</p>
+        <p><strong>4. Energy availability.</strong> The one sharp experimental threshold in the entire field: keep intake minus exercise expenditure above <strong>30 kcal/kg fat-free mass/day</strong>, target closer to 40. This is where reversible systemic stress converts into permanent skeletal cost &mdash; and roughly 49% of male athletes are under it.</p>
+      </div>
+
+      <div class="box">
+        <div class="bl m">Why the line is individual &mdash; and what actually moves it</div>
+        <p>You were right that the boundary is fluid, but the inputs are not the ones usually cited. Response variance at a fixed dose is enormous &mdash; HERITAGE found a response SD 53% of the mean &mdash; but <strong>most apparent non-response is under-dosing</strong>: 69% of people look like non-responders at one session per week and none do at four to five. So the first hypothesis for a stalled block is wrong dose or wrong stimulus, never a low ceiling.</p>
+        <p>The four modifiable inputs, in order of leverage: <strong>unbroken chronic load history</strong> (one lost preparation block raised NFL soft-tissue injury rates 88&ndash;310% in the same athletes), <strong>sleep &ge;8 h</strong> (below that, injury OR 1.34&ndash;1.7), <strong>energy availability</strong>, and <strong>life stress</strong> (r = 0.27 with injury; it measurably slows 96-hour recovery from an identical session). At 6&ndash;9 h/week your binding constraint is almost certainly one of these four, not trainability.</p>
+        <p>And ignore the popular quantitative frameworks: the acute:chronic workload ratio is mathematically broken &mdash; simulations with zero true relationship reproduce its famous sweet spot &mdash; the 10% rule failed its randomised trial, and the sport-genetics consensus states no commercial test predicts training response or injury.</p>
+      </div>
+
+      <h3>Finding your own line: a 60-second daily panel</h3>
+      <p>Since the boundary is individual, you instrument it rather than look it up. Run a <strong>two-of-three vote</strong>, not a dashboard &mdash; and note that subjective measures outperformed every objective marker tested for detecting maladaptation.</p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Cadence</th><th>What you record</th><th>The rule</th></tr></thead>
+        <tbody>
+          <tr><td class="nm mc">Daily<br>60 s</td>
+            <td>Overnight HR and HRV from the watch (nocturnal LnRMSSD has CV 4&ndash;6% versus 16% for a standing orthostatic test). Then three 1&ndash;7 taps: <strong>readiness, leg soreness, sleep quality</strong>. After each session, RPE &times; minutes.</td>
+            <td>Build a 4-week baseline first. Your band = baseline mean &plusmn; 0.5 SD of the 7-day rolling LnRMSSD average, recomputed weekly.</td></tr>
+          <tr><td class="nm mc">2&times;/week<br>the vote</td>
+            <td>Three markers: HRV 7-day average inside band &middot; readiness and soreness both &le;5 of 7 &middot; heart-rate-at-fixed-pace not drifted &gt;0.5 below its 2-week average.</td>
+            <td><strong>Two of three normal</strong> &rarr; proceed, or add 5% volume or one hard session. <strong>Fewer than two</strong> &rarr; cut volume 25% and drop the hard session. Never chain more than two hard days or more than two rest days.</td></tr>
+          <tr><td class="nm mc">Monthly<br>10 min</td>
+            <td>One fixed submaximal effort logging HR, pace and RPE. Five countermovement jumps scored as the <strong>mean, not the best</strong>. Then re-read your own log.</td>
+            <td>Slow variables no watch sees: resting HR up &ge;5 bpm sustained a week; training monotony above 2.0; appetite or libido decline (the only validated male low-energy-availability flag); recurrent minor illness.</td></tr>
+          <tr><td class="nm mc">Escalation</td>
+            <td>Functional overreaching, non-functional overreaching and overtraining syndrome are distinguished <em>only</em> by how long recovery takes, and cannot be told apart at onset.</td>
+            <td>Hard rule: <strong>any performance decrement surviving one week of substantially reduced load is treated as non-functional overreaching until proven otherwise</strong> &mdash; weeks of reduced load, not days, plus exclusion of the mimics (iron-deficiency anaemia, thyroid disorder, low energy availability, recent viral illness).</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrap" style="margin-left:0">
+      <p class="fine">Treat every abnormal reading as a question, not a verdict. Alcohol, short sleep and life stress move HRV harder than training does, so the correct response is more often to fix sleep or food than to cut training. Resting cortisol is normal in 73% and testosterone in 65% of genuinely overtrained athletes &mdash; which is why this panel is behavioural and subjective rather than biochemical.</p>
+    </div>
+  </section>
+
+  <!-- ============ CODA ============ -->
+  <section>
+    <div class="part"><span class="pn m">CODA</span><h2 class="geo">What the thesis gets right</h2></div>
+    <p class="lede">Your hill-climb argument is roughly half correct, and the surviving half is not the half most people defend.</p>
+    <p><strong>It holds where the asset is structural and slow-turnover.</strong> A 10% higher peak bone density delays osteoporosis by 13 years. Retired elite footballers, thirty years after their careers ended, still carried +0.4 to +0.5 SD bone density and a fragility-fracture rate ratio of 0.4. Retired gymnasts held a 0.5&ndash;1.5 SD advantage with <em>no diminution across twenty years</em>. And it holds for aerobic reserve as arithmetic: decline is proportional, so a higher peak shifts the whole curve right &mdash; lifelong-trained 80-year-olds sit at 38 ml/kg/min against untrained peers at 21, where the independence threshold is 18. One group has twenty points of headroom; the other has three.</p>
+    <p><strong>It fails as a storage metaphor.</strong> Within the best available test &mdash; the Finnish former-elite-athlete cohort &mdash; <em>current</em> physical activity predicted late-life physical function (OR 4.91, lowest versus highest activity quintile) while sport history predicted only <em>psychological</em> function. Former Division I athletes at 53 were measurably less fit than non-athletes who had merely stayed active in college: 7.6 points more body fat, mile time 2.4 minutes slower. The mechanism is the one to design around &mdash; <strong>injury during the climb forecloses the decades of maintenance that actually deliver the longevity.</strong></p>
+    <p>So: build high now, because you cannot build high at 80 &mdash; myonuclear accretion is impaired in the elderly and peak lean mass is set in this decade. But nothing you bank pays out unless you keep showing up, and a peak pursued through injury is a net loss. The climb is worth making. The knee is worth more than the number.</p>
+    <p class="fine" style="margin-top:34px">Method: two research sweeps, 22 agents, ~2.4M tokens, every headline claim re-verified against primary sources by independent adversarial agents. Verifiers corrected several claims in the researchers' own output &mdash; including a decline-rate calculation whose arithmetic did not follow from its cited source, and normative tables that could not be traced to a primary population. Where a number could not be verified it is presented as a range or omitted. Two corrections to my own earlier advice in this project are marked in Part I.</p>
+  </section>
+</div>
+
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var AXES = [
+    { t: 'All-cause mortality', s: 'vs training volume', shape: 'plateau', band: 'good',
+      you: 0.34, note: 'Nadir at 3-5x guidelines. Still HR 0.69 at 10x \u2014 attenuation, never inversion.',
+      tip: 'Arem 2015, 661,137 adults, 116,686 deaths. HR 0.61 at 3-5x guidelines; 0.69 at &ge;10x. No harm at any dose measured.' },
+    { t: 'Resistance training', s: 'vs weekly minutes', shape: 'plateau', band: 'good',
+      you: 0.40, note: 'Plateaus at ~120 min/wk. The "J-curve harm arm" is statistically empty.',
+      tip: 'Zhang 2026, 147,374 participants, 35,798 deaths. Lowest risk plateaus &ge;120 min/wk; no additional benefit above, no confirmed harm.' },
+    { t: 'Cardiac / arrhythmia', s: 'vs lifetime hard hours', shape: 'threshold', band: 'dim',
+      you: 0.22, note: 'AF signal emerges near ~1,500 lifetime hours of hard endurance work.',
+      tip: 'Athletes OR 2.46 for atrial fibrillation; OR 3.60 in athletes under 55. Intensity, not volume, drove plaque progression (MARC-2).' },
+    { t: 'Cartilage / joint', s: 'vs running exposure', shape: 'jcurve', band: 'dim',
+      you: 0.30, note: 'Recreational 3.5% OA vs sedentary 10.2% vs competitive 13.3%. Sedentary is worse than moderate.',
+      tip: 'Alentorn-Geli 2017, 25 studies, n=125,810. The real threat is a single ACL/meniscus event, not mileage: meniscectomy raises 10-yr OA from ~16% to ~50%.' },
+    { t: 'Energy availability', s: 'vs kcal/kg FFM/day', shape: 'cliff', band: 'cost',
+      you: 0.72, note: 'A genuine cliff at 30 kcal/kg FFM/day. Below it, reversible stress becomes skeletal cost.',
+      tip: 'The one sharp experimental threshold in the field. ~49% of male athletes sit below it. Target closer to 40 kcal/kg FFM/day.' },
+    { t: 'Head impact', s: 'vs cumulative exposure', shape: 'linear', band: 'cost',
+      you: 0.06, note: 'No threshold, no reversibility, no early-warning signal. Eliminate rather than titrate.',
+      tip: 'White-matter changes appear around ~885 headers/year. Former power-sport athletes, notably boxers, carried HR 4.20 for dementia mortality.' }
+  ];
+
+  var W = 236, H = 92, PAD = 6;
+  function path(shape) {
+    var pts = [], i, x, y;
+    for (i = 0; i <= 60; i++) {
+      x = i / 60;
+      switch (shape) {
+        case 'plateau':  y = 1 - (1 - Math.exp(-3.6 * x)) * 0.86; break;
+        case 'jcurve':   y = 0.42 + 1.55 * Math.pow(x - 0.34, 2) - 0.05; break;
+        case 'threshold':y = x < 0.45 ? 0.18 : 0.18 + (x - 0.45) * 1.35; break;
+        case 'cliff':    y = x < 0.55 ? 0.92 : 0.14; break;
+        case 'linear':   y = 0.08 + x * 0.84; break;
+        default:         y = 0.5;
+      }
+      y = Math.max(0.04, Math.min(0.96, y));
+      pts.push((PAD + x * (W - 2 * PAD)).toFixed(1) + ',' + (PAD + y * (H - 2 * PAD)).toFixed(1));
+    }
+    return 'M' + pts.join(' L');
+  }
+
+  var tip = document.getElementById('tip');
+  function show(html, x, y) {
+    tip.innerHTML = html; tip.style.display = 'block';
+    var w = tip.offsetWidth, h = tip.offsetHeight, p = 14;
+    var l = Math.min(x + p, window.innerWidth - w - 8); if (l < 8) l = 8;
+    var t = y - h - p; if (t < 8) t = y + p;
+    tip.style.left = l + 'px'; tip.style.top = t + 'px';
+  }
+  function hide() { tip.style.display = 'none'; }
+
+  var host = document.getElementById('shapes');
+  AXES.forEach(function (a) {
+    var col = a.band === 'good' ? 'var(--band-good)' : (a.band === 'dim' ? 'var(--band-dim)' : 'var(--band-cost)');
+    var div = document.createElement('div');
+    div.className = 'sm';
+    var yx = (PAD + a.you * (W - 2 * PAD)).toFixed(1);
+    div.innerHTML =
+      '<div class="st">' + a.t + '</div>' +
+      '<div class="ss" style="color:' + col + '">' + a.s + '</div>' +
+      '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="' + a.t + ': ' + a.note + '">' +
+        '<line x1="' + PAD + '" y1="' + (H - PAD) + '" x2="' + (W - PAD) + '" y2="' + (H - PAD) + '" stroke="var(--hair)" stroke-width="1"/>' +
+        '<line x1="' + PAD + '" y1="' + PAD + '" x2="' + PAD + '" y2="' + (H - PAD) + '" stroke="var(--hair)" stroke-width="1"/>' +
+        '<path d="' + path(a.shape) + '" fill="none" stroke="' + col + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+        '<line x1="' + yx + '" y1="' + PAD + '" x2="' + yx + '" y2="' + (H - PAD) + '" stroke="var(--ink2)" stroke-width="1" stroke-dasharray="3 3"/>' +
+        '<text x="' + (+yx + 4) + '" y="' + (PAD + 10) + '" style="fill:var(--ink2);font-size:8.5px">you</text>' +
+      '</svg>' +
+      '<div class="sn">' + a.note + '</div>';
+    host.appendChild(div);
+    var svg = div.querySelector('svg');
+    svg.addEventListener('mousemove', function (e) { show('<b>' + a.t + '</b><br>' + a.tip, e.clientX, e.clientY); });
+    svg.addEventListener('mouseleave', hide);
+  });
+})();
+</script>
+
+</body>
+</html>

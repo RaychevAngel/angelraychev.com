@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Configuration and Consumption - Angel Raychev">
+<link rel="canonical" href="https://angelraychev.com/reports/configuration-consumption/">
+<title>Configuration and Consumption</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper:#f6f5f2; --surface:#fdfdfb; --surface2:#edebe6;
+    --ink:#16161a; --ink2:#53535a; --ink3:#8a8a90;
+    --hair:#e1dfd9; --rule:#bab8b1;
+    --cfg:#1c5cab; --cfg-bg:#e6eefa;      /* configuration: steerable */
+    --con:#6b6157; --con-bg:#eeeae5;      /* consumption: inert */
+    --flag:#b3261e;
+  }
+  @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --paper:#0f1012; --surface:#191a1d; --surface2:#232427;
+    --ink:#f1f1ef; --ink2:#b2b2b8; --ink3:#81818a;
+    --hair:#2a2b2f; --rule:#3d3e43;
+    --cfg:#6aa5ea; --cfg-bg:#152437;
+    --con:#a89a8c; --con-bg:#24211e;
+    --flag:#e8756c;
+  } }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:#0f1012; --surface:#191a1d; --surface2:#232427;
+    --ink:#f1f1ef; --ink2:#b2b2b8; --ink3:#81818a;
+    --hair:#2a2b2f; --rule:#3d3e43;
+    --cfg:#6aa5ea; --cfg-bg:#152437;
+    --con:#a89a8c; --con-bg:#24211e;
+    --flag:#e8756c;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);margin:0;padding:0 20px 120px;
+    font-family:-apple-system,"Segoe UI",system-ui,sans-serif;font-size:16.5px;line-height:1.66;-webkit-font-smoothing:antialiased}
+  .ser{font-family:Didot,"Hoefler Text",Baskerville,Garamond,"Times New Roman",serif}
+  .m{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+  .wrap{max-width:790px;margin:0 auto}
+  .wide{max-width:1060px;margin:0 auto}
+  a{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2.5px;text-decoration-thickness:1px}
+  a:hover{text-decoration-color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+  header.mast{padding:86px 0 0;text-align:center}
+  .kick{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink3);margin:0 0 30px}
+  h1{font-size:clamp(38px,8vw,86px);font-weight:400;line-height:1.02;letter-spacing:-.015em;margin:0 0 8px}
+  h1 em{font-style:italic}
+  .sub{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin:0 0 34px}
+  .deck{font-size:19.5px;line-height:1.55;color:var(--ink2);max-width:60ch;margin:0 auto 34px;text-align:left}
+  .deck b{color:var(--ink);font-weight:600}
+  hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+  section{margin-top:80px}
+  .sh{margin-bottom:26px}
+  .sh .n{font-size:11px;letter-spacing:.24em;color:var(--ink3);display:block;margin-bottom:10px}
+  h2{font-size:clamp(27px,4.4vw,42px);font-weight:400;letter-spacing:-.01em;line-height:1.1;margin:0;text-wrap:balance}
+  h3{font-size:19.5px;font-weight:600;margin:44px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--hair)}
+  h4{font-size:12.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin:28px 0 8px;color:var(--ink2)}
+  p{max-width:68ch}
+  .lede{font-size:19px;line-height:1.6}
+  .fine{font-size:12.5px;color:var(--ink3);line-height:1.62;max-width:84ch}
+  ul,ol{padding-left:24px;max-width:70ch}li{margin-bottom:10px}
+  strong{font-weight:650}
+
+  .box{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--ink);padding:17px 21px;margin:26px 0;max-width:72ch}
+  .box .bl{font-size:9.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  .box p{margin:0;font-size:15.5px}.box p+p{margin-top:10px}
+  .box.cfg{border-left-color:var(--cfg)}.box.cfg .bl{color:var(--cfg)}
+  .box.con{border-left-color:var(--con)}.box.con .bl{color:var(--con)}
+  .box.flag{border-left-color:var(--flag)}.box.flag .bl{color:var(--flag)}
+
+  .tw{overflow-x:auto;border:1px solid var(--hair);background:var(--surface);margin:24px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  th{text-align:left;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--ink3);
+     padding:12px 12px 8px;border-bottom:1px solid var(--rule);white-space:nowrap;vertical-align:bottom}
+  td{padding:11px 12px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.52}
+  tbody tr:last-child td{border-bottom:none}
+  .nm{font-weight:650}
+  .mc{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;font-variant-numeric:tabular-nums}
+  .src{font-size:11.5px;color:var(--ink3)}
+  th.c,td.c{text-align:center}
+
+  .lbl{font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:2px;white-space:nowrap}
+  .l-cfg{background:var(--cfg-bg);color:var(--cfg)}
+  .l-con{background:var(--con-bg);color:var(--con)}
+  .l-un{background:transparent;border:1px dashed var(--rule);color:var(--ink3)}
+  .l-flag{background:transparent;border:1px solid var(--flag);color:var(--flag)}
+
+  figure{margin:28px 0 8px}
+  .fig{background:var(--surface);border:1px solid var(--hair);padding:22px;overflow-x:auto}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:12px;line-height:1.55;max-width:86ch}
+  svg{display:block}
+  svg text{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+
+  .split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:16px;margin:24px 0}
+  .col{background:var(--surface);border:1px solid var(--hair);padding:18px 20px}
+  .col .ch{font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:4px}
+  .col .cs{font-size:22px;font-weight:400;margin-bottom:12px;letter-spacing:-.01em}
+  .col ul{padding-left:19px;margin:0;max-width:none}
+  .col li{font-size:13.5px;margin-bottom:7px;color:var(--ink2)}
+  .col li b{color:var(--ink);font-weight:650}
+
+  .exp{counter-reset:e;list-style:none;padding-left:0;max-width:74ch}
+  .exp li{counter-increment:e;position:relative;padding-left:46px;margin-bottom:20px}
+  .exp li::before{content:counter(e);position:absolute;left:0;top:1px;font-family:ui-monospace,Menlo,monospace;
+    font-size:11px;font-weight:700;color:var(--cfg);border:1px solid var(--cfg);border-radius:50%;
+    width:26px;height:26px;display:grid;place-items:center}
+  .exp li b{display:block;font-size:15.5px;margin-bottom:3px}
+  .exp li span{font-size:14px;color:var(--ink2)}
+
+  #tip{position:fixed;z-index:20;pointer-events:none;display:none;background:var(--ink);color:var(--paper);
+    font-family:ui-monospace,Menlo,monospace;font-size:11.5px;padding:8px 11px;border-radius:3px;max-width:320px;line-height:1.5}
+  @media (max-width:640px){header.mast{padding-top:48px}body{font-size:16px}.deck{font-size:17.5px}}
+</style>
+</head>
+<body>
+<a href="/writing" style="position:fixed;top:14px;left:14px;z-index:99;font:12px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink3,#888);background:var(--surface,#fff);border:1px solid var(--hair,#ddd);padding:7px 11px;border-radius:3px">&larr; Writing</a>
+
+
+<div class="wrap">
+  <header class="mast">
+    <p class="kick m">Project Ultimate Athleticism &middot; Thesis Review</p>
+    <h1 class="ser">Configuration <em>and</em> Consumption</h1>
+    <p class="sub m">Adjudicating the attractor hypothesis</p>
+  </header>
+  <hr class="rule">
+  <p class="deck" style="margin-top:34px">The hypothesis: a self-sustaining, non-degenerating human state exists and is reachable without genetic change, and the process of driving toward higher function is what holds a system inside it. <b>Verdict: the aged state splits cleanly into two layers. One is a configuration with a restoring force. The other is a stock with no known erasure. The thesis is right about the first, silent about the second, and its weakest word is &ldquo;self-sustaining.&rdquo;</b></p>
+
+  <!-- I -->
+  <section>
+    <div class="sh"><span class="n m">I</span><h2 class="ser">Stating it so it can be wrong</h2></div>
+    <p>Your thesis has four separable claims. Separating them is most of the work, because they have different verdicts and people almost always argue about the wrong one.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Claim</th><th class="c">Verdict</th><th>Decisive evidence</th></tr></thead>
+        <tbody>
+          <tr><td class="nm">A non-degenerating state is physically possible</td><td class="c"><span class="lbl l-cfg">holds</span></td>
+            <td>The naked mole-rat is a placental mammal whose daily hazard stays near <span class="mc">8&times;10&#8315;&#8309;</span> and does not rise across 30 years, while holding lean mass, fat mass, bone density and female fertility constant from year 2 to year 24.</td></tr>
+          <tr><td class="nm">Aging is a trajectory, not a consumption</td><td class="c"><span class="lbl l-con">half</span></td>
+            <td>True of the regulatory layer, false of the material layer &mdash; and one experiment shows both at once (&sect;II).</td></tr>
+          <tr><td class="nm">Reachable <em>without genotype change</em></td><td class="c"><span class="lbl l-flag">no proof</span></td>
+            <td>No Gompertzian species has ever been pushed to a flat hazard by phenotypic steering alone. Every carrier of non-senescence identified so far is written in the genome.</td></tr>
+          <tr><td class="nm">The state is <em>self-sustaining</em></td><td class="c"><span class="lbl l-flag">fails</span></td>
+            <td>The optimized state is a <strong>forced equilibrium</strong>, not an attractor: detrained masters athletes decline at up to three times the sedentary rate. Remove the input and it falls faster than baseline.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">That last row is the one worth sitting with. &ldquo;The process is what sustains the system&rdquo; and &ldquo;the state is self-sustaining&rdquo; are not the same proposition &mdash; they are near-opposites. The evidence strongly confirms the first and refutes the second, which means the thesis is more correct in its mechanism than in its conclusion.</p>
+  </section>
+
+  <!-- II -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="sh"><span class="n m">II</span><h2 class="ser">The partition</h2></div>
+      <p class="lede">One experiment demonstrates the split in a single cell population. Reprogramming blood cells from donors aged 21 to 100 <strong>erases the epigenetic age signature entirely</strong> &mdash; while exomic mutations still rise linearly with donor age, and every resulting line carries a gene-disrupting mutation. Clock reset without damage reset, in the same cells.</p>
+      <p>That is the partition. Everything downstream follows from which side of it a given feature sits on.</p>
+    </div>
+    <div class="split">
+      <div class="col" style="border-top:3px solid var(--cfg)">
+        <div class="ch m" style="color:var(--cfg)">Layer one</div>
+        <div class="cs ser">Configuration</div>
+        <p class="src" style="margin:0 0 11px">Behaves like a state with a restoring force. Reversible, re-readable, steerable.</p>
+        <ul>
+          <li><b>DNA methylation state.</b> OSK in aged retinal ganglion cells restores youthful methylation and reverses vision loss &mdash; and the effect <b>requires TET1/TET2</b>, proving a retained record is being actively re-read rather than regenerated.</li>
+          <li><b>Cell identity age.</b> Transient reprogramming rejuvenates human fibroblasts by roughly <b>30 years</b> while they keep their identity and youthful collagen output.</li>
+          <li><b>The circulating milieu.</b> Three months of heterochronic parabiosis drastically lowered blood and liver epigenetic age across multiple clocks on two platforms &mdash; and it <b>persisted two months after surgical separation</b>.</li>
+          <li><b>And it is a removable signal, not a missing one.</b> Replacing half of old plasma with saline plus 5% albumin &mdash; <b>no youthful input at all</b> &mdash; matched or exceeded heterochronic blood sharing across three germ layers.</li>
+          <li><b>Biological age is bidirectional on a scale of weeks.</b> It rises with major surgery, pregnancy and severe COVID, then comes back down.</li>
+          <li><b>Aerobic function.</b> Forty years of aging costs about the same proportional VO&#8322;max as <b>three weeks of bed rest</b>. Fifty-two years of training holds muscle capillarization and citrate synthase at 25-year-old values.</li>
+        </ul>
+      </div>
+      <div class="col" style="border-top:3px solid var(--con)">
+        <div class="ch m" style="color:var(--con)">Layer two</div>
+        <div class="cs ser">Consumption</div>
+        <p class="src" style="margin:0 0 11px">Behaves like a stock. Monotonic, combinatorial, with no known erasure mechanism.</p>
+        <ul>
+          <li><b>Somatic point mutations.</b> 23&ndash;40 per neuron per year, accumulating linearly and <b>independently of cell division</b>. End-of-life burden is conserved within threefold across mammals spanning a thirtyfold range of lifespan &mdash; a budget spent at species-specific rates.</li>
+          <li><b>Clonal architecture.</b> Effective haematopoietic clone number collapses from 20,000&ndash;200,000 contributing evenly under 65 to <b>twelve to eighteen clones owning 30&ndash;60% of output</b> after 75. Called a universal feature of aged human haematopoiesis.</li>
+          <li><b>Long-lived protein crosslinks.</b> Cartilage collagen has a <b>117-year half-life</b>; bomb-pulse dating found no new collagen even under load. Lens crystallin has no synthesis or degradation machinery at all. Elastin synthesis ends at puberty.</li>
+          <li><b>Lipofuscin.</b> By its chemistry it can be neither degraded nor exocytosed.</li>
+          <li><b>Clonally expanded mtDNA deletions.</b> 43% of mtDNA in aged substantia nigra neurons, with no dilution route in post-mitotic cells.</li>
+          <li><b>Maximal heart rate.</b> Falls 0.7 beats per year at <span class="mc">r=&minus;0.90</span> and is <b>provably indifferent to habitual activity</b> in 18,712 people. Zero percent recoverable.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap" style="margin-left:0">
+      <div class="box con">
+        <div class="bl m">The load-bearing question the partition raises</div>
+        <p>Nobody knows whether layer two is <em>causal</em> for the aged phenotype or merely co-accumulating. Cagan's conserved end-of-life mutation burden is suggestive but correlational across species. If layer two turns out to be a passive marker, your thesis survives almost intact. If it is load-bearing, phenotype alone cannot reach the mechanism and the ceiling is real. <strong>This is the single most important unresolved question in the whole review</strong>, and a conditional mutator model with matched methylation state would settle it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- III -->
+  <section>
+    <div class="sh"><span class="n m">III</span><h2 class="ser">Same genome, two attractors</h2></div>
+    <p>Your central structural claim &mdash; one genotype, two stable regimes, switched by state &mdash; is a real biological mode. It has been observed.</p>
+    <p><em>Hydra oligactis</em> shows negligible senescence while reproducing asexually in warm water. Cold exposure inhibits budding and initiates gametogenesis, and the animal then enters <strong>an exponential increase in mortality rate</strong> &mdash; full Gompertzian senescence, same genome, no genetic change. The switch is partially reversible: some polyps survive the senescent phase and revert to the non-aging asexual state.</p>
+    <p>That is your hypothesis, demonstrated in a metazoan. Three caveats, all of which matter:</p>
+    <ul>
+      <li><strong>The demonstrated direction of travel is into senescence, not out of it.</strong> Reversion happens but is conditional on age, size and genotype.</li>
+      <li><strong><em>Hydra</em> has essentially no obligate post-mitotic compartment.</strong> Its non-senescence is coupled to continuous stem-cell renewal &mdash; which is a <em>process</em>, not a state. Humans carry lens crystallins bearing the radiocarbon signature of their birth year and exchange under half their cardiomyocytes in a lifetime.</li>
+      <li><strong>Every mammalian mechanism found so far sits below the reach of phenotype.</strong> The naked mole-rat's carriers include a 263-nucleotide excision in 28S rRNA conserved across all rDNA copies, a hyaluronan-synthase coding variant, and a somatic mutation rate that is a species constant explaining 0.85 of interspecies lifespan variance. And the decisive test has been run: transferring the mole-rat hyaluronan synthase into a mouse &mdash; <em>a germline genotype change, the very intervention your thesis says is unnecessary</em> &mdash; bought <strong>4.4%</strong> median lifespan.</li>
+    </ul>
+    <div class="box flag">
+      <div class="bl m">And the human mortality plateau is not the ally it looks like</div>
+      <p>Beyond age 108 the force of mortality does appear constant &mdash; the strongest validated analysis puts 1,119 age-verified lifespans past 110 against an exponential rate of <strong>0.69 per year</strong>. But read what that constant means: a <strong>50% annual probability of death</strong>, with a median additional survival past 110 of about a year. A non-increasing hazard is not the same as a non-degenerating state. Your own alive-versus-thriving distinction is what condemns it: the plateau is the flat hazard of something already at the floor, exactly what reliability theory predicts when redundancy is exhausted.</p>
+    </div>
+    <p class="fine">One genuinely tantalizing finding runs the other way. Roughly 75% of 52 testudine species show slow or negligible senescence, and unlike humans they appear to <em>reduce their senescence rate in response to improved conditions</em> &mdash; environment moving slope rather than intercept. If that survives scrutiny it is the only documented vertebrate case of the thing your thesis needs most, and it deserves direct replication.</p>
+  </section>
+
+  <!-- IV -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="sh"><span class="n m">IV</span><h2 class="ser">Slope versus offset</h2></div>
+      <p class="lede">This is the discriminator, and it is where the thesis is currently losing on its own best evidence. Everything the maximal lifestyle phenotype has achieved so far <strong>displaces the curve without flattening it.</strong></p>
+    </div>
+    <figure>
+      <div class="fig">
+        <svg viewBox="0 0 900 420" width="100%" style="min-width:660px" role="img" aria-label="Three trajectories of aerobic capacity versus age: untrained, lifelong trained, and the flat trajectory the thesis requires.">
+          <g class="m" style="font-size:10px;fill:var(--ink3)">
+            <text x="8" y="30">VO&#8322;max</text><text x="8" y="44">ml/kg/min</text>
+          </g>
+          <!-- axes -->
+          <line x1="70" y1="40" x2="70" y2="340" stroke="var(--rule)" stroke-width="1"/>
+          <line x1="70" y1="340" x2="860" y2="340" stroke="var(--rule)" stroke-width="1"/>
+          <!-- y ticks -->
+          <g class="m" style="font-size:9.5px;fill:var(--ink3)">
+            <text x="60" y="48" text-anchor="end">70</text><line x1="66" y1="44" x2="70" y2="44" stroke="var(--rule)"/>
+            <text x="60" y="136" text-anchor="end">50</text><line x1="66" y1="132" x2="70" y2="132" stroke="var(--rule)"/>
+            <text x="60" y="224" text-anchor="end">30</text><line x1="66" y1="220" x2="70" y2="220" stroke="var(--rule)"/>
+            <text x="60" y="290" text-anchor="end">18</text>
+          </g>
+          <!-- independence threshold -->
+          <line x1="70" y1="286" x2="860" y2="286" stroke="var(--flag)" stroke-width="1" stroke-dasharray="5 4"/>
+          <text class="m" x="856" y="278" text-anchor="end" style="font-size:9.5px;fill:var(--flag)">INDEPENDENCE THRESHOLD ~18 (men)</text>
+          <!-- x ticks -->
+          <g class="m" style="font-size:9.5px;fill:var(--ink3)">
+            <text x="70" y="358" text-anchor="middle">25</text>
+            <text x="228" y="358" text-anchor="middle">45</text>
+            <text x="386" y="358" text-anchor="middle">65</text>
+            <text x="544" y="358" text-anchor="middle">85</text>
+            <text x="702" y="358" text-anchor="middle">105</text>
+            <text x="465" y="378" text-anchor="middle" style="letter-spacing:.14em">AGE</text>
+          </g>
+          <!-- what the thesis requires: flat -->
+          <path d="M70 92 L860 108" fill="none" stroke="var(--cfg)" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round"/>
+          <text class="m" x="600" y="88" style="font-size:10px;fill:var(--cfg)">WHAT THE THESIS REQUIRES &mdash; slope change</text>
+          <!-- trained -->
+          <path d="M70 92 C 200 118, 320 150, 434 176 S 600 236, 700 286" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="70" cy="92" r="4.5" fill="var(--ink)"/>
+          <circle cx="512" cy="207" r="4.5" fill="var(--ink)"/>
+          <text class="m" x="522" y="200" style="font-size:10px;fill:var(--ink)">38 at 81 &mdash; Trappe's skiers</text>
+          <text class="m" x="80" y="86" style="font-size:10px;fill:var(--ink)">LIFELONG TRAINED</text>
+          <!-- untrained -->
+          <path d="M70 158 C 190 184, 300 212, 400 236 S 520 274, 566 286" fill="none" stroke="var(--con)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="70" cy="158" r="4.5" fill="var(--con)"/>
+          <circle cx="520" cy="277" r="4.5" fill="var(--con)"/>
+          <text class="m" x="530" y="303" style="font-size:10px;fill:var(--con)">21 at 82 &mdash; age-matched untrained</text>
+          <text class="m" x="80" y="152" style="font-size:10px;fill:var(--con)">UNTRAINED</text>
+          <!-- offset bracket -->
+          <line x1="566" y1="298" x2="700" y2="298" stroke="var(--ink2)" stroke-width="1"/>
+          <line x1="566" y1="293" x2="566" y2="303" stroke="var(--ink2)" stroke-width="1"/>
+          <line x1="700" y1="293" x2="700" y2="303" stroke="var(--ink2)" stroke-width="1"/>
+          <text class="m" x="633" y="318" text-anchor="middle" style="font-size:10px;fill:var(--ink2)">the offset: ~15 years</text>
+        </svg>
+      </div>
+      <figcaption>Lifelong training buys a four-decade displacement in the <em>level</em> of aerobic function &mdash; 38 versus 21 ml/kg/min at 81, the highest VO&#8322;max ever recorded above age 80. But the curve still descends, and it still crosses the threshold. The dashed line is what the thesis actually requires and what nothing has yet produced. Longitudinal analyses find the same relative rate of decline across all physical-activity quartiles.</figcaption>
+    </figure>
+    <div class="wrap" style="margin-left:0">
+      <p>The honest summary: <strong>Trappe's athletes were displaced four decades and were still 81.</strong> The offset is enormous, real, and worth having &mdash; it is roughly fifteen extra years above the functional-independence threshold. It is also not what &ldquo;non-degenerating&rdquo; means.</p>
+
+      <h3>The resilience objection, and why it is a discriminator rather than a wall</h3>
+      <p>The strongest quantitative challenge to your thesis is not any biomarker &mdash; it is the recovery-time result. Organism-state recovery time rises roughly fourfold, from about two weeks at age 40 to over eight weeks at 90, persisting after excluding the frailest subjects and replicated in wearable activity fluctuations. Extrapolated to where recovery time diverges, it implies a hard ceiling near <strong>120&ndash;150 years</strong>. That is your own variable &mdash; adaptive capacity, not biomarker normality &mdash; used against you.</p>
+      <p>Four things stop it being decisive. The ceiling comes from a <em>linear</em> fit extrapolated thirty to eighty years past its last datum; the paper's own alternative route gives 110&ndash;170 instead; any sub-linear approach to zero removes the singularity entirely; and the specific indicator carrying the ceiling &mdash; temporal autocorrelation &mdash; was <em>not</em> associated with frailty in independent work, while variance and cross-correlation were.</p>
+      <div class="box cfg">
+        <div class="bl m">And here is the crack in it</div>
+        <p>Heart-rate recovery is a genuine perturbation-recovery measure. It predicts death with a relative risk near 4.0, and it is <strong>trainable with level-1A evidence.</strong> So recovery rates are demonstrably not read-only dials.</p>
+        <p>Whether the <em>weeks-scale</em> organism-state recovery constant behaves like the <em>seconds-scale</em> autonomic one has, as far as I can establish, never been tested. Nobody has ever made it an intervention endpoint. That is the experiment your thesis lives or dies on, and it is cheap: serial blood panels at weekly cadence in matched trained and untrained cohorts, estimating the autocorrelation time directly. <strong>If it shortens with training, the ceiling argument loses its mechanism.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- V -->
+  <section class="wide">
+    <div class="wrap" style="margin-left:0">
+      <div class="sh"><span class="n m">V</span><h2 class="ser">Unreachable, or merely un-engineered</h2></div>
+      <p>The hard-limit ledger splits, and not the way either camp expects. The decisive datum for the whole front: <strong>182 athletes with more than ten years of high-level training had no lower skin glycation than 34 untrained controls</strong>, with training duration explaining 1.2% of variance. The maximal lifestyle phenotype does not reach the crosslink layer. What it reaches is function <em>on top of</em> it &mdash; masters athletes at 70 carry a biological aortic age of 43.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Substrate</th><th class="c">Status</th><th>Evidence</th></tr></thead>
+        <tbody>
+          <tr><td class="nm">Cartilage collagen</td><td class="c"><span class="lbl l-con">unreachable</span></td><td>117-year half-life; bomb-pulse dating found no new collagen even under load or in osteoarthritis.</td></tr>
+          <tr><td class="nm">Lens crystallin</td><td class="c"><span class="lbl l-con">unreachable</span></td><td>No synthesis and no degradation machinery whatsoever. It is how the Greenland shark gets radiocarbon-dated to 392 years.</td></tr>
+          <tr><td class="nm">Elastin</td><td class="c"><span class="lbl l-con">unreachable</span></td><td>Synthesis ends at puberty; ~70-year half-life; no renewal even after loss.</td></tr>
+          <tr><td class="nm">mtDNA deletions, post-mitotic</td><td class="c"><span class="lbl l-con">unreachable</span></td><td>43.3% &plusmn; 9.3% of mtDNA in aged substantia nigra neurons, with no dilution route.</td></tr>
+          <tr><td class="nm">HSC clonal diversity</td><td class="c"><span class="lbl l-con">unreachable</span></td><td>No known intervention restores 10&#8309; independent clones once fifteen own a third of output. This is information that is simply gone.</td></tr>
+          <tr><td class="nm">AGE adducts (CML)</td><td class="c"><span class="lbl l-un">un-engineered</span></td><td>A 2026 enzyme stripped <strong>78%</strong> of surface CML from a 64-year-old lens and over 70% from a 75-year-old artery. Reachable &mdash; just not by behaviour.</td></tr>
+          <tr><td class="nm">Lipofuscin</td><td class="c"><span class="lbl l-un">un-engineered</span></td><td>Remofuscin clears it from retinal pigment epithelium with retinal rescue in mice; a Phase 2 trial has run in 87 patients.</td></tr>
+          <tr><td class="nm">Senescent cell burden</td><td class="c"><span class="lbl l-un">un-engineered</span></td><td>Senolytics extend median lifespan and cut mortality hazard to 0.65 in mice; the placebo-controlled human trial (n=12) found no functional benefit and 65 versus 22 adverse events.</td></tr>
+          <tr><td class="nm">DNA repair capacity</td><td class="c"><span class="lbl l-cfg">possible lever</span></td><td>The bowhead whale's repair advantage runs through CIRBP, present at ~100&times; other mammals &mdash; and it works in human cells. <strong>CIRBP is cold-inducible, and its discoverers do not know what cold dose triggers it in humans.</strong> Live, cheap, untested.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrap" style="margin-left:0">
+      <p class="fine">Grading the non-training levers on the standard your thesis demands, the answer is a uniform D to C+. Caloric restriction scores highest and its ceiling is a 2&ndash;3% slowing of one pace-of-aging clock, in a trial that could only sustain 11.7% restriction against a 25% target. Sleep is a satisfied constraint rather than an untapped resource: mortality is U-shaped with long sleep the worse tail, adding 66 minutes a night to healthy older sleepers for three weeks changed nothing measurable, and the glymphatic mechanism usually invoked for supra-normal sleep was directly contradicted in 2024 &mdash; the one sleep variable that beats duration is <em>regularity</em>. Sauna carries the largest observational effect of any passive therapy alongside a same-issue commentary arguing it is non-causal. The hyperbaric-oxygen rejuvenation result is an uncontrolled 35-person trial in a field where longitudinal telomere lengthening is a known measurement artifact. The gut is the genuinely open case: a microbiome-uniqueness signature carries a hazard ratio of 0.26 in the over-85s and appears in only ~19% of a cohort &mdash; the exact shape of a divergent better-than-typical trajectory &mdash; and no primary literature even <em>defines</em> a supra-normal absorptive state. Your &ldquo;ultimate food&rdquo; question is unformulated rather than refuted.</p>
+    </div>
+  </section>
+
+  <!-- VI -->
+  <section>
+    <div class="sh"><span class="n m">VI</span><h2 class="ser">The cell-selection argument, adjudicated</h2></div>
+    <p>You proposed that cell division acts as an optimization algorithm &mdash; random perturbation plus selection &mdash; that could improve the organism over a lifetime if bad cells are filtered. Taken premise by premise it partially holds and then inverts on the load-bearing one.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th class="c">Premise</th><th>Claim</th><th class="c">Verdict</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td class="c mc">1</td><td>Division supplies the perturbation</td><td class="c"><span class="lbl l-flag">false</span></td><td>Blood cells that divided vastly more carry <em>identical</em> mutation rates and spectra; non-dividing neurons accumulate at a similar 15&ndash;40 per year. The mutation operator and the selection operator are <strong>decoupled</strong>, and most perturbation lands where no selection can reach it &mdash; under half of cardiomyocytes ever turn over.</td></tr>
+          <tr><td class="c mc">2</td><td>Selection among cells occurs</td><td class="c"><span class="lbl l-cfg">true</span></td><td>Stronger than you assumed: selection rather than drift dominates, 92.4% of clones expand at stable exponential rates of 5% to over 50% per year, and between 1 in 34 and 1 in 12 non-synonymous mutations are drivers.</td></tr>
+          <tr><td class="c mc">3</td><td>The selection filters <em>bad</em> cells</td><td class="c"><span class="lbl l-flag">false</span></td><td>The fitness function it optimizes is cell-autonomous proliferative advantage. <strong>No mechanism couples a somatic cell's contribution to organismal thriving back to its replication rate.</strong> The organism must impose its objective from outside &mdash; and imposition is deletion, not selection-for-better.</td></tr>
+          <tr><td class="c mc">4</td><td>Therefore the genome improves</td><td class="c"><span class="lbl l-flag">inverts</span></td><td>Effective clone number collapses from 20,000&ndash;200,000 to twelve to eighteen owning 30&ndash;60% of haematopoiesis. Selection destroys the diversity that is the substrate of any future selection &mdash; textbook premature convergence of a genetic algorithm with a misaligned objective and no diversity pressure.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>What survives, and survives strongly, is <strong>the filter half of your frame.</strong> Mutation rates are roughly 40 per year across colon, small intestine and liver despite extreme differences in cancer risk between those tissues; across 191 species, body mass explains 0.78% and lifespan 2.94% of cancer-mortality variance. Architecture, not mutation supply, sets the outcome. And the immune arm is causally decisive: across 175,732 transplant recipients, cancer incidence ratios run 2.10 overall, 7.54 for non-Hodgkin lymphoma, 11.56 for liver.</p>
+    <div class="box cfg">
+      <div class="bl m">Your argument in its one defensible form &mdash; and it is genuinely open</div>
+      <p>There <em>is</em> a place where within-body selection improves organismal function: the germinal centre. Somatic hypermutation runs at <span class="mc">10&#8315;&sup2;&ndash;10&#8315;&sup3;</span> per base pair &mdash; five to six orders of magnitude above background &mdash; and antigen-driven selection genuinely optimizes antibody affinity.</p>
+      <p>But look at what it took: a dedicated organ system, a mutator confined to one locus, and <strong>an externally supplied fitness function</strong>. It improves a phenotype rather than a heritable genotype, and it is the mechanistic origin of B-cell lymphoma. The generalizable question &mdash; could an engineered selective environment be installed in another tissue so that cell-autonomous proliferative advantage is <em>made</em> to correlate with organismal function? &mdash; is your argument's strongest version and is essentially untested. Two accidental instances exist: NOTCH1-mutant clones colonize the oesophagus while impairing tumour growth, and CIDEB-mutant clones push fatty liver the same direction a protective germline null would.</p>
+    </div>
+    <p>On your factual question: <strong>yes, DNA is damaged constantly outside division</strong> &mdash; hydrolysis, oxidation and non-enzymatic methylation proceed at significant rates in vivo, and the endogenous lesion load per cell per day is large. Division does not cause most damage; it <em>fixes</em> unrepaired damage into heritable mutation and adds copying error on top. The correct reframe of the whole front: the aged phenotype is partly the accumulated output of a within-body selection process whose objective is misaligned with yours, so <strong>the intervention target is the suppression machinery</strong> &mdash; apoptotic threshold, contact inhibition, senescence, immune surveillance &mdash; not the selection. That is compatible with steering the phenotype and more actionable than the original, but it forfeits the hope that division improves the genome. It provably degrades it.</p>
+    <p class="fine">One encouraging asymmetry: dose-<em>regulated</em> Arf/p53 mice get cancer resistance <em>and</em> less aging damage, where constitutive p53 hyperactivity does not. The regulation, not the magnitude, is the variable &mdash; and no human data exist on where that frontier sits. Relatedly, late-life somatic telomerase delivery did not raise cancer in mice while germline-lifelong telomere extension is strongly oncogenic in humans (glioma odds ratio 5.27). If the separating variable is timing rather than magnitude, telomerase reopens as a bounded pulse rather than a permanent trade-off.</p>
+  </section>
+
+  <!-- VII -->
+  <section>
+    <div class="sh"><span class="n m">VII</span><h2 class="ser">The brain: real control, possibly wrong sign</h2></div>
+    <p>Your hammer analogy is better supported than I expected, and it fails in translation in a specific and interesting way.</p>
+    <p><strong>In mice the case is strong.</strong> A single hypothalamic manipulation moves median lifespan 23%. Hypothalamic stem-cell ablation shortens life and mid-life implantation extends it. An independent lab reproduced the whole architecture through an unrelated molecule, so it is not one group's artifact.</p>
+    <p><strong>In humans it survives only in weaker forms.</strong> The GnRH direction is confirmed by androgen-deprivation therapy producing a multi-system accelerated-aging phenotype, and the neural inflammatory reflex is now an FDA-approved device &mdash; but at roughly half the potency of biologic drugs, so neural control of inflammation is real and weaker than molecular control. The decisive failure is the growth-hormone axis: the same pathway that buys dwarf mice 40&ndash;60% more life buys Laron-syndrome humans near-total protection from diabetes and cancer and <strong>precisely zero extra lifespan.</strong> The neuroendocrine brain compresses human morbidity; it does not extend human life.</p>
+    <p>Two findings support your deeper structure rather than your regimen. The aged brain loses only about <strong>10% of neocortical neurons from 20 to 90</strong> while losing <strong>43% of apical dendritic spines</strong> in prefrontal cortex &mdash; selectively the thin, plastic ones, whose head diameter predicts cognition better than age does. So you are right that neurons largely do not die, and right that the aged brain is a configuration of intact hardware. And SuperAgers past 80 hold cortical volumes matching adults 20&ndash;30 years younger, with a cingulate region <em>thicker than in younger people</em> &mdash; an existence proof that neural degeneration is not obligatory.</p>
+    <div class="box flag">
+      <div class="bl m">But two findings invert your framing</div>
+      <p><strong>The sign may be wrong.</strong> Centenarians appear to be neurally <em>quieter</em>: long-lived humans downregulate excitatory synaptic genes, and suppressing excitation extends life in worms. If physical training works by controlled overload, neural longevity may work by controlled <em>quiescence</em> &mdash; which would mean a mental routine modelled on a physical one carries the wrong sign for lifespan even where it helps cognition. Nobody has measured excitatory tone in people following an intensive mental regimen.</p>
+      <p><strong>And the arrow currently points inward, not outward.</strong> Plasma from exercised animals rejuvenates aged neurogenesis via a <em>liver</em>-derived enzyme, and aerobic training grows human hippocampus ~2%. The brain is a powerful node in a bidirectional loop, not the master controller &mdash; and today the interventions that transfer best run from the body <em>to</em> the brain.</p>
+    </div>
+    <p class="fine">On the mental-routine proposal specifically: the one large randomized trial that tested transfer to the body was flatly null under intention-to-treat, with grip strength unmoved in every model. Cognitive-reserve mechanisms delay symptom onset &mdash; 0.21 years per year of education, 3.45 years for bilingualism &mdash; while changing neither incidence nor pathology, and then decline faster afterward. That is masking, not maintenance. No trial has ever run a contemplative or cognitive regimen with systemic aging biomarkers as pre-specified primary outcomes. It is the most tractable missing experiment on this front.</p>
+  </section>
+
+  <!-- VIII -->
+  <section>
+    <div class="sh"><span class="n m">VIII</span><h2 class="ser">The loss function</h2></div>
+    <p class="lede">Your instinct that &ldquo;healthy&rdquo; must be replaced by an explicit objective is correct and now well-warranted. Your assumption that the objective is a <em>scalar</em> is not, and the failure is structural rather than a measurement problem better data will fix.</p>
+    <p><strong>The decisive datum:</strong> one intervention, 197 people, and the candidate loss functions disagreed <em>in sign</em> &mdash; one pace-of-aging clock moved favourably at <span class="mc">d=0.3, p&lt;0.01</span> while the others moved in the opposite direction, all non-significant. When your objectives dissent about whether the state improved, there is no fact of the matter about &ldquo;aliveness&rdquo; independent of which objective you nominate.</p>
+    <p>Add the failure modes and the picture is unambiguous. Technical noise between replicates of the same sample reaches several years on major clocks, against intervention effects of <span class="mc">d=0.2&ndash;0.3</span>. Distance-from-normal metrics are directionally blind &mdash; they treat deviations up and down identically, so an optimizer minimizing one would <em>penalize</em> Trappe's octogenarian athletes. And there is a real Pareto conflict on the growth-hormone axis: low IGF-1 predicted longer survival in nonagenarian women, on the very axis that builds the capacity reserve.</p>
+    <div class="box cfg">
+      <div class="bl m">What the evidence says the objective should look like</div>
+      <p><strong>Write it on outcomes, not on a latent age.</strong> There is a structural proof that chronological-age-trained clocks preferentially select <em>non-causal</em> markers, because mortality selection makes genuinely causal loci correlate more weakly with age than neutral ones. The prediction is confirmed brutally in head-to-head testing: first-generation clocks returned mortality hazard ratios of 0.97 and 0.89 &mdash; pure noise &mdash; while a mortality-trained clock returned 2.05.</p>
+      <p><strong>Make it a vector, and include rate.</strong> Rate-of-change adds information beyond state. Your &ldquo;aging is a trajectory&rdquo; claim is operationally vindicated here even as the scalar version fails.</p>
+      <p><strong>And declare slope-versus-offset as the discriminator</strong>, because it is currently conflated everywhere and it is the only thing that distinguishes your hypothesis from a very good training program.</p>
+    </div>
+  </section>
+
+  <!-- IX -->
+  <section>
+    <div class="sh"><span class="n m">IX</span><h2 class="ser">Five experiments that would settle it</h2></div>
+    <ol class="exp">
+      <li><b>Is the weeks-scale recovery constant trainable?</b><span>Serial blood panels at weekly cadence in matched trained and untrained cohorts, or before and after a twelve-month high-dose fitness intervention, estimating the autocorrelation time directly. Heart-rate recovery is trainable; the slow variable that carries the entire ceiling argument has never been an intervention endpoint. <strong>This is the cheapest decisive experiment in the whole review.</strong></span></li>
+      <li><b>Is layer two causal or a passive marker?</b><span>A conditional mutator model with matched methylation state. If somatic mutation burden is causal, artificially raising it should shorten life proportionally even with the suppression machinery intact. This decides whether aging is a spent budget or a steerable trajectory on the genomic axis.</span></li>
+      <li><b>Does moving a clock move an outcome?</b><span>Interventions demonstrably move clocks, and clocks demonstrably correlate with mortality &mdash; but nobody has shown that <em>changing</em> a clock changes a hazard. Until that link exists, every clock-based optimization is optimizing a correlate, and epigenome-wide causal analysis says the standard clocks are not built from causal sites.</span></li>
+      <li><b>Is clonal diversity collapse reversible in principle?</b><span>Single-cell clonal tracking after young autologous or allogeneic stem-cell transplant into an aged host. If the aged niche re-imposes oligoclonality on a diverse graft, the driver is environmental and steerable. If the graft stays diverse, the loss was informational and requires re-seeding.</span></li>
+      <li><b>What cold dose induces CIRBP in humans?</b><span>The only identified longevity mechanism with a demonstrated phenotypic input that works in human cells, and its discoverers explicitly do not know the human dose. Nobody has run the dose-response. It is cheap, safe, and entirely unclaimed.</span></li>
+    </ol>
+  </section>
+
+  <!-- X -->
+  <section>
+    <div class="sh"><span class="n m">X</span><h2 class="ser">Where this leaves the project</h2></div>
+    <p class="lede">Project Ultimate Athleticism survives this review as the strongest single lever available to you, and it is reframed rather than diminished.</p>
+    <p><strong>What is confirmed.</strong> Forty years of aging costs about the same proportional aerobic capacity as three weeks of bed rest &mdash; which is as direct a confirmation as physiology offers that the process is what sustains the system. Lifelong training buys the largest offset any lever has produced. Fifty-two years of it holds muscle capillarization and oxidative enzymes at twenty-five-year-old values. Nothing else on the ledger comes close.</p>
+    <p><strong>What is reframed.</strong> You are not steering toward an attractor. You are holding a <em>forced equilibrium</em> against a substrate that accumulates irreversibly underneath, and the equilibrium is maintained by continuous input rather than by itself. That is a less romantic picture and a more useful one, because it tells you the failure mode: the state is lost by stopping, not by wearing out. It also tells you that the window matters &mdash; two years of training reversed left-ventricular stiffening at 53, and one year of vigorous training did not at 70, though whether that is a closing window or simply an under-dosed one is genuinely unknown.</p>
+    <p><strong>What the project cannot do.</strong> It does not reach the crosslink layer, the mutation stock, the clonal architecture, or maximal heart rate. The maximal lifestyle phenotype leaves skin glycation statistically untouched. Those require engineering, and two of them &mdash; AGE adducts and lipofuscin &mdash; now have candidate enzymes and a Phase 2 trial. That is the honest handoff: <strong>phenotype gets you the offset and the function; the material layer is somebody's laboratory problem, and it is no longer hopeless.</strong></p>
+    <div class="box">
+      <div class="bl m">The thesis, restated as the evidence supports it</div>
+      <p>Aging is a trajectory over a regulatory layer that is genuinely a configuration &mdash; re-readable, bidirectional on a scale of weeks, and steerable by exactly the levers you named &mdash; superimposed on a material layer that is genuinely a consumption. Driving toward higher function demonstrably displaces the trajectory and does not yet demonstrably flatten it. Whether flattening is possible without genotype change is <em>unresolved rather than refuted</em>, and the single measurement that would discriminate has never been made.</p>
+      <p>You asked whether such a subset exists. The correct answer is that one exists in nature, one exists in a mammal, none has been shown to exist for a Gompertzian species reached by steering alone &mdash; and the experiment that would tell you costs a few hundred blood panels.</p>
+    </div>
+  </section>
+
+  <!-- XI -->
+  <section>
+    <div class="sh"><span class="n m">XI</span><h2 class="ser">Audit</h2></div>
+    <p>Twelve agents, six fronts, every headline claim re-checked against primary sources by independent agents instructed to refute. What they caught, published because a review you cannot audit is decoration:</p>
+    <ul>
+      <li><strong>A misattributed lifespan figure.</strong> The 23% median-lifespan result was assigned to the wrong experiment within the correct paper &mdash; it belongs to a transgenic line, not to the hormone treatment it was cited for. Corrected above.</li>
+      <li><strong>A quote from the wrong publication.</strong> The clock-noise figures were traced to a conference abstract rather than the peer-reviewed paper they were attributed to. Reported here as approximate rather than exact.</li>
+      <li><strong>A paywall dressed as a citation.</strong> The <em>Hydra oligactis</em> two-attractor detail was attributed to a paper that is open-access and does not contain most of it; the mortality result belongs to a 2006 paper. Re-attributed.</li>
+      <li><strong>Unverifiable quantities.</strong> The endogenous DNA-lesion rate per cell per day is behind a paywall; the direction is confirmed, the number is not, so it appears above without a figure.</li>
+      <li><strong>A median that does not exist.</strong> The 33% lifespan gain from cyclic reprogramming in progeroid mice appears in a later review; the primary paper never states a median.</li>
+      <li><strong>Two retractions and an artifact in the field itself.</strong> The flagship young-blood factor was a reagent artifact that actually <em>rises</em> with age and inhibits regeneration. A prominent paper claiming exercise reverses mitochondrial DNA damage was retracted in October 2025. The largest epigenetic reversal ever reported rests on six treated rats scored with clocks the authors built, with no survival endpoint and no independent replication in four years.</li>
+      <li><strong>And a formal dispute.</strong> The claim that epigenetic information loss <em>drives</em> aging is contested in the same journal that published it, with an erratum on the record.</li>
+    </ul>
+    <p class="fine" style="margin-top:30px">Two-thirds of verdicts were clean confirmations. The point is not that the research was poor &mdash; it is that at this volume a predictable fraction of plausible citations are subtly wrong in the direction the writer wanted, and in a field with this much money and hope in it, that fraction is higher than usual. Every effect size above that survived verification is reported with its population and design; where a number could not be confirmed it is described rather than quoted. Full digests, including all findings labelled by which way they bear on the thesis, are in <span class="mc">research/attractor-hypothesis.md</span>.</p>
+  </section>
+</div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+</body>
+</html>

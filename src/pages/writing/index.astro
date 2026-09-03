@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { reports } from "../../data/reports";
+
+const posts = (await getCollection("posts")).filter((p) => !p.data.draft);
+const items = [
+  ...reports.map((r) => ({ kind: "Report", href: `/reports/${r.slug}/`, title: r.title, description: r.description, date: new Date(r.date) })),
+  ...posts.map((p) => ({ kind: "Note", href: `/writing/${p.id}`, title: p.data.title, description: p.data.description ?? "", date: p.data.date })),
+].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+const fmt = (d: Date) => d.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+---
+<Base title="Writing">
+  <h1 style="margin-top:52px">Writing</h1>
+  <p class="lede">Research documents and shorter notes.</p>
+  <ul class="index">
+    {items.map((it) => (
+      <li>
+        <a class="row" href={it.href}>
+          <span class="t">{it.title}</span>
+          <p class="d">{it.description}</p>
+          <span class="r sans">
+            <span class={`kind ${it.kind === "Report" ? "report" : ""}`}>{it.kind}</span>
+            <span>{fmt(it.date)}</span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
