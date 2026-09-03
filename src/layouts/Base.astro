@@ -20,16 +20,16 @@ import "../styles/global.css";
   <body>
     <div class="wrap">
       <header class="site">
-        <a class="name sans" href="/">Angel Raychev</a>
-        <nav class="sans">
+        <a class="name" href="/">Angel Raychev</a>
+        <nav>
           <a href="/writing">Writing</a>
           <a href="/about">About</a>
         </nav>
       </header>
       <main><slot /></main>
-      <footer class="site sans">
-        <span>&copy; {new Date().getFullYear()} Angel Raychev</span>
-        <span><a href="/rss.xml">RSS</a></span>
+      <footer class="site">
+        <span>&copy; {new Date().getFullYear()}</span>
+        <a href="/rss.xml">RSS</a>
       </footer>
     </div>
   </body>
