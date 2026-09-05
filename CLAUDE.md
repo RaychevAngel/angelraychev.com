@@ -182,7 +182,7 @@ status belongs in the prose of the piece that needs it, not as site furniture.
 
 ## Current state
 
-One published article: `configuration-and-consumption`. Fourteen ideas listed.
+One published article: `without-changing-the-blueprint`. Fourteen ideas listed.
 
 Three earlier articles (`longevity-matrix`, `capability-stack`, `accumulation-decade`)
 and an About page were removed in the September 2026 rebuild. Recoverable from git
