@@ -2,15 +2,12 @@
 import Base from "./Base.astro";
 const { frontmatter } = Astro.props;
 const fm = frontmatter ?? Astro.props;
-const d = fm.date
-  ? new Date(fm.date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })
-  : null;
+const fmt = (d) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 ---
 <Base title={fm.title} description={fm.description}>
   <article>
-    {d && <p class="postmeta">{d}</p>}
     <h1>{fm.title}</h1>
-    {fm.description && <p class="lede">{fm.description}</p>}
+    {fm.updated && <p class="postmeta">{fmt(fm.updated)}</p>}
     <slot />
   </article>
 </Base>

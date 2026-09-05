@@ -1,33 +1,40 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { reports } from "../data/reports";
+
+// Planned pieces. Titles are working titles, not commitments.
+const ideas = [
+  "AI",
+  "Athleticism",
+  "Brain optimization",
+  "Ending war",
+  "Getting bad stuff out of your system",
+  "God project",
+  "Healthy",
+  "Internet and the digital nomad independence",
+  "Mindset",
+  "Recovery",
+  "The deal with food",
+  "The legal system, governments, institutions",
+  "What is a business",
+  "Who controls the world",
+];
 
 const posts = (await getCollection("posts")).filter((p) => !p.data.draft);
-const items = [
-  ...reports.map((r) => ({ href: `/reports/${r.slug}/`, title: r.title, description: r.description, date: new Date(r.date) })),
-  ...posts.map((p) => ({ href: `/writing/${p.id}`, title: p.data.title, description: p.data.description ?? "", date: p.data.date })),
-].sort((a, b) => b.date.valueOf() - a.date.valueOf());
 
-const fmt = (d: Date) => d.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+
+const entries = [
+  ...posts.map((p) => ({ title: p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) })),
+  ...ideas.map((title) => ({ title, href: null, when: "idea" })),
+].sort((a, b) => a.title.localeCompare(b.title, "en"));
 ---
-<Base description="Writing on physical capability, longevity, and the gap between what gets claimed and what survives checking.">
-  <h1 class="vh">Angel Raychev</h1>
-  <p class="lede">
-    I write about physical capability, longevity, and the gap between what gets
-    claimed and what survives checking.
-  </p>
-
-  <ul class="index">
-    {items.map((it) => (
+<Base home={true}>
+  <ul class="idx">
+    {entries.map((e) => (
       <li>
-        <a href={it.href}>
-          <span class="head">
-            <span class="t">{it.title}</span>
-            <span class="when">{fmt(it.date)}</span>
-          </span>
-          <p class="d">{it.description}</p>
-        </a>
+        {e.href ? <a href={e.href}>{e.title}</a> : <span class="idea">{e.title}</span>}
+        <span class="when">{e.when}</span>
       </li>
     ))}
   </ul>
