@@ -146,10 +146,16 @@ lessons, that is an unattractive foundation.
 
 It is also unnecessary.
 
-The context writer can be treated as a search policy. It proposes lessons and receives
-a reward equal to the held-out improvement caused by each lesson's update. The update
-and evaluation can remain a black box; the writer can be optimized with bandit,
-policy-gradient or preference methods.
+The privileged-information (PI) proposer is itself learnable. Its candidate contexts
+are actions, and the improvement they cause is the reward. It can therefore be optimized
+with bandit, policy-gradient or preference methods while treating the model update and
+evaluation as a black box.
+
+The cheapest version can omit the inner gradient step entirely. Apply each candidate PI
+directly to held-out tasks and reward the proposer by the resulting performance lift.
+This measures cross-task prompt transfer rather than parameter transfer, but it provides
+a cheap surrogate for ranking and training the proposer. Occasional real distillation
+updates can determine how faithfully that surrogate predicts durable improvement.
 
 This avoids second-order derivatives by paying in experiments instead. Cheap proxies
 can narrow the search, but the authoritative criterion remains the same: after the
