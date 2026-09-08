@@ -1,138 +1,208 @@
 ---
 title: "Without Changing the Blueprint"
-description: "Is there a subset of human states that does not degenerate, reachable without editing the genome?"
-updated: 2026-09-05
+description: "Sustainable life as an adaptive process: maintaining the body, improving the mind, and building the knowledge to go further."
+updated: 2026-09-08
 ---
 
 ## What we are actually after
 
-Solving death is not the same problem as extending survival. You can freeze a body for a
-thousand years and return it intact, and nothing about that is living. Preservation and
-life are different targets, and almost everything written about longevity aims at the
-wrong one.
+Solving death is not the same problem as extending survival. Even if a body could be
+preserved for a thousand years and returned intact, those thousand years would not have
+been lived. Preservation and life are different targets.
 
 The target is not staying alive. It is being **more alive than ever** — and the claim
-worth testing is that these are the same problem, because the process of driving yourself
-toward higher function is itself what keeps you going.
+worth testing is that driving yourself toward higher function can be part of what keeps
+you going. The ambition is a life that remains capable, adaptive, and worth living.
 
-That is not a slogan. It is a falsifiable proposition, and this piece tests it.
+The object to build is not one perfect routine. It is a process that can maintain us,
+notice when maintenance is failing, and improve how it works.
 
 ## The claim
 
-We are stuck with our genotype. We are not stuck with our phenotype, and the gap between
-those two is enormous. The blueprint permits a vast range of realised bodies, which means
-that within one life, without editing anything, a person can move a long way through the
-space of possible states — we can evolve as we live, and change shape and form.
+We inherit a genetic blueprint. We do not inherit one fixed phenotype. Within one life,
+without deliberately editing the genome, a person can move a long way through the space
+of possible bodies, capabilities, habits, and ways of thinking.
 
 If that space is large, then somewhere in it there may be a **subset of states that does
-not degenerate and sustains itself**. Reach that subset and you do not die of aging. No
-genetic change required. Getting there is a matter of steering.
+not progressively degenerate and can be maintained indefinitely**. Its existence in humans
+does not follow just from the size of that space. But it is a question worth taking
+seriously: can we reach such a regime, and keep ourselves within it, without editing the
+genome?
 
-Physical training is the main instrument of that steering, because it is the lever with
-the largest demonstrated authority over the phenotype. Sleep, food, the brain, and a
-handful of therapies are the others.
+Physical training is a major instrument of that steering. Project Ultimate Athleticism
+starts from the ambition to expand physical function rather than merely avoid disease.
+Sleep, nutrition, recovery, and medical care belong in the same picture. The brain is not
+just another item on that list: it helps decide how the list is constructed, followed,
+measured, and revised.
 
-Four separate claims are bundled in that paragraph and they do not stand or fall
-together. Taken one at a time:
+There are several different questions here, and they should not be collapsed into one.
 
-**That such a subset exists.** True, and not only in simple animals — more on this below.
+**Possibility:** does human biology permit indefinitely maintained function?
 
-**That aging is a trajectory rather than a consumption.** Half true, and the seam runs
-right through the middle of the body.
+**Reachability:** can we get there with the machinery we already have, without deliberate
+genome editing?
 
-**That it is reachable without genetic change.** Unproven. No species with a rising
-mortality curve has ever been pushed to a flat one by behaviour alone.
+**Maintenance:** can an ongoing pattern of activity, recovery, and repair keep us there
+despite disturbances?
 
-**That the state, once reached, sustains itself.** This is the one that fails, and it
-fails in an instructive way.
+**Learning:** can we improve that pattern, and the tools available to it, faster than
+problems overwhelm us?
 
-## The subset exists
+The narrow hypothesis concerns what we can do without changing the blueprint. The larger
+project of fighting death should not depend on that being the only route that works.
 
-*Hydra oligactis* is one animal with one genome and two stable regimes. Budding asexually
-in warm water it shows negligible senescence — mortality that does not rise with age.
-Drop the temperature, gametogenesis begins, and the same animal enters an exponential
-climb in mortality: ordinary aging, nothing edited, the state alone deciding. Some
-individuals survive that phase and revert to the non-aging regime.
+## Sustainable does not mean doing nothing
 
-That is the hypothesis, observed. Same blueprint, two attractors, environment throwing
-the switch.
+A sustainable state can mean **do this every day**. Eat. Move. Sleep. Recover. Observe.
+Respond. The continued activity is part of the state, not an exception to its
+sustainability. A living organism is not a battery expected to run forever after charging.
 
-And it is not confined to animals built unlike us. The naked mole-rat is a placental
-mammal whose daily hazard of death sits near 8 in 100,000 and does not rise across thirty
-years, while lean mass, fat mass, bone density and female fertility hold roughly constant
-from year two to year twenty-four. Whatever bounds human life, it is not a law of physics
-that mammals must decay.
+An earlier version of this argument treated deterioration after stopping exercise as
+evidence against a self-sustaining regime. That was the wrong test. Removing maintenance
+and observing failure does not show that continued maintenance cannot work.
 
-Two things cut against reading too much into this. *Hydra* has almost no tissue it cannot
-replace, where we carry a lens made once in the womb and a heart that exchanges under
-half its cells in a lifetime. And every mammalian mechanism found so far is written in
-the genome rather than reachable by behaviour: when the mole-rat's hyaluronan synthase was
-transferred into a mouse — a germline edit, precisely the intervention the claim says is
-unnecessary — it bought 4.4% of median lifespan.
+Nor does sustainability require one routine to remain correct forever. The organism
+changes, circumstances change, and knowledge changes. A sustainable process may have to
+notice those changes and alter its own maintenance. It can have fluctuations and
+recoveries without a progressive loss of the ability to recover.
 
-## The body is a tool the brain keeps
+The difficult claim is that this process can keep working indefinitely. Its need for
+food, effort, learning, and repair is not an objection to the definition. Whether those
+activities can actually keep pace with degeneration is the question.
 
-Think of the body as a hammer. A hammer can be maintained, hardened, protected, and kept
-working perfectly for a thousand years, because something outside it is doing the
-maintaining. Now make the hammer enormously more complex, wire it to its owner in both
-directions, and let it send signals back — but leave the owner deciding how to respond.
-That is roughly the brain's relationship to the body, and the brain's authority over it
-is extraordinary.
+## What nature establishes
 
-There is something stranger still. The brain changes without needing input from the
-outside at all. Signals can loop internally with no sensory information arriving, and the
-structure rewrites itself in the process — unlike current neural networks, which are
-static during a forward pass, this one is altered by running. That is meta-learning
-happening inside us continuously. If the brain can change itself, and the brain governs
-the body, then the question is whether some reachable brain state exercises enough
-control to hold the whole system stable indefinitely. And if there is a physical routine,
-there should be a mental one — perhaps a superset of it — because the principle that
-governs muscle governs neurons too: **use it or lose it**.
+In cold-sensitive strains of *Hydra oligactis*, a temperature change can induce sexual
+reproduction and progressive degeneration. Other strains resist this aging response.
+The work connects environmental conditions, stem-cell maintenance, and aging rather than
+treating decline as a uniform countdown. [Primary study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6983715/)
 
-The first part of that survives contact with the evidence better than expected. In mice a
-single manipulation of the hypothalamus moves median lifespan by 23%, and an independent
-laboratory reproduced the architecture through an unrelated molecule. Systemic control
-from one brain region is real.
+In captive naked mole-rats, a large demographic study found no increase in mortality
+hazard with age over the observed period. That is a striking mammalian counterexample to
+the usual demographic pattern. It is not proof of immortality: a nonzero risk can remain
+constant, and an observation period is finite. [Primary study](https://elifesciences.org/articles/31157)
 
-Your instinct about neurons is also right, and it corrects a widespread error. Neurons
-largely do not die in normal aging — the brain loses roughly ten percent of neocortical
-neurons between twenty and ninety, while losing **43%** of the thin, plastic dendritic
-spines in prefrontal cortex. The hardware persists and the wiring degrades. That is a
-configuration, not a demolition. And people in their eighties exist with cortical volumes
-matching adults twenty to thirty years younger, so neural decay is not obligatory.
+These examples justify investigating biological maintenance. They do not establish that
+a human can reach the same regime through behavior, or that different species share the
+same available repair machinery. The existence of an interesting state somewhere in
+biology and its accessibility to us are different claims.
 
-Where it breaks is translation and direction. The growth-hormone axis that buys dwarf
-mice 40–60% more life buys people with the equivalent human condition near-total
-protection from diabetes and cancer and **precisely zero extra lifespan**. The
-neuroendocrine brain compresses illness; it does not extend life.
+## The brain changes the trajectory
 
-And the sign may be inverted. Long-lived humans appear to *downregulate* excitatory
-synaptic genes, and suppressing excitation extends life in worms. If physical training
-works by controlled overload, neural longevity may work by controlled quiet — in which
-case a mental routine modelled on a physical one pushes the wrong way. Meanwhile the
-transfer that does work runs inward: plasma from exercised animals rejuvenates the aging
-brain through a liver enzyme. Today the brain is a powerful node in a loop, not the
-master of it, and the interventions that travel best go from body to brain.
+The brain is where the importance of staying alive can become an organizing objective.
+It can change what a person repeatedly does, what they pay attention to, which risks they
+accept, and what they learn next. Its influence is not exhausted by the direct
+physiological effect of stimulating one brain region.
+
+Consider two life trajectories available to someone: one keeps harmful habits in place;
+the other changes them and maintains the change. The difference need not begin with a new
+molecule. It can begin with a different way of thinking and acting. In a large US cohort,
+people who stopped smoking at ages 25–34 gained approximately ten years of life expectancy
+relative to people who continued. That is evidence for the scale of sustained behavioral
+change, not a test of a particular method for rewiring the brain.
+[Primary study](https://www.nejm.org/doi/full/10.1056/NEJMsa1211128)
+
+Physical training and brain optimization are therefore not rival explanations. A changed
+mind can be what makes training happen, keeps recovery from being neglected, or turns a
+warning sign into a medical appointment. Medical treatment, social support, and better
+surroundings can help make those changes possible. The point is not that every illness
+is a choice. It is that the system making choices is itself a powerful place to intervene.
+
+There is a more consequential step beyond adopting good habits: **become better at finding
+out what to do**. Keep an understanding of your current condition, an estimate of where
+it is going, and a willingness to revise the plan. Notice silent deterioration where
+measurement can reveal it. Notice when confidence exceeds evidence. Notice when a
+routine that once worked has stopped working.
+
+Bryan Johnson is useful here as an example of an approach rather than a promised lifespan.
+His published account describes measurement, a medical and research team, interventions,
+mistakes, and revisions. The interesting decision is not simply to follow today's
+protocol. It is to organize a life around continuously improving the protocol.
+[His account of Blueprint](https://www.bryanjohnson.com/articles/project-blueprint)
+
+His current biological state does not have to be indefinitely sustainable for that
+decision to matter. It can lead him to seek better states, detect problems, fund work,
+and use knowledge that was unavailable when he began. His resources expand those
+possibilities. The exact number of years that will add to his life is not established,
+and no amount of monitoring guarantees that every problem will be detectable or fixable.
+But the value of an adaptive strategy is not limited to the value of its first routine.
+
+The brain is both part of what must be maintained and part of how maintenance is
+organized. Improving the person includes improving their ability to improve the process.
+
+## Ten thousand minds, not ten thousand copies
+
+Now imagine ten thousand people making that decision. They have money, different skills,
+connections across industries, and twenty or thirty years of commitment. They recruit
+researchers, build companies, and organize millions of people around the problem.
+
+The opportunity is not ten thousand people copying one man's supplement list. One group
+improves testing. Another makes it cheaper. Another develops monitoring that can detect
+useful changes earlier. Others investigate repair mechanisms, run clinical studies, or
+make proven interventions easier to use. They document what they do so that a result in
+one place can change the next experiment somewhere else.
+
+That changes the available choices. A person is no longer only navigating today's
+biological and technological constraints. People working together can develop ways to
+measure and intervene that did not exist when they started.
+
+Lower costs matter because participation should not end with wealthy founders. A useful
+measurement that becomes inexpensive can reach more people and support better studies.
+Reliable findings can improve care; accessible care can make maintaining health less
+dependent on exceptional money, motivation, or expertise. The research program should
+expand who can benefit, not build a permanent luxury category.
+
+AI could help connect findings across fields, compare records, identify contradictions,
+propose experiments, and keep track of what remains uncertain. Its outputs still need
+checking. The goal is a cumulative learning process in which people, laboratories,
+clinicians, and AI improve the next decision together.
+
+This makes **reward assignment** a central research problem. What counts as improvement?
+Which intervention caused it? How much confidence should we have? Did it improve one
+measure while harming something else? Did it help this person, or does the result transfer
+to others? A good-looking biomarker is not automatically evidence of a longer or better
+life. Neither is more testing automatically more useful knowledge.
+
+We need increasingly accurate estimates of condition and direction, updated as useful
+evidence arrives. Continuous monitoring is valuable where it can change a decision, not
+because every additional reading deserves an intervention. Noise, missing information,
+and uncertainty belong in the estimate rather than disappearing behind a score.
+
+For the learning to compound, records must include protocols, comparators, failures,
+adverse effects, and changes of plan—not only successes. Where causal questions require
+controlled trials, a collection of personal experiments is not a substitute. Consent,
+privacy, and appropriate clinical oversight are part of making the work possible and
+trustworthy. Funding and recognition should reward reliable corrections, including the
+discovery that a popular idea does not work.
+
+This is how the brain's influence can extend beyond its own body: it can help organize
+a system that improves humanity's ability to maintain bodies. The proposal is to increase
+the rate of useful learning, reduce the cost of acting on it, and keep doing both for
+decades. What that ultimately makes possible is a question to pursue, not a result we
+already possess.
 
 ## What the physical routine actually buys
 
-Lifelong endurance training produces the largest displacement any lever has managed.
-Eighty-one-year-old cross-country skiers hold an aerobic capacity of 38 ml/kg/min against
-21 in untrained men the same age — the highest ever recorded above eighty, and roughly
-what untrained men forty years younger manage. Against a threshold near 18, below which
-independent living becomes difficult, one group has twenty points of headroom and the
-other has three.
+The physical routine is a concrete part of this project, not something displaced by the
+importance of the brain. A 2013 study measured an aerobic capacity of 38 ml/kg/min in nine
+lifelong endurance athletes averaging 81 years of age, compared with 21 in six healthy,
+untrained men of similar age. The athletes had a large functional reserve above a commonly
+used aerobic frailty threshold near 18. Their performance was comparable to that of
+untrained men decades younger. This was a small, cross-sectional comparison—not an
+experiment separating lifelong training from every other difference between the groups.
+[Primary study](https://pmc.ncbi.nlm.nih.gov/articles/PMC3544519/)
 
-Then the hard part. The curve still descends, and it still crosses.
+That is a meaningful difference in the life someone can live. It is not, by itself,
+evidence of indefinitely maintained function.
 
 <figure>
-<svg viewBox="0 0 640 300" role="img" aria-label="Three aerobic capacity trajectories against age: untrained, lifelong trained, and the flat trajectory the claim requires.">
+<svg viewBox="0 0 640 300" role="img" aria-label="Conceptual aerobic capacity trajectories: declining function with different reserves, and hypothetical maintained function. Not fitted study data.">
   <line x1="60" y1="30" x2="60" y2="240" stroke="#000" stroke-width="1"/>
   <line x1="60" y1="240" x2="610" y2="240" stroke="#000" stroke-width="1"/>
   <line x1="60" y1="200" x2="610" y2="200" stroke="#000" stroke-width="1" stroke-dasharray="3 3"/>
   <text x="606" y="194" text-anchor="end" font-family="monospace" font-size="10" fill="#000">independence threshold</text>
   <path d="M60 62 L610 74" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="5 4"/>
-  <text x="330" y="58" font-family="monospace" font-size="10" fill="#000">what the claim requires</text>
+  <text x="330" y="58" font-family="monospace" font-size="10" fill="#000">hypothetical maintained function</text>
   <path d="M60 62 C 180 84, 300 112, 400 138 S 520 182, 566 200" fill="none" stroke="#000" stroke-width="2"/>
   <text x="66" y="80" font-family="monospace" font-size="10" fill="#000">trained</text>
   <path d="M60 112 C 170 134, 270 158, 350 178 S 440 197, 470 200" fill="none" stroke="#767676" stroke-width="2"/>
@@ -142,20 +212,21 @@ Then the hard part. The curve still descends, and it still crosses.
   <text x="610" y="258" text-anchor="end" font-family="monospace" font-size="10" fill="#767676">105</text>
   <text x="335" y="278" text-anchor="middle" font-family="monospace" font-size="10" fill="#767676">age</text>
 </svg>
-<figcaption>Training moves the intercept. It has not been shown to change the slope. The dashed line is what the claim needs and what nothing has yet produced.</figcaption>
+<figcaption>Conceptual illustration, not fitted study data. Higher functional reserve and indefinitely maintained function are different claims. The dashed trajectory illustrates the latter; it does not require every measurement to remain constant.</figcaption>
 </figure>
 
-Those skiers were displaced four decades and were still eighty-one. Longitudinal work
-finds the same relative rate of decline across every level of physical activity. Training
-moves where the line starts, not how steeply it falls.
+Longitudinal studies of master athletes report continued age-related decline, with changes
+in training volume also relevant. They do not establish a single unchangeable slope, nor
+do they demonstrate that training eliminates aging.
+[Longitudinal study](https://pubmed.ncbi.nlm.nih.gov/11581561/)
 
-Which brings the fourth claim down. Detrained masters athletes decline at **up to three
-times** the sedentary rate. What training builds is a forced equilibrium held up by
-continuous input — remove the input and it falls faster than if it had never been built.
+Detraining answers a different question: what happens when part of the maintenance is
+withdrawn? Losing capacity after stopping does not make the previous activity pointless,
+and it does not refute a regime whose definition includes continuing the activity.
 
-So the sentence to keep is *the process of driving toward higher function is what keeps
-us going*, and the sentence to drop is *the state sustains itself*. Those sound similar
-and are nearly opposite. The mechanism was right and the conclusion overshot it.
+The next question is whether an adaptive program can preserve more function, improve
+recovery, and respond to emerging limitations. Today's routine need not be the last
+routine. But its replacement must earn confidence through outcomes, not just novelty.
 
 ## "Healthy" is not a target
 
@@ -175,21 +246,24 @@ beta-alanine saturation point is unknown, because standard protocols deliver aro
 cumulative against an estimated 1,000–1,500 g needed to approach saturation. Nobody has
 gone far enough to find the ceiling.
 
-One correction. The objective cannot be a single number. In one 197-person trial the
+One caution. No single measurement should stand in for the whole objective. In one 197-person trial the
 candidate measures of biological age **disagreed about the sign** — one said the
 intervention improved things, the others said the opposite. There is also a structural
 proof that clocks trained on chronological age preferentially select markers that are
 *not* causal, and it shows: first-generation clocks return mortality hazard ratios of 0.97
 and 0.89, which is noise, while one trained on mortality returns 2.05.
 
-So: a vector, not a scalar. Written on outcomes rather than on a latent "biological age".
-Including rate of change, not only state.
+Keep the underlying outcomes visible: capability, disease, adverse effects, quality of
+life, and survival, together with their rates of change and the uncertainty of the
+estimates. A decision may require combining them, but the trade-offs should be explicit.
+Optimizing the score must not become a substitute for improving the person.
 
 ## The other levers, graded
 
-Sleep, food and the therapies each turned out to produce a genuine supra-normal **state**
-and no supra-normal **trait**. That pattern repeated so exactly across all three that it
-is probably the finding.
+Sleep, food, and therapies need to be evaluated as parts of a maintained process. A
+benefit need not persist after withdrawing its cause to be useful. The questions are what
+it improves, at what cost and dose, for whom, and whether the benefit can be maintained.
+None of the findings below establishes indefinitely sustained human function.
 
 **Sleep** has a hard stop. Given sixteen hours a day of opportunity, healthy young adults
 asymptote at 8.9 hours and older adults at 7.4 — roughly an hour of exploitable headroom,
@@ -266,7 +340,7 @@ convergence: a search with a misaligned objective and no pressure to stay divers
 half of the argument that survives is the *filter* — architecture and immune surveillance
 set the outcome, not the supply of mutations.
 
-## What steering does not reach
+## What current steering has not shown
 
 One experiment shows the seam inside a single population of cells. Reprogramming blood
 cells from donors aged 21 to 100 erases the epigenetic age signature completely, while
@@ -286,46 +360,75 @@ never turn over — cartilage collagen has a half-life of 117 years, the lens of
 still holds protein made the year you were born, elastin synthesis stops at puberty.
 Maximum heart rate falls 0.7 beats a year and is measurably indifferent to exercise.
 
-The clearest measurement of that boundary: 182 athletes with more than ten years of
+One measurement relevant to that boundary: 182 athletes with more than ten years of
 high-level training had no less glycation in their skin than 34 untrained controls, with
-training duration explaining 1.2% of the variance. The maximal lifestyle phenotype does
-not touch the cross-link layer. What it reaches is function on top of it.
+training duration explaining 1.2% of the variance. That comparison did not show that
+training reduced this measure of accumulated damage. It does not define the limits of
+every possible maintenance or repair strategy.
 
 Whether that second layer *causes* the aged phenotype or merely accumulates alongside it
-is the most important unanswered question here. If it is a passive marker, the whole
-argument survives nearly intact. If it is load-bearing, no amount of steering reaches the
-mechanism.
+is important, but it is not the only question. We also need to know whether causal damage
+can be prevented, repaired, removed, or compensated for. Causal does not mean
+irreparable. A marker being adjustable does not mean adjusting it helps.
 
-## What would settle it
+This is where the adaptive and collective parts of the argument matter. A mechanism that
+today's routine cannot reach becomes a research target. That does not make a solution
+inevitable, but neither does the failure of one routine make the target permanently
+unreachable. Evidence about present interventions is not a proof about all future ones.
 
-1. **Is the weeks-scale recovery constant trainable?** Recovery time after a perturbation
-   grows roughly fourfold between forty and ninety, and extrapolating it implies a ceiling
-   near 120–150 years. The fast version of that measure — heart rate recovery — is
-   trainable. The slow version, which carries the entire ceiling argument, has never been
-   an intervention endpoint. A few hundred serial blood panels would answer it.
-2. **Is the damage layer causal or a passive marker?** A conditional mutator with matched
-   epigenetic state. This decides whether aging is a spent budget or a steerable path.
-3. **Does moving a clock move an outcome?** Interventions move clocks and clocks predict
-   mortality, but nobody has shown that changing one changes the other.
-4. **Is stem cell diversity collapse reversible?** Clonal tracking after a young graft
-   into an aged host. If the aged niche re-imposes dominance, the cause is environmental.
-5. **What cold dose induces CIRBP in humans?** The only identified longevity mechanism
-   with a demonstrated behavioural input that works in human cells — and its discoverers
-   do not know the human dose.
+## What would move the argument forward
+
+No short experiment establishes indefinite life. We can nevertheless make the argument
+more precise and test the steps it depends on.
+
+1. **Can adaptive maintenance outperform a fixed routine?** Compare strategies on
+   meaningful outcomes, record how decisions change, and account for the resources and
+   attention each strategy receives. A compelling personal story is not the comparison.
+2. **Can we improve recovery as well as present performance?** Measure whether people
+   maintain function and recover from setbacks over time. A better snapshot is not enough
+   if the ability to recover keeps deteriorating.
+3. **Which damage is causal, and which repair is possible?** Separate mechanisms that
+   limit function from markers that travel alongside decline. Then test interventions
+   against the mechanism and the outcome, not merely the marker.
+4. **Does changing a proxy improve the outcome it is meant to represent?** This is the
+   reward-assignment problem. Prediction, causal influence, and intervention benefit
+   must be distinguished, including trade-offs and adverse effects.
+5. **Do cheaper and more frequent measurements improve decisions?** Test whether earlier
+   information changes care usefully, rather than simply increasing testing, false alarms,
+   or interventions without demonstrated benefit.
+6. **Does the collective actually learn faster?** Make predictions and protocols
+   inspectable, share failures, replicate promising findings, and assess whether AI and
+   shared infrastructure improve the reliability and cost of discovering what works.
 
 ## Where this leaves it
 
-Aging is a trajectory across a layer that genuinely behaves like a configuration, sitting
-on a layer that genuinely behaves like a consumption. Driving toward higher function
-demonstrably moves the trajectory. It has not been shown to flatten it.
+There are three connected things to improve: the condition of the body, the person's
+ability to maintain and improve that condition, and the collective ability to discover
+better ways of doing both.
 
-Whether flattening is possible without touching the genome is unresolved rather than
-refuted, and the measurement that would discriminate has never been made.
+The brain matters because it can organize activity at all three levels. It can learn a
+routine, revise the routine, and help build the science that makes a better routine
+possible. Its current strategy can be incomplete while its commitment to learning changes
+what strategies become available later.
 
-## What did not survive checking
+**Sustainable life would be a sustained process, not a maintenance-free endpoint.** It
+could require daily work and continuous correction. The stronger ambition is to make
+that work increasingly effective, accessible, and informed by shared experience.
 
-Every headline number here was re-checked against its primary source by a process
-instructed to refute it. Recorded because a review nobody can audit is decoration.
+Whether this can prevent progressive human degeneration indefinitely, especially without
+editing the genome, remains unproven. That uncertainty is the research problem. It is
+not a reason to confuse today's limits with the limits of a civilization deliberately
+working to change them.
+
+The aim is not to freeze our current state. It is to become better at staying alive—and
+to make that ability improve with us.
+
+## Notes from the initial literature review
+
+The initial review uncovered attribution errors and contested findings. These notes
+record its corrections and disputes, not a proof of the larger hypothesis. The ability
+to discover and correct mistakes is part of the argument, including mistakes in this
+piece itself.
 
 A lifespan figure was assigned to the wrong experiment inside the right paper. A set of
 measurement-noise numbers came from a conference abstract rather than the peer-reviewed
