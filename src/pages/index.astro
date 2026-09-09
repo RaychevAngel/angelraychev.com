@@ -22,7 +22,7 @@ const ideas = [
 
 const posts = (await getCollection("posts")).filter((p) => !p.data.draft);
 
-const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
 const entries = posts
   .map((p) => ({ title: p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) }))
