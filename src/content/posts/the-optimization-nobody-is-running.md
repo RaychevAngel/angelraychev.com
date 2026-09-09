@@ -44,6 +44,22 @@ That is four choices, and three of them are provably the right ones. It is worth
 precise about which, because the reasons are stronger than the intuitions that produced
 them.
 
+And here is where the derivation lands, stated plainly, so you can read the machinery
+knowing what it is for.
+
+Reward is a rate rather than a number per step. It accrues for as long as you are alive,
+and what it pays for is the *level* of Φ — being capable, not becoming capable. No discount
+factor is written down, but there is one anyway, because the mortality hazard supplies it:
+the rate at which the future matters is state-dependent and therefore partly under your
+control. Losing capability costs strictly more than regaining it pays, and that asymmetry
+is not a psychological quirk but the condition that stops the objective being farmable.
+Survival is not a term in this sum at all — it is a constraint on which policies are
+allowed. Φ is a vector and cannot be collapsed into a score. And two things need separate
+terms because a rate cannot express them: a floor on the level, and whether you can still
+learn.
+
+Every section below is the argument that one of those is forced.
+
 ## Reward is a rate, not a number
 
 The reward is a **density** — something per unit time — rather than a number attached to
