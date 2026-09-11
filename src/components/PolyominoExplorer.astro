@@ -1,0 +1,73 @@
+<section class="explorer" aria-labelledby="explorer-title">
+  <h2 id="explorer-title">Try an arm tuple</h2>
+  <p>Each number counts squares beyond the central square. Change the arms to compare the shapes and the regions they can tile.</p>
+  <form id="arm-form">
+    <div class="arm-inputs">
+      {[["a", "East", 4], ["b", "North", 1], ["c", "West", 1], ["d", "South", 0]].map(([name, direction, value]) => (
+        <label>{name} · {direction}<input type="number" name={String(name)} min="0" max="10000" step="1" value={value} required /></label>
+      ))}
+    </div>
+    <button type="submit">Show shape</button>
+  </form>
+  <div class="examples" aria-label="Example shapes">
+    <button type="button" data-arms="4,1,1,0">First exception</button>
+    <button type="button" data-arms="5,1,1,0">Second exception</button>
+    <button type="button" data-arms="3,6,2,0">Four-copy tiling</button>
+    <button type="button" data-arms="4,1,2,1">Tiling cross</button>
+    <button type="button" data-arms="2,2,2,2">Non-tiling cross</button>
+  </div>
+  <svg id="arm-drawing" viewBox="0 0 320 200" role="img" aria-label="The selected polyomino"></svg>
+  <div aria-live="polite" aria-atomic="true">
+    <p id="arm-result"></p>
+    <div class="tablewrap"><table class="capabilities"><caption class="vh">Tileable regions</caption><thead><tr><th>R</th><th>HS</th><th>BS</th><th>Q</th><th>S</th><th>HP</th><th>Plane</th></tr></thead><tbody><tr id="arm-capabilities"></tr></tbody></table></div>
+    <p class="explanation" id="arm-reason"></p>
+  </div>
+  <noscript>The table and proofs below give the classifications without JavaScript.</noscript>
+</section>
+<script>
+  import { classifyArms } from "../lib/polyomino.js";
+  const form = document.querySelector<HTMLFormElement>("#arm-form")!;
+  const fields = Array.from(form.querySelectorAll<HTMLInputElement>("input"));
+  const svg = document.querySelector<SVGSVGElement>("#arm-drawing")!;
+  const result = document.querySelector("#arm-result")!;
+  const reason = document.querySelector("#arm-reason")!;
+  const cells = document.querySelector("#arm-capabilities")!;
+  const NS = "http://www.w3.org/2000/svg";
+  function redraw() {
+    if (!form.reportValidity()) return;
+    const p = fields.map(f => Number(f.value));
+    const info = classifyArms(p);
+    const [a,b,c,d] = p;
+    const width = a+c+1, height = b+d+1;
+    svg.setAttribute("viewBox", `${-c-0.7} ${-b-0.7} ${width+1.4} ${height+1.4}`);
+    svg.setAttribute("aria-label", `P(${p.join(", ")}), ${info.family}, area ${1+a+b+c+d} squares`);
+    svg.replaceChildren();
+    function rect(x:number,y:number,w:number,h:number,color:string) {
+      if (w === 0 || h === 0) return;
+      const r = document.createElementNS(NS,"rect");
+      Object.entries({x,y,width:w,height:h,fill:color,stroke:"#222","stroke-width":0.04}).forEach(([k,v])=>r.setAttribute(k,String(v)));
+      svg.append(r);
+    }
+    rect(1,0,a,1,"#c3dbe8"); rect(0,-b,1,b,"#ecd3ad"); rect(-c,0,c,1,"#d1dfca"); rect(0,1,1,d,"#e4c6d7"); rect(0,0,1,1,"#222");
+    if (width+height < 90) {
+      for (let x=-c+1; x<a+1; x++) { if(x===0 || x===1)continue; const l=document.createElementNS(NS,"path"); l.setAttribute("d",`M${x} 0v1`); l.setAttribute("stroke","#555"); l.setAttribute("stroke-width","0.018");svg.append(l); }
+      for (let y=-b+1;y<d+1;y++) { if(y===0 || y===1)continue;const l=document.createElementNS(NS,"path");l.setAttribute("d",`M0 ${y}h1`);l.setAttribute("stroke","#555");l.setAttribute("stroke-width","0.018");svg.append(l); }
+    }
+    const names = {R:"rectangle",BS:"bent strip; no half-strip",S:"strip; no quadrant",Plane:"plane only",None:"cannot tile the plane"};
+    result.textContent = `P(${p.join(", ")}) · ${info.family} · ${names[info.level as keyof typeof names]}`;
+    reason.textContent = `${info.reason} Rep-tile: ${info.reptile ? "yes" : "no"}.`;
+    cells.replaceChildren(...Object.values(info.regions).map(v=>{const td=document.createElement("td");td.textContent=v===null?"?":v?"Yes":"No";return td;}));
+  }
+  form.addEventListener("submit",e=>{e.preventDefault();redraw();});
+  fields.forEach(f=>f.addEventListener("change",redraw));
+  document.querySelectorAll<HTMLButtonElement>("[data-arms]").forEach(button=>button.addEventListener("click",()=>{button.dataset.arms!.split(",").forEach((v,i)=>fields[i].value=v);redraw();}));
+  redraw();
+</script>
+<style>
+  .explorer{border:1px solid var(--rule);padding:22px;margin:30px 0 44px}
+  h2{margin:0 0 14px}.explorer p{margin-bottom:18px}.arm-inputs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px}
+  label{font-size:12px}input{display:block;width:100%;margin-top:6px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
+  button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;padding:6px 10px;cursor:pointer}button:hover{background:#eee}button:focus-visible,input:focus-visible{outline:2px solid black;outline-offset:2px}
+  .examples{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}#arm-drawing{width:100%;height:200px;margin:20px 0}.capabilities th,.capabilities td{padding:5px 8px 5px 0;text-align:center;font-size:12px}.explanation{font-size:12px;line-height:1.7}
+  @media(max-width:480px){.explorer{padding:14px}.arm-inputs{grid-template-columns:repeat(2,minmax(0,1fr))}#arm-drawing{height:160px}}
+</style>

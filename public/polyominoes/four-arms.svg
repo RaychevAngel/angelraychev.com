@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 332" role="img" aria-labelledby="title">
+<title id="title">Four arms counted from a shared central cell</title>
+<rect width="100%" height="100%" fill="white"/>
+<defs><clipPath id="crop"><rect x="12" y="12" width="396" height="308"/></clipPath></defs>
+<g clip-path="url(#crop)">
+<rect x="56" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="100" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="144" y="232" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="144" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="144" y="144" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="144" y="100" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="144" y="56" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="188" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="232" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="276" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<rect x="320" y="188" width="44" height="44" fill="#fff" stroke="#bbb" stroke-width="0.35"/>
+<path d="M56,232L56,188 M56,232L100,232 M56,188L100,188 M100,232L144,232 M100,188L144,188 M144,276L144,232 M188,276L188,232 M144,276L188,276 M144,188L144,144 M188,188L188,144 M144,144L144,100 M188,144L188,100 M144,100L144,56 M188,100L188,56 M144,56L188,56 M188,232L232,232 M188,188L232,188 M232,232L276,232 M232,188L276,188 M276,232L320,232 M276,188L320,188 M364,232L364,188 M320,232L364,232 M320,188L364,188" stroke="black" stroke-width="1.4" fill="none"/>
+<text x="166.0" y="210.0" text-anchor="middle" dominant-baseline="central" font-family="monospace" font-size="24.200000000000003" fill="black">0</text>
+<text x="298.0" y="166.0" text-anchor="middle" dominant-baseline="central" font-family="monospace" font-size="24.200000000000003" fill="black">a</text>
+<text x="210.0" y="122.0" text-anchor="middle" dominant-baseline="central" font-family="monospace" font-size="24.200000000000003" fill="black">b</text>
+<text x="78.0" y="166.0" text-anchor="middle" dominant-baseline="central" font-family="monospace" font-size="24.200000000000003" fill="black">c</text>
+<text x="210.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="monospace" font-size="24.200000000000003" fill="black">d</text>
+</g>
+</svg>

@@ -3,6 +3,7 @@ const { title, description, home = false } = Astro.props;
 const NAME = "Angel Ivanov Raychev";
 const full = title ? `${title} — ${NAME}` : NAME;
 import "../styles/global.css";
+import "katex/dist/katex.min.css";
 ---
 <!doctype html>
 <html lang="en">

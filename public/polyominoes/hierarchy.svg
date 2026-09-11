@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 560" role="img" aria-labelledby="title"><title id="title">Golomb hierarchy, including the rep-tile branch</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#555"/></marker></defs>
+<path d="M300,62 L125,136" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M300,62 L440,91" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M125,192 L240,276" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M440,147 L440,181" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M440,237 L240,276" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M440,237 L475,276" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M240,332 L355,376" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M475,332 L355,376" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M355,432 L355,476" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="230" y="11" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="300" y="31" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">R</text><text x="300" y="51" text-anchor="middle" font-family="monospace" font-size="12">Rectangle</text>
+<rect x="55" y="141" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="125" y="161" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">I</text><text x="125" y="181" text-anchor="middle" font-family="monospace" font-size="12">Rep-tile</text>
+<rect x="370" y="96" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="440" y="116" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">HS</text><text x="440" y="136" text-anchor="middle" font-family="monospace" font-size="12">Half-strip</text>
+<rect x="370" y="186" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="440" y="206" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">BS</text><text x="440" y="226" text-anchor="middle" font-family="monospace" font-size="12">Bent strip</text>
+<rect x="170" y="281" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="240" y="301" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">Q</text><text x="240" y="321" text-anchor="middle" font-family="monospace" font-size="12">Quadrant</text>
+<rect x="405" y="281" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="475" y="301" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">S</text><text x="475" y="321" text-anchor="middle" font-family="monospace" font-size="12">Strip</text>
+<rect x="285" y="381" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="355" y="401" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">HP</text><text x="355" y="421" text-anchor="middle" font-family="monospace" font-size="12">Half-plane</text>
+<rect x="285" y="481" width="140" height="50" rx="2" fill="white" stroke="#888"/>
+<text x="355" y="501" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold">Plane</text><text x="355" y="521" text-anchor="middle" font-family="monospace" font-size="12">Plane</text>
+</svg>

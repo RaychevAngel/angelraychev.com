@@ -1,6 +1,24 @@
 import { defineConfig } from "astro/config";
 import fs from "node:fs";
 import path from "node:path";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import { unified } from "@astrojs/markdown-remark";
+
+function wrapTables() {
+  return (tree) => {
+    function walk(node) {
+      if (!node.children) return;
+      node.children = node.children.map((child) => {
+        walk(child);
+        return child.type === "element" && child.tagName === "table"
+          ? { type: "element", tagName: "div", properties: { className: ["tablewrap"] }, children: [child] }
+          : child;
+      });
+    }
+    walk(tree);
+  };
+}
 
 // Astro's dev server (Vite) does not resolve "/dir/" to "/dir/index.html" for
 // files served from public/. Static hosts (GitHub Pages) do. Without this,
@@ -27,6 +45,12 @@ function publicDirectoryIndex() {
 
 export default defineConfig({
   site: "https://angelraychev.com",
-  markdown: { shikiConfig: { theme: "github-light" } },
+  markdown: {
+    shikiConfig: { theme: "github-light" },
+    processor: unified({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex, wrapTables],
+    }),
+  },
   vite: { plugins: [publicDirectoryIndex()] },
 });
