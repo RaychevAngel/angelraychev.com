@@ -10,6 +10,8 @@ $$
 
 All parameters are nonnegative integers. Every placement is an integer translate of a D4 rotation or reflection. Exact tiling means every region cell is covered exactly once and no tile has a cell outside that region. Here N={0,1,2,...}. A rep-tiling uses congruent original tiles to tile a strictly enlarged similar copy.
 
+In the T sections write $T=P(a,b,c,0)$, with $a\ge c\ge1$ and $b\ge1$, unless a construction explicitly allows the reflected order. The crossbar is the horizontal segment of $a+c+1$ cells; the perpendicular stem consists of its $b$ further cells. The cross and L sections state their own normal forms.
+
 Contents:
 
 - [1. Hierarchy implications](#1-hierarchy-implications)
