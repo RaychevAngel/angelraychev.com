@@ -8,7 +8,7 @@ $$
 P(a,b,c,d)=\{(x,0):-c\le x\le a\}\cup\{(0,y):-d\le y\le b\}.
 $$
 
-All parameters are nonnegative integers. Every placement is an integer translate of a D4 rotation or reflection. Exact tiling means every region cell is covered exactly once and no tile has a cell outside that region. Here N={0,1,2,...}. A rep-tiling uses congruent original tiles to tile a strictly enlarged similar copy.
+All parameters are nonnegative integers. Every placement is an integer translate of a D4 rotation or reflection. Exact tiling means every region cell is covered exactly once and no tile has a cell outside that region. Here N={0,1,2,...}. A rep-tiling uses congruent original tiles to tile an integer enlargement at a natural linear scale at least two.
 
 In the T sections write $T=P(a,b,c,0)$, with $a\ge c\ge1$ and $b\ge1$, unless a construction explicitly allows the reflected order. The crossbar is the horizontal segment of $a+c+1$ cells; the perpendicular stem consists of its $b$ further cells. The cross and L sections state their own normal forms.
 
@@ -39,7 +39,7 @@ For an ordinary finite obstruction, a node records a finite set of already occup
 
 For a symbolic obstruction, the domain is a set of integer arm parameters given by linear inequalities. Every node lists placed tiles with affine integer coordinates and a queried cell. Its hypotheses include the domain and pairwise disjointness of those tiles. It is checked that the cell is unoccupied and that every possible D4 tile, with an arbitrary integer junction, either overlaps the existing tiles or equals a listed child. A child that is geometrically impossible at some parameters is a vacuous branch there. No arm-length or junction-coordinate cutoff is supplied. Finite induction proves that no infinite plane tiling contains the anchor. Any actual plane tiling can be translated and globally rotated or reflected to contain that anchor.
 
-The cross-unit obstruction has a complete Lean replay of this geometric statement. The T short-stem two-cell-arm obstruction also has a complete Lean replay, with 300 states and 2,700 arithmetic lemmas; the Lean guide and verification receipts state its precise scope. Solver search is used to propose cases; the finite proof principle does not assume a periodic tiling.
+The complete eight-capability classification is checked in Lean for every natural four-tuple, including zero arms, arbitrary D4 copies, and integer-scale rep-tilings. [MainClassification.lean](/polyominoes/lean/MainClassification.lean) states the unconditional theorem; the [proof package](/polyominoes/lean-proofs.zip) and [rebuild guide](/polyominoes/lean-guide.md) supply its dependencies. The T short-stem two-cell-arm component has 300 states and 2,700 arithmetic lemmas, including the whole-tiling geometric replay and normalization. Solver search is used to propose cases; the finite proof principle does not assume a periodic tiling.
 
 
 
@@ -337,7 +337,9 @@ $$
 
 Some of these arrows are absent at $a=4$. There is no directed cycle consisting only of zero-height moves. An infinite sequence of corner states must therefore reach arbitrarily large heights.
 
-In a hypothetical half-strip of height $H$, first note that $H\ge a+2$. Otherwise no vertical crossbar fits; every cell on the closed end must belong to a horizontal crossbar starting there, and its extra tooth overlaps a neighboring crossbar or leaves the strip. The initial four-cell walls are therefore supported by the two outside boundaries. At each finite step the queried cell is nonnegative and no higher than some already occupied cell, so it lies inside the strip. Follow the actual tile covering that cell. The case analysis supplies a new clean corner, whose height is still less than $H$. Repeating this produces unbounded heights inside a finite-height strip, a contradiction. A rectangle would yield a half-strip by repetition, so it is also impossible.
+Suppose a half-strip of some positive integer height $H$ were tiled. Stacking four copies gives a tiled half-strip of height $4H\ge4$, enough to support the initial four-cell corner walls. At each step, the queried cell lies inside this half-strip. Follow the actual tile covering it; the checked local cases supply a new clean corner, still below height $4H$.
+
+There is a finite descent proof. Assign the five states ranks $r=(0,1,2,1,0)$ in the table's order. A transition with no height increase strictly decreases $r$; a positive height increase lowers $3(4H-Y)+r$ even if $r$ increases. This nonnegative integer therefore strictly decreases at every step, which is impossible indefinitely. Lean checks both the local cases and this arbitrary-height deduction. A rectangle would yield a half-strip by repetition, so it is impossible too.
 
 The case analysis is available as explicit proof trees: 1,750 nodes for $a=4$ and 872 for $a=5$. A separate symbolic tree handles **every integer $a\ge6$ without an upper bound**. Independent checkers verify every possible whole-tile placement through each queried cell, including overhangs, and the exact geometry of every successor corner. These are exhaustive proofs; testing a long list of strip widths would not establish the theorem.
 
@@ -575,7 +577,46 @@ Its entire ceiling is occupied by the two bars, and its side walls are their dow
 
 This proves **every c=2, b>a+3 T is a non-tiler**, and completes the negative T-plane classification together with the reviewed c>=3 theorem and the Lean-certified c=2 short-domain theorem.
 
-The c=2 short-domain certificate has now been replayed in Lean 4.33.1. `TPlane.two_short_no_anchored_plane` quantifies over arbitrary infinite placed-tile sets, all D4 orientations, full integer-cell coverage, and ordinary cellwise disjointness. Its 2,700 arithmetic lemmas are proved by `omega`; no Z3 result is trusted by the kernel. The compiled theorem uses only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`, with no `sorry` or added axiom. Choosing a tile and globally translating/rotating/reflection-normalizing it remains the explicit English reduction to the anchored theorem. Sources, compile instructions, and exact scope are in `lean/TPlaneREADME.md`; hashes and logs are in `research/TPlane_verified_manifest.json` and `research/TPlane_*_compile.log`.
+The c=2 short-domain certificate has now been replayed in Lean 4.33.1. `TPlane.two_short_no_anchored_plane` quantifies over arbitrary infinite placed-tile sets, all D4 orientations, full integer-cell coverage, and ordinary cellwise disjointness. Its 2,700 arithmetic lemmas are proved by `omega`; no Z3 result is trusted by the kernel. The compiled theorem uses only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`, with no `sorry` or added axiom. `TilingSymmetry.lean` proves normalization of an arbitrary tiling; `PolyominoFormal.short_stem_two_arm_no_plane` in `PlaneObstructions.lean` supplies the unconditional wrapper. Sources, compile instructions, and exact scope are in `lean/TPlaneREADME.md`; hashes and logs are in `research/TPlane_verified_manifest.json` and `research/TPlane_*_compile.log`.
+
+### Lean formalization progress: subsequent complete-world theorems
+
+`lean/TPlaneShort.lean` now compiles `TPlaneShort.no_plane` for every
+`a>=c>=3` and `3<=b<=a+c`. This is an actual `¬Tiles a b c 0 Plane`
+statement, including kernel-checked selection and D4 normalization of an
+arbitrary initial tile. Its proof is the local concave-corner reduction,
+the antiparallel pair, and the two forced cells described above. All
+supporting gaps are applications of `THalfPlaneStarters.blocked_short_run`
+to arbitrary infinite tilings and unions of whole supporting tiles.
+The only reported axioms are `propext`, `Classical.choice`, `Quot.sound`.
+
+`lean/TPlaneLong.lean` now compiles the entire long-stem proof and
+`TPlaneLong.three_arms_no_plane` for every `a>=c>=3,b>=3`, combining both
+stem regimes. The two rotated length-b cases use the independently
+formalized `TPlaneDeep.weak_left_run`. The long proof simplifies the
+human route further: after excluding the antiparallel and perpendicular
+stem cases, the inward vertical crossbar at a single concave corner
+already intersects the original tile because `1+r<=a+1<b`. No pair of
+concave corners is needed in this regime. The final actual unanchored
+no-plane theorem reports only the three standard axioms.
+
+`lean/PlaneObstructions.lean` now also supplies the compiled unanchored
+wrapper `short_stem_two_arm_no_plane` for the earlier c=2 short symbolic
+certificate. Thus the earlier note's English-only global normalization
+boundary has been superseded for that certificate.
+
+
+The final c=2 long proof is now also compiled by the source/construction
+agent in `TPlaneTwoLong.lean`, using our independently implemented
+`TPlaneTwoLongBridge.finite_bridge_impossible`. The bridge's inputs are
+exactly the four normalized U/W/R/Z whole tiles. It excludes finite-boundary
+V tiles with the existing long-neighbor arithmetic theorem; after forcing
+a horizontal neighbor, each S creates a short gap between two tall stems,
+so `blocked_deep_run` replaces the longer enclosed-rectangle argument.
+All boundary cells are therefore H bars, and their first consecutive pair
+contradicts the arbitrary-width deep-wall theorem. Both actual-world
+statements compile with only standard axioms. No T-plane negative domain
+remains outside Lean.
 
 
 ## 7. Cross obstructions and construction
@@ -647,7 +688,7 @@ $$
 
 Both families are non-tilers. Their proofs are finite symbolic case trees with 89 and 57 nodes, respectively. A node names a cell near the already placed crosses and lists every possible next cross covering it without overlap. Coordinates and arms remain arbitrary integers subject to the displayed inequalities. No maximum arm length is imposed.
 
-All branches terminate in an uncovered cell. The independent checker allows **an arbitrary integer junction** for the proposed covering cross, so the proof does not rely on assuming that an initially plausible list of tip placements is complete. Lean then checks the arithmetic alternatives and replays the whole geometric argument for an arbitrary infinite family of disjoint crosses covering every integer cell. Its only extra assumption is the normalized anchor at the origin, obtained from any tiling by translating and rotating or reflecting the entire plane.
+All branches terminate in an uncovered cell. The independent checker allows **an arbitrary integer junction** for the proposed covering cross, so the proof does not rely on assuming that an initially plausible list of tip placements is complete. Lean then checks the arithmetic alternatives and replays the whole geometric argument for an arbitrary infinite family of disjoint crosses covering every integer cell. The translation and D4 normalization from an arbitrary tiling to the origin are also proved in Lean.
 
 Thus a genuine cross tiles the plane **if and only if two opposite arms have length one**. It never tiles a half-plane.
 
@@ -855,7 +896,7 @@ Sources supplied by the author:
 1. *L Polyominoes*, Student Conference 2021 ([supplied PDF](/polyominoes/raychev-2021-l-quadrant.pdf)), especially pp. 9–16. The displayed Theorem 9 is phrased as a rectangle obstruction. Its proof is entirely local at one corner and a boundary: the diagrams use no opposite rectangle edge. It therefore also excludes a quadrant. The later paper explicitly states the quadrant result as the preceding work's conclusion.
 2. *Tiling the Half-Plane with L Polyominoes*, Spring Conference 2021 ([supplied PDF](/polyominoes/raychev-2021-l-half-plane.pdf)), Theorem 1, pp. 3–13.
 
-The first proof separates equal arms, bounding dimensions 4-by-3 and 5-by-3, the family n-by-3 for n>=6, and n-by-m for n>m>=4. It first excludes endpoint-only boundary contacts. The remaining corner configurations force either an uncovered cell or a closed rectangle shorter than a required arm. In the final n>m>=4 case, the interior boundary run is divided according to whether one long arm occupies n of its cells; the two end counts restrict that case to m=4, and both remaining placements fail. These are the original finite geometric case analyses, cited as prior results rather than claimed as new formalizations here.
+The first proof separates equal arms, bounding dimensions 4-by-3 and 5-by-3, the family n-by-3 for n>=6, and n-by-m for n>m>=4. It first excludes endpoint-only boundary contacts. The remaining corner configurations force either an uncovered cell or a closed rectangle shorter than a required arm. In the final n>m>=4 case, the interior boundary run is divided according to whether one long arm occupies n of its cells; the two end counts restrict that case to m=4, and both remaining placements fail. These are the original finite geometric case analyses. The current Lean re-verification scope is stated below.
 
 The second proof excludes boundary-tip contacts and then boundary contacts by the short leg. The remaining long-leg contacts produce impossible neighboring interior runs; the 4-by-6 case is treated separately. No opposite boundary or bounded search width is used.
 
@@ -882,11 +923,130 @@ This formula was reconstructed independently from exact witnesses. It gives a st
 
 Each tile has one leg of length a+1 and one of length three, meeting at an endpoint, hence is a D4 copy of L. On every row 2 through a the six vertical bars provide columns 0 through 5. On row zero, A and F give the two three-cell feet. Row one has A at column zero, B at column one, E at columns two through four, and F at column five. Row a+1 has B's foot at residues 5,0,1 together with C,D,E at 2,3,4. Row a+2 has C and D's three-cell feet. These disjoint lists cover each row residue exactly once, and no tile leaves the strip.
 
-The remaining positive L case, bounding dimensions 4-by-5, has an explicit width-eight, period-eight strip witness in `results/l_4x5_strip.json`; exact cell checking is independent of the search that found it. The general negative L results above are sourced to the author's prior proofs and are not asserted to have been checked in Lean in this project.
+The remaining positive L case, bounding dimensions 4-by-5, has an explicit width-eight, period-eight strip witness in `results/l_4x5_strip.json`; exact cell checking is independent of the search that found it. The original negative results are credited to the author's supplied papers. Their current Lean scope is stated below.
 
 ### Dimensional correction to the supplied half-plane paper
 
 The width-six statement on page 4 does not match its page 3 drawing. Reconstructing the drawing gives eight columns, vertical period eight, and eight 8-cell L tiles per period. The 64-cell residue cover is recorded and independently verified in `results/l_4x5_strip.json`. The classification theorem is unaffected: a finite-width strip exists. This correction does not assert that every other width-six construction is impossible.
+
+### Current Lean verification scope
+
+The positive constructions compile in `PositiveLPlane`, `PositiveLStrip`, `PositiveLSpecial`, and the rectangle modules. `LQuadrantSmall` and `LQuadrantShortLong` supply all b=2 corner obstructions and the (4,3) corner obstruction. `LHalfPlaneEqual` excludes half-plane tilings for equal arms at least three. `LHalfPlaneFiveThree.no_halfplane` supplies the complete exceptional (5,3) half-plane obstruction, with 421 short-bar and 539 alternating-eight-bar states independently checked and replayed in Lean.
+
+The universal unequal half-plane obstruction a>b>=3,a>=5 now compiles as `PolyominoFormal.LHalfPlaneUnequal.no_halfplane`. Its proof combines the boundary-tip and short-leg exclusions, extraction of alternating long bars, the count forcing a=b+2, and the final mixed-motif obstruction. `sorted_L_classified` in `MainClassification.lean` supplies the unconditional all-L theorem; `all_tuples_classified` includes these profiles in the complete eight-capability classification for all natural four-tuples. The earlier conditional helper `sorted_L_classified_of_unequal` is an internal assembly lemma, with its premise discharged by the final theorem. This Lean reconstruction retains the supplied 2021 papers' prior credit. The detailed argument is in `research/l_unequal_halfplane_proof.md`.
+
+## Unequal long L shapes: proof map
+
+The statement is that P(a,b,0,0) does not tile the half-plane when
+a>b>=3 and a>=5. Arms count added cells, so the bounding box is
+(a+1)-by-(b+1). This is a formal reconstruction of the negative L result
+in Angel Raychev's supplied 2021 half-plane paper, not a novelty claim.
+
+The complete arithmetic and geometric replay is checked in Lean 4.33.1.
+`PolyominoFormal.LHalfPlaneUnequal.no_halfplane` proves the universal
+statement for ordinary exact half-plane tilings.
+[MainClassification.lean](/polyominoes/lean/MainClassification.lean) uses it
+in the unconditional eight-capability theorem for all natural four-tuples;
+the [proof package](/polyominoes/lean-proofs.zip) and
+[rebuild guide](/polyominoes/lean-guide.md) provide the complete sources.
+
+### From an infinite tiling to the finite configuration
+
+Assume an exact half-plane tiling by whole congruent L shapes. First rule
+out a tile touching the boundary only at its vertical tip. This is done
+for both possible vertical arm lengths. Thus every boundary cell belongs
+to a horizontal leg.
+
+Next exclude a short horizontal boundary leg. Translate and, if necessary,
+reflect its tile to O=(0,0;b,a,0,0), where a placement is written
+(junction x, junction y; east, north, west, south). The cell (1,1) must
+be covered. Disjointness and the eight orientations give exactly these
+seven candidates:
+
+| Junction | Arms (E,N,W,S) |
+|---|---|
+| (1,1) | (a,b,0,0) |
+| (1,a+1) | (b,0,0,a) |
+| (b+1,1) | (0,a,b,0) |
+| (1,a+1) | (0,0,b,a) |
+| (a+1,1) | (0,b,a,0) |
+| (1,1) | (b,a,0,0) |
+| (1,b+1) | (a,0,0,b) |
+
+Six alternatives have separate finite obstructions. The fourth can be
+excluded more economically after those six: the tile covering the cell
+just left of O has four possible boundary forms. The two short forms
+contradict the already established short-bar consequences; the two long
+forms give independently checked three-tile obstructions. This order
+avoids assuming the short-bar theorem in its own proof.
+
+Now every boundary contact is a long leg. Two consecutive long legs with
+stems on the same side have a finite obstruction. Consequently their
+orientations alternate. Repeatedly cover the immediately adjacent boundary
+cell to obtain eight consecutive alternating long legs. This is a local
+consequence of coverage and exclusion; no periodicity assumption is made.
+
+### Counting the next row
+
+Four central legs have junctions -1, 0, 2a+1, 2a+2 at height zero. Their
+stems bound the first-row interval 1 through 2a. Boundary and corner
+obstructions exclude vertical-tip coverage in that interval, so it must
+be covered by horizontal legs. Successor and endpoint arguments count
+those legs. Away from a=b+2, the remaining pair of outward-stem short
+legs has a finite obstruction, separately proved for a=b+1 and a>=b+3.
+Therefore the assumed tiling forces a=b+2.
+
+At arm difference two, the same endpoint argument forces one of two
+reflected mixed patterns. In the first, the row contains
+U=(1,1;a,b,0,0) and S=(2a,1;0,a,b,0). The other is its reflection in
+x=(2a+1)/2. The final finite obstruction uses these two tiles and the
+four central boundary tiles. It starts at cell (2,2) and checks every
+covering placement. The original (5,3) case has a separate complete
+eight-boundary-bar obstruction. Reflection of the actual tiling reduces
+the second pattern to the first.
+
+![The mixed first-row L configuration above four alternating boundary bars.](/polyominoes/l-mixed-motif.svg)
+
+The drawing displays the mixed configuration used by the final obstruction;
+the proof quantifies over the entire unbounded parameter domain.
+
+### What closes a certificate branch
+
+Some leaves have no legal tile through their queried cell. Others use a
+short empty run with a completely occupied floor and both endpoints
+occupied by already selected whole tiles. If the run has g cells with
+1<=g<=b, a horizontal leg cannot fit. The following sufficient conditions
+exclude the remaining vertical starters:
+
+| Run length | Extra occupied cap cells above the endpoints |
+|---|---|
+| g>=5 | None |
+| g>=4 | At least one endpoint at height b above the run |
+| g>=3 | Both endpoints at height b |
+| g=2 | Both at height b, and at least one at height a |
+| g>=1 | Both at height b and both at height a |
+
+These are proved as lemmas about a tiling and a union of whole selected
+tiles. They do not assume an arbitrary painted obstacle is a legal tile.
+Upward, downward, and both lateral versions explicitly check that the
+queried run lies in the original half-plane.
+
+For each non-leaf node the independent checker tests all eight
+orientations with an arbitrary integer junction, under the exact unbounded
+parameter domain. Lean then proves the emitted arithmetic implications
+and replays the tree using an actual tiling's cover and disjointness
+axioms. Solver success is not an axiom in the final theorem.
+
+### Formal entry points
+
+- `LHalfPlaneShortbarAssembly.inner_forms`: exhaustive seven-way corner list.
+- `LHalfPlaneShortbarAssembly.no_shortbars`: complete boundary exclusion.
+- `LHalfPlaneAssembly`: extraction of eight alternating boundary legs.
+- `LHalfPlaneAlternating.delta_two`: counting forces a=b+2.
+- `LHalfPlaneMixedMotif.mixed_impossible`: the final mixed configuration.
+- `LHalfPlaneUnequal.no_halfplane`: the assembled universal statement.
+- `PolyominoFormal.all_tuples_classified` in `MainClassification.lean`: normalization and complete
+  eight-capability classification, including degenerate tuples.
 
 
 ## 9. Exact rectangle witnesses
@@ -931,88 +1091,130 @@ After downloading that image and installing Pillow, optional raster reconstructi
 ## 10. Formal verification scope
 
 
-## Lean verification
+## Lean proofs
 
-`HalfPlane.lean` formalizes unit-cell crosses with arbitrary positive integer arm lengths and proves that no family indexed by an arbitrary type can tile the upper half-plane. The assumptions are exact coverage, containment in the half-plane, and pairwise disjointness. It includes infinite tilings and allows each placed tile to have different arm lengths, so rotations/reflections of any fixed positive-arm P are covered.
+Lean 4.33.1 checks the statements below for ordinary integer-cell tilings:
+all eight rotations/reflections, arbitrary integer translations, whole-tile
+containment, exact coverage, and ordinary pairwise disjointness. Infinite
+worlds are allowed. No periodicity or tile-count bound is assumed.
 
-Verified with Lean 4.33.1 (official arm64 macOS release). Commands in this
-guide run from the project root and assume that version is available as
-`lean` on PATH. The research run used
-`.tools/lean-4.33.1-darwin_aarch64/bin/lean`; that runtime is not distributed
-in the source archive.
+### The two disputed cases
 
+`InitialTwoClassification.lean` proves:
+
+```lean
+PolyominoFormal.p4_exact_bs : ExactBS 4
+PolyominoFormal.p5_exact_bs : ExactBS 5
 ```
-lean lean/HalfPlane.lean
+
+| Capability | P(4,1,1,0) | P(5,1,1,0) |
+|---|---|---|
+| Rectangle | impossible | impossible |
+| Half-strip of any positive integer width | impossible | impossible |
+| Bent strip | possible | possible |
+| Quadrant | possible | possible |
+| Strip | possible | possible |
+| Half-plane | possible | possible |
+| Plane | possible | possible |
+| Integer-scale rep-tiling | impossible | impossible |
+
+The finite corner data have 1,750 nodes for parameter four and 872 nodes
+for parameter five. Lean checks every whole-tile alternative, the exact
+successor corner, and the well-founded height/state argument. The formal
+rep obstruction also covers the small scales two and three.
+
+`GunFamilyClassification.lean` completes the entire family: every natural
+n<=3 has the rectangle profile, and every n>=4 has the BS profile above.
+The universal n>=6 replay contains 8,309 arithmetic lemmas and five full
+geometric transition proofs. There is no upper bound on n.
+
+### Complete classification
+
+The unconditional entry point is `PolyominoFormal.all_tuples_classified`
+in [MainClassification.lean](/polyominoes/lean/MainClassification.lean):
+
+```lean
+theorem all_tuples_classified (a b c d : Nat) :
+    Classified a b c d (classifyTuple a b c d)
 ```
 
-The command succeeds. `#print axioms no_half_plane_tiling` reports only Lean's standard `propext`, `Classical.choice`, and `Quot.sound`; there are no admitted proofs or additional axioms.
+It proves all eight capabilities: rectangle, half-strip, bent strip,
+quadrant, strip, half-plane, plane, and integer-scale rep-tiling. Natural
+arms include zero, so bars and degenerate tuples are covered. The theorem
+has no remaining geometric or obstruction premise. `TupleNormalization`
+proves the exhaustive reduction and the required D4 equivalences.
 
-The Lean files do not formalize the whole classification. The human proofs,
-independently checked finite certificates, and compiled Lean theorems are
-identified separately in the manuscript.
+| Formal result | Scope |
+|---|---|
+| `MainClassification`: `all_tuples_classified` | All four-tuples and all eight capabilities |
+| `MainClassification`: `sorted_L_classified` | Every sorted L shape and its degenerate bars |
+| `TClassification`: `normalized_T_classified` | Every genuine T |
+| `PositiveCrossClassification`: `classify_positive_cross` | Every four-positive-arm cross |
+| `GunFamilyClassification`: `classify_gun` | The full unbounded gun family, including parameters four and five |
+| `LHalfPlaneUnequal`: `no_halfplane` | The unequal L obstruction for a>b>=3 and a>=5 |
 
-### Crosses with unit arms
+The L construction and obstruction modules provide a formal reconstruction
+of Angel Raychev's supplied 2021 papers, not a claim of a new L classification.
+The last unequal-L argument combines boundary exclusions, the proved
+alternating-row count, and the mixed-motif obstruction. The public
+[source package](/polyominoes/lean-proofs.zip) and
+[rebuild guide](/polyominoes/lean-guide.md) include the exact dependencies.
 
-`CrossUnitsAdjacentArithmetic.lean`, `CrossUnitsOneArithmetic.lean`, and `CrossUnitsGeometry.lean` additionally formalize the two remaining cross obstructions. The normalized domains are:
+### Definitions and proof map
 
-- a=b=1, 2<=c<=d: two adjacent unit arms;
-- b=1, 2<=a<=c, 2<=d: exactly one unit arm.
+- `TilingCore.lean`: `Tiling`, `Tiles`, and the seven region definitions.
+- `RectangleRep.lean`: the shared `RepTileable` definition. It means a
+  dissection into congruent unit-cell copies at a natural enlargement
+  factor at least two; it does not mean an unequal-scale dissection.
+- `HierarchyProfiles.lean`: all eight capabilities and the executable
+  classification `classifyTuple`, proved correct by `all_tuples_classified`.
+- `TilingSymmetry.lean`, `HierarchyProfiles.lean`, `TupleNormalization.lean`:
+  checked translations, D4 symmetry, and exhaustive tuple reduction.
+- `CornerCertificateCore.lean`, `CornerCertificateReplay.lean`, and
+  `CornerCertificateFour/Five/Large*.lean`: the gun corner certificates.
+- `HalfStripObstruction.lean`, `RepObstruction.lean`, `RepConvention.lean`:
+  arbitrary-width and all-scale consequences of the corner theorem.
+- `FiniteRectangle.lean`, `SmallTRectangleOne/Two/Three.lean`: exact finite
+  rectangle checks, including the 92-piece rectangle for n=3.
+- `THalfPlane*.lean`, `HPFinite*.lean`, `TPlane*.lean`: the complete T
+  boundary and plane obstructions, including arbitrary-world normalization.
+- `LongCrossObstruction.lean`, `CrossClassification.lean`,
+  `CoreBoundaryObstructions.lean`: the positive-arm cross obstructions.
+- `RepComposition.lean`, `TilingCompactness.lean`, `FiniteCandidates.lean`,
+  `RepHierarchy.lean`: actual rep-dissection iteration and a proved
+  countable compactness construction yielding quadrant tilings.
 
-The final theorems `CrossUnits.adjacent_no_anchored_plane` and `CrossUnits.one_no_anchored_plane` quantify an arbitrary world of placed crosses. They assume every integer cell is covered, each placed cross has one of the eight D4 arm assignments, distinct placed crosses share no cell, and the normalized original cross is present at the origin. They prove `False`.
+The compactness argument stabilizes whole-tile membership along nested
+unbounded sets of indices. Coverage follows from an explicit finite list
+of every possible tile through a cell; disjointness follows by putting two
+eventual tiles in one common sample. These steps are themselves Lean
+proofs, not an assumed compactness axiom.
 
-To apply this to an unanchored tiling, choose any tile, translate its junction to the origin, and apply the inverse of its D4 symmetry to the entire tiling. This ordinary normalization argument is written in English; it is not part of these Lean theorem statements. There is no finite-period or bounding-box hypothesis.
+### Trust and reproduction
 
-The arithmetic files contain 1,314 lemmas proving all orientation alternatives and queried-cell emptiness at the 146 proof-tree nodes. Z3 supplied proposed proof cases and small sets of relevant inequalities, but every resulting implication is checked by Lean's `omega` tactic and kernel. The geometric replay proves separation from ordinary cellwise disjointness and follows the finite trees using arbitrary world coverage.
+The final compiled theorem reports contain only Lean's standard
+`propext`, `Classical.choice`, and `Quot.sound`. There are no admitted
+proofs, extra axioms, or `native_decide` calls. External search and SMT
+solvers propose cases and useful inequalities; Lean's kernel checks the
+finite data and the resulting arithmetic and geometric proofs.
 
-From the project root, using Lean 4.33.1:
+From the project root, with Lean 4.33.1 installed:
 
 ```sh
-lean -o lean/CrossUnitsAdjacentArithmetic.olean lean/CrossUnitsAdjacentArithmetic.lean
-lean -o lean/CrossUnitsOneArithmetic.olean lean/CrossUnitsOneArithmetic.lean
-LEAN_PATH=lean lean -o lean/CrossUnitsGeometry.olean lean/CrossUnitsGeometry.lean
+python3 src/check_lean.py InitialTwoClassification --jobs 1
+python3 src/check_lean.py MainClassification GunFamilyClassification --jobs 1
 ```
 
-Both final theorems compiled and their axiom reports contain only `propext`,
-`Classical.choice`, and `Quot.sound`. The report is retained in
-`research/cross_units_geometry_compile.log`. The source hashes and exact
-scope are recorded in `research/cross_units_verified_manifest.json`.
+Pass `--lean /absolute/path/to/lean` if it is not on PATH. The build driver
+compiles local dependencies in order into an isolated `.build/lean`
+directory. It uses no pre-existing research `.olean` files and needs no
+SMT solver. Subsequent builds reuse only artifacts whose source, imports,
+compiler version, and artifact hashes match recorded receipts. Use a new
+`--output` directory for a fresh rebuild. The generated finite cases can
+take substantially longer to compile than the short final statements.
 
-### T shapes with a two-cell crossbar arm
-
-`TPlaneShortArithmetic.lean` and `TPlaneGeometry.lean` prove
-`TPlane.two_short_no_anchored_plane` for every integer `a>=2` and
-`3<=b<a+3`, with prototile `P(a,b,2,0)`.
-
-The theorem uses the same arbitrary-world coverage and ordinary cellwise
-disjointness conditions as the cross theorems, together with all eight D4
-orientations and an anchor at the origin. There is no upper parameter
-bound, finite-period assumption, tile-count bound, or junction-coordinate
-cutoff. A proved interval-intersection lemma handles nonnegative arms,
-including the T's zero fourth arm. The normalization of an arbitrary
-tiling to the stated anchor is again an English reduction.
-
-The finite tree has 300 states. Its 2,700 arithmetic lemmas comprise one
-selected-cell emptiness lemma and eight orientation-specific completeness
-lemmas per state. Lean's `omega` proves every lemma; the semantic replay
-then derives the impossibility of a full-plane tiling. No Z3 result is
-trusted by the compiled proof.
-
-Compile the cross dependencies above first, then run:
-
-```sh
-lean -o lean/TPlaneShortArithmetic.olean lean/TPlaneShortArithmetic.lean
-LEAN_PATH=lean lean -o lean/TPlaneGeometry.olean lean/TPlaneGeometry.lean
-```
-
-Both commands succeeded with Lean 4.33.1. The final theorem's axiom report
-contains only `propext`, `Classical.choice`, and `Quot.sound`. Compiler logs
-are `research/TPlane_short_arithmetic_compile.log` and
-`research/TPlane_geometry_compile.log`; source hashes and the precise
-formal boundary appear in `research/TPlane_verified_manifest.json`.
-`lean/TPlaneREADME.md` gives the detailed artifact map.
-
-The other negative T families, including `c=2, b>a+3`, have independently
-reviewed English proofs; they are not claimed to be Lean theorems here.
-No admitted proof or added axiom is used by the compiled theorems described
-in this guide. Compiled artifacts are intentionally excluded from the
-research archive.
+The research archive includes all Lean sources and generation/checking
+scripts, but excludes the Lean runtime and compiled objects. Compiler
+logs, transitive hashes, failed approaches, and independent semantic
+audits are retained under `research/`; `RESEARCH_LOG.md` records the proof
+boundaries and progress.

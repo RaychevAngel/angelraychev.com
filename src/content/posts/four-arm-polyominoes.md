@@ -5,7 +5,7 @@ updated: 2026-09-11
 draft: false
 ---
 
-*A complete classification for nonnegative integer arm lengths, with explicit constructions, impossibility proofs, independently checked certificates, and Lean verification of the specified obstruction families.*
+*A complete classification for nonnegative integer arm lengths, with explicit constructions, impossibility proofs, independently checked certificates, and an unconditional Lean proof of all eight capabilities for every four-tuple.*
 
 Start with one square and attach straight arms in the four compass directions. How much of the square grid can repeated copies cover? A rectangle is a much stronger achievement than the whole plane: its corners and edges impose constraints that an infinite tiling can avoid.
 
@@ -50,7 +50,7 @@ $$
 \Longrightarrow\mathrm{HP}\Longrightarrow\mathrm{Plane}.
 $$
 
-A **plane-only** tile covers the plane but not a half-plane. A **non-tiler** does not even cover the plane. A separate classical branch asks whether congruent copies of a tile can tile a strictly enlarged similar copy of itself, a *rep-tile*. Rectangle tilings imply this property, and the property implies quadrant tileability. This branch is included in the classification below.
+A **plane-only** tile covers the plane but not a half-plane. A **non-tiler** does not even cover the plane. A separate classical branch asks whether congruent copies of a tile can tile an enlarged copy of itself, a *rep-tile*. Here the linear enlargement factor is a natural integer at least two, with all copies placed on the square grid. Rectangle tilings imply this property, and the property implies quadrant tileability. This branch is included in the classification below.
 
 <figure>
 <img src="/polyominoes/hierarchy.svg" alt="Implication diagram for the seven tiling regions, with the rep-tile branch between rectangles and quadrants." />
@@ -95,7 +95,7 @@ $$
 
 A genuine cross tiles the plane exactly when **two opposite arms have length one**. Thus four arms all longer than one always give a non-tiler.
 
-The two initially exceptional cases, $P(4,1,1,0)$ and $P(5,1,1,0)$, both have profile **BS**: they tile bent strips, quadrants, full strips, half-planes, and the plane, but no half-strip, rectangle, or enlarged copy of themselves. There are no unresolved tuples in the table. The L obstruction results are inherited from the supplied 2021 papers; the following sections and proof appendix establish the T and cross cases.
+The two initially exceptional cases, $P(4,1,1,0)$ and $P(5,1,1,0)$, both have profile **BS**: they tile bent strips, quadrants, full strips, half-planes, and the plane, but no half-strip, rectangle, or enlarged copy of themselves. There are no unresolved tuples in the table. The L obstruction results are credited to the supplied 2021 papers and now also have complete Lean reconstructions; the following sections and proof appendix establish the T and cross cases.
 
 ## A two-row strip and a bent strip
 
@@ -348,9 +348,9 @@ Negative finite certificates enumerate **every** legal placement that could cove
 
 For a fixed strip width, a different finite graph records occupancy across a moving cut. Its cycles describe periodic continuations. Exhausting the graph can rule out every possible length at that width; exhausting several widths still does not rule out all widths. Boundary-prefix certificates can sometimes exclude all half-strip heights at once, but that stronger inference is stated only where its hypotheses have been checked.
 
-For unbounded parameter families, symbolic certificates add a further obligation: every branch implication must hold for all integers in the stated domain. **Lean 4.33.1 now verifies the complete eight-capability classification of every genuine T and every four-positive-arm cross**, including the rep-tile branch. The half-strip proof includes the entire infinite-propagation argument for arbitrary widths. The remaining general Lean input is the unequal long-arm L half-plane obstruction from the 2021 paper; its exceptional case $P(5,3,0,0)$ is already formalized.
+For unbounded parameter families, symbolic certificates add a further obligation: every branch implication must hold for all integers in the stated domain. **Lean 4.33.1 verifies the unconditional eight-capability classification for every tuple of natural arm lengths $(a,b,c,d)$**, including zero arms, all degenerate shapes, and the rep-tile branch. The final theorem is `PolyominoFormal.all_tuples_classified`; it has no remaining obstruction premise. The half-strip proof includes the entire infinite-propagation argument for arbitrary widths. The unequal long-arm L half-plane obstruction is also fully formalized, completing the Lean reconstruction of the supplied 2021 L results.
 
-Start with the short final statements for [the two disputed cases](/polyominoes/lean/InitialTwoClassification.lean), [the complete gun family](/polyominoes/lean/GunFamilyClassification.lean), and [all genuine T shapes](/polyominoes/lean/TClassification.lean). The [Lean source package](/polyominoes/lean-proofs.zip) contains every dependency, and the [rebuild guide](/polyominoes/lean-guide.md) states the exact proof scope and commands. The proofs use ordinary whole-cell tilings, arbitrary integer translations, and all rotations and reflections. Rep-tiling here uses a natural linear enlargement factor at least two. Final theorem reports contain only Lean's standard axioms; there are no admitted proofs or trusted solver answers.
+Start with the [unconditional all-tuples theorem](/polyominoes/lean/MainClassification.lean), or the short statements for [the two disputed cases](/polyominoes/lean/InitialTwoClassification.lean), [the complete gun family](/polyominoes/lean/GunFamilyClassification.lean), and [all genuine T shapes](/polyominoes/lean/TClassification.lean). The [Lean source package](/polyominoes/lean-proofs.zip) contains every dependency, and the [rebuild guide](/polyominoes/lean-guide.md) states the exact proof scope and commands. The proofs use ordinary whole-cell tilings, arbitrary integer translations, and all rotations and reflections. Rep-tiling here uses a natural linear enlargement factor at least two. Final theorem reports contain only Lean's standard axioms; there are no admitted proofs or trusted solver answers.
 
 The research log keeps failed conjectures, counterexamples, proof revisions, and independent attacks. There is no claim of novelty merely because a construction was independently rediscovered during this investigation. The classification has no remaining proof gaps under the tiling conventions stated above.
 

@@ -1,10 +1,17 @@
-# Verified Lean proofs: T shapes, crosses, and the exceptional L case
+# Verified Lean proofs: the complete four-arm classification
 
 This source package contains complete Lean 4.33.1 proofs, using the standard
 library only. It includes every local dependency of the entry points
 below. No precompiled proof objects or external theorem prover are required.
 
 ## Statements
+
+- [MainClassification.lean](/polyominoes/lean/MainClassification.lean):
+  `PolyominoFormal.all_tuples_classified (a b c d : Nat)` proves
+  `Classified a b c d (classifyTuple a b c d)` without an additional
+  obstruction premise. Zero arms and degenerate bars are included.
+  The eight capabilities are rectangle, half-strip, bent strip, quadrant,
+  strip, half-plane, plane, and integer-scale rep-tiling.
 
 - `InitialTwoClassification.lean`: `PolyominoFormal.p4_exact_bs` and
   `PolyominoFormal.p5_exact_bs`. Both shapes tile bent strips, quadrants,
@@ -20,11 +27,12 @@ below. No precompiled proof objects or external theorem prover are required.
 - `LHalfPlaneFiveThree.lean`: `LHalfPlaneFiveThree.no_halfplane` excludes
   a half-plane tiling by P(5,3,0,0), the L shape with bounding box 6 by 4.
 
-**The last general L obstruction is still being formalized.** This package
-does not claim an unconditional Lean theorem for all four-tuples. The
-remaining input is that P(a,b,0,0) cannot tile a half-plane when a>b>=3 and
-a>=5. The supplied 2021 L-polyomino paper is the existing mathematical
-proof; the exceptional pair (5,3) already has the Lean proof listed above.
+`LHalfPlaneUnequal.no_halfplane` supplies the universal unequal-L
+obstruction for a>b>=3 and a>=5. All L profiles and the exhaustive D4
+normalization are included in the final theorem. This formal reconstruction
+retains credit for the supplied 2021 L-polyomino papers. The
+[complete source archive](/polyominoes/lean-proofs.zip) contains the
+MainClassification and GunFamilyClassification dependency closures.
 
 ## Exact conventions and trust
 
@@ -50,13 +58,13 @@ Unzip the archive, enter its `polyominoes` directory, and install Lean
 4.33.1. To start with the disputed cases:
 
 ```sh
-python3 src/check_lean.py InitialTwoClassification --jobs 2
+python3 src/check_lean.py InitialTwoClassification --jobs 1
 ```
 
 To check every packaged entry point:
 
 ```sh
-python3 src/check_lean.py GunFamilyClassification TClassification PositiveCrossClassification LHalfPlaneFiveThree --jobs 2
+python3 src/check_lean.py MainClassification GunFamilyClassification --jobs 1
 ```
 
 Use `--lean /absolute/path/to/lean` if needed. The driver compiles the
@@ -64,4 +72,4 @@ source dependencies into `.build/lean`, records their hashes and compiler
 logs, and reuses only exactly matching results. A new `--output` directory
 forces a fresh rebuild. Some finite proof data take appreciably longer to
 check than the short final statements. The archive's `MANIFEST.json`
-records the exact hash of every included source file.
+records the exact hash of every included source file. `VERIFICATION.json` records the matching isolated-build source, object, and dependency hashes; `AXIOMS.txt` preserves the compiler's axiom reports. These receipts document the published build, while rebuilding checks the proofs independently.
