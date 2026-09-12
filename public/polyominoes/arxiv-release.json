@@ -3,7 +3,7 @@
   "author": "Angel Ivanov Raychev",
   "date": "2026-09-11",
   "version": "2026-09-11",
-  "status": "Preprint prepared for author review; not submitted to arXiv",
+  "status": "Submitted to arXiv; awaiting moderation and announcement",
   "pages": 26,
   "figures": 8,
   "figure_files": 9,
@@ -52,5 +52,13 @@
     "website_build": "passed",
     "website_local_links_checked": 67
   },
-  "revision": "credit-correction-1"
+  "revision": "credit-correction-1",
+  "arxiv": {
+    "primary_category": "math.CO",
+    "cross_lists": [],
+    "license": "CC BY 4.0",
+    "identifier": null,
+    "public_url": null,
+    "submission_evidence": "Author reported completing submission on 2026-09-11 (America/Los_Angeles); announcement pending"
+  }
 }

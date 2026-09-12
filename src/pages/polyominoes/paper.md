@@ -9,7 +9,7 @@ updated: 2026-09-11
 
 Angel Ivanov Raychev · September 2026
 
-**Preprint prepared for submission.** This manuscript has not yet been submitted to arXiv.
+**Submitted to arXiv in Combinatorics (math.CO).** Awaiting moderation and announcement. A public arXiv link will be added when available.
 
 [**Read the paper (PDF)**](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
 

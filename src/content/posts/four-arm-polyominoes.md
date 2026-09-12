@@ -11,7 +11,7 @@ Start with one square and attach straight arms in the four compass directions. H
 
 This article studies a family that includes bars, L shapes, T shapes, and crosses. Angel Raychev's original research, from **October 2020 to March 2021**, classified the L shapes and all T shapes except two cases. The subsequent AI-assisted investigation reconstructed those results, completed the two cases, analyzed genuine crosses, and formalized the complete classification. The [paper page](/polyominoes/paper/#research-history-and-contributions) records the contributions and prior literature.
 
-**Read the standalone [paper (PDF)](/polyominoes/four-arm-polyominoes.pdf)**, download its [LaTeX sources](/polyominoes/arxiv-source.zip), or see [citation and formal artifacts](/polyominoes/paper/). This is a preprint prepared for submission; it has not yet been submitted to arXiv.
+**Read the standalone [paper (PDF)](/polyominoes/four-arm-polyominoes.pdf)**, download its [LaTeX sources](/polyominoes/arxiv-source.zip), or see [citation and formal artifacts](/polyominoes/paper/). Submitted to arXiv in Combinatorics (math.CO); awaiting moderation and announcement. A public arXiv link will be added when available.
 
 ## The shapes and the rules
 
