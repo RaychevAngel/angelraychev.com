@@ -141,6 +141,19 @@ Abramovskaya–Fomin–Golovach–Pilipczuk, Körner–Wei, Bolkema–Groothuis,
 classical grid isoperimetric literature. New derivations in this investigation
 do not by themselves establish priority over all previous literature.
 
+## Final focused extensions
+
+For odd n >= 7, seven rows with five inspections have exact time
+2 ceil((7n-16)/3). A periodic rational potential handles all lengths;
+a first-two-day obstruction rules out a one-day saving in one residue.
+An independent coordinate audit verified the finite bases and the
+unbounded insertion argument.
+
+For even n >= 4, six inspections on 3 × 3 × n have exact time 6n-8.
+Two non-global-prefix opening moves followed by a prefix sweep attain
+this value. A one-bit historical integer potential proves the matching
+lower bound. The unbounded proofs remain ordinary mathematics, not Lean.
+
 ## Remaining target
 
 Resolve arbitrary even-sided boxes outside the completed families, simplify

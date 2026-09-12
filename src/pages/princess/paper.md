@@ -19,6 +19,8 @@ A princess occupies an unknown room. Each day we may inspect at most $m$ rooms. 
 
 The manuscript gives exact minimum-time formulas and explicit strategies for paths and for grids with two, three, four, or five rows, at every length and budget. The wider odd-rectangle formula covers width $w=2b+1\ge3$ and odd length $n\ge w$ when $m\ge b^2+1$. It also resolves every budget on the $3\times3\times3$, $4\times4\times4$, and $3\times4\times4$ boxes, and proves that five daily inspections take exactly $18n-36$ days on every $3\times3\times n$ box with $n\ge3$, of either parity.
 
+Two further exact formulas are included: seven rows at five inspections take $2\lceil(7n-16)/3\rceil$ days for odd $n\ge7$, and $3\times3\times n$ at six inspections takes $6n-8$ days for even $n\ge4$. Both have independently reviewed ordinary proofs with finite certificates.
+
 For every box whose side lengths are all odd, in any dimension, a geometric compression theorem reduces the search to two counts. This gives an exact algorithm for feasibility, minimum time, and an optimal strategy, with a number of states quadratic in the number of rooms. A related reduction applies to boxes with a side of length two. Other results provide smaller exact recurrences and explicit search constructions on further families.
 
 These algorithms are proved for unbounded families. They do not yet amount to explicit formulas for every box and every budget. The literature discussion identifies prior results, and new derivations are not automatically claimed as new to the literature.
