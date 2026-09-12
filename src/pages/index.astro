@@ -26,6 +26,7 @@ const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: 
 
 const entries = posts
   .map((p) => ({ title: p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) }))
+  .concat([{ title: "Finding a princess on paths and grids", href: "/princess/", when: "11 Sep 2026" }])
   .sort((a, b) => a.title.localeCompare(b.title, "en"));
 ---
 <Base home={true}>

@@ -1,0 +1,66 @@
+<section class="odd-explorer" aria-labelledby="odd-explorer-title">
+  <h3 id="odd-explorer-title">Try an odd-sided building</h3>
+  <p>Enter its side lengths, separated by commas. For example, 3, 5, 7 describes a building with 105 rooms. Coordinates below start at one.</p>
+  <form id="odd-form">
+    <label>Side lengths<input id="odd-shape" value="3, 3, 3" autocomplete="off" /></label>
+    <label>Rooms per day<input id="odd-budget" type="number" min="1" step="1" value="5" /></label>
+    <button type="submit">Find an optimal search</button>
+  </form>
+  <p id="odd-result" aria-live="polite"></p>
+  <div id="odd-schedule" hidden>
+    <div class="odd-buttons"><button id="odd-back" type="button">Previous day</button><button id="odd-next" type="button">Next day</button><button id="odd-download" type="button">Download the schedule</button></div>
+    <div class="odd-jump"><label>Go to day<input id="odd-jump" type="number" min="1" step="1" value="1" /></label><button id="odd-go" type="button">Go</button></div>
+    <p id="odd-day"></p>
+    <p id="odd-count"></p>
+    <p><strong>Inspect these rooms simultaneously:</strong></p>
+    <p id="odd-rooms"></p>
+    <p id="odd-after"></p>
+  </div>
+  <p class="odd-note">This preview supports up to 343 rooms and eight dimensions. The mathematical theorem covers every finite odd-sided box.</p>
+  <noscript>The interactive calculation requires JavaScript. The theorem and complete recurrence are available in the proof page.</noscript>
+</section>
+<script>
+// @ts-nocheck
+import {oddBoxSearch} from '../lib/odd-box-search.js';
+const oddEl=id=>document.getElementById(id);let oddResult,oddDay=0;
+function oddRender(){
+  const f=oddResult.frames[oddDay];
+  oddEl('odd-jump').max=oddResult.days;oddEl('odd-jump').value=oddDay+1;
+  oddEl('odd-back').disabled=oddDay===0;oddEl('odd-next').disabled=oddDay===oddResult.days-1;
+  oddEl('odd-day').textContent=`Day ${oddDay+1} of ${oddResult.days}`;
+  oddEl('odd-count').textContent=`Before this inspection, ${f.possible.length} rooms are still possible.`;
+  oddEl('odd-rooms').textContent=f.shot.map(v=>'('+oddResult.vertices[v].map(x=>x+1).join(', ')+')').join(' · ');
+  oddEl('odd-after').textContent=f.survivors.length?`If every inspection misses, ${f.survivors.length} rooms remain possible before her mandatory move. The next day includes every room she could then reach.`:'Every remaining possibility is inspected today. Capture is guaranteed by this day.';
+}
+function oddLoad(event){
+  event?.preventDefault();oddEl('odd-schedule').hidden=true;
+  try {
+    const shape=oddEl('odd-shape').value.trim().split(/[,x×\s]+/).map(Number);
+    oddResult=oddBoxSearch(shape,Number(oddEl('odd-budget').value));oddDay=0;
+    oddEl('odd-result').textContent=oddResult.days===null?`${oddResult.volume} rooms. Capture cannot be guaranteed with this budget; the minimum sufficient budget is ${oddResult.threshold}.`:`${oddResult.volume} rooms. Minimum sufficient budget: ${oddResult.threshold}. With ${oddResult.budget} daily inspections, the exact minimum is ${oddResult.days} ${oddResult.days===1?'day':'days'}.`;
+    if(oddResult.days!==null){oddEl('odd-schedule').hidden=false;oddRender();}
+  }catch(error){oddEl('odd-result').textContent=error.message;}
+}
+oddEl('odd-form').addEventListener('submit',oddLoad);
+oddEl('odd-back').onclick=()=>{if(oddDay>0){oddDay--;oddRender();}};
+oddEl('odd-next').onclick=()=>{if(oddDay+1<oddResult.days){oddDay++;oddRender();}};
+function oddJump(){oddDay=Math.max(0,Math.min(oddResult.days-1,Math.floor(Number(oddEl('odd-jump').value)||1)-1));oddRender();}
+oddEl('odd-jump').addEventListener('change',oddJump);
+oddEl('odd-go').onclick=oddJump;
+oddEl('odd-jump').addEventListener('keydown',event=>{if(event.key==='Enter')oddJump();});
+oddEl('odd-download').onclick=()=>{
+  const lines=[`Optimal search: ${oddResult.shape.join(' × ')}`,`Rooms: ${oddResult.volume}. Daily budget: ${oddResult.budget}. Minimum days: ${oddResult.days}.`,`After a miss, the target must move exactly one edge. Coordinates start at one.`,`Proof and verification scope: https://angelraychev.com/princess/`,''];
+  oddResult.shots.forEach((shot,i)=>lines.push(`Day ${i+1}: `+shot.map(v=>'('+oddResult.vertices[v].map(x=>x+1).join(', ')+')').join('; ')));
+  const url=URL.createObjectURL(new Blob([lines.join('\n')+'\n'],{type:'text/plain'}));
+  const link=document.createElement('a');link.href=url;link.download=`princess-${oddResult.shape.join('x')}-${oddResult.budget}-probes.txt`;link.click();URL.revokeObjectURL(url);
+};
+oddLoad();
+</script>
+<style>
+ .odd-explorer{border:1px solid var(--rule);padding:22px;margin:30px 0 44px}
+ h3{margin-top:0}form{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin:18px 0}
+ label{font-size:12px}input{display:block;width:100%;margin-top:6px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
+ button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;border-radius:0;padding:6px 10px;cursor:pointer;width:fit-content}button:hover{background:#eee}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default}button:focus-visible,input:focus-visible{outline:2px solid black;outline-offset:2px}
+ .odd-buttons{display:flex;gap:8px;flex-wrap:wrap}.odd-jump{display:flex;align-items:end;gap:8px;max-width:180px;margin-top:18px}.odd-jump label{flex:1}.odd-note,#odd-count,#odd-after{font-size:12px;color:var(--dim)}#odd-rooms{font-size:12px;overflow-wrap:anywhere}#odd-day{margin-top:14px}#odd-schedule{border-top:1px solid var(--rule);padding-top:18px}
+ @media(max-width:480px){.odd-explorer{padding:14px}form{grid-template-columns:1fr}}
+</style>

@@ -1,0 +1,9 @@
+---
+import Post from "../../layouts/Post.astro";
+import proofHtml from "../../content/generated/princess-proofs.html?raw";
+---
+<Post title="Princess searches: detailed proofs" description="Complete mathematical arguments for paths, narrow grids, odd boxes, and exact finite certificates." updated="2026-09-12">
+  <p>This is the complete proof text of the current research manuscript. Return to the <a href="/princess/">interactive overview</a>, read the <a href="/princess/paper/">paper and provenance</a>, or inspect the <a href="/princess/lean/">exact Lean coverage</a>.</p>
+  <p>The proofs below and the <a href="/princess/princess-searches.pdf">PDF</a> are generated from the same source. The website uses the paper's theorem and equation numbers. The general rectangular-box problem remains open; precise completed families are stated below.</p>
+  <Fragment set:html={proofHtml} />
+</Post>

@@ -1,0 +1,43 @@
+<section class="explorer" id="princess-explorer" aria-labelledby="explorer-title">
+  <h2 id="explorer-title">Try a search</h2>
+  <p>Choose the rooms and daily inspection budget. Advance through a strategy that guarantees capture in the fewest days.</p>
+  <div class="controls">
+    <label>Building<select id="family"><option value="path">One row</option><option value="ladder">Two rows</option><option value="three">Three rows</option><option value="four">Four rows</option></select></label>
+    <label>Columns<input id="columns" type="number" min="1" max="24" step="1" value="8" /></label>
+    <label>Rooms per day<input id="budget" type="number" min="1" max="8" step="1" value="2" /></label>
+  </div>
+  <p class="result" aria-live="polite">Minimum guaranteed time: <strong id="days"></strong>.</p>
+  <div class="grid-wrap"><div class="grid" id="grid" role="img" aria-label="Possible princess locations and inspected rooms"></div></div>
+  <p class="legend"><span>● / ○ possible location, by checkerboard parity</span><span>× inspected this morning</span></p>
+  <div class="stepper"><button id="reset" type="button">Restart</button><button id="back" type="button">Back</button><button id="next" type="button">Next step</button></div>
+  <p class="step-label" id="step"></p>
+  <p id="explanation" aria-live="polite"></p>
+  <div class="examples" aria-label="Example searches"><button type="button" data-example="path,12,4">12 rooms, 4 probes</button><button type="button" data-example="ladder,4,3">Two rows: an extra day</button><button type="button" data-example="three,6,5">Three rows: different directions</button><button type="button" data-example="four,6,3">Four rows: the minimum budget</button><button type="button" data-example="ladder,6,1">When capture is impossible</button></div>
+  <noscript>The formulas below give the answers without JavaScript. The step-by-step demonstration requires JavaScript.</noscript>
+</section>
+<script>
+// @ts-nocheck
+import STRATEGIES from "../lib/princess-strategies.js";
+
+const el=id=>document.getElementById(id);let frames=[],current=0,n=8,rows=1,m=2;
+function move(belief){const next=new Set();for(const v of belief){let r=Math.floor(v/n),c=v%n;if(c>0)next.add(v-1);if(c+1<n)next.add(v+1);if(r>0)next.add(v-n);if(r+1<rows)next.add(v+n)}return next}
+function load(){n=Math.max(1,Math.min(24,Math.floor(Number(el('columns').value))||1));rows=({path:1,ladder:2,three:3,four:4})[el('family').value];m=Math.max(1,Math.min(n*rows,Math.floor(Number(el('budget').value))||1));el('columns').value=n;el('budget').value=m;el('budget').max=n*rows;const result=STRATEGIES[`${el('family').value},${n},${m}`];el('days').textContent=result.days===null?'No finite guarantee':`${result.days} ${result.days===1?'day':'days'}`;let belief=new Set(Array.from({length:n*rows},(_,i)=>i));frames=[];current=0;if(result.days===null){frames.push({day:1,phase:'impossible',belief,shot:new Set()})}else{result.shots.forEach((s,index)=>{const shot=new Set(s);frames.push({day:index+1,phase:'before',belief:new Set(belief),shot});const survivors=new Set([...belief].filter(v=>!shot.has(v)));frames.push({day:index+1,phase:survivors.size?'inspected':'captured',belief:survivors,shot});if(survivors.size){belief=move(survivors);frames.push({day:index+1,phase:'moved',belief:new Set(belief),shot:new Set()})}})}render()}
+function render(){const f=frames[current],grid=el('grid');grid.style.gridTemplateColumns=`repeat(${n},38px)`;grid.innerHTML='';for(let r=0;r<rows;r++)for(let c=0;c<n;c++){let v=r*n+c,room=document.createElement('div');room.className='room'+(f.belief.has(v)?' possible':'')+((r+c)%2?' odd':'')+(f.shot.has(v)?' probe':'');room.innerHTML=`<span class="num">${rows>1?`${r+1}·`:''}${c+1}</span>`;room.title=`Room ${r+1}, ${c+1}: ${f.belief.has(v)?'possible':'ruled out'}${f.shot.has(v)?', inspected':''}`;grid.append(room)}el('back').disabled=current===0;el('reset').disabled=current===0;el('next').disabled=current===frames.length-1;const labels={before:'before inspection',inspected:'after inspection',moved:'after movement',captured:'capture guaranteed',impossible:'no finite guarantee'};el('step').textContent=`Day ${f.day} · ${labels[f.phase]}`;let text='';if(f.phase==='before')text=`${f.belief.size} possible ${f.belief.size===1?'room remains':'rooms remain'}. Inspect the ${f.shot.size} marked ${f.shot.size===1?'room':'rooms'} simultaneously. If she is in one of them, the search ends now.`;if(f.phase==='inspected')text=`Suppose every inspection missed. ${f.belief.size} possible ${f.belief.size===1?'room remains':'rooms remain'}. She must now move to an adjacent room; the next step shows all destinations she could reach.`;if(f.phase==='moved')text=`After the mandatory move, ${f.belief.size} ${f.belief.size===1?'room is':'rooms are'} possible. A previously excluded room can become possible again, so simply counting total inspections would not prove the result.`;if(f.phase==='captured')text=`Every remaining possibility was inspected on day ${f.day}. There is no route that avoids all inspections: capture is guaranteed by this day.`;if(f.phase==='impossible')text=m===1?'Every room in this board has at least two neighbors. Removing one possible location leaves a possible neighbor of every room, so after movement the full uncertainty returns. No one-probe strategy can guarantee capture.':'Two daily probes cannot guarantee capture on this four-row board. The lower-bound proof shows that each initial parity group always retains more possibilities than the daily budget can inspect.';el('explanation').textContent=text}
+el('family').addEventListener('change',load);el('columns').addEventListener('change',load);el('budget').addEventListener('change',load);el('next').onclick=()=>{current=Math.min(current+1,frames.length-1);render()};el('back').onclick=()=>{current=Math.max(0,current-1);render()};el('reset').onclick=()=>{current=0;render()};document.querySelectorAll('[data-example]').forEach(button=>button.onclick=()=>{let [f,n,m]=button.dataset.example.split(',');el('family').value=f;el('columns').value=n;el('budget').value=m;load()});load();
+
+</script>
+<style>
+  .explorer{border:1px solid var(--rule);padding:22px;margin:30px 0 44px}
+  h2{margin:0 0 14px}.explorer p{margin-bottom:18px}.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
+  label{font-size:12px}input,select{display:block;width:100%;margin-top:6px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
+  button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:#eee}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default;background:white}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid black;outline-offset:2px}
+  .result{font-size:13px}.grid-wrap{overflow-x:auto;margin:18px 0 12px;padding:2px 1px 4px}.grid{display:grid;gap:4px;width:max-content}.legend{display:flex;gap:6px 18px;flex-wrap:wrap;color:var(--dim);font-size:11px;line-height:1.7}.stepper,.examples{display:flex;gap:6px;flex-wrap:wrap}.stepper{border-top:1px solid var(--rule);padding-top:18px}.step-label{font-size:12px;color:var(--dim);margin-top:12px}#explanation{font-size:12px;line-height:1.7;min-height:62px}.examples{margin-top:12px}
+  #grid :global(.room){width:38px;height:52px;border:1px solid var(--rule);position:relative;display:flex;justify-content:center;align-items:center;background:#fafafa;color:#999;font-size:10px}
+  #grid :global(.room.possible){background:white;color:black;border-color:#888}
+  #grid :global(.room.possible::before){content:'●';font-size:14px;position:absolute;top:2px}
+  #grid :global(.room.possible.odd::before){content:'○';font-size:17px;top:0}
+  #grid :global(.room .num){position:absolute;bottom:3px}
+  #grid :global(.room.probe){outline:2px solid black;outline-offset:-2px}
+  #grid :global(.room.probe::after){content:'×';position:absolute;font-size:28px;top:3px;background:white;line-height:1}
+  @media(max-width:480px){.explorer{padding:14px}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.controls label:first-child{grid-column:span 2}}
+</style>
