@@ -1,0 +1,55 @@
+{
+  "title": "Four-arm polyominoes in Golomb's hierarchy: A complete classification with Lean verification",
+  "author": "Angel Ivanov Raychev",
+  "date": "2026-09-11",
+  "version": "2026-09-11",
+  "status": "Preprint prepared for author review; not submitted to arXiv",
+  "pages": 26,
+  "figures": 8,
+  "figure_files": 9,
+  "bibliography_entries": 12,
+  "source_entries": 22,
+  "paper_url": "https://angelraychev.com/polyominoes/paper/",
+  "artifacts": {
+    "four-arm-polyominoes.pdf": {
+      "bytes": 415421,
+      "sha256": "4bce954caa1471b8ca9b1f0100156967e53192ef3b807e6b0663970533e3c492"
+    },
+    "arxiv-source.zip": {
+      "bytes": 74924,
+      "sha256": "1579d9580a52a38d497f2d7854b08fdaa95bf53870de2b6e8881df597e1d51e5"
+    },
+    "formal-artifact.md": {
+      "bytes": 10290,
+      "sha256": "dc9f725ecece5019797cf7d3333912a7ec846748b5e183005bc2194ea93e9b45"
+    },
+    "references.bib": {
+      "bytes": 4538,
+      "sha256": "52ff7c06a405cac974f32a5fbccb51a91a69900dcb5555812973f12d567e8c9a"
+    },
+    "citation.bib": {
+      "bytes": 292,
+      "sha256": "6ff8a34d52effa3a2e0592f47bea9a3d9343262a3798d568c5fca84429648430"
+    }
+  },
+  "formal_artifact": {
+    "url": "https://raw.githubusercontent.com/RaychevAngel/angelraychev.com/ec308bfcb092fa71a78cecd991be6e85e5b369b9/public/polyominoes/lean-proofs.zip",
+    "bytes": 14670185,
+    "sha256": "c2aec8f60dd5e2f4054eda26a947a1a7398f214ba248dee48358fc592b4043a3",
+    "matches_accepted_release": true
+  },
+  "verification": {
+    "existing_Lean_build_modules": 538,
+    "Lean_toolchain": "4.33.1",
+    "full_Lean_rebuild_this_preparation": false,
+    "independent_manuscript_audits": [
+      "research/arxiv_manuscript_audit.md",
+      "research/arxiv_construction_audit.md"
+    ],
+    "formal_audit": "research/arxiv_formal_artifact_audit.json",
+    "source_bundle_clean_compile": "passed: extracted source archive, two PDFLaTeX passes, no undefined references or overflowing boxes",
+    "pdf_visual_review": "passed: all pages reviewed in rendered contact sheets; detailed review of figures, title, theorem table, references, acknowledgments; command kept on one page",
+    "website_build": "passed",
+    "website_local_links_checked": 67
+  }
+}

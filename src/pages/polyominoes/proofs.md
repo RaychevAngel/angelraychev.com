@@ -7,6 +7,8 @@ updated: 2026-09-11
 
 This appendix records the mathematical arguments and precise certificate boundaries. The [companion article](/four-arm-polyominoes/) provides the classification table and illustrations; the research log preserves conjectures, unsuccessful approaches, and independent attacks.
 
+The standalone [paper (PDF)](/polyominoes/four-arm-polyominoes.pdf) organizes the complete classification for publication. Its [paper page](/polyominoes/paper/) provides LaTeX sources, citation, verified references, research history, and acknowledgments.
+
 We identify cells with integer coordinates and use
 
 $$
@@ -364,7 +366,7 @@ $$
 
 Every queried cell has relative horizontal coordinate at most seven; a whole tile through it extends at most $a+1$ farther. Consequently every tile used by the corner argument remains strictly before the stem. The supported queries stay inside the rectangular arm, and the next corner does too. The same unbounded-height contradiction applies. The initial exterior corner is handled by choosing $k\ge a+2$. This proves the sharp $a=4$ case as well as all longer cases.
 
-The historical starting point was section 23 of [Karl Dahlke's Gun Theorem](https://github.com/eklhad/trec/blob/master/theorems/gun), which states nonrectifiability for this family. The clean-corner certificates above independently check the local alternatives and supply the separate half-strip and rep-tile arguments.
+The corner configurations come directly from section 23 of [Karl Dahlke's Gun Theorem](https://github.com/eklhad/trec/blob/57deb1bdeceff8dda76e4260adcf52fe3a9a901f/theorems/gun), which already proves rectangle nonrectifiability for the whole family, including $a=4,5$. The certificates reconstruct the local alternatives and establish the additional rank and containment statements used here. This account does not claim that the half-strip or rep-tile conclusions could not be extracted from Dahlke's argument. The theorem was documented by 19 May 2019; its original composition date is unknown. See the [paper's research history and bibliography](/polyominoes/paper/) for the full attribution.
 
 ### Full no-rep-tile theorem, including a=4
 
