@@ -1,0 +1,70 @@
+import FourCubeUpper
+namespace Princess.FourCubeCompression
+open Princess.CaptureRecurrence Princess.LadderCardinality Princess.FiniteSubsetProfiles
+
+def upperBudget (kind : Fin 12) : Nat := (2391506612089560801864 >>> (6*kind.val)) &&& 63
+def upperTurns (kind : Fin 12) : Nat := (151106208950494758184 >>> (6*kind.val)) &&& 63
+def upperSchedule (kind : Fin 12) : List Nat :=
+  match kind.val with
+  | 0 => [11853553386223831040, 40133382407296, 612389448, 5352568289304248320, 2305863110273007616, 306717828, 2630122282831315008, 306717732, 2630122282831577088, 306193700, 2640237789806854144, 35184678797604, 2604226584973934592, 144115188382564644, 2388053802860150784, 1254437158916, 19141202, 1317867095089741824, 81346345597927424, 9223372041150923045, 5188292457229484032, 2630172551204063232, 1317343024254025728, 1126209756874752, 1315090673610794112, 10135608034852864, 1297071894239380608, 10153165852786688, 1297036709867299968, 82210759890698240, 154657105024, 82210484945682504, 563104610526208, 81084585039102024, 1254436643840, 82190693201871432, 5067804013240320, 8609075784, 5067786531504420, 281552305061906]
+  | 1 => [11853553386223847424, 1317343024388243456, 1128408780130304, 1315086292748862592, 82210759890714624, 563104610526336, 81084585039102536, 5067804017434624, 77328552520, 5066553876939045, 5188327641601572864, 612391496, 6505489793911095296, 10153200220897280, 1297036709900854400, 82210759823589448, 1254437168128, 19141210, 1322370694717112320, 281552305324050]
+  | 2 => [11853553420591958016, 9243678370707832832, 2594075894238693376, 35184678806692, 2712312976030826496, 564204390589440, 81064801901744712, 5067790827520292, 5188288059183038482, 2630181347833956352, 1317343023180293248, 82210794258825216, 563104878961792, 81084593094263368, 5067786833502244, 281552305066514]
+  | 3 => [11853553420591974400, 1317343024388244608, 82210794258841600, 9223373291291944064, 82190701808587336, 5067790827520293, 5208593839924740096, 2595201794145536000, 1315086292782425216, 82210759823852104, 5067804017434660, 281552305328658]
+  | 4 => [11853553420659083264, 10576752656368271360, 82210794258843648, 5067804017960064, 77328618074, 11858619940099606528, 1317343024388252800, 82210794258825288, 5067804017959940, 281552305328722]
+  | 5 => [11853553695536990208, 39583799059876, 2712312984623120384, 5067791129510181, 6505630532607442944, 82210794258843656, 5067804017960068, 281552305328722]
+  | 6 => [11854679595980703744, 10574500322909627520, 82210759909839432, 5067810154891557, 6505630532607419520, 82210794261185096, 5067808309387557]
+  | 7 => [11854681795003959296, 9385545606359426468, 2388053880188764178, 9228517758327609928, 6505491048348254208, 82472245504840282]
+  | 8 => [11863706586444744704, 1302104498848164996, 422291001652946, 11935764178335170632, 5067808314107173]
+  | 9 => [11935764180482672640, 5067808314107301, 5188327641908290980, 2712594528336150546]
+  | 10 => [11935764189074971208, 11858621486666500389, 1322410282812319141]
+  | _ => [11936045732788001370, 11936045732788001370]
+
+theorem upper_length : ∀ kind : Fin 12, (upperSchedule kind).length=upperTurns kind := by decide
+theorem upper_budget : ∀ kind : Fin 12, ∀ S∈upperSchedule kind, countBits 64 S≤upperBudget kind := by decide
+theorem upper_positive : ∀ kind : Fin 12, 0<upperTurns kind := by decide
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 10000000 in
+theorem upper_clears : ∀ kind : Fin 12, runMasks 18446744073709551615 (upperSchedule kind)=0 := by decide +kernel
+
+theorem runMasks_winning_budget (m : Nat) (shots : List Nat) (B : Nat)
+    (budget : ∀ S∈shots, countBits 64 S≤m) (clears : runMasks B shots=0) :
+    winning adj (fun S => card S≤m) shots.length (decoded B) := by
+  induction shots generalizing B with
+  | nil =>
+      change B=0 at clears
+      subst B
+      intro v hv; simp [decoded] at hv
+  | cons S shots ih =>
+      have tail := ih (stepMask B S) (fun Q hQ => budget Q (List.mem_cons_of_mem S hQ)) clears
+      rw [stepMask_correct] at tail
+      refine ⟨decoded S,?_,tail⟩
+      change card (decoded S)≤m
+      rw [decoded_card]
+      exact budget S List.mem_cons_self
+
+theorem actual_endpoint_upper (kind : Fin 12) : ∃ shots : Nat → Region Room,
+    (∀ t, t<upperTurns kind → card (shots t)≤upperBudget kind) ∧
+      GuaranteesAt adj (fun _ => True) shots (upperTurns kind-1) := by
+  have win := runMasks_winning_budget (upperBudget kind) (upperSchedule kind)
+    18446744073709551615 (upper_budget kind) (upper_clears kind)
+  rw [upper_length] at win
+  have full : decoded 18446744073709551615=(fun _ => True) := by
+    funext v; exact propext ⟨fun _ => trivial,fun _ => cap_bit v⟩
+  rw [full] at win
+  have ht : upperTurns kind-1+1=upperTurns kind := by have := upper_positive kind; omega
+  have h := (winning_iff_guarantees adj (fun S => card S≤upperBudget kind) no_dead_ends
+    (upperTurns kind-1) (fun _ => True))
+  rw [ht] at h
+  exact h.mp win
+
+theorem actual_one_day (m : Nat) (large : 64≤m) : ∃ shots : Nat → Region Room,
+    (∀ t, t<1 → card (shots t)≤m) ∧ GuaranteesAt adj (fun _ => True) shots 0 := by
+  refine ⟨fun _ _ => True,?_,?_⟩
+  · intro t ht
+    have h : card (fun _ : Room => True)=64 := (card_full_iff _).mpr (fun _ => trivial)
+    simpa only [h] using large
+  · intro v _; trivial
+
+end Princess.FourCubeCompression
+#print axioms Princess.FourCubeCompression.actual_endpoint_upper

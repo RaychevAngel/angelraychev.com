@@ -1,0 +1,95 @@
+<section class="cube-explorer" aria-labelledby="cube-title">
+  <h3 id="cube-title">Search the 64-room building</h3>
+  <p>Four floors, each with a four-by-four grid. The princess can also move between corresponding rooms on adjacent floors.</p>
+  <label>Rooms inspected per day <input id="cube-budget" type="number" min="1" max="64" value="8" /></label>
+  <p id="cube-result" aria-live="polite"></p>
+  <div id="cube-floors" class="floors" role="img" aria-label="Four floors showing all possible target locations and the inspected rooms"></div>
+  <p class="legend">● / ○ possible location, by checkerboard parity · × inspected this morning</p>
+  <div class="buttons"><button id="cube-reset" type="button">Restart</button><button id="cube-back" type="button">Back</button><button id="cube-next" type="button">Next step</button></div>
+  <div class="jump"><label>Go to day <input id="cube-day" type="number" min="1" max="40" value="1" /></label><button id="cube-go" type="button">Show day</button></div>
+  <p id="cube-step" aria-live="polite"></p>
+  <div class="buttons examples"><button data-cube-budget="7" type="button">7: impossible</button><button data-cube-budget="8" type="button">8: forty days</button><button data-cube-budget="9" type="button">9: twenty days</button><button data-cube-budget="15" type="button">15: seven days</button></div>
+  <noscript>The table above gives the exact answer for every daily budget. JavaScript enables the room-by-room demonstration.</noscript>
+</section>
+<script>
+// @ts-nocheck
+import schedules from '../lib/four-cube-strategies.json';
+const el = id => document.getElementById(`cube-${id}`);
+let frames = [], step = 0;
+function neighbors(survivors) {
+  const result = new Set();
+  for (const v of survivors) {
+    const coordinates = [Math.floor(v/16), Math.floor(v/4)%4, v%4];
+    for (let axis=0; axis<3; axis++) for (const sign of [-1,1]) {
+      const next = [...coordinates]; next[axis] += sign;
+      if (next[axis]>=0 && next[axis]<4) result.add(16*next[0]+4*next[1]+next[2]);
+    }
+  }
+  return result;
+}
+function load() {
+  const budget = Math.max(1, Math.min(64, Math.floor(Number(el('budget').value)) || 1));
+  el('budget').value = budget;
+  const schedule = schedules[String(budget)];
+  el('day').max = schedule.days || 1;
+  el('day').disabled = el('go').disabled = schedule.days === null;
+  el('result').textContent = schedule.days === null ? 'No finite search can guarantee capture with this budget.' : `Minimum guaranteed time: ${schedule.days} ${schedule.days===1?'day':'days'}.`;
+  frames = []; step = 0;
+  let belief = new Set(Array.from({length:64},(_,v)=>v));
+  if (schedule.days === null) frames.push({belief, shot:new Set(), day:1, phase:'impossible'});
+  else for (const [index, rooms] of schedule.shots.entries()) {
+    const shot = new Set(rooms);
+    frames.push({belief:new Set(belief), shot, day:index+1, phase:'before'});
+    const survivors = new Set([...belief].filter(v=>!shot.has(v)));
+    frames.push({belief:survivors, shot, day:index+1, phase:survivors.size?'inspected':'captured'});
+    if (survivors.size) {
+      belief = neighbors(survivors);
+      frames.push({belief:new Set(belief), shot:new Set(), day:index+1, phase:'moved'});
+    }
+  }
+  render();
+}
+function render() {
+  const f=frames[step]; el('day').value=f.day; el('floors').replaceChildren();
+  for (let x=0;x<4;x++) {
+    const floor=document.createElement('div'), label=document.createElement('p'), grid=document.createElement('div');
+    label.textContent=`Floor ${x+1}`; grid.className='floor-grid';
+    for (let y=0;y<4;y++) for (let z=0;z<4;z++) {
+      const v=16*x+4*y+z, room=document.createElement('span');
+      room.className='room'+(f.belief.has(v)?' possible':'')+(f.shot.has(v)?' inspected':'');
+      room.textContent=f.shot.has(v)?'×':f.belief.has(v)?((x+y+z)%2?'○':'●'):'';
+      room.title=`Floor ${x+1}, row ${y+1}, column ${z+1}: ${f.belief.has(v)?'possible':'excluded'}${f.shot.has(v)?', inspected':''}`;
+      grid.append(room);
+    }
+    floor.append(label,grid); el('floors').append(floor);
+  }
+  const text={
+    impossible:'Seven or fewer daily inspections cannot cross the barrier proved in the lower-bound theorem. This is an impossibility result for every strategy.',
+    before:`Day ${f.day}: ${f.belief.size} rooms remain possible. Inspect the ${f.shot.size} marked rooms simultaneously.`,
+    inspected:`Day ${f.day}, after every inspection misses: ${f.belief.size} rooms remain possible. The princess must now move once.`,
+    moved:`Day ${f.day}, after movement: ${f.belief.size} rooms are possible. Previously excluded rooms can become possible again.`,
+    captured:`Capture is guaranteed by day ${f.day}: every remaining possibility was inspected. No legal target route avoids the whole schedule.`
+  };
+  el('step').textContent=text[f.phase];
+  el('back').disabled=el('reset').disabled=step===0;
+  el('next').disabled=step===frames.length-1;
+}
+el('budget').addEventListener('change',load);
+el('reset').onclick=()=>{step=0;render()};
+el('back').onclick=()=>{step=Math.max(0,step-1);render()};
+el('next').onclick=()=>{step=Math.min(frames.length-1,step+1);render()};
+el('go').onclick=()=>{const day=Math.max(1,Math.min(Number(el('day').max),Math.floor(Number(el('day').value))||1));step=frames.findIndex(f=>f.day===day);render()};
+document.querySelectorAll('[data-cube-budget]').forEach(button=>button.addEventListener('click',()=>{el('budget').value=button.dataset.cubeBudget;load()}));
+load();
+</script>
+<style>
+  .cube-explorer{border:1px solid var(--rule);padding:22px;margin:26px 0 38px}
+  h3{margin-top:0}.cube-explorer p{font-size:12px;line-height:1.7}label{font-size:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}input{width:80px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
+  .floors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:390px;margin:16px auto}
+  .floors :global(p){margin:0 0 6px;font-size:11px}.floors :global(.floor-grid){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
+  .floors :global(.room){min-width:0;min-height:0;width:100%;box-sizing:border-box;border:1px solid var(--rule);aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#fafafa;font-size:15px}
+  .floors :global(.possible){border-color:#888;background:white}.floors :global(.inspected){outline:2px solid black;outline-offset:-2px;background:white;font-size:27px}
+  .legend{color:var(--dim);font-size:11px!important}.buttons{display:flex;flex-wrap:wrap;gap:6px}button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:#eee}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default}button:focus-visible,input:focus-visible{outline:2px solid black;outline-offset:2px}#cube-step{min-height:62px;margin-top:12px}.examples{margin-top:14px}
+  @media(max-width:480px){.cube-explorer{padding:14px}}
+  .jump{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+</style>

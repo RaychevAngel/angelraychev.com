@@ -3,7 +3,7 @@
 This checkpoint uses Lean 4.33.1 and Std. The source-specific verification
 receipt gives the exact files and their SHA-256 hashes. The final physical
 classifications cover all paths, all two-row grids, and every budget on the
-3×3×3 box. The ordinary proofs of the other manuscript results are not
+3×3×3 and 4×4×4 boxes. The ordinary proofs of the other manuscript results are not
 presented as complete Lean proofs.
 
 Download `lean-proofs.zip`, extract it, and run

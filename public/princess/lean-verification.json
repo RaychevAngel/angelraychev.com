@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-12T05:49:17.578688+00:00",
+  "checked_at_utc": "2026-09-12T09:34:12.625236+00:00",
   "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "command_policy": "Sequential compilation with -j1; local imports built first; no package installation.",
-  "seconds": 160.18118804180995,
+  "seconds": 345.70173433306627,
   "all_passed": true,
   "scope": "Successful compilation proves the declarations in these exact sources. Mathematical coverage is described separately in lean/README.md.",
   "files": [
@@ -10,7 +10,7 @@
       "file": "lean/BeliefSemantics.lean",
       "sha256": "7865796f17d4c759fd9f336ce562d02da08c93eaa7ec30589bac9ace86759e72",
       "exit_code": 0,
-      "seconds": 0.3521388750523329,
+      "seconds": 0.33610858395695686,
       "output": "'Princess.possible_iff_reachable' depends on axioms: [propext]\n'Princess.guarantees_iff_belief_covered' depends on axioms: [propext]\n'Princess.guarantees_iff_next_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.possible_mono_initial' does not depend on any axioms\n'Princess.possible_union' does not depend on any axioms\n'Princess.possible_mono_probes' does not depend on any axioms\n",
       "contains_sorryAx": false
     },
@@ -18,7 +18,7 @@
       "file": "lean/LadderCounters.lean",
       "sha256": "6cbb864e3a7ca8287b194f23487d5bb9115eb8470bed494590ead6f7c2bba674",
       "exit_code": 0,
-      "seconds": 2.638181291986257,
+      "seconds": 2.5892211250029504,
       "output": "'Princess.Ladder.next_mono' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.weight_round' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.counter_dominated' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.capture_lower_bound' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.one_probe_impossible' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.two_probe_optimal' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.partial_round_strict' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.tight_left_elimination' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.Ladder.tight_clears_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.Ladder.capture_strict_when_nondivisible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.Ladder.quotient_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.Ladder.counter_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.Ladder.one_probe_no_clears' depends on axioms: [propext, Quot.sound]\n'Princess.Ladder.optimalTurns_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -26,7 +26,7 @@
       "file": "lean/LadderGeometry.lean",
       "sha256": "acc0d793a7ae5debd3a9a1dc53483758cacdea044f771089167cd9b2930272eb",
       "exit_code": 0,
-      "seconds": 0.4028835000935942,
+      "seconds": 0.4020505831576884,
       "output": "'Princess.LadderGeometry.recolor_involutive' does not depend on any axioms\n'Princess.LadderGeometry.physical_no_dead_ends' does not depend on any axioms\n'Princess.LadderGeometry.rowAdj_iff_colorAdj' depends on axioms: [propext, Quot.sound]\n'Princess.LadderGeometry.physicalStep_iff_recolored' depends on axioms: [propext, Quot.sound]\n'Princess.LadderGeometry.step_fiber' depends on axioms: [propext]\n'Princess.LadderGeometry.cohort_projection' depends on axioms: [propext]\n",
       "contains_sorryAx": false
     },
@@ -34,7 +34,7 @@
       "file": "lean/LadderCardinality.lean",
       "sha256": "5e5c0a14453c53824afcbbd477d77e465c963e555134b5e30da8b450ade2889e",
       "exit_code": 0,
-      "seconds": 0.7971886668819934,
+      "seconds": 0.7837148329708725,
       "output": "'Princess.LadderCardinality.path_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderCardinality.close_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderCardinality.column_count_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderCardinality.suffix_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderCardinality.recolor_roomCard' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -42,7 +42,7 @@
       "file": "lean/ProfileInverse.lean",
       "sha256": "61c97c039ce2e9040536b56333fde16759074559e43cf563ea05651f7893d477",
       "exit_code": 0,
-      "seconds": 0.6499419999308884,
+      "seconds": 0.6558131668716669,
       "output": "'Princess.ProfileInverse.dual_surplus' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -50,7 +50,7 @@
       "file": "lean/BipartiteProfileDuality.lean",
       "sha256": "5cbfc68197f7dd272f908be26d77de65916755d46ae0340c1eac0e7bdb9370a0",
       "exit_code": 0,
-      "seconds": 0.53812958416529,
+      "seconds": 0.5278001250699162,
       "output": "'Princess.BipartiteProfileDuality.profile_duality' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.BipartiteProfileDuality.graph_surplus_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -58,7 +58,7 @@
       "file": "lean/CaptureRecurrence.lean",
       "sha256": "f9e3d3b6f28c8f177f7ea90cfde0a7c324acf580d23259a3a05686958cfab052",
       "exit_code": 0,
-      "seconds": 0.3600780409760773,
+      "seconds": 0.3535452918149531,
       "output": "'Princess.CaptureRecurrence.winning_downward' does not depend on any axioms\n'Princess.CaptureRecurrence.losing_iff_trap' does not depend on any axioms\n'Princess.CaptureRecurrence.every_trap_subset_losing' does not depend on any axioms\n'Princess.CaptureRecurrence.trap_from_generators' does not depend on any axioms\n'Princess.CaptureRecurrence.winning_succ' does not depend on any axioms\n'Princess.CaptureRecurrence.next_subset_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.CaptureRecurrence.winning_backward' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.CaptureRecurrence.winning_generators' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.CaptureRecurrence.winning_iff_schedule' depends on axioms: [Quot.sound]\n'Princess.CaptureRecurrence.winning_iff_guarantees' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -66,15 +66,23 @@
       "file": "lean/FiniteSubsetProfiles.lean",
       "sha256": "90bcc2e4b279abb64e5212d88ceb1f5ecce78fea57e5c812c36f8668ee385680",
       "exit_code": 0,
-      "seconds": 0.39952429104596376,
+      "seconds": 0.3927265419624746,
       "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FiniteIdealCertificates.lean",
+      "sha256": "e435e342d97939e4344ad999fa6c394dc70348803973c94107594f382b835008",
+      "exit_code": 0,
+      "seconds": 0.3259462080895901,
+      "output": "'Princess.FiniteIdealCertificates.check_sound' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
     {
       "file": "lean/FiveRowDeficitArithmetic.lean",
       "sha256": "8f2acab0cdfcc50f671fa877d195ddad7416f4a8a5cf19cd69506c132f907829",
       "exit_code": 0,
-      "seconds": 17.677228917134926,
+      "seconds": 17.633532292209566,
       "output": "'Princess.FiveRowDeficitArithmetic.endpoint' depends on axioms: [propext, Quot.sound]\n'Princess.FiveRowDeficitArithmetic.three_rows' depends on axioms: [propext, Quot.sound]\n'Princess.FiveRowDeficitArithmetic.alternating_rows' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -82,7 +90,7 @@
       "file": "lean/FiveRowFourProbeArithmetic.lean",
       "sha256": "c7be14ca9374dc3603f508da83647f8adaaa806adf9fb45a32ed95d34da84a24",
       "exit_code": 0,
-      "seconds": 45.450048916973174,
+      "seconds": 45.405788084026426,
       "output": "'Princess.FiveRowFourProbeArithmetic.potential_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -90,7 +98,7 @@
       "file": "lean/FiveRowFourProbeEquality.lean",
       "sha256": "94b5172e57a0c47a2b29fb4ede5afbada4707d89333e7053b0f43a64fcc688e9",
       "exit_code": 0,
-      "seconds": 3.229923291830346,
+      "seconds": 3.172463082941249,
       "output": "'Princess.FiveRowFourProbeArithmetic.full_tight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FiveRowFourProbeArithmetic.penultimate_tight' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -98,7 +106,7 @@
       "file": "lean/FiveRowHighBudgetArithmetic.lean",
       "sha256": "8e64f7254260951b5b1804c52ee440bbae1e865f958a94bf8e58d091fbee020c",
       "exit_code": 0,
-      "seconds": 0.8640681668184698,
+      "seconds": 0.85154370800592,
       "output": "'Princess.FiveRowHighBudgetArithmetic.fifteen_eight' does not depend on any axioms\n'Princess.FiveRowHighBudgetArithmetic.fifteen_eleven' does not depend on any axioms\n'Princess.FiveRowHighBudgetArithmetic.twenty_fourteen' does not depend on any axioms\n",
       "contains_sorryAx": false
     },
@@ -106,7 +114,7 @@
       "file": "lean/FiveRowOddRankArithmetic.lean",
       "sha256": "3d9c7ed4ece3871eb8fb935869eeacacf3674da117ca11b1eb5263d727ade079",
       "exit_code": 0,
-      "seconds": 11.985601083841175,
+      "seconds": 11.874300708062947,
       "output": "'Princess.FiveRowOddRankArithmetic.potential_step' depends on axioms: [propext, Quot.sound]\n'Princess.FiveRowOddRankArithmetic.value_monotone' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -114,15 +122,303 @@
       "file": "lean/FiveRowRankArithmetic.lean",
       "sha256": "721f99c6a8c2ab0fa323f39e1da9f8b93930b295e8e951d852d15e958ae697a6",
       "exit_code": 0,
-      "seconds": 6.324433916946873,
+      "seconds": 6.2966007089708,
       "output": "'Princess.FiveRowRankArithmetic.potential_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FiveRowRankArithmetic.value_initial' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/StrategyCompression.lean",
+      "sha256": "5be296e0dea4412ecbf4a4082645c6122ce253a3eb467a968fb1dd3503596dc4",
+      "exit_code": 0,
+      "seconds": 0.4234678749926388,
+      "output": "'Princess.StrategyCompression.wins_compressed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.StrategyCompression.optimal_fixed_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.StrategyCompression.fixed_iff_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SurvivorEnvelope.lean",
+      "sha256": "1288ce2e12410084e9b1eaeb04bebf341597679396cfcb3e2beaed434a2cd672",
+      "exit_code": 0,
+      "seconds": 0.3755656247958541,
+      "output": "'Princess.SurvivorEnvelope.actual_capture_iff_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SurvivorEnvelope.budget_capture_iff_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SurvivorEnvelope.product_actual_capture_iff_local_costs' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ProductCompression.lean",
+      "sha256": "c384eb6efc8291951862bfbcf467238bfce1dfb1e67e7f61b46436d87ce7f8bb",
+      "exit_code": 0,
+      "seconds": 0.333300415892154,
+      "output": "'Princess.ProductCompression.lift' does not depend on any axioms\n'Princess.ProductCompression.lift_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ProductCompression.lift_idempotent' depends on axioms: [Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFourData.lean",
+      "sha256": "11c14353717fd1616b7713132735c8e967db715c98c5077a694bf1fcd6b69e89",
+      "exit_code": 0,
+      "seconds": 26.10279199993238,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFour.lean",
+      "sha256": "9525f64759d384edf9081e4ef4645de542886a6b45767cd63d0a659b75b047fd",
+      "exit_code": 0,
+      "seconds": 0.38387420820072293,
+      "output": "'Princess.SquareCompressionFour.cmap_size' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SquareCompressionFour.cmap_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SquareCompressionFour.cmap_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ProductCompressionNormalization.lean",
+      "sha256": "a54c8fff1f68dee42986959b20382c3bbe0dbd10030097f3e29f35ba432f02c3",
+      "exit_code": 0,
+      "seconds": 0.4143152078613639,
+      "output": "'Princess.ProductCompression.normalized_common_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ProductCompression.normalize_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ProductCompressionEnergy.lean",
+      "sha256": "cef816cc70b3e34a0ff59bc17538bdc916d7e925f0d08a61337a8db144823bd4",
+      "exit_code": 0,
+      "seconds": 0.46445325016975403,
+      "output": "'Princess.ProductCompression.lift_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFourEnergyData.lean",
+      "sha256": "a12c4a927b2b04b21d3158fc66bdcf9531fcb1bf3d1c19081d87846f4bf44086",
+      "exit_code": 0,
+      "seconds": 14.805750374915078,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFourEnergy.lean",
+      "sha256": "30ddfed50cac651013c8f2ba1d5d8060336051333296322f05f33f622ffd103c",
+      "exit_code": 0,
+      "seconds": 0.3903649589046836,
+      "output": "'Princess.SquareCompressionFour.cmap_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ProductCompressionRelabel.lean",
+      "sha256": "e4ace3ba75d9de6b5074f05fa1c5ba03adc9548d95d5a3c56e6214d050152370",
+      "exit_code": 0,
+      "seconds": 0.3438151250593364,
+      "output": "'Princess.ProductCompression.relabel' depends on axioms: [propext, Quot.sound]\n'Princess.ProductCompression.relabel_energy' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeCompression.lean",
+      "sha256": "92d2784b14f2b3217f52bf05011963874d53bcf27e424919b6483c2cfec984da",
+      "exit_code": 0,
+      "seconds": 4.853896040935069,
+      "output": "'Princess.FourCubeCompression.op_size' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.op_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeNormalForm.lean",
+      "sha256": "145d321c8102a8c45296ff105afae0e1e45dba76dd60564ad758c9a01266572c",
+      "exit_code": 0,
+      "seconds": 1.210581875173375,
+      "output": "'Princess.FourCubeCompression.actual_capture_iff_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.normalizer_common_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeIdealData.lean",
+      "sha256": "fea0eca0de6e6fb701c905b6f5ef5f4acf8556fbc025fc0f447325bee2517c67",
+      "exit_code": 0,
+      "seconds": 2.430341541999951,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeIdeals.lean",
+      "sha256": "66857fcd5fc691b7a4177d6729c2be2e59ba5382fa4301c770a74217549b673c",
+      "exit_code": 0,
+      "seconds": 0.7755964170210063,
+      "output": "'Princess.FourCubeCompression.fixed_down_mask' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialData.lean",
+      "sha256": "766df219c0a3b1b71ad24a2c65a62b3348a15e225c1deb1f40c8ddfda31a887c",
+      "exit_code": 0,
+      "seconds": 8.163897749967873,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialCertificate.lean",
+      "sha256": "245c5a1372462d42dfefe746aef2ac7b91a1e8fc20930f9ab94cde86bc86391e",
+      "exit_code": 0,
+      "seconds": 78.33852545800619,
+      "output": "'Princess.FourCubeCompression.transitions_even_checked' depends on axioms: [propext]\n'Princess.FourCubeCompression.transitions_odd_checked' depends on axioms: [propext]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialSemantics.lean",
+      "sha256": "51a8646e5445970c339ae1cc81e6bd18c05daf1ef577e0ae9313341aa71c4ae5",
+      "exit_code": 0,
+      "seconds": 0.43399141705594957,
+      "output": "'Princess.FourCubeCompression.encoded_transition' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialState.lean",
+      "sha256": "9dd7e6b87c2f3818c66143152840fe8b77ca3374e7d621a0c78164b3ed596143",
+      "exit_code": 0,
+      "seconds": 2.745406833011657,
+      "output": "'Princess.FourCubeCompression.state_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounterData.lean",
+      "sha256": "5b4bc7aa8a3bb528ef66b5f0884d8e5481664ada4e871688cb766f1a059e937f",
+      "exit_code": 0,
+      "seconds": 1.7175145000219345,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter0.lean",
+      "sha256": "9709c3688794ecb92bf3f864c76e85a82d69bbc511c45b2b2d0d92d61955608d",
+      "exit_code": 0,
+      "seconds": 3.2683733340818435,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter1.lean",
+      "sha256": "098cb143713363c4be32f9e7ee837a96dec62f65b5836580e724d4b009e68e59",
+      "exit_code": 0,
+      "seconds": 3.3611923751886934,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter2.lean",
+      "sha256": "22860b9c6124dba4acbed76744936288aa0803b15856161245935aa5c654cae9",
+      "exit_code": 0,
+      "seconds": 3.4728173329494894,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter3.lean",
+      "sha256": "e381ffeb8037c0020105ef25e784e8e65097441b856aeaf9e2bcdd8166e5f973",
+      "exit_code": 0,
+      "seconds": 3.553116000024602,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter4.lean",
+      "sha256": "13a933cb53a975ceabccf5ba841c4a4b940743e0381e510d6d5c90a7240af5c7",
+      "exit_code": 0,
+      "seconds": 3.6640927500557154,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter5.lean",
+      "sha256": "ba159f1f163feb0b53a748545a73820f932757ab2583ee9bf8f2b3dca498550a",
+      "exit_code": 0,
+      "seconds": 3.7462837919592857,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter6.lean",
+      "sha256": "e5b0980d25cd07c01155acadf069d8152870f789da08de5811dde0360e83e2f6",
+      "exit_code": 0,
+      "seconds": 3.792575499974191,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter7.lean",
+      "sha256": "bb7faee376f801ca4e596d8db8095f10e5ee0ff4cb1e8e0b995361f0a159b8ec",
+      "exit_code": 0,
+      "seconds": 3.8465819580014795,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter8.lean",
+      "sha256": "7d7fae4be6d649e6c7162b0cd0789cc72b2a3a2064a08adac4b794cc254e7402",
+      "exit_code": 0,
+      "seconds": 4.2618544169235975,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter9.lean",
+      "sha256": "d1621474983fc4f1546287e383df2ae992c25b9be13fc7ea5edbbad6c48756fe",
+      "exit_code": 0,
+      "seconds": 4.638934582937509,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter.lean",
+      "sha256": "d0b20661db5e31b3c9442835fc787f98000694b8bc693396599f7ce9c6c83436",
+      "exit_code": 0,
+      "seconds": 0.4840255829039961,
+      "output": "'Princess.FourCubeTimeCounter.physical_step' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeProfileGeometry.lean",
+      "sha256": "075d9aa625ca82c46140f4432a991fb033b8c2765d61fdb1a368888c1843e7d2",
+      "exit_code": 0,
+      "seconds": 0.30031816591508687,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeCriticalLower.lean",
+      "sha256": "4979aaffdbe65ff9867891052b9745d42935201e00ebc54d16fcb63375740ac5",
+      "exit_code": 0,
+      "seconds": 0.30846524983644485,
+      "output": "'Princess.FourCubeCompression.actual_lower_40' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeAllLower.lean",
+      "sha256": "1454d15336d2160ef85b20d5bc5ee1ab88e91bd0ec58c96f34d46c8aee6e7434",
+      "exit_code": 0,
+      "seconds": 0.3997332500293851,
+      "output": "'Princess.FourCubeCompression.actual_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.actual_impossible_7' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeUpper.lean",
+      "sha256": "ac9fe800136d9e085e7ddf6eee201023962cea089c58c1b50f31dfda67d1b113",
+      "exit_code": 0,
+      "seconds": 0.5629325830377638,
+      "output": "'Princess.FourCubeCompression.actual_upper_40' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeAllUpper.lean",
+      "sha256": "6d8fed45713fb6dd35159978021edfe959e8bf502b89dfd3cd393e94dca7b5f1",
+      "exit_code": 0,
+      "seconds": 1.2466053750831634,
+      "output": "'Princess.FourCubeCompression.actual_endpoint_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeClassification.lean",
+      "sha256": "8567dc4a00f246371b63e5cde914b0c294457d8c78d5a313f9bd98661284c1dc",
+      "exit_code": 0,
+      "seconds": 0.6603748749475926,
+      "output": "'Princess.FourCubeCompression.can_capture_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.exact_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
     {
       "file": "lean/LadderGame.lean",
       "sha256": "601d03b51607b7870c08989a9c028802160fafa7f8804329178fa7a911dfdcca",
       "exit_code": 0,
-      "seconds": 0.5851490409113467,
+      "seconds": 0.5456125410273671,
       "output": "'Princess.LadderGame.pair_step' depends on axioms: [propext, Quot.sound]\n'Princess.LadderGame.colored_game_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderGame.actual_ladder_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderGame.actual_one_probe_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderGame.empty_iff_guaranteed_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.LadderGame.actual_single_edge_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -130,7 +426,7 @@
       "file": "lean/PathGeometry.lean",
       "sha256": "564b5ff095e49f219614261d13aa356df6c65fed3d9bb9aa0395af521ba15668",
       "exit_code": 0,
-      "seconds": 1.3462088329251856,
+      "seconds": 1.244040209101513,
       "output": "'Princess.PathGeometry.move_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathGeometry.card_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathGeometry.next_top_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathGeometry.card_top' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathGeometry.card_reflected' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -138,7 +434,7 @@
       "file": "lean/PathUpperArithmetic.lean",
       "sha256": "f79c910a69893a5a772de19ce2c3095f46f9d53bb92d3291ff1c91cb49fd14a4",
       "exit_code": 0,
-      "seconds": 1.3080325829796493,
+      "seconds": 1.2526980829425156,
       "output": "'Princess.PathUpperArithmetic.canonical_sweepCount_eq_correctedCeiling' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Princess.PathUpperArithmetic.single_probe_sweepCount' depends on axioms: [propext, Quot.sound]\n'Princess.PathUpperArithmetic.sweepCount_eq_correctedCeiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathUpperArithmetic.even_transition_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathUpperArithmetic.odd_transition_ceiling' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -146,7 +442,7 @@
       "file": "lean/PathSweep.lean",
       "sha256": "3f9bf41a0d56390602c0e8fa345b56dc81e076ae574d35ad88d0a0c274c187b3",
       "exit_code": 0,
-      "seconds": 1.8288435421418399,
+      "seconds": 1.7197220411617309,
       "output": "'Princess.PathSweep.prefix_sweep' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathSweep.first_batches' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathSweep.finish_first' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathSweep.sweep_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathSweep.corrected_ceiling_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -154,7 +450,7 @@
       "file": "lean/PathUpper.lean",
       "sha256": "ab2dccbdf244341d4dcacbec2c54342ab6d3d7dc9d9a22fea0da39ad88431827",
       "exit_code": 0,
-      "seconds": 0.6180602500680834,
+      "seconds": 0.5762551669031382,
       "output": "'Princess.PathUpper.path_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathUpper.actual_path_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -162,7 +458,7 @@
       "file": "lean/PathLowerGeometry.lean",
       "sha256": "650fc3bf5c1426c1e5a6bc9d75e0b145a4bac44234fd0e80925cc31041f26c3c",
       "exit_code": 0,
-      "seconds": 1.0114776669070125,
+      "seconds": 0.94114745920524,
       "output": "'Princess.PathLowerGeometry.even_neighborhood_nonshrinking' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathLowerGeometry.even_equality_left_full' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathLowerGeometry.even_zero_endpointless' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathLowerGeometry.even_endpointless_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -170,7 +466,7 @@
       "file": "lean/PathCohorts.lean",
       "sha256": "edb6dc79f02947dffa81f77c19476baa8b9fc25702132947ed729472d0e22051",
       "exit_code": 0,
-      "seconds": 0.5406012078747153,
+      "seconds": 0.5149704578798264,
       "output": "",
       "contains_sorryAx": false
     },
@@ -178,7 +474,7 @@
       "file": "lean/PathRankLower.lean",
       "sha256": "1e45a1e383ada770d928ad90f22525c552f0fd2b3a0a5d04fc3f6c9a6864a50a",
       "exit_code": 0,
-      "seconds": 0.9794330829754472,
+      "seconds": 0.9471534581389278,
       "output": "'Princess.PathRankLower.ammunition_step' depends on axioms: [propext, Quot.sound]\n'Princess.PathRankLower.captured_ammunition' depends on axioms: [propext, Quot.sound]\n'Princess.PathRankLower.residue_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathRankLower.captured_even_formula' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathRankLower.captured_one_probe' depends on axioms: [propext, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -186,7 +482,7 @@
       "file": "lean/PathEvenRank.lean",
       "sha256": "778aaddf8e25e5897aeb5715767724429bdda6b686cac00c51b8549309885964",
       "exit_code": 0,
-      "seconds": 0.6592093750368804,
+      "seconds": 0.6178526249714196,
       "output": "'Princess.PathEvenRank.path_even_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -194,7 +490,7 @@
       "file": "lean/PathOddGeometry.lean",
       "sha256": "d30baad254737c8aacd0e9b89fd17fa5bfcacdc7a410341be9cde4bdd7a317ff",
       "exit_code": 0,
-      "seconds": 1.2762633748352528,
+      "seconds": 1.1232485419604927,
       "output": "/Users/angel/code/math/princess/lean/PathOddGeometry.lean:33:38: warning: This simp argument is unused:\n  ite_false\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [lt', par', ite_true]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'Princess.PathOddGeometry.odd_neighborhood_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathOddGeometry.odd_small_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -202,7 +498,7 @@
       "file": "lean/PathOddRank.lean",
       "sha256": "ebe71f1a67e9877c277e71acfd00efb1d1f1a8b8103c4c3b503bdef2c5608350",
       "exit_code": 0,
-      "seconds": 0.8636116250418127,
+      "seconds": 0.8195403749123216,
       "output": "'Princess.PathOddRank.physical_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathOddRank.empty_counter' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -210,7 +506,7 @@
       "file": "lean/PathOddRankLower.lean",
       "sha256": "3a74942b9caec9687cdd525c9409a3e18ba8228c1607a8cdd41f711093e63846",
       "exit_code": 0,
-      "seconds": 1.4418824170716107,
+      "seconds": 1.3149758749641478,
       "output": "'Princess.PathOddRankLower.odd_exception_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -218,7 +514,7 @@
       "file": "lean/PathOddBridge.lean",
       "sha256": "753ac54a1adbb9f0a2e4b4cecff1333fc795d44d464c4c1ab8b2982e6aa98577",
       "exit_code": 0,
-      "seconds": 0.7871874158736318,
+      "seconds": 0.6976811659988016,
       "output": "'Princess.PathOddBridge.empty_phase_counter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathOddBridge.path_odd_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -226,7 +522,7 @@
       "file": "lean/PathClassification.lean",
       "sha256": "adea1acfac9221eb82f4507bf89a1b4d9521944fb2d24c4b6ef9c84e3605e15f",
       "exit_code": 0,
-      "seconds": 0.40195995895192027,
+      "seconds": 0.3687679579015821,
       "output": "'Princess.PathClassification.actual_path_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathClassification.can_capture_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathClassification.exact_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -234,23 +530,31 @@
       "file": "lean/PathOEIS.lean",
       "sha256": "beb82ca57f4b9b62a5dcbc5bf4a9a8c5cb04d0a971890913834a70f54062ee14",
       "exit_code": 0,
-      "seconds": 1.2499142920132726,
+      "seconds": 1.164919416885823,
       "output": "'Princess.PathOEIS.two_probe_equivalence' depends on axioms: [propext, Quot.sound]\n'Princess.PathOEIS.three_probe_equivalence' depends on axioms: [propext, Quot.sound]\n'Princess.PathOEIS.two_probe_corrected_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.PathOEIS.three_probe_corrected_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
     {
-      "file": "lean/StrategyCompression.lean",
-      "sha256": "5be296e0dea4412ecbf4a4082645c6122ce253a3eb467a968fb1dd3503596dc4",
+      "file": "lean/RecurrenceBridgeOddFiveFour.lean",
+      "sha256": "96313de110704630ad9a4fa87f2efca56f914741c135c72c9ab6978ed8fa4ee9",
       "exit_code": 0,
-      "seconds": 0.44523808313533664,
-      "output": "'Princess.StrategyCompression.wins_compressed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.StrategyCompression.optimal_fixed_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.StrategyCompression.fixed_iff_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "seconds": 1.1746811249759048,
+      "output": "'Princess.RecurrenceBridgeOddFiveFour.finite_certificate' does not depend on any axioms\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/RecurrenceBridgeOddFiveFive.lean",
+      "sha256": "508b7f9bd0d1a66aeabaed3048ca18eea8702858eafd3be9b9b73d94ac036343",
+      "exit_code": 0,
+      "seconds": 0.3893423748668283,
+      "output": "'Princess.RecurrenceBridgeOddFiveFive.finite_certificate' does not depend on any axioms\n",
       "contains_sorryAx": false
     },
     {
       "file": "lean/ThreeCubeTrap.lean",
       "sha256": "ebe270a9216ce0882db409ab47922e6353e84d19871058c5e5d23be018ce2514",
       "exit_code": 0,
-      "seconds": 23.838881582953036,
+      "seconds": 23.275912374956533,
       "output": "'Princess.ThreeCubeTrap.triple_neighborhood_seven' does not depend on any axioms\n'Princess.ThreeCubeTrap.schedule_empty' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTrap.full_board_clears_eighteen' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTrap.full_board_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -258,7 +562,7 @@
       "file": "lean/ThreeCubeLower.lean",
       "sha256": "1a053096d00dd0001e4a84496e5196c7b527d36bfcb83c0b09ae07b5d5fc5cd2",
       "exit_code": 0,
-      "seconds": 0.7144852080382407,
+      "seconds": 0.746867457870394,
       "output": "'Princess.ThreeCubeLower.barrier_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_four_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_five_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_four_actual_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.feasible_iff_five_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -266,7 +570,7 @@
       "file": "lean/ThreeCubeTimeUpper.lean",
       "sha256": "8cffbb86dec010010d408619bfe332cc1f8f183a78b1b40a6097ea7ec960e2f4",
       "exit_code": 0,
-      "seconds": 4.99853741703555,
+      "seconds": 4.979002624982968,
       "output": "'Princess.ThreeCubeTimeUpper.winning_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeUpper.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -274,7 +578,7 @@
       "file": "lean/ThreeCubeTimeColors.lean",
       "sha256": "4358067b2bc0daadc6784f175ff9b9b1c3f8381de4c1fcb11861518f27b2adea",
       "exit_code": 0,
-      "seconds": 0.37641329201869667,
+      "seconds": 0.402496375143528,
       "output": "",
       "contains_sorryAx": false
     },
@@ -282,7 +586,7 @@
       "file": "lean/ThreeCubeTimeCounter.lean",
       "sha256": "d88de2e87f7af71cda612b46193ab162d16d801565f8b1ff42977db998c903fc",
       "exit_code": 0,
-      "seconds": 1.5373977911658585,
+      "seconds": 1.5168830419424921,
       "output": "'Princess.ThreeCubeTimeCounter.physical_step' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTimeCounter.rank_initial' depends on axioms: [propext]\n",
       "contains_sorryAx": false
     },
@@ -290,7 +594,7 @@
       "file": "lean/ThreeCubeTimeProfiles.lean",
       "sha256": "627c15061a837a93f7ecf5d851fad9d2ae02828f88d4a8d4a4dae0f901c12904",
       "exit_code": 0,
-      "seconds": 19.661340417107567,
+      "seconds": 19.573934708954766,
       "output": "'Princess.ThreeCubeTimeProfiles.even_profile_checked' depends on axioms: [propext]\n'Princess.ThreeCubeTimeProfiles.odd_profile_checked' depends on axioms: [propext]\n",
       "contains_sorryAx": false
     },
@@ -298,7 +602,7 @@
       "file": "lean/ThreeCubeTimeIsoperimetry.lean",
       "sha256": "76a318f0f917dbd5730b6fff9f42227e68350aae63b0ae5c5323703c38e8b9d1",
       "exit_code": 0,
-      "seconds": 0.5010191251058131,
+      "seconds": 0.41223825002089143,
       "output": "'Princess.ThreeCubeTimeProfiles.profile_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -306,7 +610,7 @@
       "file": "lean/ThreeCubeTimeClassification.lean",
       "sha256": "f4559c3a2fd076172a9017dc409a09338f4369402b94275460f7dfed80dd076e",
       "exit_code": 0,
-      "seconds": 0.6939639169722795,
+      "seconds": 0.7021007090806961,
       "output": "'Princess.ThreeCubeTimeClassification.actual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeClassification.exact_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeClassification.can_capture_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
@@ -314,7 +618,7 @@
       "file": "lean/UniformOddRank.lean",
       "sha256": "2ff8b32b27d63052512c66ce4393474990319a32806fffc9ddae0b5d855eb92e",
       "exit_code": 0,
-      "seconds": 0.8397480421699584,
+      "seconds": 0.7743973748292774,
       "output": "'Princess.UniformOddRank.potential_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.UniformOddRank.two_cohort_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     }

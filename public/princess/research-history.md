@@ -64,6 +64,36 @@ this public record summarizes the mathematics and its evidence.
   and the36-day schedule replays on actual rooms. This is a finite
   computer-assisted theorem, not a new complete Lean classification.
 
+## 12 September continuation
+
+- Completed all budgets for odd-length five-row rectangles, so five rows
+  are now entirely classified by closed formulas and explicit schedules.
+- Solved the odd-rectangle time recurrence for every odd width 2b+1 and
+  every budget m>=b²+1. A clipped corner potential and equality analysis
+  exclude the final one-day alternative even when the potential loses one
+  unit. The stronger budget m>=2b²+1 admits a simpler residue cutoff.
+- Proved eventual affine periodicity for every fixed transverse box and
+  both parities of its growing side. With A transverse rooms, D=2m−A>0,
+  and g=gcd(A,D), adding 2D/g columns eventually adds exactly 4A/g days.
+  A direct height-descent argument gives a polynomial sufficient onset
+  bound. The length period is two at the minimum feasible budget.
+- Proved the dual fixed-deadline theorem: for fixed t and any fixed finite
+  cross-section, the minimum budget is eventually An/t plus a periodic
+  correction. Survivor-envelope semantics are fully checked in Lean;
+  the effective semilinearity argument remains an ordinary proof.
+- Classified every budget on 4×4×4 and 3×4×4 by independently checked
+  geometric compression and finite certificates. The complete 4×4×4
+  classification now has physical Lean proofs, including arbitrary-set
+  compression. At eight probes its true optimum is40 days, while a
+  count-only relaxation suggests32. The 3×4×4 eight-probe optimum is14,
+  while its count-only relaxation suggests12.
+
+- Completed the exact five-inspection formula18n−36 for all3×3×n boxes
+  with n>=3, including every even length. A113-state weighted-word
+  certificate classifies critical boundaries for all lengths; a one-bit
+  potential gives the lower bound, and an explicit reflected prefix sweep
+  attains it. Independent geometry and scalar/strategy audits passed.
+
 ## Failed approaches and corrections worth retaining
 
 1. Open-neighborhood parity nesting fails on even rectangles. A classical
@@ -84,12 +114,16 @@ this public record summarizes the mathematics and its evidence.
 7. A middle plateau alone does not prove stable endpoint behavior. The
    cylinder theorem requires explicit corner tables and separate empty-set
    treatment; the two parity groups also require their own contraction cuts.
-8. Abstract dual profiles alone do not justify finishing one cohort before
+8. Reflected corner prefixes fail for the full6×6 board with daily quotas
+   (6,8,5,6,18), although an unrestricted strategy wins. Shape compatibility
+   cannot be deduced from the cardinality profile. This does not refute
+   constant-budget prefix optimality from a full board.
+9. Abstract dual profiles alone do not justify finishing one cohort before
    working on the other. A general serial-strategy theorem is still open here.
 
 ## Verification boundary
 
-The complete physical path, two-row, and 3×3×3 classifications are verified
+The complete physical path, two-row, 3×3×3, and 4×4×4 classifications are verified
 in Lean 4.33.1. The public source-specific receipt records the current
 module count, hashes, and fresh single-worker build. The abstract compression
 theorem and generic bipartite profile duality are also checked. Selected
