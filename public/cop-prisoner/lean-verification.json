@@ -1,45 +1,52 @@
 {
-  "verified_at": "2026-09-12T11:14:13.592404+00:00",
+  "verified_at": "2026-09-12T23:48:11.448738+00:00",
   "toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "source_sha256": {
     "Audit.lean": "aa82c32d1fc7b77ecf89afad75a249abaa8b7a3d1f36cedb38a03460f2341d41",
     "CampingObstruction.lean": "230998b06688b2ba4e742fee61c37b36243b346b2b573d3057def78f7910781c",
     "DeliveryGame.lean": "e9024fcc8b0ece17f925ab6f8c8909adbb87b711dcf453f90fb27ce058cbc7e2",
+    "DenseCounting.lean": "afe0b3eddb6d9dd40b580afb5a3db82d0e100b279e591976b449f1253e6e9733",
     "SafeBranching.lean": "4ef3781026919c462682c9320a49c3e99709562946bfa15d108dd30c46dc7363",
     "TwelveVertexCertificate.lean": "24e7ac5448b04e5572f03a00c3440458fc923fba12342ca637a73abe099b7750",
     "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
-    "check.py": "f5afc3c32a03371600e452fee7cd145ea08ef26ac97760b6be9bfcf43ca71a6e",
-    "README.md": "c96c96aa25e6405df39659e9e6e8b9dcde7daf96583a2aece4f437cfda1aa353",
+    "check.py": "7f647babf311aad976476a9606bbad2fac7db3ab200e1e151f4b27878db7ad6b",
+    "README.md": "ee8b3bdd7454f6831ef90079af63c1d1353e11700d17c2625a165b844ff277a2",
     "generate_finite_certificate.py": "b2b479cf61643336b3c461684499c2f89672bc184d678064c16d1574a0b4613e"
   },
   "modules": [
     {
       "module": "DeliveryGame",
-      "seconds": 0.515,
+      "seconds": 2.759,
       "exit_code": 0,
       "output": ""
     },
     {
       "module": "SafeBranching",
-      "seconds": 0.314,
+      "seconds": 0.27,
       "exit_code": 0,
       "output": "/Users/angel/code/math/cop-prisoner/lean/SafeBranching.lean:21:29: warning: Variable name `c` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
     },
     {
       "module": "CampingObstruction",
-      "seconds": 0.301,
+      "seconds": 0.263,
       "exit_code": 0,
       "output": ""
     },
     {
       "module": "TwelveVertexCertificate",
-      "seconds": 6.055,
+      "seconds": 5.639,
       "exit_code": 0,
       "output": "'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n"
     },
     {
+      "module": "DenseCounting",
+      "seconds": 0.385,
+      "exit_code": 0,
+      "output": "'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
       "module": "Audit",
-      "seconds": 0.275,
+      "seconds": 0.256,
       "exit_code": 0,
       "output": "'Delivery.winning_play_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.rankCertificate_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.safe_branching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.bootstrap_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.camping_predecessor_obstruction' does not depend on any axioms\n'Delivery.undirected_no_indirect_guarantee' does not depend on any axioms\n'Delivery.TwelveVertex.certificate_valid' does not depend on any axioms\n'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n"
     }

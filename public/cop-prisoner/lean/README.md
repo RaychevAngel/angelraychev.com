@@ -10,6 +10,7 @@ Pinned toolchain: **Lean 4.33.1**. Dependencies: **Std only**, supplied with Lea
 | `SafeBranching.lean` | Two distinct already-winning successors imply a winning source when distinct closed outgoing neighborhoods overlap in at most one vertex. Safe intermediate arrival and the intervening pursuer turn are explicitly handled. Finite bootstrap certificates imply actual delivery. |
 | `CampingObstruction.lean` | A pursuer whose closed outgoing neighborhood covers the recipient's predecessor set prevents every indirect delivery by camping. Consequences include no indirect guarantees in undirected graphs or through a unique predecessor. |
 | `TwelveVertexCertificate.lean` | An explicit graph on 12 vertices with 24 arcs admits guaranteed delivery for every source/recipient and every allowed initial pursuer position. Every move and strict rank decrease is checked against all legal pursuer replies. The graph has exactly **108 guaranteed indirect pairs**. |
+| `DenseCounting.lean` | The staircase arithmetic from explicit cardinality inequalities, the attaining count identity, and complementary-block two-move delivery in the actual game against every legal history-dependent pursuer. The graph-to-counting bridge and existence of blocks remain separate ordinary proofs. |
 | `Audit.lean` | Reports all logical axioms used by the principal theorems. |
 
 The finite certificate is checked by **kernel reduction** (`decide +kernel`), not native execution or an external solver assertion. The small graph and all certificate data are explicit in the Lean source. Its construction attains the separately proved ordinary bound `I≤n(n−3)` at n=12; the general extremal counting argument is not currently formalized.
@@ -18,7 +19,7 @@ The generated numbers do not establish their own correctness: `certificate_valid
 
 ## Current boundary
 
-The infinite circulant family, modular arithmetic, all-order parameter choices, exact extremal upper bounds beyond the finite example, arc-budget extremal formulas, and the complete original-construction count remain ordinary proofs or explicitly labeled computational evidence in the manuscript. The bootstrap theorem assumes its displayed overlap condition; the current Lean sources do not silently assert that condition for all circulants.
+The infinite circulant and parabola families, modular arithmetic, all-order parameter choices, graph-to-counting inequalities for extremal bounds, arc-budget extremal formulas, probabilistic existence arguments, and the complete original-construction count remain ordinary proofs or explicitly labeled computational evidence in the manuscript. The numerical staircase implication is formalized, with its cardinality hypotheses exposed. The bootstrap and gluing theorems assume their displayed structural premises; the current Lean sources do not silently assert those premises or block existence for all constructions.
 
 The central strategy theorems use only Lean's standard `propext`, `Classical.choice`, and `Quot.sound` where reported by `Audit.lean`. There are no `sorry`, `admit`, custom axioms, or `native_decide` proofs. Classical choice extracts a messenger policy from the proved finite strategy-tree relation.
 

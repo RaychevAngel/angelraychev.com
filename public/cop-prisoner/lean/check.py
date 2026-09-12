@@ -16,7 +16,7 @@ lean=str(Path(args.lean).resolve())
 version=subprocess.check_output([lean,'--version'],text=True).strip()
 if 'version 4.33.1' not in version:
     raise SystemExit(f'Wrong toolchain: {version}')
-modules=['DeliveryGame','SafeBranching','CampingObstruction','TwelveVertexCertificate','Audit']
+modules=['DeliveryGame','SafeBranching','CampingObstruction','TwelveVertexCertificate','DenseCounting','Audit']
 env=dict(os.environ)
 env['LEAN_PATH']=str(HERE)+(os.pathsep+env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
 records=[]
