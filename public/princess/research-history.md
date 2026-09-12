@@ -160,3 +160,23 @@ Resolve arbitrary even-sided boxes outside the completed families, simplify
 the exact recurrences into useful formulas where possible, and extend the
 formal proof coverage. The current manuscript is a research draft; it has
 not been submitted to arXiv.
+
+## September 2026: uniform two-dimensional results
+
+The next investigation varied rectangle width, length and daily inspection
+budget together. It established exact open-neighborhood profiles for every
+even-area rectangle, completing the static two-dimensional profile analysis
+alongside the odd-area theorem. It also proved a uniform one-day determination
+of optimal time on every odd rectangle at every feasible budget, and an
+exact formula for every even shorter width2b at budgets at leastb²+1.
+The latter uses physical backwards-envelope searches and a matching
+midpoint lower bound. These are independently reviewed ordinary proofs;
+priority in the literature remains under review.
+
+A new Lean module proves constructive exact transfer through the affine
+middle of the two-cohort count process. This formal algebraic result is
+separate from the ordinary geometric profile and optimal-time theorems.
+General arguments replaced overlapping narrow-grid proofs while retaining
+all earlier results. The full arbitrary-budget rectangle classification
+remains open, and the research notes preserve failed state-compression and
+potential approaches as well as the current proof targets.

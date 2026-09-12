@@ -53,3 +53,5 @@ There are no admitted proofs, project-specific axioms, or trusted external solve
 ## Work still to formalize
 
 The complete three-row, four-row, and five-row formulas, the wider odd-rectangle formula, the all-odd-box isoperimetric theorem, the general application to boxes with a side of length two, and the cylinder constructions and eventual-period theorems still have ordinary proofs. The [full proof text](/princess/proofs/) states their hypotheses and arguments. Numerical experiments elsewhere in the research archive are explicitly distinguished from proofs.
+
+The new [MiddleIntervalTransfer.lean](/princess/lean/MiddleIntervalTransfer.lean) proves exact reachability for two bounded counters sharing a daily budget, including a construction of every intermediate allocation. Its physical rectangle application and the new uniform time and neighborhood theorems remain ordinary proofs.

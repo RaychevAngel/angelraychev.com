@@ -23,6 +23,10 @@ Two further exact formulas are included: seven rows at five inspections take $2\
 
 For every box whose side lengths are all odd, in any dimension, a geometric compression theorem reduces the search to two counts. This gives an exact algorithm for feasibility, minimum time, and an optimal strategy, with a number of states quadratic in the number of rooms. A related reduction applies to boxes with a side of length two. Other results provide smaller exact recurrences and explicit search constructions on further families.
 
+The latest uniform results settle the exact single-color neighborhood profile on **every rectangle**, including odd-by-even and even-by-even boards. On **every odd-by-odd rectangle at every feasible budget**, a simple solo recurrence determines a pair of consecutive possibilities, $2\tau-1$ and $2\tau$; a uniform rule selecting the final day remains open. For an **even shorter side $2b$**, there is now a complete optimal-time formula for every longer side and every $m\ge b^2+1$, proved by a physical backwards-envelope construction and a matching midpoint lower bound.
+
+The manuscript places these general results before their narrow-width applications. The three-row odd case and the five-row odd large-budget case are now specializations of the wider odd theorem; four rows uses the general even theorem above its threshold. This removes duplicated arguments while retaining the previous results. The exact middle-interval transfer also has a new constructive Lean proof; the new rectangle geometry and time theorems have independently reviewed ordinary proofs.
+
 These algorithms are proved for unbounded families. They do not yet amount to explicit formulas for every box and every budget. The literature discussion identifies prior results, and new derivations are not automatically claimed as new to the literature.
 
 The five-inspection formula for $3\times3\times n$ now covers both parities. The even-length proof classifies critical boundaries using a113-state finite certificate, records whether the preceding survivor was critical, and matches its lower bound with a direct prefix sweep. It is an ordinary unbounded proof with independent geometry and strategy audits; only the single $3\times3\times3$ member is fully formalized in Lean.
@@ -37,7 +41,7 @@ The reverse, fixed-deadline question also has a general theorem. For any fixed f
 
 ## Formal proof and reproducibility
 
-The complete physical classifications for **paths, two-row grids, and the $3\times3\times3$ and $4\times4\times4$ boxes** are verified in Lean 4.33.1. Their statements quantify over arbitrary inspection schedules and legal target walks. The remaining graph classifications have ordinary proofs; individual abstract and arithmetic components also have Lean proofs. The latest full check passed 77 modules, using one compiler worker.
+The complete physical classifications for **paths, two-row grids, and the $3\times3\times3$ and $4\times4\times4$ boxes** are verified in Lean 4.33.1. Their statements quantify over arbitrary inspection schedules and legal target walks. The remaining graph classifications have ordinary proofs; individual abstract and arithmetic components also have Lean proofs. The latest full check passed 78 modules, using one compiler worker.
 
 - [Lean source archive](/princess/lean-proofs.zip)
 - [Theorem map and exact verification boundaries](/princess/lean/)
