@@ -12,12 +12,12 @@
   "paper_url": "https://angelraychev.com/polyominoes/paper/",
   "artifacts": {
     "four-arm-polyominoes.pdf": {
-      "bytes": 415421,
-      "sha256": "4bce954caa1471b8ca9b1f0100156967e53192ef3b807e6b0663970533e3c492"
+      "bytes": 415473,
+      "sha256": "a815ad10388b2b9997694d46c71509a40aef9012a782fce15a8c04553663d75d"
     },
     "arxiv-source.zip": {
-      "bytes": 74924,
-      "sha256": "1579d9580a52a38d497f2d7854b08fdaa95bf53870de2b6e8881df597e1d51e5"
+      "bytes": 74967,
+      "sha256": "648725733f3d30e6f84068c29e9d16ccde2dee8740be91e979ca0d31fc73f8ea"
     },
     "formal-artifact.md": {
       "bytes": 10290,
@@ -47,9 +47,10 @@
       "research/arxiv_construction_audit.md"
     ],
     "formal_audit": "research/arxiv_formal_artifact_audit.json",
-    "source_bundle_clean_compile": "passed: extracted source archive, two PDFLaTeX passes, no undefined references or overflowing boxes",
-    "pdf_visual_review": "passed: all pages reviewed in rendered contact sheets; detailed review of figures, title, theorem table, references, acknowledgments; command kept on one page",
+    "source_bundle_clean_compile": "passed: corrected ZIP extracted and compiled twice; no undefined references or overflowing boxes",
+    "pdf_visual_review": "passed: unchanged 26-page layout; changed pages 3 and 25 rendered and visually reviewed after earlier full-paper review",
     "website_build": "passed",
     "website_local_links_checked": 67
-  }
+  },
+  "revision": "credit-correction-1"
 }
