@@ -23,6 +23,8 @@ For every box whose side lengths are all odd, in any dimension, a geometric comp
 
 These algorithms are proved for unbounded families. They do not yet amount to explicit formulas for every box and every budget. The literature discussion identifies prior results, and new derivations are not automatically claimed as new to the literature.
 
+The finite even example $3\times3\times4$ takes exactly36 days with five daily inspections. Two independent exhaustive searches agree, and the attaining schedule is replayed on actual room sets. The proof uses the established transverse compression; it is a finite computer-assisted result, not a complete physical Lean theorem or a formula for all even lengths.
+
 At the minimum budget $m=(w+1)/2$, every odd length $n\ge w$ has exact time $2wn-C(w)$ for each width $w=3,5,7,9,11,13,15$. The corresponding constants are $8,20,44,84,136,208,288$. A general interval-insertion proof extends exact rational certificates to all lengths; a single formula for all odd widths remains open.
 
 For any fixed odd-sided cross-section, in any dimension, and any fixed sufficient daily budget, sufficiently long odd buildings obey an exact periodic time rule: adding a specified number of floors always adds a specified number of search days. The theorem gives explicit thresholds and a finite procedure to determine the constants. At the minimum budget the eventual rule is linear, with two days per added room. This is proved by a stable decomposition of the two ends and insertion or removal of a central segment of an optimal strategy.

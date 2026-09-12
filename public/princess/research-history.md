@@ -59,6 +59,11 @@ this public record summarizes the mathematics and its evidence.
   of either parity, from compatible transverse profiles. This is not a
   proof of compatible global minimizers or exact capture time on even cylinders.
 
+- The final bounded attack resolved `T₅(3×3×4)=36`. Transverse compression
+  gives eight counts; two independent exhaustive implementations agree,
+  and the36-day schedule replays on actual rooms. This is a finite
+  computer-assisted theorem, not a new complete Lean classification.
+
 ## Failed approaches and corrections worth retaining
 
 1. Open-neighborhood parity nesting fails on even rectangles. A classical
