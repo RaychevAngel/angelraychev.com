@@ -1,0 +1,47 @@
+---
+import Post from '../layouts/Post.astro';
+import DeliveryExplorer from '../components/DeliveryExplorer.astro';
+import katex from 'katex';
+const math=(s:string)=>katex.renderToString(s,{displayMode:true,throwOnError:true});
+---
+<Post title="Guaranteed delivery despite a pursuer" description="How many indirect journeys can a directed network guarantee? Extremal bounds, sparse optimal networks, dense constructions, and verified strategies." updated="2026-09-12">
+  <p class="note">Research checkpoint. Several infinite families are solved exactly; the full extremal classification remains open.</p>
+  <p>A messenger has obtained a message at one station of a directed network. A pursuer starts at a different station. Both can see each other, and they take turns moving along an arrow or waiting. The messenger moves first. Can the message reach its recipient before interception, whatever the pursuer does?</p>
+  <p>A direct arrow to the recipient makes delivery immediate. We count the <strong>additional source–recipient pairs without a direct arrow</strong> for which delivery is guaranteed from every allowed pursuer starting position. A network can support almost all such journeys with surprisingly few connections.</p>
+  <p><a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/lean/">Lean verification</a> · <a href="/cop-prisoner/paper/">Paper and sources</a></p>
+  <DeliveryExplorer />
+  <h2>The rules that matter</h2>
+  <p>The graph is finite and directed, with no loops or repeated arcs; opposite arrows are allowed. Both players may wait. The messenger must deliver in finite time: avoiding capture forever does not count. It observes the pursuer's starting position and may choose its strategy accordingly.</p>
+  <p>Receipt ends the game immediately, even if the pursuer occupies the recipient. This models an alert that cannot be cancelled once it arrives. At every other station, collision means interception. Reaching an intermediate station is therefore different from reaching the recipient: the pursuer gets another turn before the message can move onward.</p>
+  <h2>What we maximize</h2>
+  <p>Write <i>I(G)</i> for the number of guaranteed indirect pairs in a graph <i>G</i>. We study three maxima: <i>M<sub>V</sub>(n)</i> fixes the number of stations, <i>M<sub>E</sub>(m)</i> fixes the number of arcs, and <i>M(n,m)</i> fixes both. Isolated stations are allowed.</p>
+  <p>For every graph on <i>n ≥ 3</i> stations,</p>
+  <div set:html={math(String.raw`I(G)\le n(n-3).`)} />
+  <p>The proof counts one recipient at a time. If it has no incoming arrow, it cannot be reached. If it has just one predecessor, the pursuer camps there. With two or more predecessors, at most <i>n − 3</i> sources remain eligible to count as indirect.</p>
+  <h2>Sparse networks that attain the bound</h2>
+  <p><strong>For every <i>n ≥ 20</i> divisible by five, the exact maximum is <i>n(n − 3)</i>.</strong> An explicit network with only two outgoing and two incoming arrows at every station attains it. Every pair of stations admits guaranteed delivery; subtracting the diagonal pairs and the <i>2n</i> direct arrows gives the count.</p>
+  <div set:html={math(String.raw`M_V(5k)=M_E(10k)=M(5k,10k)=5k(5k-3),\qquad k\ge4.`)} />
+  <figure><img src="/cop-prisoner/figures/five-type-strip.svg" alt="A repeating directed strip with five station types in each column; two arrows leave every station" loading="lazy"/><figcaption>Join the ends of the repeating strip into a cycle. Black arrows form one long cycle; blue arrows provide the second move at every station.</figcaption></figure>
+  <p>The infinite-family proof does not extrapolate from experiments. A finite local strategy moves the messenger safely backward by one column. Repeating it brings the messenger near the recipient, where a second local strategy delivers. An artificial outside pursuer state allows every possible re-entry into the local window, so the finite certificates cover arbitrarily long cycles. Two independent programs check the certificates; their interpretation on the infinite family has a separate mathematical proof.</p>
+  <p>Exact finite witnesses also attain the bound at every order from 12 through 24. The 12-station example in the explorer has a complete Lean proof of all its delivery guarantees. For arbitrary <i>n ≥ 25</i>, a simpler three-arrow circulant construction proves</p>
+  <div set:html={math(String.raw`n(n-4)\le M_V(n)\le n(n-3).`)} />
+  <p>Thus the deficit from <i>n²</i> is linear for every sufficiently large order. The exact answer at the remaining orders is still open here.</p>
+  <h2>Fixing the number of connections</h2>
+  <p>The proved upper bounds differ slightly between even and odd arc counts. For every <i>k ≥ 5</i>,</p>
+  <div set:html={math(String.raw`M_E(2k)\le k(k-3),\qquad M_E(2k+1)\le k(k-3)+2.`)} />
+  <p>The proofs combine the source and recipient degree counts. For <i>k ≥ 6</i>, equality in the even bound requires, after removing isolated stations, a universally winning graph on <i>k</i> stations with all incoming and outgoing degrees equal to two. The odd equality case has a precise pair of degree-one exceptions. These conditions explain what an attaining construction must accomplish; they do not assume such a construction exists for every size.</p>
+  <p>The repeating family attains the even bound whenever the arc count is a multiple of ten from 40 onward. Independently checked finite graphs attain the odd bound at 37, 39, 41, 43, 45, and 47 arcs. For arbitrary large arc budgets, the leading asymptotic is now exact:</p>
+  <div set:html={math(String.raw`M_E(m)=\frac{m^2}{4}-O(m).`)} />
+  <h2>Why too many arrows can hurt</h2>
+  <p>An added arrow also helps the pursuer. In the explorer's diamond, adding just one connection destroys the only indirect guarantee. More generally, above <i>n(n − 2)</i> arrows every indirect guarantee disappears. Exactly at that boundary, for <i>n ≥ 2</i>,</p>
+  <div set:html={math(String.raw`M(n,n(n-2))=\left\lfloor\frac{n-2}{2}\right\rfloor.`)} />
+  <p>At the slightly lower density <i>n(n − 3)</i>, we have a very different answer: for every <i>n ≥ 52</i>, all <i>2n</i> missing arrows correspond to guaranteed indirect journeys. Hence <i>M(n,n(n − 3)) = 2n</i>. The construction starts from a graph with no short undirected cycles and takes its directed complement.</p>
+  <p>The same method gives an explicit interval of dense arc budgets on which every missing pair can be guaranteed. The detailed proof gives the exact parameter range. It does not claim the entire two-parameter extremal problem is solved.</p>
+  <h2>Small cases, proof checks, and open questions</h2>
+  <div class="tablewrap"><table><thead><tr><th>Number of stations</th><th>Exact maximum <i>I</i></th></tr></thead><tbody><tr><td>1, 2, 3</td><td>0</td></tr><tr><td>4</td><td>2</td></tr><tr><td>5</td><td>4</td></tr><tr><td>6</td><td>7</td></tr><tr><td>12–24</td><td><i>n(n − 3)</i></td></tr><tr><td>Every multiple of five, starting at 20</td><td><i>n(n − 3)</i></td></tr></tbody></table></div>
+  <p>The full joint tables through six stations come from exhaustive enumeration with an independent game checker. With arc count alone fixed, the exact maxima for zero through seven arcs are 0, 0, 0, 0, 1, 1, 2, and 2, over every number of stations. Orders seven through eleven are not classified here. The main remaining problems are attaining the bounds at every large order, resolving general odd arc budgets, and finding the joint maximum between the known sparse and dense regimes.</p>
+  <p>The <a href="/cop-prisoner/lean/">formal artifact</a> proves the actual game semantics, the connection from finite certificates to terminating strategies, two structural lemmas, and the complete 12-station example. The other general theorems have ordinary proofs or explicitly described computational certificates. A checked example is not a formalization of every theorem.</p>
+  <h2>Where the work comes from</h2>
+  <p>The original problem and layered construction come from Alexandra Ignatova's 2023 research, mentored by Angel Raychev, and the retained February 2024 manuscript. This provenance is recorded in the <a href="https://uchi.bas.bg/wp-content/uploads/2024/09/Knijka_reziumeta_2023.pdf">2023 student research abstracts, page 27</a>.</p>
+  <p>The September 2026 work corrects the original counting argument, proves the needed balancing result, and develops the extremal bounds, new constructions, computational checks, and Lean formalization, with assistance from Astra 6 through the Codex harness. The <a href="/cop-prisoner/paper/">paper page</a> distinguishes these contributions and the remaining publication work.</p>
+</Post>

@@ -1,0 +1,22 @@
+---
+import Post from '../../layouts/Post.astro';
+import release from '../../../public/cop-prisoner/release.json';
+---
+<Post title="Guaranteed delivery: paper and sources" description="Download the research manuscript, reproducible certificates, source code and Lean development." updated="2026-09-12">
+  <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/lean/">Lean verification</a></p>
+  <p><strong>Guaranteed indirect delivery in directed networks</strong><br/>Extremal bounds, sparse constructions, and verified finite cases.</p>
+  <p>This is a {release.pages}-page research checkpoint with four figures. It contains exact infinite families and general bounds; the complete extremal classification remains open. It has not been submitted to arXiv.</p>
+  <ul>
+    <li><a href="/cop-prisoner/guaranteed-indirect-delivery.pdf">Read the manuscript PDF</a>.</li>
+    <li><a href="/cop-prisoner/manuscript-source.zip">LaTeX manuscript and figures</a>, with a self-contained bibliography in the generated source.</li>
+    <li><a href="/cop-prisoner/research-sources.zip">Research sources and certificates</a>: proofs, Python and C++ programs, successful certificates, and records of failed approaches.</li>
+    <li><a href="/cop-prisoner/lean-proofs.zip">Lean proof sources</a> and <a href="/cop-prisoner/lean-verification.json">verification receipt</a>.</li>
+    <li><a href="/cop-prisoner/references.bib">Bibliography</a> and <a href="/cop-prisoner/release.json">download hashes</a>.</li>
+  </ul>
+  <h2>Provenance and publication status</h2>
+  <p>Alexandra Ignatova developed the original problem and layered construction in 2023 under Angel Raychev's mentorship. The retained manuscript is dated February 2024. A <a href="https://uchi.bas.bg/wp-content/uploads/2024/09/Knijka_reziumeta_2023.pdf">public 2023 abstract</a> records the original project and its author and mentor.</p>
+  <p>The current account preserves that credit and separates it from the September 2026 corrections and extensions. Astra 6, operating through the Codex harness, assisted with research, independent proof attacks, programming, formalization, and presentation. The eventual human author line remains to be agreed; the research checkpoint does not assign one.</p>
+  <p>A journal or arXiv submission needs a final authorship decision, a fuller literature comparison, and a final manuscript review. The current downloads make the mathematics and its evidence inspectable without claiming those publication steps have occurred.</p>
+  <h2>Reproducing the checks</h2>
+  <p>The Lean archive uses Lean 4.33.1 and only its standard library. Run <code>python3 check.py</code> inside the extracted <code>lean</code> folder. The research archive includes two independent exact game solvers, finite local-certificate checkers, and high-girth construction verifiers. Read <code>research/solver-method.md</code>, <code>research/five-type-strategy.md</code>, and <code>lean/README.md</code> for their precise scope.</p>
+</Post>

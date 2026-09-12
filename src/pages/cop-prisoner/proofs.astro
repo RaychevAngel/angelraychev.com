@@ -1,0 +1,9 @@
+---
+import Post from '../../layouts/Post.astro';
+import proofHtml from '../../content/generated/cop-prisoner-proofs.html?raw';
+---
+<Post title="Guaranteed delivery: detailed proofs" description="Full arguments for the extremal bounds, infinite constructions, corrected layered family, and computational certificates." updated="2026-09-12">
+  <p>Read the <a href="/cop-prisoner/">interactive overview</a>, download the <a href="/cop-prisoner/paper/">paper and sources</a>, or inspect the <a href="/cop-prisoner/lean/">Lean coverage</a>. This proof text and the PDF are generated from the same manuscript source.</p>
+  <p class="note">Research checkpoint. The exact theorem domains and the remaining open cases are stated explicitly.</p>
+  <Fragment set:html={proofHtml}/>
+</Post>

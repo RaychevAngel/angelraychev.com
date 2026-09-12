@@ -1,0 +1,19 @@
+---
+import Post from '../../layouts/Post.astro';
+import verification from '../../../public/cop-prisoner/lean-verification.json';
+---
+<Post title="Guaranteed delivery: Lean verification" description="Exact formal coverage, downloadable Lean sources and a reproducible verification receipt." updated="2026-09-12">
+  <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/paper/">Paper and sources</a></p>
+  <p>The artifact uses <strong>Lean 4.33.1 with Std only</strong>. All {verification.modules.length} modules passed their recorded build. The <a href="/cop-prisoner/lean-verification.json">receipt</a> identifies the toolchain, source hashes, compiler output, and logical axioms.</p>
+  <div class="tablewrap"><table><thead><tr><th>Module</th><th>What it proves</th></tr></thead><tbody>
+    <tr><td><a href="/cop-prisoner/lean/DeliveryGame.lean">DeliveryGame</a></td><td>The alternating game with waiting and terminal receipt; finite winning certificates imply actual delivery against arbitrary legal history-dependent pursuer choices.</td></tr>
+    <tr><td><a href="/cop-prisoner/lean/SafeBranching.lean">SafeBranching</a></td><td>Two safe successors yield a winning source under the stated neighborhood-overlap condition, including the intervening pursuer turn.</td></tr>
+    <tr><td><a href="/cop-prisoner/lean/CampingObstruction.lean">CampingObstruction</a></td><td>Predecessor domination prevents indirect guarantees; consequences for undirected graphs and unique predecessors.</td></tr>
+    <tr><td><a href="/cop-prisoner/lean/TwelveVertexCertificate.lean">TwelveVertexCertificate</a></td><td>An explicit 12-vertex, 24-arc network guarantees every pair and has exactly 108 indirect guaranteed pairs.</td></tr>
+    <tr><td><a href="/cop-prisoner/lean/Audit.lean">Audit</a></td><td>Reports the logical axioms used by the principal theorems.</td></tr>
+  </tbody></table></div>
+  <p>The finite graph is checked by kernel reduction, not by trusting an external solver or native computation. The strategy interpretation accounts for every legal pursuer response and proves termination. The main semantic theorems use Lean's standard <code>propext</code>, <code>Classical.choice</code>, and <code>Quot.sound</code>; the finite count uses no axioms.</p>
+  <h2>What remains outside Lean</h2>
+  <p>The general vertex and arc bounds, the arithmetic parameter lemma, infinite sparse and dense constructions, the original construction's corrected count, and the exhaustive enumeration completeness arguments are not fully formalized. Their ordinary proofs and external certificates are supplied separately. In particular, the infinite five-type theorem combines a mathematical projection argument with independently checked finite local certificates.</p>
+  <p>Download the <a href="/cop-prisoner/lean-proofs.zip">Lean archive</a>, install the pinned toolchain, and run <code>python3 check.py</code>. The <a href="/cop-prisoner/lean/README.md">coverage and replay guide</a> explains the exact theorem statements and trust boundary.</p>
+</Post>

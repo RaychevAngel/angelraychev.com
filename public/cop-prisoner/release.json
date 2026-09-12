@@ -1,0 +1,38 @@
+{
+  "prepared_at_utc": "2026-09-12T11:19:57.194073+00:00",
+  "status": "Research checkpoint; not submitted to arXiv",
+  "pages": 23,
+  "figures": 4,
+  "math_formulas": 788,
+  "pdf_overfull_warnings": [],
+  "files": {
+    "research-sources.zip": {
+      "bytes": 456702,
+      "sha256": "e654649601a6033c42f55bc6e72f6163cf723a8e17c2b333e87c055a5a11b76d"
+    },
+    "references.bib": {
+      "bytes": 1019,
+      "sha256": "14d44a8f03906d65c8d0daed22fd5888532d2bdf66ffa4a7298e68d31801c854"
+    },
+    "lean-verification.json": {
+      "bytes": 3089,
+      "sha256": "fa270ac21d1659364a496b6ab96869d77764e40dcd3f9230a61fa046a4510c60"
+    },
+    "lean-proofs.zip": {
+      "bytes": 16093,
+      "sha256": "38503e80f7734c12c8b278f2f0d21f5fc2083b5a0fe803f97a2db42cbdaa0a3c"
+    },
+    "explorer-graphs.json": {
+      "bytes": 497,
+      "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
+    },
+    "guaranteed-indirect-delivery.pdf": {
+      "bytes": 389061,
+      "sha256": "a74c0d3ef20347674ce9f04b4bf40a08d0c5a791dcdc4f6d941c9fc596ef902c"
+    },
+    "manuscript-source.zip": {
+      "bytes": 72204,
+      "sha256": "20733a174cf4e26b2d68212f291cbb4592c58246a3acf3c00a0a4a7521237940"
+    }
+  }
+}
