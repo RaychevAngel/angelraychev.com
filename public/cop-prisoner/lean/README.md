@@ -51,3 +51,6 @@ The checker rebuilds each module sequentially, rejects unexpected `sorry` depend
 ## Provenance
 
 The underlying problem and original layered construction come from Alexandra Ignatova's manuscript, with Angel Raychev as mentor. These formal sources are September 2026 extensions developed with Astra 6 through the Codex harness. They do not resolve publication authorship metadata.
+
+
+`StagedEnvelopes.lean` proves actual delivery in every graph between a base and an envelope from a rank depending on both positions. Its hypotheses are not automatically instantiated by the external staged finite certificates. The full main-interval classification, concrete circle rules and hub parameters remain ordinary/computer-assisted proofs.
