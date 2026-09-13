@@ -1,42 +1,43 @@
 {
-  "prepared_at_utc": "2026-09-13T01:31:40.404360+00:00",
+  "prepared_at_utc": "2026-09-13T06:00:53.604966+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
-  "pages": 74,
+  "pages": 78,
   "figures": 7,
-  "math_formulas": 2455,
+  "math_formulas": 2708,
   "pdf_overfull_warnings": [],
   "files": {
     "research-sources.zip": {
-      "bytes": 29839619,
-      "sha256": "e671b86165995502826c816e7e77f5fdee99848c0d141bd76b7f67ebce2c490b"
+      "bytes": 29919557,
+      "sha256": "63c13c60d6ebe1f5410824332ecc9135f0c739346b0c32be0dc2b7f79043a572"
     },
     "references.bib": {
-      "bytes": 1019,
-      "sha256": "14d44a8f03906d65c8d0daed22fd5888532d2bdf66ffa4a7298e68d31801c854"
+      "bytes": 1400,
+      "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
     },
     "finite-strategy-certificates.zip": {
       "bytes": 88784388,
       "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
     },
     "lean-verification.json": {
-      "bytes": 3787,
-      "sha256": "853b41223d871e5d26bd3d6e1243a102213714732f9a5da75e4f79d58381c034"
+      "bytes": 5139,
+      "sha256": "106e2f11c1649a9249d2843a163af0b8c43e41ddae1c27d438360f8459264ede"
     },
     "lean-proofs.zip": {
-      "bytes": 18784,
-      "sha256": "70df085e06b69963e880ad14d444098db2afb2a0120dfa1406eb8103d1e0b7ea"
+      "bytes": 20972,
+      "sha256": "94d152cf337b0aeec4b800aba153e7b0e6c7221d9df8531f65cae0c12dc2719d"
     },
     "explorer-graphs.json": {
       "bytes": 497,
       "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 648010,
-      "sha256": "7794d07d7985db407f317b31cce51af88d7e412c1c819e6a4a2c78206f8c92ff"
+      "bytes": 668930,
+      "sha256": "8df2dda2992352bccf9a0abf80de910e2452dde9e569fcf91b42de46c28bf455"
     },
     "manuscript-source.zip": {
-      "bytes": 186160,
-      "sha256": "d58e12f7b6089a71e61f0feb22c9d28cee3d35342aae5b828b25c7ddff4ca796"
+      "bytes": 190094,
+      "sha256": "066117c8433369e72be09c7681f4aaf3f94e18dbd0bd628f9586c73cfcd87117"
     }
-  }
+  },
+  "reviewed_at_utc": "2026-09-13T06:02:01.076734+00:00"
 }

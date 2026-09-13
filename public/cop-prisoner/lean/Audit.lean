@@ -2,6 +2,8 @@ import DeliveryGame
 import SafeBranching
 import CampingObstruction
 import TwelveVertexCertificate
+import DenseCounting
+import ProtectedRouting
 
 #print axioms Delivery.winning_play_delivers
 #print axioms Delivery.rankCertificate_actual_delivery
@@ -12,3 +14,11 @@ import TwelveVertexCertificate
 #print axioms Delivery.TwelveVertex.certificate_valid
 #print axioms Delivery.TwelveVertex.all_pairs_actual_delivery
 #print axioms Delivery.TwelveVertex.indirect_count
+#print axioms Delivery.DenseCounting.loss_from_counts
+#print axioms Delivery.DenseCounting.final_band_bound
+#print axioms Delivery.DenseCounting.attaining_block_count
+#print axioms Delivery.DenseCounting.complementary_blocks_two_move
+#print axioms Delivery.DenseCounting.complementary_blocks_actual_delivery
+#print axioms Delivery.ProtectedRouting.protected_witness_winning
+#print axioms Delivery.ProtectedRouting.protected_routing_universal
+#print axioms Delivery.ProtectedRouting.protected_routing_actual_delivery
