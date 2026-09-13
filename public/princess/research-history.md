@@ -234,3 +234,34 @@ Hamiltonian example demonstrates that a pyramid-only terminal corner rule
 can lose a day even above this threshold; independent physical replays
 verify its five-day witness, and a spanning rectangle proves minimality.
 The general-Q upper bounds are not promoted to matching exact formulas.
+
+## September 2026: all-width minimum budget and corner memory
+
+The next investigation replaced the finite list of odd minimum-budget
+widths by one theorem for every odd width and odd length. A width-only
+constant is evaluated in a bounded number of arithmetic stages in the
+width. At any fixed feasible budget, the two pure solo trajectories now
+suffice after an explicit length threshold; the exact joint evaluator
+remains necessary in the unproved shorter intermediate-budget range.
+
+A sharper occupied-root erosion bound lowers the even-width time-formula
+threshold and absorbs the separate four-row low-budget proof. Exact
+height-transition inequalities and balanced physical constructions replace
+interior graph powering by explicit edge weights in a finite boundary
+graph. The general boundary preprocessing is not claimed implemented.
+
+One punctured-quadrant capacity formula unifies the ordinary and omitted-
+corner estimates. Conditional half-strip profiles and a component argument
+force sufficiently efficient survivors into particular corner triangles,
+giving physical lower bounds on how soon the opposite corner can return.
+Counterexamples exclude both a simple availability-bit state model and a
+broader proposed family of corner strategies. These are documented failed
+reductions, not exceptions to the proved full-board classifications.
+
+Three further Lean modules verify a general convex-capacity optimization
+(including all concrete punctured capacities), the shared-budget ancestry
+argument under explicit inverse-system hypotheses, and clipped erosion of
+actual cylinder cells. They do not constitute complete formalization of
+all new geometric results. As throughout this investigation, these are
+September2026 AI-assisted developments; the author's2019--2020 path work
+and the original manuscript contributions retain their stated credit.

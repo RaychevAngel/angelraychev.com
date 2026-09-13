@@ -2,7 +2,7 @@
 layout: "../../layouts/Post.astro"
 title: "Princess searches: verified proofs"
 description: "What Lean verifies, what still has ordinary proofs, and how to reproduce the formal checks."
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 [Overview](/princess/) · [Readable proofs](/princess/proofs/) · [Paper](/princess/paper/)
@@ -41,6 +41,12 @@ For the four-cube, Lean verifies the geometric compression itself, its effect on
 The five-row proofs have verified scalar inequalities in [FiveRowRankArithmetic.lean](/princess/lean/FiveRowRankArithmetic.lean), [FiveRowOddRankArithmetic.lean](/princess/lean/FiveRowOddRankArithmetic.lean), and [FiveRowDeficitArithmetic.lean](/princess/lean/FiveRowDeficitArithmetic.lean). The four-probe lower bound and its extra-day obstruction have separate checks in [FiveRowFourProbeArithmetic.lean](/princess/lean/FiveRowFourProbeArithmetic.lean) and [FiveRowFourProbeEquality.lean](/princess/lean/FiveRowFourProbeEquality.lean). [FiveRowHighBudgetArithmetic.lean](/princess/lean/FiveRowHighBudgetArithmetic.lean) checks the three finite high-budget bounds. The geometric lemmas connecting these inequalities to arbitrary five-row searches are proved in the manuscript and are **not yet formalized**.
 
 [UniformOddRank.lean](/princess/lean/UniformOddRank.lean) checks the universal scalar inequality behind the odd-rectangle minimum-budget lower bound. The interval-insertion theorem, the eventual periodic time theorem for odd cylinders, and their geometric applications currently have ordinary proofs and independent reviews.
+
+[ConvexCapacityConvolution.lean](/princess/lean/ConvexCapacityConvolution.lean) strengthens the root-specific calculation to arbitrary nondecreasing, unbounded discrete-convex capacities. It constructs least roots, proves the two-candidate minimum, and instantiates every punctured-quadrant capacity $C_h$. This is a complete arithmetic theorem; the geometric capacity formula is not formalized by it.
+
+[ClippedPyramidErosion.lean](/princess/lean/ClippedPyramidErosion.lean) uses actual finite cylinder cells to verify the clipped erosion, neighborhood inclusion, and exact loss of occupied bottom roots. Its distance threshold and the surrounding construction theorem remain ordinary proofs.
+
+[FastestAncestry.lean](/princess/lean/FastestAncestry.lean) verifies the shared-quota recurrence, persistence of low-total states, fastest ancestry after pure resets, and a composed midpoint obstruction. The profile inequalities and secondary-size bounds are explicit hypotheses. Their geometric rectangle instances and the final all-width time law remain ordinary proofs.
 
 ## Reproduce the check
 
