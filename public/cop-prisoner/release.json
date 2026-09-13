@@ -1,12 +1,12 @@
 {
-  "prepared_at_utc": "2026-09-13T09:48:44.756881+00:00",
+  "prepared_at_utc": "2026-09-13T11:00:51.502855+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
   "publication_date": "2026-09-13",
   "chapters": 8,
   "source_parts": 38,
-  "pages": 86,
+  "pages": 87,
   "figures": 8,
-  "math_formulas": 2971,
+  "math_formulas": 2974,
   "pdf_overfull_warnings": [],
   "companions": {
     "delivery_time": {
@@ -28,14 +28,18 @@
     "main": 61393,
     "dense": 61
   },
+  "explicit_construction_coverage": {
+    "known_value_gaps": 0,
+    "scope": "Separate source audit of direct recipes and certified finite exceptions"
+  },
   "files": {
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 712413,
-      "sha256": "95aa05710135cbb68be8b2d46f6fdf0cc7e9117795ce7586034419df6f4f4db5"
+      "bytes": 715202,
+      "sha256": "7061e87ef8700f6c50258310225f4a58d0583238a1d87f20cdff8a11b61615d9"
     },
     "manuscript-source.zip": {
-      "bytes": 212402,
-      "sha256": "9f873800dd398167ebd39c93957739779f7cb12d2ac87cd03ec7a80547b1465d"
+      "bytes": 213055,
+      "sha256": "2d33b19117f677ce013ac20355ba838c9cedf2fd7979d33c42a030e20b7dea77"
     },
     "lean-proofs.zip": {
       "bytes": 26435,
@@ -46,8 +50,8 @@
       "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
     },
     "research-sources.zip": {
-      "bytes": 34231690,
-      "sha256": "83c8a5799d430db0bbaede879319c65dc2e8c9e461605a7dd44ed645a616c64b"
+      "bytes": 34271199,
+      "sha256": "25436c74990e42069dcb233f1eee7359a0cb9ab53e07131b3e37514b5118e35c"
     },
     "finite-strategy-certificates.zip": {
       "bytes": 88784388,
@@ -67,7 +71,7 @@
     },
     "delivery-time-source.zip": {
       "bytes": 10822,
-      "sha256": "c89021d78b63a89f6851cbb8ee9d3a28082327f696966c834a4d6d29bb9ec888"
+      "sha256": "68fd6b25152011af52f3c6509c39d396a4f48bfe475d3fb32b3c3597dc549eb4"
     }
   },
   "assets": {
@@ -77,7 +81,7 @@
     },
     "delivery-time-source.zip": {
       "bytes": 10822,
-      "sha256": "c89021d78b63a89f6851cbb8ee9d3a28082327f696966c834a4d6d29bb9ec888"
+      "sha256": "68fd6b25152011af52f3c6509c39d396a4f48bfe475d3fb32b3c3597dc549eb4"
     },
     "explorer-graphs.json": {
       "bytes": 497,
@@ -120,8 +124,8 @@
       "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 712413,
-      "sha256": "95aa05710135cbb68be8b2d46f6fdf0cc7e9117795ce7586034419df6f4f4db5"
+      "bytes": 715202,
+      "sha256": "7061e87ef8700f6c50258310225f4a58d0583238a1d87f20cdff8a11b61615d9"
     },
     "lean-proofs.zip": {
       "bytes": 26435,
@@ -192,16 +196,16 @@
       "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
     },
     "manuscript-source.zip": {
-      "bytes": 212402,
-      "sha256": "9f873800dd398167ebd39c93957739779f7cb12d2ac87cd03ec7a80547b1465d"
+      "bytes": 213055,
+      "sha256": "2d33b19117f677ce013ac20355ba838c9cedf2fd7979d33c42a030e20b7dea77"
     },
     "references.bib": {
       "bytes": 1400,
       "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
     },
     "research-sources.zip": {
-      "bytes": 34231690,
-      "sha256": "83c8a5799d430db0bbaede879319c65dc2e8c9e461605a7dd44ed645a616c64b"
+      "bytes": 34271199,
+      "sha256": "25436c74990e42069dcb233f1eee7359a0cb9ab53e07131b3e37514b5118e35c"
     }
   }
 }

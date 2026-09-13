@@ -3,10 +3,11 @@ import Post from '../../layouts/Post.astro';
 import proofHtml from '../../content/generated/cop-prisoner-proofs.html?raw';
 import release from '../../../public/cop-prisoner/release.json';
 ---
-<Post title="Guaranteed delivery: classification proofs" description="Proofs of exact joint maxima, attaining constructions, and the established boundaries of the remaining classification problem." updated={release.publication_date}>
+<Post title="Guaranteed delivery: classification proofs" description="Proofs of exact joint maxima, explicit attaining constructions, and the established boundaries of the remaining classification problem." updated={release.publication_date}>
   <p>Read the <a href="/cop-prisoner/">exact-count overview</a>, download the <a href="/cop-prisoner/paper/">paper and sources</a>, or inspect the <a href="/cop-prisoner/lean/">Lean coverage</a>. This proof text and the PDF are generated from the same manuscript source.</p>
   <p class="note">Research checkpoint. The contents group the arguments by mathematical topic. Retained theorem labels preserve existing cross-references; a result that follows from a later theorem is identified as a consequence. The exact domains and remaining open cases are stated explicitly.</p>
   <p>The <a href="/cop-prisoner/paper/#evidence-guide">evidence and replay guide</a> connects the current results to their computational checks and distinguishes those checks from dated research history.</p>
-  <p>The objective is the exact value of <i>M(n,m)</i> and an attaining construction for every feasible vertex and arc count. The <a href="/cop-prisoner/delivery-time/">delivery-time companion</a> preserves the separate, parked time-optimization questions. Routing and two-move arguments needed for the count constructions remain here.</p>
+  <p>The objective is the exact value of <i>M(n,m)</i> and explicit adjacency rules or a specified attaining composition for every feasible vertex and arc count, with parameters determined from <i>(n,m)</i>. Certified listed finite graphs also qualify. The <a href="/cop-prisoner/#explicit-constructions">construction inventory</a> checks this separately from numerical coverage: every currently incorporated exact value has a direct recipe or listed graph. Conditional and probabilistic theorems retain their full statements; a case meets the construction requirement only when a suitable explicit recipe is supplied.</p>
+  <p>The <a href="/cop-prisoner/delivery-time/">delivery-time companion</a> preserves the separate, parked time-optimization questions. Routing and two-move arguments needed for the count constructions remain here.</p>
   <Fragment set:html={proofHtml}/>
 </Post>
