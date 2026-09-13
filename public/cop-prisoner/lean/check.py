@@ -17,7 +17,7 @@ version=subprocess.check_output([lean,'--version'],text=True).strip()
 if 'version 4.33.1' not in version:
     raise SystemExit(f'Wrong toolchain: {version}')
 modules=['DeliveryGame','SafeBranching','CampingObstruction','TwelveVertexCertificate',
-         'DenseCounting','ProtectedRouting','RobustTwoMove','ElevenVertexDense','SmallDenseEnvelopes','Audit']
+         'DenseCounting','ProtectedRouting','RobustTwoMove','RobustLayers','ElevenVertexDense','SmallDenseEnvelopes','Audit']
 env=dict(os.environ)
 env['LEAN_PATH']=str(HERE)+(os.pathsep+env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
 records=[]

@@ -5,6 +5,7 @@ import TwelveVertexCertificate
 import DenseCounting
 import ProtectedRouting
 import RobustTwoMove
+import RobustLayers
 import ElevenVertexDense
 import SmallDenseEnvelopes
 
@@ -27,6 +28,8 @@ import SmallDenseEnvelopes
 #print axioms Delivery.ProtectedRouting.protected_routing_actual_delivery
 
 #print axioms Delivery.RobustTwoMove.envelope_actual_delivery
+#print axioms Delivery.RobustLayers.ranked_envelope_actual_delivery
+#print axioms Delivery.RobustLayers.safe_routing_layer
 #print axioms Delivery.ElevenVertexDense.witnesses
 #print axioms Delivery.ElevenVertexDense.all_pairs_actual_delivery
 #print axioms Delivery.ElevenVertexDense.indirect_count
