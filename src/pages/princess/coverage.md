@@ -5,13 +5,14 @@ description: "Accepted formulas, exact evaluators, direct strategies and the pre
 updated: 2026-09-13
 ---
 
-[Rectangle overview](/princess/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Manuscript](/princess/paper/) · [Parked extensions](/princess/extensions/)
+[Rectangle overview](/princess/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Progress against the goal](/princess/reconciliation/) · [Manuscript](/princess/paper/) · [Parked extensions](/princess/extensions/)
 
 This page is generated from the private project's canonical assessment. Named research files and certificates are preserved in the [mathematical sources package](/princess/research-sources.zip); theorem links lead to the current manuscript-derived proofs. [Download this assessment](/princess/rectangle-coverage.md).
 
-Updated 13 September 2026 after the resumed even-area investigation. The
-accepted bounded-formula union remains unchanged; new uniform bounds and
-finite exact consequences are recorded below. The controlling objective
+Updated 13 September 2026 after the five-vector investigation. The
+bounded-formula union now includes all seven-row odd-length budgets and a
+fixed-operation evaluation region on longer odd rectangles. New uniform
+even-area brackets and direct constructions are recorded below. The controlling objective
 is [CLASSIFICATION_SCOPE.md](/princess/scope.md). Historical uses of
 “complete” that allowed a width-dependent recurrence do not change that goal.
 
@@ -289,225 +290,254 @@ strategies. **Verification:** ordinary proof plus independently replayed
 rational certificates. There is no complete physical Lean theorem.
 Source: [thm:seven-row-five-probe-time](/princess/proofs/#thm:seven-row-five-probe-time).
 
-## 3. Exact partition of the remaining formula-family obligation
+### Seven rows, every odd length and every budget
 
-Subtract **all** the accepted formula families in Section 2, together with
-infeasibility and endpoint cases. The residual parameter domain is the
-following disjoint union. Membership means that the **present family-level
-expression** does not meet the numerical goal; it does not say every point
-has never been computed or lacks an exact algorithm.
-
-1. **Even short side:** $w=2r\ge6$, $n\ge w$, and
-   $r+1\le k\le r(r-1)$.
-2. **Odd short side, even long side:** $w=2r+1\ge7$,
-   even $n\ge w$, and $r+1\le k\le r(r+1)$.
-3. **Odd-by-odd at minimum budget beyond the supplied constants:**
-   $w=2r+1\ge17$, odd $n\ge w$, and $k=r+1$.
-4. **Odd-by-odd at intermediate budgets:** $w=2r+1\ge7$,
-   odd $n\ge w$, and $r+2\le k\le r^2$, excluding
-   $(w,k)=(7,5)$.
-
-The upper budget bounds in these four items already lie below the two-day
-threshold on their permitted rectangles. Small illustrations of the
-partition are: width six leaves budgets four through six; odd-length width
-seven leaves budgets six through nine; even-length width seven leaves
-budgets four through twelve. These are illustrations of the extracted
-inequalities, not new time classifications.
-
-The finite 6x6 computation records
-$T_4=22,T_5=14,T_6=10$ and all other budget values. It is preserved as
-computational evidence in `even-bridge-full-constant-prefix-6x6.json`.
-Its accompanying note states that final external audit was pending; it is
-not silently promoted into the accepted theorem-family union. Other finite
-samples within the residual domain likewise retain their exact original
-evidence status. This distinction prevents “remaining family” from meaning
-“every point unknown.”
-
-## 4. What is already exact inside that residual domain
-
-### The minimum-budget odd clock: exact value, evaluation gap only
-
-For every $r\ge1$, odd $n\ge2r+1$, and $k=r+1$, the ordinary theorem is
-
+The remaining budgets six through nine now have bounded expressions. For
+$n\ge7$ odd, $k\in\{6,8,9\}$, put $D=2k-7$,
+$q=\lfloor(n-7)/(2D)\rfloor$, and $j=(n-7)/2-Dq$. Then
 $$
-T_k(2r+1,n)=2(2r+1)n-(8r^2-4r-4L_r+4).
+T_k(7,n)=28q+c_k(j).
 $$
+The fixed lists, starting at index zero, are
 
-Here $A_0=B_0=0$,
+- $c_6=(16,21,26,32,38)$.
+- $c_8=(10,12,16,18,22,25,28,31,34)$.
+- $c_9=(8,10,13,16,18,20,23,26,28,30,33)$.
 
+The fourth formula is $T_7(7,n)=2n-2$. Combined with the already proved
+minimum-budget, five-inspection and high-budget results, this covers **all
+budgets on every seven-row odd-length rectangle**. Even lengths remain in
+their separately stated range; this is not an all-seven-row classification.
+
+**Value and construction:** exact values, fixed numerical expressions and
+prescribed prefix/palindrome inspections. **Proof:** the 296 short cases
+exhaust the complement of the explicit unbounded scalar-onset theorem.
+An independent full Pareto calculation checks every quota split and agrees
+with the earlier retained solver; an ordinary period proof covers unbounded
+lengths. There is no new complete physical Lean theorem.
+Source: [thm:bridge-seven-odd](/princess/proofs/#thm:bridge-seven-odd), `research/bridge-odd-clock-width-seven-check.json`.
+
+### The complete first budget below the former even-width threshold
+
+For $w=2r$, $r\ge3$, $n\ge2r$, and $k=r(r-1)$, put
 $$
-A_{t+1}=B_t+k-\min\{q(B_t+k),r\},\qquad
-B_{t+1}=A_t+k-\min\{R(A_t+k),r+1\},
+h=rn,\quad s=r(r-2),\quad
+j=\max\{0,\lfloor(h-k-s-3)/s\rfloor\},\quad
+z=h-(j+1)s-k-1,\quad c=z+\lceil\sqrt z\rceil.
 $$
-
-$q(x)=\lceil(\sqrt{1+4x}-1)/2\rceil$, and $L_r$ is the first time
-$B_t=r(r-1)$, with $L_1=0$. Termination and exact arrival are proved.
-The clock can be evaluated in O(r) arithmetic stages. This is a prescribed
-arithmetic recurrence, **not an optimization**, but it does not meet the new
-O(1) numerical goal. A name such as “corner clock” does not make it atomic.
-
-The upper strategy is a prescribed greedy prefix solo sweep and its reversal;
-the ordinary proof establishes its optimality. The important missing piece
-here is a bounded expression for the correction, not a new lower-bound
-theorem or an arbitrary-partial-state policy. Full Lean interpretation also
-remains incomplete. Source: [thm:odd-minimum-budget](/princess/proofs/#thm:odd-minimum-budget).
-
-### Every odd rectangle: exact joint evaluation and a one-day bracket
-
-Let $w=2r+1$, $M=(wn-1)/2$, $E=M+1$, and $k\ge r+1$. The exact
-inverse-profile recurrence defines the pure deficits $D_0(t),D_1(t)$ and
-the first solo clearing time $\tau$. The theorem gives
-
+Then
 $$
-2\tau-1\le T_k(w,n)\le2\tau.
+T_k(2r,n)=2(j+3)-\mathbf1_{\{2c\le k\}}.
 $$
+This is a fixed-size expression on the entire stated family. Its direct
+optimal construction includes an explicit shape change for width16,
+budget56, and n=22 modulo12. That class has no remaining exception.
+Proof and construction: `research/bridge-boundary-numeric-quadratic-edge.md`
+and `research/bridge-quadratic-edge-exception.md`.
 
-The lower alternative is attained whenever
-$E+M-D_0(\tau-1)-D_1(\tau-1)\le k$. The universal upper construction
-is a specified solo sequence followed by its reversal; the lower alternative
-uses two opposite preparations and a central inspection.
+### Twenty-five rows at the minimum budget, every even length
 
-The solo calculation uses at most $4r+2$ translation intervals. Sorting its
-endpoints uses O(r log r) comparisons; the division stages number O(r).
-These are independent of n, but **not independent of r**.
-
-The retained joint frontier decides the binary alternative exactly for every
-length. Its bounds are explicit. Set
-
+For every even $n\ge26$,
 $$
-d=2k-w,\quad H=r^2+1,\quad\Gamma=k-1,\quad
-K=H-1+2k(\lfloor\Gamma/w\rfloor+1),
+T_{13}(25,n)=50n-925.
+$$
+The proof combines a uniform joint time28 obstruction, persistent radius
+geometry and merger, a finite terminal certificate, and a prescribed
+physical construction. It covers all even lengths, not only the checked
+smallest board. Source: `research/bridge-boundary-numeric-25-exact.md`.
+
+### Fixed-operation evaluations that supply further exact subfamilies
+
+On odd rectangles $w=2r+1$, whenever
+$$
+16(2k-w)\ge r^2,
+$$
+each solo clock or prescribed-day residual uses at most49 conditional
+paired-map blocks and one bulk division. These are fixed compositions of
+the displayed square/pronic-root maps. Four evaluations give the solo time
+and central residual test. No block count depends on the parameters.
+
+This gives an exact bounded expression and direct optimal inspections
+where the scalar test is proved necessary: the low-linear or cubic range,
+the explicit improved onset, the fixed recent-reset condition below, or
+an already classified family. On other inputs it evaluates the solo bracket
+and sufficient central test only. Source: [thm:bridge-quadratic-solo](/princess/proofs/#thm:bridge-quadratic-solo).
+
+On even widths $w=2r\ge4$, if
+$$
+k\ge r+2,\quad k<rn,\quad16(k-r-1)\ge r^2,
+$$
+the critical-corner lower bound $L$ and a physical upper bound $U$
+use at most168 elementary blocks and four divisions together. Whenever
+$L=U$, their common value is an exact fixed-size answer, with the
+prescribed upper construction optimal. The comparison itself has bounded
+size. When $L<U$, this theorem supplies numerical bounds only.
+The block definitions are in `research/bridge-boundary-numeric-budget.md`;
+fixing16 once is essential to the assertion.
+
+## 3. Current residual domain under the numerical completion criterion
+
+The original scope baseline had four residual families. They are now
+reduced as follows. These are formula-family obligations; isolated
+certified values inside them retain their own exact status.
+
+1. **Even short side:** $w=2r\ge6$, $n\ge w$,
+   $r+1\le k\le r(r-1)-1$, excluding inputs where the preceding
+   fixed168-block evaluation is defined and returns $L=U$.
+2. **Odd short side and even long side:** $w=2r+1\ge7$,
+   $n\ge w$ even, $r+1\le k\le r(r+1)$, excluding
+   $(w,k)=(25,13)$.
+3. **Odd-by-odd minimum budget beyond the supplied constants:**
+   $w=2r+1\ge17$, $n\ge w$ odd, $k=r+1$.
+4. **Odd-by-odd intermediate budgets:** $w=2r+1\ge9$,
+   $n\ge w$ odd, $r+2\le k\le r^2$, excluding inputs where
+   $16(2k-w)\ge r^2$ and one of the accepted scalar-decision
+   conditions in Section4 holds.
+
+None of these four infinite families has disappeared altogether. Width6
+now leaves budgets4 and5; odd-length width7 has no remaining budget;
+even-length width7 still has general obligations. Minimum-budget odd
+widths beyond15 retain their original width-clock evaluation gap.
+See [BOX_RECONCILIATION.md](/princess/reconciliation/) for the before/after
+assessment against the exact scope-baseline commit.
+
+## 4. Exactness and direct strategies on odd rectangles
+
+Let $w=2r+1$, $n\ge w$ odd, $E=(wn+1)/2$, $M=E-1$.
+For $r+1\le k<M$, define the simultaneous solo deficit recurrence
+$$
+D_0(0)=D_1(0)=0,\qquad
+D_0(t+1)=I_0(D_1(t)+k),\quad
+D_1(t+1)=I_1(D_0(t)+k).
+$$
+Here $R(z)=\lceil\sqrt z\rceil$,
+$\rho(z)=\lceil(\sqrt{1+4z}-1)/2\rceil$, and the proper inverses are
+$$
+I_0(z)=z-\min\{\rho(z),r,\rho(M-z)\}\quad(0\le z<M),
 $$
 $$
-W=\Gamma+K+1,\qquad J=2K+\Gamma+2k+H+2.
+I_1(z)=z-\min\{R(z),r+1,1+R(E-z)\}\quad(0\le z<E).
 $$
-
-There are at most $2+2\Gamma(K+1)$ retained states and at most
-$4\lceil J/d\rceil+W+8$ ordinary updates. Each update considers up to
-$k+1$ allocations, and a final pair minimization decides the central day.
-The method reconstructs actual compatible-prefix inspections from recorded
-choices. This is an exact geometric optimization and reconstruction theorem,
-not a delivered bounded formula or a direct allocation rule in every case.
-
-Sources: [thm:uniform-odd-half-time](/princess/proofs/#thm:uniform-odd-half-time), [prop:solo-bands](/princess/proofs/#prop:solo-bands),
-[thm:bounded-odd-frontier](/princess/proofs/#thm:bounded-odd-frontier), [lem:exceptional-retention](/princess/proofs/#lem:exceptional-retention). Ordinary proofs are
-reviewed; the complete physical rectangle theorem is not formalized.
-
-### The exact eventual scalar threshold
-
-With those same constants, put
-
+Their saturated endpoints are $I_0(z)=E$ for $z\ge M$ and
+$I_1(z)=M$ for $z\ge E$. Let $\tau$ be the first saturated
+solo layer and $L=\tau-1$.
+Every odd rectangle already has the exact one-day interval
+$2\tau-1\le T\le2\tau$, an exact joint evaluator, and sufficient
+solo central test. The new all-length result makes that test necessary
+for feasible budgets k>=r+1 satisfying
 $$
-M_*=2J+\Gamma+k(W+3).
+k\le2r\quad\text{or}\quad27k^3\le r^4.
 $$
+In these ranges,
+$$
+T=2\tau-\mathbf1_{\{E+M-D_0(L)-D_1(L)\le k\}}.
+$$
+The inspections are directly specified by the canonical solo prefixes,
+reflection and the central intersection, or the ordinary two-half solo
+construction. There is no optimizing joint path left in these ranges.
+The recurrence still needs bounded numerical evaluation when the fixed
+block hypothesis fails. Proof: `research/bridge-odd-clock-linear-budget-all.md`
+and `research/bridge-odd-clock-superlinear-budget.md`.
 
-The scalar criterion is necessary and sufficient whenever
-$(wn-1)/2\ge M_*$. This is the exact sufficient condition in
-[thm:eventual-odd-scalar](/princess/proofs/#thm:eventual-odd-scalar); no smallest-threshold claim is made. For an explicit
-length condition one may say: n is odd, n>=w, and wn>=2M_*+1. This avoids
-concealing parity rounding inside an undefined threshold symbol.
+### A smaller explicit onset
 
-Below that threshold, in the intermediate-budget residual range of Section 3,
-necessity of the solo criterion remains open. The exact retained-frontier
-optimizer still decides each input. Above the threshold, **joint optimization
-has been removed**, and the attaining strategy is prescribed by the scalar
-test. But the O(r) solo evaluation remains an O(1)-goal gap at both short and
-long lengths. Proving scalar necessity for all lengths would close one gap,
-not complete the numerical objective by itself.
+In the remaining intermediate range $r+2\le k\le r^2$, put
+$$
+G=k-1,\quad H=r^2+1,\quad
+K_0=r^2+2k(\lfloor G/(2r+1)\rfloor+1),
+$$
+$$
+q=\max\{\lceil\sqrt r\rceil,\lceil G/(r-1)\rceil\},\quad
+u=\left\lceil\frac{q(r+1)+G}{2q}\right\rceil,\quad
+K=\min\{K_0,(q-1)k+u(u-1)\},
+$$
+$$
+J=\max\{2K+k+1,K+H\},\quad W=2\lceil\sqrt G\rceil,
+\quad M_{\rm new}=J+G+k(W+1).
+$$
+The scalar test is necessary if $M\ge M_{\rm new}$. These are
+fixed-size expressions. The quantity W is used in the proof of the onset;
+it is not iterated to evaluate the answer. A possible remaining scalar
+counterexample at fixed width is confined to $n=O(r^2)$, improving
+the old $O(r^4)$ containing range. No smallest-onset claim is made.
 
-The remaining scalar conjecture has finitely many lengths for each fixed
-width and budget; the paper further confines a possible counterexample to
-n=O(r^4). The domain across all widths remains infinite. Neither statement
-converts the preceding lengths into a single fixed finite lookup table.
+### A fixed recent-reset condition
 
-### Every even-area rectangle: exact physical boundary representation
+Write $\Delta_i=D_0(i)-D_1(i)$. If $\Delta_L=0$, the scalar
+test is exact. Otherwise let p be its slower physical color, and put
+$c=\lceil(C_p-k)/2\rceil$, with $C_0=E,C_1=M$.
+The test is also exact if, for at least one of the fixed ages
+$j=0,1,\ldots,16$ with $j\le L$,
+$$
+D_p(j)<c,\qquad
+L-j=0\ \text{or}\ \Delta_{L-j}\Delta_{L-j-1}\ge0.
+$$
+Under the fixed49-block hypothesis, testing this condition uses at most38
+fixed-block calls and16 inverse updates. The seventeen age cases are
+fixed independently of the board. If the condition fails, it makes no
+necessity claim. Source: `research/bridge-odd-clock-reset.md`.
 
-The rectangle specialization of [thm:bounded-cylinder-interfaces](/princess/proofs/#thm:bounded-cylinder-interfaces) gives the
-exact time and an optimal physical strategy for every feasible budget. It has
-finite preprocessing depending on width and budget, a bounded boundary-port
-graph, and explicit interior edge weights. For each fixed w,k the remaining
-arithmetic-stage count is O_(w,k)(1) in n. Small lengths are included by finite
-physical-state computation. The general boundary tables have not been
-evaluated uniformly or implemented as a practical evaluator for every input.
+### The minimum-budget clock remains an evaluation gap
 
-This is an exact characterization. It does **not** meet the numerical goal,
-because the preprocessing and number of cases are parameter-dependent. Its
-strategy is reconstructed from an optimizing path, so a uniformly prescribed
-optimal full-board family remains a construction goal. The explicit interior
-connections, scalar lower bounds, and existing feasible sweeps remain in the
-rectangle project as tools. None is weakened by parking unrelated cylinder
-applications. Full physical Lean coverage remains incomplete.
+For every odd rectangle at $k=r+1$, the previously established law is
+$$
+T=2wn-(8r^2-4r-4L_r+4).
+$$
+The width-only L_r is the first arrival of the bottom simultaneous
+recurrence at its minority value r(r-1). Its evaluation takes O(r)
+root-band stages. Matching bounds and direct optimal inspections were
+already proved at the scope baseline. No new fixed-size formula for L_r
+has been obtained. Source: [thm:odd-minimum-budget](/princess/proofs/#thm:odd-minimum-budget).
 
-## 5. Verification and construction are separate axes
+## 5. Current even-area bounds and constructions
 
-Within rectangles, complete physical-game Lean classifications currently cover
-paths and two-row boards. The other numerical formula families have ordinary
-proofs and the stated certificates or reviews. The reusable Lean results prove
-their own precise statements: root-cost convolution, shared-budget arithmetic,
-ancestry under explicit hypotheses, physical clipped erosion, or finite
-certificates. The total module count cannot be read as a classification proof.
+The geometric models give necessary transitions; allowed model paths
+are not assumed physically attainable. Exact backward recurrences now
+make their clocks arithmetic. New envelope and corner-change rules
+supply physical upper bounds at every feasible budget.
 
-A deterministic tie order for a freely chosen ideal extension is a small
-specification task. Choosing an optimizing frontier path is a substantive
-construction dependency. Neither should be hidden under the phrase “an
-algorithm supplies a strategy.” Printing a long already-specified strategy is
-allowed to depend on its length.
+For every even-area rectangle of width w>=4 the named bounds differ by
+at most one day at k>=ceil(4w/3). On even widths the stronger condition
+k>=ceil(13w/10) suffices. On odd widths w=2r+1 the alternative
+k>=ceil(13r/5)+3 also suffices. The precise integer gate is given in
+`research/bridge-upper-transport-high-credit.md`. Endpoints k>=wn/2
+use the already exact one-/two-day clauses. Below these sufficient
+thresholds there is no general theorem asserting a one-day interval
+for all remaining even-area inputs.
 
-The source of scope-specific formal module ownership is
-`publication/lean-scope.json`, with `lean/README.md` and the source-hashed
-verification receipt supplying the actual semantic and build coverage.
+At24 rows and budget13, T>=24n-370 holds for every n>=24; for even n
+there is a prescribed upper24n-369. For odd n>=25 its current upper is24n-368. The24-square is still206 versus207.
+The25-row even-length minimum-budget family is exact as stated above.
 
-## 6. Assessment boundary
+Independent finite exact consequences across both side parities are
+T5(8,8)=40, T7(12,12)=72, T7(12,14)=96,
+T9(16,16)=112, T9(16,18)=144, T4(7,8)=68,
+T5(9,10)=96, T6(11,12)=128 and T6(11,14)=172.
+These have ordinary geometric proofs plus finite certificates and literal
+inspection replays. They are not uniform width classifications.
 
-This reconciliation adds no mathematical cases and changes no result's
-provenance. It makes the accepted bounded-formula union and its residual
-domain explicit. [RECTANGLE_GAPS.md](/princess/gaps/) records the critical
-dependencies, prior attempts, and possible next steps. Independent extensions
-are preserved and parked; a relevant general proof tool remains in the main
-project even if its statement is broader than a rectangle.
+The accepted proof tools include corner/erosion capacities, mergers,
+whole near-square and near-pronic interval localization through the
+stated critical cases, persistent two-radius propagation, an exact
+corner-ball intersection bound, and a clipped radius Bellman potential.
+Their initial sharpness and the proposed consecutive sharp-event charge
+remain open. Finite terminal checks at widths23 and47 are evidence about
+those tools, not additional full-board capture theorems.
 
+## 6. Verification and scope boundary
 
-## 8. New even-area lower bounds and constructions
+Complete physical-game Lean classifications in the main scope remain
+paths and two-row boards. The83 canonical formal modules are unchanged.
+All new wide-rectangle results have ordinary proofs and their stated
+independent reviews or finite certificates; no new full physical Lean
+coverage is implied. The scope manifests preserve one authoritative
+formal source tree and the parked companion's separate coverage.
 
-The resumed investigation strengthens the first two residual families without
-claiming their complete formula classification. The two even-area envelope
-expressions above now supply **constructive upper bounds at every feasible
-budget**; their matching lower proofs retain the displayed quadratic budget
-thresholds. The strengthened root-selected construction is in
-[lem:pyramid-envelope](/princess/proofs/#lem:pyramid-envelope), [thm:even-rectangle-high-budget](/princess/proofs/#thm:even-rectangle-high-budget), and
-[thm:odd-short-even-high-budget](/princess/proofs/#thm:odd-short-even-high-budget).
-
-At minimum budget on odd width, the expression
-T<=2wn-(8r^2-4r-4L_r+4) is now an attained upper bound at every even length
-as well; [prop:odd-even-minimum-upper](/princess/proofs/#prop:odd-even-minimum-upper) proves it. The general even-length
-lower equality and the fixed-size evaluation of L_r remain separate gaps.
-
-[thm:finite-corner-count](/princess/proofs/#thm:finite-corner-count) and [cor:critical-corner-unified](/princess/proofs/#cor:critical-corner-unified) give uniform
-necessary bounds for arbitrary supports on every even-area rectangle,
-retaining their current and outgoing corners. [thm:erosion-corner-profile](/princess/proofs/#thm:erosion-corner-profile)
-adds the corners whose two neighbors are present, and corner closure makes
-its dual index observable. Its critical refinement is presently proved for
-odd width/even length. [thm:corner-model-merger](/princess/proofs/#thm:corner-model-merger) and
-[thm:erosion-model-merger](/princess/proofs/#thm:erosion-model-merger) reduce the corresponding joint necessary lower
-calculations to solo clocks. The latter deliberately drops a positive feature
-lower-cardinality constraint; it does not assert physical attainment.
-
-[thm:even-pronic-rigidity](/princess/proofs/#thm:even-pronic-rigidity), [thm:near-pronic-localization](/princess/proofs/#thm:near-pronic-localization), and
-[cor:dual-near-pronic](/princess/proofs/#cor:dual-near-pronic) retain shape information at and near the capacity
-extrema. The near-pronic dual rule replaces a proposed extra history bit:
-existing erosion counts already forbid the consecutive transitions.
-[thm:near-square-localization](/princess/proofs/#thm:near-square-localization) gives the corresponding near-square confinement.
-
-The independently checked finite consequences are T_5(8,8)=40,
-T_7(12,12)=72, T_4(7,8)=68, T_5(9,10)=96,
-T_6(11,12)=128, and T_6(11,14)=172. They combine uniform ordinary proofs,
-finite integer certificates, and literal-room inspection replays. They are
-not a family-level fixed-size formula or complete physical Lean proofs.
-
-The current full-board diagnostic interval is 206<=T_13(24,24)<=207.
-A stronger physical SOLO lower is 103 days, versus a 104-day solo upper;
-a separate time-sensitive joint equality certificate transfers its history
-barrier to merged full-board histories. Together with the filtered model
-and reversed midpoint cut, this proves the 206-day lower.
-See [prop:twenty-four-boundary-history](/princess/proofs/#prop:twenty-four-boundary-history) and the resumed checkpoint in the
-mathematical sources for the precise proof and computational boundary.
+The exact even-area boundary representation and exact odd joint evaluator
+remain valuable achievements. Their parameter-dependent optimization does
+not meet the fixed-size numerical goal or the direct optimal inspection
+requirement throughout the remaining ranges. Independent higher-dimensional,
+varying-budget and unrelated partial-state objectives remain parked.
+[RECTANGLE_GAPS.md](/princess/gaps/) records the remaining proof tasks;
+[BOX_RECONCILIATION.md](/princess/reconciliation/) distinguishes baseline
+coverage, new mathematics, and the still-open numerical obligations.

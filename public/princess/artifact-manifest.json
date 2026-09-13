@@ -7,6 +7,22 @@
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
     },
+    "archive/2026-09-13-scope-baseline/CURRENT_CHECKPOINT.md": {
+      "scope": "private",
+      "reason": "Private chronological/assembly record."
+    },
+    "archive/2026-09-13-scope-baseline/README.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "archive/2026-09-13-scope-baseline/RECTANGLE_COVERAGE.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "archive/2026-09-13-scope-baseline/RECTANGLE_GAPS.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
     "extensions/HANDOFF.md": {
       "scope": "parked",
       "reason": "Parked companion handoff and explicit non-goals."
@@ -49,6 +65,30 @@
     },
     "paper/sections/boxes.tex": {
       "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-boundary-numeric.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-boundary-transfer.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-frontiers.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-local-geometry.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-odd-evaluation.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bridge-uniform-upper.tex": {
+      "scope": "main",
       "reason": "Canonical manuscript source; retained scope and dependencies."
     },
     "paper/sections/compression.tex": {
@@ -283,6 +323,10 @@
       "scope": "shared",
       "reason": "Publication source closure and cross-document link membership."
     },
+    "research/BOX_RECONCILIATION.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
     "research/CLASSIFICATION_SCOPE.md": {
       "scope": "main",
       "reason": "Active rectangle scope, coverage, and remaining gaps."
@@ -297,7 +341,7 @@
     },
     "research/RESUMED_RECTANGLE_CHECKPOINT.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/affine-rank-ammunition-potential.md": {
       "scope": "main",
@@ -306,6 +350,642 @@
     "research/boxes-with-a-two-side.md": {
       "scope": "parked",
       "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/bridge-boundary-history-transfer.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-24-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-24.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-25-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-25-exact-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-25-exact.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-25.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-budget-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-budget.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-quadratic-edge-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-numeric-quadratic-edge.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-boundary-transfer-clock.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-budget-ratios.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-corner-frontier-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-corner-frontier-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-corner-reach-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-family-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-gap-diagnostics.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-gap-grid.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-linear-budget-countercheck.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-linear-budget-coupling.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-linear-budget-splices.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-25x26-gap.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-25x26-witness-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-all-bands.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-all-radius-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-exact-lens-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-exact-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-interval-c0e0-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-interval-c2e0-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-interval-paired-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b11-interval-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b23-exact-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b23-exact-lens-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b23-exact-witness-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b23-paired-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-b23-paired-lens-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-corner-reach.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-critical-band.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-erosion-band-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-fast-25x28.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-fast-25x30.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-fast-builder.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-fast-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-filtered-witness-persistent.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-filtered-witness-square.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-filtered-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-forbidden-pair-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-geometry-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-lens-count-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-lens.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-log.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-near-square-flag-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-near-square-slack-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-near-square-slack.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-next-widths.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-nine-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-nine-next.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-nine-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-nine-secondary-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-orientation-delay-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-persistent-longer-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-radius-clock.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-root-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-strong-band.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-terminal-family-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-terminal-family-odd-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-lower-frontier-terminal-family.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-new-certificates-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-bottom-orientation.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-guard-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-all.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-complement.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-filter.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-finite-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-sample.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget-whole-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-linear-budget.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-orientation-onset-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-orientation-onset.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-orientation-probe.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-orientation-targets.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-quadratic-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-quadratic.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-reset-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-reset.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-superlinear-budget.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-width-seven-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-odd-clock-width-seven.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-pdf-geometry-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-pdf-numeric-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-pdf-root-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-quadratic-edge-exception-splice.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-quadratic-edge-exception.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-reconciliation-25-current-replay.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-reconciliation-review.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-research-log.md": {
+      "scope": "private",
+      "reason": "Private chronological/assembly record."
+    },
+    "research/bridge-sharp-event-charge-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-sharp-event-stress-check.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-12x14-k7-t48.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-16x16-k9-t56-p1.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-16x18-k9-t72-p1.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-16x18-k9-t72.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-24x24-k13-t103-p1.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-24x24-k13-t103.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-24x26-k13-t126-p1.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-24x26-k13-t126.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-25x26-prefix.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-alternative-16x16-k9-t56.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-alternative-24x24-k13-t103.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-backward-24x24-k13-t103-b32.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-budget-repairs.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-clipped-16x16-k9-t56.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-clipped-24x24-k13-t103.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-coupling.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-coupling.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-day28-pronic-candidates.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-handoff.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-high-credit.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-high-credit.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-length-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-coupling.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-coupling.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-exceptions.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-exceptions.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-length.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-odd-length.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-partial177-p0.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-partial177-p1.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-persistent-fixed-radius.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-persistent-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-quadratic-boundary-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-terminal-feature-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-terminal157-verified.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-triangle-contraction.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-triangle-contraction.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-triangle10-to9-priorities.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-10x10.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-10x11.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-12x12.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-12x13.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-12x14.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-14x14.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-14x15.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-16x16.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-16x17.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-16x18.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-20x20.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-20x21.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-24x24.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-24x25.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-24x26.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-28x28.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-32x32.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-uniform-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport-wrap.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "research/bridge-upper-transport.md": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/closed-grid-nesting-checks.json": {
       "scope": "main",
@@ -1381,23 +2061,27 @@
     },
     "research/resumed-corner-checkpoint-source-review.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-corner-integration-plan.md": {
       "scope": "private",
       "reason": "Private chronological/assembly record."
     },
+    "research/resumed-deployment-verification.json": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
     "research/resumed-erosion-corner-profile.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-algebra-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-algebra-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py",
         "src/resumed_odd_even_erosion_corners.py"
@@ -1405,484 +2089,484 @@
     },
     "research/resumed-erosion-merger-band-dual-solo-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-band-solo-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-band-solo-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_odd_even_erosion_corners.py"
       ]
     },
     "research/resumed-erosion-merger-proof.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-relaxed-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-relaxed-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-erosion-merger-relaxed-full-closure-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-7x8-k4-pyramid-upper.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-all-pyramid-orientations-7x8-k4.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-ammunition-8x8-k5.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-ammunition-minimum.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-corner-count-12x12-k7.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-corner-count-8x8-k5.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-corner-features.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-corrected-prefix-gap.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-critical-clock.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-critical-profile-counterexamples.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-day28-ammunition-pairs.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-direct-two-prefixes-24x24-k13.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-formula-profile-12x12-k7.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-formula-profile-8x8-k5.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-full-start-seriality.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-joint-equality28-verification.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-joint-equality28.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-larger-prefix.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-log.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-merge-algebra.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-merge-guard.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-merge-independent-audit.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-minimum-12x12.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-near-square112-search.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-near-square112-verification.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-near-square112.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-partial-prefix123-verification.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-partial-prefix123.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-prefix-arithmetic-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-prefix-clocks.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-prefix.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-profile-relaxation-12x12-k7.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-profile-relaxation-8x8-k5.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-splice-12x12-k7.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-splice-14x14-k12.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-splice-14x14-k8.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-splice-14x14-k9.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-splice-24x24-k13.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-square-8x8-k5.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-time-barrier28.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-transport-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-transport-constant-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-transport.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-transport.tex": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-two-prefixes-12x12-k7.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-two-prefixes-12x12-k8.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-construction-union-intersection-24x24-k13.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-critical-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-critical-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-critical.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-profile-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-profile-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-corner-profile.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-merge-algebra-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-merge-endpoints.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-merge-endpoints.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "research/resumed-even-merge-extensions-check.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-even-merge-extensions-check.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "research/resumed-even-merge-proof.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-compatibility-barrier.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-compatibility-barrier.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-compatibility-solo-guard.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-cheap-pairs-5x6.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-cheap-pairs-7x8.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-cheap-pairs-9x10.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-7x8-memory.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-7x8-two-memories.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-9x10-audited.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-critical.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-dual.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history-uniform-memory.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-history.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-corner-potentials.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-critical-extension.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-critical-unification.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-enlarged-potentials.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-11-band-dual.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-11x12-all-pronic-radii.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-11x12-band-memory.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-11x12-gap.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-11x14-band-memory.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-closed-memory.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-closed.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-dual-pronic.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-full-closure-audited.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-maximal.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners-uniform-audited.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-corners.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-square-24x24-k13-pronic.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-erosion-square-24x24-k13.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-four-day-obstruction.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-four-day-obstruction.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-minimum-upper.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-minimum-upper.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-near-pronic-history.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-one-neighbor-capacity.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-one-neighbor-capacity.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-pronic-all-radii.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-pronic-memory.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-pronic-rigidity-physical-attack.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-seven-six-potentials.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-symbolic-minimum-frontier.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-terminal-obstruction.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-odd-even-uniform-falsification.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-pdf-companion-review.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-pdf-main-layout-final-comparison.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-pdf-main-layout-review.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-pdf-new-proof-review.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-prefix-transport-evaluation.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-rectangle-research-log.md": {
       "scope": "private",
@@ -1890,19 +2574,19 @@
     },
     "research/resumed-research-plan.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-root-saturated-upper.json": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-root-saturation-proof.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/resumed-ui-review.md": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/root-convolution-independent-review.md": {
       "scope": "main",
@@ -2472,6 +3156,317 @@
         "src/nested_grid_time.py"
       ]
     },
+    "src/bridge_boundary_numeric_24.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/resumed_even_construction_formula_clock.py"
+      ]
+    },
+    "src/bridge_boundary_numeric_25.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_boundary_numeric_24.py",
+        "src/bridge_lower_frontier_nine.py"
+      ]
+    },
+    "src/bridge_boundary_numeric_25_exact.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_boundary_numeric_25.py",
+        "src/bridge_lower_frontier_nine.py"
+      ]
+    },
+    "src/bridge_boundary_numeric_budget.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_boundary_numeric_quadratic_edge.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_boundary_numeric_budget.py",
+        "src/resumed_even_construction_prefix.py"
+      ]
+    },
+    "src/bridge_boundary_transfer_clock.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/bridge_lower_frontier_nine.py"
+      ]
+    },
+    "src/bridge_budget_ratios.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_corner_frontier.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py"
+      ]
+    },
+    "src/bridge_corner_reach.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/resumed_even_construction_formula_clock.py",
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_gap_diagnostics.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py",
+        "src/resumed_even_construction_prefix.py"
+      ]
+    },
+    "src/bridge_lower_frontier_diagnostic.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_flagged.py",
+        "src/bridge_lower_frontier_nine.py"
+      ]
+    },
+    "src/bridge_lower_frontier_fast.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_nine.py",
+        "src/bridge_lower_frontier_probe.py"
+      ]
+    },
+    "src/bridge_lower_frontier_flagged.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_probe.py"
+      ]
+    },
+    "src/bridge_lower_frontier_geometry_check.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_lower_frontier_grouped.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_diagnostic.py",
+        "src/bridge_lower_frontier_flagged.py",
+        "src/bridge_lower_frontier_interval.py"
+      ]
+    },
+    "src/bridge_lower_frontier_interval.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_diagnostic.py",
+        "src/bridge_lower_frontier_flagged.py",
+        "src/bridge_lower_frontier_nine.py"
+      ]
+    },
+    "src/bridge_lower_frontier_nine.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_probe.py"
+      ]
+    },
+    "src/bridge_lower_frontier_probe.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_lower_frontier_terminal_family.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_fast.py",
+        "src/bridge_lower_frontier_nine.py",
+        "src/bridge_upper_transport_verify_reach.py"
+      ]
+    },
+    "src/bridge_new_certificates_verify.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py"
+      ]
+    },
+    "src/bridge_odd_clock_linear_budget.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_odd_clock_linear_filter.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_odd_clock_linear_budget.py",
+        "src/bridge_odd_clock_orientation_onset.py",
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/bridge_odd_clock_linear_verify.cpp": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_odd_clock_linear_verify.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_odd_clock_linear_verify_full.cpp": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_odd_clock_linear_verify_full.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_odd_clock_linear_budget.py",
+        "src/bridge_odd_clock_orientation_onset.py"
+      ]
+    },
+    "src/bridge_odd_clock_orientation_onset.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/supersession_odd_midpoint_bounded.py",
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/bridge_odd_clock_orientation_probe.cpp": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_odd_clock_quadratic.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/bridge_odd_clock_reset.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_odd_clock_quadratic.py",
+        "src/supersession_odd_midpoint_bounded.py",
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/bridge_odd_clock_width_seven.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_odd_clock_quadratic.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/bridge_sharp_event_charge.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
+    },
+    "src/bridge_sharp_event_stress.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_sharp_event_charge.py"
+      ]
+    },
+    "src/bridge_upper_transport.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py",
+        "src/resumed_even_construction_prefix_arithmetic.py",
+        "src/resumed_even_construction_square_audit.py",
+        "src/resumed_even_construction_transport.py"
+      ]
+    },
+    "src/bridge_upper_transport_backward.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_upper_transport.py",
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_upper_transport_budget.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_upper_transport.py",
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_upper_transport_coupling.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix_arithmetic.py"
+      ]
+    },
+    "src/bridge_upper_transport_high_credit.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_upper_transport_coupling.py",
+        "src/bridge_upper_transport_odd_exceptions.py"
+      ]
+    },
+    "src/bridge_upper_transport_odd_coupling.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py"
+      ]
+    },
+    "src/bridge_upper_transport_odd_exceptions.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_corner_frontier.py",
+        "src/bridge_upper_transport_odd_coupling.py"
+      ]
+    },
+    "src/bridge_upper_transport_odd_length.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_gap_diagnostics.py",
+        "src/bridge_upper_transport.py"
+      ]
+    },
+    "src/bridge_upper_transport_triangle.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_upper_transport.py"
+      ]
+    },
+    "src/bridge_upper_transport_verify_reach.py": {
+      "scope": "main",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
+      "local_imports": [
+        "src/bridge_lower_frontier_diagnostic.py",
+        "src/bridge_lower_frontier_flagged.py"
+      ]
+    },
     "src/build_corner_memory_figure.py": {
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure.",
@@ -2496,7 +3491,7 @@
     },
     "src/build_near_pronic_figure.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/build_paper_figures.py": {
       "scope": "shared",
@@ -3073,18 +4068,18 @@
     },
     "src/refresh_resumed_publication.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_even_construction_all_orientations.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_square_audit.py"
       ]
     },
     "src/resumed_even_construction_ammunition.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py",
         "src/resumed_even_construction_square_audit.py"
@@ -3092,7 +4087,7 @@
     },
     "src/resumed_even_construction_corner_abstraction.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_ammunition.py",
         "src/resumed_even_construction_square_audit.py"
@@ -3100,7 +4095,7 @@
     },
     "src/resumed_even_construction_corner_count.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py",
         "src/resumed_even_construction_square_audit.py"
@@ -3108,7 +4103,7 @@
     },
     "src/resumed_even_construction_direct_two_prefixes.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py",
         "src/resumed_even_construction_transport.py"
@@ -3116,7 +4111,7 @@
     },
     "src/resumed_even_construction_formula_clock.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py",
         "src/resumed_even_construction_prefix.py",
@@ -3125,7 +4120,7 @@
     },
     "src/resumed_even_construction_formula_profile.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_ammunition.py",
         "src/resumed_even_construction_prefix.py"
@@ -3133,35 +4128,35 @@
     },
     "src/resumed_even_construction_full_start_seriality.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "src/resumed_even_construction_joint_equality.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "src/resumed_even_construction_joint_equality_verify.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_clock.py"
       ]
     },
     "src/resumed_even_construction_merge_audit.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "src/resumed_even_construction_partial_pyramid.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_clock.py",
         "src/resumed_even_construction_prefix.py",
@@ -3170,22 +4165,22 @@
     },
     "src/resumed_even_construction_partial_verify.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_even_construction_prefix.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_even_construction_prefix_arithmetic.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py"
       ]
     },
     "src/resumed_even_construction_profile_relaxation.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_ammunition.py",
         "src/resumed_even_construction_square_audit.py"
@@ -3193,7 +4188,7 @@
     },
     "src/resumed_even_construction_splice.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_clock.py",
         "src/resumed_even_construction_formula_profile.py",
@@ -3203,7 +4198,7 @@
     },
     "src/resumed_even_construction_square_audit.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/pyramidal_time.py",
         "src/resumed_even_construction_prefix.py"
@@ -3211,18 +4206,18 @@
     },
     "src/resumed_even_construction_transport.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_square_audit.py"
       ]
     },
     "src/resumed_even_construction_transport_constant.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_even_construction_two_prefixes.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py",
         "src/resumed_even_construction_square_audit.py"
@@ -3230,7 +4225,7 @@
     },
     "src/resumed_even_construction_union_intersection.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_prefix.py",
         "src/resumed_even_construction_transport.py"
@@ -3238,7 +4233,7 @@
     },
     "src/resumed_odd_compatibility_barrier.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/maturation_odd_ammunition.py",
         "src/supersession_odd_midpoint_bounded.py",
@@ -3247,7 +4242,7 @@
     },
     "src/resumed_odd_compatibility_solo_guard.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/maturation_odd_ammunition.py",
         "src/supersession_solo_bands.py"
@@ -3255,14 +4250,14 @@
     },
     "src/resumed_odd_even_cheap_pairs.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py"
       ]
     },
     "src/resumed_odd_even_corner_history.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py",
         "src/resumed_odd_even_corner_potential.py"
@@ -3270,14 +4265,14 @@
     },
     "src/resumed_odd_even_corner_potential.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/nested_grid_time.py"
       ]
     },
     "src/resumed_odd_even_erosion_corners.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_even_construction_formula_profile.py",
         "src/resumed_odd_even_corner_history.py",
@@ -3286,37 +4281,37 @@
     },
     "src/resumed_odd_even_erosion_square_probe.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_odd_even_erosion_corners.py"
       ]
     },
     "src/resumed_odd_even_four_day_obstruction.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_odd_even_minimum_upper.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/nested_grid_time.py"
       ]
     },
     "src/resumed_odd_even_one_neighbor_capacity.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_odd_even_pronic_rigidity_attack.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_odd_even_terminal_obstruction.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/resumed_odd_even_uniform_falsification.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied.",
       "local_imports": [
         "src/resumed_odd_even_erosion_corners.py",
         "src/resumed_odd_even_minimum_upper.py"
@@ -3324,7 +4319,7 @@
     },
     "src/resumed_root_saturated_upper.py": {
       "scope": "main",
-      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+      "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "src/serial_cohort_attack.py": {
       "scope": "main",
@@ -3654,6 +4649,12 @@
         "paper/sections/acknowledgments.tex",
         "paper/sections/bounded-cylinder-interfaces.tex",
         "paper/sections/bounded-odd-frontier.tex",
+        "paper/sections/bridge-boundary-numeric.tex",
+        "paper/sections/bridge-boundary-transfer.tex",
+        "paper/sections/bridge-frontiers.tex",
+        "paper/sections/bridge-local-geometry.tex",
+        "paper/sections/bridge-odd-evaluation.tex",
+        "paper/sections/bridge-uniform-upper.tex",
         "paper/sections/compression.tex",
         "paper/sections/corner-memory.tex",
         "paper/sections/cylinder-height.tex",

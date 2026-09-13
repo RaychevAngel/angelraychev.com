@@ -5,381 +5,204 @@ description: "Documented attempts, failures, dependencies and proposed direction
 updated: 2026-09-13
 ---
 
-[Rectangle overview](/princess/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Manuscript](/princess/paper/) · [Parked extensions](/princess/extensions/)
+[Rectangle overview](/princess/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Progress against the goal](/princess/reconciliation/) · [Manuscript](/princess/paper/) · [Parked extensions](/princess/extensions/)
 
 This page is generated from the private project's canonical assessment. Named research files and certificates are preserved in the [mathematical sources package](/princess/research-sources.zip); theorem links lead to the current manuscript-derived proofs. [Download this assessment](/princess/rectangle-gaps.md).
 
-Updated 13 September 2026 after resumed research. Sections below preserve
-the earlier exact parameter obligations; the new even-area progress and
-remaining proof dependencies are summarized at the end.
+13 September 2026. Research is paused for reconciliation. The goal is
+unchanged: every rectangular full-start constant-budget capture time in
+fixed-size standard numerical operations, with directly specified optimal
+inspections and proofs. See [CLASSIFICATION_SCOPE.md](/princess/scope.md),
+[RECTANGLE_COVERAGE.md](/princess/coverage/), and the baseline comparison
+[BOX_RECONCILIATION.md](/princess/reconciliation/).
 
-The fixed goal is [CLASSIFICATION_SCOPE.md](/princess/scope.md): a fixed-size
-O(1) standard numerical expression for every T_k(a,b), its infinity criterion,
-directly specified optimal inspections, and proofs of capture and minimality.
-The separate physical-game formalization obligation remains explicit.
-[RECTANGLE_COVERAGE.md](/princess/coverage/) gives the exact accepted formula
-union, its disjoint residual parameter ranges, and the existing expressions.
+An exact optimizer does not close the numerical goal. A direct optimal
+strategy with an iterative clock closes construction and optimality, but
+still leaves evaluation. A finite diagnostic may identify a missing lemma
+without proving that lemma at every width. Those distinctions control the
+assessment below; old, superseded containing ranges are not current claims.
 
-This document uses four distinct kinds of gap:
+## 1. Remaining even-area full-board values and direct optimal strategies
 
-- A **bound gap** means the displayed structural lower and upper bounds differ.
-  A separate exact optimizer may already resolve that same input.
-- An **evaluation gap** means an exact theorem exists, but its numerical
-  evaluation still uses a recurrence, an expanding list, or optimization.
-- A **construction gap** means the desired directly prescribed optimal
-  inspections still depend on optimization or an unresolved optimal-family
-  theorem. A harmless tie choice in a valid construction is distinguished.
-- A **verification or presentation gap** concerns an already asserted proof,
-  its physical Lean interpretation, or an incomplete statement of the rule.
+Write w=min(a,b), n=max(a,b). After removing the original narrow/high-budget
+formulas and the new exact families, the containing ranges are:
 
-The existence of a finite-state exact search never removes the fixed-size
-numerical obligation. Conversely, it deserves full credit as exact mathematics
-and must not be described as merely a pair of unmatched estimates.
+- w=2r>=6, n>=w, r+1<=k<=r(r-1)-1, excluding fixed-block inputs where
+  the proved lower and upper agree.
+- w=2r+1>=7, n>=w even, r+1<=k<=r(r+1), excluding (w,k)=(25,13).
 
-## 1. New critical numerical obligation: the width-dependent minimum-budget clock
+Isolated certified points inside these ranges keep their exact values.
+The known exact boundary-port representation is still an optimizer with
+parameter-dependent preprocessing. It does not settle the final requested
+form of the answer throughout either range.
 
-**Exact range needing a delivered bounded expression:** w=2r+1>=17, odd n>=w,
-k=r+1. The fixed constants at widths 3,5,7,9,11,13,15 already qualify and have
-been removed from this range.
+The largest new uniform bound statement is a one-day interval between a
+named corner-model lower and a physical upper whenever k>=ceil(4w/3).
+For even w, k>=ceil(13w/10) already suffices; for odd w=2r+1 the additional
+condition k>=ceil(13r/5)+3 and a sharper integer test are available.
+These thresholds are sufficient, not necessary. The budget interval from
+feasibility to these thresholds still has no universal one-day theorem.
+Even above them, the remaining day is not uniformly decided.
 
-**What is established:** matching unrestricted bounds give
-T=2wn-(8r^2-4r-4L_r+4), with a prescribed optimal greedy-prefix construction.
-L_r is the first arrival of an explicit alternating square/pronic recurrence
-at B=r(r-1). Termination and an O(r)-stage evaluation are proved.
+Two current examples separate progress from completion. The whole family
+T13(25,n)=50n-925 is exact for even n>=26. For24 rows, T13(24,n)>=24n-370
+holds at every n>=24, but the matching upper on even lengths is24n-369.
+For odd n>=25 the current upper is24n-368, a two-day bracket.
+In particular T13(24,24) remains206 versus207. A103-day necessary solo
+history has not been turned into a physical103-day schedule or excluded
+in the unrestricted game.
 
-**What is missing:** a bounded standard-operation expression for L_r, or a
-different bounded expression for the same correction to T. There is no bound
-gap here. The stronger numerical completion standard makes this an active
-evaluation gap despite the complete ordinary value-and-attainment theorem.
+### What has been tried and what it taught us
 
-**Documented attempts and lessons:** the earlier all-length note tried an
-elementary correction that predicted C(11)=144 rather than 136 and C(13)=228
-rather than 208. It failed. The root-band translation arguments led to the
-correct width-only clock. The ancestry proof subsequently settled the
-middle-day issue without proving the abandoned lower-root invariant. The
-O(r)-stage improvement removes dependence on board length and day count but
-does not evaluate the entire sequence of root bands in bounded form.
+The original scalar neighborhood minima do not compose into a legal
+strategy. The recorded6x6,k5 size relaxation predicts13 where the exact
+finite calculation gives14. Corner availability and erosion counts improve
+that relaxation, but they still permit histories whose distant corners
+cannot be reached quickly enough.
 
-**Promising next obligation, not work begun:** isolate the first-arrival
-quantity itself and determine whether the alternating root bands admit a
-uniform arithmetic summation or a finite number of structural regimes. A
-proof must handle all r and recover the existing finite constants. A formula
-that simply names this hitting time does not close the gap. Establishing this
-would finish the numerical part of the all-odd minimum-budget family; it
-would not solve intermediate budgets or even-area boards.
+Whole near-square and near-pronic intervals now force localization, not
+only their exact equality endpoints. These restrictions extend through
+stated critical cases, and their guarded mergers are proved. Two persistent
+radius coordinates record how the localization propagates; a fixed-operation
+lens counts the maximum overlap of the corresponding corner balls.
+These tools remove false terminal shortcuts at widths25,23 and47.
+The25-row application is a uniform full-board theorem; the23/47 checks
+remain finite terminal-model evidence.
 
-Sources: [thm:odd-minimum-budget](/princess/proofs/#thm:odd-minimum-budget), [prop:solo-bands](/princess/proofs/#prop:solo-bands),
-`research/odd-minimum-budget-all-lengths.md`,
-`research/uniform-odd-minimum-budget.md`,
-`research/maturation-minimum-budget-independent-review.md`.
+The new clipped radius clock has a proved Bellman inequality through
+updates, resets and the stated mergers, including excursions above its
+terminal size cap. Its initial value with unknown radii can be too weak.
+Therefore merely writing this potential does not prove the target boundary
+clock or the full-board lower.
 
-## 2. Another numerical obligation: arbitrary-budget solo clocks
+The current lower-bound conjecture isolates consecutive sharp square events.
+Between them the nonsensitive steps obey one pronic recurrence. An opposite-
+anchor event must also satisfy the corner-ball lens. The proposed charge
+compares its elapsed time plus the new anchored clock with the previous
+anchored clock. It has passed19,263 exhaustive small-parameter checks and
+24,766 targeted larger-parameter checks; these are not an unbounded proof.
+Discrete clock credits matter: a continuous extra-delay estimate can be less
+than one day. Entry from unrestricted boundary states and critical excursions
+also need their own justified treatment.
 
-**Range:** all odd intermediate-budget families left after the accepted
-formula union, including arbitrarily long boards. In sorted notation,
-w=2r+1>=7, n odd, r+2<=k<=r^2, excluding (w,k)=(7,5).
+On the upper side, the exact descending-word scheduling theorem showed that
+changing visibility times gives no new credit for that fixed word at feasible
+even-width budgets. A larger search over that same word cannot close the gap.
+The uniform corner-change construction removes a splice-index search at the
+minimum budget, but is not proved optimal. The new16-row/budget56 shape
+change demonstrates an actual strict improvement over both anchored-prefix
+uppers on an infinite residue class. So the remaining discrepancy must not
+be assigned exclusively to the lower bound without evidence.
 
-**What is established:** the solo time tau and the two precentral residuals
-are computed with at most 4r+2 translation intervals. At and beyond the
-explicit scalar onset in RECTANGLE_COVERAGE, these determine T exactly without
-joint optimization. A prescribed palindrome or central-overlap schedule
-attains the selected answer. At minimum budget the previous section gives
-the more specialized correction clock.
+Two simpler proposed potentials failed: the minimum of the two phase clocks
+can switch its preferred orientation illegally, and selecting the phase from
+current corner counts loses the old anchor when its corner is inspected away.
+A proposed smaller multiple of the low root-credit loss also fails under
+physical two-step updates. These failures motivate persistent geometry and
+phase alignment, rather than additional unproved scalar identifications.
 
-**What is missing:** eliminate the variable number of square/pronic bands
-from the numerical answer. This persists even if the scalar compatibility
-conjecture is proved at every length. Evaluating a product, sum, matrix, or
-recurrence with parameter-dependent size cannot be presented as O(1).
+### What would close this part
 
-**Documented progress:** affine interior jumps already aggregate arbitrarily
-many search days into floor divisions. The unresolved work is the accumulated
-effect of the changing corner bands, not repeating the affine middle.
-No accepted bounded expression for those accumulated effects is documented.
-That is an absence of an accepted result, not a claim that nobody considered
-possible substitutions or summation identities.
+A full-board lower matching a directly specified physical family would settle
+value and construction, even if a numerical clock remained. One possible
+route is an event-charge theorem with a valid entrance argument; another is
+a different manageable optimal family proved by a global replacement.
+Neither requires optimality from every arbitrary partial state. Any stronger
+partial-state statement should be pursued only when it helps this obligation.
 
-**Promising directions for a later research pass:** seek a bounded description
-of the combined passage through several bands, or prove that only a fixed
-number of extremal bands affect the full-board answer. The latter would bypass
-an exact formula for every solo partial state. Either route must supply an
-explicit operation audit and retain the floor/root endpoint corrections.
-Success would remove this evaluation dependency wherever the scalar decision
-is already exact. The shorter-board decision below remains separate.
+## 2. Remaining odd-board central decisions
 
-Sources: [eq:uniform-solo-deficits](/princess/proofs/#eq:uniform-solo-deficits), [prop:solo-bands](/princess/proofs/#prop:solo-bands),
-[thm:eventual-odd-scalar](/princess/proofs/#thm:eventual-odd-scalar), `research/uniform-rectangle-time.md`.
+Every odd rectangle already has the exact interval2tau-1<=T<=2tau and an
+exact retained joint evaluator. The new scalar decision is proved on every
+odd length whenever r+1<=k<=2r or27k³<=r⁴, where w=2r+1. Minimum budget,
+high budgets, widths through five and odd-length width seven are also covered.
+An improved explicit onset and a recent-reset test cover further inputs.
 
-## 3. Short odd boards: the full-board middle-day decision
+Thus an exact containing range for the still-unproved direct scalar decision
+is w=2r+1>=9, n>=w odd, 2r+1<=k<=r², 27k³>r⁴, below the improved onset,
+and outside the accepted reset or other special-case conditions. This is
+still an infinite family, despite the finite number of possible shorter
+lengths at each fixed width and budget. It must not be described as a fixed
+finite set of exceptions.
 
-**Exact containing range after known formulas are removed:** w=2r+1>=7,
-odd n>=w, r+2<=k<=r^2, (w,k)!=(7,5), and (wn-1)/2<M_*(r,k), where
-M_* is the explicit polynomial/floor expression in RECTANGLE_COVERAGE.
-The unrestricted scalar conjecture includes some additional already solved
-special cases, but those are not new completion obligations.
+The new short-window collar bounds the numerical smaller coordinate of every
+exceptional history. An orientation cleanup then gives the improved onset.
+The all-low-linear theorem uses an unbounded ordinary argument and one fully
+checked19,852-case finite complement. The cubic-budget extension is an
+ordinary inequality proof. These replace substantial parts of the former
+joint optimization requirement with direct optimal strategies.
 
-**What is established:** every answer is 2tau-1 or 2tau. An exact retained
-joint frontier, including exceptional mixed histories, computes the minimum
-central inspection cost and constructs a winning prefix schedule. The pure
-solo endpoints give a sufficient central-day test at all lengths and a
-necessary test beyond the explicit onset. The all-length minimum-budget and
-high-budget cases already have proofs of necessity.
+The remaining direct attack asks whether relevant actual exceptional frontiers
+always have a correctly oriented dominating representative, or whether a
+weaker full-board central obstruction suffices. A plateau-aware elimination
+now states exactly when a proposed crossed target can have an oriented
+exceptional predecessor. That is a local necessary/exact feasibility tool,
+not a proof that true solo orbits avoid all such crossings.
 
-**What is missing:** an optimization-free full-board winning decision at the
-central day. It could be the solo test or a different bounded description if
-that test fails. A proof of optimality from every partial state is not needed.
-Even a successful new decision still leaves Section 2's O(1) evaluation task
-unless the new argument simultaneously removes the clock.
+Stronger convenient assertions have failed. Separate ammunition costs do not
+ensure a simultaneous schedule. An actual21x21,k12 history has one unit of
+rounded-root credit beyond primary lag. Synthetic capacity traces violate
+stronger orientation envelopes even after several full-budget updates.
+The suggested claim that all bottom solo gaps stay in{0,1} is false on the
+actual11x11,k7 sequence(0,0),(4,4),(8,7),(10,11),(14,12). No accepted theorem
+uses that claim. Actual ancestry and the true scalar orbit must enter the
+proof, or an appropriate dominating exchange must replace them.
 
-**Attempts and precise failures:**
+## 3. Numerical evaluation after optimality is proved
 
-- General serial optimality from arbitrary partial states fails. On 7x7 at
-  budget 6, the reachable pair (8,8) has a five-day continuation while the
-  serial continuation needs six. Reaching it in the stored witness took
-  eighteen days, whereas the full-board optimum is sixteen. It therefore
-  does not refute full-board serial optimality.
-- Exact separate one-cohort ammunition costs do not imply a legal joint
-  schedule. At r=3,k=5,t=2, the putative pair (3,2) has separate costs 5+4<=10,
-  but their one-day blocks both need the final day. The actual one-step
-  inequality excludes that pair.
-- Unconditional two-block domination in the bottom model fails at
-  r=4,k=7,t=4: quotas (7,0,1,5) attain (5,6), not dominated by a word with two
-  pure blocks and one shared day. It is low-total relative to solo capacities
-  (14,12), so the midpoint proof may safely discard it.
-- A stronger charge inequality that bounds secondary ammunition by primary
-  lag fails on an actual exceptional history: on 21x21, k=12, t=10, the stored
-  word reaches deficits (1,55) while solo capacities are (55,56). Secondary
-  ammunition is two and primary lag is one. A real unit of rounded-root
-  credit must be respected.
+The original minimum-budget gap is unchanged: w=2r+1>=17, n>=w odd,
+k=r+1 has exact value2wn-(8r²-4r-4L_r+4), but L_r still uses a width-only
+recurrence. Its optimal strategy and matching bounds predate the fixed-scope
+baseline. A general fixed-size expression for L_r has not been obtained.
 
-**Accepted progress:** the ancestry argument identifies the same initial
-primary cohort among retained exceptions. The common ammunition theorem is
-exact for a single corner process. The suffix exchange is proved when primary
-inverse inputs stay above H=r^2+1. These are useful precise statements, not
-proofs of unrestricted schedule compatibility.
+Arbitrary-budget solo clocks likewise retain width-dependent changing root
+bands outside the fixed-block region16(2k-w)>=r². The new49-block evaluator
+removes this dependence in that stated region, and its composition with the
+accepted scalar-decision conditions gives exact bounded subfamilies. It does
+not eliminate every root band at every surplus budget.
 
-**Inconclusive evidence:** exceptional-output seriality passed 48 selected
-boards/budgets and 3,931 precapture layers. Bounded checks of 16,970 exceptional
-states found no rounding credit greater than one, and 6,546 selected
-transitions preserved the relaxed credit condition. These tests prove none
-of the corresponding unbounded claims. In particular the same inequality
-can fail for synthetic capacities, so actual solo history matters.
+On even widths,16(k-r-1)>=r² gives a fixed168-block lower/upper evaluator.
+Equality closes that input's value and direct construction under the numerical
+goal. A strict gap leaves the mathematical choice unresolved. Even a future
+uniform matching theorem may still require evaluation of the remaining
+low-budget entrance and terminal clocks.
 
-**Most direct future target:** bound the central cost of two exceptional
-full-board histories sufficiently to decide whether it exceeds k. This asks
-less than computing every reachable pair or proving universal seriality.
-A second route is a guarded two-block replacement proved only for histories
-that could beat the known full-board schedule. Either route must handle the
-lower root bands and the demonstrated one-unit credit. A counterexample to
-the solo test would require a corrected rectangle answer, not an automatic
-obligation to repair all stronger conjectures.
+Possible next approaches should target the whole accumulated root-band
+passage, not only the affine middle, which already has bulk division jumps.
+A bounded number of decisive bands or a genuine closed summation would help.
+Replacing a clock by a named hitting time, a variable matrix product, a
+parameter-sized sum, or a shortest path is not numerical completion.
+No proof that the desired closed expression exists or is impossible has
+been found; neither conclusion should be inferred from the present progress.
 
-Sources: [lem:exceptional-retention](/princess/proofs/#lem:exceptional-retention), [lem:fastest-ancestry](/princess/proofs/#lem:fastest-ancestry),
-[lem:expansive-primary-exchange](/princess/proofs/#lem:expansive-primary-exchange),
-`research/uniform-rectangle-reachable-counterexample.json`,
-`research/maturation-odd-midpoint.md`,
-`research/maturation-odd-exceptional-seriality.json`.
+## 4. Formalization and exposition
 
-## 4. Even-area rectangles: uniform boundary values and an optimal full-board family
+Complete physical-game Lean classifications in the main scope remain paths
+and two rows. The83 canonical formal modules and their source-specific
+coverage are unchanged. New geometry, wide-rectangle classification regions,
+and finite certificate interpretations have ordinary proofs and independent
+reviews, not new complete Lean classifications. The target remains a faithful
+physical-game theorem for the eventual rectangle result and its dependencies.
 
-**Exact residual ranges:**
+Current overview, detailed proofs, PDF, source packages and reconciliation
+must distinguish fixed-size expressions, exact recurrences, optimized
+characterizations, direct inspections, and merely feasible constructions.
+The baseline comparison is in [BOX_RECONCILIATION.md](/princess/reconciliation/).
+Historical attempts and old coverage statements remain preserved in the
+source record; they are not competing current assessments.
 
-- w=2r>=6, n>=w, r+1<=k<=r(r-1);
-- w=2r+1>=7, n>=w even, r+1<=k<=r(r+1).
+## 5. Scope and restart priorities
 
-**What is established:** the static neighborhood profiles are exact. Physical
-interior height connections have explicit weights. An exact boundary-port
-representation determines T and reconstructs optimal physical inspections
-after finite preprocessing depending on w,k. The construction includes short
-lengths through finite physical-state evaluation. All-parity high-budget
-formulas and every width through five have already been removed from the
-residual domain.
+Independent higher-dimensional boxes/cylinders, varying-budget classifications,
+and unrelated partial-start objectives remain parked at/princess/extensions/.
+Their results and formal coverage are preserved. Relevant compression,
+isoperimetry, inverse profiles, corner geometry, height transitions and
+constant-budget inverse-deadline consequences remain available in the main
+project. Parking applications is scope selection, not a new theorem.
 
-**What is missing:** a uniform bounded expression for the boundary contribution
-and a directly specified optimal full-board inspection family. Optimizing a
-larger finite boundary graph is still exact mathematics but does not close
-either deliverable. A fixed-dimensional parameterization alone also does
-not suffice if it still requires a search over the parameter values.
-
-**Attempts and lessons:**
-
-- Chaining separate neighborhood minima is invalid. The recorded 6x6,k=5
-  instance has value 14 where the size-only relaxation predicts 13. The
-  important phenomenon is a transition incompatibility, not an inaccurate
-  static profile. The finite example retains its computational evidence
-  status; it does not establish a uniform six-row theorem.
-- A full-board varying-quota word (6,8,5,6,18) on 6x6 refutes always staying in
-  all-corner weightlex prefixes. This does not refute a constant-budget
-  full-board prefix theorem. Constant budgets from certain partial prefixes
-  also defeat the restriction, which again is stronger than the required
-  initial condition.
-- Size plus both corner-availability bits is not an exact dynamic description.
-  On the width-14 half-strip with k=9, the partial-start nine-day two-bit
-  relaxation predicts capacity 42 while the physical capacity is 41. The
-  forced 33-to-39 and 30-to-36 steps cannot restore the needed opposite
-  corner in time. The accepted triangle and propagation lemmas explain this
-  obstruction. They do not classify a full rectangular starting board.
-- A broad full-diagonal/ramp class is closed under neighborhoods and certain
-  truncations but is not a relative winning normal form. From the 29-room
-  parent with diagonal counts (3,5,1,2,3,4,5,6), quota word (5,33) succeeds
-  using the survivor (1,2,1,2,3,4,5,6). Every broad-class survivor of the needed
-  size instead has at least 34 neighbors. Both the varying budget and partial
-  start distinguish this counterexample from the present completion goal.
-- A monotone cardinality-preserving retraction fixing the proposed broad
-  class is excluded by failure of intersection closure. The narrower class
-  also fails union closure, excluding that same universal retraction route.
-  This does not exclude a global full-board exchange theorem.
-
-**Accepted progress:** sharper clipped erosion lowered the even-width threshold
-to max(r+1,r(r-1)+1). The analogous reduction for odd width/even length was not
-proved; its accepted threshold stays r(r+1)+1. The unified capacity
-C_h(s)=max(s(s-1)/2,s(s-h)), conditional corner profiles, and triangle
-propagation locks provide constraints stronger than single-step corner bits.
-
-**Inconclusive evidence:** a narrower four-parameter diagonal family has
-counts min(h+2i+1,c+i) and an optional partial tail. Its neighborhood/erosion
-closure derivations are still draft. Finite checks cover 565 supports, 2,181
-intersections, 80,640 survivor subchoices in eight selected parents, and 796
-three-day first/second quota pairs in five parents without finding the
-targeted failure. No unbounded optimality or full-board sufficiency follows.
-
-**Most direct future target:** prove that some optimal search from the full
-rectangle belongs to a manageable family, then evaluate its optimum uniformly.
-A global replacement can charge an awkward boundary state for the cost of
-entering it, rather than demand optimal continuation from every possible
-partial support. Corner propagation may provide exactly the delay needed to
-make that charge. A resulting family still needs a bounded numerical
-optimization-free rule; solving its recurrence remains inside scope.
-
-No accepted global replacement theorem of that type is currently documented.
-This statement means no accepted proof in the reviewed record, not that the
-idea is unconsidered or that it will necessarily work.
-
-Sources: [thm:bounded-cylinder-interfaces](/princess/proofs/#thm:bounded-cylinder-interfaces), [thm:guarded-physical-transitions](/princess/proofs/#thm:guarded-physical-transitions),
-[lem:pyramid-envelope](/princess/proofs/#lem:pyramid-envelope), [thm:conditional-corner-profiles](/princess/proofs/#thm:conditional-corner-profiles),
-`research/even-bridge-full-prefix-failure.md`,
-`research/maturation-boundary-family-closure.md`,
-`research/maturation-cheap-step-rigidity.md`,
-`research/maturation-even-transitions.md`.
-
-## 5. Construction and verification work that must not disappear behind the formula
-
-The accepted narrow and high-budget formulas already have ordinary attaining
-constructions. Their room-level prescription should be extracted faithfully:
-prefix order, orientation, shared-day quota, terminal support, backward
-enlargement, and reversal. Where a proof permits any minimal missing ideal
-element, a deterministic coordinate tie order finishes the specification;
-that is an exposition task, not a new optimality search.
-
-For residual odd boards, an optimizer currently selects the joint frontier
-histories. For residual even-area boards, it selects boundary paths. These
-are substantive construction dependencies even when the optimized value is
-mathematically exact. A direct strategy may take many operations to print or
-evaluate over its full duration; the user placed O(1) on the numerical answer,
-not on the total output.
-
-Complete physical-game Lean classifications within the main rectangle scope
-are paths and two rows. Three through five rows, the general rectangle
-profiles and time theorems, the all-width minimum-budget theorem, eventual
-scalar criterion, and the boundary interpretation remain ordinary mathematics
-with the specific verified components recorded in `publication/lean-scope.json`
-and `lean/README.md`. Even a numerically completed family is not thereby fully
-formalized. The target is a physical-game theorem for the final rectangle
-classification and its actual dependencies, not formalizing every independent
-extension before the main project may finish.
-
-## 6. Directions that are parked, and shared tools that stay
-
-Independent higher-dimensional box classifications, higher-dimensional cylinder
-applications, varying-budget classifications, and arbitrary-initial-support
-optimality objectives are parked at `/princess/extensions/`. Their proofs,
-sources, formal achievements, counterexamples, and restart notes are preserved.
-Parking establishes no theorem and must not be reported as unification.
-
-General compression, inverse-profile duality, erosion, ancestry, corner
-capacity, height transition, and interface lemmas stay available to the main
-proof wherever they are genuine dependencies. Their natural generality need
-not be artificially removed. Partial-state counterexamples remain relevant
-warnings in the rectangle research record without making their resolution an
-additional obligation.
-
-The inverse fixed-deadline problem for a **constant** budget expresses the
-same rectangle capture relation. Its relevant rectangle consequences remain
-in scope. Developing the broader fixed-deadline theory for unrelated cross-
-sections is parked. An eventual periodic answer with computed residues still
-does not meet the fixed-size numerical criterion on its own.
-
-## 7. Suggested order for a future authorized research pass
-
-1. Attack the minimum-budget correction and the general solo corner passage
-   as explicit numerical objects. Success must remove the width-dependent
-   count of numerical stages, not only speed the recurrence.
-2. In parallel, address the odd-board central winning decision under the full
-   initial-state restriction. Aim at the decision needed by T, rather than a
-   stronger all-partial-state equality.
-3. Address even-area full-board sufficiency using entry costs, propagation
-   delays, and global replacement. Then evaluate the surviving boundary choice
-   in a bounded expression; a new optimizer is an intermediate milestone.
-4. State direct inspections and formalize completed rectangle dependencies
-   as they stabilize. Do not expand into parked applications as a condition
-   for closing the rectangle theorem.
-
-These are proposed directions, not claims of feasibility or proofs in
-progress. The outcome may remain a collection of strong exact intermediate
-results. If so, report the residual ranges and dependencies explicitly;
-the fixed-size numerical goal must not be weakened to match the outcome.
-
-
-## 6. Resumed even-area work: tightened bounds and the next proof obligations
-
-The first two family-level ranges now have a uniform corner-count lower
-model, a stronger erosion model with an odd-width critical proof, and a
-proved precapture merger. All feasible even-area budgets also have the
-root-selected upper construction. These are improvements to both sides;
-we have not proved that the current upper family is always optimal.
-
-The near-pronic interval localization has settled the specific 11x12 and
-11x14 minimum-budget diagnostics through a static dual corner rule. It
-supersedes the extra history bit first proposed for those examples. The next
-uniform lower target is to compare the backward clearing frontier with the
-two prescribed prefix clocks for every odd width at minimum budget. A
-successful proof could settle that part of range 2 even while the correction
-clock still fails the fixed-size numerical criterion. Mere agreement at the
-checked widths is not such a proof. Two candidate scalar potentials failed
-on explicit physical transitions: taking the minimum of the two anchored
-clocks changes the preferred phase illegally, and assigning that phase from
-corner/erosion counts fails when remote components can be removed at once.
-The current target is an outer backward frontier, expressed in the two
-clocks, that is closed under every allowed predecessor and excludes the full
-initial state before the upper clock. See the preserved
-`research/resumed-odd-even-symbolic-minimum-frontier.md` for the counterexamples.
-
-For even width, the 24x24,k=13 full-board gap is 206 to 207 days. A uniform
-near-square localization theorem reduces a problematic boundary support to
-eight compressed candidates; independently verified certificates raise the
-physical SOLO lower to 103, versus a 104-day solo upper. Inspection-ammunition costs without timing failed to transfer this barrier
-to joint histories. A separate independently checked time-sensitive equality
-certificate then forced purity at the extremal boundary state, allowing the
-filtered merger argument to prove the 206-day full-board lower. The exact
-remaining question in this diagnostic is now 206 versus 207. A further lower
-invariant could exclude 206; alternatively a better physical schedule could
-attain it. Neither alternative has yet been proved.
-
-A second route remains constructive: the existing two-corner prefix unions
-and their intersections fail to match the relaxed clock in this diagnostic.
-A more general boundary transfer could improve the upper. The failure of
-that restricted family is not an unrestricted impossibility proof. The
-new transport lemma supplies explicit sufficient connections with boundary
-credits, but does not identify a globally optimal sequence of endpoints.
-
-Once matching is established, the necessary clocks and prescribed prefix
-clocks still need uniform evaluation in the accepted numerical language.
-No recurrence, fixed-width preprocessing, or parameter-length capacity
-array is being reclassified as an O(1) answer. The odd-board intermediate
-budget/midpoint and numerical obligations above remain active and were
-secondary in this pass. Independent extensions remain parked.
-
-All new corner geometry, merger, localization, and finite applications have
-ordinary proofs or stated independent certificate checks. None gains full
-physical Lean verification by appearing in the manuscript. See
-`research/RESUMED_RECTANGLE_CHECKPOINT.md` and
-`research/resumed-rectangle-research-log.md` in the source package.
+On resumption, prioritize matching the remaining even-area bounds while
+allowing the independent odd central-decision route to proceed. Then address
+the fixed-size numerical clocks where exactness is already known. A major
+proof that settles a parameter family is more valuable than another isolated
+width or a minor sharpening of a sufficient threshold. Research is currently
+paused; these restart directions are not automatic authorization to continue.

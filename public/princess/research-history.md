@@ -293,3 +293,25 @@ inspection case is between206 and207 days. These are ordinary proofs and
 computational evidence, with no new complete physical Lean theorem. The fixed-
 size endpoint and parked scope remain unchanged. See
 `research/RESUMED_RECTANGLE_CHECKPOINT.md` for exact boundaries.
+
+## September 2026: bound bridging and fixed-scope reconciliation
+
+The subsequent pass proved exact fixed-size formulas for all seven-row
+odd-length budgets, the entire even-width boundary budget r(r-1), and
+T_13(25,n)=50n-925 at every even n>=26. A prescribed change of shape was
+needed in the sixteen-row boundary residue; both fixed-corner uppers were
+one day too slow there. At every odd width2r+1 and odd length, the solo
+central test is now exact for feasible k<=2r and for27k^3<=r^4, with direct
+optimal inspections. Parts of these regions still require width-dependent
+numerical clocks. Fixed49-block odd evaluators and168-block even bound
+evaluators yield further explicitly delimited O(1) regions. Uniform linear
+budget thresholds give one-day even-area brackets without resolving every
+equality case. Persistent radius geometry and critical interval obstructions
+strengthen the common lower theory; proposed sharp-event charge remains open.
+
+The user then requested a pause and reconciliation against commit d38c1b0,
+the fixed-scope baseline. None of its four infinite numerical gap families
+has disappeared entirely. In particular the minimum-budget odd width-only
+constant is still a recurrence; its earlier exact theorem is not a new
+closure. There is no new complete physical-game Lean classification. See
+`research/BOX_RECONCILIATION.md` for precise gains and remaining obligations.

@@ -1,5 +1,5 @@
 {
-  "prepared_at_utc": "2026-09-13T14:11:24.914595+00:00",
+  "prepared_at_utc": "2026-09-13T17:00:33.478079+00:00",
   "status": "Parked companion; independent extensions are not completion requirements for the rectangle project.",
   "scope": "extensions",
   "pages": 30,
@@ -10,20 +10,20 @@
   "lean_check_seconds": 244.7014829562977,
   "files": {
     "princess-extensions.pdf": {
-      "sha256": "b80b8dfad0b9cd65c5cc06e0fb1af21bb8f3287e66069a988a1f780fd2466879",
-      "bytes": 480110
+      "sha256": "d148646d861f0c9954965b57f9a29e88a96cce77cfda8509e3d5edf2b2e1e029",
+      "bytes": 480111
     },
     "extensions-source.zip": {
-      "sha256": "07872f23b11fa25bcdf7ecea754e72dd612b5afdd4b1ed4266d45674b064823b",
-      "bytes": 83921
+      "sha256": "dcd79d2957d39340a805ad885dc599d23f3a7366ccbc92db291ada1a2c6ae144",
+      "bytes": 85755
     },
     "extensions-lean-proofs.zip": {
-      "sha256": "51a2d2359a9ad002f6a1443f8b48bf8881dabf5e3dbf23e79ae69a4e15ded728",
-      "bytes": 189509
+      "sha256": "c105c3f85c240f16cf236f6953000beb4362a7f9256526a101a559d362453630",
+      "bytes": 189506
     },
     "extensions-research-sources.zip": {
-      "sha256": "5ad4b9a61601335adfddcfaf596df8fdcd94adc7bb8cc7232656999161fcba36",
-      "bytes": 603250
+      "sha256": "91265abdd65c9f1305d53c2791ce72ac8395ea0022017ad1c92d26438fe1ccba",
+      "bytes": 609241
     }
   }
 }
