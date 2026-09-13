@@ -1,14 +1,14 @@
 {
-  "prepared_at_utc": "2026-09-13T06:00:53.604966+00:00",
+  "prepared_at_utc": "2026-09-13T07:31:34.358917+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
-  "pages": 78,
-  "figures": 7,
-  "math_formulas": 2708,
+  "pages": 88,
+  "figures": 8,
+  "math_formulas": 3094,
   "pdf_overfull_warnings": [],
   "files": {
     "research-sources.zip": {
-      "bytes": 29919557,
-      "sha256": "63c13c60d6ebe1f5410824332ecc9135f0c739346b0c32be0dc2b7f79043a572"
+      "bytes": 33874712,
+      "sha256": "af2432b2dee7c5b246306b8d117f87ee7011546a7c8bb1c2d1edc5b729420a46"
     },
     "references.bib": {
       "bytes": 1400,
@@ -19,25 +19,25 @@
       "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
     },
     "lean-verification.json": {
-      "bytes": 5139,
-      "sha256": "106e2f11c1649a9249d2843a163af0b8c43e41ddae1c27d438360f8459264ede"
+      "bytes": 7311,
+      "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
     },
     "lean-proofs.zip": {
-      "bytes": 20972,
-      "sha256": "94d152cf337b0aeec4b800aba153e7b0e6c7221d9df8531f65cae0c12dc2719d"
+      "bytes": 26435,
+      "sha256": "071bf39312c5779d9d9e3fa347a119eaedd05643eff8da42b84d7e663246930d"
     },
     "explorer-graphs.json": {
       "bytes": 497,
       "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 668930,
-      "sha256": "8df2dda2992352bccf9a0abf80de910e2452dde9e569fcf91b42de46c28bf455"
+      "bytes": 761249,
+      "sha256": "e2303cb861b89c63df9294618076e74e10bf9e14d2e5dce121d9936650812201"
     },
     "manuscript-source.zip": {
-      "bytes": 190094,
-      "sha256": "066117c8433369e72be09c7681f4aaf3f94e18dbd0bd628f9586c73cfcd87117"
+      "bytes": 220485,
+      "sha256": "76cc60e4103e8c23f1c1cbb1d9fd6911ef8984f6385c2017db490a2b9e81eb28"
     }
   },
-  "reviewed_at_utc": "2026-09-13T06:02:01.076734+00:00"
+  "research_archive_refreshed_at_utc": "2026-09-13T07:35:51.608818+00:00"
 }

@@ -4,6 +4,9 @@ import CampingObstruction
 import TwelveVertexCertificate
 import DenseCounting
 import ProtectedRouting
+import RobustTwoMove
+import ElevenVertexDense
+import SmallDenseEnvelopes
 
 #print axioms Delivery.winning_play_delivers
 #print axioms Delivery.rankCertificate_actual_delivery
@@ -22,3 +25,11 @@ import ProtectedRouting
 #print axioms Delivery.ProtectedRouting.protected_witness_winning
 #print axioms Delivery.ProtectedRouting.protected_routing_universal
 #print axioms Delivery.ProtectedRouting.protected_routing_actual_delivery
+
+#print axioms Delivery.RobustTwoMove.envelope_actual_delivery
+#print axioms Delivery.ElevenVertexDense.witnesses
+#print axioms Delivery.ElevenVertexDense.all_pairs_actual_delivery
+#print axioms Delivery.ElevenVertexDense.indirect_count
+
+#print axioms Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery
+#print axioms Delivery.SmallDenseEnvelopes.exact_endpoint_counts
