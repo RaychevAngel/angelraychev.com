@@ -4,7 +4,7 @@ import verification from '../../../public/cop-prisoner/lean-verification.json';
 import release from '../../../public/cop-prisoner/release.json';
 ---
 <Post title="Guaranteed delivery: Lean verification" description="Exact formal coverage, downloadable Lean sources and a reproducible verification receipt." updated={release.publication_date}>
-  <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/paper/">Paper and sources</a></p>
+  <p><a href="/cop-prisoner/">Exact-count overview</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/paper/">Paper and evidence</a> · <a href="/cop-prisoner/delivery-time/">Delivery-time companion</a></p>
   <p>The artifact uses <strong>Lean 4.33.1 with Std only</strong>. All {verification.modules.length} modules passed their recorded build. The <a href="/cop-prisoner/lean-verification.json">receipt</a> identifies the toolchain, source hashes, compiler output, and logical axioms.</p>
   <div class="tablewrap"><table><thead><tr><th>Module</th><th>What it proves</th></tr></thead><tbody>
     <tr><td><a href="/cop-prisoner/lean/DeliveryGame.lean">DeliveryGame</a></td><td>The alternating game with waiting and terminal receipt; finite winning certificates imply actual delivery against arbitrary legal history-dependent pursuer choices. See the <a href="/cop-prisoner/proofs/#the-game-and-its-elementary-structure">game definition</a> and <a href="/cop-prisoner/proofs/#exact-computation-and-formal-verification">certificate argument</a>.</td></tr>

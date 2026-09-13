@@ -4,9 +4,10 @@ import release from '../../../public/cop-prisoner/release.json';
 import evidenceHtml from '../../content/generated/cop-prisoner-evidence.html?raw';
 ---
 <Post title="Guaranteed delivery: paper and sources" description="Download the research manuscript, reproducible certificates, source code and Lean development." updated={release.publication_date}>
-  <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/lean/">Lean verification</a></p>
+  <p><a href="/cop-prisoner/">Exact-count overview</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/lean/">Lean coverage</a> · <a href="/cop-prisoner/delivery-time/">Delivery-time companion</a></p>
   <p><strong>Guaranteed indirect delivery in directed networks</strong><br/>Extremal bounds, sparse constructions, and verified finite cases.</p>
-  <p>This is a {release.pages}-page research checkpoint with {release.figures} figures. It proves the vertex maximum at every order from twelve, both arc maxima at all sufficiently large budgets, the full main interval, and the final dense staircase. It gives a combined exact joint formula in a stated eventual range. The new antichain composition guarantees arbitrary outside-arrow choices and lowers the complete main-interval threshold to 115. It also sharpens the constructive constant at the Θ(n log n) scale for universal two-move delivery. Direct dense constructions settle the final band from order 20, and quantitative support reductions constrain near-extremizers. The complete extremal classification remains open. It has not been submitted to arXiv.</p>
+  <p>This is a {release.pages}-page research checkpoint with {release.figures} figures. Its central problem is the exact maximum <i>M(n,m)</i> for every <i>n ≥ 1</i> and <i>0 ≤ m ≤ n(n − 1)</i>, with a proved attaining construction at each resource pair. The known results cover sparse budgets, the entire main interval from order 115, the final dense staircase from order 20, the zero range, and additional smaller cases. Vertex-only and arc-only maxima follow as consequences. <strong>The complete classification remains open.</strong> The manuscript has not been submitted to arXiv.</p>
+  <p>Delivery-time optimization is retained in a separate <a href="/cop-prisoner/delivery-time/">parked companion</a>, with proved and partial results distinguished. Two-move routing arguments needed to construct count-maximizing graphs remain in the main proofs. This organization does not establish any additional mathematical case or publication readiness.</p>
   <h2>Current manuscript and formal proofs</h2>
   <ul>
     <li><a href="/cop-prisoner/guaranteed-indirect-delivery.pdf">Read the manuscript PDF</a>.</li>
@@ -14,6 +15,8 @@ import evidenceHtml from '../../content/generated/cop-prisoner-evidence.html?raw
     <li><a href="/cop-prisoner/lean-proofs.zip">Lean proof sources</a> and <a href="/cop-prisoner/lean-verification.json">verification receipt</a>.</li>
     <li><a href="/cop-prisoner/references.bib">Bibliography</a> and <a href="/cop-prisoner/release.json">download hashes</a>.</li>
   </ul>
+  <h2>Delivery-time companion</h2>
+  <p>The separate {release.companions.delivery_time.pages}-page companion preserves the proved delivery-time bounds and explicitly partial constructions. Read it <a href="/cop-prisoner/delivery-time/">on the website</a>, download the <a href="/cop-prisoner/delivery-time-companion.pdf">companion PDF</a>, or inspect the <a href="/cop-prisoner/delivery-time-source.zip">LaTeX source archive</a>. Further work on these time-optimization questions is parked.</p>
   <p>The <a href="/cop-prisoner/lean/">Lean coverage map</a> states which results are formalized. The <a href="#evidence-guide">evidence and replay guide</a> below identifies the computational checks supporting the other proofs.</p>
   <details id="evidence-guide">
     <summary>Computational evidence and research history</summary>

@@ -1,0 +1,13 @@
+---
+import Post from '../../layouts/Post.astro';
+import deliveryTimeHtml from '../../content/generated/cop-prisoner-delivery-time.html?raw';
+import release from '../../../public/cop-prisoner/release.json';
+---
+<Post title="Guaranteed delivery: delivery-time companion" description="Proved delivery-time bounds and partial fast constructions, retained separately from the exact-count classification." updated={release.publication_date}>
+  <p><a href="/cop-prisoner/">Exact-count overview</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/paper/">Paper and evidence</a> · <a href="/cop-prisoner/lean/">Lean coverage</a></p>
+  <p class="note">This companion is parked while the main project works toward the exact maximum <i>M(n,m)</i> and a proved attaining construction at every resource pair. It preserves existing delivery-time results and explicitly partial work; it does not report new mathematical progress.</p>
+  <p>The main classification counts every pair with a strategy that delivers in finite time. This companion asks how quickly delivery can be guaranteed. Two-move routing arguments that establish attaining graphs still belong to the <a href="/cop-prisoner/proofs/">classification proofs</a>.</p>
+  <p>Read the <a href="/cop-prisoner/delivery-time-companion.pdf">{release.companions.delivery_time.pages}-page companion PDF</a> or download its <a href="/cop-prisoner/delivery-time-source.zip">LaTeX source archive</a>.</p>
+  <Fragment set:html={deliveryTimeHtml}/>
+  <p>The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies ordinary proofs, finite certificates, and saved checks. A partial construction is not a universal delivery theorem.</p>
+</Post>
