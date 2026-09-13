@@ -30,6 +30,10 @@ For the four-cube, Lean verifies the geometric compression itself, its effect on
 
 [BeliefSemantics.lean](/princess/lean/BeliefSemantics.lean) proves that a room is possible precisely when a legal walk reaches it while avoiding all previous inspections. [CaptureRecurrence.lean](/princess/lean/CaptureRecurrence.lean) proves the finite winning recurrence and the complementary losing trap.
 
+[ProbeLocalization.lean](/princess/lean/ProbeLocalization.lean) proves an exact localization theorem on arbitrary directed graphs. Compare the final possible-position set of a search with the final set obtained without inspections. Keeping only inspections in the backward reachability region of their difference preserves the search's final set exactly. The geometric argument bounding that region on cylinders is an ordinary proof.
+
+[RootConvolution.lean](/princess/lean/RootConvolution.lean) defines the integer square and pronic roots and proves that a constrained sum of two such roots attains its minimum at one of two explicit candidates. It includes the attaining positions, not only a lower estimate.
+
 [StrategyCompression.lean](/princess/lean/StrategyCompression.lean) verifies the abstract theorem that lets an appropriate geometric compression transform arbitrary strategies without increasing their inspection budget. Constructing such a compression for a new graph remains a separate mathematical obligation.
 
 [SurvivorEnvelope.lean](/princess/lean/SurvivorEnvelope.lean) proves that the fixed-deadline column certificates are equivalent to capture of every actual target walk, including the correspondence between local column costs and the daily inspection budget. The subsequent proof of eventual periodicity uses ordinary mathematics and is not yet formalized.
@@ -52,6 +56,6 @@ There are no admitted proofs, project-specific axioms, or trusted external solve
 
 ## Work still to formalize
 
-The complete three-row, four-row, and five-row formulas, the wider odd-rectangle formula, the all-odd-box isoperimetric theorem, the general application to boxes with a side of length two, and the cylinder constructions and eventual-period theorems still have ordinary proofs. The [full proof text](/princess/proofs/) states their hypotheses and arguments. Numerical experiments elsewhere in the research archive are explicitly distinguished from proofs.
+The complete three-row, four-row, and five-row formulas, the general rectangle time formulas, the bounded odd-rectangle evaluator, the finite cylinder interface theorem, the all-odd-box isoperimetric theorem, the general application to boxes with a side of length two, and the cylinder eventual-period theorems still have ordinary proofs. The [full proof text](/princess/proofs/) states their hypotheses and arguments. Numerical experiments elsewhere in the research archive are explicitly distinguished from proofs.
 
 The new [MiddleIntervalTransfer.lean](/princess/lean/MiddleIntervalTransfer.lean) proves exact reachability for two bounded counters sharing a daily budget, including a construction of every intermediate allocation. Its physical rectangle application and the new uniform time and neighborhood theorems remain ordinary proofs.

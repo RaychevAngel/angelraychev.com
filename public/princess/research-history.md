@@ -180,3 +180,57 @@ General arguments replaced overlapping narrow-grid proofs while retaining
 all earlier results. The full arbitrary-budget rectangle classification
 remains open, and the research notes preserve failed state-compression and
 potential approaches as well as the current proof targets.
+
+## September 2026: stronger common theorems
+
+The next continuation targeted genuine supersession of narrow results.
+It completed the odd-short/even-long large-budget formula at every length:
+for width 2b+1 the threshold is b(b+1)+1. A history-sensitive potential,
+physical corner rigidity, and a separate two-day midpoint obstruction close
+the formerly unresolved lower-bound cases. Together with the earlier odd-area
+and even-short formulas this covers all side parities above the stated
+quadratic thresholds. Repeated narrow-width arguments were replaced by these
+theorems; stronger partial-state and low-budget results were retained.
+
+For every odd rectangle and feasible budget, an exact retained joint frontier
+has a number of states depending only on width and budget. In its safe middle,
+every inherited mixed history disappears after boundedly many steps. The
+remaining normalized frontier is periodic with period two. Exact integer
+jumps therefore evaluate the minimum time in a number of arithmetic stages
+independent of length. This is stronger than the former one-day ambiguity;
+it does not prove the conjectured shortcut that uses only pure solo endpoints.
+An independent coordinate-based forward game and separate accelerated/daywise
+comparisons passed. The unbounded proof was reviewed independently.
+
+For even-area cylinders with a fixed bipartite Hamiltonian cross-section,
+optimal searches admit canonical physical checkpoints separated by bounded
+time. Inspection localization confines each transition to bounded end or
+front bands without restricting intermediate supports. Finite shape controls
+and one translation coordinate give an exact shortest-path representation.
+Full ordered-pair boundary summaries preserve arbitrary backtracking and
+admit associative composition. This gives exact evaluation in logarithmically
+many length-dependent arithmetic stages after finite parameter-dependent
+preprocessing, and a compressed optimal strategy. The preprocessing has not
+been implemented. The structural representation is the strengthening; an
+asymptotic speed claim over the prior effective eventual-period theorem would
+be misleading.
+
+Two new Lean modules verify the attaining two-candidate root optimization
+and the general graph inspection-localization theorem. The full check passes
+80 modules. The geometric frontier bounds, stabilization, and new minimum-time
+theorems remain ordinary proofs. General elementary formulas at every width
+and budget, complete higher-dimensional classification, and full formalization
+remain open. No new claim of priority over the literature is made without
+further review, and the Princess manuscript remains unsubmitted.
+
+A further common construction replaces the two parity-specific erosion
+arguments. On a connected bipartite cross-section Q, its exact empty-fiber
+threshold is the maximum over v of the sum over u of ceil(dist(v,u)/2).
+Prescribed-size predecessor ideals above that threshold erode by one
+physical level, losing exactly the relevant transverse color size. The
+terminal survivor may be arbitrary if its predecessor closure fits the
+envelope. This strictly extends pyramid-only constructions. A six-vertex
+Hamiltonian example demonstrates that a pyramid-only terminal corner rule
+can lose a day even above this threshold; independent physical replays
+verify its five-day witness, and a spanning rectangle proves minimality.
+The general-Q upper bounds are not promoted to matching exact formulas.

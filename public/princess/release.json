@@ -1,26 +1,26 @@
 {
-  "prepared_at_utc": "2026-09-12T11:18:43.826285+00:00",
+  "prepared_at_utc": "2026-09-13T06:57:37.923544+00:00",
   "status": "Research checkpoint; not submitted to arXiv.",
-  "pages": 100,
+  "pages": 115,
   "figures": 6,
-  "lean_modules": 78,
-  "lean_check_seconds": 348.10527174989693,
+  "lean_modules": 80,
+  "lean_check_seconds": 346.37719291611575,
   "files": {
     "princess-searches.pdf": {
-      "sha256": "84e035d18bbc440002e472ef5152ffde9aace2b380abc5f154b9abc5c0ccb8a4",
-      "bytes": 932821
+      "sha256": "3676b60db0be7bf4364f85a1798ee2d24a46b305cbeb315d31288d78ed696583",
+      "bytes": 993713
     },
     "manuscript-source.zip": {
-      "sha256": "c8cf5a588ca5b1dad42242ebca712c89093d173cd12d6143593a53993008a170",
-      "bytes": 266562
+      "sha256": "89a7b91eeb1f60b2e349d7213edc2d9df4924183862d61eee81439d2f92c1474",
+      "bytes": 286855
     },
     "lean-proofs.zip": {
-      "sha256": "89f5a37a237d0bbbdcf1ce5fc505c08d0b20cda341fbdc5e596e264db3afd8b9",
-      "bytes": 195146
+      "sha256": "cdd2ffb49071fafe625be9519f945f825b2fa7bb8007406acd7e47f084eb9dc6",
+      "bytes": 202882
     },
     "research-sources.zip": {
-      "sha256": "ae6db4e4aa96c9084dc27378d94cd76ea3d5ce855cf68f1e48ba3e9f9f047f83",
-      "bytes": 1574361
+      "sha256": "999442087e839c7a67080b9ff04b0c20cd2e41e069f4405d9fd2457ccc6a71f9",
+      "bytes": 1726697
     }
   }
 }
