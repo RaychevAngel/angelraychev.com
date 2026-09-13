@@ -1,23 +1,33 @@
 ---
 import Post from '../../layouts/Post.astro';
 import release from '../../../public/cop-prisoner/release.json';
+import evidenceHtml from '../../content/generated/cop-prisoner-evidence.html?raw';
 ---
-<Post title="Guaranteed delivery: paper and sources" description="Download the research manuscript, reproducible certificates, source code and Lean development." updated="2026-09-13">
+<Post title="Guaranteed delivery: paper and sources" description="Download the research manuscript, reproducible certificates, source code and Lean development." updated={release.publication_date}>
   <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/proofs/">Detailed proofs</a> · <a href="/cop-prisoner/lean/">Lean verification</a></p>
   <p><strong>Guaranteed indirect delivery in directed networks</strong><br/>Extremal bounds, sparse constructions, and verified finite cases.</p>
   <p>This is a {release.pages}-page research checkpoint with {release.figures} figures. It proves the vertex maximum at every order from twelve, both arc maxima at all sufficiently large budgets, the full main interval, and the final dense staircase. It gives a combined exact joint formula in a stated eventual range. The new antichain composition guarantees arbitrary outside-arrow choices and lowers the complete main-interval threshold to 115. It also sharpens the constructive constant at the Θ(n log n) scale for universal two-move delivery. Direct dense constructions settle the final band from order 20, and quantitative support reductions constrain near-extremizers. The complete extremal classification remains open. It has not been submitted to arXiv.</p>
+  <h2>Current manuscript and formal proofs</h2>
   <ul>
     <li><a href="/cop-prisoner/guaranteed-indirect-delivery.pdf">Read the manuscript PDF</a>.</li>
     <li><a href="/cop-prisoner/manuscript-source.zip">LaTeX manuscript and figures</a>, with a self-contained bibliography in the generated source.</li>
-    <li><a href="/cop-prisoner/research-sources.zip">Research sources and local certificates</a>: proofs, Python and C++ programs, and records of failed approaches.</li>
-    <li><a href="/cop-prisoner/finite-strategy-certificates.zip">Full finite strategy certificates</a> (about 89 MB): the larger rank tables for the even and odd finite bridges. Extract this and the research archive into the same directory for a full replay.</li>
     <li><a href="/cop-prisoner/lean-proofs.zip">Lean proof sources</a> and <a href="/cop-prisoner/lean-verification.json">verification receipt</a>.</li>
     <li><a href="/cop-prisoner/references.bib">Bibliography</a> and <a href="/cop-prisoner/release.json">download hashes</a>.</li>
   </ul>
+  <p>The <a href="/cop-prisoner/lean/">Lean coverage map</a> states which results are formalized. The <a href="#evidence-guide">evidence and replay guide</a> below identifies the computational checks supporting the other proofs.</p>
+  <details id="evidence-guide">
+    <summary>Computational evidence and research history</summary>
+    <p>The research archive contains current proof evidence alongside dated research history, including superseded arguments and failed approaches. Start with its current evidence guide to identify the files used by the published results.</p>
+    <ul>
+      <li><a href="/cop-prisoner/research-sources.zip">Research sources and local certificates</a>: the current evidence guide, proofs, Python and C++ programs, check records, and dated research history.</li>
+      <li><a href="/cop-prisoner/finite-strategy-certificates.zip">Full finite strategy certificates</a> (about 89 MB): two large certificate files for the even and odd finite bridges. These are required for a full replay; extract both archives into the same directory.</li>
+    </ul>
+    <Fragment set:html={evidenceHtml}/>
+  </details>
   <h2>Provenance and publication status</h2>
   <p>Alexandra Ignatova developed the original problem and layered construction in 2023 under Angel Raychev's mentorship. The retained manuscript is dated February 2024. A <a href="https://uchi.bas.bg/wp-content/uploads/2024/09/Knijka_reziumeta_2023.pdf">public 2023 abstract</a> records the original project and its author and mentor.</p>
   <p>The original work also established the upper bound <i>I(G) ≤ n(n − 3)</i> and pursued two-in/two-out-regular constructions. The current account preserves that credit and distinguishes the new attaining families and other September 2026 corrections and extensions. Astra 6, operating through the Codex harness, assisted with research, independent proof attacks, programming, formalization, and presentation. The eventual human author line remains to be agreed; the research checkpoint does not assign one.</p>
   <p>A journal or arXiv submission needs a final authorship decision, a fuller literature comparison, and a final manuscript review. The current downloads make the mathematics and its evidence inspectable without claiming those publication steps have occurred.</p>
   <h2>Reproducing the checks</h2>
-  <p>The Lean archive uses Lean 4.33.1 and only its standard library. Run <code>python3 check.py</code> inside the extracted <code>lean</code> folder. The research archive includes two independent exact game solvers, finite local-certificate checkers, and high-girth construction verifiers. Read <code>README.md</code>, <code>research/solver-method.md</code>, and <code>lean/README.md</code> for their precise scope.</p>
+  <p>The Lean archive uses Lean 4.33.1 and only its standard library. Run <code>python3 check.py</code> inside the extracted <code>lean</code> folder. For the two independent exact game solvers, finite local-certificate checkers, and other computational evidence, follow the <a href="#evidence-guide">evidence and replay guide</a>. The archive's <code>README.md</code>, <code>research/solver-method.md</code>, and <code>lean/README.md</code> give further details about their scope.</p>
 </Post>

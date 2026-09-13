@@ -1,9 +1,11 @@
 ---
 import Post from '../../layouts/Post.astro';
 import proofHtml from '../../content/generated/cop-prisoner-proofs.html?raw';
+import release from '../../../public/cop-prisoner/release.json';
 ---
-<Post title="Guaranteed delivery: detailed proofs" description="Full arguments for the extremal bounds, infinite constructions, corrected layered family, and computational certificates." updated="2026-09-12">
+<Post title="Guaranteed delivery: detailed proofs" description="Full arguments for the extremal bounds, infinite constructions, corrected layered family, and computational certificates." updated={release.publication_date}>
   <p>Read the <a href="/cop-prisoner/">interactive overview</a>, download the <a href="/cop-prisoner/paper/">paper and sources</a>, or inspect the <a href="/cop-prisoner/lean/">Lean coverage</a>. This proof text and the PDF are generated from the same manuscript source.</p>
-  <p class="note">Research checkpoint. The exact theorem domains and the remaining open cases are stated explicitly.</p>
+  <p class="note">Research checkpoint. The contents group the arguments by mathematical topic. Retained theorem labels preserve existing cross-references; a result that follows from a later theorem is identified as a consequence. The exact domains and remaining open cases are stated explicitly.</p>
+  <p>The <a href="/cop-prisoner/paper/#evidence-guide">evidence and replay guide</a> connects the current results to their computational checks and distinguishes those checks from dated research history.</p>
   <Fragment set:html={proofHtml}/>
 </Post>

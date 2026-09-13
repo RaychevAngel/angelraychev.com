@@ -1,43 +1,171 @@
 {
-  "prepared_at_utc": "2026-09-13T07:31:34.358917+00:00",
+  "prepared_at_utc": "2026-09-13T08:00:52.771113+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
-  "pages": 88,
+  "publication_date": "2026-09-13",
+  "chapters": 8,
+  "source_parts": 37,
+  "pages": 87,
   "figures": 8,
-  "math_formulas": 3094,
+  "math_formulas": 2998,
   "pdf_overfull_warnings": [],
   "files": {
-    "research-sources.zip": {
-      "bytes": 33874712,
-      "sha256": "af2432b2dee7c5b246306b8d117f87ee7011546a7c8bb1c2d1edc5b729420a46"
+    "guaranteed-indirect-delivery.pdf": {
+      "bytes": 717954,
+      "sha256": "07776da313b0707262084cee644ad3f8296ae098e1bcba3ecbdf4322dc0445f1"
     },
-    "references.bib": {
-      "bytes": 1400,
-      "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
-    },
-    "finite-strategy-certificates.zip": {
-      "bytes": 88784388,
-      "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
-    },
-    "lean-verification.json": {
-      "bytes": 7311,
-      "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
+    "manuscript-source.zip": {
+      "bytes": 217459,
+      "sha256": "81fce81787f47fc5397eefd93c401889080fca72f9b4b0c6494a146e0fdeeb29"
     },
     "lean-proofs.zip": {
       "bytes": 26435,
       "sha256": "071bf39312c5779d9d9e3fa347a119eaedd05643eff8da42b84d7e663246930d"
     },
+    "lean-verification.json": {
+      "bytes": 7311,
+      "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
+    },
+    "research-sources.zip": {
+      "bytes": 34064431,
+      "sha256": "e20986831fb9c9a5d771b7f9c7e32afaa34987bdb61e983f6a9ccf8ad124c4bc"
+    },
+    "finite-strategy-certificates.zip": {
+      "bytes": 88784388,
+      "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
+    },
+    "references.bib": {
+      "bytes": 1400,
+      "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
+    },
+    "explorer-graphs.json": {
+      "bytes": 497,
+      "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
+    }
+  },
+  "assets": {
     "explorer-graphs.json": {
       "bytes": 497,
       "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
     },
+    "figures/antichain-routing.svg": {
+      "bytes": 15121,
+      "sha256": "98b177d7174433c1032571247ccc276af5a2378cc11de695b75d6a8ab5b22476"
+    },
+    "figures/dense-boundary.svg": {
+      "bytes": 11772,
+      "sha256": "5d2b26731556bc6267ce0514b8549e4938f0fe9cae82e1d9ab379f1c4c90f408"
+    },
+    "figures/dense-staircase.svg": {
+      "bytes": 19950,
+      "sha256": "3e8c2ec9b41080a72e53349905df5c126cbe0b0a2dcddbb0b5914c71fbbd3aeb"
+    },
+    "figures/diamond.svg": {
+      "bytes": 12727,
+      "sha256": "e79f2091b52afb2a125f8d376b500cd995dcdb885a8e968296a8413649829226"
+    },
+    "figures/five-type-strip.svg": {
+      "bytes": 34188,
+      "sha256": "cba52bed95f3020da65f8b54c1dbe5bcba0b0c2d9fc99121284bd6dc97d0475b"
+    },
+    "figures/joint-regimes.svg": {
+      "bytes": 44782,
+      "sha256": "0f6e3d3c52a6e0b7c0f2db1d5415d1b7e7e6f28d5ef6c920d1796f715950f9f2"
+    },
+    "figures/quartet.svg": {
+      "bytes": 11847,
+      "sha256": "c1ac348d354868e1497f2139d8bd14a2a819a60eeb5e9156f778c1aaf5891503"
+    },
+    "figures/six-type-removal.svg": {
+      "bytes": 14624,
+      "sha256": "0eac6fe2da21ba946daf09b28e43344713af2990d2f92dbccb4f8650ace46811"
+    },
+    "finite-strategy-certificates.zip": {
+      "bytes": 88784388,
+      "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
+    },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 761249,
-      "sha256": "e2303cb861b89c63df9294618076e74e10bf9e14d2e5dce121d9936650812201"
+      "bytes": 717954,
+      "sha256": "07776da313b0707262084cee644ad3f8296ae098e1bcba3ecbdf4322dc0445f1"
+    },
+    "lean-proofs.zip": {
+      "bytes": 26435,
+      "sha256": "071bf39312c5779d9d9e3fa347a119eaedd05643eff8da42b84d7e663246930d"
+    },
+    "lean-verification.json": {
+      "bytes": 7311,
+      "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
+    },
+    "lean/Audit.lean": {
+      "bytes": 1579,
+      "sha256": "89aa70f713376523987527ce11d70a263e711791db44f9806e13cba7c2aa8743"
+    },
+    "lean/CampingObstruction.lean": {
+      "bytes": 1699,
+      "sha256": "230998b06688b2ba4e742fee61c37b36243b346b2b573d3057def78f7910781c"
+    },
+    "lean/DeliveryGame.lean": {
+      "bytes": 7407,
+      "sha256": "e9024fcc8b0ece17f925ab6f8c8909adbb87b711dcf453f90fb27ce058cbc7e2"
+    },
+    "lean/DenseCounting.lean": {
+      "bytes": 6874,
+      "sha256": "afe0b3eddb6d9dd40b580afb5a3db82d0e100b279e591976b449f1253e6e9733"
+    },
+    "lean/ElevenVertexDense.lean": {
+      "bytes": 2122,
+      "sha256": "88d54e0d578a32e18f07bec24259c6c8c60fb7620b1e2de561cd6b420c802b56"
+    },
+    "lean/ProtectedRouting.lean": {
+      "bytes": 3379,
+      "sha256": "af7717615600f7d042f2e4f4b515c11cc67c72d272d0e8f9db35c42db8af0cb7"
+    },
+    "lean/README.md": {
+      "bytes": 6867,
+      "sha256": "f1250e8ca79171dd3a62047604a0adea64a445dbc5ec175b21e8dfba7067b08e"
+    },
+    "lean/RobustTwoMove.lean": {
+      "bytes": 1881,
+      "sha256": "fb662a539af1d65808a7436a0608408a016b01a3416c68972a565525e611eea9"
+    },
+    "lean/SafeBranching.lean": {
+      "bytes": 3549,
+      "sha256": "4ef3781026919c462682c9320a49c3e99709562946bfa15d108dd30c46dc7363"
+    },
+    "lean/SmallDenseEnvelopes.lean": {
+      "bytes": 10745,
+      "sha256": "1271ed32095e7eca909a9484530d9411d726333c187a8224ab2e04ee42462fb5"
+    },
+    "lean/TwelveVertexCertificate.lean": {
+      "bytes": 67777,
+      "sha256": "24e7ac5448b04e5572f03a00c3440458fc923fba12342ca637a73abe099b7750"
+    },
+    "lean/check.py": {
+      "bytes": 2299,
+      "sha256": "6f73257e4040aea913bd6999b827feca23c19f7a6bd18f812e6a003f8db605a7"
+    },
+    "lean/generate_finite_certificate.py": {
+      "bytes": 3781,
+      "sha256": "b2b479cf61643336b3c461684499c2f89672bc184d678064c16d1574a0b4613e"
+    },
+    "lean/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    "lean/verification.json": {
+      "bytes": 7311,
+      "sha256": "eb3b64be95ff56cf5717c5e127af8b81da8d3cc0bc870f73183e3ed0b53a495f"
     },
     "manuscript-source.zip": {
-      "bytes": 220485,
-      "sha256": "76cc60e4103e8c23f1c1cbb1d9fd6911ef8984f6385c2017db490a2b9e81eb28"
+      "bytes": 217459,
+      "sha256": "81fce81787f47fc5397eefd93c401889080fca72f9b4b0c6494a146e0fdeeb29"
+    },
+    "references.bib": {
+      "bytes": 1400,
+      "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
+    },
+    "research-sources.zip": {
+      "bytes": 34064431,
+      "sha256": "e20986831fb9c9a5d771b7f9c7e32afaa34987bdb61e983f6a9ccf8ad124c4bc"
     }
-  },
-  "research_archive_refreshed_at_utc": "2026-09-13T07:35:51.608818+00:00"
+  }
 }

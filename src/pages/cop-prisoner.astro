@@ -2,9 +2,10 @@
 import Post from '../layouts/Post.astro';
 import DeliveryExplorer from '../components/DeliveryExplorer.astro';
 import katex from 'katex';
+import release from '../../public/cop-prisoner/release.json';
 const math=(s:string)=>katex.renderToString(s,{displayMode:true,throwOnError:true});
 ---
-<Post title="Guaranteed delivery despite a pursuer" description="How many indirect journeys can a directed network guarantee? Extremal bounds, sparse optimal networks, dense constructions, and verified strategies." updated="2026-09-13">
+<Post title="Guaranteed delivery despite a pursuer" description="How many indirect journeys can a directed network guarantee? Extremal bounds, sparse optimal networks, dense constructions, and verified strategies." updated={release.publication_date}>
   <p class="note">Research checkpoint: explicit composition lowers the complete main-interval threshold to 115; dense and sparse constructions and support bounds are strengthened. The vertex maximum is exact at every order from twelve. Both arc maxima and the full joint maximum are determined in stated eventual ranges; finite exceptions remain.</p>
   <p>A messenger has obtained a message at one station of a directed network. A pursuer starts at a different station. Both can see each other, and they take turns moving along an arrow or waiting. The messenger moves first. Can the message reach its recipient before interception, whatever the pursuer does?</p>
   <p>A direct arrow to the recipient makes delivery immediate. We count the <strong>additional source–recipient pairs without a direct arrow</strong> for which delivery is guaranteed from every allowed pursuer starting position. A network can support almost all such journeys with surprisingly few connections.</p>
