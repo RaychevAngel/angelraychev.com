@@ -2,9 +2,9 @@
   "checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
   "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "command_policy": "Sequential compilation with -j1; local imports built first; no package installation.",
-  "seconds": 112.82624904369004,
+  "seconds": 350.6088654170744,
   "all_passed": true,
-  "scope": "Filtered source-specific historical compilation receipt. No new compile was run during scope separation. See lean/README.md and publication/lean-scope.json.",
+  "scope": "Successful compilation proves the declarations in these exact sources. Mathematical coverage is described separately in lean/README.md.",
   "files": [
     {
       "file": "lean/BeliefSemantics.lean",
@@ -87,6 +87,22 @@
       "contains_sorryAx": false
     },
     {
+      "file": "lean/FiniteSubsetProfiles.lean",
+      "sha256": "90bcc2e4b279abb64e5212d88ceb1f5ecce78fea57e5c812c36f8668ee385680",
+      "exit_code": 0,
+      "seconds": 0.3830872920807451,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FiniteIdealCertificates.lean",
+      "sha256": "e435e342d97939e4344ad999fa6c394dc70348803973c94107594f382b835008",
+      "exit_code": 0,
+      "seconds": 0.3276914160232991,
+      "output": "'Princess.FiniteIdealCertificates.check_sound' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
       "file": "lean/FiveRowDeficitArithmetic.lean",
       "sha256": "8f2acab0cdfcc50f671fa877d195ddad7416f4a8a5cf19cd69506c132f907829",
       "exit_code": 0,
@@ -159,6 +175,22 @@
       "contains_sorryAx": false
     },
     {
+      "file": "lean/SquareCompressionFourData.lean",
+      "sha256": "11c14353717fd1616b7713132735c8e967db715c98c5077a694bf1fcd6b69e89",
+      "exit_code": 0,
+      "seconds": 26.39351345784962,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFour.lean",
+      "sha256": "9525f64759d384edf9081e4ef4645de542886a6b45767cd63d0a659b75b047fd",
+      "exit_code": 0,
+      "seconds": 0.4190568341873586,
+      "output": "'Princess.SquareCompressionFour.cmap_size' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SquareCompressionFour.cmap_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.SquareCompressionFour.cmap_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
       "file": "lean/ProductCompressionNormalization.lean",
       "sha256": "a54c8fff1f68dee42986959b20382c3bbe0dbd10030097f3e29f35ba432f02c3",
       "exit_code": 0,
@@ -175,11 +207,235 @@
       "contains_sorryAx": false
     },
     {
+      "file": "lean/SquareCompressionFourEnergyData.lean",
+      "sha256": "a12c4a927b2b04b21d3158fc66bdcf9531fcb1bf3d1c19081d87846f4bf44086",
+      "exit_code": 0,
+      "seconds": 14.9674585419707,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/SquareCompressionFourEnergy.lean",
+      "sha256": "30ddfed50cac651013c8f2ba1d5d8060336051333296322f05f33f622ffd103c",
+      "exit_code": 0,
+      "seconds": 0.4083754578605294,
+      "output": "'Princess.SquareCompressionFour.cmap_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
       "file": "lean/ProductCompressionRelabel.lean",
       "sha256": "e4ace3ba75d9de6b5074f05fa1c5ba03adc9548d95d5a3c56e6214d050152370",
       "exit_code": 0,
       "seconds": 0.36011220910586417,
       "output": "'Princess.ProductCompression.relabel' depends on axioms: [propext, Quot.sound]\n'Princess.ProductCompression.relabel_energy' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeCompression.lean",
+      "sha256": "92d2784b14f2b3217f52bf05011963874d53bcf27e424919b6483c2cfec984da",
+      "exit_code": 0,
+      "seconds": 5.019696583971381,
+      "output": "'Princess.FourCubeCompression.op_size' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.op_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeNormalForm.lean",
+      "sha256": "145d321c8102a8c45296ff105afae0e1e45dba76dd60564ad758c9a01266572c",
+      "exit_code": 0,
+      "seconds": 1.2424389999359846,
+      "output": "'Princess.FourCubeCompression.actual_capture_iff_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.normalizer_common_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeIdealData.lean",
+      "sha256": "fea0eca0de6e6fb701c905b6f5ef5f4acf8556fbc025fc0f447325bee2517c67",
+      "exit_code": 0,
+      "seconds": 2.450208832975477,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeIdeals.lean",
+      "sha256": "66857fcd5fc691b7a4177d6729c2be2e59ba5382fa4301c770a74217549b673c",
+      "exit_code": 0,
+      "seconds": 0.7984249158762395,
+      "output": "'Princess.FourCubeCompression.fixed_down_mask' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialData.lean",
+      "sha256": "766df219c0a3b1b71ad24a2c65a62b3348a15e225c1deb1f40c8ddfda31a887c",
+      "exit_code": 0,
+      "seconds": 8.000928624998778,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialCertificate.lean",
+      "sha256": "245c5a1372462d42dfefe746aef2ac7b91a1e8fc20930f9ab94cde86bc86391e",
+      "exit_code": 0,
+      "seconds": 81.57644487498328,
+      "output": "'Princess.FourCubeCompression.transitions_even_checked' depends on axioms: [propext]\n'Princess.FourCubeCompression.transitions_odd_checked' depends on axioms: [propext]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialSemantics.lean",
+      "sha256": "51a8646e5445970c339ae1cc81e6bd18c05daf1ef577e0ae9313341aa71c4ae5",
+      "exit_code": 0,
+      "seconds": 0.3537952909246087,
+      "output": "'Princess.FourCubeCompression.encoded_transition' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubePotentialState.lean",
+      "sha256": "9dd7e6b87c2f3818c66143152840fe8b77ca3374e7d621a0c78164b3ed596143",
+      "exit_code": 0,
+      "seconds": 2.794143083039671,
+      "output": "'Princess.FourCubeCompression.state_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounterData.lean",
+      "sha256": "5b4bc7aa8a3bb528ef66b5f0884d8e5481664ada4e871688cb766f1a059e937f",
+      "exit_code": 0,
+      "seconds": 1.8435609999578446,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter0.lean",
+      "sha256": "9709c3688794ecb92bf3f864c76e85a82d69bbc511c45b2b2d0d92d61955608d",
+      "exit_code": 0,
+      "seconds": 3.3254206250421703,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter1.lean",
+      "sha256": "098cb143713363c4be32f9e7ee837a96dec62f65b5836580e724d4b009e68e59",
+      "exit_code": 0,
+      "seconds": 3.3738851661328226,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter2.lean",
+      "sha256": "22860b9c6124dba4acbed76744936288aa0803b15856161245935aa5c654cae9",
+      "exit_code": 0,
+      "seconds": 3.409654791932553,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter3.lean",
+      "sha256": "e381ffeb8037c0020105ef25e784e8e65097441b856aeaf9e2bcdd8166e5f973",
+      "exit_code": 0,
+      "seconds": 3.514901583082974,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter4.lean",
+      "sha256": "13a933cb53a975ceabccf5ba841c4a4b940743e0381e510d6d5c90a7240af5c7",
+      "exit_code": 0,
+      "seconds": 3.655324458843097,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter5.lean",
+      "sha256": "ba159f1f163feb0b53a748545a73820f932757ab2583ee9bf8f2b3dca498550a",
+      "exit_code": 0,
+      "seconds": 3.7089777910150588,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter6.lean",
+      "sha256": "e5b0980d25cd07c01155acadf069d8152870f789da08de5811dde0360e83e2f6",
+      "exit_code": 0,
+      "seconds": 3.83255104185082,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter7.lean",
+      "sha256": "bb7faee376f801ca4e596d8db8095f10e5ee0ff4cb1e8e0b995361f0a159b8ec",
+      "exit_code": 0,
+      "seconds": 3.8366007499862462,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter8.lean",
+      "sha256": "7d7fae4be6d649e6c7162b0cd0789cc72b2a3a2064a08adac4b794cc254e7402",
+      "exit_code": 0,
+      "seconds": 4.289545000065118,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter9.lean",
+      "sha256": "d1621474983fc4f1546287e383df2ae992c25b9be13fc7ea5edbbad6c48756fe",
+      "exit_code": 0,
+      "seconds": 4.720545625081286,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeTimeCounter.lean",
+      "sha256": "d0b20661db5e31b3c9442835fc787f98000694b8bc693396599f7ce9c6c83436",
+      "exit_code": 0,
+      "seconds": 0.5051056661177427,
+      "output": "'Princess.FourCubeTimeCounter.physical_step' depends on axioms: [propext, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeProfileGeometry.lean",
+      "sha256": "075d9aa625ca82c46140f4432a991fb033b8c2765d61fdb1a368888c1843e7d2",
+      "exit_code": 0,
+      "seconds": 0.301797040970996,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeCriticalLower.lean",
+      "sha256": "4979aaffdbe65ff9867891052b9745d42935201e00ebc54d16fcb63375740ac5",
+      "exit_code": 0,
+      "seconds": 0.32370337494648993,
+      "output": "'Princess.FourCubeCompression.actual_lower_40' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeAllLower.lean",
+      "sha256": "1454d15336d2160ef85b20d5bc5ee1ab88e91bd0ec58c96f34d46c8aee6e7434",
+      "exit_code": 0,
+      "seconds": 0.3956508750561625,
+      "output": "'Princess.FourCubeCompression.actual_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.actual_impossible_7' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeUpper.lean",
+      "sha256": "ac9fe800136d9e085e7ddf6eee201023962cea089c58c1b50f31dfda67d1b113",
+      "exit_code": 0,
+      "seconds": 0.5632260830607265,
+      "output": "'Princess.FourCubeCompression.actual_upper_40' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeAllUpper.lean",
+      "sha256": "6d8fed45713fb6dd35159978021edfe959e8bf502b89dfd3cd393e94dca7b5f1",
+      "exit_code": 0,
+      "seconds": 1.2001712080091238,
+      "output": "'Princess.FourCubeCompression.actual_endpoint_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/FourCubeClassification.lean",
+      "sha256": "8567dc4a00f246371b63e5cde914b0c294457d8c78d5a313f9bd98661284c1dc",
+      "exit_code": 0,
+      "seconds": 0.6418257078621536,
+      "output": "'Princess.FourCubeCompression.can_capture_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.FourCubeCompression.exact_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     },
     {
@@ -343,6 +599,70 @@
       "contains_sorryAx": false
     },
     {
+      "file": "lean/ThreeCubeTrap.lean",
+      "sha256": "ebe270a9216ce0882db409ab47922e6353e84d19871058c5e5d23be018ce2514",
+      "exit_code": 0,
+      "seconds": 21.94191279215738,
+      "output": "'Princess.ThreeCubeTrap.triple_neighborhood_seven' does not depend on any axioms\n'Princess.ThreeCubeTrap.schedule_empty' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTrap.full_board_clears_eighteen' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTrap.full_board_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeLower.lean",
+      "sha256": "1a053096d00dd0001e4a84496e5196c7b527d36bfcb83c0b09ae07b5d5fc5cd2",
+      "exit_code": 0,
+      "seconds": 0.6747436251025647,
+      "output": "'Princess.ThreeCubeLower.barrier_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_four_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_five_actual_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.full_board_four_actual_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeLower.feasible_iff_five_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeUpper.lean",
+      "sha256": "8cffbb86dec010010d408619bfe332cc1f8f183a78b1b40a6097ea7ec960e2f4",
+      "exit_code": 0,
+      "seconds": 4.761704250006005,
+      "output": "'Princess.ThreeCubeTimeUpper.winning_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeUpper.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeColors.lean",
+      "sha256": "4358067b2bc0daadc6784f175ff9b9b1c3f8381de4c1fcb11861518f27b2adea",
+      "exit_code": 0,
+      "seconds": 0.36408795788884163,
+      "output": "",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeCounter.lean",
+      "sha256": "d88de2e87f7af71cda612b46193ab162d16d801565f8b1ff42977db998c903fc",
+      "exit_code": 0,
+      "seconds": 1.4681367501616478,
+      "output": "'Princess.ThreeCubeTimeCounter.physical_step' depends on axioms: [propext, Quot.sound]\n'Princess.ThreeCubeTimeCounter.rank_initial' depends on axioms: [propext]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeProfiles.lean",
+      "sha256": "627c15061a837a93f7ecf5d851fad9d2ae02828f88d4a8d4a4dae0f901c12904",
+      "exit_code": 0,
+      "seconds": 18.886507500195876,
+      "output": "'Princess.ThreeCubeTimeProfiles.even_profile_checked' depends on axioms: [propext]\n'Princess.ThreeCubeTimeProfiles.odd_profile_checked' depends on axioms: [propext]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeIsoperimetry.lean",
+      "sha256": "76a318f0f917dbd5730b6fff9f42227e68350aae63b0ae5c5323703c38e8b9d1",
+      "exit_code": 0,
+      "seconds": 0.4036445419769734,
+      "output": "'Princess.ThreeCubeTimeProfiles.profile_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
+      "file": "lean/ThreeCubeTimeClassification.lean",
+      "sha256": "f4559c3a2fd076172a9017dc409a09338f4369402b94275460f7dfed80dd076e",
+      "exit_code": 0,
+      "seconds": 0.6680901669897139,
+      "output": "'Princess.ThreeCubeTimeClassification.actual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeClassification.exact_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.ThreeCubeTimeClassification.can_capture_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "contains_sorryAx": false
+    },
+    {
       "file": "lean/UniformOddRank.lean",
       "sha256": "2ff8b32b27d63052512c66ce4393474990319a32806fffc9ddae0b5d855eb92e",
       "exit_code": 0,
@@ -350,9 +670,5 @@
       "output": "'Princess.UniformOddRank.potential_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Princess.UniformOddRank.two_cohort_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "contains_sorryAx": false
     }
-  ],
-  "original_full_check_seconds": 350.6088654170744,
-  "derived_from_full_receipt_sha256": "0b45a268fde292d52c1372b3a93ce3cb82cdcce827ad427426317c57e8921372",
-  "scope_separation_checked_at_utc": "2026-09-13T11:14:39.703999+00:00",
-  "new_compilation": false
+  ]
 }

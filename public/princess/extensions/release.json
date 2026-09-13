@@ -1,0 +1,29 @@
+{
+  "prepared_at_utc": "2026-09-13T11:14:39.894539+00:00",
+  "status": "Parked companion; independent extensions are not completion requirements for the rectangle project.",
+  "scope": "extensions",
+  "pages": 31,
+  "figures": 2,
+  "lean_modules": 51,
+  "lean_evidence": "Unchanged source hashes and import closure checked against the existing compilation receipt; no new Lean compilation.",
+  "lean_original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
+  "lean_check_seconds": 244.7014829562977,
+  "files": {
+    "princess-extensions.pdf": {
+      "sha256": "664e837997ff6bca489d1d7f6c51e93754f83e26ccb77bb734a3aed278d805ab",
+      "bytes": 480504
+    },
+    "extensions-source.zip": {
+      "sha256": "01141ec242827b432a6da858467e936d11101188e2ec052a4a0e694d6ae7a7f2",
+      "bytes": 82035
+    },
+    "extensions-lean-proofs.zip": {
+      "sha256": "c54bde70bd4f71bb3e47a0bb404f2eaba2bc2094671755b8ed43b9bb9c1c99ae",
+      "bytes": 189509
+    },
+    "extensions-research-sources.zip": {
+      "sha256": "9577699fb58edcbec8d4b90991e8312ca20ba65a99a3292aa5138156e119fb83",
+      "bytes": 596306
+    }
+  }
+}

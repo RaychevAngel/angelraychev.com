@@ -1,0 +1,15 @@
+{
+  "status": "Historical combined release, frozen before scope separation; its recurrence-based completion language is superseded.",
+  "research_commit": "0d67700a8c7d92a386debb0c42cbec82aaade4c8",
+  "website_commit": "6082f935b42d6c54245fc85e766a029a5ec414a2",
+  "files": {
+    "research-sources.zip": "e716fea9a73334ee970bea5dfb22ac1b330f9c81da822aee423495c00fcdaa96",
+    "princess-searches.pdf": "695d5df27fa5f17b9bc7b5c0e7c80a548d6451927c2fa961c08ead8843732a43",
+    "research-history.md": "db0b099025149c56cdecac205e4fbfd609d0780fd9c652156332feade7686e1e",
+    "lean-verification.json": "0b45a268fde292d52c1372b3a93ce3cb82cdcce827ad427426317c57e8921372",
+    "proofs.html": "1e7d039a4f16c6167daf9229ec11580dd79b1fff9173975322462bbbd3833a7c",
+    "lean-proofs.zip": "f63758b7ed88a38681c387c431866e432ce06ca8365682dd2a575c14ca0c4632",
+    "release.json": "3fe5fa330c7b9d70dbdded044d68354fea7d1271d63afb1074506f43191e7e09",
+    "manuscript-source.zip": "ac3db8a054881c1f4aaaa88b16254bf23d45ea0f30311dc86cfb42a49503143f"
+  }
+}

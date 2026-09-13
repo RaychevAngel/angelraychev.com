@@ -5,9 +5,9 @@ description: "What Lean verifies, what still has ordinary proofs, and how to rep
 updated: 2026-09-13
 ---
 
-[Overview](/princess/) · [Readable proofs](/princess/proofs/) · [Paper](/princess/paper/)
+[Overview](/princess/) · [Readable proofs](/princess/proofs/) · [Paper](/princess/paper/) · [Parked formal results](/princess/extensions/lean/)
 
-**Lean verifies the complete answers for paths, two-row grids, and the $3\times3\times3$ and $4\times4\times4$ boxes.** The other geometric classifications currently have ordinary mathematical proofs. A successful build of the formal archive should not be read as formal verification of every result in the manuscript.
+**In the rectangle core, Lean verifies the complete answers for paths and two-row grids.** The other geometric classifications currently have ordinary mathematical proofs. A successful build of the formal archive should not be read as formal verification of every result in the manuscript.
 
 [**Download the Lean sources**](/princess/lean-proofs.zip) · [Verification receipt](/princess/lean-verification.json) · [Artifact guide](/princess/formal-artifact.md)
 
@@ -17,16 +17,13 @@ updated: 2026-09-13
 | --- | --- | --- |
 | A path with any positive number of rooms | Feasibility, the exact minimum number of days, and an explicit strategy for every positive budget | [PathClassification.lean](/princess/lean/PathClassification.lean) |
 | Any two-row grid | The exact optimum, interpreted as actual room inspections and arbitrary avoiding walks | [LadderGame.lean](/princess/lean/LadderGame.lean) |
-| The $3\times3\times3$ box | Feasibility and the exact minimum number of days for every positive budget | [ThreeCubeTimeClassification.lean](/princess/lean/ThreeCubeTimeClassification.lean) |
-| The $4\times4\times4$ box | Feasibility and the exact minimum number of days for every budget, including the forty-day eight-probe result | [FourCubeClassification.lean](/princess/lean/FourCubeClassification.lean) |
 
 The conclusions concern the physical room graphs. They include the daily inspection budget, movement after each miss, and all legal choices of the princess. They do not assume that she follows a preferred route or that an arbitrary strategy uses a preferred shape of possible-position set.
 
-For the four-cube, Lean verifies the geometric compression itself, its effect on arbitrary strategies, the shape-dependent eight-probe lower bound, the remaining budget bounds, and physical schedules attaining every endpoint. The compression is a proved reduction; it is not an assumption restricting the competing searcher.
 
 ## Supporting theorems
 
-[BipartiteProfileDuality.lean](/princess/lean/BipartiteProfileDuality.lean) defines the two minimum-neighborhood profiles of an arbitrary finite bipartite graph and proves their complement relation. For parts of sizes $M+1,M$ with no isolated vertices, their maximum neighborhood surpluses differ by exactly one. [ProfileInverse.lean](/princess/lean/ProfileInverse.lean) supplies the inverse arithmetic. This is a complete graph theorem; it does not by itself formalize the geometric nesting needed for the odd-box application.
+[BipartiteProfileDuality.lean](/princess/lean/BipartiteProfileDuality.lean) defines the two minimum-neighborhood profiles of an arbitrary finite bipartite graph and proves their complement relation. For parts of sizes $M+1,M$ with no isolated vertices, their maximum neighborhood surpluses differ by exactly one. [ProfileInverse.lean](/princess/lean/ProfileInverse.lean) supplies the inverse arithmetic. This is a complete graph theorem; it does not by itself formalize the geometric nesting needed for its rectangle or parked box applications.
 
 [BeliefSemantics.lean](/princess/lean/BeliefSemantics.lean) proves that a room is possible precisely when a legal walk reaches it while avoiding all previous inspections. [CaptureRecurrence.lean](/princess/lean/CaptureRecurrence.lean) proves the finite winning recurrence and the complementary losing trap.
 
@@ -48,6 +45,12 @@ The five-row proofs have verified scalar inequalities in [FiveRowRankArithmetic.
 
 [FastestAncestry.lean](/princess/lean/FastestAncestry.lean) verifies the shared-quota recurrence, persistence of low-total states, fastest ancestry after pure resets, and a composed midpoint obstruction. The profile inequalities and secondary-size bounds are explicit hypotheses. Their geometric rectangle instances and the final all-width time law remain ordinary proofs.
 
+## Source separation and existing verification
+
+The historical compiler receipt covers the unchanged 83-module combined development. This scope-separation release checks each source hash and the import closure of the two packages; it does not claim a new compiler run or a new mathematical theorem. The [scope manifest](/princess/lean-scope.json) assigns every module to rectangle, shared or parked use. The rectangle package contains 43 modules and the companion contains 51, with eleven shared dependencies; their union is the original 83 modules. The source files have one authoritative home; overlapping dependencies in downloadable packages are distribution copies.
+
+Complete cube classifications remain available in the [parked companion](/princess/extensions/lean/). Their verification is preserved and is not counted as completion of the rectangle theorem. The final fixed-size numerical goal and complete physical-game rectangle formalization remain open.
+
 ## Reproduce the check
 
 The project uses **Lean 4.33.1 and its standard library**, with no additional package installation. Extract the archive and run:
@@ -62,6 +65,6 @@ There are no admitted proofs, project-specific axioms, or trusted external solve
 
 ## Work still to formalize
 
-The complete three-row, four-row, and five-row formulas, the general rectangle time formulas, the bounded odd-rectangle evaluator, the finite cylinder interface theorem, the all-odd-box isoperimetric theorem, the general application to boxes with a side of length two, and the cylinder eventual-period theorems still have ordinary proofs. The [full proof text](/princess/proofs/) states their hypotheses and arguments. Numerical experiments elsewhere in the research archive are explicitly distinguished from proofs.
+The complete three-row, four-row, and five-row formulas, the general rectangle time formulas, the bounded odd-rectangle evaluator, the geometric interface theorem, and their remaining physical applications still have ordinary proofs. Independent higher-dimensional formalization goals are parked with the companion. The [full proof text](/princess/proofs/) states their hypotheses and arguments. Numerical experiments elsewhere in the research archive are explicitly distinguished from proofs.
 
 The new [MiddleIntervalTransfer.lean](/princess/lean/MiddleIntervalTransfer.lean) proves exact reachability for two bounded counters sharing a daily budget, including a construction of every intermediate allocation. Its physical rectangle application and the new uniform time and neighborhood theorems remain ordinary proofs.

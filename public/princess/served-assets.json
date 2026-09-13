@@ -1,0 +1,509 @@
+{
+  "policy": "All current and historical served assets are classified; canonical Lean and figure namespaces are shared.",
+  "assets": {
+    "/princess/archive/2026-09-13-combined/archive-manifest.json": {
+      "scope": "historical",
+      "bytes": 1030
+    },
+    "/princess/archive/2026-09-13-combined/lean-proofs.zip": {
+      "scope": "historical",
+      "bytes": 221232
+    },
+    "/princess/archive/2026-09-13-combined/lean-verification.json": {
+      "scope": "historical",
+      "bytes": 39980
+    },
+    "/princess/archive/2026-09-13-combined/manuscript-source.zip": {
+      "scope": "historical",
+      "bytes": 330874
+    },
+    "/princess/archive/2026-09-13-combined/princess-searches.pdf": {
+      "scope": "historical",
+      "bytes": 1082875
+    },
+    "/princess/archive/2026-09-13-combined/proofs.html": {
+      "scope": "historical",
+      "bytes": 7420937
+    },
+    "/princess/archive/2026-09-13-combined/release.json": {
+      "scope": "historical",
+      "bytes": 805
+    },
+    "/princess/archive/2026-09-13-combined/research-history.md": {
+      "scope": "historical",
+      "bytes": 16216
+    },
+    "/princess/archive/2026-09-13-combined/research-sources.zip": {
+      "scope": "historical",
+      "bytes": 1922745
+    },
+    "/princess/artifact-manifest.json": {
+      "scope": "shared",
+      "bytes": 114882
+    },
+    "/princess/extensions/extensions-lean-proofs.zip": {
+      "scope": "parked",
+      "bytes": 189509
+    },
+    "/princess/extensions/extensions-research-sources.zip": {
+      "scope": "parked",
+      "bytes": 596306
+    },
+    "/princess/extensions/extensions-source.zip": {
+      "scope": "parked",
+      "bytes": 82035
+    },
+    "/princess/extensions/formal-artifact.md": {
+      "scope": "parked",
+      "bytes": 1803
+    },
+    "/princess/extensions/handoff.md": {
+      "scope": "parked",
+      "bytes": 2802
+    },
+    "/princess/extensions/lean-verification.json": {
+      "scope": "parked",
+      "bytes": 23147
+    },
+    "/princess/extensions/princess-extensions.pdf": {
+      "scope": "parked",
+      "bytes": 480504
+    },
+    "/princess/extensions/release.json": {
+      "scope": "parked",
+      "bytes": 1115
+    },
+    "/princess/figures/corner-memory.svg": {
+      "scope": "main",
+      "bytes": 25701
+    },
+    "/princess/figures/cylinder-corner-costs.svg": {
+      "scope": "parked",
+      "bytes": 14349
+    },
+    "/princess/figures/even-rectangle-seven-days.svg": {
+      "scope": "main",
+      "bytes": 175358
+    },
+    "/princess/figures/minimum-budget-times.svg": {
+      "scope": "main",
+      "bytes": 19041
+    },
+    "/princess/figures/odd-rectangle-prefixes.svg": {
+      "scope": "main",
+      "bytes": 74648
+    },
+    "/princess/figures/path-sweep.svg": {
+      "scope": "main",
+      "bytes": 15558
+    },
+    "/princess/figures/three-cube-layers.svg": {
+      "scope": "parked",
+      "bytes": 14311
+    },
+    "/princess/formal-artifact.md": {
+      "scope": "shared",
+      "bytes": 1803
+    },
+    "/princess/lean/BeliefSemantics.lean": {
+      "scope": "shared",
+      "bytes": 5312
+    },
+    "/princess/lean/BipartiteProfileDuality.lean": {
+      "scope": "main",
+      "bytes": 8914
+    },
+    "/princess/lean/CaptureRecurrence.lean": {
+      "scope": "shared",
+      "bytes": 11047
+    },
+    "/princess/lean/ClippedPyramidErosion.lean": {
+      "scope": "main",
+      "bytes": 8916
+    },
+    "/princess/lean/ConvexCapacityConvolution.lean": {
+      "scope": "main",
+      "bytes": 14173
+    },
+    "/princess/lean/FastestAncestry.lean": {
+      "scope": "main",
+      "bytes": 9807
+    },
+    "/princess/lean/FiniteIdealCertificates.lean": {
+      "scope": "parked",
+      "bytes": 4216
+    },
+    "/princess/lean/FiniteSubsetProfiles.lean": {
+      "scope": "parked",
+      "bytes": 4444
+    },
+    "/princess/lean/FiveRowDeficitArithmetic.lean": {
+      "scope": "main",
+      "bytes": 2086
+    },
+    "/princess/lean/FiveRowFourProbeArithmetic.lean": {
+      "scope": "main",
+      "bytes": 2802
+    },
+    "/princess/lean/FiveRowFourProbeEquality.lean": {
+      "scope": "main",
+      "bytes": 2315
+    },
+    "/princess/lean/FiveRowHighBudgetArithmetic.lean": {
+      "scope": "main",
+      "bytes": 1305
+    },
+    "/princess/lean/FiveRowOddRankArithmetic.lean": {
+      "scope": "main",
+      "bytes": 2498
+    },
+    "/princess/lean/FiveRowRankArithmetic.lean": {
+      "scope": "main",
+      "bytes": 2106
+    },
+    "/princess/lean/FourCubeAllLower.lean": {
+      "scope": "parked",
+      "bytes": 5725
+    },
+    "/princess/lean/FourCubeAllUpper.lean": {
+      "scope": "parked",
+      "bytes": 5436
+    },
+    "/princess/lean/FourCubeClassification.lean": {
+      "scope": "parked",
+      "bytes": 4701
+    },
+    "/princess/lean/FourCubeCompression.lean": {
+      "scope": "parked",
+      "bytes": 5419
+    },
+    "/princess/lean/FourCubeCriticalLower.lean": {
+      "scope": "parked",
+      "bytes": 1495
+    },
+    "/princess/lean/FourCubeIdealData.lean": {
+      "scope": "parked",
+      "bytes": 13624
+    },
+    "/princess/lean/FourCubeIdeals.lean": {
+      "scope": "parked",
+      "bytes": 5290
+    },
+    "/princess/lean/FourCubeNormalForm.lean": {
+      "scope": "parked",
+      "bytes": 3421
+    },
+    "/princess/lean/FourCubePotentialCertificate.lean": {
+      "scope": "parked",
+      "bytes": 49000
+    },
+    "/princess/lean/FourCubePotentialData.lean": {
+      "scope": "parked",
+      "bytes": 27469
+    },
+    "/princess/lean/FourCubePotentialSemantics.lean": {
+      "scope": "parked",
+      "bytes": 5382
+    },
+    "/princess/lean/FourCubePotentialState.lean": {
+      "scope": "parked",
+      "bytes": 6325
+    },
+    "/princess/lean/FourCubeProfileGeometry.lean": {
+      "scope": "parked",
+      "bytes": 1883
+    },
+    "/princess/lean/FourCubeTimeCounter.lean": {
+      "scope": "parked",
+      "bytes": 4363
+    },
+    "/princess/lean/FourCubeTimeCounter0.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter1.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter2.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter3.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter4.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter5.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter6.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter7.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter8.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounter9.lean": {
+      "scope": "parked",
+      "bytes": 621
+    },
+    "/princess/lean/FourCubeTimeCounterData.lean": {
+      "scope": "parked",
+      "bytes": 17837
+    },
+    "/princess/lean/FourCubeUpper.lean": {
+      "scope": "parked",
+      "bytes": 3256
+    },
+    "/princess/lean/LadderCardinality.lean": {
+      "scope": "shared",
+      "bytes": 11973
+    },
+    "/princess/lean/LadderCounters.lean": {
+      "scope": "shared",
+      "bytes": 29791
+    },
+    "/princess/lean/LadderGame.lean": {
+      "scope": "main",
+      "bytes": 16087
+    },
+    "/princess/lean/LadderGeometry.lean": {
+      "scope": "shared",
+      "bytes": 7035
+    },
+    "/princess/lean/MiddleIntervalTransfer.lean": {
+      "scope": "main",
+      "bytes": 8156
+    },
+    "/princess/lean/PathClassification.lean": {
+      "scope": "main",
+      "bytes": 3990
+    },
+    "/princess/lean/PathCohorts.lean": {
+      "scope": "main",
+      "bytes": 3255
+    },
+    "/princess/lean/PathEvenRank.lean": {
+      "scope": "main",
+      "bytes": 6372
+    },
+    "/princess/lean/PathGeometry.lean": {
+      "scope": "main",
+      "bytes": 8383
+    },
+    "/princess/lean/PathLowerGeometry.lean": {
+      "scope": "main",
+      "bytes": 11584
+    },
+    "/princess/lean/PathOEIS.lean": {
+      "scope": "main",
+      "bytes": 2995
+    },
+    "/princess/lean/PathOddBridge.lean": {
+      "scope": "main",
+      "bytes": 5364
+    },
+    "/princess/lean/PathOddGeometry.lean": {
+      "scope": "main",
+      "bytes": 5416
+    },
+    "/princess/lean/PathOddRank.lean": {
+      "scope": "main",
+      "bytes": 7349
+    },
+    "/princess/lean/PathOddRankLower.lean": {
+      "scope": "main",
+      "bytes": 11817
+    },
+    "/princess/lean/PathRankLower.lean": {
+      "scope": "main",
+      "bytes": 8692
+    },
+    "/princess/lean/PathSweep.lean": {
+      "scope": "main",
+      "bytes": 14297
+    },
+    "/princess/lean/PathUpper.lean": {
+      "scope": "main",
+      "bytes": 5335
+    },
+    "/princess/lean/PathUpperArithmetic.lean": {
+      "scope": "main",
+      "bytes": 5898
+    },
+    "/princess/lean/ProbeLocalization.lean": {
+      "scope": "main",
+      "bytes": 4351
+    },
+    "/princess/lean/ProductCompression.lean": {
+      "scope": "shared",
+      "bytes": 3541
+    },
+    "/princess/lean/ProductCompressionEnergy.lean": {
+      "scope": "shared",
+      "bytes": 6133
+    },
+    "/princess/lean/ProductCompressionNormalization.lean": {
+      "scope": "shared",
+      "bytes": 6649
+    },
+    "/princess/lean/ProductCompressionRelabel.lean": {
+      "scope": "shared",
+      "bytes": 3686
+    },
+    "/princess/lean/ProfileInverse.lean": {
+      "scope": "main",
+      "bytes": 6834
+    },
+    "/princess/lean/RecurrenceBridgeOddFiveFive.lean": {
+      "scope": "main",
+      "bytes": 1011
+    },
+    "/princess/lean/RecurrenceBridgeOddFiveFour.lean": {
+      "scope": "main",
+      "bytes": 1201
+    },
+    "/princess/lean/RootConvolution.lean": {
+      "scope": "main",
+      "bytes": 8048
+    },
+    "/princess/lean/SquareCompressionFour.lean": {
+      "scope": "parked",
+      "bytes": 5598
+    },
+    "/princess/lean/SquareCompressionFourData.lean": {
+      "scope": "parked",
+      "bytes": 10050
+    },
+    "/princess/lean/SquareCompressionFourEnergy.lean": {
+      "scope": "parked",
+      "bytes": 3400
+    },
+    "/princess/lean/SquareCompressionFourEnergyData.lean": {
+      "scope": "parked",
+      "bytes": 5154
+    },
+    "/princess/lean/StrategyCompression.lean": {
+      "scope": "shared",
+      "bytes": 8094
+    },
+    "/princess/lean/SurvivorEnvelope.lean": {
+      "scope": "shared",
+      "bytes": 8329
+    },
+    "/princess/lean/ThreeCubeLower.lean": {
+      "scope": "parked",
+      "bytes": 7213
+    },
+    "/princess/lean/ThreeCubeTimeClassification.lean": {
+      "scope": "parked",
+      "bytes": 8520
+    },
+    "/princess/lean/ThreeCubeTimeColors.lean": {
+      "scope": "parked",
+      "bytes": 2841
+    },
+    "/princess/lean/ThreeCubeTimeCounter.lean": {
+      "scope": "parked",
+      "bytes": 5833
+    },
+    "/princess/lean/ThreeCubeTimeIsoperimetry.lean": {
+      "scope": "parked",
+      "bytes": 2709
+    },
+    "/princess/lean/ThreeCubeTimeProfiles.lean": {
+      "scope": "parked",
+      "bytes": 1852
+    },
+    "/princess/lean/ThreeCubeTimeUpper.lean": {
+      "scope": "parked",
+      "bytes": 8567
+    },
+    "/princess/lean/ThreeCubeTrap.lean": {
+      "scope": "parked",
+      "bytes": 4765
+    },
+    "/princess/lean/UniformOddRank.lean": {
+      "scope": "main",
+      "bytes": 3602
+    },
+    "/princess/lean-proofs.zip": {
+      "scope": "main",
+      "bytes": 268702
+    },
+    "/princess/lean-scope.json": {
+      "scope": "shared",
+      "bytes": 16889
+    },
+    "/princess/lean-verification.json": {
+      "scope": "main",
+      "bytes": 25710
+    },
+    "/princess/manuscript-source.zip": {
+      "scope": "main",
+      "bytes": 280231
+    },
+    "/princess/princess-searches.pdf": {
+      "scope": "main",
+      "bytes": 969530
+    },
+    "/princess/proof-anchor-migration.json": {
+      "scope": "shared",
+      "bytes": 5300
+    },
+    "/princess/raychev-2020-spring.pdf": {
+      "scope": "shared",
+      "bytes": 441627
+    },
+    "/princess/raychev-rusev-2020-student.pdf": {
+      "scope": "shared",
+      "bytes": 323078
+    },
+    "/princess/rectangle-coverage.md": {
+      "scope": "main",
+      "bytes": 19463
+    },
+    "/princess/rectangle-gaps.md": {
+      "scope": "main",
+      "bytes": 18563
+    },
+    "/princess/references.bib": {
+      "scope": "shared",
+      "bytes": 6631
+    },
+    "/princess/release.json": {
+      "scope": "main",
+      "bytes": 1099
+    },
+    "/princess/research-history.md": {
+      "scope": "shared",
+      "bytes": 17058
+    },
+    "/princess/research-sources.zip": {
+      "scope": "main",
+      "bytes": 1634941
+    },
+    "/princess/scope.md": {
+      "scope": "main",
+      "bytes": 3298
+    },
+    "/princess/separation-lean-verification.json": {
+      "scope": "shared",
+      "bytes": 441
+    },
+    "/princess/served-assets.json": {
+      "scope": "shared",
+      "bytes": 12794
+    }
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "schema": 1,
+  "source_authority": "lean/ (one canonical source directory)",
+  "receipt_policy": "Existing 83-module compilation receipt is retained. Separation verifies source hashes and local import closure; it is not a new compilation or a new formalization.",
+  "main_complete_physical": [
+    "PathClassification",
+    "LadderGame"
+  ],
+  "parked_complete_physical": [
+    "ThreeCubeTimeClassification",
+    "FourCubeClassification"
+  ],
+  "main_roots": [
+    "BeliefSemantics",
+    "BipartiteProfileDuality",
+    "CaptureRecurrence",
+    "ClippedPyramidErosion",
+    "ConvexCapacityConvolution",
+    "FastestAncestry",
+    "FiveRowDeficitArithmetic",
+    "FiveRowFourProbeArithmetic",
+    "FiveRowFourProbeEquality",
+    "FiveRowHighBudgetArithmetic",
+    "FiveRowOddRankArithmetic",
+    "FiveRowRankArithmetic",
+    "LadderCardinality",
+    "LadderCounters",
+    "LadderGame",
+    "LadderGeometry",
+    "MiddleIntervalTransfer",
+    "PathClassification",
+    "PathCohorts",
+    "PathEvenRank",
+    "PathGeometry",
+    "PathLowerGeometry",
+    "PathOEIS",
+    "PathOddBridge",
+    "PathOddGeometry",
+    "PathOddRank",
+    "PathOddRankLower",
+    "PathRankLower",
+    "PathSweep",
+    "PathUpper",
+    "PathUpperArithmetic",
+    "ProbeLocalization",
+    "ProductCompression",
+    "ProductCompressionEnergy",
+    "ProductCompressionNormalization",
+    "ProductCompressionRelabel",
+    "ProfileInverse",
+    "RecurrenceBridgeOddFiveFive",
+    "RecurrenceBridgeOddFiveFour",
+    "RootConvolution",
+    "StrategyCompression",
+    "UniformOddRank"
+  ],
+  "extension_roots": [
+    "FiniteIdealCertificates",
+    "FiniteSubsetProfiles",
+    "FourCubeAllLower",
+    "FourCubeAllUpper",
+    "FourCubeClassification",
+    "FourCubeCompression",
+    "FourCubeCriticalLower",
+    "FourCubeIdealData",
+    "FourCubeIdeals",
+    "FourCubeNormalForm",
+    "FourCubePotentialCertificate",
+    "FourCubePotentialData",
+    "FourCubePotentialSemantics",
+    "FourCubePotentialState",
+    "FourCubeProfileGeometry",
+    "FourCubeTimeCounter",
+    "FourCubeTimeCounter0",
+    "FourCubeTimeCounter1",
+    "FourCubeTimeCounter2",
+    "FourCubeTimeCounter3",
+    "FourCubeTimeCounter4",
+    "FourCubeTimeCounter5",
+    "FourCubeTimeCounter6",
+    "FourCubeTimeCounter7",
+    "FourCubeTimeCounter8",
+    "FourCubeTimeCounter9",
+    "FourCubeTimeCounterData",
+    "FourCubeUpper",
+    "ProductCompression",
+    "ProductCompressionEnergy",
+    "ProductCompressionNormalization",
+    "ProductCompressionRelabel",
+    "SquareCompressionFour",
+    "SquareCompressionFourData",
+    "SquareCompressionFourEnergy",
+    "SquareCompressionFourEnergyData",
+    "SurvivorEnvelope",
+    "ThreeCubeLower",
+    "ThreeCubeTimeClassification",
+    "ThreeCubeTimeColors",
+    "ThreeCubeTimeCounter",
+    "ThreeCubeTimeIsoperimetry",
+    "ThreeCubeTimeProfiles",
+    "ThreeCubeTimeUpper",
+    "ThreeCubeTrap"
+  ],
+  "modules": {
+    "BeliefSemantics": {
+      "file": "lean/BeliefSemantics.lean",
+      "scope": "shared",
+      "imports": []
+    },
+    "BipartiteProfileDuality": {
+      "file": "lean/BipartiteProfileDuality.lean",
+      "scope": "main",
+      "imports": [
+        "LadderCardinality",
+        "ProfileInverse"
+      ]
+    },
+    "CaptureRecurrence": {
+      "file": "lean/CaptureRecurrence.lean",
+      "scope": "shared",
+      "imports": [
+        "BeliefSemantics"
+      ]
+    },
+    "ClippedPyramidErosion": {
+      "file": "lean/ClippedPyramidErosion.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "ConvexCapacityConvolution": {
+      "file": "lean/ConvexCapacityConvolution.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FastestAncestry": {
+      "file": "lean/FastestAncestry.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FiniteIdealCertificates": {
+      "file": "lean/FiniteIdealCertificates.lean",
+      "scope": "parked",
+      "imports": [
+        "FiniteSubsetProfiles"
+      ]
+    },
+    "FiniteSubsetProfiles": {
+      "file": "lean/FiniteSubsetProfiles.lean",
+      "scope": "parked",
+      "imports": [
+        "LadderCardinality"
+      ]
+    },
+    "FiveRowDeficitArithmetic": {
+      "file": "lean/FiveRowDeficitArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FiveRowFourProbeArithmetic": {
+      "file": "lean/FiveRowFourProbeArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FiveRowFourProbeEquality": {
+      "file": "lean/FiveRowFourProbeEquality.lean",
+      "scope": "main",
+      "imports": [
+        "FiveRowFourProbeArithmetic"
+      ]
+    },
+    "FiveRowHighBudgetArithmetic": {
+      "file": "lean/FiveRowHighBudgetArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FiveRowOddRankArithmetic": {
+      "file": "lean/FiveRowOddRankArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FiveRowRankArithmetic": {
+      "file": "lean/FiveRowRankArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "FourCubeAllLower": {
+      "file": "lean/FourCubeAllLower.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounter",
+        "FourCubeProfileGeometry",
+        "FourCubeCriticalLower"
+      ]
+    },
+    "FourCubeAllUpper": {
+      "file": "lean/FourCubeAllUpper.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeUpper"
+      ]
+    },
+    "FourCubeClassification": {
+      "file": "lean/FourCubeClassification.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeAllLower",
+        "FourCubeAllUpper"
+      ]
+    },
+    "FourCubeCompression": {
+      "file": "lean/FourCubeCompression.lean",
+      "scope": "parked",
+      "imports": [
+        "SquareCompressionFourEnergy",
+        "ProductCompressionRelabel"
+      ]
+    },
+    "FourCubeCriticalLower": {
+      "file": "lean/FourCubeCriticalLower.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialState"
+      ]
+    },
+    "FourCubeIdealData": {
+      "file": "lean/FourCubeIdealData.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeNormalForm",
+        "FiniteIdealCertificates"
+      ]
+    },
+    "FourCubeIdeals": {
+      "file": "lean/FourCubeIdeals.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeIdealData"
+      ]
+    },
+    "FourCubeNormalForm": {
+      "file": "lean/FourCubeNormalForm.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeCompression"
+      ]
+    },
+    "FourCubePotentialCertificate": {
+      "file": "lean/FourCubePotentialCertificate.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialData"
+      ]
+    },
+    "FourCubePotentialData": {
+      "file": "lean/FourCubePotentialData.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeIdeals"
+      ]
+    },
+    "FourCubePotentialSemantics": {
+      "file": "lean/FourCubePotentialSemantics.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialCertificate"
+      ]
+    },
+    "FourCubePotentialState": {
+      "file": "lean/FourCubePotentialState.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialSemantics"
+      ]
+    },
+    "FourCubeProfileGeometry": {
+      "file": "lean/FourCubeProfileGeometry.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter": {
+      "file": "lean/FourCubeTimeCounter.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounter0",
+        "FourCubeTimeCounter1",
+        "FourCubeTimeCounter2",
+        "FourCubeTimeCounter3",
+        "FourCubeTimeCounter4",
+        "FourCubeTimeCounter5",
+        "FourCubeTimeCounter6",
+        "FourCubeTimeCounter7",
+        "FourCubeTimeCounter8",
+        "FourCubeTimeCounter9"
+      ]
+    },
+    "FourCubeTimeCounter0": {
+      "file": "lean/FourCubeTimeCounter0.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter1": {
+      "file": "lean/FourCubeTimeCounter1.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter2": {
+      "file": "lean/FourCubeTimeCounter2.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter3": {
+      "file": "lean/FourCubeTimeCounter3.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter4": {
+      "file": "lean/FourCubeTimeCounter4.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter5": {
+      "file": "lean/FourCubeTimeCounter5.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter6": {
+      "file": "lean/FourCubeTimeCounter6.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter7": {
+      "file": "lean/FourCubeTimeCounter7.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter8": {
+      "file": "lean/FourCubeTimeCounter8.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounter9": {
+      "file": "lean/FourCubeTimeCounter9.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubeTimeCounterData"
+      ]
+    },
+    "FourCubeTimeCounterData": {
+      "file": "lean/FourCubeTimeCounterData.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialState"
+      ]
+    },
+    "FourCubeUpper": {
+      "file": "lean/FourCubeUpper.lean",
+      "scope": "parked",
+      "imports": [
+        "FourCubePotentialSemantics"
+      ]
+    },
+    "LadderCardinality": {
+      "file": "lean/LadderCardinality.lean",
+      "scope": "shared",
+      "imports": [
+        "LadderCounters",
+        "LadderGeometry"
+      ]
+    },
+    "LadderCounters": {
+      "file": "lean/LadderCounters.lean",
+      "scope": "shared",
+      "imports": []
+    },
+    "LadderGame": {
+      "file": "lean/LadderGame.lean",
+      "scope": "main",
+      "imports": [
+        "LadderCardinality",
+        "BeliefSemantics"
+      ]
+    },
+    "LadderGeometry": {
+      "file": "lean/LadderGeometry.lean",
+      "scope": "shared",
+      "imports": []
+    },
+    "MiddleIntervalTransfer": {
+      "file": "lean/MiddleIntervalTransfer.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "PathClassification": {
+      "file": "lean/PathClassification.lean",
+      "scope": "main",
+      "imports": [
+        "PathEvenRank",
+        "PathOddBridge"
+      ]
+    },
+    "PathCohorts": {
+      "file": "lean/PathCohorts.lean",
+      "scope": "main",
+      "imports": [
+        "PathLowerGeometry"
+      ]
+    },
+    "PathEvenRank": {
+      "file": "lean/PathEvenRank.lean",
+      "scope": "main",
+      "imports": [
+        "PathCohorts",
+        "PathRankLower"
+      ]
+    },
+    "PathGeometry": {
+      "file": "lean/PathGeometry.lean",
+      "scope": "main",
+      "imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ]
+    },
+    "PathLowerGeometry": {
+      "file": "lean/PathLowerGeometry.lean",
+      "scope": "main",
+      "imports": [
+        "PathUpper"
+      ]
+    },
+    "PathOEIS": {
+      "file": "lean/PathOEIS.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "PathOddBridge": {
+      "file": "lean/PathOddBridge.lean",
+      "scope": "main",
+      "imports": [
+        "PathOddRank",
+        "PathOddRankLower"
+      ]
+    },
+    "PathOddGeometry": {
+      "file": "lean/PathOddGeometry.lean",
+      "scope": "main",
+      "imports": [
+        "PathCohorts"
+      ]
+    },
+    "PathOddRank": {
+      "file": "lean/PathOddRank.lean",
+      "scope": "main",
+      "imports": [
+        "PathOddGeometry",
+        "PathRankLower"
+      ]
+    },
+    "PathOddRankLower": {
+      "file": "lean/PathOddRankLower.lean",
+      "scope": "main",
+      "imports": [
+        "PathRankLower"
+      ]
+    },
+    "PathRankLower": {
+      "file": "lean/PathRankLower.lean",
+      "scope": "main",
+      "imports": [
+        "PathUpperArithmetic"
+      ]
+    },
+    "PathSweep": {
+      "file": "lean/PathSweep.lean",
+      "scope": "main",
+      "imports": [
+        "PathGeometry",
+        "PathUpperArithmetic"
+      ]
+    },
+    "PathUpper": {
+      "file": "lean/PathUpper.lean",
+      "scope": "main",
+      "imports": [
+        "PathSweep"
+      ]
+    },
+    "PathUpperArithmetic": {
+      "file": "lean/PathUpperArithmetic.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "ProbeLocalization": {
+      "file": "lean/ProbeLocalization.lean",
+      "scope": "main",
+      "imports": [
+        "BeliefSemantics"
+      ]
+    },
+    "ProductCompression": {
+      "file": "lean/ProductCompression.lean",
+      "scope": "shared",
+      "imports": [
+        "StrategyCompression",
+        "SurvivorEnvelope"
+      ]
+    },
+    "ProductCompressionEnergy": {
+      "file": "lean/ProductCompressionEnergy.lean",
+      "scope": "shared",
+      "imports": [
+        "ProductCompressionNormalization"
+      ]
+    },
+    "ProductCompressionNormalization": {
+      "file": "lean/ProductCompressionNormalization.lean",
+      "scope": "shared",
+      "imports": [
+        "ProductCompression"
+      ]
+    },
+    "ProductCompressionRelabel": {
+      "file": "lean/ProductCompressionRelabel.lean",
+      "scope": "shared",
+      "imports": [
+        "ProductCompressionEnergy"
+      ]
+    },
+    "ProfileInverse": {
+      "file": "lean/ProfileInverse.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "RecurrenceBridgeOddFiveFive": {
+      "file": "lean/RecurrenceBridgeOddFiveFive.lean",
+      "scope": "main",
+      "imports": [
+        "RecurrenceBridgeOddFiveFour"
+      ]
+    },
+    "RecurrenceBridgeOddFiveFour": {
+      "file": "lean/RecurrenceBridgeOddFiveFour.lean",
+      "scope": "main",
+      "imports": [
+        "FiveRowFourProbeArithmetic"
+      ]
+    },
+    "RootConvolution": {
+      "file": "lean/RootConvolution.lean",
+      "scope": "main",
+      "imports": []
+    },
+    "SquareCompressionFour": {
+      "file": "lean/SquareCompressionFour.lean",
+      "scope": "parked",
+      "imports": [
+        "SquareCompressionFourData"
+      ]
+    },
+    "SquareCompressionFourData": {
+      "file": "lean/SquareCompressionFourData.lean",
+      "scope": "parked",
+      "imports": [
+        "ProductCompression",
+        "FiniteSubsetProfiles"
+      ]
+    },
+    "SquareCompressionFourEnergy": {
+      "file": "lean/SquareCompressionFourEnergy.lean",
+      "scope": "parked",
+      "imports": [
+        "SquareCompressionFourEnergyData"
+      ]
+    },
+    "SquareCompressionFourEnergyData": {
+      "file": "lean/SquareCompressionFourEnergyData.lean",
+      "scope": "parked",
+      "imports": [
+        "SquareCompressionFour",
+        "ProductCompressionEnergy"
+      ]
+    },
+    "StrategyCompression": {
+      "file": "lean/StrategyCompression.lean",
+      "scope": "shared",
+      "imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ]
+    },
+    "SurvivorEnvelope": {
+      "file": "lean/SurvivorEnvelope.lean",
+      "scope": "shared",
+      "imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ]
+    },
+    "ThreeCubeLower": {
+      "file": "lean/ThreeCubeLower.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeTrap",
+        "LadderCardinality"
+      ]
+    },
+    "ThreeCubeTimeClassification": {
+      "file": "lean/ThreeCubeTimeClassification.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeTimeColors",
+        "ThreeCubeTimeCounter",
+        "ThreeCubeTimeIsoperimetry"
+      ]
+    },
+    "ThreeCubeTimeColors": {
+      "file": "lean/ThreeCubeTimeColors.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeTimeUpper"
+      ]
+    },
+    "ThreeCubeTimeCounter": {
+      "file": "lean/ThreeCubeTimeCounter.lean",
+      "scope": "parked",
+      "imports": []
+    },
+    "ThreeCubeTimeIsoperimetry": {
+      "file": "lean/ThreeCubeTimeIsoperimetry.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeTimeProfiles"
+      ]
+    },
+    "ThreeCubeTimeProfiles": {
+      "file": "lean/ThreeCubeTimeProfiles.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeLower",
+        "FiniteSubsetProfiles"
+      ]
+    },
+    "ThreeCubeTimeUpper": {
+      "file": "lean/ThreeCubeTimeUpper.lean",
+      "scope": "parked",
+      "imports": [
+        "ThreeCubeLower"
+      ]
+    },
+    "ThreeCubeTrap": {
+      "file": "lean/ThreeCubeTrap.lean",
+      "scope": "parked",
+      "imports": [
+        "CaptureRecurrence"
+      ]
+    },
+    "UniformOddRank": {
+      "file": "lean/UniformOddRank.lean",
+      "scope": "main",
+      "imports": []
+    }
+  }
+}

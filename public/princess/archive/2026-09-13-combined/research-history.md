@@ -265,17 +265,3 @@ actual cylinder cells. They do not constitute complete formalization of
 all new geometric results. As throughout this investigation, these are
 September2026 AI-assisted developments; the author's2019--2020 path work
 and the original manuscript contributions retain their stated credit.
-
-## September 2026: rectangle scope separation
-
-The research objective is now fixed to two-dimensional rectangles, full
-initial uncertainty and a constant daily budget, with a fixed-size O(1)
-standard numerical expression for T_k(a,b), feasibility, and directly
-specified optimal inspections. This is a stronger numerical endpoint than
-the prior acceptance of arithmetic recurrences. Exact clocks and evaluators
-retain their mathematical value while their remaining evaluation gaps are
-made explicit. Independent box/cube/general-cylinder applications are
-preserved in a parked companion. Necessary shared lemmas remain in the
-rectangle proof. The inverse constant-budget deadline relation remains
-relevant to rectangles. This pass changes organization and assessment only;
-it reports no new mathematics and preserves original contributions.

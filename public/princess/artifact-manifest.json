@@ -1,0 +1,2687 @@
+{
+  "schema": 1,
+  "policy": "Explicit publication membership. Main includes main/shared; parked companion includes parked/shared. Dated combined historical artifacts remain separately archived. Private intake/authorship notes are not exported.",
+  "archive": "archive/2026-09-13-combined",
+  "files": {
+    "FORMAL_ARTIFACT.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "lean/README.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "lean/lean-toolchain": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "publication/artifact-manifest.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "publication/lean-scope.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/affine-rank-ammunition-potential.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/boxes-with-a-two-side.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/closed-grid-nesting-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/corner-conditional-3x3x3.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/corner-conditional-4x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/corner-conditional-5x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/corner-conditional-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/corner-ideal-exchange.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/cubic-feasibility-experiments.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/cubic-scalar-profile-investigation.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/cylinder-height-checks.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/cylinder-height-independent-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/cylinder-height-strategy.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/cylinder-isoperimetric-barriers.json": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/cylinder-profile-transfer-independent-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-constant-ideal-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-constant-partial-prefix-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-constant-partial-prefix-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-corner-obstructions.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-envelope-4days-p0-331-330.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-eventual-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-eventual-periodicity.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-exact-surplus-frontiers.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-feasibility-prefix-4power5.json": {
+      "scope": "parked",
+      "reason": "Higher-dimensional application output; the reusable generator does not require this precomputed output as input."
+    },
+    "research/even-bridge-feasibility-profiles.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-fixed-horizon-review.md": {
+      "scope": "main",
+      "reason": "Constant-budget inverse-deadline characterization of the same rectangle capture relation."
+    },
+    "research/even-bridge-full-board-prefix-failure-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-full-constant-prefix-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-full-prefix-budget-words-4x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-full-prefix-budget-words-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-full-prefix-counterexample-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-full-prefix-failure.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-height-descent-independent-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-height-descent-onset.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-height-loop-independent-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-height-loop-period.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-ideal-budget-words-4x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-ideal-budget-words-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-ideal-counterexample-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-maximum-compressed-words-6x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-maximum-prefix-budget-words-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-odd-cross-section-paired-columns.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-odd-cylinder-eventual-periodicity.md": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/even-bridge-odd-cylinder-independent-review.md": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/even-bridge-odd-cylinder-root-review.md": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/even-bridge-period-size-audit.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-period-sizes.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-periodicity-root-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-bridge-prefix-budget-words-4x4.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-prefix-budget-words-4x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-prefix-game-3x4x4-m7.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-bridge-profile-dynamics-4power5.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-bridge-short-milp-attempts.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-standard-corner-game-3x4x4-m7.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-bridge-two-day-milp-p0-331-330-pyramidal.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-two-day-milp-p0-331-330.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-two-day-milp-p1-329-328-pyramidal.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-two-day-milp-p1-329-328.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-two-round-path.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-two-round-path.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-bridge-uniform-slope-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/even-corner-profile-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-cube-cylinder-profile-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-cube-cylinder-profile-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-cube-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-cube-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-cylinder-final-attack.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional application; preserved in the parked companion."
+    },
+    "research/even-cylinder-manuscript-check.json": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/even-cylinder-manuscript-independent-review.md": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/even-profile-milp-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-rectangle-seven-days-figure-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-resume-corner-obstruction-review.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-resume-corner-obstruction-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/even-resume-four-cube-counter-check.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube-critical-certificate.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube-exact.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube-lean-progress.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube-lean-verification.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-four-cube.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-three-four-four-eight-probe-certificate.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-three-four-four-exact.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-resume-three-four-four-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-certificate.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-manuscript-qa.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-root-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/even-three-by-three-cylinder-time.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/five-row-all-budget-direct-strategies.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-all-budget-independent-review.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-all-budget-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-all-budgets.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-boundary-automaton.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-budget-coarse-history-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-budget-recurrence-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-cut-states.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-independent-review.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-investigation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-odd-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-odd-three-probe-verification.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-symbolic-geometry-certificate.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/five-row-three-probe-verification.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/fixed-horizon-period-obstruction.md": {
+      "scope": "main",
+      "reason": "Constant-budget inverse-deadline characterization of the same rectangle capture relation."
+    },
+    "research/fixed-horizon-transfer-checks.json": {
+      "scope": "main",
+      "reason": "Constant-budget inverse-deadline characterization of the same rectangle capture relation."
+    },
+    "research/fixed-horizon-transfer-theorem.md": {
+      "scope": "main",
+      "reason": "Constant-budget inverse-deadline characterization of the same rectangle capture relation."
+    },
+    "research/four-cube-all-budget-semantic-replay.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-all-budget-semantic-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-explorer-browser-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-explorer-replay.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-final-semantic-replay.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-final-semantic-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-cube-normalform-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/four-row-direct-strategy-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/four-row-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/four-row-investigation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/four-row-recurrence-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/four-row-three-probe-strategy-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-final-checkpoint.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-3x4.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-3x5-extra.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-3x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-4x4-extra.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-4x4.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-experiments.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-independent-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/frontier-state-interval-beliefs-only.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/grid-literature-scope.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/grid-nesting-source-audit.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/grid-small-cases.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/grid-small-cases.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/hamiltonian-cylinder-asymptotic-time.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/high-budget-odd-rectangles-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-critical-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-discount-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-full-threshold-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-improved-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-manuscript-qa.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles-uniform-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/high-budget-odd-rectangles.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-counter-cases.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-earlier-lower-bound.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-game-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-independent-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-investigation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-lean-boundary-before-assembly.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/ladder-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/long-cylinder-feasibility-bridge.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/low-budget-seven-row-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/manuscript-consolidation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-anchored-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-boundary-connections.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-boundary-family-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-boundary-family-closure.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-cheap-step-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-cheap-step-rigidity.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-clipped-erosion-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/maturation-clipped-erosion-semantic-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-consolidation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-convex-capacity-final-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-convex-capacity-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-convex-capacity-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-corner-manuscript-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-corner-manuscript-verification.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-corner-memory-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-cyclic-ammunition-independent-check.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/maturation-cyclic-ammunition-independent-review.md": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/maturation-even-anchored-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-even-transition-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-even-transitions.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-eventual-scalar-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-fastest-ancestry-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/maturation-final-artifact-scope-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-final-pdf-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-formal-status.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-hybrid-word-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-interior-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-joint-corner-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-joint-corner-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-minimum-budget-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-minimum-budget-second-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-minimum-budget.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-minimum-formula-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-narrow-family-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-narrow-word-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-ammunition.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-eventual-scalar-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-exceptional-seriality.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-manuscript-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-midpoint-near-cut.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-midpoint-short-horizon.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-midpoint.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-packing-obstructions.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-odd-sharp-constants-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-punctured-quadrant-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-punctured-quadrant-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-punctured-quadrant.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-relative-family-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-relative-family-followup-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-root-erosion-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-suffix-exchange-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/maturation-website-visual-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/middle-interval-transfer-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/nested-capture-time.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/nested-grid-time-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-box-exchange-proof.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-explorer-verification.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-feasibility-profile.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-isoperimetry-investigation.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-nesting-attack.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-recursive-certificate.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-box-second-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-compressed-box-experiments.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-cylinder-eventual-independent-review.md": {
+      "scope": "shared",
+      "reason": "Shared odd-path compression or affine-period proof core applied to rectangles and higher-dimensional cylinders."
+    },
+    "research/odd-cylinder-eventual-periodicity.md": {
+      "scope": "shared",
+      "reason": "Shared odd-path compression or affine-period proof core applied to rectangles and higher-dimensional cylinders."
+    },
+    "research/odd-cylinder-exact-recurrence.md": {
+      "scope": "shared",
+      "reason": "Shared odd-path compression or affine-period proof core applied to rectangles and higher-dimensional cylinders."
+    },
+    "research/odd-cylinder-independent-review.json": {
+      "scope": "shared",
+      "reason": "Shared odd-path compression or affine-period proof core applied to rectangles and higher-dimensional cylinders."
+    },
+    "research/odd-cylinder-profile-transfer.json": {
+      "scope": "parked",
+      "reason": "Higher-dimensional application output; the reusable generator does not require this precomputed output as input."
+    },
+    "research/odd-cylinder-profile-transfer.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/odd-fixed-budget-eventual-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-fixed-budget-eventual-periodicity.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-fixed-budget-uniform-bounds.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-all-lengths.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-all-lengths.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-eventual-affinity.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-eventual-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-independent-review.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-potentials.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-pumping.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-uniform-bounds-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-uniform-bounds.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-minimum-budget-uniform-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-path-compression-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-geometry-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-investigation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-isoperimetry.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-layer-identities.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-rectangle-profile-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-serial-first-order-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-short-even-high-budget-second-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-square-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/odd-width-minimum-budget-candidates.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-classification-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-full-lean-progress.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-full-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/path-lean-next-steps.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-lower-bound-audit.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-lower-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-lower-lemma-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-matching-rank-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-oeis-lean-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-upper-arithmetic-lean-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-upper-bound-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/path-upper-bound-reconstruction.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/prism-box-time-checks.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional application; preserved in the parked companion."
+    },
+    "research/prism-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional application; preserved in the parked companion."
+    },
+    "research/prism-projection-checks.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional application; preserved in the parked companion."
+    },
+    "research/probe-localization-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/recurrence-bridge-odd-five-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/recurrence-bridge-odd-five-direct-strategies.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/recurrence-bridge-odd-five-formula-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/recurrence-bridge-odd-five-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/recurrence-bridge-odd-five.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/root-convolution-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/separation-artifact-notes.md": {
+      "scope": "shared",
+      "reason": "Publication membership and unchanged-source verification evidence."
+    },
+    "research/serial-cohort-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/serial-exchange-independent-attack.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/seven-row-five-probe-certificate.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/seven-row-five-probe-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/seven-row-five-probe-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/seven-row-five-probe-time.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/six-probe-even-cylinder-manuscript-qa.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/six-probe-even-cylinder-potential.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/six-probe-even-cylinder-root-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/six-probe-even-cylinder-upper.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/six-probe-three-by-three-by-four-exact.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/six-probe-three-by-three-cylinder-investigation.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/square-strategy-compression-checks.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/supersession-cylinder-macro-third-review.md": {
+      "scope": "shared",
+      "reason": "Efficient-frontier and paired-cylinder proof evidence reused for rectangle interfaces and general cylinders."
+    },
+    "research/supersession-even-corner-witness.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-macro-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-macro-second-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-macro-states.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-stability-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-states-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-even-states.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-hamiltonian-corner-independent-check.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/supersession-high-budget-envelope-independent-replay.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-high-budget-envelope-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-high-budget-envelopes.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-acceleration-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-frontier-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-abstract-capacities.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-bounded.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-closure.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-cone-closure.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-kernel.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-random-closure.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint-targeted-capacities.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-midpoint.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-corner-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-equality-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-manuscript-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-marked-corner-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-nine-row-ammunition.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-physical-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-potential.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-slack-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-odd-short-two-day-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-pdf-page-fingerprints.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-pdf-visual-review.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-research-plan.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-root-convolution-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-row-proof-consolidation-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-row-proof-consolidation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-solo-bands-audit.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-solo-bands-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/supersession-solo-bands.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/survivor-envelope-lean-proof.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/survivor-envelope-lean-verification.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-by-four-exact.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-cylinder-four.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-cylinder-independent-review.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-cylinder-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-cylinder-time.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-by-three-cylinder-time.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-counter-potentials.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-feasibility.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-independent-checks.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-independent-horizon.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-lean-verification.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-optimal-times.json": {
+      "scope": "parked",
+      "reason": "Higher-dimensional application output; the reusable generator does not require this precomputed output as input."
+    },
+    "research/three-cube-time-independent-review.md": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-cube-time-lean-verification.json": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "research/three-row-all-budget-experiments.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-all-budgets.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-closed-form-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-direct-strategy-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-hamilton-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-independent-computation.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-investigation.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-rank-independent-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-rank-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/three-row-rank-recurrence-checks.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/trap-recurrence-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/trap-recurrence-proof.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-area-profile-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-high-budget-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-high-budget-lower-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-high-budget-upper-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-profile-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-profile-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-compression-csp.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-compression-map.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-high-budget-lower.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-high-budget-upper.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-intervals-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-intervals-full-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-isoperimetry.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-2x8.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-3x4.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-4x3.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-4x5.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-4x6.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-6x3.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-pyramid-6x4.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-even-rectangle-states.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-middle-transfer-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-minimum-budget.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-rank-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "research/uniform-odd-rectangle-dynamics.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-critical-frontiers.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-critical-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-critical-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-envelope-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-high-budget-upper-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-high-budget-upper.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-short-potential-route.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-solo-bound-independent-check.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-odd-solo-bound-independent-review.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-antichain-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-central-cut.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-central-pair-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-half-time.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-midpoint-witnesses.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-partial-counterexample.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-partial-serial.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-potential-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-potential-dual-certificates.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-potential-extended.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-potential-method.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-reachable-counterexample.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-reachable-serial.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-serial-abstract.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-time.md": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-timed-concentration.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "research/uniform-rectangle-triangle-attack.json": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "src/box_prism_time.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/exact_grid_cases.py",
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/build_corner_memory_figure.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/build_explorer_data.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/four_row_recurrence.py",
+        "src/path_strategy.py",
+        "src/ladder_counter_model.py",
+        "src/three_row_budget_recurrence.py"
+      ]
+    },
+    "src/build_four_cube_explorer.py": {
+      "scope": "parked",
+      "reason": "Build or replay the parked higher-dimensional explorer only.",
+      "local_imports": [
+        "src/publication_paths.py"
+      ]
+    },
+    "src/build_paper_figures.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/nested_grid_time.py",
+        "src/path_strategy.py"
+      ]
+    },
+    "src/build_proof_pages.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/publication_paths.py"
+      ]
+    },
+    "src/build_publication.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/publication_paths.py"
+      ]
+    },
+    "src/build_uniform_even_figure.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/uniform_even_high_budget_audit.py"
+      ]
+    },
+    "src/check_deployment.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/publication_paths.py"
+      ]
+    },
+    "src/check_ladder_lean.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/check_lean.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/check_odd_box_explorer.py": {
+      "scope": "parked",
+      "reason": "Build or replay the parked higher-dimensional explorer only.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/check_pdf_layout.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/check_publication_package.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/publication_paths.py"
+      ]
+    },
+    "src/corner_conditional_isoperimetry.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/parity_trap_solver.py",
+        "src/parity_corner_check.py"
+      ]
+    },
+    "src/cylinder_height_strategy.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/cylinder_profile_transfer.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/even_bridge_budget_words.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/parity_trap_solver.py",
+        "src/parity_corner_check.py"
+      ]
+    },
+    "src/even_bridge_compressed_words.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/pyramidal_time.py"
+      ]
+    },
+    "src/even_bridge_constant_partial_prefix.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/even_bridge_envelope_milp.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/even_bridge_feasibility_profiles.py"
+      ]
+    },
+    "src/even_bridge_feasibility_profiles.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/even_bridge_full_prefix_failure.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/even_bridge_period_sizes.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/even_bridge_prefix_game.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/even_bridge_two_day_milp.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/even_bridge_feasibility_profiles.py"
+      ]
+    },
+    "src/even_bridge_two_round_path.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/even_corner_profile_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/cylinder_profile_transfer.py",
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/even_cube_independent_review.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_cube_resumed_independent_review.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_cylinder_profile_independent_review.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_profile_milp_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/even_resume_cube.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/pyramidal_time.py"
+      ]
+    },
+    "src/even_resume_cube_solver.cpp": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "src/even_resume_four_cube_all_budgets_lean.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_resume_four_cube_certificate.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/pyramidal_time.py"
+      ]
+    },
+    "src/even_resume_four_cube_check_lean.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_resume_four_cube_lean_certificate.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/even_three_by_three_cylinder_attack.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/three_by_three_cylinder_time.py",
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/even_three_by_three_cylinder_independent_review.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/exact_grid_cases.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/exact_small_cases.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/extension_grid_probe.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/exact_grid_cases.py"
+      ]
+    },
+    "src/five_row_all_budget_independent_review.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/five_row_independent_review.py"
+      ]
+    },
+    "src/five_row_boundary_automaton.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/five_row_budget_recurrence.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/five_row_cut_states.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/five_row_independent_review.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/five_row_three_probe_strategy.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/five_row_boundary_automaton.py",
+        "src/nested_grid_time.py",
+        "src/five_row_cut_states.py"
+      ]
+    },
+    "src/fixed_horizon_transfer.py": {
+      "scope": "main",
+      "reason": "Constant-budget inverse-deadline characterization of the same rectangle capture relation.",
+      "local_imports": [
+        "src/path_strategy.py",
+        "src/ladder_counter_model.py"
+      ]
+    },
+    "src/four_row_recurrence.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/frontier_state_experiments.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/high_budget_odd_rectangles.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/high_budget_odd_rectangles_critical_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/ladder_counter_model.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/ladder_independent_checks.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_cheap_step_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_cyclic_ammunition_check.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/maturation_even_anchored.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_even_boundary_family.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_even_corner_memory.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_even_hybrid_words.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/maturation_even_boundary_family.py",
+        "src/maturation_even_relative_family.py"
+      ]
+    },
+    "src/maturation_even_narrow_family.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/maturation_even_hybrid_words.py",
+        "src/maturation_even_relative_family.py"
+      ]
+    },
+    "src/maturation_even_narrow_words.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/maturation_even_hybrid_words.py",
+        "src/maturation_even_relative_family.py",
+        "src/maturation_even_narrow_family.py"
+      ]
+    },
+    "src/maturation_even_relative_family.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/maturation_even_boundary_family.py"
+      ]
+    },
+    "src/maturation_even_transitions.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_joint_corner_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/maturation_quadrant_check.py"
+      ]
+    },
+    "src/maturation_minimum_formula_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/maturation_minimum_probe.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/uniform_rectangle_half_time.py"
+      ]
+    },
+    "src/maturation_odd_ammunition.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_odd_eventual_scalar_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/maturation_odd_exceptional_seriality.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/maturation_odd_midpoint_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/maturation_odd_packing_obstructions.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_odd_midpoint_bounded.py",
+        "src/maturation_odd_ammunition.py"
+      ]
+    },
+    "src/maturation_quadrant_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/maturation_root_erosion.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/nested_grid_time.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/odd_box_nesting_attack.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/odd_box_recursive_certificate.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/odd_box_search.mjs": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application."
+    },
+    "src/odd_cylinder_independent_review.py": {
+      "scope": "shared",
+      "reason": "Shared odd-path compression or affine-period proof core applied to rectangles and higher-dimensional cylinders.",
+      "local_imports": []
+    },
+    "src/odd_minimum_budget_all_lengths.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/odd_minimum_budget_pumping.py"
+      ]
+    },
+    "src/odd_minimum_budget_independent_review.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_minimum_budget_all_lengths.py"
+      ]
+    },
+    "src/odd_minimum_budget_potential.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "src/odd_minimum_budget_pumping.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "src/odd_rectangle_geometry_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_rectangle_profile_attack.py"
+      ]
+    },
+    "src/odd_rectangle_profile_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/odd_serial_first_order_attack.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/parity_corner_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/parity_trap_solver.py"
+      ]
+    },
+    "src/parity_trap_solver.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/path_lower_lemmas.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/path_strategy.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/prism_projection_checks.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/publication_paths.py": {
+      "scope": "shared",
+      "reason": "Common proof/application dependency or publication infrastructure.",
+      "local_imports": []
+    },
+    "src/pyramidal_time.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/recurrence_bridge_odd_five.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/serial_cohort_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/six_probe_even_cylinder_potential.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/even_three_by_three_cylinder_attack.py"
+      ]
+    },
+    "src/six_probe_even_cylinder_upper.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/even_three_by_three_cylinder_attack.py",
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/six_probe_three_by_three_by_four_exact.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/square_strategy_compression.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": [
+        "src/parity_trap_solver.py"
+      ]
+    },
+    "src/supersession_even_corner_witness.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/supersession_even_stability_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/supersession_odd_acceleration_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands_audit.py",
+        "src/supersession_odd_midpoint_bounded.py"
+      ]
+    },
+    "src/supersession_odd_midpoint_bounded.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/supersession_odd_midpoint_closure.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/uniform_rectangle_half_time.py"
+      ]
+    },
+    "src/supersession_odd_midpoint_kernel.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/supersession_odd_short_equality.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/supersession_odd_short_marked_corner.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/supersession_odd_short_physical.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/supersession_solo_bands.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/supersession_solo_bands_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/sync_site_explorer.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/three_by_three_by_four_exact.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/three_by_three_cylinder_independent_review.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/odd_cylinder_independent_review.py"
+      ]
+    },
+    "src/three_by_three_cylinder_time.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/odd_minimum_budget_all_lengths.py",
+        "src/odd_minimum_budget_pumping.py"
+      ]
+    },
+    "src/three_cube_independent.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": []
+    },
+    "src/three_cube_independent_horizon.py": {
+      "scope": "parked",
+      "reason": "Independent higher-dimensional, inverse-deadline, or extension application.",
+      "local_imports": [
+        "src/square_strategy_compression.py"
+      ]
+    },
+    "src/three_row_budget_recurrence.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/three_row_checks.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/three_row_hamilton_cycles.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/three_row_rank_independent_check.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/unequal_diagonal_time_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/parity_trap_solver.py",
+        "src/square_strategy_compression.py",
+        "src/parity_corner_check.py"
+      ]
+    },
+    "src/uniform_even_high_budget_audit.py": {
+      "scope": "shared",
+      "reason": "Imported by mathematical tools in both publication scopes.",
+      "local_imports": []
+    },
+    "src/uniform_even_profile_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_even_rectangle_compression_csp.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_even_rectangle_intervals.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/even_bridge_budget_words.py"
+      ]
+    },
+    "src/uniform_even_rectangle_two_day.cpp": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
+    },
+    "src/uniform_odd_middle_transfer.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_odd_short_critical_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_odd_short_envelope.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/uniform_odd_solo_bound_audit.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_rectangle_antichain_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/uniform_rectangle_timed_concentration.py"
+      ]
+    },
+    "src/uniform_rectangle_central_cut.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/uniform_rectangle_central_pair_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/uniform_rectangle_antichain_attack.py",
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "src/uniform_rectangle_half_time.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/uniform_rectangle_serial_attack.py"
+      ]
+    },
+    "src/uniform_rectangle_midpoint.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/uniform_rectangle_half_time.py",
+        "src/odd_serial_first_order_attack.py",
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/uniform_rectangle_partial_serial.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "src/uniform_rectangle_potential_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/high_budget_odd_rectangles.py"
+      ]
+    },
+    "src/uniform_rectangle_reachable_serial.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py",
+        "src/uniform_rectangle_partial_serial.py"
+      ]
+    },
+    "src/uniform_rectangle_serial_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": []
+    },
+    "src/uniform_rectangle_timed_concentration.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "src/uniform_rectangle_triangle_attack.py": {
+      "scope": "main",
+      "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
+      "local_imports": [
+        "src/odd_serial_first_order_attack.py"
+      ]
+    },
+    "research/separation-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Publication membership and unchanged-source verification evidence."
+    },
+    "publication/manuscript-scope.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "publication/package-closures.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "publication/proof-anchor-migration.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "research/CLASSIFICATION_SCOPE.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "research/RECTANGLE_COVERAGE.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "research/RECTANGLE_GAPS.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "extensions/HANDOFF.md": {
+      "scope": "parked",
+      "reason": "Parked companion handoff and explicit non-goals."
+    },
+    "src/build_scope_pages.py": {
+      "scope": "shared",
+      "reason": "Generate active scope and gap pages from canonical source."
+    },
+    "extensions/README.md": {
+      "scope": "parked",
+      "reason": "Parked source index with preserved provenance."
+    },
+    "research/separation-manuscript.md": {
+      "scope": "shared",
+      "reason": "Dependency-preserving TeX split audit; no new mathematical result."
+    },
+    "research/separation-final-pdf-review.md": {
+      "scope": "shared",
+      "reason": "Review of both scoped publications; no new mathematical result."
+    },
+    "research/separation-ui-review.md": {
+      "scope": "shared",
+      "reason": "Review of both scoped publications; no new mathematical result."
+    }
+  },
+  "served_assets": {
+    "historical_root": "/princess/archive/2026-09-13-combined/",
+    "main_downloads": [
+      "princess-searches.pdf",
+      "manuscript-source.zip",
+      "lean-proofs.zip",
+      "research-sources.zip"
+    ],
+    "extension_downloads": [
+      "princess-extensions.pdf",
+      "extensions-source.zip",
+      "extensions-lean-proofs.zip",
+      "extensions-research-sources.zip"
+    ]
+  },
+  "manuscripts": {
+    "main": {
+      "entrypoint": "paper/main.tex",
+      "sources": [
+        "paper/main.tex",
+        "paper/preamble.tex",
+        "paper/sections/introduction.tex",
+        "paper/sections/foundations.tex",
+        "paper/sections/compression.tex",
+        "paper/sections/quadrant-boundary-profiles.tex",
+        "paper/sections/odd-rectangles.tex",
+        "paper/sections/uniform-odd-time.tex",
+        "paper/sections/bounded-odd-frontier.tex",
+        "paper/sections/high-budget-odd-rectangles.tex",
+        "paper/sections/even-rectangle-profiles.tex",
+        "paper/sections/corner-memory.tex",
+        "paper/sections/even-rectangle-time.tex",
+        "paper/sections/pyramid-envelope-lemma.tex",
+        "paper/sections/symbolic-height-transitions.tex",
+        "paper/sections/odd-short-even-high-budget.tex",
+        "paper/sections/paths.tex",
+        "paper/sections/two-rows.tex",
+        "paper/sections/three-rows.tex",
+        "paper/sections/four-rows.tex",
+        "paper/sections/five-rows.tex",
+        "paper/sections/five-rows-odd-budgets.tex",
+        "paper/sections/seven-row-five-probe-time.tex",
+        "paper/sections/odd-minimum-budget.tex",
+        "paper/sections/odd-affine-insertion.tex",
+        "paper/sections/odd-eventual-time.tex",
+        "paper/sections/odd-period-proof.tex",
+        "paper/sections/cylinder-height.tex",
+        "paper/sections/hamiltonian-cylinder-time.tex",
+        "paper/sections/even-cylinder-eventual-time.tex",
+        "paper/sections/bounded-cylinder-interfaces.tex",
+        "paper/sections/fixed-horizon-transfer.tex",
+        "paper/sections/formalization.tex",
+        "paper/sections/acknowledgments.tex"
+      ]
+    },
+    "extensions": {
+      "entrypoint": "paper/extensions.tex",
+      "sources": [
+        "paper/extensions.tex",
+        "paper/preamble.tex",
+        "paper/sections/extensions-introduction.tex",
+        "paper/sections/equal-box-compression.tex",
+        "paper/sections/odd-boxes.tex",
+        "paper/sections/odd-box-eventual-time.tex",
+        "paper/sections/odd-period-proof.tex",
+        "paper/sections/boxes.tex",
+        "paper/sections/even-cylinder-finite.tex",
+        "paper/sections/even-cube-tables.tex",
+        "paper/sections/even-three-cube-cylinder-time.tex",
+        "paper/sections/six-probe-even-cylinder-time.tex",
+        "paper/sections/cylinder-applications.tex",
+        "paper/sections/fixed-box-eventual-time.tex",
+        "paper/sections/extensions-formalization.tex",
+        "paper/sections/acknowledgments.tex"
+      ]
+    }
+  },
+  "shared_canonical_tex": [
+    "paper/preamble.tex",
+    "paper/sections/acknowledgments.tex",
+    "paper/sections/odd-period-proof.tex"
+  ]
+}
