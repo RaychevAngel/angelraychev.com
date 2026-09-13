@@ -1,12 +1,12 @@
 {
-  "prepared_at_utc": "2026-09-13T16:19:20.740301+00:00",
+  "prepared_at_utc": "2026-09-13T18:05:18.490686+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
   "publication_date": "2026-09-13",
   "chapters": 8,
-  "source_parts": 46,
-  "pages": 130,
+  "source_parts": 48,
+  "pages": 136,
   "figures": 9,
-  "math_formulas": 4470,
+  "math_formulas": 4540,
   "pdf_overfull_warnings": [],
   "companions": {
     "delivery_time": {
@@ -23,9 +23,9 @@
     }
   },
   "classification_coverage": {
-    "representatives": 101,
-    "small_budget": 69,
-    "main": 32,
+    "representatives": 0,
+    "small_budget": 0,
+    "main": 0,
     "dense": 0
   },
   "explicit_construction_coverage": {
@@ -34,12 +34,12 @@
   },
   "files": {
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 890837,
-      "sha256": "ce1c231d720628ec61ec98ff95a4b19a2fe9daf7c094be6986492b26deb68ec1"
+      "bytes": 904256,
+      "sha256": "b2704642cf42ef83b788ace2742ec2068487825050ca8e68eea95a7c6377f9bc"
     },
     "manuscript-source.zip": {
-      "bytes": 277168,
-      "sha256": "eff1fc0db1a42b5971d195dd2c6e4b0c5edfccd836b203c6b7dcd71e3e48c4ba"
+      "bytes": 282291,
+      "sha256": "3c8a7ab84e48cf0d549a1b50273f506d8737ae5271a017c007229cc297a3cb4f"
     },
     "lean-proofs.zip": {
       "bytes": 29438,
@@ -50,12 +50,12 @@
       "sha256": "16341b6ea64087f99d41c8cbea5ab8453a03173e81c4bbee8253c4d7e3137d3b"
     },
     "research-sources.zip": {
-      "bytes": 100011525,
-      "sha256": "58450c2b26bb03c2d4da93ca5408dc8b0ca94d60c52efcc67812c80667fa6318"
+      "bytes": 104679762,
+      "sha256": "159a27b4f8ccf8540a0f061b03fe65e45d3338da18cf22153f5ccbf527db3934"
     },
     "finite-strategy-certificates.zip": {
-      "bytes": 88784388,
-      "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
+      "bytes": 104582732,
+      "sha256": "0b69e018e2b8fed40d6353245adf745bf107db6244fc536a4d3d660b66a056ba"
     },
     "references.bib": {
       "bytes": 1400,
@@ -71,7 +71,7 @@
     },
     "delivery-time-source.zip": {
       "bytes": 10822,
-      "sha256": "838b52cef068f881b00395c7c65d95f5bfcd5a5ab4caea563a654a88a924544f"
+      "sha256": "9fed190625239eaeaa7de5c7d54b9d4d3906ffffee810dd6c24de86a5df6a3c9"
     }
   },
   "assets": {
@@ -81,7 +81,7 @@
     },
     "delivery-time-source.zip": {
       "bytes": 10822,
-      "sha256": "838b52cef068f881b00395c7c65d95f5bfcd5a5ab4caea563a654a88a924544f"
+      "sha256": "9fed190625239eaeaa7de5c7d54b9d4d3906ffffee810dd6c24de86a5df6a3c9"
     },
     "explorer-graphs.json": {
       "bytes": 497,
@@ -124,12 +124,12 @@
       "sha256": "0eac6fe2da21ba946daf09b28e43344713af2990d2f92dbccb4f8650ace46811"
     },
     "finite-strategy-certificates.zip": {
-      "bytes": 88784388,
-      "sha256": "fbb910b8b5ea8ec92c072a89aa1e3ddeb288657da74715a8eee2bd17f4cc2812"
+      "bytes": 104582732,
+      "sha256": "0b69e018e2b8fed40d6353245adf745bf107db6244fc536a4d3d660b66a056ba"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 890837,
-      "sha256": "ce1c231d720628ec61ec98ff95a4b19a2fe9daf7c094be6986492b26deb68ec1"
+      "bytes": 904256,
+      "sha256": "b2704642cf42ef83b788ace2742ec2068487825050ca8e68eea95a7c6377f9bc"
     },
     "lean-proofs.zip": {
       "bytes": 29438,
@@ -208,16 +208,16 @@
       "sha256": "16341b6ea64087f99d41c8cbea5ab8453a03173e81c4bbee8253c4d7e3137d3b"
     },
     "manuscript-source.zip": {
-      "bytes": 277168,
-      "sha256": "eff1fc0db1a42b5971d195dd2c6e4b0c5edfccd836b203c6b7dcd71e3e48c4ba"
+      "bytes": 282291,
+      "sha256": "3c8a7ab84e48cf0d549a1b50273f506d8737ae5271a017c007229cc297a3cb4f"
     },
     "references.bib": {
       "bytes": 1400,
       "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
     },
     "research-sources.zip": {
-      "bytes": 100011525,
-      "sha256": "58450c2b26bb03c2d4da93ca5408dc8b0ca94d60c52efcc67812c80667fa6318"
+      "bytes": 104679762,
+      "sha256": "159a27b4f8ccf8540a0f061b03fe65e45d3338da18cf22153f5ccbf527db3934"
     }
   }
 }

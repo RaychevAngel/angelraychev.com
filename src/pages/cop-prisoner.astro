@@ -5,13 +5,16 @@ import katex from 'katex';
 import release from '../../public/cop-prisoner/release.json';
 import classificationStatus from '../content/generated/cop-prisoner-classification-status.html?raw';
 const math=(s:string)=>katex.renderToString(s,{displayMode:true,throwOnError:true});
+const smallArcValues = [0,0,0,0,1,1,2,2,4,5,6,8];
+const finiteArcValues = [9,11,13,15,19,28,33,40,53,60,79,83];
+const finiteArcHosts = [7,8,8,8,8,10,9,11,10,12,11,12];
 ---
-<Post title="Guaranteed indirect delivery: the exact maximum" description="The maximum number of guaranteed indirect deliveries at each vertex and arc count: explicit attaining constructions, four budget regimes, and the remaining gaps." updated={release.publication_date}>
+<Post title="Guaranteed indirect delivery: the exact maximum" description="The complete maximum at every vertex and arc count, with explicit attaining constructions, four budget regimes, and full finite tables." updated={release.publication_date}>
   <p>A messenger has a message at one station of a directed network. A pursuer starts elsewhere. Both see each other and take turns following an arrow or waiting, with the messenger moving first. Which source–recipient pairs can always complete delivery?</p>
   <p>We count pairs with different endpoints and <strong>no direct arrow</strong> between them. Write <i>I(G)</i> for the number that are guaranteed from every permitted pursuer starting position. The central problem is to determine</p>
   <div set:html={math(String.raw`M(n,m)=\max_{|V(G)|=n,\ |E(G)|=m}I(G),\qquad n\ge1,\quad0\le m\le n(n-1),`)} />
   <p>and give an explicit attaining construction at every pair of resources. This means concrete rules for the vertices and arrows, or a specified composition procedure, with all parameters determined from <i>(n,m)</i>. A certified, listed finite graph also qualifies. An existence statement, general graph search, or derandomization procedure alone does not complete this construction requirement. Isolated stations are allowed.</p>
-  <p><strong>The complete classification remains open.</strong> Every budget from 22 onward is now exact at every order <i>n ≥ 11</i>, and the full joint table is complete through seven stations. Every final dense-band cell is also settled. Their explicit attaining recipes are tracked separately from the numerical values in the <a href="#explicit-constructions">construction inventory</a>.</p>
+  <p><strong>The classification is complete.</strong> Every feasible vertex and arrow count has an exact maximum and an explicit attaining graph. Four formulas cover every order from twelve; complete finite tables cover orders one through eleven. The <a href="#explicit-constructions">construction inventory</a> identifies the adjacency rules, specified compositions and certified listed graphs that attain the values.</p>
   <p><a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/paper/">Paper and evidence</a> · <a href="/cop-prisoner/lean/">Lean coverage</a> · <a href="/cop-prisoner/delivery-time/">Delivery-time companion</a></p>
 
   <h2>The rules and the counting bound</h2>
@@ -19,20 +22,44 @@ const math=(s:string)=>katex.renderToString(s,{displayMode:true,throwOnError:tru
   <p>There are <i>L = n(n − 1)</i> possible arrows and <i>h = L − m</i> missing arrows. Each counted pair must be missing, so <i>M(n,m) ≤ h</i>. For <i>n ≥ 3</i>, the additional vertex bound is <i>I(G) ≤ n(n − 3)</i>: a recipient with at most one predecessor can be blocked, while one with at least two has at most <i>n − 3</i> eligible indirect sources.</p>
   <p>For <i>n ≥ 5</i>, four consecutive arc-count regimes organize the problem. Orders one through four belong to the complete finite classification described below; the interval boundaries need not have the same order there.</p>
 
+  <h2>The formula from twelve stations</h2>
+  <p>Let <i>F(m) = M<sub>E</sub>(m)</i> be the arrow-only maximum, specified below. For every <i>n ≥ 12</i>, write <i>r = m − n(n − 3)</i> in the third case:</p>
+  <div set:html={math(String.raw`M(n,m)=\begin{cases}
+    F(m),&0\le m<2n,\\
+    n(n-1)-m,&2n\le m\le n(n-3),\\
+    2n-r-\left\lceil r/2\right\rceil-1,&m=n(n-3)+r,\ 1\le r\le n,\\
+    0,&n(n-2)<m\le n(n-1).
+  \end{cases}`)} />
+  <p>The four sections give the attaining constructions and their proof boundaries. For smaller hosts, use the <a href="/cop-prisoner/proofs/#complete-tables-through-eleven-vertices">complete finite tables</a>; the sharp threshold for the main missing-pair formula is twelve, while the dense staircase already holds from eleven.</p>
+
   <h2 id="sparse-regime">1. Sparse budgets: fewer than 2n arrows</h2>
   <p>Here the strongest constructions use a smaller network and add isolated stations to reach the specified order. For every even budget <i>24 ≤ 2k &lt; 2n</i>,</p>
   <div set:html={math(String.raw`M(n,2k)=k(k-3).`)} />
   <p>The attaining network has <i>k</i> stations and two incoming and two outgoing arrows at each. Every pair can deliver. An ordinary composition proof handles every support size from 85, and complete finite certificates supply sizes 12 through 84.</p>
   <p>For every odd budget <i>25 ≤ 2k + 1 &lt; 2n</i>,</p>
   <div set:html={math(String.raw`M(n,2k+1)=k(k-3)+2.`)} />
-  <p>The construction uses <i>k + 1</i> stations, with precisely controlled degree exceptions. The two smaller exact budgets are <i>M(n,22) = 79</i> for every <i>n ≥ 11</i> and <i>M(n,23) = 83</i> for every <i>n ≥ 12</i>. These formulas have matching upper bounds and proved attaining graphs. Small budgets below 22 still contain unresolved arc-only cases; an arc-only maximum does not by itself settle a host order too small for its attaining graph.</p>
+  <p>The construction uses <i>k + 1</i> stations, with precisely controlled degree exceptions. These formulas also give <i>F(2k) = k(k − 3)</i> for every <i>k ≥ 12</i> and <i>F(2k + 1) = k(k − 3) + 2</i> for every <i>k ≥ 12</i>. The remaining arrow-only values are:</p>
+  <div class="tablewrap"><table>
+    <caption>Arrow-only maxima for budgets 0–11</caption>
+    <thead><tr><th scope="col">Arrows <i>m</i></th>{smallArcValues.map((_,m)=><th scope="col">{m}</th>)}</tr></thead>
+    <tbody><tr><th scope="row"><i>F(m)</i></th>{smallArcValues.map(value=><td>{value}</td>)}</tr></tbody>
+  </table></div>
+  <div class="tablewrap"><table>
+    <caption>Arrow-only maxima and least attaining hosts for budgets 12–23</caption>
+    <thead><tr><th scope="col">Arrows <i>m</i></th>{finiteArcValues.map((_,i)=><th scope="col">{i+12}</th>)}</tr></thead>
+    <tbody>
+      <tr><th scope="row"><i>F(m)</i></th>{finiteArcValues.map(value=><td>{value}</td>)}</tr>
+      <tr><th scope="row">Least host</th>{finiteArcHosts.map(host=><td>{host}</td>)}</tr>
+    </tbody>
+  </table></div>
+  <p>Each value is attained at every host at least as large as its least attaining host, by adding isolates. Thus <i>M(n,22) = 79</i> for every <i>n ≥ 11</i> and <i>M(n,23) = 83</i> for every <i>n ≥ 12</i>. Smaller hosts have their own exact values in the finite tables. The <a href="/cop-prisoner/proofs/#completion-of-the-finite-sparse-budgets">finite sparse-budget proof</a> combines source and sink deletion, live row and column capacities, complete degree families and independently checked literal attainers.</p>
   <p>See the proofs of <a href="/cop-prisoner/proofs/#sparse-endpoint-attainment-at-every-order-from-twelve">the even construction</a>, <a href="/cop-prisoner/proofs/#the-odd-endpoint-and-completion-of-its-degree-defect">the odd construction</a>, <a href="/cop-prisoner/proofs/#exact-attainment-at-twenty-two-arrows">the 22-arrow case</a>, and <a href="/cop-prisoner/proofs/#the-exact-23-arc-endpoint">the 23-arrow case</a>.</p>
 
   <h2 id="main-regime">2. The main interval: every missing pair can win</h2>
   <p>The whole main interval is settled from twelve stations onward:</p>
   <div set:html={math(String.raw`M(n,m)=n(n-1)-m,\qquad n\ge12,\quad2n\le m\le n(n-3).`)} />
-  <p>Every stated exact budget has an explicit attaining graph. The order threshold twelve is sharp for this formula: at eleven stations and 22 arrows, the exact maximum is 79, below the 88 missing pairs. The remaining main-interval gaps belong only to orders eight through ten.</p>
-  <p>Saved constructions also attain every missing pair at eight stations with 24–26 arrows, nine stations with 24–54 arrows, ten stations with 28–70 arrows, and eleven stations with 25–88 arrows. At eleven stations, the three earlier budgets 22, 23 and 24 have exact values 79, 78 and 79. Thus every budget from 22 onward is classified at order eleven, although the uniform missing-pair formula starts at twelve.</p>
+  <p>Every budget has an explicit attaining graph. The order threshold twelve is sharp for this formula: at eleven stations and 22 arrows, the exact maximum is 79, below the 88 missing pairs. All smaller main-interval cases are settled by their finite values and attaining graphs.</p>
+  <p>The complete missing-pair intervals at smaller orders are 24–34 arrows at eight stations, 24–54 at nine, 25–70 at ten, and 25–88 at eleven. Each budget has an explicit attaining graph. At eleven stations, the three earlier budgets 22, 23 and 24 have exact values 79, 78 and 79. Thus every budget from 22 onward is classified at order eleven, although the uniform missing-pair formula starts at twelve.</p>
   <p><strong>The messenger can use arrows installed in earlier stages.</strong> A fixed sequence of graphs supplies certified budget intervals. At each stage, the messenger uses the current compulsory arrows while the pursuer is allowed the larger next envelope. Complete finite certificates check both player positions, every possible pursuer reply and a decreasing rank. This closes the formerly missing sparse and small-order intervals.</p>
   <p><strong>Circles and hubs connect those stages to the denser constructions.</strong> A sixth compulsory circle jump replaces a pair of escape choices by a triple while preserving the propagation of winning positions. A smaller hub interface uses fewer compulsory arrows and routes through guides within five moves. These two construction families have ordinary mathematical proofs; the promoted small circles and staged bridge use separate complete finite certificates.</p>
   <details><summary>An earlier bridge at sixty stations</summary><figure><img src="/cop-prisoner/figures/main-interval-progress.svg" alt="An earlier bridge at 60 stations uses a circle interval 300 through 1740 and a guide interval 1162 through 3042" loading="lazy"/><figcaption>This earlier example combines circle budgets 300–1740 and guide budgets 1162–3042 with the endpoint constructions to settle 120–3420. The complete main-interval result now reaches twelve stations.</figcaption></figure></details>
@@ -53,18 +80,18 @@ const math=(s:string)=>katex.renderToString(s,{displayMode:true,throwOnError:tru
   <div set:html={math(String.raw`M(n,m)=0,\qquad n\ge2,\quad n(n-2)<m\le n(n-1).`)} />
   <p>This range is completely settled. Every graph at these resources has no guaranteed indirect pair, so any graph with the specified number of arrows attains zero. The only graph at order one also has value zero. The <a href="/cop-prisoner/proofs/#the-dense-boundary">dense-boundary proof</a> explains the obstruction.</p>
 
-  <h2>What the classification still needs</h2>
-  <p>Complete joint values are known through seven stations. The remaining task is to settle the uncovered small-budget and main-interval pairs and supply explicit attaining graphs. No final dense-band cell remains open. The support reductions preserve the exact value and lift attaining graphs by adding isolated stations, so all remaining numerical questions have representatives on at most eighteen stations.</p>
-  <p>The current inventory contains <strong>{release.classification_coverage.representatives.toLocaleString('en-US')} unresolved representative pairs</strong>: {release.classification_coverage.small_budget.toLocaleString('en-US')} sparse, {release.classification_coverage.main.toLocaleString('en-US')} in the main interval, and {release.classification_coverage.dense.toLocaleString('en-US')} in the final dense band. All remaining main cases have eight through ten stations. The full range list appears below.</p>
-  <p>There are two questions for each resource pair: whether its exact value is proved, and whether an explicit graph attaining that value is supplied. The <a href="#explicit-constructions">separate construction audit</a> found a concrete recipe or certified listed graph for every currently incorporated exact value, so the known-value construction-only gap set is empty. This conclusion comes from checking the families and their parameters; it does not follow merely from reducing the numerical problem to finitely many cases. Unknown values still need both parts.</p>
-  <p>Maximizing over one resource gives the useful consequences <i>M<sub>V</sub>(n) = max<sub>m</sub> M(n,m)</i> and <i>M<sub>E</sub>(m) = max<sub>n</sub> M(n,m)</i>. In particular, <i>M<sub>V</sub>(n) = n(n − 3)</i> for every <i>n ≥ 12</i>, while <i>M<sub>V</sub>(7) = 21</i>, <i>M<sub>V</sub>(8) = 32</i> and <i>M<sub>V</sub>(11) = 85</i>. The unresolved vertex maxima satisfy <i>48 ≤ M<sub>V</sub>(9) ≤ 53</i> and <i>62 ≤ M<sub>V</sub>(10) ≤ 69</i>. These one-resource conclusions do not determine every joint value.</p>
-  <p>The <a href="/cop-prisoner/proofs/#the-combined-joint-maximum">combined theorem</a> gives the uniform formula from order twelve. The three stated boundary values at order eleven, followed by its missing-pair and staircase intervals, extend complete explicit coverage to every <i>n ≥ 11</i> and <i>22 ≤ m ≤ n(n − 1)</i>.</p>
+  <h2 id="finite-cases">The completed finite cases</h2>
+  <p>The <a href="/cop-prisoner/proofs/#complete-tables-through-eleven-vertices">full tables through eleven stations</a> supply every admissible budget below the universal order threshold. Their proofs combine structural upper bounds, complete finite exclusions and literal attaining graphs. In particular, the entire eight-station row is classified.</p>
+  <p>Some sparse maxima require a larger host: <i>M(9,17) = 24</i>, while its global maximum 28 first appears at ten stations. At nineteen arrows, the host values are <i>M(9,19) = 35</i>, <i>M(10,19) = 38</i> and <i>M(n,19) = 40</i> for every <i>n ≥ 11</i>. At twenty-one arrows, <i>M(10,21) = 56</i>, <i>M(11,21) = 58</i> and <i>M(n,21) = 60</i> for every <i>n ≥ 12</i>.</p>
+  <p>Both numerical coverage and the <a href="#explicit-constructions">separate construction audit</a> are complete: every resource pair has an upper proof and an explicit optimal graph. The construction claim comes from inspecting the actual families, their parameters and the listed finite graphs.</p>
+  <p>Maximizing over one resource gives <i>M<sub>V</sub>(n) = max<sub>m</sub> M(n,m)</i> and <i>M<sub>E</sub>(m) = max<sub>n</sub> M(n,m)</i>. The vertex maxima are <i>M<sub>V</sub>(7) = 21</i>, <i>M<sub>V</sub>(8) = 32</i>, <i>M<sub>V</sub>(9) = 48</i>, <i>M<sub>V</sub>(10) = 65</i> and <i>M<sub>V</sub>(11) = 85</i>; for every <i>n ≥ 12</i>, <i>M<sub>V</sub>(n) = n(n − 3)</i>.</p>
+  <p>The <a href="/cop-prisoner/proofs/#the-combined-joint-maximum">combined theorem</a>, the <a href="/cop-prisoner/proofs/#completion-of-the-finite-sparse-budgets">finite sparse-budget completion</a> and the complete finite tables provide the full classification.</p>
 
   <Fragment set:html={classificationStatus}/>
 
   <h2>Try the game and inspect the evidence</h2>
   <DeliveryExplorer />
-  <p>The general counting and construction theorems have ordinary proofs. The main-interval bridges and small dense values also use independently replayed finite certificates and complete exclusions. The approved small-case registry separates literal graphs, stage intervals, upper proofs and support reductions. The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies those dependencies. The <a href="/cop-prisoner/lean/">Lean development</a> formalizes the game, selected structural implications, and explicit sparse and dense examples; the new concrete small-case classification remains outside Lean.</p>
+  <p>The general counting and construction theorems have ordinary proofs. The finite classification and main-interval bridges also use independently replayed certificates and complete exclusions. The approved registry separates literal graphs, stage intervals, upper proofs and support reductions. The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies those dependencies and distinguishes independent game replay from a second graph enumeration. The <a href="/cop-prisoner/lean/">Lean development</a> formalizes the game, selected structural implications, and explicit sparse and dense examples; the complete classification remains outside Lean as a concrete theorem.</p>
   <p>Optimizing the delivery time is a separate, parked companion problem. Its <a href="/cop-prisoner/delivery-time/">proved two-move bounds and partial fast constructions</a> remain available without enlarging the scope of the exact-count classification.</p>
 
   <h2>Where the work comes from</h2>
