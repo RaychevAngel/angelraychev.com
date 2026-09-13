@@ -10,5 +10,16 @@ import release from '../../../public/cop-prisoner/release.json';
   <p>The <a href="/cop-prisoner/paper/#evidence-guide">evidence and replay guide</a> connects the current results to their computational checks and distinguishes those checks from dated research history.</p>
   <p>The objective is the exact value of <i>M(n,m)</i> and explicit adjacency rules or a specified attaining composition for every feasible vertex and arc count, with parameters determined from <i>(n,m)</i>. Certified listed finite graphs also qualify. The <a href="/cop-prisoner/#explicit-constructions">construction inventory</a> checks this separately from numerical coverage: every currently incorporated exact value has a direct recipe or listed graph. Conditional and probabilistic theorems retain their full statements; a case meets the construction requirement only when a suitable explicit recipe is supplied.</p>
   <p>The <a href="/cop-prisoner/delivery-time/">delivery-time companion</a> preserves the separate, parked time-optimization questions. Routing and two-move arguments needed for the count constructions remain here.</p>
-  <Fragment set:html={proofHtml}/>
+  <div class="cop-prisoner-proof-text" set:html={proofHtml}/>
 </Post>
+
+<style>
+  .cop-prisoner-proof-text {
+    overflow-wrap: anywhere;
+  }
+  .cop-prisoner-proof-text :global(table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+</style>
