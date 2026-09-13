@@ -1,14 +1,14 @@
 {
-  "prepared_at_utc": "2026-09-13T01:20:53.700843+00:00",
+  "prepared_at_utc": "2026-09-13T01:31:40.404360+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
-  "pages": 71,
+  "pages": 74,
   "figures": 7,
-  "math_formulas": 2369,
+  "math_formulas": 2455,
   "pdf_overfull_warnings": [],
   "files": {
     "research-sources.zip": {
-      "bytes": 29814276,
-      "sha256": "bb86dbf3ed60a5b3e3eebc93d6754d45ea3c869ab8c9c17dd31cf4803c3cbd78"
+      "bytes": 29839619,
+      "sha256": "e671b86165995502826c816e7e77f5fdee99848c0d141bd76b7f67ebce2c490b"
     },
     "references.bib": {
       "bytes": 1019,
@@ -31,12 +31,12 @@
       "sha256": "df00843208ab735a2bd2b034f186d95e2f5015cf2d312d76314d4c770614bdf6"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 637934,
-      "sha256": "fd2b63d70b5a1b4dabf0f7612384061037f9028aa52c7bd3f79fe50b43457306"
+      "bytes": 648010,
+      "sha256": "7794d07d7985db407f317b31cce51af88d7e412c1c819e6a4a2c78206f8c92ff"
     },
     "manuscript-source.zip": {
-      "bytes": 182809,
-      "sha256": "b62748e6eaec403f44fd11c6de9eee89b47f711d9bedbb5b9a877292a93e8eec"
+      "bytes": 186160,
+      "sha256": "d58e12f7b6089a71e61f0feb22c9d28cee3d35342aae5b828b25c7ddff4ca796"
     }
   }
 }
