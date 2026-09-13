@@ -9,8 +9,9 @@ updated: 2026-09-13
 
 This page is generated from the private project's canonical assessment. Named research files and certificates are preserved in the [mathematical sources package](/princess/research-sources.zip); theorem links lead to the current manuscript-derived proofs. [Download this assessment](/princess/rectangle-gaps.md).
 
-13 September 2026. Assessment only; no new mathematical searches, experiments,
-or proof attempts were performed in this artifact-separation pass.
+Updated 13 September 2026 after resumed research. Sections below preserve
+the earlier exact parameter obligations; the new even-area progress and
+remaining proof dependencies are summarized at the end.
 
 The fixed goal is [CLASSIFICATION_SCOPE.md](/princess/scope.md): a fixed-size
 O(1) standard numerical expression for every T_k(a,b), its infinity criterion,
@@ -326,3 +327,59 @@ These are proposed directions, not claims of feasibility or proofs in
 progress. The outcome may remain a collection of strong exact intermediate
 results. If so, report the residual ranges and dependencies explicitly;
 the fixed-size numerical goal must not be weakened to match the outcome.
+
+
+## 6. Resumed even-area work: tightened bounds and the next proof obligations
+
+The first two family-level ranges now have a uniform corner-count lower
+model, a stronger erosion model with an odd-width critical proof, and a
+proved precapture merger. All feasible even-area budgets also have the
+root-selected upper construction. These are improvements to both sides;
+we have not proved that the current upper family is always optimal.
+
+The near-pronic interval localization has settled the specific 11x12 and
+11x14 minimum-budget diagnostics through a static dual corner rule. It
+supersedes the extra history bit first proposed for those examples. The next
+uniform lower target is to compare the backward clearing frontier with the
+two prescribed prefix clocks for every odd width at minimum budget. A
+successful proof could settle that part of range 2 even while the correction
+clock still fails the fixed-size numerical criterion. Mere agreement at the
+checked widths is not such a proof. Two candidate scalar potentials failed
+on explicit physical transitions: taking the minimum of the two anchored
+clocks changes the preferred phase illegally, and assigning that phase from
+corner/erosion counts fails when remote components can be removed at once.
+The current target is an outer backward frontier, expressed in the two
+clocks, that is closed under every allowed predecessor and excludes the full
+initial state before the upper clock. See the preserved
+`research/resumed-odd-even-symbolic-minimum-frontier.md` for the counterexamples.
+
+For even width, the 24x24,k=13 full-board gap is 206 to 207 days. A uniform
+near-square localization theorem reduces a problematic boundary support to
+eight compressed candidates; independently verified certificates raise the
+physical SOLO lower to 103, versus a 104-day solo upper. Inspection-ammunition costs without timing failed to transfer this barrier
+to joint histories. A separate independently checked time-sensitive equality
+certificate then forced purity at the extremal boundary state, allowing the
+filtered merger argument to prove the 206-day full-board lower. The exact
+remaining question in this diagnostic is now 206 versus 207. A further lower
+invariant could exclude 206; alternatively a better physical schedule could
+attain it. Neither alternative has yet been proved.
+
+A second route remains constructive: the existing two-corner prefix unions
+and their intersections fail to match the relaxed clock in this diagnostic.
+A more general boundary transfer could improve the upper. The failure of
+that restricted family is not an unrestricted impossibility proof. The
+new transport lemma supplies explicit sufficient connections with boundary
+credits, but does not identify a globally optimal sequence of endpoints.
+
+Once matching is established, the necessary clocks and prescribed prefix
+clocks still need uniform evaluation in the accepted numerical language.
+No recurrence, fixed-width preprocessing, or parameter-length capacity
+array is being reclassified as an O(1) answer. The odd-board intermediate
+budget/midpoint and numerical obligations above remain active and were
+secondary in this pass. Independent extensions remain parked.
+
+All new corner geometry, merger, localization, and finite applications have
+ordinary proofs or stated independent certificate checks. None gains full
+physical Lean verification by appearing in the manuscript. See
+`research/RESUMED_RECTANGLE_CHECKPOINT.md` and
+`research/resumed-rectangle-research-log.md` in the source package.

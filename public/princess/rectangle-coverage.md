@@ -1,7 +1,8 @@
 # Rectangle capture time: coverage under the fixed-size numerical goal
 
-Assessment dated 13 September 2026. This is an extraction and reconciliation
-of existing theorems, not a new mathematical search. The controlling objective
+Updated 13 September 2026 after the resumed even-area investigation. The
+accepted bounded-formula union remains unchanged; new uniform bounds and
+finite exact consequences are recorded below. The controlling objective
 is [CLASSIFICATION_SCOPE.md](CLASSIFICATION_SCOPE.md). Historical uses of
 “complete” that allowed a width-dependent recurrence do not change that goal.
 
@@ -455,3 +456,49 @@ domain explicit. [RECTANGLE_GAPS.md](RECTANGLE_GAPS.md) records the critical
 dependencies, prior attempts, and possible next steps. Independent extensions
 are preserved and parked; a relevant general proof tool remains in the main
 project even if its statement is broader than a rectangle.
+
+
+## 8. New even-area lower bounds and constructions
+
+The resumed investigation strengthens the first two residual families without
+claiming their complete formula classification. The two even-area envelope
+expressions above now supply **constructive upper bounds at every feasible
+budget**; their matching lower proofs retain the displayed quadratic budget
+thresholds. The strengthened root-selected construction is in
+`lem:pyramid-envelope`, `thm:even-rectangle-high-budget`, and
+`thm:odd-short-even-high-budget`.
+
+At minimum budget on odd width, the expression
+T<=2wn-(8r^2-4r-4L_r+4) is now an attained upper bound at every even length
+as well; `prop:odd-even-minimum-upper` proves it. The general even-length
+lower equality and the fixed-size evaluation of L_r remain separate gaps.
+
+`thm:finite-corner-count` and `cor:critical-corner-unified` give uniform
+necessary bounds for arbitrary supports on every even-area rectangle,
+retaining their current and outgoing corners. `thm:erosion-corner-profile`
+adds the corners whose two neighbors are present, and corner closure makes
+its dual index observable. Its critical refinement is presently proved for
+odd width/even length. `thm:corner-model-merger` and
+`thm:erosion-model-merger` reduce the corresponding joint necessary lower
+calculations to solo clocks. The latter deliberately drops a positive feature
+lower-cardinality constraint; it does not assert physical attainment.
+
+`thm:even-pronic-rigidity`, `thm:near-pronic-localization`, and
+`cor:dual-near-pronic` retain shape information at and near the capacity
+extrema. The near-pronic dual rule replaces a proposed extra history bit:
+existing erosion counts already forbid the consecutive transitions.
+`thm:near-square-localization` gives the corresponding near-square confinement.
+
+The independently checked finite consequences are T_5(8,8)=40,
+T_7(12,12)=72, T_4(7,8)=68, T_5(9,10)=96,
+T_6(11,12)=128, and T_6(11,14)=172. They combine uniform ordinary proofs,
+finite integer certificates, and literal-room inspection replays. They are
+not a family-level fixed-size formula or complete physical Lean proofs.
+
+The current full-board diagnostic interval is 206<=T_13(24,24)<=207.
+A stronger physical SOLO lower is 103 days, versus a 104-day solo upper;
+a separate time-sensitive joint equality certificate transfers its history
+barrier to merged full-board histories. Together with the filtered model
+and reversed midpoint cut, this proves the 206-day lower.
+See `prop:twenty-four-boundary-history` and the resumed checkpoint in the
+mathematical sources for the precise proof and computational boundary.

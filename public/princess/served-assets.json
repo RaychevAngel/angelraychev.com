@@ -39,7 +39,7 @@
     },
     "/princess/artifact-manifest.json": {
       "scope": "shared",
-      "bytes": 114882
+      "bytes": 168388
     },
     "/princess/extensions/extensions-lean-proofs.zip": {
       "scope": "parked",
@@ -47,11 +47,11 @@
     },
     "/princess/extensions/extensions-research-sources.zip": {
       "scope": "parked",
-      "bytes": 596306
+      "bytes": 603250
     },
     "/princess/extensions/extensions-source.zip": {
       "scope": "parked",
-      "bytes": 82035
+      "bytes": 83921
     },
     "/princess/extensions/formal-artifact.md": {
       "scope": "parked",
@@ -67,7 +67,7 @@
     },
     "/princess/extensions/princess-extensions.pdf": {
       "scope": "parked",
-      "bytes": 480504
+      "bytes": 480110
     },
     "/princess/extensions/release.json": {
       "scope": "parked",
@@ -88,6 +88,10 @@
     "/princess/figures/minimum-budget-times.svg": {
       "scope": "main",
       "bytes": 19041
+    },
+    "/princess/figures/near-pronic-localization.svg": {
+      "scope": "main",
+      "bytes": 95772
     },
     "/princess/figures/odd-rectangle-prefixes.svg": {
       "scope": "main",
@@ -451,15 +455,15 @@
     },
     "/princess/manuscript-source.zip": {
       "scope": "main",
-      "bytes": 280231
+      "bytes": 336978
     },
     "/princess/princess-searches.pdf": {
       "scope": "main",
-      "bytes": 969530
+      "bytes": 1101982
     },
     "/princess/proof-anchor-migration.json": {
       "scope": "shared",
-      "bytes": 5300
+      "bytes": 5420
     },
     "/princess/raychev-2020-spring.pdf": {
       "scope": "shared",
@@ -471,11 +475,11 @@
     },
     "/princess/rectangle-coverage.md": {
       "scope": "main",
-      "bytes": 19463
+      "bytes": 22138
     },
     "/princess/rectangle-gaps.md": {
       "scope": "main",
-      "bytes": 18563
+      "bytes": 22149
     },
     "/princess/references.bib": {
       "scope": "shared",
@@ -483,15 +487,15 @@
     },
     "/princess/release.json": {
       "scope": "main",
-      "bytes": 1099
+      "bytes": 1100
     },
     "/princess/research-history.md": {
       "scope": "shared",
-      "bytes": 17058
+      "bytes": 17921
     },
     "/princess/research-sources.zip": {
       "scope": "main",
-      "bytes": 1634941
+      "bytes": 2220474
     },
     "/princess/scope.md": {
       "scope": "main",
@@ -503,7 +507,7 @@
     },
     "/princess/served-assets.json": {
       "scope": "shared",
-      "bytes": 12794
+      "bytes": 12993
     }
   }
 }

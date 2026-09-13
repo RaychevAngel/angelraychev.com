@@ -7,6 +7,14 @@
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
     },
+    "extensions/HANDOFF.md": {
+      "scope": "parked",
+      "reason": "Parked companion handoff and explicit non-goals."
+    },
+    "extensions/README.md": {
+      "scope": "parked",
+      "reason": "Parked source index with preserved provenance."
+    },
     "lean/README.md": {
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
@@ -15,6 +23,246 @@
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
     },
+    "paper/extensions.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/main.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/preamble.tex": {
+      "scope": "shared",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/acknowledgments.tex": {
+      "scope": "shared",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bounded-cylinder-interfaces.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/bounded-odd-frontier.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/boxes.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/compression.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/corner-memory.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/cylinder-applications.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/cylinder-height.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/equal-box-compression.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-cube-tables.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-cylinder-eventual-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-cylinder-finite.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-rectangle-profiles.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-rectangle-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/even-three-cube-cylinder-time.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/extensions-formalization.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/extensions-introduction.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/five-rows-odd-budgets.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/five-rows.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/fixed-box-eventual-time.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/fixed-horizon-transfer.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/formalization.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/foundations.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/four-rows.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/hamiltonian-cylinder-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/high-budget-odd-rectangles.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/introduction.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-affine-insertion.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-box-eventual-time.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-boxes.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-eventual-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-minimum-budget.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-period-proof.tex": {
+      "scope": "shared",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-rectangles.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/odd-short-even-high-budget.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/paths.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/pyramid-envelope-lemma.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/quadrant-boundary-profiles.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-corner-theory.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-erosion-corner-merge.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-erosion-corner-profile.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-even-area-certificates.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-even-corner-merge.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-even-corner-profile.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-even-critical-extension.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-even-pronic-rigidity.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-near-pronic-history.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-near-square-localization.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-odd-critical-extension.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-odd-even-minimum-upper.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/resumed-upper-transport.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/seven-row-five-probe-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/six-probe-even-cylinder-time.tex": {
+      "scope": "parked",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/symbolic-height-transitions.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/three-rows.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/two-rows.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
+    "paper/sections/uniform-odd-time.tex": {
+      "scope": "main",
+      "reason": "Canonical manuscript source; retained scope and dependencies."
+    },
     "publication/artifact-manifest.json": {
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
@@ -22,6 +270,34 @@
     "publication/lean-scope.json": {
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure."
+    },
+    "publication/manuscript-scope.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "publication/package-closures.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "publication/proof-anchor-migration.json": {
+      "scope": "shared",
+      "reason": "Publication source closure and cross-document link membership."
+    },
+    "research/CLASSIFICATION_SCOPE.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "research/RECTANGLE_COVERAGE.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "research/RECTANGLE_GAPS.md": {
+      "scope": "main",
+      "reason": "Active rectangle scope, coverage, and remaining gaps."
+    },
+    "research/RESUMED_RECTANGLE_CHECKPOINT.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
     },
     "research/affine-rank-ammunition-potential.md": {
       "scope": "main",
@@ -1103,6 +1379,531 @@
       "scope": "main",
       "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
     },
+    "research/resumed-corner-checkpoint-source-review.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-corner-integration-plan.md": {
+      "scope": "private",
+      "reason": "Private chronological/assembly record."
+    },
+    "research/resumed-erosion-corner-profile.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-algebra-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-algebra-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py",
+        "src/resumed_odd_even_erosion_corners.py"
+      ]
+    },
+    "research/resumed-erosion-merger-band-dual-solo-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-band-solo-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-band-solo-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_odd_even_erosion_corners.py"
+      ]
+    },
+    "research/resumed-erosion-merger-proof.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-relaxed-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-relaxed-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-erosion-merger-relaxed-full-closure-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-7x8-k4-pyramid-upper.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-all-pyramid-orientations-7x8-k4.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-ammunition-8x8-k5.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-ammunition-minimum.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-corner-count-12x12-k7.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-corner-count-8x8-k5.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-corner-features.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-corrected-prefix-gap.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-critical-clock.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-critical-profile-counterexamples.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-day28-ammunition-pairs.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-direct-two-prefixes-24x24-k13.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-formula-profile-12x12-k7.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-formula-profile-8x8-k5.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-full-start-seriality.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-joint-equality28-verification.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-joint-equality28.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-larger-prefix.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-log.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-merge-algebra.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-merge-guard.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-merge-independent-audit.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-minimum-12x12.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-near-square112-search.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-near-square112-verification.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-near-square112.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-partial-prefix123-verification.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-partial-prefix123.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-prefix-arithmetic-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-prefix-clocks.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-prefix.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-profile-relaxation-12x12-k7.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-profile-relaxation-8x8-k5.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-splice-12x12-k7.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-splice-14x14-k12.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-splice-14x14-k8.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-splice-14x14-k9.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-splice-24x24-k13.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-square-8x8-k5.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-time-barrier28.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-transport-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-transport-constant-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-transport.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-transport.tex": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-two-prefixes-12x12-k7.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-two-prefixes-12x12-k8.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-construction-union-intersection-24x24-k13.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-critical-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-critical-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-critical.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-profile-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-profile-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-corner-profile.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-merge-algebra-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-merge-endpoints.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-merge-endpoints.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "research/resumed-even-merge-extensions-check.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-even-merge-extensions-check.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "research/resumed-even-merge-proof.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-compatibility-barrier.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-compatibility-barrier.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-compatibility-solo-guard.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-cheap-pairs-5x6.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-cheap-pairs-7x8.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-cheap-pairs-9x10.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-7x8-memory.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-7x8-two-memories.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-9x10-audited.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-critical.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-dual.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history-uniform-memory.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-history.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-corner-potentials.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-critical-extension.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-critical-unification.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-enlarged-potentials.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-11-band-dual.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-11x12-all-pronic-radii.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-11x12-band-memory.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-11x12-gap.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-11x14-band-memory.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-closed-memory.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-closed.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-dual-pronic.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-full-closure-audited.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-maximal.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners-uniform-audited.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-corners.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-square-24x24-k13-pronic.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-erosion-square-24x24-k13.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-four-day-obstruction.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-four-day-obstruction.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-minimum-upper.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-minimum-upper.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-near-pronic-history.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-one-neighbor-capacity.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-one-neighbor-capacity.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-pronic-all-radii.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-pronic-memory.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-pronic-rigidity-physical-attack.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-seven-six-potentials.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-symbolic-minimum-frontier.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-terminal-obstruction.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-odd-even-uniform-falsification.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-pdf-companion-review.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-pdf-main-layout-final-comparison.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-pdf-main-layout-review.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-pdf-new-proof-review.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-prefix-transport-evaluation.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-rectangle-research-log.md": {
+      "scope": "private",
+      "reason": "Private chronological/assembly record."
+    },
+    "research/resumed-research-plan.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-root-saturated-upper.json": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-root-saturation-proof.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "research/resumed-ui-review.md": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
     "research/root-convolution-independent-review.md": {
       "scope": "main",
       "reason": "Rectangle results, rectangle-directed investigations, or their artifact support."
@@ -1110,6 +1911,22 @@
     "research/separation-artifact-notes.md": {
       "scope": "shared",
       "reason": "Publication membership and unchanged-source verification evidence."
+    },
+    "research/separation-final-pdf-review.md": {
+      "scope": "shared",
+      "reason": "Review of both scoped publications; no new mathematical result."
+    },
+    "research/separation-lean-verification.json": {
+      "scope": "shared",
+      "reason": "Publication membership and unchanged-source verification evidence."
+    },
+    "research/separation-manuscript.md": {
+      "scope": "shared",
+      "reason": "Dependency-preserving TeX split audit; no new mathematical result."
+    },
+    "research/separation-ui-review.md": {
+      "scope": "shared",
+      "reason": "Review of both scoped publications; no new mathematical result."
     },
     "research/serial-cohort-checks.json": {
       "scope": "main",
@@ -1677,6 +2494,10 @@
         "src/publication_paths.py"
       ]
     },
+    "src/build_near_pronic_figure.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
     "src/build_paper_figures.py": {
       "scope": "shared",
       "reason": "Common proof/application dependency or publication infrastructure.",
@@ -1698,6 +2519,10 @@
       "local_imports": [
         "src/publication_paths.py"
       ]
+    },
+    "src/build_scope_pages.py": {
+      "scope": "shared",
+      "reason": "Generate active scope and gap pages from canonical source."
     },
     "src/build_uniform_even_figure.py": {
       "scope": "shared",
@@ -2246,6 +3071,261 @@
         "src/nested_grid_time.py"
       ]
     },
+    "src/refresh_resumed_publication.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_even_construction_all_orientations.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_ammunition.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_corner_abstraction.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_ammunition.py",
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_corner_count.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_direct_two_prefixes.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_transport.py"
+      ]
+    },
+    "src/resumed_even_construction_formula_clock.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py",
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_splice.py"
+      ]
+    },
+    "src/resumed_even_construction_formula_profile.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_ammunition.py",
+        "src/resumed_even_construction_prefix.py"
+      ]
+    },
+    "src/resumed_even_construction_full_start_seriality.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "src/resumed_even_construction_joint_equality.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "src/resumed_even_construction_joint_equality_verify.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py"
+      ]
+    },
+    "src/resumed_even_construction_merge_audit.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "src/resumed_even_construction_partial_pyramid.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py",
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_transport.py"
+      ]
+    },
+    "src/resumed_even_construction_partial_verify.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_even_construction_prefix.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_even_construction_prefix_arithmetic.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py"
+      ]
+    },
+    "src/resumed_even_construction_profile_relaxation.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_ammunition.py",
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_splice.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_clock.py",
+        "src/resumed_even_construction_formula_profile.py",
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_transport.py"
+      ]
+    },
+    "src/resumed_even_construction_square_audit.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/pyramidal_time.py",
+        "src/resumed_even_construction_prefix.py"
+      ]
+    },
+    "src/resumed_even_construction_transport.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_transport_constant.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_even_construction_two_prefixes.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_square_audit.py"
+      ]
+    },
+    "src/resumed_even_construction_union_intersection.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_prefix.py",
+        "src/resumed_even_construction_transport.py"
+      ]
+    },
+    "src/resumed_odd_compatibility_barrier.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/maturation_odd_ammunition.py",
+        "src/supersession_odd_midpoint_bounded.py",
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/resumed_odd_compatibility_solo_guard.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/maturation_odd_ammunition.py",
+        "src/supersession_solo_bands.py"
+      ]
+    },
+    "src/resumed_odd_even_cheap_pairs.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py"
+      ]
+    },
+    "src/resumed_odd_even_corner_history.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py",
+        "src/resumed_odd_even_corner_potential.py"
+      ]
+    },
+    "src/resumed_odd_even_corner_potential.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/resumed_odd_even_erosion_corners.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_even_construction_formula_profile.py",
+        "src/resumed_odd_even_corner_history.py",
+        "src/resumed_odd_even_corner_potential.py"
+      ]
+    },
+    "src/resumed_odd_even_erosion_square_probe.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_odd_even_erosion_corners.py"
+      ]
+    },
+    "src/resumed_odd_even_four_day_obstruction.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_odd_even_minimum_upper.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/nested_grid_time.py"
+      ]
+    },
+    "src/resumed_odd_even_one_neighbor_capacity.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_odd_even_pronic_rigidity_attack.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_odd_even_terminal_obstruction.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
+    "src/resumed_odd_even_uniform_falsification.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied.",
+      "local_imports": [
+        "src/resumed_odd_even_erosion_corners.py",
+        "src/resumed_odd_even_minimum_upper.py"
+      ]
+    },
+    "src/resumed_root_saturated_upper.py": {
+      "scope": "main",
+      "reason": "Reviewed rectangle research, proof sources, failed approaches or reproducible finite evidence; no new formal coverage implied."
+    },
     "src/serial_cohort_attack.py": {
       "scope": "main",
       "reason": "Rectangle results, rectangle-directed investigations, or their artifact support.",
@@ -2548,58 +3628,6 @@
       "local_imports": [
         "src/odd_serial_first_order_attack.py"
       ]
-    },
-    "research/separation-lean-verification.json": {
-      "scope": "shared",
-      "reason": "Publication membership and unchanged-source verification evidence."
-    },
-    "publication/manuscript-scope.json": {
-      "scope": "shared",
-      "reason": "Publication source closure and cross-document link membership."
-    },
-    "publication/package-closures.json": {
-      "scope": "shared",
-      "reason": "Publication source closure and cross-document link membership."
-    },
-    "publication/proof-anchor-migration.json": {
-      "scope": "shared",
-      "reason": "Publication source closure and cross-document link membership."
-    },
-    "research/CLASSIFICATION_SCOPE.md": {
-      "scope": "main",
-      "reason": "Active rectangle scope, coverage, and remaining gaps."
-    },
-    "research/RECTANGLE_COVERAGE.md": {
-      "scope": "main",
-      "reason": "Active rectangle scope, coverage, and remaining gaps."
-    },
-    "research/RECTANGLE_GAPS.md": {
-      "scope": "main",
-      "reason": "Active rectangle scope, coverage, and remaining gaps."
-    },
-    "extensions/HANDOFF.md": {
-      "scope": "parked",
-      "reason": "Parked companion handoff and explicit non-goals."
-    },
-    "src/build_scope_pages.py": {
-      "scope": "shared",
-      "reason": "Generate active scope and gap pages from canonical source."
-    },
-    "extensions/README.md": {
-      "scope": "parked",
-      "reason": "Parked source index with preserved provenance."
-    },
-    "research/separation-manuscript.md": {
-      "scope": "shared",
-      "reason": "Dependency-preserving TeX split audit; no new mathematical result."
-    },
-    "research/separation-final-pdf-review.md": {
-      "scope": "shared",
-      "reason": "Review of both scoped publications; no new mathematical result."
-    },
-    "research/separation-ui-review.md": {
-      "scope": "shared",
-      "reason": "Review of both scoped publications; no new mathematical result."
     }
   },
   "served_assets": {
@@ -2623,38 +3651,51 @@
       "sources": [
         "paper/main.tex",
         "paper/preamble.tex",
-        "paper/sections/introduction.tex",
-        "paper/sections/foundations.tex",
-        "paper/sections/compression.tex",
-        "paper/sections/quadrant-boundary-profiles.tex",
-        "paper/sections/odd-rectangles.tex",
-        "paper/sections/uniform-odd-time.tex",
-        "paper/sections/bounded-odd-frontier.tex",
-        "paper/sections/high-budget-odd-rectangles.tex",
-        "paper/sections/even-rectangle-profiles.tex",
-        "paper/sections/corner-memory.tex",
-        "paper/sections/even-rectangle-time.tex",
-        "paper/sections/pyramid-envelope-lemma.tex",
-        "paper/sections/symbolic-height-transitions.tex",
-        "paper/sections/odd-short-even-high-budget.tex",
-        "paper/sections/paths.tex",
-        "paper/sections/two-rows.tex",
-        "paper/sections/three-rows.tex",
-        "paper/sections/four-rows.tex",
-        "paper/sections/five-rows.tex",
-        "paper/sections/five-rows-odd-budgets.tex",
-        "paper/sections/seven-row-five-probe-time.tex",
-        "paper/sections/odd-minimum-budget.tex",
-        "paper/sections/odd-affine-insertion.tex",
-        "paper/sections/odd-eventual-time.tex",
-        "paper/sections/odd-period-proof.tex",
-        "paper/sections/cylinder-height.tex",
-        "paper/sections/hamiltonian-cylinder-time.tex",
-        "paper/sections/even-cylinder-eventual-time.tex",
+        "paper/sections/acknowledgments.tex",
         "paper/sections/bounded-cylinder-interfaces.tex",
+        "paper/sections/bounded-odd-frontier.tex",
+        "paper/sections/compression.tex",
+        "paper/sections/corner-memory.tex",
+        "paper/sections/cylinder-height.tex",
+        "paper/sections/even-cylinder-eventual-time.tex",
+        "paper/sections/even-rectangle-profiles.tex",
+        "paper/sections/even-rectangle-time.tex",
+        "paper/sections/five-rows-odd-budgets.tex",
+        "paper/sections/five-rows.tex",
         "paper/sections/fixed-horizon-transfer.tex",
         "paper/sections/formalization.tex",
-        "paper/sections/acknowledgments.tex"
+        "paper/sections/foundations.tex",
+        "paper/sections/four-rows.tex",
+        "paper/sections/hamiltonian-cylinder-time.tex",
+        "paper/sections/high-budget-odd-rectangles.tex",
+        "paper/sections/introduction.tex",
+        "paper/sections/odd-affine-insertion.tex",
+        "paper/sections/odd-eventual-time.tex",
+        "paper/sections/odd-minimum-budget.tex",
+        "paper/sections/odd-period-proof.tex",
+        "paper/sections/odd-rectangles.tex",
+        "paper/sections/odd-short-even-high-budget.tex",
+        "paper/sections/paths.tex",
+        "paper/sections/pyramid-envelope-lemma.tex",
+        "paper/sections/quadrant-boundary-profiles.tex",
+        "paper/sections/resumed-corner-theory.tex",
+        "paper/sections/resumed-erosion-corner-merge.tex",
+        "paper/sections/resumed-erosion-corner-profile.tex",
+        "paper/sections/resumed-even-area-certificates.tex",
+        "paper/sections/resumed-even-corner-merge.tex",
+        "paper/sections/resumed-even-corner-profile.tex",
+        "paper/sections/resumed-even-critical-extension.tex",
+        "paper/sections/resumed-even-pronic-rigidity.tex",
+        "paper/sections/resumed-near-pronic-history.tex",
+        "paper/sections/resumed-near-square-localization.tex",
+        "paper/sections/resumed-odd-critical-extension.tex",
+        "paper/sections/resumed-odd-even-minimum-upper.tex",
+        "paper/sections/resumed-upper-transport.tex",
+        "paper/sections/seven-row-five-probe-time.tex",
+        "paper/sections/symbolic-height-transitions.tex",
+        "paper/sections/three-rows.tex",
+        "paper/sections/two-rows.tex",
+        "paper/sections/uniform-odd-time.tex"
       ]
     },
     "extensions": {
@@ -2662,20 +3703,20 @@
       "sources": [
         "paper/extensions.tex",
         "paper/preamble.tex",
-        "paper/sections/extensions-introduction.tex",
-        "paper/sections/equal-box-compression.tex",
-        "paper/sections/odd-boxes.tex",
-        "paper/sections/odd-box-eventual-time.tex",
-        "paper/sections/odd-period-proof.tex",
+        "paper/sections/acknowledgments.tex",
         "paper/sections/boxes.tex",
-        "paper/sections/even-cylinder-finite.tex",
-        "paper/sections/even-cube-tables.tex",
-        "paper/sections/even-three-cube-cylinder-time.tex",
-        "paper/sections/six-probe-even-cylinder-time.tex",
         "paper/sections/cylinder-applications.tex",
-        "paper/sections/fixed-box-eventual-time.tex",
+        "paper/sections/equal-box-compression.tex",
+        "paper/sections/even-cube-tables.tex",
+        "paper/sections/even-cylinder-finite.tex",
+        "paper/sections/even-three-cube-cylinder-time.tex",
         "paper/sections/extensions-formalization.tex",
-        "paper/sections/acknowledgments.tex"
+        "paper/sections/extensions-introduction.tex",
+        "paper/sections/fixed-box-eventual-time.tex",
+        "paper/sections/odd-box-eventual-time.tex",
+        "paper/sections/odd-boxes.tex",
+        "paper/sections/odd-period-proof.tex",
+        "paper/sections/six-probe-even-cylinder-time.tex"
       ]
     }
   },

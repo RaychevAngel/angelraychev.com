@@ -279,3 +279,17 @@ preserved in a parked companion. Necessary shared lemmas remain in the
 rectangle proof. The inverse constant-budget deadline relation remains
 relevant to rectangles. This pass changes organization and assessment only;
 it reports no new mathematics and preserves original contributions.
+
+## September 2026: resumed even-area rectangle research
+
+After explicit authorization, effort concentrated on the two even-area gaps.
+New common corner and erosion capacities, critical refinements, mergers and
+near-extremal localization strengthen physical lower bounds. The near-pronic
+static dual restriction supersedes an additional history bit. Every feasible
+even-area budget now has the stated root-selected upper construction; the
+high-budget equality thresholds are unchanged. Independent finite certificates
+and literal inspections establish six exact cases; the24-square, thirteen-
+inspection case is between206 and207 days. These are ordinary proofs and
+computational evidence, with no new complete physical Lean theorem. The fixed-
+size endpoint and parked scope remain unchanged. See
+`research/RESUMED_RECTANGLE_CHECKPOINT.md` for exact boundaries.

@@ -1,29 +1,29 @@
 {
-  "prepared_at_utc": "2026-09-13T11:14:39.813360+00:00",
+  "prepared_at_utc": "2026-09-13T14:11:24.832721+00:00",
   "status": "Active rectangle checkpoint; explicit value-and-strategy classification remains open; not submitted to arXiv.",
   "scope": "main",
-  "pages": 109,
-  "figures": 5,
+  "pages": 134,
+  "figures": 6,
   "lean_modules": 43,
   "lean_evidence": "Unchanged source hashes and import closure checked against the existing compilation receipt; no new Lean compilation.",
   "lean_original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
   "lean_check_seconds": 112.82624904369004,
   "files": {
     "princess-searches.pdf": {
-      "sha256": "2bae83730fd6bda844707b9de1c384c243ec1bf49ad73f9f89711f75ec869de3",
-      "bytes": 969530
+      "sha256": "a070378c49ec580378751b05c49782dd3f6e0abe884cc3baf2a027407a03f5c0",
+      "bytes": 1101982
     },
     "manuscript-source.zip": {
-      "sha256": "f2940b8e1e5050903286d9d8d90b178477d3aa6ac725ad3013e0feda9ac33da9",
-      "bytes": 280231
+      "sha256": "b93a15f86469bd464ae953e564e6a894722982f2bb872707622e72827c39361c",
+      "bytes": 336978
     },
     "lean-proofs.zip": {
-      "sha256": "c3f85ce84d50487e4e58830ee9372dca273f33730a5326ea8c757917adb48d23",
+      "sha256": "c2d440f314e4ba7dd0221063ccad62d9d93fb89be3faa3ff53e9abe28f4432ce",
       "bytes": 268702
     },
     "research-sources.zip": {
-      "sha256": "7b56ecc2bcad5803b8d70d9317ac63ff86d6794977bc963b815f4eb512966e61",
-      "bytes": 1634941
+      "sha256": "b510e9ddd45ce0b51808a2a607c65ccc6578f04f833d942852860497bd8ddf64",
+      "bytes": 2220474
     }
   }
 }
