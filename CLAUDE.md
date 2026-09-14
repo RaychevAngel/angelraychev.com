@@ -85,7 +85,7 @@ and remove the corresponding backlog string.
 The homepage groups published articles under **AI and machine learning**, **Mathematics**,
 and **Human agency**, in the explicit reading order in `src/pages/index.astro`. Each
 article has one entry; papers and supporting project pages remain beneath that entry.
-Small grey labels distinguish the AI article types and the two human-agency chapters.
+Each entry shows only its linked title and date, with no subtitles or descriptions.
 When publishing an article, assign its URL to a group; a build check prevents missing or
 duplicate entries. The ideas array is a source-only backlog, not displayed on the site.
 
@@ -106,8 +106,8 @@ just imagine it as a book, which is just text."*
 - Body 14.5px, line-height 1.8, measure capped at 660px.
 - Links underlined; hover inverts to white-on-black.
 - **No nav, no About page, no tagline, no cards or filters.** On 13 September 2026,
-  Angel approved three plain subject headings and brief grey article labels on the
-  index. Keep this organization text-only; do not add descriptions or visual chrome.
+  Angel approved three plain subject headings, then removed the article labels.
+  Keep only linked titles and dates under each heading; no subtitles or descriptions.
 - Plots are allowed but must be black and white and minimal. The one in the current
   article is hand-written inline SVG using only `#000` and `#767676`.
 

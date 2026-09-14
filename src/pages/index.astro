@@ -30,13 +30,13 @@ const entries = posts
   .concat([{ title: "Guaranteed delivery despite a pursuer", href: "/cop-prisoner/", when: "12 Sep 2026" }]);
 
 // Subject groups and reading order; article URLs and content stay unchanged.
-const groups: { id: string; title: string; items: { href: string; kind?: string }[] }[] = [
+const groups: { id: string; title: string; items: { href: string }[] }[] = [
   {
     id: "ai-and-machine-learning",
     title: "AI and machine learning",
     items: [
-      { href: "/training-a-code-reviewer-we-actually-use", kind: "Development journal" },
-      { href: "/scalable-meta-learning-from-hindsight", kind: "Research proposal" },
+      { href: "/training-a-code-reviewer-we-actually-use" },
+      { href: "/scalable-meta-learning-from-hindsight" },
     ],
   },
   {
@@ -52,8 +52,8 @@ const groups: { id: string; title: string; items: { href: string; kind?: string 
     id: "human-agency",
     title: "Human agency",
     items: [
-      { href: "/the-optimization-nobody-is-running", kind: "Objectives" },
-      { href: "/four-levers-and-a-trap", kind: "Changing ourselves" },
+      { href: "/the-optimization-nobody-is-running" },
+      { href: "/four-levers-and-a-trap" },
     ],
   },
 ];
@@ -62,12 +62,12 @@ const entriesByHref = new Map(entries.map((entry) => [entry.href, entry]));
 const assigned = new Set<string>();
 const sections = groups.map((group) => ({
   ...group,
-  entries: group.items.map(({ href, kind }) => {
+  entries: group.items.map(({ href }) => {
     const entry = entriesByHref.get(href);
     if (!entry) throw new Error(`Homepage group references an unpublished article: ${href}`);
     if (assigned.has(href)) throw new Error(`Article appears in two homepage groups: ${href}`);
     assigned.add(href);
-    return { ...entry, kind };
+    return entry;
   }),
 }));
 const ungrouped = entries.filter((entry) => !assigned.has(entry.href));
@@ -82,10 +82,7 @@ if (ungrouped.length) {
       <ul class="idx">
         {section.entries.map((e) => (
           <li>
-            <div class="entry">
-              <a href={e.href}>{e.title}</a>
-              {e.kind && <span class="kind">{e.kind}</span>}
-            </div>
+            <a href={e.href}>{e.title}</a>
             <span class="when">{e.when}</span>
           </li>
         ))}
@@ -96,6 +93,4 @@ if (ungrouped.length) {
 
 <style>
   section:first-child h2 { margin-top: 0; }
-  .entry { min-width: 0; }
-  .kind { display: block; color: var(--dim); font-size: 13px; }
 </style>
