@@ -10,7 +10,7 @@ a topic** — Angel intends to write about a wide range of subjects, and any cop
 narrows the site to one field has been removed on purpose. Do not reintroduce a tagline,
 an About page, or a scoping description.
 
-It is a reading site. One article exists so far, plus a public list of planned pieces.
+It is a reading site for essays and living research/development projects.
 
 Live at <https://angelraychev.com>.
 
@@ -78,12 +78,16 @@ draft: true      # optional; drafts are not built, not listed, not reachable
 Files beginning with `_` are ignored by the loader. `draft: true` is a real gate — the
 page is not generated at all, so it is safe to commit and push a draft.
 
-**Planned pieces** are a plain string array in `src/pages/index.astro` (`const ideas`).
-They render as unclickable grey rows labelled `idea` where the date normally sits.
-Sentence case. To publish one, write the Markdown file and delete the string.
+**Planned pieces** are a source-only string array in `src/pages/index.astro` (`const ideas`).
+They are not displayed. To publish one, write the Markdown file, add its group entry,
+and remove the corresponding backlog string.
 
-The homepage sorts everything **alphabetically**, articles and ideas mixed. Articles are
-links with a date; ideas are grey text with the word `idea`.
+The homepage groups published articles under **AI and machine learning**, **Mathematics**,
+and **Human agency**, in the explicit reading order in `src/pages/index.astro`. Each
+article has one entry; papers and supporting project pages remain beneath that entry.
+Small grey labels distinguish the AI article types and the two human-agency chapters.
+When publishing an article, assign its URL to a group; a build check prevents missing or
+duplicate entries. The ideas array is a source-only backlog, not displayed on the site.
 
 ## Style and theme
 
@@ -101,8 +105,9 @@ just imagine it as a book, which is just text."*
   not add `prefers-color-scheme` blocks.
 - Body 14.5px, line-height 1.8, measure capped at 660px.
 - Links underlined; hover inverts to white-on-black.
-- **No nav, no About page, no tagline, no index descriptions, no category labels.** Each
-  of these existed and was deliberately removed.
+- **No nav, no About page, no tagline, no cards or filters.** On 13 September 2026,
+  Angel approved three plain subject headings and brief grey article labels on the
+  index. Keep this organization text-only; do not add descriptions or visual chrome.
 - Plots are allowed but must be black and white and minimal. The one in the current
   article is hand-written inline SVG using only `#000` and `#767676`.
 
@@ -182,7 +187,9 @@ status belongs in the prose of the piece that needs it, not as site furniture.
 
 ## Current state
 
-One published article: `without-changing-the-blueprint`. Fourteen ideas listed.
+As of 13 September 2026, seven homepage entries are grouped by subject. The index
+combines published Markdown articles with the princess and cop-prisoner project pages.
+The source-only ideas backlog remains hidden.
 
 Three earlier articles (`longevity-matrix`, `capability-stack`, `accumulation-decade`)
 and an About page were removed in the September 2026 rebuild. Recoverable from git
