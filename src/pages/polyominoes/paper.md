@@ -11,7 +11,7 @@ Angel Ivanov Raychev · September 2026
 
 **Now available on [arXiv:2609.13641](https://arxiv.org/abs/2609.13641)** in Combinatorics (math.CO). Submitted 12 September 2026.
 
-[**Read on arXiv**](https://arxiv.org/abs/2609.13641) · [Paper PDF](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
+[Paper PDF](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
 
 Start with the [interactive overview](/four-arm-polyominoes/) to try individual shapes. The paper presents the complete theorem and its proofs in a conventional mathematical format. The [expanded proof appendix](/polyominoes/proofs/) provides further coordinate details.
 
