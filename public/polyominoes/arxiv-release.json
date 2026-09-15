@@ -3,7 +3,7 @@
   "author": "Angel Ivanov Raychev",
   "date": "2026-09-11",
   "version": "2026-09-11",
-  "status": "Submitted to arXiv; awaiting moderation and announcement",
+  "status": "Available on arXiv as arXiv:2609.13641",
   "pages": 26,
   "figures": 8,
   "figure_files": 9,
@@ -28,8 +28,8 @@
       "sha256": "52ff7c06a405cac974f32a5fbccb51a91a69900dcb5555812973f12d567e8c9a"
     },
     "citation.bib": {
-      "bytes": 292,
-      "sha256": "6ff8a34d52effa3a2e0592f47bea9a3d9343262a3798d568c5fca84429648430"
+      "bytes": 340,
+      "sha256": "d863bcc8c30deb59ba74099ad09ccffc395f856cec65ae978ec089a2a6d64880"
     }
   },
   "formal_artifact": {
@@ -57,8 +57,11 @@
     "primary_category": "math.CO",
     "cross_lists": [],
     "license": "CC BY 4.0",
-    "identifier": null,
-    "public_url": null,
-    "submission_evidence": "Author reported completing submission on 2026-09-11 (America/Los_Angeles); announcement pending"
+    "identifier": "2609.13641",
+    "public_url": "https://arxiv.org/abs/2609.13641",
+    "submission_evidence": "Public arXiv abstract record confirms the title, author, math.CO category, and v1 submission timestamp.",
+    "version": "v1",
+    "submitted_at": "2026-09-12T01:31:02Z",
+    "public_record_verified_at": "2026-09-15T03:07:55.207878+00:00"
   }
 }

@@ -2,16 +2,16 @@
 layout: "../../layouts/Post.astro"
 title: "Four-arm polyominoes in Golomb’s hierarchy"
 description: "A complete classification with Lean verification. Paper, LaTeX sources, formal proofs, citation, and research history."
-updated: 2026-09-11
+updated: 2026-09-14
 ---
 
 **A complete classification with Lean verification**
 
 Angel Ivanov Raychev · September 2026
 
-**Submitted to arXiv in Combinatorics (math.CO).** Awaiting moderation and announcement. A public arXiv link will be added when available.
+**Now available on [arXiv:2609.13641](https://arxiv.org/abs/2609.13641)** in Combinatorics (math.CO). Submitted 12 September 2026.
 
-[**Read the paper (PDF)**](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
+[**Read on arXiv**](https://arxiv.org/abs/2609.13641) · [Paper PDF](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
 
 Start with the [interactive overview](/four-arm-polyominoes/) to try individual shapes. The paper presents the complete theorem and its proofs in a conventional mathematical format. The [expanded proof appendix](/polyominoes/proofs/) provides further coordinate details.
 
@@ -43,7 +43,7 @@ I am deeply grateful to **Professor Stanislav Harizanov**, my mentor during the 
 
 ## Suggested citation
 
-Angel Ivanov Raychev. *Four-arm polyominoes in Golomb’s hierarchy: A complete classification with Lean verification*. Preprint, September 2026.
+Angel Ivanov Raychev. *Four-arm polyominoes in Golomb’s hierarchy: A complete classification with Lean verification*. [arXiv:2609.13641](https://arxiv.org/abs/2609.13641), September 2026.
 
 ```bibtex
 @misc{raychev2026fourarm,
@@ -52,9 +52,11 @@ Angel Ivanov Raychev. *Four-arm polyominoes in Golomb’s hierarchy: A complete 
            A complete classification with {Lean} verification},
   year = {2026},
   month = sep,
-  note = {Preprint},
-  url = {https://angelraychev.com/polyominoes/paper/}
+  eprint = {2609.13641},
+  archivePrefix = {arXiv},
+  primaryClass = {math.CO},
+  url = {https://arxiv.org/abs/2609.13641}
 }
 ```
 
-An arXiv identifier will be added after an actual announcement. The [paper bibliography](/polyominoes/references.bib) contains the cited original works.
+The [paper bibliography](/polyominoes/references.bib) contains the cited original works.
