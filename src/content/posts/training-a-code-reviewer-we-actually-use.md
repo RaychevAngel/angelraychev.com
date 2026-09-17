@@ -1,273 +1,245 @@
 ---
 title: "Training a Code Reviewer We Actually Use"
-description: "A development record: turning historical pull requests into company-specific review tasks, trustworthy rewards, and an agent our team chooses to use."
-updated: 2026-09-13
+description: "A living engineering case study: turning our own review history into useful practice, credible rewards, and a reviewer worth using."
+updated: 2026-09-17
 ---
 
-*From historical pull requests to a company-specific agent.*
+*Project synthesis · [Method and system](/training-a-code-reviewer-we-actually-use/method/) · [Development record](/training-a-code-reviewer-we-actually-use/progress/)*
 
-This project began on **13 September 2026, at 2:13 PM Pacific**. The goal is to
-train a code reviewer for SynthLabs that our team actually wants reviewing its work.
-This is a living development record, not a retrospective success story.
+We already use capable AI code reviewers. Why train another one?
 
-**Current status — 13 September, 7:22 PM Pacific:** we have defined the intended
-responsibility, investigated historical review data and public implementations, and
-shortlisted task-generation approaches. We have not yet generated and qualified a
-reviewer task for this project, run its model baseline, trained a reviewer, or
-demonstrated an improvement. The next proposed experiment is a small comparison of
-existing task generators on our own review evidence.
+The question is whether our own review history can teach a model to review our
+code more usefully: to follow the contracts between our systems, recognize
+consequential mistakes, and avoid convincing objections that waste the team's time.
+A model that knows more general programming advice is not the point.
 
-## What would count as success?
+Before asking another business to trust us to develop its agent, I want an example
+that earns its place inside SynthLabs. The title describes that destination.
+It is not an announcement that we have arrived.
 
-A reviewer that catches consequential problems, explains why they matter, and does
-not bury the team in convincing but incorrect objections. Something we return to
-because it helps—not a checkpoint we have to explain into sounding useful.
+## Where things stand
 
-There are two separate claims to earn. First, **the resulting agent is useful**.
-Second, **training contributed to that usefulness**. A useful untrained reviewer
-does not establish the second claim. A trained model with a higher score but
-annoying reviews does not establish the first.
+**Evidence through 17 September 2026, 3:30 AM Pacific.**
 
-The intended comparison is therefore an original model with a basic harness, the
-same model with our review-specific harness, and the trained model with that same
-specialized harness. Here, the harness means the instructions, tools, context
-access and execution rules surrounding the model. Existing reviewers remain
-practical comparators: beating our own weak configuration would not, by itself,
-give us a reason to switch.
+We can turn historical review opportunities into runnable tasks, collect independent
+reviews, and grade saved outputs separately. We have observed both meaningful
+catches and misses, compared reviewer instructions, and completed an initial
+on-policy training canary with **two actual optimizer updates**.
 
-The project is bounded to **reviewing code**, not autonomously implementing fixes,
-merging changes, or replacing the engineering team. Repository coverage and the
-first training corpus are still open decisions. We want to bound the experiment
-without making the working environment artificially easy.
+Only its first checkpoint passed the training-data and update-lineage checks for
+reload testing. The second remains unqualified because its grading did not meet
+the acceptance standard used for that run. We subsequently clarified one reward
+decision and tested the new rule separately; that does not rewrite the old result.
 
-## 13 September, 2:13 PM — prove it to ourselves first
+**We have not yet demonstrated that the trained reviewer is more useful than the
+untrained baseline.** Checkpoint reload, protected comparisons and repeated team
+use remain ahead at this checkpoint. Automatic GitHub comments are not enabled.
 
-The starting point was a conversation about delivery, not model selection. Before
-asking another business to trust us to develop an agent, we wanted a useful example
-inside our own company. Believing that the machinery can work is different from
-showing a colleague work they would accept, at a quality and speed they value.
+The important distinction is not “nothing works” versus “the project works.”
+Execution, measurement, learning and usefulness each need their own evidence.
 
-Code review is a good place to attempt that demonstration because the work already
-exists. We have repositories, pull requests, review conversations and engineers
-who understand the intended behavior. We do not first need to reconstruct an
-unfamiliar company's operations or invent a reason someone would want the service.
+## Two claims to earn
 
-That does not make review easy. It makes the difficult parts accessible.
+**The reviewer is useful. Training made it more useful.**
 
-The company-specific hypothesis is also concrete. A reviewer may need to understand
-contracts between services, ownership boundaries, intentional exceptions and past
-decisions. The question is whether training can help it apply that understanding
-more reliably than the original model given a competent harness and the relevant
-information. Company-specific work is a reason to investigate specialization, not
-proof that changing weights is necessary.
+A useful untrained reviewer establishes only the first. A higher historical score
+does not establish either if the resulting reviews are distracting or wrong.
 
-## 13 September, 4:47 PM — the history is the starting material
+The intended comparison separates three configurations:
 
-We already use CodeRabbit and Codex reviews. Their comments, the responses to those
-comments, subsequent changes and our own judgments provide possible learning
-signals. The initial proposal was to turn that history into realistic review
-opportunities rather than manufacture unrelated bugs.
+1. The original model with a basic harness.
+2. The same model with a competent review-specific harness and adequate context.
+3. The trained model under that same competent setup.
 
-I leaned toward a reviewer rather than an editor. Establishing that a change has a
-particular defect is already difficult. Requiring the agent to implement the best
-repair would add another problem: several different fixes might be legitimate,
-with trade-offs a judge would also have to assess.
+Here, a harness is the instructions, tools and execution rules around the model.
+Changing those rules, adding missing dependencies or supplying relevant code can
+improve behavior without changing weights. Those improvements are valuable, but
+they are not training results. Existing commercial reviewers remain practical
+comparators; beating our own weak setup would not establish a reason to switch.
 
-Several scope choices remained deliberately unsettled. One repository is easier
-to bound, but cross-repository contracts are part of the possible value. Selecting
-one defect class could simplify evaluation while excluding dependencies needed to
-understand it. Using every PR immediately could increase coverage while admitting
-poorly understood examples. A small initial corpus need not imply a permanently
-narrow reviewer.
+Company-specific understanding is a hypothesis to test, not a property bestowed
+by using a private repository. The interesting work involves local responsibilities,
+cross-service assumptions, intentional exceptions and historical decisions.
+Stable patterns might become learned judgment; changing facts still need to be
+retrieved from current, legitimate evidence.
 
-The working actor candidate was Qwen3.8-27B in Claude Code. A judge could use the
-same model family, but receive **privileged information**: historical findings,
-discussion and later evidence withheld from the acting reviewer. Those were design
-candidates, not exercised configurations or a claim that the judge was already
-reliable.
+The initial responsibility is review, not repair. The agent may investigate in
+isolated scratch space. It must not edit the authoritative change, approve it or
+merge it. A good finding need not prescribe the single best fix.
 
-The first research pass inspected our material and existing task machinery. It
-helped distinguish packaging a task from judging a review, but moved too quickly
-from that inspection into a proposed implementation.
+## One review that changed the reward question
 
-## 13 September, 5:42–5:58 PM — correct the research, then the design
+A historical export workflow used a small marker to control retries. In one
+failure path, an unreadable or malformed marker could leave later attempts stuck.
 
-I pushed back on that first pass. We should not learn every lesson by repeating
-mistakes other teams have already recorded. The next pass examined public reviewer
-implementations, evaluation methods, data-selection problems and operational
-experience. The earlier recommendation was superseded rather than left alongside
-the revised one as an equally current plan.
+Qwen identified the problem and ran a reproduction. But its review also offered
+an optional alternative: instead of repairing the retry behavior, emit a clearer
+diagnostic. Logging would make the failure easier to understand; by itself it
+would not make the export recover.
 
-The most useful outcome was not a larger reading list. It was a better ordering of
-the decisions that could invalidate the experiment.
+*This is a simplified description of an internal historical case, not a quotation
+of the review or a claim about the current deployed system.*
 
-### A PR is not yet a task
+That produced a consequential question. Should a correct, actionable diagnosis
+with an inadequate optional suggestion rank below saying nothing?
 
-One PR can contain several revisions and several review rounds. A comment can be
-correct about an earlier revision and wrong about the final merged version. The
-task must identify the **review opportunity**: the exact code being reviewed, the
-comparison base, whether the requested review is full or incremental, and what
-information was available then.
+A strict interpretation of the proposed penalty would have done exactly that.
+I decided it was the wrong ordering for the reviewer we want. The diagnosis still
+helps. The inadequate alternative should reduce its credit, but should not
+automatically erase its value. An instruction genuinely opposing the accepted
+behavior remains a different, more serious error.
 
-Later fixes and explanations can help establish the assessment standard. They must
-not quietly become information the reviewer had before making its decision.
-Blocking the internet is not sufficient if the workspace still contains future
-commits or answer-bearing files.
+For this three-issue reference, the revised policy produced:
 
-The environment should nevertheless be useful. Removing the surrounding code just
-to simplify isolation could remove the very evidence needed to understand a
-company-specific issue. The target is a time-correct working environment, not an
-uninformative one.
+| Review variant | Score |
+| --- | ---: |
+| Correct diagnosis, without the inadequate alternative | 1/3 |
+| Correct diagnosis, with the inadequate optional substitute | 1/6 |
+| Empty review | 0 |
 
-### Historical authority is different from historical completeness
+The two diagnosis variants were each graded twice with the same result. The empty
+score follows the unchanged deterministic calculation and was checked offline.
+A broader fixed panel covered eight inputs with two judgments each, including
+genuinely opposing advice; all repeat pairs agreed on credit and error categories.
+These are **retained reviews and labeled controls**, not sixteen new independent
+reviews or proof of universal judge reliability.
 
-A strong review followed by careful discussion and a confirmed correction may be
-better evidence than a smaller judge's fresh attempt to reconstruct the whole
-investigation. The proposed division of labor is to establish that evidence once,
-then let the judge apply it repeatedly.
+The new rule was adopted for subsequent work. Original grades and the unqualified
+checkpoint were preserved.
 
-But two mistakes sit on opposite sides of this approach. Treating every historical
-comment as truth would reproduce false alarms. Treating the historical comments as
-an exhaustive answer key would penalize an agent for finding a real additional
-problem.
+The lesson is larger than this fraction: **the judge cannot decide our product
+values for us.** Better instructions cannot resolve a reward policy whose desired
+ordering has not been made clear.
 
-We therefore need to preserve what the history actually established: accepted
-defect, refuted allegation, partially correct explanation, intentional exception,
-deferred fix or unresolved disagreement. A closed thread alone does not settle
-these distinctions. Nor does a high severity label or agreement between two bots.
+## How the learning setup works
 
-There is a further time distinction: a later conversation can reveal a fact that
-was already true, or create a new team decision. The latter does not automatically
-make the earlier reviewer wrong.
+<figure>
+<svg width="360" viewBox="0 0 360 316" style="margin: 0 auto" role="img" aria-labelledby="review-flow-title review-flow-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="review-flow-title">The reviewer and judge see different evidence</title>
+<desc id="review-flow-desc">Historical work becomes a frozen task. The reviewer produces a captured review. The judge compares that review with private historical evidence. Training uses eligible reviewer trajectories and rewards.</desc>
+<g fill="none" stroke="#000" stroke-width="1">
+<rect x="20" y="1" width="320" height="50"/><rect x="20" y="81" width="320" height="50"/>
+<path d="M180 51 V75 M175 68 L180 75 L185 68 M180 131 V145 H95 V157 M90 150 L95 157 L100 150"/>
+<rect x="10" y="163" width="170" height="58"/><rect x="90" y="257" width="180" height="58"/>
+<path d="M95 221 V240 H180 V251 M175 244 L180 251 L185 244 M275 221 V240 H180"/>
+</g>
+<g fill="#000" font-family="ui-monospace,monospace" text-anchor="middle" font-size="14">
+<text x="180" y="23">Frozen task</text><text x="180" y="41" font-size="12">Code + allowed context</text>
+<text x="180" y="103">Reviewer</text><text x="180" y="121" font-size="12">No historical answers</text>
+<text x="95" y="185">Captured review</text><text x="95" y="206" font-size="12">Fixed, reusable output</text>
+<text x="275" y="185">Private history</text><text x="275" y="206" font-size="12">Findings + discussion</text>
+<text x="180" y="279">Judge</text><text x="180" y="300" font-size="12">Meaning + fixed scoring</text>
+</g>
+</svg>
+<figcaption>The task describes the work and evidence; profiles describe the agents. Collection can stop at the captured review. Training additionally requires rewards and eligible reviewer trajectories.</figcaption>
+</figure>
 
-### A reward needs to order reviews correctly
+The preparation starts with a **review opportunity**, not merely a pull-request
+number. One PR can contain several revisions and review rounds. We pin the code
+being reviewed, its comparison base, the requested scope and an information cutoff.
 
-The current proposal is an agent judge using a graded rubric, with deterministic
-aggregation into a scalar reward. It should assess whether a finding identifies
-the problem, gets its conditions and consequences right, locates it usefully and
-communicates its importance. False allegations and duplicates are quality costs.
-Polished prose cannot compensate for a central falsehood.
+The compiler then prepares the source snapshots, diff, permitted context and
+private historical records. This is mainly mechanical work. We do not want
+task creation to require somebody to write a bespoke answer key for every PR.
+Interpreting evidence is a separate responsibility; ambiguous cases still need
+qualification or exclusion.
 
-There is **no efficiency penalty in this experiment's proposed reward**. First we
-need to know whether it measures review quality.
+The reviewer gets a useful environment without the answers. Later reviews,
+fixes and explanations stay private. Blocking the internet alone is insufficient:
+a local Git store can still contain future commits. Conversely, stripping away
+all surrounding code would manufacture a weak baseline. The goal is sufficient,
+time-correct evidence.
 
-Calibration means checking meaningful contrasts. Correcting a wrong condition
-should improve the score. Adding an unsupported allegation should worsen it.
-Equivalent wording should receive approximately equivalent credit. A partially
-correct review should be distinguished from both a correct one and an incorrect
-one.
+The current reviewer uses **Qwen3.8-27B in Claude Code**. The selected judge uses
+**Kimi K3**, with a shared historical-matching policy. They have separate execution
+roles. Only eligible, freshly generated reviewer data contributes to the on-policy
+update; the judge's text is not mixed into the actor's training data.
 
-We also need to separate two kinds of variation. Repeated actor runs tell us how
-the reviewer varies. Repeated grading of the *same review* tells us how the judge
-varies. Different rewards are not evidence of a useful learning signal if they
-mostly reflect grading noise. None of this calibration has been demonstrated for
-our proposed setup yet.
+The [method notes](/training-a-code-reviewer-we-actually-use/method/) explain the
+task, profiles, output contract, scoring and evaluation boundaries in more detail.
 
-### Submission is a contract, not just a final paragraph
+## What the experiments have actually taught us
 
-The preferred output design became one structured `submit_review` call containing
-the final findings, including an empty list when appropriate. The submission should
-be validated and recorded before the episode ends. Publishing comments to GitHub
-is a separate operation.
+### Observe reviews before perfecting their scores
 
-This has a concrete public precedent: Canonical's
-[submission tool](https://github.com/canonical/code-review-harness/blob/15b2e1279a2f88d79de6fc1fb8c1ead48e4c7a7e/packages/core/src/lib/createSubmitReviewTool.ts)
-uses an output schema, awaits the sink and returns a termination signal. That is a
-reusable mechanism, not a reason to inherit every other policy in the harness.
-For an initial generator comparison, retaining its native file output may be
-quicker than replacing a working interface before we have tested its substance.
+We spent too long preparing to measure a distribution we had barely observed.
+Some integration repairs were necessary, but that did not make the sequence
+efficient. Baseline collection and judge qualification should have progressed
+independently.
 
-## 13 September, 7:00–7:22 PM — try existing task generators
+The first runs contained missing dependencies, investigations that never submitted
+a review, and completed empty reviews. Those are different outcomes.
+An incomplete run is not an empty review. A missing build tool is not evidence
+that a model needs company-specific training.
 
-The next idea was to stop designing everything in the abstract: find existing
-Harbor task generators, give a few of them our material, and inspect what they
-produce. A Harbor task packages the instruction, environment and verification
-needed to run an agent on a particular situation. Producing that package is a
-necessary operational step; it does not establish that the task teaches the right
-behavior.
+### A cleaner instruction is not automatically a better reviewer
 
-The public-source investigation produced two leading candidates and a fallback.
-These are **source-inspected candidates, not implementations we have successfully
-run**.
+A matched development campaign compared our baseline instructions with a
+diagnosis-only variant across five cases, with four planned attempts per case
+and arm.
 
-**AACR-Bench Harbor** is the most concrete compiler route. Its
-[adapter](https://huggingface.co/datasets/osolmaz/aacr-bench-harbor/blob/5fe5b028ed6a63d9ff04c2fe2f94526181b1b142/src/aacr_bench_harbor/adapter.py)
-turns pinned review records and repository material into Harbor tasks. Its
-[verifier](https://huggingface.co/datasets/osolmaz/aacr-bench-harbor/blob/5fe5b028ed6a63d9ff04c2fe2f94526181b1b142/src/aacr_bench_harbor/task-template/tests/verifier.mjs)
-matches submitted findings to reference comments and computes an F1 score.
-That gives partial credit for recovering references, but it is not our complete
-quality rubric: an additional valid finding need not match a reference. Our own
-records would also need to meet its input and repository-materialization contract.
+Each arm produced 17 captured reviews: ten empty and seven nonempty. There were
+six failures among the forty planned slots; one occurred before model inference.
+We did not replace failures with convenient successful draws.
 
-**LangChain's eval-engineering workflow** is the more agent-assisted route.
-LangChain describes constructing company-specific review tasks from historical
-feedback, including tenant constraints and internal locking conventions. Its
-[ReviewBench report](https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench)
-describes frozen PR context, repository access and grading that allows valid
-findings beyond the curated baseline. The released
-[authoring skill](https://github.com/langchain-ai/langchain-skills/tree/b7a2a8fc363d1711456f83d24230535c9fff93eb/config/skills/eval-engineering)
-is a workflow for an agent, not a deterministic PR importer or a release of the
-company's private review corpus. Reuse terms need checking before vendoring it.
+The diagnosis-only instruction sometimes reduced unwanted repair advice.
+It did **not establish better defect detection overall**, so we kept the baseline.
+These are small, adaptively selected development cases, not an accuracy estimate
+for all Synth PRs. “Nonempty” is an output category, not a quality judgment.
 
-**Harbor's own create-task and RewardKit workflows** provide a less specialized
-alternative for authoring tasks and graded verifiers. The
-[published skills](https://github.com/harbor-framework/harbor/tree/09e555a148f7c0c9995341513efda18449645a5e/skills)
-offer reusable structure; they do not supply our historical evidence or establish
-that our review rubric is calibrated.
+### Reference agreement and useful review can diverge
 
-We also found a useful near-match:
-[SWE-Review's generator](https://github.com/LegoX/SWE-Review/blob/95b652e095e5ac8f16f08ae52fd3b26513c56097/scripts/data_pipeline/generate_review_tasks.py).
-It genuinely produces review tasks, but its verifier scores whether a patch-fix
-decision matches a stored outcome. That is a different target from rewarding the
-quality of individual findings. A project can have the right task format and still
-optimize the wrong responsibility for us.
+In another historical case, Qwen reproduced a conflict between a newly introduced
+interface and an earlier validation stage. The finding was absent from the selected
+historical reviews. A separate source audit supported the bounded claim, and I
+accepted it as useful.
 
-No generator was installed or exercised as part of this investigation. No reviewer
-training occurred.
+Our historical-only score would not reward it.
 
-## The next experiment
+That is a real limitation of the measurement, not permission to quietly change
+the reference after seeing an answer. We kept the original assessment and recorded
+the usefulness judgment separately. Whether optimizing that proxy improves the
+reviewer we want remains an empirical question.
 
-The proposed next step is **one frozen review episode through a concrete compiler
-and an agent-assisted authoring route**, using comparable actor-visible material
-and the same qualified historical evidence. A released public task can provide an
-installation smoke test; it cannot substitute for testing our own material.
+### Repeatability is necessary, not sufficient
 
-Start with each implementation's native behavior. Record what had to change:
-configuration, an input adapter, the harness, or the judge. Replacing most of an
-implementation would not count as it working out of the box.
+An earlier judge configuration gave the same retained correct review both +1 and
+−1 across repeats. It had inferred a contradiction that the review did not state.
+That is judge variation, not useful variation in the reviewer's behavior.
 
-The comparison has four gates:
+We compared judges using the same saved reviews, supplemented by controls that
+isolate specific distinctions. Passing obvious controls did not excuse failures
+on natural outputs. Nor would consistently applying the wrong policy make a
+judge good. The optional-remedy example above required a policy decision as well
+as a reliable implementation.
 
-1. **Operation:** can the generated task run through the intended execution path
-   and preserve the submission and grading evidence?
-2. **Meaning:** does it present a realistic review opportunity with enough context,
-   no historical-answer leakage, and a defensible assessment standard?
-3. **Reward:** do clearly better reviews receive better scores, consistently?
-4. **Learning opportunity:** does the actual actor make meaningful mistakes, with
-   reward variation corresponding to those mistakes rather than judge noise?
+## The next result worth reporting
 
-Only after one task survives those checks should we expand to contrasting episodes
-and repeat model trials. Before optimization, we need a protected evaluation split
-that keeps related revisions and shared defects from crossing between training
-and test. A task repeatedly used to tune the judge or choose the harness is part
-of development, not an untouched final exam.
+The training canary established actual updates, successor sampling and saved
+checkpoints. It has not established improved reviewing.
 
-The repository mix, final judge, exact rubric, training settings and deployment
-choice remain open. We have made the next uncertainty smaller. We have not yet
-resolved it.
+The next decisive result is a comparison of original and trained weights under
+the same competent harness and information access, followed by protected evaluation
+and actual team use. The first learning material is narrow; a few successful
+internal cases would not establish company-wide expertise.
 
-## How this record will develop
+We need enough real updates to investigate learning, not a permanently tiny
+training smoke test. But scale should follow credible tasks and rewards.
+More optimization against the wrong preference would move us faster in the wrong
+direction.
 
-The current-status paragraph will change as evidence changes. Dated entries will
-preserve the important decisions, failed approaches and corrections. When there
-are experiments, an entry should include the hypothesis, setup, representative
-behavior, result and what that result does—and does not—establish.
+Success is a reviewer whose findings we repeatedly want to read, with evidence
+that training helped produce that behavior. That is the result still to earn.
 
-This first entry was assembled from dated working discussions and source
-inspection conducted with coding agents. It is an edited account, not a raw chat
-transcript or an independently reproduced benchmark report. Private repository
-material and internal discussions are not published here; public examples and
-reusable artifacts can be added when cleared for release.
+---
 
-The final criterion remains unchanged: **did we build a trained reviewer that we
-actually choose to use?**
+This is an edited account of work conducted with coding agents, checked against
+saved conversations, run reports and retained artifacts. Internal code, credentials,
+raw conversations and private artifact locations are not published. It is not an
+independently reproduced benchmark report.
+
+The first public version stopped at the September 13 research stage. This revision
+replaces that stale “current status,” separates the method from the chronology,
+and makes the observed limitations explicit. The
+[development record](/training-a-code-reviewer-we-actually-use/progress/) preserves
+the sequence and corrections.
