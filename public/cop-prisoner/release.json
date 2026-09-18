@@ -1,12 +1,12 @@
 {
-  "prepared_at_utc": "2026-09-13T18:05:18.490686+00:00",
+  "prepared_at_utc": "2026-09-18T09:12:04.777980+00:00",
   "status": "Research checkpoint; not submitted to arXiv",
-  "publication_date": "2026-09-13",
+  "publication_date": "2026-09-18",
   "chapters": 8,
   "source_parts": 48,
-  "pages": 136,
+  "pages": 124,
   "figures": 9,
-  "math_formulas": 4540,
+  "math_formulas": 4015,
   "pdf_overfull_warnings": [],
   "companions": {
     "delivery_time": {
@@ -15,7 +15,7 @@
       "source_zip": "delivery-time-source.zip",
       "pages": 8,
       "math_formulas": 174,
-      "pdf_sha256": "784e9c6e2468e9671d19358ec02948db47a714988cc35b79973dec509810a77c",
+      "pdf_sha256": "dd6a5bfdbb1f01282ebc83a8f2371f6ea0ae0d27f4e0c1e7e3fb7c14a1bea80f",
       "standalone_source_recompiled": true,
       "text_matches_published_pdf": true,
       "no_overfull_boxes": true,
@@ -34,12 +34,12 @@
   },
   "files": {
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 904256,
-      "sha256": "b2704642cf42ef83b788ace2742ec2068487825050ca8e68eea95a7c6377f9bc"
+      "bytes": 861878,
+      "sha256": "e71fcee0263a9c601ec506750ae62e0416d3c2f2064aad8f51ae5e604ba0914e"
     },
     "manuscript-source.zip": {
-      "bytes": 282291,
-      "sha256": "3c8a7ab84e48cf0d549a1b50273f506d8737ae5271a017c007229cc297a3cb4f"
+      "bytes": 270900,
+      "sha256": "da20c879fb71be39bcb76a29b15a1182e5202a5eea64dab4f645c2ea44f8561d"
     },
     "lean-proofs.zip": {
       "bytes": 29438,
@@ -50,8 +50,8 @@
       "sha256": "16341b6ea64087f99d41c8cbea5ab8453a03173e81c4bbee8253c4d7e3137d3b"
     },
     "research-sources.zip": {
-      "bytes": 104679762,
-      "sha256": "159a27b4f8ccf8540a0f061b03fe65e45d3338da18cf22153f5ccbf527db3934"
+      "bytes": 104748582,
+      "sha256": "18aa95940691fd7412ea2040c06ed179ca3bab29a7377b1558b8b74bc4076302"
     },
     "finite-strategy-certificates.zip": {
       "bytes": 104582732,
@@ -67,21 +67,21 @@
     },
     "delivery-time-companion.pdf": {
       "bytes": 287199,
-      "sha256": "784e9c6e2468e9671d19358ec02948db47a714988cc35b79973dec509810a77c"
+      "sha256": "dd6a5bfdbb1f01282ebc83a8f2371f6ea0ae0d27f4e0c1e7e3fb7c14a1bea80f"
     },
     "delivery-time-source.zip": {
-      "bytes": 10822,
-      "sha256": "9fed190625239eaeaa7de5c7d54b9d4d3906ffffee810dd6c24de86a5df6a3c9"
+      "bytes": 10821,
+      "sha256": "480b5a6a7db18199b1e2230b2718c00455c1eb534601634e6276e578e758d38e"
     }
   },
   "assets": {
     "delivery-time-companion.pdf": {
       "bytes": 287199,
-      "sha256": "784e9c6e2468e9671d19358ec02948db47a714988cc35b79973dec509810a77c"
+      "sha256": "dd6a5bfdbb1f01282ebc83a8f2371f6ea0ae0d27f4e0c1e7e3fb7c14a1bea80f"
     },
     "delivery-time-source.zip": {
-      "bytes": 10822,
-      "sha256": "9fed190625239eaeaa7de5c7d54b9d4d3906ffffee810dd6c24de86a5df6a3c9"
+      "bytes": 10821,
+      "sha256": "480b5a6a7db18199b1e2230b2718c00455c1eb534601634e6276e578e758d38e"
     },
     "explorer-graphs.json": {
       "bytes": 497,
@@ -128,8 +128,8 @@
       "sha256": "0b69e018e2b8fed40d6353245adf745bf107db6244fc536a4d3d660b66a056ba"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 904256,
-      "sha256": "b2704642cf42ef83b788ace2742ec2068487825050ca8e68eea95a7c6377f9bc"
+      "bytes": 861878,
+      "sha256": "e71fcee0263a9c601ec506750ae62e0416d3c2f2064aad8f51ae5e604ba0914e"
     },
     "lean-proofs.zip": {
       "bytes": 29438,
@@ -208,16 +208,16 @@
       "sha256": "16341b6ea64087f99d41c8cbea5ab8453a03173e81c4bbee8253c4d7e3137d3b"
     },
     "manuscript-source.zip": {
-      "bytes": 282291,
-      "sha256": "3c8a7ab84e48cf0d549a1b50273f506d8737ae5271a017c007229cc297a3cb4f"
+      "bytes": 270900,
+      "sha256": "da20c879fb71be39bcb76a29b15a1182e5202a5eea64dab4f645c2ea44f8561d"
     },
     "references.bib": {
       "bytes": 1400,
       "sha256": "0b43cd66320405e29b94b85e314c87fcb4b3cdfc95bce59b206aef729351c149"
     },
     "research-sources.zip": {
-      "bytes": 104679762,
-      "sha256": "159a27b4f8ccf8540a0f061b03fe65e45d3338da18cf22153f5ccbf527db3934"
+      "bytes": 104748582,
+      "sha256": "18aa95940691fd7412ea2040c06ed179ca3bab29a7377b1558b8b74bc4076302"
     }
   }
 }
