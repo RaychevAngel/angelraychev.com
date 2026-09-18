@@ -50,8 +50,8 @@
       "sha256": "6e9a5fbc9f6fb4f4ab08abf12a7ba9125c6bd43f9e002493a50aa8f13ef37feb"
     },
     "research-sources.zip": {
-      "bytes": 104825683,
-      "sha256": "2af0303cc17c8521c106cda43db3a86b8f8f5f617952c94ee6753b31e6d575ab"
+      "bytes": 104825838,
+      "sha256": "8cdf8ad2866ddc443e4ab89deb1f69ab2626569dd0f3a5cbad7b1e4094bec2e9"
     },
     "finite-strategy-certificates.zip": {
       "bytes": 104582732,
@@ -240,8 +240,8 @@
       "sha256": "20247da1ec8d23e0849670adac957d9377308c1334d08a6a8845d541356280d5"
     },
     "research-sources.zip": {
-      "bytes": 104825683,
-      "sha256": "2af0303cc17c8521c106cda43db3a86b8f8f5f617952c94ee6753b31e6d575ab"
+      "bytes": 104825838,
+      "sha256": "8cdf8ad2866ddc443e4ab89deb1f69ab2626569dd0f3a5cbad7b1e4094bec2e9"
     }
   }
 }
