@@ -1,12 +1,17 @@
 {
-  "verified_at": "2026-09-13T14:07:06.232349+00:00",
+  "verified_at": "2026-09-18T10:02:04.474029+00:00",
   "toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "source_sha256": {
-    "Audit.lean": "52da6883c40da7b3c8ad2df7a4f77e4432a898ac3c7e93c54d4c6c75f1be6b56",
+    "Audit.lean": "949a1e38b8d9ee3c799136bff2c3dee25cff18a10da5856c2b7d86891482dc1f",
     "CampingObstruction.lean": "230998b06688b2ba4e742fee61c37b36243b346b2b573d3057def78f7910781c",
     "DeliveryGame.lean": "e9024fcc8b0ece17f925ab6f8c8909adbb87b711dcf453f90fb27ce058cbc7e2",
     "DenseCounting.lean": "afe0b3eddb6d9dd40b580afb5a3db82d0e100b279e591976b449f1253e6e9733",
     "ElevenVertexDense.lean": "88d54e0d578a32e18f07bec24259c6c8c60fb7620b1e2de561cd6b420c802b56",
+    "ExclusionCertificates.lean": "a4125681521bc9099ee25b6db86be94f4139925a26d2021bbd78f269ebb936ce",
+    "Extremal.lean": "ef50058ad1ba3c9bcdb87f4332e1e030881a880c5a057eeeccc93682e3f5c1f5",
+    "ExtremalExamples.lean": "b985c63a313da9c1611e8951c8de320842165c75580d33cf2f04b14b4053a113",
+    "FiniteGame.lean": "2fa4f564c701cf87e0e4b96b4862e0d84875e7ab01e61fa53ca3ff33dc1bae44",
+    "GuideAttachment.lean": "f4be947fd16f0225769f1521464c4c2cc7d8b0523ed86051eac8b8f3c9384c86",
     "ProtectedRouting.lean": "af7717615600f7d042f2e4f4b515c11cc67c72d272d0e8f9db35c42db8af0cb7",
     "RobustLayers.lean": "b878a6372018a5ff4aa59764d80f33a81b1b2c11f8841e43a563d375954e3d62",
     "RobustTwoMove.lean": "fb662a539af1d65808a7436a0608408a016b01a3416c68972a565525e611eea9",
@@ -14,83 +19,120 @@
     "SmallDenseEnvelopes.lean": "1271ed32095e7eca909a9484530d9411d726333c187a8224ab2e04ee42462fb5",
     "StagedEnvelopes.lean": "0e751c0ff104cbde1faa99cced07a5e3c0b05ad644ca539a54d519c343c8370e",
     "TwelveVertexCertificate.lean": "24e7ac5448b04e5572f03a00c3440458fc923fba12342ca637a73abe099b7750",
+    "VertexBound.lean": "1ec5f62555b41c2baea60d3557b5cb07010157655d8774963804acf4064fa731",
     "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
-    "check.py": "1d8dbf7685c9a96c7434fb50d4659ba96dee104abe656d9e8252110142fc765f",
-    "README.md": "cc19d57e872d5dac909e70f994a365480708dbe4787eadbf310a934c61389757",
+    "check.py": "41763921f06b0c3faca04f714135cbdb89f1438acf006d06c119eea3e9b3fb6d",
+    "README.md": "f8638cb7418ed642852e0c95e62894496792243945ebb74577607922c05371cb",
     "generate_finite_certificate.py": "b2b479cf61643336b3c461684499c2f89672bc184d678064c16d1574a0b4613e"
   },
   "modules": [
     {
       "module": "DeliveryGame",
-      "seconds": 2.866,
+      "seconds": 2.564,
       "exit_code": 0,
       "output": ""
     },
     {
       "module": "SafeBranching",
-      "seconds": 0.272,
+      "seconds": 0.293,
       "exit_code": 0,
       "output": "/Users/angel/code/math/cop-prisoner/lean/SafeBranching.lean:21:29: warning: Variable name `c` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
     },
     {
       "module": "CampingObstruction",
-      "seconds": 0.275,
+      "seconds": 0.286,
       "exit_code": 0,
       "output": ""
     },
     {
       "module": "TwelveVertexCertificate",
-      "seconds": 5.981,
+      "seconds": 6.294,
       "exit_code": 0,
       "output": "'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n"
     },
     {
       "module": "DenseCounting",
-      "seconds": 0.443,
+      "seconds": 0.432,
       "exit_code": 0,
       "output": "'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
     {
       "module": "ProtectedRouting",
-      "seconds": 0.303,
+      "seconds": 0.287,
       "exit_code": 0,
       "output": "'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
     {
       "module": "RobustTwoMove",
-      "seconds": 0.287,
+      "seconds": 0.284,
       "exit_code": 0,
       "output": "'Delivery.RobustTwoMove.envelope_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
     {
       "module": "RobustLayers",
-      "seconds": 0.302,
+      "seconds": 0.293,
       "exit_code": 0,
       "output": "'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
     {
+      "module": "GuideAttachment",
+      "seconds": 0.318,
+      "exit_code": 0,
+      "output": "'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
       "module": "StagedEnvelopes",
-      "seconds": 0.316,
+      "seconds": 0.298,
       "exit_code": 0,
       "output": "'Delivery.StagedEnvelopes.envelope_winning' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
     {
       "module": "ElevenVertexDense",
-      "seconds": 0.807,
+      "seconds": 0.8,
       "exit_code": 0,
       "output": "'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.arc_count' does not depend on any axioms\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n"
     },
     {
       "module": "SmallDenseEnvelopes",
-      "seconds": 23.441,
+      "seconds": 23.703,
       "exit_code": 0,
       "output": "'Delivery.SmallDenseEnvelopes.masks_match_lists' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n"
     },
     {
-      "module": "Audit",
-      "seconds": 0.294,
+      "module": "FiniteGame",
+      "seconds": 0.349,
       "exit_code": 0,
-      "output": "'Delivery.winning_play_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.rankCertificate_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.safe_branching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.bootstrap_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.camping_predecessor_obstruction' does not depend on any axioms\n'Delivery.undirected_no_indirect_guarantee' does not depend on any axioms\n'Delivery.TwelveVertex.certificate_valid' does not depend on any axioms\n'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n"
+      "output": "'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n"
+    },
+    {
+      "module": "Extremal",
+      "seconds": 0.309,
+      "exit_code": 0,
+      "output": "'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ExclusionCertificates",
+      "seconds": 0.681,
+      "exit_code": 0,
+      "output": "'Delivery.ExclusionCertificates.upper_from_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "VertexBound",
+      "seconds": 0.352,
+      "exit_code": 0,
+      "output": "'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ExtremalExamples",
+      "seconds": 0.302,
+      "exit_code": 0,
+      "output": "'Delivery.ExtremalExamples.twelve_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Audit",
+      "seconds": 0.277,
+      "exit_code": 0,
+      "output": "'Delivery.winning_play_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.rankCertificate_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.safe_branching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.bootstrap_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.camping_predecessor_obstruction' does not depend on any axioms\n'Delivery.undirected_no_indirect_guarantee' does not depend on any axioms\n'Delivery.TwelveVertex.certificate_valid' does not depend on any axioms\n'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     }
   ],
   "all_passed": true,

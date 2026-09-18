@@ -8,6 +8,13 @@ import RobustTwoMove
 import RobustLayers
 import ElevenVertexDense
 import SmallDenseEnvelopes
+import StagedEnvelopes
+import GuideAttachment
+import FiniteGame
+import Extremal
+import ExclusionCertificates
+import VertexBound
+import ExtremalExamples
 
 #print axioms Delivery.winning_play_delivers
 #print axioms Delivery.rankCertificate_actual_delivery
@@ -36,3 +43,19 @@ import SmallDenseEnvelopes
 
 #print axioms Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery
 #print axioms Delivery.SmallDenseEnvelopes.exact_endpoint_counts
+
+#print axioms Delivery.StagedEnvelopes.envelope_actual_delivery
+#print axioms Delivery.GuideAttachment.safe_entry
+#print axioms Delivery.GuideAttachment.attachment_actual_delivery
+#print axioms Delivery.FiniteGame.winningRegion_actual_delivery
+#print axioms Delivery.FiniteGame.losingRegion_not_winning
+#print axioms Delivery.FiniteGame.losingRegion_not_guaranteed
+#print axioms Delivery.Extremal.score_le_missing
+#print axioms Delivery.Extremal.maximum_unique
+#print axioms Delivery.ExclusionCertificates.graph3_complete
+#print axioms Delivery.ExclusionCertificates.graph3_camping
+#print axioms Delivery.ExclusionCertificates.three_vertex_upper
+#print axioms Delivery.VertexBound.live_source_two_neighbors
+#print axioms Delivery.VertexBound.vertex_upper
+#print axioms Delivery.ExtremalExamples.maximum_twelve_twentyfour
+#print axioms Delivery.ExtremalExamples.eleven_score
