@@ -18,8 +18,9 @@ if 'version 4.33.1' not in version:
     raise SystemExit(f'Wrong toolchain: {version}')
 modules=['DeliveryGame','SafeBranching','CampingObstruction','TwelveVertexCertificate',
          'DenseCounting','ProtectedRouting','RobustTwoMove','RobustLayers','GuideAttachment',
-         'StagedEnvelopes','ElevenVertexDense','SmallDenseEnvelopes','FiniteGame','Extremal',
-         'ExclusionCertificates','VertexBound','ExtremalExamples','Audit']
+         'StagedEnvelopes','ElevenVertexDense','SmallDenseEnvelopes','FiniteGame',
+         'SemanticCompleteness','Extremal','ExactScoreCertificates','ExclusionCertificates',
+         'VertexBound','DenseZero','ExtremalExamples','Audit']
 env=dict(os.environ)
 env['LEAN_PATH']=str(HERE)+(os.pathsep+env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
 records=[]

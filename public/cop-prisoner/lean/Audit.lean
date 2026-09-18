@@ -15,6 +15,9 @@ import Extremal
 import ExclusionCertificates
 import VertexBound
 import ExtremalExamples
+import SemanticCompleteness
+import ExactScoreCertificates
+import DenseZero
 
 #print axioms Delivery.winning_play_delivers
 #print axioms Delivery.rankCertificate_actual_delivery
@@ -59,3 +62,21 @@ import ExtremalExamples
 #print axioms Delivery.VertexBound.vertex_upper
 #print axioms Delivery.ExtremalExamples.maximum_twelve_twentyfour
 #print axioms Delivery.ExtremalExamples.eleven_score
+
+#print axioms Delivery.SemanticCompleteness.winning_eventually
+#print axioms Delivery.SemanticCompleteness.losingRegion_never_delivers
+#print axioms Delivery.SemanticCompleteness.eventual_iff_finite
+#print axioms Delivery.SemanticCompleteness.guaranteed_iff_actual
+#print axioms Delivery.ExactScoreCertificates.exact_score
+#print axioms Delivery.ExactScoreCertificates.maximum_from_classification
+#print axioms Delivery.ExactScoreCertificates.FourVertex.winning_valid
+#print axioms Delivery.ExactScoreCertificates.FourVertex.losing_closed
+#print axioms Delivery.ExactScoreCertificates.FourVertex.score_two
+#print axioms Delivery.ExactScoreCertificates.FourVertex.mixed_outcomes
+#print axioms Delivery.DenseZero.arc_bound_of_indirect
+#print axioms Delivery.DenseZero.missing_count_lower_of_indirect
+#print axioms Delivery.DenseZero.zero_above_dense_boundary
+#print axioms Delivery.DenseZero.zero_at_budget
+
+#print axioms Delivery.DenseZero.initialGraph_arcCount
+#print axioms Delivery.DenseZero.maximum_zero
