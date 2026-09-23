@@ -2,6 +2,8 @@
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
+const introduction = "I'm an ML research engineer at SynthLabs, working on building and training AI agents.";
+
 // Unwritten topics: keep this backlog in source, but do not render it on the site.
 const ideas = [
   "AI",
@@ -75,7 +77,8 @@ if (ungrouped.length) {
   throw new Error(`Assign new articles to a homepage group: ${ungrouped.map((entry) => entry.href).join(", ")}`);
 }
 ---
-<Base home={true}>
+<Base home={true} description={introduction}>
+  <p class="intro">{introduction}</p>
   {sections.map((section) => (
     <section aria-labelledby={section.id}>
       <h2 id={section.id}>{section.title}</h2>
@@ -92,5 +95,6 @@ if (ungrouped.length) {
 </Base>
 
 <style>
-  section:first-child h2 { margin-top: 0; }
+  .intro { margin-bottom: 48px; }
+  section:first-of-type h2 { margin-top: 0; }
 </style>
