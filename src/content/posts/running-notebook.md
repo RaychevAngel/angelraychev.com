@@ -165,7 +165,7 @@ automatically.
 
 The session count does not describe the whole load. A time trial, relaxed fast
 repetitions and an experimental sprint set can cost very different amounts. One
-recent chill day still included a short backpack run; another planned rest day
+recent chill day still included a short backpack run; my plan for another rest day
 included running to the gym and back. The label cannot erase that activity. The
 18-day structure is newly agreed; I have not yet completed a whole cycle and
 demonstrated that I can sustain it.

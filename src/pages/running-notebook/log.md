@@ -75,12 +75,12 @@ Average over all six: **32.42**. Average of the last five: **31.82**.
 
 The first was too relaxed. After that I put more deliberate attention into knee
 lift, quick leg return and posture, trying to preserve the movement through
-each repetition. The fatigue I was describing was **within a repetition**;
-I was not progressively falling apart from one repetition to the next.
+each repetition. Maintaining the movement took more effort toward the end of
+each repetition, while the later repetitions stayed closely grouped.
 
 This was quicker than the September session, but the effort and mechanical
 intent also changed. It was not a same-effort test of improved speed, nor an
-all-out 200 m trial. Estimates of a fresh maximum remain estimates.
+all-out 200 m trial.
 
 ### 1 October — VO₂, 3×800 m / 5:30
 
@@ -94,7 +94,7 @@ a different felt constraint mattered to me more than the four-second average
 alone. It still did not measure how much time I spent near maximal oxygen uptake.
 
 The first graduation gate remains a 2:40 average, without a major collapse in
-the final repetition. I have not passed it in the supplied record.
+the final repetition. I had not passed it by this log's 8 October cutoff.
 
 ### Late September — LT substitute on the outer Kezar loop
 
@@ -200,8 +200,7 @@ part of the record.
 
 The remembered 800 m race best is **2:03**. Other remembered marks include a
 56-second 400 after a 1:32 600, a 10:20 3000 and an 18:20 5000. The latter two
-were workout performances. I do not have equally precise dates for every one
-of these in the material assembled here.
+were workout performances. These remain undated references in this log.
 
 ### 19 January 2022 — the mixed-rest fast template
 
@@ -226,8 +225,8 @@ to the earlier training, rather than the current ladder.
 ### A longer-repeat reference
 
 An earlier **5×900 m** session went **2:48 · 2:48 · 2:47 · 2:49 · 2:49**,
-with recovery recalled elsewhere as about three minutes. I do not have a firm
-date in the supplied notes. It is a useful remembered benchmark, rather than
+with about three minutes of recovery. This entry remains undated. It is a useful
+remembered benchmark, rather than
 a reason to force the current 800 m recovery back to three minutes immediately.
 
 ### Running between the track years
