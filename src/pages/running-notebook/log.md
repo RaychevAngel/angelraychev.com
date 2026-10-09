@@ -193,6 +193,11 @@ the 1500, following the date on its activity entry. The
 [official federation ranking](https://bfla.org/2022-male-outside/) confirms
 the competition dates.
 
+**Update, 9 October 2026.** I recovered the organizer's record of my **18:16
+5 km personal best**, along with two childhood Kids Run results. These give
+the older history dates and results that were missing from the first version.
+They also correct the earlier description of 21 May 2022 as my first race.
+
 ### Races and time trials in 2022
 
 | Date | Event | Result | Context |
@@ -201,7 +206,7 @@ the competition dates.
 | 9 April | 800 m | 2:12 | Time trial |
 | 14 May | 1500 m | 4:29.67 | Time trial; personal best at the time |
 | 18 May | 600 m | 1:31.49 | Time trial; personal best |
-| 21 May | 1000 m | 2:42.79 | Season opener; first race ever |
+| 21 May | 1000 m | 2:42.79 | Season opener; personal best at the time |
 | 4 June | 1200 m | 3:23.71 | Time trial; slightly tired |
 | 8 June | 300 m | 39.80 | Time trial |
 | 11 June | 1500 m | 4:23.90 | National championships; personal best |
@@ -287,6 +292,15 @@ longer repetitions I want to return to, with its own surface and recovery
 conditions. The pace was about 3:42/km across six kilometres of work. It belongs
 to the earlier training, rather than the current ladder.
 
+### 10 April 2021 — 5 km personal best
+
+**18:16**, at **5kmrun in South Park, Sofia**, aged **17**, in **eleventh grade**.
+
+I finished **second overall** and first in the men's 15–19 age group.
+The [organizer's result](https://5kmrun.bg/5kmrun/result/1751) records the time
+under my participant ID, 8943. This is my **5 km PR**. The remembered 18:20
+workout remains a separate reference.
+
 ### 8 February 2021 — 5000 m records
 
 **19:16 and 19:18**.
@@ -327,6 +341,26 @@ The workout title noted **19:20 for 5K**. These 5K times were reported within
 longer mixed-pace sessions; they are not the finish times for the full listed
 distances. The notes do not preserve their exact segment boundaries or timing
 method.
+
+### Childhood — the 2 km Kids Run results
+
+These were organized Kids Run events in **South Park, Sofia**, separate from
+the 2 km efforts on my neighbourhood loop.
+
+| Date | Age | Grade | Result | Overall finish |
+| --- | ---: | --- | ---: | --- |
+| [27 February 2016](https://5kmrun.bg/kidsrun/result/13) | 12 | Sixth | 8:31 | Second |
+| [30 December 2017](https://5kmrun.bg/kidsrun/result/35) | 14 | Eighth | 8:13 | First |
+
+Both appear in the [organizer's Kids Run history](https://5kmrun.bg/kidsrun/user/8943)
+under my participant ID, 8943.
+
+### Sixth grade — the neighbourhood 2 km
+
+I clearly remember **8:33 for 2 km on the road in my neighbourhood** in
+**sixth grade, during the 2015–16 school year**, aged **12**.
+This was a separate run from the two Kids Run events above. It remains a
+personal recollection with no exact activity date recovered.
 
 ### A longer-repeat reference
 

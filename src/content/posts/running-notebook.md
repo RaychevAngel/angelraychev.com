@@ -51,18 +51,21 @@ The wider picture includes 12.00 for 100 m, 24.00 for 200 m, 52.00 for 400 m,
 become; they do not turn the present programme into simultaneous preparation for
 every distance. These are ambitions, with no completion date attached to them.
 
-Two kilometres has a particular place in the project. It was a childhood race
+Two kilometres has a particular place in the project. It was a childhood event
 distance and the length of a neighbourhood loop on which I accumulated a great
-deal of running. It is also the geometric midpoint of 800 and 5000:
+deal of running. I remember running **8:33 on that loop in sixth grade**.
+Separate Kids Run results were **8:31 at age 12** and **8:13 at age 14**.
+It is also the geometric midpoint of 800 and 5000:
 800:2000 = 2000:5000. That is a pleasing personal anchor. It does not make 2000 m a
 uniquely revealing physiological test.
 
 My old performances explain the ambition better than they establish my current
 readiness. In 2022 I raced 800 in **2:03.62** and 1500 in **4:23.90**. My 600 m
 time-trial best was **1:31.49**. The **56.05** for 400 m came after a **1:32.74**
-600 in training. A dated 2021 entry records **10:17 for 3000 m**, while **18:20
-for 5000 m** remains a remembered workout mark. They belong to different
-conditions and should retain those labels. The [historical log](/running-notebook/log/#selected-earlier-records)
+600 in training. A dated 2021 entry records **10:17 for 3000 m**. My **5 km
+personal best is 18:16**, run at South Park's 5kmrun on **10 April 2021**.
+These performances belong to different conditions and should retain those
+labels. The [historical log](/running-notebook/log/#selected-earlier-records)
 keeps the dates, sequences and surrounding circumstances.
 
 The years since were uneven. I continued running intermittently in 2023 and 2024,
