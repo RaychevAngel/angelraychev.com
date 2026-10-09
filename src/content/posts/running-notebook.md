@@ -254,6 +254,10 @@ the 2:40 average gate. After a chill day, the plan is a **5000 m time trial on
 Sunday, October 11**, then **6×200 m on Monday, October 12**. None is yet recorded
 as completed here.
 
+This is a short transition into the new cycle. After a chill day on October 13,
+the first full cycle is planned to start on October 14. Its day-16 time trial
+would be an 800 m on October 29, if the sequence holds.
+
 Those sessions ask three immediate questions:
 
 - **Can VO₂ earn its own next step?** The whole 3×800 set needs to average 2:40
