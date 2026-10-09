@@ -193,9 +193,14 @@ the 1500, following the date on its activity entry. The
 [official federation ranking](https://bfla.org/2022-male-outside/) confirms
 the competition dates.
 
+The remembered **18:20 for 5000 m** refers to the same **10 April 2021
+South Park race recorded as 18:16**. The earlier version incorrectly kept
+it as a separate undated workout.
+
 **Update, 9 October 2026.** I recovered the organizer's record of my **18:16
-5 km personal best**, along with two childhood Kids Run results. These give
-the older history dates and results that were missing from the first version.
+5 km personal best**, six earlier regular and XL races, and two childhood
+Kids Run results. These give the older history dates and results that were
+missing from the first version.
 They also correct the earlier description of 21 May 2022 as my first race.
 
 ### Races and time trials in 2022
@@ -283,6 +288,32 @@ This is a dated result, more precise than the earlier remembered 10:20. The
 entry does not specify whether it was a race, a time trial or part of a larger
 workout, so I keep that classification open.
 
+### 2020–2021 — Wizz Air Sofia Marathon, short-distance races
+
+I also ran the short-distance event at two editions of the Sofia Marathon.
+The official results list different distances for the two years:
+
+| Date | Distance in official results | Gun time | Chip time | Men's finish |
+| --- | ---: | ---: | ---: | ---: |
+| [11 October 2020](https://my.raceresult.com/160489/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en) | 10 km | 44:27 | 44:27 | 25th |
+| [10 October 2021](https://my.raceresult.com/183503/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en) | 10.5 km | 42:06 | 42:04 | 18th |
+
+The results appear under **Angel Raychev**, with bibs **3068** and **3194**.
+These are the published event distances; I have not recovered a year-specific
+course measurement that establishes a more precise length. I retain the
+2021 result as **10.5 km**, without treating it as a 10,000 m personal best.
+
+### 30 April 2021 — 5×900 m / 3 min
+
+**2:48 · 2:48 · 2:47 · 2:49 · 2:49**.
+
+Average: **2:48.2** per 900 m, recorded as a rounded **2:48** benchmark in
+the [activity](https://www.strava.com/activities/5219109304).
+The four recorded recoveries were **3:00 · 3:00 · 3:00 · 3:01**.
+This dated record replaces the earlier undated, approximate description.
+It is a historical benchmark for longer repetitions, with its recovery attached;
+it does not require the current 800 m recovery to return to three minutes immediately.
+
 ### 18 April 2021 — longer LT repetitions
 
 **3×2000 m / 2 min: 7:26 · 7:23 · 7:23**.
@@ -298,8 +329,7 @@ to the earlier training, rather than the current ladder.
 
 I finished **second overall** and first in the men's 15–19 age group.
 The [organizer's result](https://5kmrun.bg/5kmrun/result/1751) records the time
-under my participant ID, 8943. This is my **5 km PR**. The remembered 18:20
-workout remains a separate reference.
+under my participant ID, 8943. This is my **5 km PR**.
 
 ### 8 February 2021 — 5000 m records
 
@@ -342,6 +372,23 @@ longer mixed-pace sessions; they are not the finish times for the full listed
 distances. The notes do not preserve their exact segment boundaries or timing
 method.
 
+### 2015–2016 — earlier 5kmrun and XL races
+
+These results appear under my participant ID, 8943. Distances are the
+organizer's course labels; the two XL races were longer than 5 km.
+
+| Date | Course | Distance | Time | Overall finish |
+| --- | --- | ---: | ---: | ---: |
+| [18 October 2015](https://5kmrun.bg/xlrun/result/38) | Vrana Park, Sofia — XL short | 5.05 km | 24:03 | 18th |
+| [6 December 2015](https://5kmrun.bg/xlrun/result/52) | North Park, Sofia — XL short | 6.0 km | 23:51 | 5th |
+| [26 December 2015](https://5kmrun.bg/5kmrun/result/479) | Rowing Canal 2, Plovdiv | 5 km | 22:45 | 27th |
+| [9 January 2016](https://5kmrun.bg/5kmrun/result/486) | South Park, Sofia | 5 km | 22:11 | 57th |
+| [16 January 2016](https://5kmrun.bg/5kmrun/result/490) | South Park, Sofia | 5 km | 23:24 | 51st |
+| [24 September 2016](https://5kmrun.bg/5kmrun/result/640) | South Park, Sofia | 5 km | 22:32 | 43rd |
+
+The XL dates follow the Sunday event results and contemporaneous organizer
+announcements. Their profile entries show the preceding Saturdays.
+
 ### Childhood — the 2 km Kids Run results
 
 These were organized Kids Run events in **South Park, Sofia**, separate from
@@ -361,16 +408,6 @@ I clearly remember **8:33 for 2 km on the road in my neighbourhood** in
 **sixth grade, during the 2015–16 school year**, aged **12**.
 This was a separate run from the two Kids Run events above. It remains a
 personal recollection with no exact activity date recovered.
-
-### A longer-repeat reference
-
-An earlier **5×900 m** session went **2:48 · 2:48 · 2:47 · 2:49 · 2:49**,
-with about three minutes of recovery. This entry remains undated. It is a useful
-remembered benchmark, rather than
-a reason to force the current 800 m recovery back to three minutes immediately.
-
-The remembered **18:20 for 5000 m** remains an undated workout reference. The
-dated runs and within-session 5K records above do not supply its missing date.
 
 ### Running between the track years
 
