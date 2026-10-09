@@ -187,20 +187,77 @@ older records and recollections; they are not a standardized current fitness
 profile. Distances, recovery and whether something was a race or training remain
 part of the record.
 
+**Correction, 9 October 2026.** The 1500 m national-championship race was on
+11 June 2022, and the 800 m on 12 June. The first version listed 12 June for
+the 1500, following the date on its activity entry. The
+[official federation ranking](https://bfla.org/2022-male-outside/) confirms
+the competition dates.
+
 ### Races and time trials in 2022
 
 | Date | Event | Result | Context |
 | --- | --- | ---: | --- |
 | 19 February | 1500 m | 4:47 | Time trial; tired from the preceding day |
 | 9 April | 800 m | 2:12 | Time trial |
-| 21 May | 1000 m | 2:42.79 | First race at the distance |
+| 14 May | 1500 m | 4:29.67 | Time trial; personal best at the time |
+| 18 May | 600 m | 1:31.49 | Time trial; personal best |
+| 21 May | 1000 m | 2:42.79 | Season opener; first race ever |
 | 4 June | 1200 m | 3:23.71 | Time trial; slightly tired |
 | 8 June | 300 m | 39.80 | Time trial |
-| 12 June | 1500 m | 4:23.90 | National championships; personal best |
+| 11 June | 1500 m | 4:23.90 | National championships; personal best |
+| 12 June | 800 m | 2:03.62 | National championships; personal best; wet track |
 
-The remembered 800 m race best is **2:03**. Other remembered marks include a
-56-second 400 after a 1:32 600, a 10:20 3000 and an 18:20 5000. The latter two
-were workout performances. These remain undated references in this log.
+The exact 800 result replaces the earlier rounded recollection of 2:03.
+The [1500 race activity](https://www.strava.com/activities/7295748799) and
+[14 May time trial](https://www.strava.com/activities/7140332978) retain the
+precise times in their titles.
+
+### The recovered spring 2022 programme
+
+The old sixteen-week training sheet has weekdays and week numbers, but no
+calendar dates. Matching it to the dated records puts **Week 1 on 7–13 March
+2022**. Six sessions support the same starting week:
+
+| Programme week | Date | Planned session | Recorded session |
+| --- | --- | --- | --- |
+| 3 | 26 March | 4×300 m / 3 min, then 4×200 m / 90 s | Same distances, sets and recoveries |
+| 4 | 2 April | 4×300 m / 3 min, then 4×200 m / 90 s | Same distances, sets and recoveries |
+| 5 | 9 April | 800 m maximum effort | 800 m time trial, 2:12 |
+| 10 | 14 May | 1500 m maximum effort | 1500 m time trial, 4:29.67 |
+| 11 | 18 May | 600 m maximum effort | 600 m time trial, 1:31.49 |
+| 11 | 21 May | 1000 m maximum effort | 1000 m race, 2:42.79 |
+
+There is another close match on **12 March**: the sheet prescribes two sets
+of four 200s, with three minutes of recovery in the first set and 90 seconds
+in the second. My recorded repetitions were **185 m**, with those same
+recoveries. The distance difference remains part of the completed record.
+
+This gives the programme a strong inferred calendar, rather than proving that
+I completed every entry. The filled training weeks run through **Week 12,
+23–29 May**. Weeks 13–15 contain only Sunday rest entries; Week 16 is unfilled.
+The later records therefore add information the sheet does not preserve.
+The 11–12 June national championships fall in Week 14, including an 800 race
+on a Sunday still marked as rest in the sheet. My **22 June** 600 + 400 falls
+in the blank Week 16, so its recovery cannot be recovered from the similar
+600 + 400 planned for **25 May**. The **27 June** workout falls just beyond
+the sheet's sixteen-week range.
+
+### 22 June 2022 — 600 m + 400 m
+
+**1:32.74, then 56.05**.
+
+This is the exact record behind my remembered 56-second 400 after a 1:32 600.
+I was highly motivated. The recovery between
+the two efforts is not recorded here.
+
+### 27 June 2022 — 1000 m + 600 m
+
+**2:49.29, then 1:34.64**.
+
+I started the first 600 m of the 1000 at a pace aimed at 2:40, then faded badly
+over the last 400. I had slept only three hours and reported food poisoning.
+Those circumstances belong beside the times. The recovery between efforts
+is not recorded here.
 
 ### 19 January 2022 — the mixed-rest fast template
 
@@ -213,6 +270,14 @@ This is one historical reference for the current FA template: fast work followed
 by a set with shorter recovery. The 2026 programme has adopted the structure;
 that does not turn these old splits into a completed new session.
 
+### 16 June 2021 — 3000 m
+
+**10:17**, recorded in Studentski, Bulgaria.
+
+This is a dated result, more precise than the earlier remembered 10:20. The
+entry does not specify whether it was a race, a time trial or part of a larger
+workout, so I keep that classification open.
+
 ### 18 April 2021 — longer LT repetitions
 
 **3×2000 m / 2 min: 7:26 · 7:23 · 7:23**.
@@ -222,12 +287,56 @@ longer repetitions I want to return to, with its own surface and recovery
 conditions. The pace was about 3:42/km across six kilometres of work. It belongs
 to the earlier training, rather than the current ladder.
 
+### 8 February 2021 — 5000 m records
+
+**19:16 and 19:18**.
+
+These activity records are for 5000 m. They display GPS distances of 5.04 km
+and 5.08 km, but those distances were inaccurate. The recorded times are
+[19:16](https://www.strava.com/activities/4754785418) and
+[19:18](https://www.strava.com/activities/4754784817); I retain them for the
+reported 5000 m distance.
+
+### September 2020 — mixed-pace track sessions
+
+Each recorded lap was 300 m. The longer blocks were labelled VO₂max in my
+notes, with slower running between them and a slower opening and closing lap.
+Those labels describe how I organized the session, rather than measured oxygen
+uptake. The sequences below preserve every block; all paces are per kilometre.
+
+**9 September — 18 laps, 5400 m.**
+
+300 m at 4:43 → 1200 m at 3:34 → 600 m at 5:00 → 1200 m at 3:35 →
+600 m at 5:00 → 1200 m at 3:40 → 300 m at 4:40.
+
+The workout title noted a **19:50 5K personal best**, achieved incidentally.
+
+**14 September — 18 laps, 5400 m.**
+
+300 m at 4:50 → 1200 m at 3:36 → 600 m at 4:48 → 1200 m at 3:32 →
+600 m at 4:46 → 1200 m at 3:34 → 300 m at 4:53.
+
+The workout title noted another **5K personal best, 19:40**.
+
+**17 September — 21 laps, 6300 m.**
+
+300 m at 4:43 → 1500 m at 3:36 → 600 m at 4:50 → 1500 m at 3:35 →
+600 m at 4:43 → 1500 m at 3:39 → 300 m at 4:44.
+
+The workout title noted **19:20 for 5K**. These 5K times were reported within
+longer mixed-pace sessions; they are not the finish times for the full listed
+distances. The notes do not preserve their exact segment boundaries or timing
+method.
+
 ### A longer-repeat reference
 
 An earlier **5×900 m** session went **2:48 · 2:48 · 2:47 · 2:49 · 2:49**,
 with about three minutes of recovery. This entry remains undated. It is a useful
 remembered benchmark, rather than
 a reason to force the current 800 m recovery back to three minutes immediately.
+
+The remembered **18:20 for 5000 m** remains an undated workout reference. The
+dated runs and within-session 5K records above do not supply its missing date.
 
 ### Running between the track years
 

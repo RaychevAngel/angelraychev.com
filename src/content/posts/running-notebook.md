@@ -58,9 +58,12 @@ deal of running. It is also the geometric midpoint of 800 and 5000:
 uniquely revealing physiological test.
 
 My old performances explain the ambition better than they establish my current
-readiness. In 2022 I raced 800 in 2:03 and 1500 in 4:23.90. The 400 in 56 seconds
-was a training effort after a 600; the 3000 in 10:20 and 5000 in 18:20 were also
-workout marks. They belong to different conditions and should retain those labels.
+readiness. In 2022 I raced 800 in **2:03.62** and 1500 in **4:23.90**. My 600 m
+time-trial best was **1:31.49**. The **56.05** for 400 m came after a **1:32.74**
+600 in training. A dated 2021 entry records **10:17 for 3000 m**, while **18:20
+for 5000 m** remains a remembered workout mark. They belong to different
+conditions and should retain those labels. The [historical log](/running-notebook/log/#selected-earlier-records)
+keeps the dates, sequences and surrounding circumstances.
 
 The years since were uneven. I continued running intermittently in 2023 and 2024,
 including substantial long runs. The large gap was 2025: my Strava has one run
