@@ -83,7 +83,7 @@ They are not displayed. To publish one, write the Markdown file, add its group e
 and remove the corresponding backlog string.
 
 The homepage groups published articles under **AI and machine learning**, **Mathematics**,
-and **Human agency**, in the explicit reading order in `src/pages/index.astro`. Each
+**Human agency**, and **Running**, in the explicit reading order in `src/pages/index.astro`. Each
 article has one entry; papers and supporting project pages remain beneath that entry.
 Each entry shows only its linked title and date, with no subtitles or descriptions.
 When publishing an article, assign its URL to a group; a build check prevents missing or
@@ -185,9 +185,32 @@ status belongs in the prose of the piece that needs it, not as site furniture.
   `public/`,** while real static hosts do. Relevant if static HTML is ever served from
   `public/` again — dev will 404 where production works.
 
+## Running content
+
+The running section has three main entries:
+
+- `running-notebook.md`: the living 800–5000 m project, goals, current programme,
+  progression gates and decisions.
+- `what-should-a-running-workout-maximize.md`: the scientific argument and explicitly
+  proposed exposure models, with primary references.
+- `running-makes-the-city-smaller.md`: the personal essay about running and mobility.
+
+The detailed log is a supporting page at `src/pages/running-notebook/log.md`, served
+at `/running-notebook/log/`. It uses `Post.astro` directly; it is not a fourth homepage
+article or an RSS entry. Follow the existing child-page pattern for future supporting
+material rather than adding a new content type.
+
+The initial publication on 9 October 2026 includes completed sessions through
+8 October. When updating, keep future plans distinct from completed work, preserve
+the conditions behind workout comparisons, and leave historical observations available
+when the current programme changes. The LT and VO₂ ladders advance independently;
+each target is a graduation gate, not a compulsory first pace for the next structure.
+The physiological labels name intentions, not measurements inferred from split times.
+Do not publish the underlying chat archive or private research digests.
+
 ## Current state
 
-As of 13 September 2026, seven homepage entries are grouped by subject. The index
+As of 9 October 2026, ten homepage entries are grouped by subject. The index
 combines published Markdown articles with the princess and cop-prisoner project pages.
 The source-only ideas backlog remains hidden.
 
