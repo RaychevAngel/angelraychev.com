@@ -12,18 +12,47 @@ updated through **9 October**. The full cycle remains a plan; no completed full
 cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
+**LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
+maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
+shorter-recovery fast set; **TT** is a time trial; **X** is an experiment.
+These labels describe intentions, not measured internal physiological states.
+
 The larger aim is the notebook's [800+ World Athletics point profile across
 800–5000 m](/running-notebook/#the-runner-i-am-trying-to-build). The LT and VO₂
 gates below are workout milestones toward that aim. A repetition pace with
 recovery is not a continuous race mark to score against the event table.
 
-The labels describe intentions: **LT** is sustainable high-turnover work,
-**VO₂** aims at time near maximal oxygen uptake, **F** is repeatable fast running,
-**FA** adds a shorter-recovery fast set, **TT** is a time trial and **X** is an
-experiment. They do not certify measured internal physiological states.
+[Current choices](#current-choices) ·
+[Transition](#the-transition-into-the-first-cycle) ·
+[Cycle](#the-18-day-cycle) ·
+[Progressions](#two-independently-earned-progressions)
+
+## Current choices
+
+**LT has earned 3×1600 m.** The [8 October workout](/running/record/2026/#8-october--lt-31200-m--1-min)
+averaged 4:42.17 (3:55.1/km) over three 1200s, with another repetition available, passing the
+4:48 gate. The longer structure is the next workout. **6:08 per 1600 m is its
+later graduation gate**, rather than a compulsory pace for the first attempt.
+
+**VO₂ stays at 3×800 m with 5:30 recovery.** The 2:40 average gate remains
+unconfirmed after 9 October's completed set with interrupted timing. I want to
+repeat the workout with reliable timing before moving its progression on.
+The two decisions are independent.
+
+## The transition into the first cycle
+
+The [October 9 session](/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing)
+completed all three 800s, with interrupted timing and an additional partial
+effort. Its 2:40 gate remains unconfirmed, so the VO₂ structure stays at
+**3×800 m / 5:30**. After a chill day, the plan is a **5000 m time trial on
+Sunday, October 11**, then **6×200 m on Monday, October 12**. Those upcoming
+sessions are not yet recorded as completed.
+
+This is a short transition into the new cycle. After a chill day on October 13,
+the first full cycle is planned to start on October 14. Its day-16 time trial
+would be an 800 m on October 29, if the sequence holds.
 
 ## The 18-day cycle
-
 
 Each block has two training days followed by a chill day. Chill leaves room for
 rest or easy movement according to how I feel, without another quality session:
@@ -94,21 +123,6 @@ on the first attempt at that larger session.
 The later rows are ambitious proposals, rather than evidence that these exact
 steps are optimal or already tolerable. Their role is to make the direction and
 next decision clear. The training still has to earn them.
-
-## The transition into the first cycle
-
-
-The [October 9 session](/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing)
-completed all three 800s, with interrupted timing and an additional partial
-effort. Its 2:40 gate remains unconfirmed, so the VO₂ structure stays at
-**3×800 m / 5:30**. After a chill day, the plan is a **5000 m time trial on
-Sunday, October 11**, then **6×200 m on Monday, October 12**. Those upcoming
-sessions are not yet recorded as completed.
-
-This is a short transition into the new cycle. After a chill day on October 13,
-the first full cycle is planned to start on October 14. Its day-16 time trial
-would be an 800 m on October 29, if the sequence holds.
-
 
 ## When to revise it
 

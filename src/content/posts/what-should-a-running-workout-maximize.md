@@ -7,11 +7,13 @@ draft: false
 
 I can make a workout harder by running faster, resting less, or adding repetitions. That does not tell me whether I have made it better.
 
+On [September 22](/running/record/2026/#22-september--vo-3800-m--530), I ran three 800 m repetitions with five and a half minutes between them. They averaged **2:48 (3:30/km)**. My breathing felt recovered after roughly two and a half to three minutes; the burning in my legs took about four minutes to ease only slightly. “Recovered” was describing different sensations with different time courses. That gave me a practical question: which remaining limitation would the next repetition encounter?
+
 When I returned to structured running, I started separating four questions. How much oxygen can I use? How much work can I sustain while lactate is being produced and used? How much capacity do I have to work beyond what my aerobic supply can support? How fast can I run, and for how long can I maintain that speed?
 
-Ultimately I want lasting improvement in the running I care about, within the time and recovery I can afford. My concrete event ambition is an [800+ World Athletics point profile across 800–5000 m](/running-notebook/#the-runner-i-am-trying-to-build). That score curve gives the later performance a common standard. The difficulty is that I have to choose today's workout before I can observe its lasting effect. Physiological exposure is a possible guide to that choice.
+I want training to leave me more capable after I recover, and to keep that capacity available over years. It has to fit within the time and recovery I can afford. My current event focus is an [800+ World Athletics point profile across 800–5000 m](/running-notebook/#the-runner-i-am-trying-to-build). That score curve gives later performance a common standard. The difficulty is that I have to choose today's workout before I can observe its lasting effect. Physiological exposure is a possible guide to that choice.
 
-Those questions gave me four working labels: VO₂, LT, A, and F. The labels are useful only if they lead to a more precise question about the workout. Calling something a “VO₂ workout” cannot establish that I reached a high oxygen uptake. Calling something “anaerobic” cannot establish which adaptation it will produce.
+Those questions gave me four working labels: **VO₂** for oxygen uptake, **LT** for lactate-threshold work, **A** for anaerobic capacity, and **F** for fast running. The labels are useful only if they lead to a more precise question about the workout. Calling something a “VO₂ workout” cannot establish that I reached a high oxygen uptake. Calling something “anaerobic” cannot establish which adaptation it will produce.
 
 The distinction I care about is this:
 
@@ -52,8 +54,6 @@ The expression exposes my assumption: the state history contains information the
 ## Recovery and pacing are part of the same problem
 
 During recovery, I would like to arrive at the next repetition able to sustain useful work. For a VO₂ objective, I would also like to avoid spending the whole next repetition climbing back toward the state I wanted. How much recovery achieves both depends on the session and on me that day.
-
-My [September 22 three-by-eight-hundred-metre session](/running/record/2026/#22-september--vo-3800-m--530), with five and a half minutes between repetitions, made the distinction tangible. I reported that my breathing had recovered after roughly two and a half to three minutes, while the burning in my legs took about four minutes to ease only slightly. Those are subjective observations, not measurements of oxygen uptake or reserve. They made me question whether “recovered” should be one yes-or-no description, and which remaining limitation the next repetition would encounter.
 
 Keeping recovery active is not automatically an improvement. Dupont and colleagues compared repeated fifteen-second efforts with either passive recovery or active recovery at 40% of VO₂max. In twelve men, time to exhaustion was substantially longer with passive recovery. That is evidence about repeatability in a particular protocol. It does not establish that passive recovery maximizes time near VO₂max, or that it is best for every interval session. [Dupont et al., 2004](https://pubmed.ncbi.nlm.nih.gov/14767255/).
 
@@ -151,9 +151,11 @@ I could try to create an enormous session that touches everything. My concern is
 
 That is a planning principle I am adopting, rather than a formula the cited experiments have proved. I do not yet have a validated exchange rate between minutes at high oxygen uptake, time near a hypothetical depleted reserve, fast-running quality, and recovery cost. Adding those scores into one impressive total would hide the uncertainty.
 
-The immediate discipline is simpler. Name the adaptation I want. Specify the internal state I think will promote it. Choose controls that plausibly create that state. Record what happened, including the circumstances that could change the comparison. Then test whether performance actually improved.
+The immediate discipline is simpler. Name the adaptation I want. Specify the internal state I think will promote it. Choose controls that plausibly create that state. Record what happened, including the circumstances that could change the comparison. Then test whether performance actually improved, at a cost that lets the training continue.
 
-My [running notebook](/running-notebook/) keeps completed sessions separate from proposed ones. That separation matters here: a workout design is not evidence that I tolerated it, and a faster repetition is not evidence that the physiological story was right. Even a repeated session can be misleading if I arrive at one after a hard bike commute and at the other after an easy one.
+The current choices put that principle to work. On [8 October](/running/record/2026/#8-october--lt-31200-m--1-min), my three 1200 m LT repetitions averaged **4:42.17 (3:55.1/km)** with one-minute recoveries, and I felt another repetition was available. That passed the gate for the next LT workout to become three 1600s. VO₂ remains at three 800s with 5:30 between them; its own gate is a 2:40 average without a major final-repetition collapse. These are independent decisions based on completed work and how it felt; neither establishes that my physiological explanation was right. The [running notebook](/running-notebook/) keeps the choices and their evidence together.
+
+Continuity also makes the surrounding activity relevant. A hard bike commute can change what the same track workout costs me. Running to the gym and carrying a backpack belong in the same life as the formal sessions. A programme I can keep using has to account for that movement too.
 
 The framework earns its place by changing what I notice and what I compare. If it only gives my existing workouts more elaborate names, it has failed.
 

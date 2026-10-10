@@ -10,9 +10,8 @@ I want to be able to say, “I'll be there in thirty,” and cross half the city
 Phone, keys, wallet. Start moving. The distance is something I can cover myself,
 without arranging a ride or deciding where a bicycle will spend the next few hours.
 
-That is one of the things I am rebuilding as I return to training. On the track,
-I am aiming at an [800+ World Athletics point profile across 800–5000 metres](/running-notebook/#the-runner-i-am-trying-to-build). I also want the freedom that
-used to come with being a runner: places becoming close enough that I can simply go.
+That is one of the things I am rebuilding as I return to training: places becoming
+close enough that I can simply go.
 
 ## Getting home
 
@@ -30,6 +29,10 @@ the end of a night out.
 The pace tells me something about my old fitness. The decision tells me what
 that fitness made possible. Seven or eight kilometres did not require a separate
 occasion. I could run them because I needed to get somewhere.
+
+I want that capacity to remain available throughout my life. It is a practical
+form of physical agency: a decision to go somewhere can become an action I carry
+out myself.
 
 That changes the scale of a city. A place several kilometres away becomes a place
 I can reach in half an hour outside. The distance is still there, but it stops
@@ -62,7 +65,9 @@ produce an impressive route.
 
 ## The track and the city
 
-The track has a different job. There I want to be precise: known distances,
+The track has a different job. My current focus is an
+[800+ World Athletics point profile across 800–5000 metres](/running-notebook/#the-runner-i-am-trying-to-build).
+There I want to be precise: known distances,
 recorded repetitions, consistent recovery, and an honest account of how the
 effort felt. Repeating a workout gives me something to compare. Changing it needs
 a reason.

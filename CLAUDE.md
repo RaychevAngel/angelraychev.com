@@ -187,12 +187,26 @@ status belongs in the prose of the piece that needs it, not as site furniture.
 
 ## Running content
 
+The running section follows a broader purpose: building exceptional physical
+capability and keeping it available throughout life. Connect this to human agency
+and the existing capability objective in `the-optimization-nobody-is-running.md`.
+Running spans 100 m through the marathon in that long-term horizon; the current
+800–5000 m, 800+ point project is one measurable part of it. Injury prevention,
+recovery and continuity belong in the main account of what success means.
+Keep health and longevity ambitions distinct from demonstrated training outcomes.
+A race time establishes running performance, not comprehensive organ health or a
+guaranteed lifespan. Do not turn this into a site-wide tagline or change its topic
+scope.
+
 The running section has three main entries:
 
-- `running-notebook.md`: the living 800–5000 m project, goals, current programme,
-  progression gates and decisions.
+- `running-notebook.md`: the purpose, personal history and present position of the
+  living 800–5000 m project, followed by its goals, decisions, programme and
+  observations. Keep the score profile central; detailed rarity methodology and
+  physiological hypotheses can follow the practical account.
 - `what-should-a-running-workout-maximize.md`: the scientific argument and explicitly
-  proposed exposure models, with primary references.
+  proposed exposure models, with primary references and their practical consequences
+  for sustained training.
 - `running-makes-the-city-smaller.md`: the personal essay about running and mobility.
 
 The supporting running record starts at `/running/record/`. Its six period chapters

@@ -1,7 +1,7 @@
 ---
 title: "The Optimization Nobody Is Running"
 description: "A person trying not to die is an agent running a reinforcement learning problem. Write the reward down properly and most of what follows is forced."
-updated: 2026-09-08
+updated: 2026-10-10
 ---
 
 ## What we are actually after
@@ -59,6 +59,11 @@ terms because a rate cannot express them: a floor on the level, and whether you 
 learn.
 
 Every section below is the argument that one of those is forced.
+
+My [running notebook](/running-notebook/) takes up one concrete part of this
+objective: building speed and endurance, then keeping that capability available
+throughout life. Race marks give me a comparable measure of running performance.
+The training also has to be something I can continue.
 
 ## Reward is a rate, not a number
 

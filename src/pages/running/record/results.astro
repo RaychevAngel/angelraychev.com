@@ -47,6 +47,12 @@ const points = (best) => best.score?.points.join("–") ?? "—";
     points use the original time or unrounded conversion.
     Dates marked UTC retain an unresolved local day from the export.
   </p>
+  <p>
+    <a href="#personal-bests">Personal bests</a>{" · "}
+    <a href="#race-history">Race history</a>{" · "}
+    <a href="#measurement-notes">Measurement notes</a>{" · "}
+    <a href="#training-references">Training references</a>
+  </p>
   <span id="race-bests"></span>
   <h2 id="personal-bests">Personal bests by discipline</h2>
   <div class="tablewrap"><table class="bests" role="table">
@@ -61,6 +67,36 @@ const points = (best) => best.score?.points.join("–") ?? "—";
       </td>
     </tr>)}</tbody>
   </table></div>
+  <p>
+    * Same-pace comparisons retain the original distance and time; they do not
+    establish another completed race or finish split. Sofia's short-course length
+    remains unresolved. † Short training points are conditional on the unestablished
+    timing method. The <a href="#measurement-notes">measurement notes</a> keep
+    these limits and the scoring details together.
+  </p>
+  <h2 id="race-history">Race history</h2>
+  <p>
+    The full recovered race history follows. Original result times, course labels,
+    placings and the dated accounts remain here, including earlier marks that were
+    later improved. Chip times govern road results; gun times stay separately labelled.
+  </p>
+  {groups.map((group) => <section aria-labelledby={group.kind}>
+    <h2 id={group.kind}>{group.title}</h2>
+    <p>{group.intro}</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Finish</th></tr></thead>
+      <tbody>{results.filter((result) => result.kind === group.kind).sort((a,b) => a.date.localeCompare(b.date)).map((result) => <tr id={result.id}>
+        <td><a href={result.note}>{date(result.date)}</a></td>
+        <td>{result.event}<br />{result.distance.split(/([¹²])/).map((part) =>
+          part === "¹" ? <a href="#park-distance-note" aria-label="Park-course distance note">¹</a> :
+          part === "²" ? <a href="#sofia-distance-note" aria-label="Sofia course-distance note">²</a> : part
+        )}</td>
+        <td><a href={result.source}>{result.time}</a>{result.gunTime && <><br /><span class="dim">Gun {result.gunTime}</span></>}</td>
+        <td>{result.place}</td>
+      </tr>)}</tbody>
+    </table></div>
+  </section>)}
+  <h2 id="measurement-notes">Measurement and score notes</h2>
   <p id="score-method">
     * A comparison keeps the original effort's average pace over the named
     discipline. The mile scales the documented 1600 m in 5:08 to 1609.344 m;
@@ -88,32 +124,15 @@ const points = (best) => best.score?.points.join("–") ?? "—";
     for example, a hand-timed 56.05 would be scored as 56.19, giving 531 rather
     than the literal mark's 537.
   </p>
-  <h2 id="race-history">Race history</h2>
+  <h3 id="park-distance-note">Park-course labels</h3>
   <p>
-    The full recovered race history follows. Original result times, course labels,
-    placings and the dated accounts remain here, including earlier marks that were
-    later improved. Chip times govern road results; gun times stay separately labelled.
-  </p>
-  {groups.map((group) => <section aria-labelledby={group.kind}>
-    <h2 id={group.kind}>{group.title}</h2>
-    <p>{group.intro}</p>
-    <div class="tablewrap"><table>
-      <thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Finish</th></tr></thead>
-      <tbody>{results.filter((result) => result.kind === group.kind).sort((a,b) => a.date.localeCompare(b.date)).map((result) => <tr id={result.id}>
-        <td><a href={result.note}>{date(result.date)}</a></td>
-        <td>{result.event}<br />{result.distance}</td>
-        <td><a href={result.source}>{result.time}</a>{result.gunTime && <><br /><span class="dim">Gun {result.gunTime}</span></>}</td>
-        <td>{result.place}</td>
-      </tr>)}</tbody>
-    </table></div>
-    {group.kind === "park" && <p>
       ¹ North Park's current result page says 6.0 km. The organizer's
       <a href="https://info.5kmrun.bg/4096-2/">report published on 7 December 2015</a>
       describes the same short event as 5 km. I retain that contemporary label;
       no exact historical course measurement has been recovered.
-    </p>}
-    {group.kind === "sofia" && <>
-      <p>
+    </p>
+  <h3 id="sofia-distance-note">The Sofia short-course label</h3>
+  <p>
         ² The 2020 results say 10 km; the 2021 results say 10.5 km, while that
         edition's map advertises 10 km. I remember the same route in those two
         years. The exact measured length of the separate short course remains
@@ -128,8 +147,6 @@ const points = (best) => best.score?.points.join("–") ?? "—";
         show a two-lap marathon and a separate shorter loop. Dividing the
         marathon distance by four would not recover the later short-course length.
       </p>
-    </>}
-  </section>)}
   {bests.retiredAnchors.map((id) => <span id={id}></span>)}
   <h2 id="training-references">Training references</h2>
   <p>
