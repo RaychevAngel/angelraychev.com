@@ -27,7 +27,7 @@ In a classic **19-man resistance-training trial**, a week of 25 g/day followed b
 
 Lean mass needs careful interpretation. A **2025 randomized study of 63 adults** used 5 g/day and measured participants after a seven-day supplement-only period, then 12 weeks of training. There was an early **0.51 kg** between-group lean-mass difference, but no significant additional training-period difference (**P = .71**). The control received no placebo. This illustrates why an early scale or DXA increase is not automatically new muscle; it does not establish that higher dosing would work better. [Desai et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40292479/).
 
-A trial with **46 men randomized and 26 analyzed** found no significant effect on directly measured kidney filtration over 12 weeks in healthy, resistance-trained people eating a high-protein diet. That is reassuring for that population; it does not clear every kidney condition or medication combination. Creatine can also complicate interpretation of creatinine-based tests, so supplement use belongs in the medical history. [Lugaresi et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23680457/), [ISSN safety discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/).
+A small kidney-filtration trial was reassuring within its tested population. The [laboratory-test investigation](/nutrition/research/supplements-and-laboratory-tests/#creatine-presents-a-different-interpretation-problem) retains its methods, attrition and interpretation limits.
 
 ## Caffeine: judge the session and the night together
 
@@ -54,6 +54,9 @@ Beta-alanine raises muscle carnosine, contributing to intracellular buffering. T
 In a **13-man study**, 6.4 g/day for four weeks improved a sustained knee-extension hold by **13.2%**, without improving maximal voluntary force. In **16 highly trained cyclists**, four weeks did not significantly improve four-minute cycling performance (**P = .25**), though some isokinetic outcomes improved. Capacity in a particular laboratory task is not the same as race performance or maximal strength. [Sale et al., 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3420321/), [Howe et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23630052/).
 
 Ten-second sprints with rests are not equivalent to one continuous effort merely because the session totals a few minutes. Until there is a matching performance question, beta-alanine adds daily complexity without a clear priority.
+
+
+For a closer look at newer evidence, read [creatine exposure, timing and measurement](/nutrition/research/creatine-exposure-timing-and-measurement/) and [buffers, beetroot and the actual effort](/nutrition/research/buffers-beetroot-and-the-actual-effort/).
 
 ## Make an experiment interpretable
 

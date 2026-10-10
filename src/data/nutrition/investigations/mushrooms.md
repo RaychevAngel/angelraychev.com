@@ -20,11 +20,14 @@ A later **16-week trial in 43 overweight or obese adults with prediabetes and lo
 
 For my nutrient record, vitamin D from mushrooms should be entered only with a verified label or suitable composition value and an eaten portion. I forgot the planned vitamin D supplement in the latest report; buying unverified mushrooms would not establish that the vitamin D question is resolved. Mushroom D2 and supplement D3 also remain identifiable forms in the guide.
 
-## Ergothioneine is interesting, but the human result is observational
+## The long-term ergothioneine cohort result is observational
 
 A prospective study measured plasma metabolites in **3,236 adults** from the Malmö Diet and Cancer cohort. Higher ergothioneine was associated with lower coronary disease and mortality during a median **21.4-year follow-up**, after adjustment for several factors. Ergothioneine also tracked a health-conscious food pattern. Participants were not assigned a mushroom food or an ergothioneine dose. The measured metabolite could reflect food choices, metabolism and other factors rather than an isolated protective effect. [Smith et al., 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7229907/)
 
 This is a reason to investigate the compound, not an established daily requirement or proof that adding one mushroom species extends life. The nutrient guide should not invent an ergothioneine RDA or call its unmeasured intake a deficiency. A claimed lifespan effect would need different evidence from this association.
+
+
+New intervention results need a separate judgment. The [human ergothioneine and mushroom trials](/nutrition/research/ergothioneine-mushrooms-and-human-outcomes/) examine those results, including their main null findings.
 
 ## Lion's mane: report the main and contrary results together
 

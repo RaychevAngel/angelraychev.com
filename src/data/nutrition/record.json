@@ -1085,7 +1085,7 @@
             "food_total": 23.380074285714283,
             "known_food_count": 13,
             "food_count": 13,
-            "partial_food_count": 1,
+            "partial_food_count": 2,
             "logged_supplement_total": 0,
             "logged_supplement_unknown": false,
             "recorded_total": 23.380074285714283
@@ -1562,9 +1562,9 @@
         "supplements": [],
         "scenario_note": "Selected portion/recipe scenarios span approximately 2,815–3,500 kcal. It is not a confidence interval and does not cover every uncertainty. Chicken edible weight and sauce oil drive much of this range.",
         "source_note": "Nonfat yogurt uses a provisional online label; restaurant chicken and sauce use comparators or recipe estimates. Restaurant sodium and sauce herbs remain unquantified. The sardine label total omega 3 is separate from a generic EPA/DHA split.",
-        "version": 3,
+        "version": 4,
         "reviewed_date": "2026-10-10",
-        "revision_note": "Confirmed eating the entire 32 oz nonfat yogurt tub. The earlier model already counted that amount, so its nutrient totals are unchanged; the portion is now reported rather than assumed."
+        "revision_note": "Original intake-reference chapters and food-label form rules reviewed. Rice saturated-fat zero remains provisional; three sardine zeros now cite the matching current manufacturer label. Food totals and scenario endpoints unchanged from v3."
       }
     }
   ],

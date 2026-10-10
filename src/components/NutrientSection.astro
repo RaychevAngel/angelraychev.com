@@ -11,8 +11,33 @@ const format = (value, unit = "") => {
 };
 const refText = (entry) => {
   if (!entry) return "No reference assigned";
-  if (entry.value == null) return entry.type === "not_established" ? "Not established" : entry.type;
-  return `${format(entry.value, entry.unit)} (${entry.type})`;
+  const names = { safe_level: "safe level", general_energy_label_basis: "general label basis" };
+  const kind = names[entry.type] ?? entry.type?.replaceAll("_", " ") ?? "Unspecified";
+  if (entry.value == null) return entry.type === "not_established" ? "Not established" : kind;
+  const amount = Array.isArray(entry.value)
+    ? `${entry.value.map((part) => format(part)).join("–")}${entry.unit ? ` ${entry.unit}` : ""}`
+    : typeof entry.value === "string" ? `${entry.value}${entry.unit ? ` ${entry.unit}` : ""}` : format(entry.value, entry.unit);
+  return `${amount} (${kind})`;
+};
+const labelText = (entry) => {
+  if (!entry || entry.status === "unverified") return "Label reference not verified";
+  if (entry.status === "not_established") return "No FDA Daily Value";
+  return entry.status === "established" ? refText(entry) : "Label reference not verified";
+};
+const scopeText = (entry) => {
+  const names = {
+    total_intake: "Total intake from food and supplements",
+    per_kg_body_weight: "Per kg of body weight",
+    total_vitamin_k: "Total vitamin K; counted intake covers K1 only",
+    preformed_vitamin_a_only: "Preformed vitamin A only",
+    supplements_and_fortified_foods: "Supplements and fortified foods",
+    added_niacin_supplements_and_fortified_foods: "Added niacin in supplements and fortified foods",
+    folic_acid_supplements_and_fortified_foods: "Folic acid in supplements and fortified foods",
+    supplements_and_medications_only: "Supplements and medications only",
+    adults_and_children_4_plus: "Adults and children aged 4 and older",
+  };
+  const scope = entry?.scope_label || entry?.scope || "";
+  return names[scope] ?? scope.replaceAll("_", " ");
 };
 ---
 <section class:list={["nutrient-topic", { standalone }]} aria-label={standalone ? topic.title : undefined} aria-labelledby={standalone ? undefined : topic.slug}>
@@ -21,6 +46,7 @@ const refText = (entry) => {
   <p class="judgment-note">{topic.judgment_scope} · Reviewed {topic.reviewed_date}</p>
   <p class="judgment-note">Intake confidence: {topic.intake_confidence}. Quantity confidence: {topic.quantity_confidence}. Body status: {topic.body_status}.</p>
   {topic.review_pending && <p class="review-pending">Relevant intake inputs or research text changed after this judgment was reviewed. The displayed figures are current; the saved attention judgment awaits review.</p>}
+  <p class="reference-note">FDA Daily Values are food-label references. The age-specific intake references are shown separately.</p>
   <div class="intake-panels">
     {topic.fields.map((field) => <section aria-labelledby={`field-${field.id.replaceAll("_", "-")}`}>
       <FieldHeading id={`field-${field.id.replaceAll("_", "-")}`}>{field.name}</FieldHeading>
@@ -32,13 +58,34 @@ const refText = (entry) => {
         <table aria-label={`${field.name} intake references`}>
           <thead><tr><th>Recommended intake</th><th>Upper reference</th><th>Food label reference</th></tr></thead>
           <tbody><tr>
-            <td>{refText(field.reference?.recommended)}</td>
-            <td>{refText(field.reference?.upper)}</td>
-            <td>{field.label_reference == null ? "None" : `${format(field.label_reference, field.unit)} (DV)`}</td>
+            {[{ entry: field.reference?.recommended, label: false },
+              { entry: field.reference?.upper, label: false },
+              { entry: field.label_reference_context, label: true }].map(({ entry, label }) => <td>
+              {label ? labelText(entry) : refText(entry)}
+              {entry && <span class="reference-source"><br />
+                {entry.source_url ? <a href={entry.source_url}>{entry.authority || "Reference source"}</a> : entry.authority}
+                {scopeText(entry) && <> · {scopeText(entry)}</>}
+              </span>}
+              {entry?.note && <span class="reference-source"><br />{entry.note}</span>}
+              {entry?.rule_source_url && <span class="reference-source"><br /><a href={entry.rule_source_url}>Label rule</a></span>}
+            </td>)}
           </tr></tbody>
         </table>
       </div>
-      {field.reference?.amdr_percent_energy && <p class="reference-note">AMDR: {field.reference.amdr_percent_energy.join("–")}% of energy. This is a planning range, not a toxicological limit.</p>}
+      {field.reference?.alternate_contexts?.length > 0 && <details>
+        <summary>Other authority and form-specific references</summary>
+        <ul>{field.reference.alternate_contexts.map((entry) => <li>
+          <strong>{refText(entry)}</strong><br />
+          <span class="reference-source">
+            {entry.source_url ? <a href={entry.source_url}>{entry.authority || "Reference source"}</a> : entry.authority}
+            {scopeText(entry) && <> · {scopeText(entry)}</>}
+          </span>
+          {entry.note && <p class="reference-note">{entry.note}</p>}
+        </li>)}</ul>
+      </details>}
+      {field.reference?.amdr_percent_energy && <p class="reference-note">AMDR: {field.reference.amdr_percent_energy.join("–")}% of energy. This is a planning range, not a toxicological limit.
+        {field.reference.amdr_source_url && <> <a href={field.reference.amdr_source_url}>Original range assessment</a>.</>}
+      </p>}
       {field.reference?.notes && <p class="reference-note">{field.reference.notes}</p>}
       {field.reference?.guidance?.map((entry) => <p class="reference-note">{entry.text} <a href={entry.source_url}>Guidance source</a>.</p>)}
       <details>
@@ -74,6 +121,7 @@ const refText = (entry) => {
   .nutrient-topic > h2 { margin-top: 24px; }
   .attention { margin-bottom: 8px; }
   .judgment-note, .reference-note { color: var(--dim); font-size: 13px; }
+  .reference-source { color: var(--dim); font-size: 12px; }
   .intake-line { margin-bottom: 16px; }
   .intake-panels { border-left: 1px solid var(--rule); padding-left: 18px; margin: 28px 0 36px; }
   .intake-panels h2, .intake-panels h3 { margin-top: 28px; }

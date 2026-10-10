@@ -19,8 +19,9 @@ const categories = [
   <NutritionNav current="guide" />
   <p>A number only becomes useful when its meaning is clear. These sections connect each nutrient's role and intake references with the foods I have reported eating, the uncertainty in those estimates, and the evidence behind a possible change.</p>
   <p>The reference profile is a man aged 19–30. The displayed intake comes from <a href={guide.record_href}>one reported eating record</a>, whose food date is {guide.food_date_note}. It does not establish my usual intake or body status.</p>
+  <p>New food records can be added later. These estimates and attention judgments stay tied to the linked entry and their review date until the guide is reviewed again.</p>
   {guide.complete === false && <p class="preview-note">Working preview: {guide.topics.length} nutrient topic{guide.topics.length === 1 ? "" : "s"} developed so far.</p>}
-  <p>Each nutrient has its own page for the intake model, references and research. The <a href="/nutrition/guide/all/">full guide</a> collects all 37 topics on one scrollable page.</p>
+  <p>Each nutrient has its own page for the intake model, references and research. The <a href="/nutrition/guide/all/">full guide</a> collects all {guide.topics.length} topics on one scrollable page.</p>
   <NutrientIndex guide={guide} />
   <details class="reading-key" id="reference-key">
     <summary>Attention labels and intake references</summary>

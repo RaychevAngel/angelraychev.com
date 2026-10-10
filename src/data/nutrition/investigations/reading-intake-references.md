@@ -40,7 +40,7 @@ Similarly, the vitamin A upper reference applies to preformed vitamin A, while t
 
 ## CDRR and AMDR: risk reduction and dietary planning
 
-The **CDRR** identifies an intake above which reducing usual intake is expected to lower chronic disease risk. Sodium's adult value is **2,300 mg/day**. [Reference tables](https://www.nationalacademies.org/read/25353/chapter/28).
+The **CDRR** identifies an intake above which reducing usual intake is expected to lower chronic disease risk. Sodium's adult value is **2,300 mg/day**. [Original CDRR assessment](https://www.nationalacademies.org/read/25353/chapter/15#chapter10_pz354-1).
 
 The [sodium entry](/nutrition/guide/sodium/) keeps its AI and CDRR beside the food estimate.
 

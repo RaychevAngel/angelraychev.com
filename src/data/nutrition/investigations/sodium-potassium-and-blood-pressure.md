@@ -61,7 +61,7 @@ These are supplement trials in selected populations, not evidence that I should 
 
 ## Salt substitutes have outcome evidence, with important boundaries
 
-SSaSS randomized **600 rural Chinese villages**, including **20,995 people with prior stroke or older age and high blood pressure**, to regular salt or a substitute containing **75% sodium chloride and 25% potassium chloride**. Over a mean **4.74 years**, stroke rates were **29.14 versus 33.65 events per 1,000 person-years**, favoring substitution; rate ratio **0.86, 95% CI 0.77–0.96**. Both sodium and potassium exposure changed, so this cannot isolate a potassium-only effect.
+SSaSS randomized **600 rural Chinese villages**, including **20,995 people with prior stroke or older age and high blood pressure**, to regular salt or a substitute containing **75% sodium chloride and 25% potassium chloride**. Over a mean **4.74 years**, stroke rates were **29.14 versus 33.65 events per 1,000 person-years**, favoring substitution; rate ratio **0.86, 95% CI 0.77–0.96**. Both sodium and potassium exposure changed, so this cannot isolate a potassium-only effect. [Original trial](https://www.nejm.org/doi/10.1056/NEJMoa2105675).
 
 Serious events attributed to hyperkalemia did not differ significantly. That safety outcome was clinical, not routine screening for every biochemical potassium elevation. The trial excluded households with known serious kidney disease, potassium-sparing diuretic use or potassium supplementation. These limits matter when applying the result outside the trial population. [Neal et al., 2021](https://www.nejm.org/doi/10.1056/NEJMoa2105675).
 

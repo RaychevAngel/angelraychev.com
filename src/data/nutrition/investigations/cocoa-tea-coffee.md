@@ -27,6 +27,9 @@ An ordinary cocoa product cannot be assigned the trial's exposure from its name.
 
 For this food pattern, cocoa can be an optional flavor addition to yogurt or a drink. The portion and the ingredients should be logged if used. There is no evidence here requiring another large chocolate bar to obtain the extract trial's result.
 
+
+The [cocoa, sitting and training investigation](/nutrition/research/cocoa-flavanols-sitting-and-training/) follows the vascular findings into newer human trials and separates those measurements from functional outcomes.
+
 ## Matcha has promising secondary findings and a null main result
 
 A **12-month randomized trial in 99 adults aged 60–85**, with subjective cognitive decline or mild cognitive impairment, used **2 g matcha daily in capsules**. The two primary outcomes, a cognitive screening score and an activities-of-daily-living score, did not significantly improve. A secondary facial-emotion recognition measure favored matcha; the reported sleep change was a statistical trend rather than a significant result. The study included ITO EN employees as authors and used matcha supplied by the company. Its secondary findings remain exploratory. These findings do not establish dementia prevention or a reliable cognitive improvement in a healthy young adult. [Uchida et al., 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11364242/)
@@ -48,6 +51,8 @@ The [iron-timing investigation](/nutrition/research/iron-absorption-and-meal-tim
 Caffeine from a capsule, coffee, tea, matcha and cocoa belongs in one daily record. A late drink can also work against sleep, so timing matters as much as choosing a food with appealing molecules. FDA's **400 mg daily** figure for most adults is a general level not usually associated with negative effects, not a required target or an assurance for every person. [FDA: caffeine and sensitivity](https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much)
 
 Concentrated green-tea extracts deserve a different decision from brewed tea. NCCIH reports uncommon liver injury primarily with extract tablets or capsules, and several medicine interactions. This does not justify treating a normal cup as equivalent to a high-dose extract, or assuming that concentration simply gives more benefit. [NCCIH: green tea](https://www.nccih.nih.gov/health/green-tea)
+
+The [coffee, tea and sleep companion](/nutrition/research/coffee-tea-alertness-and-sleep/) examines newer findings, separating sleep, long-term associations, heart-rhythm trials and isolated theanine experiments.
 
 ## Cocoa contaminants are a portion and product question
 

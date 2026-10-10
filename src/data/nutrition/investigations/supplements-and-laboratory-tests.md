@@ -37,7 +37,7 @@ An emergency clinical assessment should not be delayed to complete a supplement 
 
 ## Creatine presents a different interpretation problem
 
-Creatine can contribute to creatinine production. Creatinine is then used in common equations estimating kidney filtration, so a change in that marker can complicate the estimate. This differs from biotin's interference with the assay chemistry. [Lugaresi et al., 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3661339/).
+Creatine contributes to creatinine production, which can affect creatinine-based kidney estimates. This differs from biotin's assay interference. [Lugaresi et al., 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3661339/).
 
 That trial studied healthy men doing resistance training and eating at least 1.2 g/kg/day protein. **Forty-six were randomized and 26 were analyzed after withdrawals and missed assessments.** Creatine monohydrate was given as **20 g/day for five days, then 5 g/day**, over 12 weeks. Kidney filtration measured with a separate tracer method did not show a significant group-by-time difference (**P=.64**), and measured urinary markers did not deteriorate. Serum creatinine itself was not significantly elevated in this trial. [Original trial methods and results](https://pmc.ncbi.nlm.nih.gov/articles/PMC3661339/).
 
