@@ -299,9 +299,22 @@ The official results list different distances for the two years:
 | [10 October 2021](https://my.raceresult.com/183503/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en) | 10.5 km | 42:06 | 42:04 | 18th |
 
 The results appear under **Angel Raychev**, with bibs **3068** and **3194**.
-These are the published event distances; I have not recovered a year-specific
-course measurement that establishes a more precise length. I retain the
-2021 result as **10.5 km**, without treating it as a 10,000 m personal best.
+
+A later course check clarified the layout. The
+[2020 municipal announcement](https://www.sofia.bg/en/w/izvestni-atleti-pristigat-za-wizz-air-sofia-maraton-sledvasata-nedela)
+places the start and finish at **Battenberg Square**, and the race office near
+**Orlov most**. The maps attached to Sofia's
+[2021 announcement](https://www.sofia.bg/bg/web/guest/w/sofijskiat-maraton-startira-v-nedela-10-oktomvri)
+show a **two-lap marathon** and a separate shorter loop that turns back earlier.
+Its short-course map advertises **10 km Garmin Run**, whereas the 2021 results
+above label the race **10.5 km**.
+
+World Athletics' [December 2020](https://media.aws.iaaf.org/competitioninfo/d76aaabe-d4b3-40c1-9b33-75554a7a2300.pdf)
+and [May 2021](https://media.aws.iaaf.org/competitioninfo/c5fd1918-789a-42b2-8055-fa7dd35ad8c4.pdf)
+registers list certified marathon and half-marathon courses. I have not recovered
+a measurement establishing the separate short course's exact length.
+I retain the published result labels above, without treating the 2021 time as
+a 10,000 m personal best or deriving its distance by dividing the marathon by four.
 
 ### 30 April 2021 — 5×900 m / 3 min
 
