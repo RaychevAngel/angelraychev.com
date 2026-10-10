@@ -376,13 +376,14 @@
       "dateBasis": "route-local",
       "distance": "Half marathon",
       "distanceMeters": 21097.5,
-      "time": "1:37:39",
+      "time": "1:36:57",
       "seconds": [
-        5858.323660714285
+        5817
       ],
       "source": "https://www.strava.com/activities/11260146860",
-      "context": "GPS distance; full elapsed time; 72 m recorded ascent",
-      "kind": "Recorded pace comparison",
+      "context": "Reported half-marathon effort within a longer run; 1 m elevation shown for the split",
+      "kind": "Training split",
+      "note": "/running/record/2023-2025/#24-april--half-marathon-training-best",
       "original": {
         "distance": "24.64 km",
         "distanceMeters": 24640,
@@ -393,12 +394,11 @@
         "event": "Half marathon",
         "distanceMeters": 21097.5,
         "road": true,
-        "derived": true,
+        "derived": false,
         "points": [
-          155
+          165
         ]
       },
-      "approximate": true,
       "aliases": [
         "best-21100"
       ]

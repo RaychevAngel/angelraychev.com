@@ -214,11 +214,16 @@ clearly labelled same-pace comparison in the selected discipline. The main table
 uses the approved sixteen disciplines from 300 m through the marathon; smaller
 sprints and arbitrary interval lengths stay in dated training records. Track 5000 m
 and road 5 km are separate disciplines. The user explicitly approved scaling the
-documented 1600 m 5:08 up to the full mile: 5:09.80 / 388 points. Road 10/20 km and
-half-marathon comparisons scale longer source distances down; show the original
+documented 1600 m 5:08 up to the full mile: 5:09.80 / 388 points. Road 10/20 km
+comparisons scale longer source distances down; show the original
 distance/time and use full elapsed time, retaining GPS/course uncertainty. The 15 km
 reference sums fifteen native distance-triggered 1 km watch laps. Pace displays
 round to the nearest second/km; scores use the unrounded original or conversion.
+The half-marathon best is the user-reported 1:36:57 training split from 24 April
+2024 (4:36/km, 165 points), replacing the whole-run pace projection. Its reported
+1 m elevation display is distinct from the full 24.64 km run's 72 m recorded ascent.
+Keep the full-run summary as context; do not relabel the split as an official race
+or a reconstructed GPX result.
 Preserve older best-row IDs as forwarding anchors when narrowing the table.
 Derived comparisons do not establish additional achieved PBs. Pin the
 table edition, apply the lower-score rule and keep timing/course uncertainty
