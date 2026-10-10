@@ -1,0 +1,56 @@
+---
+import Post from "../../../layouts/Post.astro";
+import NutritionNav from "../../../components/NutritionNav.astro";
+import NutrientSection from "../../../components/NutrientSection.astro";
+import NutrientIndex from "../../../components/NutrientIndex.astro";
+import guide from "../../../data/nutrition/guide.json";
+const frontmatter = {
+  title: "Full nutrient guide",
+  description: "A linked account of nutrient requirements, intake estimates, evidence and practical decisions behind my food pattern.",
+  updated: guide.reviewed_date,
+};
+const categories = [
+  ["macronutrients", "Energy and macronutrients"],
+  ["vitamins", "Vitamins"],
+  ["minerals", "Minerals"],
+  ["other", "Related nutrients and compounds"],
+];
+---
+<Post frontmatter={frontmatter}>
+  <NutritionNav />
+  <p>This version collects all topics on one page. For shorter reading and individual links, use the <a href="/nutrition/guide/">nutrient index</a>.</p>
+  <p>A number only becomes useful when its meaning is clear. These sections connect each nutrient's role and intake references with the foods I have reported eating, the uncertainty in those estimates, and the evidence behind a possible change.</p>
+  <p>The reference profile is a man aged 19–30. The displayed intake comes from <a href={guide.record_href}>one reported eating record</a>, whose food date is {guide.food_date_note}. It does not establish my usual intake or body status.</p>
+  {guide.complete === false && <p class="preview-note">Working preview: {guide.topics.length} nutrient topic{guide.topics.length === 1 ? "" : "s"} developed so far.</p>}
+  <NutrientIndex guide={guide} inline />
+  <details class="reading-key" id="reference-key">
+    <summary>Attention labels and intake references</summary>
+    <ul>
+      <li><strong>No change:</strong> current evidence supplies no useful reason for a specific change.</li>
+      <li><strong>Review:</strong> a plausible issue or worthwhile adjustment deserves consideration.</li>
+      <li><strong>Clarify:</strong> important missing information prevents a useful judgment.</li>
+      <li><strong>Address:</strong> credible evidence identifies an important problem requiring action.</li>
+    </ul>
+    <p>An RDA is a planning reference intended to cover nearly all healthy people in a group. An AI is used when an RDA cannot be established; falling below it does not establish inadequacy. A UL concerns usual intake and applies only to the specified forms and sources. Sodium's CDRR identifies an intake above which reducing consumption is expected to lower chronic disease risk. None is a universal personal minimum or optimum. <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH reference definitions</a>.</p>
+    <p>Food label Daily Values describe a common labeling reference. The guide uses age- and sex-specific intake references separately. Portion ranges show selected input scenarios; they are not confidence intervals and do not capture all composition error. <a href="/nutrition/research/reading-intake-references/">Read the full explanation of the different references</a>.</p>
+  </details>
+  {guide.topics.map((topic) => <NutrientSection topic={topic} />)}
+  <h2 id="guide-method">How estimates stay connected to evidence</h2>
+  <p>Package labels take precedence for matching products. Unlisted nutrients use identified generic comparators where available. An unquantified value stays unknown. Food amounts, the research explanation and the personal judgment have separate review histories, so changing a food log does not silently change the meaning of a nutrient.</p>
+  <p>The <a href="/nutrition/record/">food record</a> retains the eating occasions and corrections. The <a href="/nutrition/research/">investigations</a> develop questions that span several nutrients or concern a food, supplement or experimental intervention.</p>
+</Post>
+<style>
+  .nutrient-index { width: 100%; }
+  .nutrient-index td:first-child { width: 28%; }
+  .nutrient-index .flag { white-space: nowrap; }
+  .index-help { font-size: 13px; }
+  .reading-key { margin: 32px 0; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  details[open] summary { margin-bottom: 24px; }
+  .preview-note { color: var(--dim); }
+  @media (max-width: 540px) {
+    .nutrient-index .index-reason { display: none; }
+    .nutrient-index td:first-child { width: 65%; }
+    .nutrient-index .flag { white-space: normal; }
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+import Post from "../../../layouts/Post.astro";
+import NutritionNav from "../../../components/NutritionNav.astro";
+import NutrientSection from "../../../components/NutrientSection.astro";
+import guide from "../../../data/nutrition/guide.json";
+export function getStaticPaths() {
+  return guide.topics.map((topic, index) => ({ params: { slug: topic.slug }, props: {
+    topic, previous: guide.topics[index - 1], next: guide.topics[index + 1],
+  } }));
+}
+const { topic, previous, next } = Astro.props;
+const frontmatter = { title: topic.title, description: topic.attention_reason, updated: topic.reviewed_date };
+---
+<Post frontmatter={frontmatter}>
+  <NutritionNav />
+  <p class="record-context">Intake model: <a href={guide.record_href}>one reported food record</a>, food date {guide.food_date_note}. References: man aged 19–30. <a href="/nutrition/guide/#reference-key">How to read the references</a>.</p>
+  <NutrientSection topic={topic} standalone />
+  <nav class="adjacent-topics" aria-label="Adjacent nutrients">
+    {previous && <p>Previous: <a href={`/nutrition/guide/${previous.slug}/`}>{previous.title}</a></p>}
+    {next && <p>Next: <a href={`/nutrition/guide/${next.slug}/`}>{next.title}</a></p>}
+  </nav>
+</Post>
+<style>
+  .record-context, .adjacent-topics { font-size: 13px; }
+  .record-context { margin-bottom: 32px; }
+  .adjacent-topics { border-top: 1px solid var(--rule); padding-top: 24px; margin-top: 32px; }
+  .adjacent-topics p { margin-bottom: 12px; }
+</style>

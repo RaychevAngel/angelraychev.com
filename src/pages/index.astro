@@ -16,7 +16,6 @@ const ideas = [
   "Internet and the digital nomad independence",
   "Mindset",
   "Recovery",
-  "The deal with food",
   "The legal system, governments, institutions",
   "What is a business",
   "Who controls the world",
@@ -67,6 +66,13 @@ const groups: { id: string; title: string; items: { href: string }[] }[] = [
       { href: "/running-makes-the-city-smaller" },
     ],
   },
+  {
+    id: "food-and-nutrition",
+    title: "Food and nutrition",
+    items: [
+      { href: "/nutrition-notebook" },
+    ],
+  },
 ];
 
 const entriesByHref = new Map(entries.map((entry) => [entry.href, entry]));
@@ -100,6 +106,7 @@ if (ungrouped.length) {
         ))}
       </ul>
       {section.id === "running" && <p class="running-record"><a href="/running/record/">Training and race record</a> · <a href="/running/record/2026/">Latest sessions</a></p>}
+      {section.id === "food-and-nutrition" && <p class="running-record"><a href="/nutrition/guide/">Nutrient guide</a> · <a href="/nutrition/record/">Food record</a> · <a href="/nutrition/research/">Investigations</a></p>}
     </section>
   ))}
 </Base>

@@ -1,0 +1,90 @@
+---
+const { topic, standalone = false } = Astro.props;
+const FieldHeading = standalone ? "h2" : "h3";
+const prose = standalone ? topic.body_html.replace(/<(\/?)h([3-6])\b/g, (_, close, level) => `<${close}h${Number(level) - 1}`) : topic.body_html;
+const format = (value, unit = "") => {
+  if (value == null) return "Unknown";
+  const n = Number(value);
+  if (n > 0 && n < 0.005) return `<0.01${unit ? ` ${unit}` : ""}`;
+  const digits = ["kcal", "mg", "µg", "µg RAE", "µg DFE"].includes(unit) && Math.abs(n) >= 10 ? 0 : Math.abs(n) > 0 && Math.abs(n) < 1 ? 2 : 1;
+  return `${n.toLocaleString("en-US", { maximumFractionDigits: digits })}${unit ? ` ${unit}` : ""}`;
+};
+const refText = (entry) => {
+  if (!entry) return "No reference assigned";
+  if (entry.value == null) return entry.type === "not_established" ? "Not established" : entry.type;
+  return `${format(entry.value, entry.unit)} (${entry.type})`;
+};
+---
+<section class:list={["nutrient-topic", { standalone }]} aria-label={standalone ? topic.title : undefined} aria-labelledby={standalone ? undefined : topic.slug}>
+  {!standalone && <h2 id={topic.slug}>{topic.title}</h2>}
+  <p class="attention"><strong>{topic.attention}.</strong> {topic.attention_reason}</p>
+  <p class="judgment-note">{topic.judgment_scope} · Reviewed {topic.reviewed_date}</p>
+  <p class="judgment-note">Intake confidence: {topic.intake_confidence}. Quantity confidence: {topic.quantity_confidence}. Body status: {topic.body_status}.</p>
+  {topic.review_pending && <p class="review-pending">Relevant intake inputs or research text changed after this judgment was reviewed. The displayed figures are current; the saved attention judgment awaits review.</p>}
+  <div class="intake-panels">
+    {topic.fields.map((field) => <section aria-labelledby={`field-${field.id.replaceAll("_", "-")}`}>
+      <FieldHeading id={`field-${field.id.replaceAll("_", "-")}`}>{field.name}</FieldHeading>
+      <p class="intake-line"><strong>{format(field.food_total, field.unit)}</strong> counted from food.
+        {field.logged_supplement_total > 0 && <> {format(field.logged_supplement_total, field.unit)} from logged supplements.</>}
+        {field.logged_supplement_unknown && <> A logged supplement amount is unknown.</>}
+      </p>
+      <div class="tablewrap">
+        <table aria-label={`${field.name} intake references`}>
+          <thead><tr><th>Recommended intake</th><th>Upper reference</th><th>Food label reference</th></tr></thead>
+          <tbody><tr>
+            <td>{refText(field.reference?.recommended)}</td>
+            <td>{refText(field.reference?.upper)}</td>
+            <td>{field.label_reference == null ? "None" : `${format(field.label_reference, field.unit)} (DV)`}</td>
+          </tr></tbody>
+        </table>
+      </div>
+      {field.reference?.amdr_percent_energy && <p class="reference-note">AMDR: {field.reference.amdr_percent_energy.join("–")}% of energy. This is a planning range, not a toxicological limit.</p>}
+      {field.reference?.notes && <p class="reference-note">{field.reference.notes}</p>}
+      {field.reference?.guidance?.map((entry) => <p class="reference-note">{entry.text} <a href={entry.source_url}>Guidance source</a>.</p>)}
+      <details>
+        <summary>Food contributions and uncertainty</summary>
+        <p>{field.coverage_note}</p>
+        {field.scenario_note && <p>{field.scenario_note}</p>}
+        {field.contributions.length > 0 && <div class="tablewrap">
+          <table>
+            <thead><tr><th>Food</th><th>Model portion</th><th>Contribution</th><th>Source basis</th></tr></thead>
+            <tbody>{field.contributions.map((row) => <tr>
+              <td>{row.food}</td>
+              <td>{format(row.grams, "g")}<br /><span class="dim">{row.quantity_status}</span></td>
+              <td>{format(row.amount, field.unit)}</td>
+              <td>{row.source_url ? <a href={row.source_url}>{row.evidence}</a> : row.evidence}</td>
+            </tr>)}</tbody>
+          </table>
+        </div>}
+        {field.missing_foods.length > 0 && <p><strong>Unquantified:</strong> {field.missing_foods.join("; ")}.</p>}
+        {field.estimated_zeros?.length > 0 && <>
+          <p><strong>Provisional or modeled zeros:</strong></p>
+          <ul>{field.estimated_zeros.map((row) => <li>{row.food}: {row.source_url ? <a href={row.source_url}>{row.evidence}</a> : row.evidence}.</li>)}</ul>
+          <p>These are model inputs or current label declarations. They do not prove exact absence in the original package.</p>
+        </>}
+      </details>
+    </section>)}
+  </div>
+  <div class="nutrient-prose" set:html={prose} />
+  <p class="topic-return"><a href={standalone ? "/nutrition/guide/#nutrient-index" : "#nutrient-index"}>Back to nutrient index</a></p>
+</section>
+<style>
+  .nutrient-topic { border-top: 1px solid var(--rule); margin-top: 52px; padding-top: 12px; }
+  .nutrient-topic.standalone { border-top: none; margin-top: 0; padding-top: 0; }
+  .nutrient-topic > h2 { margin-top: 24px; }
+  .attention { margin-bottom: 8px; }
+  .judgment-note, .reference-note { color: var(--dim); font-size: 13px; }
+  .intake-line { margin-bottom: 16px; }
+  .intake-panels { border-left: 1px solid var(--rule); padding-left: 18px; margin: 28px 0 36px; }
+  .intake-panels h2, .intake-panels h3 { margin-top: 28px; }
+  .intake-panels h2[id], .intake-panels h3[id] { scroll-margin-top: 24px; }
+  .intake-panels h2:first-child, .intake-panels h3:first-child { margin-top: 0; }
+  details { margin: 0 0 28px; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  details[open] summary { margin-bottom: 20px; }
+  .topic-return { margin-top: 32px; font-size: 13px; }
+  .review-pending { border-left: 2px solid var(--fg); padding-left: 16px; }
+  :global(.nutrient-prose h3) { margin-top: 36px; }
+  @media(max-width:620px) { .intake-panels { padding-left: 12px; } }
+</style>

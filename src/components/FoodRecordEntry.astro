@@ -1,0 +1,100 @@
+---
+import guide from "../data/nutrition/guide.json";
+const nutrientPages = Object.fromEntries(guide.index.map((row) => [row.nutrient_id, row.topic_slug]));
+const { entry } = Astro.props;
+const format = (value, digits = 1) => value == null ? "Unknown" : Number(value).toLocaleString("en-US", { maximumFractionDigits: digits });
+const amount = (item) => item.amount == null ? "Amount unreported" : `${typeof item.amount === "number" ? format(item.amount, 2) : item.amount} ${item.unit ?? ""}`.trim();
+const categories = [["macronutrients", "Energy and macronutrients"], ["vitamins", "Vitamins"], ["minerals", "Minerals"], ["other", "Related nutrients and compounds"]];
+const isPattern = entry.kind === "reported_pattern";
+const isPurchaseLed = entry.record_scope === "purchase_led";
+const supplementText = (row) => {
+  if (row.status === "explicitly_not_taken") return `${row.name} explicitly not taken`;
+  if (row.status === "not_currently_available") return `${row.name} was unavailable; use unconfirmed`;
+  if (row.status.startsWith("not_yet_taken_at_")) return `${row.name} had not been taken at ${row.status.slice(17).replaceAll("_", ":")}; later use unconfirmed`;
+  if (["taken", "reported_taken"].includes(row.status)) return `${row.name}: ${row.amount == null ? "taken; dose unreported" : `${amount(row)} taken`}`;
+  return `${row.name}: ${row.status.replaceAll("_", " ")}`;
+};
+const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged_supplement_total > 0 || row.logged_supplement_unknown);
+---
+<section class="food-entry" aria-labelledby={entry.id}>
+  <h2 id={entry.id}>{entry.title}</h2>
+  <p class="entry-date">{entry.food_date ? `Food date ${entry.food_date}` : "Food date unconfirmed"} · Report received {entry.recorded_local_date}</p>
+  <p>{entry.summary}</p>
+  {isPurchaseLed && <p class="dim">This day began as a shopping report. Later messages confirm eating and describe taste and appetite; finishing every purchased item was not confirmed.</p>}
+  {entry.context.filter((row) => row.observation !== "Not reported for this day.").length > 0 && <ul class="observations">
+    {entry.context.filter((row) => row.observation !== "Not reported for this day.").map((row) => <li><strong>{row.field.replaceAll("_", " ")}:</strong> {row.observation}</li>)}
+  </ul>}
+  <details>
+    <summary>{isPattern ? "Foods in the described pattern" : isPurchaseLed ? "Foods described and purchased portions" : "Foods and reported portions"}</summary>
+    {isPurchaseLed && <p>Counts below were described alongside purchases. A described count does not prove that the entire amount was eaten.</p>}
+    <div class="tablewrap"><table>
+      <thead><tr><th>{isPattern ? "Food in pattern" : "Food reported"}</th><th>{isPurchaseLed ? "Described amount" : "Reported amount"}</th><th>What is known</th></tr></thead>
+      <tbody>{entry.items_reported_eaten.map((item) => <tr>
+        <td>{item.name}</td><td>{amount(item)}</td><td>{item.note ?? item.portion_status}</td>
+      </tr>)}</tbody>
+    </table></div>
+    <p class="dim">{entry.coverage}. {entry.date_note}</p>
+  </details>
+  {entry.supplements.length > 0 && <p><strong>Supplements:</strong> {entry.supplements.map(supplementText).join("; ")}. Other supplement use is unreported.</p>}
+  {entry.leftovers.length > 0 && <details>
+    <summary>Leftovers and waste</summary>
+    <ul>{entry.leftovers.map((row) => <li>{row.food}: {row.amount}; {row.status}.</li>)}</ul>
+  </details>}
+  {entry.plans.length > 0 && <details>
+    <summary>Plans and foods not consumed</summary>
+    <ul>{entry.plans.map((row) => <li>{row.description} <span class="dim">{row.status}.</span></li>)}</ul>
+  </details>}
+  {entry.purchases.length > 0 && <details>
+    <summary>Purchases</summary>
+    <p>{isPurchaseLed ? "The receipt records what was bought. Completion and edible weights were not confirmed for every item." : "A purchase records what was available. The eaten amounts above retain their own status."}</p>
+    <ul>{entry.purchases.map((row) => <li>{row.food}: {row.amount}{row.price_usd != null && <>; ${row.price_usd.toFixed(2)}</>}.</li>)}</ul>
+    {entry.purchase_total_usd != null && <p>Receipt total: ${entry.purchase_total_usd.toFixed(2)}. {entry.purchase_total_note}</p>}
+  </details>}
+  {entry.nutrition ? <>
+    <p class="macro-summary"><strong>Model estimate:</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
+    <p>These figures use the assumptions below. They describe estimated intake and do not establish an energy requirement.</p>
+    {entry.nutrition.revision_note && <p class="dim">Calculation version {entry.nutrition.version}, reviewed {entry.nutrition.reviewed_date}: {entry.nutrition.revision_note}</p>}
+    <details>
+      <summary>Calculation portions and assumptions</summary>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Food</th><th>Model amount</th><th>Status</th></tr></thead>
+        <tbody>{entry.nutrition.foods.map((row) => <tr>
+          <td>{row.name}</td><td>{format(row.grams, 0)} g</td><td>{row.quantity_status}{row.notes && <> — {row.notes}</>}</td>
+        </tr>)}</tbody>
+      </table></div>
+      <p>{entry.nutrition.scenario_note}</p>
+      <p>{entry.nutrition.source_note}</p>
+    </details>
+    <details class="nutrient-totals">
+      <summary>Full nutrient estimates</summary>
+      <p>Amounts are available-value food estimates. Unknown entries remain unknown; a partial subtotal can omit important foods or recipe components. Read a nutrient's linked explanation before interpreting its reference.</p>
+      {categories.map(([id, title]) => <>
+        <h3>{title}</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Nutrient</th><th>Food estimate</th>{showSupplementColumn && <th>Logged supplements</th>}<th>Data coverage</th></tr></thead>
+          <tbody>{entry.nutrition.nutrients.filter((row) => row.category === id).map((row) => <tr>
+            <td><a href={`/nutrition/guide/${nutrientPages[row.id]}/#field-${row.id.replaceAll("_", "-")}`}>{row.name}</a></td>
+            <td>{row.food_total == null ? "Unknown" : row.food_total > 0 && row.food_total < 0.005 ? `<0.01 ${row.unit}` : `${format(row.food_total, row.unit === "g" ? (row.food_total < 1 ? 2 : 1) : row.food_total >= 10 ? 0 : 1)} ${row.unit}`}</td>
+            {showSupplementColumn && <td>{row.logged_supplement_total > 0 ? `${format(row.logged_supplement_total, 2)} ${row.unit}` : row.logged_supplement_unknown ? "Amount unreported" : "None logged"}{row.logged_supplement_total > 0 && row.logged_supplement_unknown && "; another amount unreported"}</td>}
+            <td>{row.known_food_count}/{row.food_count} foods{row.partial_food_count > 0 && <>; {row.partial_food_count} partial</>}</td>
+          </tr>)}</tbody>
+        </table></div>
+      </>)}
+    </details>
+  </> : <p class="dim">No full-day calculation has been accepted for this record. Reported quantities, missing portions and the scope of the account remain visible above; earlier meal scenarios do not substitute for confirmed consumption.</p>}
+  {entry.corrections?.length > 0 && <details>
+    <summary>Corrections and interpretation</summary>
+    <ul>{entry.corrections.map((text) => <li>{text}</li>)}</ul>
+  </details>}
+</section>
+<style>
+  .food-entry { border-top: 1px solid var(--rule); margin-top: 44px; padding-top: 8px; }
+  .food-entry > h2 { margin-top: 24px; margin-bottom: 8px; }
+  .entry-date { font-size: 13px; color: var(--dim); margin-bottom: 24px; }
+  .observations { margin-bottom: 28px; }
+  details { margin: 24px 0; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  details[open] summary { margin-bottom: 24px; }
+  .macro-summary { border-left: 1px solid var(--rule); padding-left: 16px; margin-top: 28px; }
+</style>

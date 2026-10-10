@@ -1,0 +1,19 @@
+---
+const { current } = Astro.props;
+const links = [
+  ["notebook", "/nutrition-notebook/", "Nutrition notebook"],
+  ["guide", "/nutrition/guide/", "Nutrient guide"],
+  ["record", "/nutrition/record/", "Food record"],
+  ["research", "/nutrition/research/", "Investigations"],
+];
+---
+<nav class="nutrition-nav" aria-label="Nutrition pages">
+  {links.map(([id, href, title], i) => <>
+    {i > 0 && " · "}
+    {current === id ? <span aria-current="page">{title}</span> : <a href={href}>{title}</a>}
+  </>)}
+</nav>
+<style>
+  .nutrition-nav { font-size: 13px; line-height: 1.8; margin: 0 0 32px; }
+  .nutrition-nav a, .nutrition-nav span { white-space: nowrap; }
+</style>

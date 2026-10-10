@@ -1,0 +1,41 @@
+---
+import Post from "../../../layouts/Post.astro";
+import NutritionNav from "../../../components/NutritionNav.astro";
+const pages = import.meta.glob("../../../data/nutrition/investigations/*.md", { eager: true });
+const entries = Object.entries(pages).map(([path, page]) => ({
+  slug: path.split("/").pop().replace(/\.md$/, ""),
+  ...page.frontmatter,
+})).sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
+const categories = [
+  ["foods", "Food choices", "Taste, portions and the evidence behind an optional food change."],
+  ["dietary-patterns", "The whole eating pattern", "Questions about meals, hydration, storage and repeated observations."],
+  ["recovery", "Training and recovery", "Enough food, connective tissue and performance supplements."],
+  ["interactions", "Nutrients working together", "Protein and energy, bone loading, food absorption and laboratory interpretation."],
+  ["experimental", "Experimental interventions", "Compound identity, exposure, human outcomes and unresolved tradeoffs."],
+  ["methods", "How to read the evidence", "Intake references, measurements and the decisions they can support."],
+];
+const frontmatter = {
+  title: "Nutrition investigations",
+  description: "Research connecting foods, nutritional adequacy, training, recovery and experimental interventions.",
+  updated: "2026-10-10",
+};
+---
+<Post frontmatter={frontmatter}>
+  <NutritionNav current="research" />
+  <p>Some useful questions cross nutrient boundaries. These investigations follow foods and eating patterns, the demands of training, performance supplements, and newer experimental ideas. Each connects the relevant evidence to a practical decision and keeps the outcome being tested clear.</p>
+  {entries.length > 0 ? categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title, description]) => <section aria-labelledby={id}>
+    <h2 id={id}>{title}</h2>
+    <p>{description}</p>
+    <ul>{entries.filter((entry) => entry.category === id).map((entry) => <li>
+      <a href={`/nutrition/research/${entry.slug}/`}>{entry.title}</a>
+      {entry.description && <span class="description">{entry.description}</span>}
+    </li>)}</ul>
+  </section>) : <p>Working research is being developed alongside the <a href="/nutrition/guide/">nutrient guide</a>.</p>}
+  <h2>Reading an intervention</h2>
+  <p>The relevant questions are what it changes, at what exposure, in which population, and with what demonstrated outcome. A result in cells, a change in a blood marker and an improvement in people's health or performance establish different things. The sections retain these distinctions beside their claims.</p>
+  <p>The <a href="/nutrition-notebook/">notebook</a> holds the current decisions. The <a href="/nutrition/record/">food record</a> shows what I actually ate and how that felt.</p>
+</Post>
+<style>
+  .description { display: block; color: var(--dim); font-size: 13px; margin-top: 4px; }
+  li { margin-bottom: 20px; }
+</style>

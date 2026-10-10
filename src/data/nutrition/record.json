@@ -1,0 +1,1615 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-10",
+  "entries": [
+    {
+      "id": "first-hotel-day",
+      "title": "The first hotel shopping day",
+      "kind": "food_report",
+      "food_date": "2026-09-19",
+      "recorded_local_date": "2026-09-19",
+      "date_status": "historical_export_diary_date",
+      "summary": "The first diary report used what a nearby shop had: bananas, mango, strawberries, a chocolate bar and a small flavored yogurt. The track session happened; lifting and sauna were skipped.",
+      "items_reported_eaten": [
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Mango",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Strawberries",
+          "amount": 1,
+          "unit": "lb",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Ritter Sport dark chocolate with whole hazelnuts",
+          "amount": 100,
+          "unit": "g",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Chobani Greek yogurt, blueberry on the bottom",
+          "amount": 5.3,
+          "unit": "oz",
+          "portion_status": "reported"
+        }
+      ],
+      "context": [
+        {
+          "field": "training",
+          "kind": "self_reported",
+          "observation": "Reported 40 minutes cycling and a track session of 3 × 1200 m with 1-minute recovery. Later clarified that lifting and sauna were skipped."
+        },
+        {
+          "field": "shopping",
+          "kind": "self_reported",
+          "observation": "Late start and unfamiliar routes limited shopping; almonds and the planned chocolate variant were not obtained."
+        },
+        {
+          "field": "taste_and_practicality",
+          "kind": "self_reported",
+          "observation": "Ate mango without preparation and found fibers stuck between the teeth; suspected it was not ripe enough."
+        },
+        {
+          "field": "storage",
+          "kind": "self_reported",
+          "observation": "Hotel setting made preparing and eating foods awkward."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "partial day; Chipotle had not yet been visited when reported",
+      "nutrition": null
+    },
+    {
+      "id": "burrito-and-yogurt-day",
+      "title": "Full after the burrito and yogurt",
+      "kind": "food_report",
+      "food_date": "2026-09-20",
+      "recorded_local_date": "2026-09-20",
+      "date_status": "historical_export_diary_date",
+      "summary": "A burrito with extra carnitas preceded the yogurt, mango, almonds and raspberries. Finishing the later food was difficult; thirst and extra fullness were reported. Chocolate remained appealing despite fullness.",
+      "items_reported_eaten": [
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Mango",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "note": "Listed, then described eating it; exact count and completion not confirmed."
+        },
+        {
+          "name": "Almonds",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "note": "Listed, then described eating them; exact amount not confirmed."
+        },
+        {
+          "name": "Chobani nonfat Greek yogurt",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "note": "Listed as 16 oz; later said the yogurt/fruit was difficult to finish, so actual completion is unconfirmed."
+        },
+        {
+          "name": "Raspberries",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "note": "Reported eating them in the later account; amount unreported."
+        },
+        {
+          "name": "Chocolove Extra Strong Dark 77%",
+          "amount": 30,
+          "unit": "g plus one additional piece",
+          "portion_status": "reported",
+          "note": "Initially 30 g from a 90 g bar, then another piece; the rest was thrown away. Additional piece size is unknown."
+        },
+        {
+          "name": "Taqueria El Farolito burrito with extra carnitas",
+          "amount": 1,
+          "unit": "burrito",
+          "portion_status": "reported",
+          "note": "Eaten around 18:00; ingredients and portion size beyond extra carnitas not specified."
+        }
+      ],
+      "context": [
+        {
+          "field": "appetite",
+          "kind": "self_reported",
+          "observation": "Full after the burrito; the later yogurt, mango, almonds and raspberries felt very filling and were difficult to finish."
+        },
+        {
+          "field": "fluids",
+          "kind": "self_reported",
+          "observation": "Felt an intense need to drink water, but drinking increased fullness; amount unmeasured."
+        },
+        {
+          "field": "taste_and_portion_control",
+          "kind": "self_reported",
+          "observation": "Reported that chocolate remained equally appealing even when otherwise full, and that buying only a day's quantity was easier."
+        },
+        {
+          "field": "social",
+          "kind": "self_reported",
+          "observation": "Went out with friends and ate at Taqueria El Farolito."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Magnesium",
+          "status": "not_yet_taken_at_21_29",
+          "amount": null,
+          "unit": null,
+          "note": "No later confirmation that it was taken."
+        }
+      ],
+      "leftovers": [
+        {
+          "food": "Chocolate",
+          "amount": "remainder of the 90 g bar after 30 g and one extra piece",
+          "status": "discarded"
+        }
+      ],
+      "purchases": [],
+      "plans": [],
+      "coverage": "partial-to-day report with uncertain completion of the yogurt/fruit portion and an unknown extra chocolate piece",
+      "nutrition": null
+    },
+    {
+      "id": "third-hotel-day",
+      "title": "Third diary report",
+      "kind": "food_report",
+      "food_date": "2026-09-21",
+      "recorded_local_date": "2026-09-21",
+      "date_status": "historical_export_diary_date",
+      "summary": "The third diary report listed nonfat plain Chobani yogurt, mango, chili-and-lemon almonds, two bananas and a Scharffen Berger chocolate bar.",
+      "items_reported_eaten": [
+        {
+          "name": "Chobani plain nonfat Greek yogurt",
+          "amount": 16,
+          "unit": "oz",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Mango",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Burke's Naturals chili and lemon almonds",
+          "amount": 1,
+          "unit": "oz",
+          "portion_status": "reported",
+          "note": "Keep distinct from Trader Joe's plain raw almonds."
+        },
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Scharffen Berger 70% bittersweet dark chocolate",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "note": "85 g bar listed; the report does not separately confirm how much of the bar was eaten."
+        }
+      ],
+      "context": [
+        {
+          "field": "shopping",
+          "kind": "self_reported",
+          "observation": "Preferred a nearby shop and was willing to pay more for convenience; the chosen chocolate variant was difficult to find."
+        },
+        {
+          "field": "taste_and_portion_control",
+          "kind": "self_reported",
+          "observation": "Still finding chocolate portions difficult to control."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "partial afternoon report; later restaurant meal and complete chocolate consumption not confirmed",
+      "nutrition": null
+    },
+    {
+      "id": "september-chipotle-pattern",
+      "title": "A one-bowl Chipotle pattern",
+      "kind": "reported_pattern",
+      "food_date": null,
+      "recorded_local_date": "2026-09-23",
+      "date_status": "unconfirmed",
+      "summary": "The revised pattern used nonfat yogurt, fruit and almonds, plus one double-chicken Chipotle bowl. Appetite did not justify a second bowl even on busy training days.",
+      "items_reported_eaten": [
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Chobani plain nonfat Greek yogurt",
+          "amount": 16,
+          "unit": "oz",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Dark chocolate",
+          "amount": 40,
+          "unit": "g",
+          "portion_status": "reported",
+          "note": "Added in the corrected second version of the pattern; brand unspecified."
+        },
+        {
+          "name": "Raspberries",
+          "amount": 6,
+          "unit": "oz",
+          "portion_status": "reported",
+          "food_id": "raspberries"
+        },
+        {
+          "name": "Almonds",
+          "amount": 1,
+          "unit": "oz",
+          "portion_status": "reported",
+          "note": "Variant not specified in this pattern."
+        },
+        {
+          "name": "Oranges",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "orange"
+        },
+        {
+          "name": "Chipotle bowl: white rice, black beans, double chicken, cooked vegetables, tomato and guacamole",
+          "amount": 1,
+          "unit": "bowl",
+          "portion_status": "reported",
+          "note": "Restaurant portions not weighed."
+        }
+      ],
+      "context": [
+        {
+          "field": "appetite",
+          "kind": "self_reported",
+          "observation": "Did not feel hungry for a second bowl even on days described as 1.5 hours cycling, track intervals, gym and sauna.",
+          "note": "General pattern, not a measured energy requirement or confirmation of that day's workout."
+        },
+        {
+          "field": "taste",
+          "kind": "self_reported",
+          "observation": "Wanted alternatives to mango and lettuce."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Vitamin D",
+          "status": "not_currently_available",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "name": "Creatine",
+          "status": "not_currently_available",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "name": "Fish oil",
+          "status": "not_currently_available",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "reported dietary pattern; not a confirmed complete food log for the dated day",
+      "date_note": "Recorded in an afternoon discussion on 23 September; the report describes the pattern and training days generally.",
+      "nutrition": null
+    },
+    {
+      "id": "chipotle-example",
+      "title": "A simpler day felt sufficient",
+      "kind": "food_report",
+      "food_date": null,
+      "recorded_local_date": "2026-10-08",
+      "date_status": "unconfirmed",
+      "summary": "A recalled day of yogurt, almonds, two bananas and two ordinary-chicken Chipotle bowls felt like enough food. The report accompanied a short sprint session.",
+      "items_reported_eaten": [
+        {
+          "name": "Yogurt",
+          "amount": 1,
+          "unit": "bucket",
+          "portion_status": "reported",
+          "note": "Brand, variant and bucket size not answered."
+        },
+        {
+          "name": "Almonds",
+          "amount": 4,
+          "unit": "oz",
+          "portion_status": "reported",
+          "note": "Explicit correction: 4 oz referred to almonds, not chicken; brand unconfirmed."
+        },
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Chipotle bowls: rice, beans, normal chicken and tomato",
+          "amount": 2,
+          "unit": "bowls",
+          "portion_status": "reported",
+          "note": "Normal chicken confirmed; exact chicken ounces and other serving sizes unconfirmed."
+        }
+      ],
+      "context": [
+        {
+          "field": "appetite",
+          "kind": "self_reported",
+          "observation": "Felt like just enough food."
+        },
+        {
+          "field": "training",
+          "kind": "self_reported",
+          "observation": "Reported 13 repetitions of 10-second sprints with 10-second rests."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "recalled day; yogurt size and restaurant portions unconfirmed",
+      "date_note": "Called 'yesterday' in a report after midnight; calendar eating date is unconfirmed. This is a separate earlier example, not the oversized-bowl day.",
+      "nutrition": null
+    },
+    {
+      "id": "oversized-bowl",
+      "title": "The bowl was too large",
+      "kind": "food_report",
+      "food_date": null,
+      "recorded_local_date": "2026-10-08",
+      "date_status": "unconfirmed",
+      "summary": "Fruit, yogurt and almonds were enjoyable, but adding a large rice, chicken, sardine, bean and olive bowl overwhelmed appetite. Much of the savory bowl was left and discarded.",
+      "items_reported_eaten": [
+        {
+          "name": "RT chicken, skin left on",
+          "amount": 0.5,
+          "unit": "of the purchased half chicken",
+          "portion_status": "reported",
+          "food_id": "rt_chicken_skin_on",
+          "note": "The purchased portion was a half chicken; half of that portion remained. This is about a quarter bird, with unweighed edible meat."
+        },
+        {
+          "name": "Hass avocado",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "avocado"
+        },
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Granny Smith apple",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "granny_smith_apple"
+        },
+        {
+          "name": "Navel orange",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "orange"
+        },
+        {
+          "name": "Beefsteak tomato",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "large_tomato"
+        },
+        {
+          "name": "Red bell peppers",
+          "amount": 1.5,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "red_pepper",
+          "note": "The purchased two-pepper pack was labelled 341 g; edible grams were not weighed."
+        },
+        {
+          "name": "Trader Joe's raw almonds",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_raw_almonds",
+          "note": "Eaten amount not explicitly confirmed. The 28 g message corrected label serving size, not a measurement of intake."
+        },
+        {
+          "name": "Raspberries",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "raspberries",
+          "note": "Eaten; 6 oz package size recorded. Complete package consumption was not stated in the retrospective list."
+        },
+        {
+          "name": "Trader Joe's European style whole milk yogurt",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_yogurt_whole",
+          "note": "Eaten; 32 oz tub/170 g label serving recorded. Complete tub consumption was not explicitly confirmed."
+        },
+        {
+          "name": "Crown Prince Natural skinless boneless sardines in olive oil",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "crown_prince_sardines",
+          "note": "Eaten; one can was prepared. Drained can basis was 80 g. Exact oil handling was not confirmed."
+        },
+        {
+          "name": "Sliced black olives",
+          "amount": 0.6666666666666666,
+          "unit": "of drained can",
+          "portion_status": "reported",
+          "food_id": "tjs_black_olives"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_basmati_rice",
+          "note": "Some eaten; majority of prepared rice remained. Exact fraction unknown."
+        },
+        {
+          "name": "Black beans, drained but not rinsed",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_black_beans",
+          "note": "Some eaten; initially 3/5 left, then corrected to majority left. Exact consumed fraction unresolved."
+        },
+        {
+          "name": "RT chimichurri",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "rt_chimichurri",
+          "note": "One nominal 2 oz cup was added to the shared bowl. Amount actually eaten cannot be recovered from the discarded remainder."
+        }
+      ],
+      "context": [
+        {
+          "field": "appetite",
+          "kind": "self_reported",
+          "observation": "Could not eat any more; was ready to stop after the liked foods, possibly before the tomato and avocado."
+        },
+        {
+          "field": "taste",
+          "kind": "self_reported",
+          "observation": "Enjoyed almonds, yogurt, raspberries, bananas, orange, apple, tomato, avocado and peppers. Disliked the olives and sardines."
+        },
+        {
+          "field": "waste",
+          "kind": "self_reported",
+          "observation": "Discarded the remainder because there was no suitable container and no usable room in the shared refrigerator. Reported this as unusually distressing food waste."
+        },
+        {
+          "field": "training",
+          "kind": "self_reported",
+          "observation": "Went to the gym and returned before assembling the meal. Exercise details for that visit were not reported."
+        },
+        {
+          "field": "meal_structure",
+          "kind": "self_reported",
+          "observation": "Preferred yogurt, fruit and almonds spread through the day, then a smaller familiar savory meal."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Vitamin D",
+          "status": "explicitly_not_taken",
+          "amount": 0,
+          "unit": "IU"
+        }
+      ],
+      "leftovers": [
+        {
+          "food": "Rice",
+          "amount": "majority of prepared rice",
+          "status": "discarded"
+        },
+        {
+          "food": "Beans",
+          "amount": "majority; initially described as 3/5",
+          "status": "discarded"
+        },
+        {
+          "food": "Chicken",
+          "amount": "half the purchased half chicken",
+          "status": "discarded"
+        },
+        {
+          "food": "Olives",
+          "amount": "1/3 drained can",
+          "status": "discarded"
+        },
+        {
+          "food": "Red bell pepper",
+          "amount": "1/2 pepper",
+          "status": "discarded"
+        }
+      ],
+      "purchases": [],
+      "plans": [
+        {
+          "description": "Proposed a future savory meal of rice, 1/3 can beans, normal boneless chicken, avocado, tomato and one pepper.",
+          "status": "hypothetical; not eaten; later storage constraints made leftover canned beans impractical"
+        }
+      ],
+      "coverage": "actual consumption report supersedes the full-food calculation scenario",
+      "date_note": "Preparation began the evening of 7 October and the eating/leftover account continued after midnight on 8 October. Calendar eating date is left unconfirmed.",
+      "nutrition": null
+    },
+    {
+      "id": "anchovy-replacement",
+      "title": "A pleasant day, with overly salty fish",
+      "kind": "food_report",
+      "food_date": null,
+      "recorded_local_date": "2026-10-09",
+      "date_status": "unconfirmed",
+      "summary": "Beans and olives were removed. The fish changed to anchovies, with one red pepper and three smaller tomatoes. The food was enjoyed overall and there was slight hunger before bed; the anchovies were too salty.",
+      "items_reported_eaten": [
+        {
+          "name": "Trader Joe's European style organic plain whole milk yogurt",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_yogurt_whole",
+          "note": "32 oz purchased tub. Whole-tub consumption remains an assumption."
+        },
+        {
+          "name": "Trader Joe's anchovy fillets in olive oil",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "tjs_anchovies",
+          "note": "One tin purchased, 31 g drained label weight. Entire drained tin consumption was used in the old scenario, not independently confirmed."
+        },
+        {
+          "name": "Navel orange",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "orange",
+          "note": "One purchased; eaten-day report lacks explicit count."
+        },
+        {
+          "name": "Granny Smith apple",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "granny_smith_apple",
+          "note": "One purchased; eaten-day report lacks explicit count."
+        },
+        {
+          "name": "Hass avocado",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "avocado",
+          "note": "One purchased; eaten-day report lacks explicit count."
+        },
+        {
+          "name": "Red bell pepper",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "red_pepper"
+        },
+        {
+          "name": "Bananas",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "banana",
+          "note": "Two purchased; no independent eaten count."
+        },
+        {
+          "name": "Raspberries",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "raspberries",
+          "note": "6 oz purchased package; full-package consumption assumed in old scenario."
+        },
+        {
+          "name": "Organic tomatoes on the vine",
+          "amount": 3,
+          "unit": "smaller tomatoes",
+          "portion_status": "reported",
+          "food_id": "vine_tomatoes",
+          "note": "454 g purchased pack. Complete pack/edible weight unweighed."
+        },
+        {
+          "name": "RT half chicken",
+          "amount": 1,
+          "unit": "half chicken",
+          "portion_status": "reported",
+          "food_id": "rt_chicken_skin_on",
+          "note": "Edible grams and skin handling not separately reported; skin-on model was carried from the earlier meal."
+        },
+        {
+          "name": "Basmati rice",
+          "amount": 1,
+          "unit": "pouch",
+          "portion_status": "reported",
+          "food_id": "tjs_basmati_rice"
+        },
+        {
+          "name": "Raw almonds",
+          "amount": 1,
+          "unit": "handful",
+          "portion_status": "reported",
+          "food_id": "tjs_raw_almonds",
+          "note": "Grams unweighed; earlier 28 g serving was the old calculation assumption."
+        },
+        {
+          "name": "RT chimichurri",
+          "amount": 1,
+          "unit": "container",
+          "portion_status": "reported",
+          "food_id": "rt_chimichurri",
+          "note": "Nominal 2 oz cup carried from the preceding meal description; herbs, salt and exact oil content unmeasured."
+        }
+      ],
+      "context": [
+        {
+          "field": "appetite",
+          "kind": "self_reported",
+          "observation": "Slightly hungry before going to bed; felt the overall amount was workable."
+        },
+        {
+          "field": "taste",
+          "kind": "self_reported",
+          "observation": "Liked the food overall; anchovies were far too salty. The earlier sardines had been bland."
+        },
+        {
+          "field": "food_preferences",
+          "kind": "self_reported",
+          "observation": "Willing to add walnuts and change apple to kiwis; mango and melon also sounded good."
+        },
+        {
+          "field": "storage",
+          "kind": "self_reported",
+          "observation": "Daily food should be eaten immediately or require no cold storage; stable personal refrigerator and storage were not yet available."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [
+        {
+          "food": "European style organic plain yogurt",
+          "amount": "1 tub",
+          "price_usd": 4.99
+        },
+        {
+          "food": "Anchovy fillets in olive oil",
+          "amount": "1 tin",
+          "price_usd": 1.99
+        },
+        {
+          "food": "Navel orange",
+          "amount": "1",
+          "price_usd": 0.89
+        },
+        {
+          "food": "Granny Smith apple",
+          "amount": "1",
+          "price_usd": 0.69
+        },
+        {
+          "food": "Hass avocado",
+          "amount": "1",
+          "price_usd": 1.49
+        },
+        {
+          "food": "Red bell pepper",
+          "amount": "1",
+          "price_usd": 1.49
+        },
+        {
+          "food": "Bananas",
+          "amount": "2",
+          "price_usd": 0.46
+        },
+        {
+          "food": "Raspberries",
+          "amount": "6 oz package",
+          "price_usd": 3.49
+        },
+        {
+          "food": "Organic tomatoes on the vine",
+          "amount": "454 g package",
+          "price_usd": 2.99
+        }
+      ],
+      "plans": [],
+      "coverage": "purchase-led day with later confirmation of eating; exact completion of packages unconfirmed",
+      "date_note": "Reported after midnight on 9 October; the receipt is dated 8 October at 19:35. The receipt establishes purchase time, not a complete calendar eating date.",
+      "purchase_total_usd": 18.48,
+      "purchase_total_note": "Receipt total, excludes separately obtained chicken, chimichurri, rice and almonds.",
+      "record_scope": "purchase_led",
+      "nutrition": null
+    },
+    {
+      "id": "four-banana-nonfat-day",
+      "title": "Nonfat yogurt, walnuts and sardines",
+      "kind": "food_report",
+      "food_date": null,
+      "recorded_local_date": "2026-10-10",
+      "date_status": "unconfirmed",
+      "summary": "The latest report changed to nonfat yogurt, added walnuts alongside almonds, returned to the original sardines and listed four bananas. Vitamin D and broth were forgotten.",
+      "items_reported_eaten": [
+        {
+          "name": "Trader Joe's European style organic nonfat plain yogurt",
+          "amount": 32,
+          "unit": "oz",
+          "portion_status": "reported",
+          "food_id": "tjs_yogurt_nonfat",
+          "note": "Entire tub explicitly confirmed in a follow-up on 2026-10-10. Product nutrient label remains provisional."
+        },
+        {
+          "name": "Bananas",
+          "amount": 4,
+          "unit": "count",
+          "portion_status": "reported",
+          "food_id": "banana"
+        },
+        {
+          "name": "Raw almonds",
+          "amount": "about 10–15",
+          "unit": "nuts",
+          "portion_status": "estimated",
+          "food_id": "tjs_raw_almonds"
+        },
+        {
+          "name": "Walnuts",
+          "amount": "roughly equal to almonds",
+          "unit": "amount",
+          "portion_status": "estimated",
+          "food_id": "english_walnuts",
+          "note": "Equal weight is a calculator assumption. The follow-up has a typo ('equivalent yogurt') and does not establish exact grams or walnut halves."
+        },
+        {
+          "name": "Raspberries",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "raspberries"
+        },
+        {
+          "name": "Orange",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "orange"
+        },
+        {
+          "name": "Beefsteak tomato, same kind as the first day",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "large_tomato"
+        },
+        {
+          "name": "Hass avocado",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "avocado"
+        },
+        {
+          "name": "Red bell pepper",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "red_pepper"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": 1,
+          "unit": "pouch",
+          "portion_status": "reported",
+          "food_id": "tjs_basmati_rice"
+        },
+        {
+          "name": "RT half chicken",
+          "amount": 1,
+          "unit": "half chicken",
+          "portion_status": "reported",
+          "food_id": "rt_chicken_skin_on",
+          "note": "Whole reported half chicken; this differs from half of the purchased half chicken on the oversized-bowl day."
+        },
+        {
+          "name": "RT chimichurri",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "rt_chimichurri",
+          "note": "Included with chicken; one nominal 2 oz cup is the saved calculation assumption."
+        },
+        {
+          "name": "Crown Prince Natural skinless boneless sardines in olive oil, same product as first day",
+          "amount": null,
+          "unit": null,
+          "portion_status": "unreported",
+          "food_id": "crown_prince_sardines",
+          "note": "One drained 80 g can is the saved calculation assumption."
+        }
+      ],
+      "context": [
+        {
+          "field": "taste",
+          "kind": "unreported",
+          "observation": "Not reported for this day."
+        },
+        {
+          "field": "appetite",
+          "kind": "unreported",
+          "observation": "Not reported for this day."
+        },
+        {
+          "field": "training",
+          "kind": "unreported",
+          "observation": "Not reported for this day."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Vitamin D",
+          "status": "explicitly_not_taken",
+          "amount": 0,
+          "unit": "IU"
+        }
+      ],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [
+        {
+          "description": "Broth had been planned, but was not consumed.",
+          "status": "explicitly_not_consumed"
+        }
+      ],
+      "coverage": "reported day; yogurt tub and banana count confirmed, several other container amounts and edible weights remain assumptions",
+      "date_note": "The report was sent at 02:37 local time on 10 October. Calendar eating date was not confirmed.",
+      "corrections": [
+        "Confirmed eating the entire 32 oz nonfat yogurt tub. The earlier model already counted that amount; only its portion status changes."
+      ],
+      "nutrition": {
+        "summary": {
+          "energy_kcal": 3090.2978991596638,
+          "protein_g": 182.0241268907563,
+          "carbohydrate_g": 326.944343697479,
+          "fat_g": 122.55067142857143
+        },
+        "foods": [
+          {
+            "name": "European style organic plain nonfat yogurt",
+            "grams": 907.0,
+            "quantity_status": "reported",
+            "notes": "Angel explicitly confirmed eating the entire 32 oz tub on 2026-10-10. Nutrient composition still uses the provisional online label and identified generic comparators."
+          },
+          {
+            "name": "Organic raw almonds",
+            "grams": 15.0,
+            "quantity_status": "estimated",
+            "notes": "10 to 15 almonds implies 12 to 18 g."
+          },
+          {
+            "name": "Raw English walnuts",
+            "grams": 15.0,
+            "quantity_status": "assumed",
+            "notes": "Equal weight to almonds assumed; typo interpreted as walnuts."
+          },
+          {
+            "name": "Banana",
+            "grams": 472.0,
+            "quantity_status": "reported",
+            "notes": ""
+          },
+          {
+            "name": "Raspberries",
+            "grams": 170.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          },
+          {
+            "name": "Navel orange",
+            "grams": 140.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          },
+          {
+            "name": "Large beefsteak tomato",
+            "grams": 182.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          },
+          {
+            "name": "Hass avocado",
+            "grams": 150.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          },
+          {
+            "name": "Red bell pepper",
+            "grams": 150.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          },
+          {
+            "name": "Organic basmati rice frozen",
+            "grams": 283.0,
+            "quantity_status": "reported",
+            "notes": ""
+          },
+          {
+            "name": "RT roast chicken meat and skin",
+            "grams": 299.0,
+            "quantity_status": "estimated",
+            "notes": "Skin on assumed as before."
+          },
+          {
+            "name": "RT chimichurri",
+            "grams": 56.7,
+            "quantity_status": "assumed",
+            "notes": "One cup carried from previous meal description."
+          },
+          {
+            "name": "Skinless boneless sardines in olive oil",
+            "grams": 80.0,
+            "quantity_status": "assumed",
+            "notes": ""
+          }
+        ],
+        "nutrients": [
+          {
+            "id": "energy_kcal",
+            "name": "Calories",
+            "unit": "kcal",
+            "category": "macronutrients",
+            "food_total": 3090.2978991596638,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 3090.2978991596638
+          },
+          {
+            "id": "protein_g",
+            "name": "Protein",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 182.0241268907563,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 182.0241268907563
+          },
+          {
+            "id": "carbohydrate_g",
+            "name": "Carbohydrate",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 326.944343697479,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 326.944343697479
+          },
+          {
+            "id": "fat_g",
+            "name": "Total fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 122.55067142857143,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 122.55067142857143
+          },
+          {
+            "id": "fiber_g",
+            "name": "Dietary fiber",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 46.06585714285715,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 46.06585714285715
+          },
+          {
+            "id": "saturated_fat_g",
+            "name": "Saturated fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 23.380074285714283,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 23.380074285714283
+          },
+          {
+            "id": "total_sugars_g",
+            "name": "Total sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 138.30256134453785,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 138.30256134453785
+          },
+          {
+            "id": "added_sugars_g",
+            "name": "Added sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 0.0,
+            "known_food_count": 9,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "vitamin_a_mcg_rae",
+            "name": "Vitamin A",
+            "unit": "µg RAE",
+            "category": "vitamins",
+            "food_total": 526.07,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 526.07
+          },
+          {
+            "id": "vitamin_c_mg",
+            "name": "Vitamin C",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 400.023,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 400.023
+          },
+          {
+            "id": "vitamin_d_mcg",
+            "name": "Vitamin D",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 4.0,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4.0
+          },
+          {
+            "id": "vitamin_e_mg",
+            "name": "Vitamin E",
+            "unit": "mg α-tocopherol",
+            "category": "vitamins",
+            "food_total": 18.9953,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 18.9953
+          },
+          {
+            "id": "vitamin_k_mcg",
+            "name": "Vitamin K1 phylloquinone",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 80.323,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 80.323
+          },
+          {
+            "id": "thiamin_mg",
+            "name": "Vitamin B1 thiamin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 1.37099,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.37099
+          },
+          {
+            "id": "riboflavin_mg",
+            "name": "Vitamin B2 riboflavin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 3.87393,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 3.87393
+          },
+          {
+            "id": "niacin_mg",
+            "name": "Vitamin B3 niacin",
+            "unit": "mg niacin",
+            "category": "vitamins",
+            "food_total": 42.447239999999994,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 42.447239999999994
+          },
+          {
+            "id": "pantothenic_acid_mg",
+            "name": "Vitamin B5 pantothenic acid",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 15.889179999999998,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 15.889179999999998
+          },
+          {
+            "id": "vitamin_b6_mg",
+            "name": "Vitamin B6",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 5.07854,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 5.07854
+          },
+          {
+            "id": "biotin_mcg",
+            "name": "Vitamin B7 biotin",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "folate_mcg_dfe",
+            "name": "Vitamin B9 folate",
+            "unit": "µg DFE",
+            "category": "vitamins",
+            "food_total": 557.08,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 557.08
+          },
+          {
+            "id": "vitamin_b12_mcg",
+            "name": "Vitamin B12",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 13.5817,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 13.5817
+          },
+          {
+            "id": "calcium_mg",
+            "name": "Calcium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2153.37,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2153.37
+          },
+          {
+            "id": "iron_mg",
+            "name": "Iron",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 13.600414285714285,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 13.600414285714285
+          },
+          {
+            "id": "magnesium_mg",
+            "name": "Magnesium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 632.22,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 632.22
+          },
+          {
+            "id": "phosphorus_mg",
+            "name": "Phosphorus",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2559.9300000000003,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2559.9300000000003
+          },
+          {
+            "id": "potassium_mg",
+            "name": "Potassium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 7016.863277310924,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 7016.863277310924
+          },
+          {
+            "id": "sodium_mg",
+            "name": "Sodium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 753.2515126050421,
+            "known_food_count": 11,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 753.2515126050421
+          },
+          {
+            "id": "zinc_mg",
+            "name": "Zinc",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 21.143099999999997,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 21.143099999999997
+          },
+          {
+            "id": "copper_mg",
+            "name": "Copper",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2.06365,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2.06365
+          },
+          {
+            "id": "manganese_mg",
+            "name": "Manganese",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 5.408740000000002,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 5.408740000000002
+          },
+          {
+            "id": "selenium_mcg",
+            "name": "Selenium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": 174.658,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 174.658
+          },
+          {
+            "id": "iodine_mcg",
+            "name": "Iodine",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chloride_mg",
+            "name": "Chloride",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chromium_mcg",
+            "name": "Chromium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "molybdenum_mcg",
+            "name": "Molybdenum",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "choline_mg",
+            "name": "Choline",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 535.444,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 535.444
+          },
+          {
+            "id": "cholesterol_mg",
+            "name": "Cholesterol",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 309.1258823529412,
+            "known_food_count": 13,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 309.1258823529412
+          },
+          {
+            "id": "ala_g",
+            "name": "Omega 3 ALA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 1.5267383597883595,
+            "known_food_count": 3,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.5267383597883595
+          },
+          {
+            "id": "epa_g",
+            "name": "Omega 3 EPA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.40829999999999994,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.40829999999999994
+          },
+          {
+            "id": "dha_g",
+            "name": "Omega 3 DHA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.5268,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.5268
+          },
+          {
+            "id": "omega3_total_g",
+            "name": "Omega 3 total reported",
+            "unit": "g",
+            "category": "other",
+            "food_total": 1.7399999999999998,
+            "known_food_count": 1,
+            "food_count": 13,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.7399999999999998
+          },
+          {
+            "id": "caffeine_mg",
+            "name": "Caffeine in reported foods",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 12,
+            "food_count": 13,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          }
+        ],
+        "supplements": [],
+        "scenario_note": "Selected portion/recipe scenarios span approximately 2,815–3,500 kcal. It is not a confidence interval and does not cover every uncertainty. Chicken edible weight and sauce oil drive much of this range.",
+        "source_note": "Nonfat yogurt uses a provisional online label; restaurant chicken and sauce use comparators or recipe estimates. Restaurant sodium and sauce herbs remain unquantified. The sardine label total omega 3 is separate from a generic EPA/DHA split.",
+        "version": 3,
+        "reviewed_date": "2026-10-10",
+        "revision_note": "Confirmed eating the entire 32 oz nonfat yogurt tub. The earlier model already counted that amount, so its nutrient totals are unchanged; the portion is now reported rather than assumed."
+      }
+    }
+  ],
+  "background": [
+    {
+      "id": "september-starting-scenario",
+      "recorded_local_date": "2026-09-18",
+      "kind": "hypothetical_daily_scenario",
+      "summary": "The conversation began by evaluating a proposed repeated diet of two double-carnitas Chipotle bowls, 40 g dark chocolate, two bananas, water and supplements. This is a scenario, not a confirmed eaten day."
+    },
+    {
+      "id": "september-planned-revision",
+      "recorded_local_date": "2026-09-18",
+      "kind": "planned_pattern",
+      "summary": "Planned yogurt, almonds, berries and mango alongside revised Chipotle bowls; proposed changes to supplements and iodized salt. Plans and dose discussions are not recorded as actual intake."
+    },
+    {
+      "id": "october-store-transition",
+      "recorded_local_date": "2026-10-07",
+      "kind": "reported_pattern_change",
+      "summary": "Reported cutting chocolate, replacing fish oil with sardines and developing a Trader Joe's plus RT chicken alternative. Vitamin D was the only supplement described in the pattern, but no actual daily dose was confirmed."
+    },
+    {
+      "id": "training-and-storage-context",
+      "recorded_local_date": "2026-10-08",
+      "kind": "reported_context",
+      "summary": "Desk work with brief interval sessions and gym visits. Track and gym were described as two out of every three days, reached by scooter; sauna was planned but not started in this description. This activity description does not establish maintenance calories."
+    },
+    {
+      "id": "future-shopping-plan",
+      "recorded_local_date": "2026-10-09",
+      "kind": "planned_shop",
+      "summary": "Planned raspberries, orange, tomato, two kiwis, one red pepper, two bananas, low-fat yogurt, walnuts, low-sodium small oily fish, broth and vitamin D. The next actual report had four bananas and no kiwis, broth or vitamin D; the plan must not fill those missing foods."
+    },
+    {
+      "id": "ayran-and-supplement-preferences",
+      "recorded_local_date": "2026-10-09",
+      "kind": "reported_food_practice",
+      "summary": "Reported diluting yogurt into ayran and drinking it across the day. Water dilution adds no yogurt nutrients, while any added salt remains unmeasured. Preferred bottled broth over collagen powder; had 200 mg caffeine capsules, with no daily ingestion recorded."
+    },
+    {
+      "id": "shoulder-training-observation",
+      "recorded_local_date": "2026-10-09",
+      "kind": "reported_symptom_context",
+      "summary": "While returning to heavier training, reported about a week of progressively uncomfortable pain at the front of the left shoulder and backing off exercises that loaded it. This is a self-report, without a diagnosis or measured severity."
+    }
+  ]
+}

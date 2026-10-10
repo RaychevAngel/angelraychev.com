@@ -1,0 +1,29 @@
+---
+import Post from "../../../layouts/Post.astro";
+import NutritionNav from "../../../components/NutritionNav.astro";
+export function getStaticPaths() {
+  const pages = import.meta.glob("../../../data/nutrition/investigations/*.md", { eager: true });
+  return Object.entries(pages).map(([path, page]) => ({
+    params: { slug: path.split("/").pop().replace(/\.md$/, "") },
+    props: { page },
+  }));
+}
+const { page } = Astro.props;
+const { Content, frontmatter } = page;
+const headings = page.getHeadings().filter((heading) => heading.depth === 2);
+---
+<Post frontmatter={frontmatter}>
+  <NutritionNav />
+  {headings.length > 3 && <details class="article-index">
+    <summary>In this investigation</summary>
+    <ul>{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul>
+  </details>}
+  <Content />
+  <p><a href="/nutrition/research/">Back to investigations</a></p>
+</Post>
+<style>
+  .article-index { margin: 0 0 36px; font-size: 13px; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  details[open] summary { margin-bottom: 20px; }
+</style>

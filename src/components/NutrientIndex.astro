@@ -1,0 +1,41 @@
+---
+const { guide, inline = false } = Astro.props;
+const categories = [
+  ["macronutrients", "Energy and macronutrients"],
+  ["vitamins", "Vitamins"],
+  ["minerals", "Minerals"],
+  ["other", "Related nutrients and compounds"],
+];
+const href = (row) => {
+  const anchor = `#field-${row.nutrient_id.replaceAll("_", "-")}`;
+  if (inline) return anchor;
+  const grouped = guide.topics.find((topic) => topic.slug === row.topic_slug)?.fields.length > 1;
+  return `/nutrition/guide/${row.topic_slug}/${grouped ? anchor : ""}`;
+};
+---
+<h2 id="nutrient-index">Nutrient index</h2>
+<p class="index-help">Choose a nutrient to read its intake panel and explanation. The attention labels concern the recorded pattern; they are reviewed judgments.</p>
+{categories.filter(([id]) => guide.index.some((row) => row.category === id)).map(([id, label]) => <section aria-labelledby={`index-${id}`}>
+  <h3 id={`index-${id}`}>{label}</h3>
+  <div class="tablewrap">
+    <table class="nutrient-index">
+      <thead><tr><th>Nutrient</th><th>Attention</th><th class="index-reason">Reason</th></tr></thead>
+      <tbody>{guide.index.filter((row) => row.category === id).map((row) => <tr>
+        <td><a href={href(row)}>{row.name}</a></td>
+        <td class="flag">{row.attention === "No change indicated" ? "No change" : row.attention}</td>
+        <td class="index-reason">{row.reason}</td>
+      </tr>)}</tbody>
+    </table>
+  </div>
+</section>)}
+<style>
+  .nutrient-index { width: 100%; }
+  .nutrient-index td:first-child { width: 28%; }
+  .nutrient-index .flag { white-space: nowrap; }
+  .index-help { font-size: 13px; }
+  @media (max-width: 540px) {
+    .nutrient-index .index-reason { display: none; }
+    .nutrient-index td:first-child { width: 65%; }
+    .nutrient-index .flag { white-space: normal; }
+  }
+</style>
