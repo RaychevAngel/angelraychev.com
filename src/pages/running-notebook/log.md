@@ -444,11 +444,23 @@ A few longer runs make the interrupted-training history more concrete:
 | 19 July 2022 | 15.72 km | 1:14:14 |
 | 15 June 2023 | 21.44 km | 1:42:08 |
 | 19 April 2024 | 20.12 km | 1:30:09 |
-| 5 May 2024 | 42.78 km | 3:27:36 |
 | 25 October 2024 | 21.1 km | 1:38:14 |
 
-They were recorded runs, rather than a set of certified race results. Consistent
-track training had stopped, but running had not disappeared for four years.
+Consistent track training had stopped, but running had not disappeared for
+four years.
+
+### 5 May 2024 — Orange County Marathon
+
+**3:27:23 chip time**, over **42.195 km**, at the full **Orange County Marathon**,
+aged **20**.
+
+The [official result](https://www.athlinks.com/event/3234/results/Event/1072997/Course/2441939/Bib/865)
+records **3:31:23 gun time**, bib **865**, **313th overall**, **281st among men**
+and **38th in M20–24**.
+
+My activity record shows **3:27:36** and **42.78 km** by GPS. The official race
+result above replaces the earlier classification of this as an unnamed
+recorded run.
 
 As this log grows, new sessions will be added above and the notebook will be
 updated when they change a decision. A changed plan should leave its observations

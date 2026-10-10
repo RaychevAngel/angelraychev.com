@@ -69,7 +69,9 @@ labels. The [historical log](/running-notebook/log/#selected-earlier-records)
 keeps the dates, sequences and surrounding circumstances.
 
 The years since were uneven. I continued running intermittently in 2023 and 2024,
-including substantial long runs. The large gap was 2025: my Strava has one run
+including substantial long runs and the
+[Orange County Marathon on 5 May 2024](/running-notebook/log/#5-may-2024--orange-county-marathon).
+The large gap was 2025: my Strava has one run
 recorded for the year. Earlier 2026 self-timed 5Ks were around 20:30. This is a
 return to consistent track work after interrupted training, with some experience
 still available and plenty to rebuild.
