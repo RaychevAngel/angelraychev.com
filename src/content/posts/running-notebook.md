@@ -1,25 +1,30 @@
 ---
 title: "800–5000 m: a running notebook"
-description: "Rebuilding my middle-distance running: the goals, the working model, the programme, and the observations that earn its next revision."
-updated: 2026-10-09
+description: "Building an 800-point running profile across 800–5000 m: the goals, the working model, the programme, and the observations that earn its next revision."
+updated: 2026-10-10
 draft: false
 ---
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Running record](/running/record/)*
 
+The ambition is **800+ points on the World Athletics scoring tables across the
+whole 800–5000 m range**: 800, 1000, 1500, mile, 2000, 3000, two miles and 5000.
+I want to build that performance profile in one runner. The scores give the
+project a common standard and make the shape of my strengths and gaps visible.
+
 On 8 October I ran three 1200 m repetitions, with one minute between them:
 **4:42.5, 4:42.7, 4:41.3**. I finished feeling that a fourth repetition was definitely
 available, possibly a fifth. Three weeks earlier, the same nominal workout had been
-slower and had exhausted me after the third.
+slower and had exhausted me after the third. The work averaged **3:55.1/km**,
+compared with **4:06.9/km** in that first session.
 
 The next LT workout can now become 3×1600 m. It changes because I passed an agreed
 gate, rather than because another week arrived.
 
 That is the small, practical version of this project: choose a direction, make the
 next step explicit, repeat something long enough to understand it, and revise the
-plan when the observations warrant it. The larger direction is an ambitious
-performance profile across 800–5000 m, with running becoming ordinary freedom
-around the city again.
+plan when the observations warrant it. The larger direction is that 800-point
+profile, with running becoming ordinary freedom around the city again.
 
 **This version includes completed training through 9 October 2026.** The upcoming
 sessions below are plans. The [current record](/running/record/2026/) keeps the chronology, splits and
@@ -28,29 +33,48 @@ retain the history I am returning with.
 
 ## The runner I am trying to build
 
-I want the profile to be strongest in the middle distances, while retaining
-speed below them and useful endurance above them.
+I began with an **equal 810-point curve** from an IAAF calculator: 1:58.03 for
+800 m, 4:03.85 for 1500 m and 15:00.02 for 5000 m were examples of the same
+score at different distances. The tables are now published by World Athletics.
+That common scale is the backbone of my comparisons: I can ask where my
+performance falls away as the event gets longer, and whether the whole curve
+is rising.
 
-I used the [World Athletics men's outdoor scoring tables](https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics)
-to think about the relative strength of marks at different distances. That gives
-me a way to examine the shape of an ambition, rather than collecting times that
-merely look attractive in isolation. These are the central goal marks:
+I later chose round goal times that put the strongest part of the intended
+profile around 800–2000 m. The central goals span **810–862 points**, with
+800+ as the shared floor. The scores below use the men's outdoor columns of
+the [2025 revised World Athletics tables](https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics):
 
-| Event | Goal |
-| --- | ---: |
-| 800 m | 1:56 |
-| 1000 m | 2:30 |
-| 1500 m | 4:00 |
-| Mile | 4:20 |
-| 2000 m | 5:30 |
-| 3000 m | 8:40 |
-| Two miles | 9:20 |
-| 5000 m | 15:00 |
+| Event | Goal | Pace / km | Points |
+| --- | ---: | ---: | ---: |
+| 800 m | 1:56 | 2:25.0 | 862 |
+| 1000 m | 2:30 | 2:30.0 | 859 |
+| 1500 m | 4:00 | 2:40.0 | 854 |
+| Mile | 4:20 | 2:41.6 | 843 |
+| 2000 m | 5:30 | 2:45.0 | 855 |
+| 3000 m | 8:40 | 2:53.3 | 834 |
+| Two miles | 9:20 | 2:54.0 | 835 |
+| 5000 m | 15:00 | 3:00.0 | 810 |
 
-The wider picture includes 12.00 for 100 m, 24.00 for 200 m, 52.00 for 400 m,
-1:24 for 600 m and 33:00 for 10,000 m. Those help describe the runner I want to
-become; they do not turn the present programme into simultaneous preparation for
-every distance. These are ambitions, with no completion date attached to them.
+For orientation, exactly **800 points** corresponds to **1:58.43 for 800 m**,
+**4:04.73 for 1500 m** and **15:03.36 for 5000 m** in this edition. The rounded
+goals therefore sit above the floor by different amounts. The official lookup
+awards the lower score when a mark falls between two listed thresholds; a
+calculator that interpolates or rounds can differ by a point.
+
+The wider picture includes **12.00 for 100 m (615 points), 24.00 for 200 m
+(671), 52.00 for 400 m (744), 1:24 for 600 m (798), and 33:00 for 10,000 m
+(717)**. The lower scores at the edges help define the shape I want: strongest
+in the middle distances, with speed below them and useful endurance above them.
+They do not turn the present programme into simultaneous preparation for every
+distance. These are ambitions, with no completion date attached to them.
+
+When I discussed the profile, I kept returning to Jakob Ingebrigtsen and Josh
+Kerr as references for its shape and for how high the ceiling could be. I was
+imagining my own curve at a much lower point level, with particular interest
+in 1500 m and the mile. That comparison keeps the ambition open; it does not
+give me their training requirements or establish that my eventual curve will
+have the same shape.
 
 Two kilometres has a particular place in the project. It was a childhood event
 distance and the length of a neighbourhood loop on which I accumulated a great
@@ -71,6 +95,24 @@ scope and surrounding circumstances. The 2022 season continued through the
 [July U20 national championships](/running/record/2022/#9-july--u20-nationals-1500-m),
 beyond the June peak.
 
+Putting those marks on the same scoring scale makes the old gap easier to see:
+
+| Event | Historical mark | Table points | Setting |
+| --- | ---: | ---: | --- |
+| 800 m | 2:03.62 | 674 | 2022 national championships |
+| 1000 m | 2:42.79 | 626 | 2022 New Stars |
+| 1500 m | 4:23.90 | 596 | 2022 national championships |
+| 3000 m | 10:17 | 405 | 2021 timed training |
+| Road 5 km | 18:16 | 328 | 2021 South Park 5kmrun |
+
+These are lookups in the same 2025 edition, with the road 5 km column used for
+the park race. That race retains the organizer's distance label, without an
+added certification claim. The training mark is a time reference. These results
+come from different dates and settings, rather than a simultaneous fitness test.
+Even with those limits, the stronger short end is visible. Getting the whole
+range above 800 points means closing the gap toward the longer events as well
+as improving the 800.
+
 The years since were uneven. I continued running intermittently in 2023 and 2024,
 including substantial long runs and the
 [Orange County Marathon on 5 May 2024](/running/record/2023-2025/#5-may--orange-county-marathon).
@@ -82,8 +124,47 @@ return to consistent track work after interrupted training, with some experience
 still available and plenty to rebuild.
 
 The present event benchmark is **7:16.67 for 2000 m on 27 September**. The gap
-between that result and the goal table is real. A promising interval session does
-not close it on paper.
+between that result and the goal table is real: the reported time is a
+**181-point table reference**, beside the **855-point 5:30 goal**. It is a
+self-timed trial, with its method and pacing retained in the record. A promising
+interval session does not close that event-performance gap on paper.
+
+## Scores and rarity
+
+The score gives me an equivalent performance at another event. For a runner,
+the same point total at 800 and 5000 may still require very different work.
+My ambition is to bring both ends, and the events between them, into the same
+performance band.
+
+Rarity needs a population as well as a score. The
+[official tables](https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics)
+use athletics statistics to compare performances, but they do not provide a
+percentile among all men or all runners. A count in a named annual best-by-athlete list can place
+a mark among recorded competitors; a race's results can place it among that
+race's finishers. Neither denominator describes everybody who could run the
+time.
+
+One concrete reference is World Athletics' **2025 men's senior 800 m list**,
+checked in October 2026 with “Best by Athlete,” world-wide coverage, electronic
+timing and both outdoor and indoor performances. It lists **7241 athletes
+strictly faster than my 1:56 goal**, and **10,973 strictly faster than 1:58.43**,
+the outdoor 800-point threshold. These are counts against times in that published
+list, whose reporting limit is 2:00.00; they are not a percentile among all
+runners or a count of equal-scoring indoor and outdoor results. The tied boundary
+rows are on [page 73](https://worldathletics.org/records/toplists/middlelong/800-metres/all/men/senior/2025?ageCategory=senior&bestResultsOnly=true&eventId=10229501&maxResultsByCountry=all&page=73&regionType=world&timing=electronic)
+and [page 110](https://worldathletics.org/records/toplists/middlelong/800-metres/all/men/senior/2025?ageCategory=senior&bestResultsOnly=true&eventId=10229501&maxResultsByCountry=all&page=110&regionType=world&timing=electronic).
+
+Rarity-based scoring systems do exist. A
+[2007 paper in the IAAF's research journal](https://worldathletics.org/download/downloadnsa?filename=47a3d069-d468-4d0b-994f-a9dabacda43d.pdf&urlslug=the-physical-basis-of-scoring-the-athletic-pe)
+discusses Dale Harder's separate scale, in which a further 100 points represents
+a tenfold reduction in the qualifying fraction. That rule belongs to a different
+scoring system; applying it directly to my World Athletics points would invent
+a conversion the current tables do not establish.
+
+The rarity of the entire 800–5000 profile would require linked performances
+from the same athletes across the range. The events are related, so multiplying
+separate event rarities would not answer that question. An athlete who has no
+listed result at one distance may simply never have raced it.
 
 ## The working model
 
@@ -181,8 +262,9 @@ understand it makes a change of structure meaningful.
 
 ## What the observations now tell me
 
-The clearest change is on the LT side. September 19's 3×1200 averaged **4:56.33**,
-and I was spent after the third. October 8 averaged **4:42.17**, with a 1.4-second
+The clearest change is on the LT side. September 19's 3×1200 averaged **4:56.33
+(4:06.9/km)**, and I was spent after the third. October 8 averaged **4:42.17
+(3:55.1/km)**, with a 1.4-second
 spread and more work available. It passed the first 4:48 gate in both time and
 intended character.
 
@@ -193,8 +275,8 @@ adaptation would ignore that starting condition. The intervening closed-track
 session also used a longer asphalt loop with elevation changes, so its times
 cannot be dropped into the same comparison as measured track 1200s.
 
-On the VO₂ side, 3×800 with the same 5:30 recovery moved from **2:48 average on
-September 22** to **2:44 on October 1**. The later session felt more limited by
+On the VO₂ side, 3×800 with the same 5:30 recovery moved from **2:48 average
+(3:30/km) on September 22** to **2:44 (3:25/km) on October 1**. The later session felt more limited by
 breathing and less by the legs. That is an informative change in experience,
 without measuring either oxygen uptake or the precise cause of the improvement.
 
@@ -203,8 +285,8 @@ I completed **~2:43, 2:39.4, 2:39.3**. The first is a conservative estimate afte
 the phone died at the finish. Another shutdown added a partial 250–300 m effort
 and a 60–90-second walk before restarting the second full 800. All three full
 repetitions were done, and the last two were tightly matched despite a very
-hard finish without a sprint. Using the first estimate gives about **2:40.6**
-on average; it may have been quicker. I want the next 3×800 session to cement
+hard finish without a sprint. Using the first estimate gives about **2:40.6
+(3:20.7/km)** on average; it may have been quicker. I want the next 3×800 session to cement
 the 2:40 gate with reliable timing.
 
 The fast work needs particularly careful interpretation. September 24's six

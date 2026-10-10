@@ -1,7 +1,7 @@
 ---
 title: "Running makes the city smaller"
 description: "Returning to running means recovering a way to explore, get somewhere, and move through a city with very little to carry."
-updated: 2026-10-09
+updated: 2026-10-10
 draft: false
 ---
 
@@ -10,8 +10,8 @@ I want to be able to say, “I'll be there in thirty,” and cross half the city
 Phone, keys, wallet. Start moving. The distance is something I can cover myself,
 without arranging a ride or deciding where a bicycle will spend the next few hours.
 
-That is one of the things I am rebuilding as I return to training. I want good times
-on the track, across the range from 800 to 5000 metres. I also want the freedom that
+That is one of the things I am rebuilding as I return to training. On the track,
+I am aiming at an [800+ World Athletics point profile across 800–5000 metres](/running-notebook/#the-runner-i-am-trying-to-build). I also want the freedom that
 used to come with being a runner: places becoming close enough that I can simply go.
 
 ## Getting home

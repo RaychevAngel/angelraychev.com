@@ -4,7 +4,7 @@ import RunningRecordNav from "../../../components/RunningRecordNav.astro";
 const frontmatter = {
   title: "Running record",
   description: "The dated history behind my running: races, training, longer outings and the conditions that make a comparison useful.",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
 };
 ---
 <Post frontmatter={frontmatter}>
@@ -43,6 +43,25 @@ const frontmatter = {
     A remembered effort keeps its uncertainty; a GPS distance remains a device
     measurement. These distinctions matter when two similar numbers describe
     different kinds of running.
+  </p>
+  <p>
+    Longer workout notes give pace per kilometre alongside the repetition times,
+    using the stated work distance. Short fast repetitions retain their splits.
+    The monthly lists show each recording's average moving pace, which can include
+    recoveries. Hills, surface and distance uncertainty stay beside the
+    pace wherever they affect the comparison. The notebook's
+    <a href="/running-notebook/#the-runner-i-am-trying-to-build">800-point goal profile</a>
+    supplies the common event standard behind the training.
+  </p>
+  <p>
+    Where climbing matters, the notes include recorded elevation gain or the
+    known route profile. A gain total alone cannot establish an adjusted pace:
+    how the climbs and descents are distributed matters too.
+    <a href="https://support.strava.com/en-us/articles/15402117-what-is-grade-adjusted-pace-gap-on-strava">Strava's
+    grade-adjusted pace</a> estimates a flat-equivalent pace from steepness and
+    does not account for technical terrain or its condition. These records
+    retain actual pace and terrain context; no adjusted values have been
+    reconstructed from elevation totals.
   </p>
   <p>
     Each period opens with the story and selected dated details. Beneath them,

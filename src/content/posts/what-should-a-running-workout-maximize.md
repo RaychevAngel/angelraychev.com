@@ -1,7 +1,7 @@
 ---
 title: "What should a running workout maximize?"
 description: "Pace and repetitions describe a workout. I want to know which internal state they create, whether time in that state predicts adaptation, and what the adaptation buys me."
-updated: 2026-10-09
+updated: 2026-10-10
 draft: false
 ---
 
@@ -9,7 +9,7 @@ I can make a workout harder by running faster, resting less, or adding repetitio
 
 When I returned to structured running, I started separating four questions. How much oxygen can I use? How much work can I sustain while lactate is being produced and used? How much capacity do I have to work beyond what my aerobic supply can support? How fast can I run, and for how long can I maintain that speed?
 
-Ultimately I want lasting improvement in the running I care about, within the time and recovery I can afford. The difficulty is that I have to choose today's workout before I can observe its lasting effect. Physiological exposure is a possible guide to that choice.
+Ultimately I want lasting improvement in the running I care about, within the time and recovery I can afford. My concrete event ambition is an [800+ World Athletics point profile across 800–5000 m](/running-notebook/#the-runner-i-am-trying-to-build). That score curve gives the later performance a common standard. The difficulty is that I have to choose today's workout before I can observe its lasting effect. Physiological exposure is a possible guide to that choice.
 
 Those questions gave me four working labels: VO₂, LT, A, and F. The labels are useful only if they lead to a more precise question about the workout. Calling something a “VO₂ workout” cannot establish that I reached a high oxygen uptake. Calling something “anaerobic” cannot establish which adaptation it will produce.
 

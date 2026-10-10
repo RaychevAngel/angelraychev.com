@@ -251,6 +251,22 @@ each target is a graduation gate, not a compulsory first pace for the next struc
 The physiological labels name intentions, not measurements inferred from split times.
 Do not publish the underlying chat archive or private research digests.
 
+The notebook's organizing ambition is 800+ World Athletics points across each
+listed 800–5000 m event, initially an equal 810-point curve. Keep numerical scores
+with the goal marks and meaningful historical/event comparisons. Pin the men's
+outdoor table edition and apply its lower-score lookup rule between thresholds;
+do not confuse table points with world-ranking points, age grading or a population
+percentile. A rarity claim needs a named population, year and complete enough
+denominator. Different historical dates do not form a simultaneous fitness curve.
+
+Longer repetitions and continuous efforts need per-kilometre pace beside their
+times. Short fast repetitions can stay split-focused. Pace from intended work
+distance is separate from a whole recording's moving-time/recorded-distance pace,
+which may include recoveries. Keep estimated distances/times and nominal laps
+labelled. Elevation gain and surface matter for hilly outings; vertical range is
+not ascent. Grade-adjusted pace needs an identified model or source and remains
+an estimate, not an inferred flat race result.
+
 ## Current state
 
 As of 9 October 2026, ten homepage entries are grouped by subject. The index

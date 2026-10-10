@@ -2,7 +2,7 @@
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
 description: "The current 18-day cycle, independently earned LT and VO₂ progressions, and the planned transition into the first cycle."
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
@@ -11,6 +11,11 @@ This is the programme agreed by **8 October 2026**, with the transition's status
 updated through **9 October**. The full cycle remains a plan; no completed full
 cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
+
+The larger aim is the notebook's [800+ World Athletics point profile across
+800–5000 m](/running-notebook/#the-runner-i-am-trying-to-build). The LT and VO₂
+gates below are workout milestones toward that aim. A repetition pace with
+recovery is not a continuous race mark to score against the event table.
 
 The labels describe intentions: **LT** is sustainable high-turnover work,
 **VO₂** aims at time near maximal oxygen uptake, **F** is repeatable fast running,

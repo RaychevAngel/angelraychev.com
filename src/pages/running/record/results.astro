@@ -5,7 +5,7 @@ import results from "../../../data/running/race-results.json";
 const frontmatter = {
   title: "Race results and training references",
   description: "Source-linked running results, separated from training benchmarks and scoped personal recollections.",
-  updated: "2026-10-09",
+  updated: "2026-10-10",
 };
 const groups = [
   { kind: "track", title: "Track races", intro: "The men's national championships in June and U20 championships in July were separate meets. Placings below are the official combined classifications, rather than places within a heat." },
@@ -25,7 +25,10 @@ if (bests.some((result) => !result)) throw new Error("A selected running best ha
     The race marks are a dated history, rather than a current fitness profile.
     A time links to its original result; its date links to the fuller account.
     Training references below retain the conditions that a personal-best table
-    would otherwise lose.
+    would otherwise lose. The
+    <a href="/running-notebook/#the-runner-i-am-trying-to-build">notebook's score comparison</a>
+    puts the main historical marks beside the 800+ point ambition, using the
+    2025 World Athletics tables and retaining each mark's setting.
   </p>
   <h2 id="race-bests">Selected race bests</h2>
   <div class="tablewrap"><table>
