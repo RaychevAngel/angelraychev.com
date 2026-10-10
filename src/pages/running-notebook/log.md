@@ -288,17 +288,30 @@ This is a dated result, more precise than the earlier remembered 10:20. The
 entry does not specify whether it was a race, a time trial or part of a larger
 workout, so I keep that classification open.
 
-### 2020–2021 — Wizz Air Sofia Marathon, short-distance races
+### 2017–2021 — Wizz Air Sofia Marathon, short-distance races
 
-I also ran the short-distance event at two editions of the Sofia Marathon.
-The official results list different distances for the two years:
+I ran the short-distance event at three editions of the Sofia Marathon.
+The official results use different distance labels:
 
 | Date | Distance in official results | Gun time | Chip time | Men's finish |
 | --- | ---: | ---: | ---: | ---: |
+| [15 October 2017](https://marathonsofia.com/results/2017/sofia2017_10km_overall.pdf) | 10.5 km | 49:12 | 49:04 | 61st |
 | [11 October 2020](https://my.raceresult.com/160489/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en) | 10 km | 44:27 | 44:27 | 25th |
 | [10 October 2021](https://my.raceresult.com/183503/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en) | 10.5 km | 42:06 | 42:04 | 18th |
 
-The results appear under **Angel Raychev**, with bibs **3068** and **3194**.
+The results appear under **Angel Raychev**, with bibs **2164**, **3068** and
+**3194**, respectively.
+
+In 2017 I was **14**, in **eighth grade**. I remember it as a very hard race,
+with the start near Orlov most. The
+[organizer's 2017 instructions](https://sofia2018.bg/2017/10/10/%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B8%D1%80%D0%B0%D1%82-%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D0%B8-%D0%BD%D0%B0-wizz-air-%D1%81%D0%BE%D1%84%D0%B8%D1%8F-%D0%BC/)
+describe the short race as one 10.5 km lap of the older four-lap marathon course,
+with the start in front of Vasil Levski National Stadium.
+
+I remember running the same route in 2020 and 2021. My goal in both races was to
+stay with the leading woman. In 2020, stomach pain made me drop back; later I
+recovered and had a strong final sprint. In 2021 I stayed with her longer before
+falling behind, then finished strong and completely spent.
 
 A later course check clarified the layout. The
 [2020 municipal announcement](https://www.sofia.bg/en/w/izvestni-atleti-pristigat-za-wizz-air-sofia-maraton-sledvasata-nedela)
