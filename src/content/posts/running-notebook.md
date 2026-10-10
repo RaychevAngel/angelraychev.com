@@ -21,7 +21,7 @@ plan when the observations warrant it. The larger direction is an ambitious
 performance profile across 800–5000 m, with running becoming ordinary freedom
 around the city again.
 
-**This version includes completed training through 8 October 2026.** The upcoming
+**This version includes completed training through 9 October 2026.** The upcoming
 sessions below are plans. The [current record](/running/record/2026/) keeps the chronology, splits and
 conditions behind the summaries here; the [earlier periods](/running/record/)
 retain the history I am returning with.
@@ -198,6 +198,15 @@ September 22** to **2:44 on October 1**. The later session felt more limited by
 breathing and less by the legs. That is an informative change in experience,
 without measuring either oxygen uptake or the precise cause of the improvement.
 
+On [October 9](/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing),
+I completed **~2:43, 2:39.4, 2:39.3**. The first is a conservative estimate after
+the phone died at the finish. Another shutdown added a partial 250–300 m effort
+and a 60–90-second walk before restarting the second full 800. All three full
+repetitions were done, and the last two were tightly matched despite a very
+hard finish without a sprint. Using the first estimate gives about **2:40.6**
+on average; it may have been quicker. I want the next 3×800 session to cement
+the 2:40 gate with reliable timing.
+
 The fast work needs particularly careful interpretation. September 24's six
 200s averaged 33.64, relaxed and closely grouped. On October 5, after an overly
 relaxed first repetition, the last five averaged 31.82. I was making more
@@ -220,10 +229,10 @@ the details that a clean average would hide.
 
 ## The next checkpoint
 
-At this cutoff, the proposed next session is **3×800 m on October 9**, aiming at
-the 2:40 average gate. After a chill day, the plan is a **5000 m time trial on
-Sunday, October 11**, then **6×200 m on Monday, October 12**. None is yet recorded
-as completed here.
+October 9's 3×800 is complete, with the 2:40 gate still awaiting confirmation.
+After a chill day, the plan is a **5000 m time trial on Sunday, October 11**,
+then **6×200 m on Monday, October 12**. Those upcoming sessions are not yet
+recorded as completed here.
 
 This is a short transition into the new cycle. After a chill day on October 13,
 the first full cycle is planned to start on October 14. Its day-16 time trial

@@ -7,9 +7,10 @@ updated: 2026-10-09
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**. The transition and full cycle
-below are plans; no completed full cycle has yet demonstrated that I can sustain
-this allocation. Completed work stays on the [2026 record](/running/record/2026/).
+This is the programme agreed by **8 October 2026**, with the transition's status
+updated through **9 October**. The full cycle remains a plan; no completed full
+cycle has yet demonstrated that I can sustain this allocation. Completed work
+stays on the [2026 record](/running/record/2026/).
 
 The labels describe intentions: **LT** is sustainable high-turnover work,
 **VO₂** aims at time near maximal oxygen uptake, **F** is repeatable fast running,
@@ -92,10 +93,12 @@ next decision clear. The training still has to earn them.
 ## The transition into the first cycle
 
 
-At this cutoff, the proposed next session is **3×800 m on October 9**, aiming at
-the 2:40 average gate. After a chill day, the plan is a **5000 m time trial on
-Sunday, October 11**, then **6×200 m on Monday, October 12**. None is yet recorded
-as completed here.
+The [October 9 session](/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing)
+completed all three 800s, with interrupted timing and an additional partial
+effort. Its 2:40 gate remains unconfirmed, so the VO₂ structure stays at
+**3×800 m / 5:30**. After a chill day, the plan is a **5000 m time trial on
+Sunday, October 11**, then **6×200 m on Monday, October 12**. Those upcoming
+sessions are not yet recorded as completed.
 
 This is a short transition into the new cycle. After a chill day on October 13,
 the first full cycle is planned to start on October 14. Its day-16 time trial
