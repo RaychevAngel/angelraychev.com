@@ -1,226 +1,8 @@
 {
   "source": "https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics",
   "edition": "2025 Revised Edition · men",
+  "pacePrecisionSeconds": 1,
   "rows": [
-    {
-      "id": "best-20",
-      "distance": "20 m",
-      "distanceMeters": 20.0,
-      "time": "2.94",
-      "seconds": [
-        2.94
-      ],
-      "date": "2022-03-11",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/6810299347",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": null,
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-30",
-      "distance": "30 m",
-      "distanceMeters": 30.0,
-      "time": "3.95",
-      "seconds": [
-        3.95
-      ],
-      "date": "2022-05-10",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7124339568",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": null,
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-40",
-      "distance": "40 m",
-      "distanceMeters": 40.0,
-      "time": "5.30",
-      "seconds": [
-        5.3
-      ],
-      "date": "2022-04-26",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7045292217",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": null,
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-50",
-      "distance": "50 m",
-      "distanceMeters": 50.0,
-      "time": "7.04",
-      "seconds": [
-        7.04
-      ],
-      "date": "2022-03-11",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/6810299347",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": {
-        "event": "50 m",
-        "distanceMeters": 50,
-        "road": false,
-        "derived": false,
-        "points": [
-          446
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-60",
-      "distance": "60 m",
-      "distanceMeters": 60.0,
-      "time": "7.40",
-      "seconds": [
-        7.4
-      ],
-      "date": "2022-04-26",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7045292217",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": {
-        "event": "60 m",
-        "distanceMeters": 60,
-        "road": false,
-        "derived": false,
-        "points": [
-          747
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-80",
-      "distance": "80 m",
-      "distanceMeters": 80.0,
-      "time": "10.29",
-      "seconds": [
-        10.29
-      ],
-      "date": "2022-06-24",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7364705509",
-      "kind": "Training",
-      "context": "Written sprint effort",
-      "score": {
-        "event": "60 m",
-        "distanceMeters": 60,
-        "road": false,
-        "derived": true,
-        "points": [
-          609
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-100",
-      "distance": "100 m",
-      "distanceMeters": 100.0,
-      "time": "12.95",
-      "seconds": [
-        12.95
-      ],
-      "date": "2022-06-24",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7364705509",
-      "kind": "Training",
-      "context": "Within 150 + 150 + 100 + 80 m",
-      "score": {
-        "event": "100 m",
-        "distanceMeters": 100,
-        "road": false,
-        "derived": false,
-        "points": [
-          403
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-150",
-      "distance": "150 m",
-      "distanceMeters": 150.0,
-      "time": "17.81",
-      "seconds": [
-        17.81
-      ],
-      "date": "2022-05-06",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7095990088",
-      "kind": "Training",
-      "context": "Best of 4 × 150 m / 8 min",
-      "score": {
-        "event": "100 m",
-        "distanceMeters": 100,
-        "road": false,
-        "derived": true,
-        "points": [
-          645
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-185",
-      "distance": "185 m",
-      "distanceMeters": 185.0,
-      "time": "25.75",
-      "seconds": [
-        25.75
-      ],
-      "date": "2022-03-12",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/6811844638",
-      "kind": "Training",
-      "context": "Written 185 m; second set / 90 s",
-      "score": {
-        "event": "100 m",
-        "distanceMeters": 100,
-        "road": false,
-        "derived": true,
-        "points": [
-          233
-        ]
-      },
-      "shortTimingUnknown": true
-    },
-    {
-      "id": "best-200",
-      "distance": "200 m",
-      "distanceMeters": 200.0,
-      "time": "~27–28",
-      "seconds": [
-        27.0,
-        28.0
-      ],
-      "date": "2022-06-18",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7329423792",
-      "kind": "Training",
-      "context": "Set described as around 27–28 s",
-      "score": {
-        "event": "200 m",
-        "distanceMeters": 200,
-        "road": false,
-        "derived": false,
-        "points": [
-          285,
-          367
-        ]
-      },
-      "approximate": true,
-      "shortTimingUnknown": true
-    },
     {
       "id": "best-300",
       "distance": "300 m",
@@ -272,29 +54,6 @@
       "shortTimingUnknown": true
     },
     {
-      "id": "best-500",
-      "distance": "500 m",
-      "distanceMeters": 500.0,
-      "time": "1:26",
-      "seconds": [
-        86.0
-      ],
-      "date": "2022-03-30",
-      "dateBasis": "route-local",
-      "source": "https://www.strava.com/activities/6907232169",
-      "kind": "Training",
-      "context": "Final repetition of 3 × 3 × 500 m",
-      "score": {
-        "event": "500 m",
-        "distanceMeters": 500,
-        "road": false,
-        "derived": false,
-        "points": [
-          189
-        ]
-      }
-    },
-    {
       "id": "best-600",
       "distance": "600 m",
       "distanceMeters": 600.0,
@@ -343,30 +102,6 @@
       "note": "/running/record/2022/#12-june--mens-nationals-800-m"
     },
     {
-      "id": "best-900",
-      "distance": "900 m",
-      "distanceMeters": 900.0,
-      "time": "2:38",
-      "seconds": [
-        158.0
-      ],
-      "date": "2021-07-05",
-      "dateBasis": "route-local",
-      "source": "https://www.strava.com/activities/5577779864",
-      "kind": "Training",
-      "context": "Opening 900 m; nominal small-track distance",
-      "score": {
-        "event": "800 m",
-        "distanceMeters": 800,
-        "road": false,
-        "derived": true,
-        "points": [
-          341
-        ]
-      },
-      "note": "/running/record/2021/#summer--paired-900-and-300-blocks"
-    },
-    {
       "id": "best-1000",
       "distance": "1000 m",
       "distanceMeters": 1000.0,
@@ -389,30 +124,6 @@
         ]
       },
       "note": "/running/record/2022/#21-may--new-stars-1000-m"
-    },
-    {
-      "id": "best-1200",
-      "distance": "1200 m",
-      "distanceMeters": 1200.0,
-      "time": "3:23.71",
-      "seconds": [
-        203.71
-      ],
-      "date": "2022-06-04",
-      "dateBasis": "utc",
-      "source": "https://www.strava.com/activities/7251591193",
-      "kind": "Time trial",
-      "context": "1200 m time trial",
-      "score": {
-        "event": "1000 m",
-        "distanceMeters": 1000,
-        "road": false,
-        "derived": true,
-        "points": [
-          515
-        ]
-      },
-      "note": "/running/record/2022/#time-trials"
     },
     {
       "id": "best-1500",
@@ -439,50 +150,36 @@
       "note": "/running/record/2022/#11-june--mens-nationals-1500-m"
     },
     {
-      "id": "best-1600",
-      "distance": "1600 m",
-      "distanceMeters": 1600.0,
-      "time": "5:08",
+      "id": "best-mile",
+      "distance": "Mile",
+      "distanceMeters": 1609.344,
+      "time": "5:09.80",
       "seconds": [
-        308.0
+        309.79872
       ],
       "date": "2022-05-07",
       "dateBasis": "utc",
       "source": "https://www.strava.com/activities/7100938650",
-      "kind": "Training",
+      "kind": "Training pace comparison",
       "context": "Opening effort before 2 × 400 m",
-      "score": {
-        "event": "1500 m",
-        "distanceMeters": 1500,
-        "road": false,
-        "derived": true,
-        "points": [
-          376
-        ]
-      }
-    },
-    {
-      "id": "best-1800",
-      "distance": "1800 m",
-      "distanceMeters": 1800.0,
-      "time": "5:48",
-      "seconds": [
-        348.0
-      ],
-      "date": "2021-02-25",
-      "dateBasis": "device-local",
-      "source": "https://www.strava.com/activities/4848380170",
-      "kind": "Training",
-      "context": "Written 1800 m PR; distance unverified",
       "score": {
         "event": "Mile",
         "distanceMeters": 1609.344,
         "road": false,
         "derived": true,
         "points": [
-          378
+          388
         ]
-      }
+      },
+      "original": {
+        "distance": "1600 m",
+        "distanceMeters": 1600.0,
+        "time": "5:08",
+        "seconds": 308.0
+      },
+      "aliases": [
+        "best-1600"
+      ]
     },
     {
       "id": "best-2000",
@@ -504,29 +201,6 @@
         "derived": false,
         "points": [
           293
-        ]
-      }
-    },
-    {
-      "id": "best-2400",
-      "distance": "2400 m",
-      "distanceMeters": 2400.0,
-      "time": "8:38",
-      "seconds": [
-        518.0
-      ],
-      "date": "2021-07-16",
-      "dateBasis": "route-local",
-      "source": "https://www.strava.com/activities/5635688784",
-      "kind": "Training",
-      "context": "Opening 2400 m of mixed threshold session; very hot",
-      "score": {
-        "event": "2000 m",
-        "distanceMeters": 2000,
-        "road": false,
-        "derived": true,
-        "points": [
-          202
         ]
       }
     },
@@ -555,6 +229,30 @@
       "note": "/running/record/2021/#16-june--the-three-efforts"
     },
     {
+      "id": "best-5000-track",
+      "distance": "5000 m · track",
+      "distanceMeters": 5000,
+      "time": "18:46",
+      "seconds": [
+        1126
+      ],
+      "date": "2021-02-19",
+      "dateBasis": "device-local",
+      "source": "https://www.strava.com/activities/4811707924",
+      "note": "/running/record/2021/#8-february--two-5000-m-efforts",
+      "kind": "Training",
+      "context": "Written 5K; track venue confirmed from memory",
+      "score": {
+        "event": "5000 m",
+        "distanceMeters": 5000,
+        "road": false,
+        "derived": false,
+        "points": [
+          273
+        ]
+      }
+    },
+    {
       "id": "best-5000",
       "distance": "5 km · road",
       "distanceMeters": 5000.0,
@@ -580,43 +278,19 @@
     },
     {
       "id": "best-10000",
-      "distance": "10 km · reported",
-      "distanceMeters": 10000.0,
-      "time": "44:24",
+      "distance": "10 km · road",
+      "distanceMeters": 10000,
+      "time": "40:04",
       "seconds": [
-        2664.0
-      ],
-      "date": "2020-08-18",
-      "dateBasis": "route-local",
-      "source": "https://www.strava.com/activities/3932385166",
-      "kind": "Reported effort",
-      "context": "Written PR; whole upload is 44:33 / 10.02 km",
-      "score": {
-        "event": "10 km",
-        "distanceMeters": 10000,
-        "road": true,
-        "derived": false,
-        "points": [
-          123
-        ]
-      },
-      "note": "/running/record/2020/#the-summer-tests"
-    },
-    {
-      "id": "best-10500",
-      "distance": "10.5 km",
-      "distanceMeters": 10500.0,
-      "time": "42:04",
-      "seconds": [
-        2524.0
+        2403.809523809524
       ],
       "date": "2021-10-10",
       "dateBasis": "official",
       "source": "https://my.raceresult.com/183503/results/pdf?name=02-Results%7C10%20-%20Finisher%20List&contest=3&lang=en",
-      "kind": "Race",
-      "context": "Sofia · chip time; course length unresolved",
+      "kind": "Race pace comparison",
+      "context": "Sofia chip time; source course length unresolved",
       "score": {
-        "event": "10 km",
+        "event": "10 km · road",
         "distanceMeters": 10000,
         "road": true,
         "derived": true,
@@ -624,31 +298,110 @@
           291
         ]
       },
-      "note": "/running/record/2021/#10-october--the-sofia-short-distance-race"
+      "note": "/running/record/2021/#10-october--the-sofia-short-distance-race",
+      "original": {
+        "distance": "10.5 km",
+        "distanceMeters": 10500.0,
+        "time": "42:04",
+        "seconds": 2524.0
+      },
+      "approximate": true,
+      "aliases": [
+        "best-10500"
+      ]
     },
     {
-      "id": "best-21100",
-      "distance": "21.10 km",
-      "distanceMeters": 21100.0,
-      "time": "1:38:14",
+      "id": "best-15000",
+      "distance": "15 km · road",
+      "distanceMeters": 15000,
+      "time": "1:03:16.68",
       "seconds": [
-        5894.0
+        3796.68
       ],
-      "date": "2024-10-25",
+      "date": "2021-03-28",
       "dateBasis": "route-local",
-      "source": "https://www.strava.com/activities/12745886498",
+      "source": "https://www.strava.com/activities/5026587843",
+      "note": "/running/record/2021/#28-march--15-km-long-run",
       "kind": "Recorded run",
-      "context": "GPS distance reference · 61 m recorded ascent",
+      "context": "First fifteen 1 km watch laps; GPS distance",
+      "original": {
+        "distance": "15.01 km",
+        "distanceMeters": 15010,
+        "time": "1:03:19",
+        "seconds": 3799
+      },
+      "score": {
+        "event": "15 km",
+        "distanceMeters": 15000,
+        "road": true,
+        "derived": false,
+        "points": [
+          247
+        ]
+      }
+    },
+    {
+      "id": "best-20000",
+      "date": "2024-04-19",
+      "dateBasis": "route-local",
+      "distance": "20 km · road",
+      "distanceMeters": 20000,
+      "time": "1:29:37",
+      "seconds": [
+        5376.739562624254
+      ],
+      "source": "https://www.strava.com/activities/11215182018",
+      "context": "GPS distance; full elapsed time; 58 m recorded ascent",
+      "kind": "Recorded pace comparison",
+      "original": {
+        "distance": "20.12 km",
+        "distanceMeters": 20120,
+        "time": "1:30:09",
+        "seconds": 5409
+      },
+      "score": {
+        "event": "20 km · road",
+        "distanceMeters": 20000,
+        "road": true,
+        "derived": true,
+        "points": [
+          190
+        ]
+      },
+      "approximate": true
+    },
+    {
+      "id": "best-half-marathon",
+      "date": "2024-04-24",
+      "dateBasis": "route-local",
+      "distance": "Half marathon",
+      "distanceMeters": 21097.5,
+      "time": "1:37:39",
+      "seconds": [
+        5858.323660714285
+      ],
+      "source": "https://www.strava.com/activities/11260146860",
+      "context": "GPS distance; full elapsed time; 72 m recorded ascent",
+      "kind": "Recorded pace comparison",
+      "original": {
+        "distance": "24.64 km",
+        "distanceMeters": 24640,
+        "time": "1:54:02",
+        "seconds": 6842
+      },
       "score": {
         "event": "Half marathon",
         "distanceMeters": 21097.5,
         "road": true,
         "derived": true,
         "points": [
-          147
+          155
         ]
       },
-      "note": "/running/record/2023-2025/#autumn-2024-more-long-running"
+      "approximate": true,
+      "aliases": [
+        "best-21100"
+      ]
     },
     {
       "id": "best-42195",
@@ -674,5 +427,22 @@
       },
       "note": "/running/record/2023-2025/#5-may--orange-county-marathon"
     }
+  ],
+  "retiredAnchors": [
+    "best-20",
+    "best-30",
+    "best-40",
+    "best-50",
+    "best-60",
+    "best-80",
+    "best-100",
+    "best-150",
+    "best-185",
+    "best-200",
+    "best-500",
+    "best-900",
+    "best-1200",
+    "best-1800",
+    "best-2400"
   ]
 }

@@ -26,27 +26,16 @@ const time = (seconds, decimals = 1) => {
   const fraction = decimals ? `.${String(units % factor).padStart(decimals, "0")}` : "";
   return `${hours ? `${hours}:${String(minutes).padStart(2, "0")}` : minutes}:${remainder}${fraction}`;
 };
-const pace = (best) => best.seconds.map((seconds) => time(seconds * 1000 / best.distanceMeters)).join("–");
-const scoredTime = (best) => {
-  if (!best.score) return "";
-  const precision = best.score.road ? 0 : 2;
-  const factor = 10 ** precision;
-  return best.seconds.map((seconds) => {
-    const scaled = seconds * best.score.distanceMeters / best.distanceMeters;
-    const formatted = time(Math.ceil((scaled - 1e-9) * factor) / factor, precision);
-    return scaled < 60 ? formatted.replace(/^0:/, "") : formatted;
-  }).join("–");
-};
+const pace = (best) => best.seconds.map((seconds) => time(seconds * 1000 / best.distanceMeters, 0)).join("–");
 const points = (best) => best.score?.points.join("–") ?? "—";
 ---
 <Post frontmatter={frontmatter}>
   <RunningRecordNav />
   <p>
-    This is the single table of my personal bests and fastest written individual
-    efforts in the recovered record, plus a recorded half-marathon-distance
-    reference. It includes races, time trials and training marks, with their
-    original distances and conditions. They come from different
-    years; the table is a history of what I have done. The notebook keeps the
+    My best known marks are organized by discipline, from 300 m to the marathon.
+    Races, time trials and training efforts keep their settings; same-pace
+    comparisons carry an asterisk and show the original distance and time.
+    The results come from different years. The notebook keeps the
     {" "}<a href="/running-notebook/#the-runner-i-am-trying-to-build">800+ point goal profile</a>{" "}
     I am working toward now.
   </p>
@@ -54,45 +43,49 @@ const points = (best) => best.score?.points.join("–") ?? "—";
     Points use the men's columns of the
     {" "}<a href={bests.source}>2025 revised World Athletics tables</a>, with the lower
     score between thresholds. A time links to its source; the date leads to the
-    account or activity. Pace uses the written effort time and stated distance.
+    account or activity. Pace is rounded to the nearest second per kilometre;
+    points use the original time or unrounded conversion.
     Dates marked UTC retain an unresolved local day from the export.
   </p>
   <span id="race-bests"></span>
-  <h2 id="personal-bests">Personal bests and recorded best efforts</h2>
+  <h2 id="personal-bests">Personal bests by discipline</h2>
   <div class="tablewrap"><table class="bests" role="table">
-    <thead><tr><th scope="col">Distance</th><th scope="col">Best<br /><span class="small">pace / km</span></th><th scope="col">Points</th><th scope="col">Date and setting</th></tr></thead>
+    <thead><tr><th scope="col">Discipline</th><th scope="col">Time<br /><span class="small">pace / km</span></th><th scope="col">Points</th><th scope="col">Date and setting</th></tr></thead>
     <tbody role="rowgroup">{bests.rows.map((best) => <tr id={best.id} role="row">
-      <th scope="row" role="rowheader">{best.distance}</th>
-      <td role="cell"><a class="mark" href={best.source}>{best.time}</a><br /><span class="small">{best.approximate && "~"}{pace(best)}</span></td>
-      <td role="cell"><span class="mark">{best.approximate && best.score && "~"}{points(best)}{best.score?.derived && <a href="#score-method" aria-label="Derived same-pace score">*</a>}{best.shortTimingUnknown && <a href="#timing-method" aria-label="Training timing method unestablished">†</a>}</span>
-        {best.score?.derived && <><br /><span class="small">{best.score.event}<br />{scoredTime(best)}</span></>}
-      </td>
+      <th scope="row" role="rowheader">{best.aliases?.map((id) => <span id={id}></span>)}{best.distance}</th>
+      <td role="cell"><a class="mark" href={best.source}>{best.approximate && "~"}{best.time}</a>{best.score?.derived && <a href="#score-method" aria-label="Same-pace comparison">*</a>}<br /><span class="small">{pace(best)}</span></td>
+      <td role="cell"><span class="mark">{points(best)}{best.shortTimingUnknown && <a href="#timing-method" aria-label="Training timing method unestablished">†</a>}</span></td>
       <td role="cell"><a href={best.note ?? best.source}>{date(best.date)}</a>{best.dateBasis === "utc" && <span class="small"> UTC</span>}<br />
         <span class="small">{best.kind} · {best.context}</span>
+        {best.original && <><br /><span class="small">{best.score?.derived ? "Original" : "Whole run"}: {best.original.distance} in {best.original.time}</span></>}
       </td>
     </tr>)}</tbody>
   </table></div>
   <p id="score-method">
-    * A derived score keeps the same pace over the closest shorter distance
-    listed in the relevant tables. The original result stays in the Best column;
-    the scored distance and time appear beneath its points. This is a comparison,
-    not an additional completed race. For example, the reported 10.5 km in
-    42:04 gives about 40:04 at 10 km. Sofia's course length remains unresolved:
-    291 points uses the results' 10.5 km label; 42:04 over 10 km would give 205.
-    The 21.10 km effort uses recorded GPS distance and elapsed time, without
-    claiming a measured half-marathon course. Derived times are rounded up to
-    the scored event's precision. The 20–40 m efforts have no shorter tabulated
-    event to use, so their points remain a dash.
+    * A comparison keeps the original effort's average pace over the named
+    discipline. The mile scales the documented 1600 m in 5:08 to 1609.344 m;
+    its comparison is 5:09.80, worth 388 points. The road comparisons scale
+    longer source distances down, using full elapsed time for recordings.
+    They do not establish an additional completed race or finish split.
+    Displayed comparison times round up to the event table's precision.
+    Sofia's course length remains unresolved: 291 points uses the official
+    results' 10.5 km label; 42:04 over 10 km would give 205.
+  </p>
+  <p>
+    The 15 km time sums the first fifteen 1 km watch laps. Its distance is
+    recorded by the device. The 20 km and half-marathon comparisons also use
+    GPS distances, without a claim of measured courses. The half-marathon
+    reference uses the faster whole-run pace of the April 24.64 km outing;
+    the separate{" "}<a href="/running/record/2023-2025/#autumn-2024-more-long-running">October 21.10 km in 1:38:14</a>{" "}
+    remains in the dated account. The 2000 m and 3000 m training paces both
+    round to 3:26/km; their unrounded difference is 0.3 seconds/km.
   </p>
   <p id="timing-method">
     † Short training points compare the written mark. The short efforts' timing method,
     start and wind have not been established. Official comparison of hand-timed
-    sprints requires adding 0.24 seconds through 200 m, or 0.14 seconds at 300–400 m;
+    sprints at 300–400 m requires adding 0.14 seconds;
     for example, a hand-timed 56.05 would be scored as 56.19, giving 531 rather
-    than the literal mark's 537. Approximate times and their score ranges retain
-    the approximation. The 200 m description gives only “around 27–28”; its
-    fastest separately written exact split is
-    {" "}<a href="https://www.strava.com/activities/6886754696">28.64 on 26 March 2022 UTC</a>.
+    than the literal mark's 537.
   </p>
   <h2 id="race-history">Race history</h2>
   <p>
@@ -136,9 +129,11 @@ const points = (best) => best.score?.points.join("–") ?? "—";
       </p>
     </>}
   </section>)}
+  {bests.retiredAnchors.map((id) => <span id={id}></span>)}
   <h2 id="training-references">Training references</h2>
   <p>
-    The best training marks are included in the table above. Other dated
+    Other sprint distances and interval lengths stay with the dated training
+    record. The discipline table above keeps the selected best marks. Other dated
     references stay with their accounts: the
     <a href="/running/record/early/">childhood neighbourhood effort</a>, the
     <a href="/running/record/2020/#30-december--a-reported-2-km-in-715">reported 2 km in 2020</a>

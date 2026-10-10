@@ -209,10 +209,18 @@ best-mark table. Keep personal-best summary tables on this page; the notebook
 links to it and keeps the goal profile and current interpretation. A meaningful
 dated account can still state its own result. Original best times/distances,
 race/training type, supported date basis and source stay visible. For an
-untabulated distance, score the same pace over the closest shorter listed event,
-including the mile when it is the nearest one; mark the score as derived and
-show its scored distance/time. Do not invent a score below the table's shortest
-distance. Derived comparisons do not establish additional achieved PBs. Pin the
+untabulated distance, keep its original value in the source context and make a
+clearly labelled same-pace comparison in the selected discipline. The main table
+uses the approved sixteen disciplines from 300 m through the marathon; smaller
+sprints and arbitrary interval lengths stay in dated training records. Track 5000 m
+and road 5 km are separate disciplines. The user explicitly approved scaling the
+documented 1600 m 5:08 up to the full mile: 5:09.80 / 388 points. Road 10/20 km and
+half-marathon comparisons scale longer source distances down; show the original
+distance/time and use full elapsed time, retaining GPS/course uncertainty. The 15 km
+reference sums fifteen native distance-triggered 1 km watch laps. Pace displays
+round to the nearest second/km; scores use the unrounded original or conversion.
+Preserve older best-row IDs as forwarding anchors when narrowing the table.
+Derived comparisons do not establish additional achieved PBs. Pin the
 table edition, apply the lower-score rule and keep timing/course uncertainty
 beside the reference. Approximate marks must not become exact times or points.
 The current programme lives at `/running/record/2026/programme/`;

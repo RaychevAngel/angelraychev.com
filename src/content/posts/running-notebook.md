@@ -86,9 +86,10 @@ uniquely revealing physiological test.
 
 My [personal bests and recorded best efforts](/running/record/results/#personal-bests)
 now have one table: original times, paces, World Athletics points, dates and
-race or training context. It reaches from short sprint efforts to the Orange
+race or training context. It reaches from 300 m to the Orange
 County Marathon. Nonstandard distances keep their original marks beside a
-clearly labelled same-pace score at the closest shorter tabulated distance.
+clearly labelled same-pace comparison in a named discipline. The mile reference
+scales the documented 1600 m pace to the full mile.
 
 That dated profile shows a stronger short end. Getting the whole 800–5000 range
 above 800 points means closing the gap toward the longer events as well as
