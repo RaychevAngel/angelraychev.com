@@ -1,0 +1,98 @@
+---
+import Post from "../../../layouts/Post.astro";
+import RunningRecordNav from "../../../components/RunningRecordNav.astro";
+import results from "../../../data/running/race-results.json";
+const frontmatter = {
+  title: "Race results and training references",
+  description: "Source-linked running results, separated from training benchmarks and scoped personal recollections.",
+  updated: "2026-10-09",
+};
+const groups = [
+  { kind: "track", title: "Track races", intro: "The men's national championships in June and U20 championships in July were separate meets. Placings below are the official combined classifications, rather than places within a heat." },
+  { kind: "park", title: "5kmrun and XL park races", intro: "Distances follow the organizer's edition-specific descriptions. They are race records, without an added claim of certified course length." },
+  { kind: "kids", title: "Kids Run", intro: "The two organized 2 km races are separate from the remembered sixth-grade neighbourhood effort." },
+  { kind: "sofia", title: "Sofia Marathon: short-distance events", intro: "Times below are chip times. The distance is the label in each edition's official results; the races are the short-distance event, rather than the full marathon." },
+  { kind: "marathon", title: "Marathon", intro: "The official chip time is the result. Recorded GPS distance and device time stay with the activity account." },
+];
+const date = (value) => new Date(`${value}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const bestIds = ["track-2022-06-12-800", "track-2022-05-21-1000", "track-2022-06-11-1500", "park-2021-04-10", "oc-2024-05-05"];
+const bests = bestIds.map((id) => results.find((result) => result.id === id));
+if (bests.some((result) => !result)) throw new Error("A selected running best has no source result");
+---
+<Post frontmatter={frontmatter}>
+  <RunningRecordNav />
+  <p>
+    The race marks are a dated history, rather than a current fitness profile.
+    A time links to its original result; its date links to the fuller account.
+    Training references below retain the conditions that a personal-best table
+    would otherwise lose.
+  </p>
+  <h2 id="race-bests">Selected race bests</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Date and setting</th></tr></thead>
+    <tbody>{bests.map((result) => <tr>
+      <td>{result.distance}</td><td><a href={result.source}>{result.time}</a></td>
+      <td><a href={result.note}>{date(result.date)}</a> · {result.event}</td>
+    </tr>)}</tbody>
+  </table></div>
+  {groups.map((group) => <section aria-labelledby={group.kind}>
+    <h2 id={group.kind}>{group.title}</h2>
+    <p>{group.intro}</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Finish</th></tr></thead>
+      <tbody>{results.filter((result) => result.kind === group.kind).sort((a,b) => a.date.localeCompare(b.date)).map((result) => <tr id={result.id}>
+        <td><a href={result.note}>{date(result.date)}</a></td>
+        <td>{result.event}<br />{result.distance}</td>
+        <td><a href={result.source}>{result.time}</a>{result.gunTime && <><br /><span class="dim">Gun {result.gunTime}</span></>}</td>
+        <td>{result.place}</td>
+      </tr>)}</tbody>
+    </table></div>
+    {group.kind === "park" && <p>
+      ¹ North Park's current result page says 6.0 km. The organizer's
+      <a href="https://info.5kmrun.bg/4096-2/">report published on 7 December 2015</a>
+      describes the same short event as 5 km. I retain that contemporary label;
+      no exact historical course measurement has been recovered.
+    </p>}
+    {group.kind === "sofia" && <>
+      <p>
+        ² The 2020 results say 10 km; the 2021 results say 10.5 km, while that
+        edition's map advertises 10 km. I remember the same route in those two
+        years. The exact measured length of the separate short course remains
+        unresolved, so the 42:04 is not listed as a certified 10,000 m best.
+      </p>
+      <p>
+        The <a href="https://sofia2018.bg/2017/10/10/%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B8%D1%80%D0%B0%D1%82-%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D0%B8-%D0%BD%D0%B0-wizz-air-%D1%81%D0%BE%D1%84%D0%B8%D1%8F-%D0%BC/">2017 instructions</a>
+        describe one short lap of the older four-lap marathon route, starting
+        outside Vasil Levski National Stadium. The later start was
+        <a href="https://www.sofia.bg/en/w/izvestni-atleti-pristigat-za-wizz-air-sofia-maraton-sledvasata-nedela">Battenberg Square</a>;
+        the <a href="https://www.sofia.bg/bg/web/guest/w/sofijskiat-maraton-startira-v-nedela-10-oktomvri">2021 maps</a>
+        show a two-lap marathon and a separate shorter loop. Dividing the
+        marathon distance by four would not recover the later short-course length.
+      </p>
+    </>}
+  </section>)}
+  <h2 id="training-references">Training references</h2>
+  <p>
+    These marks came from timed training, reported portions of longer runs or a
+    personal recollection. Their scope is part of the reference.
+  </p>
+  <div class="tablewrap"><table>
+    <thead><tr><th scope="col">Distance</th><th scope="col">Time</th><th scope="col">Context</th></tr></thead>
+    <tbody>
+      <tr><td>300 m</td><td>39.80</td><td><a href="/running/record/2022/#time-trials">8 June 2022</a> · time trial</td></tr>
+      <tr><td>400 m</td><td>56.05</td><td><a href="/running/record/2022/#22-june--600-m--400-m">22 June 2022</a> · after a 600 m in 1:32.74</td></tr>
+      <tr><td>600 m</td><td>1:31.49</td><td><a href="/running/record/2022/#time-trials">18 May 2022</a> · time trial</td></tr>
+      <tr><td>1200 m</td><td>3:23.71</td><td><a href="/running/record/2022/#time-trials">4 June 2022</a> · time trial</td></tr>
+      <tr><td>2000 m</td><td>7:16.67</td><td><a href="/running/record/2026/#27-september--2000-m-time-trial">27 September 2026</a> · continuous track trial</td></tr>
+      <tr><td>2 km</td><td>7:15</td><td><a href="/running/record/2020/#30-december--a-reported-2-km-in-715">30 December 2020</a> · title reports a portion of a longer outing; measurement method unestablished</td></tr>
+      <tr><td>3000 m</td><td>10:17</td><td><a href="/running/record/2021/#16-june--the-three-efforts">16 June 2021</a> · followed by 1500 m and 1200 m uploads; classification open</td></tr>
+      <tr><td>2 km</td><td>8:33</td><td><a href="/running/record/early/">Sixth grade, 2015–16</a> · remembered neighbourhood effort; exact date unrecovered</td></tr>
+    </tbody>
+  </table></div>
+  <p>
+    Repeated workouts have a different comparison: times, count and recovery
+    together. See the <a href="/running/record/2021/#the-repeated-900s">2021 900 m series</a>,
+    <a href="/running/record/2022/#19-january--the-mixed-rest-fast-template">mixed-rest fast work in 2022</a>
+    and <a href="/running/record/2026/#repeating-a-protocol">current protocol comparisons</a>.
+  </p>
+</Post>

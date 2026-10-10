@@ -34,8 +34,8 @@ npm run dev      # http://localhost:4321
 npm run build    # → dist/
 ```
 
-Astro 7, static output, zero client-side JavaScript. No CSS framework, no UI library, no
-dependencies beyond Astro itself. Node 22+.
+Astro 7, static output, zero client-side JavaScript. Markdown and KaTeX render the
+prose and formulas. No CSS framework or UI library. Node 22+.
 
 **Restart the dev server after changing `src/content.config.ts`** — collection config is
 cached, and stale content silently fails to appear. `npx astro dev stop` stops a
@@ -195,10 +195,53 @@ The running section has three main entries:
   proposed exposure models, with primary references.
 - `running-makes-the-city-smaller.md`: the personal essay about running and mobility.
 
-The detailed log is a supporting page at `src/pages/running-notebook/log.md`, served
-at `/running-notebook/log/`. It uses `Post.astro` directly; it is not a fourth homepage
-article or an RSS entry. Follow the existing child-page pattern for future supporting
-material rather than adding a new content type.
+The supporting running record starts at `/running/record/`. Its six period chapters
+are Markdown in `src/data/running/periods/`, rendered by
+`src/pages/running/record/[period].astro`. A chapter opens with a readable account
+and selected dated notes. `RunLedger.astro` adds expandable monthly tables beneath
+it, using the minimal public `src/data/running/recorded-runs.json` register. Separate
+warm-up, workout and cool-down uploads remain separate records; never treat the
+upload count as a count of physical sessions.
+
+`/running/record/results/` uses `src/data/running/race-results.json` for source-linked
+race results. The current programme lives at `/running/record/2026/programme/`;
+the recovered historical sheet is at `/running/record/2022/programme/`. These are
+supporting pages, not additional homepage articles or RSS entries. Keep the three
+main reading paths and the existing child-page pattern.
+
+`src/pages/running-notebook/log.md` retains `/running-notebook/log/` and all 28
+previous heading IDs as links into the new record. Preserve those IDs and the
+period chapter IDs when refining prose; old bookmarks should remain useful.
+
+For a new session, update its dated chapter note first, then the current notebook
+only when the result changes the interpretation or next decision. Add an upload
+to the register when source material establishes it. Use its supported local date;
+retain and label UTC when no local date is established. Preserve the source's
+displayed distance and moving time without rescaling them into an intended track
+distance or race result. Zero-distance uploads are retained with a displayed dash.
+Keep original files, GPS, sensor streams, complete descriptions and provenance
+outside the public repository.
+
+Each results row links its time to the primary result and its date to the fuller
+account. Keep heat places separate from combined classifications, and chip, gun,
+moving and elapsed times distinct. An organizer's course label is not an added
+certification claim. Corrections should remain intelligible in the dated account.
+
+New months and ordinary cycles stay inside the relevant period. Start another
+chapter when the purpose or training phase materially changes. Before replacing a
+programme, preserve its dated version and keep the governing plan identifiable
+from the corresponding session notes. Completed training and planned transitions
+must remain separate, including when a planned session's date has already passed.
+
+Review the chapter's organization once it approaches twenty full dated session
+notes or 4,000 words of prose. This is an editorial review trigger, not an automatic
+page split. Routine repeats can retain exact work, rest and splits with one useful
+observation; the front chronology and comparisons should emphasize checkpoints.
+If a year genuinely needs several phase chapters, keep its year page as a concise
+contents page and preserve old session fragments as links to their new homes.
+`RunLedger.astro` currently filters by year only: add supported date bounds or
+explicit membership before splitting one year across chapters, so uploads appear
+once rather than being duplicated in every phase. Do not create empty future pages.
 
 The initial publication on 9 October 2026 includes completed sessions through
 8 October. When updating, keep future plans distinct from completed work, preserve

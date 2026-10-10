@@ -1,0 +1,26 @@
+---
+const { current } = Astro.props;
+const chapters = [
+  ["early", "2015–2019"],
+  ["2020", "2020"],
+  ["2021", "2021"],
+  ["2022", "2022"],
+  ["2023-2025", "2023–2025"],
+  ["2026", "2026"],
+];
+---
+<p class="record-nav">
+  <a href="/running-notebook/">Running notebook</a>{" · "}
+  <a href="/running/record/">Running record</a>{" · "}
+  <a href="/running/record/results/">Results</a>
+</p>
+<p class="record-periods">
+  {chapters.map(([slug, label], index) => <>
+    {index > 0 && " · "}
+    {slug === current ? <span aria-current="page">{label}</span> : <a href={`/running/record/${slug}/`}>{label}</a>}
+  </>)}
+</p>
+<style>
+  .record-nav { margin-bottom: 8px; }
+  .record-periods { margin-bottom: 32px; }
+</style>

@@ -99,6 +99,7 @@ if (ungrouped.length) {
           </li>
         ))}
       </ul>
+      {section.id === "running" && <p class="running-record"><a href="/running/record/">Training and race record</a> · <a href="/running/record/2026/">Latest sessions</a></p>}
     </section>
   ))}
 </Base>
@@ -106,4 +107,5 @@ if (ungrouped.length) {
 <style>
   .intro { margin-bottom: 48px; }
   section:first-of-type h2 { margin-top: 0; }
+  .running-record { margin-top: 20px; font-size: 13px; }
 </style>

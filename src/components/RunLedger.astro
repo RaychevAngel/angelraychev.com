@@ -1,0 +1,56 @@
+---
+import records from "../data/running/recorded-runs.json";
+const { years = [] } = Astro.props;
+const runs = records.filter((run) => years.includes(Number(run.date.slice(0, 4))));
+const monthLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = [...new Set(runs.map((run) => run.date.slice(0, 7)))].sort();
+const duration = (seconds) => {
+  if (seconds === null) return "—";
+  const n = Math.round(seconds);
+  const h = Math.floor(n / 3600);
+  const m = Math.floor(n % 3600 / 60);
+  const s = String(n % 60).padStart(2, "0");
+  return h ? `${h}:${String(m).padStart(2, "0")}:${s}` : `${m}:${s}`;
+};
+---
+<section aria-labelledby="recorded-runs">
+  <h2 id="recorded-runs">Recorded runs</h2>
+  <p>
+    {runs.length} running activity uploads are listed below. A warm-up, workout and
+    cool-down may be separate uploads from one outing. Recorded distance and moving
+    time describe each upload; race results and repetition times are kept in the
+    dated notes above. A dash means that the distance was not recorded.
+  </p>
+  <p>
+    Dates use the supported local activity date where available. A date marked
+    UTC retains the export’s timestamp because its local date has not been established.
+  </p>
+  {months.map((month) => {
+    const rows = runs.filter((run) => run.date.startsWith(month));
+    const [year, number] = month.split("-");
+    return <details>
+      <summary id={`recorded-${month}`}>{monthLabels[Number(number) - 1]} {year} · {rows.length} uploads</summary>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col">Date</th><th scope="col">Activity</th><th scope="col">km</th><th scope="col">Moving time</th></tr></thead>
+          <tbody>
+            {rows.map((run) => <tr id={`activity-${run.id}`}>
+              <td class="date">{Number(run.date.slice(8, 10))}{run.dateBasis === "utc" && <span class="clock"> UTC</span>}</td>
+              <td><a href={run.url}>{run.title}</a>{run.note && <><br /><a class="session-note" href={run.note}>Dated note</a></>}</td>
+              <td class="number">{run.distanceKm === null ? "—" : run.distanceKm.toFixed(2)}</td>
+              <td class="number">{duration(run.movingSeconds)}</td>
+            </tr>)}
+          </tbody>
+        </table>
+      </div>
+    </details>;
+  })}
+</section>
+<style>
+  details { margin-bottom: 16px; }
+  summary { cursor: pointer; margin-bottom: 12px; }
+  .date, .number { white-space: nowrap; }
+  .number { text-align: right; }
+  .clock, .session-note { font-size: 12px; }
+  table { font-size: 12.5px; }
+</style>

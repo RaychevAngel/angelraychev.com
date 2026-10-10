@@ -5,7 +5,7 @@ updated: 2026-10-09
 draft: false
 ---
 
-*Living project · [Training log](/running-notebook/log/) · [What should a running workout maximize?](/what-should-a-running-workout-maximize/) · [Running makes the city smaller](/running-makes-the-city-smaller/)*
+*Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Running record](/running/record/)*
 
 On 8 October I ran three 1200 m repetitions, with one minute between them:
 **4:42.5, 4:42.7, 4:41.3**. I finished feeling that a fourth repetition was definitely
@@ -22,15 +22,16 @@ performance profile across 800–5000 m, with running becoming ordinary freedom
 around the city again.
 
 **This version includes completed training through 8 October 2026.** The upcoming
-sessions below are plans. The full [training log](/running-notebook/log/) keeps the
-splits and conditions behind the summaries here.
+sessions below are plans. The [current record](/running/record/2026/) keeps the chronology, splits and
+conditions behind the summaries here; the [earlier periods](/running/record/)
+retain the history I am returning with.
 
 ## The runner I am trying to build
 
 I want the profile to be strongest in the middle distances, while retaining
 speed below them and useful endurance above them.
 
-I used the [World Athletics scoring tables](https://worldathletics.org/about-iaaf/documents/technical-information)
+I used the [World Athletics men's outdoor scoring tables](https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics)
 to think about the relative strength of marks at different distances. That gives
 me a way to examine the shape of an ambition, rather than collecting times that
 merely look attractive in isolation. These are the central goal marks:
@@ -65,12 +66,16 @@ time-trial best was **1:31.49**. The **56.05** for 400 m came after a **1:32.74*
 600 in training. A dated 2021 entry records **10:17 for 3000 m**. My **5 km
 personal best is 18:16**, run at South Park's 5kmrun on **10 April 2021**.
 These performances belong to different conditions and should retain those
-labels. The [historical log](/running-notebook/log/#selected-earlier-records)
-keeps the dates, sequences and surrounding circumstances.
+labels. The [race and training references](/running/record/results/) keep their dates,
+scope and surrounding circumstances. The 2022 season continued through the
+[July U20 national championships](/running/record/2022/#9-july--u20-nationals-1500-m),
+beyond the June peak.
 
 The years since were uneven. I continued running intermittently in 2023 and 2024,
 including substantial long runs and the
-[Orange County Marathon on 5 May 2024](/running-notebook/log/#5-may-2024--orange-county-marathon).
+[Orange County Marathon on 5 May 2024](/running/record/2023-2025/#5-may--orange-county-marathon).
+I also did interval work in early 2024. The return is to regular,
+repeatable middle-distance training; it does not erase those intervening sessions.
 The large gap was 2025: my Strava has one run
 recorded for the year. Earlier 2026 self-timed 5Ks were around 20:30. This is a
 return to consistent track work after interrupted training, with some experience
@@ -118,6 +123,11 @@ observations that can inform the next decision.
 
 ## Why the programme changed
 
+I expected rebuilding my old shape to take months. I still wanted a benchmark
+at the beginning. After the first 2000 m, I wrote, “At least we are on the scale.”
+The time trial gave me a starting point against which later training and tests
+could mean something.
+
 I initially imagined a long tempo-first build. I then chose to start with a small
 mixture of LT, VO₂ and fast running, with easy days between them. That gave me a
 chance to observe more than one part of the returning runner without starting
@@ -125,96 +135,49 @@ with large sessions.
 
 There was another change of mind. At first, I liked varying workouts: it could
 keep every week from becoming a judgment against last week's stopwatch. Once I
-had a few actual sessions, repeating them became more useful. If the same
-3×1200 was becoming quicker and more manageable, why replace it with something
-that changed both the distance and the comparison?
+had a few actual sessions, I wanted to see what would happen if I repeated them.
+If the same 3×1200 was becoming quicker and more manageable, why replace it with
+something that changed both the distance and the comparison?
 
-Repetition cannot remove every source of variation. But keeping a recognisable
-workout gives me a better basis for interpreting effort, reserve and pace than
-changing everything at once. The progression now separates **improving within a
-workout** from **earning a new workout**.
+Familiarity is part of the appeal: the 900s bring back memories, and the 200s give
+me a fast effort I can measure. A recognisable workout also makes effort, reserve
+and pace easier to compare, even while conditions vary. The progression now
+separates **improving within a workout** from **earning a new workout**.
 
 The experimental work changed too. A fixed A slot became **X**, a place to try a
-candidate session. My first 10-second-hard/10-second-recovery attempt was broken
-into two sets by a phone failure. Its approximate distance included recovery
+candidate session. My October 6 attempt at 10 seconds hard / 10 seconds recovery
+was broken into two sets by a phone failure. Its approximate distance included recovery
 movement, so turning that distance into a performance score would have rewarded
 the wrong thing. More basically, an occasional experiment need not prove a
 training improvement each time. It can help me decide whether a format belongs
 in the recurring programme.
 
-## The current 18-day cycle
+## A programme that earns its next step
 
-Each block has two training days followed by a chill day. Chill leaves room for
-rest or easy movement according to how I feel, without another quality session:
+The present plan uses **18 days**: six blocks of two training days followed by a
+chill day. Across the cycle there are four LT sessions, four VO₂ sessions, one
+stable F session, one mixed-rest **FA**, one event time trial and one **X**
+experiment. The [programme page](/running/record/2026/programme/) keeps the exact
+order, templates and progression tables.
 
-| Block | First day | Second day |
-| ---: | --- | --- |
-| 1 | VO₂ | LT |
-| 2 | VO₂ | FA |
-| 3 | LT | VO₂ |
-| 4 | LT | X |
-| 5 | VO₂ | LT |
-| 6 | TT | F |
+That allocation is newly agreed. I have not yet completed a full cycle and
+shown that I can sustain it. Nor can the labels describe its entire cost:
+running to the gym, carrying a backpack and a hard bike commute still count as
+movement, even on a day whose programme says chill.
 
-That is four LT sessions, four VO₂ sessions, and one each of F, FA, TT and X,
-with six chill days.
+LT and VO₂ advance independently. For the present **3×1200 m LT**, the first
+gate is a **4:48 average with another repetition plausibly available**. Passing
+it unlocks **3×1600 m**. That longer workout's eventual **6:08** gate is a later
+target, rather than a compulsory pace on the first attempt.
 
-**FA** is fast running with a second, shorter-recovery set: the current template
-is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
-**TT** is an event time trial; the next proposed endpoints are 5000 m and then
-800 m. **X** keeps an experimental place open, with dense 10/10 running among
-the candidates. F remains the stable 6×200 m benchmark.
+The present **3×800 m VO₂** gate is a **2:40 average**, without a major final
+collapse, with **5:30 recovery**. A quicker LT session does not move that gate.
+Shortening recovery is not an automatic requirement: the point is to give each
+repetition a chance to produce the intended work.
 
-The allocation has some freedom built in. Three LT–VO₂ pairs, F, FA, TT and X
-form the backbone; two remaining slots are currently occupied by another LT and
-another VO₂. Those could later change if the results justify a different emphasis.
-For now, I want to see how this allocation behaves over cycles before changing it
-automatically.
-
-The session count does not describe the whole load. A time trial, relaxed fast
-repetitions and an experimental sprint set can cost very different amounts. One
-recent chill day still included a short backpack run; my plan for another rest day
-included running to the gym and back. The label cannot erase that activity. The
-18-day structure is newly agreed; I have not yet completed a whole cycle and
-demonstrated that I can sustain it.
-
-## Two independently earned progressions
-
-LT and VO₂ advance on separate tracks. A quicker LT session does not require a
-simultaneous VO₂ graduation. A calendar does not require either one.
-
-The LT gate is the target average while remaining controlled, with another
-repetition plausibly available. Recovery is roughly one to two minutes of
-walking or light jogging; the current 3×1200 comparison uses one minute.
-
-| LT workout | Gate pace | Average rep at gate |
-| --- | ---: | ---: |
-| 3×1200 m | 4:00/km | 4:48 |
-| 3×1600 m | 3:50/km | 6:08 |
-| 3×2000 m | 3:40/km | 7:20 |
-| 6×1200 m | 3:30/km | 4:12 |
-| 4×2000 m | 3:20/km | 6:40 |
-
-The VO₂ gate is the target average without a major final-repetition collapse.
-Recovery is currently **5:30**. Shortening it is not a required part of this
-progression.
-
-| VO₂ workout | Gate pace | Average rep at gate |
-| --- | ---: | ---: |
-| 3×800 m | 3:20/km | 2:40 |
-| 3×900 m | 3:15/km | 2:55.5 |
-| 4×900 m | 3:10/km | 2:51 |
-| 5×900 m | 3:05/km | 2:46.5 |
-| 5×1000 m | 3:00/km | 3:00 |
-
-**A row is a workout and its graduation target.** Passing it unlocks the next
-workout; the next row's pace is the next gate, not a compulsory entry pace.
-October 8 therefore unlocks **3×1600 m**. It does not demand 6:08 repetitions
-on the first attempt at that larger session.
-
-The later rows are ambitious proposals, rather than evidence that these exact
-steps are optimal or already tolerable. Their role is to make the direction and
-next decision clear. The training still has to earn them.
+The later rows describe ambitious directions, not completed fitness or proof
+that the exact steps are optimal. Keeping the workout stable long enough to
+understand it makes a change of structure meaningful.
 
 ## What the observations now tell me
 

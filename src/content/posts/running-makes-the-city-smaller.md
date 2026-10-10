@@ -19,7 +19,8 @@ used to come with being a runner: places becoming close enough that I can simply
 There is a run in my old records that captures this better than a race result.
 
 July 6, 2021. Four seventeen in the morning. Sofia. I had been out with friends and
-ran home: 7.59 kilometres in 34:04, at about 4:29 per kilometre.
+ran home: [7.59 kilometres in 34:04 of moving time](https://www.strava.com/activities/5581962035),
+at about 4:29 per kilometre.
 
 I was living away from home for a research programme that summer. The run took me
 across the city from Studentski, along empty boulevards. I remember it as a lot of
@@ -66,20 +67,15 @@ recorded repetitions, consistent recovery, and an honest account of how the
 effort felt. Repeating a workout gives me something to compare. Changing it needs
 a reason.
 
-On October 8, three 1200-metre repetitions with one minute of recovery averaged
-about 4:42 each. They were controlled, with another repetition definitely
-available. That cleared the first milestone in the current progression. I was
-happy with it: the number and the effort had moved together.
-
 City running gives me room to play. I can choose a destination, explore a
 neighbourhood, or fit a run around something I already need to do. I do not want
 to carry an interval session's negotiation with the stopwatch into every trip
 outside.
 
-Already, I can feel my stride opening again. During that session, running at
-about 3:55 per kilometre felt relaxed, with very little conscious push needed
-to keep moving. The city runs can grow around that returning ease. Prescribing
-my old cruising pace now would turn every outing into another test.
+During the [8 October track session](/running/record/2026/#8-october--lt-31200-m--1-min),
+I could feel my stride opening again and the running felt relaxed. The city runs
+can grow around that returning ease. Prescribing my old cruising pace now would
+turn every outing into another test.
 
 The load is where these two kinds of running meet. I am already increasing the
 speed of the track work. More repetitions and longer runs would add other demands.

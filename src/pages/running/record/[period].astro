@@ -1,0 +1,20 @@
+---
+import Post from "../../../layouts/Post.astro";
+import RunningRecordNav from "../../../components/RunningRecordNav.astro";
+import RunLedger from "../../../components/RunLedger.astro";
+
+export function getStaticPaths() {
+  const chapters = import.meta.glob("../../../data/running/periods/*.md", { eager: true });
+  return Object.entries(chapters).map(([path, chapter]) => ({
+    params: { period: path.split("/").pop().replace(/\.md$/, "") },
+    props: { chapter },
+  }));
+}
+const { chapter } = Astro.props;
+const { Content, frontmatter } = chapter;
+---
+<Post frontmatter={frontmatter}>
+  <RunningRecordNav current={Astro.params.period} />
+  <Content />
+  <RunLedger years={frontmatter.years} />
+</Post>
