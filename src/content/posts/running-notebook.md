@@ -5,7 +5,7 @@ updated: 2026-10-10
 draft: false
 ---
 
-*Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Running record](/running/record/)*
+*Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
 The ambition is **800+ points on the World Athletics scoring tables across the
 whole 800–5000 m range**: 800, 1000, 1500, mile, 2000, 3000, two miles and 5000.
@@ -84,34 +84,19 @@ It is also the geometric midpoint of 800 and 5000:
 800:2000 = 2000:5000. That is a pleasing personal anchor. It does not make 2000 m a
 uniquely revealing physiological test.
 
-My old performances explain the ambition better than they establish my current
-readiness. In 2022 I raced 800 in **2:03.62** and 1500 in **4:23.90**. My 600 m
-time-trial best was **1:31.49**. The **56.05** for 400 m came after a **1:32.74**
-600 in training. A dated 2021 entry records **10:17 for 3000 m**. My **5 km
-personal best is 18:16**, run at South Park's 5kmrun on **10 April 2021**.
-These performances belong to different conditions and should retain those
-labels. The [race and training references](/running/record/results/) keep their dates,
-scope and surrounding circumstances. The 2022 season continued through the
-[July U20 national championships](/running/record/2022/#9-july--u20-nationals-1500-m),
-beyond the June peak.
+My [personal bests and recorded best efforts](/running/record/results/#personal-bests)
+now have one table: original times, paces, World Athletics points, dates and
+race or training context. It reaches from short sprint efforts to the Orange
+County Marathon. Nonstandard distances keep their original marks beside a
+clearly labelled same-pace score at the closest shorter tabulated distance.
 
-Putting those marks on the same scoring scale makes the old gap easier to see:
-
-| Event | Historical mark | Table points | Setting |
-| --- | ---: | ---: | --- |
-| 800 m | 2:03.62 | 674 | 2022 national championships |
-| 1000 m | 2:42.79 | 626 | 2022 New Stars |
-| 1500 m | 4:23.90 | 596 | 2022 national championships |
-| 3000 m | 10:17 | 405 | 2021 timed training |
-| Road 5 km | 18:16 | 328 | 2021 South Park 5kmrun |
-
-These are lookups in the same 2025 edition, with the road 5 km column used for
-the park race. That race retains the organizer's distance label, without an
-added certification claim. The training mark is a time reference. These results
-come from different dates and settings, rather than a simultaneous fitness test.
-Even with those limits, the stronger short end is visible. Getting the whole
-range above 800 points means closing the gap toward the longer events as well
-as improving the 800.
+That dated profile shows a stronger short end. Getting the whole 800–5000 range
+above 800 points means closing the gap toward the longer events as well as
+improving the 800. The marks come from different years and settings; they do not
+form a simultaneous fitness test. The [2022 account](/running/record/2022/) follows
+the track season through the [July U20 national championships](/running/record/2022/#9-july--u20-nationals-1500-m),
+beyond the June peak. The best-mark table supplies the comparison; the dated
+record supplies what it felt like and what surrounded it.
 
 The years since were uneven. I continued running intermittently in 2023 and 2024,
 including substantial long runs and the

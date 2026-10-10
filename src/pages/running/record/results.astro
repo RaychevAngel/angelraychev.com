@@ -2,9 +2,10 @@
 import Post from "../../../layouts/Post.astro";
 import RunningRecordNav from "../../../components/RunningRecordNav.astro";
 import results from "../../../data/running/race-results.json";
+import bests from "../../../data/running/personal-bests.json";
 const frontmatter = {
-  title: "Race results and training references",
-  description: "Source-linked running results, separated from training benchmarks and scoped personal recollections.",
+  title: "Personal bests and race history",
+  description: "My best known running marks in one place, with paces, World Athletics points, dates and the race or training context behind them.",
   updated: "2026-10-10",
 };
 const groups = [
@@ -15,29 +16,90 @@ const groups = [
   { kind: "marathon", title: "Marathon", intro: "The official chip time is the result. Recorded GPS distance and device time stay with the activity account." },
 ];
 const date = (value) => new Date(`${value}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-const bestIds = ["track-2022-06-12-800", "track-2022-05-21-1000", "track-2022-06-11-1500", "park-2021-04-10", "oc-2024-05-05"];
-const bests = bestIds.map((id) => results.find((result) => result.id === id));
-if (bests.some((result) => !result)) throw new Error("A selected running best has no source result");
+const time = (seconds, decimals = 1) => {
+  const factor = 10 ** decimals;
+  const units = Math.round(seconds * factor);
+  const whole = Math.floor(units / factor);
+  const hours = Math.floor(whole / 3600);
+  const minutes = Math.floor(whole % 3600 / 60);
+  const remainder = String(whole % 60).padStart(2, "0");
+  const fraction = decimals ? `.${String(units % factor).padStart(decimals, "0")}` : "";
+  return `${hours ? `${hours}:${String(minutes).padStart(2, "0")}` : minutes}:${remainder}${fraction}`;
+};
+const pace = (best) => best.seconds.map((seconds) => time(seconds * 1000 / best.distanceMeters)).join("–");
+const scoredTime = (best) => {
+  if (!best.score) return "";
+  const precision = best.score.road ? 0 : 2;
+  const factor = 10 ** precision;
+  return best.seconds.map((seconds) => {
+    const scaled = seconds * best.score.distanceMeters / best.distanceMeters;
+    const formatted = time(Math.ceil((scaled - 1e-9) * factor) / factor, precision);
+    return scaled < 60 ? formatted.replace(/^0:/, "") : formatted;
+  }).join("–");
+};
+const points = (best) => best.score?.points.join("–") ?? "—";
 ---
 <Post frontmatter={frontmatter}>
   <RunningRecordNav />
   <p>
-    The race marks are a dated history, rather than a current fitness profile.
-    A time links to its original result; its date links to the fuller account.
-    Training references below retain the conditions that a personal-best table
-    would otherwise lose. The
-    <a href="/running-notebook/#the-runner-i-am-trying-to-build">notebook's score comparison</a>
-    puts the main historical marks beside the 800+ point ambition, using the
-    2025 World Athletics tables and retaining each mark's setting.
+    This is the single table of my personal bests and fastest written individual
+    efforts in the recovered record, plus a recorded half-marathon-distance
+    reference. It includes races, time trials and training marks, with their
+    original distances and conditions. They come from different
+    years; the table is a history of what I have done. The notebook keeps the
+    {" "}<a href="/running-notebook/#the-runner-i-am-trying-to-build">800+ point goal profile</a>{" "}
+    I am working toward now.
   </p>
-  <h2 id="race-bests">Selected race bests</h2>
-  <div class="tablewrap"><table>
-    <thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Date and setting</th></tr></thead>
-    <tbody>{bests.map((result) => <tr>
-      <td>{result.distance}</td><td><a href={result.source}>{result.time}</a></td>
-      <td><a href={result.note}>{date(result.date)}</a> · {result.event}</td>
+  <p>
+    Points use the men's columns of the
+    {" "}<a href={bests.source}>2025 revised World Athletics tables</a>, with the lower
+    score between thresholds. A time links to its source; the date leads to the
+    account or activity. Pace uses the written effort time and stated distance.
+    Dates marked UTC retain an unresolved local day from the export.
+  </p>
+  <span id="race-bests"></span>
+  <h2 id="personal-bests">Personal bests and recorded best efforts</h2>
+  <div class="tablewrap"><table class="bests" role="table">
+    <thead><tr><th scope="col">Distance</th><th scope="col">Best<br /><span class="small">pace / km</span></th><th scope="col">Points</th><th scope="col">Date and setting</th></tr></thead>
+    <tbody role="rowgroup">{bests.rows.map((best) => <tr id={best.id} role="row">
+      <th scope="row" role="rowheader">{best.distance}</th>
+      <td role="cell"><a class="mark" href={best.source}>{best.time}</a><br /><span class="small">{best.approximate && "~"}{pace(best)}</span></td>
+      <td role="cell"><span class="mark">{best.approximate && best.score && "~"}{points(best)}{best.score?.derived && <a href="#score-method" aria-label="Derived same-pace score">*</a>}{best.shortTimingUnknown && <a href="#timing-method" aria-label="Training timing method unestablished">†</a>}</span>
+        {best.score?.derived && <><br /><span class="small">{best.score.event}<br />{scoredTime(best)}</span></>}
+      </td>
+      <td role="cell"><a href={best.note ?? best.source}>{date(best.date)}</a>{best.dateBasis === "utc" && <span class="small"> UTC</span>}<br />
+        <span class="small">{best.kind} · {best.context}</span>
+      </td>
     </tr>)}</tbody>
   </table></div>
+  <p id="score-method">
+    * A derived score keeps the same pace over the closest shorter distance
+    listed in the relevant tables. The original result stays in the Best column;
+    the scored distance and time appear beneath its points. This is a comparison,
+    not an additional completed race. For example, the reported 10.5 km in
+    42:04 gives about 40:04 at 10 km. Sofia's course length remains unresolved:
+    291 points uses the results' 10.5 km label; 42:04 over 10 km would give 205.
+    The 21.10 km effort uses recorded GPS distance and elapsed time, without
+    claiming a measured half-marathon course. Derived times are rounded up to
+    the scored event's precision. The 20–40 m efforts have no shorter tabulated
+    event to use, so their points remain a dash.
+  </p>
+  <p id="timing-method">
+    † Short training points compare the written mark. The short efforts' timing method,
+    start and wind have not been established. Official comparison of hand-timed
+    sprints requires adding 0.24 seconds through 200 m, or 0.14 seconds at 300–400 m;
+    for example, a hand-timed 56.05 would be scored as 56.19, giving 531 rather
+    than the literal mark's 537. Approximate times and their score ranges retain
+    the approximation. The 200 m description gives only “around 27–28”; its
+    fastest separately written exact split is
+    {" "}<a href="https://www.strava.com/activities/6886754696">28.64 on 26 March 2022 UTC</a>.
+  </p>
+  <h2 id="race-history">Race history</h2>
+  <p>
+    The full recovered race history follows. Original result times, course labels,
+    placings and the dated accounts remain here, including earlier marks that were
+    later improved. Chip times govern road results; gun times stay separately labelled.
+  </p>
   {groups.map((group) => <section aria-labelledby={group.kind}>
     <h2 id={group.kind}>{group.title}</h2>
     <p>{group.intro}</p>
@@ -76,22 +138,14 @@ if (bests.some((result) => !result)) throw new Error("A selected running best ha
   </section>)}
   <h2 id="training-references">Training references</h2>
   <p>
-    These marks came from timed training, reported portions of longer runs or a
-    personal recollection. Their scope is part of the reference.
+    The best training marks are included in the table above. Other dated
+    references stay with their accounts: the
+    <a href="/running/record/early/">childhood neighbourhood effort</a>, the
+    <a href="/running/record/2020/#30-december--a-reported-2-km-in-715">reported 2 km in 2020</a>
+    and the
+    <a href="/running/record/2026/#27-september--2000-m-time-trial">current 2000 m trial</a>.
+    Their dates, measurement limits and roles in the story remain visible there.
   </p>
-  <div class="tablewrap"><table>
-    <thead><tr><th scope="col">Distance</th><th scope="col">Time</th><th scope="col">Context</th></tr></thead>
-    <tbody>
-      <tr><td>300 m</td><td>39.80</td><td><a href="/running/record/2022/#time-trials">8 June 2022</a> · time trial</td></tr>
-      <tr><td>400 m</td><td>56.05</td><td><a href="/running/record/2022/#22-june--600-m--400-m">22 June 2022</a> · after a 600 m in 1:32.74</td></tr>
-      <tr><td>600 m</td><td>1:31.49</td><td><a href="/running/record/2022/#time-trials">18 May 2022</a> · time trial</td></tr>
-      <tr><td>1200 m</td><td>3:23.71</td><td><a href="/running/record/2022/#time-trials">4 June 2022</a> · time trial</td></tr>
-      <tr><td>2000 m</td><td>7:16.67</td><td><a href="/running/record/2026/#27-september--2000-m-time-trial">27 September 2026</a> · continuous track trial</td></tr>
-      <tr><td>2 km</td><td>7:15</td><td><a href="/running/record/2020/#30-december--a-reported-2-km-in-715">30 December 2020</a> · title reports a portion of a longer outing; measurement method unestablished</td></tr>
-      <tr><td>3000 m</td><td>10:17</td><td><a href="/running/record/2021/#16-june--the-three-efforts">16 June 2021</a> · followed by 1500 m and 1200 m uploads; classification open</td></tr>
-      <tr><td>2 km</td><td>8:33</td><td><a href="/running/record/early/">Sixth grade, 2015–16</a> · remembered neighbourhood effort; exact date unrecovered</td></tr>
-    </tbody>
-  </table></div>
   <p>
     Repeated workouts have a different comparison: times, count and recovery
     together. See the <a href="/running/record/2021/#the-repeated-900s">2021 900 m series</a>,
@@ -99,3 +153,16 @@ if (bests.some((result) => !result)) throw new Error("A selected running best ha
     and <a href="/running/record/2026/#repeating-a-protocol">current protocol comparisons</a>.
   </p>
 </Post>
+<style>
+  .bests th[scope="row"] { font-weight: 400; }
+  .small { font-size: 11.5px; }
+  .mark { white-space: nowrap; }
+  .bests td:last-child { min-width: 115px; }
+  @media (max-width: 480px) {
+    .bests, .bests thead, .bests tbody { display: block; }
+    .bests tr { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 10px; border-bottom: 1px solid var(--rule); padding: 12px 0; }
+    .bests th, .bests td { border: 0; padding: 0; min-width: 0; overflow-wrap: anywhere; }
+    .bests thead th:last-child { display: none; }
+    .bests tbody td:last-child { grid-column: 1 / -1; padding-top: 8px; min-width: 0; }
+  }
+</style>

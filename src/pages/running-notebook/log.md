@@ -5,7 +5,7 @@ description: "The former training log now leads to dated period chapters, result
 updated: 2026-10-09
 ---
 
-[Running notebook](/running-notebook/) · [Running record](/running/record/) · [Results](/running/record/results/)
+[Running notebook](/running-notebook/) · [Running record](/running/record/) · [Personal bests](/running/record/results/#personal-bests)
 
 The growing log is now organized into [period chapters](/running/record/).
 Each keeps a readable account, selected dated notes and monthly lists of recorded

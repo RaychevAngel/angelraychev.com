@@ -204,7 +204,18 @@ warm-up, workout and cool-down uploads remain separate records; never treat the
 upload count as a count of physical sessions.
 
 `/running/record/results/` uses `src/data/running/race-results.json` for source-linked
-race results. The current programme lives at `/running/record/2026/programme/`;
+race history and `src/data/running/personal-bests.json` for the single canonical
+best-mark table. Keep personal-best summary tables on this page; the notebook
+links to it and keeps the goal profile and current interpretation. A meaningful
+dated account can still state its own result. Original best times/distances,
+race/training type, supported date basis and source stay visible. For an
+untabulated distance, score the same pace over the closest shorter listed event,
+including the mile when it is the nearest one; mark the score as derived and
+show its scored distance/time. Do not invent a score below the table's shortest
+distance. Derived comparisons do not establish additional achieved PBs. Pin the
+table edition, apply the lower-score rule and keep timing/course uncertainty
+beside the reference. Approximate marks must not become exact times or points.
+The current programme lives at `/running/record/2026/programme/`;
 the recovered historical sheet is at `/running/record/2022/programme/`. These are
 supporting pages, not additional homepage articles or RSS entries. Keep the three
 main reading paths and the existing child-page pattern.
