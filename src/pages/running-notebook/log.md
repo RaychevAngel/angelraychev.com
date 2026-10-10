@@ -400,13 +400,13 @@ method.
 
 ### 2015–2016 — earlier 5kmrun and XL races
 
-These results appear under my participant ID, 8943. Distances are the
-organizer's course labels; the two XL races were longer than 5 km.
+These results appear under my participant ID, 8943. Distances follow the
+organizer's descriptions; the Vrana XL short race was listed as 5.05 km.
 
 | Date | Course | Distance | Time | Overall finish |
 | --- | --- | ---: | ---: | ---: |
 | [18 October 2015](https://5kmrun.bg/xlrun/result/38) | Vrana Park, Sofia — XL short | 5.05 km | 24:03 | 18th |
-| [6 December 2015](https://5kmrun.bg/xlrun/result/52) | North Park, Sofia — XL short | 6.0 km | 23:51 | 5th |
+| [6 December 2015](https://5kmrun.bg/xlrun/result/52) | North Park, Sofia — XL short | 5 km | 23:51 | 5th |
 | [26 December 2015](https://5kmrun.bg/5kmrun/result/479) | Rowing Canal 2, Plovdiv | 5 km | 22:45 | 27th |
 | [9 January 2016](https://5kmrun.bg/5kmrun/result/486) | South Park, Sofia | 5 km | 22:11 | 57th |
 | [16 January 2016](https://5kmrun.bg/5kmrun/result/490) | South Park, Sofia | 5 km | 23:24 | 51st |
@@ -414,6 +414,11 @@ organizer's course labels; the two XL races were longer than 5 km.
 
 The XL dates follow the Sunday event results and contemporaneous organizer
 announcements. Their profile entries show the preceding Saturdays.
+
+**Distance correction — North Park:** the [organizer's report from 7 December
+2015](https://info.5kmrun.bg/4096-2/) describes the short race as **5 km** and
+links to these same results. I have corrected the earlier 6 km entry, which
+followed the conflicting label on today's results page.
 
 ### Childhood — the 2 km Kids Run results
 
