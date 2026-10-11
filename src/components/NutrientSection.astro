@@ -50,7 +50,7 @@ const scopeText = (entry) => {
   <p class="judgment-note">{topic.judgment_scope} · Reviewed {topic.reviewed_date}</p>
   <p class="judgment-note">Intake confidence: {topic.intake_confidence}. Quantity confidence: {topic.quantity_confidence}. Body status: {topic.body_status}.</p>
   {topic.review_pending && <p class="review-pending">Relevant intake inputs or research text changed after this judgment was reviewed. The displayed figures are current; the saved attention judgment awaits review.</p>}
-  <p class="reference-note">FDA Daily Values are food-label references. The age-specific intake references are shown separately.</p>
+  <p class="reference-note">FDA values describe food labels.</p>
   {standalone && topic.fields.length > 1 && <p><a href={`#${topic.slug}-explanation`}>Jump to the explanation</a>.</p>}
   <div class="intake-panels">
     {topic.fields.map((field) => <section aria-labelledby={`field-${field.id.replaceAll("_", "-")}`}>
@@ -61,7 +61,7 @@ const scopeText = (entry) => {
       </p>
       <div class="tablewrap">
         <table aria-label={`${field.name} intake references`}>
-          <thead><tr><th>Recommended intake</th><th>Upper reference</th><th>Food label reference</th></tr></thead>
+          <thead><tr><th scope="col">Recommended intake</th><th scope="col">Upper reference</th><th scope="col">Food label reference</th></tr></thead>
           <tbody><tr>
             {[{ entry: field.reference?.recommended, label: false },
               { entry: field.reference?.upper, label: false },
@@ -98,8 +98,8 @@ const scopeText = (entry) => {
         <p>{field.coverage_note}</p>
         {field.scenario_note && <p>{field.scenario_note}</p>}
         {field.contributions.length > 0 && <div class="tablewrap">
-          <table>
-            <thead><tr><th>Food</th><th>Model portion</th><th>Contribution</th><th>Source basis</th></tr></thead>
+          <table aria-label={`${field.name} food contributions`}>
+            <thead><tr><th scope="col">Food</th><th scope="col">Model portion</th><th scope="col">Contribution</th><th scope="col">Source basis</th></tr></thead>
             <tbody>{field.contributions.map((row) => <tr>
               <td>{row.food}</td>
               <td>{format(row.grams, "g")}<br /><span class="dim">{row.quantity_status}</span></td>

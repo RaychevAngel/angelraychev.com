@@ -18,8 +18,8 @@ const href = (row) => {
 {categories.filter(([id]) => guide.index.some((row) => row.category === id)).map(([id, label]) => <section aria-labelledby={`index-${id}`}>
   <h3 id={`index-${id}`}>{label}</h3>
   <div class="tablewrap">
-    <table class="nutrient-index">
-      <thead><tr><th>Nutrient</th><th>Attention</th><th class="index-reason">Reason</th></tr></thead>
+    <table class="nutrient-index" aria-label={`${label} nutrient index`}>
+      <thead><tr><th scope="col">Nutrient</th><th scope="col">Attention</th><th scope="col" class="index-reason">Reason</th></tr></thead>
       <tbody>{guide.index.filter((row) => row.category === id).map((row) => <tr>
         <td><a href={href(row)}>{row.name}</a></td>
         <td class="flag">{row.attention === "No change indicated" ? "No change" : row.attention}</td>

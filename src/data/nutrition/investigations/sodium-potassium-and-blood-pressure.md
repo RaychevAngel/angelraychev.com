@@ -2,7 +2,7 @@
 title: "Why potassium can exceed sodium"
 description: "Where the potassium in my food estimate comes from, what restaurant salt leaves unknown, and what blood-pressure trials actually establish."
 order: 50
-updated: "2026-10-10"
+updated: 2026-10-11
 
 category: interactions
 ---
@@ -37,9 +37,9 @@ The current fish is the original Crown Prince sardine product, whose reported dr
 
 ## What the references mean here
 
-For a man aged 19–30, the US potassium **Adequate Intake is 3,400 mg/day**. Sodium's AI is **1,500 mg/day**, with a **Chronic Disease Risk Reduction recommendation to reduce usual intake above 2,300 mg/day**. These are different reference types, not a required sodium-to-potassium balance. An AI is not a diagnostic minimum, and the sodium reduction threshold is not a target to approach. The current National Academies framework sets no UL for either nutrient; an absent UL does not mean unlimited intake is safe. [National Academies, 2019, summary tables S-1 and S-2](https://www.nationalacademies.org/read/25353/chapter/2).
+For men aged 19–30, potassium's **AI is 3,400 mg/day** and sodium's is **1,500 mg/day**. Sodium's **CDRR advises reducing usual intake above 2,300 mg/day**. These are planning and risk-reduction references, not a ratio target. Neither nutrient has a National Academies UL; this does not establish unlimited safety. [National Academies, 2019](https://www.nationalacademies.org/read/25353/chapter/2).
 
-The **4,700 mg potassium Daily Value** used on food labels is a separate labeling reference. It should not silently replace my age- and sex-specific AI. [FDA Daily Values](https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels).
+The **4,700 mg potassium label DV** differs from my age-specific AI. [FDA values](https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels).
 
 The [potassium entry](/nutrition/guide/potassium/) distinguishes food intake from blood potassium. No blood-pressure, electrolyte or kidney measurements are reported in the present log.
 

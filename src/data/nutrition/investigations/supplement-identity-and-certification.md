@@ -25,7 +25,7 @@ Several label distinctions matter for this project:
 | Caffeine | Caffeine amount per serving, serving units and other caffeine sources |
 | Botanical extract | Plant and part, extract identity and any declared standardized constituent |
 
-The magnesium amount in Supplement Facts refers to **elemental magnesium**, not the entire salt's weight. A front-label number for a magnesium complex cannot simply replace that amount. [NIH magnesium label explanation](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/).
+Supplement Facts lists **elemental magnesium**, not the compound’s weight. Record that amount and the source form. [NIH magnesium label explanation](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/).
 
 Likewise, **1,000 mg fish oil is not necessarily 1,000 mg EPA plus DHA**. NIH describes a common formulation with 180 mg EPA and 120 mg DHA within 1,000 mg oil, while emphasizing substantial product variation. The actual label is needed. An unspecified omega-3 total should remain separate from a verified EPA/DHA split. [NIH omega-3 formulations](https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/).
 

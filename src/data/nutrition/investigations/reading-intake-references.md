@@ -46,9 +46,9 @@ The [sodium entry](/nutrition/guide/sodium/) keeps its AI and CDRR beside the fo
 
 The **Acceptable Macronutrient Distribution Range** describes a broad share of dietary energy, such as the adult fat range of **20–35%**. It addresses nutritional adequacy and chronic disease risk in dietary planning. It is not a toxicity threshold or a demonstration of the best performance diet for every athlete. Absolute food amounts, total energy, training and the rest of the pattern still matter. The [fat](/nutrition/guide/fat/) and [carbohydrate](/nutrition/guide/carbohydrate/) pages explain those applications.
 
-## Daily Value: a common reference for labels
+## Daily Value: label reference
 
-The **Daily Value** is a common labeling reference rather than a personalized intake goal. [FDA Daily Values](https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels).
+Daily Values standardize labels. [FDA values](https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels).
 
 The [iron entry](/nutrition/guide/iron/) shows why an adult man's RDA differs from the label value.
 
