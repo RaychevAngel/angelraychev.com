@@ -2,7 +2,7 @@
 title: Protein, available energy and training
 description: Why a protein target cannot substitute for enough energy, and why acute synthesis, lean-mass changes and performance are distinct outcomes.
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: interactions
 ---
@@ -37,13 +37,13 @@ That mechanism helps explain why training and protein can support muscle during 
 
 ## Longer training studies can show smaller or null differences
 
-A 12-week randomized trial in **68 young men** compared a daily **22 g soy–dairy protein blend**, whey protein or an equal-calorie carbohydrate placebo alongside progressive resistance training. All groups improved strength and muscle-size measures. The between-group differences in these outcomes were not significant; the protein treatments showed modest or borderline lean-mass signals rather than a clear extra strength benefit. [Reidy et al., 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4997282/).
+A 12-week trial randomized **68 young men** to daily **22 g soy–dairy protein**, whey or an equal-calorie carbohydrate placebo alongside progressive lifting; the paper reports **59 completers**, with outcome-specific samples. Habitual diets continued. Mean lean-mass, trained-lift strength and muscle-size comparisons did not detect an advantage. A selected knee-extension change favored whey (**P = .040**) amid many analyses, without study-wide correction. DuPont funded the trial and provided products; one company author participated in statistical analysis. [Reidy et al., 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4997282/).
 
 This does not prove that protein supplements never help. It shows that the added benefit depends on baseline intake, population, training and outcome, and that a supplement trial is not automatically a dramatic muscle-building result. A supplement is useful when it solves a real food or intake problem; its presence does not certify an optimized program.
 
 ## Distribution can matter without becoming a rigid clock
 
-One acute experiment assigned **24 trained men** to consume the same 80 g of whey over 12 hours after exercise as 10 g every 90 minutes, 20 g every three hours or 40 g every six hours. The middle pattern produced more muscle protein synthesis than the other two in that protocol. This was whey in a laboratory feeding schedule, not a long-term comparison of mixed meals or an absorption ceiling for a larger dinner. [Areta et al., 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3650697/).
+One acute experiment assigned **24 trained men (23 analyzed)** to consume the same 80 g of whey over 12 hours after exercise as 10 g every 90 minutes, 20 g every three hours or 40 g every six hours. The middle pattern produced more muscle protein synthesis than the other two in that protocol. This was whey in a laboratory feeding schedule, not a long-term comparison of mixed meals or an absorption ceiling for a larger dinner. [Areta et al., 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3650697/).
 
 A later trial in **36 healthy, recreationally active young men** compared **0, 25 or 100 g milk protein** after whole-body resistance exercise. The 100 g dose produced a larger, longer synthesis response over the 12-hour observation than 25 g. This provides direct evidence against treating 20–25 g as a universal per-meal utilization ceiling. It does not establish an unlimited dose response beyond the tested amounts, compare 100 g once with the same total distributed across meals, or demonstrate superior muscle growth over months. [Trommelen et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10772463/).
 
