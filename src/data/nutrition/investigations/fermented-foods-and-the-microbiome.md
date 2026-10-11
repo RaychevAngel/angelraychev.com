@@ -43,4 +43,4 @@ That is a narrower, more interpretable claim than “improves the microbiome.”
 
 There is no need to add a large collection of fermented foods to the daily shopping list. Keeping a yogurt I enjoy is already compatible with exploring this area. A different fermented food could be an occasional taste experiment, introduced in an amount I can finish and store properly. I would record the product, amount and any digestive response rather than infer a benefit from its category.
 
-Yogurt or diluted айрян still requires the storage conditions on its label. Fermentation does not make a refrigerated product suitable for being carried warm and sipped all day. A portable cold container or consuming a fresh portion promptly solves a more immediate problem than chasing an unmeasured microbial target. [FDA refrigerated-food guidance](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely).
+Fermentation does not make refrigerated айрян shelf-stable. See the [meal/storage guide](/nutrition/research/meal-combinations-and-storage/) for cold handling.

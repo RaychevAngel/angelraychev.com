@@ -39,6 +39,6 @@ Species, material, extraction and dose differ between these products. A suppleme
 
 ## The practical experiment is a meal change
 
-Try mushrooms when there is a small cooked portion available that fits today's meal and tastes good. Preparation should be straightforward enough to repeat. Fresh mushrooms are perishable produce: FDA advises refrigeration, so a daily purchase does not remove the need for cold handling until they are prepared and eaten. [FDA: selecting and serving produce](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely)
+Try mushrooms when preparation and portion size fit. Fresh mushrooms need refrigeration; daily shopping still requires cold handling. [FDA produce guidance](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely).
 
 Record the species or product, cooked or raw form, portion and whether it was actually eaten. If a vitamin-D claim is relevant, keep the label and preparation details. Taste and ease are worthwhile outcomes in their own right; current human evidence does not require mushrooms or lion's-mane supplements for this diet to be successful.

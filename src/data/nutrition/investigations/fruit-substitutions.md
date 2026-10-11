@@ -2,7 +2,7 @@
 title: "Which fruit change would make this diet better?"
 description: "Kiwi, berries, melon and the limits of translating fruit-extract research into everyday food."
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 category: foods
 ---
 
@@ -42,6 +42,6 @@ Pineapple raises a similar distinction. One randomized postoperative trial used 
 
 The workable experiment is one fruit substitution, recorded with taste, appetite and preparation effort. Two kiwis were my own proposed alternative; a smaller portion is also possible if appetite calls for it. Berries and oranges can remain because they are already enjoyed. Melon, mango, grapes, pomegranate and pineapple are optional rotations rather than a list that must be completed.
 
-Buy pre-cut fruit only when its cold handling works. FDA advises refrigeration for pre-cut produce and perishable items, including berries, herbs and mushrooms; daily shopping does not make a cold item suitable for leaving out all day. Whole fruit and a portion eaten promptly avoid many of the leftover problems in this record. [FDA: selecting and serving produce](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely)
+FDA advises refrigeration for pre-cut fruit and perishable produce such as berries. Buy these only when cold handling works; daily shopping does not remove that requirement. [FDA produce guidance](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely).
 
 The next useful evidence is whether the replacement is enjoyable and easy to repeat. An unmeasured fruit swap should not be assigned precise changes to the nutrient table until its amount is known.

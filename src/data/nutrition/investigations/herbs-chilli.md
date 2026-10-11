@@ -30,7 +30,7 @@ Parsley or cilantro can fit a fresh, bright sauce; basil or oregano can fit toma
 
 A garnish, a leaf portion and an oil-rich sauce are different food amounts. The current chimichurri has neither a verified recipe nor a quantified herb dose. The [vitamin K entry](/nutrition/guide/vitamin-k/) develops nutrient forms and medication context.
 
-Dried herbs and spices can be a practical option if there is room for a small package and the label's storage instructions work. Fresh herbs are perishable produce and FDA recommends refrigeration. They are a same-day purchase only when they can be kept appropriately and used; the daily-shop arrangement does not make an opened herb pack suitable for indefinite room storage. [FDA: selecting and serving produce](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely)
+Dried herbs may fit limited storage. Fresh herbs need refrigeration; an opened pack does not become shelf-stable through daily shopping. [FDA produce guidance](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely).
 
 Growing herbs becomes interesting when there is a stable place and routine for them. It is optional future work, not something required to improve tomorrow's meal.
 

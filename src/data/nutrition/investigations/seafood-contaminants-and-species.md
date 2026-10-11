@@ -2,7 +2,7 @@
 title: Choosing seafood by species, taste and actual monitoring
 description: Small oily fish make sense, but mercury, sodium, and source-specific contamination answer different questions.
 order: 80
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: foods
 ---
@@ -11,7 +11,7 @@ My workable preference is small oily fish that I can finish in one sitting and a
 
 ## Species is more informative than the word “fish”
 
-Mercury accumulates differently across species. The FDA/EPA fish chart places sardines, anchovies, Atlantic mackerel, Pacific chub mackerel and salmon among its lower-mercury choices. King mackerel is a different fish in its highest-mercury category. The chart's portion advice was developed especially for pregnancy, breastfeeding and children; those instructions should not be silently turned into a personal adult-male prescription. The species distinction remains useful when choosing a frequent fish. [FDA/EPA fish advice](https://www.fda.gov/food/consumers/advice-about-eating-fish).
+The [FDA/EPA chart](https://www.fda.gov/food/consumers/advice-about-eating-fish) distinguishes lower-mercury species from king mackerel. Its pregnancy/breastfeeding/child serving schedule is not my adult-male prescription. The [seafood comparison](/nutrition/research/fish-seafood/#small-fish-does-not-remove-every-product-question) gives the species names.
 
 The FDA's detailed commercial-fish table shows why sardines are a reasonable candidate, while also showing the limitations of a species average:
 
@@ -51,10 +51,10 @@ The same interpretation principle applies to a report of “arsenic”: total ar
 
 ## The decision at the shelf
 
-For my current routine, the useful comparison is a **palatable sardine, identifiable lower-mercury mackerel, or salmon product**, with its sodium checked for the amount I will actually eat. Small fish is a helpful preference, but salmon need not be excluded merely because it is larger. A moderately seasoned product can work better than either a bland product or heavily salted anchovies.
+Use the [seafood comparison](/nutrition/research/fish-seafood/) to choose a palatable product, then check sodium per whole portion. Salmon remains an option. No specific alternative has been adopted.
 
 My reported sardine label gives 210 mg sodium and 1.74 g total omega-3 for one drained 80 g can. Those are product-label facts, not contaminant measurements; the exact EPA/DHA split is still unverified. “In olive oil,” “wild caught,” “organic,” or a sourcing story does not supply a mercury assay. A new fish label should be recorded before replacing those figures in the log.
 
 An unopened shelf-stable can is also different from an opened can or chilled fish. Under my hotel constraints, finishing the opened portion avoids depending on unreliable leftover storage. Histamine formation is another reason the supply chain and handling matter: it can occur in susceptible fish, including products that are later cooked or canned, and is not the same question as mercury. This does not establish that my fish caused any reaction. [FDA scombrotoxin explanation](https://www.fda.gov/food/seafood-guidance-documents-regulatory-information/scombrotoxin-poisoning-and-decomposition).
 
-The practical change is therefore modest: choose an enjoyable lower-mercury species, compare sodium per whole portion, and respond to a specific recall or measured sourcing problem when one applies. The monitoring supports that choice without requiring a new contaminant score for an untested can.
+Choose an enjoyable product and check sodium per portion. Specific recalls or measured sourcing problems can change that choice; an untested can gets no contaminant score.

@@ -70,6 +70,7 @@
       "purchases": [],
       "plans": [],
       "coverage": "partial day; Chipotle had not yet been visited when reported",
+      "date_note": "",
       "nutrition": null
     },
     {
@@ -172,6 +173,7 @@
       "purchases": [],
       "plans": [],
       "coverage": "partial-to-day report with uncertain completion of the yogurt/fruit portion and an unknown extra chocolate piece",
+      "date_note": "",
       "nutrition": null
     },
     {
@@ -234,6 +236,7 @@
       "purchases": [],
       "plans": [],
       "coverage": "partial afternoon report; later restaurant meal and complete chocolate consumption not confirmed",
+      "date_note": "",
       "nutrition": null
     },
     {

@@ -2,7 +2,7 @@
 title: "How can small fish stay enjoyable without so much salt?"
 description: "A practical comparison of sardines, cured anchovies and other seafood, with portion, mercury and storage questions kept distinct."
 order: 60
-updated: 2026-10-10
+updated: 2026-10-11
 category: foods
 ---
 
@@ -12,7 +12,7 @@ I found the first sardines bland and the replacement anchovies far too salty. I 
 
 The two labels explain part of the difference. The Crown Prince Natural skinless, boneless sardines in olive oil were labelled **210 mg sodium per drained can**. The Trader Joe's anchovies were labelled **840 mg per 15 g serving**, with about two servings in the small tin. Those are very different exposures and serving sizes. A salt-cured anchovy product can work as a concentrated seasoning, while a full sardine tin is commonly treated as a meal component.
 
-The sardines were perceived as unsalted, but the manufacturer's ingredient list actually includes **salt**. A bland taste does not establish zero added salt. The same manufacturer has other sardine products, including a distinct no-salt-added spring-water variety; they should not be assigned the olive-oil product's label values. [Crown Prince Natural: sardine variants and ingredients](https://crownprincenatural.com/products/sardines/)
+The olive-oil sardines' current ingredients include **salt**, despite my bland-taste impression. A distinct no-salt-added spring-water product has a different label. [Crown Prince sardine variants](https://crownprincenatural.com/products/sardines/).
 
 ## Start with the outcome the fish is meant to supply
 
@@ -26,11 +26,11 @@ The sardines were perceived as unsalted, but the manufacturer's ingredient list 
 
 Seafood choice can follow taste and the intended nutrient contribution. The [omega-3 entry](/nutrition/guide/omega3/) distinguishes ALA, EPA and DHA; the species and product questions below address mercury, sodium and storage.
 
-The current sardine product advertises **1,740 mg total omega-3 per serving**. That label does not state an EPA/DHA split, so the saved record should not silently allocate all 1,740 mg to either one. Similarly, boneless sardines should not receive the calcium value of a product whose soft bones are eaten.
+The sardine product reports **1,740 mg total omega-3**, without an EPA/DHA split. Boneless sardines also need their own calcium value, rather than a bone-containing comparator. [Product label](https://crownprincenatural.com/products/sardines/).
 
 ## Small fish does not remove every product question
 
-FDA and EPA list sardines, anchovies, herring, Atlantic mackerel, Pacific chub mackerel and salmon among their lower-mercury choices. **King mackerel is a different species in the highest-mercury category**. The word “mackerel” alone is therefore insufficient. Several shellfish are also lower-mercury choices. The chart's serving schedule is directed primarily at pregnancy, breastfeeding and children; it is not a personal nutrient requirement for me. [FDA/EPA: fish choices](https://www.fda.gov/food/consumers/advice-about-eating-fish)
+FDA/EPA list sardines, anchovies, herring, Atlantic and Pacific chub mackerel, and salmon as lower-mercury choices; **king mackerel is in the highest-mercury category**. Their serving schedule targets pregnancy, breastfeeding and children, rather than my adult-male nutrient requirements. [FDA/EPA fish choices](https://www.fda.gov/food/consumers/advice-about-eating-fish).
 
 Lower mercury does not mean lower sodium. Species, curing, brine, sauce and portion answer separate questions. A smoked or seasoned product may be more enjoyable, but its actual label matters. No particular alternative at my daily store has been verified as available or tasted yet.
 

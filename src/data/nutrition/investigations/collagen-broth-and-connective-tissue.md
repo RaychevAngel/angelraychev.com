@@ -46,7 +46,7 @@ An analysis of commercial, homemade and café bone broths found substantial diff
 
 A protein label reports **total protein**, not grams of collagen, glycine or a studied peptide preparation. Without a verified assay, I should log those specific amounts as unknown. Broth can still be an enjoyable food. Compare the amount I will actually drink, protein and sodium per entire package, ingredients and price. A higher price or “bone” on the label does not establish a therapeutic dose, and drinking more solely to reach an assumed dose can add considerable sodium or displace meals.
 
-For the current daily-shopping setup, an unopened shelf-stable single portion is practical if its label permits room-temperature storage. Once opened, follow its refrigeration directions. A perishable bottle carried around and sipped all day needs temperature control; the usual limit outside refrigeration is **two hours, or one hour above 90°F/32°C**. [FDA storage guidance](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely).
+Check the bottle's storage label. The [meal/storage guide](/nutrition/research/meal-combinations-and-storage/) covers opened packages and all-day drinks.
 
 ## Glycine, vitamin C and the rest of the diet
 

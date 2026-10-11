@@ -2,7 +2,7 @@
 title: Meal combinations, raw eggs and storage
 description: Making the foods work as enjoyable meals, with useful absorption interactions and practical limits on all-day dairy drinks and leftovers.
 order: 40
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: dietary-patterns
 ---
@@ -29,9 +29,7 @@ Keeping fruit or pepper alongside a meal can be convenient. Turning every meal i
 
 ## Raw eggs: organic is a different claim
 
-I have said that I eat eggs raw. **Organic describes production requirements; it does not identify an egg as pasteurized.** Fresh, clean, uncracked eggs can still contain Salmonella. FDA advises using eggs treated to destroy Salmonella, or pasteurized egg products, when they will be served raw or undercooked. The relevant detail is the treatment stated on the package, not whether the eggs come from Trader Joe's or carry a quality grade. [USDA organic standards](https://www.ams.usda.gov/grades-standards/organic-standards), [FDA egg guidance](https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety).
-
-Eating a raw egg immediately after purchase does not remove contamination that was already present. Refrigeration limits growth; it does not turn an untreated egg into a pasteurized one. If I add eggs, cooked eggs eaten promptly or an appropriately labeled pasteurized product offer more practical choices than assuming a premium carton settles the raw-use question.
+I have said I eat eggs raw. **Organic identifies production standards, not pasteurization.** Even clean, uncracked eggs can contain Salmonella. FDA advises shell eggs treated to destroy Salmonella or pasteurized egg products for raw or undercooked use; check the package rather than brand or grade. Refrigeration and prompt eating cannot remove pre-existing contamination. Cooked eggs eaten promptly are another practical choice. [USDA organic standards](https://www.ams.usda.gov/grades-standards/organic-standards), [FDA egg guidance](https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety).
 
 ## Cooking, digestion and muscle synthesis are different tests
 
@@ -43,13 +41,13 @@ The useful conclusion is modest: cooking can improve digestion, the available ac
 
 ## Айрян carried throughout the day
 
-Yogurt diluted with water remains a perishable dairy drink when its label requires refrigeration. For all-day sipping, I need a container and sufficient cooling to keep it at **40°F/4°C or below**, or I need to consume smaller fresh portions promptly. Repeatedly putting a warm bottle back in the fridge does not reset the time it has spent warm. Perishable food should not remain unrefrigerated beyond **two hours, or one hour above 90°F/32°C**. [FDA storage guidance](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely).
+Diluted yogurt needs refrigeration. Follow storage labels after opening. Keep айрян at **40°F/4°C or below**. FDA's limit without refrigeration is **two hours, or one hour above 90°F/32°C**; cooling again does not reset earlier warm time. [FDA storage guidance](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely).
 
-That makes a cold container a useful piece of equipment if the drink stays part of my routine. Without reliable cooling, buying a tub does not create an obligation to carry it warm for the rest of the day. I can instead choose a portion and eating time that fit the day's storage.
+Choose portions and drinking times that fit available cooling.
 
 ## Rice and chicken: packaging and temperature are the decisive details
 
-The frozen rice pouch should remain frozen until prepared as its label directs. After heating, it becomes cooked food with ordinary time-and-temperature limits. Rice can contain bacterial spores that survive cooking; leaving cooked rice warm can allow growth and toxin production. Reheating is not a reliable rescue for rice stored badly. [Food Standards Agency rice guidance](https://www.food.gov.uk/print/pdf/node/4286).
+The frozen rice pouch should remain frozen until prepared as its label directs. After heating, it becomes cooked food with ordinary time-and-temperature limits. Rice can contain bacterial spores that survive cooking; leaving cooked rice warm can allow growth and toxin production. Reheating is not a reliable rescue for rice stored badly. [Food Standards Agency rice guidance](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker).
 
 Chicken leftovers need prompt chilling in a covered suitable container. When reheating leftovers, USDA recommends **165°F/74°C throughout**; microwaves can leave cold spots, so stirring or arranging the food evenly, covering and allowing standing time matter. A fixed “one minute” is not a dependable temperature measurement. [USDA leftovers guidance](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety).
 

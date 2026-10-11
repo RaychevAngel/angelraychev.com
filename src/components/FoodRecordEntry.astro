@@ -15,10 +15,11 @@ const supplementText = (row) => {
   return `${row.name}: ${row.status.replaceAll("_", " ")}`;
 };
 const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged_supplement_total > 0 || row.logged_supplement_unknown);
+const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kcal', 'protein_g', 'carbohydrate_g', 'fat_g'].includes(row.id) && row.known_food_count < row.food_count);
 ---
 <section class="food-entry" aria-labelledby={entry.id}>
   <h2 id={entry.id}>{entry.title}</h2>
-  <p class="entry-date">{entry.food_date ? `Food date ${entry.food_date}` : "Food date unconfirmed"} · Report received {entry.recorded_local_date}</p>
+  <p class="entry-date">{entry.food_date ? `Food date ${entry.food_date}` : "Food date unconfirmed"} · Report received {entry.recorded_local_date ?? 'unreported'}</p>
   <p>{entry.summary}</p>
   {isPurchaseLed && <p class="dim">This day began as a shopping report. Later messages confirm eating and describe taste and appetite; finishing every purchased item was not confirmed.</p>}
   {entry.context.filter((row) => row.observation !== "Not reported for this day.").length > 0 && <ul class="observations">
@@ -51,7 +52,7 @@ const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged
     {entry.purchase_total_usd != null && <p>Receipt total: ${entry.purchase_total_usd.toFixed(2)}. {entry.purchase_total_note}</p>}
   </details>}
   {entry.nutrition ? <>
-    <p class="macro-summary"><strong>Model estimate:</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
+    <p class="macro-summary"><strong>{partialMacroSummary ? 'Available-value subtotal:' : 'Model estimate:'}</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
     <p>These figures use the assumptions below. They describe estimated intake and do not establish an energy requirement.</p>
     {entry.nutrition.revision_note && <p class="dim">Calculation version {entry.nutrition.version}, reviewed {entry.nutrition.reviewed_date}: {entry.nutrition.revision_note}</p>}
     <details>

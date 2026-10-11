@@ -20,7 +20,7 @@ On the [anchovy replacement day](/nutrition/record/#anchovy-replacement), I like
 
 ## The current foundation
 
-The latest reported day contains nonfat plain European-style yogurt, walnuts and almonds, four bananas, raspberries, an orange, a tomato, avocado, one red pepper, a basmati rice pouch, half a roast chicken, chimichurri and the original skinless, boneless sardines. Vitamin D and broth were forgotten that day. Planned purchases and supplements have their own status; they enter intake totals only when actually consumed.
+The reported day used for the current nutrient guide contains nonfat plain European-style yogurt, walnuts and almonds, four bananas, raspberries, an orange, a tomato, avocado, one red pepper, a basmati rice pouch, half a roast chicken, chimichurri and the original skinless, boneless sardines. Vitamin D and broth were forgotten that day. Planned purchases and supplements have their own status; they enter intake totals only when actually consumed.
 
 Some quantities are clear: the entire 32 oz yogurt tub, four bananas and one rice pouch were confirmed. Other portions remain estimates. The almonds were described by count and the walnuts as a roughly equivalent amount. The half chicken has an uncertain edible weight, and the sauce’s oil content is unverified. The nonfat yogurt’s nutrient label is still provisional. The eating date is also unconfirmed because the report arrived after midnight. These limitations stay attached to the [record](/nutrition/record/) rather than disappearing inside a precise-looking total.
 
