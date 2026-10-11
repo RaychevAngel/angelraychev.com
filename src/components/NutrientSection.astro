@@ -97,7 +97,9 @@ const scopeText = (entry) => {
         <summary>Food contributions and uncertainty</summary>
         <p>{field.coverage_note}</p>
         {field.scenario_note && <p>{field.scenario_note}</p>}
-        {field.contributions.length > 0 && <div class="tablewrap">
+        {field.contributions.length > 0 && <>
+        <p class="table-instruction">Scroll sideways for all columns. With a keyboard, Tab to the scroll area, then use the arrow keys.</p>
+        <div class="tablewrap contributions-wrap" tabindex="0" role="region" aria-label={`${field.name} food contributions; scroll horizontally if needed`}>
           <table aria-label={`${field.name} food contributions`}>
             <thead><tr><th scope="col">Food</th><th scope="col">Model portion</th><th scope="col">Contribution</th><th scope="col">Source basis</th></tr></thead>
             <tbody>{field.contributions.map((row) => <tr>
@@ -107,7 +109,7 @@ const scopeText = (entry) => {
               <td>{row.source_url ? <a href={row.source_url}>{evidenceText(row.evidence)}</a> : evidenceText(row.evidence)}</td>
             </tr>)}</tbody>
           </table>
-        </div>}
+        </div></>}
         {field.missing_foods.length > 0 && <p><strong>Unquantified:</strong> {field.missing_foods.join("; ")}.</p>}
         {field.estimated_zeros?.length > 0 && <>
           <p><strong>Provisional or modeled zeros:</strong></p>
@@ -135,10 +137,12 @@ const scopeText = (entry) => {
   details { margin: 0 0 28px; }
   summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
   summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  .contributions-wrap:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  .table-instruction { display: none; color: var(--dim); font-size: 13px; margin-bottom: 16px; }
   details[open] summary { margin-bottom: 20px; }
   .topic-return { margin-top: 32px; font-size: 13px; }
   .review-pending { border-left: 2px solid var(--fg); padding-left: 16px; }
   .nutrient-prose { scroll-margin-top: 24px; }
   :global(.nutrient-prose h3) { margin-top: 36px; }
-  @media(max-width:620px) { .intake-panels { padding-left: 12px; } }
+  @media(max-width:620px) { .intake-panels { padding-left: 12px; } .table-instruction { display: block; } }
 </style>
