@@ -15,7 +15,7 @@ const supplementText = (row) => {
   return `${row.name}: ${row.status.replaceAll("_", " ")}`;
 };
 const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged_supplement_total > 0 || row.logged_supplement_unknown);
-const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kcal', 'protein_g', 'carbohydrate_g', 'fat_g'].includes(row.id) && row.known_food_count < row.food_count);
+const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kcal', 'protein_g', 'carbohydrate_g', 'fat_g'].includes(row.id) && (row.known_food_count < row.food_count || row.partial_food_count > 0));
 ---
 <section class="food-entry" aria-labelledby={entry.id}>
   <h2 id={entry.id}>{entry.title}</h2>
@@ -54,6 +54,7 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
   {entry.nutrition ? <>
     <p class="macro-summary"><strong>{partialMacroSummary ? 'Available-value subtotal:' : 'Model estimate:'}</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
     <p>These figures use the assumptions below. They describe estimated intake and do not establish an energy requirement.</p>
+    {entry.nutrition.source_note && <p>{entry.nutrition.source_note}</p>}
     {entry.nutrition.revision_note && <p class="dim">Calculation version {entry.nutrition.version}, reviewed {entry.nutrition.reviewed_date}: {entry.nutrition.revision_note}</p>}
     <details>
       <summary>Calculation portions and assumptions</summary>
@@ -64,7 +65,6 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
         </tr>)}</tbody>
       </table></div>
       <p>{entry.nutrition.scenario_note}</p>
-      <p>{entry.nutrition.source_note}</p>
     </details>
     <details class="nutrient-totals">
       <summary>Full nutrient estimates</summary>
@@ -75,7 +75,7 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
           <thead><tr><th>Nutrient</th><th>Food estimate</th>{showSupplementColumn && <th>Logged supplements</th>}<th>Data coverage</th></tr></thead>
           <tbody>{entry.nutrition.nutrients.filter((row) => row.category === id).map((row) => <tr>
             <td><a href={`/nutrition/guide/${nutrientPages[row.id]}/#field-${row.id.replaceAll("_", "-")}`}>{row.name}</a></td>
-            <td>{row.food_total == null ? "Unknown" : row.food_total > 0 && row.food_total < 0.005 ? `<0.01 ${row.unit}` : `${format(row.food_total, row.unit === "g" ? (row.food_total < 1 ? 2 : 1) : row.food_total >= 10 ? 0 : 1)} ${row.unit}`}</td>
+            <td>{row.food_total == null ? "Unknown" : row.food_total > 0 && row.food_total < 0.005 ? `<0.01 ${row.unit}` : `${format(row.food_total, row.unit === "g" ? (row.food_total < 1 ? 2 : 1) : row.food_total >= 10 ? 0 : 1)} ${row.unit}`}{row.food_total != null && (row.known_food_count < row.food_count || row.partial_food_count > 0) && " (subtotal)"}</td>
             {showSupplementColumn && <td>{row.logged_supplement_total > 0 ? `${format(row.logged_supplement_total, 2)} ${row.unit}` : row.logged_supplement_unknown ? "Amount unreported" : "None logged"}{row.logged_supplement_total > 0 && row.logged_supplement_unknown && "; another amount unreported"}</td>}
             <td>{row.known_food_count}/{row.food_count} foods{row.partial_food_count > 0 && <>; {row.partial_food_count} partial</>}</td>
           </tr>)}</tbody>

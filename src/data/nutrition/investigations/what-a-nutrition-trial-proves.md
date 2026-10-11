@@ -2,23 +2,23 @@
 title: "What a nutrition trial actually proves"
 description: "Read the outcome, comparator and analysis before turning an interesting result into a food or supplement decision."
 order: 70
-updated: "2026-10-10"
+updated: 2026-10-11
 category: methods
 ---
 
 ## Start with the decision
 
-“Good for cognition” and “good for tendons” hide several different questions. Before reading a result, specify the intervention, what it replaced, the people studied, the outcome and the duration. A twelve-month capsule trial in older adults with cognitive concerns answers a different question from whether a cup of tea helps a young person's concentration this afternoon.
+“Good for cognition” and “good for tendons” hide several different questions. Before reading a result, specify the intervention, what it replaced, the people studied, the outcome and the duration. Different populations, products and time frames answer different questions.
 
 For my food log, taste, appetite and convenience are observations I can report. Estimated nutrient intake is another kind of information. Neither is a measured change in cholesterol, cognition or tendon health. Research can inform a choice without converting that choice into a treatment.
 
 ## Keep the main question ahead of the interesting result
 
-In COSMOS, the primary cardiovascular result was inconclusive while a secondary cardiovascular-death result was favorable. Fourteen secondary outcomes were tested without adjustment for multiple comparisons. A mortality headline leaves out that hierarchy. [Original COSMOS report](https://pmc.ncbi.nlm.nih.gov/articles/PMC9170467/).
+The [cocoa investigation](/nutrition/research/cocoa-tea-coffee/#cocoas-large-trial-is-more-nuanced-than-its-headline) keeps COSMOS’s main result, secondary findings and tested exposure together.
 
-The confidence interval also matters: missing a statistical threshold is not proof of exactly zero effect. Conversely, one favorable result among many tests deserves confirmation before becoming a reason to buy a supplement. Even confirmation of the extract would require a separate argument about ordinary cocoa or chocolate. The [food investigation](/nutrition/research/cocoa-tea-coffee/) retains the doses and results.
+A missing statistical threshold does not prove zero effect. A favorable secondary result needs confirmation; an extract does not automatically transfer to food.
 
-Judge a favorable secondary finding in relation to the primary question and other analyses. The [matcha investigation](/nutrition/research/cocoa-tea-coffee/) keeps its trial results together. A registry entry alone does not establish that every later analytical detail was fixed in advance; examine the dated analysis plan and amendments.
+The [matcha investigation](/nutrition/research/cocoa-tea-coffee/#matcha-has-promising-secondary-findings-and-a-null-main-result) retains the outcome hierarchy. Check dated protocols and amendments; a registry entry alone does not verify every later analytical detail.
 
 ## Ask where the measurement sits in the proposed benefit
 
@@ -46,7 +46,7 @@ For a decision, ask how large the effect is and whether it answers the goal. The
 
 ## Read commercial participation as a design question
 
-A funding statement alone does not establish independence. Inspect author affiliations, product supply and commercial roles alongside the design and outcome plan. The [matcha investigation](/nutrition/research/cocoa-tea-coffee/) keeps its specific disclosures beside the results. A relationship also does not by itself invalidate a finding.
+A funding statement alone does not establish independence. Inspect author affiliations, product supply and commercial roles alongside the design and outcome plan. A relationship also does not by itself invalidate a finding.
 
 The WAHA lipid report disclosed industry funding and author relationships alongside a statement that the funding agency did not participate in design, analysis or writing. Read the relationship and claimed safeguards. [WAHA disclosures](https://pmc.ncbi.nlm.nih.gov/articles/PMC8478315/). The [collagen investigation](/nutrition/research/collagen-broth-and-connective-tissue/) similarly places product-specific disclosures beside its trials. A disclosure cannot supply a missing clinical outcome or a better comparator; it tells the reader where additional independent confirmation would be useful.
 

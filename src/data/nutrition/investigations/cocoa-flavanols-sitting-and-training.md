@@ -2,7 +2,7 @@
 title: "Cocoa flavanols at a desk and around training"
 description: "What recent trials show about artery-function measurements, what they do not show about performance, and why cocoa exposures cannot be read from a chocolate percentage."
 order: 31
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: foods
 ---
@@ -19,7 +19,7 @@ Published online in 2025 for a **2026 issue**, a crossover trial recruited **40 
 
 It preserved arm and leg **flow-mediated dilation**, an artery-response measure; the primary leg analysis had data from **31 men**. Blood pressure, resting flow and overall muscle-microvascular responses did not improve. This acute measurement establishes neither fewer clinical events nor concentration benefits. [Original trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC12783974/)
 
-The experiment did not test movement breaks or long-term benefit; cocoa cannot be assumed to cancel sitting.
+The powders differed in fiber and caffeine; university funding and donated powders supported the trial. Movement breaks and long-term benefit were not tested.
 
 ## Why a positive acute result can coexist with a null trial
 
@@ -37,9 +37,11 @@ A later paper, online in **2025 and in a 2026 issue**, compared chocolate quanti
 
 ## The newer functional-outcome result was null
 
-A **2026 COSMOS ancillary report** assessed cocoa extract and physical performance in older adults. Its clinic subgroup had **603 participants at baseline and 535 at two years**, with a mean age of approximately 70. Cocoa extract did not improve the prespecified grip-strength, walking-speed or composite physical-performance outcomes overall. Selected subgroup findings were exploratory. [Chou et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13089503/)
+A **2026 COSMOS ancillary report** tested an extract supplying 500 mg flavanols daily versus placebo for physical performance. Its clinic subgroup had **603 participants at baseline and 535 at two years**, mean age about 70. The paper-designated main grip-strength, walking-speed and composite physical-performance outcomes were null overall. Selected subgroup and tandem-balance findings were exploratory, without overall multiplicity correction. [Chou et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13089503/)
 
-This is the same larger COSMOS trial already discussed for cardiovascular outcomes, not another independent trial of 21,442 people. The older population cannot settle performance effects in a healthy young athlete, but the report is a useful reminder that vascular and molecular plausibility do not guarantee a functional benefit.
+The [ancillary registry](https://clinicaltrials.gov/study/NCT05232669) was posted in 2022, after final clinic visits in 2020; its current primary outcomes concern falls. Historical prespecification of the physical-outcome hierarchy was not verified here. Authors noted a possible grip-device calibration issue, without changed equipment or protocol. NIH funded the ancillary work; the parent trial had industry support and donated pills.
+
+This is the same COSMOS experiment discussed for cardiovascular outcomes. Its null functional result does not settle effects in a healthy young athlete, but vascular plausibility alone cannot establish performance benefit.
 
 ## Cocoa percentages and polyphenol numbers are not interchangeable
 
