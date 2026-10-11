@@ -16,4 +16,7 @@ const links = [
 <style>
   .nutrition-nav { font-size: 13px; line-height: 1.8; margin: 0 0 32px; }
   .nutrition-nav a, .nutrition-nav span { white-space: nowrap; }
+  :global(.nutrition-nav ~ h2[id]),
+  :global(.nutrition-nav ~ section h2[id]),
+  :global(.nutrition-nav ~ section h3[id]) { scroll-margin-top: 24px; }
 </style>

@@ -10,11 +10,21 @@ export function getStaticPaths() {
 }
 const { topic, previous, next } = Astro.props;
 const frontmatter = { title: topic.title, description: topic.attention_reason, updated: topic.reviewed_date };
+const relatedPages = {
+  "vitamin-d": [["vitamin-d-tests-and-clinical-outcomes", "Testing and outcomes"]],
+  "vitamin-k": [["k2-and-coronary-calcification", "2026 coronary trials"]],
+  "iodine": [["iodine-in-yogurt-fish-and-salt", "Food iodine measurements"]],
+};
+const related = relatedPages[topic.slug] ?? [];
 ---
 <Post frontmatter={frontmatter}>
   <NutritionNav />
   <p class="record-context">Intake model: <a href={guide.record_href}>one reported food record</a>, food date {guide.food_date_note}. References: man aged 19–30. <a href="/nutrition/guide/#reference-key">How to read the references</a>.</p>
   <NutrientSection topic={topic} standalone />
+  {related.length > 0 && <nav class="related-reading" aria-label="Related investigations">
+    <p>Related reading:</p>
+    <ul>{related.map(([slug, title]) => <li><a href={`/nutrition/research/${slug}/`}>{title}</a></li>)}</ul>
+  </nav>}
   <nav class="adjacent-topics" aria-label="Adjacent nutrients">
     {previous && <p>Previous: <a href={`/nutrition/guide/${previous.slug}/`}>{previous.title}</a></p>}
     {next && <p>Next: <a href={`/nutrition/guide/${next.slug}/`}>{next.title}</a></p>}
@@ -25,4 +35,6 @@ const frontmatter = { title: topic.title, description: topic.attention_reason, u
   .record-context { margin-bottom: 32px; }
   .adjacent-topics { border-top: 1px solid var(--rule); padding-top: 24px; margin-top: 32px; }
   .adjacent-topics p { margin-bottom: 12px; }
+  .related-reading { font-size: 13px; margin-top: 32px; }
+  .related-reading p { margin-bottom: 12px; }
 </style>
