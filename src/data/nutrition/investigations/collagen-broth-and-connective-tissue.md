@@ -2,7 +2,7 @@
 title: Collagen, broth and connective tissue
 description: What collagen studies actually measure, where the clinical evidence reaches, and what that means for a broth preference.
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 category: recovery
 ---
 
@@ -14,9 +14,9 @@ Nutrition can support recovery, but a progressively worsening shoulder deserves 
 
 ## What the famous gelatin experiment showed
 
-Shaw and colleagues studied **eight healthy men** in a crossover experiment. They drank placebo, **5 g or 15 g gelatin**, each with **48 mg vitamin C**, one hour before six minutes of rope-skipping. Supplementation and activity continued three times daily over three days. The 15 g condition increased circulating collagen-related amino acids and roughly doubled the measured PINP response relative to the other conditions. Serum from the participants also affected collagen production in engineered ligament tissue. [Shaw et al., 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5183725/).
+In a crossover experiment, **eight healthy men** received placebo, **5 g or 15 g gelatin with 48 mg vitamin C** one hour before six minutes of rope-skipping, repeated three times daily for three days. The 15 g condition roughly doubled the circulating **PINP area under the curve**. Serum from **four participants** also increased collagen in engineered ligament tissue. [Shaw et al., 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5183725/).
 
-That is a useful proof of concept, with two important boundaries. **Blood PINP is largely a bone-formation marker, not a direct measurement of a shoulder tendon healing.** The authors explicitly discuss this. Engineered ligament tissue exposed to serum is a laboratory model. The study did not measure fewer injuries, quicker return to sport or improvement in shoulder pain. It also did not isolate vitamin C from gelatin: vitamin C was present in every drink.
+**PINP is largely a bone-formation marker, not a direct measure of shoulder-tendon healing.** The engineered tissue was a laboratory model. No injury rate, return-to-sport or shoulder-pain benefit was tested. Every drink contained vitamin C, so its separate effect was not isolated. Its [registry](https://anzctr.org.au/Trial/Registration/TrialReview.aspx?ACTRN=12616001092482) was entered after 2015 collection and labels registration retrospective.
 
 ## The evidence did not stop there
 
@@ -34,11 +34,11 @@ The biopsy paper is a later report from an existing trial cohort, rather than in
 
 ## Pain and function are a harder test
 
-A pilot in **20 patients with chronic mid-portion Achilles tendinopathy** used a specific commercial collagen preparation, **2.5 g twice daily**, alongside a structured calf-strengthening and return-to-running program. In the first three months, the collagen-first group improved its VISA-A pain/function score by **12.6 points**, versus **5.3 points** in the placebo-first group. Both improved, then treatments crossed over. [Praet et al., 2019](https://researchsystem.canberra.edu.au/ws/files/25122853/Praet2019.pdf).
+A manufacturer-funded crossover pilot enrolled **20 people with chronic mid-portion Achilles tendinopathy**. Both groups followed a strengthening and return-to-running program. Over the first three months, VISA-A improved **12.6 points** with **2.5 g specific collagen peptides twice daily**, versus **5.3** with placebo, before treatments crossed over. [Praet et al., 2019](https://researchsystem.canberra.edu.au/ws/files/25122853/Praet2019.pdf).
 
-This is a clinical signal worth investigating, but it is a small, manufacturer-funded pilot with exercise treatment in both groups and an awkward crossover design for an improving chronic condition. Its authors say that firm conclusions about added benefit require a larger trial. A product-specific result in Achilles tendinopathy cannot be transferred directly to ordinary broth or undiagnosed shoulder pain.
+Two participants later withdrew. The current [registry](https://anzctr.org.au/Trial/Registration/TrialReview.aspx?ACTRN=12615001035516) lists ultrasound structure as primary and VISA-A as secondary, and labels registration retrospective. This clinical signal needs larger confirmation: crossing treatments without washout during improvement complicates interpretation. A specific Achilles product does not establish broth efficacy or shoulder treatment.
 
-Shoulder-specific research also needs careful interpretation. A study in **90 patients after surgical repair of a large rotator-cuff tear** reported less pain and better MRI repair integrity with an oral product combining collagen, arginine, MSM and bromelain, but no better objective functional outcome. It cannot isolate collagen, and a postsurgical population differs greatly from my reported discomfort. Shoulder-bursa collagen injections test a different intervention again; they are not evidence for drinking broth. [Gumina et al., 2012](https://pubmed.ncbi.nlm.nih.gov/23043451/), [Godek et al., 2022](https://pubmed.ncbi.nlm.nih.gov/36536333/).
+A small randomized study after surgery for large rotator-cuff tears tested collagen, arginine, MSM and bromelain together. **Six-month pain ratings** and selected MRI grades favored supplementation; **one-year functional scores, their pain component and re-tear comparisons did not establish benefit**. Patients and surgeons knew allocation. Three participants stopped because of diarrhea, and replacement/flow counts are inconsistent. The combination cannot isolate collagen; a repaired tear differs from my unassessed discomfort. Shoulder-bursa collagen injections are another intervention, not evidence for broth. [Gumina et al., 2012](https://pubmed.ncbi.nlm.nih.gov/23043451/), [Godek et al., 2022](https://pubmed.ncbi.nlm.nih.gov/36536333/).
 
 ## Why broth is not a known collagen dose
 

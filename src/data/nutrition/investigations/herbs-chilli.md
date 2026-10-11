@@ -2,7 +2,7 @@
 title: "What are the herbs in chimichurri doing?"
 description: "Flavor, uncertain herb quantities, a mixed-spice blood-pressure trial and the small effects of chilli."
 order: 50
-updated: 2026-10-10
+updated: 2026-10-11
 category: foods
 ---
 
@@ -20,7 +20,7 @@ That result concerns a whole mixed-spice feeding pattern, with industry support,
 
 ## Chilli's metabolic effects should not drive this meal
 
-In a randomized crossover study of **25 healthy, lean adults**, meals containing **1 g cayenne red pepper** increased short-term energy expenditure relative to meals without it. Subsequent food intake was lower in people who did not habitually eat spicy food, but not in regular users. The experiment tested acute responses, not durable weight loss or better training adaptation. Heat preference and adaptation mattered. [Ludy and Mattes, 2011](https://pubmed.ncbi.nlm.nih.gov/21093467/)
+In a randomized crossover experiment, **25 of 35 enrolled healthy, lean adults completed** tests with **1 g cayenne or none**; part of the pepper could be swallowed in capsules. The mean postmeal energy-expenditure increase was about **10 kcal over 4.5 hours**. At a single meal afterward, intake fell about **66 kcal in nonhabitual spice users**, without a significant reduction in regular users. This acute result does not establish lasting weight loss or better training adaptation. NIH and McCormick supported the work. [Ludy and Mattes, 2011](https://pubmed.ncbi.nlm.nih.gov/21093467/)
 
 This food record already includes meals that were difficult to finish. Choosing chilli specifically to suppress appetite would not address that problem. A pepper or spice that makes chicken, rice or fish more enjoyable may be useful; the amount should follow taste and tolerance. Fresh hot pepper and the cayenne dose in that trial are not interchangeable by equal weight, and neither establishes a treatment for shoulder pain.
 

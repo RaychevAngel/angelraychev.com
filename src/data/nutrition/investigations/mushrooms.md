@@ -2,7 +2,7 @@
 title: "Are mushrooms a useful food or a brain supplement?"
 description: "Vitamin D from verified UV treatment, ergothioneine associations and the mixed human results for lion's mane."
 order: 40
-updated: 2026-10-10
+updated: 2026-10-11
 category: foods
 ---
 
@@ -31,11 +31,11 @@ New intervention results need a separate judgment. The [human ergothioneine and 
 
 ## Lion's mane: report the main and contrary results together
 
-A pilot randomized trial analyzed **43 healthy adults aged 18–45 after an acute dose, and 41 after 28 days**. It tested **1.8 g daily of a proprietary lion's-mane preparation** for 28 days. A Stroop-task speed result favored the intervention after an acute dose. Other outcomes were null, and immediate word recall worsened in an acute comparison; the reported reduction in stress after 28 days was a trend with **p = 0.051**. Testing several outcomes in a small exploratory study makes a single favorable result an uncertain foundation for a broad cognitive claim. [Docherty et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10675414/)
+A pilot trial analyzed **43 healthy adults aged 18–45 acutely, and 41 after 28 days**, testing **1.8 g daily of a proprietary lion's-mane preparation**. Acute changes differed by treatment: the active arm responded faster on Stroop but recalled fewer words immediately. Several other outcomes were null. The main stress result was a trend (**p=.051**). Multiple outcomes in a small exploratory study leave broad cognitive benefit uncertain. Sempera Organics supplied the product. [Docherty et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10675414/)
 
-A newer crossover study in **18 healthy adults aged 18–35** tested **3 g of a 10:1 fruiting-body extract** once. Its primary composite cognitive outcome and overall mood result did not significantly improve, although an individual pegboard measure did. That pattern does not establish a reproducible global cognitive benefit. It also illustrates how much an extract protocol differs from adding button mushrooms to dinner. [Surendran et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12018234/)
+A crossover study in **18 healthy adults aged 18–35** tested **3 g of a commercial 10:1 fruiting-body preparation** once. The primary cognitive composite and the mood composite did not significantly improve. Exploratory comparisons favored extract on a dominant-hand pegboard task and placebo on a Flanker task. These do not establish global cognitive benefit. Two authors worked for a drinks company that contributed publication costs. [Surendran et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12018234/)
 
-The species, fruiting body versus other material, extraction, analyzed composition and dose all matter. A supplement bearing the same species name is not automatically equivalent to either tested preparation. An ordinary food purchase need not turn into a daily extract regimen because some mechanistic studies are attractive.
+Species, material, extraction and dose differ between these products. A supplement bearing the same species name is not automatically equivalent to either tested preparation or to mushrooms eaten as food.
 
 ## The practical experiment is a meal change
 

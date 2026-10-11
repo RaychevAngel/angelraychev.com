@@ -2,7 +2,7 @@
 title: "Collagen: food exposure and functional outcomes"
 description: "Closer readings of broth composition, tendon measurements and newer athlete studies."
 order: 96
-updated: "2026-10-10"
+updated: 2026-10-11
 category: recovery
 ---
 
@@ -18,9 +18,9 @@ Its blood amino-acid response was more prolonged; protein doses were unequal, li
 
 ## A positive tendon measurement without an injury outcome
 
-In a professional women's soccer study, **18 athletes were recruited, 15 randomized and 11 completed** ten weeks. They received **30 g liquid collagen** or carbohydrate matched for energy before three weekly training sessions, both with 500 mg vitamin C. Tendon stiffness increased **15.4% versus 4.6%**; the treatment-by-time comparison was significant, with nominal tests across several outcomes. Tendon area, muscle thickness and strength did not show added benefits. The trial did **not demonstrate fewer injuries**. Researchers reported no funding or conflicts; the lead researcher was unblinded. This supports a particular mechanical adaptation, not established shoulder recovery. [Lee and colleagues, online 2024; issue 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12576002/)
+Of **18 professional women's soccer players recruited, 15 were randomized and 11 completed** ten weeks. They received **30 g liquid collagen** or energy-matched carbohydrate before three weekly training sessions, both with 500 mg vitamin C. Stiffness increased **15.4% versus 4.6%**, with a significant treatment-by-time comparison and nominal tests across several outcomes. Tendon area, muscle thickness and strength showed no added benefit. No injury benefit was demonstrated. Funding and conflicts were declared absent; the lead researcher was unblinded. This mechanical outcome does not establish shoulder healing. [Lee and colleagues, online 2024; issue 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12576002/)
 
-The linked [registry](https://clinicaltrials.gov/study/NCT06372080) was submitted in 2024 after 2021 collection and describes a broader project. It does not establish prospective priority for this small completer analysis. Liquid collagen remains a different preparation from broth.
+The [registry](https://clinicaltrials.gov/study/NCT06372080) was submitted in 2024 after 2021 collection and describes a broader project, not prospectively specified priority for this small completer analysis. Liquid collagen is not broth.
 
 ## A newer clinical test did not find added benefit
 
