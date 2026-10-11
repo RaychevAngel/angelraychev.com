@@ -9,6 +9,10 @@ const format = (value, unit = "") => {
   const digits = ["kcal", "mg", "µg", "µg RAE", "µg DFE"].includes(unit) && Math.abs(n) >= 10 ? 0 : Math.abs(n) > 0 && Math.abs(n) < 1 ? 2 : 1;
   return `${n.toLocaleString("en-US", { maximumFractionDigits: digits })}${unit ? ` ${unit}` : ""}`;
 };
+const evidenceText = (value) => ({
+  recipe_scenario: "Recipe estimate",
+  generic_primary_reference: "Generic food composition",
+}[value] ?? value);
 const refText = (entry) => {
   if (!entry) return "No reference assigned";
   const names = { safe_level: "safe level", general_energy_label_basis: "general label basis" };
@@ -47,6 +51,7 @@ const scopeText = (entry) => {
   <p class="judgment-note">Intake confidence: {topic.intake_confidence}. Quantity confidence: {topic.quantity_confidence}. Body status: {topic.body_status}.</p>
   {topic.review_pending && <p class="review-pending">Relevant intake inputs or research text changed after this judgment was reviewed. The displayed figures are current; the saved attention judgment awaits review.</p>}
   <p class="reference-note">FDA Daily Values are food-label references. The age-specific intake references are shown separately.</p>
+  {standalone && topic.fields.length > 1 && <p><a href={`#${topic.slug}-explanation`}>Jump to the explanation</a>.</p>}
   <div class="intake-panels">
     {topic.fields.map((field) => <section aria-labelledby={`field-${field.id.replaceAll("_", "-")}`}>
       <FieldHeading id={`field-${field.id.replaceAll("_", "-")}`}>{field.name}</FieldHeading>
@@ -99,20 +104,20 @@ const scopeText = (entry) => {
               <td>{row.food}</td>
               <td>{format(row.grams, "g")}<br /><span class="dim">{row.quantity_status}</span></td>
               <td>{format(row.amount, field.unit)}</td>
-              <td>{row.source_url ? <a href={row.source_url}>{row.evidence}</a> : row.evidence}</td>
+              <td>{row.source_url ? <a href={row.source_url}>{evidenceText(row.evidence)}</a> : evidenceText(row.evidence)}</td>
             </tr>)}</tbody>
           </table>
         </div>}
         {field.missing_foods.length > 0 && <p><strong>Unquantified:</strong> {field.missing_foods.join("; ")}.</p>}
         {field.estimated_zeros?.length > 0 && <>
           <p><strong>Provisional or modeled zeros:</strong></p>
-          <ul>{field.estimated_zeros.map((row) => <li>{row.food}: {row.source_url ? <a href={row.source_url}>{row.evidence}</a> : row.evidence}.</li>)}</ul>
+          <ul>{field.estimated_zeros.map((row) => <li>{row.food}: {row.source_url ? <a href={row.source_url}>{evidenceText(row.evidence)}</a> : evidenceText(row.evidence)}.</li>)}</ul>
           <p>These are model inputs or current label declarations. They do not prove exact absence in the original package.</p>
         </>}
       </details>
     </section>)}
   </div>
-  <div class="nutrient-prose" set:html={prose} />
+  <div class="nutrient-prose" id={`${topic.slug}-explanation`} set:html={prose} />
   <p class="topic-return"><a href={standalone ? "/nutrition/guide/#nutrient-index" : "#nutrient-index"}>Back to nutrient index</a></p>
 </section>
 <style>
@@ -133,6 +138,7 @@ const scopeText = (entry) => {
   details[open] summary { margin-bottom: 20px; }
   .topic-return { margin-top: 32px; font-size: 13px; }
   .review-pending { border-left: 2px solid var(--fg); padding-left: 16px; }
+  .nutrient-prose { scroll-margin-top: 24px; }
   :global(.nutrient-prose h3) { margin-top: 36px; }
   @media(max-width:620px) { .intake-panels { padding-left: 12px; } }
 </style>

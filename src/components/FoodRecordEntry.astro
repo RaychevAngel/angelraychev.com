@@ -42,7 +42,7 @@ const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged
   </details>}
   {entry.plans.length > 0 && <details>
     <summary>Plans and foods not consumed</summary>
-    <ul>{entry.plans.map((row) => <li>{row.description} <span class="dim">{row.status}.</span></li>)}</ul>
+    <ul>{entry.plans.map((row) => <li>{row.description} <span class="dim">{row.status.replaceAll("_", " ")}.</span></li>)}</ul>
   </details>}
   {entry.purchases.length > 0 && <details>
     <summary>Purchases</summary>
