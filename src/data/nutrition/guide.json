@@ -2934,7 +2934,7 @@
       "intake_confidence": "Moderate",
       "quantity_confidence": "Limited",
       "body_status": "Unassessed",
-      "reviewed_date": "2026-10-10",
+      "reviewed_date": "2026-10-11",
       "judgment_scope": "Linked eating record; usual intake and clinical status unestablished",
       "fields": [
         {
@@ -2993,7 +2993,7 @@
                 "unit": "mg free nicotinic acid/day",
                 "scope": "Free nicotinic acid, primarily supplemental/added forms",
                 "source_url": "https://www.efsa.europa.eu/sites/default/files/efsa_rep/blobserver_assets/ndatolerableuil.pdf",
-                "source_locator": "SCF niacin, printed pp.129–130 (PDF pp.130–131), sections 5.1–5.2",
+                "source_locator": "SCF niacin, printed pp.129–130 (PDF pp.131–132), sections 5.1–5.2",
                 "note": "Separate from natural food-bound niacin, nicotinamide and NE adequacy. This is not a limit on all catalog niacin.",
                 "type": "UL",
                 "verified_date": "2026-10-10"
@@ -3004,7 +3004,7 @@
                 "unit": "mg nicotinamide/day",
                 "scope": "Nicotinamide form, adult reference",
                 "source_url": "https://www.efsa.europa.eu/sites/default/files/efsa_rep/blobserver_assets/ndatolerableuil.pdf",
-                "source_locator": "SCF niacin, printed pp.129–130 (PDF pp.130–131), section 5.2",
+                "source_locator": "SCF niacin, printed pp.129–130 (PDF pp.131–132), section 5.2",
                 "note": "Do not turn a different-form assessment into a personal high-dose allowance. US added-niacin UL is 35 mg/day.",
                 "type": "UL",
                 "verified_date": "2026-10-10"
@@ -4340,7 +4340,7 @@
       "intake_confidence": "Moderate",
       "quantity_confidence": "Limited",
       "body_status": "Unassessed",
-      "reviewed_date": "2026-10-10",
+      "reviewed_date": "2026-10-11",
       "judgment_scope": "Linked eating record; usual intake and clinical status unestablished",
       "fields": [
         {
@@ -4398,7 +4398,7 @@
                 "unit": "mg/day",
                 "scope": "Dissociable Mg salts/MgO in supplements, water or added to foods; excludes naturally present food/beverage Mg",
                 "source_url": "https://www.efsa.europa.eu/sites/default/files/efsa_rep/blobserver_assets/ndatolerableuil.pdf",
-                "source_locator": "SCF Mg, printed p.112 (PDF p.113), section 6",
+                "source_locator": "SCF Mg, printed p.112 (PDF p.114), section 6",
                 "note": "Elemental Mg quantity; US 350 mg supplement/medication UL has a separately stated scope. Neither is a maximum for this food subtotal.",
                 "type": "UL",
                 "verified_date": "2026-10-10"
@@ -5120,7 +5120,7 @@
       "intake_confidence": "Moderate",
       "quantity_confidence": "Limited",
       "body_status": "Unassessed",
-      "reviewed_date": "2026-10-10",
+      "reviewed_date": "2026-10-11",
       "judgment_scope": "Linked eating record; usual intake and clinical status unestablished",
       "fields": [
         {
@@ -5178,7 +5178,7 @@
                 "unit": "mg/day",
                 "scope": "Total dietary zinc",
                 "source_url": "https://www.efsa.europa.eu/sites/default/files/efsa_rep/blobserver_assets/ndatolerableuil.pdf",
-                "source_locator": "SCF zinc, printed p.197 (PDF p.198), section 5",
+                "source_locator": "SCF zinc, printed p.197 (PDF p.199), section 5",
                 "note": "US UL 40 mg/day. Distinguish ordinary foods from chronic supplemental exposure in the explanation.",
                 "type": "UL",
                 "verified_date": "2026-10-10"
@@ -5914,7 +5914,7 @@
       "intake_confidence": "Unknown",
       "quantity_confidence": "Unknown",
       "body_status": "Unassessed",
-      "reviewed_date": "2026-10-10",
+      "reviewed_date": "2026-10-11",
       "judgment_scope": "Linked eating record; usual intake and clinical status unestablished",
       "fields": [
         {
@@ -5972,7 +5972,7 @@
                 "unit": "µg/day",
                 "scope": "Total dietary iodine",
                 "source_url": "https://www.efsa.europa.eu/sites/default/files/efsa_rep/blobserver_assets/ndatolerableuil.pdf",
-                "source_locator": "SCF iodine, printed p.147 (PDF p.148), section 5",
+                "source_locator": "SCF iodine, printed p.147 (PDF p.149), section 5",
                 "note": "US UL 1,100 µg/day. Unknown dairy/seafood composition does not establish either deficiency or proximity to a limit.",
                 "type": "UL",
                 "verified_date": "2026-10-10"

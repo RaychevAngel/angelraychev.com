@@ -2,7 +2,7 @@
 title: Metformin and the assumption that healthy interventions add up
 description: Diabetes prevention evidence, muscle-adaptation trials, and new functional results do not establish a benefit for healthy training.
 order: 73
-updated: 2026-10-10
+updated: 2026-10-11
 category: experimental
 ---
 
@@ -24,7 +24,7 @@ The negative interaction was selective. Both groups improved several other measu
 
 The MASTERS trial randomized 109 adults aged 65 or older, with 94 completing the study. After a supervised progressive resistance program, placebo participants gained more lean mass and thigh muscle mass than metformin participants. Lean mass increased by 1.95% versus 0.41%, with a significant between-group difference. CT measurements also supported smaller thigh-muscle gains with metformin. [Original resistance-training trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC6826125/).
 
-Strength and power increased, but their between-group differences did not reach conventional statistical significance. For example, knee-extension one-repetition maximum increased 23.1% with placebo and 15.3% with metformin, with P=0.055 for the comparison. Single-fiber size results also differed from whole-muscle measures. This is evidence of attenuated hypertrophy under the studied conditions, rather than proof that metformin causes weakness in everyone. The analysis used completers, and participants were older than me. A medication needed for a clinical indication has a different tradeoff from an unnecessary performance experiment.
+Strength and power increased, but their between-group differences did not reach conventional statistical significance. For example, knee-extension one-repetition maximum increased 23.1% with placebo and 15.3% with metformin, with P=0.055 for the comparison. The registered primary type-II fiber-size outcome showed no significant between-arm difference (P=.610). [Current trial record](https://clinicaltrials.gov/study/NCT02308228). This is evidence of attenuated hypertrophy under the studied conditions, rather than proof that metformin causes weakness in everyone. The analysis used completers, and participants were older than me. A medication needed for a clinical indication has a different tradeoff from an unnecessary performance experiment.
 
 ## Counterevidence limits a universal claim
 
@@ -34,7 +34,7 @@ These are analyses of existing trial cohorts, not two additional large confirmat
 
 ## New functional trials are more direct
 
-The 2026 DEMFOS trial enrolled 114 adults aged 65–85 with obesity and compared intensive lifestyle treatment with metformin, intensive lifestyle treatment with placebo, and diet education with metformin. Its primary outcome was physical performance at six months. Metformin added no demonstrated benefit to intensive lifestyle treatment: the between-group difference was 0.1 points, with a 95% confidence interval of −1.2 to +1.4 and P=0.92. [Original 2026 DEMFOS trial](https://pubmed.ncbi.nlm.nih.gov/42532077/).
+The 2026 DEMFOS trial randomized 114 adults aged 65–85 with obesity and compared intensive lifestyle treatment with metformin, intensive lifestyle treatment with placebo, and diet education with metformin; 101 completed the study. Its primary outcome was physical performance at six months. Metformin added no demonstrated benefit to intensive lifestyle treatment: the between-group difference was 0.1 points, with a 95% confidence interval of −1.2 to +1.4 and P=0.92. [Original 2026 DEMFOS trial](https://pubmed.ncbi.nlm.nih.gov/42532077/).
 
 The intensive-lifestyle-plus-metformin group did better than education-plus-metformin. That comparison shows the value of the lifestyle intervention in that setting; it does not show that metformin enhanced it. Participants were predominantly older men with obesity, so this is not a direct estimate for a young lifter. It is nevertheless a useful randomized test of the proposed add-on strategy.
 

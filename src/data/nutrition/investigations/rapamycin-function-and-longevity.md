@@ -2,7 +2,7 @@
 title: Rapamycin, immune function, and training
 description: Different mTOR drugs have produced vaccine signals, failed infection trials, and a new exercise result that challenges assumed synergy.
 order: 72
-updated: 2026-10-10
+updated: 2026-10-11
 category: experimental
 ---
 
@@ -22,9 +22,9 @@ Walking distance, grip strength, and quality-of-life comparisons also failed to 
 
 ## PEARL: useful safety information with limits
 
-The 2025 PEARL report analyzed 114 people who completed 48 weeks of intermittent compounded rapamycin or placebo. Its primary outcome, visceral adiposity, did not improve significantly. It reported a positive secondary lean-tissue result in women receiving the higher studied formulation, alongside selected questionnaire changes. There were only eight women in that treatment group, and the analysis excluded people who discontinued. Those features limit the strength of a broad muscle or healthspan claim. [Original PEARL report](https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/).
+The 2025 PEARL report analyzed 114 completers after 48 weeks of intermittent compounded rapamycin or placebo. The primary visceral-adiposity outcome did not improve significantly. A secondary lean-tissue result favored the higher formulation in women; that group contained only eight women. Discontinued participants were excluded, and selected questionnaire changes also appeared. [Original PEARL report](https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/).
 
-Reported adverse-event rates were broadly similar between groups, which is reassuring within the studied exposure and duration. A formulation problem also matters: the investigators discovered that their compounded preparation produced substantially lower blood exposure than a commercial preparation in a separate assessment. The nominal amount on a prescription or capsule is therefore not enough to equate this trial with another product. The study was authored by employees and shareholders of AgelessRx. These observations warrant replication, rather than a conclusion that all longevity use is safe or that the selected subgroup findings apply to me.
+Adverse-event rates were broadly similar within the studied duration. A separate observational study, also funded by AgelessRx, found lower dose-normalized blood concentrations around 24 hours after dosing with a compounded product from a different pharmacy than with commercial tablets; it did not measure the PEARL product's total exposure. [Original formulation study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12397450/). Nominal amounts therefore cannot equate products. PEARL's authors were AgelessRx employees and shareholders. These findings warrant replication, rather than establishing broad safety or a muscle benefit for me.
 
 ## Immune results involve different drugs and endpoints
 

@@ -1562,9 +1562,9 @@
         "supplements": [],
         "scenario_note": "Selected portion/recipe scenarios span approximately 2,815–3,500 kcal. It is not a confidence interval and does not cover every uncertainty. Chicken edible weight and sauce oil drive much of this range.",
         "source_note": "Nonfat yogurt uses a provisional online label; restaurant chicken and sauce use comparators or recipe estimates. Restaurant sodium and sauce herbs remain unquantified. The sardine label total omega 3 is separate from a generic EPA/DHA split.",
-        "version": 4,
-        "reviewed_date": "2026-10-10",
-        "revision_note": "Original intake-reference chapters and food-label form rules reviewed. Rice saturated-fat zero remains provisional; three sardine zeros now cite the matching current manufacturer label. Food totals and scenario endpoints unchanged from v3."
+        "version": 5,
+        "reviewed_date": "2026-10-11",
+        "revision_note": "Five SCF PDF page positions corrected after direct source review. References, food amounts, nutrient totals and scenario endpoints remain numerically unchanged from v4."
       }
     }
   ],

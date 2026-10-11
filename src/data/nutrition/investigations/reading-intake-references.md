@@ -2,7 +2,7 @@
 title: Reading intake references without inventing a minimum and maximum
 description: What RDA, AI, EAR, UL, CDRR, AMDR and Daily Value mean, and how they fit a personal food record.
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 category: methods
 ---
 
@@ -56,7 +56,7 @@ Labels also use rounding. A declared zero can represent a small amount below the
 
 ## Different authorities can reach different upper references
 
-The guide's main reference system is the US dietary framework. Where another assessment materially changes the decision, the nutrient page identifies it separately. Vitamin B6 illustrates this: the US adult UL is **100 mg/day**, while EFSA's 2023 assessment established **12 mg/day** for adults, including dietary and supplemental forms. Those are different assessments of neuropathy risk, not interchangeable numbers or recommendations to consume either amount. [NIH B6 upper references](https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/), [EFSA's original assessment](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8006).
+Vitamin B6 illustrates differing assessments: the US adult UL is **100 mg/day**, while EFSA's 2023 adult UL is **12 mg/day**, covering dietary and supplemental forms. These are distinct assessments of neuropathy risk, not intake targets. [NIH B6 upper references](https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/), [EFSA's original assessment](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8006).
 
 The useful response is to retain the authority, date, scope and reason for the difference. Silently replacing a value would make the table look tidier while hiding information relevant to a supplement decision.
 
