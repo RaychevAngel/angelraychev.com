@@ -2,7 +2,7 @@
 title: Fermented foods and the microbiome
 description: Yogurt is already part of my routine; the research adds specific possibilities without turning microbial diversity into a health diagnosis.
 order: 20
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: dietary-patterns
 ---
@@ -21,11 +21,11 @@ That distinction changes what I would look for. If the goal is simply an enjoyab
 
 ## The Stanford trial: interesting positives and important nulls
 
-Wastyk and colleagues analyzed **36 generally healthy adults**, 18 per dietary arm, in a 17-week protocol containing a ten-week intervention. The fermented-food arm increased intake from about **0.4 to 6.3 servings/day**. It showed increased microbial diversity and decreases in several circulating inflammatory proteins. The high-fiber arm increased fiber substantially but did not show the same diversity change. [Wastyk et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9020749/).
+Wastyk’s study assigned **39 generally healthy adults: 37 randomized and two placed in the fiber arm by request**. After one dropout and two antibiotic exclusions, 36 remained, 18 per arm. During a ten-week intervention within a 17-week protocol, participants were counseled to increase varied foods. Fermented-food intake rose from about **0.4 to 6.3 servings/day**, with increased microbial diversity and decreases in selected inflammatory proteins; fiber did not produce the same diversity change. [Wastyk et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9020749/).
 
-The **prespecified primary cytokine-response score did not significantly change in either arm**. Glucose, lipids, blood pressure, waist circumference and several well-being measures also showed no significant change. Fermented-food participants reported temporary extra bloating during the ramp-up. Most participants were women, with a mean age around 51; this was a small exploratory study, not an athlete trial or an illness-prevention trial.
+The paper-designated primary cytokine-response score was **null**; that analysis excluded the two nonrandomized participants. The [current registry](https://clinicaltrials.gov/study/NCT03275662) shows posting after trial completion; no analysis plan was prepublished. Historical prespecification was not independently verified. There was no untreated control. Glucose, lipids, blood pressure, waist and well-being measures were also null; bloating temporarily increased during ramp-up. Most participants were women, around age 51. Donations funded the study; some authors disclosed biotechnology interests.
 
-The result makes fermented foods worth studying. It does not prove that I need six servings, that yogurt alone reproduces a varied intervention, or that fiber is ineffective. Changes in selected secondary immune markers are different from showing fewer illnesses, better training recovery or improved digestive symptoms. The null primary outcome belongs beside the more widely discussed positive findings.
+These exploratory markers do not establish illness prevention, training recovery or a benefit from my yogurt alone. Six servings are not my requirement, and the fiber result does not establish ineffectiveness.
 
 ## A microbial change is not one universal outcome
 

@@ -2,25 +2,25 @@
 title: "Ketone drinks: performance, recovery and cognition"
 description: "New human trials distinguish raised blood ketones from better training, recovery or thinking, and distinguish monoesters from salts and other compounds."
 order: 76
-updated: "2026-10-10"
+updated: 2026-10-11
 category: recovery
 ---
 
 ## What would make them useful here?
 
-For my current food and training routine, I see **no clear reason to add ketone drinks**. The interesting question is whether they improve a result I care about while I am adequately fed: a better workout, better recovery or clearer thinking. Raising a blood ketone reading does not answer that question. The human evidence includes a promising 2026 training trial, several performance null results and some impaired performance. This is a research topic to watch rather than another missing nutrient to buy.
+For my current food and training routine, I see **no clear reason to add ketone drinks**. The interesting question is whether they improve a result I care about while I am adequately fed: a better workout, better recovery or clearer thinking. Raised blood ketones do not establish a training benefit; trial results differ. This is a research topic to watch rather than another missing nutrient to buy.
 
 ## The compound and feeding context matter
 
-Ketone drinks can raise blood β-hydroxybutyrate (BHB) while eating carbohydrates, a different exposure from a ketogenic diet. A human comparison found that a meal reduced the monoester's peak BHB response; salt and ester also differed metabolically. [Human metabolism experiments](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full)
+Ketone drinks can raise blood β-hydroxybutyrate (BHB) despite carbohydrate feeding. In resting volunteers, a meal lowered the monoester's peak BHB; salt and ester differed metabolically. [Human metabolism experiments](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full)
 
-| Form | What needs to remain separate |
+| Form | What remains distinct |
 | --- | --- |
-| BHB monoester | Much of the exercise research uses **(R)-3-hydroxybutyl (R)-3-hydroxybutyrate**. Results depend on when it is used and the task tested. |
-| BHB salts | The tested sodium/potassium salt included D- and L-BHB with different blood persistence. It is not interchangeable with the monoester. |
-| Acetoacetate diester | A different compound, tested separately below. Its results cannot establish that all monoesters behave the same way. |
+| BHB monoester | (R)-3-hydroxybutyl (R)-3-hydroxybutyrate. |
+| BHB salts | The tested sodium/potassium mixture contained D- and L-BHB, with different blood persistence. |
+| Acetoacetate diester | A different compound, tested separately below. |
 
-The salt/ester distinctions come from the [direct comparison](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full); the diester is identified in its [original cycling experiment](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00806/full).
+The [metabolic comparison](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full) identifies salt/ester exposures; the [cycling experiment](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00806/full) identifies the diester.
 
 ## An immediate performance boost is unreliable
 
@@ -37,11 +37,9 @@ A separate acetoacetate-diester experiment in professional cyclists reported slo
 
 ## The promising training trial deserves attention
 
-In a **2026 eight-week study**, 28 trained men completed supervised cycling with a monoester or a calorie-matched MCT control after exercise and before sleep. They also received carbohydrate during longer sessions and carbohydrate/protein recovery feeding. At week seven, 30-minute power was 302 versus 291 W: an **11 W difference, 95% CI 4–18 W**. A smaller difference persisted after tapering. Muscle citrate synthase activity also increased more, while cardiac and subjective recovery measures did not establish a parallel benefit. [Original study](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/JP290315)
+In a **2026 eight-week trial**, 28 of 30 trained men completed supervised cycling with postexercise/presleep monoester or active, calorie-matched medium-chain triglyceride (MCT) control. Both groups received carbohydrate during longer sessions and carbohydrate/protein recovery feeding. Week-seven 30-minute power was **302 versus 291 W: 11 W higher (95% CI 4–18)**; a smaller difference persisted after taper. Citrate synthase activity favored ketones; cardiac and subjective recovery outcomes did not. [Original study](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/JP290315)
 
-This is a meaningful performance result against an active, calorie-matched comparator. Performance comparisons used Šidák posthoc correction; metabolomics used false-discovery-rate control. It remains one small study of substantial supervised cycling with multiple outcomes; these corrections do not cover every outcome as one family. Muscle markers do not independently prove the mechanism or tendon repair. The study supplements supplied **489 kJ, about 117 kcal, per 25 g monoester dose**; they were additional research nutrition, not calorie-free substitutes for meals. [Study methods and limitations](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/JP290315)
-
-Its registry was first submitted **after the listed primary completion date**. That limits how confidently the registration can establish advance outcome selection, although it does not erase the observed result. [NCT05932420 dates and outcomes](https://clinicaltrials.gov/study/NCT05932420)
+Each 25 g monoester dose added **489 kJ (~117 kcal)**. Performance followups used Šidák correction; metabolomics used false-discovery-rate control, without one correction across all outcomes. Markers do not establish mechanism or tendon repair. [Methods](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/JP290315). First registry submission followed the listed primary completion, limiting advance-selection claims. [Registry](https://clinicaltrials.gov/study/NCT05932420).
 
 ## Recovery results do not support a general shortcut
 
@@ -67,6 +65,6 @@ Sleep also has a positive but narrow signal: a **2023 crossover study in ten cyc
 
 My reported routine includes short running sessions and lifting, not the supervised endurance workload in the eight-week trial. The present priority is a food routine I enjoy, adequate ordinary fueling and recoverable training. The [energy and recovery investigation](/nutrition/research/energy-availability-and-recovery/) explains why a supplement biomarker cannot replace that foundation.
 
-If relevant later, I would name the compound and desired outcome. Mineral content, calories and stomach tolerance belong in the assessment. The tested sodium/potassium exposures do not establish amounts for every product. [Salt identity and exposure](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full)
+If relevant later, I would name the compound and desired outcome. Calories and stomach tolerance matter. The tested salt's sodium/potassium exposure cannot specify every product's mineral content. [Salt identity](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00848/full).
 
-No personal ketone use is reported in my log. These small, mostly short studies leave long-term benefit and safety uncertain for repeated everyday use. They also provide no basis for treating my shoulder pain with ketones. Caffeine has its own [dose and sleep context](/nutrition/guide/caffeine/), and persistent pain belongs in the [recovery discussion](/nutrition/research/collagen-broth-and-connective-tissue/).
+No personal ketone use is reported in my log. These trials do not establish long-term benefit, safety or shoulder treatment. Caffeine has its own [dose and sleep context](/nutrition/guide/caffeine/), and persistent pain belongs in the [recovery discussion](/nutrition/research/collagen-broth-and-connective-tissue/).

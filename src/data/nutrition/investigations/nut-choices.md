@@ -2,7 +2,7 @@
 title: "Walnuts, almonds or macadamias?"
 description: "Different nutrient contributions, modest human lipid results and a practical reason to keep the nuts I enjoy."
 order: 20
-updated: 2026-10-10
+updated: 2026-10-11
 category: foods
 ---
 
@@ -28,7 +28,7 @@ WAHA, ATTIS and the 2023 macadamia trial received support from the California Wa
 
 The cognitive report from WAHA is especially relevant to claims about walnuts and the brain. Two years of walnuts produced **no significant overall benefit in the primary global-cognition outcome**. A favorable exploratory result at one study center was not the main trial conclusion. The lipid and cognition papers are reports from the same trial, not independent replications of a general anti-aging effect. [Sala-Vila et al., 2020](https://pubmed.ncbi.nlm.nih.gov/31912155/)
 
-PREDIMED provides a stronger clinical-outcome context, but its intervention was a **Mediterranean dietary program supplemented with mixed nuts**, in older adults at high cardiovascular risk. The corrected 2018 analysis found fewer major cardiovascular events in that group; it also addressed departures from the original randomization protocol. That result does not isolate walnuts, almonds or macadamias as the responsible ingredient, and does not assign its risk reduction to a young person's small nut snack. [Estruch et al., 2018](https://www.nejm.org/doi/full/10.1056/NEJMoa1800389)
+The [corrected PREDIMED account](/nutrition/research/food-patterns-and-the-food-matrix/#what-the-corrected-predimed-trial-supports) examines the mixed-nut dietary program, its population and randomization limitations; it cannot identify one nut as responsible.
 
 ## Keep the portion practical
 

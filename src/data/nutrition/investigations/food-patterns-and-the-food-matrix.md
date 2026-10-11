@@ -15,11 +15,11 @@ The food table answers questions about estimated amounts. A dietary pattern asks
 
 ## What the corrected PREDIMED trial supports
 
-The **2018 corrected PREDIMED report** followed **7,447 adults in Spain**, ages 55–80 and at high cardiovascular risk, for a median **4.8 years**. Major cardiovascular events occurred in **3.8%** of the Mediterranean-diet/olive-oil group, **3.4%** of the Mediterranean-diet/nuts group and **4.4%** of the reduced-fat-advice group. Adjusted hazard ratios were **0.69** and **0.72**, respectively. [Estruch et al., 2018](https://doi.org/10.1056/NEJMoa1800389).
+The **2018 corrected PREDIMED report** studied **7,447 adults in Spain** at high cardiovascular risk: men aged 55–80 and women 60–80. Median follow-up was **4.8 years**. Major cardiovascular events occurred in **3.8%** with Mediterranean-diet/olive-oil advice, **3.4%** with Mediterranean-diet/nuts advice and **4.4%** with reduced-fat advice; adjusted hazard ratios were **0.69** and **0.72**. [Estruch et al., 2018](https://doi.org/10.1056/NEJMoa1800389).
 
-The original report was withdrawn after randomization departures were identified, including household and clinic assignments. The corrected analyses adjusted for these problems, and results were similar after excluding 1,588 participants with known or suspected departures. That correction belongs beside the positive result, not hidden in the references.
+The original report was withdrawn after randomization departures, including household and clinic assignments. Corrected analyses adjusted for these problems; results were similar after excluding 1,588 participants with known or suspected departures.
 
-This supports a dietary-pattern strategy for cardiovascular prevention in that population. It does **not** isolate the effect of a particular herb, establish that every participant benefited, or predict my athletic performance. The intervention included advice and supplied foods, not a nutrient pill. I can take the useful idea—fruit, vegetables, nuts, fish and a workable fat source—without treating the trial's olive-oil quantities as my prescription.
+Participants received advice and supplied foods; control counseling was initially less intensive. Public funding and food donations were disclosed; sponsors reported no role in design, analysis or reporting. This supports a dietary strategy in that population without isolating a nut or herb, predicting my training outcomes or prescribing the trial’s oil quantities.
 
 ## Processing can affect intake beyond the offered nutrient totals
 

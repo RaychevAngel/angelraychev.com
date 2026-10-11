@@ -2,7 +2,7 @@
 title: "Creatine: exposure, timing and what actually improved"
 description: Recent human trials separate muscle stores, training outcomes, body composition, sleep and cognition—and leave fewer reasons to chase a precise workout window.
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: recovery
 ---
@@ -25,23 +25,21 @@ A **June 2026 trial** randomized 37 adults and analyzed 27 completers after 16 w
 
 The result deserves a bounded interpretation. The analyzed groups were small, adherence varied, muscle creatine was not measured, and training used multiple sets across eight exercises. It cannot show that all consistent creatine protocols fail, nor demonstrate that increasing the dose would fix this particular null result. It does weaken the case for treating before-versus-after timing as a priority for my current routine. [Trial methods and limitations](https://www.mdpi.com/1661-3821/6/3/42).
 
-A separate **11-man acute crossover pilot** reported better lifting performance when a single 0.1 g/kg dose was given two hours before exercise. Its placebo matched only the pre-exercise timing, and the authors explicitly called the findings exploratory. The methods also leave uncertainty about how variable total lifted load was obtained from a prescribed fixed-load, fixed-repetition session. This is a reason to seek clarification and replication, rather than adopt its headline as an established timing rule. [Ben Maaoui et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13258838/).
+A separate **11-man acute crossover pilot** tested 0.1 g/kg around exercise. The pre-exercise condition exceeded during-exercise for squat load. For bench press, both pre- and during-exercise creatine—and the no-supplement control—exceeded placebo. Placebo matched only the two-hour pre-exercise timing. The prescribed fixed-load, fixed-repetition session leaves unclear how variable total lifted load was obtained. The authors called the findings exploratory; this is insufficient to establish a timing rule. [Ben Maaoui et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13258838/).
 
 ## Better total work does not mean every fatigue measure improves
 
-In a **December 2025 crossover study of 14 physically active men**, seven days of 20 g/day increased distance in six 30-second shuttle-running bouts, separated by 35-second rests. Median total distance was **762.5 m with creatine versus 662.5 m with placebo**. Best-bout distance also increased; the fatigue index, percentage performance decline and perceived exertion did not significantly differ. [Ben Maaoui et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/).
+In a **December 2025 crossover study of 14 active men**, seven days of 20 g/day increased distance across six 30-second shuttles with 35-second rests: medians **762.5 versus 662.5 m**. Best-bout distance improved; fatigue index, percentage decline and perceived exertion did not significantly differ. These bouts differ from my 10-second sprints. [Ben Maaoui et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/).
 
-These 30-second shuttle bouts differ from my 10-second sprints. A 14-day washout after loading, without muscle measurements, leaves carryover uncertain. This paper and the 2026 acute pilot share a registry identifier; participant overlap is unresolved, so I do not count them as independent samples. [Loading study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/), [acute pilot](https://pmc.ncbi.nlm.nih.gov/articles/PMC13258838/).
+The 14-day washout lacked muscle measurements, leaving carryover uncertain. Both papers share a registry ID; unresolved participant overlap prevents counting them as independent samples. [Loading study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/), [acute pilot](https://pmc.ncbi.nlm.nih.gov/articles/PMC13258838/).
 
 ## Early lean mass needs an independent performance check
 
-A **2025 study** found an early 0.51 kg between-group lean-mass difference after seven supplement-only days, followed by no significant additional training-period lean-mass benefit. DXA lean mass includes water and other non-fat tissue; this study did not directly establish how much of the early change was water or new contractile muscle. [Desai et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11944689/).
-
-An early scale increase therefore needs interpretation alongside training performance and longer-term measurements. It should not immediately trigger a calorie cut, become a claim of newly built muscle, or be counted as evidence that maintenance energy needs have changed. Those are different questions from whether the supplement is being taken.
+An early scale or DXA change needs interpretation alongside performance. The [wash-in trial account](/nutrition/research/performance-supplements/#creatine-a-stronger-fit-for-repeated-high-intensity-work) separates supplement-only and training phases; it does not identify how much change was water or new contractile muscle.
 
 ## Sleep quality and cognition require their own evidence
 
-The 14-man study improved **subjective sleep quality**, with no significant actigraphy differences in duration, efficiency or latency. Soreness was higher with creatine at 24 hours (P = .016); other post-exercise times and perceived recovery showed no between-condition differences. Pre-testing perceived recovery was also lower. These results do not establish better recovery or insomnia treatment. [Sleep and recovery results](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/).
+The loading study improved subjective sleep quality; actigraphy duration, efficiency and latency did not significantly differ. Soreness was higher at 24 hours (**P = .016**), without other significant post-exercise soreness or perceived-recovery differences. Pre-testing perceived recovery was lower. This does not establish improved recovery or insomnia treatment. [Sleep and recovery results](https://pmc.ncbi.nlm.nih.gov/articles/PMC12736258/).
 
 A separate **April 2026 trial of 29 adults** tested a single 0.2 g/kg dose during 21 hours of wakefulness. The pooled logic result met the stated Bonferroni threshold (P = .005; threshold .0063). Numerical, language-processing and vigilance-dispersion findings were only nominally significant and did not meet that threshold. Not all tests improved. The study was retrospectively registered and reported no physical adverse effects in its small sample. It did not test ordinary rested work or chronic sleep restriction. [Gordji-Nejad et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13119191/).
 

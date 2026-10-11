@@ -2,7 +2,7 @@
 title: Buffers, beetroot and the actual effort
 description: Beta-alanine, bicarbonate and nitrate have different exposure requirements, and recent trials show why a short sprint, repeated set and fatigued time trial need separate judgments.
 order: 20
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: recovery
 ---
@@ -43,17 +43,17 @@ A **June 2026 crossover trial** had 15 recreational runners complete 20 × 25-se
 
 Capsules produced more gastrointestinal symptoms than placebo; hydrogel symptoms did not significantly differ from placebo. Crucially, **the direct hydrogel-versus-capsule comparison also did not reach significance** for summed symptoms (**P = .243**). The paper's stronger wording about superior gut tolerance should be read alongside that result. Blood lactate rose more with both bicarbonate conditions, but bicarbonate and pH were not measured: a marker changed without a demonstrated faster run or directly verified acid–base response. [Results and measurement limits](https://link.springer.com/article/10.1186/s44410-026-00027-9).
 
-A **September 2026 trial of 11 trained cyclists** offers a useful positive result with limits inside the same experiment. Both conditions supplied 80 g carbohydrate/hour during three hours of cycling. One also distributed **18 g sodium bicarbonate plus 2 g potassium bicarbonate** through gels. Subsequent 12-minute time-trial power was **251 versus 239 W**, a paired difference of **12 W (95% CI 3–22 W)**. Six-second sprint power and two-minute time-trial performance did not significantly improve. [Norte et al., 2026](https://onlinelibrary.wiley.com/doi/10.1111/sms.70373).
+A **September 2026 crossover trial analyzed 11 trained cyclists after one exclusion**. Both conditions supplied 80 g carbohydrate/hour during three hours of cycling; one distributed **18 g sodium bicarbonate plus 2 g potassium bicarbonate** through gels. Subsequent 12-minute time-trial power was **251 versus 239 W**, a paired difference of **12 W (95% CI 3–22 W)**. Six-second sprint and two-minute time-trial performance did not significantly improve. [Norte et al., 2026](https://onlinelibrary.wiley.com/doi/10.1111/sms.70373).
 
-No severe gastrointestinal symptoms were reported, although the bicarbonate gels were rated less pleasant. Blood bicarbonate and pH were measured and increased. This is evidence for that prolonged, well-fueled cycling protocol—not a demonstration that bicarbonate improves every short effort, or that a tolerable gel makes it a useful daily addition to my routine. [Original trial](https://onlinelibrary.wiley.com/doi/10.1111/sms.70373).
+Taste and texture prevented full blinding of participants and the testing investigator. No severe gastrointestinal symptoms were reported; bicarbonate gels were less pleasant. Blood bicarbonate and pH increased. FCT supported the first author's doctoral work; MNSTRY and Siemens supplied products/equipment. This supports that prolonged, well-fueled cycling protocol, rather than establishing a benefit for my short efforts. [Original trial](https://onlinelibrary.wiley.com/doi/10.1111/sms.70373).
 
 ## Nitrate: distinguish beetroot, extract and measured exposure
 
 In a **12-man crossover trial**, six days of beetroot shots providing 400 mg nitrate/day increased total bench-press repetitions by approximately **6.9 repetitions** across three sets to failure at 60% of maximum. Perceived effort and lactate did not significantly change; no gastrointestinal discomfort was reported. This was a muscular-endurance finding, with a blackcurrant placebo rather than nitrate-depleted beetroot. It did not measure muscle growth from months of training. [Mosher et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27050244/).
 
-A **7 October 2026 trial** found no consistent benefit in 18 resistance-trained men doing five sets to failure at 70% of maximum in bench press and bench pull. The intervention was **360 mg nitrate from standardized amaranth extract**, taken 60 minutes before testing, either once or for seven days. Overall repetitions, fastest repetition velocity and lactate did not significantly differ. Isolated differences between individual sets did not consistently favor nitrate against the corresponding placebo. [Rojas-Cepero et al., 2026](https://www.mdpi.com/2076-3417/16/19/9909).
+A **7 October 2026 crossover trial in 18 resistance-trained men** tested nominal **360 mg nitrate from standardized amaranth extract**, once or for seven days, 60 minutes before exercise. Five sets to failure at 70% of maximum in bench press and bench pull showed no significant overall benefit in repetitions, fastest repetition velocity or lactate. Selected set differences did not consistently favor nitrate against matched placebo. [Rojas-Cepero et al., 2026](https://www.mdpi.com/2076-3417/16/19/9909).
 
-The newer study did not measure blood or salivary nitrate/nitrite, and its periods did not always contain a full supplement-free washout. It cannot prove that beetroot shots at another exposure would fail. Conversely, the older positive study cannot guarantee that an extract, an ordinary beet drink or my one-set routine reproduces its benefit. [Methods and limitations](https://www.mdpi.com/2076-3417/16/19/9909).
+The study did not measure blood or salivary nitrate/nitrite, and periods did not always contain a full supplement-free washout. LifePro and Arjuna supplied products; two authors were LifePro advisers. It cannot show that another beetroot exposure would fail, while the older positive trial cannot guarantee a benefit from this extract or my one-set routine. [Methods and limitations](https://www.mdpi.com/2076-3417/16/19/9909).
 
 Product weight is also different from nitrate quantity. A laboratory analysis of **45 lots from 24 beet-juice products** found approximately 50-fold variation between products and an average 30% variation between lots of the same product. That survey describes products tested then, rather than certifying today's shelf. It explains why “beetroot powder, 5 g” alone cannot tell me the exposure used in a performance trial. [Gallardo and Coggan, 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC8512783/).
 
