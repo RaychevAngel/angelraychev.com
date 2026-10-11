@@ -2,7 +2,7 @@
 title: Food patterns and the food matrix
 description: What dietary-pattern and controlled-feeding trials add to a nutrient table, and what their results cannot isolate.
 order: 10
-updated: 2026-10-10
+updated: 2026-10-11
 
 category: dietary-patterns
 ---
@@ -43,9 +43,7 @@ That is evidence for a specific mechanism, not a finding that processing never m
 
 ## Structure also changes how a nutrient total is used
 
-A controlled crossover study in **18 people** measured metabolizable energy from different almond forms. Whole natural almonds supplied **4.42 kcal/g** in that experiment, compared with **6.53 kcal/g** for almond butter. Grinding changes access to the fat inside the nut's structure. These measured values describe the tested diets; they are not a correction to apply automatically to my personal food log. [Gebauer et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27713968/).
-
-The same caution applies to broad claims about a “food matrix.” A plausible mechanism is useful when tied to a measured endpoint. It does not make calories irrelevant, guarantee that an unprocessed food suits my appetite, or establish benefits for every fermented or plant food.
+An **18-person crossover study** measured **4.42 kcal/g** for whole natural almonds and **6.53 kcal/g** for pure almond butter. These are experimental diet averages, not personal calorie corrections. [Gebauer et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27713968/). The [nut-energy companion](/nutrition/research/whole-nuts-butter-and-measured-energy/) examines processing comparisons and balance measurements.
 
 ## What changes in my shopping routine
 
