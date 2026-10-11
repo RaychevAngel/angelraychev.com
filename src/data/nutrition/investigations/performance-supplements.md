@@ -63,3 +63,5 @@ For a closer look at newer evidence, read [creatine exposure, timing and measure
 If I try one option, choose a plain product with a stated dose, change one variable at a time, and record the same training endpoint along with sleep and tolerability. Independent product testing reduces contamination risk but cannot guarantee efficacy or absolute safety. Avoid a blend whose ingredients make both dose and causation unclear. [IOC supplement consensus](https://pmc.ncbi.nlm.nih.gov/articles/PMC5867441/).
 
 Food, appropriate training and sleep remain the foundation. No supplement is recorded as adopted here, and doses above describe established study or consensus protocols rather than a personalized prescription.
+
+The [ketone-drink investigation](/nutrition/research/ketone-drinks-performance-recovery-and-cognition/) examines newer performance, recovery and cognitive results. No personal ketone use is reported.

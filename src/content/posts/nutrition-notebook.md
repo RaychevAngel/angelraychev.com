@@ -26,6 +26,18 @@ Some quantities are clear: the entire 32 oz yogurt tub, four bananas and one ric
 
 This foundation is adjustable. Walnuts are a food I like, and fruit substitutions such as kiwi, mango or melon are worth trying for enjoyment and variety. Optional additions should earn their place through a useful contribution, good taste, manageable volume and realistic storage. An interesting study is a reason to investigate a food, not an obligation to buy another item every day.
 
+## What I would change next
+
+Keep the arrangement that worked: yogurt, fruit and nuts during the day, with a simple savory meal. Try a different fruit in place of some bananas or the apple; keep walnuts because I enjoy them. The [fruit](/nutrition/research/fruit-substitutions/) and [nut](/nutrition/research/nut-choices/) investigations explain the nutritional tradeoffs without requiring a larger meal.
+
+Follow through on the vitamin D purchase I had planned, and choose a manageable vitamin A food substitution from the [vitamin D](/nutrition/guide/vitamin-d/) and [vitamin A](/nutrition/guide/vitamin-a/) guides. These remain decisions to try; a planned supplement or uneaten food never enters the daily totals.
+
+For fish, compare the label for the whole portion and prioritize a preparation I like. The intensely salty anchovies need not become a daily meal. [Small fish and other seafood](/nutrition/research/fish-seafood/) can be tried as a simple meal or a rotation with chicken, keeping appetite and storage in view.
+
+The highest-value information check is the actual nonfat yogurt label, followed by the chicken's edible amount and the sauce portion. These inputs affect several estimates at once. [Iodine](/nutrition/guide/iodine/) and restaurant [sodium](/nutrition/guide/sodium/) remain important unknowns; a missing database value is no reason to supplement or add salt.
+
+I would leave further optimization optional until storage and the ordinary routine are stable. The [training and recovery research](/nutrition/research/#recovery) can guide a specific experiment when there is a question to answer. It does not make broth, powders or an experimental compound necessary purchases.
+
 ## How I want to make changes
 
 First, make the pattern work as food. A useful change can be a substitution, a smaller portion, better timing or a more coherent meal. It need not increase the shopping list. The practical questions are whether I enjoy it, can finish it, can store it, and feel able to train on it.

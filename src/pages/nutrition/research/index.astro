@@ -23,6 +23,12 @@ const frontmatter = {
 <Post frontmatter={frontmatter}>
   <NutritionNav current="research" />
   <p>Some useful questions cross nutrient boundaries. These investigations follow foods and eating patterns, the demands of training, performance supplements, and newer experimental ideas. Each connects the relevant evidence to a practical decision and keeps the outcome being tested clear.</p>
+  <nav class="research-index" aria-label="Investigation topics">
+    <p>Jump to a topic:</p>
+    <ul>{categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title]) => <li>
+      <a href={`#${id}`}>{title}</a><span class="dim"> ({entries.filter((entry) => entry.category === id).length})</span>
+    </li>)}</ul>
+  </nav>
   {entries.length > 0 ? categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title, description]) => <section aria-labelledby={id}>
     <h2 id={id}>{title}</h2>
     <p>{description}</p>
@@ -38,4 +44,8 @@ const frontmatter = {
 <style>
   .description { display: block; color: var(--dim); font-size: 13px; margin-top: 4px; }
   li { margin-bottom: 20px; }
+  .research-index { margin: 28px 0 40px; }
+  .research-index p { margin-bottom: 12px; }
+  .research-index ul { margin-top: 0; }
+  .research-index li { margin-bottom: 8px; }
 </style>
