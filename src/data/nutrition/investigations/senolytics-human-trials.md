@@ -2,11 +2,11 @@
 title: Senolytics and the first useful human questions
 description: A new randomized liver-disease result is promising, while bone and lung trials show why cell-clearance claims need specific outcomes.
 order: 74
-updated: 2026-10-10
+updated: 2026-10-11
 category: experimental
 ---
 
-Senolytic research has moved beyond experiments in mice, including a positive small randomized liver-disease trial published in October 2026. That changes the claim that there are no meaningful human signals. It does not establish a general-purpose anti-aging intervention or a reason for me to add a senolytic regimen.
+The human evidence now includes a positive randomized liver trial. Its disease-specific result does not establish general anti-aging or training benefits.
 
 ## What is being targeted
 
@@ -16,9 +16,9 @@ A useful human trial needs to identify the intervention, tissue, disease or func
 
 ## October 2026: a positive liver-disease trial
 
-A double-blind trial randomized 31 people with fibrotic metabolic dysfunction-associated steatohepatitis, or MASH, to dasatinib plus quercetin or placebo over 21 weeks. The primary biopsy endpoint—at least one-stage fibrosis improvement without worsening MASH—occurred in eight of 17 treated participants versus one of 14 controls. The absolute difference was 40 percentage points, with a 95% confidence interval of 8.2–64.5; Fisher's exact P=0.021. Three blinded pathologists assessed the biopsies. [Original Nature Metabolism trial](https://www.nature.com/articles/s42255-026-01643-4).
+A double-blind trial randomized 31 adults with fibrotic metabolic dysfunction-associated steatohepatitis (MASH) to dasatinib plus quercetin or placebo for 21 weeks. The primary biopsy outcome—at least one-stage fibrosis improvement without worsening MASH—occurred in 8/17 versus 1/14: difference 40 percentage points (95% CI 8.2–64.5; P=.021). Three blinded pathologists assessed biopsies. [Original trial](https://www.nature.com/articles/s42255-026-01643-4).
 
-The important limitations sit beside that result. Four follow-up biopsies were missing and counted as nonresponses; a worst-case sensitivity analysis no longer reached statistical significance. Baseline diabetes prevalence differed between groups. Adverse events affected 14 of 17 treated participants versus six of 14 controls, with one treatment withdrawal for gastrointestinal symptoms and fatigue. The study also found changes in senescence-associated gene signatures. It is promising disease-specific proof of principle, but small and short, with no evidence here of longer life, improved healthy training, or a general “cure” for liver disease.
+Four missing biopsies counted as nonresponses; worst-case sensitivity lost significance. Baseline diabetes differed. Adverse events affected 14/17 versus 6/14; one participant withdrew with gastrointestinal symptoms and fatigue. Gene-signature changes accompanied the result. Grant-funded; two authors disclosed senolytic-patent interests. This small, short disease-specific trial established neither longer life nor improved healthy training.
 
 ## Bone: the overall result and subgroup result differ
 

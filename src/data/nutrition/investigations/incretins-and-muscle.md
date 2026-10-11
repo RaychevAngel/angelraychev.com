@@ -2,7 +2,7 @@
 title: "Incretin drugs: weight, muscle and useful outcomes"
 description: "What GLP-1, dual and triple agonist trials establish, including the September 2026 retatrutide results."
 order: 50
-updated: "2026-10-10"
+updated: "2026-10-11"
 category: experimental
 ---
 
@@ -36,9 +36,9 @@ Measured function can improve too. In **529 people with obesity and heart failur
 
 ## Retatrutide: the newer evidence and the headline discrepancy
 
-The **September 29, 2026 TRIUMPH-1 report** randomized **2,339 adults with obesity without diabetes** for 80 weeks. Mean weight changes were **−17.6%, −23.7% and −25.0%** at the three investigated doses, versus **−3.9%** with placebo. These are the treatment-regimen estimates, which address average effects regardless of adherence or use of prohibited weight-management treatments. Knee-pain and sleep-apnea outcomes also improved in relevant subgroups; gastrointestinal adverse events were most common. This is now phase 3 human evidence, rather than only the widely discussed 2023 phase 2 result. [Original TRIUMPH-1 report](https://www.nejm.org/doi/full/10.1056/NEJMoa2604169)
+The September 29, 2026 TRIUMPH-1 report randomized 2,339 adults with obesity without diabetes for 80 weeks. Treatment-regimen weight changes were −17.6%, −23.7% and −25.0%, versus −3.9% with placebo, estimating effects regardless of adherence or prohibited weight-management treatment. Knee-pain and sleep-apnea outcomes improved in relevant subgroups; gastrointestinal events were most common. [Original report](https://www.nejm.org/doi/full/10.1056/NEJMoa2604169).
 
-The sponsor's **28.3%** highest-dose headline answers a different statistical question: the efficacy estimate assumes participants remained on study treatment without prohibited treatment. Its **30.3% at 104 weeks** comes from a selected extension of people who completed and tolerated the initial period, with additional eligibility restrictions. Those figures are not interchangeable with the 25.0% primary treatment-regimen result, and the extension is not an independent trial. At the highest investigated dose, the sponsor reported 11.3% stopping because of adverse events versus 4.9% with placebo, and altered skin sensation in 12.5% versus 0.9%. These are relevant tradeoffs alongside the weight result. [Sponsor's results and estimand definitions](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss)
+The sponsor's 28.3% highest-dose efficacy estimate instead assumes continued treatment without prohibited therapy. Its 30.3% at 104 weeks describes a selected extension of completers who tolerated treatment and met further eligibility restrictions. Neither replaces the 25.0% primary estimate; the extension is the same trial. Highest-dose adverse-event discontinuations were 11.3% versus 4.9% with placebo, and altered skin sensation 12.5% versus 0.9%. [Sponsor results and definitions](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss).
 
 A strong trial does not establish the identity, sterility or exposure of a separately marketed vial. FDA currently states that retatrutide is not approved and cannot be used in compounding under federal law. The phase 3 result and this regulatory status can both be true. [FDA current statement](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss)
 
