@@ -55,7 +55,6 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
     <p class="macro-summary"><strong>{partialMacroSummary ? 'Available-value subtotal:' : 'Model estimate:'}</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
     <p>These figures use the assumptions below. They describe estimated intake and do not establish an energy requirement.</p>
     {entry.nutrition.source_note && <p>{entry.nutrition.source_note}</p>}
-    {entry.nutrition.revision_note && <p class="dim">Calculation version {entry.nutrition.version}, reviewed {entry.nutrition.reviewed_date}: {entry.nutrition.revision_note}</p>}
     <details>
       <summary>Calculation portions and assumptions</summary>
       <div class="tablewrap"><table aria-label={`${entry.title}: calculation portions`}>
@@ -83,9 +82,10 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
       </>)}
     </details>
   </> : <p class="dim">No full-day calculation has been accepted for this record. Reported quantities, missing portions and the scope of the account remain visible above; earlier meal scenarios do not substitute for confirmed consumption.</p>}
-  {entry.corrections?.length > 0 && <details>
+  {(entry.corrections?.length > 0 || entry.nutrition?.revision_note) && <details>
     <summary>Corrections and interpretation</summary>
-    <ul>{entry.corrections.map((text) => <li>{text}</li>)}</ul>
+    {entry.nutrition?.revision_note && <p class="dim">Calculation version {entry.nutrition.version}, reviewed {entry.nutrition.reviewed_date}: {entry.nutrition.revision_note}</p>}
+    {entry.corrections?.length > 0 && <ul>{entry.corrections.map((text) => <li>{text}</li>)}</ul>}
   </details>}
 </section>
 <style>
