@@ -36,7 +36,7 @@ The paper described treatment as well tolerated. FDA's fuller evaluation notes t
 
 ## Ibutamoren: more fat-free mass did not establish better function
 
-In a randomized trial of **65 healthy adults aged 60–81**, the one-year mean change in fat-free mass was +1.1 kg with MK-677 versus −0.5 kg with placebo. Strength and function did not improve. The study was too small to exclude every functional benefit, but its positive body-composition outcome cannot be substituted for a demonstrated improvement in function. Fasting glucose increased and insulin sensitivity decreased; increased appetite, edema and muscle pain were reported. The two-year analyses were follow-up of this cohort, not a second independent trial. [Original older-adult trial](https://pubmed.ncbi.nlm.nih.gov/18981485/)
+A trial in healthy older adults randomized **71 participants; 65 completed the first year**. The one-year mean change in fat-free mass was +1.1 kg with MK-677 versus −0.5 kg with placebo. Strength and function did not improve. The study was too small to exclude every functional benefit, but its positive body-composition outcome cannot be substituted for a demonstrated improvement in function. Fasting glucose increased and insulin sensitivity decreased; increased appetite, edema and muscle pain were reported. The two-year analyses were follow-up of this cohort, not a second independent trial. [Original older-adult trial](https://pubmed.ncbi.nlm.nih.gov/18981485/)
 
 Fat-free mass includes water and other non-fat tissues. That trial also measured changes in intracellular water. A gain in fat-free mass should therefore not be reported as an equal gain in contractile muscle.
 

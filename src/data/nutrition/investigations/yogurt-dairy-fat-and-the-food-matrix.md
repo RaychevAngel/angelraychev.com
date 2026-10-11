@@ -26,7 +26,7 @@ An exploratory 2025 lipid report used a crossover completed by **13 adults aged 
 
 The same cohort's glucose report identifies **no primary difference in glucose at 120 minutes of the oral glucose-tolerance test**, alongside lower fructosamine and selected hormone changes. These are two reports from one small experiment, not independent replications. [Original glucose report, abstract](https://pubmed.ncbi.nlm.nih.gov/40139076/)
 
-A lower triglyceride result in this setting is interesting. It does not isolate dairy fat from the accompanying carbohydrate substitution, establish diabetes prevention, or demonstrate that my current yogurt should change.
+This comparison changes dairy fat and carbohydrate together. It does not isolate their effects or establish diabetes prevention.
 
 ## A 2026 fermented-dairy trial does not establish a metabolic upgrade
 

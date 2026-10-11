@@ -18,7 +18,7 @@ In COSMOS, the primary cardiovascular result was inconclusive while a secondary 
 
 The confidence interval also matters: missing a statistical threshold is not proof of exactly zero effect. Conversely, one favorable result among many tests deserves confirmation before becoming a reason to buy a supplement. Even confirmation of the extract would require a separate argument about ordinary cocoa or chocolate. The [food investigation](/nutrition/research/cocoa-tea-coffee/) retains the doses and results.
 
-The matcha trial likewise had null primary outcomes and a favorable secondary domain. The [trial report](https://pmc.ncbi.nlm.nih.gov/articles/PMC11364242/) and [registry](https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000040592) identify that hierarchy. Reading only the favorable domain would turn a limited result into a broad cognition claim. Registration supports the distinction; it does not establish that every later analytic detail was fixed in advance. A detailed analysis plan, its date and any amendments answer that further question.
+Judge a favorable secondary finding in relation to the primary question and other analyses. The [matcha investigation](/nutrition/research/cocoa-tea-coffee/) keeps its trial results together. A registry entry alone does not establish that every later analytical detail was fixed in advance; examine the dated analysis plan and amendments.
 
 ## Ask where the measurement sits in the proposed benefit
 
@@ -46,7 +46,7 @@ For a decision, ask how large the effect is and whether it answers the goal. The
 
 ## Read commercial participation as a design question
 
-The matcha paper reported no external funding while disclosing manufacturer employees and company-supplied matcha. “No external funding” does not establish independence. Examine the roles, outcome plan and replication rather than dismiss either a null or favorable result by source alone. [Matcha disclosures](https://pmc.ncbi.nlm.nih.gov/articles/PMC11364242/).
+A funding statement alone does not establish independence. Inspect author affiliations, product supply and commercial roles alongside the design and outcome plan. The [matcha investigation](/nutrition/research/cocoa-tea-coffee/) keeps its specific disclosures beside the results. A relationship also does not by itself invalidate a finding.
 
 The WAHA lipid report disclosed industry funding and author relationships alongside a statement that the funding agency did not participate in design, analysis or writing. Read the relationship and claimed safeguards. [WAHA disclosures](https://pmc.ncbi.nlm.nih.gov/articles/PMC8478315/). The [collagen investigation](/nutrition/research/collagen-broth-and-connective-tissue/) similarly places product-specific disclosures beside its trials. A disclosure cannot supply a missing clinical outcome or a better comparator; it tells the reader where additional independent confirmation would be useful.
 
