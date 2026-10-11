@@ -8,7 +8,7 @@ category: foods
 
 ## The useful question is what changes in a particular diet
 
-I enjoy walnuts and almonds. It would take meaningful human evidence to conclude that removing them improves my diet simply because they contain omega-6. “Seed oil” also groups oils with very different fatty-acid compositions. One recent trial compared two varieties of safflower oil: both came from seeds, but one contained far more linoleic acid than the other. Food category, fatty-acid dose and replacement food need separate attention. [Sergeant and colleagues, 2026](https://doi.org/10.3390/nu18111814)
+I enjoy walnuts and almonds. Removing foods I like needs evidence about a concrete replacement, rather than a label such as “seed oil.” The studies below compare actual substitutions.
 
 Linoleic acid, **LA**, is an essential omega-6 fatty acid. The US reference for men aged 19–30 is an **AI of 17 g/day**; a separate **AMDR of 5–10% of energy** concerns n-6 PUFA, chiefly LA. These were set under uncertainty, and neither is a clinical deficiency cutoff or a toxicity threshold. [Original essential-fat reference, printed p.464](https://www.nationalacademies.org/read/10490/chapter/10), [Original distribution-range chapter, printed pp.825–826](https://www.nationalacademies.org/read/10490/chapter/13)
 
@@ -38,7 +38,7 @@ The June 2026 safflower-oil study randomized **80 adults** and retained **52 thr
 
 The inflammatory challenge occurred **in a blood sample outside the body**. Changes in these responses establish altered biochemistry, without establishing more cardiovascular events, worse recovery or inflammatory disease. They warrant further trials rather than a personalized elimination target. [Full original study](https://europepmc.org/articles/PMC13259401), [Registered biochemical outcomes](https://clinicaltrials.gov/study/NCT02962128)
 
-Plasma EPA, stimulated cell responses, circulating CRP and disease outcomes are different measurements. A universal “inflammatory” label hides that distinction.
+
 
 ## People may respond differently, but the evidence is not a diet prescription
 
@@ -50,4 +50,4 @@ The 2025–2030 US Scientific Foundation calls for more research separating whol
 
 The [nutrient guide](/nutrition/guide/) places current food-policy references beside the distinct nutrient requirements.
 
-For my present daily-shopping pattern, **keep enjoyable nut portions and palatable oily fish**, and clarify the restaurant sauce if changing energy or fat is useful. An unknown oil recipe is a measurement problem. I do not need an additional bottle of oil or an elaborate avoidance routine to act on these studies. Research on isolated oils does not measure the full effect of walnuts, and trials of ordinary dietary substitutions do not settle every question about repeatedly heated frying oils. Improving the diet still means comparing a concrete replacement, appetite, total portions and sustained outcomes—not assigning every omega-6-containing food one health label.
+For my present daily-shopping pattern, **keep enjoyable nut portions and palatable oily fish**, and clarify the restaurant sauce if changing energy or fat is useful. An unknown oil recipe is a measurement problem. I do not need an additional bottle of oil or an elaborate avoidance routine. These trials do not measure walnuts or repeatedly heated frying oils. The useful comparison is a concrete replacement, its portions and sustained outcomes.
