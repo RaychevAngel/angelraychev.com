@@ -5,6 +5,7 @@ import FoodRecordEntry from "../../../components/FoodRecordEntry.astro";
 import record from "../../../data/nutrition/record.json";
 import guide from "../../../data/nutrition/guide.json";
 const guideEntry = record.entries.find((entry) => guide.record_href.endsWith(`#${entry.id}`));
+const latestEntry = record.entries.at(-1);
 const frontmatter = {
   title: "Food record",
   description: "The reported eating days, portions, appetite, taste and training behind my nutrition notebook.",
@@ -14,7 +15,8 @@ const frontmatter = {
 <Post frontmatter={frontmatter}>
   <NutritionNav current="record" />
   <p>This is the growing eating record behind the <a href="/nutrition-notebook/">nutrition notebook</a>. It preserves food eaten, actually taken supplements and available observations about taste, appetite and training. Purchases, proposed meals and discarded leftovers retain their own status.</p>
-  <p>The September diary supplies three dated, partial food reports and a described eating pattern. The later October reports were made around midnight; their reporting dates are known, while the calendar eating dates remain unconfirmed. Reported portions and quantities assumed for a calculation are displayed separately.</p>
+  <p>The September diary supplies three dated, partial food reports and a described eating pattern. Earlier October reports retain unconfirmed eating dates. A later day is dated when I explicitly confirm it. Reported portions and quantities assumed for a calculation are displayed separately.</p>
+  {latestEntry && <p><strong>Latest entry:</strong> <a href={`#${latestEntry.id}`}>{latestEntry.title}</a>{latestEntry.food_date && <> — food date {latestEntry.food_date}</>}.</p>}
   <p>The current <a href="/nutrition/guide/">nutrient guide</a> uses <a href={guide.record_href}>{guideEntry?.title ?? "the linked eating entry"}</a>. Its figures and attention judgments remain tied to that entry until reviewed again.</p>
   <h2 id="record-index">Entries</h2>
   <ul class="record-index">
