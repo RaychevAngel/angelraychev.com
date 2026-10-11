@@ -50,7 +50,7 @@ const scopeText = (entry) => {
   <div class="intake-panels">
     {topic.fields.map((field) => <section aria-labelledby={`field-${field.id.replaceAll("_", "-")}`}>
       <FieldHeading id={`field-${field.id.replaceAll("_", "-")}`}>{field.name}</FieldHeading>
-      <p class="intake-line"><strong>{format(field.food_total, field.unit)}</strong> counted from food.
+      <p class="intake-line"><strong>{format(field.food_total, field.unit)}</strong> {field.food_total == null ? "— no food estimate available." : field.missing_foods.length > 0 ? "available-value subtotal from food; some foods are unquantified." : "counted from food."}
         {field.logged_supplement_total > 0 && <> {format(field.logged_supplement_total, field.unit)} from logged supplements.</>}
         {field.logged_supplement_unknown && <> A logged supplement amount is unknown.</>}
       </p>

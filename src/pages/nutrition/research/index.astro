@@ -4,6 +4,7 @@ import NutritionNav from "../../../components/NutritionNav.astro";
 const pages = import.meta.glob("../../../data/nutrition/investigations/*.md", { eager: true });
 const entries = Object.entries(pages).map(([path, page]) => ({
   slug: path.split("/").pop().replace(/\.md$/, ""),
+  sectionTitles: page.getHeadings().map((heading) => heading.text).join(" "),
   ...page.frontmatter,
 })).sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
 const categories = [
@@ -23,16 +24,25 @@ const frontmatter = {
 <Post frontmatter={frontmatter}>
   <NutritionNav current="research" />
   <p>Some useful questions cross nutrient boundaries. These investigations follow foods and eating patterns, the demands of training, performance supplements, and newer experimental ideas. Each connects the relevant evidence to a practical decision and keeps the outcome being tested clear.</p>
-  <nav class="research-index" aria-label="Investigation topics">
+  <div class="research-search" id="research-search" hidden>
+    <label for="investigation-query">Find an investigation</label>
+    <p class="search-help" id="investigation-search-help">Search titles, descriptions and section headings, for example “sleep,” “rice” or “protein.”</p>
+    <div class="search-controls">
+      <input id="investigation-query" type="search" autocomplete="off" aria-describedby="investigation-search-help" />
+      <button id="clear-investigation-query" type="button" hidden>Clear search</button>
+    </div>
+    <p class="search-status" id="investigation-search-status" role="status" aria-live="polite" aria-atomic="true">{entries.length} investigations available.</p>
+  </div>
+  <nav class="research-index" id="research-topic-index" aria-label="Investigation topics">
     <p>Jump to a topic:</p>
-    <ul>{categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title]) => <li>
-      <a href={`#${id}`}>{title}</a><span class="dim"> ({entries.filter((entry) => entry.category === id).length})</span>
+    <ul>{categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title]) => <li data-topic-link={id}>
+      <a href={`#${id}`}>{title}</a><span class="dim"> (<span data-topic-count>{entries.filter((entry) => entry.category === id).length}</span>)</span>
     </li>)}</ul>
   </nav>
-  {entries.length > 0 ? categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title, description]) => <section aria-labelledby={id}>
+  {entries.length > 0 ? categories.filter(([id]) => entries.some((entry) => entry.category === id)).map(([id, title, description]) => <section aria-labelledby={id} data-research-topic={id}>
     <h2 id={id}>{title}</h2>
     <p>{description}</p>
-    <ul>{entries.filter((entry) => entry.category === id).map((entry) => <li>
+    <ul>{entries.filter((entry) => entry.category === id).map((entry) => <li data-investigation data-search={`${entry.title} ${entry.description ?? ""} ${entry.sectionTitles} ${title}`}>
       <a href={`/nutrition/research/${entry.slug}/`}>{entry.title}</a>
       {entry.description && <span class="description">{entry.description}</span>}
     </li>)}</ul>
@@ -41,6 +51,51 @@ const frontmatter = {
   <p>The relevant questions are what it changes, at what exposure, in which population, and with what demonstrated outcome. A result in cells, a change in a blood marker and an improvement in people's health or performance establish different things. The sections retain these distinctions beside their claims.</p>
   <p>The <a href="/nutrition-notebook/">notebook</a> holds the current decisions. The <a href="/nutrition/record/">food record</a> shows what I actually ate and how that felt.</p>
 </Post>
+<script>
+  const search = document.querySelector<HTMLElement>("#research-search");
+  const query = document.querySelector<HTMLInputElement>("#investigation-query");
+  const clear = document.querySelector<HTMLButtonElement>("#clear-investigation-query");
+  const status = document.querySelector<HTMLElement>("#investigation-search-status");
+  const index = document.querySelector<HTMLElement>("#research-topic-index");
+  const items = Array.from(document.querySelectorAll<HTMLElement>("[data-investigation]"));
+  const topics = Array.from(document.querySelectorAll<HTMLElement>("[data-research-topic]"));
+  const normalize = (text: string) => text.normalize("NFKD").replace(/\p{M}/gu, "").toLocaleLowerCase();
+  if (search && query && clear && status && index) {
+    const update = () => {
+      const terms = normalize(query.value).trim().split(/\s+/).filter(Boolean);
+      let count = 0;
+      for (const item of items) {
+        item.hidden = !terms.every((term) => normalize(item.dataset.search ?? "").includes(term));
+        if (!item.hidden) count += 1;
+      }
+      for (const topic of topics) {
+        const matches = Array.from(topic.querySelectorAll<HTMLElement>("[data-investigation]")).filter((item) => !item.hidden).length;
+        topic.hidden = matches === 0;
+        const link = document.querySelector<HTMLElement>(`[data-topic-link="${topic.dataset.researchTopic}"]`);
+        if (link) {
+          link.hidden = matches === 0;
+          const label = link.querySelector("[data-topic-count]");
+          if (label) label.textContent = String(matches);
+        }
+      }
+      clear.hidden = query.value.length === 0;
+      index.hidden = count === 0;
+      status.textContent = terms.length === 0
+        ? `${items.length} investigations available.`
+        : count === 0
+          ? "No titles, descriptions or section headings match. Try a shorter or different search."
+          : `${count} of ${items.length} investigations match.`;
+    };
+    query.addEventListener("input", update);
+    clear.addEventListener("click", () => {
+      query.value = "";
+      update();
+      query.focus();
+    });
+    search.hidden = false;
+    update();
+  }
+</script>
 <style>
   .description { display: block; color: var(--dim); font-size: 13px; margin-top: 4px; }
   li { margin-bottom: 20px; }
@@ -48,4 +103,11 @@ const frontmatter = {
   .research-index p { margin-bottom: 12px; }
   .research-index ul { margin-top: 0; }
   .research-index li { margin-bottom: 8px; }
+  .research-search { margin: 28px 0; }
+  .research-search label { display: block; }
+  .search-help, .search-status { color: var(--dim); font-size: 13px; margin: 8px 0; }
+  .search-controls { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .search-controls input { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--rule); border-radius: 0; padding: 8px; width: 360px; max-width: 100%; }
+  .search-controls button { font: inherit; font-size: 13px; color: var(--fg); background: transparent; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .search-controls :focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
 </style>

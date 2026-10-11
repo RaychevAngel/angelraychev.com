@@ -14,7 +14,7 @@ const href = (row) => {
 };
 ---
 <h2 id="nutrient-index">Nutrient index</h2>
-<p class="index-help">Choose a nutrient to read its intake panel and explanation. The attention labels concern the recorded pattern; they are reviewed judgments.</p>
+<p class="index-help">Choose a nutrient to read its intake panel and explanation. <strong>Review</strong> means a possible adjustment deserves consideration. <strong>Clarify</strong> means important information is missing. The labels are reviewed judgments about this record; they do not diagnose nutrient deficiency. <a href="#reference-key">All labels and reference meanings</a>.</p>
 {categories.filter(([id]) => guide.index.some((row) => row.category === id)).map(([id, label]) => <section aria-labelledby={`index-${id}`}>
   <h3 id={`index-${id}`}>{label}</h3>
   <div class="tablewrap">
