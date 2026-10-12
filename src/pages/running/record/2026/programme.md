@@ -2,13 +2,13 @@
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
 description: "The current 18-day cycle, independently earned LT and VO₂ progressions, and the planned transition into the first cycle."
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the transition's status
-updated through **9 October**. The full cycle remains a plan; no completed full
+updated through **11 October**. The full cycle remains a plan; no completed full
 cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -39,14 +39,16 @@ unconfirmed after 9 October's completed set with interrupted timing. I want to
 repeat the workout with reliable timing before moving its progression on.
 The two decisions are independent.
 
+The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
+is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
+after a phone failure. It adds a continuous event benchmark alongside the
+interval observations. The LT and VO₂ progression decisions remain as above.
+
 ## The transition into the first cycle
 
-The [October 9 session](/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing)
-completed all three 800s, with interrupted timing and an additional partial
-effort. Its 2:40 gate remains unconfirmed, so the VO₂ structure stays at
-**3×800 m / 5:30**. After a chill day, the plan is a **5000 m time trial on
-Sunday, October 11**, then **6×200 m on Monday, October 12**. Those upcoming
-sessions are not yet recorded as completed.
+The 9 October 3×800 m and 11 October 5000 m trial are completed transition
+sessions. The next planned session is **6×200 m on Monday, October 12**; it is
+not yet recorded as completed.
 
 This is a short transition into the new cycle. After a chill day on October 13,
 the first full cycle is planned to start on October 14. Its day-16 time trial
@@ -71,8 +73,8 @@ with six chill days.
 
 **FA** is fast running with a second, shorter-recovery set: the current template
 is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
-**TT** is an event time trial; the next proposed endpoints are 5000 m and then
-800 m. **X** keeps an experimental place open, with dense 10/10 running among
+**TT** is an event time trial; the transition's 5000 m is complete, and the first
+full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open, with dense 10/10 running among
 the candidates. F remains the stable 6×200 m benchmark.
 
 The allocation has some freedom built in. Three LT–VO₂ pairs, F, FA, TT and X

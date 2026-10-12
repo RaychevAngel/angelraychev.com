@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-10
+updated: 2026-10-11
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 9 October 2026.** The upcoming
+**This version includes completed training through 11 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -63,11 +63,17 @@ The large gap was 2025: my Strava has one run recorded for the year. Earlier
 repeatable middle-distance training, with some experience still available and
 plenty of fitness to recover.
 
-The present event benchmark is **7:16.67 for 2000 m on 27 September**. It is a
+The first event benchmark of this return was **7:16.67 for 2000 m on 27 September**. It is a
 **181-point table reference**, beside the **855-point 5:30 goal**. The trial was
 self-timed, with its method and pacing retained in the record. After it, I
 wrote, “At least we are on the scale.” The gap is real, and I now have a starting
 point from which later training and tests can mean something.
+
+The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
+now adds a continuous longer-distance reference: **19:59 reported, 3:59.8/km,
+161 points**, beside the **810-point 15:00 goal**. The phone failed near the
+finish; the dated account keeps that estimate with the splits. These two
+different events locate the current return within the larger project.
 
 My [personal bests and recorded best efforts](/running/record/results/#personal-bests)
 have one table of original times, paces, World Athletics points, dates and race
@@ -233,6 +239,21 @@ knees were coming higher; slower running around 4:00–4:05/km seemed to need ve
 little push. Whether the returning movement has lowered the cost of that
 running, and which work helped it return, are questions to investigate.
 
+The [11 October 5000 m](/running/record/2026/#11-october--5000-m-time-trial)
+made the continuous-running question concrete. I report **19:59 (3:59.8/km),
+worth 161 points**. The first four kilometres were **3:58, 4:00, 4:02, 4:02**,
+reaching 4000 m in **16:02**; the final **3:57** is estimated from the accepted
+finish after the phone shut down in the last 50 m. This was one of the most
+unpleasant efforts of my life. My legs were heavy, breathing felt spent, and
+posture and knee lift faded after about 2500–3000 m. I broadly maintained the
+pace, but could no longer maintain the way I wanted to run.
+
+The controlled LT intervals had been about **3:55/km**; this continuous effort
+was about **4:00/km**, with a much greater felt cost. The trial adds the duration
+and continuity that the repetitions could not establish. The longer LT structure
+remains earned, and VO₂ still needs its own confirmation. The movement I can
+maintain belongs beside the time when I compare the next efforts.
+
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
 the next comparison possible. The log preserves what actually happened,
@@ -311,10 +332,10 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-October 9's 3×800 is complete, with the 2:40 gate still awaiting confirmation.
-After a chill day, the plan is a **5000 m time trial on Sunday, October 11**,
-then **6×200 m on Monday, October 12**. Those sessions are not yet recorded as
-completed here.
+The **11 October 5000 m trial is complete**, with a reported 19:59 finish. The
+next planned session is **6×200 m on Monday, October 12**; it has not yet been
+recorded as completed. October 9's 3×800 still leaves its 2:40 gate awaiting
+confirmation.
 
 After a chill day on October 13, the first full cycle is planned to start on
 October 14. Its day-16 time trial would be an 800 m on October 29, if the
@@ -324,16 +345,18 @@ Those sessions ask three immediate questions:
 
 - **Can VO₂ earn its own next step?** The whole 3×800 set needs to average 2:40
   without a major final-repetition collapse, independently of LT's graduation.
-- **What carries through a continuous 5000 m?** The time trial supplies an event
-  result to place beside the interval observations.
+- **How do pace and movement hold up together?** The 5000 supplies a continuous
+  event reference. I want to follow the ability to maintain my stride alongside
+  the splits as the efforts become longer.
 - **Do quicker 200s remain repeatable with the intended movement?** I want to
   start approaching 30-second repetitions, then make that speed repeatable while
   keeping the stride relaxed and coordinated. The benchmark stays at six reps
   with three-minute rests; this ambition adds no new formal graduation ladder.
 
-I am excited about a 5000 around 19:30. It remains a hope to test: even
-3:55/km continuously gives 19:35, and a controlled interval session does not
-guarantee the same pace for a continuous race.
+I had hoped for a 5000 around 19:30. The reported 19:59 is the result of testing
+that hope. Even 3:55/km continuously would give 19:35; the controlled interval
+session did not guarantee that continuous performance. I now have the effort's
+time, pacing and movement to place beside the returning ease of the 1200s.
 
 The track is one part of the capability I want. Precise sessions can coexist
 with running by feel around a neighbourhood, exploring on a Sunday, or casually
