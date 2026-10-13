@@ -3159,11 +3159,11 @@
     },
     {
       "id": "october-13-sardines-and-chicken",
-      "title": "October 13: sardines I enjoyed",
+      "title": "October 12: sardines I enjoyed",
       "kind": "food_report",
-      "food_date": "2026-10-13",
+      "food_date": "2026-10-12",
       "recorded_local_date": "2026-10-13",
-      "date_status": "user_relative_date",
+      "date_status": "user_confirmed",
       "summary": "Wild Planet Pacific sardines were very delicious, eaten drained with skin and bones. The day also included bananas, almonds, eight walnut halves, raspberries, the fortified Trader Joe’s lowfat yogurt, RT chicken and chimichurri, rice, avocado, a quarter of the heirloom tomato pack and a red pepper.",
       "items_reported_eaten": [
         {
@@ -3276,12 +3276,13 @@
         }
       ],
       "coverage": "All foods in this account included; chicken/sauce/fruit weights and restaurant sodium remain unmeasured.",
-      "date_note": "Today interpreted from the October 13 local client date. Quantities and food identities retain their separate evidence.",
+      "date_note": "Eating date explicitly corrected by Angel to October 12. The report was received October 13; its after-midnight timestamp does not establish the eating date.",
       "corrections": [
         "The new fish is Wild Planet Pacific sardines with skin and bones, not the previous Crown Prince boneless product.",
         "This photographed can’s label differs from the current manufacturer website. Calculations retain the actual photographed panel.",
         "Eight walnuts means eight halves. Heirloom tomatoes replace the earlier Kumato product.",
-        "The lowfat fortified Trader Joe’s yogurt returns; the Straus nonfat yogurt is a separate product."
+        "The lowfat fortified Trader Joe’s yogurt returns; the Straus nonfat yogurt is a separate product.",
+        "Eating date corrected from October 13 to October 12 following explicit user confirmation. Food portions, supplements and calculated nutrient amounts are unchanged."
       ],
       "record_scope": "reported_consumption",
       "nutrition": {
@@ -3923,9 +3924,9 @@
         ],
         "scenario_note": "Selected portion/recipe scenarios span approximately 2,535–3,384 kcal. It is not a confidence interval and does not cover every uncertainty. Chicken edible weight, chimichurri oil and avocado flesh drive the selected energy scenarios. The range is not a confidence interval or a measured bound and does not cover every uncertainty in the other fruit sizes or actual recipe.",
         "source_note": "The photographed Wild Planet can supplies this day’s fish values; its panel differs from the current manufacturer webpage. Percent-DV conversions preserve rounding. The printed average 1.8 g EPA+DHA combined is kept separately from individual EPA/DHA and total omega3; unlisted fish micronutrients remain unknown. The fortified yogurt and 25 µg vitamin D capsule use the saved photographed labels. RT chicken/sauce weights and fruit sizes are unmeasured, and restaurant sodium and sauce herbs are unquantified. Rice assumes the most recent photographed jasmine product. The tomato quarter is interpreted as a quarter of the 907 g pack.",
-        "version": 1,
+        "version": 2,
         "reviewed_date": "2026-10-13",
-        "revision_note": "Reviewed October 13 reported portions, photo-specific Wild Planet label, enjoyed skin-and-bone sardines and assumed edible weights."
+        "revision_note": "Eating date corrected to October 12 by explicit user confirmation; foods, portions, supplements and all nutrient estimates unchanged."
       }
     }
   ],
