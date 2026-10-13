@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-11
+updated: 2026-10-12
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 11 October 2026.** The upcoming
+**This version includes completed training through 12 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -233,7 +233,14 @@ maintain knee lift, quick return and posture within each repetition. The effort
 changed along with the times. Those faster 200s tell me something about fast
 running; an 800 time trial still has to answer the endurance question.
 
-I thought the fast work had helped make the latest LT running more relaxed,
+On [October 12](/running/record/2026/#12-october--f-6200-m--3-min), the same
+6×200 m / 3 min structure averaged **30.76**. The first four averaged **31.25**;
+I then pushed the last two to be more sprinty, running **30.22 and 29.30**.
+It felt good. One repetition is now below thirty seconds in this series,
+with the extra intent recorded beside it. I want to see how repeatable that
+speed becomes with the movement I am trying to preserve.
+
+After October 8's LT session, I thought the earlier fast work had helped make it more relaxed,
 even while I was still sore from F and A. My fast stride was opening and my
 knees were coming higher; slower running around 4:00–4:05/km seemed to need very
 little push. Whether the returning movement has lowered the cost of that
@@ -332,10 +339,9 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-The **11 October 5000 m trial is complete**, with a reported 19:59 finish. The
-next planned session is **6×200 m on Monday, October 12**; it has not yet been
-recorded as completed. October 9's 3×800 still leaves its 2:40 gate awaiting
-confirmation.
+The **11 October 5000 m trial and 12 October 6×200 m are complete**. The trial's
+reported finish is 19:59; the 200s averaged 30.76, with a more sprinty final
+29.30. October 9's 3×800 still leaves its 2:40 gate awaiting confirmation.
 
 After a chill day on October 13, the first full cycle is planned to start on
 October 14. Its day-16 time trial would be an 800 m on October 29, if the
@@ -348,8 +354,8 @@ Those sessions ask three immediate questions:
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside
   the splits as the efforts become longer.
-- **Do quicker 200s remain repeatable with the intended movement?** I want to
-  start approaching 30-second repetitions, then make that speed repeatable while
+- **Do quicker 200s remain repeatable with the intended movement?** The 29.30
+  final repetition brings the thirty-second ambition closer. I want to make that speed repeatable while
   keeping the stride relaxed and coordinated. The benchmark stays at six reps
   with three-minute rests; this ambition adds no new formal graduation ladder.
 

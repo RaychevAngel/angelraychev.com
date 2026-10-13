@@ -2,13 +2,13 @@
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
 description: "The current 18-day cycle, independently earned LT and VO₂ progressions, and the planned transition into the first cycle."
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the transition's status
-updated through **11 October**. The full cycle remains a plan; no completed full
+updated through **12 October**. The full cycle remains a plan; no completed full
 cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -46,9 +46,11 @@ interval observations. The LT and VO₂ progression decisions remain as above.
 
 ## The transition into the first cycle
 
-The 9 October 3×800 m and 11 October 5000 m trial are completed transition
-sessions. The next planned session is **6×200 m on Monday, October 12**; it is
-not yet recorded as completed.
+The 9 October 3×800 m, 11 October 5000 m trial and
+[12 October 6×200 m / 3 min](/running/record/2026/#12-october--f-6200-m--3-min)
+are completed transition sessions. The 200s averaged **30.76**, finishing in
+**30.22 and 29.30** with deliberately greater sprinting intent. It felt good;
+the F benchmark remains six repetitions with three-minute rests.
 
 This is a short transition into the new cycle. After a chill day on October 13,
 the first full cycle is planned to start on October 14. Its day-16 time trial
