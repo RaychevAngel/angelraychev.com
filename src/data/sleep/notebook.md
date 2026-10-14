@@ -55,4 +55,4 @@ The project advances by achieving and validating defined targets, then adding th
 
 The [sleep record](/sleep/record/) is an on-demand, growing account. It retains provider values, context, missingness and corrections. It does not silently turn planned changes into completed experiments. The [targets](/sleep/targets/#target-history) retain their revision history, so a future result can be judged against the criterion that was actually in force.
 
-This is the first foundation: one observed night, proposed benchmarks, source-linked investigations and explicit unresolved targets. No sustained milestone or personal intervention effect has yet been demonstrated.
+This foundation now includes repeated observations, proposed benchmarks, source-linked investigations and explicit unresolved targets. No sustained milestone or personal intervention effect has yet been demonstrated.

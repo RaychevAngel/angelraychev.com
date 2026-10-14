@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "entries": [
     {
       "id": "2026-10-13",
@@ -89,9 +89,138 @@
         {
           "kind": "device_record",
           "observation": "A COROS track recording on 12 October ran from 21:36 to 22:00 PDT, lasting 23:47 with average HR 148 bpm. It ended approximately 5h37 before Oura's selected bedtime episode began. Clock-late exercise was therefore not immediately before this recorded sleep; its occurrence has not been assigned a causal effect on the night."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Retrospectively reported on October 14: got up to urinate during this preceding night, motivating earlier yogurt/liquid timing the following day. The trip’s time and duration remain unknown."
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-14",
+          "reason": "Added the retrospective report of a nighttime bathroom trip. Provider values and original retrieval time are unchanged."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14",
+      "wake_date": "2026-10-14",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider sleep wake-up date",
+      "status": "Second paired observation; earlier attempt, disrupted continuity",
+      "retrieved_at": "2026-10-14T20:03:12.360031+00:00",
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.25",
+        "algorithm_version": "v2",
+        "sleep": {
+          "average_breath": 12.25,
+          "average_heart_rate": 49.5,
+          "average_hrv": 58,
+          "awake_time": 4058,
+          "bedtime_end": "2026-10-14T11:03:39.000-07:00",
+          "bedtime_start": "2026-10-14T01:28:31.000-07:00",
+          "day": "2026-10-14",
+          "deep_sleep_duration": 7620,
+          "efficiency": 88,
+          "latency": 630,
+          "light_sleep_duration": 13680,
+          "lowest_heart_rate": 45,
+          "rem_sleep_duration": 9150,
+          "time_in_bed": 34508,
+          "total_sleep_duration": 30450,
+          "type": "long_sleep"
+        },
+        "score": 84,
+        "contributors": {
+          "deep_sleep": 98,
+          "efficiency": 90,
+          "latency": 86,
+          "rem_sleep": 100,
+          "restfulness": 79,
+          "timing": 29,
+          "total_sleep": 91
+        },
+        "readiness_score": 90,
+        "temperature_deviation_c": -0.26,
+        "spo2_average_percent": 96.622,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2, selected sleep/daily_sleep/daily_readiness/daily_spo2 fields"
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 95,
+        "daily_sleep_minutes": 562,
+        "main_sleep_minutes": 562,
+        "main_period_minutes": 578,
+        "main_start": "2026-10-14T01:20:00-07:00",
+        "main_end": "2026-10-14T10:58:00-07:00",
+        "ratios_percent": {
+          "deep": 26,
+          "light": 46,
+          "rem": 25,
+          "awake": 3
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 16,
+        "awake_count_over_5min": 1,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 60,
+        "sleep_hrv_definition": "Official daily assessment; not recalculated from returned points",
+        "daily_min_hr_bpm": 42,
+        "daily_average_hr_bpm": 54,
+        "resting_hr_bpm": 54,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not a complete-day or matched sleep-window measure; resting HR is predicted seated HR",
+        "source": "Official COROS connector: querysleepoverview/querysleephrv/queryavgheartrate/queryrestingheartrate, wake date 20261014"
+      },
+      "self_report": {
+        "restfulness": "Felt able to sleep more around 11:00; no numeric restfulness rating reported.",
+        "daytime_sleepiness": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "intended_bedtime": "Around 01:30, versus usual 03:00–03:30. Estimated 10–15 minutes to fall asleep.",
+        "environment": "Room lights off; laptop red filter; city night light through open curtains during work. Window was not fully closed; cold legs and later cold awakening, then larger blanket and possible excess warmth. Room temperature and light exposure were unmeasured.",
+        "stress": "Stressful work shortly before bed, followed by calmer work/music and five minutes of breathing."
+      },
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "Gym approximately 19:30–20:45 on October 13. Dinner 21:15–22:00: chicken, rice, tomato, avocado and red pepper. Finished yogurt earlier and tried to leave less liquid for dinner; fluid volumes and last substantial drink were not measured."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Warm/hot shower around 00:30; opened the window afterward and drew the curtains. Worked sitting in bed during the last 30–45 minutes, listened to calmer music and did five minutes of breathing."
+        },
+        {
+          "kind": "self_report",
+          "observation": "One reported bathroom trip during the night; exact time/duration unknown. Another early-morning awakening felt cold, followed by a larger blanket. Extended sleep again before deciding to wake around 11:00; out of bed at 11:20."
+        }
+      ],
+      "story": [
+        "I attempted sleep around 01:30, about two hours before my usual bedtime. To make that possible I moved the day earlier: the gym was around 19:30–20:45 and dinner 21:15–22:00. I finished the yogurt earlier and left chicken, rice, tomato, avocado and a red pepper for dinner. I tried to leave less liquid until evening because I had needed to urinate the previous night.",
+        "After dinner I reduced room light and used the laptop’s red filter, but worked by city night light through open curtains. Around 00:30 I took a warm/hot shower, opened the window and then drew the curtains. I worked sitting in bed for the last 30–45 minutes, including stressful work, before calmer music and five minutes of breathing. I estimated 10–15 minutes to fall asleep.",
+        "I woke during the night to urinate and noticed cold legs. At a later early-morning awakening I was cold and added a larger blanket; afterward I may have been too warm. I slept more, turned over for another sleep period and decided to wake around 11:00. I got out of bed at 11:20."
+      ],
+      "interpretation": [
+        "Oura’s sleep score rose from 75 to 84 and estimated sleep increased from 7h02 to 8h27. Its waking estimate also increased from 32 to 68 minutes and efficiency fell from 93% to 88%; restfulness grading fell from 93 to 79. This is improvement in some measured dimensions alongside disrupted continuity.",
+        "The selected episode began about 2h08 earlier. Oura’s 10½-minute latency is close to the reported 10–15 minutes; this supports the feasibility of an earlier attempt on this night, without proving a circadian phase shift or an optimal bedtime.",
+        "COROS estimated 9h22 asleep and 16 minutes awake, versus Oura’s 8h27 asleep and about 68 minutes awake within nearly matching windows. Neither becomes a reference standard by agreeing with the story. Finger-temperature deviation is not room temperature; its −0.26°C reading cannot quantify how cold the room felt."
+      ],
+      "plans": [
+        "Move the majority of food and liquids earlier in the day, and move dinner earlier.",
+        "Ventilate during the day and keep the window fully closed from sunset onward.",
+        "Do stressful work in the afternoon and calmer work after dinner.",
+        "Keep the workout before dinner."
+      ],
+      "corrections": [],
+      "next_focus": [
+        "The clearest reported problem to address is thermal discomfort: a fully closed window and comfortable, adjustable bedding provide a simpler next-night comparison than another dietary restriction.",
+        "Moving substantial drinks earlier is reasonable, but fruit or dinner water content has not been established as the cause of waking. Cold or other disruption can wake someone before they notice the urge. Preserve adequate hydration and note the last substantial drink, urinary urgency and thermal awakenings."
+      ],
+      "nutrition_reference": "/nutrition/record/#october-13-fruit-and-herbs"
     }
   ]
 }

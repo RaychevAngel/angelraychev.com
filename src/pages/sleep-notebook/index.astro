@@ -4,7 +4,7 @@ import SleepNav from "../../components/SleepNav.astro";
 import record from "../../data/sleep/record.json";
 import { Content } from "../../data/sleep/notebook.md";
 const latest = record.entries.at(-1);
-const frontmatter = { title: "Sleep performance", description: "An explicit pursuit of better sleep: goals, evidence, measurements, a daily record and the next frontier.", updated: "2026-10-13" };
+const frontmatter = { title: "Sleep performance", description: "An explicit pursuit of better sleep: goals, evidence, measurements, a daily record and the next frontier.", updated: record.updated };
 ---
 <Post frontmatter={frontmatter}>
   <SleepNav current="notebook" />
@@ -18,5 +18,6 @@ const frontmatter = { title: "Sleep performance", description: "An explicit purs
     <tr><th scope="row">Personal physiological optimum</th><td>Not established; each metric has a separate <a href="/sleep/measurements/">interpretation and target status</a></td></tr>
     <tr><th scope="row">Next decision</th><td>Identify a meaningful limiting factor and a measurable outcome before selecting an intervention</td></tr>
   </tbody></table></div>
+  {latest?.id === "2026-10-14" && <p><strong>14 October:</strong> an earlier sleep attempt and more estimated sleep, alongside reported cold/blanket discomfort and a bathroom trip. Oura scored 84; COROS 95. Their waking estimates differed sharply. <a href="/sleep/record/#night-2026-10-14">The account, comparison and next-night plan</a>.</p>}
   <Content />
 </Post>
