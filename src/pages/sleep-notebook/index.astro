@@ -14,10 +14,10 @@ const frontmatter = { title: "Sleep performance", description: "An explicit purs
   <div class="tablewrap"><table aria-label="Sleep project position"><thead><tr><th scope="col">Question</th><th scope="col">Current position</th></tr></thead><tbody>
     <tr><th scope="row">Recorded evidence</th><td>{record.entries.length} paired {record.entries.length === 1 ? "night" : "nights"}; latest ending <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a></td></tr>
     <tr><th scope="row">Device grading</th><td>Oura {latest?.oura.score}; COROS {latest?.coros.sleep_score}</td></tr>
-    <tr><th scope="row">First target proposals</th><td><a href="/sleep/targets/#score-milestones">Sustained optimal grading, then a higher consistent score</a></td></tr>
+    <tr><th scope="row">First target proposals</th><td><a href="/sleep/targets/#score-milestones">14-day average Oura score ≥85, then a 28-day average ≥90 with coverage and consistency requirements</a></td></tr>
     <tr><th scope="row">Personal physiological optimum</th><td>Not established; each metric has a separate <a href="/sleep/measurements/">interpretation and target status</a></td></tr>
-    <tr><th scope="row">Next decision</th><td>Identify a meaningful limiting factor and a measurable outcome before selecting an intervention</td></tr>
+    <tr><th scope="row">Next decision</th><td>{latest?.next_focus?.[0] ?? "Identify a meaningful limiting factor and a measurable outcome before selecting an intervention"}</td></tr>
   </tbody></table></div>
-  {latest?.id === "2026-10-14" && <p><strong>14 October:</strong> an earlier sleep attempt and more estimated sleep, alongside reported cold/blanket discomfort and a bathroom trip. Oura scored 84; COROS 95. Their waking estimates differed sharply. <a href="/sleep/record/#night-2026-10-14">The account, comparison and next-night plan</a>.</p>}
+  <p><a href="/sleep/record/#recent-comparison">Compare the recent nights</a> · <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">The 14 October routine proposal</a></p>
   <Content />
 </Post>

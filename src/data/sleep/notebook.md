@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-13"
+updated: "2026-10-14"
 ---
 
 ## The target has to survive scrutiny
@@ -11,11 +11,17 @@ Some quantities are worth increasing when insufficient. Others belong in an appr
 
 A fixed wake time is not the initial goal. Clock timing, regularity and alignment with internal phase are separate questions. Choosing a preferred hour before examining those questions would define the solution too early.
 
-## What the first night teaches us
+<span id="what-the-first-night-teaches-us"></span>
 
-The two devices selected nearly the same episode, but differed in estimated waking and assigned markedly different sleep grades. Oura's timing and total-sleep contributors were weaker than its deep-sleep and efficiency contributors. These observations identify questions about scoring and measurement; they do not establish a sleep disorder or the best intervention.
+## What the first two observations show
 
-The [first record](/sleep/record/#night-2026-10-13) preserves both accounts, original durations, provider scope and missing personal context. Contributor grades are separate from percentages. For example, a high efficiency contributor does not mean the same numerical percentage of the episode was asleep.
+The first two nights expose two different questions. Can I improve the sleep I obtain, and do the devices agree closely enough to judge the change? The [recent comparison](/sleep/record/#recent-comparison) keeps both questions visible.
+
+On 14 October, after an earlier attempt, Oura's score rose from 75 to 84 and estimated sleep increased from 7h02 to 8h27. It also estimated more awake time—about 32 to 68 minutes—and efficiency fell from 93% to 88%. I reported a bathroom trip, cold legs, a later cold awakening and a larger blanket that may then have been too warm. The higher grade coexisted with disruption. It does not settle the overall result.
+
+COROS estimated 9h22 asleep and 16 minutes awake for the second night, compared with Oura's 8h27 and about 68 minutes. Their sleep estimates had differed by only 14 minutes the night before. Nearly matching episode boundaries do not make the underlying sleep/wake classifications interchangeable.
+
+The [dated accounts](/sleep/record/#dated-accounts) retain the provider estimates alongside what I experienced. Contributor grades remain separate from percentages. Earlier initiation was feasible on the second night: Oura's 10½-minute latency was close to my reported 10–15 minutes. One attempt does not establish a lasting circadian shift, an optimal bedtime or which part of the changed routine helped.
 
 The ring's API reports hardware `or5` and firmware 2.1.25, confirming that the account's device is an Oura Ring 5. A supplementary API request reports sleep algorithm version `v2`; the exact model revision and its correspondence to published validation protocols remain unverified. That distinction matters because validation of an earlier ring generation cannot silently become a precise accuracy claim for this one.
 
@@ -36,6 +42,8 @@ The [validation investigation](/sleep/research/measurement-and-validation/) chec
 The initial queue concerns sleep opportunity, regularity and phase, light exposure, caffeine dose and timing, alcohol when consumed, bedroom conditions, training timing and meal timing. Their priority depends on whether a relevant exposure or constraint is present. No caffeine use, alcohol intake or environmental problem has been assumed for the first night.
 
 The [strategy investigation](/sleep/research/improvement-strategies/) ranks these questions by evidence, likely practical value, burden and testability. It treats an earlier exercise finish as a question about strain and interval before sleep rather than a blanket ban on evening training. It treats additional sleep opportunity as an experiment in personal sufficiency rather than a requirement to maximize time in bed.
+
+The second night supplies a concrete constraint: thermal discomfort. The [14 October proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) is to repeat a comfortable, earlier routine and see whether unwanted waking decreases while sleep opportunity and daytime function remain adequate. The window, bedding, stressful work and drink timing changed together in the plan. This first comparison evaluates the routine's practicality; it cannot isolate one cause. Food water content has not been identified as the cause of the bathroom trip.
 
 ## How a personal result can become convincing
 

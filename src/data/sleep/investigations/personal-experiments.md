@@ -1,11 +1,51 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-13"
+updated: "2026-10-14"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
+
+## The current routine proposal
+
+**14 October 2026 — proposed; not yet assessed.** The immediate question is whether a comfortable, earlier routine reduces unwanted disruption while retaining sufficient sleep and useful daytime function. This is a short feasibility check, separate from the [14-day score milestone](/sleep/targets/#score-milestones).
+
+The [night ending 14 October](/sleep/record/#night-2026-10-14) gives the reason. I attempted sleep around 01:30 rather than my usual 03:00–03:30. Oura estimated more sleep and a higher score, but also more waking and lower efficiency. I reported cold awakenings, a bathroom trip and possibly excessive warmth after adding a blanket. The [two-provider comparison](/sleep/record/#recent-comparison) also widened. Neither device identifies the cause of each awakening.
+
+### What is already planned
+
+I plan to move most food and liquids earlier, bring dinner forward, ventilate during the day and close the window from sunset, do stressful work in the afternoon, and keep the workout before dinner. These are reported intentions. No subsequent night has established that I followed them or benefited.
+
+The proposed additions are modest: begin with comfortable leg coverage and adjustable bedding, draw curtains against city light during the settling period, and finish demanding work away from bed. Retain adequate food and hydration. A red screen filter records a setting; actual light exposure and mental activation remain unmeasured. [Environment and light evidence](/sleep/research/improvement-strategies/#environment-measure-the-actual-disturbance).
+
+### A first checkpoint
+
+Repeat the planned routine for **three further nights**, if practical, before introducing another enhancement. Three is a proposed review interval chosen to keep the first check small; it is not an evidence-derived sample size or a completed protocol. Retain every date, including departures from the plan, and note travel, illness or other exceptions.
+
+The primary observation is **remembered awakenings involving cold or excessive warmth**, with a brief description of unwanted waking. Supporting observations are each device's own estimated sleep, total awake time, efficiency when supplied and episode boundaries, plus morning restfulness and daytime sleepiness. Sleep score remains visible; stage totals are not the success criterion for this question.
+
+Practical success at this checkpoint would be comfortable nights without repeated thermal awakenings, enough obtained sleep and no apparent deterioration in daytime experience. A quieter night supports continuing the routine. Persistent cold or heat calls for adjusting the thermal conditions. A higher grade accompanied by worse disruption or daytime experience calls for examining the tradeoff. None of these three-night outcomes establishes an isolated treatment effect.
+
+Several changes are bundled, and there is no stable pre-change baseline. Even repeated improvement cannot yet distinguish window closure, bedding, stress, drink timing, increased opportunity or ordinary variation. There is no reason to deliberately reproduce the uncomfortable night merely to create a control condition.
+
+### The short note that makes the comparison useful
+
+Record the morning experience before inspecting the device score when possible. For this first check, a concise note can retain:
+
+| Part | What to record |
+|---|---|
+| Opportunity | Attempted sleep, estimated onset, final awakening and out-of-bed time; alarm or another reason sleep was curtailed |
+| Actual evening | Gym finish and strain; dinner finish; last substantial drink time and rough amount; caffeine/alcohol amount and timing, or explicitly none/unknown; nap timing and duration |
+| Interruptions | Cold/comfortable/hot at bedtime and remembered awakenings; window and bedding; bathroom trips and whether urgency or another disturbance seemed to come first |
+| Morning | Restfulness from 0 (not rested) to 4 (very rested), plus a short description |
+| Daytime | At a comparable point after waking: sleepiness from 0 (fully alert) to 4 (struggling to stay awake), with caffeine and time since waking |
+
+The two 0–4 ratings are **unvalidated project diary ratings, not diagnostic scales or a vigilance test**. Unknown remains unknown. A wearable cannot fill in an unreported bathroom trip or subjective rating. The diary can expand when a specific question warrants the added burden.
+
+The bathroom trip needs particular care in interpretation. Late fluids can matter, but sleep disruption can also occur before the urge is noticed. Moving substantial drinks earlier while retaining adequate hydration is different from reducing food or total fluids to chase a bathroom-free night. A short drink/awakening note helps distinguish these possibilities; fruit water content has not been established as this night's cause. [NHS nocturia guidance](https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Gynaecology/6497-1-Nocturia-getting-up-at-night-to-pass-urine.pdf), [NIDDK fluid guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
+
+Once the routine is practical and the relevant disruption is understood, a narrower repeated comparison can test one remaining question. The following sections explain how that stronger design differs from this first feasibility check.
 
 ## Start with an answerable question
 

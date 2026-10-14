@@ -1,7 +1,7 @@
 ---
 title: "Continuity, latency and efficiency"
 description: "Waking and sleep initiation matter, but their definitions and denominators must stay visible."
-updated: "2026-10-13"
+updated: "2026-10-14"
 order: 4
 role: "Range"
 attention: "Clarify disruption and definitions"
@@ -21,6 +21,8 @@ The Oura efficiency **contributor score** was 98. It is a grade, separate from t
 
 These values give us a measurement question: how much of the difference concerns episode boundaries, quiet waking, short awakenings or algorithm thresholds? The [validation investigation](/sleep/research/measurement-and-validation/) explains why sleep-detection performance can exceed wake-detection performance.
 
+On [14 October](/sleep/record/#night-2026-10-14), Oura estimated 67m38s awake, 10m30s latency and 88% efficiency. COROS estimated 16 minutes awake. The account added remembered bathroom and cold awakenings, but their times and durations were not recorded. Those reports make unwanted disruption worth addressing; they do not validate either device's exact total. Oura's total awake time is not interchangeable with wake after sleep onset.
+
 ## The target
 
 Reduce meaningful unwanted disruption or difficulty initiating sleep, while preserving sufficient duration and good functioning. There is no current evidence that the first night requires an intervention to raise an already high efficiency estimate.
@@ -31,4 +33,4 @@ For a proposed change, define the primary continuity outcome, event scope and wo
 
 ## When the question changes
 
-Persistent difficulties with sleep initiation or maintenance and impaired daytime functioning create a different question from optimizing a healthy sleeper's grade. Clinical assessment and validated treatment pathways may then be relevant. The current single record does not establish insomnia. [AASM behavioral-treatment guideline](https://jcsm.aasm.org/doi/10.5664/jcsm.8986).
+Persistent difficulties with sleep initiation or maintenance and impaired daytime functioning create a different question from optimizing a healthy sleeper's grade. Clinical assessment and validated treatment pathways may then be relevant. The first two observations do not establish insomnia. [AASM behavioral-treatment guideline](https://jcsm.aasm.org/doi/10.5664/jcsm.8986).

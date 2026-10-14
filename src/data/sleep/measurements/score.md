@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-13"
+updated: "2026-10-14"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -19,11 +19,17 @@ The [target specification](/sleep/targets/#score-milestones) proposes a 14-day a
 
 A score increase can be pursued and celebrated as a score increase. To establish a broader benefit, examine what changed and whether an appropriate outcome changed as well. Examples include obtained sleep, unwanted disruption, a validated vigilance task and reported functioning. A high score with worse daytime performance is a disagreement to investigate, not a reason to erase the latter observation.
 
-## What the first night suggests
+<span id="what-the-first-night-suggests"></span>
+
+## What the first two nights suggest
 
 Oura's timing contributor was 12, total sleep 71, REM 81, restfulness 93, deep sleep 95 and efficiency 98; latency was 78. These locate weaker grading dimensions. They do not tell us which intervention will improve a meaningful outcome.
 
 Timing needs two separate investigations: what Oura penalizes and whether the current sleep episode is suitably aligned with internal phase and daily demands. Deep sleep already received a high contributor score. There is no basis in this night alone for treating extra estimated deep minutes as the dominant opportunity.
+
+The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 and timing from 12 to 29, while restfulness fell from 93 to 79 and efficiency grading from 98 to 90. These component changes describe a higher composite alongside worse grading of continuity. The account's cold awakenings remain relevant even though COROS awarded 95. [Second record](/sleep/record/#night-2026-10-14).
+
+This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
 

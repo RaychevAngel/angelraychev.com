@@ -8,6 +8,8 @@ const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(M
 const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
 const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
 const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
+const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
+const recent = record.entries.slice(-7);
 const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
 const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime sleepiness", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
 ---
@@ -15,6 +17,17 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime 
   <SleepNav current="record" />
   <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
   <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. This short record cannot establish a personal baseline, a trend or the cause of a result.</p>
+  <h2 id="recent-comparison">The recent observations</h2>
+  <p>Each column keeps the provider's own score and selected episode. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
+  <div class="tablewrap"><table aria-label="Recent paired sleep observations"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
+    {recent.map((entry) => <tr>
+      <th scope="row"><a href={`#night-${entry.id}`}><time datetime={entry.wake_date}>{shortDate(entry.wake_date)}</time></a></th>
+      <td><strong>{entry.oura.score}/100</strong><br />{duration(entry.oura.sleep.total_sleep_duration)} asleep<br />{minutes(entry.oura.sleep.awake_time)} awake</td>
+      <td><strong>{entry.coros.sleep_score}/100</strong><br />{duration(entry.coros.main_sleep_minutes * 60)} asleep<br />{entry.coros.awake_minutes} min awake</td>
+    </tr>)}
+  </tbody></table></div>
+  <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">14 October comparison proposal</a> connects the latest reported disruption to a practical next step.</p>
+  <h2 id="dated-accounts">The dated accounts</h2>
   <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — {entry.status}</li>)}</ul>
   {record.entries.map((entry) => {
     const s = entry.oura.sleep;

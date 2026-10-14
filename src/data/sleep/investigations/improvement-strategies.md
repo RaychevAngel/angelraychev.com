@@ -1,11 +1,13 @@
 ---
 title: "Strategies for improving sleep"
 description: "A ranked investigation of sleep opportunity, timing, light, stimulants, training and environment, with the limits of the evidence retained."
-updated: "2026-10-13"
+updated: "2026-10-14"
 order: 3
 ---
 
 **The first improvement is to identify the constraint.** More opportunity may help curtailed sleep; earlier caffeine may help a persistent exposure. Cooling an already comfortable room may add cost without benefit. The [first paired night](/sleep/record/#night-2026-10-13) identifies measurement questions but cannot choose the intervention.
+
+The [second night](/sleep/record/#night-2026-10-14) adds a reported constraint: cold legs and an early-morning cold awakening, followed by a larger blanket and possible excess warmth. That makes stable thermal comfort a practical first focus. The [current routine proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps the planned changes and the outcome that would justify retaining them explicit.
 
 ## The improvement queue
 
@@ -107,6 +109,12 @@ A home study in older adults found nonlinear temperature/sleep relationships and
 Simulated intensive-care noise/light studies found disruption and protective-intervention benefits. Transfer to an already quiet, dark room remains unresolved. [Hu et al.](https://pubmed.ncbi.nlm.nih.gov/25887528/)
 
 Start with observation and reversible adjustment. Room, bed, finger-deviation and core temperatures are different measurements.
+
+A controlled thermosuit experiment in young and older participants found that a small increase in skin temperature, without changing core temperature, reduced nocturnal waking; effects were particularly pronounced in the older groups. This illustrates why lowering every temperature is not a coherent target. The artificial intervention does not supply an ideal bedroom setting or an effect size for adding a blanket here. The abstract supports that distinction; the full protocol and funding disclosures have not yet been audited. [Raymann et al.](https://pubmed.ncbi.nlm.nih.gov/18192289/)
+
+A 23-person home comparison, ages 23–54, applied showering and two bath conditions in random order, 1.5–2 hours before bed. One selected eligible night per condition was analysed; stress or illness could exclude a night. Longer bathing shortened actigraphy-estimated onset versus showering, without a detected difference in efficiency or wake after sleep onset. This does not show that my one-hour-before-bed shower caused later cold awakenings or that hotter is better. Two authors had Noritz R&D affiliations; the paper declares no competing interests and lists funding as not applicable. [Maeda et al.](https://link.springer.com/article/10.1186/s40101-023-00337-0)
+
+For the present question, record whether the room and bedding feel cold, comfortable or hot at bedtime and remembered awakenings. A comfortably cool room and warm-enough skin can coexist. A closed window removes one suspected source of cold but may also change ventilation; retain the actual experience rather than assuming the tradeoff is solved.
 
 Small balanced-order student-bedroom field interventions found sleep and some next-day benefits with better ventilation. CO₂ tracked the contrast alongside other air-quality changes; it was not an isolated CO₂ dose experiment. Opening a window can also alter noise, light and temperature. [Strøm-Tejsen et al.](https://pubmed.ncbi.nlm.nih.gov/26452168/)
 
