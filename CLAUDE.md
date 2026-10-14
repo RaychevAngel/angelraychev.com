@@ -34,8 +34,9 @@ npm run dev      # http://localhost:4321
 npm run build    # → dist/
 ```
 
-Astro 7, static output, zero client-side JavaScript. Markdown and KaTeX render the
-prose and formulas. No CSS framework or UI library. Node 22+.
+Astro 7, static output, with small client-side scripts for interactive explorers
+and the reading-theme toggle. Markdown and KaTeX render the prose and formulas.
+No CSS framework or UI library. Node 22+.
 
 **Restart the dev server after changing `src/content.config.ts`** — collection config is
 cached, and stale content silently fails to appear. `npx astro dev stop` stops a
@@ -98,11 +99,14 @@ just imagine it as a book, which is just text."*
 
 - **Monospace throughout.** `ui-monospace, "SF Mono", SFMono-Regular, Menlo,
   "Cascadia Mono", "Roboto Mono", Consolas, monospace`. No second typeface anywhere.
-- **Pure black on pure white.** `--fg: #000`, `--bg: #fff`, one grey `--dim: #767676`
+- **Light: pure black on pure white.** `--fg: #000`, `--bg: #fff`, one grey `--dim: #767676`
   for de-emphasis, one hairline `--rule: #ddd`. **There is no accent colour and none
   should be added.**
-- **Single theme by design. No dark mode.** A deliberate decision, not an omission — do
-  not add `prefers-color-scheme` blocks.
+- **Light and dark reading themes.** On 13 October 2026 Angel requested a small
+  header button to switch modes, superseding the earlier single-theme decision.
+  Light remains the default; the explicit choice persists in local storage and
+  is applied before the page paints. Dark uses monochrome tokens, with original
+  diagram color encodings preserved on paper backdrops where needed.
 - Body 14.5px, line-height 1.8, measure capped at 660px.
 - Links underlined; hover inverts to white-on-black.
 - **No nav, no About page, no tagline, no cards or filters.** On 13 September 2026,

@@ -4,12 +4,18 @@ const NAME = "Angel Ivanov Raychev";
 const full = title ? `${title} — ${NAME}` : NAME;
 import "../styles/global.css";
 import "katex/dist/katex.min.css";
+import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      try {
+        if (localStorage.getItem('angelraychev-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+      } catch { /* Default to light when storage is unavailable. */ }
+    </script>
     <title>{full}</title>
     {description && <meta name="description" content={description} />}
     <meta property="og:title" content={full} />
@@ -21,6 +27,7 @@ import "katex/dist/katex.min.css";
     <div class="wrap">
       <header class="site">
         {home ? <h1 class="sitename">{NAME}</h1> : <a href="/">{NAME}</a>}
+        <ThemeToggle />
       </header>
       <main><slot /></main>
       <footer class="site">angel.ivanov.raychev@gmail.com</footer>

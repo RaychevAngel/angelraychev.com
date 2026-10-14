@@ -1,0 +1,29 @@
+<button class="theme-toggle" data-theme-toggle type="button" hidden aria-label="Switch to dark mode">dark</button>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  const root = document.documentElement;
+  const key = 'angelraychev-theme';
+
+  function update(theme: 'light' | 'dark') {
+    root.dataset.theme = theme;
+    if (!toggle) return;
+    const next = theme === 'dark' ? 'light' : 'dark';
+    toggle.textContent = next;
+    toggle.setAttribute('aria-label', `Switch to ${next} mode`);
+    toggle.title = `Switch to ${next} mode`;
+  }
+
+  if (toggle) {
+    update(root.dataset.theme === 'dark' ? 'dark' : 'light');
+    toggle.hidden = false;
+    toggle.addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      update(next);
+      try { localStorage.setItem(key, next); } catch { /* Switching still works without storage. */ }
+    });
+    window.addEventListener('storage', (event) => {
+      if (event.key === key && (event.newValue === 'light' || event.newValue === 'dark')) update(event.newValue);
+    });
+  }
+</script>

@@ -25,10 +25,10 @@ const maxSeconds = Math.max(...segments.map((segment) => segment.seconds));
   .duration-row { display: grid; grid-template-columns: 4em minmax(0, 1fr) 6em; align-items: center; gap: 12px; margin: 14px 0; }
   .bar-track { display: block; min-width: 0; }
   .bar { display: block; height: 22px; border: 1px solid var(--fg); box-sizing: border-box; }
-  .deep { background: #000; }
-  .rem { background: repeating-linear-gradient(135deg, #fff 0px, #fff 4px, #000 4px, #000 5px); }
-  .light { background: #767676; }
-  .awake { background: #fff; }
+  .deep { background: var(--fg); }
+  .rem { background: repeating-linear-gradient(135deg, var(--bg) 0px, var(--bg) 4px, var(--fg) 4px, var(--fg) 5px); }
+  .light { background: var(--dim); }
+  .awake { background: var(--bg); }
   .duration-value { text-align: right; white-space: nowrap; }
   @media (max-width: 460px) { .duration-row { grid-template-columns: 3.5em minmax(0, 1fr) 5.5em; gap: 8px; } }
 </style>

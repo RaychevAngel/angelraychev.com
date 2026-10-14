@@ -29,15 +29,15 @@ el('family').addEventListener('change',load);el('columns').addEventListener('cha
 <style>
   .explorer{border:1px solid var(--rule);padding:22px;margin:30px 0 44px}
   h2{margin:0 0 14px}.explorer p{margin-bottom:18px}.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
-  label{font-size:12px}input,select{display:block;width:100%;margin-top:6px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
-  button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:#eee}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default;background:white}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid black;outline-offset:2px}
+  label{font-size:12px}input,select{display:block;width:100%;margin-top:6px;border:1px solid var(--control-border);border-radius:0;padding:7px;font:inherit;background:var(--bg);color:var(--fg)}
+  button{font:inherit;font-size:12px;background:var(--bg);color:var(--fg);border:1px solid var(--control-border);border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:var(--hover)}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default;background:var(--bg)}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
   .result{font-size:13px}.grid-wrap{overflow-x:auto;margin:18px 0 12px;padding:2px 1px 4px}.grid{display:grid;gap:4px;width:max-content}.legend{display:flex;gap:6px 18px;flex-wrap:wrap;color:var(--dim);font-size:11px;line-height:1.7}.stepper,.examples{display:flex;gap:6px;flex-wrap:wrap}.stepper{border-top:1px solid var(--rule);padding-top:18px}.step-label{font-size:12px;color:var(--dim);margin-top:12px}#explanation{font-size:12px;line-height:1.7;min-height:62px}.examples{margin-top:12px}
-  #grid :global(.room){width:38px;height:52px;border:1px solid var(--rule);position:relative;display:flex;justify-content:center;align-items:center;background:#fafafa;color:#999;font-size:10px}
-  #grid :global(.room.possible){background:white;color:black;border-color:#888}
+  #grid :global(.room){width:38px;height:52px;border:1px solid var(--rule);position:relative;display:flex;justify-content:center;align-items:center;background:var(--surface);color:var(--surface-dim);font-size:10px}
+  #grid :global(.room.possible){background:var(--bg);color:var(--fg);border-color:var(--control-border)}
   #grid :global(.room.possible::before){content:'●';font-size:14px;position:absolute;top:2px}
   #grid :global(.room.possible.odd::before){content:'○';font-size:17px;top:0}
   #grid :global(.room .num){position:absolute;bottom:3px}
-  #grid :global(.room.probe){outline:2px solid black;outline-offset:-2px}
-  #grid :global(.room.probe::after){content:'×';position:absolute;font-size:28px;top:3px;background:white;line-height:1}
+  #grid :global(.room.probe){outline:2px solid var(--fg);outline-offset:-2px}
+  #grid :global(.room.probe::after){content:'×';position:absolute;font-size:28px;top:3px;background:var(--bg);line-height:1}
   @media(max-width:480px){.explorer{padding:14px}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.controls label:first-child{grid-column:span 2}}
 </style>

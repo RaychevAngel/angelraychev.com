@@ -46,7 +46,7 @@ function publicDirectoryIndex() {
 export default defineConfig({
   site: "https://angelraychev.com",
   markdown: {
-    shikiConfig: { theme: "github-light" },
+    shikiConfig: { themes: { light: "github-light", dark: "github-dark" } },
     processor: unified({
       remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex, wrapTables],

@@ -117,13 +117,13 @@ ordering has not been made clear.
 <svg width="360" viewBox="0 0 360 316" style="margin: 0 auto" role="img" aria-labelledby="review-flow-title review-flow-desc" xmlns="http://www.w3.org/2000/svg">
 <title id="review-flow-title">The reviewer and judge see different evidence</title>
 <desc id="review-flow-desc">Historical work becomes a frozen task. The reviewer produces a captured review. The judge compares that review with private historical evidence. Training uses eligible reviewer trajectories and rewards.</desc>
-<g fill="none" stroke="#000" stroke-width="1">
+<g fill="none" stroke="currentColor" stroke-width="1">
 <rect x="20" y="1" width="320" height="50"/><rect x="20" y="81" width="320" height="50"/>
 <path d="M180 51 V75 M175 68 L180 75 L185 68 M180 131 V145 H95 V157 M90 150 L95 157 L100 150"/>
 <rect x="10" y="163" width="170" height="58"/><rect x="90" y="257" width="180" height="58"/>
 <path d="M95 221 V240 H180 V251 M175 244 L180 251 L185 244 M275 221 V240 H180"/>
 </g>
-<g fill="#000" font-family="ui-monospace,monospace" text-anchor="middle" font-size="14">
+<g fill="currentColor" font-family="ui-monospace,monospace" text-anchor="middle" font-size="14">
 <text x="180" y="23">Frozen task</text><text x="180" y="41" font-size="12">Code + allowed context</text>
 <text x="180" y="103">Reviewer</text><text x="180" y="121" font-size="12">No historical answers</text>
 <text x="95" y="185">Captured review</text><text x="95" y="206" font-size="12">Fixed, reusable output</text>

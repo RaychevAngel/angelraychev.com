@@ -1,10 +1,26 @@
-/* Black on white. Monospace. Nothing else. */
+/* Monochrome reading themes. */
 :root {
   color-scheme: light;
   --bg: #ffffff;
   --fg: #000000;
   --dim: #767676;
   --rule: #dddddd;
+  --surface: #fafafa;
+  --surface-dim: #737373;
+  --hover: #eeeeee;
+  --control-border: #999999;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101010;
+  --fg: #ededed;
+  --dim: #a3a3a3;
+  --rule: #3a3a3a;
+  --surface: #191919;
+  --surface-dim: #a3a3a3;
+  --hover: #262626;
+  --control-border: #777777;
 }
 
 * { box-sizing: border-box; }
@@ -28,10 +44,14 @@ a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text
 a:hover { background: var(--fg); color: var(--bg); text-decoration: none; }
 a:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
 
-header.site { padding: 72px 0 0; margin-bottom: 64px; }
+header.site { padding: 72px 0 0; margin-bottom: 64px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 header.site a { text-decoration: none; }
 header.site a:hover { background: none; color: var(--fg); text-decoration: underline; }
 header.site .sitename { font-size: 14.5px; font-weight: 400; line-height: 1.8; margin: 0; }
+.theme-toggle { flex: none; min-width: 48px; min-height: 44px; padding: 4px 8px; border: 1px solid var(--rule); border-radius: 0; background: var(--bg); color: var(--fg); font: inherit; font-size: 12px; line-height: 1.4; cursor: pointer; }
+.theme-toggle[hidden] { display: none; }
+.theme-toggle:hover { background: var(--hover); border-color: var(--control-border); }
+.theme-toggle:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
 
 h1 { font-size: 17px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
 h2 { font-size: 14.5px; font-weight: 700; margin: 52px 0 16px; }
@@ -47,8 +67,18 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 52px 0; }
 code { font-family: inherit; font-size: inherit; }
 pre { border: 1px solid var(--rule); padding: 16px; overflow-x: auto; margin: 0 0 24px; }
 pre code { font-size: 13px; }
+:root[data-theme="dark"] .astro-code { background-color: var(--bg) !important; }
+:root[data-theme="dark"] .astro-code,
+:root[data-theme="dark"] .astro-code span {
+  color: var(--shiki-dark) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
 
 img, svg, video { max-width: 100%; height: auto; display: block; }
+/* Published diagrams retain their original color encodings and paper backdrop. */
+:root[data-theme="dark"] img[src$=".svg"] { background: #fff; }
 figure { margin: 36px 0; }
 figcaption { color: var(--dim); font-size: 13px; margin-top: 12px; line-height: 1.6; }
 
