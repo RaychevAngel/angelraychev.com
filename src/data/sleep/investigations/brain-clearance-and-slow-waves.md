@@ -26,7 +26,7 @@ For this project, a measurement should identify which part of that chain it obse
 
 ## Human sleep changes brain-fluid dynamics
 
-Fultz and colleagues combined EEG with fast functional MRI in 13 people. During NREM sleep, slow electrical activity was coupled to changes in blood-related signals and waves of cerebrospinal fluid inflow. This demonstrated coordinated human physiology. It did not measure removal of amyloid, tau or other solutes, or test future dementia risk. Several investigators disclosed a patent coversheet. [Fultz et al., 2019](https://doi.org/10.1126/science.aax5440).
+Fultz and colleagues combined EEG with fast functional MRI in 13 people. During NREM sleep, slow electrical activity was coupled to changes in blood-related signals and waves of cerebrospinal fluid inflow. This demonstrated coordinated human physiology. It did not measure removal of amyloid, tau or other solutes, or test future dementia risk. NIH funded the study; three authors disclosed patent-related interests. [Fultz et al., 2019](https://doi.org/10.1126/science.aax5440).
 
 A 2026 study used EEG and ultrafast MRI in 22 healthy volunteers to estimate the velocity and direction of physiological brain pulsations. Respiratory and vasomotor components increased in particular regions during NREM sleep, mainly N1/N2 in the selected segments, while cardiac-related velocity decreased. The analysis was calibrated against a flow phantom. Its endpoint was pulsation dynamics, rather than the amount of a metabolite removed. [Elabasy et al., 2026](https://doi.org/10.1002/advs.202503745).
 
