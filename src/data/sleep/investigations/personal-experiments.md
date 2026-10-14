@@ -13,6 +13,8 @@ order: 4
 
 The [night ending 14 October](/sleep/record/#night-2026-10-14) gives the reason. I attempted sleep around 01:30 rather than my usual 03:00–03:30. Oura estimated more sleep and a higher score, but also more waking and lower efficiency. I reported cold awakenings, a bathroom trip and possibly excessive warmth after adding a blanket. The [two-provider comparison](/sleep/record/#recent-comparison) also widened. Neither device identifies the cause of each awakening.
 
+The 14 October follow-up clarified that the bathroom trip was a precautionary choice after waking without strong urinary urgency. I reported no caffeine, alcohol or naps on calendar 13 October, and feeling awake and ready within about 20 minutes after initially waking sleepy. These reports narrow the exposure and morning questions. They do not establish the initial waking cause or later-day functioning. The [dated correction](/sleep/record/#night-2026-10-14) retains the change in interpretation.
+
 ### What is already planned
 
 I plan to move most food and liquids earlier, bring dinner forward, ventilate during the day and close the window from sunset, do stressful work in the afternoon, and keep the workout before dinner. These are reported intentions. No subsequent night has established that I followed them or benefited.

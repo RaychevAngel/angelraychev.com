@@ -179,11 +179,13 @@
       "self_report": {
         "restfulness": "Felt able to sleep more around 11:00; no numeric restfulness rating reported.",
         "daytime_sleepiness": null,
-        "caffeine_mg_and_time": null,
-        "alcohol_and_time": null,
+        "caffeine_mg_and_time": "None reported on calendar October 13, confirmed in the October 14 follow-up.",
+        "alcohol_and_time": "None reported on calendar October 13, confirmed in the October 14 follow-up.",
         "intended_bedtime": "Around 01:30, versus usual 03:00–03:30. Estimated 10–15 minutes to fall asleep.",
         "environment": "Room lights off; laptop red filter; city night light through open curtains during work. Window was not fully closed; cold legs and later cold awakening, then larger blanket and possible excess warmth. Room temperature and light exposure were unmeasured.",
-        "stress": "Stressful work shortly before bed, followed by calmer work/music and five minutes of breathing."
+        "stress": "Stressful work shortly before bed, followed by calmer work/music and five minutes of breathing.",
+        "naps": "No naps reported on calendar October 13, confirmed in the October 14 follow-up.",
+        "morning_sleepiness": "Pretty sleepy on waking; within about 20 minutes felt awake and ready. No numeric rating or later-day assessment reported."
       },
       "context": [
         {
@@ -196,18 +198,19 @@
         },
         {
           "kind": "self_report",
-          "observation": "One reported bathroom trip during the night; exact time/duration unknown. Another early-morning awakening felt cold, followed by a larger blanket. Extended sleep again before deciding to wake around 11:00; out of bed at 11:20."
+          "observation": "One reported awakening followed by a precautionary bathroom trip: no strong urinary urge on waking; chose to urinate hoping to avoid another awakening and make returning to sleep easier. The initial waking cause and exact time/duration remain unknown. Also noticed cold legs. Another early-morning awakening felt cold, followed by a larger blanket. Extended sleep again before deciding to wake around 11:00; out of bed at 11:20. Sleepiness on waking resolved to feeling awake and ready within about 20 minutes."
         }
       ],
       "story": [
         "I attempted sleep around 01:30, about two hours before my usual bedtime. To make that possible I moved the day earlier: the gym was around 19:30–20:45 and dinner 21:15–22:00. I finished the yogurt earlier and left chicken, rice, tomato, avocado and a red pepper for dinner. I tried to leave less liquid until evening because I had needed to urinate the previous night.",
         "After dinner I reduced room light and used the laptop’s red filter, but worked by city night light through open curtains. Around 00:30 I took a warm/hot shower, opened the window and then drew the curtains. I worked sitting in bed for the last 30–45 minutes, including stressful work, before calmer music and five minutes of breathing. I estimated 10–15 minutes to fall asleep.",
-        "I woke during the night to urinate and noticed cold legs. At a later early-morning awakening I was cold and added a larger blanket; afterward I may have been too warm. I slept more, turned over for another sleep period and decided to wake around 11:00. I got out of bed at 11:20."
+        "When I woke during the night, I did not have a strong urinary urge. I felt I could urinate and chose to go, hoping to avoid another awakening and make falling asleep again easier. I also noticed cold legs. At a later early-morning awakening I was cold and added a larger blanket; afterward I may have been too warm. I slept more, turned over for another sleep period and decided to wake around 11:00. I got out of bed at 11:20. I was pretty sleepy on waking, but within about 20 minutes I felt awake and ready."
       ],
       "interpretation": [
         "Oura’s sleep score rose from 75 to 84 and estimated sleep increased from 7h02 to 8h27. Its waking estimate also increased from 32 to 68 minutes and efficiency fell from 93% to 88%; restfulness grading fell from 93 to 79. This is improvement in some measured dimensions alongside disrupted continuity.",
         "The selected episode began about 2h08 earlier. Oura’s 10½-minute latency is close to the reported 10–15 minutes; this supports the feasibility of an earlier attempt on this night, without proving a circadian phase shift or an optimal bedtime.",
-        "COROS estimated 9h22 asleep and 16 minutes awake, versus Oura’s 8h27 asleep and about 68 minutes awake within nearly matching windows. Neither becomes a reference standard by agreeing with the story. Finger-temperature deviation is not room temperature; its −0.26°C reading cannot quantify how cold the room felt."
+        "COROS estimated 9h22 asleep and 16 minutes awake, versus Oura’s 8h27 asleep and about 68 minutes awake within nearly matching windows. Neither becomes a reference standard by agreeing with the story. Finger-temperature deviation is not room temperature; its −0.26°C reading cannot quantify how cold the room felt.",
+        "The follow-up changes the bathroom interpretation: the reported sequence is awakening first, without strong urinary urgency, then choosing a precautionary bathroom trip. This does not establish that bladder fullness or dinner fluids caused the awakening. Initial morning sleepiness resolved within about 20 minutes; sustained daytime sleepiness and objective performance were not assessed."
       ],
       "plans": [
         "Move the majority of food and liquids earlier in the day, and move dinner earlier.",
@@ -215,10 +218,15 @@
         "Do stressful work in the afternoon and calmer work after dinner.",
         "Keep the workout before dinner."
       ],
-      "corrections": [],
+      "corrections": [
+        {
+          "date": "2026-10-14",
+          "reason": "Clarified the earlier wording about waking to urinate: there was no strong urge on waking, and the bathroom trip was a precautionary choice after awakening. Added no caffeine, alcohol or naps on calendar October 13 and morning sleepiness resolving within about 20 minutes. These details do not establish the initial waking cause or later-day function; original provider values and retrieval time are retained."
+        }
+      ],
       "next_focus": [
         "The clearest reported problem to address is thermal discomfort: a fully closed window and comfortable, adjustable bedding provide a simpler next-night comparison than another dietary restriction.",
-        "Moving substantial drinks earlier is reasonable, but fruit or dinner water content has not been established as the cause of waking. Cold or other disruption can wake someone before they notice the urge. Preserve adequate hydration and note the last substantial drink, urinary urgency and thermal awakenings."
+        "The follow-up reports a precautionary bathroom trip after waking without strong urgency, so this episode does not support treating dinner water content as the established waking trigger. Preserve adequate hydration and keep the thermal-comfort question primary; retain drink timing and what was noticed first at future awakenings."
       ],
       "nutrition_reference": "/nutrition/record/#october-13-fruit-and-herbs"
     }

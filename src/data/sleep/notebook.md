@@ -45,6 +45,8 @@ The [strategy investigation](/sleep/research/improvement-strategies/) ranks thes
 
 The second night supplies a concrete constraint: thermal discomfort. The [14 October proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) is to repeat a comfortable, earlier routine and see whether unwanted waking decreases while sleep opportunity and daytime function remain adequate. The window, bedding, stressful work and drink timing changed together in the plan. This first comparison evaluates the routine's practicality; it cannot isolate one cause. Food water content has not been identified as the cause of the bathroom trip.
 
+The follow-up narrows that question: I was awake without a strong urinary urge, then chose to go to the bathroom to avoid another awakening and help me return to sleep. It was a precautionary trip after waking; the initial waking cause remains unknown. I also reported no caffeine, alcohol or naps on calendar 13 October. Morning sleepiness resolved to feeling awake and ready within about 20 minutes, while later-day experience remains unassessed.
+
 ## How a personal result can become convincing
 
 Begin with repeated ordinary observations. Select one primary question, a concrete change and a worthwhile effect before looking at the result. Use repeated or counterbalanced comparisons when feasible, account for carryover, and retain the entire eligible record. A single successful night is an observation; a repeatable benefit under well-described conditions is stronger evidence.

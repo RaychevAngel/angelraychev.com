@@ -48,7 +48,7 @@ Those were **minutes asleep**. Allocated time includes falling asleep and possib
 
 ## Caffeine: an interval, a dose and an individual response
 
-I own **200mg caffeine capsules**; that does not establish when or whether I took one before the recorded night.
+I own **200mg caffeine capsules**. In the 14 October follow-up I reported no caffeine, alcohol or naps on calendar 13 October, preceding the [sleep ending 14 October](/sleep/record/#night-2026-10-14). Ownership is not consumption; exposure on other days remains a separate question.
 
 A double-blind crossover in 23 young men tested 100mg and 400mg at four, eight and twelve hours before bed. At four hours, 400mg reduced estimated total sleep by about 51 minutes versus placebo. At twelve hours, some latency and architecture effects remained, but the total-sleep difference was not statistically significant. No significant 100mg effects were detected. Habitual morning intake was maintained. Neither result establishes a universal 200mg cutoff or guarantees that 100mg has no personal effect. [Gardiner et al.](https://academic.oup.com/sleep/article/48/4/zsae230/7815486)
 

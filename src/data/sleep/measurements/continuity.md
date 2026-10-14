@@ -21,7 +21,7 @@ The Oura efficiency **contributor score** was 98. It is a grade, separate from t
 
 These values give us a measurement question: how much of the difference concerns episode boundaries, quiet waking, short awakenings or algorithm thresholds? The [validation investigation](/sleep/research/measurement-and-validation/) explains why sleep-detection performance can exceed wake-detection performance.
 
-On [14 October](/sleep/record/#night-2026-10-14), Oura estimated 67m38s awake, 10m30s latency and 88% efficiency. COROS estimated 16 minutes awake. The account added remembered bathroom and cold awakenings, but their times and durations were not recorded. Those reports make unwanted disruption worth addressing; they do not validate either device's exact total. Oura's total awake time is not interchangeable with wake after sleep onset.
+On [14 October](/sleep/record/#night-2026-10-14), Oura estimated 67m38s awake, 10m30s latency and 88% efficiency. COROS estimated 16 minutes awake. The account added cold awakenings and an awakening followed by a precautionary bathroom trip, without strong urinary urgency; their times and durations were not recorded. The bathroom detail was clarified in a dated follow-up, and the initial waking cause remains unknown. Those reports make unwanted disruption worth addressing; they do not validate either device's exact total. Oura's total awake time is not interchangeable with wake after sleep onset.
 
 ## The target
 

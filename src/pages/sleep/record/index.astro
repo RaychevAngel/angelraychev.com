@@ -11,7 +11,7 @@ const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("e
 const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
 const recent = record.entries.slice(-7);
 const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
-const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime sleepiness", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
+const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime sleepiness", morning_sleepiness: "Sleepiness after waking", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
 ---
 <Post frontmatter={frontmatter}>
   <SleepNav current="record" />
