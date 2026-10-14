@@ -24,7 +24,7 @@ Burden is qualitative. No additional instrument or clinical test has been select
 
 Sleep onset is behaviour. Dim-light melatonin onset, or **DLMO**, uses serial samples under controlled dim lighting to investigate biological phase and its relationship to the sleep episode. Collection and assay conditions matter.
 
-One evaluated home protocol required seventeen half-hourly saliva samples, 8.5 hours of dim-light conditions and laboratory assay afterward. Thirty-two of 35 participants completed it. Of valid home onsets, 58% were within thirty minutes of the paired laboratory onset on an adjacent night. That difference can include day-to-day variation as well as measurement error. This establishes a feasible measurement approach with substantial evening burden. Funding and conflict review remain unverified. [Burgess et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4434555/)
+One evaluated home protocol required seventeen half-hourly saliva samples, 8.5 hours of dim-light conditions and laboratory assay afterward. Thirty-two of 35 participants completed it. Of valid home onsets, 58% were within thirty minutes of the paired laboratory onset on an adjacent night. That difference can include day-to-day variation as well as measurement error. This establishes a feasible measurement approach with substantial evening burden. NIH funded the study; authors reported no financial conflicts. [Burgess et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4434555/)
 
 Human bright-light experiments show that the direction of a phase shift depends on internal timing. A clock label such as “morning light” leaves part of the specification unresolved. Laboratory pulses are not an everyday exposure prescription. [Khalsa et al.](https://pubmed.ncbi.nlm.nih.gov/12717008/)
 
