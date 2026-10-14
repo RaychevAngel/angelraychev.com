@@ -7,21 +7,23 @@ const frontmatter = { title: "Sleep record", description: "Dated sleep observati
 const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
 const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
 const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
+const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
 const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
+const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime sleepiness", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
 ---
 <Post frontmatter={frontmatter}>
   <SleepNav current="record" />
   <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
   <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. One observation cannot establish a personal baseline, a trend or the cause of a result.</p>
-  <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — first paired observation</li>)}</ul>
+  <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — {entry.status}</li>)}</ul>
   {record.entries.map((entry) => {
     const s = entry.oura.sleep;
     return <section aria-labelledby={`night-${entry.id}`}>
-      <h2 id={`night-${entry.id}`}>13 October 2026 — one night, two grading systems</h2>
-      <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)} PDT. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. The windows end together and start five minutes apart. Their sleep estimates and scores differ.</p>
+      <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — one night, two grading systems</h2>
+      <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>
       <div class="tablewrap">
-        <table aria-label="Paired sleep estimates for October 13">
-          <thead><tr><th scope="col">Measurement</th><th scope="col">Oura Ring 5</th><th scope="col">COROS PACE 4</th></tr></thead>
+        <table aria-label={`Paired sleep estimates for ${entry.wake_date}`}>
+          <thead><tr><th scope="col">Measurement</th><th scope="col">{entry.oura.model}</th><th scope="col">{entry.coros.model}</th></tr></thead>
           <tbody>
             <tr><th scope="row">Sleep score</th><td>{entry.oura.score} / 100</td><td>{entry.coros.sleep_score} / 100</td></tr>
             <tr><th scope="row">Selected sleep window</th><td>{time(s.bedtime_start)}–{time(s.bedtime_end)}</td><td>{time(entry.coros.main_start)}–{time(entry.coros.main_end)}</td></tr>
@@ -32,14 +34,14 @@ const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM s
           </tbody>
         </table>
       </div>
-      <p>The identical HRV headline is agreement between provider summaries, not validation against ECG. Their sampling, accepted beats and averaging may differ. The 18-point score gap means that choosing which grading system to optimize is consequential.</p>
+      <p>{s.average_hrv === entry.coros.official_sleep_hrv_ms ? "The identical HRV headline is agreement between provider summaries, not validation against ECG." : "The HRV headlines retain each provider's summary; neither is a reference ECG measurement."} Their sampling, accepted beats and averaging may differ. The {Math.abs(entry.oura.score - entry.coros.sleep_score)}-point score gap means that choosing which grading system to optimize is consequential.</p>
       <SleepEpisode entry={entry} />
-      <h3 id="oura-contributors">What Oura graded</h3>
+      <h3 id={`oura-contributors-${entry.id}`}>What Oura graded</h3>
       <p>These are <strong>contributor scores out of 100</strong>. The efficiency contributor of 98 is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of 95 is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
       <div class="tablewrap"><table aria-label="Oura sleep contributor scores"><thead><tr><th scope="col">Contributor</th><th scope="col">Score / 100</th></tr></thead><tbody>
         {Object.entries(labels).map(([key, name]) => <tr><th scope="row">{name}</th><td>{entry.oura.contributors[key]}</td></tr>)}
       </tbody></table></div>
-      <p>Timing and total sleep were the weaker contributors. This identifies where Oura's score has room to improve. It does not establish that a particular clock time is my optimal biological schedule or that more deep sleep should be the next objective. <a href="/sleep/targets/">Targets and their evidence</a>.</p>
+      {entry.id === "2026-10-13" && <p>Timing and total sleep were the weaker contributors. This identifies where Oura's score has room to improve. It does not establish that a particular clock time is my optimal biological schedule or that more deep sleep should be the next objective. <a href="/sleep/targets/">Targets and their evidence</a>.</p>}
       <details>
         <summary>Physiology, provenance and missing context</summary>
         <h3>Oura physiology</h3>
@@ -55,15 +57,17 @@ const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM s
         </tbody></table></div>
         <p>The API's average and lowest heart-rate fields use 30-second samples; the app uses five-minute aggregates. An API-versus-app difference can therefore arise from the summary definition rather than a changed night. <a href="/sleep/measurements/cardiac/">Cardiac measurement details</a>.</p>
         <h3>COROS summaries</h3>
-        <p>The connector reports deep 20%, light 50%, REM 27%, awake 3%, with daily metric scope and no naps. Its exact percentage denominator was not supplied; these ratios have not been converted into exact stage minutes. It counted {entry.coros.awake_count_over_5min} awakening longer than five minutes. That definition is different from an unrestricted count of all awakenings.</p>
+        <p>The connector reports deep {entry.coros.ratios_percent.deep}%, light {entry.coros.ratios_percent.light}%, REM {entry.coros.ratios_percent.rem}%, awake {entry.coros.ratios_percent.awake}%, with daily metric scope and {entry.coros.nap_minutes} nap minutes. Its exact percentage denominator was not supplied; these ratios have not been converted into exact stage minutes. It counted {entry.coros.awake_count_over_5min} awakening longer than five minutes. That definition is different from an unrestricted count of all awakenings.</p>
         <p>COROS reported a daily minimum HR of {entry.coros.daily_min_hr_bpm} bpm, a daily average of {entry.coros.daily_average_hr_bpm} bpm and resting HR of {entry.coros.resting_hr_bpm} bpm. The daily values do not use the matched sleep window. COROS defines its automatic resting-HR estimate as predicted seated HR shortly after waking, which differs from Oura's sleep minimum. <a href="https://coros.com/uk/stories/coros-metrics/c/resting-heart-rate-explained">COROS definition</a>.</p>
         <h3>Context retained and context unknown</h3>
-        <p>A COROS track recording on 12 October ran from 21:36 to 22:00 PDT, lasting 23:47 with average HR 148 bpm. It ended approximately 5h37 before Oura's selected bedtime episode began. Clock-late exercise was therefore not immediately before this recorded sleep; its occurrence has not been assigned a causal effect on the night.</p>
-        <p>Restfulness, daytime sleepiness, caffeine dose and timing, alcohol, intended bedtime, bedroom conditions and stress were not reported for this night. They remain unknown.</p>
+        {entry.context.map((item) => <p><strong>{item.kind === "device_record" ? "Recorded context" : "Reported context"}:</strong> {item.observation}</p>)}
+        <p><strong>Not reported:</strong> {Object.entries(entry.self_report).filter(([, value]) => value === null).map(([key]) => reportLabels[key] ?? key).join(", ") || "None of the retained self-report fields"}. Missing reports remain unknown.</p>
+        {Object.entries(entry.self_report).filter(([, value]) => value !== null).map(([key, value]) => <p><strong>{reportLabels[key] ?? key}:</strong> {String(value)}</p>)}
         <h3>Where these values came from</h3>
         <p>Authenticated Oura API V2 responses from <code>sleep</code>, <code>daily_sleep</code>, <code>daily_readiness</code> and <code>daily_spo2</code>, filtered to the requested wake date; and the official COROS connector's sleep overview, official HRV assessment and daily HR summaries. Retrieved {entry.retrieved_at}. Oura reports hardware <code>{entry.oura.hardware_type}</code>, firmware {entry.oura.firmware_version}. A supplementary Oura request returned sleep algorithm version <code>{entry.oura.algorithm_version}</code>. The exact model revision and COROS firmware remain unverified.</p>
         <p>Credential material, device identifiers, source document IDs and raw physiological streams are excluded from this page. Displayed durations round down to complete minutes; source values retain their original seconds.</p>
       </details>
+      {entry.corrections.length > 0 && <><h3>Corrections and revisions</h3><ul>{entry.corrections.map((correction) => <li>{typeof correction === "string" ? correction : `${correction.date}: ${correction.reason}`}</li>)}</ul></>}
     </section>;
   })}
   <h2 id="how-to-add-a-night">How a night is added</h2>

@@ -28,7 +28,7 @@ For this project, a measurement should identify which part of that chain it obse
 
 Fultz and colleagues combined EEG with fast functional MRI in 13 people. During NREM sleep, slow electrical activity was coupled to changes in blood-related signals and waves of cerebrospinal fluid inflow. This demonstrated coordinated human physiology. It did not measure removal of amyloid, tau or other solutes, or test future dementia risk. Several investigators disclosed a patent coversheet. [Fultz et al., 2019](https://doi.org/10.1126/science.aax5440).
 
-A 2026 study used EEG and ultrafast MRI in 22 healthy volunteers to estimate the velocity and direction of physiological brain pulsations. Respiratory and vasomotor components increased in particular regions during NREM sleep, while cardiac-related velocity decreased. The analysis was calibrated against a flow phantom. Its endpoint was pulsation dynamics, rather than the amount of a metabolite removed. [Elabasy et al., 2026](https://doi.org/10.1002/advs.202503745).
+A 2026 study used EEG and ultrafast MRI in 22 healthy volunteers to estimate the velocity and direction of physiological brain pulsations. Respiratory and vasomotor components increased in particular regions during NREM sleep, mainly N1/N2 in the selected segments, while cardiac-related velocity decreased. The analysis was calibrated against a flow phantom. Its endpoint was pulsation dynamics, rather than the amount of a metabolite removed. [Elabasy et al., 2026](https://doi.org/10.1002/advs.202503745).
 
 These studies make breathing, vascular rhythms and neural activity interesting mechanisms. They also show why a single “lower is better” target is inadequate: different components change in different directions. A respiratory-rate estimate from a ring does not establish those intracranial dynamics.
 
@@ -41,6 +41,14 @@ CSF-STREAM is a contrast-free MRI method that isolates CSF movement from blood a
 Eide and colleagues compared seven sleep-deprived participants with 17 matched controls allowed to sleep, following a tracer injected into the cerebrospinal fluid with repeated MRI. Clearance was slower after deprivation, and the difference persisted after the subsequent recovery opportunity within the study window. Participants were patients undergoing work-up for suspected CSF disorders; allocation was not randomized. This was a small, clinically selected population using an invasive, off-label tracer procedure. [Eide et al., 2021](https://doi.org/10.1093/brain/awaa443).
 
 The study supports concern about acute deprivation and molecular transport. It does not determine an optimum deep-sleep duration in a healthy young adult, or establish that recovery sleep can never compensate for lost sleep. Those broader propositions exceed its design and follow-up.
+
+## Protein production is another part of the process
+
+A human pilot study used stable-isotope labeling and serial CSF samples to investigate amyloid-β kinetics across repeated sleep, deprivation and drug-induced-sleep conditions. Eight cognitively normal adults participated. Deprivation increased amyloid concentrations by about 25–30%; the kinetic model supported increased production, without a significant fractional-turnover difference. This provided a mechanism to investigate beyond fluid motion, while leaving individual clearance routes unresolved. NIH and foundation support, donated isotope and assay-related financial interests were disclosed. [Lucey et al., 2018](https://doi.org/10.1002/ana.25117).
+
+A later analysis of five participants from that work found higher CSF concentrations alongside lower plasma concentrations during deprivation. The authors proposed impaired transport to blood and acknowledged that production and clearance required further separation. It reused an earlier cohort, rather than supplying an independent clinical replication. Centene/NIH support and assay-related financial interests were disclosed. [Liu et al., 2023](https://doi.org/10.1002/alz.12930).
+
+This illustrates why the sample compartment belongs beside the result: a lower blood concentration can coexist with a higher CSF concentration. Neither direction alone establishes better brain health.
 
 ## Breathing offers a controllable input
 

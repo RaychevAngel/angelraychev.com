@@ -12,7 +12,7 @@ const frontmatter = { title: "Sleep performance", description: "An explicit purs
   <p>The larger ambition is exceptional capability and a long life with that capability available. A sleep score can give the project a near-term benchmark. Research and functional measurements determine which broader claims the result supports.</p>
   <h2 id="present-position">Present position</h2>
   <div class="tablewrap"><table aria-label="Sleep project position"><thead><tr><th scope="col">Question</th><th scope="col">Current position</th></tr></thead><tbody>
-    <tr><th scope="row">Recorded evidence</th><td>{record.entries.length} paired night, ending <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a></td></tr>
+    <tr><th scope="row">Recorded evidence</th><td>{record.entries.length} paired {record.entries.length === 1 ? "night" : "nights"}; latest ending <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a></td></tr>
     <tr><th scope="row">Device grading</th><td>Oura {latest?.oura.score}; COROS {latest?.coros.sleep_score}</td></tr>
     <tr><th scope="row">First target proposals</th><td><a href="/sleep/targets/#score-milestones">Sustained optimal grading, then a higher consistent score</a></td></tr>
     <tr><th scope="row">Personal physiological optimum</th><td>Not established; each metric has a separate <a href="/sleep/measurements/">interpretation and target status</a></td></tr>

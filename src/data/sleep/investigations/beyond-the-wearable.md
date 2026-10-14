@@ -24,6 +24,8 @@ Burden is qualitative. No additional instrument or clinical test has been select
 
 Sleep onset is behaviour. Dim-light melatonin onset, or **DLMO**, uses serial samples under controlled dim lighting to investigate biological phase and its relationship to the sleep episode. Collection and assay conditions matter.
 
+One evaluated home protocol required seventeen half-hourly saliva samples, 8.5 hours of dim-light conditions and laboratory assay afterward. Thirty-two of 35 participants completed it. Of valid home onsets, 58% were within thirty minutes of the paired laboratory onset on an adjacent night. That difference can include day-to-day variation as well as measurement error. This establishes a feasible measurement approach with substantial evening burden. Funding and conflict review remain unverified. [Burgess et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4434555/)
+
 Human bright-light experiments show that the direction of a phase shift depends on internal timing. A clock label such as “morning light” leaves part of the specification unresolved. Laboratory pulses are not an everyday exposure prescription. [Khalsa et al.](https://pubmed.ncbi.nlm.nih.gov/12717008/)
 
 Use phase measurement when it could change a timing decision. Ordinary sleep/light observations answer cheaper preliminary questions; DLMO adds a phase marker rather than a complete circadian-health score.
@@ -54,6 +56,10 @@ An actual research frontier is stimulation timed to brain activity. A small labo
 
 In a later study, oscillation and spindle activity increased in two experiments, including a double-blind near-replication, without improvement in the tested memory outcomes. Measure the physiological change and its intended functional effect separately. [Henin et al.](https://pubmed.ncbi.nlm.nih.gov/31604814/)
 
+A 2026 randomized five-group nap study retained 102 of 126 recruited participants. Stimulation altered evoked slow-wave/spindle activity without a detectable condition-by-time advantage on the declarative, motor-sequence or piano memory tasks. Behavioural analyses were exploratory; power was planned for physiology. Post-allocation sleep/technical exclusions and the two-hour nap opportunity limit transfer to overnight enhancement. FRQNT, NSERC and university support were reported, with no competing interests declared. [Jourde et al.](https://www.nature.com/articles/s41539-025-00383-6)
+
+A September 2026 **preprint** reports a selective benefit in biomarker-confirmed early symptomatic Alzheimer's disease. In a blinded crossover, 32 participants contributed to the word-pair endpoint: after one stimulation night, overnight retention improved by an estimated **0.88 of thirty pairs versus sham**. Benefits were not detected for image recognition, working memory or seven-day retention; follow-up recording failures reduced the latter comparison. Sleep architecture and subjective sleep gains were not detected. Bitbrain was the registered sponsor, many authors had company relationships, and public grants funded the work. The registry was submitted before the trial but became public after completion, limiting prospective verification. Healthy-sleeper transfer, durability and clinical importance remain unestablished. [López-Larraz et al.](https://www.medrxiv.org/content/10.64898/2026.09.14.26360893v1), [trial registry](https://clinicaltrials.gov/study/NCT07402590)
+
 A 2024 alpha-phase stimulation trial found about ten minutes' improvement in its first-visible-spindle latency measure among 21 analysed participants. Of 100 enrolled, 54 completed; data-quality and symptom exclusions narrowed the analysis further. Registration followed the experimental period. Its silent sham does not isolate phase locking from sound or expectation, and all authors were employees of the funder, Elemind. The operational definition of onset also matters. This is preliminary evidence for a selected phenotype and device protocol. [Full trial](https://www.nature.com/articles/s41598-024-63385-1.pdf)
 
 An experiment needs appropriate EEG, the tested timing logic and a functional outcome. Generic audio or a larger wearable deep-sleep estimate would test a different intervention.
@@ -63,6 +69,14 @@ An experiment needs appropriate EEG, the tested timing logic and a functional ou
 A randomized suvorexant study in **38 cognitively unimpaired adults aged 45–65** found acute cerebrospinal-fluid amyloid-beta and one tau-phosphorylation ratio changes. The measured sleep outcomes were not significantly improved between groups. It used repeated sampling through a lumbar catheter. The lead author disclosed Merck consulting; diagnostics-related interests were also disclosed. [Lucey et al.](https://pubmed.ncbi.nlm.nih.gov/36897120/)
 
 The result concerns acute biomarkers rather than demonstrated dementia prevention or lifespan extension. A changed marker needs validation against the outcome it is meant to improve. The [brain-clearance investigation](/sleep/research/brain-clearance-and-slow-waves/) develops that distinction and newer measurements.
+
+## Predictive models of sleep physiology
+
+SleepFM learns from raw overnight brain/eye, cardiac, muscle and respiratory recordings. Its 2026 retrospective study discriminated subsequently recorded diagnoses in held-out patients. Predictive information can help define new measurement questions; it does not establish that altering sleep prevents those diagnoses. [SleepFM primary study](https://www.nature.com/articles/s41591-025-04133-4)
+
+The October version of the **SleepFM-2 preprint** extends the research to research-grade EEG and optical pulse recordings (PPG), plus wrist accelerometry. New cohorts used locally trained predictors on the shared model; Ring 5 applicability remains unverified. The primary PSG disease-prediction cohorts consist of sleep-clinic referrals; wrist-accelerometry prediction was also evaluated in UK Biobank. Calibration and useful clinical decisions remain to be established. NIH/philanthropic support and device-company relationships were disclosed. [SleepFM-2 v2](https://arxiv.org/abs/2609.06849v2)
+
+Using a predicted risk score as an optimization target would require evidence that changing it through an intervention improves the health outcome. Agreement with future diagnoses alone cannot establish that relationship.
 
 ## Experimental peptides and cannabinoids
 

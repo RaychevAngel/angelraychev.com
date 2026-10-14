@@ -27,6 +27,8 @@ The specification should contain:
 
 A proposed twenty-to-thirty-minute duration gain could be a practical decision threshold, distinct from a clinical cutoff. Other questions need other thresholds.
 
+Count measurement time as well as intervention time. A ten-minute daily task takes seventy minutes a week before setup; a three-minute version takes twenty-one but may detect smaller changes less reliably. The appropriate cadence and sensitivity depend on the decision. More precise data earns its recurring cost when it can distinguish worthwhile improvement from ordinary variation.
+
 ## Establish ordinary variation
 
 An initial **seven-to-fourteen-night baseline** can reveal ordinary variation and recording problems. It is a practical proposal, not sufficient evidence for every question. Retain device identity, algorithm changes, timezone and episode boundaries; separate planned changes from completed actions.
@@ -66,6 +68,8 @@ Gardiner's acute trial separated conditions by 48 hours and maintained habitual 
 Prior-night debt can persist after the stimulant's immediate effect diminishes. Changing total intake adds adaptation and withdrawal. For a daily habitual-pattern comparison, use stabilized repeated blocks and prespecify how transition nights are retained or flagged.
 
 Test next-day performance at a consistent relationship to morning caffeine. Mixing caffeinated and uncaffeinated tests would confound direct stimulation with the preceding night's effect. Retain the daytime and training tradeoff.
+
+Interpret the result as the net effect of moving caffeine. Residual stimulation and a changed sleep episode can both affect performance. Showing that the routine works is a useful achievement; attributing all of its benefit to better sleep requires further evidence.
 
 ## Measure function consistently
 

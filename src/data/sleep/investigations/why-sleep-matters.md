@@ -23,7 +23,7 @@ This makes sustained attention a valuable candidate outcome for my work. A consi
 
 There is also positive evidence for extending sleep. In a randomized crossover experiment, 14 healthy men completed six nights of habitual or extended sleep opportunity. Polysomnography confirmed an increase from about seven to 8.2 hours of sleep. Attention improved before the subsequent deprivation challenge, including fewer vigilance lapses and faster responses. The study had a controlled lead-in and six-week washout; its small sample and task-specific results still leave an individual response to test. French defense funding supported the work, with no industry support declared. [Arnal et al., 2015](https://doi.org/10.5665/sleep.5244).
 
-A separate randomized study analyzed 50 young ROTC participants. Sleep increased by about 1.36 hours over four nights, from a baseline near 6.2 hours. Vigilance and selected cognitive and physical outcomes improved relative to the control condition. Participants and researchers were unblinded, and the intervention primarily addressed short habitual sleep. [Ritland et al., 2019](https://doi.org/10.1016/j.sleep.2019.03.013).
+A separate randomized study analyzed 50 young ROTC participants. Sleep increased by about 1.36 hours over four nights, from a baseline near 6.2 hours. Mean vigilance reaction time, trail-making B performance and broad-jump distance improved relative to control; vigilance lapse counts did not. Multiple outcomes were tested. Participants and researchers were unblinded, and the intervention primarily addressed short habitual sleep. University funding covered participant compensation; no relevant conflicts were declared. [Ritland et al., 2019](https://doi.org/10.1016/j.sleep.2019.03.013).
 
 This gives us a concrete performance hypothesis: more usable sleep may produce a repeatable waking gain. Extension experiments also include null cognitive findings, considered in the [strategy comparison](/sleep/research/improvement-strategies/). The appropriate amount depends on the baseline and the outcome, rather than the assumption that every additional hour helps indefinitely.
 
@@ -41,11 +41,15 @@ Learning before bed, retention after bed and the ability to acquire new informat
 
 A preregistered synthesis of 154 experimental studies, involving 5,717 participants, found that sleep deprivation, restriction and fragmentation reduced positive affect and increased anxiety symptoms. Effects on other emotional outcomes varied across manipulations and measurements. These were experiments in healthy populations, spanning a broad age range. [Palmer et al., 2024](https://doi.org/10.1037/bul0000410).
 
+Clinical outcomes can be tested too. In an assessor-blinded trial, 291 adults aged 60 or older with insomnia received cognitive behavioral therapy for insomnia or active sleep education. Diagnosed incident or recurrent depression was less likely with therapy during follow-up of up to 36 months. Attrition, the bundled treatment and selected population limit extension to my circumstances. NIH funded the study; no conflicts were reported. [Irwin et al., 2022](https://doi.org/10.1001/jamapsychiatry.2021.3422).
+
 For this project, stable energy, interest and emotional functioning can accompany objective performance measures. A brief consistent rating is useful context. It should remain distinct from a clinical diagnosis and from a claim that a particular REM percentage will improve mood.
 
 ## Training: preserve the capacity to adapt
 
 Saner and colleagues studied 24 recreationally active young men in three matched groups. Five nights with 4 hours in bed produced approximately 19% lower integrated muscle protein synthesis than the 8-hour condition. A sleep-restricted group performing interval exercise had higher synthesis than restriction alone, but there was no normal-sleep-plus-exercise group. Muscle mass and injury healing were not direct outcomes. Funding included Sports Medicine Australia and NSERC; the authors declared no competing interests. [Saner et al., 2020](https://doi.org/10.1113/JP278828).
+
+A small counterbalanced crossover also measured actual endurance output. Nine male cyclists and triathletes obtained about 8.4 hours during three extension nights versus 6.8 normally; the fourth-day cycling time trial averaged 56.8 versus 58.7 minutes. A later analysis of the same cohort found that resting heart rate and HRV did not reliably track the performance change. The sample was small, participants knew their schedule, and extension testing occurred later in the morning. No conflicts were declared in the later report. [Roberts et al., 2019](https://doi.org/10.1249/MSS.0000000000002071), [cardiac analysis, 2022](https://doi.org/10.1519/JSC.0000000000004157).
 
 The useful ambition is sustained productive training and recovery. A mechanistic result helps motivate that objective; actual training output and its context are needed to assess progress. Food availability also matters, so the [nutrition recovery investigation](/nutrition/research/energy-availability-and-recovery/) remains part of the same picture.
 
@@ -55,7 +59,9 @@ In nine healthy adults, randomized-order conditions compared ordinary sleep with
 
 A separate study of 26 adults compared restricted sleep with and without repeated 8.5-hour timing shifts. The groups obtained similar sleep duration, yet metabolic and inflammatory effects differed, particularly in men. Allocation was explicitly nonrandomized and the imposed shifts were large. [Leproult et al., 2014](https://doi.org/10.2337/db13-1546).
 
-Together, these studies make continuity and circadian organization worth investigating alongside duration. They establish neither a universal preferred bedtime nor a benefit from pushing deep sleep above someone’s normal amount.
+Improving sleep does not guarantee each metabolic endpoint improves. A 2026 trial randomized 31 short-sleep adults with overweight or obesity and insulin resistance; 29 completed. About six weeks of extension added 1.1 hours of sleep nightly, but did not show improved insulin sensitivity by clamp testing or better glucose control. NIH funding and pharmaceutical relationships were disclosed. [Beals et al., 2026](https://doi.org/10.2337/dc25-2083).
+
+These findings support investigating duration, continuity and circadian organization, then measuring the intended metabolic result. They establish neither a universal bedtime nor a benefit from pushing deep sleep above someone’s normal amount.
 
 ## Immunity and long-term health
 
@@ -74,6 +80,8 @@ The [brain-clearance investigation](/sleep/research/brain-clearance-and-slow-wav
 ## What this makes worth optimizing
 
 Adult AASM/SRS guidance recommends regularly obtaining at least seven hours. This supplies a population reference, while individual sufficiency still needs assessment. [Consensus statement](https://doi.org/10.5664/jcsm.4758).
+
+Researchers have tried estimating individual need by extending sleep opportunity. In 15 young men, repeated extended opportunities allowed investigators to fit individual duration plateaus, which they called “optimal” sleep. Identifying those plateaus with need was an assumption, rather than an independently established optimum across performance and health. The experiment motivates repeated personal outcome comparisons, while leaving that distinction visible. [Kitamura et al., 2016](https://doi.org/10.1038/srep35812).
 
 The first priorities are sufficient sleep opportunity, useful continuity, circadian organization and waking performance. A demanding score challenge can sit alongside them. Stage duration, HRV, heart rate and other physiology help explain patterns when their definitions and uncertainty are retained.
 

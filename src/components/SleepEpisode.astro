@@ -11,7 +11,7 @@ const segments = [
 const maxSeconds = Math.max(...segments.map((segment) => segment.seconds));
 ---
 <figure>
-  <div class="duration-chart" aria-label={`Oura aggregate durations for sleep ending ${entry.wake_date}`}>
+  <div class="duration-chart" role="group" aria-label={`Oura aggregate durations for sleep ending ${entry.wake_date}`}>
     {segments.map((segment) => <div class="duration-row">
       <span>{segment.name}</span>
       <span class="bar-track" aria-hidden="true"><span class={`bar ${segment.kind}`} style={`width: ${segment.seconds / maxSeconds * 100}%`}></span></span>

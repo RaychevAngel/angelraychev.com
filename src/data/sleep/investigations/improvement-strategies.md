@@ -9,20 +9,22 @@ order: 3
 
 ## The improvement queue
 
-| Investigation | Why it deserves attention | What would make it a priority here |
+| Candidate | What makes it worth testing | First comparison and main cost |
 |---|---|---|
-| Sleep opportunity and duration | Insufficient sleep can impair waking performance | Repeated short nights, curtailed opportunity or better function with additional sleep |
-| Caffeine dose and timing | Controlled trials demonstrate sleep disruption | A recorded exposure plausibly affecting the night |
-| Alcohol | Controlled experiments show sleep and cardiac effects | Drinking nights with adequately recorded dose, timing and context |
-| Regularity and circadian alignment | Predictive cohort evidence and causal laboratory physiology address different parts of timing | A variable schedule, poor functioning or evidence of misalignment |
-| Light exposure | Light can change circadian phase and next-day alertness | A light pattern that conflicts with the intended biological schedule |
-| Temperature, noise and light during sleep | Environmental disturbances are actionable | Heat, cold, noise or illumination actually interrupts sleep |
-| Exercise interval before sleep × strain | Timing effects depend on the work performed | Repeated difficulty after late strenuous sessions |
-| Meal timing and size | Metabolic and sleep outcomes need separate evaluation | A reproducible sleep, digestive or metabolic question |
+| Sleep opportunity | Repeated short nights, curtailed opportunity or impaired function | Longer-opportunity blocks; costs time reserved for sleep |
+| Caffeine timing/dose | Recorded use plausibly affecting sleep | Same habitual dose earlier; track any daytime performance cost |
+| Alcohol | Drinking nights with dose, timing and context recorded | Naturally occurring alcohol-free comparisons; social evenings remain confounded |
+| Regularity/alignment | Variable timing, poor function in an important window or evidence of misalignment | Stable repeated blocks; changes several schedule constraints |
+| Light exposure | A pattern that conflicts with the intended biological schedule | A repeatable day/evening contrast; precision measurement adds equipment burden |
+| Temperature, noise and sleep-room light | A disturbance actually interrupts sleep | One reversible adjustment; little recurring burden if effective |
+| Exercise interval × strain | Repeated difficulty after late strenuous sessions | Comparable work earlier; preserve training while changing its schedule |
+| Meal timing/size | A reproducible sleep, digestive or metabolic question | Match intake while changing timing; alters meal scheduling |
 
 The practical order is **sufficiency → identifiable disruption → timing/alignment → enhancement**. Establish whether ordinary sleep is curtailed, then seek a removable exposure. Investigate timing against waking performance. Novel supplements/devices have a less established added value in healthy sleepers.
 
 A clear problem changes priority: disruptive noise deserves immediate attention. Seek useful effects with low burden and repeatable comparisons. No caffeine, alcohol or environmental exposure has been assumed for the first night. [Experiment design](/sleep/research/personal-experiments/).
+
+The queue is conditional. If extra opportunity produces only more waking in bed, investigate the next constraint. If the only gain is an algorithm grade, record that achievement and evaluate its practical cost separately. A retained change should improve the chosen outcome enough to justify its burden.
 
 ## Duration: find sufficiency before pursuing precision
 
@@ -88,15 +90,15 @@ A small randomized room-light/dim-light laboratory comparison found acute cardia
 
 A small PSG crossover detected no impairment after moderate aerobic/resistance exercise ending about ninety minutes before bed. It did not test all-out lifting. [Miller et al.](https://pubmed.ncbi.nlm.nih.gov/31072217/)
 
-A much larger observational WHOOP study associated later and more strenuous exercise with shorter sleep and altered overnight cardiac measures. Its proposed four-hour interval is not a randomized demonstration of a universal cutoff. [Leota et al.](https://www.nature.com/articles/s41467-025-58271-x)
+A much larger observational WHOOP study associated later and more strenuous exercise with shorter sleep and altered overnight cardiac measures. Its proposed four-hour interval is not a randomized demonstration of a universal cutoff. Heart-rate-based strain may underestimate brief, high-effort strength work; attempted sleep and onset latency were not measured. Those limits matter when translating it to lifting. [Leota et al.](https://www.nature.com/articles/s41467-025-58271-x)
 
 Specify type, duration, intensity and interval before sleep. Early-easy versus late-hard sessions confound timing with strain. Cardiac changes alone do not establish worse sleep; retain functional recovery and training progression.
 
 ## Presleep arousal and a breathing routine
 
-For settling-down difficulty, a study randomized 70 people and analysed 64, comparing a month of evening slow breathing with equal-duration social media. Subjective sleep and ECG high-frequency HRV improved. It measured no objective stages and cannot isolate breathing from a quieter routine. [Laborde et al.](https://pubmed.ncbi.nlm.nih.gov/30736268/)
+In young adults selected as good sleepers, a study randomized 70 people and analysed 64. Fifteen minutes of nightly slow breathing for thirty days reduced the subjective PSQI score from 3.31 to 2.91; equal-duration social-media controls changed from 3.44 to 3.75. The score ranges from 0 to 21, with lower better. The time-by-group effect was significant, but a 0.40-point within-group improvement is a modest absolute change. Overnight ECG high-frequency HRV also changed; no objective stages were measured. The comparator cannot isolate breathing from a quieter routine. German Sport University Cologne funded the study; authors declared no conflicts. [Laborde et al.](https://pubmed.ncbi.nlm.nih.gov/30736268/)
 
-Test onset difficulty or next-day function against the routine's time cost. An awake breathing routine and nightly respiratory rate are separate quantities.
+For settling-down difficulty, test onset or next-day function against the routine's fifteen-minute nightly cost, or substitute it for an existing routine. An awake breathing routine and nightly respiratory rate are separate quantities.
 
 ## Environment: measure the actual disturbance
 
