@@ -1,0 +1,29 @@
+---
+const { entry } = Astro.props;
+const s = entry.oura.sleep;
+const formatDuration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
+const segments = [
+  { name: "Deep", seconds: s.deep_sleep_duration, fill: "#000", y: 30 },
+  { name: "REM", seconds: s.rem_sleep_duration, fill: "url(#rem-hatch)", y: 70 },
+  { name: "Light", seconds: s.light_sleep_duration, fill: "#767676", y: 110 },
+  { name: "Awake", seconds: s.awake_time, fill: "#fff", y: 150 },
+];
+const maxSeconds = Math.max(...segments.map((segment) => segment.seconds));
+---
+<figure>
+  <svg viewBox="0 0 640 195" role="img" aria-labelledby={`episode-title-${entry.id} episode-desc-${entry.id}`}>
+    <title id={`episode-title-${entry.id}`}>Oura estimates for sleep ending {entry.wake_date}</title>
+    <desc id={`episode-desc-${entry.id}`}>Deep {formatDuration(s.deep_sleep_duration)}, REM {formatDuration(s.rem_sleep_duration)}, light {formatDuration(s.light_sleep_duration)}, awake {formatDuration(s.awake_time)}. This compares aggregate durations; it is not a chronological sleep-stage trace.</desc>
+    <defs><pattern id="rem-hatch" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="white" /><path d="M-1 1L1-1M0 6L6 0M5 7L7 5" stroke="black" stroke-width="1" /></pattern></defs>
+    {segments.map((segment) => <g>
+      <text x="0" y={segment.y + 16}>{segment.name}</text>
+      <rect x="83" y={segment.y} width={segment.seconds / maxSeconds * 400} height="22" fill={segment.fill} stroke="#000" stroke-width="1" />
+      <text x="505" y={segment.y + 16}>{formatDuration(segment.seconds)}</text>
+    </g>)}
+  </svg>
+  <figcaption>One episode, four estimated totals. Bar length represents duration; positions do not represent the order of sleep stages. Oura's elapsed episode was {formatDuration(s.time_in_bed)}.</figcaption>
+</figure>
+<style>
+  svg { font: 14px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  @media (max-width: 460px) { svg { min-width: 420px; } figure { overflow-x: auto; } }
+</style>

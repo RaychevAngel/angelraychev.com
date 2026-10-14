@@ -28,7 +28,8 @@ const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: 
 const entries = posts
   .map((p) => ({ title: p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) }))
   .concat([{ title: "Finding a princess on a rectangle", href: "/princess/", when: "13 Sep 2026" }])
-  .concat([{ title: "Guaranteed delivery despite a pursuer", href: "/cop-prisoner/", when: "18 Sep 2026" }]);
+  .concat([{ title: "Guaranteed delivery despite a pursuer", href: "/cop-prisoner/", when: "18 Sep 2026" }])
+  .concat([{ title: "Sleep performance", href: "/sleep-notebook/", when: "13 Oct 2026" }]);
 
 // Subject groups and reading order; article URLs and content stay unchanged.
 const groups: { id: string; title: string; items: { href: string }[] }[] = [
@@ -73,6 +74,13 @@ const groups: { id: string; title: string; items: { href: string }[] }[] = [
       { href: "/nutrition-notebook" },
     ],
   },
+  {
+    id: "sleep",
+    title: "Sleep",
+    items: [
+      { href: "/sleep-notebook/" },
+    ],
+  },
 ];
 
 const entriesByHref = new Map(entries.map((entry) => [entry.href, entry]));
@@ -107,6 +115,7 @@ if (ungrouped.length) {
       </ul>
       {section.id === "running" && <p class="running-record"><a href="/running/record/">Training and race record</a> · <a href="/running/record/2026/">Latest sessions</a></p>}
       {section.id === "food-and-nutrition" && <p class="running-record"><a href="/nutrition/guide/">Nutrient guide</a> · <a href="/nutrition/record/">Food record</a> · <a href="/nutrition/research/">Investigations</a></p>}
+      {section.id === "sleep" && <p class="running-record"><a href="/sleep/targets/">Targets</a> · <a href="/sleep/record/">Sleep record</a> · <a href="/sleep/measurements/">Measurements</a> · <a href="/sleep/research/">Investigations</a></p>}
     </section>
   ))}
 </Base>

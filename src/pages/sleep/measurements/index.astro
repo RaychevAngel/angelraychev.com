@@ -1,0 +1,25 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+const pages = import.meta.glob("../../../data/sleep/measurements/*.md", { eager: true });
+const entries = Object.entries(pages).map(([path, page]) => ({ slug: path.split("/").pop().replace(/\.md$/, ""), ...page.frontmatter })).sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
+const frontmatter = { title: "Sleep measurements", description: "What each sleep measurement means, how well it is measured and which direction of improvement is justified.", updated: "2026-10-13" };
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="measurements" />
+  <p>Each measurement needs three answers: what it represents, how well it is measured, and what improvement would establish. A physiological value can be useful to observe without being something to maximize or minimize.</p>
+  <p><strong>Benchmark</strong> means a defined performance challenge. <strong>Range</strong> means more or less is not indefinitely better. <strong>Monitor</strong> means track a pattern before deciding whether to change it. <strong>Investigate</strong> means measurement or outcome evidence is insufficient for a numerical target. These are project decisions, not clinical diagnoses.</p>
+  <div class="tablewrap"><table aria-label="Sleep measurement index"><thead><tr><th scope="col">Measurement</th><th scope="col">Role</th><th scope="col">Current decision</th></tr></thead><tbody>
+    {entries.map((entry) => <tr><td><a href={`/sleep/measurements/${entry.slug}/`}>{entry.title}</a></td><td>{entry.role}</td><td>{entry.attention}</td></tr>)}
+  </tbody></table></div>
+  <h2 id="measurement-hierarchy">Four kinds of information</h2>
+  <ol>
+    <li><strong>Measured signals:</strong> photoplethysmography, movement and peripheral temperature; a signal can contain noise or missing intervals.</li>
+    <li><strong>Estimated states:</strong> heart rate, breathing, sleep/wake and stages inferred from signals using an algorithm.</li>
+    <li><strong>Composite judgments:</strong> Sleep Score and Readiness combine estimates through provider scoring rules.</li>
+    <li><strong>Outcomes:</strong> vigilance, sleepiness, performance, clinical assessments and longer-term health. A better estimate or composite does not itself prove an outcome improved.</li>
+  </ol>
+  <h2 id="quality-before-precision">What makes a measurement useful</h2>
+  <p>Record units, episode boundaries, missingness, source and hardware/algorithm where exposed. Repeated nights matter more than excessive decimal places. A population-average error, correlation coefficient, sleep/wake accuracy and four-stage agreement answer different questions.</p>
+  <p>The first <a href="/sleep/record/#night-2026-10-13">paired night</a> illustrates this: the devices broadly selected the same episode but assigned different scores and awake time. The <a href="/sleep/research/measurement-and-validation/">validation investigation</a> examines the reference measurements and the evidence for Oura Ring 5 specifically.</p>
+</Post>

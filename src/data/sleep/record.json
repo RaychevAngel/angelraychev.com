@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-13",
+  "entries": [
+    {
+      "id": "2026-10-13",
+      "wake_date": "2026-10-13",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider sleep wake-up date",
+      "status": "First observation; not a baseline distribution",
+      "retrieved_at": "2026-10-14T01:33:51.937723+00:00",
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.25",
+        "algorithm_version": "v2",
+        "sleep": {
+          "average_breath": 12.375,
+          "average_heart_rate": 50.375,
+          "average_hrv": 61,
+          "awake_time": 1930,
+          "bedtime_end": "2026-10-13T11:11:08.000-07:00",
+          "bedtime_start": "2026-10-13T03:36:58.000-07:00",
+          "day": "2026-10-13",
+          "deep_sleep_duration": 6180,
+          "efficiency": 93,
+          "latency": 450,
+          "light_sleep_duration": 13080,
+          "lowest_heart_rate": 45,
+          "rem_sleep_duration": 6060,
+          "time_in_bed": 27250,
+          "total_sleep_duration": 25320,
+          "type": "long_sleep"
+        },
+        "score": 75,
+        "contributors": {
+          "deep_sleep": 95,
+          "efficiency": 98,
+          "latency": 78,
+          "rem_sleep": 81,
+          "restfulness": 93,
+          "timing": 12,
+          "total_sleep": 71
+        },
+        "readiness_score": 84,
+        "temperature_deviation_c": -0.15,
+        "spo2_average_percent": 95.244,
+        "breathing_disturbance_index": 3,
+        "source": "Authenticated Oura API V2, selected sleep/daily_sleep/daily_readiness/daily_spo2 fields"
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 93,
+        "daily_sleep_minutes": 436,
+        "main_sleep_minutes": 436,
+        "main_period_minutes": 449,
+        "main_start": "2026-10-13T03:42:00-07:00",
+        "main_end": "2026-10-13T11:11:00-07:00",
+        "ratios_percent": {
+          "deep": 20,
+          "light": 50,
+          "rem": 27,
+          "awake": 3
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 13,
+        "awake_count_over_5min": 1,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 61,
+        "sleep_hrv_definition": "Official daily assessment; not recalculated from returned points",
+        "daily_min_hr_bpm": 44,
+        "daily_average_hr_bpm": 64,
+        "resting_hr_bpm": 55,
+        "heart_rate_scope_note": "Daily minimum/average and predicted seated resting HR; not matched sleep-window metrics",
+        "source": "Official COROS connector: querysleepoverview/querysleephrv/queryavgheartrate/queryrestingheartrate, wake date 20261013"
+      },
+      "self_report": {
+        "restfulness": null,
+        "daytime_sleepiness": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null
+      },
+      "context": [
+        {
+          "kind": "device_record",
+          "observation": "COROS track run Oct12 21:36\u201322:00 Pacific, 23:47, average HR148bpm; describes recorded exercise, not an inferred cause of sleep results."
+        }
+      ],
+      "corrections": []
+    }
+  ]
+}

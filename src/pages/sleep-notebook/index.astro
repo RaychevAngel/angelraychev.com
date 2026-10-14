@@ -1,0 +1,22 @@
+---
+import Post from "../../layouts/Post.astro";
+import SleepNav from "../../components/SleepNav.astro";
+import record from "../../data/sleep/record.json";
+import { Content } from "../../data/sleep/notebook.md";
+const latest = record.entries.at(-1);
+const frontmatter = { title: "Sleep performance", description: "An explicit pursuit of better sleep: goals, evidence, measurements, a daily record and the next frontier.", updated: "2026-10-13" };
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="notebook" />
+  <p>I want an explicit target to pursue. With running, the target is a score profile on the World Athletics tables. With food, improvement spans nutritional adequacy, taste, speed and cost. Sleep needs the same discipline: decide what matters, specify the measurement and target, improve, verify the result, then expand.</p>
+  <p>The larger ambition is exceptional capability and a long life with that capability available. A sleep score can give the project a near-term benchmark. Research and functional measurements determine which broader claims the result supports.</p>
+  <h2 id="present-position">Present position</h2>
+  <div class="tablewrap"><table aria-label="Sleep project position"><thead><tr><th scope="col">Question</th><th scope="col">Current position</th></tr></thead><tbody>
+    <tr><th scope="row">Recorded evidence</th><td>{record.entries.length} paired night, ending <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a></td></tr>
+    <tr><th scope="row">Device grading</th><td>Oura {latest?.oura.score}; COROS {latest?.coros.sleep_score}</td></tr>
+    <tr><th scope="row">First target proposals</th><td><a href="/sleep/targets/#score-milestones">Sustained optimal grading, then a higher consistent score</a></td></tr>
+    <tr><th scope="row">Personal physiological optimum</th><td>Not established; each metric has a separate <a href="/sleep/measurements/">interpretation and target status</a></td></tr>
+    <tr><th scope="row">Next decision</th><td>Identify a meaningful limiting factor and a measurable outcome before selecting an intervention</td></tr>
+  </tbody></table></div>
+  <Content />
+</Post>

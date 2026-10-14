@@ -1,0 +1,78 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+import SleepEpisode from "../../../components/SleepEpisode.astro";
+import record from "../../../data/sleep/record.json";
+const frontmatter = { title: "Sleep record", description: "Dated sleep observations, device estimates, comparisons and corrections behind the sleep performance project.", updated: record.updated };
+const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
+const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
+const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
+const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="record" />
+  <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
+  <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. One observation cannot establish a personal baseline, a trend or the cause of a result.</p>
+  <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — first paired observation</li>)}</ul>
+  {record.entries.map((entry) => {
+    const s = entry.oura.sleep;
+    return <section aria-labelledby={`night-${entry.id}`}>
+      <h2 id={`night-${entry.id}`}>13 October 2026 — one night, two grading systems</h2>
+      <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)} PDT. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. The windows end together and start five minutes apart. Their sleep estimates and scores differ.</p>
+      <div class="tablewrap">
+        <table aria-label="Paired sleep estimates for October 13">
+          <thead><tr><th scope="col">Measurement</th><th scope="col">Oura Ring 5</th><th scope="col">COROS PACE 4</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Sleep score</th><td>{entry.oura.score} / 100</td><td>{entry.coros.sleep_score} / 100</td></tr>
+            <tr><th scope="row">Selected sleep window</th><td>{time(s.bedtime_start)}–{time(s.bedtime_end)}</td><td>{time(entry.coros.main_start)}–{time(entry.coros.main_end)}</td></tr>
+            <tr><th scope="row">Estimated time asleep</th><td>{duration(s.total_sleep_duration)}</td><td>{duration(entry.coros.main_sleep_minutes * 60)}</td></tr>
+            <tr><th scope="row">Episode including awake time</th><td>{duration(s.time_in_bed)}</td><td>{duration(entry.coros.main_period_minutes * 60)}</td></tr>
+            <tr><th scope="row">Estimated awake time in episode</th><td>{minutes(s.awake_time)}</td><td>{entry.coros.awake_minutes} min</td></tr>
+            <tr><th scope="row">Reported overnight HRV</th><td>{s.average_hrv} ms</td><td>{entry.coros.official_sleep_hrv_ms} ms</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The identical HRV headline is agreement between provider summaries, not validation against ECG. Their sampling, accepted beats and averaging may differ. The 18-point score gap means that choosing which grading system to optimize is consequential.</p>
+      <SleepEpisode entry={entry} />
+      <h3 id="oura-contributors">What Oura graded</h3>
+      <p>These are <strong>contributor scores out of 100</strong>. The efficiency contributor of 98 is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of 95 is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
+      <div class="tablewrap"><table aria-label="Oura sleep contributor scores"><thead><tr><th scope="col">Contributor</th><th scope="col">Score / 100</th></tr></thead><tbody>
+        {Object.entries(labels).map(([key, name]) => <tr><th scope="row">{name}</th><td>{entry.oura.contributors[key]}</td></tr>)}
+      </tbody></table></div>
+      <p>Timing and total sleep were the weaker contributors. This identifies where Oura's score has room to improve. It does not establish that a particular clock time is my optimal biological schedule or that more deep sleep should be the next objective. <a href="/sleep/targets/">Targets and their evidence</a>.</p>
+      <details>
+        <summary>Physiology, provenance and missing context</summary>
+        <h3>Oura physiology</h3>
+        <div class="tablewrap"><table aria-label="Oura physiological estimates"><thead><tr><th scope="col">Measurement</th><th scope="col">Reported value</th><th scope="col">Scope</th></tr></thead><tbody>
+          <tr><th scope="row">Average heart rate</th><td>{s.average_heart_rate.toFixed(1)} bpm</td><td>Selected sleep episode</td></tr>
+          <tr><th scope="row">Lowest heart rate</th><td>{s.lowest_heart_rate} bpm</td><td>Selected sleep episode</td></tr>
+          <tr><th scope="row">Average respiratory rate</th><td>{s.average_breath.toFixed(1)} / min</td><td>Oura estimate during sleep</td></tr>
+          <tr><th scope="row">Temperature deviation</th><td>{entry.oura.temperature_deviation_c.toFixed(2)} °C</td><td>Peripheral-temperature deviation from provider baseline; not core temperature</td></tr>
+          <tr><th scope="row">Average SpO₂</th><td>{entry.oura.spo2_average_percent.toFixed(1)}%</td><td>Provider daily sleep-oxygen summary</td></tr>
+          <tr><th scope="row">Breathing disturbance index</th><td>{entry.oura.breathing_disturbance_index}</td><td>Provider index; not a clinical apnea–hypopnea index</td></tr>
+          <tr><th scope="row">Readiness score</th><td>{entry.oura.readiness_score} / 100</td><td>Separate composite, not a second sleep score</td></tr>
+          <tr><th scope="row">Sleep latency</th><td>{minutes(s.latency)}</td><td>Provider estimate within selected episode</td></tr>
+        </tbody></table></div>
+        <h3>COROS summaries</h3>
+        <p>The connector reports deep 20%, light 50%, REM 27%, awake 3%, with daily metric scope and no naps. Its exact percentage denominator was not supplied; these ratios have not been converted into exact stage minutes. It counted {entry.coros.awake_count_over_5min} awakening longer than five minutes. That definition is different from an unrestricted count of all awakenings.</p>
+        <p>COROS reported a daily minimum HR of {entry.coros.daily_min_hr_bpm} bpm, a daily average of {entry.coros.daily_average_hr_bpm} bpm and resting HR of {entry.coros.resting_hr_bpm} bpm. The daily values do not use the matched sleep window. COROS defines its automatic resting-HR estimate as predicted seated HR shortly after waking, which differs from Oura's sleep minimum. <a href="https://coros.com/uk/stories/coros-metrics/c/resting-heart-rate-explained">COROS definition</a>.</p>
+        <h3>Context retained and context unknown</h3>
+        <p>A COROS track recording on 12 October ran from 21:36 to 22:00 PDT, lasting 23:47 with average HR 148 bpm. Its occurrence is recorded; it has not been assigned a causal effect on this night.</p>
+        <p>Restfulness, daytime sleepiness, caffeine dose and timing, alcohol, intended bedtime, bedroom conditions and stress were not reported for this night. They remain unknown.</p>
+        <h3>Where these values came from</h3>
+        <p>Authenticated Oura API V2 responses from <code>sleep</code>, <code>daily_sleep</code>, <code>daily_readiness</code> and <code>daily_spo2</code>, filtered to the requested wake date; and the official COROS connector's sleep overview, official HRV assessment and daily HR summaries. Retrieved {entry.retrieved_at}. Oura reports hardware <code>{entry.oura.hardware_type}</code>, firmware {entry.oura.firmware_version}. A supplementary Oura request returned sleep algorithm version <code>{entry.oura.algorithm_version}</code>. The exact model revision and COROS firmware remain unverified.</p>
+        <p>Credential material, device identifiers, source document IDs and raw physiological streams are excluded from this page. Displayed durations round down to complete minutes; source values retain their original seconds.</p>
+      </details>
+    </section>;
+  })}
+  <h2 id="how-to-add-a-night">How a night is added</h2>
+  <p>An entry begins with an on-demand request for the relevant night. The canonical record retains original provider values and their scope. Measured signals, algorithmic estimates, self-reports and interpretations are named separately. Missing data is not zero; missing nights are not silently removed from a target window.</p>
+  <p>A correction adds the reason and retains the date on which an interpretation changed. Historical observations remain intelligible as the current <a href="/sleep/targets/">targets</a> and <a href="/sleep/research/">investigations</a> develop. This first version has one recorded night and no scheduled synchronization.</p>
+</Post>
+<style>
+  details { margin: 32px 0; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  details[open] summary { margin-bottom: 24px; }
+  section { margin-bottom: 48px; }
+</style>

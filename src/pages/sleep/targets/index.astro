@@ -1,0 +1,50 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+import record from "../../../data/sleep/record.json";
+const frontmatter = { title: "Sleep targets", description: "Provisional sleep-performance milestones, evidence-supported directions and the criteria for claiming improvement.", updated: "2026-10-13" };
+const latest = record.entries.at(-1);
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="targets" />
+  <p><strong>Objective:</strong> achieve consistently excellent sleep, then expand the measurements and improve its demonstrated contribution to alertness, cognitive performance and training recovery.</p>
+  <p>This is version 1 of the target specification. The numerical score milestones below are <strong>proposed project benchmarks</strong>. They are not clinical cutoffs, adopted treatment targets or evidence that a particular lifespan has been gained. The first night supplies an observation; a full personal baseline and a functional test protocol are still to be established.</p>
+  <h2 id="score-milestones">Two score milestones</h2>
+  <div class="tablewrap"><table aria-label="Proposed Oura score milestones"><thead><tr><th scope="col">Milestone</th><th scope="col">Success criterion</th><th scope="col">Current status</th></tr></thead><tbody>
+    <tr><th scope="row">Consistent optimal grading</th><td>14-calendar-day average Oura Sleep Score ≥85; at least 12 valid recorded nights</td><td>Proposed. {record.entries.length} night recorded; not assessable.</td></tr>
+    <tr><th scope="row">Higher sustained grading</th><td>28-calendar-day average ≥90; ≥80% of observed nights ≥85; at least 24 valid nights</td><td>Stretch proposal. Feasibility is unknown.</td></tr>
+  </tbody></table></div>
+  <p>Oura defines 85–100 as “Optimal.” The 14/28-day windows, coverage rules and 90-point stretch are deliberate choices for this project, not validated biological thresholds. A single 95-point night does not satisfy either sustained milestone. <a href="https://support.ouraring.com/hc/en-us/articles/360025445574-Sleep-Score">Oura definitions</a>.</p>
+  <p>The latest Oura score is <strong>{latest?.oura.score}</strong> on <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a>. COROS scored the corresponding episode <strong>{latest?.coros.sleep_score}</strong>; its score is retained as a separate benchmark. We do not switch providers to select the higher score or average their grades.</p>
+  <h3>How a milestone is assessed</h3>
+  <p>Choose the calendar window before assessing it; count each provider wake date once. Show every date, the number of valid scores and missing dates. Include recorded travel, illness and difficult nights in the headline result, with contextual subgroup analyses labeled separately. No imputation of missing scores. If an algorithm changes, mark that boundary before interpreting a trend. Retain the component distributions, not just the mean.</p>
+  <p>Coverage alone does not fix selective missingness. If low-quality or difficult nights are disproportionately absent, the window needs review before a milestone is awarded. Two well-measured windows can test whether a result is repeatable.</p>
+  <h2 id="physiology-and-function">Targets beyond a composite score</h2>
+  <div class="tablewrap"><table aria-label="Directions for sleep optimization"><thead><tr><th scope="col">Dimension</th><th scope="col">Direction</th><th scope="col">What is justified now</th></tr></thead><tbody>
+    <tr><th scope="row"><a href="/sleep/measurements/duration/">Duration</a></th><td>Appropriate range</td><td>Regularly obtain enough sleep for functioning. Adult consensus supports ≥7h; 7–9h is a starting reference range, not a personal optimum or strict upper bound.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/timing/">Regularity and alignment</a></th><td>Investigate and improve</td><td>Measure variation and phase context. No 08:00 wake-time target or universal minute limit has been adopted.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/continuity/">Continuity</a></th><td>Reduce meaningful disruption</td><td>Interpret latency and waking alongside duration and experience. Do not improve efficiency by simply cutting sleep opportunity.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/stages/">REM and deep sleep</a></th><td>Monitor; test hypotheses</td><td>No independently justified personal minute quota. Verify measurement before making a small stage change the objective.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/cardiac/">HR and HRV</a></th><td>Contextual trends</td><td>No universal minimum HR or maximum HRV. Compare the same metric within a device and matched intervals between devices.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/breathing/">Breathing and oxygen</a></th><td>Monitoring and question-led assessment</td><td>Provider summaries do not establish absence or severity of a breathing disorder. A mean rate is not a full respiratory pattern.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/temperature/">Temperature</a></th><td>Interpret the specific signal</td><td>Peripheral deviation, room temperature and core temperature are separate measurements. No “lowest possible” goal.</td></tr>
+    <tr><th scope="row"><a href="/sleep/measurements/functioning/">Waking performance</a></th><td>Direct improvement</td><td>Select a validated vigilance protocol; establish personal variability before choosing a numerical improvement target.</td></tr>
+  </tbody></table></div>
+  <p>The duration reference comes from adult consensus and the National Sleep Foundation's age-specific recommendations. Their purpose is population guidance. An individual optimum requires repeated observations and suitable outcomes. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4442216/">AASM/SRS statement</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/29073412/">NSF recommendations</a>.</p>
+  <h2 id="functional-check">A functional check alongside the score</h2>
+  <p>Start with a validated psychomotor vigilance task rather than treating a generic reaction-time game as equivalent. Keep its duration, thresholds, device and testing conditions consistent. Retain lapses, false starts and reaction-time distribution, plus time since waking and caffeine exposure. Practice and hardware latency can move results independently of sleep.</p>
+  <p>The future target is a repeatable improvement beyond baseline variability, with no deterioration in accuracy or unacceptable cost in sleep time, training or daily functioning. Its numerical size remains <strong>unresolved</strong> until a protocol and baseline exist. <a href="/sleep/measurements/functioning/">Measurement choices</a>.</p>
+  <h2 id="progression">How the project expands</h2>
+  <ol>
+    <li><strong>Establish the measurement:</strong> enough repeated nights, units, source and limitations to know what the proposed target means.</li>
+    <li><strong>Pursue a specific improvement:</strong> select a practical change and its expected effect before examining the result.</li>
+    <li><strong>Check repetition and function:</strong> retain successful and unsuccessful nights, functional observations and confounding context.</li>
+    <li><strong>Expand:</strong> add an outcome, a reference measurement or a new hypothesis when it could change a consequential decision.</li>
+  </ol>
+  <p>Expansion can begin before a score milestone is achieved. A clinically relevant issue or a promising measurement question should not wait for 90 points. Additional instrumentation earns its place by answering a question; the number of measured variables is not itself the achievement.</p>
+  <h2 id="what-success-establishes">What a result would establish</h2>
+  <p>A score milestone establishes consistently meeting a named vendor's grading criteria. A reproducible task improvement establishes improvement on that task under the recorded conditions. A controlled personal comparison provides evidence about a change in my setting. None of these alone establishes comprehensive health, better memory in every domain, or added years of life.</p>
+  <p>The goal remains ambitious. Its claims become stronger as the measurements, comparisons and outcomes improve. <a href="/sleep/research/">Investigations</a> hold the reasoning that can revise these targets.</p>
+  <h2 id="target-history">Target history</h2>
+  <p><strong>13 October 2026:</strong> initial specification. The earlier 90-average suggestion is retained as a stretch proposal rather than a demonstrated realistic starting target. Specific wake time and stage quotas remain unassigned pending investigation. No milestone has been achieved or awarded.</p>
+</Post>
