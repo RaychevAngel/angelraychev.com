@@ -25,6 +25,12 @@ The actual ring is hardware `or5`, firmware `2.1.25`. Its sensing specification 
 
 COROS's Temperature Widget is a separate device-temperature measurement. Its instructions recommend removing the watch from the wrist and leaving it away from the body for at least ten minutes to reduce body-heat effects. It should not be merged with Oura's overnight finger-temperature deviation. [COROS widget](https://support.coros.com/hc/en-us/articles/43904010291348-Temperature-Widget).
 
+## What temperature physiology adds
+
+Skin and core temperature can move in different directions around sleep. A controlled study in 24 participants used two six-hour PSG nights, with counterbalanced thermosuit sequences. It included eight young adults, eight older good sleepers and eight older people with insomnia. Mild skin warming of about 0.4°C suppressed waking and shifted sleep toward deeper stages without changing core temperature; effects were especially pronounced in the older groups. Public agencies and foundations supported the work, with contributions from several device and bedding companies. [Raymann and colleagues](https://doi.org/10.1093/brain/awm315).
+
+The experimentally controlled skin exposure is the relevant quantity. This small study does not establish an ideal ring deviation, room thermostat setting or result from a generic heated blanket. It does show why minimizing every temperature reading would be an incoherent goal.
+
 ## The target
 
 For the initial notebook, temperature is an explanatory signal and possible change detector. A personal number to minimize has not been justified. Environmental optimization concerns whether a chosen bedroom condition improves sleep and functioning, while remaining comfortable and practical.

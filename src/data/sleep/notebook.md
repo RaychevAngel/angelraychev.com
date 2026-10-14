@@ -21,7 +21,7 @@ The ring's API reports hardware `or5` and firmware 2.1.25, confirming that the a
 
 ## Why sleep belongs in a performance project
 
-The clearest experimental results concern the consequences of insufficient or disrupted sleep. Human studies connect sleep with vigilance, learning, metabolic regulation and short physiological recovery measurements. Longevity associations and mechanistic research extend the questions but do not establish how many years a particular score adds.
+Human experiments demonstrate costs of insufficient or disrupted sleep and benefits from extending sleep under some conditions. They connect sleep with vigilance, learning, metabolic regulation and physiological recovery measurements. The direction and size of a gain depend on the initial state, intervention and outcome. Longevity associations and mechanistic research extend the questions but do not establish how many years a particular score adds.
 
 The [outcome investigation](/sleep/research/why-sleep-matters/) follows the connection from a tested sleep manipulation to a measured outcome. It distinguishes causal experiments, prospective associations, proposed mechanisms and outcomes not yet demonstrated. The practical objective is to find which sleep characteristics and interventions improve something valuable in my setting.
 

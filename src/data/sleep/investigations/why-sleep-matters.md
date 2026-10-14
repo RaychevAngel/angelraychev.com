@@ -7,7 +7,7 @@ order: 1
 
 I want sleep to support exceptional performance and a long, capable life. A score gives that ambition a visible target. Research helps decide what the target should represent: which functions improve, which measurements deserve attention, and which proposed mechanisms can support a practical decision.
 
-Sleep offers several opportunities for improvement. Some can be tested over days or weeks. Others concern disease risk over decades. Keeping those timescales and outcomes identifiable makes the project more ambitious in a useful way: each claimed achievement can have an appropriate test.
+The practical story is that sleep supports the capacity to use the next day well. It helps sustain attention, supports consolidation of selected memories, influences emotional functioning and participates in metabolic regulation. For training, it also affects a process needed for adaptation. The experiments below show what researchers actually changed and measured, so that an optimization project can build on demonstrated effects.
 
 ## An active physiological process
 
@@ -21,11 +21,21 @@ In a controlled study of 48 healthy adults, participants underwent restricted sl
 
 This makes sustained attention a valuable candidate outcome for my work. A consistent vigilance test could capture lapses and unusually slow responses that a sleep score misses. The measurement needs a stable protocol, comparable testing conditions and attention to practice, device latency and caffeine. The experiment establishes a cost of repeated restriction; it does not tell us whether another half-hour above already adequate sleep will improve my performance.
 
+There is also positive evidence for extending sleep. In a randomized crossover experiment, 14 healthy men completed six nights of habitual or extended sleep opportunity. Polysomnography confirmed an increase from about seven to 8.2 hours of sleep. Attention improved before the subsequent deprivation challenge, including fewer vigilance lapses and faster responses. The study had a controlled lead-in and six-week washout; its small sample and task-specific results still leave an individual response to test. French defense funding supported the work, with no industry support declared. [Arnal et al., 2015](https://doi.org/10.5665/sleep.5244).
+
+A separate randomized study analyzed 50 young ROTC participants. Sleep increased by about 1.36 hours over four nights, from a baseline near 6.2 hours. Vigilance and selected cognitive and physical outcomes improved relative to the control condition. Participants and researchers were unblinded, and the intervention primarily addressed short habitual sleep. [Ritland et al., 2019](https://doi.org/10.1016/j.sleep.2019.03.013).
+
+This gives us a concrete performance hypothesis: more usable sleep may produce a repeatable waking gain. Extension experiments also include null cognitive findings, considered in the [strategy comparison](/sleep/research/improvement-strategies/). The appropriate amount depends on the baseline and the outcome, rather than the assumption that every additional hour helps indefinitely.
+
 ## Memory: mechanisms can matter beyond stage totals
 
 Rasch and colleagues associated an odor with an object-location learning task, then presented it during EEG-confirmed slow-wave sleep. In the principal experiment with 18 volunteers, next-morning retention was about 97% of previously learned locations after the odor condition, versus 86% after control. Sleep architecture itself was unchanged; the task and timing of reactivation mattered. The work was DFG-funded. [Rasch et al., 2007](https://doi.org/10.1126/science.1138581).
 
 That is an instructive optimization result: a process occurring within a stage affected a specific memory outcome. It supports investigating learning and overnight retention with suitable tasks. It provides no general ideal N3 duration, and a scent diffuser without the experimental learning and cueing protocol would be a different intervention.
+
+Sleep can also preserve the capacity to learn the following day. In a counterbalanced study of 20 young adults, overnight deprivation reduced word-pair acquisition and a TMS-based measure of cortical plasticity compared with ordinary sleep. The electrical response provides a physiological clue; it does not directly count synapses or isolate a sleep stage. Some authors disclosed pharmaceutical relationships. [Kuhn et al., 2016](https://doi.org/10.1038/ncomms12455).
+
+Learning before bed, retention after bed and the ability to acquire new information the next morning are therefore distinct outcomes a future experiment could assess.
 
 ## Emotional functioning is part of capability
 
@@ -49,6 +59,8 @@ Together, these studies make continuity and circadian organization worth investi
 
 ## Immunity and long-term health
 
+Sleep can affect how the immune system develops a response to a new antigen. Lange and colleagues randomized 27 healthy men to sleep or stay awake on the night after each of three hepatitis A/B vaccinations. Sleep supported stronger hepatitis A-specific helper-T-cell and antibody responses. Only 12 participants remained at the one-year follow-up, and infection prevention was not the endpoint. DFG funded the study; no financial conflicts were declared. [Lange et al., 2011](https://doi.org/10.4049/jimmunol.1100015).
+
 In 164 healthy adults, shorter sleep measured before standardized rhinovirus exposure predicted a greater chance of developing a clinical cold. Sleep itself was not randomized, and the estimates had wide uncertainty. This supports immune relevance while leaving individual risk and the effect of a sleep intervention unresolved. [Prather et al., 2015](https://doi.org/10.5665/sleep.4968).
 
 Longer-term studies provide a different kind of evidence. In approximately 61,000 older UK Biobank participants, one week of measured sleep regularity predicted mortality over subsequent years after statistical adjustments. The authors disclosed lighting-related research funding and ownership in a circadian-health company. The study identifies an association in that population; it cannot convert a change in my schedule into years of life gained. [Windred et al., 2024](https://doi.org/10.1093/sleep/zsad253).
@@ -56,6 +68,8 @@ Longer-term studies provide a different kind of evidence. In approximately 61,00
 Similarly, the Whitehall II study followed 7,959 participants with midlife sleep data and found an association between short sleep and subsequent dementia. Its long follow-up strengthens the evidence, while residual confounding and reverse causation remain concerns. [Sabia et al., 2021](https://doi.org/10.1038/s41467-021-22354-2).
 
 Longevity deserves a place in the objective. A personal experiment can demonstrate better sleep or functioning much sooner than it can establish a lifespan benefit.
+
+The [brain-clearance investigation](/sleep/research/brain-clearance-and-slow-waves/) examines a further possibility: observing and improving a restorative process within sleep. It separates human imaging and tracer results from animal mechanisms, emerging devices and clinical outcomes.
 
 ## What this makes worth optimizing
 

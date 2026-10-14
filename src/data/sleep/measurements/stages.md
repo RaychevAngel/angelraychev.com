@@ -27,7 +27,9 @@ Our actual device reports hardware `or5` and firmware `2.1.25`. A supplementary 
 
 ## The target to develop
 
-The immediate task is to establish repeatability, disagreement between devices and associations with meaningful outcomes. A numerical stage target remains unresolved.
+The immediate task is to characterize repeated estimates, disagreement between devices and associations with meaningful outcomes. Between-night variation contains both real physiology and possible measurement error; it is not automatically a measure of sensor noise. A numerical stage target remains unresolved.
+
+Published guidance does contain some stage bands. The NSF's 2017 consensus rated N3 at 16–20% and REM at 21–30% as good-quality indicators for ages 26–64. It identified no positive consensus band for either stage at ages 18–25. These are expert judgments, not trials establishing personal performance optima; downstream health outcomes were outside the report's scope. Our broad 19–30 age context spans both groups. The first ring-estimated 24.4% deep sleep therefore cannot be declared harmful or reduced merely to fit the adult band. NSF funded the report; several panelists disclosed industry relationships. [Original consensus and figures 6/9](https://doi.org/10.1016/j.sleh.2016.11.006).
 
 For a future experiment, state whether the desired change concerns estimated minutes, a proportion of total sleep, EEG slow-wave activity or a functional outcome. These are different achievements. A higher percentage could result from less sleep in other stages without obtaining any additional deep minutes. A longer total night could add REM minutes without changing its percentage.
 

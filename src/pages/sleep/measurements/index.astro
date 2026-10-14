@@ -8,7 +8,7 @@ const frontmatter = { title: "Sleep measurements", description: "What each sleep
 <Post frontmatter={frontmatter}>
   <SleepNav current="measurements" />
   <p>Each measurement needs three answers: what it represents, how well it is measured, and what improvement would establish. A physiological value can be useful to observe without being something to maximize or minimize.</p>
-  <p><strong>Benchmark</strong> means a defined performance challenge. <strong>Range</strong> means more or less is not indefinitely better. <strong>Monitor</strong> means track a pattern before deciding whether to change it. <strong>Investigate</strong> means measurement or outcome evidence is insufficient for a numerical target. These are project decisions, not clinical diagnoses.</p>
+  <p><strong>Benchmark</strong> means a defined performance challenge. <strong>Range</strong> means more or less is not indefinitely better. <strong>Monitor</strong> means observe a signal before deciding whether to change it; <strong>Trend</strong> emphasizes its repeated pattern. <strong>Investigate</strong> means measurement or outcome evidence is insufficient for a numerical target. <strong>Outcome</strong> means something valuable that sleep is intended to improve. These are project roles, not clinical diagnoses.</p>
   <div class="tablewrap"><table aria-label="Sleep measurement index"><thead><tr><th scope="col">Measurement</th><th scope="col">Role</th><th scope="col">Current decision</th></tr></thead><tbody>
     {entries.map((entry) => <tr><td><a href={`/sleep/measurements/${entry.slug}/`}>{entry.title}</a></td><td>{entry.role}</td><td>{entry.attention}</td></tr>)}
   </tbody></table></div>
