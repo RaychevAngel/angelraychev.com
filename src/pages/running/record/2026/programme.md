@@ -2,13 +2,13 @@
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
 description: "The current 18-day cycle, independently earned LT and VO₂ progressions, and the planned transition into the first cycle."
-updated: 2026-10-12
+updated: 2026-10-15
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**, with the transition's status
-updated through **12 October**. The full cycle remains a plan; no completed full
+This is the programme agreed by **8 October 2026**, with the current decisions
+updated through **15 October**. The full cycle remains a plan; no completed full
 cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -31,18 +31,27 @@ recovery is not a continuous race mark to score against the event table.
 
 **LT has earned 3×1600 m.** The [8 October workout](/running/record/2026/#8-october--lt-31200-m--1-min)
 averaged 4:42.17 (3:55.1/km) over three 1200s, with another repetition available, passing the
-4:48 gate. The longer structure is the next workout. **6:08 per 1600 m is its
-later graduation gate**, rather than a compulsory pace for the first attempt.
+4:48 gate. The longer structure is planned for **16 October**: three 1600s with
+two 100 m walk recoveries, making 5 km of work and walking in all. I am confident
+about **4:00/km** and curious how much quicker I can sustain, without an all-out finish.
+**6:08 per 1600 m is its later graduation gate**, rather than a compulsory pace
+for the first attempt. This session is planned, not completed.
 
-**VO₂ stays at 3×800 m with 5:30 recovery.** The 2:40 average gate remains
-unconfirmed after 9 October's completed set with interrupted timing. I want to
-repeat the workout with reliable timing before moving its progression on.
-The two decisions are independent.
+**VO₂ has earned 3×900 m with nominal 5:30 recovery.** The
+[15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530) was
+**2:35.26, 2:35.11, 2:36.27**: **2:35.55 average (3:14.4/km)**, with a
+**1.16-second spread**. COROS recorded **5:25.67 and 5:20.82** between efforts.
+The complete, composed set passes the 2:40 gate that remained unconfirmed
+after 9 October's interrupted timing. The next **2:55.5 average** is the 900s'
+graduation target, not a compulsory first pace. Feeling ready earlier does not
+change the nominal rest to five minutes. LT and VO₂ have earned their next
+structures independently.
 
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
 after a phone failure. It adds a continuous event benchmark alongside the
-interval observations. The LT and VO₂ progression decisions remain as above.
+interval observations. It does not establish a measured lactate threshold for
+the LT-labelled repetitions; their role is to support longer track performance.
 
 ## The transition into the first cycle
 
@@ -52,9 +61,12 @@ are completed transition sessions. The 200s averaged **30.76**, finishing in
 **30.22 and 29.30** with deliberately greater sprinting intent. It felt good;
 the F benchmark remains six repetitions with three-minute rests.
 
-This is a short transition into the new cycle. After a chill day on October 13,
-the first full cycle is planned to start on October 14. Its day-16 time trial
-would be an 800 m on October 29, if the sequence holds.
+The original transition proposed a chill day on 13 October and a first full
+cycle starting on 14 October, with an 800 m time trial on 29 October if the
+sequence held. Those were conditional dates. The record now establishes the
+15 October VO₂ workout and the plan for LT on 16 October; it does not establish
+that the full 18-day cycle began on the original schedule or automatically
+assign a revised date to every later session.
 
 ## The 18-day cycle
 
@@ -121,8 +133,9 @@ progression.
 
 **A row is a workout and its graduation target.** Passing it unlocks the next
 workout; the next row's pace is the next gate, not a compulsory entry pace.
-October 8 therefore unlocks **3×1600 m**. It does not demand 6:08 repetitions
-on the first attempt at that larger session.
+October 8 unlocked **3×1600 m**, and October 15 unlocked **3×900 m**. The first
+attempts at those larger sessions do not require their later 6:08 and 2:55.5
+graduation times.
 
 The later rows are ambitious proposals, rather than evidence that these exact
 steps are optimal or already tolerable. Their role is to make the direction and

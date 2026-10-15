@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-12
+updated: 2026-10-15
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 12 October 2026.** The upcoming
+**This version includes completed training through 15 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -184,10 +184,12 @@ LT and VO₂ advance independently. The first LT gate was **3×1200 m averaging
 unlocked **3×1600 m**. The longer workout's eventual **6:08** gate is a later
 target, rather than a compulsory pace on the first attempt.
 
-The present **3×800 m VO₂** gate is a **2:40 average**, without a major final
-collapse, with **5:30 recovery**. A quicker LT session does not move that gate.
-Shortening recovery is not an automatic requirement: the point is to give each
-repetition a chance to produce the intended work.
+On **15 October**, VO₂ independently passed its **3×800 m, 2:40 average** gate,
+without a major final collapse. That earns **3×900 m** next. Its **2:55.5 average**
+is the next graduation target, rather than a compulsory entry pace. Recovery
+remains nominally **5:30**; feeling ready earlier is not an automatic reason to
+shorten it. The point is to give each repetition a chance to produce the intended
+work.
 
 The later rows describe ambitious directions, not completed fitness or proof
 that the exact steps are optimal. Keeping the workout stable long enough to
@@ -195,8 +197,9 @@ understand it makes a change of structure meaningful.
 
 ## What the observations now tell me
 
-The clearest change is on the LT side. On October 8, I ran three 1200 m
-repetitions with one minute between them: **4:42.5, 4:42.7, 4:41.3**. They
+Both interval progressions have now earned longer repetitions. On October 8,
+I ran three 1200 m repetitions with one minute between them:
+**4:42.5, 4:42.7, 4:41.3**. They
 averaged **4:42.17 (3:55.1/km)**, with a 1.4-second spread. I finished feeling
 that a fourth repetition was definitely available, possibly a fifth. September
 19's same nominal workout had averaged **4:56.33 (4:06.9/km)**, and I had been
@@ -223,8 +226,8 @@ effort and a 60–90-second walk before restarting the second full 800. All thre
 full repetitions were done, and the last two were tightly matched despite a
 very hard finish without a sprint. Using the first estimate gives about
 **2:40.6 (3:20.7/km)** on average; it may have been quicker. This was a good
-completed session. I want the next 3×800 to cement the 2:40 gate with reliable
-timing.
+completed session. I left wanting another 3×800 to cement the 2:40 gate with
+reliable timing.
 
 The fast work needs a different comparison. September 24's six 200s averaged
 33.64, relaxed and closely grouped. On October 5, after an overly relaxed first
@@ -258,8 +261,26 @@ pace, but could no longer maintain the way I wanted to run.
 The controlled LT intervals had been about **3:55/km**; this continuous effort
 was about **4:00/km**, with a much greater felt cost. The trial adds the duration
 and continuity that the repetitions could not establish. The longer LT structure
-remains earned, and VO₂ still needs its own confirmation. The movement I can
-maintain belongs beside the time when I compare the next efforts.
+was already earned; VO₂ still needed its own confirmation. The movement I can
+maintain belongs beside the time when I compare efforts.
+
+That confirmation came on
+[15 October](/running/record/2026/#15-october--vo-3800-m--530):
+**2:35.26, 2:35.11, 2:36.27**, averaging **2:35.55 (3:14.4/km)** with a
+**1.16-second spread**. The nominal recovery was 5:30; COROS recorded **5:25.67
+and 5:20.82** between the efforts. The three-repetition average is 3.80 seconds
+quicker than October 9's last two, although that earlier session's interruptions
+make it an imperfect comparison.
+
+It was extremely hard, but easier than October 9: “hard, not disgusting.”
+Breathing felt maximal in the last 200 m, yet I stayed composed, felt a kick
+was available and deliberately did not sprint. Finishing naturally felt like
+home. A brief loss of coordination early in the third repetition settled before
+the next curve. The gate is passed through the whole set and the way I completed
+it; the next question is how that control carries into 900s.
+
+The feverish feeling had gone before bed on 14 October; my left Achilles was
+quiet during and after the workout.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
@@ -320,7 +341,9 @@ what recovery restores all enter the question.
 
 **LT — sustainable high lactate turnover.** I am interested in what can be
 sustained while lactate appearance and disposal remain balanced at a high rate.
-Blood concentration alone cannot tell me those rates.
+Blood concentration alone cannot tell me those rates. LT is also a working label
+for my hard, controlled repetitions in support of 3000–5000 m. I have not
+established their relation to maximal lactate steady state or critical speed.
 
 **A — anaerobic capacity.** I am exploring the idea that time spent with a
 finite reservoir deeply depleted might matter, rather than merely recording
@@ -339,18 +362,22 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-The **11 October 5000 m trial and 12 October 6×200 m are complete**. The trial's
-reported finish is 19:59; the 200s averaged 30.76, with a more sprinty final
-29.30. October 9's 3×800 still leaves its 2:40 gate awaiting confirmation.
+**The next planned workout is 3×1600 m on 16 October**, with a 100 m walk between
+repetitions. I am confident about **4:00/km** and curious how much quicker I can
+sustain, without an all-out finish. The **6:08 per repetition** graduation gate remains a
+later target. The two walks make 5 km of work and recovery movement altogether.
 
-After a chill day on October 13, the first full cycle is planned to start on
-October 14. Its day-16 time trial would be an 800 m on October 29, if the
-sequence holds.
+VO₂ has now earned **3×900 m**, still with nominal **5:30 recovery**. The full
+18-day allocation remains a plan to test. Its original calendar proposed a
+14 October start and a day-16 800 m trial on 29 October; those dates were
+conditional, and today's session does not establish that the full cycle began
+on that schedule.
 
-Those sessions ask three immediate questions:
+The next efforts ask three immediate questions:
 
-- **Can VO₂ earn its own next step?** The whole 3×800 set needs to average 2:40
-  without a major final-repetition collapse, independently of LT's graduation.
+- **How do the earned longer repetitions feel?** LT moves to 1600s and VO₂ to
+  900s independently, with each next gate remaining a target to earn rather
+  than an entry requirement.
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside
   the splits as the efforts become longer.
