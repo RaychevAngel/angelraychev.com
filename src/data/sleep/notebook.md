@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-14"
+updated: "2026-10-15"
 ---
 
 ## The target has to survive scrutiny
@@ -13,7 +13,17 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 
 <span id="what-the-first-night-teaches-us"></span>
 
-## What the first two observations show
+<span id="what-the-first-two-observations-show"></span>
+
+## What the observations show
+
+The [third night, ending 15 October](/sleep/record/#night-2026-10-15), felt comfortable and continuous, and I woke very alert. It was also much shorter: Oura estimated 5h33 asleep and COROS 5h55, with scores 71 and 80. Oura graded restfulness 92 and timing 78, but total sleep 51 and REM 30. Better comfort and morning experience can coexist with a duration constraint; a composite grade should not erase either side.
+
+I remembered no dreams, while both devices reported REM. [Dream recall and sleep stages](/sleep/measurements/stages/#dream-recall-is-a-separate-observation) answer different questions. An earlier final awakening can reduce later-night sleep opportunity, but it does not establish that REM was absent or that a specific quota was missed.
+
+The current practical question is whether an earlier opportunity can preserve the comfortable night and add obtained sleep. The house seemed quiet by 22:00–23:00 and active from 07:00–08:00; whether noise caused waking is unknown. Midnight is a proposed attempt time, not a physiological optimum. If 07:20 waking persisted, that window would offer 7h20. The [routine history and current comparison](/sleep/research/personal-experiments/#the-current-routine-proposal) preserve both the idea and its limits.
+
+### The first two nights
 
 The first two nights expose two different questions. Can I improve the sleep I obtain, and do the devices agree closely enough to judge the change? The [recent comparison](/sleep/record/#recent-comparison) keeps both questions visible.
 
@@ -43,9 +53,11 @@ The initial queue concerns sleep opportunity, regularity and phase, light exposu
 
 The [strategy investigation](/sleep/research/improvement-strategies/) ranks these questions by evidence, likely practical value, burden and testability. It treats an earlier exercise finish as a question about strain and interval before sleep rather than a blanket ban on evening training. It treats additional sleep opportunity as an experiment in personal sufficiency rather than a requirement to maximize time in bed.
 
-The second night supplies a concrete constraint: thermal discomfort. The [14 October proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) is to repeat a comfortable, earlier routine and see whether unwanted waking decreases while sleep opportunity and daytime function remain adequate. The window, bedding, stressful work and drink timing changed together in the plan. This first comparison evaluates the routine's practicality; it cannot isolate one cause. Food water content has not been identified as the cause of the bathroom trip.
+The second night supplied a concrete constraint: thermal discomfort. On 15 October the closed window and more comfortable temperature accompanied a better subjective night; one follow-up does not isolate a window effect. The [routine proposal and follow-ups](/sleep/research/personal-experiments/#the-current-routine-proposal) now make sufficient obtained sleep and the earlier final awakening visible alongside comfort. The planned changes remain a bundle, and the original three-night checkpoint has not been declared completed.
 
-The follow-up narrows that question: I was awake without a strong urinary urge, then chose to go to the bathroom to avoid another awakening and help me return to sleep. It was a precautionary trip after waking; the initial waking cause remains unknown. I also reported no caffeine, alcohol or naps on calendar 13 October. Morning sleepiness resolved to feeling awake and ready within about 20 minutes, while later-day experience remains unassessed.
+The 14 October follow-up clarified the earlier bathroom account: I was awake without a strong urinary urge, then chose to go to the bathroom to avoid another awakening and help me return to sleep. It was a precautionary trip after waking; the initial waking cause remains unknown. I also reported no caffeine, alcohol or naps on calendar 13 October. Morning sleepiness resolved to feeling awake and ready within about 20 minutes, while later-day experience remains unassessed.
+
+On 15 October, the report differed: a final awakening with an urge to urinate and a decision to start the day. The evening heart-rate samples broadly declined, but they do not establish a meal cause or a need for six hours without food and eight without liquids. The [meal and fluid investigation](/sleep/research/improvement-strategies/#meals-retain-the-outcome-distinction) keeps intake, hydration, recovery and the intended sleep outcome in the same comparison.
 
 ## How a personal result can become convincing
 

@@ -2,13 +2,13 @@
 import Post from "../../../layouts/Post.astro";
 import SleepNav from "../../../components/SleepNav.astro";
 import record from "../../../data/sleep/record.json";
-const frontmatter = { title: "Sleep targets", description: "Provisional sleep-performance milestones, evidence-supported directions and the criteria for claiming improvement.", updated: "2026-10-14" };
+const frontmatter = { title: "Sleep targets", description: "Provisional sleep-performance milestones, evidence-supported directions and the criteria for claiming improvement.", updated: "2026-10-15" };
 const latest = record.entries.at(-1);
 ---
 <Post frontmatter={frontmatter}>
   <SleepNav current="targets" />
   <p><strong>Objective:</strong> achieve consistently excellent sleep, then expand the measurements and improve its demonstrated contribution to alertness, cognitive performance and training recovery.</p>
-  <p>This is version 1 of the target specification, clarified on 14 October. The numerical score milestones below are <strong>proposed project benchmarks</strong>. They are not clinical cutoffs, adopted treatment targets or evidence that a particular lifespan has been gained. The first two observations supply a comparison; a full personal baseline and a functional test protocol are still to be established.</p>
+  <p>This is version 1 of the target specification, clarified through 15 October. The numerical score milestones below are <strong>proposed project benchmarks</strong>. They are not clinical cutoffs, adopted treatment targets or evidence that a particular lifespan has been gained. The {record.entries.length} selected observations supply comparisons; a full personal baseline and a functional test protocol are still to be established.</p>
   <h2 id="score-milestones">Two score milestones</h2>
   <div class="tablewrap"><table aria-label="Proposed Oura score milestones"><thead><tr><th scope="col">Milestone</th><th scope="col">Success criterion</th><th scope="col">Current status</th></tr></thead><tbody>
     <tr><th scope="row">14-day average Oura score ≥85</th><td>14-calendar-day average Oura Sleep Score ≥85; at least 12 valid recorded nights</td><td>Proposed. {record.entries.length} {record.entries.length === 1 ? "night" : "nights"} recorded; assessment pending.</td></tr>
@@ -16,7 +16,7 @@ const latest = record.entries.at(-1);
   </tbody></table></div>
   <p>Oura defines 85–100 as “Optimal.” The 14/28-day windows, coverage rules and 90-point stretch are deliberate choices for this project, not validated biological thresholds. A single 95-point night does not satisfy either sustained milestone. <a href="https://support.ouraring.com/hc/en-us/articles/360025445574-Sleep-Score">Oura definitions</a>.</p>
   <p>The latest Oura score is <strong>{latest?.oura.score}</strong> on <a href={`/sleep/record/#night-${latest?.id}`}>{latest?.wake_date}</a>. COROS scored the corresponding episode <strong>{latest?.coros.sleep_score}</strong>; its score is retained as a separate benchmark. We do not switch providers to select the higher score or average their grades.</p>
-  <p><strong>Current practical question, 14 October:</strong> can the planned routine reduce reported cold and blanket discomfort and unwanted waking while retaining sufficient sleep and useful daytime function? This <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">proposed routine check</a> is separate from awarding a score milestone.</p>
+  <p><strong>Current practical question, 15 October:</strong> can an earlier sleep opportunity preserve the comfortable night while increasing obtained sleep and sustaining useful daytime function? The latest main sleep was shorter despite a very positive morning report. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">routine proposal and follow-ups</a> keep the earlier thermal question and latest timing ideas separate from awarding a score milestone. No universal six-hour food gap, eight-hour fluid cutoff or minimum bedtime pulse has been adopted.</p>
   <h3>How a milestone is assessed</h3>
   <p>Choose the calendar window before assessing it; count each provider wake date once. Show every date, the number of valid scores and missing dates. Include recorded travel, illness and difficult nights in the headline result, with contextual subgroup analyses labeled separately. No imputation of missing scores. If an algorithm changes, mark that boundary before interpreting a trend. Retain the component distributions, not just the mean.</p>
   <p>Coverage alone does not fix selective missingness. If low-quality or difficult nights are disproportionately absent, the window needs review before a milestone is awarded. Two well-measured windows can test whether a result is repeatable.</p>
@@ -59,4 +59,5 @@ const latest = record.entries.at(-1);
   <h2 id="target-history">Target history</h2>
   <p><strong>13 October 2026:</strong> initial specification. An 85-average benchmark follows Oura's grading category; a 90-average stretch is a chosen challenge with feasibility still unknown. Specific wake time and stage quotas remain unassigned pending investigation. No milestone has been achieved or awarded.</p>
   <p><strong>14 October 2026:</strong> clarified that the first milestone is an average ≥85, not a requirement that every night receive Optimal grading. Thresholds, windows and coverage rules are unchanged. Added the current thermal-comfort/continuity question; its routine check remains a proposal.</p>
+  <p><strong>15 October 2026:</strong> a comfortable but shorter main sleep shifts the immediate question toward sufficient opportunity and final waking. Both providers reported REM despite no recalled dreams. Score milestones are unchanged; midnight and earlier meal/drink timings are proposals, with their benefit unresolved.</p>
 </Post>

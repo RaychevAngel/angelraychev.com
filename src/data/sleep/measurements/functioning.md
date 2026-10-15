@@ -1,7 +1,7 @@
 ---
 title: "Alertness and waking performance"
 description: "Sleep optimization needs outcomes beyond the device's overnight grade, measured with repeatable procedures."
-updated: "2026-10-14"
+updated: "2026-10-15"
 order: 9
 role: "Outcome"
 attention: "Select and validate the assessment"
@@ -14,6 +14,8 @@ A higher Sleep Score is a measurable benchmark. Better alertness, sustained atte
 The first record has no reported restfulness or daytime sleepiness and no performance assessment. These fields remain unknown. A score of 75 or a Readiness score of 84 cannot supply the missing observations. [First record](/sleep/record/#night-2026-10-13).
 
 The [second record](/sleep/record/#night-2026-10-14) adds a qualitative morning account: I felt able to sleep more around 11:00 and got out of bed at 11:20. In the follow-up I described being pretty sleepy on waking, then awake and ready within about 20 minutes. That describes a brief transition after waking, without establishing sustained daytime impairment. A consistent restfulness rating, later-day sleepiness observation and functional assessment remain unmeasured; the device grades cannot fill those gaps.
+
+On [15 October](/sleep/record/#night-2026-10-15), I felt very awake after a much shorter main sleep and chose to start the day. That is a useful positive morning report. It does not establish that this duration is sufficient when repeated, and the shorter night alone does not establish current impairment. Later-day sleepiness and objective performance remain unmeasured. [Duration and opportunity](/sleep/measurements/duration/).
 
 ## A practical candidate: vigilance
 

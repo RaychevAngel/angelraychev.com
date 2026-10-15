@@ -1,13 +1,15 @@
 ---
 title: "Strategies for improving sleep"
 description: "A ranked investigation of sleep opportunity, timing, light, stimulants, training and environment, with the limits of the evidence retained."
-updated: "2026-10-14"
+updated: "2026-10-15"
 order: 3
 ---
 
 **The first improvement is to identify the constraint.** More opportunity may help curtailed sleep; earlier caffeine may help a persistent exposure. Cooling an already comfortable room may add cost without benefit. The [first paired night](/sleep/record/#night-2026-10-13) identifies measurement questions but cannot choose the intervention.
 
 The [second night](/sleep/record/#night-2026-10-14) adds a reported constraint: cold legs and an early-morning cold awakening, followed by a larger blanket and possible excess warmth. That makes stable thermal comfort a practical first focus. The [current routine proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps the planned changes and the outcome that would justify retaining them explicit.
+
+The [third night](/sleep/record/#night-2026-10-15) felt comfortable and continuous but had much less obtained sleep. The immediate queue therefore combines retaining thermal comfort with investigating earlier opportunity and the final awakening. The latest dinner/fluid timings remain hypotheses; a declining evening pulse does not make minimum bedtime heart rate the objective.
 
 ## The improvement queue
 
@@ -123,6 +125,12 @@ Small balanced-order student-bedroom field interventions found sleep and some ne
 A twenty-person randomized crossover compared matched early/late dinners before fixed sleep. Acute glucose/lipid metabolism changed while architecture remained unchanged. Meal timing can therefore answer a metabolic question without demonstrating a sleep benefit. [Gu et al.](https://pubmed.ncbi.nlm.nih.gov/32525525/)
 
 Keep intake/composition comparable and record interval before sleep. Hunger, discomfort and recovery belong in the tradeoff. Choose the outcome before a restriction.
+
+A four-day randomized crossover in 13 healthy young women compared matched dinners ending one or five hours before habitual bedtime. Home two-channel EEG on the fourth night showed less sleep and poorer continuity after the later meal. One of 14 completers was excluded for prolonged onset; the small sample, menstrual-phase uncertainty and self-selected breakfast/lunch limit transfer. It does not establish a six-hour optimum or benefit from extending an existing four-to-five-hour gap. The Institute for Food and Health Science, Yazuya Co., Ltd. funded the study; authors declared no competing interests. [Enomoto et al., 2026](https://link.springer.com/article/10.1186/s40101-026-00430-0).
+
+The official practical reference is less rigid: avoid large meals within a few hours of bed; a light snack is permissible. Earlier main meals can be tested without compromising total intake or excluding a needed recovery snack. [NHLBI guidance](https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits).
+
+For drinks, moving a large evening volume earlier is different from prohibiting fluids for eight hours. NIDDK advises avoiding dehydration and tying intake to activity, health and climate. The October 15 urge at final waking does not identify a volume threshold or prove bladder fullness caused the awakening. Record actual amount/time, bathroom events and daytime functioning before extending a cutoff. [NIDDK guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
 
 ## When the question is a sleep disorder
 

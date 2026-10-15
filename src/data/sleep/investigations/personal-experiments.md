@@ -1,7 +1,7 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-14"
+updated: "2026-10-15"
 order: 4
 ---
 
@@ -9,7 +9,28 @@ order: 4
 
 ## The current routine proposal
 
-**14 October 2026 — proposed; not yet assessed.** The immediate question is whether a comfortable, earlier routine reduces unwanted disruption while retaining sufficient sleep and useful daytime function. This is a short feasibility check, separate from the [14-day score milestone](/sleep/targets/#score-milestones).
+**15 October 2026 — one follow-up, with a shorter main sleep.** The window was closed and temperature felt comfortable. I remembered no interruptions before the final awakening and felt very alert, but Oura estimated 5h33 asleep and COROS 5h55. This adds a useful comfort observation; it does not complete the three-night proposal below or establish sufficient duration.
+
+### The latest comparison to make
+
+The next proposed question is whether an earlier sleep opportunity preserves comfort while increasing obtained sleep and sustaining useful daytime function. A midnight-to-07:20 window would offer 7h20 if that waking time persisted, versus the diary's approximate 5h40 interval. It is additional opportunity, not guaranteed sleep or an adopted wake-time target.
+
+Actual and proposed changes stay distinct:
+
+| Dimension | What happened before the October 15 waking | Latest idea or unresolved question |
+|---|---|---|
+| Temperature | Window closed; room felt much better; no remembered cold awakening | Retain comfortable conditions and check repetition |
+| Evening work | Calm work remained in bed until about 01:30 | Earlier settling is proposed; the quiet-house window is an observation, not a proven waking cause |
+| Meals and drinks | Dinner described as “from 20 to 21”; still many liquids with it | Exact meal/drink times and quantities need clarification before attributing effects |
+| Waking | Around 07:20, felt awake and wanted to urinate; bathroom trip, then 10–15 minutes unable to return to sleep | Distinguish final waking, urge and any actual noise; keep later-day experience visible |
+
+Dinner around 17:00–18:00 and liquids around 16:00 were suggested alongside midnight bedtime. Those are hypotheses, not evidence-derived six/eight-hour requirements. The proposed comparison preserves daily food, hydration and training recovery, and moves substantial volumes earlier rather than establishing an eight-hour drinking ban. [Meal and fluid evidence](/sleep/research/improvement-strategies/#meals-retain-the-outcome-distinction).
+
+The [record](/sleep/record/#night-2026-10-15) also retains an unconfirmed short Oura-detected evening episode and source-stratified heart-rate samples. Neither a possible nap classification nor a declining pulse is silently converted into a completed activity or a successful intervention.
+
+### The original October 14 proposal
+
+**14 October 2026 — original proposal, retained for comparison.** The question was whether a comfortable, earlier routine reduced unwanted disruption while retaining sufficient sleep and useful daytime function. This feasibility check is separate from the [14-day score milestone](/sleep/targets/#score-milestones).
 
 The [night ending 14 October](/sleep/record/#night-2026-10-14) gives the reason. I attempted sleep around 01:30 rather than my usual 03:00–03:30. Oura estimated more sleep and a higher score, but also more waking and lower efficiency. I reported cold awakenings, a bathroom trip and possibly excessive warmth after adding a blanket. The [two-provider comparison](/sleep/record/#recent-comparison) also widened. Neither device identifies the cause of each awakening.
 
@@ -17,7 +38,7 @@ The 14 October follow-up clarified that the bathroom trip was a precautionary ch
 
 ### What is already planned
 
-I plan to move most food and liquids earlier, bring dinner forward, ventilate during the day and close the window from sunset, do stressful work in the afternoon, and keep the workout before dinner. These are reported intentions. No subsequent night has established that I followed them or benefited.
+The October 14 plan was to move most food and liquids earlier, bring dinner forward, ventilate during the day and close the window from sunset, do stressful work in the afternoon, and keep the workout before dinner. These were reported intentions. The dated follow-up above shows partial implementation, without isolating a benefit from any one change.
 
 The proposed additions are modest: begin with comfortable leg coverage and adjustable bedding, draw curtains against city light during the settling period, and finish demanding work away from bed. Retain adequate food and hydration. A red screen filter records a setting; actual light exposure and mental activation remain unmeasured. [Environment and light evidence](/sleep/research/improvement-strategies/#environment-measure-the-actual-disturbance).
 

@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-13"
+updated: "2026-10-15"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -22,6 +22,14 @@ Oura returned **50.4 bpm average during sleep**, a **45 bpm sleep minimum**, and
 The identical rounded HRV values are encouraging agreement for that summary. They do not verify identical beat intervals or processing. The 44 versus 45 minima also cover different scopes. The 55 versus 45 difference is not a demonstrated 10 bpm sensor error, because the definitions differ.
 
 COROS recorded average HR 148 during the previous evening's track run. There were no returned Oura samples in that workout interval, so that session does not support an exercise accuracy comparison.
+
+## The evening decline is a different measurement
+
+Before the sleep ending [15 October](/sleep/record/#night-2026-10-15), I noticed a decline from the high 70s around 22:00 to the high 50s around 01:30. The targeted API query broadly supports a declining sampled pulse: awake-labelled half-hour medians were 82 bpm at 22:00, 63 at 23:00, 56 at 00:30 and 55 at 01:00. Values fluctuated and coverage was irregular. The record shows sample counts, ranges and gaps; differently sampled workout/rest categories were excluded from this awake-only comparison.
+
+This is not a continuous resting-heart-rate trajectory or a test that isolates dinner. Food, posture, movement and settling can coincide with clock time. A randomized meal/autonomic experiment supports a post-meal cardiac response, but does not identify the cause or duration of this personal trend. The study had Flax Council of Canada and NIH support; West reported consulting for the Flax Council. [Sauder et al.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-8986.2011.01335.x).
+
+The overnight mean was 49.375 bpm, compared with 49.5 the previous night; the minima were 47 and 45. Those summaries are separate from the evening readings. Earlier meals can be tested for sleep, comfort and functioning without making the lowest possible bedtime pulse the success criterion.
 
 ## How much confidence is justified?
 

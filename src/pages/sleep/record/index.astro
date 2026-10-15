@@ -11,14 +11,14 @@ const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("e
 const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
 const recent = record.entries.slice(-7);
 const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
-const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime sleepiness", morning_sleepiness: "Sleepiness after waking", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
+const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-day sleepiness", morning_sleepiness: "Experience after waking", dream_recall: "Dream recall", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress" };
 ---
 <Post frontmatter={frontmatter}>
   <SleepNav current="record" />
   <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
   <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. This short record cannot establish a personal baseline, a trend or the cause of a result.</p>
   <h2 id="recent-comparison">The recent observations</h2>
-  <p>Each column keeps the provider's own score and selected episode. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
+  <p>Each column keeps the provider's returned score beside its selected main episode. Additional episodes are described separately below. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
   <div class="tablewrap"><table aria-label="Recent paired sleep observations"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
     {recent.map((entry) => <tr>
       <th scope="row"><a href={`#night-${entry.id}`}><time datetime={entry.wake_date}>{shortDate(entry.wake_date)}</time></a></th>
@@ -26,7 +26,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime 
       <td><strong>{entry.coros.sleep_score}/100</strong><br />{duration(entry.coros.main_sleep_minutes * 60)} asleep<br />{entry.coros.awake_minutes} min awake</td>
     </tr>)}
   </tbody></table></div>
-  <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">14 October comparison proposal</a> connects the latest reported disruption to a practical next step.</p>
+  <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">routine proposal and dated follow-ups</a> connect the observations to the next decision.</p>
   <h2 id="dated-accounts">The dated accounts</h2>
   <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — {entry.status}</li>)}</ul>
   {record.entries.map((entry) => {
@@ -34,7 +34,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime 
     return <section aria-labelledby={`night-${entry.id}`}>
       <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — one night, two grading systems</h2>
       {entry.story?.length > 0 && <><h3>The reported night</h3>{entry.story.map((paragraph) => <p>{paragraph}</p>)}</>}
-      {entry.nutrition_reference && <p>The <a href={entry.nutrition_reference}>October 13 food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</p>}
+      {entry.nutrition_reference && <p>The <a href={entry.nutrition_reference}>preceding food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</p>}
       <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>
       <div class="tablewrap">
         <table aria-label={`Paired sleep estimates for ${entry.wake_date}`}>
@@ -51,6 +51,13 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "daytime 
       </div>
       <p>{s.average_hrv === entry.coros.official_sleep_hrv_ms ? "The identical HRV headline is agreement between provider summaries, not validation against ECG." : "The HRV headlines retain each provider's summary; neither is a reference ECG measurement."} Their sampling, accepted beats and averaging may differ. The {Math.abs(entry.oura.score - entry.coros.sleep_score)}-point score gap means that choosing which grading system to optimize is consequential.</p>
       <SleepEpisode entry={entry} />
+      {entry.oura.additional_sleep_episodes?.length > 0 && <><h3>Additional Oura-detected episode</h3>{entry.oura.additional_sleep_episodes.map((episode) => <p>Oura returned another episode timed {date(episode.bedtime_start.slice(0, 10))}, {time(episode.bedtime_start)}–{time(episode.bedtime_end)}, assigned to provider day {date(episode.day)}. It estimated {minutes(episode.total_sleep_duration)} asleep; its API type was <code>{episode.type}</code>. This is an unconfirmed device-detected episode, not a reported nap. It remains separate from the main sleep above. Oura's returned daily score is retained without recalculation.</p>)}</>}
+      {entry.evening_hr && <details><summary>The evening heart-rate observation</summary>
+        <p>{entry.evening_hr.aggregation} Each row names the start of a half-hour bin in local time; a dash means no awake-labelled samples in that bin.</p>
+        <div class="tablewrap"><table aria-label={`Evening awake-labelled heart-rate samples before ${entry.wake_date}`}><thead><tr><th scope="col">Bin starting</th><th scope="col">Samples</th><th scope="col">Median bpm</th><th scope="col">Range bpm</th></tr></thead><tbody>{entry.evening_hr.rows.map((row) => <tr><th scope="row">{time(row.start)}</th><td>{row.sample_count}</td><td>{row.median_bpm ?? "—"}</td><td>{row.min_bpm === null ? "—" : `${row.min_bpm}–${row.max_bpm}`}</td></tr>)}</tbody></table></div>
+        <p>The focused query covered {entry.evening_hr.start_datetime} to {entry.evening_hr.end_datetime}. Samples labelled <code>workout</code> ({entry.evening_hr.excluded_source_counts.workout}) and <code>rest</code> ({entry.evening_hr.excluded_source_counts.rest}) were excluded from this awake-only comparison. {entry.evening_hr.note}</p>
+        <p>The sampled decline is compatible with several influences. It is not a continuous resting-HR curve, a meal-causation test or a target to push indefinitely lower. <a href="/sleep/measurements/cardiac/#the-evening-decline-is-a-different-measurement">Interpretation and source definitions</a>.</p>
+      </details>}
       <h3 id={`oura-contributors-${entry.id}`}>What Oura graded</h3>
       <p>These are <strong>contributor scores out of 100</strong>. The efficiency contributor of {entry.oura.contributors.efficiency} is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of {entry.oura.contributors.deep_sleep} is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
       <div class="tablewrap"><table aria-label="Oura sleep contributor scores"><thead><tr><th scope="col">Contributor</th><th scope="col">Score / 100</th></tr></thead><tbody>
