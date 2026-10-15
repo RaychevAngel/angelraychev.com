@@ -279,7 +279,7 @@
             "total_sleep_duration": 690,
             "type": "sleep",
             "sleep_algorithm_version": "v2",
-            "confirmation": "Unconfirmed device-detected episode; actual nap not reported"
+            "confirmation": "In the October 15 follow-up I reported no dozing during this interval. This device classification is disputed by my report; it is not a confirmed nap."
           }
         ],
         "score": 71,
@@ -330,18 +330,18 @@
         "restfulness": "Felt the sleep was very nice, deep and uninterrupted; subjective experience, not an EEG stage measurement. No numeric rating reported.",
         "daytime_sleepiness": null,
         "morning_sleepiness": "Felt very awake at the final awakening and ready to start the day after an unsuccessful 10–15-minute return-to-sleep attempt. Later-day experience not reported.",
-        "caffeine_mg_and_time": null,
-        "alcohol_and_time": null,
-        "naps": null,
+        "caffeine_mg_and_time": "None on calendar October 14, reported in the October 15 follow-up.",
+        "alcohol_and_time": "None on calendar October 14, reported in the October 15 follow-up.",
+        "naps": "No dozing during the Oura-detected October 14 22:20–22:46 interval; the device classification is disputed by my report.",
         "dream_recall": "No dreams recalled. This does not establish absence of REM sleep.",
         "intended_bedtime": "Around 01:40; calm work from bed continued until around 01:30.",
-        "environment": "Window fully closed; room temperature felt much better. Curtains closed, night light and laptop red filter. House perceived quiet from around 22:00–23:00 and active around 07:00–08:00; no noise-triggered awakening established.",
+        "environment": "Window fully closed; room temperature felt much better. Curtains closed, night light and laptop red filter. House perceived quiet from around 22:00–23:00 and active around 07:00–08:00. Household noise did not wake me; I noticed it afterward.",
         "stress": "No hard activity reported; activities ended around 19:00 and late work was described as calm."
       },
       "context": [
         {
           "kind": "self_report",
-          "observation": "Dinner described as moved from 20 to 21. Whether these are start/end times or a schedule shift remains unresolved. A lot of liquids were consumed around dinner; amount and last substantial drink time were not reported."
+          "observation": "Clarified on October 15: dinner was 20:00–21:00, ending about 4h40 before the reported 01:40 sleep attempt. No drinks were consumed with dinner. The water I meant was in the tomato, half the yogurt tub and the bell pepper; food water content was not measured. Earlier-day drinks and their timing were not quantified."
         },
         {
           "kind": "self_report",
@@ -353,29 +353,35 @@
         },
         {
           "kind": "device_record",
-          "observation": "Oura also assigned a brief Oct 14 22:20–22:46 episode to provider day Oct 15, with 11m30s estimated asleep. An actual nap has not been confirmed. Its presence is retained rather than silently discarded; COROS reported no naps."
+          "observation": "Oura assigned an October 14 22:20–22:46 episode to provider day October 15, estimating 11m30s asleep. In the follow-up I reported no dozing during that interval. The classification is disputed by my report; the provider estimate is retained separately, and COROS reported no naps."
         }
       ],
       "story": [
-        "I moved dinner, describing the change as from 20 to 21, and still had a lot of liquids around dinner. My activities ended around 19:00; I did not do anything hard. The window was closed and the room felt much more comfortable. I urinated just before bed, worked calmly from bed until around 01:30 with closed curtains, a night light and the laptop’s red filter, and attempted sleep around 01:40.",
+        "Dinner was 20:00–21:00. I did not drink anything with dinner: by liquids I meant the water in the tomato, half the yogurt tub and the bell pepper. My activities ended around 19:00; I did not do anything hard. The window was closed and the room felt much more comfortable. I urinated just before bed, worked calmly from bed until around 01:30 with closed curtains, a night light and the laptop’s red filter, and attempted sleep around 01:40.",
         "I remember no interruptions before waking around 07:20. I felt I wanted to urinate and was already quite awake. I went to the bathroom, tried going back to sleep for 10–15 minutes, then decided to start the day because I felt very awake and ready. The sleep felt very nice and deep. I did not remember dreams and initially took that to suggest little or no REM; dream recall and measured sleep stage are separate observations.",
-        "I noticed that the house became quiet around 22:00–23:00 and activity resumed around 07:00–08:00. That suggested trying an earlier bedtime. I also noticed my pulse declining across the evening and wondered whether earlier meals and drinks might help. Midnight bedtime, dinner around 17:00–18:00 and liquids around 16:00 are proposed ideas, not conditions I have tested."
+        "I noticed that the house became quiet around 22:00–23:00 and activity resumed around 07:00–08:00. Household noise did not wake me; I noticed it afterward. That quiet-house window suggested trying an earlier bedtime. I also noticed my pulse declining across the evening and wondered whether earlier food and water intake might help. Midnight bedtime, dinner around 17:00–18:00 and moving water intake earlier are proposed ideas, not conditions I have tested."
       ],
       "interpretation": [
         "Oura estimated 5h33m30s asleep within a 6h10m23s episode, with 36m53s awake and 90% efficiency. COROS estimated 5h55 asleep, 8 minutes awake and a 6h03 episode. Their scores were 71 and 80. Compared with Oct 14, Oura estimated 2h54 less sleep, less total waking and higher efficiency. The better subjective continuity and comfortable temperature are useful observations alongside the shorter duration.",
         "Oura estimated 37m30s REM and 1h37m30s deep sleep. COROS reported 16% REM, with an unspecified percentage denominator. Both providers therefore reported REM; no remembered dreams is not evidence of zero REM. Exact stage durations remain algorithmic estimates rather than EEG measurements.",
         "Oura’s episode starts at 01:28, before the reported 01:40 attempt. Its 13-minute latency implies onset around 01:41, while the end at 07:38 could overlap the reported final waking and return-to-sleep attempt. Boundaries and recalled times remain distinct; they have not been forced into exact agreement.",
         "Feeling excellent on waking is an outcome worth retaining. It does not establish that repeating a roughly 5½–6-hour main sleep is sufficient, and the short interval alone does not establish current impairment. Later-day sleepiness and objective performance remain unmeasured.",
-        "The API’s awake-labelled evening samples show a broad decline, with gaps and fluctuations. They do not establish dinner as the cause, an optimal food-to-bed interval or a need to minimize bedtime heart rate. Overnight mean HR was 49.375 bpm versus 49.5 the previous night; low HR was 47 versus 45. Those are different quantities from the evening spot readings."
+        "The API’s awake-labelled evening samples show a broad decline, with gaps and fluctuations. They do not establish dinner as the cause, an optimal food-to-bed interval or a need to minimize bedtime heart rate. Overnight mean HR was 49.375 bpm versus 49.5 the previous night; low HR was 47 versus 45. Those are different quantities from the evening spot readings.",
+        "The follow-up clarifies the exposure: dinner ended about 4h40 before the sleep attempt, with no drinks at dinner. Water in the reported foods was not measured. This night therefore does not test a large evening drink load or establish food water as the cause of waking. Household noise was noticed afterward and was not the reported waking trigger. No caffeine or alcohol was reported for calendar October 14; the short evening Oura classification conflicts with the report of no dozing."
       ],
       "plans": [
         "Consider an earlier attempt around midnight, informed by the perceived quiet-house window; no fixed wake time has been selected.",
-        "Consider dinner around 17:00–18:00 and moving substantial drinks earlier, mentioning 16:00. Exact intended meal/drink cutoffs and their practicality remain to clarify."
+        "Consider dinner around 17:00–18:00 and moving water intake earlier, previously mentioning 16:00. The follow-up clarifies that dinner water came from food, with no drinks at dinner. No fixed food or fluid cutoff has been adopted."
       ],
-      "corrections": [],
+      "corrections": [
+        {
+          "date": "2026-10-15",
+          "reason": "Clarified dinner as the 20:00–21:00 interval, with no drinks: water referred to tomato, half the yogurt tub and bell pepper. Reported no dozing during Oura’s 22:20–22:46 classification, no caffeine or alcohol on calendar October 14, and that household noise was noticed after waking rather than causing it. Original provider estimates and retrieval time are retained; the additional episode is now explicitly disputed by the diary."
+        }
+      ],
       "next_focus": [
-        "Retain the comfortable room and investigate an earlier sleep opportunity that preserves enough obtained sleep and next-day function. The perceived house-activity window is a hypothesis, not a demonstrated waking trigger.",
-        "Move substantial drinks earlier if helpful while preserving hydration and training recovery; a six-hour food gap or eight-hour no-fluid rule has not been established as necessary or beneficial. Meal timing and bulk-fluid timing can be examined separately once the actual volumes and times are known."
+        "Retain the comfortable room and investigate an earlier sleep opportunity that preserves enough obtained sleep and next-day function. The quiet-house window may inform a feasible schedule, but household noise did not cause the reported final awakening.",
+        "Dinner already ended about 4h40 before the sleep attempt. Before extending that gap or restricting water-rich foods, assess whether an earlier sleep opportunity changes obtained sleep and later-day function. Keep food intake and hydration adequate; this observation does not establish that water in dinner caused waking."
       ],
       "nutrition_reference": "/nutrition/record/#october-14-kiwis-and-herbs",
       "evening_hr": {
@@ -466,7 +472,8 @@
           "rest": 13
         },
         "note": "Source labels identify API recording categories, not confirmed activities. No overlapping workout document was returned for this query interval. Dinner timing, posture and activity were not controlled."
-      }
+      },
+      "nutrition_context_note": "The preceding food record retains the foods and portions. The sleep follow-up places dinner at 20:00–21:00 and reports no drinks with it; water in the tomato, half the yogurt tub and bell pepper was not measured."
     }
   ]
 }

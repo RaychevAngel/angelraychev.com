@@ -21,12 +21,12 @@ Actual and proposed changes stay distinct:
 |---|---|---|
 | Temperature | Window closed; room felt much better; no remembered cold awakening | Retain comfortable conditions and check repetition |
 | Evening work | Calm work remained in bed until about 01:30 | Earlier settling is proposed; the quiet-house window is an observation, not a proven waking cause |
-| Meals and drinks | Dinner described as “from 20 to 21”; still many liquids with it | Exact meal/drink times and quantities need clarification before attributing effects |
-| Waking | Around 07:20, felt awake and wanted to urinate; bathroom trip, then 10–15 minutes unable to return to sleep | Distinguish final waking, urge and any actual noise; keep later-day experience visible |
+| Meals and drinks | Dinner 20:00–21:00; no drinks with it. Water was in tomato, half the yogurt tub and bell pepper; amount unmeasured | Dinner ended about 4h40 before the sleep attempt; no drink load at dinner to move earlier |
+| Waking | Around 07:20, felt awake and wanted to urinate; bathroom trip, then 10–15 minutes unable to return to sleep. Household noise was noticed afterward and did not wake me | Initial waking cause remains unresolved; keep later-day experience visible |
 
-Dinner around 17:00–18:00 and liquids around 16:00 were suggested alongside midnight bedtime. Those are hypotheses, not evidence-derived six/eight-hour requirements. The proposed comparison preserves daily food, hydration and training recovery, and moves substantial volumes earlier rather than establishing an eight-hour drinking ban. [Meal and fluid evidence](/sleep/research/improvement-strategies/#meals-retain-the-outcome-distinction).
+Dinner around 17:00–18:00 and liquids around 16:00 were suggested alongside midnight bedtime. The follow-up clarified that the dinner water came from food, with no drinks at dinner. Those earlier times remain hypotheses, not evidence-derived six/eight-hour requirements. The next comparison should preserve daily food, hydration and training recovery; this night does not establish a need to restrict water-rich foods or impose an eight-hour drinking ban. [Meal and fluid evidence](/sleep/research/improvement-strategies/#meals-retain-the-outcome-distinction).
 
-The [record](/sleep/record/#night-2026-10-15) also retains an unconfirmed short Oura-detected evening episode and source-stratified heart-rate samples. Neither a possible nap classification nor a declining pulse is silently converted into a completed activity or a successful intervention.
+The [record](/sleep/record/#night-2026-10-15) retains the short Oura-detected evening episode, now disputed by my report of no dozing, and source-stratified heart-rate samples. No caffeine or alcohol was reported for calendar 14 October. The device classification is not counted as a confirmed nap, and the declining pulse is not proof of a successful intervention.
 
 ### The original October 14 proposal
 

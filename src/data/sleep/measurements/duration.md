@@ -13,7 +13,7 @@ Retain estimated time asleep, the selected episode's start and end, time in the 
 
 On the [first night](/sleep/record/#night-2026-10-13), Oura returned 7h02 asleep within a 7h34m10s episode. COROS returned 7h16 within 7h29. The 14-minute difference in estimated sleep includes both slightly different episode selection and sleep/wake classification. It is not evidence that either estimate is the truth.
 
-On [15 October](/sleep/record/#night-2026-10-15), the diary's approximate 01:40–07:20 interval was 5h40; Oura estimated **5h33m30s asleep** and COROS **5h55** in their selected main episodes. A short additional Oura-detected evening episode remains unconfirmed as a nap. Main sleep, extra episode estimates and recalled opportunity are kept separate.
+On [15 October](/sleep/record/#night-2026-10-15), the diary's approximate 01:40–07:20 interval was 5h40; Oura estimated **5h33m30s asleep** and COROS **5h55** in their selected main episodes. Oura also detected a short evening episode, but I reported no dozing during that interval. It remains a disputed classification, not a confirmed nap. Main sleep, extra episode estimates and recalled opportunity are kept separate.
 
 A midnight-to-07:20 window would offer **7h20**, or 1h40 more opportunity than the reported interval, if that waking time persisted. This is arithmetic for a proposed comparison, not a fixed wake-time target or a guarantee of additional sleep. Midnight itself has not been established as the personal optimum.
 

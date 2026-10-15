@@ -21,7 +21,9 @@ The [third night, ending 15 October](/sleep/record/#night-2026-10-15), felt comf
 
 I remembered no dreams, while both devices reported REM. [Dream recall and sleep stages](/sleep/measurements/stages/#dream-recall-is-a-separate-observation) answer different questions. An earlier final awakening can reduce later-night sleep opportunity, but it does not establish that REM was absent or that a specific quota was missed.
 
-The current practical question is whether an earlier opportunity can preserve the comfortable night and add obtained sleep. The house seemed quiet by 22:00–23:00 and active from 07:00–08:00; whether noise caused waking is unknown. Midnight is a proposed attempt time, not a physiological optimum. If 07:20 waking persisted, that window would offer 7h20. The [routine history and current comparison](/sleep/research/personal-experiments/#the-current-routine-proposal) preserve both the idea and its limits.
+The current practical question is whether an earlier opportunity can preserve the comfortable night and add obtained sleep. The house seemed quiet by 22:00–23:00 and active from 07:00–08:00, but household noise did not wake me; I noticed it afterward. Midnight is a proposed attempt time, not a physiological optimum. If 07:20 waking persisted, that window would offer 7h20. The [routine history and current comparison](/sleep/research/personal-experiments/#the-current-routine-proposal) preserve both the idea and its limits.
+
+The follow-up also clarified dinner as 20:00–21:00, with no drinks. The water I meant was in the tomato, half the yogurt tub and the bell pepper; its amount was not measured. Dinner already ended about 4h40 before my sleep attempt. I reported no caffeine or alcohol on calendar 14 October and no dozing during Oura's brief evening sleep classification. The [dated record](/sleep/record/#night-2026-10-15) keeps that disagreement visible rather than counting a confirmed nap.
 
 ### The first two nights
 

@@ -50,7 +50,7 @@ Those were **minutes asleep**. Allocated time includes falling asleep and possib
 
 ## Caffeine: an interval, a dose and an individual response
 
-I own **200mg caffeine capsules**. In the 14 October follow-up I reported no caffeine, alcohol or naps on calendar 13 October, preceding the [sleep ending 14 October](/sleep/record/#night-2026-10-14). Ownership is not consumption; exposure on other days remains a separate question.
+I own **200mg caffeine capsules**. In the 14 October follow-up I reported no caffeine, alcohol or naps on calendar 13 October, preceding the [sleep ending 14 October](/sleep/record/#night-2026-10-14). The [15 October follow-up](/sleep/record/#night-2026-10-15) also reported no caffeine or alcohol on calendar 14 October. Ownership is not consumption; other dates remain separate questions.
 
 A double-blind crossover in 23 young men tested 100mg and 400mg at four, eight and twelve hours before bed. At four hours, 400mg reduced estimated total sleep by about 51 minutes versus placebo. At twelve hours, some latency and architecture effects remained, but the total-sleep difference was not statistically significant. No significant 100mg effects were detected. Habitual morning intake was maintained. Neither result establishes a universal 200mg cutoff or guarantees that 100mg has no personal effect. [Gardiner et al.](https://academic.oup.com/sleep/article/48/4/zsae230/7815486)
 
@@ -130,7 +130,9 @@ A four-day randomized crossover in 13 healthy young women compared matched dinne
 
 The official practical reference is less rigid: avoid large meals within a few hours of bed; a light snack is permissible. Earlier main meals can be tested without compromising total intake or excluding a needed recovery snack. [NHLBI guidance](https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits).
 
-For drinks, moving a large evening volume earlier is different from prohibiting fluids for eight hours. NIDDK advises avoiding dehydration and tying intake to activity, health and climate. The October 15 urge at final waking does not identify a volume threshold or prove bladder fullness caused the awakening. Record actual amount/time, bathroom events and daytime functioning before extending a cutoff. [NIDDK guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
+The October 15 follow-up puts dinner at 20:00–21:00, ending about 4h40 before the reported sleep attempt. There were **no drinks with dinner**: the water referred to tomato, half the yogurt tub and the bell pepper. Food water content was not measured. This is not an observed large evening drink load, and the urge at final waking does not establish water in food as the cause or identify a beneficial cutoff.
+
+For drinks generally, moving a large evening volume earlier is different from prohibiting fluids for eight hours. NIDDK advises avoiding dehydration and tying intake to activity, health and climate. Keep actual intake, bathroom events and daytime functioning visible before extending a restriction. [NIDDK guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
 
 ## When the question is a sleep disorder
 
