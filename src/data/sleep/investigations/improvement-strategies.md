@@ -132,7 +132,25 @@ The official practical reference is less rigid: avoid large meals within a few h
 
 The October 15 follow-up puts dinner at 20:00–21:00, ending about 4h40 before the reported sleep attempt. There were **no drinks with dinner**: the water referred to tomato, half the yogurt tub and the bell pepper. Food water content was not measured. This is not an observed large evening drink load, and the urge at final waking does not establish water in food as the cause or identify a beneficial cutoff.
 
+That distinction does **not** exclude a bladder contribution or make earlier food timing unworthy of testing. Yogurt, fruit and vegetables contribute to fluid intake; absence of a beverage does not remove that water. Waking with an urge is compatible with bladder-driven waking, while an urge can also become noticeable after another awakening. This diary cannot assign a probability to either explanation. [NHS food-fluid guidance](https://www.kch.nhs.uk/patients-and-visitors/patients/hydration-matters/), [NHS explanation of nighttime waking and urination](https://www.guysandstthomas.nhs.uk/health-information/nocturia-getting-night-pee).
+
+The 4h40 gap is an observed starting condition, not a demonstrated personal optimum or upper limit. A six-, eight- or longer-hour interval can be an eligible personal experiment without being a universal requirement. [A concrete proposed comparison](/sleep/research/personal-experiments/#testing-earlier-food-and-water-timing) keeps the food-water and whole-meal questions distinct.
+
 For drinks generally, moving a large evening volume earlier is different from prohibiting fluids for eight hours. NIDDK advises avoiding dehydration and tying intake to activity, health and climate. Keep actual intake, bathroom events and daytime functioning visible before extending a restriction. [NIDDK guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
+
+## Bryan Johnson: a source of experiments
+
+Johnson's public routine is useful for generating comparisons. His reported benefit is a reason to investigate transfer to my circumstances; population proof is not a prerequisite for every reversible personal test. His claims still need to be distinguished from results obtained here.
+
+| Dated first-person source | Reported practice or recommendation | Candidate comparison here |
+|---|---|---|
+| [Evening routine, 1 June 2026](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Final food around noon; bed 20:30: about 8½ hours. He calls earlier eating his biggest improvement | Test a longer interval while retaining daily nutrition |
+| [Protocol, page dated 23 January 2026](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol) | Stops fluids at 16:00: 4½ hours before bed. Separately recommends food experiments at four and six hours | Keep food timing and beverage timing distinct; no eight-hour fluid requirement follows |
+| [Evening routine](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Screens off for 60 minutes; dim amber/red lamps; reading or walking | Compare a full screen-free settling hour with the current red-filter laptop work |
+| [Evening routine](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Ten minutes of breathing, four seconds in and six out; 0.3 mg melatonin nightly | Breathing is a separate comparison; melatonin is reported practice, not an adopted intervention |
+| [Sleep habits, 16 February 2026](https://blueprint.bryanjohnson.com/en-gb/blogs/news/10-habits-for-sleep) | Consistent bedtime, enough opportunity, morning light, comfortable dark/quiet surroundings and tracking | Retain the comfortable room and investigate earlier opportunity alongside actual function |
+
+These are first-person reports on his commercial Blueprint site, checked 15 October 2026. The June account does not provide controlled raw comparisons establishing its claimed sleep-quality benefit. His personal pulse target and “perfect sleep” language do not establish biological optima for another person. The protocol also mixes general recommendations with personal practice and can change without its displayed date changing; these are dated-page snapshots, not independently observed adherence. Food at noon and fluids at 16:00 are different cutoffs. Neither is automatically the best schedule here.
 
 ## When the question is a sleep disorder
 

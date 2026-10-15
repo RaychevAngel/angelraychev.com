@@ -21,12 +21,27 @@ Actual and proposed changes stay distinct:
 |---|---|---|
 | Temperature | Window closed; room felt much better; no remembered cold awakening | Retain comfortable conditions and check repetition |
 | Evening work | Calm work remained in bed until about 01:30 | Earlier settling is proposed; the quiet-house window is an observation, not a proven waking cause |
-| Meals and drinks | Dinner 20:00–21:00; no drinks with it. Water was in tomato, half the yogurt tub and bell pepper; amount unmeasured | Dinner ended about 4h40 before the sleep attempt; no drink load at dinner to move earlier |
+| Meals and drinks | Dinner 20:00–21:00; no drinks with it. Water was in tomato, half the yogurt tub and bell pepper; amount unmeasured | Dinner ended about 4h40 before the sleep attempt. The meal still supplied water; earlier timing remains eligible for testing |
 | Waking | Around 07:20, felt awake and wanted to urinate; bathroom trip, then 10–15 minutes unable to return to sleep. Household noise was noticed afterward and did not wake me | Initial waking cause remains unresolved; keep later-day experience visible |
 
 Dinner around 17:00–18:00 and liquids around 16:00 were suggested alongside midnight bedtime. The follow-up clarified that the dinner water came from food, with no drinks at dinner. Those earlier times remain hypotheses, not evidence-derived six/eight-hour requirements. The next comparison should preserve daily food, hydration and training recovery; this night does not establish a need to restrict water-rich foods or impose an eight-hour drinking ban. [Meal and fluid evidence](/sleep/research/improvement-strategies/#meals-retain-the-outcome-distinction).
 
 The [record](/sleep/record/#night-2026-10-15) retains the short Oura-detected evening episode, now disputed by my report of no dozing, and source-stratified heart-rate samples. No caffeine or alcohol was reported for calendar 14 October. The device classification is not counted as a confirmed nap, and the declining pulse is not proof of a successful intervention.
+
+### Testing earlier food and water timing
+
+**15 October discussion:** waking with an urge leaves bladder fullness as a plausible trigger. The absence of drinks at dinner does not exclude water from the meal. A 4h40 food-to-bed gap is not a ceiling on improvement. The [Bryan Johnson source review](/sleep/research/improvement-strategies/#bryan-johnson-a-source-of-experiments) supplies a longer-interval hypothesis worth testing, without establishing that his schedule transfers here.
+
+Two comparisons answer different questions:
+
+1. **Timing of water-rich foods:** move the same half-tub yogurt, tomato and pepper earlier in the day while keeping other dinner foods and timing similar. Retain total daily nutrition, water and salt intake. This also moves calories, nutrients and food volume, so it tests the food shift rather than isolating water as the mechanism. A useful result would be a later first unwanted awakening or more sleep, rather than merely a smaller bathroom trip.
+2. **Whole-meal timing:** compare the same daily foods with the last meal ending around six hours before intended sleep. If practical, explore eight hours and then ten as separate conditions. These are candidate steps, not validated thresholds, compulsory progression or a newly adopted schedule. Do not remove food needed to maintain intake or training recovery just to achieve a longer gap.
+
+An earlier bedtime is also a reasonable immediate change; do not deliberately retain a short opportunity to make a cleaner experiment. Once a workable bedtime is reasonably stable, hold it similar across meal-timing comparisons. Changing both at once can identify a useful routine, but cannot isolate the contribution of either.
+
+Compare several nights per condition and repeat a promising contrast, rather than declaring an optimum from one morning. This is an exploratory personal comparison, not a diagnostic protocol or a predetermined sample size. Keep exercise, room conditions and intake reasonably comparable; mark departures. Record attempted sleep, first awakening, urge on waking, whether a bathroom trip occurred, return to sleep, total sleep and later-day functioning. Approximate urine volume can be an optional additional measure if the bladder question remains important; it does not by itself establish the waking cause. [NIDDK bladder-diary guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/diagnosis).
+
+If earlier food repeatedly delays unwanted waking and adds sleep without worsening hunger, recovery or daytime function, that is a reason to retain it. If the urge or urine volume falls but waking remains at the same time, the change may help the bathroom symptom without explaining the awakening. Keep evening pulse and wearable scores as supporting observations; the desired result is better sleep and functioning. Preserve hydration and drink when needed rather than treating a cutoff as an endurance challenge.
 
 ### The original October 14 proposal
 

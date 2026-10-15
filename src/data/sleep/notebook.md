@@ -25,6 +25,8 @@ The current practical question is whether an earlier opportunity can preserve th
 
 The follow-up also clarified dinner as 20:00–21:00, with no drinks. The water I meant was in the tomato, half the yogurt tub and the bell pepper; its amount was not measured. Dinner already ended about 4h40 before my sleep attempt. I reported no caffeine or alcohol on calendar 14 October and no dozing during Oura's brief evening sleep classification. The [dated record](/sleep/record/#night-2026-10-15) keeps that disagreement visible rather than counting a confirmed nap.
 
+That meal gap is a starting observation, not a demonstrated optimum. Bladder fullness remains a plausible waking trigger, and food supplies water even without a drink. Earlier food and water timing remain worth testing alongside earlier sleep opportunity. The [proposed comparisons](/sleep/research/personal-experiments/#testing-earlier-food-and-water-timing) distinguish shifting water-rich foods from shifting the whole last meal; the [Bryan Johnson review](/sleep/research/improvement-strategies/#bryan-johnson-a-source-of-experiments) separates his reported routine from recommendations and results established here.
+
 ### The first two nights
 
 The first two nights expose two different questions. Can I improve the sleep I obtain, and do the devices agree closely enough to judge the change? The [recent comparison](/sleep/record/#recent-comparison) keeps both questions visible.
