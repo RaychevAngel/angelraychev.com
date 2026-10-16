@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-15
+updated: 2026-10-16
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 15 October 2026.** The upcoming
+**This version includes completed training through 16 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -174,8 +174,10 @@ stable F session, one mixed-rest **FA**, one event time trial and one **X**
 experiment. The [programme page](/running/record/2026/programme/) keeps the exact
 order, templates and progression tables.
 
-That allocation is newly agreed. I have not yet completed a full cycle and
-shown that I can sustain it. Its cost also extends beyond the listed workouts:
+The cycle began on **15 October**. Its eleven specified workouts stay committed
+through this cycle; **X** remains flexible, and structural changes wait for the
+next cycle's review. I have not yet completed a full cycle and shown that I can
+sustain it. Its cost also extends beyond the listed workouts:
 running to the gym, carrying a backpack and a hard bike commute still count as
 movement, even on a day whose programme says chill.
 
@@ -258,6 +260,10 @@ unpleasant efforts of my life. My legs were heavy, breathing felt spent, and
 posture and knee lift faded after about 2500–3000 m. I broadly maintained the
 pace, but could no longer maintain the way I wanted to run.
 
+I later clarified that I brought the posture and knee lift back together over
+the final two laps, especially the last. Holding good movement through the
+difficult middle and finding it again for the finish are different observations.
+
 The controlled LT intervals had been about **3:55/km**; this continuous effort
 was about **4:00/km**, with a much greater felt cost. The trial adds the duration
 and continuity that the repetitions could not establish. The longer LT structure
@@ -281,6 +287,19 @@ it; the next question is how that control carries into 900s.
 
 The feverish feeling had gone before bed on 14 October; my left Achilles was
 quiet during and after the workout.
+
+The first [3×1600 m on 16 October](/running/record/2026/#16-october--lt-31600-m--100-m-walks)
+averaged **6:23.88 (3:59.93/km)**, with **1:11.93 and 1:15.99** for the two
+100 m walks. Early laps felt comfortable, but direct sun and mounting strain
+made the third repetition survival work. Its posture and knee-lift loss felt
+like the difficult middle of the 5000 m. I recovered good form for a roughly
+95-second final lap, finishing the last 1600 in 6:27.07.
+
+Recorded HR over the final two minutes of each rep averaged approximately
+**169, 177 and 184 bpm**, despite the slower third rep. The almost unchanged
+pace concealed a rising cost. Heat complicates the fitness comparison; it
+does not supply a numerical correction. The session makes preserving good
+movement through the middle of a hard effort a concrete question to follow.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
@@ -362,22 +381,21 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**The next planned workout is 3×1600 m on 16 October**, with a 100 m walk between
-repetitions. I am confident about **4:00/km** and curious how much quicker I can
-sustain, without an all-out finish. The **6:08 per repetition** graduation gate remains a
-later target. The two walks make 5 km of work and recovery movement altogether.
+**The first block of the cycle is complete:** 3×800 m on 15 October and
+3×1600 m on 16 October. LT stays at the longer format, with its **6:08 average**
+graduation gate still ahead. VO₂ has earned **3×900 m**, still with nominal
+**5:30 recovery** and a later 2:55.5 gate.
 
-VO₂ has now earned **3×900 m**, still with nominal **5:30 recovery**. The full
-18-day allocation remains a plan to test. Its original calendar proposed a
-14 October start and a day-16 800 m trial on 29 October; those dates were
-conditional, and today's session does not establish that the full cycle began
-on that schedule.
+The remaining 18-day structure stays committed. The next chill day and later
+workouts are plans, and X remains open. Whether the longer 300s, 500s or another
+4+4×200 deserves that experiment is a choice to make within the cycle, not a
+reason to replace the other eleven workouts before reviewing it.
 
 The next efforts ask three immediate questions:
 
-- **How do the earned longer repetitions feel?** LT moves to 1600s and VO₂ to
-  900s independently, with each next gate remaining a target to earn rather
-  than an entry requirement.
+- **How do the earned longer repetitions feel?** The first 1600s supply a
+  heat-affected reference; the first 900s remain ahead. Each next gate is a
+  target to earn rather than an entry requirement.
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside
   the splits as the efforts become longer.

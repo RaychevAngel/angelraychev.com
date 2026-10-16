@@ -1,15 +1,16 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The current 18-day cycle, independently earned LT and VO₂ progressions, and the planned transition into the first cycle."
-updated: 2026-10-15
+description: "The 18-day cycle begun on October 15, its completed first block, and independently earned LT and VO₂ progressions."
+updated: 2026-10-16
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **15 October**. The full cycle remains a plan; no completed full
-cycle has yet demonstrated that I can sustain this allocation. Completed work
+updated through **16 October**. The first cycle began on **15 October**, and its
+first two-day block is complete. The remaining sessions are planned; no completed
+full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
@@ -29,13 +30,14 @@ recovery is not a continuous race mark to score against the event table.
 
 ## Current choices
 
-**LT has earned 3×1600 m.** The [8 October workout](/running/record/2026/#8-october--lt-31200-m--1-min)
-averaged 4:42.17 (3:55.1/km) over three 1200s, with another repetition available, passing the
-4:48 gate. The longer structure is planned for **16 October**: three 1600s with
-two 100 m walk recoveries, making 5 km of work and walking in all. I am confident
-about **4:00/km** and curious how much quicker I can sustain, without an all-out finish.
-**6:08 per 1600 m is its later graduation gate**, rather than a compulsory pace
-for the first attempt. This session is planned, not completed.
+**LT is now at 3×1600 m.** The [8 October workout](/running/record/2026/#8-october--lt-31200-m--1-min)
+passed the first 1200 m gate. The [first longer session on 16 October](/running/record/2026/#16-october--lt-31600-m--100-m-walks)
+was **6:22.67, 6:21.91, 6:27.07**: **6:23.88 average (3:59.93/km)**.
+The two 100 m walks took **1:11.93 and 1:15.99**; elapsed time through the last
+finish was **21:39.57**, including the walks. Early pace felt comfortable, but
+reported heat strain made the third rep very hard, with a loss of posture and
+knee lift before a strong finish with good form. **6:08 average remains a later
+graduation target**. There is no inferred heat-adjusted time.
 
 **VO₂ has earned 3×900 m with nominal 5:30 recovery.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530) was
@@ -63,10 +65,10 @@ the F benchmark remains six repetitions with three-minute rests.
 
 The original transition proposed a chill day on 13 October and a first full
 cycle starting on 14 October, with an 800 m time trial on 29 October if the
-sequence held. Those were conditional dates. The record now establishes the
-15 October VO₂ workout and the plan for LT on 16 October; it does not establish
-that the full 18-day cycle began on the original schedule or automatically
-assign a revised date to every later session.
+sequence held. Those were conditional dates. I subsequently confirmed
+**15 October as day one**. Its 3×800 m and the 16 October 3×1600 m complete
+block one. This replaces the tentative start date; it does not turn the
+remaining scheduled sessions into completed work.
 
 ## The 18-day cycle
 
@@ -85,11 +87,18 @@ rest or easy movement according to how I feel, without another quality session:
 That is four LT sessions, four VO₂ sessions, and one each of F, FA, TT and X,
 with six chill days.
 
+**The eleven specified workouts stay committed for this cycle. Only X remains
+open to a change of format at any point.** LT and VO₂ retain their independently
+earned progressions. Changes to the allocation or recurring F/FA formats wait
+for the next cycle's review.
+
 **FA** is fast running with a second, shorter-recovery set: the current template
 is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
 **TT** is an event time trial; the transition's 5000 m is complete, and the first
 full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open, with dense 10/10 running among
-the candidates. F remains the stable 6×200 m benchmark.
+the candidates. Other ideas discussed are 300 m repetitions, 2×3×500 m, or
+another 4+4×200 m. No X session has been selected or completed. F remains the
+stable 6×200 m benchmark.
 
 The allocation has some freedom built in. Three LT–VO₂ pairs, F, FA, TT and X
 form the backbone; two remaining slots are currently occupied by another LT and
@@ -107,9 +116,12 @@ included running to the gym and back. The label cannot erase that activity.
 LT and VO₂ advance on separate tracks. A quicker LT session does not require a
 simultaneous VO₂ graduation. A calendar does not require either one.
 
-The LT gate is the target average while remaining controlled, with another
-repetition plausibly available. Recovery is roughly one to two minutes of
-walking or light jogging; the current 3×1200 comparison uses one minute.
+The LT gate is the target average, assessed alongside execution, conditions and
+recovery. The October 8 graduation included another repetition plausibly
+available; that observation is not a universal requirement to finish every
+session with a spare rep. There is a time to push and a time to back off.
+The numerical gates remain unchanged. The 1200 m comparison used one-minute
+rests; the first 1600 session used the two 100 m walks recorded above.
 
 | LT workout | Gate pace | Average rep at gate |
 | --- | ---: | ---: |
