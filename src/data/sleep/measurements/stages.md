@@ -19,7 +19,7 @@ Not remembering dreams does not establish that REM was absent. In a high-density
 
 On [15 October](/sleep/record/#night-2026-10-15), I recalled no dreams, while Oura estimated **37m30s REM** and COROS reported **16% REM**. These observations can coexist. The devices estimate stages; recall describes what I remember. Neither supplies direct EEG confirmation of an exact personal REM total.
 
-On [16 October](/sleep/record/#night-2026-10-16), I recalled dreams in the lighter-feeling final period after waking around 07:30 and returning to bed until 09:05. Oura subsequently returned **2h12 estimated REM for the whole main episode**, while COROS remained pending. REM is plausible during the final period, but neither recall nor the whole-night total assigns that specific interval to a stage; no interval-level reconstruction has been made here.
+On [16 October](/sleep/record/#night-2026-10-16), I recalled dreams in the lighter-feeling final period after waking around 07:30 and returning to bed until 09:05. Oura subsequently returned **2h12 estimated REM for the whole main episode**, and the later COROS response reported **26% REM**, with an unspecified percentage denominator. REM is plausible during the final period, but neither recall nor the whole-night total assigns that specific interval to a stage; no interval-level reconstruction has been made here.
 
 Deep NREM sleep is usually more concentrated early in the night, and REM later. Ending a night early can reduce REM-rich opportunity, but clock times alone cannot establish how much occurred or was missed. This is a reason to examine sufficient obtained sleep, rather than infer zero REM or force a percentage quota. [NHLBI stage overview](https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep).
 
