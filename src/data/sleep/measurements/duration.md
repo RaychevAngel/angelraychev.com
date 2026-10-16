@@ -1,7 +1,7 @@
 ---
 title: "Duration and sleep opportunity"
 description: "Time asleep, time in bed and the marginal value of additional sleep are distinct quantities."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 2
 role: "Range"
 attention: "Establish personal sufficiency"
@@ -16,6 +16,8 @@ On the [first night](/sleep/record/#night-2026-10-13), Oura returned 7h02 asleep
 On [15 October](/sleep/record/#night-2026-10-15), the diary's approximate 01:40–07:20 interval was 5h40; Oura estimated **5h33m30s asleep** and COROS **5h55** in their selected main episodes. Oura also detected a short evening episode, but I reported no dozing during that interval. It remains a disputed classification, not a confirmed nap. Main sleep, extra episode estimates and recalled opportunity are kept separate.
 
 A midnight-to-07:20 window would offer **7h20**, or 1h40 more opportunity than the reported interval, if that waking time persisted. This is arithmetic for a proposed comparison, not a fixed wake-time target or a guarantee of additional sleep. Midnight itself has not been established as the personal optimum.
+
+On [16 October](/sleep/record/#night-2026-10-16), I reported a sleep attempt roughly at midnight, a remembered awakening around 07:30 to drink water, then more sleep until 09:05. The approximately nine-hour envelope includes an unmeasured awake interval and is not itself a measured total asleep. After synchronization Oura estimated **8h37m30s asleep** within a **9h14m27s episode**, 3h04 more sleep than its preceding main episode; COROS remained pending. The next proposed 22:00–07:00 window would also offer nine hours; it changes timing rather than automatically adding duration.
 
 ## The reference and its purpose
 

@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-15"
+updated: "2026-10-16"
 ---
 
 ## The target has to survive scrutiny
@@ -17,11 +17,19 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 
 ## What the observations show
 
+The [night ending 16 October](/sleep/record/#night-2026-10-16) is the most encouraging routine observation so far: workout finished at 15:00, last meal 17:00–18:00, water sips until 19:30, an evening walk and a sleep attempt roughly at midnight. I remembered no interruption until around 07:30, drank water because my mouth felt dry, then slept again until 09:05 with recalled dreams. After synchronization, Oura returned **90/100, 8h37m30s estimated sleep, 2h12 REM and 93% efficiency**. COROS still had no October 16 record. The diary and source estimates remain separate; the whole nine-hour envelope is not automatically time asleep.
+
+The useful next step is to see whether this routine repeats well, including later-day experience and comfortable hydration. I believe the roughly six-hour food gap helped and reported awake pulse in the high 40s before sleep; Oura returned awake-labelled samples of 47–48 bpm just before midnight. Those are promising observations; several changes and the preceding short night prevent isolating the meal effect. The next reported plan is to shift toward 22:00–07:00, retain roughly 4½ hours between liquids and bed, and consider a seven-hour food gap. The [current routine account](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps completed conditions and proposed changes separate.
+
+### The shorter preceding night
+
 The [third night, ending 15 October](/sleep/record/#night-2026-10-15), felt comfortable and continuous, and I woke very alert. It was also much shorter: Oura estimated 5h33 asleep and COROS 5h55, with scores 71 and 80. Oura graded restfulness 92 and timing 78, but total sleep 51 and REM 30. Better comfort and morning experience can coexist with a duration constraint; a composite grade should not erase either side.
+
+The October 16 follow-up adds an important outcome: I felt sleepy or underslept several times during October 15. The positive first morning did not represent the whole day. After the next night's final waking, I felt sharp within minutes in an urgent speaking meeting; that is useful real-world context, with its demand and timing retained rather than treated as a standardized recovery test. [Waking performance](/sleep/measurements/functioning/).
 
 I remembered no dreams, while both devices reported REM. [Dream recall and sleep stages](/sleep/measurements/stages/#dream-recall-is-a-separate-observation) answer different questions. An earlier final awakening can reduce later-night sleep opportunity, but it does not establish that REM was absent or that a specific quota was missed.
 
-The current practical question is whether an earlier opportunity can preserve the comfortable night and add obtained sleep. The house seemed quiet by 22:00–23:00 and active from 07:00–08:00, but household noise did not wake me; I noticed it afterward. Midnight is a proposed attempt time, not a physiological optimum. If 07:20 waking persisted, that window would offer 7h20. The [routine history and current comparison](/sleep/research/personal-experiments/#the-current-routine-proposal) preserve both the idea and its limits.
+The comparison proposed on October 15 was whether an earlier opportunity could preserve the comfortable night and add obtained sleep. The house seemed quiet by 22:00–23:00 and active from 07:00–08:00, but household noise did not wake me; I noticed it afterward. Midnight was a proposed attempt time, not a physiological optimum. If 07:20 waking persisted, that window would offer 7h20. The October 16 diary now describes an approximately midnight attempt and a later final waking; the [routine history](/sleep/research/personal-experiments/#the-current-routine-proposal) retains the original question.
 
 The follow-up also clarified dinner as 20:00–21:00, with no drinks. The water I meant was in the tomato, half the yogurt tub and the bell pepper; its amount was not measured. Dinner already ended about 4h40 before my sleep attempt. I reported no caffeine or alcohol on calendar 14 October and no dozing during Oura's brief evening sleep classification. The [dated record](/sleep/record/#night-2026-10-15) keeps that disagreement visible rather than counting a confirmed nap.
 

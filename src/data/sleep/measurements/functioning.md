@@ -1,7 +1,7 @@
 ---
 title: "Alertness and waking performance"
 description: "Sleep optimization needs outcomes beyond the device's overnight grade, measured with repeatable procedures."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 9
 role: "Outcome"
 attention: "Select and validate the assessment"
@@ -15,7 +15,9 @@ The first record has no reported restfulness or daytime sleepiness and no perfor
 
 The [second record](/sleep/record/#night-2026-10-14) adds a qualitative morning account: I felt able to sleep more around 11:00 and got out of bed at 11:20. In the follow-up I described being pretty sleepy on waking, then awake and ready within about 20 minutes. That describes a brief transition after waking, without establishing sustained daytime impairment. A consistent restfulness rating, later-day sleepiness observation and functional assessment remain unmeasured; the device grades cannot fill those gaps.
 
-On [15 October](/sleep/record/#night-2026-10-15), I felt very awake after a much shorter main sleep and chose to start the day. That is a useful positive morning report. It does not establish that this duration is sufficient when repeated, and the shorter night alone does not establish current impairment. Later-day sleepiness and objective performance remain unmeasured. [Duration and opportunity](/sleep/measurements/duration/).
+On [15 October](/sleep/record/#night-2026-10-15), I felt very awake after a much shorter main sleep and chose to start the day. In the October 16 follow-up, I reported feeling sleepy or underslept several times later on October 15. The morning impression and later experience are both retained; a ready first morning did not represent the whole day. Objective performance was not measured. [Duration and opportunity](/sleep/measurements/duration/).
+
+On [16 October](/sleep/record/#night-2026-10-16), after a reported longer night, I woke at 09:05 with a 09:00 meeting already underway. I felt sharp within two to three minutes of joining and less than five minutes of waking, while speaking for much of the meeting. That is a useful observation about rapid activation under a real demand. The late arrival prevented a quiet first-morning assessment, and the meeting's urgency complicates comparison with an ordinary morning. No cortisol/adrenaline response was measured, and later-day experience remains to be reported.
 
 ## A practical candidate: vigilance
 

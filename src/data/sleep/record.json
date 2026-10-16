@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "entries": [
     {
       "id": "2026-10-13",
@@ -328,8 +328,8 @@
       },
       "self_report": {
         "restfulness": "Felt the sleep was very nice, deep and uninterrupted; subjective experience, not an EEG stage measurement. No numeric rating reported.",
-        "daytime_sleepiness": null,
-        "morning_sleepiness": "Felt very awake at the final awakening and ready to start the day after an unsuccessful 10–15-minute return-to-sleep attempt. Later-day experience not reported.",
+        "daytime_sleepiness": "Reported retrospectively on October 16: felt sleepy or underslept several times during October 15 despite feeling ready on the short night’s first morning. No times or numeric rating were recorded.",
+        "morning_sleepiness": "Felt very awake at the final awakening and ready to start the day after an unsuccessful 10–15-minute return-to-sleep attempt. Later-day sleepiness was added retrospectively on October 16; see the separate daytime report.",
         "caffeine_mg_and_time": "None on calendar October 14, reported in the October 15 follow-up.",
         "alcohol_and_time": "None on calendar October 14, reported in the October 15 follow-up.",
         "naps": "No dozing during the Oura-detected October 14 22:20–22:46 interval; the device classification is disputed by my report.",
@@ -359,13 +359,14 @@
       "story": [
         "Dinner was 20:00–21:00. I did not drink anything with dinner: by liquids I meant the water in the tomato, half the yogurt tub and the bell pepper. My activities ended around 19:00; I did not do anything hard. The window was closed and the room felt much more comfortable. I urinated just before bed, worked calmly from bed until around 01:30 with closed curtains, a night light and the laptop’s red filter, and attempted sleep around 01:40.",
         "I remember no interruptions before waking around 07:20. I felt I wanted to urinate and was already quite awake. I went to the bathroom, tried going back to sleep for 10–15 minutes, then decided to start the day because I felt very awake and ready. The sleep felt very nice and deep. I did not remember dreams and initially took that to suggest little or no REM; dream recall and measured sleep stage are separate observations.",
-        "I noticed that the house became quiet around 22:00–23:00 and activity resumed around 07:00–08:00. Household noise did not wake me; I noticed it afterward. That quiet-house window suggested trying an earlier bedtime. I also noticed my pulse declining across the evening and wondered whether earlier food and water intake might help. Midnight bedtime, dinner around 17:00–18:00 and moving water intake earlier are proposed ideas, not conditions I have tested."
+        "I noticed that the house became quiet around 22:00–23:00 and activity resumed around 07:00–08:00. Household noise did not wake me; I noticed it afterward. That quiet-house window suggested trying an earlier bedtime. I also noticed my pulse declining across the evening and wondered whether earlier food and water intake might help. Midnight bedtime, dinner around 17:00–18:00 and moving water intake earlier are proposed ideas, not conditions I have tested.",
+        "In the next day’s follow-up, I added that I felt sleepy or underslept several times during October 15. The initially alert morning did not describe the entire day."
       ],
       "interpretation": [
         "Oura estimated 5h33m30s asleep within a 6h10m23s episode, with 36m53s awake and 90% efficiency. COROS estimated 5h55 asleep, 8 minutes awake and a 6h03 episode. Their scores were 71 and 80. Compared with Oct 14, Oura estimated 2h54 less sleep, less total waking and higher efficiency. The better subjective continuity and comfortable temperature are useful observations alongside the shorter duration.",
         "Oura estimated 37m30s REM and 1h37m30s deep sleep. COROS reported 16% REM, with an unspecified percentage denominator. Both providers therefore reported REM; no remembered dreams is not evidence of zero REM. Exact stage durations remain algorithmic estimates rather than EEG measurements.",
         "Oura’s episode starts at 01:28, before the reported 01:40 attempt. Its 13-minute latency implies onset around 01:41, while the end at 07:38 could overlap the reported final waking and return-to-sleep attempt. Boundaries and recalled times remain distinct; they have not been forced into exact agreement.",
-        "Feeling excellent on waking is an outcome worth retaining. It does not establish that repeating a roughly 5½–6-hour main sleep is sufficient, and the short interval alone does not establish current impairment. Later-day sleepiness and objective performance remain unmeasured.",
+        "Feeling excellent on waking is an outcome worth retaining. It does not establish that repeating a roughly 5½–6-hour main sleep is sufficient, and the short interval alone does not establish current impairment. The October 16 follow-up adds later sleepiness and feeling underslept on October 15; objective performance was not measured.",
         "The API’s awake-labelled evening samples show a broad decline, with gaps and fluctuations. They do not establish dinner as the cause, an optimal food-to-bed interval or a need to minimize bedtime heart rate. Overnight mean HR was 49.375 bpm versus 49.5 the previous night; low HR was 47 versus 45. Those are different quantities from the evening spot readings.",
         "The follow-up clarifies the exposure: dinner ended about 4h40 before the sleep attempt, with no drinks at dinner. Water in the reported foods was not measured. This night therefore does not test a large evening drink load or establish food water as the cause of waking. Household noise was noticed afterward and was not the reported waking trigger. No caffeine or alcohol was reported for calendar October 14; the short evening Oura classification conflicts with the report of no dozing.",
         "Waking with an urge leaves bladder fullness as a plausible trigger, although the sequence cannot distinguish cause from an urge noticed after waking. No drinks at dinner does not mean no meal water. The 4h40 food-to-bed interval is not an established personal optimum and does not rule out benefit from moving the same food earlier. The October 15 discussion adds earlier food and food-water timing as worthwhile comparisons alongside earlier sleep opportunity."
@@ -382,6 +383,10 @@
         {
           "date": "2026-10-15",
           "reason": "Revised the interpretation after discussion: the absence of dinner drinks and the existing 4h40 meal gap do not justify deprioritizing the bladder or earlier food-timing hypotheses. Added separate proposed food-water and whole-meal comparisons, informed by a dated review of Bryan Johnson’s reported practices. No cause, optimal interval or adopted experiment is claimed; provider values and reported events are unchanged."
+        },
+        {
+          "date": "2026-10-16",
+          "reason": "Added the retrospective report of several sleepy/underslept periods during October 15. Preserved the original positive morning account and all provider values; later-day subjective sleepiness is now reported, while objective performance remains unmeasured."
         }
       ],
       "next_focus": [
@@ -479,6 +484,170 @@
         "note": "Source labels identify API recording categories, not confirmed activities. No overlapping workout document was returned for this query interval. Dinner timing, posture and activity were not controlled."
       },
       "nutrition_context_note": "The preceding food record retains the foods and portions. The sleep follow-up places dinner at 20:00–21:00 and reports no drinks with it; water in the tomato, half the yogurt tub and bell pepper was not measured."
+    },
+    {
+      "id": "2026-10-16",
+      "wake_date": "2026-10-16",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Oura provider sleep wake-up date and user diary; COROS wake-date record pending",
+      "status": "Oura recorded; COROS pending; encouraging earlier routine",
+      "retrieved_at": "2026-10-16T17:05:41.102939+00:00",
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.25",
+        "algorithm_version": "v2",
+        "sleep": {
+          "latency": 1590,
+          "average_breath": 12.5,
+          "bedtime_start": "2026-10-15T23:51:59.000-07:00",
+          "lowest_heart_rate": 45,
+          "deep_sleep_duration": 6690,
+          "type": "long_sleep",
+          "awake_time": 2217,
+          "day": "2026-10-16",
+          "average_heart_rate": 49.125,
+          "efficiency": 93,
+          "rem_sleep_duration": 7920,
+          "time_in_bed": 33267,
+          "total_sleep_duration": 31050,
+          "average_hrv": 51,
+          "bedtime_end": "2026-10-16T09:06:26.000-07:00",
+          "light_sleep_duration": 16440
+        },
+        "additional_sleep_episodes": [
+          {
+            "latency": 510,
+            "average_breath": null,
+            "bedtime_start": "2026-10-15T20:38:58.000-07:00",
+            "lowest_heart_rate": 66,
+            "deep_sleep_duration": 300,
+            "type": "sleep",
+            "awake_time": 1059,
+            "day": "2026-10-16",
+            "average_heart_rate": 66.75,
+            "efficiency": 37,
+            "rem_sleep_duration": 0,
+            "time_in_bed": 1689,
+            "total_sleep_duration": 630,
+            "average_hrv": null,
+            "bedtime_end": "2026-10-15T21:07:07.000-07:00",
+            "light_sleep_duration": 330,
+            "confirmation": "An actual doze during this interval has not been confirmed in the diary. This remains an unconfirmed device-detected episode, separate from the main sleep."
+          }
+        ],
+        "score": 90,
+        "contributors": {
+          "deep_sleep": 96,
+          "efficiency": 98,
+          "latency": 67,
+          "rem_sleep": 97,
+          "restfulness": 93,
+          "timing": 72,
+          "total_sleep": 93
+        },
+        "readiness_score": 84,
+        "temperature_deviation_c": -0.28,
+        "spo2_average_percent": 95.806,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 fields after user-confirmed synchronization"
+      },
+      "coros": null,
+      "provider_status": {
+        "oura": "Available after user-confirmed device/app synchronization; initial missing response retained in private provenance.",
+        "coros": "The official connector still returned no October 16 sleep detail, official sleep HRV or daily HR after user-confirmed synchronization. A two-day boundary check returned October 15 separately and confirmed October 16 unavailable. Not substituted with another date."
+      },
+      "self_report": {
+        "restfulness": "Felt the night was very good, with no remembered interruption before around 07:30 and more light-feeling, dream-associated sleep afterward; no numeric rating.",
+        "daytime_sleepiness": null,
+        "morning_sleepiness": "Final waking at 09:05, late for a 09:00 meeting. Felt fully sharp within under five minutes of waking and two to three minutes after joining a meeting in which I spoke for most of the time. Immediate assessment was interrupted by the meeting; later-day function not yet reported.",
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "dream_recall": "Recalled dreaming during the lighter-feeling period after the around-07:30 awakening and before final waking at 09:05. REM was suspected, not measured.",
+        "intended_bedtime": "Worked until 23:50, urinated, lay down and did about five minutes of breathing before choosing to sleep; roughly midnight, with exact sleep onset unrecorded.",
+        "environment": "Night lamp and open curtains from around 19:00; night light and closed curtains after 22:00; only the red-filtered laptop screen after 23:00. Temperature and overnight nasal/mouth breathing were not reported.",
+        "stress": "Worked until 23:50. Work intensity not characterized. Final waking was followed by an urgent speaking meeting.",
+        "breathing_exercise": "Five minutes of six-second inhalation and four-second exhalation; felt close to falling asleep and stopped to sleep. This is the reported ratio, not the previously cited four-in/six-out routine.",
+        "hydration_and_bathroom": "Sipped water until about 19:30. Urinated just before bed. Around 07:30 woke with a dry mouth and felt dehydrated, drank water and returned to bed. Whether there was an urge or bathroom trip at that awakening was not reported; daily water volume and amount of morning water are unknown."
+      },
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "Workout finished around 15:00 on October 15; last meal was 17:00–18:00. With sleep attempted roughly at midnight, the food interval was about six hours; sips until 19:30 were about four and a half hours before that attempt."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Evening walk around 21:00–22:00. Lighting/curtains were changed in stages; red-filtered laptop work continued until 23:50. Actual light at the eye was not measured."
+        },
+        {
+          "kind": "self_report",
+          "observation": "No remembered interruption before around 07:30. Dry mouth and a feeling of dehydration prompted water, then a return to bed. Final waking 09:05. Time awake at 07:30, return-to-sleep latency and exact sleep duration were not measured."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Reported pre-sleep pulse in the high 40s, described as the lowest personally recalled while awake. After synchronization, Oura returned awake-labelled samples of 47 bpm at 23:53:59 and 48 bpm at 23:59:15 on October 15. These samples support the reported range; they are not a continuous resting-HR measure or an independently verified lifetime minimum."
+        }
+      ],
+      "story": [
+        "My workout finished at 15:00 and the last meal was 17:00–18:00. I sipped water until about 19:30. From 19:00 I used a night lamp with open curtains. I walked around 21:00–22:00, then used night light with the curtains closed. From 23:00 only the red-filtered computer screen remained on.",
+        "I worked until 23:50, urinated and lay down. I breathed with six seconds in and four seconds out for about five minutes. I felt I was already close to falling asleep and decided to sleep. The attempt was roughly around midnight; I did not record an exact onset.",
+        "I remember sleeping uninterrupted until around 07:30. My mouth was dry and I felt dehydrated, so I drank some water and went back to bed. I finally woke at 09:05. That last period felt light and included dreams, which made me suspect some REM sleep. Overall the night felt very good.",
+        "I woke five minutes after a 09:00 meeting had begun and did not have time to assess how I felt quietly. Within two to three minutes of joining, and less than five minutes after waking, I felt fully sharp and did most of the talking. I wondered whether the urgent situation helped activate me; I did not measure a hormonal response.",
+        "I think the approximately six-hour food gap helped and noticed pre-bed pulse in the high 40s, my lowest recalled awake reading. I would like to shift the routine roughly two hours earlier, aiming for sleep around 22:00 and waking around 07:00. I intend to retain a roughly four-and-a-half-hour liquid interval and am willing to explore food ending seven hours before bed. These are plans for later nights, not completed results."
+      ],
+      "interpretation": [
+        "Oura returned a Sleep Score of 90, estimating 8h37m30s asleep within a 23:51:59–09:06:26 episode (9h14m27s), 36m57s awake and 93% efficiency. Estimated REM was 2h12, deep 1h51m30s and light 4h34. Compared with the preceding night, estimated sleep increased by 3h04 and the score by 19 points. COROS has not yet returned October 16, even after synchronization.",
+        "Earlier food timing is a promising experienced condition, worth repeating. Workout timing, evening activity, light, bedtime, water timing and breathing also changed, and this followed a short night with reported daytime sleepiness. A better night supports the routine while leaving the isolated contribution of the six-hour meal gap unresolved.",
+        "Dry mouth and feeling dehydrated are reported symptoms, not a measured hydration deficit. The water response is retained. The report does not say whether the 07:30 awakening also involved urinary urgency or a bathroom trip, so absence of either has not been inferred.",
+        "Dreams during the final period are compatible with REM but do not establish its presence or duration. Quick activation in an urgent speaking meeting is a useful real-world morning observation; it is not a standardized recovery assessment or evidence of measured cortisol/adrenaline changes.",
+        "The reported high-40s pre-bed pulse is supported by awake-labelled Oura samples of 47 and 48 bpm just before midnight. Their sampling is irregular. Overnight mean HR was 49.125 bpm versus 49.375 the previous night; minima were 45 versus 47 and average HRV 51 versus 58 ms. These source scopes remain distinct, and the observations do not isolate a meal effect.",
+        "Oura estimated 26m30s latency within its episode, implying an estimated onset around 00:18:29. That differs from feeling close to sleep after five minutes of breathing around midnight; subjective onset and algorithmic latency are retained separately. The reported morning water break is not assigned an exact wearable waking event without a matching reconstruction.",
+        "Oura also classified an October 15 20:38:58–21:07:07 episode, estimating 10m30s asleep. The diary has not confirmed dozing then. That estimate is retained separately and is not added to the main sleep or declared a completed nap; the returned daily score is not recalculated."
+      ],
+      "plans": [
+        "Shift the routine roughly two hours earlier, aiming for a 22:00–07:00 sleep opportunity. This would offer nine hours, not guarantee nine hours asleep.",
+        "With a 22:00 bedtime, a four-and-a-half-hour liquid interval corresponds to around 17:30. Retain adequate daily hydration and respond to thirst/dryness rather than treating the clock as an absolute ban.",
+        "Consider extending the final-food interval from about six to seven hours. With a 22:00 bedtime, a six-hour interval means finishing at 16:00 and seven hours means 15:00. Preserve total food and training recovery."
+      ],
+      "corrections": [
+        {
+          "date": "2026-10-16",
+          "reason": "Both APIs initially lacked the requested night. After user-confirmed synchronization, Oura supplied the main sleep, daily grades, physiology, a brief additional episode and pre-bed HR samples. COROS still returned no October 16 record. Added the returned Oura values without inferring missing COROS data or confirming the extra episode as an actual nap."
+        }
+      ],
+      "next_focus": [
+        "Repeat the promising earlier routine while protecting enough sleep opportunity, tracking daytime experience and keeping hydration comfortable. A shift to 22:00–07:00 is the reported next plan; exact meal and fluid intervals remain personal comparisons, not universal targets.",
+        "COROS is still pending after synchronization; the Oura record and diary remain useful now. Clarify whether the 07:30 water break also involved urinary urgency or a bathroom trip, and whether the evening Oura episode was actual dozing. Preserve comfortable hydration and record later-day functioning."
+      ],
+      "nutrition_reference": "/nutrition/record/#october-15-usual-foods-and-roma-tomatoes",
+      "nutrition_context_note": "The preceding food record retains foods and portions. The sleep report supplies a 17:00–18:00 last-meal interval and sips until around 19:30; daily drink volume and water in foods were not measured.",
+      "evening_hr": {
+        "start_datetime": "2026-10-15T23:00:00-07:00",
+        "end_datetime": "2026-10-16T00:05:00-07:00",
+        "aggregation": "Unweighted medians, ranges and counts of awake-labelled API samples only. Sampling is irregular; these are not time-weighted averages or a continuous resting-HR curve.",
+        "excluded_source_counts": {
+          "workout": 0,
+          "rest": 0
+        },
+        "rows": [
+          {
+            "start": "2026-10-15T23:00:00-07:00",
+            "sample_count": 20,
+            "median_bpm": 60.5,
+            "min_bpm": 56,
+            "max_bpm": 66
+          },
+          {
+            "start": "2026-10-15T23:30:00-07:00",
+            "sample_count": 16,
+            "median_bpm": 56.0,
+            "min_bpm": 47,
+            "max_bpm": 64
+          }
+        ],
+        "note": "All 36 returned samples were labelled awake. No samples were returned after midnight through the 00:05 query end. Values of 47 bpm at 23:53:59 and 48 bpm at 23:59:15 support the reported high-40s range; the additional evening sleep classification is separate."
+      }
     }
   ]
 }

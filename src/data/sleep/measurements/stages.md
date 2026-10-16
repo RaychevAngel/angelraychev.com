@@ -1,7 +1,7 @@
 ---
 title: "Sleep stages and brain activity"
 description: "Estimated light, deep and REM sleep are useful research signals, with different evidence from direct EEG measurements."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 5
 role: "Investigate"
 attention: "Validate before setting stage targets"
@@ -18,6 +18,8 @@ Oura Ring 5 measures optical pulse signals, movement and finger temperature. Its
 Not remembering dreams does not establish that REM was absent. In a high-density EEG study using repeated awakenings, dreaming and no-experience reports were compared within both REM and NREM sleep. Dreaming also occurred in NREM. Immediate awakening reports do not calibrate an ordinary morning recollection into a whole night's REM duration. [Siclari et al., 2017](https://www.nature.com/articles/nn.4545).
 
 On [15 October](/sleep/record/#night-2026-10-15), I recalled no dreams, while Oura estimated **37m30s REM** and COROS reported **16% REM**. These observations can coexist. The devices estimate stages; recall describes what I remember. Neither supplies direct EEG confirmation of an exact personal REM total.
+
+On [16 October](/sleep/record/#night-2026-10-16), I recalled dreams in the lighter-feeling final period after waking around 07:30 and returning to bed until 09:05. Oura subsequently returned **2h12 estimated REM for the whole main episode**, while COROS remained pending. REM is plausible during the final period, but neither recall nor the whole-night total assigns that specific interval to a stage; no interval-level reconstruction has been made here.
 
 Deep NREM sleep is usually more concentrated early in the night, and REM later. Ending a night early can reduce REM-rich opportunity, but clock times alone cannot establish how much occurred or was missed. This is a reason to examine sufficient obtained sleep, rather than infer zero REM or force a percentage quota. [NHLBI stage overview](https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep).
 

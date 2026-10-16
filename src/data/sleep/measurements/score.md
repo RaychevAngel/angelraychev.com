@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -34,6 +34,8 @@ This is why the project retains the score, its components and personal experienc
 ## Measurement and interpretation
 
 The third night reversed part of the tradeoff: Oura's score fell to 71 while restfulness rose to 92 and timing to 78. Total-sleep grading was 51 and REM 30; COROS scored 80. The main episode was shorter, although I felt much better on waking. A score decline does not erase that positive experience, and a positive experience does not establish sufficient duration. [October 15 record](/sleep/record/#night-2026-10-15).
+
+On [16 October](/sleep/record/#night-2026-10-16), Oura returned 90 after synchronization, with 8h37m30s estimated sleep. Total-sleep grading rose to 93 and REM to 97; efficiency and restfulness were 98 and 93. Not every contributor improved: latency grading was 67 and timing 72. COROS was still pending. This is one encouraging grade, not achievement of either sustained milestone. The later sleepiness now reported for October 15 also keeps the full following day relevant to interpreting the next score.
 
 Sleep staging validation does not validate every composite-score threshold. A score is downstream of several estimates and an algorithmic judgment. Firmware or scoring changes can alter it without a lifestyle change. Keep hardware and algorithm information when exposed and mark known changes.
 

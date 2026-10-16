@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -30,6 +30,8 @@ Before the sleep ending [15 October](/sleep/record/#night-2026-10-15), I noticed
 This is not a continuous resting-heart-rate trajectory or a test that isolates dinner. Food, posture, movement and settling can coincide with clock time. A randomized meal/autonomic experiment supports a post-meal cardiac response, but does not identify the cause or duration of this personal trend. The study had Flax Council of Canada and NIH support; West reported consulting for the Flax Council. [Sauder et al.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-8986.2011.01335.x).
 
 The overnight mean was 49.375 bpm, compared with 49.5 the previous night; the minima were 47 and 45. Those summaries are separate from the evening readings. Earlier meals can be tested for sleep, comfort and functioning without making the lowest possible bedtime pulse the success criterion.
+
+Before the [16 October sleep](/sleep/record/#night-2026-10-16), I reported pulse in the high 40s, the lowest personally recalled while awake. After synchronization the focused Oura query returned **47 bpm at 23:53:59 and 48 bpm at 23:59:15**, both labelled awake. These samples support the reported range, without establishing a continuous resting-HR curve or an independently verified lifetime minimum. The half-hour sample medians declined from 60.5 to 56 bpm, with irregular coverage. Overnight mean HR was 49.125 bpm and minimum 45; average HRV was 51 ms versus 58 the preceding night. These scopes remain distinct; a meal effect has not been isolated.
 
 ## How much confidence is justified?
 

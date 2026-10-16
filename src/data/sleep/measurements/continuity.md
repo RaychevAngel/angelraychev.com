@@ -1,7 +1,7 @@
 ---
 title: "Continuity, latency and efficiency"
 description: "Waking and sleep initiation matter, but their definitions and denominators must stay visible."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 4
 role: "Range"
 attention: "Clarify disruption and definitions"
@@ -24,6 +24,8 @@ These values give us a measurement question: how much of the difference concerns
 On [14 October](/sleep/record/#night-2026-10-14), Oura estimated 67m38s awake, 10m30s latency and 88% efficiency. COROS estimated 16 minutes awake. The account added cold awakenings and an awakening followed by a precautionary bathroom trip, without strong urinary urgency; their times and durations were not recorded. The bathroom detail was clarified in a dated follow-up, and the initial waking cause remains unknown. Those reports make unwanted disruption worth addressing; they do not validate either device's exact total. Oura's total awake time is not interchangeable with wake after sleep onset.
 
 On [15 October](/sleep/record/#night-2026-10-15), I remembered no interruptions before a final awakening around 07:20, followed by a bathroom trip and 10–15 minutes trying to return to sleep. Oura estimated 36m53s total awake within its episode and COROS 8 minutes. Remembered continuity and algorithm-detected waking have different scopes. Oura's efficiency rose to 90%, while its estimated main sleep fell to 5h33m30s; the higher ratio does not establish sufficient duration.
+
+On [16 October](/sleep/record/#night-2026-10-16), I remembered no interruption before around 07:30, drank water because my mouth felt dry, and returned to bed until 09:05. This is a longer reported first sleep period with a later return to sleep. The awake interval and return latency were not timed; urinary urgency and a bathroom trip at 07:30 were not reported. Oura subsequently estimated 36m57s awake, 26m30s latency and 93% efficiency within its main episode; COROS remained pending. Its implied onset around 00:18 differs from feeling close to sleep after the five-minute breathing exercise around midnight. Both are retained. No remembered interruption is not a claim of zero brief awakenings.
 
 ## The target
 

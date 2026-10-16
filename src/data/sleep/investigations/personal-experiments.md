@@ -1,7 +1,7 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-15"
+updated: "2026-10-16"
 order: 4
 ---
 
@@ -9,9 +9,27 @@ order: 4
 
 ## The current routine proposal
 
+**16 October 2026 — an encouraging routine, Oura 90; COROS pending.** Workout finished at 15:00; last meal 17:00–18:00; sips until around 19:30; walk 21:00–22:00. Light and curtains changed through the evening. Red-filtered laptop work ended 23:50, followed by a bathroom trip and five minutes of breathing with **six seconds in, four seconds out**. I felt close to falling asleep and chose to sleep, roughly around midnight.
+
+I remembered no interruption until around 07:30, when dry mouth and feeling dehydrated prompted water and a return to bed. Final waking was 09:05; the last period felt light and included dreams. The report does not say whether the first awakening also involved urinary urgency or urination. Dry mouth is not by itself a measured hydration deficit; mouth breathing is another possible explanation. [NHS dry-mouth guidance](https://www.nhs.uk/symptoms/dry-mouth/).
+
+After synchronization, Oura estimated 8h37m30s asleep, 2h12 REM and 93% efficiency, with a score of 90. Awake-labelled samples included 47–48 bpm just before midnight. COROS still had no October 16 record. The roughly six-hour meal gap is a promising experienced condition to repeat. Earlier workout, longer sleep opportunity, walk, light, water timing, breathing and the preceding short night also differ. This supports investigating the routine without prematurely deciding that food timing either caused the improvement or could not have helped. The extra Oura-detected evening episode remains unconfirmed as actual dozing.
+
+### The next reported plan
+
+I would like to shift the routine about two hours earlier, aiming for a **22:00–07:00 opportunity**. It offers nine hours, not nine guaranteed hours asleep. Retaining a 4½-hour liquid interval places it around **17:30**; the reported 19:30-to-midnight interval already approximated that duration. Comfortable hydration, total intake and any recurrent dryness belong in the assessment.
+
+With a 22:00 bedtime, finishing food at **16:00** retains six hours; finishing at **15:00** extends it to seven. These are proposed options, not completed conditions or established optima. Preserve nutrition and training recovery. A full two-hour shift changes several conditions together; it can identify a useful routine while leaving the isolated effect of each part unresolved.
+
+The October 16 report also adds later sleepiness to October 15 despite that short night's initially alert morning. Today I felt sharp within minutes in a meeting I had joined late. Keep those observations distinct: the urgent meeting did not measure sustained daytime performance or cortisol/adrenaline. The [dated record](/sleep/record/#night-2026-10-16) and [function guide](/sleep/measurements/functioning/) retain both.
+
+### The preceding October 15 proposal
+
 **15 October 2026 — one follow-up, with a shorter main sleep.** The window was closed and temperature felt comfortable. I remembered no interruptions before the final awakening and felt very alert, but Oura estimated 5h33 asleep and COROS 5h55. This adds a useful comfort observation; it does not complete the three-night proposal below or establish sufficient duration.
 
-### The latest comparison to make
+<span id="the-latest-comparison-to-make"></span>
+
+### The comparison proposed on October 15
 
 The next proposed question is whether an earlier sleep opportunity preserves comfort while increasing obtained sleep and sustaining useful daytime function. A midnight-to-07:20 window would offer 7h20 if that waking time persisted, versus the diary's approximate 5h40 interval. It is additional opportunity, not guaranteed sleep or an adopted wake-time target.
 
