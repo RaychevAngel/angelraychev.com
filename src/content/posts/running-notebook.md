@@ -295,11 +295,10 @@ made the third repetition survival work. Its posture and knee-lift loss felt
 like the difficult middle of the 5000 m. I recovered good form for a roughly
 95-second final lap, finishing the last 1600 in 6:27.07.
 
-Recorded HR over the final two minutes of each rep averaged approximately
-**169, 177 and 184 bpm**, despite the slower third rep. The almost unchanged
-pace concealed a rising cost. Heat complicates the fitness comparison; it
-does not supply a numerical correction. The session makes preserving good
-movement through the middle of a hard effort a concrete question to follow.
+The nearly even times concealed how much harder the effort felt. Heat
+complicates the fitness comparison; it does not supply a numerical correction.
+The session makes preserving good movement through the middle of a hard
+effort a concrete question to follow.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
