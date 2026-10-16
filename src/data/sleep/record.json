@@ -533,7 +533,7 @@
             "average_hrv": null,
             "bedtime_end": "2026-10-15T21:07:07.000-07:00",
             "light_sleep_duration": 330,
-            "confirmation": "An actual doze during this interval has not been confirmed in the diary. This remains an unconfirmed device-detected episode, separate from the main sleep."
+            "confirmation": "In the October 16 follow-up I reported no dozing during this interval. The diary rejects this as an actual nap; the device classification is retained as a disagreement, separate from the main sleep."
           }
         ],
         "score": 90,
@@ -563,13 +563,13 @@
         "morning_sleepiness": "Final waking at 09:05, late for a 09:00 meeting. Felt fully sharp within under five minutes of waking and two to three minutes after joining a meeting in which I spoke for most of the time. Immediate assessment was interrupted by the meeting; later-day function not yet reported.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
-        "naps": null,
+        "naps": "No dozing during the October 15 20:39–21:07 interval classified by Oura. Other possible nap exposures were not separately reported.",
         "dream_recall": "Recalled dreaming during the lighter-feeling period after the around-07:30 awakening and before final waking at 09:05. REM was suspected, not measured.",
         "intended_bedtime": "Worked until 23:50, urinated, lay down and did about five minutes of breathing before choosing to sleep; roughly midnight, with exact sleep onset unrecorded.",
         "environment": "Night lamp and open curtains from around 19:00; night light and closed curtains after 22:00; only the red-filtered laptop screen after 23:00. Temperature and overnight nasal/mouth breathing were not reported.",
         "stress": "Worked until 23:50. Work intensity not characterized. Final waking was followed by an urgent speaking meeting.",
         "breathing_exercise": "Five minutes of six-second inhalation and four-second exhalation; felt close to falling asleep and stopped to sleep. This is the reported ratio, not the previously cited four-in/six-out routine.",
-        "hydration_and_bathroom": "Sipped water until about 19:30. Urinated just before bed. Around 07:30 woke with a dry mouth and felt dehydrated, drank water and returned to bed. Whether there was an urge or bathroom trip at that awakening was not reported; daily water volume and amount of morning water are unknown."
+        "hydration_and_bathroom": "Usually drinks roughly 1.5 L/day in addition to water-rich foods, with urine described as fairly light. The October 15 workout was very hot and I had forgotten water; I felt dehydrated afterward but do not know how much I drank to replenish. Sipped water until about 19:30 and urinated just before bed. At around 07:30 it was just dry mouth, without urinary urge; drank water, the dryness resolved, and returned to bed. No bathroom trip at that awakening was described. Exact exercise losses, replenishment and morning water amount were not measured."
       },
       "context": [
         {
@@ -582,28 +582,32 @@
         },
         {
           "kind": "self_report",
-          "observation": "No remembered interruption before around 07:30. Dry mouth and a feeling of dehydration prompted water, then a return to bed. Final waking 09:05. Time awake at 07:30, return-to-sleep latency and exact sleep duration were not measured."
+          "observation": "No remembered interruption before around 07:30. Follow-up clarified that the awakening involved just dry mouth, without urinary urge. Water resolved the dryness and I returned to bed; final waking 09:05. The awake interval and return latency were not timed."
         },
         {
           "kind": "self_report",
           "observation": "Reported pre-sleep pulse in the high 40s, described as the lowest personally recalled while awake. After synchronization, Oura returned awake-labelled samples of 47 bpm at 23:53:59 and 48 bpm at 23:59:15 on October 15. These samples support the reported range; they are not a continuous resting-HR measure or an independently verified lifetime minimum."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Reported on October 16: usual drinking roughly 1.5 L/day plus substantial water from fruit/other foods; urine looks fairly light. Forgot water for the very hot October 15 workout and felt dehydrated afterward. Post-workout replenishment amount is unknown; this is not a measured total-water balance."
         }
       ],
       "story": [
-        "My workout finished at 15:00 and the last meal was 17:00–18:00. I sipped water until about 19:30. From 19:00 I used a night lamp with open curtains. I walked around 21:00–22:00, then used night light with the curtains closed. From 23:00 only the red-filtered computer screen remained on.",
+        "My workout finished at 15:00 and the last meal was 17:00–18:00. I sipped water until about 19:30. From 19:00 I used a night lamp with open curtains. I walked around 21:00–22:00, then used night light with the curtains closed. From 23:00 only the red-filtered computer screen remained on. In the follow-up I added that I had forgotten water for the very hot workout and felt dehydrated afterward; I am unsure how much I drank afterward. I usually drink around 1.5 L/day alongside water-rich foods and my urine looks fairly light.",
         "I worked until 23:50, urinated and lay down. I breathed with six seconds in and four seconds out for about five minutes. I felt I was already close to falling asleep and decided to sleep. The attempt was roughly around midnight; I did not record an exact onset.",
-        "I remember sleeping uninterrupted until around 07:30. My mouth was dry and I felt dehydrated, so I drank some water and went back to bed. I finally woke at 09:05. That last period felt light and included dreams, which made me suspect some REM sleep. Overall the night felt very good.",
+        "I remember sleeping uninterrupted until around 07:30. The follow-up clarified that I woke with just dry mouth, without an urge to urinate. I drank water, the dryness resolved, and I went back to bed. I finally woke at 09:05. That last period felt light and included dreams, which made me suspect some REM sleep. Overall the night felt very good.",
         "I woke five minutes after a 09:00 meeting had begun and did not have time to assess how I felt quietly. Within two to three minutes of joining, and less than five minutes after waking, I felt fully sharp and did most of the talking. I wondered whether the urgent situation helped activate me; I did not measure a hormonal response.",
         "I think the approximately six-hour food gap helped and noticed pre-bed pulse in the high 40s, my lowest recalled awake reading. I would like to shift the routine roughly two hours earlier, aiming for sleep around 22:00 and waking around 07:00. I intend to retain a roughly four-and-a-half-hour liquid interval and am willing to explore food ending seven hours before bed. These are plans for later nights, not completed results."
       ],
       "interpretation": [
         "Oura returned a Sleep Score of 90, estimating 8h37m30s asleep within a 23:51:59–09:06:26 episode (9h14m27s), 36m57s awake and 93% efficiency. Estimated REM was 2h12, deep 1h51m30s and light 4h34. Compared with the preceding night, estimated sleep increased by 3h04 and the score by 19 points. COROS has not yet returned October 16, even after synchronization.",
         "Earlier food timing is a promising experienced condition, worth repeating. Workout timing, evening activity, light, bedtime, water timing and breathing also changed, and this followed a short night with reported daytime sleepiness. A better night supports the routine while leaving the isolated contribution of the six-hour meal gap unresolved.",
-        "Dry mouth and feeling dehydrated are reported symptoms, not a measured hydration deficit. The water response is retained. The report does not say whether the 07:30 awakening also involved urinary urgency or a bathroom trip, so absence of either has not been inferred.",
+        "The follow-up changes the morning-break interpretation: it involved just dry mouth, not urinary urge, and water resolved it. I also reported feeling dehydrated after a very hot workout without water, with uncertain replenishment. This makes post-exercise hydration worth addressing, without establishing the exact cause of overnight dryness. Roughly 1.5 L/day refers to usual drinks, not measured total water including food or an individualized adequacy threshold.",
         "Dreams during the final period are compatible with REM but do not establish its presence or duration. Quick activation in an urgent speaking meeting is a useful real-world morning observation; it is not a standardized recovery assessment or evidence of measured cortisol/adrenaline changes.",
         "The reported high-40s pre-bed pulse is supported by awake-labelled Oura samples of 47 and 48 bpm just before midnight. Their sampling is irregular. Overnight mean HR was 49.125 bpm versus 49.375 the previous night; minima were 45 versus 47 and average HRV 51 versus 58 ms. These source scopes remain distinct, and the observations do not isolate a meal effect.",
         "Oura estimated 26m30s latency within its episode, implying an estimated onset around 00:18:29. That differs from feeling close to sleep after five minutes of breathing around midnight; subjective onset and algorithmic latency are retained separately. The reported morning water break is not assigned an exact wearable waking event without a matching reconstruction.",
-        "Oura also classified an October 15 20:38:58–21:07:07 episode, estimating 10m30s asleep. The diary has not confirmed dozing then. That estimate is retained separately and is not added to the main sleep or declared a completed nap; the returned daily score is not recalculated."
+        "Oura also classified an October 15 20:38:58–21:07:07 episode, estimating 10m30s asleep. I explicitly reported no dozing then. The diary rejects it as an actual nap; its native classification remains visible as a disagreement and is kept separate from the main sleep. The returned daily score is preserved, not recalculated as if this episode had been removed."
       ],
       "plans": [
         "Shift the routine roughly two hours earlier, aiming for a 22:00–07:00 sleep opportunity. This would offer nine hours, not guarantee nine hours asleep.",
@@ -614,14 +618,18 @@
         {
           "date": "2026-10-16",
           "reason": "Both APIs initially lacked the requested night. After user-confirmed synchronization, Oura supplied the main sleep, daily grades, physiology, a brief additional episode and pre-bed HR samples. COROS still returned no October 16 record. Added the returned Oura values without inferring missing COROS data or confirming the extra episode as an actual nap."
+        },
+        {
+          "date": "2026-10-16",
+          "reason": "Clarified that the 07:30 awakening involved just dry mouth, without urinary urge, and that water resolved the dryness. Reported no dozing during the evening Oura episode, usual drinks around 1.5 L/day plus water-rich foods, light-looking urine, and feeling dehydrated after the very hot workout without water, with unknown replenishment. Kept these as self-reports; native provider values, score and original retrieval time remain unchanged."
         }
       ],
       "next_focus": [
         "Repeat the promising earlier routine while protecting enough sleep opportunity, tracking daytime experience and keeping hydration comfortable. A shift to 22:00–07:00 is the reported next plan; exact meal and fluid intervals remain personal comparisons, not universal targets.",
-        "COROS is still pending after synchronization; the Oura record and diary remain useful now. Clarify whether the 07:30 water break also involved urinary urgency or a bathroom trip, and whether the evening Oura episode was actual dozing. Preserve comfortable hydration and record later-day functioning."
+        "Address drinking during and replenishment after hot workouts, while retaining water from food in the intake picture. Keep the evening interval flexible to hydration needs and note whether morning dryness repeats. The extra evening sleep classification is rejected by the diary; COROS remains pending at the recorded retrieval. Later-day functioning still matters."
       ],
       "nutrition_reference": "/nutrition/record/#october-15-usual-foods-and-roma-tomatoes",
-      "nutrition_context_note": "The preceding food record retains foods and portions. The sleep report supplies a 17:00–18:00 last-meal interval and sips until around 19:30; daily drink volume and water in foods were not measured.",
+      "nutrition_context_note": "The preceding food record retains foods and portions. The sleep report supplies a 17:00–18:00 last-meal interval and sips until around 19:30. Follow-up reports usual drinks around 1.5 L/day plus water from foods; exact October 15 drink volume, food water and exercise losses were not measured.",
       "evening_hr": {
         "start_datetime": "2026-10-15T23:00:00-07:00",
         "end_datetime": "2026-10-16T00:05:00-07:00",

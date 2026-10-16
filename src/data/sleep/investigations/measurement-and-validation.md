@@ -1,7 +1,7 @@
 ---
 title: "Measurement and validation"
 description: "How close are these signals to the processes we intend to optimize, and which reference would resolve the uncertainty?"
-updated: "2026-10-13"
+updated: "2026-10-16"
 order: 2
 ---
 
@@ -12,6 +12,14 @@ We want to improve sleep performance and understand what changed. That requires 
 The actual account reports **Oura Ring 5, hardware `or5`, firmware `2.1.25`**, plus a **COROS PACE 4**. A supplementary API request returned Oura sleep algorithm version `v2`; the exact model revision and mapping to validation protocols remain unverified. COROS firmware/algorithm versions were not returned. They remain part of the measurement specification to establish. [First record](/sleep/record/#night-2026-10-13).
 
 As of October 13, 2026, this research has **not verified independent peer-reviewed validation of the exact Ring 5 or PACE 4 hardware for sleep staging**. That is a limitation of the available evidence, not proof that either device is inaccurate. Published findings from predecessors remain labeled by the hardware and algorithm actually tested.
+
+## Quiet waking and extra sleep detections
+
+Oura infers sleep from peripheral signals rather than measuring EEG. Its own support guidance acknowledges that very still wakefulness can resemble sleep in movement, heart rate and average body temperature. That supplies a plausible error mechanism, not the exact classifier reasoning for a particular episode. [Oura's explanation](https://support.ouraring.com/hc/en-us/articles/360025445994-Edit-Bedtime-and-Wake-Up-Time).
+
+The local record now contains two concrete disagreements: Oura estimated 11m30s asleep around 22:20–22:46 on October 14 and 10m30s around 20:39–21:07 on October 15. I explicitly reported no dozing during either. The diary rejects them as actual naps; their original API classifications remain visible separately from main sleep. These are useful examples of disputed extra detections, not a measured error rate for every night or stage. [October 15 record](/sleep/record/#night-2026-10-15), [October 16 record](/sleep/record/#night-2026-10-16).
+
+If an incorrect episode appears as a nap in the app, Oura says it can be deleted there to remove its effect on Sleep and Readiness Scores. The API's short `sleep` episode is not automatically proof of how it appears in the app. The published score remains the returned score, without a hypothetical correction or an assumption about its exact contribution. [Nap guidance](https://support.ouraring.com/hc/en-us/articles/1500009653181-Nap-Detection).
 
 ## What an accuracy percentage means
 
