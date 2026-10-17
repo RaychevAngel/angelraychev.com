@@ -11,7 +11,7 @@ order: 4
 
 **17 October 2026 — a social-night exception, Oura 64; COROS 82.** I reported a hard workout and a refreshed preceding day, then a later evening with chicken around 20:00, approximately 2–3 oz vodka, a burger/fries and bread/Brie around 01:00–02:00, and a roughly 03:00 bedtime on someone else’s floor/carpet without a good pillow. I woke repeatedly to shift position because of discomfort and recalled falling back asleep quickly. Both providers estimated about 6h21–22 asleep; the [full record](/sleep/record/#night-2026-10-17) retains their different waking estimates and lower HRV. This is a departure from the earlier routine, with several simultaneous changes, rather than a controlled test of the meal gap. I plan to return to the usual optimization over the next days. The night remains in the chronological and headline milestone record; any routine-only analysis would be labeled separately.
 
-The refreshed-day report also supplies a later outcome after the October 16 sleep. Morning and later-day experience following October 17 are still unreported.
+The refreshed-day report also supplies a later outcome after the October 16 sleep. A separate October 17 follow-up reports feeling already awake and sharp on waking, doing work and feeling good so far. Possible later fatigue was anticipated, not observed; the full-day outcome remains unassessed. This initial subjective experience stays alongside the lower device grades and HRV.
 
 **16 October 2026 — an encouraging routine, Oura 90; COROS 98.** Workout finished at 15:00; last meal 17:00–18:00; sips until around 19:30; walk 21:00–22:00. Light and curtains changed through the evening. Red-filtered laptop work ended 23:50, followed by a bathroom trip and five minutes of breathing with **six seconds in, four seconds out**. I felt close to falling asleep and chose to sleep, roughly around midnight.
 
@@ -25,7 +25,7 @@ In the October 16 report, I proposed shifting the routine about two hours earlie
 
 With a 22:00 bedtime, finishing food at **16:00** retains six hours; finishing at **15:00** extends it to seven. These are proposed options, not completed conditions or established optima. Preserve nutrition and training recovery. A full two-hour shift changes several conditions together; it can identify a useful routine while leaving the isolated effect of each part unresolved.
 
-The October 16 report also adds later sleepiness to October 15 despite that short night's initially alert morning. Today I felt sharp within minutes in a meeting I had joined late. Keep those observations distinct: the urgent meeting did not measure sustained daytime performance or cortisol/adrenaline. The [dated record](/sleep/record/#night-2026-10-16) and [function guide](/sleep/measurements/functioning/) retain both.
+The October 16 report also adds later sleepiness to October 15 despite that short night's initially alert morning. On October 16 I felt sharp within minutes in a meeting I had joined late. Keep those observations distinct: the urgent meeting did not measure sustained daytime performance or cortisol/adrenaline. The [dated record](/sleep/record/#night-2026-10-16) and [function guide](/sleep/measurements/functioning/) retain both.
 
 ### The preceding October 15 proposal
 
