@@ -1,7 +1,7 @@
 ---
 title: "Strategies for improving sleep"
 description: "A ranked investigation of sleep opportunity, timing, light, stimulants, training and environment, with the limits of the evidence retained."
-updated: "2026-10-16"
+updated: "2026-10-17"
 order: 3
 ---
 
@@ -63,6 +63,8 @@ Record **all sources, milligrams, timing and interval before intended sleep**. C
 A randomized 31-person laboratory crossover used substantial doses and found altered sleep and elevated nocturnal heart rate; it does not specify one drink's effect here. [Pabon et al.](https://pubmed.ncbi.nlm.nih.gov/35953878/)
 
 Retain coinciding meals, activity and sleep timing. Naturally occurring alcohol-free nights provide comparisons without introducing drinking. A larger deep-sleep estimate alone would miss other effects.
+
+The [sleep ending October 17](/sleep/record/#night-2026-10-17) supplies a drinking-night observation: approximately 2–3 oz vodka, late food around 01:00–02:00, a roughly 03:00 bedtime and uncomfortable floor/carpet sleep after a hard workout. Sleep was shorter, Oura’s sleeping pulse was higher and both providers returned lower HRV. The amount and timing are self-reported; alcohol concentration is unknown. Several conditions changed together, so this observation cannot attribute the differences to alcohol alone. I describe it as a social exception and intend to resume the earlier routine.
 
 ## Timing contains three separate questions
 

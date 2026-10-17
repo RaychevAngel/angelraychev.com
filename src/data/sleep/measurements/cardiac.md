@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-16"
+updated: "2026-10-17"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -32,6 +32,12 @@ This is not a continuous resting-heart-rate trajectory or a test that isolates d
 The overnight mean was 49.375 bpm, compared with 49.5 the previous night; the minima were 47 and 45. Those summaries are separate from the evening readings. Earlier meals can be tested for sleep, comfort and functioning without making the lowest possible bedtime pulse the success criterion.
 
 Before the [16 October sleep](/sleep/record/#night-2026-10-16), I reported pulse in the high 40s, the lowest personally recalled while awake. After synchronization the focused Oura query returned **47 bpm at 23:53:59 and 48 bpm at 23:59:15**, both labelled awake. These samples support the reported range, without establishing a continuous resting-HR curve or an independently verified lifetime minimum. The half-hour sample medians declined from 60.5 to 56 bpm, with irregular coverage. Overnight mean HR was 49.125 bpm and minimum 45; average HRV was 51 ms versus 58 the preceding night. The later COROS retrieval returned **56 ms official sleep HRV**, compared with 55 the preceding night. Its daily snapshot reported average HR 52 bpm and minimum 43, while predicted seated resting HR was 51; those scopes do not match Oura’s sleep-window HR. These scopes remain distinct; a meal effect has not been isolated.
+
+## The social-night exception and a provider-returned range
+
+On [17 October](/sleep/record/#night-2026-10-17), after the reported hard workout, late food, vodka and uncomfortable floor sleep, Oura returned mean sleeping HR **63.625 bpm** and minimum **56**, versus 49.125 and 45 the preceding night. Its sleep HRV fell **51 → 28 ms**. COROS official sleep HRV fell **56 → 32 ms** and was labeled **Below normal**, with an explicitly returned **42–64 ms normal range and 53 ms baseline**. These are COROS’s own assessment values, not thresholds reconstructed from our few earlier observations. Its normal range comes from previous nights and is not a diagnostic boundary or a range to apply to Oura. [COROS definition](https://support.coros.com/hc/en-us/articles/20959044334612-Overnight-HRV).
+
+The cardiac change accompanies a shorter, subjectively uncomfortable night. Training, meals, alcohol, timing and sleeping conditions changed together; their isolated contributions remain unresolved. COROS’s daily HR snapshot of 71 bpm average and 52 minimum, with predicted seated resting HR of 59, retains its different scope. A return toward the familiar series over subsequent ordinary nights would be informative; this one record does not establish an arrhythmia or a new long-term baseline.
 
 ## How much confidence is justified?
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "entries": [
     {
       "id": "2026-10-13",
@@ -586,7 +586,7 @@
       },
       "self_report": {
         "restfulness": "Felt the night was very good, with no remembered interruption before around 07:30 and more light-feeling, dream-associated sleep afterward; no numeric rating.",
-        "daytime_sleepiness": null,
+        "daytime_sleepiness": "Reported retrospectively on October 17: felt generally refreshed during daytime October 16 and had a hard workout. No numeric sleepiness rating or standardized performance test was reported.",
         "morning_sleepiness": "Final waking at 09:05, late for a 09:00 meeting. Felt fully sharp within under five minutes of waking and two to three minutes after joining a meeting in which I spoke for most of the time. Immediate assessment was interrupted by the meeting; later-day function not yet reported.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
@@ -654,6 +654,10 @@
         {
           "date": "2026-10-16",
           "reason": "After the user reported COROS ready, a later on-demand query returned the October 16 sleep overview, official sleep HRV and daily HR summaries. Added these native values, provider-specific retrieval times and the paired comparison; retained the earlier missing-data history, the original Oura values and retrieval time, and the disputed evening episode. No hypothetical score recalculation was made."
+        },
+        {
+          "date": "2026-10-17",
+          "reason": "Added the retrospective report of feeling generally refreshed during daytime October 16. This follows the October 16 sleep and precedes the exceptional social night ending October 17. Native provider values, retrieval timestamps and original morning meeting account remain unchanged."
         }
       ],
       "next_focus": [
@@ -692,6 +696,160 @@
         "oura": "2026-10-16T17:05:41.102939+00:00",
         "coros": "2026-10-16T17:44:21+00:00"
       }
+    },
+    {
+      "id": "2026-10-17",
+      "wake_date": "2026-10-17",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider sleep wake-up dates; diary of the preceding day and social evening",
+      "status": "Social-night exception; floor sleeping, late food and alcohol",
+      "retrieved_at": "2026-10-17T17:54:52.394054+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-10-17T17:54:52.394054+00:00",
+        "coros": "2026-10-17T17:54:52+00:00"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.25",
+        "algorithm_version": "v2",
+        "sleep": {
+          "day": "2026-10-17",
+          "type": "long_sleep",
+          "bedtime_start": "2026-10-17T03:28:34.000-07:00",
+          "bedtime_end": "2026-10-17T10:20:12.000-07:00",
+          "total_sleep_duration": 22920,
+          "time_in_bed": 24698,
+          "awake_time": 1778,
+          "latency": 330,
+          "efficiency": 93,
+          "rem_sleep_duration": 5190,
+          "deep_sleep_duration": 3690,
+          "light_sleep_duration": 14040,
+          "average_heart_rate": 63.625,
+          "lowest_heart_rate": 56,
+          "average_hrv": 28,
+          "average_breath": 12.75
+        },
+        "additional_sleep_episodes": [],
+        "score": 64,
+        "contributors": {
+          "deep_sleep": 59,
+          "efficiency": 98,
+          "latency": 72,
+          "rem_sleep": 70,
+          "restfulness": 73,
+          "timing": 18,
+          "total_sleep": 62
+        },
+        "readiness_score": 54,
+        "temperature_deviation_c": 0.55,
+        "spo2_average_percent": 94.209,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; requested October17 wake date"
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 82,
+        "daily_sleep_minutes": 381,
+        "main_sleep_minutes": 381,
+        "main_period_minutes": 391,
+        "main_start": "2026-10-17T03:43:00-07:00",
+        "main_end": "2026-10-17T10:14:00-07:00",
+        "ratios_percent": {
+          "deep": 26,
+          "light": 57,
+          "rem": 14,
+          "awake": 3
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 10,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 32,
+        "official_sleep_hrv_normal_range_ms": [
+          42,
+          64
+        ],
+        "official_sleep_hrv_baseline_ms": 53,
+        "official_sleep_hrv_evaluation": "Below normal",
+        "sleep_hrv_definition": "Official daily assessment, baseline and normal range; none recomputed from returned points",
+        "daily_min_hr_bpm": 52,
+        "daily_average_hr_bpm": 71,
+        "resting_hr_bpm": 59,
+        "heart_rate_scope_note": "Daily snapshot at morning retrieval, not a complete-day or matched sleep-window measure; resting HR is predicted seated HR",
+        "source": "Official COROS connector: querysleepoverview/querysleephrv/queryavgheartrate/queryrestingheartrate, wake date 20261017"
+      },
+      "self_report": {
+        "restfulness": "Very uncomfortable floor/carpet sleep without a good pillow; woke multiple times to shift position and recalled immediately returning to sleep. Described it as a very bad night for the objective; no numeric rating.",
+        "daytime_sleepiness": null,
+        "morning_sleepiness": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": "Approximately 2–3 oz vodka across the social night; precise drinking times, concentration and ethanol amount not measured.",
+        "naps": null,
+        "dream_recall": null,
+        "intended_bedtime": "Around 03:00 on October 17 at someone else’s place; exact onset, final waking and out-of-bed time were not reported.",
+        "environment": "Slept on the floor/carpet at someone else’s place, without a good pillow. Repeated position changes due to discomfort. Temperature, noise, lighting and bedding otherwise unreported.",
+        "stress": "Hard workout during October 16, with timing unspecified in this sleep report. Went out to see friends; no psychological stress rating.",
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null
+      },
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "The report of feeling generally refreshed concerns daytime October 16 before this night. It has been added retrospectively to the sleep ending October 16; October 17 morning and later-day function are not yet reported."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Most planned food was eaten by 15:00 on October 16. Two tomatoes, one bell pepper and half a chicken were described as still planned; consumption of those exact foods/portions was not confirmed. Some chicken was eaten at dinner around 20:00, portion unspecified, and hunger remained afterward."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Reported approximately 2–3 oz vodka over the night. A burger and substantial fries, plus bread and Brie, were eaten around 01:00–02:00 on October 17. Portions and exact final-food time were not recorded."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Around 03:00 bedtime was an approximate reported time. Oura selected 03:28:34–10:20:12 and COROS 03:43–10:14. The source boundaries are retained without forcing them to the reported time."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Repeated remembered awakenings were attributed to floor/pillow discomfort, with quick return to sleep. There were no timed awakening intervals or exact counts. COROS counted no awakening longer than five minutes; this does not establish absence of shorter awakenings."
+        }
+      ],
+      "story": [
+        "I had a hard workout on October 16 and felt generally refreshed during the day. I ate most of my planned food by 15:00. Two tomatoes, a bell pepper and half a chicken remained planned; this account does not confirm that I finished those exact items. I went out and ate some chicken around 20:00, but there was little else and I was still a little hungry afterward.",
+        "I went out to see friends and drank approximately 2–3 oz of vodka over the night. Around 01:00–02:00 I ate a burger and a substantial serving of fries, as well as bread and Brie. Exact portions, alcohol strength and the last drink time were not recorded.",
+        "I went to bed around 03:00, staying at someone else’s place. I slept on the floor/carpet without a good pillow and found it quite uncomfortable. I woke multiple times, shifted position because of the discomfort, and felt I fell straight back asleep.",
+        "I consider this a very bad night for the sleep objective, and a one-off social exception. I intend to return to the normal optimization routine over the next days. This entry records the exception as part of the actual sequence, with the earlier successful night still available for comparison."
+      ],
+      "interpretation": [
+        "Oura returned 64 and COROS 82. They agree closely on estimated main sleep: 6h22m versus 6h21m, despite selected episodes of 6h51m38s and 6h31m. Oura estimated 29m38s awake; COROS 10 minutes. Their 18-point grade difference is not an 18% difference in restoration.",
+        "Compared with October 16, Oura estimated 2h15m30s less sleep and COROS 2h38m less. Oura estimated 1h26m30s REM and 1h01m30s deep sleep, with contributor grades 70 and 59. Its total-sleep grade was 62, restfulness 73, timing 18 and latency 72; the latency estimate was 5m30s.",
+        "Oura still estimated 93% efficiency and assigned the efficiency contributor 98. A high fraction of this shorter episode classified asleep can coexist with remembered discomfort and repeated brief awakenings. COROS counted no interruption longer than five minutes, which does not contradict the account of short awakenings and rapid returns to sleep.",
+        "Oura’s sleeping average HR rose from 49.125 to 63.625 bpm and its minimum from 45 to 56. Average sleep HRV fell from 51 to 28 ms. COROS official sleep HRV fell from 56 to 32 ms; it now labels 32 Below normal against a provider-returned range 42–64 ms and baseline 53 ms. Those are COROS’s own assessment and range, not a baseline inferred from four earlier points or applied to Oura.",
+        "Hard training, a much later sleep attempt, late food, alcohol and an uncomfortable unfamiliar sleeping surface occurred together. The changed sleep and cardiac estimates document a worse night in that setting without isolating the contribution of any one exposure. This night does not evaluate whether the earlier meal interval works under comparable conditions.",
+        "Oura’s average SpO₂ was 94.209%, versus 95.806% the preceding night, and peripheral-temperature deviation was +0.55°C. These are retained consumer-device summaries, not diagnoses or a reconstruction of individual breathing events. Morning and later-day function after this sleep have not yet been reported."
+      ],
+      "plans": [
+        "Return to the usual sleep-optimization routine over the next days. No exact next bedtime, meal cutoff or completed recovery outcome was specified."
+      ],
+      "next_focus": [
+        "Resume comfortable sleeping arrangements and the earlier routine that was being explored. Preserve the social-night context and examine the next nights and daytime experience before concluding that the change has resolved.",
+        "This night remains in the full chronological record and any headline milestone window covering this date. A routine-only comparison may be shown separately with its selection rule stated; the exception is not silently dropped from overall performance."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/research/personal-experiments/#the-current-routine-proposal",
+          "label": "Routine history and comparisons"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Milestone inclusion rules"
+        }
+      ],
+      "corrections": []
     }
   ]
 }

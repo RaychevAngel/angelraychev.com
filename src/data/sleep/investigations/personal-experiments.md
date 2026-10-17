@@ -1,13 +1,17 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-16"
+updated: "2026-10-17"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**17 October 2026 — a social-night exception, Oura 64; COROS 82.** I reported a hard workout and a refreshed preceding day, then a later evening with chicken around 20:00, approximately 2–3 oz vodka, a burger/fries and bread/Brie around 01:00–02:00, and a roughly 03:00 bedtime on someone else’s floor/carpet without a good pillow. I woke repeatedly to shift position because of discomfort and recalled falling back asleep quickly. Both providers estimated about 6h21–22 asleep; the [full record](/sleep/record/#night-2026-10-17) retains their different waking estimates and lower HRV. This is a departure from the earlier routine, with several simultaneous changes, rather than a controlled test of the meal gap. I plan to return to the usual optimization over the next days. The night remains in the chronological and headline milestone record; any routine-only analysis would be labeled separately.
+
+The refreshed-day report also supplies a later outcome after the October 16 sleep. Morning and later-day experience following October 17 are still unreported.
 
 **16 October 2026 — an encouraging routine, Oura 90; COROS 98.** Workout finished at 15:00; last meal 17:00–18:00; sips until around 19:30; walk 21:00–22:00. Light and curtains changed through the evening. Red-filtered laptop work ended 23:50, followed by a bathroom trip and five minutes of breathing with **six seconds in, four seconds out**. I felt close to falling asleep and chose to sleep, roughly around midnight.
 
@@ -17,7 +21,7 @@ After synchronization, Oura estimated 8h37m30s asleep, 2h12 REM and 93% efficien
 
 ### The next reported plan
 
-I would like to shift the routine about two hours earlier, aiming for a **22:00–07:00 opportunity**. It offers nine hours, not nine guaranteed hours asleep. Retaining a 4½-hour liquid interval places it around **17:30**; the reported 19:30-to-midnight interval already approximated that duration. The hot-workout follow-up makes adequate drinking during and replenishment after exercise relevant before tightening a cutoff. Food contributes water; needs can rise with heat and activity, so usual drinking volume is not a fixed adequacy verdict. [NHS hydration guidance](https://www.kch.nhs.uk/patients-and-visitors/patients/hydration-matters/).
+In the October 16 report, I proposed shifting the routine about two hours earlier, aiming for a **22:00–07:00 opportunity**. It offers nine hours, not nine guaranteed hours asleep. Retaining a 4½-hour liquid interval places it around **17:30**; the reported 19:30-to-midnight interval already approximated that duration. The hot-workout follow-up makes adequate drinking during and replenishment after exercise relevant before tightening a cutoff. Food contributes water; needs can rise with heat and activity, so usual drinking volume is not a fixed adequacy verdict. [NHS hydration guidance](https://www.kch.nhs.uk/patients-and-visitors/patients/hydration-matters/).
 
 With a 22:00 bedtime, finishing food at **16:00** retains six hours; finishing at **15:00** extends it to seven. These are proposed options, not completed conditions or established optima. Preserve nutrition and training recovery. A full two-hour shift changes several conditions together; it can identify a useful routine while leaving the isolated effect of each part unresolved.
 
