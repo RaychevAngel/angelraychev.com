@@ -7248,6 +7248,716 @@
         "reviewed_date": "2026-10-17",
         "revision_note": "Added one subsequently reported chicken tender, separate from the earlier other chicken; preserved versions 1 and 2."
       }
+    },
+    {
+      "id": "october-17-away-day",
+      "title": "October 17: gyro, Chinese dishes and a different yogurt",
+      "kind": "food_report",
+      "food_date": "2026-10-17",
+      "recorded_local_date": "2026-10-17",
+      "date_status": "user_confirmed",
+      "summary": "An orange and banana, a Nick the Greek chicken gyro pita without sauce, two thirds of a plate of sweet-and-sour chicken, a plate of fried rice with shrimp and beef, a separate half cup of steamed rice, half a plate of broccoli beef and the whole 680 g Alexandre yogurt tub. The Chinese meal was from Queen House. Only water otherwise; vitamin D was not taken.",
+      "items_reported_eaten": [
+        {
+          "name": "Orange",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Banana",
+          "amount": 1,
+          "unit": "count",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Nick the Greek chicken gyro pita, no sauce",
+          "amount": 1,
+          "unit": "pita; weight unmeasured",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Queen House sweet-and-sour chicken",
+          "amount": "2/3",
+          "unit": "normal plate; weight unmeasured",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Queen House fried rice with shrimp and beef",
+          "amount": 1,
+          "unit": "normal plate; weight unmeasured",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Steamed white rice, separate serving",
+          "amount": 0.5,
+          "unit": "cup",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Queen House broccoli beef",
+          "amount": 0.5,
+          "unit": "normal plate; weight unmeasured",
+          "portion_status": "reported"
+        },
+        {
+          "name": "Alexandre seasonal full-fat grass-fed plain yogurt",
+          "amount": 680,
+          "unit": "g, whole 24 oz tub",
+          "portion_status": "reported"
+        }
+      ],
+      "context": [
+        {
+          "field": "away_from_routine",
+          "observation": "Reported another day away, eating available foods."
+        },
+        {
+          "field": "venue",
+          "observation": "Nick the Greek chicken gyro pita without sauce; Queen House Chinese Restaurant broccoli beef, sweet-and-sour chicken, steamed rice and fried rice on normal dinner plates. Exact location unconfirmed."
+        },
+        {
+          "field": "portion_evidence",
+          "observation": "Full yogurt tub, pita without sauce and food date confirmed. Plate fractions and rice cup are reported; all edible weights are unmeasured conversions."
+        },
+        {
+          "field": "fluids",
+          "observation": "Only water besides the listed foods; amount unreported. No alcohol or other foods reported."
+        },
+        {
+          "field": "recipe_uncertainty",
+          "observation": "Menu dish names identified. Plate weights, beef/vegetable proportions, cooking oil, sauce and seasoning remain unmeasured. Generic dish comparators are estimates of Queen House intake."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Vitamin D",
+          "status": "not taken",
+          "amount": null,
+          "unit": "no dose taken"
+        }
+      ],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "All listed foods included; full yogurt and no supplement confirmed. Restaurant plate weights and recipes remain illustrative scenarios.",
+      "date_note": "User explicitly confirms October 17 eating date independently of the screenshot and message timestamps.",
+      "corrections": [
+        "User identifies the menu dishes as broccoli beef and sweet-and-sour chicken, replacing the initial sweet chilli wording and unknown beef dish. Steamed rice remains separate from the fried rice."
+      ],
+      "record_scope": "reported_consumption",
+      "nutrition": {
+        "summary": {
+          "energy_kcal": 2961.1499999999996,
+          "protein_g": 124.15485000000001,
+          "carbohydrate_g": 362.43859999999995,
+          "fat_g": 124.85924999999999
+        },
+        "foods": [
+          {
+            "name": "Navel orange",
+            "grams": 140.0,
+            "quantity_status": "reported",
+            "notes": "One orange reported; saved unweighed 140 g edible navel-orange comparator."
+          },
+          {
+            "name": "Banana",
+            "grams": 118.0,
+            "quantity_status": "reported",
+            "notes": "One banana reported; saved unweighed 118 g edible comparator."
+          },
+          {
+            "name": "Nick the Greek chicken gyro pita, no sauce — illustrative omission scenario",
+            "grams": 300.0,
+            "quantity_status": "reported",
+            "notes": "One Nick the Greek chicken gyro pita without sauce confirmed. Standard internal fries remain in the recipe reference; no separate fries added. Sauce omission is a generic scenario, not verified customized nutrition. Display mass is an unweighed conversion."
+          },
+          {
+            "name": "Queen House sweet-and-sour chicken — generic dish comparator",
+            "grams": 250.0,
+            "quantity_status": "reported",
+            "notes": "User corrects dish name to sweet-and-sour chicken. Reported two thirds normal plate uses unweighed 250 g conversion, 150–400 g scenarios. Generic matching dish type, not restaurant-specific nutrition."
+          },
+          {
+            "name": "Fried rice with shrimp and beef — hypothetical ingredient mixture",
+            "grams": 450.0,
+            "quantity_status": "reported",
+            "notes": "One normal plate reported, shrimp and beef observed. Unweighed 450 g conversion with 300–650 g alternatives. Mixture percentages are hypothetical; base fried rice already includes oil."
+          },
+          {
+            "name": "Queen House steamed white rice — plain cooked comparator",
+            "grams": 79.0,
+            "quantity_status": "reported",
+            "notes": "User identifies steamed white rice. Separate half cup is additional to fried rice; unweighed 79 g household conversion."
+          },
+          {
+            "name": "Queen House broccoli beef — Chinese beef-and-vegetables comparator",
+            "grams": 200.0,
+            "quantity_status": "reported",
+            "notes": "User identifies broccoli beef, half a normal plate. Unweighed 200 g conversion with 125–350 g alternatives; USDA generic Chinese beef and vegetables includes a sauce/vegetable mixture, not plain beef. Queen House recipe and proportions unknown."
+          },
+          {
+            "name": "A2/A2 Organic 100% Grass-fed Plain Yogurt, seasonal full fat, whole milk, extra cream top",
+            "grams": 680.0,
+            "quantity_status": "reported",
+            "notes": "Entire attached 24 oz / 680 g tub explicitly confirmed eaten. Exact matching manufacturer seasonal whole-milk label: four 170 g servings; no vitamin D declared."
+          }
+        ],
+        "nutrients": [
+          {
+            "id": "energy_kcal",
+            "name": "Calories",
+            "unit": "kcal",
+            "category": "macronutrients",
+            "food_total": 2961.1499999999996,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2961.1499999999996
+          },
+          {
+            "id": "protein_g",
+            "name": "Protein",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 124.15485000000001,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 124.15485000000001
+          },
+          {
+            "id": "carbohydrate_g",
+            "name": "Carbohydrate",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 362.43859999999995,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 362.43859999999995
+          },
+          {
+            "id": "fat_g",
+            "name": "Total fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 124.85924999999999,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 124.85924999999999
+          },
+          {
+            "id": "fiber_g",
+            "name": "Dietary fiber",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 19.429,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 19.429
+          },
+          {
+            "id": "saturated_fat_g",
+            "name": "Saturated fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 33.294425000000004,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 33.294425000000004
+          },
+          {
+            "id": "total_sugars_g",
+            "name": "Total sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 96.7559,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 96.7559
+          },
+          {
+            "id": "added_sugars_g",
+            "name": "Added sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 0.0,
+            "known_food_count": 3,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "vitamin_a_mcg_rae",
+            "name": "Vitamin A",
+            "unit": "µg RAE",
+            "category": "vitamins",
+            "food_total": 20.34,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 20.34
+          },
+          {
+            "id": "vitamin_c_mg",
+            "name": "Vitamin C",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 93.006,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 93.006
+          },
+          {
+            "id": "vitamin_d_mcg",
+            "name": "Vitamin D",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 0.0,
+            "known_food_count": 3,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "vitamin_e_mg",
+            "name": "Vitamin E",
+            "unit": "mg α-tocopherol",
+            "category": "vitamins",
+            "food_total": 0.328,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.328
+          },
+          {
+            "id": "vitamin_k_mcg",
+            "name": "Vitamin K1 phylloquinone",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 0.59,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.59
+          },
+          {
+            "id": "thiamin_mg",
+            "name": "Vitamin B1 thiamin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 0.13178,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.13178
+          },
+          {
+            "id": "riboflavin_mg",
+            "name": "Vitamin B2 riboflavin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 0.15753999999999999,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.15753999999999999
+          },
+          {
+            "id": "niacin_mg",
+            "name": "Vitamin B3 niacin",
+            "unit": "mg niacin",
+            "category": "vitamins",
+            "food_total": 1.3797,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.3797
+          },
+          {
+            "id": "pantothenic_acid_mg",
+            "name": "Vitamin B5 pantothenic acid",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 0.75952,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.75952
+          },
+          {
+            "id": "vitamin_b6_mg",
+            "name": "Vitamin B6",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 0.54366,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.54366
+          },
+          {
+            "id": "biotin_mcg",
+            "name": "Vitamin B7 biotin",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "folate_mcg_dfe",
+            "name": "Vitamin B9 folate",
+            "unit": "µg DFE",
+            "category": "vitamins",
+            "food_total": 71.2,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 71.2
+          },
+          {
+            "id": "vitamin_b12_mcg",
+            "name": "Vitamin B12",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 0.0,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "calcium_mg",
+            "name": "Calcium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 866.1,
+            "known_food_count": 3,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 866.1
+          },
+          {
+            "id": "iron_mg",
+            "name": "Iron",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 0.4888,
+            "known_food_count": 3,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.4888
+          },
+          {
+            "id": "magnesium_mg",
+            "name": "Magnesium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 47.26,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 47.26
+          },
+          {
+            "id": "phosphorus_mg",
+            "name": "Phosphorus",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 58.160000000000004,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 58.160000000000004
+          },
+          {
+            "id": "potassium_mg",
+            "name": "Potassium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 1774.8400000000001,
+            "known_food_count": 3,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1774.8400000000001
+          },
+          {
+            "id": "sodium_mg",
+            "name": "Sodium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 4461.975,
+            "known_food_count": 8,
+            "food_count": 8,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4461.975
+          },
+          {
+            "id": "zinc_mg",
+            "name": "Zinc",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 0.28900000000000003,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.28900000000000003
+          },
+          {
+            "id": "copper_mg",
+            "name": "Copper",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 0.14664000000000002,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.14664000000000002
+          },
+          {
+            "id": "manganese_mg",
+            "name": "Manganese",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 0.3592000000000001,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.3592000000000001
+          },
+          {
+            "id": "selenium_mcg",
+            "name": "Selenium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": 1.18,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.18
+          },
+          {
+            "id": "iodine_mcg",
+            "name": "Iodine",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chloride_mg",
+            "name": "Chloride",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chromium_mcg",
+            "name": "Chromium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "molybdenum_mcg",
+            "name": "Molybdenum",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "choline_mg",
+            "name": "Choline",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 23.323999999999998,
+            "known_food_count": 2,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 23.323999999999998
+          },
+          {
+            "id": "cholesterol_mg",
+            "name": "Cholesterol",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 135.78,
+            "known_food_count": 4,
+            "food_count": 8,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 135.78
+          },
+          {
+            "id": "ala_g",
+            "name": "Omega 3 ALA",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "epa_g",
+            "name": "Omega 3 EPA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 1,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "dha_g",
+            "name": "Omega 3 DHA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 1,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "omega3_total_g",
+            "name": "Omega 3 total reported",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "caffeine_mg",
+            "name": "Caffeine in reported foods",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 1,
+            "food_count": 8,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          }
+        ],
+        "supplements": [],
+        "scenario_note": "Selected portion/recipe scenarios span approximately 2,314–3,900 kcal. It is not a confidence interval and does not cover every uncertainty. Sweet-and-sour chicken 250 g (150–400); shrimp/beef fried rice 450 g (300–650); broccoli beef 200 g (125–350); separate steamed rice half cup uses 79 g. No-sauce pita subtracts assumed 20 g creamy-mustard proxy with 30/10 g alternatives; actual omitted sauce is unmeasured. Yogurt is the confirmed whole 680 g tub; fruit weights are unweighed conversions. Selected scenarios are not confidence limits or full bounds and do not capture all recipe/oil/seasoning variation.",
+        "source_note": "Whole 680 g Alexandre seasonal plain whole-milk yogurt confirmed; exact manufacturer label used, with no vitamin D declared. No vitamin D supplement or additional intake besides water reported. One Nick the Greek chicken gyro pita without sauce uses an official standard-pita reference minus explicitly assumed generic sauce portions; actual customized nutrition is unpublished, and supplier calories and macros disagree. Queen House dish names and normal plate fractions are reported, but gram weights and exact recipes are unmeasured. USDA generic sweet-and-sour chicken and beef-with-vegetables comparators are used; the shrimp/beef fried-rice mixture is hypothetical. Restaurant micronutrients remain unknown.",
+        "version": 1,
+        "reviewed_date": "2026-10-17",
+        "revision_note": "Added the confirmed October 17 away day after the user identified broccoli beef, sweet-and-sour chicken, steamed rice and fried rice."
+      }
     }
   ],
   "background": [
