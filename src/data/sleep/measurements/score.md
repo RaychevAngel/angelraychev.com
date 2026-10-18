@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-17"
+updated: "2026-10-18"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -38,6 +38,10 @@ The third night reversed part of the tradeoff: Oura's score fell to 71 while res
 On [16 October](/sleep/record/#night-2026-10-16), Oura returned 90 after synchronization, with 8h37m30s estimated sleep. Total-sleep grading rose to 93 and REM to 97; efficiency and restfulness were 98 and 93. Not every contributor improved: latency grading was 67 and timing 72. COROS became available later and returned 98, versus 80 the previous night. Its eight-point gap from Oura is a difference between grading systems, not a measured difference in restoration. This is one encouraging grade, not achievement of either sustained milestone. The later sleepiness now reported for October 15 also keeps the full following day relevant to interpreting the next score.
 
 The [October 17 social exception](/sleep/record/#night-2026-10-17) returned **Oura 64 and COROS 82** despite nearly identical estimated sleep duration, 6h22 and 6h21. Oura’s contributor grades were timing 18, total sleep 62, deep sleep 59, REM 70, restfulness 73 and latency 72, while efficiency remained 98 with an estimated 93% asleep. The high efficiency grade does not erase the shorter sleep or the report of an uncomfortable floor and repeated brief awakenings. The night remains in headline milestone windows rather than being removed because its conditions were exceptional.
+
+The [October 18 night](/sleep/record/#night-2026-10-18) returned **Oura 90 and COROS 98** after much longer estimated sleep. Oura’s total-sleep and deep-sleep contributors reached **100**, REM **97**, efficiency **98**, restfulness **84**, latency **83** and timing **46**. The latency estimate was 9m30s and deep sleep 2h33m30s. This is the first recorded 100 for deep sleep, demonstrating that the contributor ceiling can be reached without establishing an optimal biological deep-sleep quota. Timing is today’s weakest graded contributor; unknown composite weights prevent converting a possible contributor improvement into a guaranteed total-score gain.
+
+The 90/98 pair matches October 16, although component grades and duration differ. The record now has two Oura 90 nights among six recorded dates, including the 64-point exception. This is progress toward the benchmark, with the sustained 14- and 28-day results still unassessed. Brief remembered awakenings and unreported daytime function remain alongside the high scores.
 
 Sleep staging validation does not validate every composite-score threshold. A score is downstream of several estimates and an algorithmic judgment. Firmware or scoring changes can alter it without a lifestyle change. Keep hardware and algorithm information when exposed and mark known changes.
 

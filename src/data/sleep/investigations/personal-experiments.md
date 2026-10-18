@@ -1,13 +1,21 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-17"
+updated: "2026-10-18"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**18 October 2026 — long sleep after a midnight attempt, Oura 90; COROS 98.** Last food was around 20:00, last water 21:30, gym 21:00–22:00, shower around 22:30 and a family phone call until around midnight. Small lamp and curtains preceded the shower; lights were off with curtains afterward. Five minutes of breathing preceded sleep, with no pattern supplied in this report. I remembered probably three or four brief awakenings to turn, adjust a pillow or put on the nearby blanket without standing, then quick returns to sleep. I dreamed a lot, and the new blanket felt just right. The conversation was less relaxed, and I suspected a possible influence; no cause is established.
+
+The [record](/sleep/record/#night-2026-10-18) retains Oura’s **9h59m30s asleep** and COROS’s **10h27**, with waking estimates **41m46s versus 7 minutes**. Oura graded total sleep and deep sleep **100**, REM **97** and timing **46**. HRV was **59 ms on Oura and 61 ms on COROS**, returning toward the earlier series after the social exception. Neither a remembered awakening count nor a high grade validates the device’s exact waking or stage totals.
+
+This night matters to the next comparison: a roughly **four-hour food gap**, **2½-hour water gap** and **two-hour gym-to-bed gap** coexisted with high grading and long sleep. The earlier six-hour food interval remains a candidate; it has not been established as a necessary condition. Sleep opportunity, exercise timing, conversation and bedding also differ, and alcohol/caffeine exposure was not supplied. No new fixed cutoff follows from this observation. The next useful outcome is how I function after this longer night and whether comfortable, well-graded sleep repeats. October 17’s full-day fatigue outcome also remains unknown; a long following night does not fill in that missing report.
+
+### Earlier observations and proposals
 
 **17 October 2026 — a social-night exception, Oura 64; COROS 82.** I reported a hard workout and a refreshed preceding day, then a later evening with chicken around 20:00, approximately 2–3 oz vodka, a burger/fries and bread/Brie around 01:00–02:00, and a roughly 03:00 bedtime on someone else’s floor/carpet without a good pillow. I woke repeatedly to shift position because of discomfort and recalled falling back asleep quickly. Both providers estimated about 6h21–22 asleep; the [full record](/sleep/record/#night-2026-10-17) retains their different waking estimates and lower HRV. This is a departure from the earlier routine, with several simultaneous changes, rather than a controlled test of the meal gap. I plan to return to the usual optimization over the next days. The night remains in the chronological and headline milestone record; any routine-only analysis would be labeled separately.
 

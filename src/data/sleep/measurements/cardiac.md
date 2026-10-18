@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-17"
+updated: "2026-10-18"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -38,6 +38,12 @@ Before the [16 October sleep](/sleep/record/#night-2026-10-16), I reported pulse
 On [17 October](/sleep/record/#night-2026-10-17), after the reported hard workout, late food, vodka and uncomfortable floor sleep, Oura returned mean sleeping HR **63.625 bpm** and minimum **56**, versus 49.125 and 45 the preceding night. Its sleep HRV fell **51 → 28 ms**. COROS official sleep HRV fell **56 → 32 ms** and was labeled **Below normal**, with an explicitly returned **42–64 ms normal range and 53 ms baseline**. These are COROS’s own assessment values, not thresholds reconstructed from our few earlier observations. Its normal range comes from previous nights and is not a diagnostic boundary or a range to apply to Oura. [COROS definition](https://support.coros.com/hc/en-us/articles/20959044334612-Overnight-HRV).
 
 The cardiac change accompanies a shorter, subjectively uncomfortable night. Training, meals, alcohol, timing and sleeping conditions changed together; their isolated contributions remain unresolved. COROS’s daily HR snapshot of 71 bpm average and 52 minimum, with predicted seated resting HR of 59, retains its different scope. A return toward the familiar series over subsequent ordinary nights would be informative; this one record does not establish an arrhythmia or a new long-term baseline.
+
+## The following long night
+
+On [18 October](/sleep/record/#night-2026-10-18), Oura’s sleep-HR mean returned from **63.625 to 51.625 bpm**, with minimum **46 versus 56**. Its average sleep HRV rose **28 → 59 ms**; COROS’s official sleep HRV rose **32 → 61 ms**, now labeled **Normal** with a returned **44–64 ms range and 54 ms baseline**. Each day retains its own provider-supplied range; the earlier 42–64 range and baseline 53 remain in the October 17 record. A change in provider reference values does not justify silently rewriting history.
+
+This follows a much longer sleep episode, after food around 20:00, gym ending 22:00 and a midnight sleep attempt. It is a return toward earlier readings across one subsequent night, not proof that one exposure caused the change or that full recovery is complete. COROS’s daily-average HR snapshot was **53 bpm**, daily minimum **45**, and predicted seated resting HR **55**; these remain separate from Oura’s selected sleep-window mean and minimum. Morning and sustained daytime function have not yet been reported.
 
 ## How much confidence is justified?
 
