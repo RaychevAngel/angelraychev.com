@@ -784,7 +784,7 @@
       },
       "self_report": {
         "restfulness": "Very uncomfortable floor/carpet sleep without a good pillow; woke multiple times to shift position and recalled immediately returning to sleep. Described it as a very bad night for the objective; no numeric rating.",
-        "daytime_sleepiness": "Feeling good so far while doing work at the October 17 follow-up. Wondered whether fatigue might appear later; no later fatigue had been reported. Full-day outcome remains unassessed.",
+        "daytime_sleepiness": "Initially reported feeling good while working on October 17 and wondering whether fatigue might appear later. In the October 18 follow-up, retrospectively reported feeling good yesterday (October 17). No later fatigue was reported; no numeric rating or standardized performance test was supplied.",
         "morning_sleepiness": "Reported on October 17: woke feeling already awake and sharp. No numeric sleepiness rating or standardized performance test was reported.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": "Approximately 2–3 oz vodka across the social night; precise drinking times, concentration and ethanol amount not measured.",
@@ -799,7 +799,7 @@
       "context": [
         {
           "kind": "self_report",
-          "observation": "The report of feeling generally refreshed concerns daytime October 16 before this night and was added retrospectively to the sleep ending October 16. A separate October 17 follow-up reports feeling awake and sharp on waking and good while working so far; the rest of the day remains unassessed."
+          "observation": "The report of feeling generally refreshed concerns daytime October 16 before this night and was added retrospectively to the sleep ending October 16. A separate October 17 follow-up reports feeling awake and sharp on waking and good while working. On October 18, retrospectively described October 17 as feeling good; no later fatigue was reported."
         },
         {
           "kind": "self_report",
@@ -823,7 +823,8 @@
         "I went out to see friends and drank approximately 2–3 oz of vodka over the night. Around 01:00–02:00 I ate a burger and a substantial serving of fries, as well as bread and Brie. Exact portions, alcohol strength and the last drink time were not recorded.",
         "I went to bed around 03:00, staying at someone else’s place. I slept on the floor/carpet without a good pillow and found it quite uncomfortable. I woke multiple times, shifted position because of the discomfort, and felt I fell straight back asleep.",
         "I consider this a very bad night for the sleep objective, and a one-off social exception. I intend to return to the normal optimization routine over the next days. This entry records the exception as part of the actual sequence, with the earlier successful night still available for comparison.",
-        "In the October 17 follow-up, I said I woke feeling already awake and sharp. I had been doing work and felt good so far. I wondered whether fatigue might appear later; that was a possibility, not an outcome I had experienced or reported."
+        "In the October 17 follow-up, I said I woke feeling already awake and sharp. I had been doing work and felt good so far. I wondered whether fatigue might appear later; that was a possibility, not an outcome I had experienced or reported.",
+        "In the October 18 follow-up, I said I felt good yesterday, referring to October 17. The later fatigue I had wondered about was not reported."
       ],
       "interpretation": [
         "Oura returned 64 and COROS 82. They agree closely on estimated main sleep: 6h22m versus 6h21m, despite selected episodes of 6h51m38s and 6h31m. Oura estimated 29m38s awake; COROS 10 minutes. Their 18-point grade difference is not an 18% difference in restoration.",
@@ -831,8 +832,8 @@
         "Oura still estimated 93% efficiency and assigned the efficiency contributor 98. A high fraction of this shorter episode classified asleep can coexist with remembered discomfort and repeated brief awakenings. COROS counted no interruption longer than five minutes, which does not contradict the account of short awakenings and rapid returns to sleep.",
         "Oura’s sleeping average HR rose from 49.125 to 63.625 bpm and its minimum from 45 to 56. Average sleep HRV fell from 51 to 28 ms. COROS official sleep HRV fell from 56 to 32 ms; it now labels 32 Below normal against a provider-returned range 42–64 ms and baseline 53 ms. Those are COROS’s own assessment and range, not a baseline inferred from four earlier points or applied to Oura.",
         "Hard training, a much later sleep attempt, late food, alcohol and an uncomfortable unfamiliar sleeping surface occurred together. The changed sleep and cardiac estimates document a worse night in that setting without isolating the contribution of any one exposure. This night does not evaluate whether the earlier meal interval works under comparable conditions.",
-        "Oura’s average SpO₂ was 94.209%, versus 95.806% the preceding night, and peripheral-temperature deviation was +0.55°C. These are retained consumer-device summaries, not diagnoses or a reconstruction of individual breathing events. The subsequent October 17 report describes a positive morning and early-day experience; the full-day outcome remains unassessed.",
-        "Feeling awake and sharp and being able to do work are useful subjective outcomes, retained alongside the lower device grades and HRV. No standardized performance test was reported. This early experience does not establish full recovery or sufficient sleep duration, and possible later fatigue is not recorded as observed or inevitable."
+        "Oura’s average SpO₂ was 94.209%, versus 95.806% the preceding night, and peripheral-temperature deviation was +0.55°C. These are retained consumer-device summaries, not diagnoses or a reconstruction of individual breathing events. The subsequent October 17 report describes a positive morning and early-day experience; a subsequent October 18 follow-up also describes October 17 as feeling good.",
+        "Feeling awake and sharp and being able to do work are useful subjective outcomes, retained alongside the lower device grades and HRV. The October 18 follow-up retrospectively described October 17 as feeling good, with no later fatigue reported. No standardized performance test or timed sleepiness ratings were supplied; the positive experience does not establish full recovery or sufficient sleep duration."
       ],
       "plans": [
         "Return to the usual sleep-optimization routine over the next days. No exact next bedtime, meal cutoff or completed recovery outcome was specified."
@@ -855,6 +856,10 @@
         {
           "date": "2026-10-17",
           "reason": "Added the follow-up reporting an already awake and sharp feeling on waking, work underway and feeling good so far. Possible later fatigue was anticipated rather than observed; the full-day outcome remains unassessed. Native provider values, retrieval times and the original night account are unchanged."
+        },
+        {
+          "date": "2026-10-18",
+          "reason": "Added the retrospective report that October 17 felt good, following its positive early-day report. The anticipated fatigue was not reported as occurring. Device values and retrieval times are unchanged."
         }
       ]
     },
@@ -946,7 +951,7 @@
       "self_report": {
         "restfulness": "Slept long, with probably three or four very brief remembered awakenings to turn, change a pillow or put on a nearby blanket without standing. Recalled immediately returning to sleep. No numeric rating.",
         "daytime_sleepiness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "In the October 18 follow-up, reported feeling awake on waking today. No numeric sleepiness rating, separate energy or mental-sharpness rating, or later-day assessment was supplied.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
@@ -972,14 +977,15 @@
         },
         {
           "kind": "self_report",
-          "observation": "The family conversation was a suspected influence, not an established cause. No morning or later-day functioning report was included. The prior October17 early-day report remains separate, and its anticipated fatigue was not confirmed by this account."
+          "observation": "The family conversation was a suspected influence, not an established cause. The follow-up reports feeling awake on waking October 18, and retrospectively feeling good during October 17. October18 later-day experience remains unreported; the preceding day’s anticipated fatigue was not reported as occurring."
         }
       ],
       "story": [
         "I finished food around 20:00 on October 17 and last drank water around 21:30. I went to the gym from 21:00 to 22:00 and showered around 22:30. After the gym and before the shower I used a small lamp with the curtains; after the shower the lights were off and the curtains were in use.",
         "I talked with family on the phone until around midnight. The conversation was not the most relaxed, and I think it could have played a role in the night. I did five minutes of a breathing exercise and went to sleep; the exact onset was not timed.",
         "I slept for a long time and remember probably three or four very short awakenings. I turned around, changed a pillow or put on the blanket beside me without needing to stand. After these small actions I felt I returned to sleep immediately. I also dreamed a lot.",
-        "The blanket was new. I had initially been unsure whether it would be too heavy, but it turned out to feel just right. I have not yet described how alert or sleepy I felt after waking or through the following day."
+        "The blanket was new. I had initially been unsure whether it would be too heavy, but it turned out to feel just right.",
+        "In the follow-up, I said I felt awake when I woke up today, October 18. I also said I felt good yesterday, October 17. I have not yet described today’s later-day experience."
       ],
       "interpretation": [
         "Oura returned 90 and COROS 98, up from 64 and 82 on October 17. Oura estimated 9h59m30s asleep within 00:16:31–10:57:47; COROS estimated 10h27 asleep within 00:22–10:56. The episode boundaries are close, while estimated sleep differs by 27m30s. Both record a much longer night than the preceding one.",
@@ -988,7 +994,7 @@
         "Oura average sleeping HR was 51.625 bpm and minimum 46, compared with 63.625 and 56 the previous night. Oura sleep HRV rose 28 → 59 ms; COROS official sleep HRV rose 32 → 61 ms and was labeled Normal against its returned 44–64 ms range and 54 ms baseline. These changes describe the subsequent night; they do not by themselves establish complete recovery or a causal explanation. COROS daily-average and predicted seated resting HR retain their different scopes.",
         "The roughly four-hour food interval and two-hour gym-to-bed interval coexisted with high grading and long estimated sleep. This broadens the set of promising conditions beyond the earlier six-hour food gap. It does not establish an optimal interval or that food timing, exercise, conversation or the blanket caused the result. Alcohol exposure was not reported for this night and is not assumed absent.",
         "The 90/98 scores match October 16, but the nights have different durations and component patterns: Oura deep-sleep grading is now 100 versus 96 then, while timing is 46 versus 72. Timing is the lowest returned contributor today. The retained provider documentation does not give the weights needed to calculate a guaranteed composite-score gain from timing. Changing the sleep window while preserving sleep opportunity would make a clearer comparison than simply shortening the night.",
-        "Oura Readiness was 95, a separate score from Sleep 90; temperature deviation was +0.27°C, average SpO₂ 97.043% and breathing disturbance index 0. These consumer-device summaries are retained without diagnosing breathing or temperature conditions. Nearly ten hours of estimated sleep on one night does not establish the duration required every night. Morning and later-day functioning remain unreported."
+        "Oura Readiness was 95, a separate score from Sleep 90; temperature deviation was +0.27°C, average SpO₂ 97.043% and breathing disturbance index 0. These consumer-device summaries are retained without diagnosing breathing or temperature conditions. Nearly ten hours of estimated sleep on one night does not establish the duration required every night. The follow-up reports feeling awake on waking October 18; later-day functioning remains unreported."
       ],
       "plans": [],
       "next_focus": [
@@ -1009,7 +1015,12 @@
           "label": "Milestone inclusion rules"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-18",
+          "reason": "Added the follow-up reporting feeling awake on waking today and feeling good yesterday. Assigned each statement to its own date; October18 later-day experience remains unreported. Native provider values and retrieval times are unchanged."
+        }
+      ]
     }
   ]
 }
