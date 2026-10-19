@@ -49,7 +49,7 @@ This follows a much longer sleep episode, after food around 20:00, gym ending 22
 
 The [October 19 record](/sleep/record/#night-2026-10-19) returned Oura mean sleeping HR **47.625 bpm**, minimum **44**, and average sleep HRV **69 ms**. COROS official sleep HRV was **67 ms**, labeled **Above normal** against its returned **46–66 ms range and 56 ms baseline**. Its daily snapshot averaged 53 bpm with minimum 42, while predicted seated resting HR was 53. Each retains its own scope and provider assessment; the COROS label is not a diagnosis or a range to apply to Oura.
 
-This follows reported stressful activity before bed, with sleep described as okay and multiple brief remembered awakenings. Those conditions do not contradict the measurements, but their isolated effects are unresolved. The ring configuration now reports **firmware 2.1.36**, previously 2.1.25, with the sleep algorithm field still v2. Exact update timing and any effect on the estimates are unknown, so the version boundary remains part of the interpretation. Morning and later-day function have not been supplied for October 19.
+This follows reported stressful activity before bed, with sleep described as okay and multiple brief remembered awakenings. Those conditions do not contradict the measurements, but their isolated effects are unresolved. The ring configuration now reports **firmware 2.1.36**, previously 2.1.25, with the sleep algorithm field still v2. Exact update timing and any effect on the estimates are unknown, so the version boundary remains part of the interpretation. The October 19 follow-up reports feeling pretty sleepy initially and back to normal speed within 10–15 minutes; later-day experience remains unreported.
 
 ## How much confidence is justified?
 

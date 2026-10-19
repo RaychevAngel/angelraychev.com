@@ -1110,12 +1110,12 @@
       "self_report": {
         "restfulness": "Slept okay. Recalled multiple short awakenings in which I turned around or made similar small adjustments. No exact count, times, measured durations or numeric rating.",
         "daytime_sleepiness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "Felt pretty sleepy on waking around 10:30, then back to normal speed within about 10–15 minutes. These are recalled subjective timings; no numeric sleepiness rating or standardized performance test. Later-day experience unreported.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
         "dream_recall": null,
-        "intended_bedtime": null,
+        "intended_bedtime": "Tried to fall asleep around 00:10 on October 19. Reported that falling asleep took a while, without timing the latency. Final waking around 10:30, recalled with uncertainty; out-of-bed time unreported.",
         "environment": "Turned lights down while approaching sleep. Exact light timing, brightness, curtains, room temperature and bedding not reported for this night.",
         "stress": "Did pretty stressful things before bed; specific activity, timing and intensity not measured.",
         "breathing_exercise": null,
@@ -1124,7 +1124,7 @@
       "context": [
         {
           "kind": "self_report",
-          "observation": "Last food around 20:00 on October 18. Last water about 500 mL around 22:30–23:00. Exact diary bedtime not supplied; do not convert device episode start into a precisely reported sleep attempt."
+          "observation": "Last food around 20:00 on October 18; last water about 500 mL at 22:30–23:00. The follow-up places the sleep attempt around 00:10 on October 19: roughly 4h10m after food and 1h10m–1h40m after the last water. These intervals use approximate diary times, not exact exposure measurements."
         },
         {
           "kind": "self_report",
@@ -1137,12 +1137,17 @@
         {
           "kind": "measurement_provenance",
           "observation": "Ring configuration at this retrieval reports firmware 2.1.36, versus 2.1.25 at the October 18 retrieval. Sleep algorithm field remains v2. The exact firmware installation time and whether it affected this episode’s estimates or grading are unknown; earlier entries retain their original versions."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Follow-up: tried to sleep around 00:10, felt it took a while, and recalled final waking around 10:30 with uncertainty. Felt pretty sleepy on waking and returned to normal speed in 10–15 minutes. Exact onset, out-of-bed time and later-day function remain unreported."
         }
       ],
       "story": [
         "I slept okay during the night ending October 19. I remember multiple short awakenings in which I turned around or made similar small adjustments. I did not give an exact count or time these interruptions.",
-        "I did some pretty stressful things before going to bed and turned the lights down as I approached sleep. I last ate around 20:00 on October 18. I have not supplied an exact bedtime, final waking time or out-of-bed time for this account.",
-        "I drank about 500 mL of water around 22:30–23:00 as my last water, and I did not wake up to urinate. I have not yet described how awake, energetic or sleepy I felt after waking or later in the day."
+        "I did some pretty stressful things before going to bed and turned the lights down as I approached sleep. I last ate around 20:00 on October 18. In the follow-up, I said I tried to fall asleep around 00:10 on October 19, and it took a while. I did not time the latency.",
+        "I drank about 500 mL of water around 22:30–23:00 as my last water, and I did not wake up to urinate.",
+        "I think I finally woke around 10:30. I felt pretty sleepy at first, but was back to normal speed within about 10–15 minutes. I have not yet described the later part of the day."
       ],
       "interpretation": [
         "Oura and COROS both returned 91. This is agreement in today’s headline grade, not proof of identical scoring rules or sleep classification. Oura estimated 9h29m asleep and COROS 9h27m, a two-minute difference in total sleep.",
@@ -1152,7 +1157,8 @@
         "Oura mean sleeping HR fell 51.625 → 47.625 bpm, with minimum 44 versus 46. Its average sleep HRV rose 59 → 69 ms; COROS official sleep HRV rose 61 → 67 ms and was labeled Above normal against a returned 46–66 ms range and 56 ms baseline. This is COROS’s own assessment, not a diagnostic boundary or a range to apply to Oura. The daily HR snapshot and predicted seated resting HR remain separate measurements.",
         "The reported 500 mL at 22:30–23:00 was followed by no remembered urinary awakening. This is a useful contrasting observation in the fluid-timing investigation: late water did not invariably coincide with that outcome in this record. It does not establish an optimal cutoff or that water had no effect on other aspects of sleep. The short awakenings and stressful pre-bed activity remain separate reported conditions, without an isolated cause.",
         "Firmware 2.1.36 was observed at this retrieval, versus 2.1.25 previously, while the sleep algorithm field remains v2. Exact installation timing and any effect on estimates or grading are unknown. The observation is a provenance boundary to retain, not evidence that the firmware caused today’s changes.",
-        "Oura Readiness was 95, separate from Sleep 91; temperature deviation was −0.10°C, average SpO₂ 96.608% and breathing disturbance index 0. These consumer-device summaries are retained without a diagnosis. The broad impression of sleeping okay is known; morning and later-day function remain unreported."
+        "Oura Readiness was 95, separate from Sleep 91; temperature deviation was −0.10°C, average SpO₂ 96.608% and breathing disturbance index 0. These consumer-device summaries are retained without a diagnosis. The follow-up reports initial sleepiness that resolved to the usual subjective pace within 10–15 minutes; later-day function remains unreported.",
+        "The reported 00:10 attempt and roughly 10:30 final waking span about 10h20m, an approximate opportunity rather than measured time asleep. The report that onset took a while can sit alongside Oura’s 20m30s latency estimate without validating that exact duration. Approximate 10:30 waking is near Oura’s 10:24:59 end and later than COROS’s 10:00 end; the recalled time is not a timed reference that resolves the difference. No standardized test established the return to normal speed."
       ],
       "plans": [],
       "next_focus": [
@@ -1173,7 +1179,12 @@
           "label": "Milestone inclusion rules"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-19",
+          "reason": "Added approximate 00:10 sleep attempt, subjective prolonged onset, uncertain final waking around 10:30, and initial sleepiness resolving to normal speed within 10–15 minutes. Diary times remain approximate, out-of-bed and later-day experience remain unreported, and native provider values and retrieval times are unchanged."
+        }
+      ]
     }
   ]
 }
