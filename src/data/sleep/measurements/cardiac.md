@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-18"
+updated: "2026-10-19"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -44,6 +44,12 @@ The cardiac change accompanies a shorter, subjectively uncomfortable night. Trai
 On [18 October](/sleep/record/#night-2026-10-18), Oura’s sleep-HR mean returned from **63.625 to 51.625 bpm**, with minimum **46 versus 56**. Its average sleep HRV rose **28 → 59 ms**; COROS’s official sleep HRV rose **32 → 61 ms**, now labeled **Normal** with a returned **44–64 ms range and 54 ms baseline**. Each day retains its own provider-supplied range; the earlier 42–64 range and baseline 53 remain in the October 17 record. A change in provider reference values does not justify silently rewriting history.
 
 This follows a much longer sleep episode, after food around 20:00, gym ending 22:00 and a midnight sleep attempt. It is a return toward earlier readings across one subsequent night, not proof that one exposure caused the change or that full recovery is complete. COROS’s daily-average HR snapshot was **53 bpm**, daily minimum **45**, and predicted seated resting HR **55**; these remain separate from Oura’s selected sleep-window mean and minimum. The October 18 follow-up reports feeling awake on waking; later-day experience remains unreported. It also retrospectively describes October 17 as feeling good despite that night’s lower HRV and grades.
+
+## October 19: lower sleeping pulse, higher HRV
+
+The [October 19 record](/sleep/record/#night-2026-10-19) returned Oura mean sleeping HR **47.625 bpm**, minimum **44**, and average sleep HRV **69 ms**. COROS official sleep HRV was **67 ms**, labeled **Above normal** against its returned **46–66 ms range and 56 ms baseline**. Its daily snapshot averaged 53 bpm with minimum 42, while predicted seated resting HR was 53. Each retains its own scope and provider assessment; the COROS label is not a diagnosis or a range to apply to Oura.
+
+This follows reported stressful activity before bed, with sleep described as okay and multiple brief remembered awakenings. Those conditions do not contradict the measurements, but their isolated effects are unresolved. The ring configuration now reports **firmware 2.1.36**, previously 2.1.25, with the sleep algorithm field still v2. Exact update timing and any effect on the estimates are unknown, so the version boundary remains part of the interpretation. Morning and later-day function have not been supplied for October 19.
 
 ## How much confidence is justified?
 

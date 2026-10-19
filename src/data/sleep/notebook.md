@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-18"
+updated: "2026-10-19"
 ---
 
 ## The target has to survive scrutiny
@@ -17,11 +17,17 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 
 ## What the observations show
 
+The [night ending 19 October](/sleep/record/#night-2026-10-19) returned **91 from both devices**, with estimated sleep of **9h29 on Oura and 9h27 on COROS**. I described sleeping okay, with multiple short awakenings to turn or make small adjustments, after stressful pre-bed activity and lowering the lights. Last food was around **20:00**. I drank **about 500 mL at 22:30–23:00** and explicitly did **not wake up to urinate**. Exact diary bedtime and daytime function were not supplied.
+
+Oura’s contributor grades were total sleep **100**, deep **98**, REM **98**, efficiency **98**, restfulness **88**, latency **83** and timing **51**. It estimated **2h10m30s deep sleep** and **2h18 REM**. Sleeping mean HR was **47.625 bpm**; HRV was **69 ms on Oura and 67 ms on COROS**, whose own assessment was **Above normal** against a returned 46–66 ms range. The matching headline grades and close sleep totals coexist with different selected windows and waking estimates: **42m23s on Oura versus 8 minutes on COROS**.
+
+The late-water observation broadens the fluid-timing comparison without establishing a cutoff or explaining the other awakenings. Stressful work was reported, but its contribution is unresolved. Oura’s configuration now reports **firmware 2.1.36**, previously **2.1.25**, while the sleep algorithm field remains **v2**. The update’s exact timing and effect are unknown; this provenance change stays visible when interpreting small differences. The [routine account](/sleep/research/personal-experiments/#the-current-routine-proposal) retains the sequence.
+
 The [night ending 18 October](/sleep/record/#night-2026-10-18) returned **Oura 90 and COROS 98**, following last food around 20:00, water around 21:30, gym 21:00–22:00, a 22:30 shower, a family call until around midnight and five minutes of breathing. I remembered probably three or four brief awakenings for small adjustments, quick returns to sleep and plentiful dreams. The new blanket felt just right. I suspected the less-relaxed conversation might have influenced the night; that remains a hypothesis.
 
 Oura estimated **9h59m30s asleep**, COROS **10h27**, with close episode boundaries around 00:16–10:58 and 00:22–10:56. Oura’s total-sleep and deep-sleep contributors both reached **100**; REM was **97**, efficiency **98**, restfulness **84**, latency **83** and timing **46**. Estimated deep sleep was **2h33m30s**, REM **2h11m30s**. Timing is the lowest grade today; sufficient sleep and daytime function remain separate outcomes when considering an earlier window. Oura’s waking estimate of **41m46s** differs from COROS’s **7 minutes**. Brief remembered interruptions do not settle which total is accurate.
 
-Oura HRV rose **28 → 59 ms**, COROS **32 → 61 ms**, with COROS now reporting **Normal** against its own 44–64 ms range. This is a return toward earlier values after the exception, rather than proof of complete recovery. The roughly **four-hour food gap** and **two-hour gym-to-bed gap** also accompanied high grades, broadening the routine comparison beyond the earlier six-hour food interval. In the follow-up, I reported feeling awake on waking today; later-day experience remains unreported; the full [routine history](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps the conditions and uncertainties together.
+Oura HRV rose **28 → 59 ms**, COROS **32 → 61 ms**, with COROS now reporting **Normal** against its own 44–64 ms range. This is a return toward earlier values after the exception, rather than proof of complete recovery. The roughly **four-hour food gap** and **two-hour gym-to-bed gap** also accompanied high grades, broadening the routine comparison beyond the earlier six-hour food interval. In the follow-up, I reported feeling awake on waking October 18; that day’s later experience remains unreported; the full [routine history](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps the conditions and uncertainties together.
 
 The [night ending 17 October](/sleep/record/#night-2026-10-17) was a social exception: a hard workout during the preceding day, chicken dinner around 20:00, approximately 2–3 oz vodka across the night, food around 01:00–02:00, and bed around 03:00 on someone else’s floor/carpet without a good pillow. I remembered repeated brief awakenings and position changes because it was uncomfortable. Oura returned **64**, COROS **82**, with closely agreeing estimated sleep of **6h22 and 6h21**. Oura’s sleeping mean pulse was **63.6 bpm**, versus 49.1 the preceding night; HRV was **28 ms**, while COROS returned **32 ms, Below normal** against its own 42–64 ms range. The exposures changed together, so one cause is not isolated. At that point I intended to resume the earlier routine. The exception remains in the overall record and milestone windows.
 

@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-18"
+updated: "2026-10-19"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -42,6 +42,10 @@ The [October 17 social exception](/sleep/record/#night-2026-10-17) returned **Ou
 The [October 18 night](/sleep/record/#night-2026-10-18) returned **Oura 90 and COROS 98** after much longer estimated sleep. Oura’s total-sleep and deep-sleep contributors reached **100**, REM **97**, efficiency **98**, restfulness **84**, latency **83** and timing **46**. The latency estimate was 9m30s and deep sleep 2h33m30s. This is the first recorded 100 for deep sleep, demonstrating that the contributor ceiling can be reached without establishing an optimal biological deep-sleep quota. Timing is today’s weakest graded contributor; unknown composite weights prevent converting a possible contributor improvement into a guaranteed total-score gain.
 
 The 90/98 pair matches October 16, although component grades and duration differ. The record now has two Oura 90 nights among six recorded dates, including the 64-point exception. This is progress toward the benchmark, with the sustained 14- and 28-day results still unassessed. Brief remembered awakenings and the follow-up’s report of feeling awake on waking remain alongside the high scores. October 18 later-day function is still unreported. The follow-up also describes feeling good during October 17 despite its lower grades.
+
+On [October 19](/sleep/record/#night-2026-10-19), **both providers returned 91**, although their selected episode boundaries and waking totals still differ. Oura graded total sleep 100, deep 98, REM 98, efficiency 98, restfulness 88, latency 83 and timing 51. The latency estimate was 20m30s, versus 9m30s the preceding night, while its contributor stayed 83; a grade is not a direct conversion from minutes. Oura’s overall score rose 90 → 91 while COROS’s fell 98 → 91. Agreement on one headline grade does not make the grading systems interchangeable.
+
+Today’s retrieval also reports **Oura firmware 2.1.36**, previously 2.1.25, with sleep algorithm v2 unchanged. Exact installation timing and any scoring effect are unknown. Seven recorded dates, including the social exception, remain in the sequence; neither sustained milestone has been assessed as achieved. The broad impression of sleeping okay is recorded, while morning and later-day function are still unreported.
 
 Sleep staging validation does not validate every composite-score threshold. A score is downstream of several estimates and an algorithmic judgment. Firmware or scoring changes can alter it without a lifestyle change. Keep hardware and algorithm information when exposed and mark known changes.
 

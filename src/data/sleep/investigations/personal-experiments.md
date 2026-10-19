@@ -1,7 +1,7 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-18"
+updated: "2026-10-19"
 order: 4
 ---
 
@@ -9,11 +9,17 @@ order: 4
 
 ## The current routine proposal
 
+**19 October 2026 — slept okay; both providers 91.** I remembered multiple short awakenings to turn or make small adjustments, with no exact count. Pre-bed activity was stressful and lights went down approaching sleep. Last food was around 20:00; last water was about 500 mL at 22:30–23:00. I explicitly reported no waking to urinate. Exact diary bedtime, morning function and total daily drinks were not supplied.
+
+The [record](/sleep/record/#night-2026-10-19) retains Oura’s 9h29m asleep and COROS’s 9h27m, but different windows and waking estimates:00:13:36–10:24:59 with 42m23s awake versus 00:25–10:00 with 8 minutes awake. Oura estimated 2h10m30s deep sleep and 2h18m REM. HRV was 69 ms on Oura and 67 ms on COROS; the latter returned Above normal against its own 46–66 ms range. Oura’s observed firmware is now 2.1.36, previously 2.1.25; installation time and any measurement effect are unknown.
+
+The late water without a urinary awakening is a useful comparison with earlier bathroom nights; it does not determine an optimal cutoff or explain the brief position-change awakenings. Stressful activity, sleep opportunity and other conditions have not been held constant. No new fixed bedtime or fluid rule follows from this observation. The next missing outcome is morning and later-day functioning. Timing 51 is the weakest Oura contributor, while total sleep is 100; the existing earlier-window comparison remains eligible without changing the sustained milestones.
+
 **18 October 2026 — long sleep after a midnight attempt, Oura 90; COROS 98.** Last food was around 20:00, last water 21:30, gym 21:00–22:00, shower around 22:30 and a family phone call until around midnight. Small lamp and curtains preceded the shower; lights were off with curtains afterward. Five minutes of breathing preceded sleep, with no pattern supplied in this report. I remembered probably three or four brief awakenings to turn, adjust a pillow or put on the nearby blanket without standing, then quick returns to sleep. I dreamed a lot, and the new blanket felt just right. The conversation was less relaxed, and I suspected a possible influence; no cause is established.
 
 The [record](/sleep/record/#night-2026-10-18) retains Oura’s **9h59m30s asleep** and COROS’s **10h27**, with waking estimates **41m46s versus 7 minutes**. Oura graded total sleep and deep sleep **100**, REM **97** and timing **46**. HRV was **59 ms on Oura and 61 ms on COROS**, returning toward the earlier series after the social exception. Neither a remembered awakening count nor a high grade validates the device’s exact waking or stage totals.
 
-This night matters to the next comparison: a roughly **four-hour food gap**, **2½-hour water gap** and **two-hour gym-to-bed gap** coexisted with high grading and long sleep. The earlier six-hour food interval remains a candidate; it has not been established as a necessary condition. Sleep opportunity, exercise timing, conversation and bedding also differ, and alcohol/caffeine exposure was not supplied. No new fixed cutoff follows from this observation. The follow-up reports feeling awake on waking October 18; later-day experience remains unreported. It also retrospectively describes October 17 as feeling good, with no later fatigue reported. The next useful observations are today’s later-day experience and whether comfortable, well-graded sleep repeats.
+This night matters to the next comparison: a roughly **four-hour food gap**, **2½-hour water gap** and **two-hour gym-to-bed gap** coexisted with high grading and long sleep. The earlier six-hour food interval remains a candidate; it has not been established as a necessary condition. Sleep opportunity, exercise timing, conversation and bedding also differ, and alcohol/caffeine exposure was not supplied. No new fixed cutoff follows from this observation. The follow-up reports feeling awake on waking October 18; later-day experience remains unreported. It also retrospectively describes October 17 as feeling good, with no later fatigue reported. The next useful observations after the October 18 follow-up were that day’s later experience and whether comfortable, well-graded sleep repeats.
 
 ### Earlier observations and proposals
 
