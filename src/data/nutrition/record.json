@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-19",
   "entries": [
     {
       "id": "first-hotel-day",
@@ -7957,6 +7957,1588 @@
         "version": 1,
         "reviewed_date": "2026-10-17",
         "revision_note": "Added the confirmed October 17 away day after the user identified broccoli beef, sweet-and-sour chicken, steamed rice and fried rice."
+      }
+    },
+    {
+      "id": "october-18-zareens-and-small-portions",
+      "title": "October 18: smaller yogurt and sardine portions, Zareen’s and chocolate ice cream",
+      "kind": "food_report",
+      "food_date": "2026-10-18",
+      "recorded_local_date": "2026-10-19",
+      "date_status": "user_confirmed",
+      "summary": "One third of the usual fortified yogurt tub, usual almonds and walnuts, one fifth of a drained Polar sardine jar, one third of the original Roma tomato pack, raspberries, orange, two green kiwis with skin, red pepper, one banana, two small chocolate Häagen-Dazs scoops and all of a regular Zareen’s Chicken Tikka Masala, Garlic Naan and small Basmati Rice. Usual vitamin D taken.",
+      "items_reported_eaten": [
+        {
+          "name": "Trader Joe’s plain lowfat fortified yogurt",
+          "amount": "1/3",
+          "unit": "of a 907 g tub",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Almonds",
+          "amount": 20,
+          "unit": "almonds",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Walnuts",
+          "amount": 8,
+          "unit": "halves",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Polar smoked brisling sardines in olive oil",
+          "amount": "1/5",
+          "unit": "of the original jar; fish drained",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Sauci Sweet Roma tomatoes",
+          "amount": "1/3",
+          "unit": "of the original 397 g pack",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Raspberries",
+          "amount": 1,
+          "unit": "6 oz pack",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Orange",
+          "amount": 1,
+          "unit": "orange",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Green kiwis",
+          "amount": 2,
+          "unit": "kiwis; skins eaten",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Red bell pepper",
+          "amount": 1,
+          "unit": "pepper",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Banana",
+          "amount": 1,
+          "unit": "banana",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Häagen-Dazs chocolate ice cream",
+          "amount": 2,
+          "unit": "small scoops; weight unmeasured",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Zareen’s Chicken Tikka Masala",
+          "amount": 1,
+          "unit": "regular order",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Zareen’s Garlic Naan",
+          "amount": 1,
+          "unit": "naan",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Zareen’s Basmati Rice",
+          "amount": 1,
+          "unit": "small order",
+          "portion_status": "Reported portion; edible weight estimated."
+        }
+      ],
+      "context": [
+        {
+          "field": "venue",
+          "observation": "Zareen’s: regular Chicken Tikka Masala, Garlic Naan and small Basmati Rice, all finished."
+        },
+        {
+          "field": "portion_evidence",
+          "observation": "Food counts, container fractions and usual nut/berry portions confirmed; edible grams remain conversions."
+        },
+        {
+          "field": "recipe_uncertainty",
+          "observation": "Restaurant portion masses, recipes and ice-cream scoop weights unmeasured; selected scenarios only."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Trader Joe’s vitamin D3",
+          "status": "taken",
+          "amount": 25,
+          "unit": "µg; one softgel"
+        }
+      ],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "All reported foods included; restaurant and ice-cream portion weights are explicit estimates.",
+      "date_note": "User explicitly confirms October 18 eating date, independently of message timestamp.",
+      "corrections": [],
+      "record_scope": "reported_consumption",
+      "nutrition": {
+        "summary": {
+          "energy_kcal": 2413.268756302521,
+          "protein_g": 103.08718184873949,
+          "carbohydrate_g": 283.0066981512605,
+          "fat_g": 101.10882448179271
+        },
+        "foods": [
+          {
+            "name": "Organic plain lowfat yogurt, 1% milkfat, vitamin D added",
+            "grams": 302.3333333333333,
+            "quantity_status": "reported",
+            "notes": "Confirmed one third of usual 907 g TJ 1% lowfat fortified yogurt: nominal 302.333 g; not a whole tub."
+          },
+          {
+            "name": "Organic raw almonds",
+            "grams": 24.0,
+            "quantity_status": "reported",
+            "notes": "Usual 20 almonds confirmed; unweighed 24 g conversion."
+          },
+          {
+            "name": "Raw English walnuts",
+            "grams": 16.2,
+            "quantity_status": "reported",
+            "notes": "Usual 8 walnut halves confirmed; unweighed 16.2 g conversion."
+          },
+          {
+            "name": "Smoked brisling sardines in olive oil, drained",
+            "grams": 38.5,
+            "quantity_status": "reported",
+            "notes": "One fifth of fish in original jar, extra oil drained; 0.7 label servings, nominal 38.5 g."
+          },
+          {
+            "name": "Sauci Sweet Roma tomatoes, raw",
+            "grams": 132.33333333333331,
+            "quantity_status": "reported",
+            "notes": "Confirmed one third of original 397 g Roma pack: nominal 132.333 g, not one third of remaining tomatoes."
+          },
+          {
+            "name": "Raspberries",
+            "grams": 170.0,
+            "quantity_status": "reported",
+            "notes": "Full usual 6 oz pack confirmed; saved 170 g conversion."
+          },
+          {
+            "name": "Navel orange",
+            "grams": 140.0,
+            "quantity_status": "reported",
+            "notes": "One orange; saved unweighed 140 g edible conversion."
+          },
+          {
+            "name": "Green kiwi, peeled-flesh comparator; skin also eaten",
+            "grams": 138.0,
+            "quantity_status": "reported",
+            "notes": "Two green kiwis; skins eaten. Saved 69 g flesh per fruit comparator; skin nutrient contribution unknown."
+          },
+          {
+            "name": "Red bell pepper, raw",
+            "grams": 150.0,
+            "quantity_status": "reported",
+            "notes": "One red pepper; saved unweighed 150 g edible conversion."
+          },
+          {
+            "name": "Banana",
+            "grams": 118.0,
+            "quantity_status": "reported",
+            "notes": "One banana; saved unweighed 118 g edible conversion."
+          },
+          {
+            "name": "Chocolate ice cream — two small scoops, mass scenario",
+            "grams": 80.0,
+            "quantity_status": "reported",
+            "notes": "Two small scoops confirmed. Assumed 80 g total with 60–100 g alternatives; no cone or toppings reported. Official shop label is a comparator, not verified exact served variant."
+          },
+          {
+            "name": "Chicken Tikka Masala, regular — recipe scenario",
+            "grams": 385.0,
+            "quantity_status": "reported",
+            "notes": "Full named item confirmed eaten. Display grams and composition are the explicitly saved recipe scenario, not a measured restaurant portion. No extra bundled rice, naan, thali sides or duplicate starch added."
+          },
+          {
+            "name": "Garlic Naan — piece scenario",
+            "grams": 133.0,
+            "quantity_status": "reported",
+            "notes": "Full named item confirmed eaten. Display grams and composition are the explicitly saved recipe scenario, not a measured restaurant portion. No extra bundled rice, naan, thali sides or duplicate starch added."
+          },
+          {
+            "name": "Basmati Rice, small — portion scenario",
+            "grams": 205.75,
+            "quantity_status": "reported",
+            "notes": "Full named item confirmed eaten. Display grams and composition are the explicitly saved recipe scenario, not a measured restaurant portion. No extra bundled rice, naan, thali sides or duplicate starch added."
+          }
+        ],
+        "nutrients": [
+          {
+            "id": "energy_kcal",
+            "name": "Calories",
+            "unit": "kcal",
+            "category": "macronutrients",
+            "food_total": 2413.268756302521,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2413.268756302521
+          },
+          {
+            "id": "protein_g",
+            "name": "Protein",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 103.08718184873949,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 103.08718184873949
+          },
+          {
+            "id": "carbohydrate_g",
+            "name": "Carbohydrate",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 283.0066981512605,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 283.0066981512605
+          },
+          {
+            "id": "fat_g",
+            "name": "Total fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 101.10882448179271,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 101.10882448179271
+          },
+          {
+            "id": "fiber_g",
+            "name": "Dietary fiber",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 38.98420672268907,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 38.98420672268907
+          },
+          {
+            "id": "saturated_fat_g",
+            "name": "Saturated fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 39.708973680672266,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 39.708973680672266
+          },
+          {
+            "id": "total_sugars_g",
+            "name": "Total sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 88.61192952380954,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 88.61192952380954
+          },
+          {
+            "id": "added_sugars_g",
+            "name": "Added sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 11.764705882352942,
+            "known_food_count": 10,
+            "food_count": 14,
+            "partial_food_count": 1,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 11.764705882352942
+          },
+          {
+            "id": "vitamin_a_mcg_rae",
+            "name": "Vitamin A",
+            "unit": "µg RAE",
+            "category": "vitamins",
+            "food_total": 362.82866666666666,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 362.82866666666666
+          },
+          {
+            "id": "vitamin_c_mg",
+            "name": "Vitamin C",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 477.78093333333334,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 477.78093333333334
+          },
+          {
+            "id": "vitamin_d_mcg",
+            "name": "Vitamin D",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 7.29078431372549,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 5,
+            "logged_supplement_total": 25.0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 32.29078431372549
+          },
+          {
+            "id": "vitamin_e_mg",
+            "name": "Vitamin E",
+            "unit": "mg α-tocopherol",
+            "category": "vitamins",
+            "food_total": 13.261700000000001,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 13.261700000000001
+          },
+          {
+            "id": "vitamin_k_mcg",
+            "name": "Vitamin K1 phylloquinone",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 88.31039999999999,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 88.31039999999999
+          },
+          {
+            "id": "thiamin_mg",
+            "name": "Vitamin B1 thiamin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 0.5908720000000001,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.5908720000000001
+          },
+          {
+            "id": "riboflavin_mg",
+            "name": "Vitamin B2 riboflavin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 1.3536966666666665,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.3536966666666665
+          },
+          {
+            "id": "niacin_mg",
+            "name": "Vitamin B3 niacin",
+            "unit": "mg niacin",
+            "category": "vitamins",
+            "food_total": 6.5166699999999995,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 6.5166699999999995
+          },
+          {
+            "id": "pantothenic_acid_mg",
+            "name": "Vitamin B5 pantothenic acid",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 4.156806666666666,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4.156806666666666
+          },
+          {
+            "id": "vitamin_b6_mg",
+            "name": "Vitamin B6",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 1.534484,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.534484
+          },
+          {
+            "id": "biotin_mcg",
+            "name": "Vitamin B7 biotin",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "folate_mcg_dfe",
+            "name": "Vitamin B9 folate",
+            "unit": "µg DFE",
+            "category": "vitamins",
+            "food_total": 289.9426666666667,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 289.9426666666667
+          },
+          {
+            "id": "vitamin_b12_mcg",
+            "name": "Vitamin B12",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 1.6930666666666665,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.6930666666666665
+          },
+          {
+            "id": "calcium_mg",
+            "name": "Calcium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 930.1391372549019,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 930.1391372549019
+          },
+          {
+            "id": "iron_mg",
+            "name": "Iron",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 6.1176393277310925,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 6.1176393277310925
+          },
+          {
+            "id": "magnesium_mg",
+            "name": "Magnesium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 282.4693333333333,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 282.4693333333333
+          },
+          {
+            "id": "phosphorus_mg",
+            "name": "Phosphorus",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 831.9919999999998,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 831.9919999999998
+          },
+          {
+            "id": "potassium_mg",
+            "name": "Potassium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 3015.8714397759104,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 3015.8714397759104
+          },
+          {
+            "id": "sodium_mg",
+            "name": "Sodium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2289.293145658263,
+            "known_food_count": 14,
+            "food_count": 14,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2289.293145658263
+          },
+          {
+            "id": "zinc_mg",
+            "name": "Zinc",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 5.736313333333334,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 5.736313333333334
+          },
+          {
+            "id": "copper_mg",
+            "name": "Copper",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 1.1262919999999998,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.1262919999999998
+          },
+          {
+            "id": "manganese_mg",
+            "name": "Manganese",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 3.0404213333333336,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 3.0404213333333336
+          },
+          {
+            "id": "selenium_mcg",
+            "name": "Selenium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": 13.7008,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 13.7008
+          },
+          {
+            "id": "iodine_mcg",
+            "name": "Iodine",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chloride_mg",
+            "name": "Chloride",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chromium_mcg",
+            "name": "Chromium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "molybdenum_mcg",
+            "name": "Molybdenum",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "choline_mg",
+            "name": "Choline",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 137.0734,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 137.0734
+          },
+          {
+            "id": "cholesterol_mg",
+            "name": "Cholesterol",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 107.54901960784314,
+            "known_food_count": 11,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 107.54901960784314
+          },
+          {
+            "id": "ala_g",
+            "name": "Omega 3 ALA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 1.5812914285714283,
+            "known_food_count": 3,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.5812914285714283
+          },
+          {
+            "id": "epa_g",
+            "name": "Omega 3 EPA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.18900000000000003,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.18900000000000003
+          },
+          {
+            "id": "dha_g",
+            "name": "Omega 3 DHA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.34299999999999997,
+            "known_food_count": 9,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.34299999999999997
+          },
+          {
+            "id": "omega3_total_g",
+            "name": "Omega 3 total reported",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 14,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "caffeine_mg",
+            "name": "Caffeine in reported foods",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 8,
+            "food_count": 14,
+            "partial_food_count": 4,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          }
+        ],
+        "supplements": [
+          {
+            "name": "Trader Joe’s vitamin D3 softgel",
+            "nutrient_id": "vitamin_d_mcg",
+            "amount": 25.0,
+            "unit": "µg"
+          }
+        ],
+        "scenario_note": "Selected portion/recipe scenarios span approximately 2,004–2,981 kcal. It is not a confidence interval and does not cover every uncertainty. ",
+        "source_note": "Date, portions, oil handling, full restaurant items, kiwi skins and 25 microgram vitamin D confirmed. Polar photo label verified; restaurant ingredient and scoop-mass scenarios remain illustrative, with unlisted nutrients unknown.",
+        "version": 2,
+        "reviewed_date": "2026-10-19",
+        "revision_note": "Clarified public portion labels and spacing for publication; food quantities, nutrient totals and selected scenarios unchanged."
+      }
+    },
+    {
+      "id": "october-19-chicken-rice-and-cherry-tomatoes",
+      "title": "October 19: chicken and rice, cherry tomatoes and two-thirds yogurt",
+      "kind": "food_report",
+      "food_date": "2026-10-19",
+      "recorded_local_date": "2026-10-19",
+      "date_status": "user_confirmed",
+      "summary": "Orange, two green kiwis with skins, avocado, the whole 340 g cherry-tomato pack, two bananas, red pepper, raspberries, two thirds of the usual fortified yogurt tub, usual nuts, another drained fifth of the Polar jar, a rice pouch, RT half chicken with skin, chimichurri, supplied herbs and squeezed lemon. Usual 25 µg vitamin D taken.",
+      "items_reported_eaten": [
+        {
+          "name": "Orange",
+          "amount": 1,
+          "unit": "orange",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Green kiwis",
+          "amount": 2,
+          "unit": "kiwis; skins eaten",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Avocado",
+          "amount": 1,
+          "unit": "avocado",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Trader Joe’s cherry tomatoes on the vine",
+          "amount": 1,
+          "unit": "whole 340 g pack",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Bananas",
+          "amount": 2,
+          "unit": "bananas",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Red bell pepper",
+          "amount": 1,
+          "unit": "pepper",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Raspberries",
+          "amount": 1,
+          "unit": "6 oz pack",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Trader Joe’s plain lowfat fortified yogurt",
+          "amount": "2/3",
+          "unit": "of a 907 g tub",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Walnuts",
+          "amount": 8,
+          "unit": "halves",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Almonds",
+          "amount": 20,
+          "unit": "almonds",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Polar smoked brisling sardines in olive oil",
+          "amount": "1/5",
+          "unit": "of the original jar; fish drained",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Trader Joe’s jasmine rice",
+          "amount": 1,
+          "unit": "pouch",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "RT roast chicken",
+          "amount": 1,
+          "unit": "half chicken; skin eaten",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Chimichurri",
+          "amount": 1,
+          "unit": "2 oz cup",
+          "portion_status": "Reported portion; edible weight estimated."
+        },
+        {
+          "name": "Supplied fresh herbs",
+          "amount": null,
+          "unit": "",
+          "portion_status": "Eaten; amount unreported."
+        },
+        {
+          "name": "Fresh lemon juice",
+          "amount": 1,
+          "unit": "supplied lemon wedge, squeezed",
+          "portion_status": "Reported portion; edible weight estimated."
+        }
+      ],
+      "context": [
+        {
+          "field": "portion_evidence",
+          "observation": "Usual portions explicitly confirmed for this day; yogurt fraction and new whole tomato pack independently specified."
+        },
+        {
+          "field": "accompaniments",
+          "observation": "Kiwi skins, supplied herb garnish and squeezed lemon consumed; herb mass unknown."
+        },
+        {
+          "field": "recipe_uncertainty",
+          "observation": "Chicken edible weight, sauce oil content and salt remain unmeasured."
+        }
+      ],
+      "supplements": [
+        {
+          "name": "Trader Joe’s vitamin D3",
+          "status": "taken",
+          "amount": 25,
+          "unit": "µg; one softgel"
+        }
+      ],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "All reported foods included; herb mass and restaurant seasoning remain unknown.",
+      "date_note": "User explicitly confirms October 19 eating date independently of message timestamp.",
+      "corrections": [],
+      "record_scope": "reported_consumption",
+      "nutrition": {
+        "summary": {
+          "energy_kcal": 2781.9499327731087,
+          "protein_g": 143.41375635854342,
+          "carbohydrate_g": 276.08485305322125,
+          "fat_g": 126.10922840336134
+        },
+        "foods": [
+          {
+            "name": "Navel orange",
+            "grams": 140.0,
+            "quantity_status": "reported",
+            "notes": "One orange; unweighed 140 g edible conversion."
+          },
+          {
+            "name": "Green kiwi, peeled-flesh comparator; skin also eaten",
+            "grams": 138.0,
+            "quantity_status": "reported",
+            "notes": "Two green kiwis; skins eaten. Saved 69 g flesh per fruit; skin contribution unquantified."
+          },
+          {
+            "name": "Avocado edible flesh",
+            "grams": 150.0,
+            "quantity_status": "reported",
+            "notes": "Usual one avocado confirmed; unweighed 150 g edible flesh conversion."
+          },
+          {
+            "name": "Cherry tomatoes on the vine, raw",
+            "grams": 340.0,
+            "quantity_status": "reported",
+            "notes": "Whole attached 340 g net pack confirmed; nominal edible-food proxy, vines/stems not weighed."
+          },
+          {
+            "name": "Banana",
+            "grams": 236.0,
+            "quantity_status": "reported",
+            "notes": "Two bananas reported; unweighed 118 g edible flesh per fruit."
+          },
+          {
+            "name": "Red bell pepper, raw",
+            "grams": 150.0,
+            "quantity_status": "reported",
+            "notes": "Usual one red bell pepper confirmed; unweighed 150 g edible conversion."
+          },
+          {
+            "name": "Raspberries",
+            "grams": 170.0,
+            "quantity_status": "reported",
+            "notes": "Usual full 6 oz pack confirmed; saved 170 g conversion."
+          },
+          {
+            "name": "Organic plain lowfat yogurt, 1% milkfat, vitamin D added",
+            "grams": 604.6666666666666,
+            "quantity_status": "reported",
+            "notes": "Two thirds of usual 907 g fortified 1% lowfat TJ yogurt confirmed; nominal 604.667 g, not a whole tub."
+          },
+          {
+            "name": "Raw English walnuts",
+            "grams": 16.2,
+            "quantity_status": "reported",
+            "notes": "Usual 8 walnut halves confirmed; unweighed 16.2 g conversion."
+          },
+          {
+            "name": "Organic raw almonds",
+            "grams": 24.0,
+            "quantity_status": "reported",
+            "notes": "Usual 20 almonds confirmed; unweighed 24 g conversion."
+          },
+          {
+            "name": "Smoked brisling sardines in olive oil, drained",
+            "grams": 38.5,
+            "quantity_status": "reported",
+            "notes": "Another one fifth of fish from original Polar jar; extra oil drained.0.7 label servings, nominal 38.5 g. Wild Planet preference does not replace the fish actually eaten."
+          },
+          {
+            "name": "Organic jasmine white rice frozen",
+            "grams": 283.0,
+            "quantity_status": "reported",
+            "notes": "Usual full TJ jasmine rice pouch confirmed;283 g, two label servings,360 kcal."
+          },
+          {
+            "name": "RT roast chicken meat and skin",
+            "grams": 299.0,
+            "quantity_status": "reported",
+            "notes": "Usual RT half chicken with skin confirmed;299 g edible meat+skin proxy,250–400 g alternatives; bones excluded."
+          },
+          {
+            "name": "RT chimichurri",
+            "grams": 56.7,
+            "quantity_status": "reported",
+            "notes": "Usual one 2 oz cup confirmed; saved 250 kcal oil scenario,130–380 kcal alternatives. Salt and herbs unquantified."
+          },
+          {
+            "name": "Fresh herb garnish: parsley, dill and mint or basil",
+            "grams": null,
+            "quantity_status": "unreported",
+            "notes": "Supplied herbs eaten. Mass and complete identity not reported; no prior leaf count or gram estimate carried forward."
+          },
+          {
+            "name": "Lemon juice, raw",
+            "grams": 12.0,
+            "quantity_status": "estimated",
+            "notes": "Supplied lemon squeezed and consumed; saved unweighed 12 g juice conversion, not measured yield."
+          }
+        ],
+        "nutrients": [
+          {
+            "id": "energy_kcal",
+            "name": "Calories",
+            "unit": "kcal",
+            "category": "macronutrients",
+            "food_total": 2781.9499327731087,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2781.9499327731087
+          },
+          {
+            "id": "protein_g",
+            "name": "Protein",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 143.41375635854342,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 143.41375635854342
+          },
+          {
+            "id": "carbohydrate_g",
+            "name": "Carbohydrate",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 276.08485305322125,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 276.08485305322125
+          },
+          {
+            "id": "fat_g",
+            "name": "Total fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 126.10922840336134,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 126.10922840336134
+          },
+          {
+            "id": "fiber_g",
+            "name": "Dietary fiber",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 47.23597142857143,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 47.23597142857143
+          },
+          {
+            "id": "saturated_fat_g",
+            "name": "Saturated fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 25.556617602240895,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 25.556617602240895
+          },
+          {
+            "id": "total_sugars_g",
+            "name": "Total sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 110.5091275630252,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 110.5091275630252
+          },
+          {
+            "id": "added_sugars_g",
+            "name": "Added sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 0.0,
+            "known_food_count": 12,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          },
+          {
+            "id": "vitamin_a_mcg_rae",
+            "name": "Vitamin A",
+            "unit": "µg RAE",
+            "category": "vitamins",
+            "food_total": 649.9353333333333,
+            "known_food_count": 13,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 649.9353333333333
+          },
+          {
+            "id": "vitamin_c_mg",
+            "name": "Vitamin C",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 538.5599333333333,
+            "known_food_count": 13,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 538.5599333333333
+          },
+          {
+            "id": "vitamin_d_mcg",
+            "name": "Vitamin D",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 10.258039215686274,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 25.0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 35.258039215686274
+          },
+          {
+            "id": "vitamin_e_mg",
+            "name": "Vitamin E",
+            "unit": "mg α-tocopherol",
+            "category": "vitamins",
+            "food_total": 22.5098,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 22.5098
+          },
+          {
+            "id": "vitamin_k_mcg",
+            "name": "Vitamin K1 phylloquinone",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 144.5867333333333,
+            "known_food_count": 13,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 144.5867333333333
+          },
+          {
+            "id": "thiamin_mg",
+            "name": "Vitamin B1 thiamin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 1.1856653333333331,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.1856653333333331
+          },
+          {
+            "id": "riboflavin_mg",
+            "name": "Vitamin B2 riboflavin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 2.8621966666666663,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2.8621966666666663
+          },
+          {
+            "id": "niacin_mg",
+            "name": "Vitamin B3 niacin",
+            "unit": "mg niacin",
+            "category": "vitamins",
+            "food_total": 38.00562,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 38.00562
+          },
+          {
+            "id": "pantothenic_acid_mg",
+            "name": "Vitamin B5 pantothenic acid",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 12.80516,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 12.80516
+          },
+          {
+            "id": "vitamin_b6_mg",
+            "name": "Vitamin B6",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": 4.132030666666666,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4.132030666666666
+          },
+          {
+            "id": "biotin_mcg",
+            "name": "Vitamin B7 biotin",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "folate_mcg_dfe",
+            "name": "Vitamin B9 folate",
+            "unit": "µg DFE",
+            "category": "vitamins",
+            "food_total": 525.2893333333334,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 525.2893333333334
+          },
+          {
+            "id": "vitamin_b12_mcg",
+            "name": "Vitamin B12",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": 4.283133333333333,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4.283133333333333
+          },
+          {
+            "id": "calcium_mg",
+            "name": "Calcium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 1408.9203137254901,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1408.9203137254901
+          },
+          {
+            "id": "iron_mg",
+            "name": "Iron",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 11.397162857142856,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 11.397162857142856
+          },
+          {
+            "id": "magnesium_mg",
+            "name": "Magnesium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 535.5193333333333,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 535.5193333333333
+          },
+          {
+            "id": "phosphorus_mg",
+            "name": "Phosphorus",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2087.982,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2087.982
+          },
+          {
+            "id": "potassium_mg",
+            "name": "Potassium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 5924.131047619048,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 5924.131047619048
+          },
+          {
+            "id": "sodium_mg",
+            "name": "Sodium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 638.3003025210083,
+            "known_food_count": 13,
+            "food_count": 16,
+            "partial_food_count": 5,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 638.3003025210083
+          },
+          {
+            "id": "zinc_mg",
+            "name": "Zinc",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 17.11041333333333,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 17.11041333333333
+          },
+          {
+            "id": "copper_mg",
+            "name": "Copper",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 2.0596886666666667,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 2.0596886666666667
+          },
+          {
+            "id": "manganese_mg",
+            "name": "Manganese",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 5.217854666666667,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 5.217854666666667
+          },
+          {
+            "id": "selenium_mcg",
+            "name": "Selenium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": 118.15580000000001,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 118.15580000000001
+          },
+          {
+            "id": "iodine_mcg",
+            "name": "Iodine",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chloride_mg",
+            "name": "Chloride",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chromium_mcg",
+            "name": "Chromium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "molybdenum_mcg",
+            "name": "Molybdenum",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "choline_mg",
+            "name": "Choline",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 433.4827333333334,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 433.4827333333334
+          },
+          {
+            "id": "cholesterol_mg",
+            "name": "Cholesterol",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 326.6886274509804,
+            "known_food_count": 15,
+            "food_count": 16,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 326.6886274509804
+          },
+          {
+            "id": "ala_g",
+            "name": "Omega 3 ALA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 1.7488714285714284,
+            "known_food_count": 5,
+            "food_count": 16,
+            "partial_food_count": 2,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 1.7488714285714284
+          },
+          {
+            "id": "epa_g",
+            "name": "Omega 3 EPA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.21890000000000004,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.21890000000000004
+          },
+          {
+            "id": "dha_g",
+            "name": "Omega 3 DHA",
+            "unit": "g",
+            "category": "other",
+            "food_total": 0.4626,
+            "known_food_count": 14,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.4626
+          },
+          {
+            "id": "omega3_total_g",
+            "name": "Omega 3 total reported",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 16,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "caffeine_mg",
+            "name": "Caffeine in reported foods",
+            "unit": "mg",
+            "category": "other",
+            "food_total": 0.0,
+            "known_food_count": 13,
+            "food_count": 16,
+            "partial_food_count": 8,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 0.0
+          }
+        ],
+        "supplements": [
+          {
+            "name": "Trader Joe’s vitamin D3 softgel",
+            "nutrient_id": "vitamin_d_mcg",
+            "amount": 25.0,
+            "unit": "µg"
+          }
+        ],
+        "scenario_note": "The quantified food contributions span approximately 2,545–3,153 kcal under the saved scenarios. Unknown food amounts or contributions are excluded, so this is not a full-day energy range. It is not a confidence interval. ",
+        "source_note": "User confirms date, whole 340 g tomato pack, usual portions, kiwi skins, accompaniments and 25 microgram vitamin D. New tomato identity uses generic USDA red tomato composition. Chicken, sauce and lemon weights remain proxies; herbs and restaurant seasoning unquantified.",
+        "version": 2,
+        "reviewed_date": "2026-10-19",
+        "revision_note": "Clarified public portion labels and spacing for publication; food quantities, nutrient totals and selected scenarios unchanged."
       }
     }
   ],
