@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-16
+updated: 2026-10-19
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 16 October 2026.** The upcoming
+**This version includes completed training through 19 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -300,6 +300,19 @@ complicates the fitness comparison; it does not supply a numerical correction.
 The session makes preserving good movement through the middle of a hard
 effort a concrete question to follow.
 
+On [19 October](/running/record/2026/#19-october--vo-3900-m--nominal-530), the first
+900s were **2:53.74, 2:56.22 and 3:01.05**: **2:57.00 average (3:16.67/km)**,
+with recorded rests of **5:03.34 and 5:14.31**. The first felt smooth and
+controlled; heavy legs persisted through the recoveries, and a strong headwind
+made holding pace harder. In the third rep I tried to recover form and find a
+finishing gear, but could not. The inner ankle was quiet before, during and after.
+The next aim is more even execution and a lower average at the same format.
+
+That gives the planned 4+4×200 a concrete question: can I repeatedly gather
+myself and produce fast, organised running when already out of breath and
+heavy-legged? I see a connection to the final metres of the longer reps;
+whether practising it transfers is something to follow, not an established result.
+
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
 the next comparison possible. The log preserves what actually happened,
@@ -380,20 +393,20 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**The first block of the cycle is complete:** 3×800 m on 15 October and
-3×1600 m on 16 October. LT stays at the longer format, with its **6:08 average**
-graduation gate still ahead. VO₂ has earned **3×900 m**, still with nominal
-**5:30 recovery** and a later 2:55.5 gate.
+**Both longer formats have now been tried:** 3×1600 m on 16 October and
+3×900 m on 19 October. They stay at those formats, with the later **6:08** and
+**2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
+The planned next workout is **4×200 / 3 min + 4×200 / 90 seconds on 20 October**.
 
-The remaining 18-day structure stays committed. The next chill day and later
-workouts are plans, and X remains open. Whether the longer 300s, 500s or another
+The remaining 18-day structure stays committed. Later workouts are plans,
+and X remains open. Whether the longer 300s, 500s or another
 4+4×200 deserves that experiment is a choice to make within the cycle, not a
 reason to replace the other eleven workouts before reviewing it.
 
 The next efforts ask three immediate questions:
 
-- **How do the earned longer repetitions feel?** The first 1600s supply a
-  heat-affected reference; the first 900s remain ahead. Each next gate is a
+- **How does repeatability develop at the longer distances?** The first 1600s
+  and 900s supply references with different constraints. Each next gate is a
   target to earn rather than an entry requirement.
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside

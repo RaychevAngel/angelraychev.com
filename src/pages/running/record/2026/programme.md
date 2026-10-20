@@ -1,15 +1,16 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The 18-day cycle begun on October 15, its completed first block, and independently earned LT and VO₂ progressions."
-updated: 2026-10-16
+description: "The 18-day cycle begun on October 15, completed first attempts at longer LT and VO₂ repetitions, and the next FA session."
+updated: 2026-10-19
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **16 October**. The first cycle began on **15 October**, and its
-first two-day block is complete. The remaining sessions are planned; no completed
+updated through **19 October**. The first cycle began on **15 October**. Its first
+block is complete, and block two's VO₂ session was run on **19 October**.
+FA is planned for **20 October**. The remaining sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -39,15 +40,16 @@ reported heat strain made the third rep very hard, with a loss of posture and
 knee lift before a strong finish with good form. **6:08 average remains a later
 graduation target**. There is no inferred heat-adjusted time.
 
-**VO₂ has earned 3×900 m with nominal 5:30 recovery.** The
-[15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530) was
-**2:35.26, 2:35.11, 2:36.27**: **2:35.55 average (3:14.4/km)**, with a
-**1.16-second spread**. COROS recorded **5:25.67 and 5:20.82** between efforts.
-The complete, composed set passes the 2:40 gate that remained unconfirmed
-after 9 October's interrupted timing. The next **2:55.5 average** is the 900s'
-graduation target, not a compulsory first pace. Feeling ready earlier does not
-change the nominal rest to five minutes. LT and VO₂ have earned their next
-structures independently.
+**VO₂ is now at 3×900 m with nominal 5:30 recovery.** The
+[15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
+**2:35.55 (3:14.4/km)**, earned the change. The
+[first 900s on 19 October](/running/record/2026/#19-october--vo-3900-m--nominal-530)
+were **2:53.74, 2:56.22, 3:01.05**: **2:57.00 average (3:16.67/km)**.
+Actual rests were **5:03.34 and 5:14.31**. Heavy legs persisted between reps;
+a strong headwind and deteriorating form accompanied the slowing. The
+**2:55.5 average graduation target** remains ahead. The next attempt stays
+at three 900s, aiming for a lower average and more even execution. The
+nominal recovery remains 5:30; today's shorter rests do not redefine it.
 
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
@@ -69,6 +71,11 @@ sequence held. Those were conditional dates. I subsequently confirmed
 **15 October as day one**. Its 3×800 m and the 16 October 3×1600 m complete
 block one. This replaces the tentative start date; it does not turn the
 remaining scheduled sessions into completed work.
+
+Block two's VO₂ session was originally due on October 18 and was completed
+on **October 19**. The next FA session is planned for **October 20**. The
+sequence is retained; completed dates and the next reported intention replace
+assumptions based on an uninterrupted calendar.
 
 ## The 18-day cycle
 
@@ -94,6 +101,10 @@ for the next cycle's review.
 
 **FA** is fast running with a second, shorter-recovery set: the current template
 is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
+Its purpose includes repeatedly finding fast, organised running with heavy
+legs and incomplete recovery: gathering posture and rhythm for the finish.
+I see a connection to the final metres of the 900s; whether that practice
+transfers remains a question for the completed sessions.
 **TT** is an event time trial; the transition's 5000 m is complete, and the first
 full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open, with dense 10/10 running among
 the candidates. Other ideas discussed are 300 m repetitions, 2×3×500 m, or
