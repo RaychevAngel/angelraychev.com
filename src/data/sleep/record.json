@@ -1272,18 +1272,18 @@
         "source": "Official COROS connector: querysleepoverview/querysleephrv/queryavgheartrate/queryrestingheartrate, wake date20261020"
       },
       "self_report": {
-        "restfulness": "Slept okay-ish, with many short remembered awakenings to turn around or make similar adjustments. No exact count, times, measured durations or numeric rating.",
+        "restfulness": "Slept okay-ish, with many short remembered awakenings to turn or make similar adjustments. In the follow-up, estimated these episodes at under 30 seconds each; no exact count or timed intervals. Suspected dreams were probably waking me, without an established cause.",
         "daytime_sleepiness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "Woke around 09:30 and felt super sleepy. Considered sleeping more and tried for 5–10 minutes without falling asleep, then decided to get up. Exact out-of-bed time, duration until feeling normal and later-day experience were not supplied.",
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "dream_recall": "Reported dreaming a lot. No timed dream intervals or independent stage observations.",
-        "intended_bedtime": "Went to bed around midnight at the start of October 20; exact sleep onset, final waking and out-of-bed time not reported.",
+        "dream_recall": "Reported a lot of dreaming and suspected the dreams were probably waking me. No timed dream/waking sequence or independent stage observation; this remains a personal hypothesis.",
+        "intended_bedtime": "Went to bed around midnight at the start of October 20. Follow-up places waking around 09:30, followed by a 5–10-minute unsuccessful attempt to sleep more before deciding to get up. Exact sleep onset and out-of-bed time remain unreported.",
         "environment": "Lights went down as sleep approached. Exact timing, brightness, curtains, room temperature and bedding not specified for this night.",
         "stress": null,
         "breathing_exercise": null,
-        "hydration_and_bathroom": "Sipped some water, described as not much, during the hours approaching bed after the approximately 18:30 last food. Exact volume, final-sip time and any bathroom symptoms or visits not reported."
+        "hydration_and_bathroom": "Sipped some water, described as not much, during the hours approaching bed after the approximately 18:30 last food. In the follow-up, reported that no awakening ended in a bathroom trip. Water volume, final-sip time, urinary urge and any pre-bed bathroom visit were not specified."
       },
       "context": [
         {
@@ -1292,35 +1292,40 @@
         },
         {
           "kind": "self_report",
-          "observation": "Water sips continued during the hours approaching bed, described as not much. No quantified intake or final-sip time was supplied, and this account does not state whether any awakening involved urination."
+          "observation": "Water sips continued during the hours approaching bed, described as not much. Volume and final-sip time remain unreported. The follow-up explicitly says none of the awakenings led to a bathroom trip; urinary urge or the initial cause of awakening was not established."
         },
         {
           "kind": "self_report",
-          "observation": "Many short remembered awakenings involved turning or similar adjustments; dream recall was plentiful. The prior night’s stress, 500 mL water, bathroom outcome, exercise, breathing and bedding details are not assumed repeated."
+          "observation": "Many brief remembered awakenings involved turning or similar adjustments. Follow-up estimates were under 30 seconds each, without an exact count or timed intervals. Dream recall was plentiful and dreams were suspected as a trigger; that causal interpretation remains unconfirmed. Prior-night stress, 500 mL water, exercise, breathing and bedding details are not assumed repeated."
         },
         {
           "kind": "measurement_provenance",
           "observation": "Oura configuration reports firmware 2.1.36 and sleep algorithm v2, the same exposed versions as at the October 19 retrieval. The update from the older 2.1.25 was first observed then; its precise installation timing and effect remain unknown."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Woke around 09:30 feeling super sleepy, considered more sleep and attempted it for 5–10 minutes without falling asleep, then decided to get up. The exact out-of-bed time and later-day functioning remain unreported."
         }
       ],
       "story": [
-        "I slept okay-ish during the night ending October 20. I remember many short awakenings in which I turned around or made similar small adjustments. I also dreamed a lot. I did not count or time the awakenings.",
+        "I slept okay-ish during the night ending October 20. I remember many short awakenings in which I turned around or made similar small adjustments. In the follow-up, I estimated these episodes at under 30 seconds each, without counting or timing them. I dreamed a lot and felt the dreams were probably waking me; that is my suspected explanation.",
         "I last ate around 18:30 on October 19 and went to bed around midnight. The lights went down as I approached sleep. During the intervening hours I sipped some water, but not much; I did not give a volume or exact final-sip time.",
-        "I have not yet described final waking or out-of-bed time, sleepiness after waking or later-day functioning. This account does not specify a urinary awakening or its absence."
+        "In the follow-up, I said I woke around 09:30 and felt super sleepy. I considered sleeping a little longer, but could not fall asleep within 5–10 minutes and decided to get up. No awakening ended in going to the bathroom. I have not specified the exact out-of-bed time or how I felt later in the day."
       ],
       "interpretation": [
         "Oura returned 92, its highest score in the eight recorded dates, while COROS returned 89. Oura estimated 8h55m30s asleep and COROS 9h04m, differing by 8m30s. These remain separate grades and estimates rather than a combined biological result.",
         "Oura selected 00:08:58–09:41:13, an episode of 9h32m15s, versus COROS 00:16–09:29 and 9h13m. Oura estimated 36m45s awake, COROS nine minutes. The episode lengths differ by 19m15s and the waking estimates by 27m45s. COROS counted no awakening longer than five minutes; this does not rule out the reported many short interruptions.",
         "Oura estimated 2h03m30s deep sleep, 2h04m30s REM and 4h47m30s light sleep, with 11 minutes estimated latency and 94% efficiency. Its contributor grades were total sleep 97, deep 97, REM 96, efficiency 99, restfulness 88, latency 89 and timing 66. Plentiful dream recall is a separate experience and does not verify exact REM or other stage totals.",
         "Compared with October 19, Oura estimated 33m30s less sleep and its score rose 91 → 92. COROS estimated 23 minutes less and its score fell 91 → 89. Oura timing rose 51 → 66, latency 83 → 89 and efficiency 98 → 99; restfulness stayed 88 while total-sleep grading fell 100 → 97. The combined change in grades does not isolate which condition caused a difference.",
-        "The broad diary impression is okay-ish, with many brief remembered awakenings, despite the highest recorded Oura composite. Both descriptions stay in the record. A grade increase is progress on the chosen device benchmark, while comfort, unwanted interruptions and following-day functioning remain separate outcomes.",
+        "The broad diary impression is okay-ish, with many brief awakenings and strong sleepiness on waking, despite the highest recorded Oura composite. These experiences stay alongside the score. The follow-up does not report that the sleepiness had resolved after the 5–10-minute attempt to sleep more; no time to normal functioning is inferred from the decision to get up.",
         "Oura mean sleeping HR was 47 bpm, minimum 43, versus 47.625 and 44 the preceding night. Its average sleep HRV was 70 ms versus 69; COROS official sleep HRV was 71 ms versus 67, labeled Above normal against its returned 47–69 ms range and 58 ms baseline. Provider reference values and scopes stay separate; this label is not a diagnostic conclusion or an Oura threshold.",
-        "Food around 18:30 and a roughly midnight bedtime give an approximately 5½-hour food-to-bed interval. Sips continued later, but neither volume nor the final time is known. This is another described routine, not an isolated test of meal or water timing. No absence of urinary awakening is inferred from omission.",
-        "Oura Readiness was 91, separate from Sleep 92; temperature deviation was −0.19°C, average SpO₂ 97.066% and breathing disturbance index 0. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval. These consumer-device summaries do not establish a diagnosis or a complete recovery outcome; morning and later-day experience remain unreported."
+        "Food around 18:30 and a roughly midnight bedtime give an approximately 5½-hour food-to-bed interval. Sips continued later, but neither volume nor the final time is known. This is another described routine, not an isolated test of meal or water timing. The follow-up confirms no awakening followed by a bathroom trip; this does not independently identify the cause of the brief awakenings or establish absence of urinary urge.",
+        "Oura Readiness was 91, separate from Sleep 92; temperature deviation was −0.19°C, average SpO₂ 97.066% and breathing disturbance index 0. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval. These consumer-device summaries do not establish a diagnosis or a complete recovery outcome; the follow-up supplies strong initial sleepiness, while its later resolution and later-day experience remain unreported.",
+        "The recalled waking around 09:30 is near COROS’s 09:29 episode end and earlier than Oura’s 09:41:13 end. A subsequent 5–10-minute attempt to sleep more is reported, but no timed reference establishes how either device classified it. Estimated under-30-second awakenings do not reconstruct aggregate waking time or validate either device’s total. Dreams were suspected as triggers; the report does not establish whether dreaming caused waking or was recalled around it."
       ],
       "plans": [],
       "next_focus": [
-        "Keep the many brief awakenings and okay-ish impression visible alongside the 92-point score. The next missing outcome is how awake or sleepy I felt after waking and through the day, together with approximate final waking time.",
+        "Keep the many brief awakenings, okay-ish impression and strong morning sleepiness visible alongside the 92-point score. The follow-up supplies waking around 09:30 and no bathroom trips; the next missing outcome is how the sleepiness and daytime function evolved after deciding to get up.",
         "For the score objective, timing 66 remains the lowest Oura contributor, though it improved from 51. Three consecutive recorded Oura scores are now 90, 91 and 92; this is progress in the observed series without completing either sustained milestone. Retain enough sleep opportunity while comparing timing and comfort."
       ],
       "next_focus_references": [
@@ -1337,7 +1342,12 @@
           "label": "Milestone inclusion rules"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-20",
+          "reason": "Added waking around 09:30, strong initial sleepiness, a 5–10-minute unsuccessful attempt to sleep more, no bathroom trip after any awakening, estimated under-30-second wake episodes, and dreams as a suspected trigger. Kept approximate timings and causal uncertainty; no resolution of sleepiness or exact out-of-bed time inferred. Native device values and retrieval timestamps remain unchanged."
+        }
+      ]
     }
   ]
 }

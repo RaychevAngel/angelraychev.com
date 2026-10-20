@@ -55,7 +55,7 @@ This follows reported stressful activity before bed, with sleep described as oka
 
 On [October 20](/sleep/record/#night-2026-10-20), Oura mean sleeping HR was **47 bpm**, minimum **43**, and average sleep HRV **70 ms**. COROS official sleep HRV was **71 ms**, labeled **Above normal** against its returned **47–69 ms range and 58 ms baseline**. Its daily snapshot averaged 52 bpm with minimum 42; predicted seated resting HR was 49. These scopes remain distinct. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval.
 
-The diary describes okay-ish sleep, many brief remembered awakenings and plentiful dreams. High HRV and a lower sleeping pulse do not erase that experience or establish complete recovery. Morning and later-day function remain unreported. The reported roughly 5½-hour meal gap and unquantified later sips have not been isolated as explanations for the measurements.
+The diary describes okay-ish sleep, many brief remembered awakenings and plentiful dreams. High HRV and a lower sleeping pulse do not erase that experience or establish complete recovery. The follow-up reports waking around 09:30 feeling super sleepy, then an unsuccessful 5–10-minute attempt to sleep more. Resolution of sleepiness and later-day function remain unreported. The reported roughly 5½-hour meal gap and unquantified later sips have not been isolated as explanations for the measurements.
 
 ## How much confidence is justified?
 
