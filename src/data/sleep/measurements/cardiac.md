@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-19"
+updated: "2026-10-20"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -50,6 +50,12 @@ This follows a much longer sleep episode, after food around 20:00, gym ending 22
 The [October 19 record](/sleep/record/#night-2026-10-19) returned Oura mean sleeping HR **47.625 bpm**, minimum **44**, and average sleep HRV **69 ms**. COROS official sleep HRV was **67 ms**, labeled **Above normal** against its returned **46–66 ms range and 56 ms baseline**. Its daily snapshot averaged 53 bpm with minimum 42, while predicted seated resting HR was 53. Each retains its own scope and provider assessment; the COROS label is not a diagnosis or a range to apply to Oura.
 
 This follows reported stressful activity before bed, with sleep described as okay and multiple brief remembered awakenings. Those conditions do not contradict the measurements, but their isolated effects are unresolved. The ring configuration now reports **firmware 2.1.36**, previously 2.1.25, with the sleep algorithm field still v2. Exact update timing and any effect on the estimates are unknown, so the version boundary remains part of the interpretation. The October 19 follow-up reports feeling pretty sleepy initially and back to normal speed within 10–15 minutes; later-day experience remains unreported.
+
+## October 20: cardiac summaries and the experienced night
+
+On [October 20](/sleep/record/#night-2026-10-20), Oura mean sleeping HR was **47 bpm**, minimum **43**, and average sleep HRV **70 ms**. COROS official sleep HRV was **71 ms**, labeled **Above normal** against its returned **47–69 ms range and 58 ms baseline**. Its daily snapshot averaged 52 bpm with minimum 42; predicted seated resting HR was 49. These scopes remain distinct. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval.
+
+The diary describes okay-ish sleep, many brief remembered awakenings and plentiful dreams. High HRV and a lower sleeping pulse do not erase that experience or establish complete recovery. Morning and later-day function remain unreported. The reported roughly 5½-hour meal gap and unquantified later sips have not been isolated as explanations for the measurements.
 
 ## How much confidence is justified?
 

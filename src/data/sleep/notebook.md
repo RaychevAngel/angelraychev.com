@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-19"
+updated: "2026-10-20"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,12 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+The [night ending 20 October](/sleep/record/#night-2026-10-20) returned **Oura 92, the highest recorded so far, and COROS 89**. I described sleep as **okay-ish**, with many brief awakenings to turn or make small adjustments, and plentiful dreams. Last food was around **18:30**, bedtime around **midnight**, with lights down approaching sleep and small, unquantified water sips during the intervening hours. This account does not say whether I woke to urinate. Morning and later-day functioning remain unreported.
+
+Oura estimated **8h55m30s asleep**, COROS **9h04m**. Their windows were 00:08:58–09:41:13 and 00:16–09:29, with waking estimates **36m45s versus 9 minutes**. Oura’s timing contributor rose **51 → 66**, latency **83 → 89** and efficiency **98 → 99**; restfulness stayed **88**. Total sleep and deep sleep were **97**, REM **96**. Its stage estimates were **2h03m30s deep** and **2h04m30s REM**, with 11 minutes estimated latency and 94% efficiency. The higher composite stays alongside the less-positive subjective impression and remembered awakenings.
+
+HRV was **70 ms on Oura and 71 ms on COROS**, with Oura mean sleeping HR **47 bpm**. COROS labeled its HRV Above normal against its returned 47–69 ms range and 58 ms baseline. Oura still reports firmware 2.1.36 and sleep algorithm v2. The three most recent Oura scores are 90, 91 and 92; this is a promising score sequence within a short record, not completion of a sustained milestone. The roughly 5½-hour meal gap remains a described condition rather than an isolated explanation. [Routine history](/sleep/research/personal-experiments/#the-current-routine-proposal).
 
 The [night ending 19 October](/sleep/record/#night-2026-10-19) returned **91 from both devices**, with estimated sleep of **9h29 on Oura and 9h27 on COROS**. I described sleeping okay, with multiple short awakenings to turn or make small adjustments, after stressful pre-bed activity and lowering the lights. Last food was around **20:00**. I drank **about 500 mL at 22:30–23:00** and explicitly did **not wake up to urinate**. The follow-up places the sleep attempt around **00:10**, with onset taking a while, and final waking around **10:30**, recalled with uncertainty. I felt pretty sleepy initially, then back to normal speed within **10–15 minutes**; later-day experience remains unreported.
 

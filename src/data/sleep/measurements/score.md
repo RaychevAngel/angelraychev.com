@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-19"
+updated: "2026-10-20"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -46,6 +46,10 @@ The 90/98 pair matches October 16, although component grades and duration differ
 On [October 19](/sleep/record/#night-2026-10-19), **both providers returned 91**, although their selected episode boundaries and waking totals still differ. Oura graded total sleep 100, deep 98, REM 98, efficiency 98, restfulness 88, latency 83 and timing 51. The latency estimate was 20m30s, versus 9m30s the preceding night, while its contributor stayed 83; a grade is not a direct conversion from minutes. Oura’s overall score rose 90 → 91 while COROS’s fell 98 → 91. Agreement on one headline grade does not make the grading systems interchangeable.
 
 Today’s retrieval also reports **Oura firmware 2.1.36**, previously 2.1.25, with sleep algorithm v2 unchanged. Exact installation timing and any scoring effect are unknown. Seven recorded dates, including the social exception, remain in the sequence; neither sustained milestone has been assessed as achieved. The follow-up adds an approximately 00:10 sleep attempt, onset taking a while, uncertain final waking around 10:30 and initial sleepiness resolving to normal speed within 10–15 minutes. This subjective morning experience stays alongside the 91-point scores; later-day function remains unreported.
+
+The [October 20 record](/sleep/record/#night-2026-10-20) returned **Oura 92 and COROS 89**. Oura’s total-sleep and deep-sleep contributors were 97, REM 96, efficiency 99, restfulness 88, latency 89 and timing 66. Timing rose51 → 66, latency83 → 89 and efficiency98 → 99; restfulness stayed 88, while total sleep fell 100 → 97. Oura estimated 8h55m30s asleep with 11 minutes latency and 94% efficiency. The overall Oura score rose 91 → 92 while COROS fell 91 → 89.
+
+The diary still describes **okay-ish sleep with many brief awakenings**, so the highest recorded Oura grade is a benchmark result alongside a less-positive experienced night. Eight dates include a recent 90, 91, 92 Oura sequence, while the sustained 14/28-day criteria remain unassessed. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval. Plentiful dream recall does not validate the exact device REM estimate; morning and later-day function remain unreported.
 
 Sleep staging validation does not validate every composite-score threshold. A score is downstream of several estimates and an algorithmic judgment. Firmware or scoring changes can alter it without a lifestyle change. Keep hardware and algorithm information when exposed and mark known changes.
 

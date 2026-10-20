@@ -1,13 +1,19 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-19"
+updated: "2026-10-20"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**20 October 2026 — okay-ish sleep with many brief awakenings; Oura 92, COROS 89.** Last food was around 18:30 and bedtime around midnight, a roughly 5½-hour interval using approximate reported times. Lights went down approaching sleep. Water sips continued during the intervening hours, described as not much, without a quantified volume or final time. I remembered many short awakenings to turn or make small adjustments and dreamed a lot. No urinary-awakening outcome, new stress/exercise report or morning/daytime function was supplied; earlier-night details are not assumed repeated.
+
+The [record](/sleep/record/#night-2026-10-20) retains **8h55m30s asleep on Oura and 9h04m on COROS**, with waking estimates **36m45s and 9 minutes** and different windows. Oura’s timing grade rose51 → 66, latency83 → 89 and efficiency98 → 99; restfulness stayed 88. Its 92 is the highest recorded composite, but it does not overrule the okay-ish impression or identify a cause. Dream recall and device REM estimates remain separate observations.
+
+The next useful comparison keeps comfort, short awakenings and later-day functioning alongside grades. Three recent Oura scores 90, 91 and 92 are progress on that benchmark, while eight dates do not complete either sustained milestone. Firmware 2.1.36 and exposed sleep algorithm v2 match the preceding retrieval. No new meal, water or bedtime rule is adopted from this single night.
 
 **19 October 2026 — slept okay; both providers 91.** I remembered multiple short awakenings to turn or make small adjustments, with no exact count. Pre-bed activity was stressful and lights went down approaching sleep. Last food was around 20:00; last water was about 500 mL at 22:30–23:00. I explicitly reported no waking to urinate. The follow-up reports an approximately **00:10** sleep attempt, onset taking a while and uncertain final waking around **10:30**. Initial sleepiness cleared to the usual subjective pace within **10–15 minutes**. Total daily drinks, out-of-bed time and later-day experience remain unreported.
 
