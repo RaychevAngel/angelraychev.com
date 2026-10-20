@@ -1,0 +1,98 @@
+{
+  "document": "Synth platform case study: selected execution evidence",
+  "prepared_on": "2026-10-20",
+  "format_note": "Public, manually selected and redacted projection of retained historical records. This is not a native Synth API schema, raw log export, independent certification, or fresh service test.",
+  "selected_campaign_scale": {
+    "scope": "Four selected retained July 2026 direct Runtime campaigns; not a lifetime total or Gateway-managed customer volume",
+    "recorded_rollout_sessions": 21500,
+    "distinct_session_identities": 21500,
+    "training_rollout_records": 17300,
+    "fresh_evaluation_records": 4200,
+    "includes_failed_and_resumed_work": true,
+    "verification": "Session identities recomputed and deduplicated across the selected training and evaluation event streams; finalization/read events were not counted again.",
+    "limits": [
+      "Repeated attempts are not unique tasks or successful solves.",
+      "This aggregate is not a claim that every campaign passed its learning or operational checks.",
+      "Executed optimizer updates, resumed policy-lineage progress and saved checkpoints are separate quantities."
+    ]
+  },
+  "examples": [
+    {
+      "name": "Direct Runtime training campaign",
+      "recorded_period": "2026-07",
+      "execution_path": "Direct Runtime/operator controller; not Gateway-managed customer submission",
+      "model_adaptation": "Rank-1 LoRA adaptation of Qwen3.6-35B-A3B through Tinker",
+      "counts": {
+        "manifest_entries": 300,
+        "rollout_records": 3000,
+        "training_eligible_rollouts": 2023,
+        "excluded_rollouts": 977,
+        "training_datums": 80012,
+        "optimizer_updates": 30,
+        "saved_platform_state_events": 30
+      },
+      "recovery": {
+        "resumed_after_update": 29,
+        "deterministic_checker_passed": false,
+        "separate_resume_adjudication_accepted_execution_for_evaluation": true,
+        "note": "The resumed provider session used a new sampler URI. Retained events link the prior sampler, configured checkpoint and resumed sampler. The checker remained false; no fresh provider-weight attestation was performed for this article."
+      },
+      "verification": "Counts recomputed from saved rollout and train-step events; saved state/event hashes matched the retained checkpoint binding.",
+      "limits": [
+        "Not 3000 independent tasks or 80012 independent trials.",
+        "Not an uninterrupted all-green run or a demonstrated learning-quality gain.",
+        "Configured concurrency is not a measured sustained-capacity guarantee."
+      ]
+    },
+    {
+      "name": "Bounded managed training and checkpoint consumption",
+      "recorded_on": "2026-08-30",
+      "execution_path": "Development Gateway-managed run submitted with an installed source-built Synth CLI",
+      "counts": {
+        "batches": 2,
+        "trials_per_batch": 2,
+        "scheduled_trials": 4,
+        "settled_trials": 4,
+        "scored_trials": 4,
+        "training_datums": 4,
+        "optimizer_updates": 2,
+        "saved_checkpoints": 2,
+        "artifacts_finalized": 19,
+        "artifacts_pending": 0
+      },
+      "next_batch_used_previous_updates_sampler": true,
+      "independent_checkpoint_consumption": {
+        "invocation_exit_code": 0,
+        "export_receipt_output_token_count": 53,
+        "export_receipt_output_logprob_count": 53
+      },
+      "verification": "Retained publication receipt checked against canonical training result and separate checkpoint-consumption receipt.",
+      "limits": [
+        "Synthetic verifier rewards isolate mechanism correctness; they do not demonstrate task-performance improvement.",
+        "Development only; not Production or general availability.",
+        "The specifically cited temporary local token-payload export is no longer present. Its compact receipt survives."
+      ]
+    },
+    {
+      "name": "Managed evaluation outcome accounting",
+      "recorded_on": "2026-08-28",
+      "execution_path": "Retained managed evaluation",
+      "counts": {
+        "scheduled_task_trial_rows": 100,
+        "distinct_task_identities": 100,
+        "distinct_session_identities": 100,
+        "execution_completed_outcomes": 96,
+        "error_outcomes": 4,
+        "rows_with_verifier_reward": 95,
+        "recorded_model_interactions": 5983
+      },
+      "verification": "Counts and distinct identities recomputed from retained per-trial extracts and checked against the saved audit.",
+      "limits": [
+        "Execution completion does not mean task success or presence of a valid score.",
+        "Fixed task selection and answer-key retrieval contamination prevent using this as a benchmark-quality claim.",
+        "The original temporary aggregate export is absent; retained extracts and audit survive."
+      ]
+    }
+  ],
+  "privacy": "No credentials, signed URLs, internal run or tenant IDs, private trajectories, operational endpoints or company source code are included."
+}
