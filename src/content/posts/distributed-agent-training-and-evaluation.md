@@ -114,7 +114,8 @@ The main components have deliberately different jobs:
 - **`synth`** is the operator interface and native-agent launcher. It exposes
   reusable work and agents, submits experiments, and reads their results.
 - **`sprite-gateway`** is the authenticated control plane. It resolves authorized
-  inputs, admits durable jobs, delegates execution and serves customer readback.
+  inputs, admits durable jobs, delegates execution and serves run progress and
+  results.
 - **`agent-rl-runtime`** schedules task attempts, coordinates evaluation and
   learning, manages progress and advances model state.
 - **`managed-agent-proxy`** connects the native harness to supported models and
@@ -166,13 +167,14 @@ both paths share instruction delivery, literal-argument handling, environment
 and working-directory resolution, setup and required-output checks. Local and
 managed execution do not independently reconstruct what the profile means.
 
-Published profiles have immutable versions. The identity used by an experiment
-remains stable when a newer profile is published. The service supplies canonical
+Published profile versions are immutable, so an experiment retains the version
+it selected when a newer one is published. The service supplies canonical
 profile bytes and a digest; the Go client verifies that representation instead
-of assuming that Go and Python serialize the same object identically. During
-training, that fixed recipe is bound
-to an explicit effective model snapshot for each batch: the experiment can
-advance the policy without silently changing the harness.
+of assuming that Go and Python serialize the same object identically.
+
+During training, each batch binds that fixed recipe to an explicit effective
+model snapshot. The experiment can advance the policy without silently
+changing the harness.
 
 The same format also supports a judge. The actor’s job is to perform the task;
 the judge’s job is to assess the result. They can use different instructions,
@@ -215,19 +217,17 @@ behind explicit adapter interfaces. The inference layer and training admission
 have separate capability checks: a route can be useful for inference without
 being a model that the selected training backend can optimize.
 
-For training, the crucial record is the model-native input and generation
-that produced each action. The Proxy retains prompt token IDs, generated token
-IDs and the generation policy’s log probabilities, joined to their interaction
-and task attempt. Those values come from the sampling path itself.
+For training, the Proxy retains the model-native record of each call: prompt
+token IDs, generated token IDs and the generation policy’s log probabilities.
+Those values come from the sampling path itself and are joined to their
+interaction and task attempt.
 
-That matters because the text displayed in a transcript is not a complete
-representation of a model interaction. Chat templates, tool syntax, reasoning
-and tokenization all influence the tokens the model actually saw and generated.
-Training should operate on those tokens and probabilities.
-
-Per-call capture also preserves the actual inputs when the harness changes its
-context. The learning path does not have to assume that every prompt is a
-concatenation of the full displayed transcript.
+A displayed transcript is not a complete substitute. Chat templates, tool
+syntax, reasoning and tokenization affect what the model actually saw and
+generated. The harness can also change the context supplied to a later call.
+Per-call capture preserves those inputs, so the learning path follows the
+contexts the harness used without assuming that every prompt contains the full
+displayed history.
 
 ## One execution core for evaluation and training
 
@@ -482,12 +482,12 @@ environments. Other task collections used the same execution and learning
 machinery: the task package defines the work and assessment.
 
 The largest campaigns exercised the execution and learning core before the
-later profile abstraction and unified managed interface. That profile
-abstraction also gave task-specific actors and judges a
-common execution format. That became useful in subsequent work on task
-generation and [repository-specific reviewer construction](/training-a-code-reviewer-we-actually-use/):
-an agent-producing workflow can return a runnable recipe, and a task-performing
-workflow can consume it.
+later profile abstraction and unified managed interface.
+
+Profiles gave task-specific actors and judges a common execution format. That
+format became useful in subsequent work on task generation and
+repository-specific reviewer construction: an agent-producing workflow can
+return a runnable recipe that a task-performing workflow can consume.
 
 My contribution was the design and implementation across these boundaries:
 native-agent/model integration, distributed task and learning orchestration,
