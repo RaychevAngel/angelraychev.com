@@ -1,6 +1,6 @@
 ---
 title: "Building a distributed platform for agent training and evaluation"
-description: "How I built SynthLabs’ agent-learning platform: reusable agents, distributed task execution, native model integration, reinforcement learning and managed cloud infrastructure."
+description: "How I built SynthLabs’ agent-learning platform: reusable agents, serverless task execution, native model integration, reinforcement learning and managed cloud infrastructure."
 image: "/assets/synth-platform/article-cover.png"
 imageAlt: "Distributed agent training and evaluation: executable work, native agent experience and model updates."
 updated: 2026-10-21
@@ -515,16 +515,12 @@ needed to inspect and authorize them.
   <figcaption id="custody-caption">Canonical interaction evidence separates upload, verified publication and authorized consumption. Gateway verifies provider metadata and commits the reference without relaying the trajectory payload.</figcaption>
 </figure>
 
-The upload grant authorizes creation of one exact object; the canonical record
-publishes its verified reference. Consumers still need
-their own read authority. A content reference can be shared between components
-without copying the same evidence merely to change which service refers to it.
-
 I designed the canonical interaction-storage contract around exact, create-only
-uploads and provider-verifiable full-object SHA-256 checksums. Gateway can verify
-what it publishes from provider metadata without downloading the trajectory
-itself. This preserves both direct data movement and a precise publication
-boundary.
+uploads and provider-verifiable full-object SHA-256 checksums. Uploading an
+object, publishing its verified reference and authorizing a read are distinct
+operations. Components can share the same content reference without copying
+evidence merely to change which service refers to it; each consumer still
+needs its own read authority.
 
 ### Cloud delivery, networking and credentials
 
