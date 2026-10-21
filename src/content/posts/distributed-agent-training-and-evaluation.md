@@ -350,8 +350,8 @@ interactions. The task assessment belongs to the trajectory as a whole; the
 individual generating interactions supply the token-level learning inputs.
 
 <figure class="platform-figure platform-wide" id="learning-loop" aria-labelledby="learning-caption">
-  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-loop-mobile.svg" width="420" height="1240"><img src="/assets/synth-platform/learning-loop.svg" width="1000" height="620" alt="Training loop: select tasks and a frozen agent snapshot, execute repeated attempts, combine task assessments with exact model interaction evidence, prepare group-relative training inputs, submit forward and backward work, update the model and save a sampler and checkpoint for subsequent work." loading="lazy"></picture>
-  <figcaption id="learning-caption">Repeated task attempts connect environment-level outcomes to token-level learning. The next batch captures the newly synchronized model while retaining the selected harness recipe.</figcaption>
+  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-loop-mobile.svg" width="420" height="1450"><img src="/assets/synth-platform/learning-loop.svg" width="1000" height="740" alt="Repeated attempts produce task assessments and captured native model calls. Runtime joins these by originating trial and qualifies the experience before reward centering and learning-input construction. Task-group contributions supply forward and backward work, followed by the batch optimizer step, sampler and checkpoint." loading="lazy"></picture>
+  <figcaption id="learning-caption">Task outcomes and their generating evidence are separate records, joined before learning. Qualified task-group contributions accumulate into the batch update; the next batch uses the synchronized model with the same harness.</figcaption>
 </figure>
 
 The implemented path is GRPO-style LoRA training through Tinker. Tinker
@@ -657,7 +657,7 @@ and model-computation foundations where they fit.
   @media (max-width: 960px) {
     #learning-loop, #group-pipeline { width: 100%; position: static; transform: none; }
     #learning-loop picture, #group-pipeline picture { max-width: 480px; margin: 0 auto; }
-    #learning-loop img { aspect-ratio: 420 / 1240; }
+    #learning-loop img { aspect-ratio: 420 / 1450; }
     #group-pipeline img { aspect-ratio: 420 / 770; }
   }
   @media (max-width: 760px) {

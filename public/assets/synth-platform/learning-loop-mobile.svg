@@ -1,52 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1240" viewBox="0 0 420 1240" role="img" aria-labelledby="title desc">
-  <title id="title">The agent learning loop</title>
-  <desc id="desc">Capture the model and harness. Sample repeated task attempts; join task assessments to exact tokens and log probabilities; submit forward and backward contributions; apply the batch update; save a sampler and checkpoint; continue with the updated model and unchanged harness.</desc>
-  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#111"/></marker></defs>
-  <rect width="420" height="1240" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1450" viewBox="0 0 420 1450" role="img" aria-labelledby="title desc">
+  <title id="title">Joining task outcomes with captured native-agent experience</title>
+  <desc id="desc">Repeated attempts on one pinned task use the captured agent snapshot. Task assessments and actual native-call tokens are correlated to their originating trials and qualified before reward centering. Relative advantages and action-token inputs supply learning contributions. The batch optimizer step yields the next sampler and checkpoint, keeping the harness fixed.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#111"/></marker></defs>
+  <rect width="420" height="1450" fill="#fff"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111">
-    <text x="24" y="37" font-size="18" letter-spacing="1.4">THE LEARNING LOOP</text>
-    <text x="24" y="76" font-size="24" font-weight="700">Task outcomes become</text>
-    <text x="24" y="108" font-size="24" font-weight="700">model updates.</text>
-    <text x="24" y="144" font-size="18" fill="#555">Model S₀ + fixed harness H.</text>
-    <g fill="none" stroke="#111" stroke-width="1.4">
-      <rect x="24" y="178" width="354" height="130"/>
-      <rect x="24" y="353" width="354" height="145"/>
-      <rect x="24" y="543" width="354" height="130"/>
-      <rect x="24" y="718" width="354" height="110"/>
-      <rect x="24" y="873" width="354" height="110"/>
-      <rect x="24" y="1028" width="354" height="110"/>
-      <path d="M201 308V341" marker-end="url(#arrow)"/>
-      <path d="M201 498V531" marker-end="url(#arrow)"/>
-      <path d="M201 673V706" marker-end="url(#arrow)"/>
-      <path d="M201 828V861" marker-end="url(#arrow)"/>
-      <path d="M201 983V1016" marker-end="url(#arrow)"/>
-      <path d="M378 1083H399V243H389" marker-end="url(#arrow)"/>
+    <text x="30" y="32" font-size="14" letter-spacing="1">TASK EXPERIENCE → LEARNING</text>
+    <text x="30" y="70" font-size="23" font-weight="700">Outcomes meet their</text>
+    <text x="30" y="100" font-size="23" font-weight="700">generating evidence.</text>
+    <text x="30" y="132" font-size="17" fill="#555">Same S₀ + H for the current batch.</text>
+    <g fill="none" stroke="#111" stroke-width="1.5">
+      <rect x="50" y="160" width="320" height="145"/>
+      <path d="M210 305V332H112V349" marker-end="url(#arrow)"/>
+      <path d="M210 332H308V349" marker-end="url(#arrow)"/>
+      <rect x="25" y="360" width="175" height="190"/>
+      <rect x="220" y="360" width="175" height="190"/>
+      <path d="M112 550V586H210V609" marker-end="url(#arrow)"/>
+      <path d="M308 550V586H210"/>
+      <rect x="50" y="620" width="320" height="175"/>
+      <path d="M210 795V824" marker-end="url(#arrow)"/>
+      <rect x="50" y="835" width="320" height="125"/>
+      <path d="M210 960V1009" marker-end="url(#arrow)"/>
+      <rect x="50" y="1020" width="320" height="125"/>
+      <path d="M210 1145V1194" marker-end="url(#arrow)"/>
+      <rect x="50" y="1205" width="320" height="125"/>
+      <path d="M50 1268H12V232H39" marker-end="url(#arrow)"/>
     </g>
-    <text x="42" y="207" font-size="18" fill="#555">01 / SAMPLE THE AGENT</text>
-    <text x="42" y="240" font-size="20" font-weight="700">Repeated task attempts</text>
-    <text x="42" y="275" font-size="18">Agent + tools + environment</text>
-
-    <text x="42" y="382" font-size="18" fill="#555">02 / PREPARE LEARNING</text>
-    <text x="42" y="415" font-size="20" font-weight="700">Group-relative advantages</text>
-    <text x="42" y="448" font-size="18">Task assessments, exact tokens</text>
-    <text x="42" y="475" font-size="18">and behavior-policy logprobs</text>
-
-    <text x="42" y="572" font-size="18" fill="#555">03 / ACCUMULATE</text>
-    <text x="42" y="605" font-size="20" font-weight="700">Submit forward/backward</text>
-    <text x="42" y="640" font-size="18">Learning work for the batch</text>
-
-    <text x="42" y="747" font-size="18" fill="#555">04 / UPDATE</text>
-    <text x="42" y="780" font-size="20" font-weight="700">Ordered optimizer step</text>
-    <text x="42" y="809" font-size="18">After batch contributions</text>
-
-    <text x="42" y="902" font-size="18" fill="#555">05 / SAVE MODEL STATE</text>
-    <text x="42" y="935" font-size="20" font-weight="700">Sampler + checkpoint</text>
-    <text x="42" y="964" font-size="18">Usable saved model state</text>
-
-    <text x="42" y="1057" font-size="18" fill="#555">06 / CONTINUE</text>
-    <text x="42" y="1090" font-size="20" font-weight="700">New model S₁ + same H</text>
-    <text x="42" y="1119" font-size="18">Next batch or evaluation</text>
-    <text x="24" y="1182" font-size="18" fill="#555">One trajectory can contain many</text>
-    <text x="24" y="1208" font-size="18" fill="#555">generating model interactions.</text>
+    <g text-anchor="middle">
+      <text x="210" y="190" font-size="14" fill="#555">TASK GROUP</text>
+      <text x="210" y="224" font-size="20" font-weight="700">Repeated attempts</text>
+      <text x="210" y="255" font-size="18">One pinned task · S₀ + H</text>
+      <text x="210" y="285" font-size="17" fill="#555">Distinct trial identities</text>
+      <text x="112" y="391" font-size="13" fill="#555">ASSESSMENT</text>
+      <text x="112" y="430" font-size="19" font-weight="700">Task-level</text>
+      <text x="112" y="456" font-size="19" font-weight="700">outcome</text>
+      <text x="112" y="503" font-size="16">Verifier / judge</text>
+      <text x="308" y="391" font-size="13" fill="#555">NATIVE CALLS</text>
+      <text x="308" y="430" font-size="19" font-weight="700">Actual tokens</text>
+      <text x="308" y="470" font-size="16">Prompt + output</text>
+      <text x="308" y="497" font-size="16">token IDs</text>
+      <text x="308" y="524" font-size="16">+ logprobs</text>
+      <text x="210" y="650" font-size="14" fill="#555">JOIN + QUALIFY</text>
+      <text x="210" y="687" font-size="20" font-weight="700">Bind + validate</text>
+      <text x="210" y="719" font-size="18">Originating trial</text>
+      <text x="210" y="746" font-size="18">Reward + token evidence</text>
+      <text x="210" y="775" font-size="16" fill="#555">Before reward centering</text>
+      <text x="210" y="865" font-size="14" fill="#555">PREPARE LEARNING</text>
+      <text x="210" y="904" font-size="20" font-weight="700">Relative advantages</text>
+      <text x="210" y="936" font-size="18">Action-token inputs</text>
+      <text x="210" y="1050" font-size="14" fill="#555">MODEL COMPUTATION</text>
+      <text x="210" y="1089" font-size="20" font-weight="700">Forward / backward</text>
+      <text x="210" y="1121" font-size="18">Batch optimizer step</text>
+      <text x="210" y="1235" font-size="14" fill="#555">CONTINUE WITH SAME HARNESS</text>
+      <text x="210" y="1274" font-size="20" font-weight="700">Sampler + checkpoint</text>
+      <text x="210" y="1306" font-size="18">Next batch: S₁ + same H</text>
+    </g>
+    <text x="30" y="1390" font-size="17" fill="#555">An assessment alone is not</text>
+    <text x="30" y="1418" font-size="17" fill="#555">training evidence.</text>
   </g>
 </svg>
