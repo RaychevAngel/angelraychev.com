@@ -65,11 +65,13 @@ implicitly, an experiment can finish without telling us what improved.
 
 A **trial** is one attempt at a task; repeated attempts at that task form a
 **group**. A training batch selects groups for a shared update boundary. Model
-calls are retained as Interactions under a Session/trial identity, while the
-**sampler** selects the model state used to generate them. These units must not
+calls are retained as **Interactions**, linked to the Session and trial that
+produced them, while the **sampler** selects the model state used to generate
+them. These units must not
 be confused with tasks, tokens or gradient updates.
 
-For an authorized operator, the interface looks like this:
+The CLI calls the task-performing agent the **actor**. For an authorized
+operator, the interface looks like this:
 
 ```sh
 synth run start --dataset acme/evaluation@v1 --actor @agent.json --plan @eval-plan.json
@@ -114,14 +116,13 @@ Runtime joins those interactions to task assessments, submits valid gradient
 contributions, and publishes the next checkpoint and progress state. The CLI
 reads the same durable records during execution and after it finishes.
 
-Tinker supplies model computation and optimizer state. [Harbor](https://github.com/harbor-framework/harbor) supplies task and
-agent execution machinery; Daytona is one of the remote execution providers.
-The Runtime coordinates these systems. It does not implement a new GPU training
-engine, and a sandbox running an agent’s tools is not itself the model server.
-
-“Serverless” here describes the operator’s interface: submit work and inspect
-its durable result without provisioning the workers yourself. There are still
-services, capacity limits and infrastructure underneath it.
+Tinker supplies model computation and optimizer state. [Harbor](https://github.com/harbor-framework/harbor)
+supplies task and agent execution machinery; Daytona is one remote execution
+provider. My work connected those services into one inspectable learning loop,
+with explicit contracts for native-agent behavior, learning evidence, update
+ordering, durable publication and recovery. The operator-facing result is a
+serverless execution surface: submit work and inspect durable results without
+provisioning the workers.
 
 ## Native Claude Code with a supported open-weight model
 
@@ -394,29 +395,29 @@ and events, retrieve results, and find the checkpoints training actually produce
 The same run history explains evaluation and training without fabricating
 different identities for the same work.
 
-One Session export took roughly 88 seconds. Controlled comparisons between two
-API pods using the same image localized intermittent connection failures to
-one pod. Numeric-IP probes removed DNS, TLS, authentication and SQL from the
-reproduction. Replacing that one Dev pod with the same image mitigated the
-symptom; the exact exports returned in under two seconds. The deeper node or
-network cause remained unproven. Localizing the fault prevented an application
-or query rewrite from becoming the response to a lower-level network problem.
+A slow Session export showed why operating the platform mattered. Comparisons
+between two API pods running the same image localized intermittent connection
+failures to one pod. Numeric-IP probes reproduced the failure without DNS, TLS,
+authentication or SQL. Replacing that Dev pod with the same image mitigated the
+symptom: exports that had taken roughly 88 seconds returned in under two seconds.
+The deeper node or network cause remained unproven. The investigation supported
+a targeted mitigation and avoided an application or query rewrite in response
+to a lower-level fault.
 
 ## What actually ran
 
-The platform has real execution evidence, not only source and unit tests. These
-examples show different parts of it; they are not interchangeable benchmarks.
-The [structured evidence summary](/assets/synth-platform/execution-evidence.json)
-contains the selected counts and qualifications below. It is a redacted
-projection of retained records, not the native API schema or a raw log release.
+These retained runs show different parts of the system: a managed
+training-to-consumed-checkpoint path, a larger direct Runtime campaign, and
+managed evaluation with complete outcome accounting. The
+[structured evidence summary](/assets/synth-platform/execution-evidence.json)
+records their counts and qualifications in redacted form.
 
-These examples are not the total volume of work. Four selected July direct
-Runtime campaigns contain **21,500 distinct recorded rollout sessions**:
-17,300 training rollouts and 4,200 fresh evaluation attempts. This count was
-deduplicated by Session identity across the four campaigns. It includes failed
-and resumed work; repeated attempts are not unique tasks, and these are not
-21,500 customer submissions or successful solves. Their records distinguish
-executed updates, progress on a resumed policy lineage and saved checkpoints.
+Four selected July direct Runtime campaigns contain **21,500 distinct recorded
+rollout sessions**, deduplicated by Session identity: 17,300 training rollouts
+and 4,200 fresh evaluation attempts. This is a bounded sample, not a lifetime
+total. It includes failed and resumed work; it measures agent attempts rather
+than unique tasks or successful solves. Executed updates, progress on a resumed
+policy lineage and saved checkpoints are recorded separately.
 
 ### A managed training-to-checkpoint path
 
@@ -442,7 +443,7 @@ A retained July campaign records thirty batches and thirty optimizer updates,
 with 3,000 rollout records over 300 manifest entries: 2,023 trainable and 977
 excluded rollouts, producing 80,012 training datums. This was a direct
 Runtime/operator experiment, not the later Gateway-managed submission path.
-It used rank-1 LoRA adaptation of Qwen3.6-35B-A3B through Tinker and included
+It used rank-1 low-rank adaptation (LoRA) of Qwen3.6-35B-A3B through Tinker and included
 interruption and checkpoint recovery before its final batch. The model service
 provided the gradient computation; I built and operated the surrounding agent
 training system.
