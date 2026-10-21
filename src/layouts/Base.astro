@@ -1,8 +1,9 @@
 ---
-const { title, description, image, imageAlt, home = false } = Astro.props;
+const { title, description, image, imageAlt, home = false, ogType = "website" } = Astro.props;
 const NAME = "Angel Ivanov Raychev";
 const full = title ? `${title} — ${NAME}` : NAME;
 const previewImage = image ? new URL(image, "https://angelraychev.com").href : undefined;
+const canonicalUrl = new URL(Astro.url.pathname, "https://angelraychev.com").href;
 import "../styles/global.css";
 import "katex/dist/katex.min.css";
 import ThemeToggle from "../components/ThemeToggle.astro";
@@ -20,6 +21,8 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <title>{full}</title>
     {description && <meta name="description" content={description} />}
     <meta property="og:title" content={full} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
     {description && <meta property="og:description" content={description} />}
     {previewImage && <>
       <meta property="og:image" content={previewImage} />
@@ -30,7 +33,7 @@ import ThemeToggle from "../components/ThemeToggle.astro";
       <meta name="twitter:image" content={previewImage} />
       <meta name="twitter:image:alt" content={imageAlt ?? full} />
     </>}
-    <link rel="canonical" href={new URL(Astro.url.pathname, "https://angelraychev.com")} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title={NAME} href="/rss.xml" />
   </head>
   <body>
