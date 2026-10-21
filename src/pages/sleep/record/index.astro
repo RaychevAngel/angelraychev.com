@@ -85,7 +85,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
           <tr><th scope="row">Lowest heart rate</th><td>{s.lowest_heart_rate} bpm</td><td>Selected sleep episode</td></tr>
           <tr><th scope="row">Average respiratory rate</th><td>{s.average_breath.toFixed(1)} / min</td><td>Oura estimate during sleep</td></tr>
           <tr><th scope="row">Temperature deviation</th><td>{entry.oura.temperature_deviation_c.toFixed(2)} °C</td><td>Peripheral-temperature deviation from provider baseline; not core temperature</td></tr>
-          <tr><th scope="row">Average SpO₂</th><td>{entry.oura.spo2_average_percent.toFixed(1)}%</td><td>Provider daily sleep-oxygen summary</td></tr>
+          <tr><th scope="row">Average SpO₂</th><td>{entry.oura.spo2_average_percent == null ? "Unavailable" : `${entry.oura.spo2_average_percent.toFixed(1)}%`}</td><td>{entry.oura.spo2_status || "Provider daily sleep-oxygen summary"}</td></tr>
           <tr><th scope="row">Breathing disturbance index</th><td>{entry.oura.breathing_disturbance_index}</td><td>Provider index; not a clinical apnea–hypopnea index</td></tr>
           <tr><th scope="row">Readiness score</th><td>{entry.oura.readiness_score} / 100</td><td>Separate composite, not a second sleep score</td></tr>
           <tr><th scope="row">Sleep latency</th><td>{minutes(s.latency)}</td><td>Provider estimate within selected episode</td></tr>

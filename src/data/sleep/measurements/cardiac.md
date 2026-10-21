@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-20"
+updated: "2026-10-21"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -56,6 +56,10 @@ This follows reported stressful activity before bed, with sleep described as oka
 On [October 20](/sleep/record/#night-2026-10-20), Oura mean sleeping HR was **47 bpm**, minimum **43**, and average sleep HRV **70 ms**. COROS official sleep HRV was **71 ms**, labeled **Above normal** against its returned **47–69 ms range and 58 ms baseline**. Its daily snapshot averaged 52 bpm with minimum 42; predicted seated resting HR was 49. These scopes remain distinct. Firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval.
 
 The diary describes okay-ish sleep, many brief remembered awakenings and plentiful dreams. High HRV and a lower sleeping pulse do not erase that experience or establish complete recovery. The follow-up reports waking around 09:30 feeling super sleepy, then an unsuccessful 5–10-minute attempt to sleep more. A second follow-up clarifies feeling normal within 10–15 minutes; sustained later-day function remains unreported. No snoring or breathing symptoms were known to the user, which is not a negative clinical test. The reported roughly 5½-hour meal gap and unquantified later sips have not been isolated as explanations for the measurements.
+
+## October 21: fewer remembered awakenings, different cardiac summaries
+
+On [October 21](/sleep/record/#night-2026-10-21), Oura returned mean sleeping HR **50.125 bpm**, minimum **46**, and HRV **62 ms**. COROS official sleep HRV was **63 ms, Normal**, against its returned **48–68 ms range and 58 ms baseline**. Its daily HR snapshot averaged 52 bpm with minimum 44; predicted seated resting HR was 52. These are distinct scopes. HRV fell from 70/71 ms while the diary reports fewer awakenings and sleepiness clearing within 10–15 minutes. That combination does not establish a loss of recovery or make either metric a verdict on experienced sleep.
 
 ## How much confidence is justified?
 

@@ -1,13 +1,17 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-20"
+updated: "2026-10-21"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**21 October 2026 — fewer remembered awakenings, still several.** Bed around 00:10 and final waking around 10:15 were approximate diary times. I felt sleepy initially, then normal within 10–15 minutes. Last food around 19:00–20:00 gives roughly 4h10m–5h10m before bed. No water timing, bathroom trips, exercise, stress or other routine changes were specified for this night.
+
+The [record](/sleep/record/#night-2026-10-21) retains Oura **90 / 9h09m30s asleep / 34m58s awake** and COROS **91 / 9h33m asleep / six minutes awake**. Oura restfulness fell 88 → 85 despite fewer recalled awakenings; its efficiency estimate remained 94%. Remembered waking frequency, total estimated awake duration and the restfulness grade remain separate. The shorter meal interval than some earlier nights is another observation, not a controlled result for food timing. Keep adequate opportunity, comfort and sustained daytime function in the next comparison; no new meal or liquid cutoff is adopted.
 
 **20 October 2026 — okay-ish sleep with many brief awakenings; Oura 92, COROS 89.** Last food was around 18:30 and bedtime around midnight, a roughly 5½-hour interval using approximate reported times. Lights went down approaching sleep. Water sips continued during the intervening hours, described as not much, without a quantified volume or final time. I remembered many short awakenings to turn or make small adjustments and dreamed a lot. The follow-up reports waking around **09:30** feeling **super sleepy**, a **5–10-minute** unsuccessful attempt to sleep more, then deciding to get up. No awakening led to a bathroom trip. I estimated the short episodes at **under 30 seconds** and suspected dreams as triggers, without a timed sequence establishing causation. A second follow-up clarifies feeling normal within **10–15 minutes**, vivid dream recall, and no awareness of snoring, choking/gasping or observed breathing pauses. Exact out-of-bed time and sustained later-day experience remain unreported. No new stress/exercise report was supplied; earlier-night details are not assumed repeated.
 

@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-20"
+updated: "2026-10-21"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -32,6 +32,8 @@ The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 
 This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
+
+The latest [October 21 record](/sleep/record/#night-2026-10-21) returned **Oura 90 / COROS 91**. Oura contributors were total sleep **99**, deep **98**, REM **88**, efficiency **99**, restfulness **85**, latency **86** and timing **56**. Oura’s score fell 92 → 90 and restfulness 88 → 85 while the diary reports fewer awakenings; COROS rose 89 → 91. Both estimated longer sleep and slightly less waking. This keeps improvement in remembered continuity separate from improvement in a provider grade. Nine recorded dates do not meet the existing sustained assessment windows.
 
 The third night reversed part of the tradeoff: Oura's score fell to 71 while restfulness rose to 92 and timing to 78. Total-sleep grading was 51 and REM 30; COROS scored 80. The main episode was shorter, although I felt much better on waking. A score decline does not erase that positive experience, and a positive experience does not establish sufficient duration. [October 15 record](/sleep/record/#night-2026-10-15).
 

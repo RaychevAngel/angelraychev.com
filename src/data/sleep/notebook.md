@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-20"
+updated: "2026-10-21"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,10 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+The [night ending 21 October](/sleep/record/#night-2026-10-21) brought **fewer remembered awakenings, though still several**. I reported bed around **00:10**, final waking around **10:15**, and initial sleepiness clearing within **10–15 minutes**. Last food was around **19:00–20:00**, roughly 4h10m–5h10m before bed. Water timing, bathroom trips and other routine changes remain unreported.
+
+Oura returned **90**, with **9h09m30s asleep and 34m58s awake**; COROS returned **91**, with **9h33m asleep and six minutes awake**. Both estimated more sleep and slightly less waking than October 20. Oura’s restfulness grade nevertheless fell **88 → 85** and timing **66 → 56**; the remembered improvement and lower grade describe different observations. HRV was **62/63 ms**, with COROS labeling its own value Normal. Oura’s unusable 0% oxygen average is marked unavailable. The next comparison retains experienced continuity and later-day function alongside the grades; nine dates do not establish a sustained milestone.
 
 The [night ending 20 October](/sleep/record/#night-2026-10-20) returned **Oura 92, the highest recorded so far, and COROS 89**. I described sleep as **okay-ish**, with many brief awakenings to turn or make small adjustments, and plentiful dreams. Last food was around **18:30**, bedtime around **midnight**, with lights down approaching sleep and small, unquantified water sips during the intervening hours. The follow-up reports waking around **09:30**, feeling **super sleepy**, and trying unsuccessfully to sleep more for **5–10 minutes** before deciding to get up. None of the awakenings led to a bathroom trip. I estimated the short wake episodes at **under 30 seconds** and suspected dreams were probably waking me; that remains a hypothesis. A second follow-up clarifies feeling normal within **10–15 minutes**; sustained later-day experience remains unreported. I am unaware of snoring or breathing symptoms. I find COROS closer to the timing of awake periods, but Oura probably closer to total awake time—a subjective graph comparison, without independent verification.
 
