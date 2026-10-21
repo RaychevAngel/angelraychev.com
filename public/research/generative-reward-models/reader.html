@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Scaling Laws for Generative Reward Models — manuscript reader</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e8e8e8;color:#151515;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+    nav{position:sticky;top:0;z-index:1;background:#fff;border-bottom:1px solid #ccc;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:10px}
+    button,input,select{font:inherit;border:1px solid #aaa;border-radius:0;background:white;color:inherit;padding:5px 8px;min-height:34px}
+    button{cursor:pointer}button:disabled{opacity:.45;cursor:default}input{width:56px}a{color:inherit;text-underline-offset:3px}
+    #viewport{padding:12px;overflow:auto;min-height:400px}canvas{display:block;background:white;margin:auto;box-shadow:0 1px 5px #0002}#status{padding:8px;text-align:center;margin:0;color:#555}
+    @media(max-width:420px){nav{gap:5px;padding:7px}button,select{padding:5px}#viewport{padding:6px}}
+  </style>
+</head>
+<body>
+  <nav aria-label="Manuscript controls">
+    <button id="prev" disabled aria-label="Previous page">←</button>
+    <label>Page <input id="page" type="number" value="1" min="1" aria-label="Page number" disabled></label>
+    <span id="total">/ …</span>
+    <button id="next" disabled aria-label="Next page">→</button>
+    <select id="zoom" aria-label="Zoom" disabled><option value="fit">Fit width</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select>
+    <a href="./scaling-laws-for-generative-reward-models.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+  </nav>
+  <p id="status" role="status" aria-live="polite">Loading manuscript…</p>
+  <div id="viewport"><canvas id="paper" role="img" aria-label="Manuscript page"></canvas></div>
+  <noscript><p>JavaScript is required for this reader. <a href="./scaling-laws-for-generative-reward-models.pdf">Read the PDF directly.</a></p></noscript>
+  <script type="module">
+    import * as pdfjs from './pdf.mjs';
+    pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.mjs';
+    const prev=document.getElementById('prev'),next=document.getElementById('next'),input=document.getElementById('page'),zoom=document.getElementById('zoom'),total=document.getElementById('total'),status=document.getElementById('status'),canvas=document.getElementById('paper'),viewport=document.getElementById('viewport');
+    let pdf,current=1,busy=false,pending=false;
+    const controls=()=>{prev.disabled=busy||current<=1;next.disabled=busy||current>=pdf.numPages;input.disabled=busy;zoom.disabled=busy;};
+    async function render(){
+      if(!pdf)return;
+      if(busy){pending=true;return;}
+      busy=true;controls();
+      try{
+        const page=await pdf.getPage(current),base=page.getViewport({scale:1});
+        const scale=zoom.value==='fit'?Math.max(.2,(viewport.clientWidth-24)/base.width):Number(zoom.value);
+        const view=page.getViewport({scale}),pixelRatio=Math.min(window.devicePixelRatio||1,2);
+        canvas.width=Math.floor(view.width*pixelRatio);canvas.height=Math.floor(view.height*pixelRatio);
+        canvas.style.width=`${Math.floor(view.width)}px`;canvas.style.height=`${Math.floor(view.height)}px`;
+        canvas.setAttribute('aria-label',`Page ${current} of ${pdf.numPages}: Scaling Laws for Generative Reward Models`);
+        await page.render({canvasContext:canvas.getContext('2d'),viewport:view,transform:pixelRatio===1?null:[pixelRatio,0,0,pixelRatio,0,0]}).promise;
+        input.value=current;status.textContent=`Page ${current} of ${pdf.numPages}`;
+      }catch(error){status.textContent='The reader could not render this page. Use “Open PDF” above.';console.error(error);}
+      finally{busy=false;controls();if(pending){pending=false;render();}}
+    }
+    prev.addEventListener('click',()=>{if(current>1){current--;render();}});
+    next.addEventListener('click',()=>{if(current<pdf.numPages){current++;render();}});
+    input.addEventListener('change',()=>{current=Math.max(1,Math.min(pdf.numPages,Math.floor(Number(input.value)||1)));render();});
+    zoom.addEventListener('change',render);
+    let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(render,100);});
+    try{pdf=await pdfjs.getDocument({url:'./scaling-laws-for-generative-reward-models.pdf',isEvalSupported:false}).promise;total.textContent=`/ ${pdf.numPages}`;input.max=pdf.numPages;await render();}
+    catch(error){status.textContent='The manuscript could not load. Use “Open PDF” above.';console.error(error);}
+  </script>
+</body>
+</html>

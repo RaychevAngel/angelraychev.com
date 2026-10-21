@@ -1,0 +1,13 @@
+{
+  "title": "Scaling Laws for Generative Reward Models",
+  "authors": ["Angel Raychev", "Nathan Lile", "Rafael Rafailov"],
+  "publication_date": "2026-10-21",
+  "status": "research_manuscript",
+  "arxiv_id": null,
+  "pages": 28,
+  "pdf": "scaling-laws-for-generative-reward-models.pdf",
+  "sha256": "c4af5a246c19f110d3286005603cf044d055826fccae876c1b5d5cc98ae1fa9c",
+  "reader": "reader.html",
+  "pdfjs_version": "5.6.205",
+  "pdfjs_license": "Apache-2.0"
+}
