@@ -481,7 +481,7 @@ authorized storage and a useful inspection surface.
 Gateway resolves the dataset, actor and optional judge, checks their authority,
 and pins the accepted specification. I made acceptance one database transaction
 containing the run, immutable specification and authoritative creation event.
-Exact submission retries return that accepted identity. Workers can claim the
+An exact retry with the same idempotency key returns that accepted identity. Workers can claim the
 job only after its execution prerequisites are durably ready. Organization-level
 admission governs jobs; Runtime admits the actual task resources within each job.
 

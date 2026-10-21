@@ -532,6 +532,7 @@ the worker and the assessment without rebuilding the entire system each time.
   .historical-source-note p { margin: 14px 0 4px; }
   @media (max-width: 760px) {
     .specialist-wide { width: 100%; position: static; transform: none; }
+    .specialist-wide picture { max-width: 480px; margin: 0 auto; }
     .factory-headings { display: none; }
     .factory-route { grid-template-columns: 1fr; padding: 18px 0; gap: 6px; }
     .factory-route > b { transform: rotate(90deg); line-height: 1; }
