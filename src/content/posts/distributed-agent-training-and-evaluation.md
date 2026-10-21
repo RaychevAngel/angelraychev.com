@@ -11,11 +11,6 @@ profile and a plan. The platform executes the work in remote environments,
 assesses the results and can train a supported model from the agent’s actual
 interactions. The resulting checkpoint returns to the same native harness.
 
-<figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
-  <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
-  <figcaption id="architecture-caption">The platform’s principal control, execution and learning paths. Native agents and tools work in remote task environments; model providers perform inference and training computation. <a href="#the-system-underneath">Architecture explained below.</a></figcaption>
-</figure>
-
 My work spanned the Python RL Runtime, a Go CLI and agent launcher, native model
 adapters, an authenticated control plane, and the storage and cloud
 infrastructure connecting them. Repository-level software engineering was a
@@ -27,6 +22,11 @@ ML workload: preserve its tools and harness, control its model state, learn from
 its behavior, and expose the whole process as a reusable managed system.
 
 <nav class="platform-contents" aria-label="In this article"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></nav>
+
+<figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
+  <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
+  <figcaption id="architecture-caption">The platform’s principal control, execution and learning paths. Native agents and tools work in remote task environments; model providers perform inference and training computation. <a href="#the-system-underneath">Architecture explained below.</a></figcaption>
+</figure>
 
 ## The experiment is the interface
 
