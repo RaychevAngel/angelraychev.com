@@ -234,7 +234,7 @@ saved agent profile or submitting a managed experiment.
 
 Here, Claude Code is the native harness and speaks Anthropic’s Messages
 protocol. The models behind Synth may have different tokenizers, chat templates, tool-call grammars,
-reasoning formats and streaming behavior. Supporting them requires a
+reasoning formats and response framing. Supporting them requires a
 model-aware compatibility layer.
 
 The adapter renders the conversation and tool definitions using the model’s
@@ -484,6 +484,11 @@ containing the run, immutable specification and authoritative creation event.
 An exact retry with the same idempotency key returns that accepted identity. Workers can claim the
 job only after its execution prerequisites are durably ready. Organization-level
 admission governs jobs; Runtime admits the actual task resources within each job.
+
+For profile-based jobs, claim admission checks the required profile and
+optional-judge contracts against advertised worker support, and separately
+checks the authorized sandbox provider. Runtime independently validates the
+pinned job before downloading task inputs or creating a sandbox.
 
 The customer identity, worker service identity and authority for an individual
 attempt are distinct. Workers claim accepted work and receive scoped execution
