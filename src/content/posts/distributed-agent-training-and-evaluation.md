@@ -268,10 +268,12 @@ response does not replace the original tokens with a new tokenization.
 
 A displayed transcript is not a complete substitute. Chat templates, tool
 syntax, reasoning and tokenization affect what the model actually saw and
-generated. The harness can also change the context supplied to a later call.
-Per-call capture preserves those inputs, so the learning path follows the
-contexts the harness used without assuming that every prompt contains the full
-displayed history.
+generated. The harness can compact earlier conversation; separately, the Proxy
+can fit oversized tool results and expanded skill content to the selected
+model's prompt budget, using explicit omission markers. Per-call capture
+preserves the effective input actually submitted for sampling, so learning
+follows the contexts used rather than assuming that every prompt contains the
+full displayed history.
 
 ### Separate serving from evidence publication
 
