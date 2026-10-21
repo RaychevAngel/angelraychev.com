@@ -89,10 +89,14 @@ For example, an engineer developing a repository-specific coding agent can:
 An authorized operator works with commands such as:
 
 ```sh
-synth run start --dataset team/evaluation@v1 \
-  --actor @agent.json --plan @eval-plan.json
-synth train start --dataset team/practice@v1 \
-  --actor @agent.json --plan @train-plan.json
+synth run start \
+  --dataset team/evaluation@v1 \
+  --actor @agent.json \
+  --plan @eval-plan.json
+synth train start \
+  --dataset team/practice@v1 \
+  --actor @agent.json \
+  --plan @train-plan.json
 synth run show <run-id>
 synth run events <run-id> --follow
 synth run checkpoints <run-id>
@@ -190,8 +194,8 @@ harness use a supported backend model while preserving that execution model.
 In the managed native path, delegated agents inherit the selected model and
 scoped inference route rather than silently switching to an unrelated policy.
 
-For Claude Code, the harness speaks Anthropic’s Messages protocol. The models
-behind Synth may have different tokenizers, chat templates, tool-call grammars,
+Here, Claude Code is the native harness and speaks Anthropic’s Messages
+protocol. The models behind Synth may have different tokenizers, chat templates, tool-call grammars,
 reasoning formats and streaming behavior. Supporting them requires a
 model-aware compatibility layer.
 
