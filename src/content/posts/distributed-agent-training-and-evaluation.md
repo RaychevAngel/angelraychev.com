@@ -304,16 +304,15 @@ Runtime calls this a sampling group. Its attempts share an effective model
 snapshot. In the profile-based path, the accepted run also pins the executable
 harness recipe.
 
-Multiple groups can execute concurrently. Each attempt gets an isolated task
-environment and a stable correlation identity connecting its execution,
-assessment, artifacts and model interactions. The runner handles the
-Harbor/environment lifecycle; the agent performs the work inside it.
+Multiple groups can execute concurrently. In the profile-based path, a Runtime
+worker coordinates an accepted run and fans its independent attempts out to
+isolated remote task environments. Each attempt has a stable correlation
+identity connecting its execution, assessment, artifacts and model interactions.
+The runner handles the Harbor/environment lifecycle; the agent performs the
+work inside it.
 
-In the profile-based execution path, a Runtime worker coordinates an accepted
-run and fans its independent attempts out to remote task environments. Model
-inference and training run in separate computation services. The work is
-distributed across those environments and services; the worker coordinates the
-experiment’s state and results.
+Model inference and training run in separate computation services. The worker
+coordinates state and results across those execution and model-computation paths.
 
 This core supports three uses:
 
@@ -351,15 +350,14 @@ model-computation throughput remain separate controls.
 
 ## From experience to learning
 
-The training path turns scored agent experience into model updates. In the
-group-relative setup, Runtime samples several attempts at the same task from
-the same agent snapshot. Their assessed outcomes provide a relative learning
-signal for that task.
+Training needs both the task outcome and the native model interactions that
+produced it. A task assessment belongs to a complete attempt; the individual
+generating calls supply the token-level learning inputs. Each attempt can
+contain many model calls and tool interactions.
 
-For a coding task, one attempt may produce a correct repair and another may
-produce a partial solution. Each attempt can contain many model calls and tool
-interactions. The task assessment belongs to the trajectory as a whole; the
-individual generating interactions supply the token-level learning inputs.
+In the group-relative setup, Runtime samples several attempts at the same task
+from the same agent snapshot. Their assessed outcomes provide a relative
+learning signal for that task.
 
 <figure class="platform-figure platform-wide" id="learning-loop" aria-labelledby="learning-caption">
   <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-join-mobile-f0093165739a.svg" width="420" height="1450"><img src="/assets/synth-platform/learning-join-desktop-7b322f009a27.svg" width="1000" height="740" alt="Repeated attempts produce task assessments and captured native model calls. Runtime joins these by originating trial and qualifies the experience before reward centering and learning-input construction. Task-group contributions supply forward and backward work, followed by the batch optimizer step, sampler and checkpoint." loading="lazy"></picture>
