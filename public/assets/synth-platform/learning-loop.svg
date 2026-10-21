@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">From native agent experience to a usable model checkpoint</title>
+  <desc id="desc">One batch captures a model and harness snapshot. Repeated task attempts produce assessments and native model interactions. Runtime joins this evidence into group-relative learning inputs, submits forward and backward work, performs the batch update, and saves a sampler and checkpoint. The next batch uses the updated model with the same harness.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#111"/></marker></defs>
+  <rect width="1000" height="620" fill="#fff"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111">
+    <text x="40" y="42" font-size="14" letter-spacing="1.7">THE LEARNING LOOP</text>
+    <text x="40" y="79" font-size="25" font-weight="700">Task outcomes become model updates.</text>
+    <text x="40" y="109" font-size="16" fill="#555">One captured model S₀ and harness H for the batch.</text>
+
+    <g fill="none" stroke="#111" stroke-width="1.5">
+      <rect x="40" y="150" width="250" height="188"/>
+      <rect x="370" y="150" width="260" height="188"/>
+      <rect x="710" y="150" width="250" height="188"/>
+      <rect x="710" y="420" width="250" height="126"/>
+      <rect x="370" y="420" width="260" height="126"/>
+      <rect x="40" y="420" width="250" height="126"/>
+      <path d="M290 243H359" marker-end="url(#arrow)"/>
+      <path d="M630 243H699" marker-end="url(#arrow)"/>
+      <path d="M835 338V409" marker-end="url(#arrow)"/>
+      <path d="M710 483H641" marker-end="url(#arrow)"/>
+      <path d="M370 483H301" marker-end="url(#arrow)"/>
+      <path d="M40 483H20V243H29" marker-end="url(#arrow)"/>
+    </g>
+
+    <text x="60" y="180" font-size="13" fill="#555">01 / SAMPLE THE AGENT</text>
+    <text x="60" y="213" font-size="18" font-weight="700">Repeated attempts</text>
+    <g stroke="#888" fill="#f5f5f5"><rect x="60" y="238" width="58" height="38"/><rect x="128" y="238" width="58" height="38"/><rect x="196" y="238" width="58" height="38"/></g>
+    <g font-size="16" text-anchor="middle"><text x="89" y="263">1</text><text x="157" y="263">2</text><text x="225" y="263">N</text></g>
+    <text x="60" y="309" font-size="16" fill="#555">Agent + tools</text>
+
+    <text x="390" y="180" font-size="13" fill="#555">02 / PREPARE LEARNING</text>
+    <text x="390" y="213" font-size="18" font-weight="700">Prepare learning</text>
+    <text x="390" y="247" font-size="16">Task assessments</text>
+    <text x="390" y="273" font-size="16">Tokens + logprobs</text>
+    <text x="390" y="309" font-size="16" fill="#555">Relative advantages</text>
+
+    <text x="730" y="180" font-size="13" fill="#555">03 / ACCUMULATE</text>
+    <text x="730" y="213" font-size="18" font-weight="700">Forward / backward</text>
+    <text x="730" y="247" font-size="16">Batch contributions</text>
+    <text x="730" y="273" font-size="16">from task groups</text>
+    <text x="730" y="309" font-size="16" fill="#555">Model computation</text>
+
+    <text x="730" y="450" font-size="13" fill="#555">04 / UPDATE</text>
+    <text x="730" y="483" font-size="18" font-weight="700">Optimizer step</text>
+    <text x="730" y="517" font-size="16" fill="#555">One update boundary</text>
+
+    <text x="390" y="450" font-size="13" fill="#555">05 / SAVE MODEL STATE</text>
+    <text x="390" y="483" font-size="18" font-weight="700">Sampler + checkpoint</text>
+    <text x="390" y="517" font-size="16" fill="#555">Usable saved model state</text>
+
+    <text x="60" y="450" font-size="13" fill="#555">06 / CONTINUE</text>
+    <text x="60" y="483" font-size="18" font-weight="700">New S₁ + same H</text>
+    <text x="60" y="517" font-size="16" fill="#555">Next batch / evaluation</text>
+
+    <text x="40" y="588" font-size="15" fill="#555">One trajectory can contain many model calls, each with its actual sampled-token evidence.</text>
+  </g>
+</svg>

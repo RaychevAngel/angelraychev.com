@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Preserve the native agent while adapting the model protocol</title>
+  <desc id="desc">A native harness sends its conversation, thinking and tool definitions to a model-specific template and tokenizer. A sampling backend produces tokens, and a model-specific parser reconstructs the response expected by the harness. Tool actions execute in the task sandbox, not in Proxy. Exact prompt token IDs, sampled output token IDs and their log probabilities branch into learning evidence. This depicts supported token-evidence routes, not universal model or tool compatibility.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker>
+  </defs>
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px;font-weight:400}.small{font-size:17px;fill:#444}.heading{font-size:19px;font-weight:500}
+    .node{fill:#fff;stroke:#222;stroke-width:1.5}.boundary{fill:none;stroke:#999;stroke-width:1.1}.flow{fill:none;stroke:#222;stroke-width:1.8;marker-end:url(#arrow)}.both{marker-start:url(#arrow)}.data{fill:none;stroke:#555;stroke-width:2;stroke-dasharray:2 7;stroke-linecap:round;marker-end:url(#arrow)}
+  </style>
+  <rect width="1000" height="470" fill="#fff"/>
+  <text x="32" y="32" class="heading">NATIVE HARNESS · MODEL-SPECIFIC PROTOCOL</text>
+  <rect class="boundary" x="32" y="71" width="250" height="280"/>
+  <text x="157" y="100" text-anchor="middle" class="small">TASK SANDBOX</text>
+  <rect class="node" x="52" y="126" width="210" height="88"/>
+  <text x="157" y="162" text-anchor="middle" class="heading">Claude Code</text>
+  <text x="157" y="190" text-anchor="middle" class="small">context + tools</text>
+  <path class="flow both" d="M157 214 V269"/>
+  <rect class="node" x="52" y="269" width="210" height="72"/>
+  <text x="157" y="297" text-anchor="middle">Tools</text>
+  <text x="157" y="324" text-anchor="middle">+ filesystem</text>
+
+  <text x="336" y="100" class="small">PROXY</text>
+  <rect class="node" x="336" y="126" width="246" height="88"/>
+  <text x="459" y="160" text-anchor="middle" class="heading">Template + tokenizer</text>
+  <text x="459" y="190" text-anchor="middle" class="small">selected model grammar</text>
+  <path class="flow" d="M262 170 H336"/>
+  <text x="299" y="154" text-anchor="middle" class="small">request</text>
+
+  <path class="flow" d="M582 170 H682"/>
+  <text x="632" y="153" text-anchor="middle" class="small">token IDs</text>
+  <rect class="node" x="682" y="126" width="286" height="88"/>
+  <text x="825" y="161" text-anchor="middle" class="heading">Sampling backend</text>
+  <text x="825" y="190" text-anchor="middle" class="small">Tinker / Fireworks</text>
+
+  <path class="flow" d="M825 214 V299 H582"/>
+  <text x="705" y="280" class="small">sampled tokens</text>
+  <rect class="node" x="336" y="269" width="246" height="60"/>
+  <text x="459" y="294" text-anchor="middle">Model-specific</text>
+  <text x="459" y="318" text-anchor="middle">parser</text>
+  <path class="flow" d="M336 299 H300 V190 H262"/>
+  <text x="459" y="355" text-anchor="middle" class="small">thinking · text · tools</text>
+
+  <path class="data" d="M632 170 V404 H682"/>
+  <path class="data" d="M825 299 V360"/>
+  <circle cx="632" cy="170" r="3" fill="#222"/>
+  <circle cx="825" cy="299" r="3" fill="#222"/>
+  <rect class="node" x="682" y="360" width="286" height="88"/>
+  <text x="825" y="390" text-anchor="middle" class="heading">Learning evidence</text>
+  <text x="825" y="417" text-anchor="middle" class="small">prompt + output IDs</text>
+  <text x="825" y="439" text-anchor="middle" class="small">sample log probabilities</text>
+  <text x="32" y="400" class="small">Tool actions stay in the sandbox.</text>
+  <text x="32" y="429" class="small">The recorded sample supplies the evidence.</text>
+</svg>

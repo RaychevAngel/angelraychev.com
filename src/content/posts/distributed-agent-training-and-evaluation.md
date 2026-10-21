@@ -1,528 +1,566 @@
 ---
 title: "Building a distributed platform for agent training and evaluation"
-description: "The architecture and engineering behind SynthLabs’ agent platform: native harnesses, exact training evidence, distributed execution, model updates and reusable agent profiles."
+description: "How I built SynthLabs’ agent-learning platform: reusable agents, distributed task execution, native model integration, reinforcement learning and managed cloud infrastructure."
 updated: 2026-10-20
 ---
 
-At SynthLabs, I designed and built a distributed platform for evaluating and
-training tool-using agents. An operator supplies tasks, an agent configuration
-and a plan; the service runs isolated trials, retains their evidence,
-coordinates model updates and exposes checkpoints usable through the same
-native agent. My work connected the Go CLI, authenticated control plane,
-sandbox runtime, inference proxy, storage contracts and cloud delivery.
+At SynthLabs, I designed and built a distributed platform for running,
+evaluating and training tool-using agents, used in campaigns involving tens of
+thousands of agent attempts. An operator supplies tasks, a reusable agent
+profile and a plan. The platform executes the work in remote environments,
+assesses the results and can train a supported model from the agent’s actual
+interactions. The resulting checkpoint returns to the same native harness.
 
-That sounds straightforward until the agent runs for twenty minutes, makes
-dozens of model calls, uses tools, encounters infrastructure failures, and
-finishes while other trials are still running. Now a training example is not a
-row in a dataset. It is the result of a distributed computation whose model,
-inputs, actions, assessment and failure state must still agree.
-
-We deployed and exercised that loop internally. Four retained July campaigns
-alone contain 21,500 distinct recorded rollout sessions. A later controlled
-managed run went from CLI submission through scored Harbor trials, two optimizer
-updates, checkpoint publication and subsequent inference. These are different
-execution paths; their evidence and limits are described [below](#what-actually-ran).
-
-I drove this work with the SynthLabs team, using coding agents extensively.
-Native Claude Code, Harbor, sandbox providers and Tinker supplied the agent,
-execution and model-computation foundations.
-
-**Status:** deployed and exercised internally in the development environment;
-not generally available. Public [documentation](https://synthlabs.mintlify.app/)
-and [CLI releases](https://github.com/SynthLabsAI/synth-releases/releases) make
-the interface inspectable; managed execution requires authorized access.
-
-*[Architecture](#architecture-control-execution-inference-and-learning) ·
-[Learning loop](#a-rollout-is-not-yet-training-data) ·
-[Agent profiles](#preserve-the-agent-not-just-the-model-name) ·
-[Distributed state](#distributed-authority-and-data-custody) ·
-[Execution evidence](#what-actually-ran)*
-
-## What the platform makes possible
-
-An operator supplies work, an agent and an execution plan. They do not have to
-assemble a new collection of sandbox scripts, inference credentials, trajectory
-exporters and training jobs for each experiment.
-
-The same underlying machinery supports three different purposes:
-
-- **Execution:** perform the work and collect outputs, possibly without scoring.
-- **Evaluation:** hold the agent setup fixed, repeat the work, and retain the
-  outcomes and assessments needed to compare it with another setup.
-- **Training:** collect scored experience, construct valid learning examples,
-  update a supported model and advance the sampler used by subsequent work.
-
-For example, a July training campaign used repository-level software-engineering
-tasks from [R2E-Gym](https://github.com/R2E-Gym/R2E-Gym) on public Python projects
-including pandas, NumPy and aiohttp. The task packages supplied pinned execution
-environments and task-specific tests. The Runtime handled repeated agent
-attempts, their assessments and the evidence needed for learning around them.
-
-Those operations should share execution infrastructure without becoming the
-same operation. Evaluation does not need to export every trajectory for
-gradient computation. Training needs substantially more than a successful task
-result and a number called `reward`.
-
-This separation also lets us ask a useful question: **what changed the agent?**
-We can change its instructions, tools or context without changing its weights.
-We can train a new checkpoint while holding the harness fixed. Or we can change
-the tasks and assessment deliberately. If those changes are mixed together
-implicitly, an experiment can finish without telling us what improved.
-
-A **trial** is one attempt at a task; repeated attempts at that task form a
-**group**. A training batch selects groups for a shared update boundary. Model
-calls are retained as **Interactions**, linked to the Session and trial that
-produced them, while the **sampler** selects the model state used to generate
-them. These units must not be confused with tasks, tokens or gradient updates.
-
-The CLI calls the task-performing agent the **actor**. For an authorized
-operator, the interface looks like this:
-
-```sh
-synth run start --dataset acme/evaluation@v1 --actor @agent.json --plan @eval-plan.json
-synth train start --dataset acme/practice@v1 --actor @agent.json --plan @train-plan.json
-synth run show <run-id>
-synth run checkpoints <training-run-id>
-synth checkpoint show <checkpoint-id>
-```
-
-These illustrate the documented interface, not commands executed for this
-article. The example references must be replaced with accessible dataset
-versions, prepared profiles and plans; training also needs a supported model
-configuration. Submission returns the run identity used by the inspection
-commands. Adding `--dry-run` previews a submission without starting the work.
-
-## Architecture: control, execution, inference and learning
-
-The platform is split into components with different responsibilities.
-
-| Component | Responsibility |
-| --- | --- |
-| `synth` | The operator-facing CLI: authentication, tasks, agent profiles, submission, inspection, artifacts and checkpoints. |
-| `sprite-gateway` | The authenticated control plane: customer scope, accepted specifications, durable identities, admission and customer readback. |
-| `agent-rl-runtime` | Remote trial orchestration, evaluation, evidence qualification, training coordination and recoverable progress. |
-| `managed-agent-proxy` | Supported model routing, native-agent protocol adaptation and faithful interaction evidence. |
-| PostgreSQL and object storage | Durable relational authority and large immutable payloads, with explicit publication between them. |
-| Kubernetes/Helm and sandbox providers | Service delivery, worker lifecycle, resource admission and isolated task execution. |
-
-<figure id="platform-architecture" class="platform-architecture" aria-labelledby="platform-architecture-caption">
-  <div class="platform-lane"><strong>Control</strong><p><span>synth CLI</span><b aria-hidden="true">↔</b><span>Gateway</span><b aria-hidden="true">↔</b><span>Runtime</span></p></div>
-  <div class="platform-lane"><strong>Task execution</strong><p><span>Runtime</span><b aria-hidden="true">→</b><span>Harbor</span><b aria-hidden="true">→</b><span>Agent + tools in sandbox</span></p></div>
-  <div class="platform-lane"><strong>Inference</strong><p><span>Native agent</span><b aria-hidden="true">↔</b><span>Proxy</span><b aria-hidden="true">↔</b><span>Model provider</span></p></div>
-  <div class="platform-lane"><strong>Learning</strong><p><span>Runtime</span><b aria-hidden="true">→</b><span>Tinker update</span><b aria-hidden="true">→</b><span>Sampler for next batch</span></p></div>
-  <div class="platform-lane"><strong>Durable state</strong><p><span>Gateway + PostgreSQL</span><b aria-hidden="true">·</b><span>Direct object transfers</span></p></div>
-  <figcaption id="platform-architecture-caption">The principal responsibility paths, not a complete network topology. Model inference and gradient computation are services; the task’s agent and tools execute in a separate sandbox. In the inference/training evidence path, Gateway authorizes transfers and records references while bulk payloads move directly to or from object storage.</figcaption>
+<figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
+  <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
+  <figcaption id="architecture-caption">The platform’s principal control, execution and learning paths. Native agents and tools work in remote task environments; model providers perform inference and training computation. <a href="#the-system-underneath">Architecture explained below.</a></figcaption>
 </figure>
 
-Follow one training run: Gateway authenticates the request and commits a durable
-run identity. Runtime claims it and schedules groups of sandboxed agent trials.
-Each agent calls its model through Proxy, which retains the interaction evidence.
-Runtime joins those interactions to task assessments, submits valid gradient
-contributions, and publishes the next checkpoint and progress state. The CLI
-reads the same durable records during execution and after it finishes.
-
-Tinker supplies model computation and optimizer state. [Harbor](https://github.com/harbor-framework/harbor)
-supplies task and agent execution machinery; Daytona is one remote execution
-provider. My work connected those services into one inspectable learning loop,
-with explicit contracts for native-agent behavior, learning evidence, update
-ordering, durable publication and recovery. The operator-facing result is a
-serverless execution surface: submit work and inspect durable results without
-provisioning the workers.
-
-## Native Claude Code with a supported open-weight model
-
-I wanted agents to retain a capable, familiar harness rather than move to a
-reduced custom loop merely because we wanted to train a different model.
-
-Claude Code speaks an Anthropic-style interface. A supported open-weight model
-may use a different conversation template, tool-call syntax, thinking format,
-sampling policy and context budget. Bridging those is not just changing a base
-URL and renaming a model.
-
-The Proxy normalizes the incoming conversation, chooses the authorized model
-route, and uses a model-specific adapter to render the conversation with that
-model’s native template. It samples once, parses the result, and reconstructs
-the text, thinking and tool-use blocks expected by the native harness.
-
-For a successfully reconstructed response, the learning evidence comes from the
-same sampled request: actual prompt token IDs, generated token IDs and their
-sampling log probabilities.
-It does not reconstruct a plausible training trace by retokenizing the text
-shown to the user afterward. Tool formatting, retained thinking and context
-compaction can all make those representations differ.
-
-Provider capabilities matter. A route that returns useful text but not the
-required token-aligned log probabilities is not automatically a trainable
-route. Unsupported model or capability combinations should reject explicitly,
-not silently fall back to a superficially similar configuration.
-
-Likewise, a malformed response or an ambiguous provider failure must not trigger
-an invisible second model sample. One recorded attempt must correspond to the
-sample that actually occurred. Protocol compatibility and honest experiment
-accounting are the same engineering problem at this boundary.
-
-## A rollout is not yet training data
-
-A successful task run can still be unusable for training. The optimizer needs
-the tokens the model actually sampled and the assessment of that same attempt.
-Joining a reward to the wrong trajectory assigns feedback to different actions;
-reconstructing tokens from displayed text can break their alignment with the
-recorded sampling probabilities.
-
-Each started sampling group asks for an exact number of trials and accounts for
-that many outcomes. A failed or cancelled trial is still an
-outcome; it does not disappear because it is inconvenient for the denominator.
-Trial identities are assigned before execution and checked on return.
-
-Training then applies a separate evidence policy. It needs the task assessment,
-the corresponding agent trajectory and valid model-token evidence, joined to
-the same trial. Ordinary trial failures can be excluded with a reason. A wrong
-owner, corrupt payload or mismatched trajectory identity is not an ordinary bad
-sample to ignore: it can invalidate the operation.
-
-The simplest distinction is also one of the most important:
-
-**A reported reward of zero is valid assessment feedback. A missing reward means
-there is no assessment value to use. They are not interchangeable.**
-
-For example, consider three attempts with rewards `0`, `1` and no reward.
-Subject to the other evidence checks, the first two can supply a relative
-learning signal. The third is still an accounted attempt, but it must not be
-silently turned into another zero. The meaning of the reward scale belongs to
-the task’s assessment, not to the infrastructure.
-
-For grouped relative-policy training, the comparison is between repeated
-attempts at the same task. A group needs enough surviving assessed trials and
-some relative reward signal. Equal rewards provide no comparative signal.
-Evidence loss can remove the only successful trial, so the check has to happen
-again after trajectory export—not just before it.
-
-The Runtime joins the valid trajectories to their task rewards and delegates
-GRPO (group-relative policy optimization) advantage calculation and datum assembly
-to [Tinker Cookbook](https://github.com/thinking-machines-lab/tinker-cookbook). It retains
-the mapping back to original trials and interactions. Actual model generations
-supply transitions with their exact prompt, output tokens and sampling logprobs.
-The task assessment enters as the trajectory’s final reward, rather than an
-invented task reward for each individual tool call. A multi-step agent trajectory
-can generate multiple training datums; a datum count is not a task count or a
-trial count.
-
-The training path consumes the ordinary Session export rather than maintaining
-a second, privileged approximation of the conversation. Size, digest and
-token-count checks sit at that boundary, and local materialization is installed
-atomically only after validation. A trajectory becoming a local file is not
-enough; it must be the intended complete trajectory.
-
-These checks define the learning input. Exact token/logprob alignment, immutable
-references, finite rewards, trial correlation and explicit exclusions determine
-what the optimizer is actually being asked to learn from.
-
-## Pipeline the work without losing the update boundary
-
-Agent runtimes are uneven. One group finishes quickly; another spends most of
-its time in a slow tool or a difficult task. Waiting for every rollout before
-beginning all evidence preparation and model computation wastes useful overlap.
-
-I implemented a grouped pipeline: as a group finishes, the Runtime can export
-its evidence, prepare datums and enqueue forward/backward work while sibling
-groups are still sampling. The model computation backend also supports an
-ordered asynchronous submission interface.
-
-But the algorithm retains a deliberate boundary:
-
-1. Every group in the batch receives the same captured agent/model snapshot.
-2. Independent groups sample and prepare evidence concurrently.
-3. Each eligible group submits its gradient contribution when ready.
-4. Only after all groups settle and contributions are submitted does the
-   coordinator enqueue the batch’s optimizer step.
-5. It settles the submitted operations, saves a synchronized sampler and uses
-   that sampler for the next batch.
-
-Batches without eligible learning data can correctly produce no optimizer
-update; completing a sampling batch is not itself a gradient step.
-
-The host need not wait for every individual gradient acknowledgement before
-enqueuing the optimizer into the provider’s ordered operation stream. What
-matters is the contribution set and ordering, followed by reconciliation before
-the next model snapshot is used.
-
-One focused test blocks a slow group and observes a fast group’s forward/backward
-submission while the optimizer call count remains zero. Releasing the slow
-group produces one optimizer update. Other tests cover draining already-submitted
-work when a sibling fails or cancellation arrives.
-
-This overlaps expensive work without quietly turning the experiment into
-stale-policy asynchronous RL.
-
-### A timeout is not proof that the optimizer did nothing
-
-A remote optimizer operation can succeed while its acknowledgement is lost.
-Blindly repeating it can apply an update twice; blindly skipping it can resume
-from the wrong policy and task position.
-
-Before dispatching an optimizer step, the managed lifecycle can durably record
-that its outcome is unresolved: a **write-ahead, unknown-outcome hold**. If the
-process dies or the acknowledgement is lost, recovery must reconcile the
-operation before continuing; it cannot infer that no update happened. A
-resumable state binds the model/optimizer checkpoint, sampler, dataset and
-cursor, while acknowledged updates remain distinct from intended steps.
-
-The same principle applies to cancellation. Already-submitted provider work has
-to be reconciled or drained. Killing a local process does not retroactively
-cancel a remote mutation. Sampling weights, resumable training state including
-optimizer state, and platform progress are different facts with different
-recovery meanings—even when a provider packages some of them together.
-
-## Preserve the agent, not just the model name
-
-Capturing model calls controls only part of the experiment. A coding agent also
-has an execution engine, instructions, files, skills, hooks, permissions, tools,
-setup, working directory and a policy for consuming the task. Those choices can
-change its behavior independently of its weights.
-
-In September, I developed the reusable **agent profile** to make that complete
-behavior explicit. A profile can carry a pinned engine version, packaged files
-or immutable bundles, setup and native command arguments, environment bindings,
-instruction delivery and required outputs. It is credential-free: declaring an
-environment binding does not grant the authority to populate it with a secret.
-
-The important boundaries are:
-
-| Object | What it fixes |
-| --- | --- |
-| Task and task version | The work, starting environment and default verification. |
-| Agent profile | A starting model selector and executable harness recipe. |
-| Verifier or judge | How the outcome is assessed; a judge may have its own profile. |
-| Plan | Work amounts and explicit execution settings. |
-| Run | What was accepted and what actually happened. |
-| Checkpoint | A particular saved model state, not the entire agent. |
-
-The implementation uses **one Go launcher** for local execution and the
-managed Harbor path. The Python runtime adapter supplies task, run and model
-bindings; it does not independently reinterpret the profile into another agent.
-Setup and execution are joined by a receipt for the selected recipe and engine.
-Arguments are passed as literal arguments rather than silently evaluated as a
-shell command.
-
-Actor and judge are roles, not two incompatible kinds of agent configuration.
-Both use the same complete profile format. The task, scoring selection and run
-plan remain separate from those profiles; server-derived execution pins do not
-silently rewrite the submitted experiment.
-
-One test makes the intent concrete. Given the same task instruction, one
-profile pipes it to the agent, another supplies a file path, and another ignores
-it. A recorder checks the actual arguments, standard input, working directory
-and environment. The launcher must not helpfully insert the instruction through
-a second, hidden channel. A separate Runtime test exercises the actual Go
-launcher through its Python adapter with a deterministic stand-in engine.
-
-This tests whether the profile really determines execution. A training update
-can replace the effective sampler without quietly changing the selected harness
-or judge. Source profile identity and the effective model/sampler binding are
-recorded separately: new weights do not have to mean a rewritten recipe.
-
-Profile identity also has to survive the Python–Go boundary. The CLI verifies
-the server’s exact canonical JSON bytes and digest instead of assuming two
-encoders will serialize numbers and Unicode identically. Publication uses replay
-keys and expected-current-version checks, so retrying a request is not a new
-publication and a concurrent edit cannot silently replace another version.
-
-## Distributed authority and data custody
-
-A remote run crosses several boundaries: an authenticated customer, an admitted
-job, a worker attempt, a sandbox, a model route and retained artifacts. Passing
-one broad credential through all of them would be simple to implement and hard
-to reason about.
-
-The Gateway is the public authority boundary. Its database accepts the run,
-immutable specification, resource reservation and initial event together.
-An identical replay returns the original identity; a divergent replay conflicts.
-Workers cannot claim execution before required external setup has been committed.
-
-This prevents a familiar distributed failure: acceptance partially succeeds,
-the caller retries, and the system starts another expensive job or exposes a
-half-prepared one. Worker leases and attempt fences then prevent an obsolete
-attempt from continuing to publish as though it still owns the run.
-
-The inference/training evidence data plane is deliberately different from its
-control plane. Large token arrays and artifacts need not be relayed through
-Gateway merely because Gateway authorizes them. In this path, producers and
-consumers transfer payloads directly to or from object storage under scoped
-permissions; Gateway verifies and commits the corresponding references. This
-keeps authorization and publication explicit without making the control service
-a relay for every large payload in this path.
-
-For an upload, the grant can bind the destination, length, content digest, type,
-create-only condition and expiry. Publication is not complete just because an
-upload returned success: the canonical reference must also be acknowledged.
-The database and the object store serve different purposes, and their boundary
-needs an explicit protocol.
-
-Keeping canonical Interaction bytes off Gateway required more than trusting a
-checksum supplied by the uploader. The checksum-capable storage path binds the
-upload to exact bytes and checks the object store’s full-object checksum before
-committing the reference. Otherwise, avoiding a bulk reread would quietly
-weaken the integrity contract. This was a storage/API design decision, not just
-a choice of where to put a file.
-
-An early local integration test exercised that boundary against real
-PostgreSQL and MinIO. The first metadata commit succeeded but its response was
-deliberately lost. Replaying the same commit after the short upload grant had
-expired returned the acknowledgement without another upload, replacement grant
-or duplicate Interaction. This was a local composition test of an earlier
-publication design, rather than a test of the deployed service.
-
-Tenant checks, verified customer identity, workload authority, model-route
-authority and artifact custody are separate layers. A profile can declare an
-environment binding; execution authority still controls whether it is populated.
-Short-lived transfer grants are distinct from durable result references. The
-objective is a traceable chain of authority, not just redacting a token from the
-final log.
-
-## Operating the platform is part of building it
-
-The implementation also includes Kubernetes/Helm delivery, worker-generation
-and graceful-termination behavior, resource-aware trial admission and customer
-inspection. Requested trial counts are not interchangeable with CPU, RAM, disk,
-available sandboxes or provider model capacity.
-
-For example, a concurrency semaphore is insufficient when tasks have different
-resource requirements. The Runtime’s admission mechanism respects trial count,
-CPU, memory and storage together. It checks each immutable task’s requirements
-against its grant before creating a sandbox, waits until all dimensions fit,
-and releases the allocation on completion, failure or cancellation. A small
-task should not inherit an unnecessarily large default, nor should a large one
-silently exceed its budget.
-
-Model-route capacity is a different resource boundary. Loading or sampling a
-model, staging its evidence and running the agent’s tools have different owners
-and bottlenecks. Likewise, a Kubernetes worker being Ready is not the same as
-an admitted run finishing or an external sandbox being cleaned up. Worker
-delivery and disruption policies have to preserve the application’s leases,
-attempt fences and draining behavior rather than substitute for them.
-
-In the CLI, that becomes a coherent operational surface: submit a task or
-dataset with a selected profile, retain the returned run identity, inspect trials
-and events, retrieve results, and find the checkpoints training actually produced.
-The same run history explains evaluation and training without fabricating
-different identities for the same work.
-
-A slow Session export showed why operating the platform mattered. Comparisons
-between two API pods running the same image localized intermittent connection
-failures to one pod. Numeric-IP probes reproduced the failure without DNS, TLS,
-authentication or SQL. Replacing that Dev pod with the same image mitigated the
-symptom: exports that had taken roughly 88 seconds returned in under two seconds.
-The deeper node or network cause remained unproven. The investigation supported
-a targeted mitigation and avoided an application or query rewrite in response
-to a lower-level fault.
-
-## What actually ran
-
-These retained runs show different parts of the system: a managed
-training-to-consumed-checkpoint path, a larger direct Runtime campaign, and
-managed evaluation with complete outcome accounting. The
-[structured evidence summary](/assets/synth-platform/execution-evidence.json)
-records their counts and qualifications in redacted form.
-
-Four selected July direct Runtime campaigns contain **21,500 distinct recorded
-rollout sessions**, deduplicated by Session identity: 17,300 training rollouts
-and 4,200 fresh evaluation attempts. This is a bounded sample, not a lifetime
-total. It includes failed and resumed work; it measures agent attempts rather
-than unique tasks or successful solves. Executed updates, progress on a resumed
-policy lineage and saved checkpoints are recorded separately.
-
-### A managed training-to-checkpoint path
-
-An August 30 Dev run was submitted through the normal Synth CLI, executed four
-scored Harbor trials across two batches of one group each, produced four eligible
-datums, performed two optimizer updates and saved two checkpoints. The second
-batch used the sampler saved after the first update. All nineteen artifacts
-finalized.
-
-An earlier attempt performed its updates but failed final publication. It
-remained a failed run: numerical training success was not substituted for a
-complete, retrievable result.
-
-A separate inference invocation consumed the final checkpoint successfully;
-its retained export receipt records matching generated-token and logprob counts.
-The run used deterministic synthetic rewards. It establishes execution, update,
-publication and checkpoint-consumption mechanics—not an improvement in task
-performance. The installed CLI was a source build, not a newly tagged public
-release.
-
-### A larger direct Runtime campaign
-
-A retained July campaign records thirty batches and thirty optimizer updates,
-with 3,000 rollout records over 300 manifest entries: 2,023 trainable and 977
-excluded rollouts, producing 80,012 training datums. It used the Daytona task
-runner under an operator-run Runtime controller, rather than the later
-Gateway-managed submission path.
-It used rank-1 low-rank adaptation (LoRA) of Qwen3.6-35B-A3B through Tinker and
-included interruption and checkpoint recovery before its final batch. The model service
-provided the gradient computation; I built and operated the surrounding agent
-training system.
-
-Recovery created a new sampler URI, and the retained checker reported a
-sampler-lineage mismatch. A separate resume-aware review accepted the execution
-for evaluation; the checker itself remained red. These records support the
-execution-volume account, not a claim that every recovery invariant passed.
-Configured concurrency is not a measured sustained-capacity guarantee.
-
-The run illustrates why the system records trial outcomes, exclusions, updates
-and checkpoint lineage separately.
-
-### Managed evaluation with complete outcome accounting
-
-A managed evaluation retained 100 distinct task/Session outcomes: 96
-execution-completed and four errors, across 5,983 recorded model Interactions.
-Scoring was recorded separately; 95 rows had a verifier reward. Its fixed task
-subset and answer-key retrieval contamination rule out a benchmark-quality
-claim. The execution and accounting evidence remains useful without one.
-
-## The result
-
-The useful result is an operator-visible chain from accepted work to trial
-outcomes, eligible training evidence, optimizer updates and a checkpoint that a
-separate inference invocation can consume.
-
-The platform keeps the agent’s executable harness separate from its current
-weights, and successful task execution separate from trainable evidence. Those
-distinctions make an experiment interpretable: what changed, which attempts
-supplied the learning signal, and what state can safely be resumed?
-
-My work carried those distinctions across the places where they are easiest to
-lose: native model protocols, Python/Go execution, concurrent Runtime work,
-remote optimizer operations, database/object publication and cloud lifecycle.
-That was the central engineering task: making a changing, tool-using agent into
-a controlled ML workload without flattening away what made the agent useful.
+My work spanned the Python RL Runtime, a Go CLI and agent launcher, native model
+adapters, an authenticated control plane, and the storage and cloud
+infrastructure connecting them. Repository-level software engineering was a
+major workload: agents work in real codebases, use tools and tests, and learn
+from the outcomes of their attempts.
+
+The central challenge was to make the agent you actually use into a distributed
+ML workload: preserve its tools and harness, control its model state, learn from
+its behavior, and expose the whole process as a reusable managed system.
+
+<p class="platform-contents"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></p>
+
+## The experiment is the interface
+
+The useful unit is an experiment, not an individual model request. A coding
+agent may inspect a repository, search documentation, edit files, run commands,
+interpret test output and try another approach. Evaluating it means recreating
+the work and assessing the result. Training it means obtaining usable learning
+evidence from that entire interaction with the environment.
+
+I wanted a new experiment to be a change of inputs and configuration, rather
+than another Python script, collection of provider credentials, sandbox
+launcher and training-data exporter.
+
+The platform gives those inputs distinct homes:
+
+<figure class="platform-figure" id="experiment-model" aria-labelledby="experiment-caption">
+  <div class="experiment-inputs">
+    <div><strong>The work</strong><span>Versioned tasks and datasets</span><small>Instructions, starting environment, files and default verification.</small></div>
+    <div><strong>The agent</strong><span>A reusable agent profile</span><small>Model, native engine, instructions, tools, configuration and setup.</small></div>
+    <div><strong>The assessment</strong><span>Task verifier or judge</span><small>The checks or agent responsible for evaluating the outcome.</small></div>
+    <div><strong>The plan</strong><span>Work amount and policy</span><small>Repetitions, batches, execution settings and training choices.</small></div>
+  </div>
+  <div class="experiment-join" aria-hidden="true">↓</div>
+  <div class="experiment-run"><strong>One managed run</strong><span>Distributed execution · results and artifacts · training updates and checkpoints when selected</span></div>
+  <figcaption id="experiment-caption">The work, agent, assessment and execution plan are reusable inputs. A run records their resolved identities and the work performed from them.</figcaption>
+</figure>
+
+**A task defines a piece of work.** For a repository-level engineering task,
+that might be a pinned checkout, a problem statement, installed dependencies and
+tests. Synth uses [Harbor’s task format](https://github.com/harbor-framework/harbor): the instruction, environment and
+verification travel together. A dataset selects exact task versions in a
+defined order.
+
+**The profile defines the agent.** The same task can be attempted with different
+models, instructions, skills or tool configurations. Those choices belong to
+the agent rather than being baked into every task.
+
+**The assessment defines what counts as useful work.** A task can provide
+programmatic tests. Where the task supports a separate verifier environment,
+an explicit judge profile can instead assess an output using its own model,
+instructions and reference information. Actor and judge are roles using the
+same underlying agent abstraction.
+
+**The plan defines how the experiment runs.** Evaluation can repeat a fixed
+setup across a dataset. Training chooses batches of tasks and repeated attempts
+at each task, with explicit optimization and execution settings. Unscored
+execution uses the same task-performing path when the desired result is simply
+the work and its artifacts.
+
+For example, an engineer developing a repository-specific coding agent can:
+
+1. Package representative work as versioned tasks.
+2. Evaluate a baseline profile across those tasks.
+3. Change the profile’s instructions, tools or context and compare the new setup.
+4. Train a supported model on repeated, scored attempts while retaining the
+   chosen harness.
+5. Evaluate a selected checkpoint on held-out work and use it through that same
+   agent recipe.
+
+An authorized operator works with commands such as:
+
+```sh
+synth run start --dataset team/evaluation@v1 \
+  --actor @agent.json --plan @eval-plan.json
+synth train start --dataset team/practice@v1 \
+  --actor @agent.json --plan @train-plan.json
+synth run show <run-id>
+synth run events <run-id> --follow
+synth run checkpoints <run-id>
+```
+
+The dataset, profile and plan references above are illustrative. Submission
+returns a durable run identity; the operator can return to its progress,
+results, artifacts and checkpoints without keeping a local controller running.
+
+## The system underneath
+
+The architecture separates the **control plane**, which authorizes and records
+the experiment, from the **execution and model-computation paths**, which do
+the work. Large task packages and trajectories move through object storage
+rather than passing through the control service on every transfer.
+
+The main components have deliberately different jobs:
+
+- **`synth`** is the operator interface and native-agent launcher. It exposes
+  reusable work and agents, submits experiments, and reads their results.
+- **`sprite-gateway`** is the authenticated control plane. It resolves authorized
+  inputs, admits durable jobs, delegates execution and serves customer readback.
+- **`agent-rl-runtime`** schedules task attempts, coordinates evaluation and
+  learning, manages progress and advances model state.
+- **`managed-agent-proxy`** connects the native harness to supported models and
+  preserves the model-interaction evidence needed for learning.
+- **PostgreSQL and object storage** retain complementary parts of the system:
+  authoritative relationships and lifecycle facts in one; task packages,
+  trajectories and other large payloads in the other.
+- **Kubernetes, Harbor, sandbox providers and model-computation providers**
+  supply the service, task-execution and numerical-computation foundations.
+
+Consider one training batch. Runtime resolves its selected tasks and agent
+configuration, starts isolated attempts, and gives each native agent narrowly
+scoped model access. The agent’s tool use occurs in its task environment;
+its model calls pass through the compatibility and capture layer. A verifier
+or judge assesses the completed work. Runtime joins those assessments to the
+corresponding model interactions, prepares learning inputs and submits them to
+the training backend. After the update, it obtains the sampler used by the next
+batch and retains a checkpoint that an authorized operator can inspect and use.
+
+## An agent profile is an executable recipe
+
+A model name is only one part of an agent. The surrounding execution engine,
+instructions, tools, skills, configuration and context strongly affect what
+that model can accomplish.
+
+I developed the agent-profile abstraction to make that complete setup reusable.
+A profile records a selected model and an executable recipe: the native engine
+and version, supplied files, setup, working directory, command arguments,
+environment bindings, instruction delivery and required outputs. Instructions,
+skills, hooks and tool configuration can be supplied through that recipe.
+
+<figure class="platform-figure" id="agent-recipe" aria-labelledby="profile-caption">
+  <div class="profile-model"><span class="diagram-label">Model binding</span><strong>Base model or selected checkpoint</strong><span>The learned policy used for generation.</span></div>
+  <div class="profile-separator" aria-hidden="true">+</div>
+  <div class="profile-harness"><span class="diagram-label">Executable harness recipe</span><div class="profile-grid"><span>Native engine + version</span><span>Instructions + skills</span><span>Tools + configuration</span><span>Files + setup</span><span>Working directory + bindings</span><span>Input + required outputs</span></div></div>
+  <div class="profile-bindings"><span><strong>Task</strong> supplies the work and environment.</span><span><strong>Launch</strong> supplies authorized runtime bindings.</span></div>
+  <figcaption id="profile-caption">The model and the harness can change independently. A task supplies the work; a profile supplies reusable agent behavior. Launch-time credentials and authority are not part of a shareable recipe.</figcaption>
+</figure>
+
+This creates two important experimental levers. To investigate a harness change,
+keep the model fixed and change the agent’s instructions, tools or context.
+To investigate a model update, keep the recipe fixed and bind it to a new
+checkpoint. The system can retain both identities without treating a saved
+model as the entire agent.
+
+One Go launcher interprets the recipe for local and Harbor-managed execution.
+Runtime supplies task, run and effective-model bindings to that launcher, so
+both paths share instruction delivery, literal-argument handling, environment
+and working-directory resolution, setup and required-output checks. Local and
+managed execution do not independently reconstruct what the profile means.
+
+Published profiles have immutable versions. The identity used by an experiment
+remains stable when a newer profile is published. The service supplies canonical
+profile bytes and a digest; the Go client verifies that representation instead
+of assuming that Go and Python serialize the same object identically. During
+training, that fixed recipe is bound
+to an explicit effective model snapshot for each batch: the experiment can
+advance the policy without silently changing the harness.
+
+The same format also supports a judge. The actor’s job is to perform the task;
+the judge’s job is to assess the result. They can use different instructions,
+models and resources while sharing the machinery for configuration, launch and
+artifact collection.
+
+## Keep the native harness, change the model
+
+I wanted to retain the capabilities of a real coding harness: repository
+navigation, shell commands, file editing, tool use, native configuration and
+configured delegation to subagents. Synth’s model layer lets the installed
+harness use a supported backend model while preserving that execution model.
+
+For Claude Code, the harness speaks Anthropic’s Messages protocol. The models
+behind Synth may have different tokenizers, chat templates, tool-call grammars,
+reasoning formats and streaming behavior. Supporting them requires a
+model-aware compatibility layer.
+
+The adapter renders the conversation and tool definitions using the model’s
+native format, tokenizes that input, submits generation, and parses the result
+back into the response the harness expects. The harness then performs the tool
+action and continues the conversation.
+
+For example, a model’s native request to run `pytest` must become the structured
+tool-use response Claude Code expects. The harness executes the command in the
+repository environment. Its output then becomes an observation in the next
+model-native prompt. The learning record retains the actual generated tokens
+and their probabilities alongside that tool cycle.
+
+<figure class="platform-figure platform-wide" id="native-model-path" aria-labelledby="native-caption">
+  <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/native-model-mobile.svg" width="420" height="1290"><img src="/assets/synth-platform/native-model.svg" width="1000" height="470" alt="A native coding agent sends conversation and tool definitions to the model adapter, which applies the model's template and tokenizer, samples from a model backend, and parses the response back to the harness. Actual prompt tokens, generated tokens and log probabilities are retained alongside the interaction." loading="lazy"></picture>
+  <figcaption id="native-caption">The model adapter preserves both sides of the interaction: the native harness receives usable responses, and the learning system receives the actual sampled-token evidence. Tool execution stays in the task environment.</figcaption>
+</figure>
+
+I built model-specific routing and adaptation across families including Qwen,
+DeepSeek, Kimi and GLM, with backend selection and native rendering/parsing kept
+behind explicit adapter interfaces. The inference layer and training admission
+have separate capability checks: a route can be useful for inference without
+being a model that the selected training backend can optimize.
+
+For training, the crucial record is the model-native input and generation
+that produced each action. The Proxy retains prompt token IDs, generated token
+IDs and the generation policy’s log probabilities, joined to their interaction
+and task attempt. Those values come from the sampling path itself.
+
+That matters because the text displayed in a transcript is not a complete
+representation of a model interaction. Chat templates, tool syntax, reasoning
+and tokenization all influence the tokens the model actually saw and generated.
+Training should operate on those tokens and probabilities.
+
+Per-call capture also preserves the actual inputs when the harness changes its
+context. The learning path does not have to assume that every prompt is a
+concatenation of the full displayed transcript.
+
+## One execution core for evaluation and training
+
+The core execution unit is deliberately small: **one task, one frozen agent
+snapshot and a requested number of attempts**. Runtime calls this a sampling
+group. The snapshot includes the effective model and harness configuration used
+by that group.
+
+Multiple groups can execute concurrently. Each attempt gets an isolated task
+environment and a stable correlation identity connecting its execution,
+assessment, artifacts and model interactions. The runner handles the
+Harbor/environment lifecycle; the agent performs the work inside it.
+
+In the profile-based execution path, a Runtime worker coordinates an accepted
+run and fans its independent attempts out to remote task environments. Model
+inference and training run in separate computation services. The work is
+distributed across those environments and services; the worker coordinates the
+experiment’s state and results.
+
+This core supports three uses:
+
+- **Unscored execution** returns the work and artifacts.
+- **Evaluation** aggregates the outcomes and assessments of a fixed setup.
+- **Training** adds the evidence preparation and model-update path to those
+  same task attempts.
+
+Evaluation does not need to initialize an optimizer or construct training
+datums. Training does not need a second task-execution architecture. The two
+operations share sampling and diverge at the point where their purposes differ.
+
+### Scale follows resources and independent work
+
+A plan sets total work; resource admission controls what can run at once.
+Runtime tracks active attempts, CPU, memory and storage against the execution
+budget, using task metadata and supported overrides for sandbox shape and phase
+deadlines. Heterogeneous tasks can execute concurrently within those limits.
+
+For example, several memory-heavy repository builds can fill the RAM budget
+while trial slots remain available. Further admission waits for the resources
+it needs. The model service can meanwhile have a different bottleneck, and
+trajectory export can use its own concurrency limit. One global semaphore
+would not describe those constraints well.
+
+The dataset is an immutable source that Runtime can navigate in pages. The
+control request carries its identity and authority; the client does not have
+to expand a large dataset into a giant submission. Task materialization and
+preparation happen as part of the execution path.
+
+The operator-facing service is serverless: submit an experiment and consume
+its outputs, while the platform manages the workers, task environments, model
+access and lifecycle underneath it. Workload size, active task resources and
+model-computation throughput can be managed independently.
+
+## From experience to learning
+
+The training path turns scored agent experience into model updates. In the
+group-relative setup, Runtime samples several attempts at the same task from
+the same agent snapshot. Their assessed outcomes provide a relative learning
+signal for that task.
+
+For a coding task, one attempt may produce a correct repair and another may
+produce a partial solution. Each attempt can contain many model calls and tool
+interactions. The task assessment belongs to the trajectory as a whole; the
+individual generating interactions supply the token-level learning inputs.
+
+<figure class="platform-figure platform-wide" id="learning-loop" aria-labelledby="learning-caption">
+  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-loop-mobile.svg" width="420" height="1240"><img src="/assets/synth-platform/learning-loop.svg" width="1000" height="620" alt="Training loop: select tasks and a frozen agent snapshot, execute repeated attempts, combine task assessments with exact model interaction evidence, prepare group-relative training inputs, submit forward and backward work, update the model and save a sampler and checkpoint for subsequent work." loading="lazy"></picture>
+  <figcaption id="learning-caption">Repeated task attempts connect environment-level outcomes to token-level learning. The next batch captures the newly synchronized model while retaining the selected harness recipe.</figcaption>
+</figure>
+
+The implemented path is GRPO-style LoRA training through Tinker. Tinker
+Cookbook centers rewards
+within each task group and constructs the learning datums. For an illustrative
+group with rewards 0, 0.5 and 1, centering gives relative advantages −0.5, 0 and
++0.5. The relative outcome weights the behavior sampled by each trajectory.
+
+Before datum construction, Runtime joins each assessment to its originating
+attempt and model records, validates finite rewards and checks output-token /
+log-probability alignment. The learning inputs use the actual prompt tokens,
+sampled output tokens and generation-policy log probabilities.
+
+Within an attempt, generated action tokens receive its group-relative
+advantage. Observations provide context and receive zero advantage: the
+optimizer is not being taught to generate the shell’s output as though the
+agent wrote it.
+
+Cookbook merges successive interactions while the next prompt extends the
+previous prompt and generation. When that prefix relationship breaks, it
+starts another training datum. A multi-turn trajectory can therefore yield
+several datums while following the contexts the harness actually used. The
+default trainer passes the captured generation-policy log probabilities and
+these advantages to Tinker’s importance-sampling loss.
+
+Harbor supplies task/trial execution. Tinker and its
+[Cookbook](https://github.com/thinking-machines-lab/tinker-cookbook) supply model
+computation and learning primitives. I built the native-agent execution and
+model adapters, the joins from task outcomes to token-level learning inputs,
+and the coordination that advances usable model state.
+
+### Overlap the work, preserve the policy boundary
+
+Agent attempts have uneven runtimes. Some complete quickly; others spend longer
+using tools or solving the task. I implemented a grouped pipeline so a ready
+group can export evidence, prepare datums and submit forward/backward work
+while other groups in the same batch are still sampling.
+
+<figure class="platform-figure platform-wide" id="group-pipeline" aria-labelledby="pipeline-caption">
+  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/group-pipeline-mobile.svg" width="420" height="770"><img src="/assets/synth-platform/group-pipeline.svg" width="1000" height="480" alt="Conceptual timeline of three groups sampling from one model snapshot. Fast groups begin evidence preparation and forward/backward work while a slow group continues sampling. The optimizer step follows submission of the batch's contributions; the next batch uses the new sampler." loading="lazy"></picture>
+  <figcaption id="pipeline-caption">Conceptual ordering, not measured durations. Independent stages overlap; the batch retains one deliberate model-update boundary.</figcaption>
+</figure>
+
+Sampling and training use distinct state interfaces. Each group generates
+through the batch’s captured sampler, S₀, while the trainer accumulates learning
+contributions. A ready group can submit its work as slower groups continue
+sampling through S₀.
+
+When a batch has eligible learning contributions, the coordinator waits for its
+groups to settle and their contributions to be submitted, then enqueues the
+optimizer step in the backend’s ordered operation stream. It settles that work,
+saves the next sampling snapshot, S₁, and binds the following batch to it. The
+harness recipe stays fixed across that model transition.
+
+This overlaps independent work while preserving the policy boundary. Active
+attempts keep their captured sampler; subsequent attempts use the deliberately
+advanced model state.
+
+### Checkpoints are usable model state
+
+Training produces more than a scalar metric. Runtime coordinates saved
+inference weights, the sampler used for subsequent generation, and the trainer
+state needed for supported optimization continuation. Its resumable state also
+tracks the dataset position and acknowledged training progress.
+
+An operator can inspect a checkpoint, select it in another profile and evaluate
+it with the same recipe. Starting new training from that model and continuing
+compatible optimizer state are distinct choices. The checkpoint’s model
+lineage, ownership and training context remain associated with its identity.
+
+Resumability also includes the boundary around a remote optimizer step. Before
+enqueueing it, the lifecycle durably marks the update as unresolved;
+acknowledged progress is recorded separately. Continuation must resolve that
+boundary before advancing model state or the dataset cursor. A saved
+checkpoint and an outstanding remote mutation are distinct pieces of state.
+
+This closes the practical loop: task experience can produce a new model, and
+that model can return to the same native agent for further work or evaluation.
+
+## A managed service around the learning loop
+
+The Runtime is only part of the platform. Turning it into a remotely operable,
+shared service requires durable admission, bounded execution authority,
+authorized storage and a useful inspection surface.
+
+### Durable jobs and scoped execution
+
+Gateway resolves the dataset, actor and optional judge, checks their authority,
+and pins the accepted inputs. A database transaction establishes the run and
+its initial durable state. Ready work is delivered to compatible workers;
+organization-level job admission and scheduling govern participation in the
+shared service. Runtime handles the actual task-resource admission within a
+job.
+
+The customer identity, worker service identity and authority for an individual
+attempt are distinct. Workers claim accepted work and receive scoped execution
+credentials. Per-trial model access is bound to the run, attempt, owner and
+selected model; the sandbox receives scoped model access rather than a shared
+provider key. Heartbeats maintain ownership and convey cancellation.
+
+PostgreSQL checks the active attempt and worker identity inside the transaction
+that appends progress or commits completion. Progress retries are deduplicated
+by attempt-local sequence. Completion locks the current run and attempt, checks
+the final event boundary and transitions both together. Ownership therefore
+governs the actual state changes, not just the initial API request.
+
+### Metadata and bulk data take different paths
+
+Training trajectories and task archives can be large. Sending every payload
+through the authorization service would tie data throughput to the control
+plane’s memory, bandwidth and request handling.
+
+For task materialization and training evidence, I separated those paths.
+Gateway authorizes transfers and commits canonical references. Producers and
+consumers transfer payload bytes directly to and from object storage.
+PostgreSQL retains the relationships, lifecycle facts and object references
+needed to inspect and authorize them.
+
+<figure class="platform-figure" id="data-custody" aria-labelledby="custody-caption">
+  <div class="custody-control"><span class="diagram-label">Control + authority</span><strong>Gateway ↔ PostgreSQL</strong><span>Owner · run · permissions · object identity · durable references</span></div>
+  <div class="custody-grants"><span>Authorize exact transfers</span><span>Commit verified references</span></div>
+  <div class="custody-data"><div><strong>Producer</strong><span>Task package, interaction evidence or artifact</span></div><span class="custody-arrow" aria-hidden="true">↔</span><div><strong>Object storage</strong><span>Immutable payload bytes</span></div><span class="custody-arrow" aria-hidden="true">↔</span><div><strong>Consumer</strong><span>Task runner, training preparation or authorized readback</span></div></div>
+  <figcaption id="custody-caption">Authorization and durable metadata remain centralized. Large payloads use direct, scoped data paths rather than being relayed through the control service.</figcaption>
+</figure>
+
+The transfer contract binds an object’s identity, expected size and digest to
+its allowed operation. Publication joins the stored bytes to an authorized,
+durable reference. Consumers verify the intended payload before materializing
+or using it. A content reference can be shared between components without
+copying the same evidence merely to change which service refers to it.
+
+For canonical model evidence, I selected checksum-capable storage so an exact,
+create-only upload could be checked against its full-object SHA-256 using
+provider metadata. Gateway can verify what it publishes without downloading
+the trajectory itself. This preserves both direct data movement and a precise
+publication boundary.
+
+### Cloud delivery, networking and credentials
+
+I built the native-agent inference service’s cloud delivery boundary on the
+team’s Kubernetes/Azure substrate. Public ingress exposes native model traffic
+and readiness; service control uses a separate authenticated path. Application
+releases use pinned images and Helm configuration, while infrastructure owns
+the network, durable staging and credential-delivery substrate.
+
+Dedicated workload identities read the required credential objects. A secret
+controller materializes exact versions into credential generations that
+application releases consume by reference. This keeps secret values out of
+agent recipes, Terraform plans and Helm configuration, while preserving the
+selected credential generation for release and rollback. Worker lifecycle
+handling coordinates claimed work, heartbeats, cancellation and shutdown.
+
+The key separation is between the **agent’s permissions inside its work
+environment** and the **platform’s authority to operate infrastructure**. A
+task-performing agent can be equipped with powerful tools in its sandbox
+without receiving the operator’s database, cluster or model-provider
+administration credentials.
+
+### Inspection is part of the interface
+
+Long-running work should be observable from another terminal or machine.
+Gateway retains ordered events and result references so inspection does not
+depend on finding a particular worker process. Clients can reconnect to an
+event stream from a cursor and return to the same run identity.
+
+The Go CLI exposes human-readable views and structured JSON for automation.
+Status, events, artifacts, task attempts, learning updates and checkpoints are
+separate useful views of the experiment. Bulky outputs remain downloadable
+artifacts rather than being forced into terminal messages.
+
+This matters both for a researcher monitoring training and for another agent
+operating the platform. A program can submit work, retain its handle, inspect
+the outputs and decide what to do next through the same interface a human
+uses.
+
+## What this made possible
+
+I used the platform for training and evaluation campaigns involving tens of
+thousands of agent attempts, repeated model updates and checkpoint continuation.
+Actual workloads included [R2E-Gym repository tasks](https://github.com/R2E-Gym/R2E-Gym) from public Python projects
+such as pandas, NumPy and aiohttp, with task-specific tests and pinned
+environments. Other task collections used the same execution and learning
+machinery: the task package defines the work and assessment.
+
+The later profile abstraction also gave task-specific actors and judges a
+common execution format. That became useful in subsequent work on task
+generation and [repository-specific reviewer construction](/training-a-code-reviewer-we-actually-use/):
+an agent-producing workflow can return a runnable recipe, and a task-performing
+workflow can consume it.
+
+My contribution was the design and implementation across these boundaries:
+native-agent/model integration, distributed task and learning orchestration,
+reusable profiles, durable data contracts, managed control, and the CLI and
+cloud systems that expose them as one capability. I built this with the
+SynthLabs team and extensive use of coding agents, adopting existing execution
+and model-computation foundations where they fit.
+
+The system was deployed and exercised internally in the development
+environment; it is not generally available. The public documentation and CLI
+releases provide inspectable interfaces to the work.
 
 ## Further reading
 
-- [How Synth fits together](https://synthlabs.mintlify.app/concepts/product-model):
-  the task, agent, assessment and model-state boundaries.
-- [Agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates):
-  the executable agent recipe.
-- [Managed execution](https://synthlabs.mintlify.app/guides/managed-execution) and
-  [training](https://synthlabs.mintlify.app/guides/managed-training): the operator interface.
-- [Lifecycle and recovery](https://synthlabs.mintlify.app/operations/lifecycle-and-recovery)
-  and [limits](https://synthlabs.mintlify.app/operations/limits).
-- [Public CLI releases](https://github.com/SynthLabsAI/synth-releases/releases).
-- [Training a code reviewer we actually use](/training-a-code-reviewer-we-actually-use):
-  a separate, dated case study of task construction, assessment and learning.
-
-*This account is based on repository history, original design discussions and
-retained execution records. The mechanisms span July–September 2026; the
-reusable recipe/profile implementation is a later stage, not an early-July
-feature. Internal identities, credentials, private trajectories and company
-source code are not reproduced here.*
+- [How Synth fits together](https://synthlabs.mintlify.app/concepts/product-model)
+- [Agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)
+- [Tasks and versions](https://synthlabs.mintlify.app/concepts/tasks-and-versions)
+- [Managed execution](https://synthlabs.mintlify.app/guides/managed-execution)
+- [Training and checkpoint comparison](https://synthlabs.mintlify.app/guides/managed-training)
+- [Public CLI releases](https://github.com/SynthLabsAI/synth-releases/releases)
 
 <style>
-.platform-architecture { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 18px 0; }
-.platform-lane { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
-.platform-lane:last-of-type { border-bottom: 0; }
-.platform-lane strong { font-size: 12px; line-height: 1.7; }
-.platform-lane p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; margin: 0; font-size: 13px; line-height: 1.8; }
-.platform-lane p b { font-weight: 400; }
-.platform-architecture figcaption { margin-top: 18px; }
-@media (max-width: 550px) { .platform-lane { grid-template-columns: 1fr; gap: 6px; } }
+  .platform-contents { font-size: 12px; line-height: 2; margin: 30px 0 44px; }
+  .platform-figure { margin: 38px 0 42px; }
+  .platform-figure figcaption { max-width: 660px; margin: 14px auto 0; }
+  .platform-wide { width: min(1000px, calc(100vw - 56px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .platform-figure picture, .platform-figure img { display: block; width: 100%; }
+  .platform-figure img { height: auto; border: 1px solid var(--rule); background: #fff; }
+  .experiment-inputs { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--fg); border-left: 1px solid var(--rule); }
+  .experiment-inputs > div { padding: 18px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .experiment-inputs strong, .experiment-inputs span, .experiment-inputs small { display: block; }
+  .experiment-inputs strong { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 7px; }
+  .experiment-inputs span { font-size: 13px; font-weight: 700; line-height: 1.5; margin-bottom: 7px; }
+  .experiment-inputs small { font-size: 12px; line-height: 1.7; color: var(--dim); }
+  .experiment-join { text-align: center; padding: 5px 0; font-size: 25px; }
+  .experiment-run { padding: 18px; border: 1px solid var(--fg); background: var(--surface); text-align: center; }
+  .experiment-run strong, .experiment-run span { display: block; }
+  .experiment-run span { font-size: 12px; line-height: 1.7; margin-top: 6px; }
+  .diagram-label { display: block; text-transform: uppercase; letter-spacing: .07em; font-size: 11px; margin-bottom: 9px; color: var(--dim); }
+  .profile-model, .profile-harness { padding: 20px; border: 1px solid var(--fg); }
+  .profile-model strong, .profile-model > span:last-child { display: block; }
+  .profile-model > span:last-child { font-size: 12px; margin-top: 7px; color: var(--dim); }
+  .profile-separator { font-size: 25px; text-align: center; padding: 5px 0; }
+  .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; font-size: 12px; }
+  .profile-grid span { padding: 6px 0; border-bottom: 1px solid var(--rule); }
+  .profile-bindings { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; font-size: 12px; }
+  .custody-control { padding: 20px; border: 1px solid var(--fg); text-align: center; }
+  .custody-control strong, .custody-control > span:last-child { display: block; }
+  .custody-control > span:last-child { font-size: 12px; margin-top: 8px; }
+  .custody-grants { display: flex; justify-content: space-around; gap: 15px; font-size: 11px; padding: 15px 0; color: var(--dim); }
+  .custody-grants span::before { content: "↓ "; color: var(--fg); }
+  .custody-data { display: grid; grid-template-columns: 1fr 22px 1fr 22px 1fr; align-items: center; gap: 5px; }
+  .custody-data > div { padding: 16px 12px; border: 1px solid var(--fg); align-self: stretch; }
+  .custody-data strong, .custody-data div span { display: block; }
+  .custody-data strong { font-size: 12px; }
+  .custody-data div span { font-size: 11px; line-height: 1.7; margin-top: 8px; color: var(--dim); }
+  .custody-arrow { text-align: center; font-size: 22px; }
+  @media (max-width: 960px) {
+    #learning-loop, #group-pipeline { width: 100%; position: static; transform: none; }
+    #learning-loop picture, #group-pipeline picture { max-width: 480px; margin: 0 auto; }
+    #learning-loop img { aspect-ratio: 420 / 1240; }
+    #group-pipeline img { aspect-ratio: 420 / 770; }
+  }
+  @media (max-width: 760px) {
+    .platform-wide { width: 100%; position: static; transform: none; }
+    .platform-wide picture { max-width: 480px; margin: 0 auto; }
+    #platform-architecture img { aspect-ratio: 420 / 1650; }
+    #native-model-path img { aspect-ratio: 420 / 1290; }
+  }
+  @media (max-width: 620px) {
+    .experiment-inputs { grid-template-columns: 1fr; }
+    .experiment-inputs > div { padding: 16px; }
+    .profile-grid, .profile-bindings { grid-template-columns: 1fr; gap: 7px; }
+    .custody-grants { flex-direction: column; text-align: center; gap: 4px; }
+    .custody-data { grid-template-columns: 1fr; gap: 8px; }
+    .custody-data > div { padding: 16px; }
+    .custody-data strong { font-size: 13px; }
+    .custody-data div span { font-size: 12px; margin-top: 4px; }
+    .custody-arrow { transform: rotate(90deg); line-height: 1; }
+  }
 </style>
