@@ -373,10 +373,11 @@ or duplicate Interaction. This was a local composition test of an earlier
 publication design, rather than a test of the deployed service.
 
 Tenant checks, verified customer identity, workload authority, model-route
-authority and artifact custody are separate layers. Credentials and transient
-signed transfer material are not agent-profile content or public run artifacts.
-The objective is a traceable chain of authority, not just redacting a token from
-the final log.
+authority and artifact custody are separate layers. A profile can declare an
+environment binding; execution authority still controls whether it is populated.
+Short-lived transfer grants are distinct from durable result references. The
+objective is a traceable chain of authority, not just redacting a token from the
+final log.
 
 ## Operating the platform is part of building it
 
