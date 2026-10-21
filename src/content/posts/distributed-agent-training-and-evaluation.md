@@ -250,7 +250,7 @@ and their probabilities alongside that tool cycle.
 
 <figure class="platform-figure platform-wide" id="native-model-path" aria-labelledby="native-caption">
   <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/native-model-mobile.svg" width="420" height="1290"><img src="/assets/synth-platform/native-model.svg" width="1000" height="470" alt="A native coding agent sends conversation and tool definitions to the model adapter, which applies the model's template and tokenizer, samples from a model backend, and parses the response back to the harness. Actual prompt tokens, generated tokens and log probabilities are retained alongside the interaction." loading="lazy"></picture>
-  <figcaption id="native-caption">The model adapter preserves both sides of the interaction: the native harness receives usable responses, and the learning system receives the actual sampled-token evidence. Tool execution stays in the task environment.</figcaption>
+  <figcaption id="native-caption">Managed task path shown. The model adapter preserves both sides of the interaction: the native harness receives usable responses, and the learning system receives the actual sampled-token evidence. Tool execution stays in the task environment.</figcaption>
 </figure>
 
 I built model-specific routing and adaptation across families including Qwen,
@@ -299,9 +299,10 @@ explicit custody boundary.
 ## One execution core for evaluation and training
 
 I organized execution, evaluation and training around one common unit:
-**one task, one frozen agent snapshot and a requested number of attempts**.
-Runtime calls this a sampling group. The snapshot includes the effective model
-and harness configuration used by that group.
+**one task, a fixed agent setup and a requested number of attempts**.
+Runtime calls this a sampling group. Its attempts share an effective model
+snapshot. In the profile-based path, the accepted run also pins the executable
+harness recipe.
 
 Multiple groups can execute concurrently. Each attempt gets an isolated task
 environment and a stable correlation identity connecting its execution,

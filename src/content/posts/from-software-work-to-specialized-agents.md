@@ -263,8 +263,9 @@ and launch behavior.
 Trusted code assembles those parts. The creator does not have to reinvent
 launcher conventions, executable helpers or plugin metadata, and generated
 knowledge cannot silently replace them. The assembler validates the structured
-data, references and relationships, produces the runnable profile, and checks its
-identity independently at export.
+data, references and relationships and produces the runnable profile. At export,
+the controller independently rebuilds it from the approved base, generated
+knowledge and history manifest, and requires an exact match.
 
 This division puts inference where it adds value—discovering and expressing
 repository knowledge—and deterministic code where it can enforce a precise
