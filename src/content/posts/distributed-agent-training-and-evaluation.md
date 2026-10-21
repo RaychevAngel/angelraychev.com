@@ -26,7 +26,7 @@ The central challenge was to make the agent you actually use into a distributed
 ML workload: preserve its tools and harness, control its model state, learn from
 its behavior, and expose the whole process as a reusable managed system.
 
-<p class="platform-contents"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></p>
+<nav class="platform-contents" aria-label="In this article"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></nav>
 
 ## The experiment is the interface
 
@@ -415,7 +415,7 @@ needed to inspect and authorize them.
 <figure class="platform-figure" id="data-custody" aria-labelledby="custody-caption">
   <div class="custody-control"><span class="diagram-label">Control + authority</span><strong>Gateway ↔ PostgreSQL</strong><span>Owner · run · permissions · object identity · durable references</span></div>
   <div class="custody-grants"><span>Authorize exact transfers</span><span>Commit verified references</span></div>
-  <div class="custody-data"><div><strong>Producer</strong><span>Task package, interaction evidence or artifact</span></div><span class="custody-arrow" aria-hidden="true">↔</span><div><strong>Object storage</strong><span>Immutable payload bytes</span></div><span class="custody-arrow" aria-hidden="true">↔</span><div><strong>Consumer</strong><span>Task runner, training preparation or authorized readback</span></div></div>
+  <div class="custody-data"><div><strong>Producer</strong><span>Task package, interaction evidence or artifact</span></div><span class="custody-arrow" aria-hidden="true">→</span><div><strong>Object storage</strong><span>Immutable payload bytes</span></div><span class="custody-arrow" aria-hidden="true">→</span><div><strong>Consumer</strong><span>Task runner, training preparation or authorized readback</span></div></div>
   <figcaption id="custody-caption">Authorization and durable metadata remain centralized. Large payloads use direct, scoped data paths rather than being relayed through the control service.</figcaption>
 </figure>
 
@@ -506,6 +506,7 @@ releases provide inspectable interfaces to the work.
 
 <style>
   .platform-contents { font-size: 12px; line-height: 2; margin: 30px 0 44px; }
+  .platform-contents a { display: inline-block; padding: 3px 0; }
   .platform-figure { margin: 38px 0 42px; }
   .platform-figure figcaption { max-width: 660px; margin: 14px auto 0; }
   .platform-wide { width: min(1000px, calc(100vw - 56px)); position: relative; left: 50%; transform: translateX(-50%); }
@@ -534,6 +535,7 @@ releases provide inspectable interfaces to the work.
   .custody-control > span:last-child { font-size: 12px; margin-top: 8px; }
   .custody-grants { display: flex; justify-content: space-around; gap: 15px; font-size: 11px; padding: 15px 0; color: var(--dim); }
   .custody-grants span::before { content: "↓ "; color: var(--fg); }
+  .custody-grants span:last-child::before { content: "↑ "; }
   .custody-data { display: grid; grid-template-columns: 1fr 22px 1fr 22px 1fr; align-items: center; gap: 5px; }
   .custody-data > div { padding: 16px 12px; border: 1px solid var(--fg); align-self: stretch; }
   .custody-data strong, .custody-data div span { display: block; }
