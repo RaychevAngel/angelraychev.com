@@ -344,9 +344,10 @@ request carries its identity and authority; the client does not have
 to expand a large dataset into a giant submission. Task materialization and
 preparation happen as part of the execution path.
 
-The operator submits an experiment and consumes its outputs; the platform
-manages workers, task environments, model access and lifecycle. Workload size,
-active task resources and model-computation throughput are separate controls.
+From the operator's perspective, execution is serverless: submit an experiment
+and consume its outputs while the platform manages workers, task environments,
+model access and lifecycle. Workload size, active task resources and
+model-computation throughput remain separate controls.
 
 ## From experience to learning
 
