@@ -15,7 +15,7 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>${SITE}/</loc></url>
-${posts.map((post) => `  <url><loc>${escapeXml(new URL(`/${post.id}/`, SITE).href)}</loc><lastmod>${post.data.updated.toISOString()}</lastmod></url>`).join("\n")}
+${posts.map((post) => `  <url><loc>${escapeXml(new URL(`/${post.id}/`, SITE).href)}</loc><lastmod>${post.data.updated.toISOString().slice(0, 10)}</lastmod></url>`).join("\n")}
 </urlset>`;
 
   return new Response(xml, {
