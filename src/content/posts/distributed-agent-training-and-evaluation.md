@@ -454,8 +454,9 @@ release.
 
 A retained July campaign records thirty batches and thirty optimizer updates,
 with 3,000 rollout records over 300 manifest entries: 2,023 trainable and 977
-excluded rollouts, producing 80,012 training datums. This was a direct
-Runtime/operator experiment, not the later Gateway-managed submission path.
+excluded rollouts, producing 80,012 training datums. It used the Daytona task
+runner under an operator-run Runtime controller, rather than the later
+Gateway-managed submission path.
 It used rank-1 low-rank adaptation (LoRA) of Qwen3.6-35B-A3B through Tinker and
 included interruption and checkpoint recovery before its final batch. The model service
 provided the gradient computation; I built and operated the surrounding agent
