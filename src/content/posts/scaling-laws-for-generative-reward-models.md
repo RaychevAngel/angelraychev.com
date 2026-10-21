@@ -6,9 +6,9 @@ updated: 2026-10-21
 
 **Angel Raychev · Nathan Lile · Rafael Rafailov**
 
-[Read the paper (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf) · [Read on this page](#paper-and-citation) · [Citation](#citation)
+[Read the paper (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=903cc32194cb) · [Read on this page](#paper-and-citation) · [Citation](#citation)
 
-<p class="note">Research manuscript · 28 pages · 21 October 2026. An arXiv link will be added when available.</p>
+<p class="note">Revised research manuscript · 26 pages · 21 October 2026. An arXiv link will be added when available.</p>
 
 ## A good judge is not necessarily a good rewarder
 
@@ -164,15 +164,17 @@ rewarder/policy capacity, checkpoint selection and online-DPO dynamics.
 
 ## Paper and citation
 
-[Download Scaling Laws for Generative Reward Models (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf).
-The manuscript contains the experimental setup, full sweep figures,
-matched-condition comparisons, analysis and mathematical appendices.
+[Download Scaling Laws for Generative Reward Models (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=903cc32194cb).
+The manuscript contains the experimental setup, matched-condition comparisons,
+readable chronological training trajectories, and an expanded empirical appendix.
+It documents the Elo estimator and uncertainty procedure, and distinguishes
+descriptive scaling fits from independently validated laws.
 The [version record](/research/generative-reward-models/release.json) identifies
 the downloadable PDF.
 
-<iframe class="grm-pdf" src="/research/generative-reward-models/reader.html" title="Scaling Laws for Generative Reward Models — full manuscript" loading="lazy"><a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf">Open the manuscript PDF</a>.</iframe>
+<iframe class="grm-pdf" src="/research/generative-reward-models/reader.html?v=903cc32194cb" title="Scaling Laws for Generative Reward Models — full manuscript" loading="lazy"><a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=903cc32194cb">Open the manuscript PDF</a>.</iframe>
 
-<p class="note">If your browser does not display the reader, <a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf">open or download the PDF directly</a>.</p>
+<p class="note">If your browser does not display the reader, <a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=903cc32194cb">open or download the PDF directly</a>.</p>
 
 <div id="citation"></div>
 

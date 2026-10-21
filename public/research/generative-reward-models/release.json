@@ -4,9 +4,11 @@
   "publication_date": "2026-10-21",
   "status": "research_manuscript",
   "arxiv_id": null,
-  "pages": 28,
+  "revision": "empirical-appendix-restoration",
+  "pages": 26,
   "pdf": "scaling-laws-for-generative-reward-models.pdf",
-  "sha256": "c4af5a246c19f110d3286005603cf044d055826fccae876c1b5d5cc98ae1fa9c",
+  "sha256": "903cc32194cb63f33ddac2a7a1d3379ac16b5535ef185407293c37f89c8b38ba",
+  "source_commit": "53384185b72cfa46ff35fc44b7a0120db854b14b",
   "reader": "reader.html",
   "pdfjs_version": "5.6.205",
   "pdfjs_license": "Apache-2.0"
