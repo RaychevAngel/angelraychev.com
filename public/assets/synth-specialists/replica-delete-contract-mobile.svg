@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1030" viewBox="0 0 420 1030" role="img" aria-labelledby="title desc">
+  <title id="title">Historical replica lookup bypassing a primary deletion</title>
+  <desc id="desc">The store is committed on the primary while the replica lags. A delete request performs a replica-backed GetStore lookup; ErrNotFound leads to an idempotent success response before the primary delete is called. The store remains on primary and later becomes visible on the replica. This explains the evaluated historical snapshot, not an assessment of the current version.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px}.small{font-size:18px;fill:#444}.label{font-size:17px;fill:#444}.node{fill:#fff;stroke:#222;stroke-width:1.5}.condition{fill:#f5f5f5;stroke:#777;stroke-width:1.2}.skipped{fill:#fafafa;stroke:#555;stroke-width:1.5;stroke-dasharray:5 5}.flow{fill:none;stroke:#222;stroke-width:1.7;marker-end:url(#arrow)}.relation{fill:none;stroke:#777;stroke-width:1.4;stroke-dasharray:3 5;marker-end:url(#arrow)}</style>
+  <rect width="420" height="1030" fill="#fff"/>
+  <text x="30" y="34" class="label">HISTORICAL SNAPSHOT</text>
+  <rect class="condition" x="40" y="65" width="340" height="110"/>
+  <text x="210" y="100" text-anchor="middle">Store commits on primary</text>
+  <text x="210" y="131" text-anchor="middle" class="small">Replica has not caught up.</text>
+  <text x="210" y="158" text-anchor="middle" class="small">Store not yet visible there.</text>
+  <path class="flow" d="M210 175 V220"/>
+  <rect class="node" x="40" y="220" width="340" height="85"/>
+  <text x="210" y="254" text-anchor="middle">Delete request</text>
+  <text x="210" y="284" text-anchor="middle" class="small">DeleteStoreCommand</text>
+  <path class="flow" d="M210 305 V350"/>
+  <rect class="node" x="40" y="350" width="340" height="85"/>
+  <text x="210" y="384" text-anchor="middle">GetStore(replica)</text>
+  <text x="210" y="414" text-anchor="middle" class="small">storage.ErrNotFound</text>
+  <path class="flow" d="M210 435 V480"/>
+  <rect class="node" x="40" y="480" width="340" height="85"/>
+  <text x="210" y="514" text-anchor="middle">Return success</text>
+  <text x="210" y="544" text-anchor="middle" class="small">idempotent “already absent”</text>
+  <path class="relation" d="M210 565 V610"/>
+  <rect class="skipped" x="40" y="610" width="340" height="85"/>
+  <text x="210" y="644" text-anchor="middle">Primary delete is not called</text>
+  <text x="210" y="674" text-anchor="middle" class="small">the early return bypasses it</text>
+  <path class="relation" d="M210 695 V740"/>
+  <rect class="condition" x="40" y="740" width="340" height="115"/>
+  <text x="210" y="775" text-anchor="middle">Store remains on primary</text>
+  <text x="210" y="806" text-anchor="middle" class="small">Later replication makes it</text>
+  <text x="210" y="833" text-anchor="middle" class="small">visible on the replica too.</text>
+  <text x="30" y="912" class="small">A stale read became authority</text>
+  <text x="30" y="941" class="small">to skip a mutation.</text>
+  <text x="30" y="987" class="small">Evaluated historical behavior.</text>
+</svg>

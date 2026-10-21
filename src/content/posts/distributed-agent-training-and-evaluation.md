@@ -1,27 +1,31 @@
 ---
 title: "Building a distributed platform for agent training and evaluation"
 description: "How I built SynthLabs’ agent-learning platform: reusable agents, distributed task execution, native model integration, reinforcement learning and managed cloud infrastructure."
-updated: 2026-10-20
+image: "/assets/synth-platform/article-cover.png"
+imageAlt: "Distributed agent training and evaluation: executable work, native agent experience and model updates."
+updated: 2026-10-21
 ---
 
 At SynthLabs, I designed and built a distributed platform for running,
-evaluating and training tool-using agents, used in campaigns involving tens of
-thousands of agent attempts. An operator supplies tasks, a reusable agent
-profile and a plan. The platform executes the work in remote environments,
-assesses the results and can train a supported model from the agent’s actual
-interactions. The resulting checkpoint returns to the same native harness.
+evaluating and training tool-using agents. Its execution and learning core
+powered campaigns involving tens of thousands of agent attempts. The platform
+runs isolated repository tasks, captures the model interactions produced inside
+the native coding harness, joins that experience to task assessments, and trains
+a supported model from it. The resulting checkpoint returns to the same harness.
 
-My work spanned the Python RL Runtime, a Go CLI and agent launcher, native model
-adapters, an authenticated control plane, and the storage and cloud
-infrastructure connecting them. Repository-level software engineering was a
-major workload: agents work in real codebases, use tools and tests, and learn
-from the outcomes of their attempts.
+The central engineering problem was preserving the agent through that loop:
+its tools, delegation and context behavior; the exact tokens sampled by a
+particular model snapshot; and the state produced by each training update.
+Independent task work and learning preparation can overlap, while policy
+advancement retains an explicit synchronization boundary.
 
-The central challenge was to make the agent you actually use into a distributed
-ML workload: preserve its tools and harness, control its model state, learn from
-its behavior, and expose the whole process as a reusable managed system.
+I built the Python RL Runtime, native model adapters, reusable agent profiles,
+and the managed delivery paths around them: a Go CLI and agent launcher,
+authenticated control, storage contracts and cloud infrastructure. An operator
+can submit versioned work and an agent recipe, then return to its execution,
+assessments, artifacts and checkpoints without operating the underlying workers.
 
-<nav class="platform-contents" aria-label="In this article"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></nav>
+<nav class="platform-contents" aria-label="In this article"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#actors-and-judges-can-run-independently">Actor/judge modes</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></nav>
 
 <figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
   <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
@@ -30,15 +34,10 @@ its behavior, and expose the whole process as a reusable managed system.
 
 ## The experiment is the interface
 
-The useful unit is an experiment, not an individual model request. A coding
-agent may inspect a repository, search documentation, edit files, run commands,
-interpret test output and try another approach. Evaluating it means recreating
-the work and assessing the result. Training it means obtaining usable learning
-evidence from that entire interaction with the environment.
-
-I wanted a new experiment to be a change of inputs and configuration, rather
-than another Python script, collection of provider credentials, sandbox
-launcher and training-data exporter.
+An agent experiment includes the work environment, executable agent, assessment
+and policy for running it. A coding agent may inspect files, edit code, run tests
+and react to their output. Its result includes both the changed artifacts and
+the interactions that produced them.
 
 The platform gives those inputs distinct homes:
 
@@ -46,7 +45,7 @@ The platform gives those inputs distinct homes:
   <div class="experiment-inputs">
     <div><strong>The work</strong><span>Versioned tasks and datasets</span><small>Instructions, starting environment, files and default verification.</small></div>
     <div><strong>The agent</strong><span>A reusable agent profile</span><small>Model, native engine, instructions, tools, configuration and setup.</small></div>
-    <div><strong>The assessment</strong><span>Task verifier or judge</span><small>The checks or agent responsible for evaluating the outcome.</small></div>
+    <div><strong>The assessment</strong><span>Verification or judge, when selected</span><small>The checks or agent responsible for evaluating the outcome.</small></div>
     <div><strong>The plan</strong><span>Work amount and policy</span><small>Repetitions, batches, execution settings and training choices.</small></div>
   </div>
   <div class="experiment-join" aria-hidden="true">↓</div>
@@ -76,15 +75,10 @@ at each task, with explicit optimization and execution settings. Unscored
 execution uses the same task-performing path when the desired result is simply
 the work and its artifacts.
 
-For example, an engineer developing a repository-specific coding agent can:
-
-1. Package representative work as versioned tasks.
-2. Evaluate a baseline profile across those tasks.
-3. Change the profile’s instructions, tools or context and compare the new setup.
-4. Train a supported model on repeated, scored attempts while retaining the
-   chosen harness.
-5. Evaluate a selected checkpoint on held-out work and use it through that same
-   agent recipe.
+An engineer can evaluate a baseline profile, change its instructions or tools,
+and compare the new setup on the same versioned work. Supported training then
+updates the model while retaining the chosen recipe; the checkpoint can be
+evaluated on held-out tasks through that same harness.
 
 An authorized operator works with commands such as:
 
@@ -141,12 +135,12 @@ batch and retains a checkpoint that an authorized operator can inspect and use.
 
 ## An agent profile is an executable recipe
 
-A model name is only one part of an agent. The surrounding execution engine,
-instructions, tools, skills, configuration and context strongly affect what
-that model can accomplish.
+Agent behavior changes faster than execution infrastructure. A different
+instruction set, skill or supported harness configuration should be a new
+experiment input, not require a new Runtime deployment.
 
-I developed the agent-profile abstraction to make that complete setup reusable.
-A profile records a selected model and an executable recipe: the native engine
+I developed the agent-profile abstraction to make that complete setup reusable
+outside the execution machinery. A profile records a selected model and an executable recipe: the native engine
 and version, supplied files, setup, working directory, command arguments,
 environment bindings, instruction delivery and required outputs. Instructions,
 skills, hooks and tool configuration can be supplied through that recipe.
@@ -165,11 +159,11 @@ To investigate a model update, keep the recipe fixed and bind it to a new
 checkpoint. The system can retain both identities without treating a saved
 model as the entire agent.
 
-One Go launcher interprets the recipe for local and Harbor-managed execution.
-Runtime supplies task, run and effective-model bindings to that launcher, so
-both paths share instruction delivery, literal-argument handling, environment
-and working-directory resolution, setup and required-output checks. Local and
-managed execution do not independently reconstruct what the profile means.
+Local and Harbor-managed execution use one Go interpreter for the profile.
+Runtime supplies task, run and effective-model bindings to that launcher;
+it does not reconstruct the recipe in Python. Instruction delivery, literal
+arguments, setup, environment and working-directory resolution, and required
+outputs therefore have one execution contract.
 
 Published profile versions are immutable, so an experiment retains the version
 it selected when a newer one is published. The service supplies canonical
@@ -180,10 +174,40 @@ During training, each batch binds that fixed recipe to an explicit effective
 model snapshot. The experiment can advance the policy without silently
 changing the harness.
 
-The same format also supports a judge. The actor’s job is to perform the task;
-the judge’s job is to assess the result. They can use different instructions,
-models and resources while sharing the machinery for configuration, launch and
-artifact collection.
+### Actors and judges can run independently
+
+An actor profile defines how to perform work. A judge profile defines how to
+assess its artifacts. Both are complete agent recipes, with independently
+selected models, instructions, tools and resources. A reusable judge can serve
+a family of tasks while each task supplies its own reference material. A strong
+judge need not be a model the training backend can optimize. On eligible tasks,
+it runs in a separate verifier environment with task-owned assessment context,
+declared actor outputs and its own scoped model access.
+
+The roles support three useful modes. **Actor-only execution** produces work
+and artifacts without requiring a score. **Evaluation** pairs fresh attempts
+with the task's verifier or an explicit judge. **Reassessment** applies a new or
+repeated judge to retained work without asking the original actor to solve the
+task again.
+
+<figure class="platform-figure role-modes" id="independent-role-modes" aria-labelledby="roles-caption">
+  <div class="role-lane"><strong>Produce work</strong><div class="role-flow"><span>Task + actor profile</span><b aria-hidden="true">→</b><span>Actor execution</span><b aria-hidden="true">→</b><span>Output + artifacts</span></div></div>
+  <div class="role-lane"><strong>Produce and assess</strong><div class="role-flow"><span>New actor output</span><b aria-hidden="true">→</b><span>Verifier or judge</span><b aria-hidden="true">→</b><span>Assessment</span></div><small>The task supplies the assessment context and any private references.</small></div>
+  <div class="role-lane"><strong>Reassess fixed work</strong><div class="role-flow"><span>Retained output + task context</span><b aria-hidden="true">→</b><span>Selected judge, repeated or changed</span><b aria-hidden="true">→</b><span>New assessments</span></div></div>
+  <figcaption id="roles-caption">Producing work, assessing it and learning from it are separate operations. Reassessment fixes the original output; training additionally needs the actor's captured model interactions.</figcaption>
+</figure>
+
+I built a regrading path that reuses the task registry and evaluation machinery.
+It derives tasks from the original immutable task versions, restores retained
+actor outputs, and runs the selected judge against the preserved assessment
+context. Source-trial and artifact digests record which work was assessed.
+Different judges and repeated assessments can therefore examine the same
+retained output; the task and judge still define what that output means.
+
+This makes the evaluator an independent experimental choice. A judge can be
+calibrated or checked for consistency while holding the original work fixed.
+Weight training remains a separate operation: it additionally requires the
+original actor's captured sampled-token evidence.
 
 ## Keep the native harness, change the model
 
@@ -203,6 +227,10 @@ The adapter renders the conversation and tool definitions using the model’s
 native format, tokenizes that input, submits generation, and parses the result
 back into the response the harness expects. The harness then performs the tool
 action and continues the conversation.
+
+Compatibility also includes the selected model's context and output limits,
+and model-native token counting, so the harness can manage context against the
+backend it is actually using.
 
 For example, a model’s native request to run `pytest` must become the structured
 tool-use response Claude Code expects. The harness executes the command in the
@@ -224,7 +252,9 @@ being a model that the selected training backend can optimize.
 For training, the Proxy retains the model-native record of each call: prompt
 token IDs, generated token IDs and the generation policy’s log probabilities.
 Those values come from the sampling path itself and are joined to their
-interaction and task attempt.
+interaction and task attempt. The native response and learning record come
+from the same prepared prompt and sampled output; reconstructing a usable tool
+response does not replace the original tokens with a new tokenization.
 
 A displayed transcript is not a complete substitute. Chat templates, tool
 syntax, reasoning and tokenization affect what the model actually saw and
@@ -233,12 +263,35 @@ Per-call capture preserves those inputs, so the learning path follows the
 contexts the harness used without assuming that every prompt contains the full
 displayed history.
 
+### Separate serving from evidence publication
+
+Model adaptation also has its own scaling constraints. Rendering long prompts,
+tokenizing them and parsing model output are CPU work; they should not block the
+HTTP event loop that manages concurrent requests. I separated that work into a
+dedicated worker pool, with independent admission for generation and token-count
+requests.
+
+For the Qwen path, I also implemented exact-token prefix reuse across growing
+conversations. A bounded cache is scoped by owner, credential, model, native
+session and delegated-agent identity. It reuses a completed-turn prefix only
+when its rendered text matches exactly, then tokenizes the new suffix. This
+reduces repeated local tokenization without changing the prompt supplied to
+the model.
+
+Evidence has a separate lifecycle. For captured calls, the service stages the
+interaction before returning the completed response. Response-delivery settlement
+hands the staged record to a bounded publisher, which obtains an upload grant,
+transfers the payload and commits its reference. Foreground model preparation,
+staging and publication have separate execution resources. A slow bulk transfer
+does not have to occupy the agent's response path, while capture retains an
+explicit custody boundary.
+
 ## One execution core for evaluation and training
 
-The core execution unit is deliberately small: **one task, one frozen agent
-snapshot and a requested number of attempts**. Runtime calls this a sampling
-group. The snapshot includes the effective model and harness configuration used
-by that group.
+I organized execution, evaluation and training around one common unit:
+**one task, one frozen agent snapshot and a requested number of attempts**.
+Runtime calls this a sampling group. The snapshot includes the effective model
+and harness configuration used by that group.
 
 Multiple groups can execute concurrently. Each attempt gets an isolated task
 environment and a stable correlation identity connecting its execution,
@@ -280,10 +333,9 @@ request carries its identity and authority; the client does not have
 to expand a large dataset into a giant submission. Task materialization and
 preparation happen as part of the execution path.
 
-The operator-facing service is serverless: submit an experiment and consume
-its outputs, while the platform manages the workers, task environments, model
-access and lifecycle underneath it. Workload size, active task resources and
-model-computation throughput can be managed independently.
+The operator submits an experiment and consumes its outputs; the platform
+manages workers, task environments, model access and lifecycle. Workload size,
+active task resources and model-computation throughput are separate controls.
 
 ## From experience to learning
 
@@ -303,15 +355,21 @@ individual generating interactions supply the token-level learning inputs.
 </figure>
 
 The implemented path is GRPO-style LoRA training through Tinker. Tinker
-Cookbook centers rewards
-within each task group and constructs the learning datums. For an illustrative
-group with rewards 0, 0.5 and 1, centering gives relative advantages −0.5, 0 and
-+0.5. The relative outcome weights the behavior sampled by each trajectory.
+Cookbook centers rewards within each task group to produce relative advantages,
+then constructs the learning datums. The relative outcome weights the behavior
+sampled by each trajectory.
 
 Before datum construction, Runtime joins each assessment to its originating
 attempt and model records, validates finite rewards and checks output-token /
 log-probability alignment. The learning inputs use the actual prompt tokens,
 sampled output tokens and generation-policy log probabilities.
+
+Eligibility is settled before relative advantages are computed. A valid zero
+reward is a learning outcome; absent or invalid trainable evidence is a different
+state. Runtime qualifies the retained trajectories, applies the group's
+eligibility and signal requirements, and records exclusions before constructing
+the learning inputs. An attempt must not change its siblings' advantages and
+then disappear because its evidence could not be used.
 
 Within an attempt, generated action tokens receive its group-relative
 advantage. Observations provide context and receive zero advantage: the
@@ -365,8 +423,8 @@ inference weights, the sampler used for subsequent generation, and the trainer
 state needed for supported optimization continuation. Its resumable state also
 tracks the dataset position and acknowledged training progress.
 
-An operator can inspect a checkpoint, select it in another profile and evaluate
-it with the same recipe. Starting new training from that model and continuing
+An operator can inspect a checkpoint, bind its saved model to the same harness
+recipe and evaluate it on another task set. Starting new training from that model and continuing
 compatible optimizer state are distinct choices. The checkpoint’s model
 lineage, ownership and training context remain associated with its identity.
 
@@ -389,11 +447,11 @@ authorized storage and a useful inspection surface.
 ### Durable jobs and scoped execution
 
 Gateway resolves the dataset, actor and optional judge, checks their authority,
-and pins the accepted inputs. A database transaction establishes the run and
-its initial durable state. Ready work is delivered to compatible workers;
-organization-level job admission and scheduling govern participation in the
-shared service. Runtime handles the actual task-resource admission within a
-job.
+and pins the accepted specification. I made acceptance one database transaction
+containing the run, immutable specification and authoritative creation event.
+Exact submission retries return that accepted identity. Workers can claim the
+job only after its execution prerequisites are durably ready. Organization-level
+admission governs jobs; Runtime admits the actual task resources within each job.
 
 The customer identity, worker service identity and authority for an individual
 attempt are distinct. Workers claim accepted work and receive scoped execution
@@ -433,11 +491,11 @@ durable reference. Consumers verify the intended payload before materializing
 or using it. A content reference can be shared between components without
 copying the same evidence merely to change which service refers to it.
 
-For canonical interaction evidence, I selected checksum-capable storage so an exact,
-create-only upload could be checked against its full-object SHA-256 using
-provider metadata. Gateway can verify what it publishes without downloading
-the trajectory itself. This preserves both direct data movement and a precise
-publication boundary.
+I designed the canonical interaction-storage contract around exact, create-only
+uploads and provider-verifiable full-object SHA-256 checksums. Gateway can verify
+what it publishes from provider metadata without downloading the trajectory
+itself. This preserves both direct data movement and a precise publication
+boundary.
 
 ### Cloud delivery, networking and credentials
 
@@ -467,6 +525,13 @@ Gateway retains ordered events and result references so inspection does not
 depend on finding a particular worker process. Clients can reconnect to an
 event stream from a cursor and return to the same run identity.
 
+I designed inspection around experimental lineage: which frozen agent produced
+each attempt, which trials and token spans supplied a training group's signal,
+and which groups contributed to a model update. The retained records connect
+that evidence to the successor model snapshot and checkpoint. Large token
+payloads stay in artifacts; bounded evidence chunks preserve the exact
+references without forcing a whole trajectory into a control-plane event.
+
 The Go CLI exposes human-readable views and structured JSON for automation.
 Status, events, artifacts, task attempts, learning updates and checkpoints are
 separate useful views of the experiment. Bulky outputs remain downloadable
@@ -489,10 +554,16 @@ machinery: the task package defines the work and assessment.
 The largest campaigns exercised the execution and learning core before the
 later profile abstraction and unified managed interface.
 
-Profiles gave task-specific actors and judges a common execution format. That
-format became useful in subsequent work on task generation and
-repository-specific reviewer construction: an agent-producing workflow can
-return a runnable recipe that a task-performing workflow can consume.
+The system was deployed and exercised internally in the development
+environment; it is not generally available. The public documentation and CLI
+releases provide inspectable interfaces to the work.
+
+Profiles gave task-specific actors and judges a common execution format. I used
+these boundaries in subsequent work on task factories and repository-specific
+reviewer construction: an agent-producing workflow can return a runnable recipe
+that a task-performing workflow consumes. The companion article,
+[From real software work to specialized agents](/from-software-work-to-specialized-agents/),
+explains the task production, knowledge construction and applied workflows.
 
 My contribution was the design and implementation across these boundaries:
 native-agent/model integration, distributed task and learning orchestration,
@@ -501,17 +572,15 @@ cloud systems that expose them as one capability. I built this with the
 SynthLabs team and extensive use of coding agents, adopting existing execution
 and model-computation foundations where they fit.
 
-The system was deployed and exercised internally in the development
-environment; it is not generally available. The public documentation and CLI
-releases provide inspectable interfaces to the work.
-
 ## Further reading
 
+- [From real software work to specialized agents](/from-software-work-to-specialized-agents/)
 - [How Synth fits together](https://synthlabs.mintlify.app/concepts/product-model)
 - [Agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)
 - [Tasks and versions](https://synthlabs.mintlify.app/concepts/tasks-and-versions)
 - [Managed execution](https://synthlabs.mintlify.app/guides/managed-execution)
 - [Training and checkpoint comparison](https://synthlabs.mintlify.app/guides/managed-training)
+- [CLI command reference](https://synthlabs.mintlify.app/reference/cli)
 - [Public CLI releases](https://github.com/SynthLabsAI/synth-releases/releases)
 
 <style>
@@ -552,6 +621,13 @@ releases provide inspectable interfaces to the work.
   .custody-data strong { font-size: 12px; }
   .custody-data div span { font-size: 11px; line-height: 1.7; margin-top: 8px; color: var(--dim); }
   .custody-arrow { text-align: center; font-size: 22px; }
+  .role-modes { border-top: 1px solid var(--fg); }
+  .role-lane { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+  .role-lane > strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+  .role-flow { display: grid; grid-template-columns: 1fr 18px 1fr 18px 1fr; gap: 8px; align-items: center; font-size: 12px; line-height: 1.7; }
+  .role-flow span { padding: 13px 10px; border: 1px solid var(--rule); align-self: stretch; display: flex; align-items: center; }
+  .role-flow b { text-align: center; font-size: 18px; font-weight: 400; }
+  .role-lane small { display: block; color: var(--dim); font-size: 11px; margin-top: 10px; }
   @media (max-width: 960px) {
     #learning-loop, #group-pipeline { width: 100%; position: static; transform: none; }
     #learning-loop picture, #group-pipeline picture { max-width: 480px; margin: 0 auto; }
@@ -565,6 +641,8 @@ releases provide inspectable interfaces to the work.
     #native-model-path img { aspect-ratio: 420 / 1290; }
   }
   @media (max-width: 620px) {
+    .role-flow { grid-template-columns: 1fr; gap: 6px; }
+    .role-flow b { transform: rotate(90deg); line-height: 1; }
     .experiment-inputs { grid-template-columns: 1fr; }
     .experiment-inputs > div { padding: 16px; }
     .profile-grid, .profile-bindings { grid-template-columns: 1fr; gap: 7px; }

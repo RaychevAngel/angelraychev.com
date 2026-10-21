@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed agent training and evaluation</title>
+  <desc id="desc">Angel Ivanov Raychev's technical systems article. Executable tasks and agent profiles produce native-agent experience; assessed experience supports model updates and usable checkpoints.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#111" stroke-width="1.3"/></marker></defs>
+  <rect width="1200" height="630" fill="#fff"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#111">
+    <text x="64" y="66" font-size="21" letter-spacing="1.2">AGENT SYSTEMS · SYNTHLABS</text>
+    <text x="64" y="153" font-size="49" font-weight="700">Distributed agent training</text>
+    <text x="64" y="218" font-size="49" font-weight="700">and evaluation</text>
+    <path d="M64 265 H1136" stroke="#bbb"/>
+    <g fill="none" stroke="#111" stroke-width="1.8">
+      <rect x="64" y="315" width="300" height="135"/>
+      <rect x="450" y="315" width="300" height="135"/>
+      <rect x="836" y="315" width="300" height="135"/>
+      <path d="M364 382 H444" marker-end="url(#arrow)"/>
+      <path d="M750 382 H830" marker-end="url(#arrow)"/>
+    </g>
+    <g font-size="23" text-anchor="middle">
+      <text x="214" y="357">Executable work</text>
+      <text x="214" y="397" fill="#555">Tasks + profiles</text>
+      <text x="600" y="357">Native experience</text>
+      <text x="600" y="397" fill="#555">Tools + model calls</text>
+      <text x="986" y="357">Model updates</text>
+      <text x="986" y="397" fill="#555">Usable checkpoints</text>
+    </g>
+    <text x="64" y="521" font-size="24">Distributed execution · exact evidence · learning</text>
+    <path d="M64 554 H1136" stroke="#bbb"/>
+    <text x="64" y="599" font-size="23">Angel Ivanov Raychev</text>
+    <text x="1136" y="599" font-size="21" text-anchor="end" fill="#555">angelraychev.com</text>
+  </g>
+</svg>

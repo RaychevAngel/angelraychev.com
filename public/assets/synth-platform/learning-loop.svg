@@ -30,7 +30,7 @@
     <text x="60" y="309" font-size="16" fill="#555">Agent + tools</text>
 
     <text x="390" y="180" font-size="13" fill="#555">02 / PREPARE LEARNING</text>
-    <text x="390" y="213" font-size="18" font-weight="700">Prepare learning</text>
+    <text x="390" y="213" font-size="18" font-weight="700">Join outcomes + calls</text>
     <text x="390" y="247" font-size="16">Task assessments</text>
     <text x="390" y="273" font-size="16">Tokens + logprobs</text>
     <text x="390" y="309" font-size="16" fill="#555">Relative advantages</text>

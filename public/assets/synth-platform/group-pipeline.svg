@@ -5,7 +5,7 @@
   <rect width="1000" height="480" fill="#fff"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111">
     <text x="40" y="41" font-size="14" letter-spacing="1.4">PIPELINED PREPARATION, SYNCHRONIZED UPDATES</text>
-    <text x="40" y="79" font-size="24" font-weight="700">A ready group can begin learning work immediately.</text>
+    <text x="40" y="79" font-size="24" font-weight="700">Ready groups prepare and submit learning work.</text>
     <text x="40" y="110" font-size="16" fill="#555">All groups capture the same policy S₀. Bar lengths are schematic.</text>
 
     <g font-size="15">

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc">
+  <title id="title">A creator produces a reusable specialist; a separate workflow uses it</title>
+  <desc id="desc">Repository URLs lead to programmatic Git and GitHub history acquisition and a creator task. A creator agent researches that task while inspecting the shared reviewer base, producing structured repository knowledge. Trusted code combines that knowledge with the unchanged executable base and stores a runnable reviewer profile. The review workflow separately accepts a PR URL, prepares the exact review task, and runs the selected stored profile to return a review and artifacts. Dashed borders identify model research; solid stages identify preparation, artifacts and trusted assembly. These are logical workflow boundaries.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px}.small{font-size:17px;fill:#444}.label{font-size:16px;fill:#444;letter-spacing:.03em}.node{fill:#fff;stroke:#222;stroke-width:1.5}.research{fill:#fafafa;stroke:#222;stroke-width:1.5;stroke-dasharray:7 5}.trusted{fill:#f5f5f5;stroke:#222;stroke-width:1.5}.flow{fill:none;stroke:#222;stroke-width:1.7;marker-end:url(#arrow)}.rule{stroke:#bbb;stroke-width:1}</style>
+  <rect width="1000" height="850" fill="#fff"/>
+  <text x="40" y="31" class="label">CONSTRUCT A REUSABLE SPECIALIST</text>
+
+  <rect class="node" x="40" y="60" width="200" height="75"/>
+  <text x="140" y="91" text-anchor="middle">Repository URLs</text>
+  <text x="140" y="116" text-anchor="middle" class="small">authorized access</text>
+  <path class="flow" d="M240 98 H290"/>
+  <rect class="node" x="290" y="60" width="280" height="75"/>
+  <text x="430" y="91" text-anchor="middle">History acquisition</text>
+  <text x="430" y="116" text-anchor="middle" class="small">Git + GitHub records</text>
+  <path class="flow" d="M570 98 H620"/>
+  <rect class="node" x="620" y="60" width="340" height="75"/>
+  <text x="790" y="91" text-anchor="middle">Creator task</text>
+  <text x="790" y="116" text-anchor="middle" class="small">searchable source and history</text>
+
+  <path class="flow" d="M790 135 V200"/>
+  <text x="811" y="175" class="small">execute</text>
+  <rect class="node" x="40" y="200" width="260" height="100"/>
+  <text x="170" y="230" text-anchor="middle">Shared reviewer base</text>
+  <text x="170" y="256" text-anchor="middle" class="small">engine + model + tools</text>
+  <text x="170" y="282" text-anchor="middle" class="small">method + output schema</text>
+  <path class="flow" d="M300 250 H620"/>
+  <text x="460" y="231" text-anchor="middle" class="small">inspect the consumer</text>
+  <rect class="research" x="620" y="200" width="340" height="100"/>
+  <text x="790" y="230" text-anchor="middle">Creator agent</text>
+  <text x="790" y="256" text-anchor="middle" class="small">research the repository</text>
+  <text x="790" y="282" text-anchor="middle" class="small">discover useful review knowledge</text>
+
+  <path class="flow" d="M790 300 V330 H820 V360"/>
+  <rect class="node" x="680" y="360" width="280" height="100"/>
+  <text x="820" y="390" text-anchor="middle">Specialization</text>
+  <text x="820" y="416" text-anchor="middle" class="small">contracts + instructions</text>
+  <text x="820" y="442" text-anchor="middle" class="small">skills + source references</text>
+  <path class="flow" d="M680 410 H630"/>
+  <path class="flow" d="M170 300 V410 H330"/>
+  <rect class="trusted" x="330" y="360" width="300" height="100"/>
+  <text x="480" y="390" text-anchor="middle">Trusted assembly</text>
+  <text x="480" y="416" text-anchor="middle" class="small">fixed base + generated data</text>
+  <text x="480" y="442" text-anchor="middle" class="small">validate + bind identities</text>
+
+  <path class="flow" d="M480 460 V510"/>
+  <rect class="node" x="330" y="510" width="300" height="70"/>
+  <text x="480" y="540" text-anchor="middle">Runnable reviewer profile</text>
+  <text x="480" y="565" text-anchor="middle" class="small">stored by content identity</text>
+  <path class="flow" d="M630 545 H650 V680"/>
+  <text x="670" y="620" class="small">select the stored profile</text>
+
+  <path class="rule" d="M40 630 H615 M675 630 H960"/>
+  <text x="40" y="660" class="label">USE THE SPECIALIST ON REPEATED WORK</text>
+  <rect class="node" x="40" y="680" width="150" height="90"/>
+  <text x="115" y="718" text-anchor="middle">PR URL</text>
+  <text x="115" y="745" text-anchor="middle" class="small">new work</text>
+  <path class="flow" d="M190 725 H240"/>
+  <rect class="node" x="240" y="680" width="210" height="90"/>
+  <text x="345" y="709" text-anchor="middle">Review factory</text>
+  <text x="345" y="735" text-anchor="middle" class="small">exact PR snapshot</text>
+  <text x="345" y="757" text-anchor="middle" class="small">task + context</text>
+  <path class="flow" d="M450 725 H520"/>
+  <rect class="research" x="520" y="680" width="220" height="90"/>
+  <text x="630" y="709" text-anchor="middle">Reviewer agent</text>
+  <text x="630" y="735" text-anchor="middle" class="small">executes profile</text>
+  <text x="630" y="757" text-anchor="middle" class="small">on the review task</text>
+  <path class="flow" d="M740 725 H800"/>
+  <rect class="node" x="800" y="680" width="160" height="90"/>
+  <text x="880" y="718" text-anchor="middle">Review</text>
+  <text x="880" y="745" text-anchor="middle" class="small">+ artifacts</text>
+
+  <path d="M40 807 H80" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="94" y="813" class="small">model research / investigation</text>
+  <text x="960" y="813" text-anchor="end" class="small">Executable machinery stays trusted.</text>
+</svg>

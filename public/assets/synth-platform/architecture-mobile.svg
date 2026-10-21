@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="1650" viewBox="0 0 420 1650" role="img" aria-labelledby="title desc">
   <title id="title">The managed agent platform, reflowed for a narrow screen</title>
-  <desc id="desc">The Synth CLI submits to Gateway. Gateway handles authentication, admission and PostgreSQL metadata; Runtime handles sampling, training and the Harbor execution adapter. Independent task trials run native agents and tools and are assessed. Their model calls go through Proxy to a provider. Proxy writes bulk evidence directly to object storage, which Runtime can read. Runtime coordinates Tinker updates and the next sampler. Solid arrows carry commands or model calls; dotted arrows carry bulk evidence. This shows logical responsibilities, not physical service placement.</desc>
+  <desc id="desc">The Synth CLI submits to Gateway. Gateway handles authentication, admission and PostgreSQL metadata; Runtime handles execution, optional learning and the Harbor execution adapter. Independent task trials run native agents and tools, with assessment when selected. Their model calls go through Proxy to a provider. Proxy writes bulk evidence directly to object storage, which Runtime can read. When training is selected, Runtime coordinates Tinker updates and the next sampler. Solid arrows carry commands or model calls; dotted arrows carry bulk evidence. This shows logical responsibilities, not physical service placement.</desc>
   <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
   <style>
     text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px;font-weight:400}.small{font-size:18px;fill:#444}.heading{font-size:19px;font-weight:500}.node{fill:#fff;stroke:#222;stroke-width:1.5}.group{fill:#fff;stroke:#777;stroke-width:1.3}.rule{fill:none;stroke:#bbb;stroke-width:1}.flow{fill:none;stroke:#222;stroke-width:1.8;marker-end:url(#arrow)}.both{marker-start:url(#arrow)}.data{fill:none;stroke:#555;stroke-width:2;stroke-dasharray:2 7;stroke-linecap:round;marker-end:url(#arrow)}
@@ -21,11 +21,11 @@
   <text x="210" y="385" text-anchor="middle" class="heading">PostgreSQL</text>
   <text x="210" y="413" text-anchor="middle" class="small">durable authority</text>
 
-  <path class="flow" d="M350 253 H390 V470 H210 V495"/>
-  <text x="299" y="457" class="small">run</text>
+  <path class="flow both" d="M350 253 H390 V470 H210 V495"/>
+  <text x="240" y="457" class="small">run / state</text>
   <rect class="node" x="70" y="495" width="280" height="132"/>
   <text x="210" y="525" text-anchor="middle" class="heading">agent-rl-runtime</text>
-  <text x="210" y="555" text-anchor="middle" class="small">sampling + training</text>
+  <text x="210" y="555" text-anchor="middle" class="small">execution + learning</text>
   <path class="rule" d="M90 573 H330"/>
   <text x="210" y="601" text-anchor="middle" class="small">Harbor execution adapter</text>
   <path class="flow" d="M210 627 V700"/>
@@ -44,7 +44,7 @@
   <text x="99" y="836" text-anchor="middle" class="small">+ tools</text>
   <text x="210" y="836" text-anchor="middle" class="small">+ tools</text>
   <text x="321" y="836" text-anchor="middle" class="small">+ tools</text>
-  <text x="210" y="877" text-anchor="middle" class="small">assessment per trial</text>
+  <text x="210" y="877" text-anchor="middle" class="small">assessment when selected</text>
 
   <path class="flow both" d="M210 890 V950"/>
   <text x="230" y="927" class="small">model calls</text>
@@ -66,8 +66,8 @@
 
   <path class="flow both" d="M350 552 H400 V1410 H350"/>
   <rect class="node" x="70" y="1360" width="280" height="100"/>
-  <text x="210" y="1393" text-anchor="middle" class="heading">Tinker training</text>
-  <text x="210" y="1423" text-anchor="middle" class="small">updates + next sampler</text>
+  <text x="210" y="1393" text-anchor="middle" class="heading">Optional learning</text>
+  <text x="210" y="1423" text-anchor="middle" class="small">Tinker: next sampler</text>
   <text x="210" y="1449" text-anchor="middle" class="small">separate model compute</text>
 
   <text x="30" y="1510" class="small">Logical responsibilities,</text>

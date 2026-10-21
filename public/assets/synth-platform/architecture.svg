@@ -15,8 +15,8 @@
   <!-- One accepted request fans out into independent trials. -->
   <path class="flow" d="M200 138 H294"/>
   <text x="223" y="119" class="small">submit</text>
-  <path class="flow" d="M534 138 H660"/>
-  <text x="597" y="119" text-anchor="middle" class="small">run</text>
+  <path class="flow both" d="M534 138 H660"/>
+  <text x="597" y="119" text-anchor="middle" class="small">run / state</text>
   <rect class="node" x="40" y="96" width="160" height="86"/>
   <text x="120" y="133" text-anchor="middle" class="heading">synth CLI</text>
   <text x="120" y="160" text-anchor="middle" class="small">operator</text>
@@ -25,7 +25,7 @@
   <text x="414" y="159" text-anchor="middle" class="small">auth · admission</text>
   <rect class="node" x="660" y="96" width="300" height="116"/>
   <text x="810" y="125" text-anchor="middle" class="heading">agent-rl-runtime</text>
-  <text x="810" y="152" text-anchor="middle" class="small">sampling + training</text>
+  <text x="810" y="152" text-anchor="middle" class="small">execution + learning</text>
   <path class="rule" d="M680 166 H940"/>
   <text x="810" y="193" text-anchor="middle" class="small">Harbor execution adapter</text>
 
@@ -51,7 +51,7 @@
   <text x="714" y="394" text-anchor="middle" class="small">+ tools</text>
   <text x="810" y="394" text-anchor="middle" class="small">+ tools</text>
   <text x="906" y="394" text-anchor="middle" class="small">+ tools</text>
-  <text x="810" y="444" text-anchor="middle" class="small">assessment per trial</text>
+  <text x="810" y="444" text-anchor="middle" class="small">assessment when selected</text>
 
   <!-- Native tool execution stays in the task; only model calls cross Proxy. -->
   <path class="flow both" d="M660 365 H590 V443 H534"/>
@@ -77,8 +77,8 @@
   <!-- Training compute is a separate service from task execution. -->
   <path class="flow both" d="M960 138 H982 V604 H960"/>
   <rect class="node" x="660" y="560" width="300" height="88"/>
-  <text x="810" y="595" text-anchor="middle" class="heading">Tinker training</text>
-  <text x="810" y="624" text-anchor="middle" class="small">updates ↔ next sampler</text>
+  <text x="810" y="595" text-anchor="middle" class="heading">Optional learning</text>
+  <text x="810" y="624" text-anchor="middle" class="small">Tinker: update ↔ sampler</text>
   <text x="810" y="531" text-anchor="middle" class="small">model state, not task compute</text>
 
   <path d="M40 686 H81" stroke="#222" stroke-width="1.8"/>
