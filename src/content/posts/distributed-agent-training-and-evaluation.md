@@ -178,8 +178,8 @@ changing the harness.
 
 An actor profile defines how to perform work. A judge profile defines how to
 assess its artifacts. Both are complete agent recipes, with independently
-selected models, instructions, tools and resources. A reusable judge can serve
-a family of tasks while each task supplies its own reference material. A strong
+selected models, instructions, tools and execution configuration. A reusable
+judge can serve a family of tasks while each task supplies its own reference material. A strong
 judge need not be a model the training backend can optimize. On eligible tasks,
 it runs in a separate verifier environment with task-owned assessment context,
 declared actor outputs and its own scoped model access.
@@ -350,7 +350,7 @@ interactions. The task assessment belongs to the trajectory as a whole; the
 individual generating interactions supply the token-level learning inputs.
 
 <figure class="platform-figure platform-wide" id="learning-loop" aria-labelledby="learning-caption">
-  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-loop-mobile.svg" width="420" height="1450"><img src="/assets/synth-platform/learning-loop.svg" width="1000" height="740" alt="Repeated attempts produce task assessments and captured native model calls. Runtime joins these by originating trial and qualifies the experience before reward centering and learning-input construction. Task-group contributions supply forward and backward work, followed by the batch optimizer step, sampler and checkpoint." loading="lazy"></picture>
+  <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-join-mobile-f0093165739a.svg" width="420" height="1450"><img src="/assets/synth-platform/learning-join-desktop-7b322f009a27.svg" width="1000" height="740" alt="Repeated attempts produce task assessments and captured native model calls. Runtime joins these by originating trial and qualifies the experience before reward centering and learning-input construction. Task-group contributions supply forward and backward work, followed by the batch optimizer step, sampler and checkpoint." loading="lazy"></picture>
   <figcaption id="learning-caption">Task outcomes and their generating evidence are separate records, joined before learning. Qualified task-group contributions accumulate into the batch update; the next batch uses the synchronized model with the same harness.</figcaption>
 </figure>
 
