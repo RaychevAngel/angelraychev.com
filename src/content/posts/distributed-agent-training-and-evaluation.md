@@ -13,11 +13,12 @@ runs isolated repository tasks, captures the model interactions produced inside
 the native coding harness, joins that experience to task assessments, and trains
 a supported model from it. The resulting checkpoint returns to the same harness.
 
-The central engineering problem was preserving the agent through that loop:
-its tools, delegation and context behavior; the exact tokens sampled by a
-particular model snapshot; and the state produced by each training update.
-Independent task work and learning preparation can overlap, while policy
-advancement retains an explicit synchronization boundary.
+The central engineering problem was keeping native execution, learning evidence
+and model state in agreement. The harness had to retain its tools, delegation
+and context behavior; learning had to use the exact tokens sampled by a
+particular model snapshot; and each update had to yield usable state for
+subsequent work. Independent task execution and learning preparation could
+overlap, while policy advancement retained an explicit synchronization boundary.
 
 I built the Python RL Runtime, native model adapters, reusable agent profiles,
 and the managed delivery paths around them: a Go CLI and agent launcher,
@@ -565,8 +566,9 @@ such as pandas, NumPy and aiohttp, with task-specific tests and pinned
 environments. Other task collections used the same execution and learning
 machinery: the task package defines the work and assessment.
 
-The largest campaigns exercised the execution and learning core before the
-later profile abstraction and unified managed interface.
+The execution and learning core supported those campaigns. I subsequently
+generalized agent behavior into reusable profiles and exposed the machinery
+through the unified managed interface.
 
 The system was deployed and exercised internally in the development
 environment; it is not generally available. The public documentation and CLI

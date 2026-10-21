@@ -396,7 +396,7 @@ base; assembly and export checks prevent generated knowledge from replacing that
 executable contract.
 
 The workflows retain exact profile and source identities, outputs, traces, model
-usage, costs and timing. Profiles have durable private storage separate from
+usage, reported inference cost and timing. Profiles have durable private storage separate from
 temporary diagnostic artifacts. An authorized operator can return to the result
 without essential profile files or a controller left running on my laptop.
 
@@ -404,13 +404,13 @@ Follow-up review adds another kind of state. The implementation carries prior
 findings alongside the old and new source, with stable finding origins and
 versioned events for persistence, change, resolution and recurrence. Uncertain
 identity remains explicit rather than merging allegations by guesswork. The full
-current review stays intact; a separate delta can suppress repeated publication
-without hiding persistent issues from a reader who did not see the earlier run.
+current review stays intact; a separate private-history delta highlights new,
+changed and resurfacing findings.
 
 I also implemented on-demand PR invocation with operator, repository and profile
-authorization and source pins established at admission. Request deduplication and
-finding deduplication solve different problems: the first prevents duplicate
-execution, while the second controls repeated communication about the same issue.
+authorization and source pins established at admission. Request identity and
+finding identity solve different problems: request deduplication prevents duplicate
+execution, while finding identity tracks the same issue across source changes.
 These integration paths were exercised through cloud workflows and PR publication.
 
 These are implemented and exercised development workflows, not a generally
