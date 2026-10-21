@@ -185,6 +185,8 @@ I wanted to retain the capabilities of a real coding harness: repository
 navigation, shell commands, file editing, tool use, native configuration and
 configured delegation to subagents. Synth’s model layer lets the installed
 harness use a supported backend model while preserving that execution model.
+In the managed native path, delegated agents inherit the selected model and
+scoped inference route rather than silently switching to an unrelated policy.
 
 For Claude Code, the harness speaks Anthropic’s Messages protocol. The models
 behind Synth may have different tokenizers, chat templates, tool-call grammars,
@@ -366,9 +368,10 @@ lineage, ownership and training context remain associated with its identity.
 
 Resumability also includes the boundary around a remote optimizer step. Before
 enqueueing it, the lifecycle durably marks the update as unresolved;
-acknowledged progress is recorded separately. Continuation must resolve that
-boundary before advancing model state or the dataset cursor. A saved
-checkpoint and an outstanding remote mutation are distinct pieces of state.
+acknowledged progress is recorded separately. An unresolved update blocks
+automatic continuation: a missing acknowledgement is not treated as permission
+to repeat the update or advance the dataset cursor. A saved checkpoint and an
+outstanding remote mutation are distinct pieces of state.
 
 This closes the practical loop: task experience can produce a new model, and
 that model can return to the same native agent for further work or evaluation.
@@ -478,7 +481,9 @@ such as pandas, NumPy and aiohttp, with task-specific tests and pinned
 environments. Other task collections used the same execution and learning
 machinery: the task package defines the work and assessment.
 
-The later profile abstraction also gave task-specific actors and judges a
+The largest campaigns exercised the execution and learning core before the
+later profile abstraction and unified managed interface. That profile
+abstraction also gave task-specific actors and judges a
 common execution format. That became useful in subsequent work on task
 generation and [repository-specific reviewer construction](/training-a-code-reviewer-we-actually-use/):
 an agent-producing workflow can return a runnable recipe, and a task-performing
