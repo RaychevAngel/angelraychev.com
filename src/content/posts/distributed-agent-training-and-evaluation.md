@@ -167,6 +167,10 @@ it does not reconstruct the recipe in Python. Instruction delivery, literal
 arguments, setup, environment and working-directory resolution, and required
 outputs therefore have one execution contract.
 
+Required routing, capture and model-compatibility settings are checked as launch
+constraints; conflicts are rejected. Other native settings retain the harness's
+configuration hierarchy rather than being silently replaced by runner defaults.
+
 Published profile versions are immutable, so an experiment retains the version
 it selected when a newer one is published. The service supplies canonical
 profile bytes and a digest; the Go client verifies that representation instead
@@ -295,8 +299,8 @@ interaction before returning the completed response. Response-delivery settlemen
 hands the staged record to a bounded publisher, which obtains an upload grant,
 transfers the payload and commits its reference. Foreground model preparation,
 staging and publication have separate execution resources. A slow bulk transfer
-does not have to occupy the agent's response path, while capture retains an
-explicit custody boundary.
+does not have to occupy the agent's response path. Response delivery, published
+byte integrity and eligibility for learning are distinct checks.
 
 ## One execution core for evaluation and training
 
