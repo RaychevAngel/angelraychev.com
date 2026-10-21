@@ -30,7 +30,7 @@ assessments, artifacts and checkpoints without operating the underlying workers.
 
 <figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
   <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
-  <figcaption id="architecture-caption">The platform’s principal control, execution and learning paths. Native agents and tools work in remote task environments; model providers perform inference and training computation. <a href="#the-system-underneath">Architecture explained below.</a></figcaption>
+  <figcaption id="architecture-caption">Control, execution and learning paths for a managed run. Native agents and tools work in remote task environments; model providers perform inference and training computation. <a href="#the-system-underneath">Architecture explained below.</a></figcaption>
 </figure>
 
 ## The experiment is the interface
@@ -160,7 +160,8 @@ To investigate a model update, keep the recipe fixed and bind it to a new
 checkpoint. The system can retain both identities without treating a saved
 model as the entire agent.
 
-Local and Harbor-managed execution use one Go interpreter for the profile.
+The local profile runner, `synth agent run`, and Harbor-managed execution use
+one Go interpreter for the profile.
 Runtime supplies task, run and effective-model bindings to that launcher;
 it does not reconstruct the recipe in Python. Instruction delivery, literal
 arguments, setup, environment and working-directory resolution, and required
@@ -198,7 +199,7 @@ task again.
   <figcaption id="roles-caption">Producing work, assessing it and learning from it are separate operations. Reassessment fixes the original output; training additionally needs the actor's captured model interactions.</figcaption>
 </figure>
 
-I built a regrading path that reuses the task registry and evaluation machinery.
+I built `synth run regrade` by composing the task registry and evaluation machinery.
 It derives tasks from the original immutable task versions, restores retained
 actor outputs, and runs the selected judge against the preserved assessment
 context. Source-trial and artifact digests record which work was assessed.
@@ -218,6 +219,14 @@ configured delegation to subagents. Synth’s model layer lets the installed
 harness use a supported backend model while preserving that execution model.
 In the managed native path, delegated agents inherit the selected model and
 scoped inference route rather than silently switching to an unrelated policy.
+
+The same integration reaches a developer's own workspace through `synth claude`.
+It launches the installed Claude Code with a supported base model or an owned
+checkpoint selected with `--model`, retaining native tools, plugins, permissions
+and resume behavior. The launcher supplies compatible model settings; Gateway
+authorizes the selected model, and Proxy routes inference and captures its
+interactions. This local interactive entry point is distinct from running a
+saved agent profile or submitting a managed experiment.
 
 Here, Claude Code is the native harness and speaks Anthropic’s Messages
 protocol. The models behind Synth may have different tokenizers, chat templates, tool-call grammars,
@@ -494,17 +503,20 @@ PostgreSQL retains the relationships, lifecycle facts and object references
 needed to inspect and authorize them.
 
 <figure class="platform-figure" id="data-custody" aria-labelledby="custody-caption">
-  <div class="custody-control"><span class="diagram-label">Control + authority</span><strong>Gateway ↔ PostgreSQL</strong><span>Owner · run · permissions · object identity · durable references</span></div>
-  <div class="custody-grants"><span>Authorize exact transfers</span><span>Commit verified references</span></div>
-  <div class="custody-data"><div><strong>Producer</strong><span>Task package, interaction evidence or artifact</span></div><span class="custody-arrow" aria-hidden="true">→</span><div><strong>Object storage</strong><span>Immutable payload bytes</span></div><span class="custody-arrow" aria-hidden="true">→</span><div><strong>Consumer</strong><span>Task runner, training preparation or authorized readback</span></div></div>
-  <figcaption id="custody-caption">Authorization and durable metadata remain centralized. Large payloads use direct, scoped data paths rather than being relayed through the control service.</figcaption>
+  <div class="custody-heading"><strong>Canonical interaction evidence</strong><span>Direct bytes; controlled publication and read access.</span></div>
+  <ol class="custody-steps" role="list">
+    <li><div class="custody-phase"><span aria-hidden="true">01</span><strong>Authorize</strong></div><div class="custody-route"><strong>Gateway → producer</strong><span>A create-only upload grant binds the exact object, size and <code>SHA-256</code>.</span></div></li>
+    <li><div class="custody-phase"><span aria-hidden="true">02</span><strong>Transfer</strong></div><div class="custody-route"><strong>Producer → object storage</strong><span>Payload bytes move directly, without passing through Gateway.</span></div></li>
+    <li class="custody-publish"><div class="custody-phase"><span aria-hidden="true">03</span><strong>Verify / publish</strong></div><div class="custody-route"><strong>Gateway: verify metadata → commit reference</strong><span>Check the provider’s full-object <code>SHA-256</code>, size and media type before publishing the canonical record in PostgreSQL.</span></div></li>
+    <li><div class="custody-phase"><span aria-hidden="true">04</span><strong>Consume</strong></div><div class="custody-route"><strong>Authorized consumer → object storage</strong><span>Use separate read authority; verify the intended payload before use.</span></div></li>
+  </ol>
+  <figcaption id="custody-caption">Canonical interaction evidence separates upload, verified publication and authorized consumption. Gateway verifies provider metadata and commits the reference without relaying the trajectory payload.</figcaption>
 </figure>
 
-The transfer contract binds an object’s identity, expected size and digest to
-its allowed operation. Publication joins the stored bytes to an authorized,
-durable reference. Consumers verify the intended payload before materializing
-or using it. A content reference can be shared between components without
-copying the same evidence merely to change which service refers to it.
+The upload grant authorizes creation of one exact object; the canonical record
+publishes its verified reference. Consumers still need
+their own read authority. A content reference can be shared between components
+without copying the same evidence merely to change which service refers to it.
 
 I designed the canonical interaction-storage contract around exact, create-only
 uploads and provider-verifiable full-object SHA-256 checksums. Gateway can verify
@@ -625,18 +637,19 @@ and model-computation foundations where they fit.
   .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; font-size: 12px; }
   .profile-grid span { padding: 6px 0; border-bottom: 1px solid var(--rule); }
   .profile-bindings { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; font-size: 12px; }
-  .custody-control { padding: 20px; border: 1px solid var(--fg); text-align: center; }
-  .custody-control strong, .custody-control > span:last-child { display: block; }
-  .custody-control > span:last-child { font-size: 12px; margin-top: 8px; }
-  .custody-grants { display: flex; justify-content: space-around; gap: 15px; font-size: 11px; padding: 15px 0; color: var(--dim); }
-  .custody-grants span::before { content: "↓ "; color: var(--fg); }
-  .custody-grants span:last-child::before { content: "↑ "; }
-  .custody-data { display: grid; grid-template-columns: 1fr 22px 1fr 22px 1fr; align-items: center; gap: 5px; }
-  .custody-data > div { padding: 16px 12px; border: 1px solid var(--fg); align-self: stretch; }
-  .custody-data strong, .custody-data div span { display: block; }
-  .custody-data strong { font-size: 12px; }
-  .custody-data div span { font-size: 11px; line-height: 1.7; margin-top: 8px; color: var(--dim); }
-  .custody-arrow { text-align: center; font-size: 22px; }
+  .custody-heading { padding: 16px 0; border-top: 1px solid var(--fg); border-bottom: 1px solid var(--rule); }
+  .custody-heading strong, .custody-heading span { display: block; }
+  .custody-heading strong { font-size: 13px; }
+  .custody-heading span { margin-top: 5px; font-size: 12px; color: var(--dim); }
+  .custody-steps { list-style: none; margin: 0; padding: 0; }
+  .custody-steps li { display: grid; grid-template-columns: 135px minmax(0, 1fr); gap: 20px; margin: 0; padding: 18px 12px; border-bottom: 1px solid var(--rule); font-size: 12px; line-height: 1.8; }
+  .custody-phase span { display: block; margin-bottom: 5px; font-size: 11px; }
+  .custody-phase strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .035em; }
+  .custody-route strong, .custody-route span { display: block; }
+  .custody-route span { margin-top: 6px; color: var(--dim); }
+  .custody-route code { white-space: nowrap; }
+  .custody-steps .custody-publish { border-top: 1px solid var(--fg); border-bottom: 1px solid var(--fg); background: var(--surface); }
+  .custody-publish .custody-route span { color: var(--surface-dim); }
   .role-modes { border-top: 1px solid var(--fg); }
   .role-lane { padding: 18px 0; border-bottom: 1px solid var(--rule); }
   .role-lane > strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
@@ -679,11 +692,8 @@ and model-computation foundations where they fit.
     .experiment-inputs { grid-template-columns: 1fr; }
     .experiment-inputs > div { padding: 16px; }
     .profile-grid, .profile-bindings { grid-template-columns: 1fr; gap: 7px; }
-    .custody-grants { flex-direction: column; text-align: center; gap: 4px; }
-    .custody-data { grid-template-columns: 1fr; gap: 8px; }
-    .custody-data > div { padding: 16px; }
-    .custody-data strong { font-size: 13px; }
-    .custody-data div span { font-size: 12px; margin-top: 4px; }
-    .custody-arrow { transform: rotate(90deg); line-height: 1; }
+    .custody-steps li { grid-template-columns: 1fr; gap: 10px; padding: 18px 14px; }
+    .custody-phase { display: flex; gap: 12px; align-items: baseline; }
+    .custody-phase span { margin-bottom: 0; }
   }
 </style>

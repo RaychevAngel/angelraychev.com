@@ -14,8 +14,8 @@ opportunities. A separate construction workflow researched repository code and
 engineering history and returned a runnable, repository-specific reviewer.
 
 The two sides solve different problems. Factories make work repeatable across
-agents and model versions. Construction makes architectural knowledge and
-investigation procedures reusable across future work. Their separation lets a
+agents and model versions. Construction specializes the worker through repository
+knowledge and investigation procedures, without changing model weights. Their separation lets a
 workflow produce the assignment or the worker, then evaluate and improve each
 independently.
 
@@ -411,7 +411,9 @@ I also implemented on-demand PR invocation with operator, repository and profile
 authorization and source pins established at admission. Request identity and
 finding identity solve different problems: request deduplication prevents duplicate
 execution, while finding identity tracks the same issue across source changes.
-These integration paths were exercised through cloud workflows and PR publication.
+Source and authorization are checked again before publication, which anchors the
+review to the admitted commit. These integration paths were exercised through
+cloud workflows and PR publication.
 
 These are implemented and exercised development workflows, not a generally
 available service. Their interfaces make construction and use remotely operable
