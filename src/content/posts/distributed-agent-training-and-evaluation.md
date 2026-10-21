@@ -52,6 +52,12 @@ The same underlying machinery supports three different purposes:
 - **Training:** collect scored experience, construct valid learning examples,
   update a supported model and advance the sampler used by subsequent work.
 
+For example, a July training campaign used repository-level software-engineering
+tasks from [R2E-Gym](https://github.com/R2E-Gym/R2E-Gym) on public Python projects
+including pandas, NumPy and aiohttp. The task packages supplied pinned execution
+environments and task-specific tests. The Runtime handled repeated agent
+attempts, their assessments and the evidence needed for learning around them.
+
 Those operations should share execution infrastructure without becoming the
 same operation. Evaluation does not need to export every trajectory for
 gradient computation. Training needs substantially more than a successful task
@@ -67,8 +73,7 @@ A **trial** is one attempt at a task; repeated attempts at that task form a
 **group**. A training batch selects groups for a shared update boundary. Model
 calls are retained as **Interactions**, linked to the Session and trial that
 produced them, while the **sampler** selects the model state used to generate
-them. These units must not
-be confused with tasks, tokens or gradient updates.
+them. These units must not be confused with tasks, tokens or gradient updates.
 
 The CLI calls the task-performing agent the **actor**. For an authorized
 operator, the interface looks like this:
@@ -195,9 +200,12 @@ again after trajectory export—not just before it.
 The Runtime joins the valid trajectories to their task rewards and delegates
 GRPO (group-relative policy optimization) advantage calculation and datum assembly
 to [Tinker Cookbook](https://github.com/thinking-machines-lab/tinker-cookbook). It retains
-the mapping back to original trials and interactions. A multi-step agent
-trajectory can generate multiple training datums; a datum count is not a task
-count or a trial count.
+the mapping back to original trials and interactions. Actual model generations
+supply transitions with their exact prompt, output tokens and sampling logprobs.
+The task assessment enters as the trajectory’s final reward, rather than an
+invented task reward for each individual tool call. A multi-step agent trajectory
+can generate multiple training datums; a datum count is not a task count or a
+trial count.
 
 The training path consumes the ordinary Session export rather than maintaining
 a second, privileged approximation of the conversation. Size, digest and
@@ -229,6 +237,9 @@ But the algorithm retains a deliberate boundary:
    coordinator enqueue the batch’s optimizer step.
 5. It settles the submitted operations, saves a synchronized sampler and uses
    that sampler for the next batch.
+
+Batches without eligible learning data can correctly produce no optimizer
+update; completing a sampling batch is not itself a gradient step.
 
 The host need not wait for every individual gradient acknowledgement before
 enqueuing the optimizer into the provider’s ordered operation stream. What
@@ -443,8 +454,8 @@ A retained July campaign records thirty batches and thirty optimizer updates,
 with 3,000 rollout records over 300 manifest entries: 2,023 trainable and 977
 excluded rollouts, producing 80,012 training datums. This was a direct
 Runtime/operator experiment, not the later Gateway-managed submission path.
-It used rank-1 low-rank adaptation (LoRA) of Qwen3.6-35B-A3B through Tinker and included
-interruption and checkpoint recovery before its final batch. The model service
+It used rank-1 low-rank adaptation (LoRA) of Qwen3.6-35B-A3B through Tinker and
+included interruption and checkpoint recovery before its final batch. The model service
 provided the gradient computation; I built and operated the surrounding agent
 training system.
 

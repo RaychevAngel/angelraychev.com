@@ -22,6 +22,7 @@
       "recorded_period": "2026-07",
       "execution_path": "Direct Runtime/operator controller; not Gateway-managed customer submission",
       "model_adaptation": "Rank-1 LoRA adaptation of Qwen3.6-35B-A3B through Tinker",
+      "task_family": "Repository-level software-engineering tasks from R2E-Gym on public Python projects, with pinned task environments and task-specific tests",
       "counts": {
         "manifest_entries": 300,
         "rollout_records": 3000,
