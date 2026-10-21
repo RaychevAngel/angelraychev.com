@@ -139,11 +139,10 @@ deletions, boundaries, validation and expected evidence. The materializer checks
 that the assigned source paths cover the inventory without overlapping ownership.
 
 Each task starts from the same pinned repository state and owns a coherent slice
-of the transformation. That makes assignments independently replayable and
-parallelizable, instead of requiring every worker to wait for the preceding
-worker's patch. Shared package surfaces have explicit ownership; instructions
-are rendered from the structured specification rather than repaired after the
-fact from arbitrary prompt text.
+of the transformation. The resulting assignments can be replayed and attempted
+in parallel; integrating their patches is a separate operation. Shared package
+surfaces have explicit ownership. Instructions are rendered from the structured
+specification rather than repaired after the fact from arbitrary prompt text.
 
 One SFT assignment illustrates the semantic boundary. It had to preserve response
 loss masking, gradient accumulation, evaluation hooks, checkpoint cadence and
@@ -196,9 +195,10 @@ the recipe and collects the result; it does not need a hidden code-review-specif
 grading policy.
 
 For historical-reference tasks, this judge scores agreement with qualified
-recorded evidence. For reviewer-quality comparisons, I separately checked
-findings against source: historical reviews were a comparator, not an exhaustive
-answer key.
+recorded evidence. For reviewer-quality comparisons, I assessed complete reviews,
+including recorded Codex and CodeRabbit reviews, against pinned source and
+affected consumers. Historical reviews were comparators, not exhaustive answer
+keys.
 
 This lets a judge serve a task family while its model, instructions or rubric
 change independently of the actor. Repeated assessments of fixed outputs can
@@ -370,9 +370,10 @@ different inference and orchestration route for this application.
 
 Source acquisition stays on the control side, using repository-scoped read
 authority. Execution credentials are injected separately rather than embedded in
-the profile or generated knowledge. Repository content and discussion are
-untrusted evidence, not authority to alter the agent's tools or execution. Trusted assembly and export
-checks keep generated data separate from executable machinery.
+the profile or generated knowledge. Repository content and discussion are research
+inputs, not trusted configuration. Tools and launch settings come from the shared
+base; assembly and export checks prevent generated knowledge from replacing that
+executable contract.
 
 The workflows retain exact profile and source identities, outputs, traces and
 cost/time receipts. Profiles have durable private storage separate from temporary
@@ -404,6 +405,8 @@ history preceding the comparison period. The generated profile then reviewed
 later historical changes without an
 OpenFGA-specific repair packet or changes to the shared creator and reviewer base.
 
+[OpenFGA](https://openfga.dev/docs/concepts) is an authorization service; its
+stores group authorization models and relationship data.
 One consequential example came from a historical snapshot of
 [OpenFGA's MySQL read-replica work](https://github.com/openfga/openfga/pull/3290).
 The change routed a store lookup to a replica. The important consequence appeared
@@ -451,11 +454,10 @@ A better judge changes how outcomes are assessed. Weight training changes the
 model itself.
 
 The reviewer construction described here specializes knowledge and harness
-behavior without updating model weights. The related
-[reviewer-training study](/training-a-code-reviewer-we-actually-use/) explores the
-separate weight-training path. The
-[distributed platform](/distributed-agent-training-and-evaluation/) supplies
-compatible execution, evaluation and supported learning primitives.
+behavior without updating model weights. The
+[distributed platform](/distributed-agent-training-and-evaluation/) supplies the
+separate execution, evaluation and supported weight-training primitives: assessed
+task experience can produce a model checkpoint that returns to the same harness.
 
 My contribution was connecting these layers into reusable engineering workflows:
 task production, independently configurable actors and judges, repository research,
@@ -478,7 +480,7 @@ the worker and the assessment without rebuilding the entire system each time.
   .specialist-contents { font-size: 12px; line-height: 2; margin: 30px 0 44px; }
   .specialist-contents a { display: inline-block; padding: 3px 0; }
   .workflow-interface { border-top: 1px solid var(--fg); border-bottom: 1px solid var(--rule); padding: 16px 0 4px; margin: 32px 0 44px; }
-  .workflow-interface p { display: grid; grid-template-columns: 90px 1fr; gap: 16px; font-size: 12px; margin-bottom: 12px; }
+  .workflow-interface p { display: grid; grid-template-columns: 90px 1fr; gap: 16px; font-size: 13px; margin-bottom: 12px; }
   .workflow-interface strong { text-transform: uppercase; letter-spacing: .04em; }
   .specialist-figure { margin: 38px 0 44px; }
   .specialist-figure figcaption { max-width: 660px; margin: 14px auto 0; }
@@ -486,17 +488,17 @@ the worker and the assessment without rebuilding the entire system each time.
   .specialist-figure picture, .specialist-figure img { display: block; width: 100%; }
   .specialist-figure img { height: auto; border: 1px solid var(--rule); background: #fff; }
   .factory-headings, .factory-route { display: grid; grid-template-columns: 1fr 20px 1.2fr 20px 1.2fr 20px .85fr; gap: 10px; align-items: center; }
-  .factory-headings { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; padding: 0 12px 12px; }
-  .factory-route { padding: 18px 12px; border-top: 1px solid var(--rule); font-size: 12px; line-height: 1.7; }
+  .factory-headings { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; padding: 0 12px 12px; }
+  .factory-route { padding: 18px 12px; border-top: 1px solid var(--rule); font-size: 13px; line-height: 1.7; }
   .factory-route:last-of-type { border-bottom: 1px solid var(--rule); }
   .factory-route > div { min-width: 0; align-self: stretch; padding: 12px; border: 1px solid var(--rule); }
   .factory-route strong, .factory-route span { display: block; }
-  .factory-route span { color: var(--dim); margin-top: 9px; font-size: 11px; }
+  .factory-route span { color: var(--dim); margin-top: 9px; font-size: 12px; }
   .factory-route > b { font-size: 19px; text-align: center; font-weight: 400; }
   .factory-route .factory-product { border-color: var(--fg); display: flex; align-items: center; }
   .specialist-eyebrow { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--dim); margin-bottom: 8px; }
   .knowledge-record-heading { border-top: 1px solid var(--fg); border-bottom: 1px solid var(--rule); padding: 18px 0; }
-  .knowledge-record dl { margin: 0; font-size: 12px; }
+  .knowledge-record dl { margin: 0; font-size: 13px; }
   .knowledge-record dl > div { display: grid; grid-template-columns: 145px 1fr; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
   .knowledge-record dt { font-weight: 700; }
   .knowledge-record dd { margin: 0; }

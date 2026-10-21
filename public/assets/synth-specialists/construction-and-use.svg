@@ -29,13 +29,13 @@
   <rect class="research" x="620" y="200" width="340" height="100"/>
   <text x="790" y="230" text-anchor="middle">Creator agent</text>
   <text x="790" y="256" text-anchor="middle" class="small">research the repository</text>
-  <text x="790" y="282" text-anchor="middle" class="small">discover useful review knowledge</text>
+  <text x="790" y="282" text-anchor="middle" class="small">derive review knowledge</text>
 
   <path class="flow" d="M790 300 V330 H820 V360"/>
   <rect class="node" x="680" y="360" width="280" height="100"/>
   <text x="820" y="390" text-anchor="middle">Specialization</text>
   <text x="820" y="416" text-anchor="middle" class="small">contracts + instructions</text>
-  <text x="820" y="442" text-anchor="middle" class="small">skills + source references</text>
+  <text x="820" y="442" text-anchor="middle" class="small">skills + references</text>
   <path class="flow" d="M680 410 H630"/>
   <path class="flow" d="M170 300 V410 H330"/>
   <rect class="trusted" x="330" y="360" width="300" height="100"/>
@@ -45,7 +45,7 @@
 
   <path class="flow" d="M480 460 V510"/>
   <rect class="node" x="330" y="510" width="300" height="70"/>
-  <text x="480" y="540" text-anchor="middle">Runnable reviewer profile</text>
+  <text x="480" y="540" text-anchor="middle">Reviewer profile</text>
   <text x="480" y="565" text-anchor="middle" class="small">stored by content identity</text>
   <path class="flow" d="M630 545 H650 V680"/>
   <text x="670" y="620" class="small">select the stored profile</text>

@@ -32,9 +32,9 @@
   <text x="230" y="671" class="small">trials</text>
   <rect class="group" x="40" y="700" width="340" height="190"/>
   <text x="210" y="731" text-anchor="middle" class="heading">Independent task trials</text>
-  <rect class="node" x="54" y="750" width="90" height="101"/>
-  <rect class="node" x="165" y="750" width="90" height="101"/>
-  <rect class="node" x="276" y="750" width="90" height="101"/>
+  <rect class="node" x="52" y="750" width="94" height="101"/>
+  <rect class="node" x="163" y="750" width="94" height="101"/>
+  <rect class="node" x="274" y="750" width="94" height="101"/>
   <text x="99" y="776" text-anchor="middle" class="small">trial 1</text>
   <text x="210" y="776" text-anchor="middle" class="small">trial 2</text>
   <text x="321" y="776" text-anchor="middle" class="small">trial n</text>

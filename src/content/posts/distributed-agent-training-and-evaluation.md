@@ -93,7 +93,7 @@ synth train start \
   --plan @train-plan.json
 synth run show <run-id>
 synth run events <run-id> --follow
-synth run checkpoints <run-id>
+synth run checkpoints <training-run-id>
 ```
 
 The dataset, profile and plan references above are illustrative. Submission
