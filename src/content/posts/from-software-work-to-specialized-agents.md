@@ -201,8 +201,10 @@ recreate the original work. The platform article explains the
 [retained-output reassessment mechanism](/distributed-agent-training-and-evaluation/#actors-and-judges-can-run-independently).
 
 For historical-reference tasks, this judge scores agreement with qualified
-recorded evidence. Reviewer-quality comparison was a separate local workflow.
-I developed it with coding agents around a per-opportunity evidence ledger,
+recorded evidence. Comparing reviewers asks a broader question: which claims
+are supported by source, including valid defects absent from the recorded
+review? I developed a separate local workflow with coding agents around a
+per-opportunity evidence ledger,
 preserving the original candidate and recorded Codex/CodeRabbit reviews and
 linking judgments to pinned source and affected consumers. The same underlying
 issue received one identity across different wording and output sections;

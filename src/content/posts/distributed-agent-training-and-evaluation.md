@@ -455,8 +455,10 @@ tracks the dataset position and acknowledged training progress.
 
 An operator can inspect a checkpoint, bind its saved model to the same harness
 recipe and evaluate it on another task set. Starting new training from that model and continuing
-compatible optimizer state are distinct choices. The checkpoint’s model
-lineage, ownership and training context remain associated with its identity.
+compatible optimizer state are distinct choices. The checkpoint’s ownership
+and training context remain associated with its identity. Inspection
+links it to the producing run, later runs that selected it, and sampling groups
+recorded against its saved model state.
 
 Resumability also includes the boundary around a remote optimizer step. Before
 enqueueing it, the lifecycle durably marks the update as unresolved;
