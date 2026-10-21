@@ -401,11 +401,12 @@ credentials. Per-trial model access is bound to the run, attempt, owner and
 selected model; the sandbox receives scoped model access rather than a shared
 provider key. Heartbeats maintain ownership and convey cancellation.
 
-PostgreSQL checks the active attempt and worker identity inside the transaction
-that appends progress or commits completion. Progress retries are deduplicated
-by attempt-local sequence. Completion locks the current run and attempt, checks
-the final event boundary and transitions both together. Ownership therefore
-governs the actual state changes, not just the initial API request.
+At the managed-run boundary, PostgreSQL checks the worker’s active execution
+attempt and identity inside the transaction that appends progress or commits
+completion. Progress retries are deduplicated by that attempt’s local sequence.
+Completion locks the run and its current worker attempt, checks the final event
+boundary and transitions both together. Ownership therefore governs the actual
+state changes, not just the initial API request.
 
 ### Metadata and bulk data take different paths
 
