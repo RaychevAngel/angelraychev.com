@@ -457,7 +457,7 @@ confirmed it, and it was absent from the recorded baseline review.
 
 In the historical comparison, the constructed reviewer found more
 source-confirmed actionable and consequential defects than the recorded
-CodeRabbit reviews. The assessments were internal and performed with coding
+first-pass CodeRabbit reviews. The assessments were internal and performed with coding
 agents, checking pinned source and affected consumers. They compared complete
 reviewers; they did not isolate the contribution of generated knowledge from the
 model, shared harness or source preparation. The example describes the evaluated
