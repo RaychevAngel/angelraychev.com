@@ -317,8 +317,9 @@ identity connecting its execution, assessment, artifacts and model interactions.
 The runner handles the Harbor/environment lifecycle; the agent performs the
 work inside it.
 
-Model inference and training run in separate computation services. The worker
-coordinates state and results across those execution and model-computation paths.
+Model inference and training computation run outside the task environments,
+through backend services. The worker coordinates state and results across those
+execution and model-computation paths.
 
 This core supports three uses:
 
