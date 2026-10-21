@@ -362,30 +362,27 @@ generating calls supply the token-level learning inputs. Each attempt can
 contain many model calls and tool interactions.
 
 In the group-relative setup, Runtime samples several attempts at the same task
-from the same agent snapshot. Their assessed outcomes provide a relative
-learning signal for that task.
+from the same model snapshot, with the harness recipe held fixed. Their assessed
+outcomes provide a relative learning signal for that task.
 
 <figure class="platform-figure platform-wide" id="learning-loop" aria-labelledby="learning-caption">
   <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/learning-join-mobile-f0093165739a.svg" width="420" height="1450"><img src="/assets/synth-platform/learning-join-desktop-7b322f009a27.svg" width="1000" height="740" alt="Repeated attempts produce task assessments and captured native model calls. Runtime joins these by originating trial and qualifies the experience before reward centering and learning-input construction. Task-group contributions supply forward and backward work, followed by the batch optimizer step, sampler and checkpoint." loading="lazy"></picture>
   <figcaption id="learning-caption">Task outcomes and their generating evidence are separate records, joined before learning. Qualified task-group contributions accumulate into the batch update; the next batch uses the synchronized model with the same harness.</figcaption>
 </figure>
 
-The implemented path is GRPO-style LoRA training through Tinker. Tinker
-Cookbook centers rewards within each task group to produce relative advantages,
-then constructs the learning datums. The relative outcome weights the behavior
-sampled by each trajectory.
-
-Before datum construction, Runtime joins each assessment to its originating
-attempt and model records, validates finite rewards and checks output-token /
-log-probability alignment. The learning inputs use the actual prompt tokens,
-sampled output tokens and generation-policy log probabilities.
+The implemented path is GRPO-style LoRA training through Tinker. Runtime joins
+each assessment to its originating attempt and model records, validates finite
+rewards and checks output-token / log-probability alignment. The learning inputs
+use the actual prompt tokens, sampled output tokens and generation-policy log
+probabilities.
 
 Eligibility is settled before relative advantages are computed. A valid zero
 reward is a learning outcome; absent or invalid trainable evidence is a different
 state. Runtime qualifies the retained trajectories, applies the group's
-eligibility and signal requirements, and records exclusions before constructing
-the learning inputs. An attempt must not change its siblings' advantages and
-then disappear because its evidence could not be used.
+eligibility and signal requirements, and records exclusions. Tinker Cookbook
+then centers rewards within the qualified task group to produce relative
+advantages and construct the learning datums. An attempt must not change its
+siblings' advantages and then disappear because its evidence could not be used.
 
 Within an attempt, generated action tokens receive its group-relative
 advantage. Observations provide context and receive zero advantage: the
@@ -406,10 +403,13 @@ group-relative advantage.
   <figcaption id="credit-caption">Conceptual call views for qualified actor experience, not a reconstructed agent tree or separate child rewards. Each generation retains its actual prompt and sampling log probabilities. Packing preserves earlier action weights and gives newly added observations zero advantage; a broken prompt-prefix relationship starts another datum.</figcaption>
 </figure>
 
-Cookbook merges successive interactions while the next prompt extends the
-previous prompt and generation. When that prefix relationship breaks, it
-starts another training datum. A multi-turn trajectory can therefore yield
-several datums while following the contexts the harness actually used. The
+Per-call capture does not require one training datum per call. Cookbook packs
+successive interactions while the next prompt extends the accumulated prompt
+and generation. Earlier generated actions keep their weights; newly appended
+observations receive zero advantage. When that exact prefix relationship breaks,
+packing starts another datum with the next call's actual context. A multi-turn
+trajectory can therefore yield several datums without imposing a fictional
+append-only conversation on the harness. The
 default trainer passes the captured generation-policy log probabilities and
 these advantages to Tinker’s importance-sampling loss.
 
@@ -421,10 +421,11 @@ and the coordination that advances usable model state.
 
 ### Overlap the work, preserve the policy boundary
 
-Agent attempts have uneven runtimes. Some complete quickly; others spend longer
-using tools or solving the task. I implemented a grouped pipeline so a ready
-group can export evidence, prepare datums and submit forward/backward work
-while other groups in the same batch are still sampling.
+A task group being ready for learning and the policy being ready to advance are
+different boundaries. Agent attempts have uneven runtimes, so I implemented a
+grouped pipeline that lets a ready group export evidence, prepare datums and
+submit forward/backward work while other groups in the same batch are still
+sampling.
 
 <figure class="platform-figure platform-wide" id="group-pipeline" aria-labelledby="pipeline-caption">
   <picture><source media="(max-width: 960px)" srcset="/assets/synth-platform/group-pipeline-mobile.svg" width="420" height="770"><img src="/assets/synth-platform/group-pipeline.svg" width="1000" height="480" alt="Conceptual timeline of three groups sampling from one model snapshot. Fast groups begin evidence preparation and forward/backward work while a slow group continues sampling. The optimizer step follows submission of the batch's contributions; the next batch uses the new sampler." loading="lazy"></picture>

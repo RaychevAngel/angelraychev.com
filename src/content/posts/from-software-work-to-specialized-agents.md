@@ -60,12 +60,15 @@ that someone must manually translate into a working agent.
 
 ## Three ways to construct executable work
 
-I developed task-production workflows around three different sources of software
-work. Their common output is a reconstructable assignment with explicit source,
-scope, artifacts and assessment context. They differ in where the assignment is
-defined: a parent delegates the next specialist problem, a transformation plan
-partitions a repository change, or a review policy selects and reconstructs an
-existing opportunity.
+Software work does not arrive in one form. A parent agent delegates a problem
+from an evolving workspace. A framework migration needs a semantic plan and a
+division of ownership. A historical review needs the exact change and evidence
+available at the chosen opportunity.
+
+I built distinct task-production workflows for these sources. Each produces a
+reconstructable assignment with explicit source, scope, artifacts and assessment
+context. The important difference is how the assignment is defined—not merely
+how its files are packaged.
 
 <figure class="specialist-figure specialist-wide" id="task-production-approaches" aria-labelledby="factory-caption">
   <div class="factory-headings" aria-hidden="true"><span>Work source</span><span></span><span>Define the assignment</span><span></span><span>Prepare the episode</span><span></span><span>Reusable work</span></div>
@@ -79,8 +82,9 @@ existing opportunity.
 
 In one workflow, a parent agent works through a source-grounded engineering
 scenario and delegates bounded assignments to a specialist. The capture point is
-immediately before the specialist runs: the current workspace and request define
-the problem another actor should be able to attempt.
+immediately before the specialist runs: the current workspace and request preserve
+the problem as it was posed, before its answer exists, so another actor can
+attempt the same assignment.
 
 I built scenario materializers that separate the domain contract, starting files
 and runtime configuration. The domain defines the work's vocabulary and evidence
@@ -94,9 +98,8 @@ proof obligations, such as generated-schema consistency and query-result
 equivalence. Domain-specific evidence could change without redesigning the
 capture and replay loop.
 
-Each capture becomes replayable before the specialist has answered it. Original
-solver traces and results remain separate from the promoted task's starting
-files, while their lineage is retained for assessment and analysis.
+Original solver traces and results remain separate from the promoted task's
+starting files, while their lineage is retained for assessment and analysis.
 
 The assignments must stand on observable files and a self-contained request.
 “Continue from the previous response” is not a replayable problem. The request
