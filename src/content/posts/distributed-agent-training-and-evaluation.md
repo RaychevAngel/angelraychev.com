@@ -275,8 +275,8 @@ it needs. The model service can meanwhile have a different bottleneck, and
 trajectory export can use its own concurrency limit. One global semaphore
 would not describe those constraints well.
 
-The dataset is an immutable source that Runtime can navigate in pages. The
-control request carries its identity and authority; the client does not have
+Runtime reads the selected immutable dataset version in pages. The control
+request carries its identity and authority; the client does not have
 to expand a large dataset into a giant submission. Task materialization and
 preparation happen as part of the execution path.
 
@@ -433,7 +433,7 @@ durable reference. Consumers verify the intended payload before materializing
 or using it. A content reference can be shared between components without
 copying the same evidence merely to change which service refers to it.
 
-For canonical model evidence, I selected checksum-capable storage so an exact,
+For canonical interaction evidence, I selected checksum-capable storage so an exact,
 create-only upload could be checked against its full-object SHA-256 using
 provider metadata. Gateway can verify what it publishes without downloading
 the trajectory itself. This preserves both direct data movement and a precise
