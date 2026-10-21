@@ -25,7 +25,7 @@ authenticated control, storage contracts and cloud infrastructure. An operator
 can submit versioned work and an agent recipe, then return to its execution,
 assessments, artifacts and checkpoints without operating the underlying workers.
 
-<nav class="platform-contents" aria-label="In this article"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#actors-and-judges-can-run-independently">Actor/judge modes</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a></nav>
+<nav class="platform-contents" aria-label="Article navigation"><a href="#the-experiment-is-the-interface">The experiment</a> · <a href="#the-system-underneath">Architecture</a> · <a href="#an-agent-profile-is-an-executable-recipe">Agent profiles</a> · <a href="#actors-and-judges-can-run-independently">Actor/judge modes</a> · <a href="#keep-the-native-harness-change-the-model">Native agents</a> · <a href="#one-execution-core-for-evaluation-and-training">Execution</a> · <a href="#from-experience-to-learning">Learning</a> · <a href="#a-managed-service-around-the-learning-loop">Cloud systems</a> · <a href="#what-this-made-possible">Usage</a> · <a href="/from-software-work-to-specialized-agents/">Companion: tasks and specialists</a></nav>
 
 <figure class="platform-figure platform-wide" id="platform-architecture" aria-labelledby="architecture-caption">
   <picture><source media="(max-width: 760px)" srcset="/assets/synth-platform/architecture-mobile.svg" width="420" height="1650"><img src="/assets/synth-platform/architecture.svg" width="1000" height="720" alt="Logical architecture of Synth: the CLI submits experiments to Gateway; Gateway records durable state and delegates execution to Runtime; Runtime coordinates task sandboxes, native-agent inference through Proxy, learning through Tinker and direct artifact transfers through object storage." loading="eager"></picture>
@@ -412,9 +412,9 @@ optimizer step in the backend’s ordered operation stream. It settles that work
 saves the next sampling snapshot, S₁, and binds the following batch to it. The
 harness recipe stays fixed across that model transition.
 
-This overlaps independent work while preserving the policy boundary. Active
-attempts keep their captured sampler; subsequent attempts use the deliberately
-advanced model state.
+This overlaps independent work while preserving the policy boundary. Every
+attempt in the current batch keeps its captured sampler, S₀; the next batch
+uses S₁.
 
 ### Checkpoints are usable model state
 
