@@ -194,6 +194,12 @@ Stop hook validates it and computes the reward. The execution runtime launches
 the recipe and collects the result; it does not need a hidden code-review-specific
 grading policy.
 
+This lets a judge serve a task family while its model, instructions or rubric
+change independently of the actor. Repeated assessments of fixed outputs can
+expose judge variability; comparing different judges does not require paying to
+recreate the original work. The platform article explains the
+[retained-output reassessment mechanism](/distributed-agent-training-and-evaluation/#actors-and-judges-can-run-independently).
+
 For historical-reference tasks, this judge scores agreement with qualified
 recorded evidence. Reviewer-quality comparison was a separate local workflow.
 I developed it with coding agents around a per-opportunity evidence ledger,
@@ -211,14 +217,9 @@ Defect detection, misleading assertions and harmful advice stayed separate in
 reporting. Source investigation determined whether a claim was true; historical
 reviews were comparators, not exhaustive answer keys.
 
-This lets a judge serve a task family while its model, instructions or rubric
-change independently of the actor. Repeated assessments of fixed outputs can
-expose judge variability; comparing different judges does not require paying to
-recreate the original work. The platform article explains the
-[retained-output reassessment mechanism](/distributed-agent-training-and-evaluation/#actors-and-judges-can-run-independently).
-
-These controls also matter outside experiments. Deployment can use the task
-factory and chosen actor profile without attaching a judge to every work item.
+Separating the actor from assessment also matters outside experiments.
+Deployment can use the task factory and chosen actor profile without attaching
+a judge to every work item.
 Evaluation and supported weight training remain separate choices.
 
 ## A creator that builds the reviewer

@@ -381,6 +381,15 @@ sampled outputs are actions in their own contexts. A child's answer, returned
 as a tool result, is context for its parent. These calls share the attempt's
 group-relative advantage.
 
+<figure class="platform-figure call-credit" id="native-call-credit" aria-labelledby="credit-caption">
+  <div class="credit-heading"><strong>One attempt, one relative advantage A</strong><span>Per-call views of captured context and sampled output</span></div>
+  <div class="credit-row"><strong>Parent call</strong><div class="credit-context"><small>Actual input context</small><span>Parent's task and conversation</span></div><b aria-hidden="true">→</b><div class="credit-action"><small>Sampled generation · A</small><span>Request for specialist work</span></div></div>
+  <div class="credit-row"><strong>Child call</strong><div class="credit-context"><small>Actual input context</small><span>Specialist's own assignment and conversation</span></div><b aria-hidden="true">→</b><div class="credit-action"><small>Sampled generation · A</small><span>Specialist's response</span></div></div>
+  <div class="credit-row"><strong>Parent continues</strong><div class="credit-context"><small>Actual input context</small><span>Parent's conversation, now including the child's returned result</span></div><b aria-hidden="true">→</b><div class="credit-action"><small>Sampled generation · A</small><span>Further parent action</span></div></div>
+  <div class="credit-note">The child's response supplies its own generated action tokens. Returned to its parent, that result is observed context—not another parent generation.</div>
+  <figcaption id="credit-caption">Conceptual call views for qualified actor experience, not a reconstructed agent tree or separate child rewards. Each generation retains its actual prompt and sampling log probabilities. Packing preserves earlier action weights and gives newly added observations zero advantage; a broken prompt-prefix relationship starts another datum.</figcaption>
+</figure>
+
 Cookbook merges successive interactions while the next prompt extends the
 previous prompt and generation. When that prefix relationship breaks, it
 starts another training datum. A multi-turn trajectory can therefore yield
@@ -633,6 +642,18 @@ and model-computation foundations where they fit.
   .role-flow span { padding: 13px 10px; border: 1px solid var(--rule); align-self: stretch; display: flex; align-items: center; }
   .role-flow b { text-align: center; font-size: 18px; font-weight: 400; }
   .role-lane small { display: block; color: var(--dim); font-size: 11px; margin-top: 10px; }
+  .credit-heading { padding: 16px 0; border-top: 1px solid var(--fg); border-bottom: 1px solid var(--rule); }
+  .credit-heading strong, .credit-heading span { display: block; }
+  .credit-heading strong { font-size: 13px; }
+  .credit-heading span { margin-top: 5px; font-size: 12px; color: var(--dim); }
+  .credit-row { display: grid; grid-template-columns: 110px minmax(0, 1fr) 18px minmax(0, 1fr); gap: 12px; align-items: center; padding: 15px 0; border-bottom: 1px solid var(--rule); font-size: 12px; line-height: 1.7; }
+  .credit-row > strong { font-size: 12px; }
+  .credit-row > div { padding: 12px; align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
+  .credit-context { border: 1px solid var(--rule); background: var(--surface); }
+  .credit-action { background: var(--fg); color: var(--bg); }
+  .credit-row small { display: block; margin-bottom: 6px; font-size: 10px; text-transform: uppercase; letter-spacing: .025em; }
+  .credit-row > b { font-weight: 400; font-size: 18px; text-align: center; }
+  .credit-note { padding: 15px 0; border-bottom: 1px solid var(--rule); font-size: 12px; line-height: 1.8; }
   @media (max-width: 960px) {
     #learning-loop, #group-pipeline { width: 100%; position: static; transform: none; }
     #learning-loop picture, #group-pipeline picture { max-width: 480px; margin: 0 auto; }
@@ -646,6 +667,11 @@ and model-computation foundations where they fit.
     #native-model-path img { aspect-ratio: 420 / 1290; }
   }
   @media (max-width: 620px) {
+    .credit-row { grid-template-columns: 1fr; gap: 7px; }
+    .credit-row > strong { margin-bottom: 3px; }
+    .credit-row > b { transform: rotate(90deg); line-height: 1; }
+    .credit-row small { font-size: 11px; }
+    .credit-row > div { padding: 12px 14px; }
     .role-flow { grid-template-columns: 1fr; gap: 6px; }
     .role-flow b { transform: rotate(90deg); line-height: 1; }
     .experiment-inputs { grid-template-columns: 1fr; }
