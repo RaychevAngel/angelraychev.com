@@ -237,9 +237,11 @@ profile.
 
 The creator's job is semantic research. It discovers architecture, guarantees,
 producer–consumer relationships, adopted decisions, intentional exceptions and
-useful investigation procedures. The shared base owns the stable execution
-machinery: model and engine settings, tools, review discipline, output format,
-validators and launch behavior.
+useful investigation procedures. It must distinguish adopted decisions from
+discarded proposals and unresolved interpretations: a historical review comment
+is not automatically a rule. The shared base owns the stable execution machinery:
+model and engine settings, tools, review discipline, output format, validators
+and launch behavior.
 
 <figure class="specialist-figure specialist-wide" id="specialist-construction" aria-labelledby="construction-caption">
   <picture><source media="(max-width: 760px)" srcset="/assets/synth-specialists/construction-and-use-mobile.svg" width="420" height="1600"><img src="/assets/synth-specialists/construction-and-use.svg" width="1000" height="850" alt="Construction acquires repository history, prepares a creator task and runs a creator agent. Trusted assembly combines generated semantic knowledge with the shared executable base to produce a stored reviewer profile. A separate review factory prepares each PR task, which the chosen reviewer executes." loading="lazy"></picture>
@@ -280,6 +282,12 @@ search and complete-record lookup. Behavioral terms, symbols and changed paths
 return compact routes; the reviewer can then open the full relevant record.
 Setup reconstructs these named files from a verified canonical representation:
 transport compression does not summarize away their contents.
+
+The creator also exercises the assembled library with path and behavioral
+queries, checking which records are found and whether their full applicability
+conditions, exceptions and related routes remain available. This makes retrieval
+usability part of construction, not a formatting concern postponed until
+deployment.
 
 An actual generated OpenFGA contract concerned ordering-sensitive iterator
 pruning. Two sorted inputs do not make their concatenation globally sorted; an
@@ -375,10 +383,10 @@ inputs, not trusted configuration. Tools and launch settings come from the share
 base; assembly and export checks prevent generated knowledge from replacing that
 executable contract.
 
-The workflows retain exact profile and source identities, outputs, traces and
-cost/time receipts. Profiles have durable private storage separate from temporary
-diagnostic artifacts. An authorized operator can return to the result without
-essential profile files or a controller left running on my laptop.
+The workflows retain exact profile and source identities, outputs, traces, model
+usage, costs and timing. Profiles have durable private storage separate from
+temporary diagnostic artifacts. An authorized operator can return to the result
+without essential profile files or a controller left running on my laptop.
 
 Follow-up review adds another kind of state. The implementation carries prior
 findings alongside the old and new source, with stable finding origins and

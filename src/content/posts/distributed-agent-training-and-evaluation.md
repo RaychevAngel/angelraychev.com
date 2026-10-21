@@ -376,6 +376,11 @@ advantage. Observations provide context and receive zero advantage: the
 optimizer is not being taught to generate the shell’s output as though the
 agent wrote it.
 
+Captured calls from the actor's delegated agents follow the same rule: their
+sampled outputs are actions in their own contexts. A child's answer, returned
+as a tool result, is context for its parent. These calls share the attempt's
+group-relative advantage.
+
 Cookbook merges successive interactions while the next prompt extends the
 previous prompt and generation. When that prefix relationship breaks, it
 starts another training datum. A multi-turn trajectory can therefore yield
