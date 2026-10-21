@@ -51,6 +51,8 @@
       "execution_path": "Development Gateway-managed run submitted with an installed source-built Synth CLI",
       "counts": {
         "batches": 2,
+        "groups_per_batch": 1,
+        "trials_per_group": 2,
         "trials_per_batch": 2,
         "scheduled_trials": 4,
         "settled_trials": 4,

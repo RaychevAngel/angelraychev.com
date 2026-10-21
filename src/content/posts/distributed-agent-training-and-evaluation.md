@@ -433,9 +433,10 @@ policy lineage and saved checkpoints are recorded separately.
 ### A managed training-to-checkpoint path
 
 An August 30 Dev run was submitted through the normal Synth CLI, executed four
-scored Harbor trials across two groups, produced four eligible datums, performed
-two optimizer updates and saved two checkpoints. The next group used the sampler
-from the previous update. All nineteen artifacts finalized.
+scored Harbor trials across two batches of one group each, produced four eligible
+datums, performed two optimizer updates and saved two checkpoints. The second
+batch used the sampler saved after the first update. All nineteen artifacts
+finalized.
 
 An earlier attempt performed its updates but failed final publication. It
 remained a failed run: numerical training success was not substituted for a
