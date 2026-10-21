@@ -195,10 +195,21 @@ the recipe and collects the result; it does not need a hidden code-review-specif
 grading policy.
 
 For historical-reference tasks, this judge scores agreement with qualified
-recorded evidence. For reviewer-quality comparisons, I assessed complete reviews,
-including recorded Codex and CodeRabbit reviews, against pinned source and
-affected consumers. Historical reviews were comparators, not exhaustive answer
-keys.
+recorded evidence. Reviewer-quality comparison was a separate local workflow.
+I developed it with coding agents around a per-opportunity evidence ledger,
+preserving the original candidate and recorded Codex/CodeRabbit reviews and
+linking judgments to pinned source and affected consumers. The same underlying
+issue received one identity across different wording and output sections;
+repeated descriptions did not multiply credit.
+
+Diagnoses and proposed remedies were assessed separately. Known misses,
+incomplete leads and alternative interpretations remained explicit. New source
+evidence could revise an earlier judgment while preserving its history.
+Deterministic tooling checked custody and whether every emitted item had an
+assessment, then aggregated accepted judgments over paired opportunities.
+Defect detection, misleading assertions and harmful advice stayed separate in
+reporting. Source investigation determined whether a claim was true; historical
+reviews were comparators, not exhaustive answer keys.
 
 This lets a judge serve a task family while its model, instructions or rubric
 change independently of the actor. Repeated assessments of fixed outputs can
