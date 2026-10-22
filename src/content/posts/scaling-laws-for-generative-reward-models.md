@@ -218,6 +218,8 @@ It documents the Elo estimator and uncertainty procedure, and distinguishes
 descriptive scaling fits from independently validated laws.
 The [version record](/research/generative-reward-models/release.json) identifies
 the downloadable PDF.
+The [paper landing page](/research/generative-reward-models/) provides the exact
+abstract and machine-readable citation metadata.
 
 <iframe class="grm-pdf" src="/research/generative-reward-models/reader.html?v=8ceca55b6af6" title="Scaling Laws for Generative Reward Models — full manuscript" loading="lazy"><a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=8ceca55b6af6">Open the manuscript PDF</a>.</iframe>
 
