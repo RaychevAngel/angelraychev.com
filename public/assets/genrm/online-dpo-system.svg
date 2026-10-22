@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed online DPO with a generative reward model</title>
+  <desc id="desc">Prompts feed two fresh current-policy responses. A generative judge compares both orderings to construct preference pairs. Current and frozen-reference log probabilities feed a masked DPO loss and a distributed update. Updated weights refresh the current policy. Saved outputs are measured by a separate learned Gold evaluator.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526172"/></marker>
+  </defs>
+  <rect width="1000" height="670" fill="#fff"/>
+  <g fill="#202d3a" font-family="Arial,Helvetica,sans-serif">
+    <text x="32" y="38" font-size="24" font-weight="700">The online preference-learning loop</text>
+    <text x="32" y="66" font-size="16" fill="#526172">Fresh behavior, generative feedback, distributed model updates</text>
+    <g fill="none" stroke="#526172" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 160 172 H 210"/>
+      <path d="M 450 172 H 510"/>
+      <path d="M 750 172 H 805"/>
+      <path d="M 885 236 V 322 H 715"/>
+      <path d="M 510 388 H 450"/>
+      <path d="M 330 333 V 247"/>
+      <path d="M 330 236 V 278 H 574 V 322"/>
+      <path d="M 846 441 V 476 H 717 V 420"/>
+    </g>
+    <g stroke="#c4ced8" fill="#f8fafc" stroke-width="1.4">
+      <rect x="32" y="128" width="128" height="88" rx="3"/>
+      <rect x="210" y="108" width="240" height="128" rx="3"/>
+      <rect x="510" y="108" width="240" height="128" rx="3"/>
+      <rect x="805" y="108" width="160" height="128" rx="3"/>
+      <rect x="210" y="333" width="240" height="110" rx="3"/>
+      <rect x="510" y="322" width="240" height="110" rx="3"/>
+      <rect x="785" y="333" width="180" height="110" rx="3"/>
+    </g>
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <text x="96" y="167">Prompt</text>
+      <text x="330" y="145">Current policy</text>
+      <text x="630" y="145">Generative judge</text>
+      <text x="885" y="145">Preference pair</text>
+      <text x="330" y="371">Distributed update</text>
+      <text x="630" y="358">Online DPO loss</text>
+      <text x="875" y="371">Frozen reference</text>
+    </g>
+    <g font-size="15" fill="#526172" text-anchor="middle">
+      <text x="96" y="190">Training input</text>
+      <text x="330" y="176">Generate two fresh responses</text>
+      <text x="330" y="201">vLLM sampling</text>
+      <text x="630" y="176">Compare both response orders</text>
+      <text x="630" y="201">Filter zero-sum verdicts</text>
+      <text x="885" y="176">Chosen / rejected</text>
+      <text x="885" y="201">Retain response tokens</text>
+      <text x="330" y="399">Ray orchestration · FSDP</text>
+      <text x="330" y="423">Checkpoint and refresh sampler</text>
+      <text x="630" y="386">Masked sequence log probabilities</text>
+      <text x="630" y="411">Current vs. reference margins</text>
+      <text x="875" y="399">Fixed policy likelihoods</text>
+      <text x="875" y="423">Not the reward model</text>
+    </g>
+    <text x="450" y="303" font-size="14" fill="#526172">Current-policy likelihoods</text>
+    <text x="717" y="500" font-size="14" fill="#526172">Reference likelihoods</text>
+    <path d="M 32 535 H 965" fill="none" stroke="#dfe5eb" stroke-width="1.4"/>
+    <text x="32" y="576" font-size="19" font-weight="700">Separate measurement</text>
+    <text x="32" y="607" font-size="17">Saved policy outputs → learned 32B Gold evaluator → policy trajectories</text>
+    <text x="32" y="639" font-size="15" fill="#526172">Gold evaluates outcomes; it does not supply the proxy-trained policy's preference updates.</text>
+  </g>
+</svg>

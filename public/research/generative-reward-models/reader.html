@@ -53,7 +53,7 @@
     input.addEventListener('change',()=>{current=Math.max(1,Math.min(pdf.numPages,Math.floor(Number(input.value)||1)));render();});
     zoom.addEventListener('change',render);
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(render,100);});
-    try{pdf=await pdfjs.getDocument({url:'./scaling-laws-for-generative-reward-models.pdf?v=903cc32194cb',isEvalSupported:false}).promise;total.textContent=`/ ${pdf.numPages}`;input.max=pdf.numPages;await render();}
+    try{pdf=await pdfjs.getDocument({url:'./scaling-laws-for-generative-reward-models.pdf?v=8ceca55b6af6',isEvalSupported:false}).promise;total.textContent=`/ ${pdf.numPages}`;input.max=pdf.numPages;await render();}
     catch(error){status.textContent='The manuscript could not load. Use “Open PDF” above.';console.error(error);}
   </script>
 </body>
