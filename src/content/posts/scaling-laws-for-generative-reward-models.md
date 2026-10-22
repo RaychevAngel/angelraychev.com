@@ -139,7 +139,7 @@ That made the judge itself an experimental component of the learning loop.
   <figcaption>The custom online-DPO loop. The frozen DPO reference policy supplies likelihoods, the rewarder supplies preferences, and Gold supplies a separate evaluation signal. These are different model roles even when some use related backbones.</figcaption>
 </figure>
 
-Each update performs a complete online preference-learning cycle:
+Each update performs an online preference-learning cycle:
 
 1. **Sample current-policy behavior.** Generate two fresh responses for each
    prompt, retaining the response tokens and prompt identity through distributed
@@ -152,9 +152,11 @@ Each update performs a complete online preference-learning cycle:
    the current and frozen-reference policies. Apply the sequence-level DPO
    objective with response masking, dynamic microbatching and distributed
    gradient updates.
-4. **Follow the evolving policy.** Preserve evaluation generations and model
-   state, then measure the resulting trajectories under both the training judge
-   and the separate Gold evaluator.
+
+Periodic validation and checkpointing track the evolving policy. In-loop
+validation uses the configured proxy judge; a separate evaluation and analysis
+path measures saved policy outputs under Gold. This keeps the training signal
+distinct from the reference used to compare the resulting policies.
 
 Ray coordinates distributed workers, FSDP supplies sharded training and vLLM
 supports generation. Independent multi-GPU training jobs made it possible to
