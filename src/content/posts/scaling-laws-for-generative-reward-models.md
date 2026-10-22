@@ -162,7 +162,7 @@ Ray coordinates distributed workers, FSDP supplies sharded training and vLLM
 supports generation. Independent multi-GPU training jobs made it possible to
 compare judge sizes, policy sizes, training recipes and regularization settings
 in parallel. The engineering work included preference-pair identity, reward
-construction, distributed actor updates, evaluation, checkpointing and recovery.
+construction, distributed actor updates, evaluation and sharded checkpointing.
 
 This research predates the managed agent-learning platform described in
 [my systems article](/distributed-agent-training-and-evaluation/). Both involve
@@ -235,7 +235,7 @@ abstract and machine-readable citation metadata.
   author = {Angel Raychev and Nathan Lile and Rafael Rafailov},
   year   = {2026},
   note   = {Preprint},
-  url    = {https://angelraychev.com/scaling-laws-for-generative-reward-models/}
+  url    = {https://angelraychev.com/research/generative-reward-models/}
 }
 ```
 
