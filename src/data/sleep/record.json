@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "entries": [
     {
       "id": "2026-10-13",
@@ -1507,6 +1507,159 @@
         {
           "href": "/sleep/measurements/continuity/",
           "label": "Continuity and waking estimates"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Milestone inclusion rules"
+        }
+      ],
+      "corrections": []
+    },
+    {
+      "id": "2026-10-22",
+      "wake_date": "2026-10-22",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider sleep wake-up date; diary describes sleep ending October 22, with uncertain final waking",
+      "status": "Middling subjective sleep; Oura recording incomplete after reported low battery; COROS retained for the full-night estimate",
+      "retrieved_at": "2026-10-22T17:58:01.175560+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-10-22T17:58:01.175560+00:00",
+        "coros": "2026-10-22T17:57:57.194Z"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "recording_status": "incomplete",
+        "score_eligible": false,
+        "quality_note": "Incomplete recording: the user reports low battery and recording loss. The returned episode ends at 06:30, well before the reported final waking and COROS endpoint. All Oura values below describe the recorded portion or its downstream daily summaries, not a complete night. Excluded from whole-night score milestones; the missing segment is not filled from COROS.",
+        "sleep": {
+          "average_breath": 12.375,
+          "average_heart_rate": 49.125,
+          "average_hrv": 63,
+          "awake_time": 720,
+          "bedtime_end": "2026-10-22T06:30:02.000-07:00",
+          "bedtime_start": "2026-10-22T00:48:32.000-07:00",
+          "day": "2026-10-22",
+          "deep_sleep_duration": 5490,
+          "efficiency": 96,
+          "latency": 540,
+          "light_sleep_duration": 11550,
+          "lowest_heart_rate": 45,
+          "rem_sleep_duration": 2730,
+          "time_in_bed": 20490,
+          "total_sleep_duration": 19770,
+          "type": "long_sleep"
+        },
+        "additional_sleep_episodes": [],
+        "score": 73,
+        "contributors": {
+          "deep_sleep": 88,
+          "efficiency": 100,
+          "latency": 83,
+          "rem_sleep": 36,
+          "restfulness": 97,
+          "timing": 100,
+          "total_sleep": 50
+        },
+        "readiness_score": 82,
+        "temperature_deviation_c": 0.15,
+        "spo2_average_percent": null,
+        "spo2_status": "Unavailable: API returned an unusable average of 0.0%; not interpreted as an oxygen measurement.",
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; exact wake date 2026-10-22; original partial-window data preserved"
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 91,
+        "daily_sleep_minutes": 555,
+        "main_sleep_minutes": 555,
+        "main_period_minutes": 563,
+        "main_start": "2026-10-22T00:44:00-07:00",
+        "main_end": "2026-10-22T10:07:00-07:00",
+        "ratios_percent": {
+          "deep": 20,
+          "light": 52,
+          "rem": 27,
+          "awake": 1
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 8,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 60,
+        "official_sleep_hrv_normal_range_ms": [
+          49,
+          69
+        ],
+        "official_sleep_hrv_baseline_ms": 59,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, baseline and normal range; none recomputed from returned points",
+        "daily_min_hr_bpm": 44,
+        "daily_average_hr_bpm": 54,
+        "resting_hr_bpm": 56,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not a complete-day or matched sleep-window measure; resting HR is predicted seated HR",
+        "source": "Official COROS connector: querysleepoverview/querysleephrv/queryavgheartrate/queryrestingheartrate, wake date 20261022; returned date checked"
+      },
+      "self_report": {
+        "restfulness": "Described the night as a mid sleep day (middling); no numerical rating or awakening count supplied.",
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": "Went to bed around 00:40. Final waking was sometime after 10:00, perhaps 10:15; explicitly uncertain. Exact onset and out-of-bed time unreported.",
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null
+      },
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "User reports Oura hit low battery and stopped recording, and finds COROS correct for this night. The API episode stopping at 06:30 is consistent with incomplete coverage, but the precise battery failure time was not independently observed."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Bed around 00:40; waking sometime after 10:00, perhaps 10:15, not remembered precisely. No meal timing, water timing, bathroom trip, awakening frequency or sustained daytime function supplied."
+        },
+        {
+          "kind": "measurement_provenance",
+          "observation": "Oura firmware 2.1.36 and sleep algorithm v2 match the preceding retrieval. The partial record remains stored with its native fields and ineligible whole-night score flag; no COROS data is spliced into Oura."
+        }
+      ],
+      "story": [
+        "The night ending October 22 felt middling. I went to bed around 00:40 and woke sometime after 10:00, perhaps 10:15, but I do not remember precisely.",
+        "Oura ran low on battery and stopped recording. I think COROS has this night right. I should be going to bed earlier."
+      ],
+      "interpretation": [
+        "COROS returned 91 with an estimated 9h15m asleep in a 00:44–10:07 episode lasting 9h23m. It estimated eight minutes awake, no awakening over five minutes and no naps. Its boundaries broadly fit the approximate diary, without establishing exact sleep onset, final waking or sleep-stage accuracy.",
+        "Oura returned a 00:48:32–06:30:02 episode, lasting 5h41m30s, with 5h29m30s estimated sleep and 12 minutes awake. Its endpoint precedes COROS’s by 3h36m58s. This is a coverage gap, not evidence that actual sleep ended at 06:30 or that the full night contained only 5½ hours of sleep.",
+        "The returned Oura Sleep Score is 73. Contributor grades are total sleep 50, deep 88, REM 36, efficiency 100, restfulness 97, latency 83 and timing 100. These remain visible as outputs based on an incomplete recording, excluded from whole-night score milestones. Neither the low duration/REM grades nor the high timing/restfulness grades establish the complete night’s outcome. Timing 100 is not counted as a verified timing achievement.",
+        "Oura’s recorded segment contains 1h31m30s deep, 45m30s REM and 3h12m30s light sleep, with nine minutes estimated latency and 96% efficiency. The missing later hours cannot be reconstructed from these totals. COROS reports daily stage ratios 20% deep, 52% light, 27% REM and 1% awake; their exact denominator is not explicitly supplied, so exact stage minutes are not derived.",
+        "COROS official sleep HRV is 60 ms, Normal against its returned 49–69 ms range and 59 ms baseline. Oura average sleep HRV is 63 ms, but only for the recorded segment. Oura sleeping HR is 49.125 bpm on average, minimum 45; its window is not the full COROS window. The difference between HRV summaries is not a matched-window accuracy test.",
+        "Oura also returns Readiness 82, peripheral-temperature deviation +0.15°C, average breathing rate 12.375/min and breathing disturbance index zero. The incomplete sleep coverage limits interpretation of these daily outputs. Saturation remains unavailable because the API returned an unusable 0.0% average; no normal-oxygenation conclusion follows.",
+        "COROS again grades this night 91 while the personal impression is middling. Compared with October 21, it estimates 18 minutes less sleep and two minutes more waking. The diary does not quantify today’s awakenings or morning sleepiness, so neither is assumed to repeat the preceding report. Earlier bedtime is the reported next direction, without a newly specified clock target or proven benefit."
+      ],
+      "plans": [
+        "Aim to go to bed earlier; no exact bedtime or detailed routine was specified."
+      ],
+      "next_focus": [
+        "Restore complete Oura coverage before the next sleep and retain COROS as its separate series. Today contributes a full-night COROS estimate and a flagged partial Oura recording, not a valid Oura whole-night score.",
+        "The user wants an earlier bedtime. Compare that direction with experienced sleep quality and later-day functioning while retaining enough opportunity; the middling impression remains beside COROS’s 91. Exact targets and a new cutoff rule have not been established."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/research/personal-experiments/#the-current-routine-proposal",
+          "label": "Routine history and comparisons"
+        },
+        {
+          "href": "/sleep/research/measurement-and-validation/",
+          "label": "Coverage and measurement limits"
         },
         {
           "href": "/sleep/targets/#score-milestones",

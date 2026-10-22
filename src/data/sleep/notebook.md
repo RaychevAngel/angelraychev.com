@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-21"
+updated: "2026-10-22"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,10 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+The [night ending 22 October](/sleep/record/#night-2026-10-22) felt **middling**, despite **COROS 91**. I reported bed around **00:40**, waking sometime after **10:00**, perhaps **10:15**, explicitly uncertain, and wanting to go to bed earlier. COROS selected **00:44–10:07**, estimating **9h15m asleep and eight minutes awake**. That broadly fits the diary without independently validating every estimate.
+
+**Oura ran low on battery and stopped recording, according to my report.** Its returned episode ends at **06:30**, with **5h29m30s asleep** and a **73** score. These are partial-recording outputs, not the full night’s sleep or evidence of a real score decline. Its timing contributor of **100** is also based on that shortened window and is not counted as a timing achievement. The record preserves all returned fields with a visible coverage warning and excludes this score from the whole-night milestone series. There are now ten dated entries, nine eligible Oura scores and ten COROS scores; the missing Oura segment is not filled from the watch. Morning sleepiness, awakening frequency and later-day function remain unreported for this date.
 
 The [night ending 21 October](/sleep/record/#night-2026-10-21) brought **fewer remembered awakenings, though still several**. I reported bed around **00:10**, final waking around **10:15**, and initial sleepiness clearing within **10–15 minutes**. Last food was around **19:00–20:00**, roughly 4h10m–5h10m before bed. Water timing, bathroom trips and other routine changes remain unreported.
 

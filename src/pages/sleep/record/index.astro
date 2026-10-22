@@ -11,6 +11,7 @@ const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("e
 const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
 const recent = record.entries.slice(-7);
 const ouraScoreCount = record.entries.filter((entry) => entry.oura?.score != null).length;
+const eligibleOuraScoreCount = record.entries.filter((entry) => entry.oura?.score != null && entry.oura.score_eligible !== false).length;
 const corosScoreCount = record.entries.filter((entry) => entry.coros?.sleep_score != null).length;
 const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
 const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-day sleepiness", morning_sleepiness: "Experience after waking", dream_recall: "Dream recall", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress", breathing_exercise: "Breathing exercise", hydration_and_bathroom: "Hydration and bathroom context" };
@@ -20,11 +21,11 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
   <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
   <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. This short record cannot establish a personal baseline, a trend or the cause of a result.</p>
   <h2 id="recent-comparison">The recent observations</h2>
-  <p>Each available column keeps the provider's returned score beside its selected main episode. A diary can be recorded before either provider returns that date; pending data remains explicitly pending. Additional episodes are described separately below. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
+  <p>Each available column keeps the provider's returned score beside its selected main episode. A diary can be recorded before either provider returns that date; pending data remains explicitly pending. Known incomplete recordings stay visible as partial estimates and are excluded from whole-night milestones. Additional episodes are described separately below. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
   <div class="tablewrap"><table aria-label="Recent sleep observations and source availability"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
     {recent.map((entry) => <tr>
       <th scope="row"><a href={`#night-${entry.id}`}><time datetime={entry.wake_date}>{shortDate(entry.wake_date)}</time></a></th>
-      <td>{entry.oura ? <><strong>{entry.oura.score}/100</strong><br />{duration(entry.oura.sleep.total_sleep_duration)} asleep<br />{minutes(entry.oura.sleep.awake_time)} awake</> : <><strong>Pending</strong><br />No returned sleep estimate</>}</td>
+      <td>{entry.oura ? <><strong>{entry.oura.score}/100{entry.oura.score_eligible === false && " — incomplete"}</strong><br />{entry.oura.score_eligible === false && <>Recorded portion only<br /></>}{duration(entry.oura.sleep.total_sleep_duration)} asleep<br />{minutes(entry.oura.sleep.awake_time)} awake</> : <><strong>Pending</strong><br />No returned sleep estimate</>}</td>
       <td>{entry.coros ? <><strong>{entry.coros.sleep_score}/100</strong><br />{duration(entry.coros.main_sleep_minutes * 60)} asleep<br />{entry.coros.awake_minutes} min awake</> : <><strong>Pending</strong><br />No returned sleep estimate</>}</td>
     </tr>)}
   </tbody></table></div>
@@ -36,7 +37,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
     const c = entry.coros;
     const s = o?.sleep;
     return <section aria-labelledby={`night-${entry.id}`}>
-      <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — {o && c ? "one night, two grading systems" : o || c ? "diary and one provider" : "the reported night; device data pending"}</h2>
+      <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — {o?.score_eligible === false ? "incomplete Oura recording; COROS full-night estimate" : o && c ? "one night, two grading systems" : o || c ? "diary and one provider" : "the reported night; device data pending"}</h2>
       {entry.story?.length > 0 && <><h3>The reported night</h3>{entry.story.map((paragraph) => <p>{paragraph}</p>)}</>}
       {entry.nutrition_reference && <p>{entry.nutrition_context_note ? <><a href={entry.nutrition_reference}>Food and meal context</a>: {entry.nutrition_context_note}</> : <>The <a href={entry.nutrition_reference}>preceding food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</>}</p>}
       {(!o || !c) && <><h3>Device data pending</h3>
@@ -44,12 +45,13 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
         {!c && <p><strong>COROS:</strong> {entry.provider_status?.coros ?? "No sleep data was returned for this wake date."}</p>}
         <p>The narrative is retained as a self-report. Missing estimates are not zero, and earlier scores have not been assigned to this night.</p>
       </>}
+      {o?.quality_note && <p><strong>Recording quality:</strong> {o.quality_note}</p>}
       {o && c && <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>}
       {(o || c) && <div class="tablewrap">
         <table aria-label={`Available sleep estimates for ${entry.wake_date}`}>
           <thead><tr><th scope="col">Measurement</th><th scope="col">{o?.model ?? "Oura — pending"}</th><th scope="col">{c?.model ?? "COROS — pending"}</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Sleep score</th><td>{o ? `${o.score} / 100` : "Pending"}</td><td>{c ? `${c.sleep_score} / 100` : "Pending"}</td></tr>
+            <tr><th scope="row">Sleep score</th><td>{o ? `${o.score} / 100${o.score_eligible === false ? " — incomplete recording" : ""}` : "Pending"}</td><td>{c ? `${c.sleep_score} / 100` : "Pending"}</td></tr>
             <tr><th scope="row">Selected sleep window</th><td>{s ? `${time(s.bedtime_start)}–${time(s.bedtime_end)}` : "Pending"}</td><td>{c ? `${time(c.main_start)}–${time(c.main_end)}` : "Pending"}</td></tr>
             <tr><th scope="row">Estimated time asleep</th><td>{s ? duration(s.total_sleep_duration) : "Pending"}</td><td>{c ? duration(c.main_sleep_minutes * 60) : "Pending"}</td></tr>
             <tr><th scope="row">Episode including awake time</th><td>{s ? duration(s.time_in_bed) : "Pending"}</td><td>{c ? duration(c.main_period_minutes * 60) : "Pending"}</td></tr>
@@ -58,7 +60,8 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
           </tbody>
         </table>
       </div>}
-      {o && c && <p>{s.average_hrv === entry.coros.official_sleep_hrv_ms ? "The identical HRV headline is agreement between provider summaries, not validation against ECG." : "The HRV headlines retain each provider's summary; neither is a reference ECG measurement."} Their sampling, accepted beats and averaging may differ. The {Math.abs(entry.oura.score - entry.coros.sleep_score)}-point score gap means that choosing which grading system to optimize is consequential.</p>}
+      {o && c && o.score_eligible !== false && <p>{s.average_hrv === entry.coros.official_sleep_hrv_ms ? "The identical HRV headline is agreement between provider summaries, not validation against ECG." : "The HRV headlines retain each provider's summary; neither is a reference ECG measurement."} Their sampling, accepted beats and averaging may differ. The {Math.abs(entry.oura.score - entry.coros.sleep_score)}-point score gap means that choosing which grading system to optimize is consequential.</p>}
+      {o?.score_eligible === false && <p>The Oura durations, physiological summaries and contributor grades below concern an incomplete recording. Their difference from COROS does not measure device accuracy across a shared full night. High contributor grades here are not counted as complete-night achievements.</p>}
       {o && <SleepEpisode entry={entry} />}
       {o?.additional_sleep_episodes?.length > 0 && <><h3>Additional Oura-detected episode</h3>{o.additional_sleep_episodes.map((episode) => <p>Oura returned another episode timed {date(episode.bedtime_start.slice(0, 10))}, {time(episode.bedtime_start)}–{time(episode.bedtime_end)}, assigned to provider day {date(episode.day)}. It estimated {minutes(episode.total_sleep_duration)} asleep; its API type was <code>{episode.type}</code>. {episode.confirmation} It remains separate from the main sleep above. Oura's returned daily score is retained without recalculation.</p>)}</>}
       {entry.evening_hr && <details><summary>The evening heart-rate observation</summary>
@@ -68,7 +71,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
         <p>The sampled decline is compatible with several influences. It is not a continuous resting-HR curve, a meal-causation test or a target to push indefinitely lower. <a href="/sleep/measurements/cardiac/#the-evening-decline-is-a-different-measurement">Interpretation and source definitions</a>.</p>
       </details>}
       {o && <><h3 id={`oura-contributors-${entry.id}`}>What Oura graded</h3>
-      <p>These are <strong>contributor scores out of 100</strong>. The efficiency contributor of {entry.oura.contributors.efficiency} is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of {entry.oura.contributors.deep_sleep} is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
+      <p>{o.score_eligible === false && <strong>Partial-recording grades; excluded from whole-night milestones. </strong>}These are <strong>contributor scores out of 100</strong>. The efficiency contributor of {entry.oura.contributors.efficiency} is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of {entry.oura.contributors.deep_sleep} is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
       <div class="tablewrap"><table aria-label="Oura sleep contributor scores"><thead><tr><th scope="col">Contributor</th><th scope="col">Score / 100</th></tr></thead><tbody>
         {Object.entries(labels).map(([key, name]) => <tr><th scope="row">{name}</th><td>{entry.oura.contributors[key]}</td></tr>)}
       </tbody></table></div>
@@ -112,7 +115,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
   })}
   <h2 id="how-to-add-a-night">How a night is added</h2>
   <p>An entry begins with an on-demand request for the relevant night. The canonical record retains original provider values and their scope. Measured signals, algorithmic estimates, self-reports and interpretations are named separately. Missing data is not zero; missing nights are not silently removed from a target window.</p>
-  <p>A correction adds the reason and retains the date on which an interpretation changed. Historical observations remain intelligible as the current <a href="/sleep/targets/">targets</a> and <a href="/sleep/research/">investigations</a> develop. The record has {record.entries.length} dated entries, {ouraScoreCount} available Oura sleep scores and {corosScoreCount} available COROS sleep scores. It has no scheduled synchronization.</p>
+  <p>A correction adds the reason and retains the date on which an interpretation changed. Historical observations remain intelligible as the current <a href="/sleep/targets/">targets</a> and <a href="/sleep/research/">investigations</a> develop. The record has {record.entries.length} dated entries, {ouraScoreCount} returned Oura sleep scores ({eligibleOuraScoreCount} eligible for whole-night milestones) and {corosScoreCount} available COROS sleep scores. It has no scheduled synchronization.</p>
 </Post>
 <style>
   details { margin: 32px 0; }

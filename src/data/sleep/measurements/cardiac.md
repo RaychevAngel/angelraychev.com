@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-21"
+updated: "2026-10-22"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -60,6 +60,10 @@ The diary describes okay-ish sleep, many brief remembered awakenings and plentif
 ## October 21: fewer remembered awakenings, different cardiac summaries
 
 On [October 21](/sleep/record/#night-2026-10-21), Oura returned mean sleeping HR **50.125 bpm**, minimum **46**, and HRV **62 ms**. COROS official sleep HRV was **63 ms, Normal**, against its returned **48–68 ms range and 58 ms baseline**. Its daily HR snapshot averaged 52 bpm with minimum 44; predicted seated resting HR was 52. These are distinct scopes. HRV fell from 70/71 ms while the diary reports fewer awakenings and sleepiness clearing within 10–15 minutes. That combination does not establish a loss of recovery or make either metric a verdict on experienced sleep.
+
+## October 22: interrupted recording limits comparison
+
+The [October 22 record](/sleep/record/#night-2026-10-22) has **COROS official HRV 60 ms, Normal**, range **49–69**, baseline **59**. Oura HRV **63 ms**, sleeping mean HR **49.125 bpm** and minimum **45** describe only its recorded segment ending 06:30, after reported low battery. They are not full-night matched-window comparisons with the watch. COROS daily HR averaged 54 bpm with minimum 44 at retrieval, and predicted seated resting HR was 56; these scopes remain distinct.
 
 ## How much confidence is justified?
 

@@ -1,13 +1,17 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-21"
+updated: "2026-10-22"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**22 October 2026 — middling subjective sleep; Oura coverage interrupted.** I reported bed around 00:40 and final waking sometime after 10:00, perhaps 10:15, without clear recall. I want to go to bed earlier; no new exact clock target was specified. COROS returned **91**, **9h15m asleep**, **eight minutes awake**, and **00:44–10:07**, broadly consistent with the diary.
+
+The [record](/sleep/record/#night-2026-10-22) preserves Oura’s episode ending **06:30** and returned **73** with an incomplete-recording warning after reported low battery. The score and its timing-100 grade cannot establish the full night’s result. Restore coverage before the next comparison; retain today as a measurement failure alongside the middling impression, rather than an observed fall in whole-night Oura sleep. No meal, drink, bathroom, awakening-count or daytime-function details were supplied for this date.
 
 **21 October 2026 — fewer remembered awakenings, still several.** Bed around 00:10 and final waking around 10:15 were approximate diary times. I felt sleepy initially, then normal within 10–15 minutes. Last food around 19:00–20:00 gives roughly 4h10m–5h10m before bed. No water timing, bathroom trips, exercise, stress or other routine changes were specified for this night.
 
