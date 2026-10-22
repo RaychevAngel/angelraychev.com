@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-19
+updated: 2026-10-21
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 19 October 2026.** The upcoming
+**This version includes completed training through 21 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -308,10 +308,26 @@ made holding pace harder. In the third rep I tried to recover form and find a
 finishing gear, but could not. The inner ankle was quiet before, during and after.
 The next aim is more even execution and a lower average at the same format.
 
-That gives the planned 4+4×200 a concrete question: can I repeatedly gather
-myself and produce fast, organised running when already out of breath and
-heavy-legged? I see a connection to the final metres of the longer reps;
-whether practising it transfers is something to follow, not an established result.
+On [21 October](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds),
+the first **4×200 m / 3 min + 4×200 m / 90 seconds** averaged **~30.31 then
+30.50**, with a **4:56.05** break between sets. One longer repetition is
+converted to a 200 m comparison; the record preserves its original time and
+distance calculation, alongside an interrupted start before repetition seven.
+
+The opening repetitions felt controlled, about **0.94 seconds quicker** than
+October 12's first four. The second set stayed close in speed while the effort
+changed dramatically. The track was wet and my shoes slipped. My legs were
+already stiff after the first set; severe stiffness arrived in the last 50 m
+of repetition seven and earlier in repetition eight. I tried to drive harder
+into the ground and use my arms more to hold the speed. I finished completely
+spent, with burning legs for about ten minutes.
+
+I think holding that speed was impressive, and I want to repeat the format.
+The nearly even times also conceal the late breakdown. It is a concrete
+reference for producing fast running under fatigue; whether that practice
+helps me preserve movement and find a finish in the longer reps is still a
+question. Right-ankle tension afterwards changed my walking for a couple of
+hours despite no ankle pain; it had settled by the discussion. Rest comes next.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
@@ -396,12 +412,15 @@ observations that can inform the next decision.
 **Both longer formats have now been tried:** 3×1600 m on 16 October and
 3×900 m on 19 October. They stay at those formats, with the later **6:08** and
 **2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-The planned next workout is **4×200 / 3 min + 4×200 / 90 seconds on 20 October**.
+The first FA session is complete on **21 October**, after track access fell
+through on October 20. **October 22 is a planned rest day**, with LT and VO₂
+provisionally on October 23–24 if recovery allows.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
-and X remains open. Whether the longer 300s, 500s or another
-4+4×200 deserves that experiment is a choice to make within the cycle, not a
-reason to replace the other eleven workouts before reviewing it.
+and X remains flexible. My current intention is **another 4+4×200 in X**,
+predicting **under thirty seconds on average for the opening four**. That is
+a future ambition, not an achieved result or a new formal graduation gate.
+The recurring F and FA allocation stays in place for this cycle.
 
 The next efforts ask three immediate questions:
 
@@ -411,10 +430,10 @@ The next efforts ask three immediate questions:
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside
   the splits as the efforts become longer.
-- **Do quicker 200s remain repeatable with the intended movement?** The 29.30
-  final repetition brings the thirty-second ambition closer. I want to make that speed repeatable while
-  keeping the stride relaxed and coordinated. The benchmark stays at six reps
-  with three-minute rests; this ambition adds no new formal graduation ladder.
+- **How do speed and its cost change when I repeat the 200s?** The first FA
+  supplied eight repetitions around thirty seconds, with severe late stiffness.
+  I want to follow the times, when movement deteriorates and recovery afterwards.
+  The separate F benchmark stays at six reps with three-minute rests.
 
 I had hoped for a 5000 around 19:30. The reported 19:59 is the result of testing
 that hope. Even 3:55/km continuously would give 19:35; the controlled interval

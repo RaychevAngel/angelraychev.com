@@ -1,16 +1,16 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The 18-day cycle begun on October 15, completed first attempts at longer LT and VO₂ repetitions, and the next FA session."
-updated: 2026-10-19
+description: "The 18-day cycle begun on October 15, the first completed mixed-rest 200s, and the next LT–VO₂ pair."
+updated: 2026-10-21
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **19 October**. The first cycle began on **15 October**. Its first
-block is complete, and block two's VO₂ session was run on **19 October**.
-FA is planned for **20 October**. The remaining sessions are planned; no completed
+updated through **21 October**. The first cycle began on **15 October**. Its first
+two blocks are complete: block two's VO₂ session was run on **19 October**,
+and FA on **21 October**. The remaining sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -49,7 +49,19 @@ Actual rests were **5:03.34 and 5:14.31**. Heavy legs persisted between reps;
 a strong headwind and deteriorating form accompanied the slowing. The
 **2:55.5 average graduation target** remains ahead. The next attempt stays
 at three 900s, aiming for a lower average and more even execution. The
-nominal recovery remains 5:30; today's shorter rests do not redefine it.
+nominal recovery remains 5:30; that session's shorter rests do not redefine it.
+
+**The first FA session is complete.** The
+[21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
+averaged **~30.31 then 30.50**, using a labelled distance correction for the
+third repetition. The set break was **4:56.05**; the recovery before repetition
+seven includes an aborted start and return. Early repetitions were controlled;
+the wet track, slipping shoes and severe late stiffness made holding the speed
+very hard. Right-ankle tension afterwards changed my walking for a couple of
+hours despite no ankle pain, and had settled by the discussion. **October 22 is a planned rest
+day**, followed provisionally by LT on October 23 and VO₂ on October 24 if
+recovery allows. **Another 4+4×200 is now the intended X choice**, with a
+sub-30-second opening-set average as my prediction, not a formal progression gate.
 
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
@@ -73,9 +85,11 @@ block one. This replaces the tentative start date; it does not turn the
 remaining scheduled sessions into completed work.
 
 Block two's VO₂ session was originally due on October 18 and was completed
-on **October 19**. The next FA session is planned for **October 20**. The
-sequence is retained; completed dates and the next reported intention replace
-assumptions based on an uninterrupted calendar.
+on **October 19**. The October 20 FA attempt was blocked by an event at the
+track; I completed the workout on **October 21**. The proposed three training
+days in a row will not happen: I have committed to rest on October 22 after
+this effort. The sequence is retained; completed dates and the next reported
+intention replace assumptions based on an uninterrupted calendar.
 
 ## The 18-day cycle
 
@@ -103,13 +117,14 @@ for the next cycle's review.
 is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
 Its purpose includes repeatedly finding fast, organised running with heavy
 legs and incomplete recovery: gathering posture and rhythm for the finish.
-I see a connection to the final metres of the 900s; whether that practice
-transfers remains a question for the completed sessions.
+The first completed session held speed through severe late stiffness; the
+near-even times do not establish preserved movement. I see a connection to the
+final metres of the 900s; whether that practice transfers remains a question.
 **TT** is an event time trial; the transition's 5000 m is complete, and the first
-full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open, with dense 10/10 running among
-the candidates. Other ideas discussed are 300 m repetitions, 2×3×500 m, or
-another 4+4×200 m. No X session has been selected or completed. F remains the
-stable 6×200 m benchmark.
+full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open.
+After October 21, my intention is to repeat **4+4×200 m** in that slot, subject
+to recovery. Dense 10/10 running, 300 m repetitions and 2×3×500 m remain earlier
+alternatives. X has not yet been completed. F remains the stable 6×200 m benchmark.
 
 The allocation has some freedom built in. Three LT–VO₂ pairs, F, FA, TT and X
 form the backbone; two remaining slots are currently occupied by another LT and
