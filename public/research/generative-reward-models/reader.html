@@ -21,11 +21,11 @@
     <span id="total">/ …</span>
     <button id="next" disabled aria-label="Next page">→</button>
     <select id="zoom" aria-label="Zoom" disabled><option value="fit">Fit width</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select>
-    <a href="./scaling-laws-for-generative-reward-models.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+    <a href="./scaling-laws-for-generative-reward-models.pdf?v=43aabe398767" target="_blank" rel="noopener">Open PDF ↗</a>
   </nav>
   <p id="status" role="status" aria-live="polite">Loading manuscript…</p>
   <div id="viewport"><canvas id="paper" role="img" aria-label="Manuscript page"></canvas></div>
-  <noscript><p>JavaScript is required for this reader. <a href="./scaling-laws-for-generative-reward-models.pdf">Read the PDF directly.</a></p></noscript>
+  <noscript><p>JavaScript is required for this reader. <a href="./scaling-laws-for-generative-reward-models.pdf?v=43aabe398767">Read the PDF directly.</a></p></noscript>
   <script type="module">
     import * as pdfjs from './pdf.mjs';
     pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.mjs';
@@ -53,7 +53,7 @@
     input.addEventListener('change',()=>{current=Math.max(1,Math.min(pdf.numPages,Math.floor(Number(input.value)||1)));render();});
     zoom.addEventListener('change',render);
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(render,100);});
-    try{pdf=await pdfjs.getDocument({url:'./scaling-laws-for-generative-reward-models.pdf?v=8ceca55b6af6',isEvalSupported:false}).promise;total.textContent=`/ ${pdf.numPages}`;input.max=pdf.numPages;await render();}
+    try{pdf=await pdfjs.getDocument({url:'./scaling-laws-for-generative-reward-models.pdf?v=43aabe398767',isEvalSupported:false}).promise;total.textContent=`/ ${pdf.numPages}`;input.max=pdf.numPages;await render();}
     catch(error){status.textContent='The manuscript could not load. Use “Open PDF” above.';console.error(error);}
   </script>
 </body>
