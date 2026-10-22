@@ -184,10 +184,16 @@ connects the paper to the implementation and numerical evidence:
   provenance linking the plots to their inputs.
 - **Paper:** the matching manuscript sources and build instructions.
 
+An [earlier exploratory archive](https://github.com/RaychevAngel/generative-reward-models/tree/main/results/historical-explorations)
+preserves original data-recipe and distillation comparisons, separately from
+the paper's matched study.
+
 The release makes [CPU analysis reproducible without model calls](https://github.com/RaychevAngel/generative-reward-models/blob/main/docs/reproduction.md). Repeating the
 original training additionally requires suitable GPUs and access to the model
 and data artifacts; it is not presented as a freshly verified one-command GPU
-reproduction. The repository documents those requirements separately.
+reproduction. The repository documents those requirements separately and exposes
+the [conditional Elo uncertainty method](https://github.com/RaychevAngel/generative-reward-models/blob/main/results/receipts/README.md#inspectable-method-source)
+alongside the retained comparison results.
 
 ## Interpreting the result
 
