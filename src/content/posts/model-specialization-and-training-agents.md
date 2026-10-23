@@ -360,6 +360,29 @@ selection are not untouched confirmation merely because the inner agent could
 not read them. The record makes the research process inspectable, including
 which reusable component changed and which model was subsequently assessed.
 
+### Shorter loops for data-generation research
+
+Not every question needed a complete training-agent episode. In April I also
+separated task-specification extraction, instance generation and diagnostic
+comparison into a smaller artifact-based workflow. One agent derived a
+structured specification from source material and a standalone guide. Another
+was assigned the specification and a general generation recipe. A separate agent
+inspected a shuffled, unlabeled mixture of generated and comparison examples,
+returning classifications and reasons. The comparison labels were stored in a
+separate file.
+
+The reusable components were independently editable: the specification guide,
+extraction instructions, generation recipe and comparison preparation. The
+recipe gained explicit output-style checks and representation normalization;
+the retained handoffs and generated artifacts made it possible to inspect what
+each stage had actually received and produced. This gave me a shorter route to
+investigating data-generation behavior before paying for a downstream training
+comparison.
+
+The discriminator was a diagnostic, not a task-correctness oracle. Matching
+presentation or making two sets harder to distinguish does not by itself show
+that the generated work is correct or that training on it improves a model.
+
 ## Building the training distribution
 
 Beyond operating a training recipe, I worked on constructing the learning
