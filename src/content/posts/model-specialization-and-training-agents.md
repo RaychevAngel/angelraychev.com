@@ -15,6 +15,15 @@ reusable skills and tools. I connected generated tasks to teacher demonstrations
 student training and checkpoint assessment, and implemented on-policy updates
 from a student's own tool-using trajectories.
 
+<figure class="specialization-figure" aria-labelledby="levels-caption">
+  <div class="research-loop">
+    <div class="loop-heading"><span class="diagram-label">Outer researcher</span><strong>Improve the training agent's reusable process</strong><span>Inspect episodes, diagnose the responsible component, revise skills or tools, compare the next attempt.</span></div>
+    <div class="training-loop"><div class="loop-heading"><span class="diagram-label">Training agent</span><strong>Carry out a specialization assignment</strong><span>Understand the goal, construct data and assessment, run training, inspect the result.</span></div><div class="weight-loop"><div><span class="diagram-label">Training inputs</span><strong>Data + model + objective</strong></div><span class="diagram-arrow" aria-hidden="true">→</span><div><span class="diagram-label">Weight updates</span><strong>Specialist checkpoint</strong></div></div></div>
+    <div class="loop-return">Episode traces, data checks and checkpoint comparisons inform the outer researcher.</div>
+  </div>
+  <figcaption id="levels-caption">Three objects of work. Training changes a specialist's weights. The training agent conducts that work. The researcher changes the training agent's harness and procedure. Improving the outer process does not require training the researcher's own weights.</figcaption>
+</figure>
+
 The underlying question was practical: **what should a model learn, and what
 should its surrounding system supply?** A company-specific assistant might need
 to recall a stable convention, retrieve a changing specification, call a tool,
@@ -32,15 +41,6 @@ reusable agent behavior have to fit together, but they remain independently
 adjustable parts of the system.
 
 <nav class="specialization-contents" aria-label="In this article"><a href="#choosing-what-to-specialize">The specialization target</a> · <a href="#compiling-document-knowledge-into-weights">Knowledge experiments</a> · <a href="#a-teacher-with-information-the-student-does-not-have">Context distillation</a> · <a href="#making-training-an-agent-task">The training agent</a> · <a href="#a-researcher-for-the-training-workflow">The outer researcher</a> · <a href="#building-the-training-distribution">Data factories</a> · <a href="#distilling-tool-using-policies">Tool-using policies</a></nav>
-
-<figure class="specialization-figure" aria-labelledby="levels-caption">
-  <div class="research-loop">
-    <div class="loop-heading"><span class="diagram-label">Outer researcher</span><strong>Improve the training agent's reusable process</strong><span>Inspect episodes, diagnose the responsible component, revise skills or tools, compare the next attempt.</span></div>
-    <div class="training-loop"><div class="loop-heading"><span class="diagram-label">Training agent</span><strong>Carry out a specialization assignment</strong><span>Understand the goal, construct data and assessment, run training, inspect the result.</span></div><div class="weight-loop"><div><span class="diagram-label">Training inputs</span><strong>Data + model + objective</strong></div><span class="diagram-arrow" aria-hidden="true">→</span><div><span class="diagram-label">Weight updates</span><strong>Specialist checkpoint</strong></div></div></div>
-    <div class="loop-return">Episode traces, data checks and checkpoint comparisons inform the outer researcher.</div>
-  </div>
-  <figcaption id="levels-caption">Three objects of work. Training changes a specialist's weights. The training agent conducts that work. The researcher changes the training agent's harness and procedure. Improving the outer process does not require training the researcher's own weights.</figcaption>
-</figure>
 
 ## Choosing what to specialize
 
