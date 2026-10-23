@@ -399,7 +399,7 @@ distribution: representative tasks and feedback suited to the target capability.
 A desired capability is not a training set, and a benchmark's examples are not
 a recipe for producing more of the right work. Alongside the training-agent
 and researcher stack, I built a separate task/data pipeline connecting
-task specification, independent source material, generation, executable
+task specification, selected source material, generation, executable
 verification and policy training. The factory—not just the training run—was an
 object of research and engineering.
 
