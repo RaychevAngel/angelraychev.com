@@ -129,19 +129,19 @@ specialized knowledge is less useful if the resulting model stops reliably
 following the instructions through which that knowledge is requested.
 
 <figure class="specialization-figure specialization-wide" aria-labelledby="data-scale-caption">
-  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-data-scale.svg" width="1920" height="1110" alt="Five source-grounded QA score curves for 2,500 through 39,500 synthetic training pairs. Larger training sets have higher recorded scores at the measured passes." loading="lazy" /></div>
-  <figcaption id="data-scale-caption">Qwen3-4B-Instruct-2507 trained on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge scores answers from 0 to 4. The curves share the recorded starting-model baseline. Subsequent points follow passes over each run's training set, so larger datasets also require more updates per pass. This illustrates a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
+  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-data-scale.svg" width="1919" height="1102" alt="Five mean source-grounded QA score curves for 2,500 through 39,500 synthetic training pairs, plotted against training-set equivalents processed. Larger training sets reach higher recorded scores." loading="lazy" /></div>
+  <figcaption id="data-scale-caption">Qwen3-4B-Instruct-2507 trained on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge provides a mean answer score from 0 to 4. The curves share the recorded starting-model baseline. Training-set equivalents are 64 × recorded optimizer step / training-set size, not exact completed epochs. Larger sets require more updates for the same exposure. This is a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
 </figure>
 
-The larger supervision sets reached higher recorded scores, while additional
-passes over each fixed set soon changed less. More distinct examples also meant
-more updates per pass, so this comparison does not isolate data quantity from
+The larger supervision sets reached higher recorded scores, while further
+training on each fixed set soon changed less. More distinct examples also meant
+more updates for each training-set equivalent, so this comparison does not isolate data quantity from
 compute. It nevertheless exposed a useful decision: whether to spend the next
 training budget repeating the existing supervision or expanding its coverage.
 
 <figure class="specialization-figure specialization-wide" aria-labelledby="instruction-mix-caption">
-  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-instruction-mix.svg" width="1920" height="1563" alt="Two panels compare domain-only SFT with mixed domain and instruction training. Both learn domain QA; the mixed run retains higher recorded strict IFEval accuracy at shared checkpoints, while domain-only QA scores are usually higher." loading="lazy" /></div>
-  <figcaption id="instruction-mix-caption">Domain-only SFT versus a roughly 70/30 mixture of domain QA and general instruction examples generated from Tulu 3 prompts. QA score and IFEval prompt-level strict accuracy measure different capabilities. The horizontal axis counts optimizer updates, not matched training tokens or domain exposure. <a href="/assets/model-specialization/specialization-instruction-mix.svg">Open full figure</a>.</figcaption>
+  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-instruction-mix.svg" width="1967" height="1563" alt="Two panels compare domain-only SFT with mixed domain and instruction training. Both learn domain QA; the mixed run retains higher recorded strict IFEval accuracy at shared checkpoints, while domain-only QA scores are usually higher." loading="lazy" /></div>
+  <figcaption id="instruction-mix-caption">Domain-only SFT versus a roughly 70/30 mixture of domain QA and general instruction examples generated from Tulu 3 prompts. Mean QA score and IFEval prompt-level strict accuracy measure different capabilities. The horizontal axis counts optimizer updates; training tokens, domain exposure and learning-rate schedules are not matched. <a href="/assets/model-specialization/specialization-instruction-mix.svg">Open full figure</a>.</figcaption>
 </figure>
 
 The mixture retained higher recorded instruction-following accuracy at the
@@ -152,7 +152,7 @@ it behind a single specialization score.
 These are reconstructed exploratory historical measurements, with one training
 run per condition. The QA score comes from a source-grounded model judge, not
 independently verified task success, and the historical dataset revision was not
-pinned. The curves document the training decisions I investigated; they are not
+pinned. Plot positions use recorded numeric checkpoints. The curves document the training decisions I investigated; they are not
 a general performance guarantee.
 
 The broader experiments included SFT data-volume sweeps, teacher comparisons,
@@ -426,12 +426,12 @@ evaluation, the verifier executed the candidate's SQL and compared returned
 values. Correctness was not defined as reproducing one reference SQL string:
 different queries could express the same solution.
 
-<figure class="specialization-figure" aria-labelledby="factory-caption"><ol class="factory-chain"><li><span class="diagram-label">Define</span><strong>SQL task contract + source allocation</strong><span>Visible schema, question, query coverage and output requirements</span></li><li><span class="diagram-label">Generate</span><strong>Question and reference query</strong><span>Inspect source data, write instances, receive validation feedback</span></li><li><span class="diagram-label">Materialize</span><strong>Database and expected result</strong><span>Execute the reference and package task-specific checking information</span></li><li><span class="diagram-label">Use</span><strong>Policy tools and executable assessment</strong><span>Sample demonstrations or policy actions; execute and compare results</span></li></ol><figcaption id="factory-caption">A concrete learning artifact passes through several different components. The generator prepares the work; assembly constructs checking material; the policy attempts the task with its own tool harness. The verifier is part of the feedback system, not an answer the policy should copy.</figcaption></figure>
+<figure class="specialization-figure" aria-labelledby="factory-caption"><ol class="factory-chain"><li><span class="diagram-label">Define</span><strong>SQL task contract + source allocation</strong><span>Visible schema, question, query coverage and output requirements</span></li><li><span class="diagram-label">Generate</span><strong>Question and reference query</strong><span>Inspect source data, write instances, receive validation feedback</span></li><li><span class="diagram-label">Materialize</span><strong>Database and expected result</strong><span>Execute the reference and package task-specific checking information</span></li><li><span class="diagram-label">Use</span><strong>Policy tools and executable assessment</strong><span>Sample demonstrations or policy actions; execute and compare results</span></li></ol><figcaption id="factory-caption">A concrete learning artifact passes through several different components. The generator prepares the work; assembly constructs checking material; the policy attempts the task with its own tool harness; the verifier computes feedback from the output.</figcaption></figure>
 
 Other task families required different assembly: normalizing labels, carrying
 reference files for Python transformations, removing duplicate prompts and
 creating stratified training and evaluation splits. Structural validation,
-reference execution and source separation each addressed a different part of
+reference execution and source boundaries each addressed a different part of
 quality; none alone established that every generated task was correct.
 
 ### Connect generated work to the learner
@@ -444,12 +444,14 @@ reinforcement learning, the student attempted the tasks and the verifier scored
 its output. The task data, policy plugin and verifier were combined with the
 selected model or SFT checkpoint in the training entry point.
 
-The pipeline was built and exercised through generation, assembly and training
-work. It made each boundary concrete: the benchmark supplied a capability
-target, independent source tables supplied new material, the generator produced
-tasks, the verifier provided a feedback signal, and the training procedure
-changed the policy. That let me investigate the data and environment as
-seriously as the optimizer.
+I exercised the connection with a Haiku 4.5 teacher using the policy tools. The
+sampling stage saved its conversations and task-scorer results; a filtered
+trajectory set then fed SFT with assistant actions and tool observations rendered
+under explicit trainable-token boundaries. A Qwen3.5-4B run reached final
+trainer-state and sampler checkpoints, closing an actual generated-task →
+tool-trajectory → trained-model path. The final sampler checkpoint was then used
+in task assessment through the policy tools. That let me investigate the data
+and environment as seriously as the optimizer.
 
 ## Distilling tool-using policies
 
@@ -477,6 +479,13 @@ credited with producing a compiler message or a file's contents. Teacher scoring
 also has to respect next-token alignment and the information available at each
 action. A final transcript rendered as convenient text is not automatically a
 correct training record.
+
+The mask could not be inferred from nonzero reward advantages. If every attempt
+received the same verifier reward, the relative advantages could all be zero
+while teacher feedback still supplied a learning signal. I retained an
+independent mask for generated tokens and shifted it with the targets and
+captured probabilities. That kept teacher supervision on the model's actions
+without accidentally applying it to observations—or suppressing it altogether.
 
 <figure class="specialization-figure" aria-labelledby="trajectory-caption"><div class="trajectory-diagram"><div class="trajectory-item observation"><span class="diagram-label">Input</span><strong>Prompt and available context</strong><span>Conditioning only</span></div><div class="trajectory-item action"><span class="diagram-label">Model action</span><strong>Tool call</strong><span>Generated tokens · update mask on</span></div><div class="trajectory-item observation"><span class="diagram-label">Observation</span><strong>Tool result</strong><span>Conditioning only · update mask off</span></div><div class="trajectory-item action"><span class="diagram-label">Model action</span><strong>Next action or answer</strong><span>Generated tokens · update mask on</span></div></div><figcaption id="trajectory-caption">A tool trajectory mixes generated actions and external observations. Both can condition the next action, but only the model's generated response tokens belong in its response-loss mask. The pattern repeats across tool calls.</figcaption></figure>
 
@@ -542,6 +551,11 @@ extensively in developing and operating these systems. Nemoral was a separate
 Stanford team collaboration. The underlying SynthLabs training implementations
 remain private; this article explains the mechanisms without releasing
 proprietary source or original conversations.
+
+For the underlying training foundations, see the public
+[Tinker Cookbook](https://github.com/thinking-machines-lab/tinker-cookbook) and
+Thinking Machines' explanation of
+[on-policy distillation](https://thinkingmachines.ai/blog/on-policy-distillation/).
 
 <style>
 .specialization-contents{font-size:12.5px;line-height:2;margin:30px 0 38px;color:var(--dim)}
