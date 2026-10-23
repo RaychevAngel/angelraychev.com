@@ -219,9 +219,10 @@ There are two important operational distinctions here. First, the teacher's
 information advantage is separate from model size: the same model family can be
 used on both sides with different visible context. Second, answer distillation
 and token-level distillation impose different compatibility requirements.
-Text answers can be retokenized for a different student. Directly comparing
-teacher and student token likelihoods requires an explicit alignment contract;
-passing one model's token IDs to an incompatible tokenizer is not that contract.
+Text answers can be retokenized for a different student. My direct
+context-distillation path instead rendered the teacher prefix separately,
+appended the student's sampled response IDs, and aligned returned scores to
+masked response positions. This path requires compatible token-ID semantics.
 
 Teacher privilege also has a behavioral boundary. The teacher can consult extra
 evidence to improve its supervision, but the behavior the student is trained to
