@@ -556,9 +556,15 @@ fixed training and validation data, Tinker LoRA SFT, and budgeted experiment
 selection. Candidate changes were evaluated and either kept or reverted, with
 checkpoint and metric artifacts available through the application.
 
-I implemented the Tinker LoRA/SFT runner and budgeted experiment-loop integration,
-then worked on real validation, token-normalized loss and usable model/artifact
-outputs. Nemoral was a separate Stanford team project, with collaborators owning
+I implemented the Tinker LoRA/SFT runner and budgeted experiment-loop integration.
+Candidate selection used forward-only
+[validation](https://github.com/StanfordCS194/spr26-Team-26/blob/a637d876e46e40e048fb659ea41083d84245a40d/src/tinker_api/sft_runner.py#L1407-L1470)
+on the finalized split, with cross-entropy aggregated over assistant-target
+tokens. I expressed validation intervals in processed training examples and
+translated them to steps for each candidate's batch size, keeping the
+measurement contract explicit as training recipes changed.
+
+Nemoral was a separate Stanford team project, with collaborators owning
 substantial components. The [final project documentation](https://github.com/StanfordCS194/spr26-Team-26/blob/934b10468c423e1c3231ea8d8c459eed6ac01f4e/docs/final-documentation.md)
 and my [training](https://github.com/StanfordCS194/spr26-Team-26/pull/114)
 and [AutoResearch integration](https://github.com/StanfordCS194/spr26-Team-26/pull/116)
