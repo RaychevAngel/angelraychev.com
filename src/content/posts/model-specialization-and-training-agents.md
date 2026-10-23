@@ -130,7 +130,7 @@ following the instructions through which that knowledge is requested.
 
 <figure class="specialization-figure specialization-wide" aria-labelledby="data-scale-caption">
   <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-data-scale.svg" width="1919" height="1102" alt="Five mean source-grounded QA score curves for 2,500 through 39,500 synthetic training pairs, plotted against training-set equivalents processed. Larger training sets reach higher recorded scores." loading="lazy" /></div>
-  <figcaption id="data-scale-caption">Qwen3-4B-Instruct-2507 trained on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge provides a mean answer score from 0 to 4. The curves share the recorded starting-model baseline. Training-set equivalents are 64 × recorded optimizer step / training-set size, not exact completed epochs. Larger sets require more updates for the same exposure. This is a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
+  <figcaption id="data-scale-caption">Rank-32 LoRA SFT of Qwen3-4B-Instruct-2507 on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge provides a mean answer score from 0 to 4. The curves share the recorded starting-model baseline. Training-set equivalents are 64 × recorded optimizer step / training-set size, not exact completed epochs. Larger sets require more updates for the same exposure. This is a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
 </figure>
 
 The larger supervision sets reached higher recorded scores, while further
@@ -194,7 +194,7 @@ The signal is positive when the contextual teacher gives a sampled token more
 probability than the rollout policy did, and negative in the opposite case.
 
 <figure class="specialization-figure" aria-labelledby="distillation-caption">
-  <div class="distillation-diagram"><div class="shared-question"><span class="diagram-label">Shared input</span><strong>Domain question</strong></div><div class="distillation-pair"><div><span class="diagram-label">Student</span><strong>Question only</strong><p>Samples a response and records the generated tokens and sampling log probabilities.</p></div><div><span class="diagram-label">Teacher</span><strong>Question + supporting document</strong><p>Scores the student's same response tokens with access to the source information.</p></div></div><div class="distillation-update"><strong>Teacher score − recorded student score</strong><span>Response-token signal → parameter update → refreshed student sampler</span></div></div>
+  <div class="distillation-diagram"><div class="shared-question"><span class="diagram-label">Shared input</span><strong>Domain question</strong></div><div class="distillation-pair"><div><span class="diagram-label">Student</span><strong>Question only</strong><p>Samples a response and records the generated tokens and sampling log probabilities.</p></div><div><span class="diagram-label">Teacher</span><strong>Question + supporting document</strong><p>Scores the student's same response tokens with access to the source information.</p></div></div><div class="distillation-update"><strong>Teacher token log-probability − recorded student token log-probability</strong><span>Response-token signal → parameter update → refreshed student sampler</span></div></div>
   <figcaption id="distillation-caption">The teacher's extra information is the document context. The student supplies the trajectory. Recorded rollout log probabilities are fixed inputs to the update; the learner is updated through the training loss, not by differentiating through this displayed subtraction.</figcaption>
 </figure>
 
@@ -218,13 +218,14 @@ Text answers can be retokenized for a different student. Directly comparing
 teacher and student token likelihoods requires an explicit alignment contract;
 passing one model's token IDs to an incompatible tokenizer is not that contract.
 
-Teacher privilege also has a behavioral boundary. Extra evidence should improve
-the supervision without changing the kind of work the deployed student must
-perform. An answer that refers to a hidden solution, or relies on an operation
-the student will not have, teaches a different contract. I incorporated this
-distinction into the later training agent's data-generation and method-selection
-skills. It applies to teacher-generated SFT answers as well as on-policy
-distillation: a more informed teacher must still demonstrate the right job.
+Teacher privilege also has a behavioral boundary. The teacher can consult extra
+evidence to improve its supervision, but the behavior the student is trained to
+imitate must still fit its deployed job. An answer that tells the student to
+inspect a hidden solution file or call an unavailable tool teaches a different
+contract. This is not a ban on the teacher's extra information—that advantage is
+the point. I incorporated the distinction into the later training agent's
+data-generation and method-selection skills, for both teacher-generated SFT
+answers and on-policy distillation.
 
 I also explored the starting distribution. An SFT warm start can make relevant
 answers more accessible before on-policy training, while later
@@ -385,8 +386,9 @@ that turned those decisions into instances
 was independently adjustable: improve the generator without silently changing
 the task, or change the distribution without rewriting execution machinery.
 
-The factory assembled a working directory for each task-family/source pair.
-It rendered instructions from task-specific contracts and shared templates,
+The factory assembled a working directory for each task-family/source generation
+job. Each job could produce multiple learning instances. It rendered
+instructions from task-specific contracts and shared templates,
 connected the source files, and attached validation. This helped both coverage
 and parallel execution. A long generation session can converge on repetitive
 examples; many isolated calls can return the same obvious example. Each unit
@@ -461,7 +463,8 @@ to do next. Training on those trajectories introduces a different integration
 problem from training on plain question-answer pairs.
 
 In April, I implemented a tool-trajectory on-policy distillation path alongside
-the coding-agent training work. The student acted in a sandbox. Its trajectory
+the coding-agent training work. Unlike the teacher-generated SFT demonstrations,
+the student supplied the trajectory by acting in a sandbox. Its record
 retained the model-native tokens and sampling log probabilities, and the teacher
 scored the same student-generated actions under a causal view of the interaction.
 Tinker performed the parameter updates, after which the sampler was refreshed
