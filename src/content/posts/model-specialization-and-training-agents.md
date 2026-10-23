@@ -151,7 +151,9 @@ domain questions. Tracking both made that trade-off visible instead of hiding
 it behind a single specialization score.
 
 These are reconstructed exploratory historical measurements, with one training
-run per condition. The QA score comes from a source-grounded model judge, not
+run per condition. The preparation protocol split by question rather than source
+document: the target was answering about the supplied corpus, not transfer to
+unseen documents. The QA score comes from a source-grounded model judge, not
 independently verified task success, and the historical dataset revision was not
 pinned.
 
@@ -357,9 +359,9 @@ training agent involves its entire working environment.
 
 The researcher was implemented and exercised, with retained source changes,
 experiment journals, checkpoint identities and repeated model comparisons.
-Those comparisons were developmental: prompts used repeatedly for outer-loop
-selection are not untouched confirmation merely because the inner agent could
-not read them. The record makes the research process inspectable, including
+Those comparisons guided development; repeatedly used evaluation prompts did
+not provide independent confirmation of improvement. The record makes the
+research process inspectable, including
 which reusable component changed and which model was subsequently assessed.
 
 ### Shorter loops for data-generation research
@@ -480,10 +482,9 @@ I exercised the connection with a Haiku 4.5 teacher using the policy tools. The
 sampling stage saved its conversations and task-scorer results; a filtered
 trajectory set then fed SFT with assistant actions and tool observations rendered
 under explicit trainable-token boundaries. A Qwen3.5-4B run reached final
-trainer-state and sampler checkpoints, closing an actual generated-task →
-tool-trajectory → trained-model path. The final sampler checkpoint was then used
-in task assessment through the policy tools. That let me investigate the data
-and environment as seriously as the optimizer.
+trainer-state and sampler checkpoints. I then assessed the final sampler on tasks
+through the policy tools, exercising the complete path from generated work
+through tool-using demonstrations and student training to checkpoint assessment.
 
 ## Distilling tool-using policies
 
@@ -555,9 +556,8 @@ checkpoint and metric artifacts available through the application.
 
 I implemented the Tinker LoRA/SFT runner and budgeted experiment-loop integration,
 then worked on real validation, token-normalized loss and usable model/artifact
-outputs. This was a separate team project, with collaborators owning
-substantial components; it is not another name for the earlier SynthLabs
-researcher. The [final project documentation](https://github.com/StanfordCS194/spr26-Team-26/blob/934b10468c423e1c3231ea8d8c459eed6ac01f4e/docs/final-documentation.md)
+outputs. Nemoral was a separate Stanford team project, with collaborators owning
+substantial components. The [final project documentation](https://github.com/StanfordCS194/spr26-Team-26/blob/934b10468c423e1c3231ea8d8c459eed6ac01f4e/docs/final-documentation.md)
 and my [training](https://github.com/StanfordCS194/spr26-Team-26/pull/114)
 and [AutoResearch integration](https://github.com/StanfordCS194/spr26-Team-26/pull/116)
 contributions provide public source material.
