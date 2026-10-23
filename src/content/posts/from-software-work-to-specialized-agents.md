@@ -499,6 +499,7 @@ the worker and the assessment without rebuilding the entire system each time.
 
 ## Further reading
 
+- [Model specialization and training agents](/model-specialization-and-training-agents/) — the earlier work on model updates, executable training distributions and agents that conduct training.
 - [The distributed execution and learning platform](/distributed-agent-training-and-evaluation/)
 - [Task packages and versioning](https://synthlabs.mintlify.app/concepts/tasks-and-versions)
 - [Executable agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)

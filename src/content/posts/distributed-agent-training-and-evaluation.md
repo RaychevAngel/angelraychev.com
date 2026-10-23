@@ -613,6 +613,7 @@ and model-computation foundations where they fit.
 
 ## Further reading
 
+- [Model specialization and training agents](/model-specialization-and-training-agents/) — the earlier distillation, training-agent and data-factory work.
 - [From real software work to specialized agents](/from-software-work-to-specialized-agents/)
 - [How Synth fits together](https://synthlabs.mintlify.app/concepts/product-model)
 - [Agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)
