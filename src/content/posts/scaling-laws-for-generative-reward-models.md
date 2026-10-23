@@ -3,14 +3,14 @@ title: "Scaling Laws for Generative Reward Models"
 description: "A study of generative judges as online training signals: reward-model and policy scaling, reasoning versus answer-only pipelines, and the gap between static judging accuracy and downstream policy optimization."
 image: "/assets/genrm/research-preview.png"
 imageAlt: "Scaling Laws for Generative Reward Models by Angel Raychev, Nathan Lile and Rafael Rafailov. Custom distributed online DPO with generative judges."
-updated: 2026-10-21
+updated: 2026-10-23
 ---
 
 **Angel Raychev · Nathan Lile · Rafael Rafailov**
 
-[Paper (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767) · [Code and results](https://github.com/RaychevAngel/generative-reward-models) · [Implementation](#the-training-system-behind-the-study) · [Citation](#citation)
+[arXiv:2610.30765](https://arxiv.org/abs/2610.30765) · [Paper (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767) · [Analysis and results](https://github.com/RaychevAngel/generative-reward-models) · [Implementation](#the-training-system-behind-the-study) · [Citation](#citation)
 
-<p class="note">Research preprint</p>
+<p class="note">arXiv preprint · v1 submitted 22 October 2026. First released on this site on 21 October.</p>
 
 **Static judge accuracy and downstream training quality can disagree.** In our
 matched online-DPO study, Answer-Only rewarders produce higher peak and top-five
@@ -18,9 +18,9 @@ policy ratings than Thinking rewarders in seven of eight settings under the
 learned reference evaluator, despite the Thinking judges' higher static accuracy.
 
 I led the implementation of the distributed online-DPO training system and the
-experimental program behind this first-author work. The release includes the
-custom trainer, judge-training components, version-pinned experiment recipes
-and reproducible analysis of the recorded results.
+experimental program behind this first-author work. The public research package
+provides the manuscript, derived results and reproducible CPU analysis. The
+custom training implementation is maintained privately.
 
 ## A good judge is not necessarily a good rewarder
 
@@ -123,7 +123,7 @@ for unmeasured model sizes.
 
 ## The training system behind the study
 
-I implemented the [custom online-DPO trainer and actor/loss path](https://github.com/RaychevAngel/generative-reward-models/blob/main/docs/implementation.md) in a fork of
+I implemented the custom online-DPO trainer and actor/loss path in a fork of
 [verl](https://github.com/volcengine/verl), and carried out the distributed
 training and evaluation program with my coauthors. The system coordinates
 three distinct model roles: a trainable current policy, a frozen reference
@@ -172,26 +172,25 @@ and distributed model updates. They are separate systems and research efforts.
 ## Code and reproducibility
 
 The [public research repository](https://github.com/RaychevAngel/generative-reward-models)
-connects the paper to the implementation and numerical evidence:
+connects the paper to its numerical evidence and analysis code:
 
-- **Training implementation:** the historical verl-based online-DPO trainer,
-  distributed actor/loss code, judge integration and the source map explaining
-  the custom components.
-- **Experiment recipes:** Gold SFT, proxy SFT/GRPO and online-DPO configurations,
-  with model/data requirements and the distinction between historical settings
-  and a newly validated training environment.
-- **Results and analysis:** retained numerical tables, figure generators and
+- **CPU analysis:** tools for verifying recorded results, reproducing figures,
+  summarizing comparisons and inspecting descriptive fits.
+- **Research evidence:** derived numerical tables, prompt templates and
   provenance linking the plots to their inputs.
-- **Paper:** the matching manuscript sources and build instructions.
+- **Manuscript artifacts:** the paper and its versioned research release.
+
+As of 23 October 2026, this public package excludes the custom training
+implementation and private training recipes. The paper's original implementation
+availability statement predates this packaging change. The system described
+above is my implementation work; the public release supports inspection and
+analysis of the recorded study rather than a fresh execution of that trainer.
 
 An [earlier exploratory archive](https://github.com/RaychevAngel/generative-reward-models/tree/main/results/historical-explorations)
 preserves original data-recipe and distillation comparisons, separately from
 the paper's matched study.
 
-The release makes [CPU analysis reproducible without model calls](https://github.com/RaychevAngel/generative-reward-models/blob/main/docs/reproduction.md). Repeating the
-original training additionally requires suitable GPUs and access to the model
-and data artifacts; it is not presented as a freshly verified one-command GPU
-reproduction. The repository documents those requirements separately and exposes
+The release makes [CPU analysis reproducible without model calls](https://github.com/RaychevAngel/generative-reward-models/blob/main/docs/reproduction.md). It exposes
 the [conditional Elo uncertainty method](https://github.com/RaychevAngel/generative-reward-models/blob/main/results/receipts/README.md#inspectable-method-source)
 alongside the retained comparison results.
 
@@ -218,8 +217,9 @@ rewarder/policy capacity, checkpoint selection and online-DPO dynamics.
 ## Paper and citation
 
 [Download Scaling Laws for Generative Reward Models (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767).
-The [versioned research release](https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.21.1)
-also provides the matching TeX source package.
+The official preprint is [arXiv:2610.30765](https://arxiv.org/abs/2610.30765).
+The [versioned public analysis release](https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.23-analysis)
+provides the research artifacts under the public scope described above.
 The manuscript contains the experimental setup, matched-condition comparisons,
 readable chronological training trajectories, and an expanded empirical appendix.
 It documents the Elo estimator and uncertainty procedure, and distinguishes
@@ -240,8 +240,10 @@ abstract and machine-readable citation metadata.
   title  = {Scaling Laws for Generative Reward Models},
   author = {Angel Raychev and Nathan Lile and Rafael Rafailov},
   year   = {2026},
-  note   = {Preprint},
-  url    = {https://angelraychev.com/research/generative-reward-models/}
+  eprint = {2610.30765},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  url    = {https://arxiv.org/abs/2610.30765}
 }
 ```
 

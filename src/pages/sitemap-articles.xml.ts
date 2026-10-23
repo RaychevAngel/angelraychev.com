@@ -13,7 +13,7 @@ export async function GET() {
     .sort((a, b) => a.id.localeCompare(b.id));
   // Explicit scholarly landing pages, not embedded readers or artifact folders.
   const researchPages = [
-    { path: "/research/generative-reward-models/", updated: "2026-10-21" },
+    { path: "/research/generative-reward-models/", updated: "2026-10-23" },
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
