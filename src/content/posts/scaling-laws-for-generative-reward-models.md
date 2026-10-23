@@ -218,7 +218,7 @@ rewarder/policy capacity, checkpoint selection and online-DPO dynamics.
 
 [Download Scaling Laws for Generative Reward Models (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767).
 The official preprint is [arXiv:2610.30765](https://arxiv.org/abs/2610.30765).
-The [versioned public analysis release](https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.23-analysis)
+The [versioned public analysis release](https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.23-analysis.1)
 provides the research artifacts under the public scope described above.
 The manuscript contains the experimental setup, matched-condition comparisons,
 readable chronological training trajectories, and an expanded empirical appendix.

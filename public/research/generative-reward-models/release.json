@@ -14,8 +14,8 @@
   "pdf": "scaling-laws-for-generative-reward-models.pdf",
   "sha256": "43aabe39876750e05f155592eac00652b724c5692d9897537d11f5621a4cd446",
   "source_repository": "https://github.com/RaychevAngel/generative-reward-models",
-  "source_tag": "v2026.10.23-analysis",
-  "source_commit": "d0694c74bda6bd4e93957796b05ff136bcaedb35",
+  "source_tag": "v2026.10.23-analysis.1",
+  "source_commit": "03fbe84695610c65257058095bde5a56a3dfd185",
   "public_package_scope": "Analysis code, derived numerical results, figures, prompt templates and manuscript artifacts. Custom training implementation is maintained privately and is not included.",
   "original_manuscript_release": {
     "tag": "v2026.10.21.1",
