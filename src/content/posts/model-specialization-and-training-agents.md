@@ -362,10 +362,11 @@ which reusable component changed and which model was subsequently assessed.
 
 ## Building the training distribution
 
-Operating the training workflow was only useful if we could construct
-representative work and trustworthy feedback for the capability we wanted.
+Beyond operating a training recipe, I worked on constructing the learning
+distribution: representative tasks and feedback suited to the target capability.
 A desired capability is not a training set, and a benchmark's examples are not
-a recipe for producing more of the right work. I built a pipeline connecting
+a recipe for producing more of the right work. Alongside the training-agent
+and researcher stack, I built a separate task/data pipeline connecting
 task specification, independent source material, generation, executable
 verification and policy training. The factory—not just the training run—was an
 object of research and engineering.
@@ -403,7 +404,7 @@ write output to disk. It did not have to load every source row into its
 conversation or regenerate a long response to repair a small file error.
 
 An asynchronous sampler ran these jobs concurrently, retained tool trajectories
-and token and estimated-cost records, and returned validation errors to the same working
+alongside token and estimated-cost records, and returned validation errors to the same working
 conversation. The generator could correct its existing artifacts while keeping
 the context of how they had been produced. Resume logic checked saved output
 before deciding to skip a job.
@@ -483,7 +484,9 @@ also has to respect next-token alignment and the information available at each
 action. A final transcript rendered as convenient text is not automatically a
 correct training record.
 
-The mask could not be inferred from nonzero reward advantages. If every attempt
+The teacher term was added to verifier-reward advantages in the training
+integration. That made it important not to infer the response mask from nonzero
+advantages. If every attempt
 received the same verifier reward, the relative advantages could all be zero
 while teacher feedback still supplied a learning signal. I retained an
 independent mask for generated tokens and shifted it with the targets and
@@ -496,8 +499,8 @@ I worked on both the training integration and its evidence: joining task results
 to trajectories, checking token and mask alignment, preserving update and sampler
 identities, and retaining artifacts that made an actual update inspectable.
 
-Later specialist GRPO work used grouped sandbox rollouts and checkpointed
-updates. One target was [Promptfoo](https://github.com/promptfoo/promptfoo),
+In May, I trained specialist policies with GRPO using grouped sandbox rollouts
+and checkpointed updates. One target was [Promptfoo](https://github.com/promptfoo/promptfoo),
 an LLM-testing and red-teaming framework. I evaluated a trained checkpoint and
 its starting model on work involving configuration, provider integrations,
 diagnosis and red-team design. The analysis joined actor trajectories and
