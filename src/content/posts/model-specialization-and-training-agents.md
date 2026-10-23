@@ -53,16 +53,12 @@ information that would otherwise have to be supplied repeatedly.
 I treated these as separate optimization choices rather than different names
 for fine-tuning.
 
-<div class="tablewrap">
-
 | What changes | What it can accomplish | What has to match |
 | --- | --- | --- |
 | Model weights | Learn domain behavior, answer patterns and tool-use policies; internalize recurring knowledge | Training examples, update objective and intended inference behavior |
 | Instructions and workflow | Change how an agent investigates, plans, delegates, checks and submits work | The actual tools and execution environment |
-| Resources and retrieval | Make source information, procedures and examples available when needed | Organization, navigation and the ability to find relevant evidence |
+| Resources and retrieval | Make source information, procedures and examples available when needed | Resource organization, navigation and evidence retrieval |
 | Tools and environment | Expose the actions needed to complete the job | Input/output contracts, permissions and observable results |
-
-</div>
 
 For example, training a closed-book model to answer questions about company
 documentation tests what it can answer unaided after weight updates. Training an agent
@@ -184,10 +180,16 @@ information.
 For question $q$, context $c$ and response prefix $a_{<t}$, the sampled
 token-level signal has the form
 
+<div class="distillation-equation" tabindex="0" role="region" aria-label="Context-distillation token signal">
+
 $$
-\delta_t = \log \pi_T(a_t \mid q,c,a_{<t})
-           - \log \pi_{\mathrm{rollout}}(a_t \mid q,a_{<t}).
+\begin{aligned}
+\delta_t &= \log \pi_T(a_t \mid q,c,a_{<t}) \\
+         &\quad - \log \pi_{\mathrm{rollout}}(a_t \mid q,a_{<t}).
+\end{aligned}
 $$
+
+</div>
 
 This is a sampled reverse-KL-style distillation signal. It is not a comparison
 of two independently written answers, and it does not require the teacher to
@@ -607,7 +609,8 @@ article .katex{white-space:nowrap}
 .specialization-figure{margin:38px 0 42px}.specialization-figure strong{font-size:13px;line-height:1.55;display:block}.diagram-label{display:block;font-size:11px;letter-spacing:.025em;color:var(--dim);margin-bottom:7px}.research-loop{border:1px solid var(--fg);padding:22px}.loop-heading>span:last-child{display:block;font-size:12px;line-height:1.65;margin-top:9px}.training-loop{border:1px solid var(--rule);margin-top:20px;padding:19px}.weight-loop{display:grid;grid-template-columns:1fr 26px 1fr;align-items:center;gap:10px;margin-top:19px;border-top:1px solid var(--rule);padding-top:18px}.diagram-arrow{text-align:center}.loop-return{font-size:11.5px;line-height:1.65;margin-top:18px;padding-top:15px;border-top:1px dashed var(--rule)}.shared-question{border-bottom:1px solid var(--rule);padding:15px 20px}.distillation-diagram{border:1px solid var(--fg)}.distillation-pair{display:grid;grid-template-columns:1fr 1fr}.distillation-pair>div{padding:19px 20px}.distillation-pair>div+div{border-left:1px solid var(--rule)}.distillation-pair p{font-size:12px;line-height:1.7;margin:10px 0 0}.distillation-update{border-top:1px solid var(--rule);padding:17px 20px}.distillation-update>span{font-size:11.5px;line-height:1.7;display:block;margin-top:8px}.trajectory-diagram{display:grid;grid-template-columns:1fr 1fr;gap:12px}.trajectory-item{padding:17px;border:1px solid var(--rule)}.trajectory-item.action{border:1px solid var(--fg)}.trajectory-item>span:last-child{display:block;font-size:11px;line-height:1.65;margin-top:9px}.specialization-figure figcaption{font-size:12px;line-height:1.7}
 .empirical-scroll{overflow-x:auto;border:1px solid var(--rule);padding:10px;background:#fff}.empirical-scroll img{width:100%;min-width:600px;height:auto}.factory-chain{list-style:none;counter-reset:factory;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0;padding:0}.factory-chain li{counter-increment:factory;margin:0;border:1px solid var(--rule);padding:17px}.factory-chain .diagram-label:before{content:counter(factory) ". ";color:var(--fg)}.factory-chain li>span:last-child{font-size:11.5px;line-height:1.7;display:block;margin-top:9px}
 .specialization-wide{width:min(1000px,calc(100vw - 56px));position:relative;left:50%;transform:translateX(-50%)}.specialization-wide figcaption{max-width:660px;margin:14px auto 0}
-.empirical-scroll:focus-visible,.sql-specimen:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
+.distillation-equation{overflow-x:auto;margin:0 0 24px}.distillation-equation .katex-display{overflow:visible}
+.empirical-scroll:focus-visible,.sql-specimen:focus-visible,.distillation-equation:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
 @media(max-width:760px){.specialization-wide{width:100%;position:static;transform:none}}
 @media(max-width:520px){.research-loop{padding:17px}.training-loop{padding:15px}.distillation-pair{grid-template-columns:1fr}.distillation-pair>div+div{border-left:0;border-top:1px solid var(--rule)}.weight-loop{grid-template-columns:1fr}.diagram-arrow{transform:rotate(90deg)}.trajectory-diagram{grid-template-columns:1fr}.specialization-figure strong{font-size:12.5px}}
 @media(max-width:520px){.factory-chain{grid-template-columns:1fr}}
