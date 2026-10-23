@@ -1,13 +1,17 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-22"
+updated: "2026-10-23"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**23 October 2026 — cleaner-triggered awakening after a late gym.** Reported last food around 20:00, gym 21:30–23:00, shower around midnight and bed around 01:00. The cleaner woke me around 09:30–09:40. This supplies an external waking trigger, not a count of earlier interruptions or an account of morning/daytime functioning. Any return to sleep after that awakening remains unreported initially.
+
+The [record](/sleep/record/#night-2026-10-23) retains **Oura 83, 7h44m30s asleep, 39 minutes awake** and **COROS 88, 8h13m asleep, nine minutes awake**. Their windows end around 09:28. Oura coverage now extends through the main night, so its score is eligible; October22’s battery-truncated 73 remains separate. The meal-to-bed interval was roughly five hours, gym-to-bed two hours and shower-to-bed one hour, from approximate reports. No isolated effect of those conditions is established. Earlier bedtime remains the preceding stated direction, rather than a completed change or newly fixed clock target.
 
 **22 October 2026 — middling subjective sleep; Oura coverage interrupted.** I reported bed around 00:40 and final waking sometime after 10:00, perhaps 10:15, without clear recall. I want to go to bed earlier; no new exact clock target was specified. COROS returned **91**, **9h15m asleep**, **eight minutes awake**, and **00:44–10:07**, broadly consistent with the diary.
 

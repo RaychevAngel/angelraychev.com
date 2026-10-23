@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-22"
+updated: "2026-10-23"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -32,6 +32,8 @@ The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 
 This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
+
+The [October 23 record](/sleep/record/#night-2026-10-23) returns **Oura 83 / COROS 88**, with both episodes ending around 09:28. The diary reports a cleaner-triggered awakening around 09:30–09:40. Oura contributors are total sleep **81**, deep **96**, REM **88**, efficiency **97**, restfulness **85**, latency **83** and timing **52**. Today’s Oura score is eligible for whole-night milestones; yesterday’s incomplete 73 remains excluded rather than serving as the comparison for an apparent improvement. Eleven dated entries contain ten eligible Oura scores, insufficient to assess the established sustained windows.
 
 The [October 22 battery interruption](/sleep/record/#night-2026-10-22) illustrates a coverage failure: Oura stops at 06:30 while COROS continues to 10:07 and the diary recalls waking after 10:00. Oura returns **73**, total-sleep **50**, REM **36**, timing **100** and restfulness **97**, all retained as partial-recording outputs. The whole-night milestone excludes this score with an explicit reason; its high component grades are also ineligible as full-night achievements. No missing hours are imputed or borrowed from COROS. COROS’s **91** remains its separate series beside the middling subjective impression. Ten dates contain nine eligible Oura whole-night scores, with the battery-loss date visible as a coverage gap.
 

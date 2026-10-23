@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-22"
+updated: "2026-10-23"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,10 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+The [night ending 23 October](/sleep/record/#night-2026-10-23) ended with a **reported cleaner-triggered awakening around 09:30–09:40**. Last food was around **20:00**, gym **21:30–23:00**, shower around **midnight** and bed around **01:00**. Morning experience and any subsequent return to sleep were not initially reported.
+
+Both devices now cover the main episode through roughly **09:28**: **Oura 83 / 7h44m30s asleep**, **COROS 88 / 8h13m**. Their waking estimates remain different, **39 versus nine minutes**, despite close boundaries. Oura timing **52** is its lowest contributor; HRV is **62 ms** on both devices, which is agreement between summaries rather than independent validation. Today adds an eligible Oura whole-night score; yesterday’s battery-truncated 73 stays excluded. There are eleven dates and ten eligible Oura scores, without a completed sustained milestone. The cleaner is a reported external trigger; the roughly five-hour food gap and two-hour gym gap have not been isolated as explanations.
 
 The [night ending 22 October](/sleep/record/#night-2026-10-22) felt **middling**, despite **COROS 91**. I reported bed around **00:40**, waking sometime after **10:00**, perhaps **10:15**, explicitly uncertain, and wanting to go to bed earlier. COROS selected **00:44–10:07**, estimating **9h15m asleep and eight minutes awake**. That broadly fits the diary without independently validating every estimate.
 

@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-22"
+updated: "2026-10-23"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -64,6 +64,10 @@ On [October 21](/sleep/record/#night-2026-10-21), Oura returned mean sleeping HR
 ## October 22: interrupted recording limits comparison
 
 The [October 22 record](/sleep/record/#night-2026-10-22) has **COROS official HRV 60 ms, Normal**, range **49–69**, baseline **59**. Oura HRV **63 ms**, sleeping mean HR **49.125 bpm** and minimum **45** describe only its recorded segment ending 06:30, after reported low battery. They are not full-night matched-window comparisons with the watch. COROS daily HR averaged 54 bpm with minimum 44 at retrieval, and predicted seated resting HR was 56; these scopes remain distinct.
+
+## October 23: full main episode and matching HRV summaries
+
+On [October 23](/sleep/record/#night-2026-10-23), Oura mean sleeping HR was **49.125 bpm**, minimum **46**, and HRV **62 ms**. COROS official sleep HRV was also **62 ms, Normal**, against its returned **49–69 ms range and 59 ms baseline**. Both main windows extend to about 09:28; identical summary HRV does not validate beat-level agreement. COROS daily HR averaged 54 bpm with minimum 45 at retrieval; predicted seated resting HR was 52. Today’s Oura values cover a longer window than the known incomplete October22 recording, so their similarity alone is not a matched-window comparison.
 
 ## How much confidence is justified?
 
