@@ -101,8 +101,8 @@ context.
 
 I built a shared data representation containing a question, supporting context
 and a reference answer. Different training procedures consumed different views
-of the same information. The question-only student could not see the teacher's
-extra context merely because both were part of one dataset record.
+of the same information. Storing them in one record did not expose the context
+to the question-only student.
 
 The implemented routes included:
 
@@ -134,8 +134,8 @@ following the instructions through which that knowledge is requested.
   <figcaption id="data-scale-caption">Rank-32 LoRA SFT of Qwen3-4B-Instruct-2507 on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge provides a mean answer score from 0 to 4. The curves share the recorded starting-model baseline. Training-set equivalents are 64 × recorded optimizer step / training-set size, not exact completed epochs. Larger sets require more updates for the same exposure. This is a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
 </figure>
 
-The larger supervision sets reached higher recorded scores, while further
-training on each fixed set soon changed less. More distinct examples also meant
+The larger supervision sets reached higher recorded scores. Within each fixed
+set, the recorded scores changed less with further training. More distinct examples also meant
 more updates for each training-set equivalent, so this comparison does not isolate data quantity from
 compute. It nevertheless exposed a useful decision: whether to spend the next
 training budget repeating the existing supervision or expanding its coverage.
