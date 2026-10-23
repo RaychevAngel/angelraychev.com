@@ -298,9 +298,11 @@ training workflow had fulfilled its execution and artifact contract. Checkpoint
 evaluation examined the resulting model's behavior. Completing the first did
 not answer the second.
 
-These components were integrated through Claude Code plugins, training tools,
-Harbor tasks and sandbox execution. I added plugin-directory support to the
-Harbor adapter so the same training-agent configuration could be exercised as an
+These components were integrated through
+[Claude Code plugins](https://code.claude.com/docs/en/plugins), training tools,
+[Harbor tasks](https://docs.harborframework.com/tasks/overview) and sandbox
+execution. I added plugin-directory support to our Harbor adapter so the same
+training-agent configuration could be exercised as an
 executable task rather than only in a developer's interactive session.
 
 ## A researcher for the training workflow
@@ -342,11 +344,6 @@ quality check, and a trained checkpoint was evaluated repeatedly. The researcher
 then incorporated the lesson into the shared data-generation skill, including
 checks for wrapper-only files and references to externally loaded content.
 
-That ordering is what makes the example useful. An agent discovered a problem
-in actual work; the workflow retained the evidence; the lesson became an input
-to future work. The reusable artifact was an improved data-preparation procedure,
-not merely an explanation in a completed chat.
-
 Other investigations concerned consistency between training and inference
 instructions, the relationship between dataset size and the actual number of
 optimizer steps, and parameters that did not survive the path from the agent's
@@ -364,8 +361,10 @@ which reusable component changed and which model was subsequently assessed.
 
 Not every question needed a complete training-agent episode. In April I also
 separated task-specification extraction, instance generation and diagnostic
-comparison into a smaller artifact-based workflow. One agent derived a
-structured specification from source material and a standalone guide. Another
+comparison into a smaller artifact-based workflow. These task specifications
+defined the learning work; the earlier model specification defined the
+specialist, and the plan its construction. One agent derived a task
+specification from source material and a standalone guide. Another
 was assigned the specification and a general generation recipe. A separate agent
 inspected a shuffled, unlabeled mixture of generated and comparison examples,
 returning classifications and reasons. The comparison labels were stored in a
@@ -434,22 +433,24 @@ before deciding to skip a job.
 
 ### Follow one generated SQL task through the factory
 
-One generated task used an exoplanet table and asked for the identifiers of
-confirmed planets. The task contract specified the tables and question the
-policy would see, and the SQLite query it had to produce.
+One generated SQL task combined three named tables: `patients`, `medical` and
+`billing`, linked by `PatientID`. Its reference joined those tables, filtered a
+medical condition and selected the corresponding name, doctor and billing
+fields in name order:
 
-The actual generated question was “Find the planet IDs of all confirmed
-exoplanets.” Its reference query was:
+<pre class="sql-specimen" tabindex="0" role="region" aria-label="Generated three-table reference SQL; scroll horizontally on small screens"><code>SELECT p."Name", m."Doctor", b."Billing Amount"
+FROM "patients" p
+JOIN "medical" m ON p."PatientID" = m."PatientID"
+JOIN "billing" b ON p."PatientID" = b."PatientID"
+WHERE m."Medical Condition" = 'Asthma'
+ORDER BY p."Name";</code></pre>
 
-<pre class="sql-specimen"><code>SELECT "planet_id"
-FROM "planets_discovery"
-WHERE "status" = 'CONFIRMED'
-ORDER BY "planet_id";</code></pre>
-
-The assembly stage executed the reference query, materialized the database and
-expected result, and stored those in the task's verification information. At
-evaluation, the verifier executed the candidate's SQL and compared returned
-values. Correctness was not defined as reproducing one reference SQL string:
+The packaged task contained a SQLite database with those same named tables and
+an expected-result CSV with matching output columns. The assembly code cleaned
+the reference SQL, executed it, and stored the database and reference output in
+the task's verification information. During assessment, the verifier executes
+the candidate's SQL and compares returned values. Correctness is not defined
+as reproducing one reference SQL string:
 different queries could express the same solution.
 
 <figure class="specialization-figure" aria-labelledby="factory-caption"><ol class="factory-chain"><li><span class="diagram-label">Define</span><strong>SQL task contract + source allocation</strong><span>Visible schema, question, query coverage and output requirements</span></li><li><span class="diagram-label">Generate</span><strong>Question and reference query</strong><span>Inspect source data, write instances, receive validation feedback</span></li><li><span class="diagram-label">Materialize</span><strong>Database and expected result</strong><span>Execute the reference and package task-specific checking information</span></li><li><span class="diagram-label">Use</span><strong>Policy tools and executable assessment</strong><span>Sample demonstrations or policy actions; execute and compare results</span></li></ol><figcaption id="factory-caption">A concrete learning artifact passes through several different components. The generator prepares the work; assembly constructs checking material; the policy attempts the task with its own tool harness; the verifier computes feedback from the output.</figcaption></figure>
@@ -518,9 +519,9 @@ without accidentally applying it to observations—or suppressing it altogether.
 
 <figure class="specialization-figure" aria-labelledby="trajectory-caption"><div class="trajectory-diagram"><div class="trajectory-item observation"><span class="diagram-label">Input</span><strong>Prompt and available context</strong><span>Conditioning only</span></div><div class="trajectory-item action"><span class="diagram-label">Model action</span><strong>Tool call</strong><span>Generated tokens · update mask on</span></div><div class="trajectory-item observation"><span class="diagram-label">Observation</span><strong>Tool result</strong><span>Conditioning only · update mask off</span></div><div class="trajectory-item action"><span class="diagram-label">Model action</span><strong>Next action or answer</strong><span>Generated tokens · update mask on</span></div></div><figcaption id="trajectory-caption">A tool trajectory mixes generated actions and external observations. Both can condition the next action, but only the model's generated response tokens belong in its response-loss mask. The pattern repeats across tool calls.</figcaption></figure>
 
-I worked on both the training integration and its evidence: joining task results
-to trajectories, checking token and mask alignment, preserving update and sampler
-identities, and retaining artifacts that made an actual update inspectable.
+I joined task results to their generating trajectories, checked token and mask
+alignment, and retained update and sampler identities so an update could be
+traced back to its training evidence.
 
 In May, I trained specialist policies with GRPO using grouped sandbox rollouts
 and checkpointed updates. One target was [Promptfoo](https://github.com/promptfoo/promptfoo),
@@ -601,7 +602,7 @@ article .katex{white-space:nowrap}
 .specialization-figure{margin:38px 0 42px}.specialization-figure strong{font-size:13px;line-height:1.55;display:block}.diagram-label{display:block;font-size:11px;letter-spacing:.025em;color:var(--dim);margin-bottom:7px}.research-loop{border:1px solid var(--fg);padding:22px}.loop-heading>span:last-child{display:block;font-size:12px;line-height:1.65;margin-top:9px}.training-loop{border:1px solid var(--rule);margin-top:20px;padding:19px}.weight-loop{display:grid;grid-template-columns:1fr 26px 1fr;align-items:center;gap:10px;margin-top:19px;border-top:1px solid var(--rule);padding-top:18px}.diagram-arrow{text-align:center}.loop-return{font-size:11.5px;line-height:1.65;margin-top:18px;padding-top:15px;border-top:1px dashed var(--rule)}.shared-question{border-bottom:1px solid var(--rule);padding:15px 20px}.distillation-diagram{border:1px solid var(--fg)}.distillation-pair{display:grid;grid-template-columns:1fr 1fr}.distillation-pair>div{padding:19px 20px}.distillation-pair>div+div{border-left:1px solid var(--rule)}.distillation-pair p{font-size:12px;line-height:1.7;margin:10px 0 0}.distillation-update{border-top:1px solid var(--rule);padding:17px 20px}.distillation-update>span{font-size:11.5px;line-height:1.7;display:block;margin-top:8px}.trajectory-diagram{display:grid;grid-template-columns:1fr 1fr;gap:12px}.trajectory-item{padding:17px;border:1px solid var(--rule)}.trajectory-item.action{border:1px solid var(--fg)}.trajectory-item>span:last-child{display:block;font-size:11px;line-height:1.65;margin-top:9px}.specialization-figure figcaption{font-size:12px;line-height:1.7}
 .empirical-scroll{overflow-x:auto;border:1px solid var(--rule);padding:10px;background:#fff}.empirical-scroll img{width:100%;min-width:600px;height:auto}.factory-chain{list-style:none;counter-reset:factory;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0;padding:0}.factory-chain li{counter-increment:factory;margin:0;border:1px solid var(--rule);padding:17px}.factory-chain .diagram-label:before{content:counter(factory) ". ";color:var(--fg)}.factory-chain li>span:last-child{font-size:11.5px;line-height:1.7;display:block;margin-top:9px}
 .specialization-wide{width:min(1000px,calc(100vw - 56px));position:relative;left:50%;transform:translateX(-50%)}.specialization-wide figcaption{max-width:660px;margin:14px auto 0}
-.empirical-scroll:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
+.empirical-scroll:focus-visible,.sql-specimen:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
 @media(max-width:760px){.specialization-wide{width:100%;position:static;transform:none}}
 @media(max-width:520px){.research-loop{padding:17px}.training-loop{padding:15px}.distillation-pair{grid-template-columns:1fr}.distillation-pair>div+div{border-left:0;border-top:1px solid var(--rule)}.weight-loop{grid-template-columns:1fr}.diagram-arrow{transform:rotate(90deg)}.trajectory-diagram{grid-template-columns:1fr}.specialization-figure strong{font-size:12.5px}}
 @media(max-width:520px){.factory-chain{grid-template-columns:1fr}}
