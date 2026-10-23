@@ -17,7 +17,7 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 
 ## What the observations show
 
-The [night ending 23 October](/sleep/record/#night-2026-10-23) ended with a **reported cleaner-triggered awakening around 09:30–09:40**. Last food was around **20:00**, gym **21:30–23:00**, shower around **midnight** and bed around **01:00**. Morning experience and any subsequent return to sleep were not initially reported.
+The [night ending 23 October](/sleep/record/#night-2026-10-23) ended with a **reported cleaner-triggered awakening around 09:30–09:40**. Last food was around **20:00**, gym **21:30–23:00**, shower around **midnight** and bed around **01:00**. The follow-up confirms that I **stayed awake**, felt **sleepy on waking** and was **still a little sleepy** when I replied. The elapsed interval, eventual resolution and effect on performance remain unspecified; this is not a reported return to normal within 10–15 minutes.
 
 Both devices now cover the main episode through roughly **09:28**: **Oura 83 / 7h44m30s asleep**, **COROS 88 / 8h13m**. Their waking estimates remain different, **39 versus nine minutes**, despite close boundaries. Oura timing **52** is its lowest contributor; HRV is **62 ms** on both devices, which is agreement between summaries rather than independent validation. Today adds an eligible Oura whole-night score; yesterday’s battery-truncated 73 stays excluded. There are eleven dates and ten eligible Oura scores, without a completed sustained milestone. The cleaner is a reported external trigger; the roughly five-hour food gap and two-hour gym gap have not been isolated as explanations.
 

@@ -9,7 +9,7 @@ order: 4
 
 ## The current routine proposal
 
-**23 October 2026 — cleaner-triggered awakening after a late gym.** Reported last food around 20:00, gym 21:30–23:00, shower around midnight and bed around 01:00. The cleaner woke me around 09:30–09:40. This supplies an external waking trigger, not a count of earlier interruptions or an account of morning/daytime functioning. Any return to sleep after that awakening remains unreported initially.
+**23 October 2026 — cleaner-triggered awakening after a late gym.** Reported last food around 20:00, gym 21:30–23:00, shower around midnight and bed around 01:00. The cleaner woke me around 09:30–09:40. This supplies an external waking trigger, not a count of earlier interruptions. In the follow-up, I confirmed **staying awake**, feeling **sleepy on waking** and remaining **a little sleepy at the time of reply**. The elapsed interval, eventual resolution and effects on work or training remain unspecified. The prior dates’ 10–15-minute recovery is not assumed repeated.
 
 The [record](/sleep/record/#night-2026-10-23) retains **Oura 83, 7h44m30s asleep, 39 minutes awake** and **COROS 88, 8h13m asleep, nine minutes awake**. Their windows end around 09:28. Oura coverage now extends through the main night, so its score is eligible; October22’s battery-truncated 73 remains separate. The meal-to-bed interval was roughly five hours, gym-to-bed two hours and shower-to-bed one hour, from approximate reports. No isolated effect of those conditions is established. Earlier bedtime remains the preceding stated direction, rather than a completed change or newly fixed clock target.
 

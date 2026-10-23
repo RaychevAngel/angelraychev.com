@@ -1673,7 +1673,7 @@
       "wake_date": "2026-10-23",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider sleep wake-up date; preceding evening on October 22 and sleep ending October 23",
-      "status": "Cleaner reportedly woke me around 09:30–09:40; late gym and approximately 01:00 bedtime",
+      "status": "Cleaner woke me around 09:30–09:40; stayed awake and remained a little sleepy at follow-up",
       "retrieved_at": "2026-10-23T18:28:57.029248+00:00",
       "provider_retrieved_at": {
         "oura": "2026-10-23T18:28:57.029248+00:00",
@@ -1756,13 +1756,13 @@
       },
       "self_report": {
         "restfulness": null,
-        "morning_sleepiness": null,
-        "daytime_sleepiness": null,
+        "morning_sleepiness": "Felt sleepy when the cleaner woke me around 09:30–09:40 and stayed awake afterward. No return to sleep reported; exact out-of-bed time remains unspecified.",
+        "daytime_sleepiness": "Still a little sleepy at the follow-up. The elapsed interval, eventual resolution and effect on work or training were not specified.",
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": "Went to bed around 01:00. Cleaner woke me around 09:30–09:40; exact sleep onset, subsequent return to sleep and out-of-bed time not initially specified.",
+        "intended_bedtime": "Went to bed around 01:00. Cleaner woke me around 09:30–09:40; follow-up confirms staying awake afterward. Exact sleep onset and out-of-bed time remain unspecified.",
         "environment": "Reported being woken by the cleaner around 09:30–09:40. Other room conditions and light routine not reported.",
         "stress": null,
         "breathing_exercise": null,
@@ -1775,7 +1775,7 @@
         },
         {
           "kind": "self_report",
-          "observation": "Cleaner reportedly caused waking around 09:30–09:40. Initial report does not specify subsequent return to sleep, out-of-bed time, experienced fragmentation or daytime function."
+          "observation": "Cleaner reportedly caused waking around 09:30–09:40. Follow-up confirms staying awake, feeling sleepy on waking and still a little sleepy at the time of reply. Elapsed time, eventual resolution, exact out-of-bed time and effects on performance remain unspecified."
         },
         {
           "kind": "measurement_provenance",
@@ -1784,7 +1784,8 @@
       ],
       "story": [
         "Before the sleep ending October 23, I last ate around 20:00 and went to the gym from about 21:30 to 23:00. I showered around midnight and went to bed around 01:00.",
-        "The cleaner woke me around 09:30–09:40."
+        "The cleaner woke me around 09:30–09:40.",
+        "I stayed awake after the cleaner woke me. I felt sleepy on waking and was still a little sleepy when I replied to the follow-up."
       ],
       "interpretation": [
         "Oura returned 83 with 7h44m30s estimated sleep; COROS returned 88 with 8h13m. The estimates differ by 28m30s despite near-matching episode boundaries: Oura 01:04:28–09:27:58 and COROS 01:06–09:28. Their episode lengths are 8h23m30s and 8h22m; the sleep/wake classification within those windows remains different.",
@@ -1794,11 +1795,12 @@
         "Compared with the last eligible Oura night, October 21, estimated sleep is 1h25m shorter and the score 90 → 83. COROS estimates 1h02m less sleep than October 22 and grades 91 → 88. Later bed and an externally triggered awakening are described conditions, but this night does not isolate their effects or measure how much longer sleep would have continued without the cleaner.",
         "Oura average sleeping HR was 49.125 bpm, minimum 46, and sleep HRV 62 ms. COROS official HRV was also 62 ms, Normal against its returned 49–69 ms range and 59 ms baseline. Matching summary values are not matched-beat validation or proof of complete recovery. The COROS daily HR snapshot averaged 54 bpm, minimum 45; predicted seated resting HR was 52, separate from the Oura sleep-window measures.",
         "Oura Readiness was 89, temperature deviation −0.17 °C, breathing rate 12/min, average SpO₂ 96.449% and breathing disturbance index zero. These are provider estimates rather than a clinical sleep assessment. Saturation is a usable nonzero return today, whereas the prior two dates remain marked unavailable; no earlier value has been backfilled.",
-        "The reported food-to-bed interval is roughly five hours and gym-to-bed interval roughly two hours. Intensity, total hydration, evening light and stress were not supplied. The cleaner is the reported waking trigger; no controlled comparison establishes an effect of food, gym or shower timing."
+        "The reported food-to-bed interval is roughly five hours and gym-to-bed interval roughly two hours. Intensity, total hydration, evening light and stress were not supplied. The cleaner is the reported waking trigger; no controlled comparison establishes an effect of food, gym or shower timing.",
+        "The follow-up confirms that the cleaner awakening was followed by staying awake, not a return to sleep. Sleepiness was still present to a lesser degree at the time of reply. Unlike the October 19–21 reports, this account does not establish recovery to normal within 10–15 minutes. The elapsed interval and eventual resolution remain unspecified; neither a diagnosis nor prolonged impairment is inferred."
       ],
       "plans": [],
       "next_focus": [
-        "Keep the externally triggered awakening distinct from spontaneous waking, and compare obtained sleep and later-day function with the provider grades. The account does not establish how much additional sleep was needed or would have occurred without the interruption.",
+        "Keep the externally triggered final awakening and continued mild sleepiness alongside the 83/88 grades. The follow-up confirms no return to sleep and some continuing sleepiness, but does not quantify its duration, performance effect or eventual resolution. This night does not establish how much extra sleep would have occurred without the cleaner.",
         "The earlier-bedtime direction from the preceding report remains an open comparison; today’s reported bedtime was around 01:00. Preserve enough sleep opportunity and assess experienced continuity and daytime function. Ten eligible Oura scores across 11 dates do not complete the 14- or 28-day milestone windows."
       ],
       "next_focus_references": [
@@ -1815,7 +1817,12 @@
           "label": "Milestone inclusion rules"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-23",
+          "reason": "Follow-up confirms staying awake after the cleaner awakening, sleepiness on waking and still feeling a little sleepy at reply. Kept elapsed time, resolution, performance effect and exact out-of-bed time unknown. Native provider fields, retrieval timestamps and score eligibility unchanged."
+        }
+      ]
     }
   ]
 }
