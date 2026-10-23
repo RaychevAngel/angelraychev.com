@@ -11,8 +11,9 @@ on-policy distillation pipelines for open-weight models. I then built agents to
 prepare, run and investigate that work. A training agent turned a specialization
 request into a model specification, data, assessments and checkpoints. An outer
 researcher agent inspected those episodes and revised the training agent's
-reusable skills and tools. The work extended from organization knowledge to
-tool-using policies and factories that produced executable training tasks.
+reusable skills and tools. I connected generated tasks to teacher demonstrations,
+student training and checkpoint assessment, and implemented on-policy updates
+from a student's own tool-using trajectories.
 
 The underlying question was practical: **what should a model learn, and what
 should its surrounding system supply?** A company-specific assistant might need
@@ -324,6 +325,10 @@ or restarting the inner agent when appropriate. A trace parser exposed relevant
 segments instead of forcing every investigator to read an entire conversation.
 Persistent journals retained observations, hypotheses, changes and comparisons
 across sessions.
+
+For research episodes, the launcher supplied a focus task and assigned the
+outer agent the run–inspect–revise–restart loop, including the operator role at
+the inner agent's routine approval turns.
 
 The distinction between the two loops is important. The inner episode optimizes
 or constructs a specialist model. The outer loop changes how that episode is
