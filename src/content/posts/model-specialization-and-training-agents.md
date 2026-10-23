@@ -129,7 +129,7 @@ specialized knowledge is less useful if the resulting model stops reliably
 following the instructions through which that knowledge is requested.
 
 <figure class="specialization-figure specialization-wide" aria-labelledby="data-scale-caption">
-  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-data-scale.svg" width="1919" height="1102" alt="Five mean source-grounded QA score curves for 2,500 through 39,500 synthetic training pairs, plotted against training-set equivalents processed. Larger training sets reach higher recorded scores." loading="lazy" /></div>
+  <div class="empirical-scroll" tabindex="0" role="region" aria-label="Data-volume experiment figure; scroll horizontally on small screens"><img src="/assets/model-specialization/specialization-data-scale.svg" width="1919" height="1102" alt="Five mean source-grounded QA score curves for 2,500 through 39,500 synthetic training pairs, plotted against training-set equivalents processed. Larger training sets reach higher recorded scores." loading="lazy" /></div>
   <figcaption id="data-scale-caption">Rank-32 LoRA SFT of Qwen3-4B-Instruct-2507 on differently sized sets of context-generated QA. The student answers without source context; a context-grounded Qwen3-30B-A3B judge provides a mean answer score from 0 to 4. The curves share the recorded starting-model baseline. Training-set equivalents are 64 × recorded optimizer step / training-set size, not exact completed epochs. Larger sets require more updates for the same exposure. This is a supervision-budget comparison, not a controlled scaling-law estimate. <a href="/assets/model-specialization/specialization-data-scale.svg">Open full figure</a>.</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ compute. It nevertheless exposed a useful decision: whether to spend the next
 training budget repeating the existing supervision or expanding its coverage.
 
 <figure class="specialization-figure specialization-wide" aria-labelledby="instruction-mix-caption">
-  <div class="empirical-scroll"><img src="/assets/model-specialization/specialization-instruction-mix.svg" width="1967" height="1563" alt="Two panels compare domain-only SFT with mixed domain and instruction training. Both learn domain QA; the mixed run retains higher recorded strict IFEval accuracy at shared checkpoints, while domain-only QA scores are usually higher." loading="lazy" /></div>
+  <div class="empirical-scroll" tabindex="0" role="region" aria-label="Domain and instruction-following experiment figure; scroll horizontally on small screens"><img src="/assets/model-specialization/specialization-instruction-mix.svg" width="1967" height="1563" alt="Two panels compare domain-only SFT with mixed domain and instruction training. Both learn domain QA; the mixed run retains higher recorded strict IFEval accuracy at shared checkpoints, while domain-only QA scores are usually higher." loading="lazy" /></div>
   <figcaption id="instruction-mix-caption">Domain-only SFT versus a roughly 70/30 mixture of domain QA and general instruction examples generated from Tulu 3 prompts. Mean QA score and IFEval prompt-level strict accuracy measure different capabilities. The horizontal axis counts optimizer updates; training tokens, domain exposure and learning-rate schedules are not matched. <a href="/assets/model-specialization/specialization-instruction-mix.svg">Open full figure</a>.</figcaption>
 </figure>
 
@@ -152,8 +152,7 @@ it behind a single specialization score.
 These are reconstructed exploratory historical measurements, with one training
 run per condition. The QA score comes from a source-grounded model judge, not
 independently verified task success, and the historical dataset revision was not
-pinned. Plot positions use recorded numeric checkpoints. The curves document the training decisions I investigated; they are not
-a general performance guarantee.
+pinned.
 
 The broader experiments included SFT data-volume sweeps, teacher comparisons,
 documentation-adaptation comparisons, distillation from an instruction-tuned
@@ -206,7 +205,8 @@ the experiment, rather than inferred from a run's display name.
 
 The log-probability difference was supplied as a detached per-token advantage
 to the learner, alongside the captured sampling log probabilities and response
-masks. An importance-sampling training loss then applied the student update.
+masks. Tinker's [importance-sampling training loss](https://tinker-docs.thinkingmachines.ai/tinker/losses/importance-sampling/)
+then applied the student update.
 Keeping those roles separate matters: the teacher score supplies supervision;
 the loss determines how that supervision changes the student's weights.
 
@@ -495,9 +495,18 @@ without accidentally applying it to observations—or suppressing it altogether.
 I worked on both the training integration and its evidence: joining task results
 to trajectories, checking token and mask alignment, preserving update and sampler
 identities, and retaining artifacts that made an actual update inspectable.
-Later specialist GRPO work used grouped sandbox rollouts, task assessment and
-checkpointed updates. This connects the specialization research to the execution
-and trace machinery described in the
+
+Later specialist GRPO work used grouped sandbox rollouts and checkpointed
+updates. One target was [Promptfoo](https://github.com/promptfoo/promptfoo),
+an LLM-testing and red-teaming framework. I evaluated a trained checkpoint and
+its starting model on work involving configuration, provider integrations,
+diagnosis and red-team design. The analysis joined actor trajectories and
+separate verifier reports to task-specific criteria, completion state, tool use,
+elapsed time and token usage. That supported investigation of how a policy
+carried out the work, rather than treating a shorter response or one aggregate
+reward as sufficient evidence of improvement.
+
+This connects the specialization research to the execution and trace machinery described in the
 [platform article](/distributed-agent-training-and-evaluation/).
 
 ## A related application in Nemoral
@@ -566,6 +575,7 @@ article .katex{white-space:nowrap}
 .specialization-figure{margin:38px 0 42px}.specialization-figure strong{font-size:13px;line-height:1.55;display:block}.diagram-label{display:block;font-size:11px;letter-spacing:.025em;color:var(--dim);margin-bottom:7px}.research-loop{border:1px solid var(--fg);padding:22px}.loop-heading>span:last-child{display:block;font-size:12px;line-height:1.65;margin-top:9px}.training-loop{border:1px solid var(--rule);margin-top:20px;padding:19px}.weight-loop{display:grid;grid-template-columns:1fr 26px 1fr;align-items:center;gap:10px;margin-top:19px;border-top:1px solid var(--rule);padding-top:18px}.diagram-arrow{text-align:center}.loop-return{font-size:11.5px;line-height:1.65;margin-top:18px;padding-top:15px;border-top:1px dashed var(--rule)}.shared-question{border-bottom:1px solid var(--rule);padding:15px 20px}.distillation-diagram{border:1px solid var(--fg)}.distillation-pair{display:grid;grid-template-columns:1fr 1fr}.distillation-pair>div{padding:19px 20px}.distillation-pair>div+div{border-left:1px solid var(--rule)}.distillation-pair p{font-size:12px;line-height:1.7;margin:10px 0 0}.distillation-update{border-top:1px solid var(--rule);padding:17px 20px}.distillation-update>span{font-size:11.5px;line-height:1.7;display:block;margin-top:8px}.trajectory-diagram{display:grid;grid-template-columns:1fr 1fr;gap:12px}.trajectory-item{padding:17px;border:1px solid var(--rule)}.trajectory-item.action{border:1px solid var(--fg)}.trajectory-item>span:last-child{display:block;font-size:11px;line-height:1.65;margin-top:9px}.specialization-figure figcaption{font-size:12px;line-height:1.7}
 .empirical-scroll{overflow-x:auto;border:1px solid var(--rule);padding:10px;background:#fff}.empirical-scroll img{width:100%;min-width:600px;height:auto}.factory-chain{list-style:none;counter-reset:factory;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0;padding:0}.factory-chain li{counter-increment:factory;margin:0;border:1px solid var(--rule);padding:17px}.factory-chain .diagram-label:before{content:counter(factory) ". ";color:var(--fg)}.factory-chain li>span:last-child{font-size:11.5px;line-height:1.7;display:block;margin-top:9px}
 .specialization-wide{width:min(1000px,calc(100vw - 56px));position:relative;left:50%;transform:translateX(-50%)}.specialization-wide figcaption{max-width:660px;margin:14px auto 0}
+.empirical-scroll:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
 @media(max-width:760px){.specialization-wide{width:100%;position:static;transform:none}}
 @media(max-width:520px){.research-loop{padding:17px}.training-loop{padding:15px}.distillation-pair{grid-template-columns:1fr}.distillation-pair>div+div{border-left:0;border-top:1px solid var(--rule)}.weight-loop{grid-template-columns:1fr}.diagram-arrow{transform:rotate(90deg)}.trajectory-diagram{grid-template-columns:1fr}.specialization-figure strong{font-size:12.5px}}
 @media(max-width:520px){.factory-chain{grid-template-columns:1fr}}
