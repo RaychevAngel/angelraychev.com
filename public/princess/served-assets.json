@@ -37,29 +37,81 @@
       "scope": "historical",
       "bytes": 1922745
     },
+    "/princess/archive/2026-09-13-pre-october-release/archive-manifest.json": {
+      "scope": "historical",
+      "bytes": 987
+    },
+    "/princess/archive/2026-09-13-pre-october-release/lean-proofs.zip": {
+      "scope": "historical",
+      "bytes": 271635
+    },
+    "/princess/archive/2026-09-13-pre-october-release/lean-verification.json": {
+      "scope": "historical",
+      "bytes": 25710
+    },
+    "/princess/archive/2026-09-13-pre-october-release/manuscript-source.zip": {
+      "scope": "historical",
+      "bytes": 378724
+    },
+    "/princess/archive/2026-09-13-pre-october-release/princess-searches.pdf": {
+      "scope": "historical",
+      "bytes": 1238076
+    },
+    "/princess/archive/2026-09-13-pre-october-release/proofs-source.zip": {
+      "scope": "historical",
+      "bytes": 668551
+    },
+    "/princess/archive/2026-09-13-pre-october-release/release.json": {
+      "scope": "historical",
+      "bytes": 1111
+    },
+    "/princess/archive/2026-09-13-pre-october-release/research-sources.zip": {
+      "scope": "historical",
+      "bytes": 3937923
+    },
     "/princess/artifact-manifest.json": {
       "scope": "shared",
-      "bytes": 238136
+      "bytes": 485365
     },
     "/princess/box-reconciliation.md": {
       "scope": "main",
-      "bytes": 12116
+      "bytes": 9495
+    },
+    "/princess/checkpoint-evidence.md": {
+      "scope": "shared",
+      "bytes": 2356
+    },
+    "/princess/checkpoint-formal-coverage-2026-10-24.json": {
+      "scope": "shared",
+      "bytes": 25643
+    },
+    "/princess/checkpoint-publication-claims-audit-2026-10-24.json": {
+      "scope": "shared",
+      "bytes": 7644
+    },
+    "/princess/checkpoint-source-manifest.json": {
+      "scope": "shared",
+      "bytes": 146918
+    },
+    "/princess/checkpoint-sources-2026-10-24.zip": {
+      "scope": "shared",
+      "bytes": 8246372
     },
     "/princess/extensions/extensions-lean-proofs.zip": {
       "scope": "parked",
-      "bytes": 189506
+      "bytes": 197325
     },
     "/princess/extensions/extensions-research-sources.zip": {
       "scope": "parked",
-      "bytes": 609241
+      "bytes": 637772
     },
     "/princess/extensions/extensions-source.zip": {
       "scope": "parked",
-      "bytes": 85755
+      "bytes": 87446
     },
     "/princess/extensions/formal-artifact.md": {
       "scope": "parked",
-      "bytes": 1803
+      "bytes": 2932
     },
     "/princess/extensions/handoff.md": {
       "scope": "parked",
@@ -71,7 +123,7 @@
     },
     "/princess/extensions/princess-extensions.pdf": {
       "scope": "parked",
-      "bytes": 480111
+      "bytes": 479611
     },
     "/princess/extensions/release.json": {
       "scope": "parked",
@@ -111,7 +163,7 @@
     },
     "/princess/formal-artifact.md": {
       "scope": "shared",
-      "bytes": 1803
+      "bytes": 2932
     },
     "/princess/lean/BeliefSemantics.lean": {
       "scope": "shared",
@@ -447,7 +499,7 @@
     },
     "/princess/lean-proofs.zip": {
       "scope": "main",
-      "bytes": 271635
+      "bytes": 279181
     },
     "/princess/lean-scope.json": {
       "scope": "shared",
@@ -459,11 +511,11 @@
     },
     "/princess/manuscript-source.zip": {
       "scope": "main",
-      "bytes": 378724
+      "bytes": 391168
     },
     "/princess/princess-searches.pdf": {
       "scope": "main",
-      "bytes": 1238076
+      "bytes": 1275626
     },
     "/princess/proof-anchor-migration.json": {
       "scope": "shared",
@@ -479,11 +531,11 @@
     },
     "/princess/rectangle-coverage.md": {
       "scope": "main",
-      "bytes": 22369
+      "bytes": 27813
     },
     "/princess/rectangle-gaps.md": {
       "scope": "main",
-      "bytes": 11552
+      "bytes": 10475
     },
     "/princess/references.bib": {
       "scope": "shared",
@@ -491,19 +543,19 @@
     },
     "/princess/release.json": {
       "scope": "main",
-      "bytes": 1111
+      "bytes": 2082
     },
     "/princess/research-history.md": {
       "scope": "shared",
-      "bytes": 19320
+      "bytes": 20309
     },
     "/princess/research-sources.zip": {
       "scope": "main",
-      "bytes": 3937923
+      "bytes": 12485452
     },
     "/princess/scope.md": {
       "scope": "main",
-      "bytes": 3298
+      "bytes": 4095
     },
     "/princess/separation-lean-verification.json": {
       "scope": "shared",
@@ -511,7 +563,19 @@
     },
     "/princess/served-assets.json": {
       "scope": "shared",
-      "bytes": 13085
+      "bytes": 15039
+    },
+    "/princess/unverified-comparison-candidate-2026-10-24.zip": {
+      "scope": "shared",
+      "bytes": 88137
+    },
+    "/princess/wrap-review-metadata-reconciliation.json": {
+      "scope": "shared",
+      "bytes": 1106
+    },
+    "/princess/wrap-source-review-audit.json": {
+      "scope": "shared",
+      "bytes": 6430
     }
   }
 }

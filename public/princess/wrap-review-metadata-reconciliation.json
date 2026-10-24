@@ -1,0 +1,12 @@
+{
+  "status": "current review metadata independently reconciled; original historical receipt preserved",
+  "explanation": "The nested comparison review was finalized after the root receipt. Its currently accepted assembly and dependency references have been read again; its theorem source root-uniform-four.md retains the exact original reviewed hash. No mathematical source was changed to resolve this receipt difference.",
+  "sources": {
+    "root-uniform-four.md": "ca81eba8be3d40af97e2629f2639fdd4f578a9dd5a101e5f67e503cf18f0feca",
+    "comparison-uniform-four-review.json": "54d9899b0dff916eb4f82b23affd791910c06e185d807993bbc20131d90acda1",
+    "comparison-uniform-four-review.md": "26f5169df2597edfe2698022eb0b20ee6771667e78e82250bfdc235faac069f7",
+    "upper-first-quota-boundary-review.json": "c74ffd52cd79895d8784588869c094af741a493be3b2cdb2c0f28aeb46c5e1b8",
+    "upper-ordinary-head-middle-review.json": "42d7ee08ac52ef463ba45792e499d9db12bce4078af0d30db99ed2232d78314f",
+    "comparison-signed-late-splice-review.json": "cf08f2b289f8c627117c7ee8be571645bbf787945d5e991bd5e413ee4c7dbcdd"
+  }
+}

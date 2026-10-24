@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "checkpoint_date": "2026-10-24",
+  "checked_at_utc": "2026-10-24T22:14:13.718274+00:00",
+  "reviewer": "checkpoint_formal, independent of the manuscript and assessment authors",
+  "status": "PASS",
+  "scope": "Publication-claim consistency audit against the frozen accepted research source and review record. Not a new proof, mathematical search, certificate replay, Lean compilation, PDF visual audit or deployment verification.",
+  "checks": [
+    "Uniform gap ceiling is four throughout the feasible domain, not two or zero",
+    "All-even-width two-day refinement retains w>=64; odd-width two-day refinement retains w=2b+1>=65, even n>=w, k>=2b",
+    "Widths<=64 retain prior three-day coverage and all stronger intersections; odd-by-odd exact evaluator is credited as prior work",
+    "Exact even transport family retains b>=32, d=1 all lengths, or 2<=d<=b-1 with n>=2b+2d-2",
+    "Exact odd/even family retains d>=1, b>=4d+8 and (2b+1)(ell-b)>2d^2; minimum-budget consequence is odd w>=25 and even n>=w",
+    "Actual-span criterion retains G=max(abs(D),abs(1-D)) at genuine capped entry; G<=3 is sufficient but not universal",
+    "P recurrence, common-cut slack inequalities and final-inspection offset agree with accepted source statements",
+    "J endpoint minimization and minimizer selection precede physical construction; no optimization-free parameter rule or O(1) numerical claim",
+    "Static even critical-set geometry retains its cardinality/surplus hypotheses and is not a dynamic optimality theorem",
+    "Symbolic candidate is separate, with pending independent replay and physical-interface checks; excluded budgets d=b-2,b-1 are not promoted",
+    "Conditional 17/16 inequality and unreviewed square separator do not supply an accepted capture-time result",
+    "Formal coverage remains source-identical historical Lean evidence, with no new complete physical-game October theorem",
+    "Frozen RESULTS artifact-status paragraph is explicitly identified as pre-publication status in evidence guide"
+  ],
+  "corrected_during_review": [
+    "Removed accidental carriage return in feasible-domain floor formula",
+    "Restored w>=64 in remaining-gaps prose about even-width gap two",
+    "Added precise static critical-set surplus and cardinality hypotheses",
+    "Explicitly distinguished J-minimizer strategy construction from an optimization-free parameter rule",
+    "Repeated b>=4d+8 guard at start of website span-criterion summaries"
+  ],
+  "unresolved_claim_discrepancies": [],
+  "primary_theorem_review_links": [
+    {
+      "source": "research/phase-dependencies-2026-10-24/root-uniform-four.md",
+      "source_sha256": "ca81eba8be3d40af97e2629f2639fdd4f578a9dd5a101e5f67e503cf18f0feca",
+      "acceptance_receipt": "research/phase-dependencies-2026-10-24/root-uniform-four-review.json",
+      "receipt_sha256": "53ad7ed82185e481efcb4971b2723888fec1cea6e7a267791809fc74eda85e3f",
+      "hash_matches": true
+    },
+    {
+      "source": "research/phase-dependencies-2026-10-24/root-large-excess-one-middle.md",
+      "source_sha256": "90e82e26b3a14e9ae382347d75c29c3e9c009d605ee3ba572573f0327b2863bf",
+      "acceptance_receipt": "research/phase-dependencies-2026-10-24/upper-large-excess-one-middle-review.json",
+      "receipt_sha256": "102fc9034b6b8be6e07fb91d62ccddcac9746d2f73f78ebab499393db7490ac0",
+      "hash_matches": true
+    },
+    {
+      "source": "research/phase-dependencies-2026-10-24/upper-exact-even-transport-families.md",
+      "source_sha256": "fb03092e670469d37e737291b6c5af66282f44f78c00f8dc6945051ff06c2c04",
+      "acceptance_receipt": "research/phase-dependencies-2026-10-24/lower-exact-even-transport-review.json",
+      "receipt_sha256": "fe811b49584dca3218b94e1d818a530e7596cadf6fa2089ec4ce10cdf9170cc0",
+      "hash_matches": true
+    },
+    {
+      "source": "research/phase-dependencies-2026-10-24/lower-full-front-exact-gates.md",
+      "source_sha256": "2aa28ba7ff5528e771f9e24f3e545bc3fb9266b90b807997f3a55ac30b80a5aa",
+      "acceptance_receipt": "research/phase-dependencies-2026-10-24/root-full-front-exact-review.json",
+      "receipt_sha256": "d9c39d5a87c7d8db29814ae5db7e240e8459b563015298402a4327b4fad113b0",
+      "hash_matches": true
+    },
+    {
+      "source": "research/phase-dependencies-2026-10-24/upper-central-span-exact-gates.md",
+      "source_sha256": "080c30b6a1bd68b1f583346f81f1174f943edf0bd699a86dc102ecdd530677e5",
+      "acceptance_receipt": "research/phase-dependencies-2026-10-24/lower-central-span-exact-gates-review.json",
+      "receipt_sha256": "680a838222e95194a7228ae8c07c9f38d7bac0687e8d21c96d6187e7c4ab19da",
+      "hash_matches": true
+    }
+  ],
+  "candidate_discovery_metadata_observed": {
+    "discovered_profiles": 900,
+    "nondominated_profiles": 751,
+    "processed_states": 850,
+    "pending_states": 0,
+    "source_sha256": "e2d51eeee46dfd577cba9d9ff8df31430e7855a076bd5a389b103a3d50cbe525",
+    "independently_replayed": false
+  },
+  "reviewed_artifact_sha256": {
+    "paper/main.tex": "dcf58ce5d2396e7506178302d9aa9860fe45dfdade5640ecff69dfa76fba6e83",
+    "paper/sections/introduction.tex": "6273dec16a2492504e56a0f927700b0d723ee02d2f031c101a266a95f7025b75",
+    "paper/sections/october-checkpoint.tex": "2f5c046dae316881472e4fe294d8e360fc0345f58508526ad30c1ea6524dccab",
+    "paper/sections/formalization.tex": "ca6afb4243a261c0899714542b255c49fca0af54ff7a32da2109e7ff1c6f187a",
+    "FORMAL_ARTIFACT.md": "03682e14415a00463e16615a27bb047cc1faf72fdfaa0a121a2af6d88e9d7f8c",
+    "lean/README.md": "3d5a14fc9fa49f38415ec392723036809cc8d6cd245af54e13b3f441d7573678",
+    "research/CLASSIFICATION_SCOPE.md": "f29f0b9c9eed338d41cb778fba3e6442edaf9e1557f7e42e69b2d89f28de65d8",
+    "research/RECTANGLE_COVERAGE.md": "0ef56fa3c2935eef42c22245b7eea7ce2cf8131e9e79981c06ac124fb464579b",
+    "research/RECTANGLE_GAPS.md": "4aa18c46c62a4044da3fe715159eb44f2854717dfbeb77cf06d12d88ca7dbacf",
+    "research/BOX_RECONCILIATION.md": "63c3ea7c426c8b2d19cf30a9a9243133461b0e5b0726a3c4e04dcff8bc85a436",
+    "publication/rectangle-coverage.json": "afb8c95f6362eb0c13fe1c6f3cc81a8ce1e8f43095134860977ed9730227c029",
+    "publication/CHECKPOINT_EVIDENCE.md": "2f340a0398b0038c60c1f0fb8c47a1974294ab8c82075b022b887effc94f0053",
+    ".build/site-release/src/pages/princess.astro": "6a5076bebe62d814872f694c36c689143d9fc6144cc2440e9965fc86fcba7adb",
+    ".build/site-release/src/pages/princess/paper.md": "f975c3bba151774bdda01619621729e1f8e734b8cbf7bc1bf4323ec64777f5d6",
+    ".build/site-release/src/pages/princess/checkpoint.md": "ace25307716daf852f3283db6494977d208dc866c876261797ee40e279687f33",
+    ".build/site-release/src/pages/princess/lean.md": "fb64a9cc72a74e7187f80765b3c01606347d53be0f6f1a918cc4755de92d0d75"
+  },
+  "remaining_release_checks": "Build/PDF rendering, scoped-package and link checks, and served-byte verification are performed separately by the publication coordinator.",
+  "post_audit_formatting_verification": {
+    "checked_at_utc": "2026-10-24T22:16:24.753375+00:00",
+    "file": "research/RECTANGLE_COVERAGE.md",
+    "before_sha256": "dc5a8af895c969944815fba2e5138d308c927c55f3adceba758c86441b5c257a",
+    "after_sha256": "0ef56fa3c2935eef42c22245b7eea7ce2cf8131e9e79981c06ac124fb464579b",
+    "change": "Placed the C_0 and C_(t+1) display-math delimiters on separate lines so Markdown does not swallow following content.",
+    "verified": "Reconstructed exact prior bytes match original audit hash; removing whitespace yields byte-identical content; every other audited artifact hash is unchanged.",
+    "mathematical_content_changed": false,
+    "manuscript_pdf_changed_by_this_correction": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "release_date": "2026-09-13",
+  "archived_at_utc": "2026-10-24T22:09:42.468543+00:00",
+  "purpose": "Last published rectangle release before the October checkpoint integration.",
+  "files": {
+    "lean-proofs.zip": "8d4b5a3989f5e27752fe9f5f8f2b4282461eca974645e266f716639b0d278e37",
+    "lean-verification.json": "b571b0dd0a58476a533a2c5f54dd0c508d639b39b73b38c42142006574cc619d",
+    "manuscript-source.zip": "1a4b260ec7eeadea6f7a8b1908d9a77c2d1ca0fd12af0319358cb5d0c4e30f15",
+    "princess-searches.pdf": "02b7276fa71ddfe2f363d74300bcf31c5831b6d22b89e0eaf713329a7132e579",
+    "release.json": "e33184394c8bc0f62c928a4fcd3b4663f7b0fe639c2bd7e856aa885cfff2d500",
+    "research-sources.zip": "849b97474efe148d9e3edd0671ebea6e721ab37be415cbbfe63fa6e8e4b0a22a",
+    "proofs-source.zip": "55f2546d6d3881c3b7f67ce4f468aa6c6b31ababf99e73279020fdd725b328a4"
+  },
+  "html_delivery": "Frozen proofs.html is inside proofs-source.zip, unchanged. Other archived files are direct byte copies."
+}

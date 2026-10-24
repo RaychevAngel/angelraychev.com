@@ -2,7 +2,7 @@
 layout: "../../layouts/Post.astro"
 title: "Princess searches: verified proofs"
 description: "What Lean verifies, what still has ordinary proofs, and how to reproduce the formal checks."
-updated: 2026-09-13
+updated: 2026-10-24
 ---
 
 [Overview](/princess/) · [Readable proofs](/princess/proofs/) · [Paper](/princess/paper/) · [Parked formal results](/princess/extensions/lean/)
@@ -10,6 +10,26 @@ updated: 2026-09-13
 **In the rectangle core, Lean verifies the complete answers for paths and two-row grids.** The other geometric classifications currently have ordinary mathematical proofs. A successful build of the formal archive should not be read as formal verification of every result in the manuscript.
 
 [**Download the Lean sources**](/princess/lean-proofs.zip) · [Verification receipt](/princess/lean-verification.json) · [Artifact guide](/princess/formal-artifact.md)
+
+## What changed on 24 October 2026
+
+The mathematical checkpoint now proves a **uniform gap of at most four days**
+for every rectangle and feasible budget, with stated two-day refinements and
+new exact even-width and odd-width/even-length families. These are ordinary
+proofs with independent reviews. **None of these new capture-time statements
+has a complete physical-game Lean proof.** The supporting new phase-history,
+localized-erosion and overlap arguments also remain ordinary mathematics.
+
+The symbolic interlaced comparison closure is an **unverified candidate**,
+excluded from all accepted bounds. Its completed discovery run does not
+replace independent replay, entrance and primitive-range checks, the stopping
+rule, or the physical gate assembly. It is not a Lean certificate.
+
+The [24 October coverage audit](/princess/checkpoint-formal-coverage-2026-10-24.json)
+checks all 83 current mathematical source hashes against the successful
+**13 September 2026** compiler receipt, every recorded local import, and both
+package import closures. All match. No formal source changed, and no new
+Lean compilation or formalization was performed for this update.
 
 ## Complete physical classifications
 
@@ -47,9 +67,9 @@ The five-row proofs have verified scalar inequalities in [FiveRowRankArithmetic.
 
 ## Source separation and existing verification
 
-The historical compiler receipt covers the unchanged 83-module combined development. This scope-separation release checks each source hash and the import closure of the two packages; it does not claim a new compiler run or a new mathematical theorem. The [scope manifest](/princess/lean-scope.json) assigns every module to rectangle, shared or parked use. The rectangle package contains 43 modules and the companion contains 51, with eleven shared dependencies; their union is the original 83 modules. The source files have one authoritative home; overlapping dependencies in downloadable packages are distribution copies.
+The historical compiler receipt covers the unchanged 83-module combined development. This synchronization checks each source hash and the import closure of the two packages; it does not claim a new compiler run or a new formal theorem. The [scope manifest](/princess/lean-scope.json) assigns every module to rectangle, shared or parked use. The rectangle package contains 43 modules and the companion contains 51, with eleven shared dependencies; their union is the original 83 modules. The source files have one authoritative home; overlapping dependencies in downloadable packages are distribution copies.
 
-Complete cube classifications remain available in the [parked companion](/princess/extensions/lean/). Their verification is preserved and is not counted as completion of the rectangle theorem. The final fixed-size numerical goal and complete physical-game rectangle formalization remain open.
+Complete cube classifications remain available in the [parked companion](/princess/extensions/lean/). Their verification is preserved and is not counted as completion of the rectangle theorem. Matching bounds everywhere, the eventual fixed-size numerical goal, and complete physical-game rectangle formalization remain open.
 
 ## Reproduce the check
 

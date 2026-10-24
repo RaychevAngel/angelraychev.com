@@ -2,30 +2,27 @@
 layout: "../../layouts/Post.astro"
 title: "Rectangle capture time: exact coverage"
 description: "Accepted formulas, exact evaluators, direct strategies and the precise remaining parameter ranges."
-updated: 2026-09-13
+updated: 2026-10-24
 ---
 
 [Rectangle overview](/princess/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Progress against the goal](/princess/reconciliation/) · [Manuscript](/princess/paper/) · [Parked extensions](/princess/extensions/)
 
 This page is generated from the private project's canonical assessment. Named research files and certificates are preserved in the [mathematical sources package](/princess/research-sources.zip); theorem links lead to the current manuscript-derived proofs. [Download this assessment](/princess/rectangle-coverage.md).
 
-Updated 13 September 2026 after the five-vector investigation. The
-bounded-formula union now includes all seven-row odd-length budgets and a
-fixed-operation evaluation region on longer odd rectangles. New uniform
-even-area brackets and direct constructions are recorded below. The controlling objective
-is [CLASSIFICATION_SCOPE.md](/princess/scope.md). Historical uses of
-“complete” that allowed a width-dependent recurrence do not change that goal.
+Updated 24 October 2026 from the frozen research checkpoint. The immediate
+objective is matching computable bounds for every feasible rectangle. The
+accepted combined bounds have a uniform gap at most four; their exact and
+two-day subfamilies are stated below. No new mathematical research was
+performed in this publication pass. The controlling scope is
+[CLASSIFICATION_SCOPE.md](/princess/scope.md).
 
-Write
-
-$$
-T_k(a,b)=T_k(b,a),\qquad w=\min(a,b),\quad n=\max(a,b),\quad V=wn.
-$$
+Write $T_k(w,n)$ for the minimum worst-case capture time, with $w\le n$ and
+$V=wn$. The width is the shorter side; rotation leaves the value unchanged.
 
 Side lengths are positive integers and the constant daily budget is a
 nonnegative integer. An inspected room catches the princess before her
 compulsory single-edge move. The initial position is completely unknown.
-At zero budget set T_0(a,b)=infinity, including on a one-room board; failure
+At zero budget set T_0(w,n)=infinity, including on a one-room board; failure
 to make a compulsory move is not counted as capture. This is the separately
 stated no-inspection convention, not a new claim about the existing
 positive-budget physical Lean theorem.
@@ -41,12 +38,41 @@ The frozen combined source and its checks are preserved in
 `archive/2026-09-13-combined/`. Current proofs may extract shared lemmas into
 different sections without changing these conclusions.
 
+## Current accepted result across the entire feasible domain
+
+For every $w\le n$ and $k\ge\lfloor w/2\rfloor+1$, computable lower bounds
+and physical inspection constructions give
+
+$$L_k(w,n)\le T_k(w,n)\le U_k(w,n),\qquad U_k(w,n)-L_k(w,n)\le4.$$
+
+The bounds retain the maximum of all proved lower bounds and minimum of all
+proved upper bounds, so earlier exact results are never lost. This is a
+uniform statement: no width, length, or feasible budget is omitted.
+
+- Every even width $w\ge64$, every length $n\ge w$, and every feasible
+  budget have gap at most two.
+- For odd $w=2b+1\ge65$ and even $n\ge w$, the gap is at most two when
+  $k\ge2b$.
+- Widths at most 64 retain the earlier gap-at-most-three coverage, with all
+  stronger exact intersections preserved.
+- Odd-by-odd rectangles retain the earlier exact joint evaluator. This is
+  exact algorithmic evaluation, not a newly proved bounded formula.
+- At large odd widths and even lengths, the low-budget interval $b<k<2b$
+  retains the four-day ceiling wherever no stronger accepted result applies.
+
+These are reviewed ordinary proofs with the cited exact arithmetic
+certificates. They add no complete physical-game Lean theorem. The source
+assembly is `research/phase-dependencies-2026-10-24/root-uniform-four.md`,
+strengthened by `root-large-excess-one-middle.md` and their review receipts.
+The full statement and evidence boundary are in the
+[24 October checkpoint](/princess/checkpoint/).
+
 ## 1. Feasibility is already a bounded numerical answer
 
 For every rectangle,
 
 $$
-T_k(a,b)<\infty\quad\Longleftrightarrow\quad
+T_k(w,n)<\infty\quad\Longleftrightarrow\quad
 k\ge\lfloor w/2\rfloor+1.
 $$
 
@@ -74,9 +100,7 @@ isolated numerical instance present in the experimental receipts. It is a
 fixed finite union. All comparisons, remainders, and indicators in the formulas
 are standard arithmetic with fixed finite case distinctions.
 
-<span id="paths-w1-every-n-and-k" class="math-anchor-alias" aria-hidden="true"></span>
-
-### Paths: $w=1$, every $n$ and $k$
+### Paths: w=1, every n and k
 
 For $k\ge n$, $T_k(1,n)=1$. For one inspection, the remaining cases are
 $T_1(1,2)=2$ and $T_1(1,n)=2n-4$ for $n\ge3$. For $n>k\ge2$,
@@ -93,9 +117,7 @@ direct room-indexed sweeps. **Verification:** ordinary proofs, independent
 checks, and complete physical-game Lean classification in
 `PathClassification.lean`. Source: [eq:path-main](/princess/proofs/#eq:path-main), [sec:paths](/princess/proofs/#sec:paths).
 
-<span id="two-rows-w2-every-n2-and-k" class="math-anchor-alias" aria-hidden="true"></span>
-
-### Two rows: $w=2$, every $n\ge2$ and $k$
+### Two rows: w=2, every n>=2 and k
 
 Budget one is impossible; budgets at least $2n$ take one day. Otherwise put
 $A=n-1$, $D=k-1$. Then
@@ -110,9 +132,7 @@ specified interval sweeps and at most one shared day. **Verification:**
 complete physical-game Lean theorem in `LadderGame.lean`, in addition to the
 ordinary proof and semantic review. Sources: [eq:ladder-main](/princess/proofs/#eq:ladder-main), [sec:two-rows](/princess/proofs/#sec:two-rows).
 
-<span id="three-rows-w3-every-n3-and-k" class="math-anchor-alias" aria-hidden="true"></span>
-
-### Three rows: $w=3$, every $n\ge3$ and $k$
+### Three rows: w=3, every n>=3 and k
 
 Use the feasibility and one-/two-day clauses first. In the remaining range
 $2\le k<\lfloor3n/2\rfloor$, write
@@ -130,9 +150,7 @@ $$
 envelope sweeps. **Verification:** reviewed ordinary proof; no complete
 physical-game Lean classification. Sources: [eq:three-main](/princess/proofs/#eq:three-main), [sec:three-rows](/princess/proofs/#sec:three-rows).
 
-<span id="four-rows-w4-every-n4-and-k" class="math-anchor-alias" aria-hidden="true"></span>
-
-### Four rows: $w=4$, every $n\ge4$ and $k$
+### Four rows: w=4, every n>=4 and k
 
 Use the endpoint clauses first. For $3\le k<2n$, write
 $2n-2=q(k-2)+r$, $0\le r<k-2$. The answer is
@@ -151,9 +169,7 @@ theorem rather than an additional obligation. **Verification:** ordinary
 proof, with reusable Lean components but no full physical classification.
 Sources: [eq:four-main](/princess/proofs/#eq:four-main), [sec:four-rows](/princess/proofs/#sec:four-rows), [thm:even-rectangle-high-budget](/princess/proofs/#thm:even-rectangle-high-budget).
 
-<span id="five-rows-w5-every-n5-and-k" class="math-anchor-alias" aria-hidden="true"></span>
-
-### Five rows: $w=5$, every $n\ge5$ and $k$
+### Five rows: w=5, every n>=5 and k
 
 Budgets at most two are impossible. At budget three, for both length parities,
 $T_3(5,n)=10n-20$. At budget four,
@@ -340,8 +356,8 @@ $$
 T_k(2r,n)=2(j+3)-\mathbf1_{\{2c\le k\}}.
 $$
 This is a fixed-size expression on the entire stated family. Its direct
-optimal construction includes an explicit shape change for width 16,
-budget 56, and $n\equiv22\pmod{12}$. That class has no remaining exception.
+optimal construction includes an explicit shape change for width16,
+budget56, and n=22 modulo12. That class has no remaining exception.
 Proof and construction: `research/bridge-boundary-numeric-quadratic-edge.md`
 and `research/bridge-quadratic-edge-exception.md`.
 
@@ -385,10 +401,12 @@ size. When $L<U$, this theorem supplies numerical bounds only.
 The block definitions are in `research/bridge-boundary-numeric-budget.md`;
 fixing16 once is essential to the assertion.
 
-## 3. Current residual domain under the numerical completion criterion
+## 3. Residual domain under the eventual fixed-size numerical criterion
 
-The original scope baseline had four residual families. They are now
-reduced as follows. These are formula-family obligations; isolated
+The original scope baseline had four residual families. The bounded-formula
+union, including the September improvements above, leaves the following
+containing ranges. October exact recurrences close value gaps inside these
+ranges but do not remove them from the fixed-size numerical obligations. These are formula-family obligations; isolated
 certified values inside them retain their own exact status.
 
 1. **Even short side:** $w=2r\ge6$, $n\ge w$,
@@ -404,7 +422,8 @@ certified values inside them retain their own exact status.
    $16(2k-w)\ge r^2$ and one of the accepted scalar-decision
    conditions in Section4 holds.
 
-None of these four infinite families has disappeared altogether. Width6
+These are evaluation obligations, not claims of unknown exact values at
+every input. None of these four infinite families has disappeared altogether. Width6
 now leaves budgets4 and5; odd-length width7 has no remaining budget;
 even-length width7 still has general obligations. Minimum-budget odd
 widths beyond15 retain their original width-clock evaluation gap.
@@ -434,7 +453,7 @@ solo layer and $L=\tau-1$.
 Every odd rectangle already has the exact one-day interval
 $2\tau-1\le T\le2\tau$, an exact joint evaluator, and sufficient
 solo central test. The new all-length result makes that test necessary
-for feasible budgets $k\ge r+1$ satisfying
+for feasible budgets k>=r+1 satisfying
 $$
 k\le2r\quad\text{or}\quad27k^3\le r^4.
 $$
@@ -466,7 +485,7 @@ J=\max\{2K+k+1,K+H\},\quad W=2\lceil\sqrt G\rceil,
 \quad M_{\rm new}=J+G+k(W+1).
 $$
 The scalar test is necessary if $M\ge M_{\rm new}$. These are
-fixed-size expressions. The quantity $W$ is used in the proof of the onset;
+fixed-size expressions. The quantity W is used in the proof of the onset;
 it is not iterated to evaluate the answer. A possible remaining scalar
 counterexample at fixed width is confined to $n=O(r^2)$, improving
 the old $O(r^4)$ containing range. No smallest-onset claim is made.
@@ -474,7 +493,7 @@ the old $O(r^4)$ containing range. No smallest-onset claim is made.
 ### A fixed recent-reset condition
 
 Write $\Delta_i=D_0(i)-D_1(i)$. If $\Delta_L=0$, the scalar
-test is exact. Otherwise let $p$ be its slower physical color, and put
+test is exact. Otherwise let p be its slower physical color, and put
 $c=\lceil(C_p-k)/2\rceil$, with $C_0=E,C_1=M$.
 The test is also exact if, for at least one of the fixed ages
 $j=0,1,\ldots,16$ with $j\le L$,
@@ -493,53 +512,145 @@ For every odd rectangle at $k=r+1$, the previously established law is
 $$
 T=2wn-(8r^2-4r-4L_r+4).
 $$
-The width-only $L_r$ is the first arrival of the bottom simultaneous
-recurrence at its minority value $r(r-1)$. Its evaluation takes $O(r)$
+The width-only L_r is the first arrival of the bottom simultaneous
+recurrence at its minority value r(r-1). Its evaluation takes O(r)
 root-band stages. Matching bounds and direct optimal inspections were
-already proved at the scope baseline. No new fixed-size formula for $L_r$
+already proved at the scope baseline. No new fixed-size formula for L_r
 has been obtained. Source: [thm:odd-minimum-budget](/princess/proofs/#thm:odd-minimum-budget).
 
-## 5. Current even-area bounds and constructions
+## 5. Current even-area bounds, exact regimes, and constructions
 
-The geometric models give necessary transitions; allowed model paths
-are not assumed physically attainable. Exact backward recurrences now
-make their clocks arithmetic. New envelope and corner-change rules
-supply physical upper bounds at every feasible budget.
+The uniform bound stated at the top applies to all feasible inputs. Earlier
+one-day ranges remain valid: in particular every even-area rectangle with
+$w\ge4$ and $k\ge\lceil4w/3\rceil$ has the established one-day bracket
+below its two-day endpoint. For even widths the earlier sufficient threshold
+is $\lceil13w/10\rceil$. The older exact high-budget, finite-width, and
+individually certified cases are retained. The new results improve the
+previous unrestricted uniform ceiling from eight to four days; this is not
+a claim that every particular instance improved by four.
 
-For every even-area rectangle of width $w\ge4$ the named bounds differ by
-at most one day at $k\ge\lceil4w/3\rceil$. On even widths the stronger condition
-$k\ge\lceil13w/10\rceil$ suffices. On odd widths $w=2r+1$ the alternative
-$k\ge\lceil13r/5\rceil+3$ also suffices. The precise integer gate is given in
-`research/bridge-upper-transport-high-credit.md`. Endpoints $k\ge wn/2$
-use the already exact one-/two-day clauses. Below these sufficient
-thresholds there is no general theorem asserting a one-day interval
-for all remaining even-area inputs.
+### Exact even-width transport families
 
-At 24 rows and budget 13, $T\ge24n-370$ holds for every $n\ge24$; for even $n$
-there is a prescribed upper $24n-369$. For odd $n\ge25$ its current upper is $24n-368$. The 24-square is still 206 versus 207.
-The 25-row even-length minimum-budget family is exact as stated above.
+Let $w=2b$, $b\ge32$, and $k=b+d$. The bounds match when
 
-Independent finite exact consequences across both side parities are
-$T_5(8,8)=40$, $T_7(12,12)=72$, $T_7(12,14)=96$,
-$T_9(16,16)=112$, $T_9(16,18)=144$, $T_4(7,8)=68$,
-$T_5(9,10)=96$, $T_6(11,12)=128$ and $T_6(11,14)=172$.
-These have ordinary geometric proofs plus finite certificates and literal
-inspection replays. They are not uniform width classifications.
+- $d=1$, for every $n\ge2b$;
+- $2\le d\le b-1$, for every $n\ge2b+2d-2$.
 
-The accepted proof tools include corner/erosion capacities, mergers,
-whole near-square and near-pronic interval localization through the
-stated critical cases, persistent two-radius propagation, an exact
-corner-ball intersection bound, and a clipped radius Bellman potential.
-Their initial sharpness and the proposed consecutive sharp-event charge
-remain open. Finite terminal checks at widths23 and47 are evidence about
-those tools, not additional full-board capture theorems.
+Put $h=bn$, $H=b(b-1)$, $R(x)=\lceil\sqrt{x}\rceil$, and
+$\rho(x)=\min\{r\ge0:x\le r(r+1)\}$. Define simultaneous pairs
+
+$$
+A_0=(0,0),\quad
+A_{j+1}=(A_j[1]+k-\rho(A_j[1]+k),\ A_j[0]+k-R(A_j[0]+k)),
+$$
+$$
+V^c_0=(c,c),\quad
+V^c_{j+1}=(k+V^c_j[1]-\rho(V^c_j[1]),\ k+V^c_j[0]-R(V^c_j[0])).
+$$
+
+Let $e(Q)$ and $\ell_c(Y)$ be the first times their respective maxima
+reach $Q$ and $Y$. Over all integer endpoints
+$H-d+1\le Q\le H$ and $H+1\le Y\le H+d+1$, set
+
+$$J(c)=\min_{Q,Y}\left(e(Q)+\left\lceil\frac{h-Q-Y}{d}\right\rceil+\ell_c(Y)\right).$$
+
+Then
+
+$$T_k(2b,n)=J(k)+J(\lfloor k/2\rfloor)+1.$$
+
+This is an exact finite recurrence and endpoint minimum. The proof gives
+physical reflection transport and the final concatenation or palindrome;
+selecting endpoints that attain the stated minimum selects an optimal
+inspection sequence. This is constructive, but the endpoint optimization
+has not become a fixed-size numerical expression or an optimization-free
+parameter rule. Source: `upper-exact-even-transport-families.md`; independently
+accepted in `lower-exact-even-transport-review.json`, both in the October
+checkpoint directory.
+
+### Exact odd-width, even-length natural range
+
+Let $w=2b+1$, $n=2\ell\ge w$, $k=b+d$, and $h=(2b+1)\ell$. If
+
+$$d\ge1,\qquad b\ge4d+8,\qquad(2b+1)(\ell-b)>2d^2,$$
+
+then every full-origin signed terminal-quota gate has its exact physical
+prefix clock $P(c)$, and
+
+$$T_k(w,n)=P(k)+P(\lfloor k/2\rfloor)+1.$$
+
+For precision, $P(c)$ is the first time the maximum reaches $h$ in the
+following simultaneous recurrence, with $h$ absorbing:
+
+$$X^c_0=(c,c),$$
+$$X^c_{t+1}[0]=\min\{h,k+X^c_t[1]-\min(\rho(X^c_t[1]),R(h-X^c_t[1]),b)\},$$
+$$X^c_{t+1}[1]=\min\{h,k+X^c_t[0]-\min(R(X^c_t[0]),1+\rho(h-X^c_t[0]),b+1)\}.$$
+
+The concatenation/palindrome rule specifies attaining inspections on the
+actual board. The proof constrains one actual hypothetical faster history
+at one common time, keeping both phases and their combined unused allowance.
+It does not assume that arbitrary partial states are optimized by prefixes.
+The length condition holds for every admissible length whenever also
+$b\ge d^2$. At $d=1$ this includes every odd width $w\ge25$ and every even
+$n\ge w$. Sources: `lower-full-front-exact-gates.md`, its independent upper
+and root reviews, and the separate reviewed minimum-budget argument.
+
+### Stronger exact criterion from the actual central span
+
+Under the same guard $b\ge4d+8$, define the genuine capped forward pair
+
+$$
+C_0=(0,0),
+$$
+
+$$
+C_{t+1}=(\max\{C_t[1]+k-\rho(C_t[1]+k),C_t[1]+d\},
+\max\{C_t[0]+k-R(C_t[0]+k),C_t[0]+d-1\}).
+$$
+
+At its first time $s$ with $\min C_s>b^2$, set
+$D=C_s[0]-C_s[1]$ and $G=\max\{|D|,|1-D|\}$. We have $1\le G\le d$.
+Put $A=h-b^2-k$. The same exact formula and attaining inspections hold if
+
+$$A-b^2>2G(d-1)+d.$$
+
+This subsumes the preceding length condition. In particular, $G\le3$
+suffices for every admissible length under the natural guard. The actual
+orbit must be evaluated: there is no claim that $G\le3$ always holds.
+Source: `upper-central-span-exact-gates.md`, independently accepted in
+`lower-central-span-exact-gates-review.json`.
+
+### Proof tools are not additional exact capture-time families
+
+Accepted tools now include original-area-defect preservation under localized
+erosion, a phase-span ledger that charges crossed root walls, same-end
+whole-front overlap with a shared age/deficit allowance, and mixed
+front/triangle overlap. For even $w=2b$, $b\ge4$, the static classification concerns one-color
+sets with surplus $b$ and $(b-1)^2<q<bn-b(b+1)$ when $n\ge w+2$.
+The separate accepted $n=w+1$ extension covers $(b-1)^2<q<b^2$.
+These do not prove dynamic optimality on every even square. A conditional
+normalized two-ancestor inequality has an overlap margin of $17/16$, but
+its physical hypotheses and finite-board corrections remain unassembled.
+The stronger $9/8$ version is false; its counterexample is preserved.
+
+### Unverified symbolic candidate — excluded from all accepted bounds
+
+For odd $w=2b+1$, $b\ge32$, even $n\ge w$, and $2\le d=k-b\le b-3$, a
+symbolic discovery run closed 751 nondominated profiles after 850 processed
+states. It proposes a sharper comparison between a necessary threshold
+operator and the physical prefix pair. It is not an accepted theorem.
+Independent replay, entrance and marker checks, primitive-table range checks,
+the stopping interface, and physical full-gate assembly remain outstanding.
+The budgets $d=b-2,b-1$ are outside the candidate. Neither the global four-day
+bound nor any accepted exact family relies on it. The
+[checkpoint page](/princess/checkpoint/) links the frozen sources and reviews.
 
 ## 6. Verification and scope boundary
 
 Complete physical-game Lean classifications in the main scope remain
-paths and two-row boards. The83 canonical formal modules are unchanged.
-All new wide-rectangle results have ordinary proofs and their stated
-independent reviews or finite certificates; no new full physical Lean
+paths and two-row boards. The canonical formal sources are unchanged by the October research checkpoint.
+The accepted new wide-rectangle results have ordinary proofs and their stated
+independent reviews or finite certificates; the separate symbolic candidate
+has not passed those acceptance checks; no new full physical Lean
 coverage is implied. The scope manifests preserve one authoritative
 formal source tree and the parked companion's separate coverage.
 

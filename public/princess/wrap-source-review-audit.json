@@ -1,0 +1,222 @@
+{
+  "status": "PASS_WITH_RECONCILED_HISTORICAL_REVIEW_HASH",
+  "reviews": 19,
+  "checked_source_links": 41,
+  "missing_reviews": [],
+  "mismatches": [
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "comparison-uniform-four-review.json",
+      "matches": false
+    }
+  ],
+  "links": [
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "root-uniform-four.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "lower-ordinary-early-boundary-theorem.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "lower-first-quota-ordinary-boundary.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "lower-shifted-seed-continuation.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "upper-signed-late-ordinary-splice.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "comparison-ordinary-head-pronic-middle.md",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "upper-first-quota-boundary-review.json",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "upper-ordinary-head-middle-review.json",
+      "matches": true
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "comparison-uniform-four-review.json",
+      "matches": false
+    },
+    {
+      "review": "root-uniform-four-review.json",
+      "source": "lower-signed-late-splice-review.json",
+      "matches": true
+    },
+    {
+      "review": "comparison-uniform-four-review.json",
+      "source": "root-uniform-four.md",
+      "matches": true
+    },
+    {
+      "review": "comparison-uniform-four-review.json",
+      "source": "comparison-uniform-four-review.md",
+      "matches": true
+    },
+    {
+      "review": "comparison-uniform-four-review.json",
+      "source": "upper-first-quota-boundary-review.json",
+      "matches": true
+    },
+    {
+      "review": "comparison-uniform-four-review.json",
+      "source": "upper-ordinary-head-middle-review.json",
+      "matches": true
+    },
+    {
+      "review": "comparison-uniform-four-review.json",
+      "source": "comparison-signed-late-splice-review.json",
+      "matches": true
+    },
+    {
+      "review": "upper-uniform-four-review.json",
+      "source": "root-uniform-four.md",
+      "matches": true
+    },
+    {
+      "review": "lower-uniform-four-review.json",
+      "source": "research/phase-dependencies-2026-10-24/root-uniform-four.md",
+      "matches": true
+    },
+    {
+      "review": "upper-large-excess-one-middle-review.json",
+      "source": "research/phase-dependencies-2026-10-24/root-large-excess-one-middle.md",
+      "matches": true
+    },
+    {
+      "review": "comparison-large-excess-one-review.json",
+      "source": "root-large-excess-one-middle.md",
+      "matches": true
+    },
+    {
+      "review": "comparison-large-excess-one-review.json",
+      "source": "comparison-large-excess-one-review.md",
+      "matches": true
+    },
+    {
+      "review": "lower-exact-even-transport-review.json",
+      "source": "research/phase-dependencies-2026-10-24/upper-exact-even-transport-families.md",
+      "matches": true
+    },
+    {
+      "review": "upper-full-front-exact-review.json",
+      "source": "lower-full-front-exact-gates.md",
+      "matches": true
+    },
+    {
+      "review": "root-full-front-exact-review.json",
+      "source": "lower-full-front-exact-gates.md",
+      "matches": true
+    },
+    {
+      "review": "root-full-front-exact-review.json",
+      "source": "lower-capped-physical-agreement.md",
+      "matches": true
+    },
+    {
+      "review": "root-full-front-exact-review.json",
+      "source": "upper-central-deficit-ledger.md",
+      "matches": true
+    },
+    {
+      "review": "root-full-front-exact-review.json",
+      "source": "upper-whole-front-overlap.md",
+      "matches": true
+    },
+    {
+      "review": "lower-central-span-exact-gates-review.json",
+      "source": "research/phase-dependencies-2026-10-24/upper-central-span-exact-gates.md",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "lower-capped-natural-range.md",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "upper-capped-small-width-base.cpp",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "upper-capped-small-width-base.json",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "lower-capped-small-width-seeded-review.json",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "upper-capped-seeded-finite-base.md",
+      "matches": true
+    },
+    {
+      "review": "upper-capped-natural-range-review.json",
+      "source": "lower-capped-seeded-review.json",
+      "matches": true
+    },
+    {
+      "review": "upper-localized-erosion-review.json",
+      "source": "root-localized-erosion-defect.md",
+      "matches": true
+    },
+    {
+      "review": "root-phase-wall-variation-review.json",
+      "source": "comparison-phase-wall-variation.md",
+      "matches": true
+    },
+    {
+      "review": "upper-phase-wall-variation-review.json",
+      "source": "comparison-phase-wall-variation.md",
+      "matches": true
+    },
+    {
+      "review": "upper-even-critical-fronts-review.json",
+      "source": "lower-even-critical-fronts.md",
+      "matches": true
+    },
+    {
+      "review": "upper-even-one-longer-review.json",
+      "source": "lower-even-one-longer-critical.md",
+      "matches": true
+    },
+    {
+      "review": "upper-normalized-two-ancestor-review.json",
+      "source": "root-normalized-two-ancestor-inequality.md",
+      "matches": true
+    },
+    {
+      "review": "root-front-triangle-overlap-review.json",
+      "source": "upper-front-triangle-overlap.md",
+      "matches": true
+    },
+    {
+      "review": "root-whole-front-sum-review.json",
+      "source": "upper-whole-front-sum-overlap.md",
+      "matches": true
+    }
+  ],
+  "mathematical_source_mismatches": [],
+  "historical_review_note": "wrap-review-metadata-reconciliation.json"
+}

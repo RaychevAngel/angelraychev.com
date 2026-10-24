@@ -315,3 +315,20 @@ has disappeared entirely. In particular the minimum-budget odd width-only
 constant is still a recurrence; its earlier exact theorem is not a new
 closure. There is no new complete physical-game Lean classification. See
 `research/BOX_RECONCILIATION.md` for precise gains and remaining obligations.
+
+## October 2026 rectangle checkpoint and publication boundary
+
+The later rectangle work established a uniform computable/constructive gap
+of at most four days, with the stated two-day refinements and additional
+exact transport and common-cut families. The 24 October manuscript section
+and coverage assessment give their full hypotheses and proof provenance.
+These are subsequent AI-assisted developments, separate from the author's
+original October 2019–March 2020 path results and from the literature's
+feasibility theorem. Internal independent reviews and exact computations
+are identified separately from external peer review and Lean verification.
+
+The October artifact synchronization adds no mathematics and no Lean
+formalization. It preserves the unverified symbolic candidate as candidate
+work, not part of the accepted bounds. Higher-dimensional extensions remain
+parked. The prior published rectangle release and original combined release
+remain available as dated archives.

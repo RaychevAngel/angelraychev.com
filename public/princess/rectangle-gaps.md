@@ -1,199 +1,180 @@
-# Rectangle completion gaps and restart assessment
+# Rectangle capture time: remaining gaps at the frozen checkpoint
 
-13 September 2026. Research is paused for reconciliation. The goal is
-unchanged: every rectangular full-start constant-budget capture time in
-fixed-size standard numerical operations, with directly specified optimal
-inspections and proofs. See [CLASSIFICATION_SCOPE.md](CLASSIFICATION_SCOPE.md),
-[RECTANGLE_COVERAGE.md](RECTANGLE_COVERAGE.md), and the baseline comparison
-[BOX_RECONCILIATION.md](BOX_RECONCILIATION.md).
+24 October 2026. Research is stopped. This assessment synchronizes the saved
+results; it neither resumes searches nor promotes the unverified candidate.
+The active domain is every $w\le n$ and every feasible constant daily budget
+$k\ge\lfloor w/2\rfloor+1$, with full initial uncertainty. The immediate
+priority is matching computable bounds throughout that domain. Fixed-size
+numerical simplification is deferred until that match is achieved globally.
+The final criterion in [CLASSIFICATION_SCOPE.md](CLASSIFICATION_SCOPE.md)
+is unchanged.
 
-An exact optimizer does not close the numerical goal. A direct optimal
-strategy with an iterative clock closes construction and optimality, but
-still leaves evaluation. A finite diagnostic may identify a missing lemma
-without proving that lemma at every width. Those distinctions control the
-assessment below; old, superseded containing ranges are not current claims.
+## 1. Uniform bounds: what remains numerically undecided
 
-## 1. Remaining even-area full-board values and direct optimal strategies
+The accepted lower and constructive upper bounds now satisfy $U-L\le4$
+everywhere. Every even width $w\ge64$ has gap at most two at every length
+and feasible budget. For odd $w=2b+1\ge65$, even $n\ge w$, and $k\ge2b$,
+the gap is also at most two. Widths at most 64 retain the earlier gap of at
+most three; all earlier one-day and exact intersections remain available.
+Odd-by-odd rectangles retain their exact algorithmic evaluator.
 
-Write $w=\min(a,b)$, $n=\max(a,b)$. After removing the original narrow/high-budget
-formulas and the new exact families, the containing ranges are:
+The main unresolved even-area matching problem lies in the complement of
+the accepted exact-family union, not in every input of a simple containing
+rectangle of parameters. In particular:
 
-- $w=2r\ge6$, $n\ge w$, $r+1\le k\le r(r-1)-1$, excluding fixed-block inputs where
-  the proved lower and upper agree.
-- $w=2r+1\ge7$, $n\ge w$ even, $r+1\le k\le r(r+1)$, excluding $(w,k)=(25,13)$.
+- For even width $w=2b$, $b\ge32$, minimum budget $k=b+1$ is now exact
+  at every length. For $2\le d=k-b\le b-1$, transport proves exactness
+  whenever $n\ge2b+2d-2$. The shorter interval
+  $2b\le n<2b+2d-2$ is outside that theorem, while retaining the two-day
+  bound and any stronger existing intersections.
+- For odd width $w=2b+1$ and even $n=2\ell\ge w$, the natural-range
+  theorem is exact when $d=k-b\ge1$, $b\ge4d+8$, and
+  $(2b+1)(\ell-b)>2d^2$. A stronger criterion uses the actual central
+  span $G$ and requires $h-k-2b^2>2G(d-1)+d$, with $h=wn/2$.
+  The remaining short boards and budgets outside that guard retain the
+  uniform bounds; their full-board phase choice has not been resolved
+  throughout the range. Minimum budget is exact for every odd $w\ge25$
+  and every even length.
+- Above these displayed low-budget exact families, retain the established
+  high-budget formulas, one-day ranges, bounded-width classifications,
+  and finite certified values. These are part of the answer, not cases
+  to solve again. The [coverage document](RECTANGLE_COVERAGE.md) gives
+  the full accepted union and evidence levels.
 
-Isolated certified points inside these ranges keep their exact values.
-The known exact boundary-port representation is still an optimizer with
-parameter-dependent preprocessing. It does not settle the final requested
-form of the answer throughout either range.
+A finite boundary optimizer characterizes every even-area instance, but its
+parameter-dependent preprocessing is not the desired uniform direct answer.
+The current two- and four-day statements concern the practical, proved
+constructive bounds. They do not deny that an unrestricted exact finite
+optimizer can resolve an individual board.
 
-The largest new uniform bound statement is a one-day interval between a
-named corner-model lower and a physical upper whenever $k\ge\lceil4w/3\rceil$.
-For even $w$, $k\ge\lceil13w/10\rceil$ already suffices; for odd $w=2r+1$ the additional
-condition $k\ge\lceil13r/5\rceil+3$ and a sharper integer test are available.
-These thresholds are sufficient, not necessary. The budget interval from
-feasibility to these thresholds still has no universal one-day theorem.
-Even above them, the remaining day is not uniformly decided.
+## 2. The specific obstruction: one history, compatible phases, shared losses
 
-Two current examples separate progress from completion. The whole family
-$T_{13}(25,n)=50n-925$ is exact for even $n\ge26$. For 24 rows, $T_{13}(24,n)\ge24n-370$
-holds at every $n\ge24$, but the matching upper on even lengths is $24n-369$.
-For odd $n\ge25$ the current upper is $24n-368$, a two-day bracket.
-In particular $T_{13}(24,24)$ remains 206 versus 207. A 103-day necessary solo
-history has not been turned into a physical 103-day schedule or excluded
-in the unrestricted game.
+The successful exact proof fixes ONE normalized hypothetical faster physical
+history and compares its beginning and end at ONE common time. Independent
+maxima for the two phases cannot simply be combined. Failure of the physical
+prefix meeting forces both actual endpoints into the same dangerous phase.
+The early deficit, late deficit, and surplus cells in the reverse allowed
+set share one allowance. Once two recent broad-front ancestors are forced,
+their same-end overlap exceeds that allowance, which is impossible.
 
-### What has been tried and what it taught us
+The current length/span conditions ensure that both ancestors really exist
+at that same cut. Removing the conditions requires treating a localized
+corner ancestor against another localized ancestor, and against a broad
+front, with exact integer errors and actual activation states. One cannot
+choose the convenient phase of each ancestor independently, count the same
+unused inspection allowance twice, or place an allowed reverse core inside
+the actual survivor set without proof.
 
-The original scalar neighborhood minima do not compose into a legal
-strategy. The recorded $6\times6$, $k=5$ size relaxation predicts 13 where the exact
-finite calculation gives 14. Corner availability and erosion counts improve
-that relaxation, but they still permit histories whose distant corners
-cannot be reached quickly enough.
+Accepted tools now address parts of this obstruction:
 
-Whole near-square and near-pronic intervals now force localization, not
-only their exact equality endpoints. These restrictions extend through
-stated critical cases, and their guarded mergers are proved. Two persistent
-radius coordinates record how the localization propagates; a fixed-operation
-lens counts the maximum overlap of the corresponding corner balls.
-These tools remove false terminal shortcuts at widths25,23 and47.
-The25-row application is a uniform full-board theorem; the23/47 checks
-remain finite terminal-model evidence.
+- Literal localized erosion retains the original missing-area defect at
+  every age. It avoids converting a small area defect into an unnecessarily
+  large loss of inner radius. Its exact identity is in a quadrant; the
+  finite-rectangle consequence is an inclusion, not an identical formula.
+- The phase-wall variation theorem charges each crossed square/pronic
+  threshold once, including endpoint corrections and both increase and
+  decrease of phase span. It does not prove a universal small-span bound.
+- Whole-front and mixed front/triangle overlap bounds retain the shared
+  age and deficit allowance. The actual retained areas must be used.
+- The conditional normalized two-ancestor inequality gives a margin of
+  $17/16$, but its finite-board corrections and physical premises have not
+  been assembled into a capture theorem. The stronger $9/8$ statement is
+  false, with a saved rational counterexample.
 
-The new clipped radius clock has a proved Bellman inequality through
-updates, resets and the stated mergers, including excursions above its
-terminal size cap. Its initial value with unknown radii can be too weak.
-Therefore merely writing this potential does not prove the target boundary
-clock or the full-board lower.
+For even widths $w=2b$, $b\ge4$, the accepted static classification
+concerns one-color sets of surplus $b$: at $n\ge w+2$ its cardinality
+range is $(b-1)^2<q<bn-b(b+1)$; the separate $n=w+1$ extension covers
+$(b-1)^2<q<b^2$. See `lower-even-critical-fronts.md` and
+`lower-even-one-longer-critical.md` in the checkpoint sources. Dynamic phase-compatible joining
+still needs proof on the remaining short boards. The exact-square separator
+analysis is unreviewed. Square matchings allow mixed parity switches; the
+odd-width argument cannot be copied with a convenient orientation assigned
+by assumption.
 
-The current lower-bound conjecture isolates consecutive sharp square events.
-Between them the nonsensitive steps obey one pronic recurrence. An opposite-
-anchor event must also satisfy the corner-ball lens. The proposed charge
-compares its elapsed time plus the new anchored clock with the previous
-anchored clock. It has passed19,263 exhaustive small-parameter checks and
-24,766 targeted larger-parameter checks; these are not an unbounded proof.
-Discrete clock credits matter: a continuous extra-delay estimate can be less
-than one day. Entry from unrestricted boundary states and critical excursions
-also need their own justified treatment.
+## 3. The symbolic candidate has a separate verification gap
 
-On the upper side, the exact descending-word scheduling theorem showed that
-changing visibility times gives no new credit for that fixed word at feasible
-even-width budgets. A larger search over that same word cannot close the gap.
-The uniform corner-change construction removes a splice-index search at the
-minimum budget, but is not proved optimal. The new16-row/budget56 shape
-change demonstrates an actual strict improvement over both anchored-prefix
-uppers on an infinite residue class. So the remaining discrepancy must not
-be assigned exclusively to the lower bound without evidence.
+The frozen symbolic discovery proposes a sharper odd-width comparison for
+$b\ge32$ and $2\le d=k-b\le b-3$, at every admissible even length. It closed
+751 nondominated profiles in 850 processed states, with no pending states
+or solver-unknown result in that discovery run. Those figures describe a
+run, not an independently verified theorem.
 
-Two simpler proposed potentials failed: the minimum of the two phase clocks
-can switch its preferred orientation illegally, and selecting the phase from
-current corner counts loses the old anchor when its corner is inspected away.
-A proposed smaller multiple of the low root-credit loss also fails under
-physical two-step updates. These failures motivate persistent geometry and
-phase alignment, rather than additional unproved scalar identifications.
+Before it can affect any published bound, the following remain necessary:
 
-### What would close this part
+1. Independently replay the inductive relation, ideally in a separate
+   encoding, checking every admitted seed and transition.
+2. Establish the actual entrance box and the validity of late markers.
+3. Verify every reached primitive-table range, including the lagging
+   physical coordinate and the expanded outer ranges.
+4. Prove the exact stopping rule and final physical update.
+5. Assemble the accepted comparison with the normalization and full-gate
+   interface. The omitted budgets $d=b-2,b-1$ need separate treatment.
 
-A full-board lower matching a directly specified physical family would settle
-value and construction, even if a numerical clock remained. One possible
-route is an event-charge theorem with a valid entrance argument; another is
-a different manageable optimal family proved by a global replacement.
-Neither requires optimality from every arbitrary partial state. Any stronger
-partial-state statement should be pursued only when it helps this obligation.
+Earlier abstract states allowed a coordinate to cross the same root wall
+again after it had already passed. That created false one-day failures.
+Keeping the smaller coordinate's actual root interval closes the discovery
+relation, but that correction does not itself check the physical interface.
+See `phase-dependencies-2026-10-24/comparison-checkpoint-wrap.md`. The candidate
+is not used in the four-day global bound or any accepted exact family.
 
-## 2. Remaining odd-board central decisions
+## 4. What was tried and what remains useful
 
-Every odd rectangle already has the exact interval $2\tau-1\le T\le2\tau$ and an
-exact retained joint evaluator. The new scalar decision is proved on every
-odd length whenever $r+1\le k\le2r$ or $27k^3\le r^4$, where $w=2r+1$. Minimum budget,
-high budgets, widths through five and odd-length width seven are also covered.
-An improved explicit onset and a recent-reset test cover further inputs.
+Scalar neighborhood minima do not necessarily compose into a physical
+strategy. The recorded $6\times6$, $k=5$ size relaxation predicts 13 while
+the exact finite calculation gives 14. Corner counts and erosion improve
+that relaxation but still need persistent geometry and phase information.
+Selecting the currently smaller phase clock loses its earlier orientation;
+selecting from present corner counts can forget an anchor already inspected
+away. Actual and synthetic counterexamples to these stronger shortcuts
+remain in the research record.
 
-Thus an exact containing range for the still-unproved direct scalar decision
-is $w=2r+1\ge9$, $n\ge w$ odd, $2r+1\le k\le r^2$, $27k^3>r^4$, below the improved onset,
-and outside the accepted reset or other special-case conditions. This is
-still an infinite family, despite the finite number of possible shorter
-lengths at each fixed width and budget. It must not be described as a fixed
-finite set of exceptions.
+The upper strategy is not assumed universally optimal. The earlier
+$16\times n$, $k=56$, $n\equiv22\pmod{12}$ shape-change construction improves
+both fixed-corner prefix upper bounds by a day. The new reflection transport
+proves exactness on unbounded even-width families, but its shorter-board
+interface is still a real condition. Both improving the lower obstruction
+and constructing a faster physical joining strategy remain legitimate routes.
 
-The new short-window collar bounds the numerical smaller coordinate of every
-exceptional history. An orientation cleanup then gives the improved onset.
-The all-low-linear theorem uses an unbounded ordinary argument and one fully
-checked19,852-case finite complement. The cubic-budget extension is an
-ordinary inequality proof. These replace substantial parts of the former
-joint optimization requirement with direct optimal strategies.
+The useful next mathematical target is a common-cut comparison that retains
+phase, history and unused credit through localized and full-front regimes.
+An arbitrary-partial-state classification is unnecessary unless it supplies
+that full-board comparison. The symbolic candidate may reduce the odd-width
+bracket after verification, but does not by itself promise gap zero.
 
-The remaining direct attack asks whether relevant actual exceptional frontiers
-always have a correctly oriented dominating representative, or whether a
-weaker full-board central obstruction suffices. A plateau-aware elimination
-now states exactly when a proposed crossed target can have an oriented
-exceptional predecessor. That is a local necessary/exact feasibility tool,
-not a proof that true solo orbits avoid all such crossings.
+## 5. Evaluation and strategy gaps after bounds match
 
-Stronger convenient assertions have failed. Separate ammunition costs do not
-ensure a simultaneous schedule. An actual $21\times21$, $k=12$ history has one unit of
-rounded-root credit beyond primary lag. Synthetic capacity traces violate
-stronger orientation envelopes even after several full-budget updates.
-The suggested claim that all bottom solo gaps stay in $\{0,1\}$ is false on the
-actual $11\times11$, $k=7$ sequence $(0,0),(4,4),(8,7),(10,11),(14,12)$. No accepted theorem
-uses that claim. Actual ancestry and the true scalar orbit must enter the
-proof, or an appropriate dominating exchange must replace them.
+Every odd-by-odd board already has an exact retained joint evaluator. Broad
+scalar-decision regions also have prescribed optimal prefix/central-day
+strategies; outside them the optimizer still selects the strategy. This is
+not a value gap, but it can remain a direct-construction and evaluation gap.
+The minimum-budget width clock $L_b$, general root-band passages, the new
+physical clocks $P(c)$, and finite endpoint minima $J(c)$ are not uniformly
+fixed-size numerical expressions. The earlier fixed 49-block and 168-block
+evaluators retain their precisely stated ranges; they do not eliminate all
+root bands at all feasible budgets.
 
-## 3. Numerical evaluation after optimality is proved
+The eventual requirement remains an absolute $O(1)$ number of standard
+numerical operations, independent of $w,n,k$, plus directly specified optimal
+inspections. A named hitting time, parameter-length sum, matrix product,
+recurrence or shortest path cannot count as one new atomic operation.
+No proof of attainability or impossibility of this final goal is claimed.
+Work on its general simplification is deferred until computable bounds match
+everywhere, as requested.
 
-The original minimum-budget gap is unchanged: $w=2r+1\ge17$, $n\ge w$ odd,
-$k=r+1$ has exact value $2wn-(8r^2-4r-4L_r+4)$, but $L_r$ still uses a width-only
-recurrence. Its optimal strategy and matching bounds predate the fixed-scope
-baseline. A general fixed-size expression for $L_r$ has not been obtained.
-
-Arbitrary-budget solo clocks likewise retain width-dependent changing root
-bands outside the fixed-block region $16(2k-w)\ge r^2$. The new 49-block evaluator
-removes this dependence in that stated region, and its composition with the
-accepted scalar-decision conditions gives exact bounded subfamilies. It does
-not eliminate every root band at every surplus budget.
-
-On even widths, $16(k-r-1)\ge r^2$ gives a fixed 168-block lower/upper evaluator.
-Equality closes that input's value and direct construction under the numerical
-goal. A strict gap leaves the mathematical choice unresolved. Even a future
-uniform matching theorem may still require evaluation of the remaining
-low-budget entrance and terminal clocks.
-
-Possible next approaches should target the whole accumulated root-band
-passage, not only the affine middle, which already has bulk division jumps.
-A bounded number of decisive bands or a genuine closed summation would help.
-Replacing a clock by a named hitting time, a variable matrix product, a
-parameter-sized sum, or a shortest path is not numerical completion.
-No proof that the desired closed expression exists or is impossible has
-been found; neither conclusion should be inferred from the present progress.
-
-## 4. Formalization and exposition
+## 6. Verification, publication and scope
 
 Complete physical-game Lean classifications in the main scope remain paths
-and two rows. The83 canonical formal modules and their source-specific
-coverage are unchanged. New geometry, wide-rectangle classification regions,
-and finite certificate interpretations have ordinary proofs and independent
-reviews, not new complete Lean classifications. The target remains a faithful
-physical-game theorem for the eventual rectangle result and its dependencies.
+and two-row rectangles at positive budgets. Existing checked components keep
+their exact coverage. The new general bounds, exact transport/natural-range
+families and geometric tools have reviewed ordinary proofs and their stated
+certificates, not new complete Lean classifications. The unverified candidate
+is a fourth, explicitly separate status: neither accepted ordinary theorem
+nor complete Lean proof.
 
-Current overview, detailed proofs, PDF, source packages and reconciliation
-must distinguish fixed-size expressions, exact recurrences, optimized
-characterizations, direct inspections, and merely feasible constructions.
-The baseline comparison is in [BOX_RECONCILIATION.md](BOX_RECONCILIATION.md).
-Historical attempts and old coverage statements remain preserved in the
-source record; they are not competing current assessments.
-
-## 5. Scope and restart priorities
-
-Independent higher-dimensional boxes/cylinders, varying-budget classifications,
-and unrelated partial-start objectives remain parked at/princess/extensions/.
-Their results and formal coverage are preserved. Relevant compression,
-isoperimetry, inverse profiles, corner geometry, height transitions and
-constant-budget inverse-deadline consequences remain available in the main
-project. Parking applications is scope selection, not a new theorem.
-
-On resumption, prioritize matching the remaining even-area bounds while
-allowing the independent odd central-decision route to proceed. Then address
-the fixed-size numerical clocks where exactness is already known. A major
-proof that settles a parameter family is more valuable than another isolated
-width or a minor sharpening of a sufficient threshold. Research is currently
-paused; these restart directions are not automatic authorization to continue.
+Independent higher-dimensional, general-cylinder, varying-budget and unrelated
+partial-start objectives remain parked at `/princess/extensions/`. Shared
+lemmas and relevant constant-budget inverse-deadline consequences stay in the
+main project. This boundary is scope selection, not mathematical unification.
+The October phase and common-history proofs are mathematical consolidation
+inside the fixed rectangle scope. This synchronization does not resume any
+parked project or new research search.
