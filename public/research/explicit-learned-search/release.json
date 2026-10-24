@@ -1,0 +1,30 @@
+{
+  "title": "Explicit versus learned search",
+  "subtitle": "Neural-guided tree search and search-trace learning",
+  "author": "Angel Raychev",
+  "prepared_date": "2026-10-23",
+  "document_type": "Technical retrospective on joint 2025 work with Yalcin Tur and Mihajlo Stojkovic",
+  "article": "https://angelraychev.com/explicit-versus-learned-search/",
+  "repository": "https://github.com/RaychevAngel/classical_vs_contextual_search",
+  "historical_source_commit": "1a7fda10617d34ccd3a87c825cba71e4429de91a",
+  "companion_release_commit": "6f47dafbdd2ef9f0e86a48084bc71d63d262668e",
+  "release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/retrospective-2026-10-23",
+  "artifacts": [
+    {
+      "file": "explicit-versus-learned-search.pdf",
+      "pages": 10,
+      "sha256": "ef0f446c127e435ec2cc876701f7377b9cf070a66f97c7662aa8e435419c959e"
+    },
+    {
+      "file": "report-source.zip",
+      "contents": ["explicit-versus-learned-search.tex", "REPORT-SOURCE-README.txt"],
+      "sha256": "356d8137fad08c6958afb8e7353b69282f8a59f0a8424de10b3424d319f67699"
+    }
+  ],
+  "verification": {
+    "pdf": "All ten pages visually inspected; final LaTeX build has no warnings or unresolved references.",
+    "code": "20 CPU regression tests pass, including model-free multi-budget search and exact arithmetic checks.",
+    "ci": "https://github.com/RaychevAngel/classical_vs_contextual_search/actions/runs/40062694391",
+    "scope": "No new model inference, training or benchmark experiments. Maintenance corrections do not retroactively rescore historical results."
+  }
+}
