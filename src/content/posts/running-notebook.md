@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-21
+updated: 2026-10-23
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 21 October 2026.** The upcoming
+**This version includes completed training through 23 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -327,7 +327,28 @@ The nearly even times also conceal the late breakdown. It is a concrete
 reference for producing fast running under fatigue; whether that practice
 helps me preserve movement and find a finish in the longer reps is still a
 question. Right-ankle tension afterwards changed my walking for a couple of
-hours despite no ankle pain; it had settled by the discussion. Rest comes next.
+hours despite no ankle pain; it had settled by the discussion. I planned rest next.
+
+The [second 3×1600 m on 23 October](/running/record/2026/#23-october--lt-31600-m--nominal-1-min)
+was **6:20.51, 6:18.81, 6:16.05**: **6:18.46 average (3:56.54/km)**,
+with **1:02.68 and 1:11.25** recovery. The mean improved by **5.43 seconds
+per repetition**. More importantly for how I experienced it, I felt comfortable
+through the laps and kept good posture. It was still hot, with a difficult
+fourth lap in rep two, but I avoided the previous breakdown. Quicker final laps
+were part of the pacing; the near-even whole reps conceal that variation.
+
+I still had mild glute and thigh soreness from the 200s. Both ankles felt
+under tension afterwards, without changing my walking, and were already
+easing by the discussion. The result is progress towards **6:08 per 1600
+(3:50/km)**, with conditions and recovery kept alongside the times.
+
+The returning speed makes the shape of the performance curve interesting.
+I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
+remaining training develops. In the same 2025 men's outdoor tables, 2:16.00
+would score **418 points**, equal in score to **4:43.60 for 1500 m,
+6:29.56 for 2000 m and 17:32.09 for 5000 m**. That would be 257 points above
+the October 11 5000's 161. The 800 is still an ambition; differently dated
+tests during a comeback do not establish a simultaneous fitness profile.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
@@ -409,18 +430,24 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Both longer formats have now been tried:** 3×1600 m on 16 October and
-3×900 m on 19 October. They stay at those formats, with the later **6:08** and
+**The second 3×1600 m is complete on October 23**, following the first on
+October 16. The 900s retain their opening reference from October 19.
+They stay at those formats, with the later **6:08** and
 **2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-The first FA session is complete on **21 October**, after track access fell
-through on October 20. **October 22 is a planned rest day**, with LT and VO₂
-provisionally on October 23–24 if recovery allows.
+The next **3×900 m is provisionally on October 24**, subject to recovery
+after today's ankle tension and residual soreness.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
 and X remains flexible. My current intention is **another 4+4×200 in X**,
-predicting **under thirty seconds on average for the opening four**. That is
-a future ambition, not an achieved result or a new formal graduation gate.
+after initially predicting sub-30 for the opening four. My latest stretch
+ambition is **under 29 for the first four and around 30 for the second four**.
+Those are future ambitions, not achieved results or formal graduation gates.
 The recurring F and FA allocation stays in place for this cycle.
+
+Two LT slots remain before the time trial. If the longer work continues to
+lag, **five LT sessions and three VO₂ sessions** is a possible reallocation
+for the next cycle. I want the remaining LT results and actual time trial
+before deciding; the current four-and-four allocation remains in force.
 
 The next efforts ask three immediate questions:
 

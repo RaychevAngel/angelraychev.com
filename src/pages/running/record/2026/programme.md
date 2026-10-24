@@ -1,16 +1,17 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The 18-day cycle begun on October 15, the first completed mixed-rest 200s, and the next LT–VO₂ pair."
-updated: 2026-10-21
+description: "The 18-day cycle begun on October 15, progress in the second 1600 m session, and the next conditional 900s."
+updated: 2026-10-23
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **21 October**. The first cycle began on **15 October**. Its first
+updated through **23 October**. The first cycle began on **15 October**. Its first
 two blocks are complete: block two's VO₂ session was run on **19 October**,
-and FA on **21 October**. The remaining sessions are planned; no completed
+and FA on **21 October**. Block three's LT is complete on **23 October**.
+Its VO₂ session remains provisional for **24 October**. The other sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -40,6 +41,16 @@ reported heat strain made the third rep very hard, with a loss of posture and
 knee lift before a strong finish with good form. **6:08 average remains a later
 graduation target**. There is no inferred heat-adjusted time.
 
+The [second 1600 session on 23 October](/running/record/2026/#23-october--lt-31600-m--nominal-1-min)
+was **6:20.51, 6:18.81, 6:16.05**: **6:18.46 average (3:56.54/km)**.
+Recoveries were **1:02.68 and 1:11.25**, with **21:09.30** from the first
+start to the last finish. Faster closing laps contributed to progressively
+quicker reps. I kept good posture and felt comfortable through the laps in
+less severe heat, while still carrying mild soreness from FA. Both ankles
+felt tension afterwards, without changing my walking, and were already
+easing by the discussion. **6:08 remains the gate**; no progression to 2000s
+has yet been earned. Two LT slots remain before the time trial.
+
 **VO₂ is now at 3×900 m with nominal 5:30 recovery.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
 **2:35.55 (3:14.4/km)**, earned the change. The
@@ -58,10 +69,12 @@ third repetition. The set break was **4:56.05**; the recovery before repetition
 seven includes an aborted start and return. Early repetitions were controlled;
 the wet track, slipping shoes and severe late stiffness made holding the speed
 very hard. Right-ankle tension afterwards changed my walking for a couple of
-hours despite no ankle pain, and had settled by the discussion. **October 22 is a planned rest
-day**, followed provisionally by LT on October 23 and VO₂ on October 24 if
-recovery allows. **Another 4+4×200 is now the intended X choice**, with a
-sub-30-second opening-set average as my prediction, not a formal progression gate.
+hours despite no ankle pain, and had settled by the discussion. I planned
+October 22 as a rest day; the October 23 LT is now complete. **The October 24
+900s remain provisional**, depending on recovery. **Another 4+4×200 is the
+intended X choice**. After the initial sub-30 prediction, the latest stretch
+ambition is **under 29 on average for the opening four and around 30 for the
+second four**. This adds no formal progression gate.
 
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
@@ -131,6 +144,11 @@ form the backbone; two remaining slots are currently occupied by another LT and
 another VO₂. Those could later change if the results justify a different emphasis.
 For now, I want to see how this allocation behaves over cycles before changing it
 automatically.
+
+One possible **next-cycle** change is **five LT sessions and three VO₂
+sessions**, reallocating an existing slot if LT progress continues to lag.
+That remains a proposal to assess after the remaining LT sessions and actual
+time trial. The current cycle retains four of each; no change is adopted here.
 
 The session count does not describe the whole load. A time trial, relaxed fast
 repetitions and an experimental sprint set can cost very different amounts. One
