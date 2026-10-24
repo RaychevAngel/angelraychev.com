@@ -1,3 +1,19 @@
+import LowBandConstruction
+import MainUpperInterval
+import MainSmallClassification
+import MainSmallSparse
+import DenseSharpClassification
+import RegularNineSharp
+import PositiveFourteenIsolates
+import OddEndpointConstruction
+import OddEndpointFiniteCorollaries
+import SmallOddConstruction
+import FiveTypeClassification
+import SmallBudgetTen
+import FourVertexClassification
+import FiveVertexClassification
+import TinyOrderClassification
+import SmallSparseWitnesses
 import MainTwelve
 import IrregularTenFourteen
 import SixTypeConstruction
@@ -143,3 +159,31 @@ import DenseZero
 #print axioms Delivery.PairCodeOverlap.maximum
 
 #print axioms Delivery.MainTwelve.maximum
+
+-- October continuation: full uniform families and explicitly bounded finite domains.
+#print axioms Delivery.LowBandConstruction.attainer_exact
+#print axioms Delivery.LowBandConstruction.main_interval
+#print axioms Delivery.MainUpperInterval.maximum
+#print axioms Delivery.MainSmallClassification.maximum
+#print axioms Delivery.MainSmallSparse.maximum
+#print axioms Delivery.DenseSharpClassification.attainer
+#print axioms Delivery.DenseSharpClassification.maximum
+#print axioms Delivery.FiniteExclusion.RegularNineSharp.maximum
+#print axioms Delivery.PositiveFourteen.upper
+#print axioms Delivery.PositiveFourteenIsolates.upper
+#print axioms Delivery.OddEndpointConstruction.attainer_exact
+#print axioms Delivery.OddEndpointConstruction.winning
+#print axioms Delivery.OddEndpointConstruction.maximum_odd
+#print axioms Delivery.OddEndpointFiniteCorollaries.maximum_odd
+#print axioms Delivery.SmallOddConstruction.maximum_odd
+#print axioms Delivery.FiveTypeClassification.maximum
+#print axioms Delivery.FiveTypeClassification.short_lower
+#print axioms Delivery.FiveTypeClassification.sparse_even
+#print axioms Delivery.SmallBudgetTen.upper
+#print axioms Delivery.SmallBudgetTen.maximum
+#print axioms Delivery.FourVertexClassification.maximum
+#print axioms Delivery.FiveVertexClassification.maximum
+#print axioms Delivery.FiveVertexClassification.eight_padded
+#print axioms Delivery.TinyOrderClassification.maximum
+#print axioms Delivery.SmallSparseWitnesses.literal
+#print axioms Delivery.SmallSparseWitnesses.padded

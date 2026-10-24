@@ -9,11 +9,11 @@ measure of how much of the classification has been proved.
 
 ## Exact maxima with explicit attaining constructions
 
-- **Complete dense region, every order n≥20.**
-  `DenseClassification.maximum` proves the exact maximum for every
+- **Complete dense region, every order n≥11.**
+  `DenseSharpClassification.maximum` proves the exact maximum for every
   `n(n−3)≤m≤n(n−1)`. At `m=n(n−3)` it is `2n`; writing
   `r=m−n(n−3)`, it is `2n−r−ceil(r/2)−1` for `1≤r≤n`; beyond
-  `n(n−2)` it is zero. `DenseClassification.attainer` gives a concrete
+  `n(n−2)` it is zero. `DenseSharpClassification.attainer` gives a concrete
   adjacency recipe and proves looplessness, the exact arrow budget and score.
   The first staircase step, modular even and odd cores, functional root
   attachments, and complementary-block counts are all instantiated.
@@ -24,7 +24,7 @@ measure of how much of the classification has been proved.
   odd repairs at 23, 25, 27, 31 supply the whole domain. Every optional subset
   works and delivers within two moves. `PrefixEnvelope` proves that taking
   the first required optional ordered pairs has exactly the requested budget.
-  Together these two results classify every budget `m≥n(n−4)` when `n≥20`.
+  Together these two results classify every budget `m≥n(n−4)` when `n≥16`.
 - **Functional endpoint at every order n≥2.**
   `FunctionalEndpoint.maximum_endpoint` proves
   `M(n,n(n−2))=floor((n−2)/2)` with a literal paired-root construction.
@@ -46,20 +46,49 @@ measure of how much of the classification has been proved.
   are instantiated, with complete pattern coverage, projection of every
   actual cop reply (including an outside cop), safe transfer, terminal
   delivery, composition and exact counts. Isolate padding gives every larger
-  host. The finite even bridge at supports 13..84 and the odd attaining family
-  are separate obligations.
-- **Main interval above three arrows per vertex, every order n≥79.**
-  `PairCodeOverlap.maximum` proves `M(n,m)=n(n−1)−m` throughout
-  `3n≤m≤n(n−3)`. Separated pair codes and the circle constructions have
-  explicit adjacency recipes, prescribed arithmetic parameter choices and
-  exact optional-prefix budgets. The arithmetic overlap is proved for all
-  these orders; it is not an assumption or a graph search.
-- **Complete main interval at order twelve.** `MainTwelve.maximum` proves
-  `M(12,m)=132−m` for every `24≤m≤108`. Thirty literal asymmetric stages
-  cover budgets 24..107, with every optional subset certified against all
-  upper-envelope cop replies; the pair-code construction supplies 108.
-  Actual adjacency counts and exact prefix budgets are proved. This closes
-  the twelve-vertex main interval, not the remaining lower-order bridge.
+  host. `MainSmallSparse.maximum` separately supplies every support12..18
+  by reusing main-interval endpoint constructions. The five-type endpoints
+  below additionally supply supports 50,55,65,70,75,80. The remaining even
+  finite bridge is supports 19..84 excluding those six orders.
+- **Complete main interval, every order n≥115.**
+  `LowBandConstruction.main_interval` proves `M(n,m)=n(n−1)−m` for
+  every `2n≤m≤n(n−3)`. Its lower band supplies all101 local patterns and
+  696 strategy objectives, actual cyclic projection of optional cop arrows,
+  safe-transfer composition, exact counts and a prescribed optional-edge
+  prefix. `attainer_exact` also preserves its stronger envelope endpoint
+  `LowBandPrefix.top n`, beyond3n. The upper interval joins at3n.
+- **Main interval above three arrows per vertex, every order n≥25.**
+  `MainUpperInterval.maximum` proves `M(n,m)=n(n−1)−m` throughout
+  `3n≤m≤n(n−3)`, using the counted circle, hub and separated-code
+  constructions and their proved overlaps. It also supplies the smaller
+  intervals95..304 at order19,100..340 at20,126..378 at21,110..418 at22,
+  115..460 at23, and120..504 at24. Every recipe has an exact optional-prefix
+  budget; no graph search is used to choose an attaining graph.
+- **Complete main intervals at every order12..18.**
+  `MainTwelve.maximum` and `MainSmallClassification.maximum` prove the
+  missing-pair maximum throughout `2n≤m≤n(n−3)`. At order12, thirty
+  asymmetric stages cover24..107 and pair codes supply108. At orders13..18,
+  145 literal stages cover the complete intervals. Every optional subset is
+  checked against all upper-envelope cop replies, with exact arrow counts.
+  These endpoints also prove the sparse even maxima at supports12..18 in
+  every larger host, without a second finite catalogue.
+- **Uniform odd sparse maxima from support order98.**
+  `OddEndpointConstruction.maximum_odd` proves
+  `M(n,2s−1)=(s−1)(s−4)+2` for every `n≥s≥98`.
+  Its prescribed cyclic adjacency, exact counts, all124 local patterns and
+  847 strategy objectives, projection of every cop reply, and global safe
+  transfer are instantiated. `OddEndpointFiniteCorollaries` also supplies
+  supports88,89,90,94,95,96 using the same catalogue and sharper residue
+  thresholds. `SmallOddConstruction.maximum_odd` supplies supports13..18
+  using retained signed-rank graphs. All these maxima permit isolate padding.
+- **Additional finite five-type main intervals.** The full lower band
+  `2n≤m≤3n` is proved at orders65,70,75,80,85,90,95,100,105,110.
+  Combined with `MainUpperInterval`, this gives their entire main intervals.
+  The short charts also give100..110 at order50 and110..121 at order55.
+  `FiveFinite65`, `FiveFinite70`, `FiveFinite75`, `FiveFullRing16`
+  through `FiveFullRing22`, `FiveShortRing10` and `FiveShortRing11` specify the graphs and exact optional-prefix budgets.
+  Envelope symmetry transports all optional graphs, without assuming that
+  an arbitrarily selected optional graph itself has that symmetry.
 - **Five-offset circles.** `CircleParameters.maximum` proves
   `M(n,m)=n(n−1)−m` for every `n≥16` divisible by four and every
   `5n≤m≤n(n/2−1)`. Its parameter is prescribed from `n`; modular escape,
@@ -75,6 +104,25 @@ measure of how much of the classification has been proved.
   procedure tests six protected differences per existing offset. Lean proves
   the resulting size bound, actual delivery and exact optional-prefix budget.
   This is a specified construction procedure, not a generic graph/game search.
+
+## Sharp small budgets and small host tables
+
+`SmallBudgetsToFive` and `SmallBudgetSix` through `SmallBudgetTen` prove
+unrestricted sharp upper bounds at budgets0..10:
+0,0,0,0,1,1,2,2,4,5,6. Attainment is proved for0..3 at every admissible
+host,4..6 from host4,7..8 from host5, and9..10 from host6. The bounds
+include arbitrary sources, sinks and isolates. Actual support reduction,
+complete sorted degree-profile coverage and every surviving row choice are
+proved, including the fast profile enumeration's completeness theorem.
+
+`TinyOrderClassification`, `FourVertexClassification.maximum` and
+`FiveVertexClassification.maximum` supply every admissible budget at every
+host order at most5. The four-vertex table is0 at0..3,1 at4..5,2 at6,
+1 at7..8 and0 at9..12. The five-vertex table is0 at0..3,1 at4..5,
+2 at6..7,4 at8,3 at9..11,2 at12..14,1 at15 and0 at16..20.
+Four-vertex adjacency exhaustiveness, actual source/sink deletion and a
+complete4818-node five-vertex positive-profile proof establish the upper
+bounds; explicit graphs establish all lower bounds.
 
 ## Upper bounds and finite certificates
 
@@ -98,27 +146,35 @@ auxiliary upper bound, not the sharp small-budget table.
 loopless nine-vertex graph. Degree rigidity, finite Hall factorization,
 canonical permutation cycles, all eight complete branching trees and their
 pruning/losing rules are formalized. This strictness result does **not**
-prove the sharper two-regular bound 30, the separate value `M_E(18)=33`, or
-all nine-vertex maxima. Further finite-checker modules prove soundness of
+by itself prove the sharper two-regular bound30, the separate value
+`M_E(18)=33`, or all nine-vertex maxima. Further finite-checker modules prove soundness of
 optimistic partial-game pruning, bitset closure and cached loss unions;
 those interfaces alone do not establish a concrete exclusion.
 
-`FiniteExclusion.HamiltonianSharp.maximum` proves exact maximum 30 for the
-nine-vertex family consisting, up to isomorphism, of a directed Hamiltonian
-cycle and a disjoint loopless permutation. All members have eighteen arrows.
-The complete normalized upper tree and an explicit isomorphism to the score 30
-witness establish both directions. The other seven first-factor cycle types
-are not included in this sharper theorem; the full two-regular bound remains
-an outstanding finite obligation.
+`FiniteExclusion.RegularNineSharp.maximum` proves exact maximum30 among
+all loopless nine-vertex graphs with in-degree and out-degree two at every
+vertex. Hall factorization and normalization cover all eight first-factor
+cycle types; the complete sharp exclusion trees and a score30 attainer supply
+both directions. The earlier Hamiltonian-factor result is retained as a
+subcase. This is a restricted regular family, not the unrestricted value
+`M_E(18)=33` or the complete nine-vertex table.
 
-`IrregularTen14.positive_upper` proves `I(G)≤13` for every loopless
-**ten-vertex graph with fourteen arrows and positive in-degree and out-degree
-at every vertex**. The proof derives and normalizes the only potentially
-violating joint degree profile, then checks all row choices through a reusable
-prescribed-degree row-prefix kernel. Explicit symmetry maps, capacity pruning
-and closed losing regions justify complete branch coverage. This proves
-neither the unrestricted value `M_E(14)=13` nor the complete finite tables;
-other support and degree families remain necessary.
+`PositiveFourteen.upper` proves `I(G)≤13` for every loopless graph with
+fourteen arrows, at least nine vertices, and positive incoming and outgoing
+degree at every vertex. `PositiveFourteenIsolates.upper` permits arbitrary
+additional isolates: its actual nonisolated support must have at least nine
+vertices and every supported vertex must have positive degree in both
+directions. The proof combines complete nine-vertex joint-profile and
+row-choice coverage, the ten-vertex profile proof and larger-support counting.
+Its nine-vertex benchmark checks160718 DAG nodes across eleven normalized
+profiles. It does not establish the unrestricted fourteen-arrow maximum:
+smaller supports and sources/sinks still require separate formal exclusions.
+
+`SmallSparseWitnesses.literal` and `padded` verify the exact scores
+8,9,11,13,15,19,28,33,40,53,60,79,83 of retained graphs at budgets11..23,
+respectively. Each pads to every host at least as large as its stated support;
+all supports are at most12. These supply the complete small-budget lower
+witness list, not the matching unrestricted upper bounds.
 
 `SignedRankCertificate` and `ExactScoreCertificates` check both winning and
 losing pairs. `SparseWitness9`, `SparseWitness10`, and `SparseWitness11`
@@ -156,15 +212,23 @@ uniform even family, rather than only an empty-hole or bounded pilot.
 
 ## Remaining classification obligations
 
-The sparse even bridge at supports 13..84, the odd attaining family and its
-finite bridge remain unfinished. In the main interval, the uniform low band
-`2n<m<3n` for `n≥115`, its finite bridge at orders 13..114, and the remaining
-upper bridge at orders 13..78 still need formal coverage. The sharp small-budget
-upper exclusions and tables, lower dense orders 11..19, and final quantified
-all-pairs assembly also remain open. The uniform dense threshold twenty does
-not imply the sharp threshold eleven. Probabilistic existence, some alternative
-constructions and stronger supplementary guarantees retain their ordinary
-proof boundaries.
+The remaining even sparse supports are19..84 excluding50,55,65,70,75,80.
+The remaining odd supports are19..97 excluding88,89,90,94,95,96.
+Each unclosed support represents all larger hosts through isolate padding.
+
+The exact remaining main-interval domains are:
+
+- order19:38..94; order20:40..99; order21:42..125;
+- order22:44..109; order23:46..114; order24:48..119;
+- order50:111..149; order55:122..164;
+- `2n≤m<3n` at all other orders25..114 except
+  65,70,75,80,85,90,95,100,105,110, whose full main intervals are proved.
+
+Unrestricted sharp small-budget upper bounds11..23, the joint tables at
+orders6..11, and final quantified formula/constructor assembly remain
+unfinished. The complete dense range at every order from11 is covered.
+Probabilistic existence, some alternative constructions and stronger
+supplementary guarantees retain their ordinary proof boundaries.
 
 No theorem currently states the complete formula for every admissible `(n,m)`.
 Checking a graph's ranks does not prove exhaustive coverage of competing graphs.
