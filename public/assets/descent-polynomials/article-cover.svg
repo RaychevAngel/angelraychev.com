@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">A generalization of descent polynomials</title>
+  <desc id="desc">Prescribed descents reduce a growing multiset-permutation problem to bounded prefixes, revealing polynomiality and sharp multiplicity stabilization.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#131313"/></marker></defs>
+  <rect width="1200" height="630" fill="#fafaf8"/>
+  <g font-family="Menlo, DejaVu Sans Mono, monospace" fill="#131313">
+    <text x="64" y="65" font-size="20">Angel Ivanov Raychev</text>
+    <text x="64" y="143" font-size="42" font-weight="700">A generalization of</text>
+    <text x="64" y="198" font-size="42" font-weight="700">descent polynomials</text>
+    <text x="64" y="248" font-size="19" fill="#555">Enumerative combinatorics · Discrete Mathematics, 2023</text>
+    <g fill="none" stroke="#131313" stroke-width="2">
+      <rect x="64" y="318" width="310" height="128"/>
+      <rect x="445" y="318" width="310" height="128"/>
+      <rect x="826" y="318" width="310" height="128"/>
+      <path d="M385 382H432" marker-end="url(#arrow)"/>
+      <path d="M766 382H813" marker-end="url(#arrow)"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="219" y="365" font-size="19" font-weight="700">PRESCRIBED DESCENTS</text>
+      <text x="219" y="402" font-size="17" fill="#555">More labels, more copies</text>
+      <text x="600" y="365" font-size="19" font-weight="700">BOUNDED PREFIXES</text>
+      <text x="600" y="402" font-size="17" fill="#555">The sorted tail is forced</text>
+      <text x="981" y="365" font-size="19" font-weight="700">POLYNOMIAL COUNTS</text>
+      <text x="981" y="402" font-size="17" fill="#555">Sharp stabilization</text>
+    </g>
+    <text x="64" y="513" font-size="18" fill="#555">A finite order-pattern structure inside increasingly long words.</text>
+    <text x="64" y="588" font-size="17" fill="#555">angelraychev.com</text>
+  </g>
+</svg>

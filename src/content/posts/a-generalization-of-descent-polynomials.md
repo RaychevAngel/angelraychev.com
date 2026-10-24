@@ -1,6 +1,8 @@
 ---
 title: "A Generalization of Descent Polynomials"
 description: "Polynomiality, sharp multiplicity stabilization and coefficient positivity for prescribed descent sets in multiset permutations."
+image: "/assets/descent-polynomials/article-cover.png"
+imageAlt: "A generalization of descent polynomials: bounded prefixes reveal polynomiality and sharp multiplicity stabilization in multiset permutations."
 updated: 2026-10-24
 ---
 

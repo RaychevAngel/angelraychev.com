@@ -1,6 +1,8 @@
 ---
 title: "Scalable Meta-Learning from Hindsight"
 description: "Learning how to turn completed experience into useful parameter updates, with a full-distribution teacher and direct tests of what the student learns."
+image: "/assets/hindsight/article-cover.png"
+imageAlt: "Scalable meta-learning from hindsight: select teaching distributions by student improvement, then learn to assign them from completed experience."
 updated: 2026-10-24
 ---
 
