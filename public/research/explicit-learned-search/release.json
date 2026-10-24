@@ -3,28 +3,35 @@
   "subtitle": "Neural-guided tree search and search-trace learning",
   "author": "Angel Raychev",
   "prepared_date": "2026-10-23",
-  "document_type": "Technical retrospective on joint 2025 work with Yalcin Tur and Mihajlo Stojkovic",
+  "document_type": "Consolidated methods and empirical-results retrospective on joint 2025 work with Yalcin Tur and Mihajlo Stojkovic",
   "article": "https://angelraychev.com/explicit-versus-learned-search/",
   "repository": "https://github.com/RaychevAngel/classical_vs_contextual_search",
   "historical_source_commit": "1a7fda10617d34ccd3a87c825cba71e4429de91a",
-  "companion_release_commit": "6f47dafbdd2ef9f0e86a48084bc71d63d262668e",
-  "release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/retrospective-2026-10-23",
+  "companion_release_commit": "ac9939a5d47a43ea7b64d1970148c09e08ce5dee",
+  "release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/consolidated-report-2026-10-23",
   "artifacts": [
     {
       "file": "explicit-versus-learned-search.pdf",
-      "pages": 10,
-      "sha256": "ef0f446c127e435ec2cc876701f7377b9cf070a66f97c7662aa8e435419c959e"
+      "pages": 15,
+      "sha256": "8a73d06d26e062b75798ef3eb71e73721b7772d71c695faec15380d80e01b665"
     },
     {
       "file": "report-source.zip",
-      "contents": ["explicit-versus-learned-search.tex", "REPORT-SOURCE-README.txt"],
-      "sha256": "356d8137fad08c6958afb8e7353b69282f8a59f0a8424de10b3424d319f67699"
+      "contents": ["explicit-versus-learned-search.tex", "REPORT-SOURCE-README.txt", "figures/README.md", "figures/cs224n-training.png", "figures/cs224n-capacity-search.png", "figures/cs224r-training.png", "figures/cs224r-comparison.png", "figures/cs224n-search-135m.png", "figures/cs224n-search-360m.png", "figures/cs224n-search-1700m.png"],
+      "sha256": "33be95363a17b7dfb92839237c9f3571b95e0c4e0f3ff1f6395297c02064ddf2"
     }
   ],
   "verification": {
-    "pdf": "All ten pages visually inspected; final LaTeX build has no warnings or unresolved references.",
-    "code": "20 CPU regression tests pass, including model-free multi-budget search and exact arithmetic checks.",
-    "ci": "https://github.com/RaychevAngel/classical_vs_contextual_search/actions/runs/40062694391",
+    "pdf": "All fifteen final pages visually inspected; final LaTeX build has no warnings, overflow boxes or unresolved references; all fonts embedded.",
+    "source_archive": "Extracted and independently compiled to fifteen pages with identical page text; no model execution required.",
+    "code": "20 core CPU tests and 3 evidence-archive tests pass; exact source hashes, git blob identities, record occurrences and plotting literals verify.",
+    "ci": "https://github.com/RaychevAngel/classical_vs_contextual_search/actions/runs/40068942052",
     "scope": "No new model inference, training or benchmark experiments. Maintenance corrections do not retroactively rescore historical results."
+  },
+  "source_recovery": {
+    "original_final_manuscripts": "https://github.com/RaychevAngel/classical_vs_contextual_search/tree/ac9939a5d47a43ea7b64d1970148c09e08ce5dee/docs/report/historical-sources",
+    "original_figures": "Seven unmodified empirical PNG assets recovered from the original Overleaf final-report projects; architecture diagrams are vectors in the consolidated TeX.",
+    "earlier_results_archive": "https://github.com/RaychevAngel/classical_vs_contextual_search/tree/ac9939a5d47a43ea7b64d1970148c09e08ce5dee/results/archive",
+    "qualification": "Earlier development summaries and plotting arrays are retained separately; they are not a reconstructed raw-run mapping for the final CS224R figures."
   }
 }

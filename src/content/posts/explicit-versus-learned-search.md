@@ -1,12 +1,12 @@
 ---
 title: "Explicit versus learned search"
-description: "Neural-guided tree search, iterative policy and value training, and learning to search from complete traversals. A technical retrospective of my 2025 Stanford research projects."
+description: "Methods and experiments connecting neural-guided tree search, iterative policy/value training and learning to search from complete traversals."
 updated: 2026-10-23
 ---
 
 *Neural-guided tree search and search-trace learning.*
 
-[Technical report (PDF)](/research/explicit-learned-search/explicit-versus-learned-search.pdf) · [Code](https://github.com/RaychevAngel/classical_vs_contextual_search) · [Original Stanford report](https://cs224r.stanford.edu/spring_2025/projects/pdfs/CS_224R_Final_Report__3_%20%281%29.pdf)
+[Report (PDF)](/research/explicit-learned-search/explicit-versus-learned-search.pdf) · [Code](https://github.com/RaychevAngel/classical_vs_contextual_search)
 
 Giving a language model more computation does not specify how it should use it. An external controller can maintain a tree, revisit alternatives and ask learned models where to search next. Alternatively, the model can learn to perform the search in its own generated sequence: proposing branches, evaluating their consequences and returning to earlier decisions.
 
@@ -14,9 +14,9 @@ In 2025, I built research systems for both approaches. The work began as a joint
 
 The central connection was not just a comparison between two inference algorithms. **The external search system also became a teacher.** A single tree supplied successful paths for the policy, intermediate return targets for the value model, and whole traversals for a model learning to search in language.
 
-This article and its companion report explain that system and the choices behind it. They are a technical retrospective of the existing work, not a new experimental study.
+The experiments studied two connected questions: how learning changes the performance of an external search system, and what happens when the search procedure itself becomes the training target. **Training and search proved complementary, policy and value capacity interacted, and the comparison with internalized search depended on the budget and training configuration.** This article and the consolidated report bring the methods and results into one account.
 
-Explore: [search architecture](#where-the-search-lives) · [batched execution](#making-search-a-batched-workload) · [learning signals](#one-tree-three-learning-products) · [artifacts](#code-report-and-released-models).
+Explore: [search architecture](#where-the-search-lives) · [batched execution](#making-search-a-batched-workload) · [learning signals](#one-tree-three-learning-products) · [experiments and results](#historical-experiments-and-results) · [artifacts](#code-report-and-released-models).
 
 ## Where the search lives
 
@@ -156,42 +156,88 @@ This is an explanatory excerpt, not a complete training record. The route ending
 
 The model is initialized from a pretrained checkpoint and fine-tuned on these traversals. “Learning search” here does not mean pretraining a new foundation model from nothing. It means teaching a model to reproduce a search process and emit a final answer within one generated sequence.
 
-The project also implements a STaR-style rejection/self-training path: generate attempts, keep successful completions and use them for further fine-tuning. This follows the broader [STaR](https://arxiv.org/abs/2203.14465) idea of learning from successful reasoning, without identifying every detail of this implementation with the original paper's procedure.
+The project also implements a STaR-style rejection/self-training path: generate attempts, keep successful completions and use them for further fine-tuning. The later study compared one attempt per new question with up to ten attempts, retaining the first successful completion in the latter variant. This follows the broader [STaR](https://arxiv.org/abs/2203.14465) idea of learning from successful reasoning; the implemented refinement is rejection-based supervised self-training.
 
-## Two stages of the project
+## Historical experiments and results
 
-The original reports describe related but distinct systems.
+The investigation progressed through two related settings. The first varied learned proposal and evaluation capacity on Game of 24. The second generalized the arithmetic target and used the external system to teach search in language.
 
 | Stage | Main question | Implementation emphasis |
 | --- | --- | --- |
 | CS224N | How do policy capacity, value capacity and inference-time search interact? | SmolLM2 policy/value combinations, a custom value head, iterative search-generated training and search-budget sweeps. |
 | CS224R | What changes when the search procedure is learned in language? | Reworked asynchronous MCTS, Qwen-based policy/value training, step-aligned value supervision and traversal-trained search models. |
 
-The early project was a team effort. My contributions included MCTS implementation, evaluation and writing; Yalcin and Mihajlo contributed policy/value training, data generation and infrastructure. I subsequently led the later implementation, repeatedly reworked the search engine, added the search-in-language pipeline and ran its experiments. The [CS224R contribution statement](https://cs224r.stanford.edu/spring_2025/projects/pdfs/CS_224R_Final_Report__3_%20%281%29.pdf) records these roles.
+### Policy and value capacity interact
 
-The original studies investigated changes in policy/value capacity, repeated training rounds, branching and expansion budgets, traversal size and rejection-based refinement. They provide the experimental context for the system. This retrospective does not turn their exploratory comparisons into a new compute-matched benchmark or an asymptotic separation between reasoning methods.
+The CS224N study used SmolLM2 models and independently varied the policy and value model across 135M, 360M and 1.7B parameters. At a common search configuration, the following matrix records accuracy in percent. Rows vary the value model; columns vary the policy. The entries retain the original report's mean and standard deviation.
 
-## What a meaningful comparison has to measure
+| Value model / policy model | 135M | 360M | 1.7B |
+| --- | ---: | ---: | ---: |
+| 135M | $12.29\pm1.40$ | $20.31\pm0.56$ | $18.93\pm1.40$ |
+| 360M | $15.95\pm1.30$ | $26.35\pm0.99$ | $25.42\pm1.04$ |
+| 1.7B | $10.53\pm1.47$ | $24.20\pm2.30$ | $26.87\pm1.55$ |
 
-The choice is not determined by adding up model parameters. An external system pays for policy calls, value calls, repeated prefix processing and controller overhead. A search-in-language model pays for generating and processing its traversal context. The lengths and shapes of those workloads differ.
+For a fixed 135M policy, changing the value model from 135M to 360M raised reported accuracy from **12.29% to 15.95%**. Moving instead to a 1.7B value model produced **10.53%**. With the 1.7B policy, the largest value model achieved the highest entry in its column, **26.87%**. A larger evaluator was therefore not uniformly the better partner: the useful allocation depended on both sides of the proposal–evaluation interface.
 
-There is also a training-time investment: an internalized search model inherits computation already spent producing its teacher's traversals. The cost can be worthwhile when amortized over subsequent use. A useful accounting therefore separates the one-time construction cost from the recurring solve cost, rather than counting only the final model invocation.
+### Learning shifts the search curve
 
-Three distinctions are particularly important:
+Increasing inference-time search was one lever; improving the models guiding that search was another. In the 135M/135M experiment, the later training iteration shifted the search-accuracy curve upward across the displayed range. Search-generated supervision improved what a subsequent search could achieve, rather than merely increasing the size of a fixed model's tree.
 
-- **Discovery versus selection.** Did any explored branch contain a correct answer, and did the system actually return it?
-- **A fixed method's budget curve versus different trained methods.** More inference for one frozen model is a different comparison from training separate models on differently sized traversals.
-- **Efficiency versus generalization.** Better use of a finite budget does not by itself show transfer to longer problems, different branching structures or new task families.
+<figure class="result-figure" aria-labelledby="cs224n-training-caption">
+  <img src="/research/explicit-learned-search/figures/cs224n-training.png" alt="Original CS224N plot: Iteration 2 of the 135M policy and value system is more accurate than Iteration 1 across the displayed search-compute range." loading="lazy" decoding="async" />
+  <figcaption id="cs224n-training-caption">Iterative learning and inference search together: the original 135M/135M curves for Iterations 1 and 2. The historical horizontal-axis label and budget convention are preserved.</figcaption>
+</figure>
 
-These are research questions, not reasons to prefer one architecture universally. An external tree offers explicit state management and replaceable control rules. A traversal-trained model offers learned control conditioned on its preceding search. Hybrids can combine learned decisions with external state. [External and internal planning research](https://arxiv.org/abs/2412.12119) provides a broader setting for this distinction.
+The size sweeps revealed a further interaction. The smallest system's plotted curve flattened earlier, while the 360M/360M and 1.7B/1.7B systems continued improving across their larger explored budgets. The table below gives the highest accuracy and corresponding search settings reported for each same-size policy/value pair. The 135M peak includes a later training round than the 135M curve in the size-sweep figure.
+
+| Policy / value | Peak accuracy | Branches per expansion | Expansions |
+| --- | ---: | ---: | ---: |
+| 135M / 135M | 29.39% | 16 | 64 |
+| 360M / 360M | 53.44% | 20 | 102 |
+| 1.7B / 1.7B | 54.58% | 13 | 79 |
+
+All three listed configurations used temperature 1.0 and exploration constant 0.3. They are separately chosen peak configurations, not equal-cost points. Branching controls how many candidates an expansion proposes; expansion count controls how much additional tree exploration the controller performs. The latter is not the structural depth of the arithmetic problem.
+
+<figure class="result-figure" aria-labelledby="cs224n-capacity-caption">
+  <img src="/research/explicit-learned-search/figures/cs224n-capacity-search.png" alt="Original CS224N search-budget curves for 135M, 360M and 1.7B same-size policy and value systems; the two larger systems reach accuracies above 50 percent over their explored ranges." loading="lazy" decoding="async" />
+  <figcaption id="cs224n-capacity-caption">Reported capacity/search sweeps on Game of 24. The original figure retains its “FLOPs-seconds” axis label; this is the study's historical compute convention, not a new end-to-end cost measurement.</figcaption>
+</figure>
+
+### From a search teacher to search in language
+
+The CS224R study moved to generalized arithmetic targets and Qwen2.5 models: a 1.5B policy plus a 1.5B value model for external search, and a 3B model for learning the traversal. Repeated policy/value updates improved the external system's search curve. The final checkpoint reached **51.13%** in the training-checkpoint evaluation reported below.
+
+<figure class="result-figure" aria-labelledby="cs224r-training-caption">
+  <img src="/research/explicit-learned-search/figures/cs224r-training.png" alt="Original CS224R plot comparing five MCTS learning checkpoints over a logarithmic token-budget axis; later checkpoints achieve higher accuracy, reaching approximately 51 percent." loading="lazy" decoding="async" />
+  <figcaption id="cs224r-training-caption">The generalized-arithmetic system across learning checkpoints. This original figure and the direct comparison below are separate reported evaluations.</figcaption>
+</figure>
+
+The trained external system then generated the full traversals used to teach the 3B model. Separate traversal-trained models were constructed for seven tree-branching configurations. The comparison included plain Stream of Search and the two rejection-self-training variants described above.
+
+<figure class="result-figure" aria-labelledby="cs224r-comparison-caption">
+  <img src="/research/explicit-learned-search/figures/cs224r-comparison.png" alt="Original CS224R comparison: traversal-trained and rejection-self-trained models lead at several smaller plotted budgets, while the external MCTS curve rises above them at the largest plotted budget." loading="lazy" decoding="async" />
+  <figcaption id="cs224r-comparison-caption">External MCTS and traversal-trained models in the original direct comparison. The horizontal axis retains the reported token-budget convention; the SoS points span models trained on different traversal configurations.</figcaption>
+</figure>
+
+The comparison shows a budget-dependent crossover. Search-in-language variants, particularly the stronger rejection-self-trained variant, led at several smaller and intermediate plotted budgets. External MCTS continued improving and led at the largest comparison point. The longest-traversal SoS configurations dropped in accuracy; the original report proposed a context-length explanation, which remains a hypothesis rather than an isolated cause.
+
+### What the experiments establish
+
+The useful result is a connected design space, not a universal winner. Learning can improve the proposals and values used by external search; the resulting search can in turn supply supervision for internalized exploration. Policy capacity, evaluator capacity, branching, expansion count and traversal training all influence that cycle. A meaningful comparison accounts for both the repeated solve cost and the teacher-search/training investment that can be amortized over later queries. It also separates finding a correct branch from selecting it, and varying one frozen model's inference budget from training different search models. [External and internal planning research](https://arxiv.org/abs/2412.12119) provides a broader setting for these questions.
+
+These are historical results from the two 2025 studies, with their settings and original figures kept distinct. The refreshed verifier and maintenance checks do not rerun or retrospectively rescore them. Reported axes are historical budget or proxy measures, not newly measured end-to-end FLOPs; equal total parameter counts do not equalize inference or teacher-search cost. The matrix's dispersion is preserved as reported standard deviation, not reinterpreted as confidence intervals or independent-seed uncertainty. The evidence supports these observed trade-offs, not a general or asymptotic separation between the architectures.
+
+## Contributions and continuity
+
+The early project was a team effort. My contributions included MCTS implementation, evaluation and writing; Yalcin Tur and Mihajlo Stojkovic contributed policy/value training, data generation and infrastructure. I subsequently led the later implementation, repeatedly reworked the search engine, added the search-in-language pipeline and ran its experiments. The original [CS224R contribution statement](https://cs224r.stanford.edu/spring_2025/projects/pdfs/CS_224R_Final_Report__3_%20%281%29.pdf) records those roles. This article and the consolidated report are my technical retrospective on that joint work.
 
 ## Code, report and released models
 
-The [companion repository](https://github.com/RaychevAngel/classical_vs_contextual_search) contains the search engine, policy/value serving, generators, trainers and evaluation paths. Its documentation separates the historical implementation from the maintenance corrections accompanying this retrospective. CPU regression checks exercise arithmetic verification and evaluation accounting without downloading models or running training. GPU training and generation remain separate workflows with explicit environment, data and model prerequisites.
+The [companion repository](https://github.com/RaychevAngel/classical_vs_contextual_search) contains the search engine, policy/value serving, generators, trainers and evaluation paths. Its [historical evidence archive](https://github.com/RaychevAngel/classical_vs_contextual_search/tree/main/results/archive) preserves earlier evaluation summaries, all recovered plotting-array versions and source provenance, with offline inspection and plot-recreation tools. Those developmental records are kept distinct from the final-report figures shown here. CPU regression checks exercise arithmetic verification and evaluation accounting without downloading models or running training. GPU training and generation remain separate workflows with explicit environment, data and model prerequisites.
 
 Selected released artifacts include a [policy checkpoint](https://huggingface.co/AngelRaychev/0.5B-policy-iteration_6), a [step-value checkpoint](https://huggingface.co/AngelRaychev/1.5B-value-iteration_2) and a [traversal-trained checkpoint](https://huggingface.co/AngelRaychev/0.5B-sos-iteration_1_b21_e42_epochs16). These are examples of the project's different learning products, not a prescribed matched comparison set.
 
-The [new technical report](/research/explicit-learned-search/explicit-versus-learned-search.pdf) provides a self-contained description of the architecture, learning objectives and artifact boundaries. Its [typesetting source](/research/explicit-learned-search/report-source.zip) and [version record](/research/explicit-learned-search/release.json) accompany the PDF. The untouched original CS224R report remains available through Stanford.
+The [consolidated report](/research/explicit-learned-search/explicit-versus-learned-search.pdf) presents the methods and empirical results in one document. Its [typesetting source](/research/explicit-learned-search/report-source.zip) and [version record](/research/explicit-learned-search/release.json) accompany the PDF. The original Stanford reports remain historical sources for that account, rather than alternative primary versions readers must assemble themselves.
 
 This work connects to the systems I later built for [distributed agent training and evaluation](/distributed-agent-training-and-evaluation/) and to [learning from hindsight](/scalable-meta-learning-from-hindsight/). In each case, the question is not just how to obtain a useful outcome once, but how to convert the computation behind it into a reusable improvement process.
 
@@ -201,12 +247,16 @@ This work connects to the systems I later built for [distributed agent training 
 - Gandhi et al. [Stream of Search: Learning to Search in Language](https://arxiv.org/abs/2404.03683), 2024.
 - Zelikman et al. [STaR: Bootstrapping Reasoning With Reasoning](https://arxiv.org/abs/2203.14465), 2022.
 - Schultz et al. [Mastering Board Games by External and Internal Planning with Language Models](https://arxiv.org/abs/2412.12119), 2024/2025.
+- Tur, Stojkovic and Raychev. *Size Doesn't Matter If You Search Enough*, Stanford CS224N, 2025. Historical project report; its tables and original figure assets underpin the earlier study above.
 - Raychev, Tur and Stojkovic. [In-context Search: Efficiency Boost or Fundamentally New Capability?](https://cs224r.stanford.edu/spring_2025/projects/pdfs/CS_224R_Final_Report__3_%20%281%29.pdf), Stanford CS224R, 2025. Historical project report.
 
 <style>
 .search-figure{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0}
 .search-figure p{font-size:13px;line-height:1.7;margin:10px 0 12px}
 .search-figure strong{display:block;font-size:13px;line-height:1.6}
+.result-figure{margin:30px 0 38px}
+.result-figure img{width:100%;height:auto;background:#fff;border:1px solid var(--rule)}
+.result-figure figcaption{margin-top:12px}
 .diagram-label{display:block;color:var(--dim);font-size:11px;line-height:1.5;margin-bottom:7px;text-transform:uppercase;letter-spacing:.035em}
 .diagram-foot{display:block;font-size:12px;line-height:1.65;color:var(--dim)}
 .control-comparison,.branch-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
