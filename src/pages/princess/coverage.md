@@ -74,7 +74,9 @@ isolated numerical instance present in the experimental receipts. It is a
 fixed finite union. All comparisons, remainders, and indicators in the formulas
 are standard arithmetic with fixed finite case distinctions.
 
-### Paths: w=1, every n and k
+<span id="paths-w1-every-n-and-k" class="math-anchor-alias" aria-hidden="true"></span>
+
+### Paths: $w=1$, every $n$ and $k$
 
 For $k\ge n$, $T_k(1,n)=1$. For one inspection, the remaining cases are
 $T_1(1,2)=2$ and $T_1(1,n)=2n-4$ for $n\ge3$. For $n>k\ge2$,
@@ -91,7 +93,9 @@ direct room-indexed sweeps. **Verification:** ordinary proofs, independent
 checks, and complete physical-game Lean classification in
 `PathClassification.lean`. Source: [eq:path-main](/princess/proofs/#eq:path-main), [sec:paths](/princess/proofs/#sec:paths).
 
-### Two rows: w=2, every n>=2 and k
+<span id="two-rows-w2-every-n2-and-k" class="math-anchor-alias" aria-hidden="true"></span>
+
+### Two rows: $w=2$, every $n\ge2$ and $k$
 
 Budget one is impossible; budgets at least $2n$ take one day. Otherwise put
 $A=n-1$, $D=k-1$. Then
@@ -106,7 +110,9 @@ specified interval sweeps and at most one shared day. **Verification:**
 complete physical-game Lean theorem in `LadderGame.lean`, in addition to the
 ordinary proof and semantic review. Sources: [eq:ladder-main](/princess/proofs/#eq:ladder-main), [sec:two-rows](/princess/proofs/#sec:two-rows).
 
-### Three rows: w=3, every n>=3 and k
+<span id="three-rows-w3-every-n3-and-k" class="math-anchor-alias" aria-hidden="true"></span>
+
+### Three rows: $w=3$, every $n\ge3$ and $k$
 
 Use the feasibility and one-/two-day clauses first. In the remaining range
 $2\le k<\lfloor3n/2\rfloor$, write
@@ -124,7 +130,9 @@ $$
 envelope sweeps. **Verification:** reviewed ordinary proof; no complete
 physical-game Lean classification. Sources: [eq:three-main](/princess/proofs/#eq:three-main), [sec:three-rows](/princess/proofs/#sec:three-rows).
 
-### Four rows: w=4, every n>=4 and k
+<span id="four-rows-w4-every-n4-and-k" class="math-anchor-alias" aria-hidden="true"></span>
+
+### Four rows: $w=4$, every $n\ge4$ and $k$
 
 Use the endpoint clauses first. For $3\le k<2n$, write
 $2n-2=q(k-2)+r$, $0\le r<k-2$. The answer is
@@ -143,7 +151,9 @@ theorem rather than an additional obligation. **Verification:** ordinary
 proof, with reusable Lean components but no full physical classification.
 Sources: [eq:four-main](/princess/proofs/#eq:four-main), [sec:four-rows](/princess/proofs/#sec:four-rows), [thm:even-rectangle-high-budget](/princess/proofs/#thm:even-rectangle-high-budget).
 
-### Five rows: w=5, every n>=5 and k
+<span id="five-rows-w5-every-n5-and-k" class="math-anchor-alias" aria-hidden="true"></span>
+
+### Five rows: $w=5$, every $n\ge5$ and $k$
 
 Budgets at most two are impossible. At budget three, for both length parities,
 $T_3(5,n)=10n-20$. At budget four,
@@ -330,8 +340,8 @@ $$
 T_k(2r,n)=2(j+3)-\mathbf1_{\{2c\le k\}}.
 $$
 This is a fixed-size expression on the entire stated family. Its direct
-optimal construction includes an explicit shape change for width16,
-budget56, and n=22 modulo12. That class has no remaining exception.
+optimal construction includes an explicit shape change for width 16,
+budget 56, and $n\equiv22\pmod{12}$. That class has no remaining exception.
 Proof and construction: `research/bridge-boundary-numeric-quadratic-edge.md`
 and `research/bridge-quadratic-edge-exception.md`.
 
@@ -424,7 +434,7 @@ solo layer and $L=\tau-1$.
 Every odd rectangle already has the exact one-day interval
 $2\tau-1\le T\le2\tau$, an exact joint evaluator, and sufficient
 solo central test. The new all-length result makes that test necessary
-for feasible budgets k>=r+1 satisfying
+for feasible budgets $k\ge r+1$ satisfying
 $$
 k\le2r\quad\text{or}\quad27k^3\le r^4.
 $$
@@ -456,7 +466,7 @@ J=\max\{2K+k+1,K+H\},\quad W=2\lceil\sqrt G\rceil,
 \quad M_{\rm new}=J+G+k(W+1).
 $$
 The scalar test is necessary if $M\ge M_{\rm new}$. These are
-fixed-size expressions. The quantity W is used in the proof of the onset;
+fixed-size expressions. The quantity $W$ is used in the proof of the onset;
 it is not iterated to evaluate the answer. A possible remaining scalar
 counterexample at fixed width is confined to $n=O(r^2)$, improving
 the old $O(r^4)$ containing range. No smallest-onset claim is made.
@@ -464,7 +474,7 @@ the old $O(r^4)$ containing range. No smallest-onset claim is made.
 ### A fixed recent-reset condition
 
 Write $\Delta_i=D_0(i)-D_1(i)$. If $\Delta_L=0$, the scalar
-test is exact. Otherwise let p be its slower physical color, and put
+test is exact. Otherwise let $p$ be its slower physical color, and put
 $c=\lceil(C_p-k)/2\rceil$, with $C_0=E,C_1=M$.
 The test is also exact if, for at least one of the fixed ages
 $j=0,1,\ldots,16$ with $j\le L$,
@@ -483,10 +493,10 @@ For every odd rectangle at $k=r+1$, the previously established law is
 $$
 T=2wn-(8r^2-4r-4L_r+4).
 $$
-The width-only L_r is the first arrival of the bottom simultaneous
-recurrence at its minority value r(r-1). Its evaluation takes O(r)
+The width-only $L_r$ is the first arrival of the bottom simultaneous
+recurrence at its minority value $r(r-1)$. Its evaluation takes $O(r)$
 root-band stages. Matching bounds and direct optimal inspections were
-already proved at the scope baseline. No new fixed-size formula for L_r
+already proved at the scope baseline. No new fixed-size formula for $L_r$
 has been obtained. Source: [thm:odd-minimum-budget](/princess/proofs/#thm:odd-minimum-budget).
 
 ## 5. Current even-area bounds and constructions
@@ -496,23 +506,23 @@ are not assumed physically attainable. Exact backward recurrences now
 make their clocks arithmetic. New envelope and corner-change rules
 supply physical upper bounds at every feasible budget.
 
-For every even-area rectangle of width w>=4 the named bounds differ by
-at most one day at k>=ceil(4w/3). On even widths the stronger condition
-k>=ceil(13w/10) suffices. On odd widths w=2r+1 the alternative
-k>=ceil(13r/5)+3 also suffices. The precise integer gate is given in
-`research/bridge-upper-transport-high-credit.md`. Endpoints k>=wn/2
+For every even-area rectangle of width $w\ge4$ the named bounds differ by
+at most one day at $k\ge\lceil4w/3\rceil$. On even widths the stronger condition
+$k\ge\lceil13w/10\rceil$ suffices. On odd widths $w=2r+1$ the alternative
+$k\ge\lceil13r/5\rceil+3$ also suffices. The precise integer gate is given in
+`research/bridge-upper-transport-high-credit.md`. Endpoints $k\ge wn/2$
 use the already exact one-/two-day clauses. Below these sufficient
 thresholds there is no general theorem asserting a one-day interval
 for all remaining even-area inputs.
 
-At24 rows and budget13, T>=24n-370 holds for every n>=24; for even n
-there is a prescribed upper24n-369. For odd n>=25 its current upper is24n-368. The24-square is still206 versus207.
-The25-row even-length minimum-budget family is exact as stated above.
+At 24 rows and budget 13, $T\ge24n-370$ holds for every $n\ge24$; for even $n$
+there is a prescribed upper $24n-369$. For odd $n\ge25$ its current upper is $24n-368$. The 24-square is still 206 versus 207.
+The 25-row even-length minimum-budget family is exact as stated above.
 
 Independent finite exact consequences across both side parities are
-T5(8,8)=40, T7(12,12)=72, T7(12,14)=96,
-T9(16,16)=112, T9(16,18)=144, T4(7,8)=68,
-T5(9,10)=96, T6(11,12)=128 and T6(11,14)=172.
+$T_5(8,8)=40$, $T_7(12,12)=72$, $T_7(12,14)=96$,
+$T_9(16,16)=112$, $T_9(16,18)=144$, $T_4(7,8)=68$,
+$T_5(9,10)=96$, $T_6(11,12)=128$ and $T_6(11,14)=172$.
 These have ordinary geometric proofs plus finite certificates and literal
 inspection replays. They are not uniform width classifications.
 

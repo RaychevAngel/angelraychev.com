@@ -1,0 +1,9 @@
+---
+import { renderMath } from "../lib/math.mjs";
+interface Props {
+  tex: string;
+  display?: boolean;
+}
+const { tex, display = false } = Astro.props;
+---
+<Fragment set:html={renderMath(tex, { displayMode: display })} />

@@ -4,6 +4,7 @@ import path from "node:path";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { unified } from "@astrojs/markdown-remark";
+import { MATH_OPTIONS } from "./src/lib/math.mjs";
 
 function wrapTables() {
   return (tree) => {
@@ -49,7 +50,7 @@ export default defineConfig({
     shikiConfig: { themes: { light: "github-light", dark: "github-dark" } },
     processor: unified({
       remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex, wrapTables],
+      rehypePlugins: [[rehypeKatex, MATH_OPTIONS], wrapTables],
     }),
   },
   vite: { plugins: [publicDirectoryIndex()] },

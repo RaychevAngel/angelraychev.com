@@ -6,6 +6,7 @@ const previewImage = image ? new URL(image, "https://angelraychev.com").href : u
 const canonicalUrl = new URL(Astro.url.pathname, "https://angelraychev.com").href;
 import "../styles/global.css";
 import "katex/dist/katex.min.css";
+import "../styles/math.css";
 import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 <!doctype html>
@@ -36,6 +37,10 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title={NAME} href="/rss.xml" />
     <slot name="head" />
+    <script>
+      import { initializeMathLayout } from "../scripts/math-layout";
+      initializeMathLayout();
+    </script>
   </head>
   <body>
     <div class="wrap">

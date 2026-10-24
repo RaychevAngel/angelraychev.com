@@ -164,9 +164,9 @@ agent optimizes *within* an episode it did not choose. A person picks what the e
 
 That difference has a name — the adaptivity gap — and as of this year it has an exponential
 separation in exactly the analogous setting. For reasoning post-training, non-adaptive
-selection needs a number of demonstrations scaling as 1/ε in target accuracy; adaptive
-curriculum selection needs polylog(1/ε). The same separation holds in active learning:
-choosing your query costs Θ(log 1/ε) labels against Θ(1/ε) for passive sampling.
+selection needs a number of demonstrations scaling as $1/\varepsilon$ in target accuracy; adaptive
+curriculum selection needs $\operatorname{polylog}(1/\varepsilon)$. The same separation holds in active learning:
+choosing your query costs $\Theta(\log(1/\varepsilon))$ labels against $\Theta(1/\varepsilon)$ for passive sampling.
 
 The empirical version is categorical rather than marginal. In the POET ablation, the same
 optimizer with the same compute pointed directly at a hard environment scores 13.6–39.6
@@ -281,7 +281,7 @@ and the second is what you should be building.
 ## Infinity breaks the same way twice
 
 The natural design for a self-modifying agent you want to release: give it one thing it must
-achieve, worth +∞, and let it rewrite everything else about its objective, having pretrained
+achieve, worth $+\infty$, and let it rewrite everything else about its objective, having pretrained
 it so that its rewrites tend to increase the chance of reaching the anchor.
 
 The structure is right, and it is the same repair as the previous piece — an immutable
@@ -296,22 +296,22 @@ apply and there is no expected-utility representation to optimize.
 
 It disables the standard defense. The recommended fix for reward tampering is to evaluate
 candidate self-modifications under your *current* objective — but that works by strict
-dominance, and at infinity every comparison is −∞ against −∞. Strict dominance degrades to
+dominance, and at infinity every comparison is $-\infty$ against $-\infty$. Strict dominance degrades to
 weak dominance, which any tie-break breaks. The infinity switches off the exact mechanism that
 was supposed to protect it.
 
 And it forbids the thing the whole project is about. Continuing to become more entails
-accepting hazard: training hard, travelling, having a child. Under a literal −∞ on death no
+accepting hazard: training hard, travelling, having a child. Under a literal $-\infty$ on death no
 finite gain ever justifies any increment of risk, so the optimal policy is maximal stasis. The
 two-term objective — stay alive *and* become more — is internally inconsistent at infinity,
 because the second term has measure zero against the first.
 
 **And your certain-death insight is right but mis-stated, and the correction makes it
-sharper.** The claim was that if you know you will die, the −∞ makes it worth rewriting the
+sharper.** The claim was that if you know you will die, the $-\infty$ makes it worth rewriting the
 objective. The operative condition is not *certainty*; it is **infinity plus unavoidability**.
 With a large but finite penalty, certain death is an additive constant that drops straight out
 of the comparison and changes no decision at all. With an infinite penalty, merely *positive*
-ruin probability already produces total indifference — every policy scores −∞, the gradient is
+ruin probability already produces total indifference — every policy scores $-\infty$, the gradient is
 identically zero, and the objective's own parameters become the only variable left that
 changes anything. That is the pathology, and stating it as the dichotomy — maximally motivating
 or completely inert, with no middle — is stronger than the version with certainty in it.
@@ -346,7 +346,7 @@ outer criterion**.
 
 So the answer to how to think about a reward-aware agent is: the inner objective should be
 modifiable, and probably must be. What cannot move is the outer criterion it is graded against.
-That criterion is what "+∞ if you do this" was reaching for — and it should be written as a
+That criterion is what "$+\infty$ if you do this" was reaching for — and it should be written as a
 constraint held outside the agent, not as an infinite term inside it.
 
 ## And if many people did this

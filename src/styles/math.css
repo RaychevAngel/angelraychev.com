@@ -1,0 +1,56 @@
+/* KaTeX owns formula internals. Site typography applies only at the boundary. */
+.katex {
+  font-size: 1.1em;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-indent: 0;
+}
+
+/* Keep the left edge of wide equations reachable. A centered oversized child
+   otherwise extends to negative coordinates and loses its beginning. */
+.katex-display {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  margin: 1.25em 0;
+  padding: 0.5em 0.125em;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+}
+.katex-display > .katex {
+  width: max-content;
+  min-width: 100%;
+  white-space: nowrap;
+}
+.katex.math-inline-overflow {
+  display: block;
+  max-width: 100%;
+  margin: 0.25em 0;
+  padding: 0.5em 0.125em;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+}
+.math-inline-overflow > .katex-html {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  white-space: nowrap;
+}
+.katex-display[tabindex="0"]:focus-visible,
+.math-inline-overflow[tabindex="0"]:focus-visible {
+  outline: 1px solid var(--fg);
+  outline-offset: 2px;
+}
+
+/* In print there is no scrolling. KaTeX's explicit bases preserve mathematical
+   atoms while permitting breaks at the relations/operators it marks breakable. */
+@media print {
+  .katex-display { overflow: visible; break-inside: avoid; }
+  .katex.math-inline-overflow { overflow: visible; break-inside: avoid; }
+  .math-inline-overflow > .katex-html { width: auto; min-width: 0; white-space: normal; }
+  .katex-display > .katex {
+    width: auto;
+    min-width: 0;
+    white-space: normal;
+  }
+}

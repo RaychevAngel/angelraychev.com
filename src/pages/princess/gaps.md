@@ -24,12 +24,12 @@ assessment below; old, superseded containing ranges are not current claims.
 
 ## 1. Remaining even-area full-board values and direct optimal strategies
 
-Write w=min(a,b), n=max(a,b). After removing the original narrow/high-budget
+Write $w=\min(a,b)$, $n=\max(a,b)$. After removing the original narrow/high-budget
 formulas and the new exact families, the containing ranges are:
 
-- w=2r>=6, n>=w, r+1<=k<=r(r-1)-1, excluding fixed-block inputs where
+- $w=2r\ge6$, $n\ge w$, $r+1\le k\le r(r-1)-1$, excluding fixed-block inputs where
   the proved lower and upper agree.
-- w=2r+1>=7, n>=w even, r+1<=k<=r(r+1), excluding (w,k)=(25,13).
+- $w=2r+1\ge7$, $n\ge w$ even, $r+1\le k\le r(r+1)$, excluding $(w,k)=(25,13)$.
 
 Isolated certified points inside these ranges keep their exact values.
 The known exact boundary-port representation is still an optimizer with
@@ -37,26 +37,26 @@ parameter-dependent preprocessing. It does not settle the final requested
 form of the answer throughout either range.
 
 The largest new uniform bound statement is a one-day interval between a
-named corner-model lower and a physical upper whenever k>=ceil(4w/3).
-For even w, k>=ceil(13w/10) already suffices; for odd w=2r+1 the additional
-condition k>=ceil(13r/5)+3 and a sharper integer test are available.
+named corner-model lower and a physical upper whenever $k\ge\lceil4w/3\rceil$.
+For even $w$, $k\ge\lceil13w/10\rceil$ already suffices; for odd $w=2r+1$ the additional
+condition $k\ge\lceil13r/5\rceil+3$ and a sharper integer test are available.
 These thresholds are sufficient, not necessary. The budget interval from
 feasibility to these thresholds still has no universal one-day theorem.
 Even above them, the remaining day is not uniformly decided.
 
 Two current examples separate progress from completion. The whole family
-T13(25,n)=50n-925 is exact for even n>=26. For24 rows, T13(24,n)>=24n-370
-holds at every n>=24, but the matching upper on even lengths is24n-369.
-For odd n>=25 the current upper is24n-368, a two-day bracket.
-In particular T13(24,24) remains206 versus207. A103-day necessary solo
-history has not been turned into a physical103-day schedule or excluded
+$T_{13}(25,n)=50n-925$ is exact for even $n\ge26$. For 24 rows, $T_{13}(24,n)\ge24n-370$
+holds at every $n\ge24$, but the matching upper on even lengths is $24n-369$.
+For odd $n\ge25$ the current upper is $24n-368$, a two-day bracket.
+In particular $T_{13}(24,24)$ remains 206 versus 207. A 103-day necessary solo
+history has not been turned into a physical 103-day schedule or excluded
 in the unrestricted game.
 
 ### What has been tried and what it taught us
 
 The original scalar neighborhood minima do not compose into a legal
-strategy. The recorded6x6,k5 size relaxation predicts13 where the exact
-finite calculation gives14. Corner availability and erosion counts improve
+strategy. The recorded $6\times6$, $k=5$ size relaxation predicts 13 where the exact
+finite calculation gives 14. Corner availability and erosion counts improve
 that relaxation, but they still permit histories whose distant corners
 cannot be reached quickly enough.
 
@@ -112,14 +112,14 @@ partial-state statement should be pursued only when it helps this obligation.
 
 ## 2. Remaining odd-board central decisions
 
-Every odd rectangle already has the exact interval2tau-1<=T<=2tau and an
+Every odd rectangle already has the exact interval $2\tau-1\le T\le2\tau$ and an
 exact retained joint evaluator. The new scalar decision is proved on every
-odd length whenever r+1<=k<=2r or27k³<=r⁴, where w=2r+1. Minimum budget,
+odd length whenever $r+1\le k\le2r$ or $27k^3\le r^4$, where $w=2r+1$. Minimum budget,
 high budgets, widths through five and odd-length width seven are also covered.
 An improved explicit onset and a recent-reset test cover further inputs.
 
 Thus an exact containing range for the still-unproved direct scalar decision
-is w=2r+1>=9, n>=w odd, 2r+1<=k<=r², 27k³>r⁴, below the improved onset,
+is $w=2r+1\ge9$, $n\ge w$ odd, $2r+1\le k\le r^2$, $27k^3>r^4$, below the improved onset,
 and outside the accepted reset or other special-case conditions. This is
 still an infinite family, despite the finite number of possible shorter
 lengths at each fixed width and budget. It must not be described as a fixed
@@ -140,28 +140,28 @@ exceptional predecessor. That is a local necessary/exact feasibility tool,
 not a proof that true solo orbits avoid all such crossings.
 
 Stronger convenient assertions have failed. Separate ammunition costs do not
-ensure a simultaneous schedule. An actual21x21,k12 history has one unit of
+ensure a simultaneous schedule. An actual $21\times21$, $k=12$ history has one unit of
 rounded-root credit beyond primary lag. Synthetic capacity traces violate
 stronger orientation envelopes even after several full-budget updates.
-The suggested claim that all bottom solo gaps stay in{0,1} is false on the
-actual11x11,k7 sequence(0,0),(4,4),(8,7),(10,11),(14,12). No accepted theorem
+The suggested claim that all bottom solo gaps stay in $\{0,1\}$ is false on the
+actual $11\times11$, $k=7$ sequence $(0,0),(4,4),(8,7),(10,11),(14,12)$. No accepted theorem
 uses that claim. Actual ancestry and the true scalar orbit must enter the
 proof, or an appropriate dominating exchange must replace them.
 
 ## 3. Numerical evaluation after optimality is proved
 
-The original minimum-budget gap is unchanged: w=2r+1>=17, n>=w odd,
-k=r+1 has exact value2wn-(8r²-4r-4L_r+4), but L_r still uses a width-only
+The original minimum-budget gap is unchanged: $w=2r+1\ge17$, $n\ge w$ odd,
+$k=r+1$ has exact value $2wn-(8r^2-4r-4L_r+4)$, but $L_r$ still uses a width-only
 recurrence. Its optimal strategy and matching bounds predate the fixed-scope
-baseline. A general fixed-size expression for L_r has not been obtained.
+baseline. A general fixed-size expression for $L_r$ has not been obtained.
 
 Arbitrary-budget solo clocks likewise retain width-dependent changing root
-bands outside the fixed-block region16(2k-w)>=r². The new49-block evaluator
+bands outside the fixed-block region $16(2k-w)\ge r^2$. The new 49-block evaluator
 removes this dependence in that stated region, and its composition with the
 accepted scalar-decision conditions gives exact bounded subfamilies. It does
 not eliminate every root band at every surplus budget.
 
-On even widths,16(k-r-1)>=r² gives a fixed168-block lower/upper evaluator.
+On even widths, $16(k-r-1)\ge r^2$ gives a fixed 168-block lower/upper evaluator.
 Equality closes that input's value and direct construction under the numerical
 goal. A strict gap leaves the mathematical choice unresolved. Even a future
 uniform matching theorem may still require evaluation of the remaining
