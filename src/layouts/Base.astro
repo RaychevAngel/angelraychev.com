@@ -7,6 +7,7 @@ const canonicalUrl = new URL(Astro.url.pathname, "https://angelraychev.com").hre
 import "../styles/global.css";
 import "katex/dist/katex.min.css";
 import "../styles/math.css";
+import "../styles/tables.css";
 import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 <!doctype html>
@@ -39,7 +40,9 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <slot name="head" />
     <script>
       import { initializeMathLayout } from "../scripts/math-layout";
+      import { initializeTableLayout } from "../scripts/table-layout";
       initializeMathLayout();
+      initializeTableLayout();
     </script>
   </head>
   <body>

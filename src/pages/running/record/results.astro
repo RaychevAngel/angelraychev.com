@@ -171,7 +171,7 @@ const points = (best) => best.score?.points.join("–") ?? "—";
   .small { font-size: 11.5px; }
   .mark { white-space: nowrap; }
   .bests td:last-child { min-width: 115px; }
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .bests, .bests thead, .bests tbody { display: block; }
     .bests tr { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 10px; border-bottom: 1px solid var(--rule); padding: 12px 0; }
     .bests th, .bests td { border: 0; padding: 0; min-width: 0; overflow-wrap: anywhere; }

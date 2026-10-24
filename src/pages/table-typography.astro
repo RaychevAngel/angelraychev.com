@@ -1,0 +1,41 @@
+---
+import Base from "../layouts/Base.astro";
+import Math from "../components/Math.astro";
+const indices = Array.from({ length: 16 }, (_, index) => index);
+---
+<Base title="Table layout reference" description="Regression reference for the website's shared table layout.">
+  <meta slot="head" name="robots" content="noindex,follow" />
+  <article>
+    <h1>Table layout reference</h1>
+    <p>A permanent rendering check, not research data. Short labels stay intact, prose wraps at spaces, authored alignment is retained, and genuinely wide tables scroll within the page.</p>
+    <p><a href="#prose">Prose</a> · <a href="#numeric">Numbers</a> · <a href="#grouped">Grouped headers</a> · <a href="#wide">Wide grid</a> · <a href="#tokens">Long tokens</a> · <a href="#deferred">Closed details</a></p>
+    <h2 id="prose">Short labels and long prose</h2>
+    <table id="table-prose"><caption>Project phases</caption><thead><tr><th>Stage</th><th>Main question</th><th>Implementation emphasis</th></tr></thead><tbody>
+      <tr><th scope="row">CS224N</th><td>How do policy capacity, value capacity and inference-time search interact?</td><td>Policy/value combinations, a custom value head, iterative search-generated training and search-budget sweeps.</td></tr>
+      <tr><th scope="row">CS224R</th><td>What changes when the search procedure is learned in language?</td><td>Batched search, step-aligned value supervision and traversal-trained search models.</td></tr>
+    </tbody></table>
+    <h2 id="numeric">Numeric and centered columns</h2>
+    <table id="table-numeric"><caption>Illustrative alignment samples</caption><thead><tr><th align="left">Case</th><th align="right">Count</th><th align="right">Rate</th><th align="center">Status</th></tr></thead><tbody>
+      <tr><th scope="row">Alpha</th><td align="right">12</td><td align="right">1.25%</td><td align="center">✓</td></tr>
+      <tr><th scope="row">Beta</th><td align="right">1,024</td><td align="right">98.75%</td><td align="center">—</td></tr>
+    </tbody></table>
+    <h2 id="grouped">Grouped and spanning headers</h2>
+    <table id="table-grouped"><caption>Two groups sharing one row label</caption><colgroup span="1"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><thead>
+      <tr><th rowspan="2" scope="col">Stage</th><th colspan="2" scope="colgroup">Group A</th><th colspan="2" scope="colgroup">Group B</th></tr>
+      <tr><th scope="col" align="right">Count</th><th scope="col" align="right">Rate</th><th scope="col" align="right">Count</th><th scope="col" align="right">Rate</th></tr>
+    </thead><tbody><tr><th scope="row">Example</th><td align="right">24</td><td align="right">12.5%</td><td align="right">48</td><td align="right">25.0%</td></tr></tbody></table>
+    <h2 id="wide">Wide mathematical grid</h2>
+    <table id="table-wide"><caption>Sixteen intact numeric columns</caption><thead><tr>{indices.map(index => <th scope="col" align="center">{index}</th>)}</tr></thead><tbody>
+      <tr>{indices.map(index => <td align="center">{index * index}</td>)}</tr>
+      <tr>{indices.map(index => <td align="center"><Math tex={`2^{${index}}`} /></td>)}</tr>
+    </tbody></table>
+    <h2 id="tokens">Long identifiers, links and mathematics</h2>
+    <table id="table-tokens"><caption>Intact tokens stay reachable instead of being clipped</caption><thead><tr><th>Kind</th><th>Value</th></tr></thead><tbody>
+      <tr><th scope="row">Identifier</th><td><code>an_intentionally_long_identifier_without_break_opportunities</code></td></tr>
+      <tr><th scope="row">Link</th><td><a href="https://example.com/long-path-without-invented-data">example.com/long-path-without-invented-data</a></td></tr>
+      <tr><th scope="row">Formula</th><td><Math tex={String.raw`\sum_{k=0}^{n}\binom{n}{k}=2^n`} /></td></tr>
+    </tbody></table>
+    <h2 id="deferred">Measurements after opening details</h2>
+    <details><summary>Reveal a wide table</summary><table id="table-deferred"><caption>Deferred sixteen-column table</caption><thead><tr>{indices.map(index => <th scope="col">Column {index}</th>)}</tr></thead><tbody><tr>{indices.map(index => <td>{index * 100}</td>)}</tr></tbody></table></details>
+  </article>
+</Base>

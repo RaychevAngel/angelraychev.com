@@ -82,10 +82,7 @@ img, svg, video { max-width: 100%; height: auto; display: block; }
 figure { margin: 36px 0; }
 figcaption { color: var(--dim); font-size: 13px; margin-top: 12px; line-height: 1.6; }
 
-.tablewrap { overflow-x: auto; margin: 0 0 24px; }
-table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
-th, td { text-align: left; padding: 8px 16px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.65; }
-th { font-weight: 700; }
+/* Table layout is owned by tables.css, not the surrounding prose rules. */
 
 .dim { color: var(--dim); }
 .note { color: var(--dim); }

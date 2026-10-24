@@ -5,21 +5,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { unified } from "@astrojs/markdown-remark";
 import { MATH_OPTIONS } from "./src/lib/math.mjs";
-
-function wrapTables() {
-  return (tree) => {
-    function walk(node) {
-      if (!node.children) return;
-      node.children = node.children.map((child) => {
-        walk(child);
-        return child.type === "element" && child.tagName === "table"
-          ? { type: "element", tagName: "div", properties: { className: ["tablewrap"] }, children: [child] }
-          : child;
-      });
-    }
-    walk(tree);
-  };
-}
+import { rehypeTables } from "./src/lib/tables.mjs";
 
 // Astro's dev server (Vite) does not resolve "/dir/" to "/dir/index.html" for
 // files served from public/. Static hosts (GitHub Pages) do. Without this,
@@ -50,7 +36,7 @@ export default defineConfig({
     shikiConfig: { themes: { light: "github-light", dark: "github-dark" } },
     processor: unified({
       remarkPlugins: [remarkMath],
-      rehypePlugins: [[rehypeKatex, MATH_OPTIONS], wrapTables],
+      rehypePlugins: [[rehypeKatex, MATH_OPTIONS], rehypeTables],
     }),
   },
   vite: { plugins: [publicDirectoryIndex()] },
