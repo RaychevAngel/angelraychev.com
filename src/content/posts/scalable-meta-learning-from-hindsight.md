@@ -1,245 +1,142 @@
 ---
 title: "Scalable Meta-Learning from Hindsight"
-description: "A proposal for learning how to turn completed experience into better future behavior."
-updated: 2026-09-04
+description: "Learning how to turn completed experience into useful parameter updates, with a full-distribution teacher and direct tests of what the student learns."
+updated: 2026-10-24
 ---
 
-Most approaches to improving a model from experience depend on machinery outside the
-model. Reinforcement learning needs a reward. Supervised learning needs a better answer.
-On-policy distillation needs a teacher, often with privileged information that the
-student will not have later.
+An agent finishes a task knowing more than it knew while acting. It has seen the failed test, the consequence of a mistaken assumption, the correction that finally worked, or the outcome of its chosen strategy. A useful learning system should turn that experience into better behavior on the next task—not merely produce a persuasive explanation of the last one.
 
-The proposal here is to teach a model how to manufacture its own learning signal from
-the experience it already has.
+This project asks whether we can **learn the teaching procedure itself**. The objective is not to make a model better at writing reflections. It is to make a teacher better at causing learning, then compress that teacher into a direct mapping from completed experience to policy targets.
 
-The model first acts normally, with causal attention. After the rollout is complete, the
-same model reads the experience again with bidirectional attention. It can now see the
-consequences of every earlier decision: tool results, failed tests, later corrections,
-rejected assumptions and the final outcome. From that position it assigns a better
-distribution over what the model should have done at each point. Its causal mode learns
-from those distributions.
+I designed and implemented two connected learning systems around that question. The outer system proposes source-derived lessons and measures the improvement their updates cause in matched students; its measured reward can train the proposer. The inner system learns to assign the selected full-vocabulary distributions directly from raw completed experience, then distills them into a causal student. The component study separates three achievements that can otherwise look deceptively similar: useful information in context, accurate imitation of a teaching distribution, and improvement retained in the student's parameters.
 
-> Act while looking forward. Teach while looking backward.
+[Read the technical report](/research/learning-from-hindsight/learning-from-hindsight.pdf) · [Code and evidence](https://github.com/RaychevAngel/learning-from-hindsight) · [LaTeX source](/research/learning-from-hindsight/report-source.zip)
 
-Once this hindsight teacher has been learned, the inner update needs no reward model,
-additional sampling, separate teacher model or externally supplied privileged context.
-It reduces to bidirectional scoring followed by causal distillation.
+## Judge teaching by the learning it causes
 
-That is the scalable destination. The difficult question is how to teach the hindsight
-teacher in the first place.
+Suppose a model gets an array-transformation problem wrong. A strong assistant can inspect the completed attempt and say, “Keep only the longest nonzero run; remove the isolated entries.” That may be an excellent instruction for solving another array. It does not follow that training on the original attempt under that instruction will teach the student to apply the rule independently.
 
-## The teacher is the learned object
+The learning objective must reflect that difference. A candidate lesson is valuable if the **update it induces** improves performance on different tasks after the lesson has been removed.
 
-Access to the future does not automatically produce wisdom. A failed test reveals that
-something was wrong, but not which earlier decision should change. A later recovery
-reveals one workable path, but not whether it was the best lesson to generalize.
+The slow outer procedure makes this measurable:
 
-The bidirectional model therefore needs a stronger teacher during meta-training.
+1. A proposer reads one completed **source experience**: the task, the model's original response, and observed feedback. It proposes privileged-information contexts, or **PI**. It does not receive the validation or query tasks it will be judged on.
+2. Each PI conditions a snapshot of the model. That snapshot supplies a probability distribution over the vocabulary at every original response position.
+3. Matched student clones start from the same parameters and fresh optimizer state. Each receives a bounded distillation update from one candidate's distributions.
+4. The updated students answer related **validation tasks causally, without the PI**. Their improvement determines the candidate's learning value. No update is a legitimate alternative, preferred on ties.
 
-For a completed rollout, a context-writing process proposes several possible lessons
-using only information found inside that rollout. One may identify a mistaken
-assumption. Another may isolate a better verification habit. Another may conclude that
-the experience supports no reliable update.
+For a candidate $z$, the relevant reward is
 
-Each lesson temporarily conditions a frozen copy of the model and changes its policy
-over the decisions in the rollout. The lesson is not judged by whether it sounds
-insightful, explains the failure elegantly or solves the original task. It is judged by
-the learning it causes.
+$$
+R_{\mathrm{update}}(z)
+=J_V\!\left(p_{U_K(\theta_0;q_z)}\right)-J_V(p_{\theta_0}).
+$$
 
-A good lesson is one whose induced model update improves performance on other, similar
-tasks after the lesson itself has been removed.
+Here $q_z$ is the candidate teaching distribution, $U_K$ is the prescribed $K$-step student update, and $J_V$ measures validation performance. The candidate is not rewarded for explaining the source elegantly, matching its answer, or helping while remaining in the next task's prompt. Those may be useful diagnostics, but the target is learning that survives the intervention.
 
-This is the central meta-learning objective. We are not searching for the best answer or
-the best prompt. We are searching for the intervention that produces the best learner.
+[![The expensive outer search selects teaching distributions by student improvement; the amortized path predicts them directly from raw completed experience.](/research/learning-from-hindsight/learning-loop.svg)](/research/learning-from-hindsight/learning-loop.svg)
 
-That distinction changes what is valuable. A detailed solution may help enormously
-while present and teach almost nothing durable. A small procedural observation may be
-unimpressive as a prompt yet produce an improvement across an entire task family. The
-value belongs to the resulting change in the model, not to the lesson in isolation.
+This is a meta-learning objective: improve the process that produces a learner's update. The proposer can be optimized by policy-gradient or preference methods, treating the update and evaluation as a black box. There is no need to differentiate through the entire student-training computation. There is still a real outer-loop bill: proposing candidates, scoring targets, cloning updates, and measuring their consequences.
 
-## Compressing the expensive teacher
+## Learn the policy assignment rather than the lesson text
 
-Finding a valuable lesson this way is slow. It may require generating candidates,
-performing bounded updates and evaluating their effects on held-out tasks. Running that
-search after every ordinary experience would not be useful as a general learning
-system.
+Repeating that search after every ordinary experience would be expensive. Its second purpose is to generate targets for a **hindsight teacher**.
 
-Its purpose is to create training data for the bidirectional teacher.
+The winning lesson defines a distribution over the actions in the original rollout. A future-aware teacher learns to predict that distribution from the raw completed experience alone. It does not need to reconstruct the hidden lesson, write a reflection, sample a corrected answer, or generate another environment trajectory. Its output is already in the form the student can learn from: a distribution over possible next tokens.
 
-The winning lesson defines an optimized teacher policy over the original rollout. The
-bidirectional mode is trained to match that policy while seeing only the raw completed
-experience. It is not trained to reproduce the lesson, explain it or write a better
-context. It only has to produce the same distributions over actions.
+For source response tokens $a_{1:T}$, the student minimizes the full-vocabulary forward KL
 
-This turns the slow search procedure into scaffolding:
+$$
+\mathcal L_S(\theta)
+=\frac1T\sum_{t=1}^{T}
+D_{\mathrm{KL}}\!\left(
+\operatorname{sg}[q_t]\;\middle\|\;
+p_\theta(\cdot\mid x,a_{<t})
+\right).
+$$
 
-> Slow path: search for a lesson whose induced update transfers.
->
-> Compression: train the bidirectional model to predict that lesson's policy.
->
-> Fast path: infer the useful policy directly from the completed rollout.
+The stop-gradient operator detaches the teacher targets. In the reference construction, $q_t$ comes from the PI-conditioned causal model. In the amortized construction, the learned hindsight model supplies it directly from the completed source.
 
-If this succeeds, candidate lessons, cloned updates and repeated validation runs can
-disappear from the ordinary loop. The model has meta-learned an update rule expressed as
-dense policy targets.
+Once that teacher is useful, the intended ordinary learning path is compact: **score the experience, detach the distributions, update the causal policy**. Generating new teaching text is not part of that path. The original rollout, full-vocabulary scoring and student backward pass still cost compute; “no extra sampling” does not mean “free learning.”
 
-This is where the word scalable matters. The expensive reasoning about how to learn is
-performed during outer training and amortized into a single future-looking pass.
+The teacher is allowed to see the historical token it scores, along with later tokens and feedback. That is deliberate. Its label is not the visible token; it is a selected policy distribution that may assign the token very low probability. Seeing a bad action does not make copying that action the objective. Whether the fitted teacher uses this information productively is an empirical question.
 
-## What disappears from the ordinary loop
+## Engineering the learning intervention
 
-The resulting mechanism is unusually self-contained.
+The implementation is built around the details that determine whether this experiment means what it appears to mean.
 
-There is no reward model. The outer meta-training process still needs an honest measure
-of held-out improvement, but the learned inner update does not need to query a reward
-model for every new experience.
+**The same actions must be scored.** Adding PI changes the prompt's length, but must not retokenize or replace the student's original response. Teacher and student logits are aligned to the same original token IDs, using the predecessor position for each next-token prediction. A change in that alignment can manufacture an apparent learning effect.
 
-There is no additional sampling. The model must have the original experience, but the
-teacher does not generate a correction and the environment does not need to execute a
-second trajectory. The completed rollout is scored in place.
+**Every intervention must start from the same learner.** The system resets student adapters and optimizer state between candidate updates. Targets are detached, evaluation is causal, and the PI is absent from the adapted student's validation and query prompts. Query results do not select lessons or update settings within a comparison.
 
-There is no separate teacher model. The actor and teacher may be the same parameters
-under different attention patterns. Frozen or lagged snapshots may be useful for
-stability, but a larger external model is not fundamental to the method.
+**Future access and shared weights are different choices.** The completed fitted-teacher comparison uses separate rank-16 teacher and student LoRA adapters on a common frozen Qwen3.5-4B base. The teacher's eight full-attention layers can look across the completed sequence; the twenty-four DeltaNet operators remain causal, although they can consume already future-informed representations. This is a future-aware hybrid, not a model in which every layer has become bidirectional. A common base is also not a demonstration of a shared-weight learning loop.
 
-There is no externally supplied privileged information. The teacher's only privileged
-view is the future of the model's own rollout.
+**A no-update decision must mean what it says.** The reference selector can choose a neutral causal distribution. An amortized teacher only approximates that distribution, however, and a small residual can still generate a nonzero parameter update. A reliable learning system needs to distinguish “approximately preserve the policy” from a literal no-op.
 
-These are properties of the amortized learning loop, not claims that discovering the
-loop is free. The outer procedure may be expensive. Its job is to make that expense
-temporary.
+The code also implements candidate filtering, exact-match task grading, matched controls, result identities, work counters and independent numerical checks. These interfaces make each intervention inspectable from original actions through target distributions and parameter changes to the resulting student's answers.
 
-## The important subtleties
+## Three different questions in the empirical study
 
-The hindsight teacher can see the token it is evaluating. This would be fatal if its
-target were simply the observed token. It is not. Its target is the optimized teacher's
-full policy distribution. When the rollout contains a bad action, a model that merely
-copies that visible action will disagree with the optimized teacher. Future visibility
-provides evidence; it does not define the answer.
+The development study uses four families of short array transformations: translation, denoising, size-based recoloring and gravity. Each learning episode has one completed source task and separate validation and query tasks from the same family. The student must solve new inputs, not repeat the source answer.
 
-The hindsight teacher also does not need to extract the hidden lesson in language.
-Matching the optimized teacher's policy is enough. Reconstructing the textual context
-would introduce an unnecessary intermediate task and additional generation. The
-distributions are the lesson in the form that the student can learn from directly.
+This is a controlled setting for studying the update mechanism. It is not yet a demonstration on long-horizon coding agents or unseen task families. The main fitted-teacher comparison contains eight independently adapted sources, with eight queries per source. These are development cases, repeatedly inspected during research; the sixty-four queries are not sixty-four independent learning experiments.
 
-The causal student cannot inherit everything the hindsight teacher knows. Some
-information is unique to the realized future and was unknowable when the original
-decision was made. Across many experiences, only the predictable component of the
-hindsight correction can move into the causal policy. The model can learn to verify a
-schema before editing it; it cannot know in advance the exact error message a future
-tool will return.
+### Useful context does not automatically become useful parameters
 
-This projection limit is not a technical footnote. It separates transferable learning
-from privileged hindsight. If the improvement exists only while the future is visible,
-the system has learned a retrospective critic, not a better causal agent.
+On an earlier balanced set, source-only distillation raised query accuracy from 23/64 to 36/64 with the lesson absent at evaluation. That is positive component evidence that this interface can transfer information into parameters.
 
-Finally, held-out data must be named honestly. A task set repeatedly used to choose
-lessons is part of meta-training, even if no gradient flows through it. A real test
-requires experience tasks, meta-validation tasks that reward teaching quality, and a
-final distribution left untouched until the learning rule is frozen.
+On the fresh sources used for the fitted-teacher study, the picture was different:
 
-## Meta-learning without second-order derivatives
+| Condition on the same tasks | Validation correct | Queries correct |
+|---|---:|---:|
+| Unchanged student | 24/64 | 27/64 |
+| Source-derived lesson in context | 40/64 | 42/64 |
+| Four source updates, lesson absent | 44/64 | 30/64 |
 
-The literal gradient of future performance through a model update would involve
-second-order differentiation. At language-model scale, and with discrete textual
-lessons, that is an unattractive foundation.
+The lesson still contained useful information: direct PI solved twelve query tasks the adapted student missed, with no task showing the reverse. But much less of that benefit survived this parameter-update recipe. A good contextual teacher and a good training intervention are not interchangeable.
 
-It is also unnecessary.
+### A hindsight teacher can learn the distribution assignment
 
-The privileged-information (PI) proposer is itself learnable. Its candidate contexts
-are actions, and the improvement they cause is the reward. It can therefore be optimized
-with bandit, policy-gradient or preference methods while treating the model update and
-evaluation as a black box.
+The future-aware teacher was fitted on eight earlier source experiences, using PI or neutral references selected by their actual validation-update results. On eight fresh experiences, mean forward KL to the selected reference fell from **0.2791 to 0.0583**, improving on every source. No extracted lesson was provided to the fitted teacher.
 
-The cheapest version can omit the inner gradient step entirely. Apply each candidate PI
-directly to held-out tasks and reward the proposer by the resulting performance lift.
-This measures cross-task prompt transfer rather than parameter transfer, but it provides
-a cheap surrogate for ranking and training the proposer. Occasional real distillation
-updates can determine how faithfully that surrogate predicts durable improvement.
+This shows generalization of the distribution-matching component. The corresponding downstream scores were 30/64 for students taught by the fitted teacher, 27/64 without an update, 28/64 with the unfitted future-aware teacher, and 30/64 with explicit PI targets. The source-cluster uncertainty intervals for the fitted teacher's gains include zero. Equal totals with explicit PI also conceal seven wins and seven losses between the two students; they do not establish equivalence.
 
-This avoids second-order derivatives by paying in experiments instead. Cheap proxies
-can narrow the search, but the authoritative criterion remains the same: after the
-lesson is distilled and removed, did the model improve elsewhere?
+[![Matched contextual utility, fresh-source teacher fidelity, and causal student outcomes.](/research/learning-from-hindsight/context-fidelity-transfer.svg)](/research/learning-from-hindsight/context-fidelity-transfer.svg)
 
-The system therefore learns at three timescales. The context writer discovers useful
-teaching interventions. The bidirectional teacher compresses their policy effects into
-hindsight. The causal model uses that compressed signal to improve from ordinary
-experience. Training them with frozen snapshots or alternating phases keeps the target
-from moving everywhere at once.
+The result is not “the teacher failed to fit.” It learned a substantial part of the policy assignment. The unresolved question is whether the learned targets reliably cause useful learning on new tasks.
 
-## What this is really trying to learn
+### Low imitation loss can miss the decisions that matter
 
-The proposal is sometimes easy to mistake for a cleverer form of credit assignment. It
-is more ambitious than that.
+To examine that gap, I reconstructed all eight explicit-PI student updates and audited the full distributions before and after training. This analysis reused saved experience and generated no new answers.
 
-A scalar reward says whether an experience was good. A hindsight critic can say which
-parts appear responsible. This system tries to learn which change in policy would make
-the model improve on future tasks. Its target is not merely an evaluation of the past
-but an intervention on the learner.
+Average source KL fell from 0.2466 to 0.0233. That initially looks like strong imitation. But **98.54% of the initial KL, summed across the source positions, was in the verbal rule sentence**. At all 150 array-value positions, teacher and initial student had the same most likely next token; so did the updated student. At the first wrong array entry in all four incorrect source responses, the PI teacher still preferred a wrong value.
 
-In that sense, the bidirectional teacher is an amortized local learning algorithm. It
-looks at completed experience and predicts the policy update that an expensive
-meta-optimization process would have selected.
+That does not mean the distributions were identical, or that a non-argmax shift cannot matter. It identifies where the measured discrepancy was located. In one translation example, the teacher increased the correct value's probability from 0.46% to 8.50%, while the updated student reached only 0.86%, despite a 92.4% reduction in average source KL. In the recoloring examples, the local fitting pattern went the other way and overshot the target. Aggregate loss concealed uneven fitting at task-relevant positions.
 
-The strongest eventual implication is learning from trajectories that were never given
-an explicit reward. Tool responses, contradictions, corrections and downstream
-consequences may contain enough structure for the learned teacher to infer useful
-updates. That possibility depends entirely on successful outer meta-training; it should
-be treated as a hypothesis, not assumed as a property of bidirectional attention.
+[![Most source imitation error is in rule text; localized corrective probabilities are weak or unevenly fitted.](/research/learning-from-hindsight/source-fidelity-localization.svg)](/research/learning-from-hindsight/source-fidelity-localization.svg)
 
-## Relationship to nearby work
+There is also a distinction between stating a rule and executing it. In at least nine of the twelve direct-context wins, the adapted response stated an appropriate transformation but violated it in the output array. One denoising answer said to keep the longest nonzero run, then copied the noisy input unchanged. The original source for that student was correct, so incorrect source trajectories cannot explain the entire gap.
 
-[On-Policy Self-Distillation](https://arxiv.org/abs/2601.18734) provides the basic
-self-teacher structure: one model acts as student and teacher under different contexts,
-and the teacher supplies dense supervision on the student's own rollout. The proposed
-change is to remove the need for externally supplied privileged information from the
-ordinary loop by learning to infer its policy effect from hindsight.
+These diagnostics narrow the next research question without pretending to settle its cause. The targets on historical prefixes may be weak at the actions we want to change; finite updates may fit consequential positions unevenly; and source-prefix imitation may not transfer to a fresh execution. Better average fitting alone is not a sufficient success criterion.
 
-[PAST](https://arxiv.org/abs/2608.08726) studies teachers conditioned on completed
-student trajectories. [Latent On-Policy Self-Distillation](https://arxiv.org/abs/2608.13040)
-makes privileged context learnable. [Meta Pseudo Labels](https://arxiv.org/abs/2003.10580)
-offers an important precedent for rewarding a teacher according to the student's later
-validation performance.
+## Optimizing the proposer with actual learning reward
 
-The proposed composition is narrower and specific: select teaching interventions by
-the improvement their updates cause on related tasks, use them to supervise a
-bidirectional policy over raw rollouts, then distill that policy into the same model
-under causal attention.
+The outer objective is not only a diagram. A subsequent run trained the lesson proposer using the measured reward of real student updates. For each source, it sampled four candidate lessons, applied matched sixteen-step updates, and evaluated the resulting students on validation tasks. Leave-one-out REINFORCE updated the proposer when candidate rewards differed; tied groups correctly produced no optimizer update.
 
-## What would prove or kill the idea
+The completed training audit verifies 32 source groups, 128 proposals and 14 actual proposer updates. This exercises the black-box route from a proposed lesson through a student update back to a proposer gradient. It is not evidence that the trained proposer teaches better on fresh sources: a complete held-out utility comparison was not recovered. The report preserves that distinction, the numerical likelihood limitation and the incomplete experiments rather than filling in the missing result.
 
-Three questions decide the thesis.
+The key lesson for the research design is to keep the reward attached to the behavior we ultimately want. A proposer that writes convincing advice, a teacher that predicts its policy accurately, and a student that follows the advice while reading it can all look successful before durable learning has been established.
 
-First, can rollout-derived lessons produce reliably different amounts of transferable
-improvement? If not, there is no useful oracle to compress.
+## How this connects to existing work
 
-Second, can a bidirectional model infer the optimized teacher's policy on unseen
-rollouts? If not, the expensive teaching search cannot be amortized.
+[On-policy self-distillation](https://arxiv.org/html/2601.18734v1) supplies the aligned teacher–student distribution interface. [PAST](https://arxiv.org/html/2608.08726v1) already uses completed trajectories to build a privileged teacher, and [LOPD](https://arxiv.org/html/2608.13040v1) makes privileged context learnable. [Meta Pseudo Labels](https://arxiv.org/html/2003.10580v4) is a direct precedent for valuing a teacher through the performance of the student it trains. [Bidirectional-to-causal distillation](https://aclanthology.org/2020.acl-main.705/) also predates this project, and [recent self-distillation diagnostics](https://arxiv.org/html/2607.05184v1) reinforce the need to evaluate the student rather than infer success from teacher strength.
 
-Third, does distilling that inferred policy improve the causal model on untouched tasks?
-If not, hindsight contains judgments that cannot be projected into better action.
+The design investigated here combines source-derived teaching candidates, post-update cross-task selection and amortized policy assignment from raw experience. Its value must be established as a whole, not claimed from the novelty of one ingredient or the success of one intermediate loss.
 
-The experiment should be organized around these gates rather than a large end-to-end
-demonstration. Each failure has a different meaning, and combining them too early would
-hide the important result.
+## The research direction
 
-Other risks remain. The lesson search can overfit its evaluator. The teacher can erase
-useful uncertainty and discourage exploration or self-correction. Shared weights can
-collapse toward agreement without improvement. Long bidirectional passes can move
-rather than eliminate computation. None of these is resolved by the elegance of the
-architecture.
+The ambition is a learning system that can make better use of its own completed experience: not simply store a reflection, but learn what to reinforce, what to correct and when not to update. Expensive outer training would teach a compact inner operation to assign useful policy targets directly.
 
-## The claim
+The implementation makes that research question executable, and the study makes its bottlenecks measurable. It demonstrates source-derived contextual utility, a case of parameter transfer, and generalizing hindsight-distribution fitting. It does not yet establish reliable downstream improvement from the full learned procedure. The strongest next experiment should make the teaching signal useful first, then ask whether the learned hindsight teacher preserves that value—not optimize an increasingly elaborate system around an unhelpful target.
 
-Experience contains information the model did not possess when it acted. The difficult
-part is not exposing that information afterward. It is learning which changes should
-follow from it.
-
-The slow procedure searches for changes that produce improvement beyond the original
-task. The bidirectional teacher learns to predict those changes directly from completed
-experience. The causal model then absorbs the part of that judgment that can help before
-the future is known.
-
-If it works, the machinery used to discover good lessons becomes temporary training
-scaffolding. What remains is one model learning from one experience through two views of
-time.
+The [technical report](/research/learning-from-hindsight/learning-from-hindsight.pdf) develops the method, controls, paired results, diagnostics and earlier evidence. The [repository](https://github.com/RaychevAngel/learning-from-hindsight) provides the implementation, a CPU quickstart, deterministic task generation, distributable result records and offline analysis. Rebuilding the historical evidence is separate from running a new GPU experiment.

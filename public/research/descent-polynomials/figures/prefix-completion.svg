@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 410" role="img" aria-labelledby="title desc">
+  <title id="title">Five words with a descent only at position 2</title>
+  <desc id="desc">The complete arrangements of two copies each of 1, 2 and 3 with descent set {2}. The first two entries form a shaded prefix. The remaining entries are in weakly increasing order.</desc>
+  <rect width="620" height="410" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, sans-serif" fill="#18202c">
+    <text x="310" y="34" font-size="21" font-weight="650" text-anchor="middle">One chosen prefix. One forced suffix.</text>
+    <text x="160" y="72" font-size="17" font-weight="600" text-anchor="middle" fill="#284bba">First two entries</text>
+    <text x="415" y="72" font-size="17" font-weight="600" text-anchor="middle" fill="#555f6d">Remaining copies, sorted</text>
+    <g fill="#edf1ff" stroke="#cad3f0" stroke-width="1.2">
+      <rect x="97" y="93" width="126" height="42" rx="6"/>
+      <rect x="97" y="148" width="126" height="42" rx="6"/>
+      <rect x="97" y="203" width="126" height="42" rx="6"/>
+      <rect x="97" y="258" width="126" height="42" rx="6"/>
+      <rect x="97" y="313" width="126" height="42" rx="6"/>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="26" text-anchor="middle">
+      <text x="130" y="123">1</text><text x="190" y="123">2</text><text x="310" y="123">1</text><text x="370" y="123">2</text><text x="430" y="123">3</text><text x="490" y="123">3</text>
+      <text x="130" y="178">1</text><text x="190" y="178">3</text><text x="310" y="178">1</text><text x="370" y="178">2</text><text x="430" y="178">2</text><text x="490" y="178">3</text>
+      <text x="130" y="233">2</text><text x="190" y="233">2</text><text x="310" y="233">1</text><text x="370" y="233">1</text><text x="430" y="233">3</text><text x="490" y="233">3</text>
+      <text x="130" y="288">2</text><text x="190" y="288">3</text><text x="310" y="288">1</text><text x="370" y="288">1</text><text x="430" y="288">2</text><text x="490" y="288">3</text>
+      <text x="130" y="343">3</text><text x="190" y="343">3</text><text x="310" y="343">1</text><text x="370" y="343">1</text><text x="430" y="343">2</text><text x="490" y="343">2</text>
+    </g>
+    <g fill="#284bba" font-size="23" text-anchor="middle">
+      <text x="255" y="123">&gt;</text><text x="255" y="178">&gt;</text><text x="255" y="233">&gt;</text><text x="255" y="288">&gt;</text><text x="255" y="343">&gt;</text>
+    </g>
+    <text x="310" y="390" font-size="17" text-anchor="middle" fill="#555f6d">The strict drop at the boundary is the only descent.</text>
+  </g>
+</svg>

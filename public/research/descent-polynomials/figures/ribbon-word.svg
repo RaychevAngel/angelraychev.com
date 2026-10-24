@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 350" role="img" aria-labelledby="title desc">
+  <title id="title">A descent word becomes a ribbon tableau</title>
+  <desc id="desc">Read the word 1,2,1,2,3,3. Place 1,2 in a lower row and 1,2,3,3 in the row above, overlapping at the second column. The overlapping values 2 and 1 encode the descent at position 2.</desc>
+  <rect width="620" height="350" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, sans-serif" fill="#18202c">
+    <text x="310" y="34" font-size="21" font-weight="650" text-anchor="middle">The same descent, in a geometric representation</text>
+    <text x="66" y="92" font-size="18" font-weight="600">Word</text>
+    <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="26" text-anchor="middle">
+      <text x="200" y="94">1</text><text x="245" y="94" fill="#284bba">2</text><text x="290" y="94" fill="#284bba">1</text><text x="335" y="94">2</text><text x="380" y="94">3</text><text x="425" y="94">3</text>
+    </g>
+    <path d="M244 106C244 121 290 121 290 106" fill="none" stroke="#284bba" stroke-width="2"/>
+    <text x="268" y="143" font-size="16" text-anchor="middle" fill="#284bba">strict drop</text>
+    <text x="66" y="254" font-size="18" font-weight="600">Ribbon</text>
+    <g stroke="#687586" stroke-width="1.5">
+      <path d="M245 189H425V234H245Z" fill="#f4f5f7"/>
+      <path d="M200 234H290V279H200Z" fill="#f4f5f7"/>
+      <path d="M245 189H290V234H245Z" fill="#edf1ff"/>
+      <path d="M245 234H290V279H245Z" fill="#edf1ff"/>
+      <path d="M335 189V234M380 189V234" fill="none"/>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="26" text-anchor="middle">
+      <text x="267.5" y="221" fill="#284bba">1</text><text x="312.5" y="221">2</text><text x="357.5" y="221">3</text><text x="402.5" y="221">3</text>
+      <text x="222.5" y="266">1</text><text x="267.5" y="266" fill="#284bba">2</text>
+    </g>
+    <path d="M303 258H363" stroke="#687586" stroke-width="1.5" fill="none"/>
+    <text x="375" y="264" font-size="16" fill="#555f6d">read this row first</text>
+    <text x="310" y="324" font-size="17" text-anchor="middle" fill="#555f6d">Weak increases along rows. A strict drop in the shared column.</text>
+  </g>
+</svg>
