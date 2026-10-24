@@ -6,7 +6,7 @@ updated: 2026-10-24
 
 An agent finishes a task knowing more than it knew while acting. It has seen the failed test, the consequence of a mistaken assumption, the correction that finally worked, or the outcome of its chosen strategy. A useful learning system should turn that experience into better behavior on the next task—not merely produce a persuasive explanation of the last one.
 
-This project asks whether we can **learn the teaching procedure itself**. The objective is not to make a model better at writing reflections. It is to make a teacher better at causing learning, then compress that teacher into a direct mapping from completed experience to policy targets.
+This project asks whether we can **learn the teaching procedure itself**. The objective is not to make a model better at writing reflections. It is to make a teacher better at causing learning, then compress that teaching procedure into a direct mapping from completed experience to policy targets.
 
 I designed and implemented two connected learning systems around that question. The outer system proposes source-derived lessons and measures the improvement their updates cause in matched students; its measured reward can train the proposer. The inner system learns to assign the selected full-vocabulary distributions directly from raw completed experience, then distills them into a causal student. The component study separates three achievements that can otherwise look deceptively similar: useful information in context, accurate imitation of a teaching distribution, and improvement retained in the student's parameters.
 
@@ -57,9 +57,11 @@ $$
 
 The stop-gradient operator detaches the teacher targets. In the reference construction, $q_t$ comes from the PI-conditioned causal model. In the amortized construction, the learned hindsight model supplies it directly from the completed source.
 
-Once that teacher is useful, the intended ordinary learning path is compact: **score the experience, detach the distributions, update the causal policy**. Generating new teaching text is not part of that path. The original rollout, full-vocabulary scoring and student backward pass still cost compute; “no extra sampling” does not mean “free learning.”
+Once that teacher is useful, the scale argument is amortization: candidate search, cloned updates and repeated validation belong to outer training; ordinary learning becomes **scoring the experience, detaching the distributions and updating the causal policy**. Generating new teaching text is not part of that path. The original rollout, full-vocabulary scoring and student backward pass still cost compute; “no extra sampling” does not mean “free learning.”
 
 The teacher is allowed to see the historical token it scores, along with later tokens and feedback. That is deliberate. Its label is not the visible token; it is a selected policy distribution that may assign the token very low probability. Seeing a bad action does not make copying that action the objective. Whether the fitted teacher uses this information productively is an empirical question.
+
+Future visibility also does not make every retrospective correction transferable. The causal student can learn to check a schema before editing it, but cannot know in advance an unpredictable error message from a later tool call. It must improve under the information available when acting, not merely judge better after the outcome is known.
 
 ## Engineering the learning intervention
 
@@ -97,7 +99,7 @@ The lesson still contained useful information: direct PI solved twelve query tas
 
 ### A hindsight teacher can learn the distribution assignment
 
-The future-aware teacher was fitted on eight earlier source experiences, using PI or neutral references selected by their actual validation-update results. On eight fresh experiences, mean forward KL to the selected reference fell from **0.2791 to 0.0583**, improving on every source. No extracted lesson was provided to the fitted teacher.
+The future-aware teacher was fitted on eight earlier source experiences, using PI or neutral references selected by their actual validation-update results. These targets used fixed externally proposed lessons; the learned proposer discussed below was a separate, later component study. On eight fresh experiences, mean forward KL to the selected reference fell from **0.2791 to 0.0583**, improving on every source. No extracted lesson was provided to the fitted teacher.
 
 This shows generalization of the distribution-matching component. The corresponding downstream scores were 30/64 for students taught by the fitted teacher, 27/64 without an update, 28/64 with the unfitted future-aware teacher, and 30/64 with explicit PI targets. The source-cluster uncertainty intervals for the fitted teacher's gains include zero. Equal totals with explicit PI also conceal seven wins and seven losses between the two students; they do not establish equivalence.
 
