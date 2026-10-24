@@ -1,67 +1,172 @@
 # Lean verification: guaranteed indirect delivery
 
-Pinned toolchain: **Lean 4.33.1**. Dependencies: **Std only**, supplied with Lean. No Mathlib, external game library, or assumed graph-game equivalence is required.
+Pinned toolchain: **Lean 4.33.1**, with **Std only**. The exact replayed source
+snapshot is identified by `verification.json`. The full extremal classification
+is **not yet a Lean theorem**. The results below are unconditional Lean theorems
+unless a supplied hypothesis is explicitly stated. Module counts are not a
+measure of how much of the classification has been proved.
 
-## What is proved
+## Exact maxima with explicit attaining constructions
 
-| Module | Verified statement |
-|---|---|
-| `DeliveryGame.lean` | Exact visible alternating game, including both players' waits, messenger-first action, terminal receipt before collision, finite strategy trees, and their interpretation as actual play against every legal history-dependent pursuer. A finite-rank certificate implies actual finite delivery. |
-| `SafeBranching.lean` | Two distinct already-winning successors imply a winning source when distinct closed outgoing neighborhoods overlap in at most one vertex. Safe intermediate arrival and the intervening pursuer turn are explicitly handled. Finite bootstrap certificates imply actual delivery. |
-| `CampingObstruction.lean` | A pursuer whose closed outgoing neighborhood covers the recipient's predecessor set prevents every indirect delivery by camping. Consequences include no indirect guarantees in undirected graphs or through a unique predecessor. |
-| `TwelveVertexCertificate.lean` | An explicit graph on 12 vertices with 24 arcs admits guaranteed delivery for every source/recipient and every allowed initial pursuer position. Every move and strict rank decrease is checked against all legal pursuer replies. The graph has exactly **108 guaranteed indirect pairs**. |
-| `DenseCounting.lean` | The staircase arithmetic from explicit cardinality inequalities, the attaining count identity, and complementary-block two-move delivery in the actual game against every legal history-dependent pursuer. The graph-to-counting bridge and existence of blocks remain separate ordinary proofs. |
-| `ProtectedRouting.lean` | Safe two-arrow witnesses through a protected vertex set imply universal two-move delivery, preserved under arbitrary changes to arrows wholly outside that set. The actual-play theorem covers every legal history-dependent pursuer. Witness existence, protected-set size, probabilities, and exact arc budgets are explicit boundaries, not formalized conclusions. |
-| `RobustTwoMove.lean` | A base/envelope safe-intermediary certificate implies actual two-move delivery for every intermediate graph. The messenger uses only base arrows; the pursuer is granted the full envelope. Direct pairs are handled separately. |
-| `RobustLayers.lean` | Strictly decreasing universal-source ranks prove actual finite delivery for every intermediate base/envelope graph. A safe entry into a routing region adds one move, including the intervening pursuer response. This supplies the semantic foundation for the new circle and guide-layer arguments; their concrete modular and code hypotheses remain ordinary proofs. |
-| `StagedEnvelopes.lean` | Position-dependent ranks prove actual delivery between a base and an envelope. External staged finite certificates are not automatically instantiated. |
-| `GuideAttachment.lean` | Four pursuer cases prove safe entry through antichain guide codes, then compose with a supplied interface strategy. Concrete hub lists, code instances and arrow counts remain premises to establish separately. |
-| `ElevenVertexDense.lean` | The explicit dense eleven-vertex graph has 88 arrows and exactly 22 guaranteed indirect pairs; all safe intermediaries and both counts are checked by kernel reduction, with actual delivery against every legal pursuer. |
-| `SmallDenseEnvelopes.lean` | Six explicit dense envelopes at orders 16 through 21: every intermediate graph has actual two-move delivery, and the endpoint arrow counts are checked by the kernel. |
-| `FiniteGame.lean` | Partial winning-region rank certificates imply actual delivery. Closed losing regions exclude every finite winning tree. `Guaranteed` quantifies every allowed initial cop position. |
-| `SemanticCompleteness.lean` | On finite graphs, eventual delivery under arbitrary legal history-dependent policies is equivalent to finite winning trees. One fixed messenger policy works for every permitted initial cop and every legal cop policy. Closed losing regions yield an actual legal pursuer preventing receipt at every horizon. |
-| `Extremal.lean` | General guaranteed-missing-pair score, exact-maximum specification including an attainer, score bounded by missing-pair count, zero/full-delivery counting interfaces, and uniqueness of the maximum. |
-| `ExactScoreCertificates.lean` | A generic winning/losing classification gives the exact score of a graph. The literal four-vertex, six-arrow graph has exactly two guaranteed missing pairs among six missing pairs. This proves its graph score, not the extremal maximum at that budget. |
-| `ExclusionCertificates.lean` | A finite-cover upper-exclusion theorem requires both complete graph coverage and checked leaf bounds. The concrete pilot covers all 64 loopless three-vertex graphs and proves score zero. |
-| `VertexBound.lean` | The unrestricted bound `score G ≤ n*(n-3)` for every loopless graph, derived from source camping, two distinct outgoing neighbors for every live source, and row counting. |
-| `DenseZero.lean` | One guaranteed missing pair forces a missing nonloop arrow in every row. The resulting actual-graph counting bound proves `score G = 0` whenever `arcCount G > n*(n-2)` for a loopless graph. |
-| `ExtremalExamples.lean` | Exact maximum specification `IsMaximum 12 24 108`, using the general upper bound and existing checked attainer; also connects the eleven-vertex dense graph to the general score, giving 22. |
-| `Audit.lean` | Reports all logical axioms used by the principal theorems. |
+- **Complete dense region, every order n≥20.**
+  `DenseClassification.maximum` proves the exact maximum for every
+  `n(n−3)≤m≤n(n−1)`. At `m=n(n−3)` it is `2n`; writing
+  `r=m−n(n−3)`, it is `2n−r−ceil(r/2)−1` for `1≤r≤n`; beyond
+  `n(n−2)` it is zero. `DenseClassification.attainer` gives a concrete
+  adjacency recipe and proves looplessness, the exact arrow budget and score.
+  The first staircase step, modular even and odd cores, functional root
+  attachments, and complementary-block counts are all instantiated.
+- **Adjacent main-interval band, every order n≥16.**
+  `DenseEnvelopeClassification.maximum` proves
+  `M(n,m)=n(n−1)−m` for `n(n−1)−3n≤m≤n(n−1)−2n`.
+  Explicit even and odd formulas, six finite envelopes at 16..21 and four
+  odd repairs at 23, 25, 27, 31 supply the whole domain. Every optional subset
+  works and delivers within two moves. `PrefixEnvelope` proves that taking
+  the first required optional ordered pairs has exactly the requested budget.
+  Together these two results classify every budget `m≥n(n−4)` when `n≥20`.
+- **Functional endpoint at every order n≥2.**
+  `FunctionalEndpoint.maximum_endpoint` proves
+  `M(n,n(n−2))=floor((n−2)/2)` with a literal paired-root construction.
+  Its proof characterizes exactly which missing pairs succeed in the
+  complement of a fixed-point-free function.
+- **Zero band at all orders.** `DenseZero.maximum_zero` proves
+  `M(n,m)=0` whenever `n(n−2)<m≤n(n−1)`. The attainer is the first `m`
+  nonloop ordered pairs in lexicographic order, with its cardinality proved.
+- **Twenty-four-arrow maximum at every host order n≥12.**
+  `SparseAttainment.maximum_twentyfour` proves `M(n,24)=108`, combining
+  the checked twelve-vertex witness, the unrestricted sparse upper bound
+  and explicit isolate padding. The original `IsMaximum 12 24 108`
+  theorem is retained.
+- **Five-offset circles.** `CircleParameters.maximum` proves
+  `M(n,m)=n(n−1)−m` for every `n≥16` divisible by four and every
+  `5n≤m≤n(n/2−1)`. Its parameter is prescribed from `n`; modular escape,
+  coprime orbit coverage, actual delivery, counts and optional prefixes
+  are proved. The guarded construction has a separate exact domain and
+  closed arithmetic endpoint in `CircleGuardedConstruction`; its parameter
+  conditions remain visible. These results do not establish the entire
+  main interval from order twelve.
 
-There are 21 Lean source modules, including the axiom-reporting `Audit.lean`. The finite certificates are checked by **kernel reduction** (`decide +kernel`), not native execution or an external solver assertion. The small graphs and all certificate data are explicit in the Lean source. The general vertex bound, complete dense zero band and exact `(12,24)` extremal cell are connected through the same formal score definition, whose equivalence to actual guaranteed eventual delivery is proved.
 
-The generated numbers do not establish their own correctness: `certificate_valid` checks the actual legal arcs, waits, nonterminal capture exclusions, and strict rank decrease for every state and every possible pursuer reply. `rankCertificate_actual_delivery` then proves the semantic interpretation, including termination. The pursuer sees the messenger's move and may depend on the whole observed history. The messenger's selected policy observes the current positions and remaining move budget, never a future pursuer response.
+- **Protected circles at every order n≥25.** `ProtectedParameters.maximum`
+  proves the missing-pair maximum for `3n≤m≤n(ceil(n/7)−1)`. An arithmetic
+  scan chooses a proved valid parameter; an increasing-residue greedy
+  procedure tests six protected differences per existing offset. Lean proves
+  the resulting size bound, actual delivery and exact optional-prefix budget.
+  This is a specified construction procedure, not a generic graph/game search.
 
-The protected-routing hypothesis supplies, for every distinct source `s` and recipient `t` and every initial pursuer `c≠s`, an intermediary `u` in the protected set with arrows `s→u` and `u→t`, with `u≠c` and no arrow `c→u`. Both incoming and outgoing arrows touching the protected set must agree between the original and modified graphs. `protected_witness_winning` proves that the same witness remains safe; `protected_routing_universal` derives the two-move winning relation; and `protected_routing_actual_delivery` interprets it using the existing concrete game. This includes pursuer waiting, a pursuer initially at the recipient, and receipt before collision. The single-witness theorem is axiom-free.
+## Upper bounds and finite certificates
 
-## Current boundary
+`VertexBound.vertex_upper` proves `I(G)≤n(n−3)` for loopless graphs with
+`n≥3`, and zero below three. `DenseStaircase` derives its loss bound from
+arbitrary actual graphs: the formerly supplied graph-to-counting premise is
+now proved. `DenseCounting` retains the earlier conditional arithmetic lemma.
 
-The infinite circulant and parabola families, modular arithmetic, all-order parameter choices, sparse arc-budget bounds, the dense staircase graph-to-counting bridge, probabilistic existence arguments, and the complete original-construction count remain ordinary proofs or explicitly labeled computational evidence in the manuscript. Protected-routing witness existence, probability estimates, exact-budget conditioning, and the deterministic construction algorithm also remain ordinary proofs. The numerical staircase implication is formalized, with its cardinality hypotheses exposed. The bootstrap, gluing, guide-attachment and protected-routing theorems assume their displayed structural premises; the current Lean sources do not silently assert those premises or existence of the required blocks or routing sets.
+`SparseParity.even_upper` and `odd_upper` prove, for every loopless finite
+graph and every `k≥5`,
 
-`Guaranteed E s t` is defined using finite `Winning` trees. `SemanticCompleteness.guaranteed_iff_actual` proves that, on finite graphs, it is equivalent to the existence of one fixed legal history-dependent messenger policy that eventually delivers against every permitted initial cop and every legal history-dependent cop policy. No horizon is assumed in the actual-play definition; finite reply sets supply the common bound in the proof. Thus the score and upper/exact-cell theorems have a proved actual-game interpretation. This semantic completeness is separate from completeness of graph enumeration: the three-vertex pilot covers its entire small graph space, while the larger external degree-profile enumerations, symmetry reductions, pruning and finite tables remain unformalized. The mixed four-vertex certificate establishes one graph's exact score and does not establish an unrestricted upper bound. No full-classification theorem is claimed.
+- `I(G)≤k(k−3)` when it has `2k` arrows;
+- `I(G)≤k(k−3)+2` when it has `2k+1` arrows.
 
-The central strategy theorems use only Lean's standard `propext`, `Classical.choice`, and `Quot.sound` where reported by `Audit.lean`. There are no `sorry`, `admit`, custom axioms, or `native_decide` proofs. Classical choice extracts a messenger policy from the proved finite strategy-tree relation.
+The support counting, source/sink deletion, preservation of retained
+strategies, row/column capacities and induction are all proved. Isolated
+vertices need no reindexing. The small induction envelope is explicitly an
+auxiliary upper bound, not the sharp small-budget table.
 
-## Portable replay
+`FiniteExclusion.UnrestrictedNine.upper` proves `I(G)≤53` for **every**
+loopless nine-vertex graph. Degree rigidity, finite Hall factorization,
+canonical permutation cycles, all eight complete branching trees and their
+pruning/losing rules are formalized. This strictness result does **not**
+prove the sharper two-regular bound 30, the separate value `M_E(18)=33`, or
+all nine-vertex maxima. Further finite-checker modules prove soundness of
+optimistic partial-game pruning, bitset closure and cached loss unions;
+those interfaces alone do not establish a concrete exclusion.
 
-Install the version named in `lean-toolchain` and put its `lean` executable on PATH. From this directory run:
+
+`FiniteExclusion.HamiltonianSharp.maximum` proves exact maximum 30 for the
+nine-vertex family consisting, up to isomorphism, of a directed Hamiltonian
+cycle and a disjoint loopless permutation. All members have eighteen arrows.
+The complete normalized upper tree and an explicit isomorphism to the score 30
+witness establish both directions. The other seven first-factor cycle types
+are not included in this sharper theorem; the full two-regular bound remains
+an outstanding finite obligation.
+
+`SignedRankCertificate` and `ExactScoreCertificates` check both winning and
+losing pairs. `SparseWitness9`, `SparseWitness10`, and `SparseWitness11`
+prove exact graph scores 30, 50, 79 at `(n,m)=(9,18),(10,20),(11,22)`.
+These are lower witnesses, not new unrestricted upper bounds. The retained
+four-vertex/six-arrow example has exact score two. The eleven-vertex dense
+example has 88 arrows and score 22. A separate complete three-vertex pilot
+covers all 64 loopless graphs and proves score zero.
+
+## Actual game and construction semantics
+
+Both players may wait. The messenger moves first and receipt precedes
+collision. `SemanticCompleteness.guaranteed_iff_actual` proves that finite
+winning trees are equivalent, on finite graphs, to one fixed legal messenger
+policy that eventually delivers against every permitted initial cop and every
+legal history-dependent cop policy. The actual-play definition assumes no
+horizon; the proof derives a finite bound. Thus the formal score has the
+intended actual-game meaning.
+
+The strategy modules also prove safe branching, camping obstructions,
+protected routing, arbitrary-subset envelopes, source and position ranks,
+and guide attachment under their displayed premises. `GraphPadding` proves
+exact preservation when adding isolates or sinks with at most one predecessor,
+including cops starting at or entering a new sink. `ComplementarySum` proves
+the displayed two-move block composition and exact missing-pair counts;
+it does not claim arbitrary strategy preservation under adding cross arrows.
+
+`LocalArena` treats distinct messenger/cop state spaces and projections of
+all actual cop replies. Safe-transfer goals require survival after the cop's
+reply; terminal delivery alone waives collision at the recipient. Its local
+projection and sequential-composition theorems retain the concrete arena,
+projection and certificate premises until those are separately instantiated.
+
+## Remaining classification obligations
+
+The sparse infinite attaining families and their full finite bridges, the
+remaining main-interval construction chain and its parameter overlap, the
+complete staged finite lists, sharp small-order upper exclusions and tables,
+and final all-pairs assembly remain unfinished. The sharp dense threshold
+from order eleven is not implied by the verified uniform threshold twenty.
+Probabilistic existence, some alternative constructions and stronger
+supplementary guarantees also retain their ordinary proof boundaries.
+
+No theorem currently states the complete formula for every admissible `(n,m)`.
+Checking a graph's ranks does not prove exhaustive coverage of competing graphs.
+A checked conditional strategy lemma does not discharge its geometric or
+parameter hypotheses. See `research/LEAN_ROADMAP.md` in the research archive
+for the dependency-ordered continuation.
+
+## Portable replay and trust boundary
+
+Install the version in `lean-toolchain`, then run from this directory:
 
 ```sh
 python3 check.py
 ```
 
-Alternatively supply its location:
+Or use `python3 check.py --lean /path/to/lean`. The checker discovers and
+rebuilds **every distributed Lean module** in dependency order, one module at a time,
+with two Lean worker threads. It checks reported axioms, rejects proof holes and
+native proofs, verifies that sources did not change during the run, and writes
+`verification.json` with compiler/source hashes, outputs and elapsed times.
+Compiled object files are excluded from the archive and regenerated locally.
 
-```sh
-python3 check.py --lean /path/to/lean
-```
-
-The checker rebuilds each module sequentially, rejects unexpected `sorry` dependencies, runs the axiom audit, and writes `verification.json` with exact source hashes, tool version, elapsed times, and compiler outputs. Compiled object files are excluded from source distribution and are regenerated locally.
-
-`generate_finite_certificate.py` can regenerate the explicit small certificate from the saved research graph and solver. It is not needed for replay, because all data are already in the Lean source. It is outside the proof trust boundary: an incorrect generated certificate fails the kernel-checked theorem.
+Finite certificates use ordinary kernel reduction (`decide +kernel`). No
+external solver assertion, custom axiom, `sorry`, `admit`, or `native_decide`
+is accepted. The reported dependencies are confined to Lean's standard
+`propext`, `Classical.choice`, and `Quot.sound`. Producers are untrusted and
+unnecessary for replay: literal certificate data are already in the sources.
+An incorrect move, missing branch, failed rank decrease or invalid losing
+region makes the kernel check fail.
 
 ## Provenance
 
-The underlying problem and original layered construction come from Alexandra Ignatova's manuscript, with Angel Raychev as mentor. These formal sources are September 2026 extensions developed with Astra 6 through the Codex harness. Publication authorship is recorded in the manuscript.
-
-`DenseZero.maximum_zero` proves `IsMaximum n m 0` whenever `n*(n-2) < m ≤ n*(n-1)`. Its explicit attainer takes the first `m` nonloop ordered pairs in lexicographic order; looplessness and its exact arrow count are proved, with no graph-existence premise.
+The problem and original layered construction come from Alexandra Ignatova's
+manuscript, with Angel Raychev as mentor. The approved publication authorship
+and contribution statement remain in the paper. The formal development began
+in September 2026 and was extended in October 2026 with AI assistance through
+Codex. New local proofs become part of a public release only after its
+source-pinned replay and artifact checks; the release receipt identifies that
+boundary.

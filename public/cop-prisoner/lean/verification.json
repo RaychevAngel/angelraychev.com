@@ -1,161 +1,1585 @@
 {
-  "verified_at": "2026-09-18T10:46:55.569761+00:00",
+  "verified_at": "2026-10-24T02:00:30.581122+00:00",
   "toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "external_imports": [
+    "Init.Data.Nat.Bitwise.Lemmas",
+    "Std"
+  ],
   "source_sha256": {
-    "Audit.lean": "00182ee78512cd67195146cf1298260e39eec4083223424e9770cf5a6e58a776",
+    "Audit.lean": "eff30c59f95bd972dc8b02edee2ce7f691e5960cecf22de67bcc0ee056acddc5",
     "CampingObstruction.lean": "230998b06688b2ba4e742fee61c37b36243b346b2b573d3057def78f7910781c",
+    "CircleConstruction.lean": "eb644765c09cb1171204f6aae0ac404c2bd8db767b7e42838c2ccc4654da28d8",
+    "CircleCounting.lean": "400e330fc484147d73dd64828aa0e482569ea69cd088526bcc6f7bcb93321124",
+    "CircleEnvelope.lean": "cf0a6de82d29150aec1bab39d8ca03c8930be5ba49ff01964ef361726d89d2f9",
+    "CircleGuarded.lean": "bfd765661e12dc06392167be039d738331cef8c568dde3b18847da4842514937",
+    "CircleGuardedConstruction.lean": "1f60c4d838bf83c4ab8b42e855683908da42043da903c89455db66667216fae1",
+    "CircleParameters.lean": "c64580d8ed89c7321a7ad554b1600fdcf4d8ff6c12d9aee474e7ee1813a51773",
+    "CirclePrefixCounting.lean": "165b7846cda5da61955bbc5a64c3e9dba86975ef38c0e31e38c413e2d4b9065c",
+    "CirclePropagation.lean": "f496fa86b02fe3d156e21f4f51d193ff538cbba8ce879c4a230af022108b689f",
+    "ComplementarySum.lean": "f40afd191959495dd0bd686c1cad32c2cea07422552f645e36dcf7fe69aee4a0",
+    "ConstructionCounts.lean": "1bf9d3b97224853e7fb5d12459e57b73b323fec05ee7e520470fa136f5f6b85d",
+    "CycleNormalization.lean": "7d3edc6f4f36b371f9bcc797806ace537a10cc8ae49a58a7672abbe0212ebcb1",
+    "CycleNormalizationNine.lean": "11115834cf6649f211d0083a3f4ecd49a23738b45c4f57f30aa75dd293049f93",
+    "CyclicArithmetic.lean": "38c4927da6752ea8afdd1de7aa9c5f130f5d55f6ccfae6bac2a1f387573ab976",
+    "CyclicOrbit.lean": "467ae748e2497fc6abedb1e4d97dd6b48661e1bb2330ebbc57da192490157a2a",
+    "CyclicWindow.lean": "e73352e1491bf13b0cd042271a9cda3b6353922cf35b91b4a99c728732d94742",
     "DeliveryGame.lean": "e9024fcc8b0ece17f925ab6f8c8909adbb87b711dcf453f90fb27ce058cbc7e2",
+    "DenseBlockAttachment.lean": "69283f7aaca126d208b54a2cec4c36d93c3e57337638a59363749dcd80e9f209",
+    "DenseClassification.lean": "74cf2c4028f9a29ae7bc0a4329f9e11ad4bf0700f8f09e221b3ef0fef4e2d10a",
+    "DenseCombinatorics.lean": "564fd6453f52ec203bbaceb046814ad6e5967579b8333a812acbe6e128a6c015",
+    "DenseCore.lean": "37c9a64700890688e5c9912348fafcb8d88bbd429678c1a4fd010a2716c9835d",
     "DenseCounting.lean": "afe0b3eddb6d9dd40b580afb5a3db82d0e100b279e591976b449f1253e6e9733",
+    "DenseEnvelope.lean": "b5af4451ec45b6283d41e41b11ca5c7f6693b3f99575e75604dede1ee928e6e5",
+    "DenseEnvelopeClassification.lean": "79deb3eb4753e6a2dda8059b517c0e6929a08e21ff27d75fcf88c7cf4425537c",
+    "DenseFirstStep.lean": "37a294c886b6326b8808c401b4e729202501d0cfd13a703e6b5254be7983b967",
+    "DenseOddCore.lean": "f33dd39759231855bdfd475d5d8e464cfe58fbe787e12fd3383ceaf68c428226",
+    "DenseOddEnvelope.lean": "83003d166b5be1c7e8c1187c592875f3708732e188b8c2eeca5d0925491a3ff1",
+    "DenseStaircase.lean": "a639eb2514732c449772ab16b10b3df9aeeac81cd381cdc5dfeaeee9533c4ce6",
+    "DenseStaircaseConstruction.lean": "bbbff224a8f7ba331372cc638ccf089d15fbc12735740bdee624717ecc27ab31",
+    "DenseTwoType.lean": "a8a808280ce547e9d07b1f90b6258f08e75b47c19fb9eef25d1a86d2b597f99d",
     "DenseZero.lean": "80ec0e9c7790bcc8d8e6960d4a0df4905947fcc8eea1f20a5fb8ac92bc3051a8",
     "ElevenVertexDense.lean": "88d54e0d578a32e18f07bec24259c6c8c60fb7620b1e2de561cd6b420c802b56",
     "ExactScoreCertificates.lean": "bdfe444b10485ed8342fc68cf13966bd70182791be3cfa0f2bdb3184a2fac8a7",
     "ExclusionCertificates.lean": "a4125681521bc9099ee25b6db86be94f4139925a26d2021bbd78f269ebb936ce",
     "Extremal.lean": "ef50058ad1ba3c9bcdb87f4332e1e030881a880c5a057eeeccc93682e3f5c1f5",
     "ExtremalExamples.lean": "b985c63a313da9c1611e8951c8de320842165c75580d33cf2f04b14b4053a113",
+    "FiniteDenseEnvelopes.lean": "eb88496b1433dfe4565e32b9c3b7ea33fdd14a7c001c7e3e9063c6cb70dc586e",
+    "FiniteExclusionBitset.lean": "abbf79deee1d2a800c9c483c8d988c89cf6f5f3e07751f5d8a9c7c8dcf310960",
+    "FiniteExclusionBoolean.lean": "00f5be20a3ab967328d6ca509e96ded575859744b0631c11e42bebc9a8f0e64f",
+    "FiniteExclusionBoundTree.lean": "83cb9921c7432c5977b9c629253a81643010394f4bef3558c61fdeb0c2f8e7ed",
+    "FiniteExclusionBoundTreeRows.lean": "9113d08dff0ed62e33cd26683deaf10a71650d9042fdfd8ab65a7b388a5ffaa5",
+    "FiniteExclusionBounds.lean": "18a9d2f4567e4e24488e69d16b517f7225578c9419a174ba04752ada91b31cf6",
+    "FiniteExclusionConjugacy.lean": "6ebf0df127364d9d2aad4efd611a613f8d621ba827d49d91e198d345ad7b9aca",
+    "FiniteExclusionFastBounds.lean": "91804514cebf8cd46cf0b78faae9afd223eae1647100edae9b523d355dc85360",
+    "FiniteExclusionHamiltonianAttainer.lean": "a490900cfab99eb7b3c78070a9e973d562595c71c7758af0c808c5908ecdc878",
+    "FiniteExclusionHamiltonianSharp.lean": "f87ba685828f57a4f6a914e2ddf273fd4bff7f4ed9f9f1c3775a320fde29d4cb",
+    "FiniteExclusionKernel.lean": "8d6dceb3928d23e79a82b6a26b5787012e1f9e1dd4324a42ca0a834a67cbf93f",
+    "FiniteExclusionNine.lean": "68ee8bb53073814dc079eb3ba5ee4bbc4f019620a6827831b628b259d6aea6fa",
+    "FiniteExclusionNine2x2x2x3.lean": "3c90b2d2276875ef7f8823d294fe0876f95f05ac8470fe4c75e5ff778209bf8e",
+    "FiniteExclusionNine2x2x5.lean": "fa54755d1a0f8d8c6cc4e2ed5540ab03fc75eb59d6d920925c04e1a8c6744179",
+    "FiniteExclusionNine2x3x4.lean": "8eea6af4aecd830545f363f1e43a576ec9b4de29a8f61742a2efc44c1459b9aa",
+    "FiniteExclusionNine2x7.lean": "2edcbd0a80de9b66027ef8875aa09acc6194c34beb43ac77b2b9676c0faa7bb5",
+    "FiniteExclusionNine3x3x3.lean": "9c98ef0ac3cf28b6c8c97ac3936ae135131983b5b24cff1fb01290ba1eaf1907",
+    "FiniteExclusionNine3x6.lean": "6808c08160ba727b2b0ddaca5018bb1c9a57b5525aceef8784147291f47c6b68",
+    "FiniteExclusionNine4x5.lean": "fb850a688240a84a030dbf6e14528703a16cb332c4f58cd73a1fadc614db60f0",
+    "FiniteExclusionNine9.lean": "a538cfe65acc4bad3cc210c109f2285aebd8c1edc0785fcbe4bb452ea81f82fb",
+    "FiniteExclusionPrefixBounds.lean": "b2e99aebe966013d3cd460babbd97c0c5fe78c50f8165739ce9cf30ec78d93f8",
+    "FiniteExclusionRegularNine.lean": "8d84ccd12f0351cacda6eda5cf0af63b78e4faeacb6eea8b30319953ee40bb02",
+    "FiniteExclusionRotationBoundTree.lean": "18063896268c3066df0a16b5ca0f731adfdbab7fe6a7f6c36a1e18b0838ec8b9",
+    "FiniteExclusionScore.lean": "3f30d2548ca559767cfac64ead82f57cc603e2867d5fd076c18be3607645fce7",
+    "FiniteExclusionThirtyNineHamiltonian.lean": "87155e98d4b3b3916e4021a9a5f30404607a6a9e3ba7fe31970e49e6e4222da5",
+    "FiniteExclusionThirtyNineHamiltonian2x0.lean": "9257e26a7202aca0cb77d6af89fa33148b669858d412dbf7e6691370f12b8b7e",
+    "FiniteExclusionThirtyNineHamiltonian2x3.lean": "f2fec0f960ef262e5778132273b187c67c5c5dbadbf4a9f2563e37928709aa64",
+    "FiniteExclusionThirtyNineHamiltonian2x4.lean": "1ad4039590df2a754130c2418c445ea6dccb46bc31630f88c818ab76d335df94",
+    "FiniteExclusionThirtyNineHamiltonian2x5.lean": "30476806c68d7ec1e8c50648a63c4b5ca6a4600b6b9a09a850a91bda297915ba",
+    "FiniteExclusionThirtyNineHamiltonian2x6.lean": "b99bb051e0de13a02ba2bf8a5e64eb8aed124a17f7342d652e18e489148855f8",
+    "FiniteExclusionThirtyNineHamiltonian2x7.lean": "f987e494a843c3f568edda67e135320b30c97ee9d9bea2041b08a3387a22d173",
+    "FiniteExclusionThirtyNineHamiltonian2x8.lean": "545671ba7dea9356a5be4320f1b02ebf2e12adb51e837475ee152faf3167e365",
+    "FiniteExclusionThirtyNineHamiltonian3x0.lean": "cb42c4bd4839a5583e9d7db257bc9ef9628ae6225bc1ec44e75d3918e25de6ed",
+    "FiniteExclusionThirtyNineHamiltonian3x4.lean": "6e05e7b30ed7af34e06a33aeaf8157fcc9acd818c79e3936ead7845dbea03091",
+    "FiniteExclusionThirtyNineHamiltonian3x5.lean": "ec21e581cfb0899007e5583eb4e6d8a260b048c993af6373a3dbb49bf6029a0a",
+    "FiniteExclusionThirtyNineHamiltonian3x6.lean": "9996af49fab734b9a882bf3d9ba0cb1bff07073410ec75309c2a5d82a6b67fc6",
+    "FiniteExclusionThirtyNineHamiltonian3x7.lean": "1db9c4a405bf218c1baaf20485700273742a4ad6f5c86ab6c92ef2efc16ef672",
+    "FiniteExclusionThirtyNineHamiltonian3x8.lean": "a77602d47c55220085e86d4dd313e7fc9834223bd00c6de56629091e05555381",
+    "FiniteExclusionThirtyNineHamiltonian4x0.lean": "0b0445639761bbdef5f1279e32c8f18a41e5015bdd778566c0a1c6979d684c5f",
+    "FiniteExclusionThirtyNineHamiltonian4x3.lean": "355ef57b7bd1bd15085f2f86d8879514e34265a45c5cfd286c60448402d73cbb",
+    "FiniteExclusionThirtyNineHamiltonian4x5.lean": "40fb1a410fb3ac4ba467ac96942e38d217ba93f293b1ba33dc1142370bc800e4",
+    "FiniteExclusionThirtyNineHamiltonian4x6.lean": "900b45e4d230a0f1eb2dc3b64f66ff16f33cf638dde0c57876947dc17c9c9ce7",
+    "FiniteExclusionThirtyNineHamiltonian4x7.lean": "02bf9b5940ebc78efdaa8474a28fbd9c806b24da7e7edbcfe49bbe035123861d",
+    "FiniteExclusionThirtyNineHamiltonian4x8.lean": "7a66a629e25893f2f53d0119e3424ea4cc77e1730b18a921a9b643c632c51246",
+    "FiniteExclusionThirtyNineHamiltonian5x0.lean": "dfc7152103f14ad47b40209fcf0de541fbefc24cc00cb976ff5351d1536a0857",
+    "FiniteExclusionThirtyNineHamiltonian5x3.lean": "8da0b3b0a9970015553f5b406d9d7626d355bfd1b46470ff1b3d628c59519a2d",
+    "FiniteExclusionThirtyNineHamiltonian5x4.lean": "c996c873b926ea681018eceef15fa8a67b7dd416f3c8822f0d6b4a76c3bf0383",
+    "FiniteExclusionThirtyNineHamiltonian5x6.lean": "bbfa3c379a67938fa86c72b33388d313799916bdc1c9820b746e9f69fcb862ab",
+    "FiniteExclusionThirtyNineHamiltonian5x7.lean": "28dc266d48d7a676d4560461a5414e01791d45fc1a946b37d412c2ae3d0044a1",
+    "FiniteExclusionThirtyNineHamiltonian5x8.lean": "e861ba14976bf10d35832fc863ac3e009546f6b01dcff2126ce66549ad53243c",
+    "FiniteExclusionThirtyNineHamiltonian6x0.lean": "7082fe8ecc40b4ecd1d83276133ea04a5f5a906d3590fbc99e25694c6a87e9c0",
+    "FiniteExclusionThirtyNineHamiltonian6x3.lean": "0594b9dbcf74f1bac517cd6c8ae2615e8fc63ae568bdf0ecafecb89cfcb729db",
+    "FiniteExclusionThirtyNineHamiltonian6x4.lean": "5fa99c2df706b964a165106ba7764fb4f5bd1c09f7d4c5f5cc4bf467a72dd667",
+    "FiniteExclusionThirtyNineHamiltonian6x5.lean": "c2c58c8341ed309d0a4b001d31bfd75b78177fe6b90559ea04c09f77268bda27",
+    "FiniteExclusionThirtyNineHamiltonian6x7.lean": "c244d470f02d543cf54829d25b3fb35e9e2e72a982cc6e20bf7307d5609b6a65",
+    "FiniteExclusionThirtyNineHamiltonian6x8.lean": "8dae651707f62524fe490a73be9e539375e3ab927be2e435faf972335202fd0d",
+    "FiniteExclusionThirtyNineHamiltonian7x0.lean": "d09db6df02a580a72f250095372fd401c919644ca0b3eb813ae57e0f04fffdc7",
+    "FiniteExclusionThirtyNineHamiltonian7x3.lean": "58252f2db0fab6f8d7da4c4241e653ffeba9ed3c87d6d0ce0f324059d9334359",
+    "FiniteExclusionThirtyNineHamiltonian7x4.lean": "88340bc2517a788bd7afcae6675be3564dcf0ef1e306724cba0048cd70ababc1",
+    "FiniteExclusionThirtyNineHamiltonian7x5.lean": "d9b1496230453aa8c68ef7b5cc46ce0302d8eb3ba0bf001d80ec6d9ae511232d",
+    "FiniteExclusionThirtyNineHamiltonian7x6.lean": "509e5d329cd48fa41ddd5baad6edc98d7e1768536798f542492fe826d127dc3b",
+    "FiniteExclusionThirtyNineHamiltonian7x8.lean": "68b6b0a400b3a1c5cb7d90b07c2a81d4e85ba12552483dcdb5e10fadcabb1dbd",
+    "FiniteExclusionThirtyNineHamiltonian8x0.lean": "0e8e3f01a58f81b9eee129648576c59a624cfbb5db3a9715e0451706ad57d7e5",
+    "FiniteExclusionThirtyNineHamiltonian8x3.lean": "755fceb996ad71048a7f1260df070e7c52010d899597810665be4c8167b18fe2",
+    "FiniteExclusionThirtyNineHamiltonian8x4.lean": "7d12f21e14088e95f03d755ffc7428c1245fd4511d17af0726bf2b29f8b8ebce",
+    "FiniteExclusionThirtyNineHamiltonian8x5.lean": "dd90cc1aa0e882a8a0ffffb47d4e12e1726cde66b35003e5ab351716f8ce6d0c",
+    "FiniteExclusionThirtyNineHamiltonian8x6.lean": "90d86d48603e813663473276ab5a84eb869adff7c7036794d2e0ae79b08ebc5b",
+    "FiniteExclusionThirtyNineHamiltonian8x7.lean": "07b941d8ac4e578a6d12f0d04c1c14ac56435b3b3848c0949d3dca1c448b002d",
+    "FiniteExclusionThirtyNineHamiltonianBase.lean": "375f458e596c971afdc3580583ddc7316c372d4445f508fb91b596173bf01247",
+    "FiniteExclusionUnrestrictedNine.lean": "e9979be05836f2e27b183f239e9346e89ed37e27d9f8fde8e94a72e3c97a9c18",
     "FiniteGame.lean": "2fa4f564c701cf87e0e4b96b4862e0d84875e7ab01e61fa53ca3ff33dc1bae44",
+    "FiniteHall.lean": "a7442cf33179dfadbb0c419deafabaf8b0f45bea697d1ed9d1f450f823aeebab",
+    "FiniteTreeKernel.lean": "777d1decc94be806dd5442c8d51fe0a1cbd17fa93ec598dd3cdd778b855bf94a",
+    "FunctionalEndpoint.lean": "f936b632a0d887a1cb5263a9bf3cdefb6c0e1fde84293047819a83d5bb83e0b3",
+    "GraphPadding.lean": "dc7936d393ebf07a48b6279db4eb2f0bb95738faade79262a6ff3e11f8a0e686",
+    "GraphRelabeling.lean": "677159659ce8d9d1a9382512698e0c3ab61b669200a829bb871b3599bdacf79b",
+    "GraphRestriction.lean": "9793800f0d39fb6c628d79fa518afff91a723cddcae9438be70d93775d91866f",
+    "GuaranteedPrefix.lean": "a963ea2c1db6279c287664b28077a5ac2598975251ad1b9701bf62bcc7c404a2",
     "GuideAttachment.lean": "f4be947fd16f0225769f1521464c4c2cc7d8b0523ed86051eac8b8f3c9384c86",
+    "HamiltonianNormalization.lean": "07a630ca6cb0ce49979e0107e187eb36a0961f35b883420906d35561c2821011",
+    "LocalArena.lean": "7b7f53aea7a4d05e380407293142529b0072ba3ac4112b23fa4d305505ec00b7",
+    "LocalArenaRows.lean": "beaea32680b1944dab8516d31285e60d8eb14ae356c4bc6ea1c57d34a44b8825",
+    "PrefixEnvelope.lean": "38047dd388c5d0278b395031c2a55573d29bc34607fc324be3466c1e9ea01fac",
+    "ProtectedCircle.lean": "957e23245bd8b12f9436747f26ffff32c88c7086901d37111c49da17570a0179",
+    "ProtectedConstruction.lean": "3bb7ca637157a6f579edd72cba2ed6f603954fd7950024f32fb03ddf84ef742a",
+    "ProtectedGrowth.lean": "e9edda0aa346262ebf0c65a5266178f2dc442e0e88533bbf428b3c10193e2d76",
+    "ProtectedParameters.lean": "d34922d19941f65d698ca393387f3692824b4147a41d1481ef736240db3e5605",
     "ProtectedRouting.lean": "af7717615600f7d042f2e4f4b515c11cc67c72d272d0e8f9db35c42db8af0cb7",
     "RobustLayers.lean": "b878a6372018a5ff4aa59764d80f33a81b1b2c11f8841e43a563d375954e3d62",
+    "RobustLosingRegion.lean": "537c1a85a35d1033da6cce2dd8091d09c16f6afeef13eaa469e1d0c4a3c87619",
     "RobustTwoMove.lean": "fb662a539af1d65808a7436a0608408a016b01a3416c68972a565525e611eea9",
+    "RootAttachment.lean": "e568d07796d318581f8c4980a683c1ca06d193a970fdb192d8dfb4acaa088b24",
     "SafeBranching.lean": "4ef3781026919c462682c9320a49c3e99709562946bfa15d108dd30c46dc7363",
     "SemanticCompleteness.lean": "b58354aa9ed82fe608ee17552ce0d2358c41564cc85bf418aa73ba47947f125e",
+    "SignedRankCertificate.lean": "042f805fbeb760115ad5c591c4e2eb9ebfa5a32300570ef9df469a9db04653d4",
+    "SmallDenseEnvelopeMaxima.lean": "d698958216fb92aee91a59c6d2025049a9654b1b372e7f7ecf8500518dea7641",
     "SmallDenseEnvelopes.lean": "1271ed32095e7eca909a9484530d9411d726333c187a8224ab2e04ee42462fb5",
+    "SmallRootAttachment.lean": "3d5c96a615b303a201380141969a66f5e3885ba9837a473918fecd139db18b12",
+    "SparseAttainment.lean": "d9166bbdc0dcb3aa4acd12125d4033ec9ad3f6cef22a815644649e4baa831c18",
+    "SparseCropCoverage.lean": "9ceb30bd526acbdd3c4d16173d6a6ad7afd8eeb48cb91edb3cab68b16092dacd",
+    "SparseDeletion.lean": "a87c1b09ddf72d570e061591b060f98e97411a5ea966f2900e9405d3402ae28d",
+    "SparseParity.lean": "bb6c937486bfaa06bb7439438ec2495905654030fd07da36f588300e6a56b6d4",
+    "SparseSupport.lean": "b714fb4ced9d878086a7309ab3ec38823532e413e2669c2d2572e539a8f0dddf",
+    "SparseSupported.lean": "67e01fbef5a1d64d4d8fb8ef4415306d7bac650e3e65071816d890f112c09dc5",
+    "SparseWitness10.lean": "705e00b7faf5bc21a614df0cc102581f7efff10c4015b5bf2364e1e11c6c840b",
+    "SparseWitness11.lean": "917ab3ade00725e1b3c0e8f1c8c5acd36351d387e319fa6efa6fc2645d52dda3",
+    "SparseWitness9.lean": "4209553d73ad84ef440e728b3cc6842a0250fa8044822682510d2c17ddccc984",
     "StagedEnvelopes.lean": "0e751c0ff104cbde1faa99cced07a5e3c0b05ad644ca539a54d519c343c8370e",
     "TwelveVertexCertificate.lean": "24e7ac5448b04e5572f03a00c3440458fc923fba12342ca637a73abe099b7750",
     "VertexBound.lean": "1ec5f62555b41c2baea60d3557b5cb07010157655d8774963804acf4064fa731",
+    "VertexEquality.lean": "3fd49f4e532c4e01d5969d5961db17b1bd1250da9bfd8e3656cb2daa69347d0b",
+    "check.py": "b896b7f8dd97b5a07632f672e53dd118c222dabe6de9014ef7aab37454009e46",
+    "generate_finite_certificate.py": "b2b479cf61643336b3c461684499c2f89672bc184d678064c16d1574a0b4613e",
     "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
-    "check.py": "61e0cbc2d4a0b7c87274a1070bcfff90fb2d4e0243bf97cc5ede1ccfc5d6b61a",
-    "README.md": "19fa2c925c1f7849e1a15900dc525fb5996d9be490ceb7a1609a0450e0a16c4c",
-    "generate_finite_certificate.py": "b2b479cf61643336b3c461684499c2f89672bc184d678064c16d1574a0b4613e"
+    "README.md": "589adb940a3db3517d983871678cf801d1f1a9bac4697ff389ee024ac247aff6"
   },
   "modules": [
     {
       "module": "DeliveryGame",
-      "seconds": 0.456,
+      "seconds": 0.441,
       "exit_code": 0,
-      "output": ""
-    },
-    {
-      "module": "SafeBranching",
-      "seconds": 0.317,
-      "exit_code": 0,
-      "output": "/Users/angel/code/math/cop-prisoner/lean/SafeBranching.lean:21:29: warning: Variable name `c` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
+      "output": "",
+      "axioms": []
     },
     {
       "module": "CampingObstruction",
-      "seconds": 0.305,
+      "seconds": 0.312,
       "exit_code": 0,
-      "output": ""
+      "output": "",
+      "axioms": []
     },
     {
-      "module": "TwelveVertexCertificate",
-      "seconds": 6.603,
+      "module": "SafeBranching",
+      "seconds": 0.311,
       "exit_code": 0,
-      "output": "'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n"
+      "output": "/Users/angel/code/math/cop-prisoner/lean/SafeBranching.lean:21:29: warning: Variable name `c` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n",
+      "axioms": []
     },
     {
       "module": "DenseCounting",
-      "seconds": 0.453,
+      "seconds": 0.451,
       "exit_code": 0,
-      "output": "'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
-    },
-    {
-      "module": "ProtectedRouting",
-      "seconds": 0.29,
-      "exit_code": 0,
-      "output": "'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "RobustTwoMove",
-      "seconds": 0.297,
+      "seconds": 0.312,
       "exit_code": 0,
-      "output": "'Delivery.RobustTwoMove.envelope_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.RobustTwoMove.envelope_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "RobustLayers",
-      "seconds": 0.314,
+      "seconds": 0.322,
       "exit_code": 0,
-      "output": "'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
-      "module": "GuideAttachment",
-      "seconds": 0.334,
+      "module": "CyclicArithmetic",
+      "seconds": 0.519,
       "exit_code": 0,
-      "output": "'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
-    },
-    {
-      "module": "StagedEnvelopes",
-      "seconds": 0.321,
-      "exit_code": 0,
-      "output": "'Delivery.StagedEnvelopes.envelope_winning' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
-    },
-    {
-      "module": "ElevenVertexDense",
-      "seconds": 0.806,
-      "exit_code": 0,
-      "output": "'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.arc_count' does not depend on any axioms\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n"
-    },
-    {
-      "module": "SmallDenseEnvelopes",
-      "seconds": 23.457,
-      "exit_code": 0,
-      "output": "'Delivery.SmallDenseEnvelopes.masks_match_lists' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n"
+      "output": "'Delivery.CyclicArithmetic.shift_injective' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicArithmetic.shift_eq_iff' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicArithmetic.shift_ne_of_lt_gap' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicArithmetic.pair_subset_same' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicArithmetic.pair_subset_mixed' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "FiniteGame",
-      "seconds": 0.342,
+      "seconds": 0.345,
       "exit_code": 0,
-      "output": "'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n"
-    },
-    {
-      "module": "SemanticCompleteness",
-      "seconds": 0.529,
-      "exit_code": 0,
-      "output": "'Delivery.SemanticCompleteness.winning_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.losingRegion_never_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.eventual_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_eventual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_actual' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "Extremal",
-      "seconds": 0.328,
+      "seconds": 0.329,
       "exit_code": 0,
-      "output": "'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
-    },
-    {
-      "module": "ExactScoreCertificates",
-      "seconds": 0.496,
-      "exit_code": 0,
-      "output": "'Delivery.ExactScoreCertificates.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.maximum_from_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.winning_valid' does not depend on any axioms\n'Delivery.ExactScoreCertificates.FourVertex.losing_closed' depends on axioms: [propext, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.score_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.mixed_outcomes' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
-    },
-    {
-      "module": "ExclusionCertificates",
-      "seconds": 0.677,
-      "exit_code": 0,
-      "output": "'Delivery.ExclusionCertificates.upper_from_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.score_eq_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "VertexBound",
-      "seconds": 0.334,
+      "seconds": 0.363,
       "exit_code": 0,
-      "output": "'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "DenseZero",
-      "seconds": 0.361,
+      "seconds": 0.386,
       "exit_code": 0,
-      "output": "'Delivery.DenseZero.initialGraph_arcCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.maximum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.indirect_missing_each_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.arc_bound_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.missing_count_lower_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_above_dense_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.positive_score_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.DenseZero.initialGraph_arcCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.maximum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.indirect_missing_each_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.arc_bound_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.missing_count_lower_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_above_dense_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.positive_score_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseCombinatorics",
+      "seconds": 0.379,
+      "exit_code": 0,
+      "output": "'Delivery.DenseCombinatorics.card_partition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCombinatorics.card_injection_two_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCombinatorics.score_add_lossCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCombinatorics.arcCount_add_missingCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteHall",
+      "seconds": 0.465,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteHall.exists_matching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteHall.hall_of_two_regular' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteHall.two_permutation_factors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteHall.loopless_two_permutation_factors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CyclicOrbit",
+      "seconds": 0.337,
+      "exit_code": 0,
+      "output": "'Delivery.CyclicOrbit.mul_mod_injective' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicOrbit.shift_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CyclicOrbit.retreat_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CirclePropagation",
+      "seconds": 0.445,
+      "exit_code": 0,
+      "output": "'Delivery.CirclePropagation.pattern_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CirclePropagation.universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleEnvelope",
+      "seconds": 1.921,
+      "exit_code": 0,
+      "output": "'Delivery.CircleEnvelope.escapes' depends on axioms: [propext, Quot.sound]\n'Delivery.CircleEnvelope.universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleGuarded",
+      "seconds": 1.181,
+      "exit_code": 0,
+      "output": "'Delivery.CircleGuarded.compare_lift' depends on axioms: [propext, Quot.sound]\n'Delivery.CircleGuarded.escapes' depends on axioms: [propext, Quot.sound]\n'Delivery.CircleGuarded.universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ConstructionCounts",
+      "seconds": 0.359,
+      "exit_code": 0,
+      "output": "'Delivery.ConstructionCounts.card_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleCounting",
+      "seconds": 0.498,
+      "exit_code": 0,
+      "output": "'Delivery.CircleCounting.periodic_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CircleCounting.allowed_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ExclusionCertificates",
+      "seconds": 0.674,
+      "exit_code": 0,
+      "output": "'Delivery.ExclusionCertificates.upper_from_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "GraphRelabeling",
+      "seconds": 0.363,
+      "exit_code": 0,
+      "output": "'Delivery.GraphRelabeling.Iso.winning_iff' does not depend on any axioms\n'Delivery.GraphRelabeling.Iso.guaranteed_iff' does not depend on any axioms\n'Delivery.GraphRelabeling.arcCount_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphRelabeling.score_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphRelabeling.upper_from_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "PrefixEnvelope",
+      "seconds": 0.385,
+      "exit_code": 0,
+      "output": "'Delivery.PrefixEnvelope.graph' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.PrefixEnvelope.arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.PrefixEnvelope.maximum_at' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "GuaranteedPrefix",
+      "seconds": 0.344,
+      "exit_code": 0,
+      "output": "'Delivery.GuaranteedPrefix.score_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuaranteedPrefix.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleConstruction",
+      "seconds": 0.476,
+      "exit_code": 0,
+      "output": "'Delivery.CircleConstruction.base_arcCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CircleConstruction.full_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CircleConstruction.guarded_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CirclePrefixCounting",
+      "seconds": 0.64,
+      "exit_code": 0,
+      "output": "'Delivery.CirclePrefixCounting.periodic_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CirclePrefixCounting.allowed_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleGuardedConstruction",
+      "seconds": 0.329,
+      "exit_code": 0,
+      "output": "'Delivery.CircleGuardedConstruction.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CircleParameters",
+      "seconds": 0.599,
+      "exit_code": 0,
+      "output": "'Delivery.CircleParameters.valid' depends on axioms: [propext, Quot.sound]\n'Delivery.CircleParameters.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ComplementarySum",
+      "seconds": 0.489,
+      "exit_code": 0,
+      "output": "'Delivery.ComplementarySum.two_move_witness' depends on axioms: [propext]\n'Delivery.ComplementarySum.left_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ComplementarySum.card_split' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ComplementarySum.missing_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ComplementarySum.score_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionKernel",
+      "seconds": 0.386,
+      "exit_code": 0,
+      "output": "/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionKernel.lean:36:45: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionKernel.lean:59:66: warning: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'Delivery.FiniteExclusion.branch_excluded' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.source_excluded' depends on axioms: [propext]\n'Delivery.FiniteExclusion.predecessor_excluded' does not depend on any axioms\n'Delivery.FiniteExclusion.losing_excluded' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionConjugacy",
+      "seconds": 0.32,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Conjugacy.valid_push' does not depend on any axioms\n'Delivery.FiniteExclusion.Conjugacy.graphIso' depends on axioms: [propext]\n'Delivery.FiniteExclusion.Conjugacy.score_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CycleNormalization",
+      "seconds": 0.626,
+      "exit_code": 0,
+      "output": "'Delivery.CycleNormalization.cycle_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CycleNormalization.sorted_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CycleNormalization.nine_partitions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CycleNormalization.conjugacy_of_table' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionScore",
+      "seconds": 0.765,
+      "exit_code": 0,
+      "output": "/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionScore.lean:14:11: warning: Try `simp at witness` instead of `simpa using witness`\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n'Delivery.FiniteExclusion.nine_factor_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine2x2x2x3",
+      "seconds": 117.667,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle2x2x2x3.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine2x2x5",
+      "seconds": 71.194,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle2x2x5.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine2x3x4",
+      "seconds": 48.513,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle2x3x4.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine2x7",
+      "seconds": 52.864,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle2x7.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine3x3x3",
+      "seconds": 32.042,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle3x3x3.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine3x6",
+      "seconds": 37.422,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle3x6.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine4x5",
+      "seconds": 53.665,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle4x5.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine9",
+      "seconds": 42.314,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Cycle9.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionNine",
+      "seconds": 0.452,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Nine.blocked' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.Nine.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Nine.exact_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Nine.represented_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Nine.relabeled_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CycleNormalizationNine",
+      "seconds": 0.383,
+      "exit_code": 0,
+      "output": "'Delivery.CycleNormalizationNine.first_table' depends on axioms: [propext]\n'Delivery.CycleNormalizationNine.canonicalize' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "CyclicWindow",
+      "seconds": 0.37,
+      "exit_code": 0,
+      "output": "'Delivery.CyclicWindow.internal_short' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicWindow.radius_six_entries' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseStaircase",
+      "seconds": 0.651,
+      "exit_code": 0,
+      "output": "'Delivery.DenseStaircase.bound_arcs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.bound_at_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.counts_if_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.bound_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.nonsurvivor_blocked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.two_excluded_images' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.image_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FunctionalEndpoint",
+      "seconds": 0.636,
+      "exit_code": 0,
+      "output": "'Delivery.FunctionalEndpoint.root_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.indirect_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.partner_root' depends on axioms: [propext, Quot.sound]\n'Delivery.FunctionalEndpoint.paired_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.missing_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.attaining_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.maximum_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseBlockAttachment",
+      "seconds": 0.433,
+      "exit_code": 0,
+      "output": "'Delivery.DenseBlockAttachment.maximum_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseTwoType",
+      "seconds": 0.499,
+      "exit_code": 0,
+      "output": "'Delivery.DenseTwoType.graph_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseTwoType.graph_missingCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseTwoType.maximum_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseOddCore",
+      "seconds": 7.048,
+      "exit_code": 0,
+      "output": "'Delivery.DenseOddCore.graph_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseOddCore.graph_missingCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseOddCore.maximum_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "TwelveVertexCertificate",
+      "seconds": 6.023,
+      "exit_code": 0,
+      "output": "'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ElevenVertexDense",
+      "seconds": 0.784,
+      "exit_code": 0,
+      "output": "'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.arc_count' does not depend on any axioms\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "ExtremalExamples",
-      "seconds": 0.309,
+      "seconds": 0.308,
       "exit_code": 0,
-      "output": "'Delivery.ExtremalExamples.twelve_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.ExtremalExamples.twelve_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseCore",
+      "seconds": 0.431,
+      "exit_code": 0,
+      "output": "'Delivery.DenseCore.graph_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCore.graph_positive_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCore.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "RootAttachment",
+      "seconds": 0.329,
+      "exit_code": 0,
+      "output": "'Delivery.RootAttachment.Data.old_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RootAttachment.Data.new_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SmallRootAttachment",
+      "seconds": 0.766,
+      "exit_code": 0,
+      "output": "'Delivery.SmallRootAttachment.data' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SmallRootAttachment.good_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SmallRootAttachment.added_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SmallRootAttachment.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseStaircaseConstruction",
+      "seconds": 0.423,
+      "exit_code": 0,
+      "output": "'Delivery.DenseStaircaseConstruction.graph' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircaseConstruction.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseFirstStep",
+      "seconds": 5.833,
+      "exit_code": 0,
+      "output": "'Delivery.DenseFirstStep.graph_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseFirstStep.graph_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseFirstStep.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseClassification",
+      "seconds": 0.473,
+      "exit_code": 0,
+      "output": "'Delivery.DenseClassification.attainer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseClassification.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseEnvelope",
+      "seconds": 24.668,
+      "exit_code": 0,
+      "output": "'Delivery.DenseEnvelope.graph_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseEnvelope.graph_missingCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseEnvelope.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseOddEnvelope",
+      "seconds": 17.911,
+      "exit_code": 0,
+      "output": "'Delivery.DenseOddEnvelope.graph_witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseOddEnvelope.lower_missingCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseOddEnvelope.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteDenseEnvelopes",
+      "seconds": 29.046,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteDenseEnvelopes.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SmallDenseEnvelopes",
+      "seconds": 23.259,
+      "exit_code": 0,
+      "output": "'Delivery.SmallDenseEnvelopes.masks_match_lists' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SmallDenseEnvelopeMaxima",
+      "seconds": 0.741,
+      "exit_code": 0,
+      "output": "'Delivery.SmallDenseEnvelopeMaxima.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "DenseEnvelopeClassification",
+      "seconds": 0.55,
+      "exit_code": 0,
+      "output": "'Delivery.DenseEnvelopeClassification.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseEnvelopeClassification.maximum_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ExactScoreCertificates",
+      "seconds": 0.497,
+      "exit_code": 0,
+      "output": "'Delivery.ExactScoreCertificates.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.maximum_from_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.winning_valid' does not depend on any axioms\n'Delivery.ExactScoreCertificates.FourVertex.losing_closed' depends on axioms: [propext, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.score_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.mixed_outcomes' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionBounds",
+      "seconds": 0.369,
+      "exit_code": 0,
+      "output": "/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionBounds.lean:17:66: warning: Variable name `hs` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hs\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionBounds.lean:23:71: warning: Variable name `u` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _u\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionBounds.lean:121:13: warning: This simp argument is unused:\n  Prod.fst\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Prod.snd] at equal region\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionBounds.lean:121:22: warning: This simp argument is unused:\n  Prod.snd\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Prod.fst] at equal region\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'Delivery.FiniteExclusion.Bounds.refined_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Bounds.full_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Bounds.indirect_eligible' depends on axioms: [propext]\n'Delivery.FiniteExclusion.Bounds.eligible_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Bounds.branch_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Bounds.local_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "RobustLosingRegion",
+      "seconds": 0.314,
+      "exit_code": 0,
+      "output": "'Delivery.RobustLosingRegion.Certificate.toLosingRegion' does not depend on any axioms\n'Delivery.RobustLosingRegion.not_guaranteed' does not depend on any axioms\n",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionPrefixBounds",
+      "seconds": 0.343,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.PrefixBounds.completion_sandwich' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.PrefixBounds.prefix_masks_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionBitset",
+      "seconds": 0.357,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Bitset.fast_sound' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.Bitset.prefix_ok' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Bitset.certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionFastBounds",
+      "seconds": 0.365,
+      "exit_code": 0,
+      "output": "/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionFastBounds.lean:15:32: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionFastBounds.lean:21:32: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionFastBounds.lean:84:32: warning: Variable name `s` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _s\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionFastBounds.lean:84:34: warning: Variable name `t` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _t\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'Delivery.FiniteExclusion.FastBounds.mask_lost_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.FastBounds.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionBoundTreeRows",
+      "seconds": 0.388,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.BoundTreeRows.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.BoundTreeRows.sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionBoolean",
+      "seconds": 0.347,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Boolean.region_sound' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.Boolean.sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionBoundTree",
+      "seconds": 0.367,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.BoundTree.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.BoundTree.sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionRotationBoundTree",
+      "seconds": 0.358,
+      "exit_code": 0,
+      "output": "/Users/angel/code/math/cop-prisoner/lean/FiniteExclusionRotationBoundTree.lean:19:32: warning: Variable name `h0` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h0\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'Delivery.FiniteExclusion.RotationBounds.minimum_invalid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.RotationBounds.sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "HamiltonianNormalization",
+      "seconds": 0.526,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.HamiltonianNormalization.normalized_cover' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonianBase",
+      "seconds": 0.3,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "SignedRankCertificate",
+      "seconds": 0.324,
+      "exit_code": 0,
+      "output": "'Delivery.SignedRankCertificate.classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseWitness9",
+      "seconds": 2.415,
+      "exit_code": 0,
+      "output": "'Delivery.SparseWitness9.checked' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseWitness9.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionHamiltonianAttainer",
+      "seconds": 0.34,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.HamiltonianAttainer.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x0",
+      "seconds": 10.624,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x3",
+      "seconds": 8.526,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x4",
+      "seconds": 31.173,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x5",
+      "seconds": 30.583,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x6",
+      "seconds": 31.15,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x7",
+      "seconds": 29.243,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian2x8",
+      "seconds": 26.98,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x0",
+      "seconds": 20.722,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x4",
+      "seconds": 33.068,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x5",
+      "seconds": 37.693,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x6",
+      "seconds": 37.513,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x7",
+      "seconds": 38.325,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian3x8",
+      "seconds": 30.996,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x0",
+      "seconds": 11.656,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x3",
+      "seconds": 0.331,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x5",
+      "seconds": 13.885,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x6",
+      "seconds": 19.275,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x7",
+      "seconds": 14.846,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian4x8",
+      "seconds": 14.297,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x0",
+      "seconds": 3.589,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x3",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x4",
+      "seconds": 0.307,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x6",
+      "seconds": 8.088,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x7",
+      "seconds": 7.12,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian5x8",
+      "seconds": 5.124,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x0",
+      "seconds": 1.629,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x3",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x4",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x5",
+      "seconds": 0.289,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x7",
+      "seconds": 5.511,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian6x8",
+      "seconds": 2.399,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x0",
+      "seconds": 0.463,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x3",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x4",
+      "seconds": 0.319,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x5",
+      "seconds": 0.293,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x6",
+      "seconds": 0.325,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian7x8",
+      "seconds": 1.013,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x0",
+      "seconds": 0.423,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x3",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x4",
+      "seconds": 0.291,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x5",
+      "seconds": 0.293,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x6",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian8x7",
+      "seconds": 0.29,
+      "exit_code": 0,
+      "output": "",
+      "axioms": []
+    },
+    {
+      "module": "FiniteExclusionThirtyNineHamiltonian",
+      "seconds": 0.375,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.Thirty9Minimum.prefix_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.Thirty9Minimum.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionHamiltonianSharp",
+      "seconds": 0.326,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.HamiltonianSharp.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionRegularNine",
+      "seconds": 0.507,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.RegularNine.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.RegularNine.exact_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.RegularNine.not_all_guaranteed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseSupport",
+      "seconds": 0.533,
+      "exit_code": 0,
+      "output": "'Delivery.SparseSupport.live_recipient_two_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.live_outdegree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.live_indegree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.eligible_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.active_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.positive_support_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupport.positive_support_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "VertexEquality",
+      "seconds": 0.405,
+      "exit_code": 0,
+      "output": "'Delivery.VertexEquality.column_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexEquality.degree_two_of_equality' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteExclusionUnrestrictedNine",
+      "seconds": 0.333,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.UnrestrictedNine.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.UnrestrictedNine.not_vertex_equality' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FiniteTreeKernel",
+      "seconds": 0.372,
+      "exit_code": 0,
+      "output": "'Delivery.FiniteExclusion.TreeKernel.sound' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.TreeKernel.every_second_factor_blocked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "GraphRestriction",
+      "seconds": 0.31,
+      "exit_code": 0,
+      "output": "'Delivery.GraphRestriction.winning_source_mem' does not depend on any axioms\n'Delivery.GraphRestriction.winning_restrict' does not depend on any axioms\n'Delivery.GraphRestriction.delete_source' does not depend on any axioms\n'Delivery.GraphRestriction.delete_sink' does not depend on any axioms\n'Delivery.GraphRestriction.no_indirect_to_source' does not depend on any axioms\n'Delivery.GraphRestriction.no_indirect_from_sink' does not depend on any axioms\n",
+      "axioms": []
+    },
+    {
+      "module": "SparseDeletion",
+      "seconds": 0.464,
+      "exit_code": 0,
+      "output": "'Delivery.SparseDeletion.camping_usable_predecessors' does not depend on any axioms\n'Delivery.SparseDeletion.camping_nonsink_successors' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseDeletion.live_in_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseDeletion.live_out_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseDeletion.winning_masked' does not depend on any axioms\n'Delivery.SparseDeletion.source_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseDeletion.sink_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseSupported",
+      "seconds": 0.419,
+      "exit_code": 0,
+      "output": "'Delivery.SparseSupported.supported_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupported.supported_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseSupported.support_equivalences' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "GraphPadding",
+      "seconds": 0.38,
+      "exit_code": 0,
+      "output": "'Delivery.GraphPadding.winning_trapped' does not depend on any axioms\n'Delivery.GraphPadding.winning_lift' does not depend on any axioms\n'Delivery.GraphPadding.old_indirect_iff' does not depend on any axioms\n'Delivery.GraphPadding.score_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphPadding.isolates_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphPadding.sinks_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphPadding.pad_to_order' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphPadding.add_one_arrow' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "GuideAttachment",
+      "seconds": 0.328,
+      "exit_code": 0,
+      "output": "'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "LocalArena",
+      "seconds": 0.369,
+      "exit_code": 0,
+      "output": "'Delivery.LocalArena.safe_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.LocalArena.delivery_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.LocalArena.transfer_then_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "LocalArenaRows",
+      "seconds": 0.303,
+      "exit_code": 0,
+      "output": "'Delivery.LocalArenaRows.safe_checked' depends on axioms: [propext, Quot.sound]\n'Delivery.LocalArenaRows.delivery_checked' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtectedCircle",
+      "seconds": 0.847,
+      "exit_code": 0,
+      "output": "'Delivery.ProtectedCircle.initial_protected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedCircle.envelope_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtectedGrowth",
+      "seconds": 0.517,
+      "exit_code": 0,
+      "output": "'Delivery.ProtectedGrowth.grow_protected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedGrowth.grown_size' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtectedConstruction",
+      "seconds": 0.417,
+      "exit_code": 0,
+      "output": "'Delivery.ProtectedConstruction.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtectedParameters",
+      "seconds": 1.701,
+      "exit_code": 0,
+      "output": "'Delivery.ProtectedParameters.exists_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedParameters.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtectedRouting",
+      "seconds": 0.294,
+      "exit_code": 0,
+      "output": "'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SemanticCompleteness",
+      "seconds": 0.506,
+      "exit_code": 0,
+      "output": "'Delivery.SemanticCompleteness.winning_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.losingRegion_never_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.eventual_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_eventual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_actual' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseParity",
+      "seconds": 2.258,
+      "exit_code": 0,
+      "output": "'Delivery.SparseParity.even_scalar' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseParity.odd_scalar' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseParity.supported_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.even_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.odd_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseAttainment",
+      "seconds": 0.338,
+      "exit_code": 0,
+      "output": "'Delivery.SparseAttainment.maximum_even_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseAttainment.maximum_odd_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseAttainment.maximum_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseAttainment.raise_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseCropCoverage",
+      "seconds": 13.802,
+      "exit_code": 0,
+      "output": "'Delivery.SparseCropCoverage.coverage' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseCropCoverage.objective_count' depends on axioms: [propext, Quot.sound]\n",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseWitness10",
+      "seconds": 3.359,
+      "exit_code": 0,
+      "output": "'Delivery.SparseWitness10.checked' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseWitness10.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SparseWitness11",
+      "seconds": 4.898,
+      "exit_code": 0,
+      "output": "'Delivery.SparseWitness11.checked' depends on axioms: [propext, Quot.sound]\n'Delivery.SparseWitness11.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "StagedEnvelopes",
+      "seconds": 0.307,
+      "exit_code": 0,
+      "output": "'Delivery.StagedEnvelopes.envelope_winning' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "module": "Audit",
-      "seconds": 0.288,
+      "seconds": 0.421,
       "exit_code": 0,
-      "output": "'Delivery.winning_play_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.rankCertificate_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.safe_branching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.bootstrap_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.camping_predecessor_obstruction' does not depend on any axioms\n'Delivery.undirected_no_indirect_guarantee' does not depend on any axioms\n'Delivery.TwelveVertex.certificate_valid' does not depend on any axioms\n'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.winning_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.losingRegion_never_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.eventual_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_actual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.maximum_from_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.winning_valid' does not depend on any axioms\n'Delivery.ExactScoreCertificates.FourVertex.losing_closed' depends on axioms: [propext, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.score_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.mixed_outcomes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.arc_bound_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.missing_count_lower_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_above_dense_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.initialGraph_arcCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.maximum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      "output": "'Delivery.winning_play_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.rankCertificate_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.safe_branching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.bootstrap_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.camping_predecessor_obstruction' does not depend on any axioms\n'Delivery.undirected_no_indirect_guarantee' does not depend on any axioms\n'Delivery.TwelveVertex.certificate_valid' does not depend on any axioms\n'Delivery.TwelveVertex.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.TwelveVertex.indirect_count' does not depend on any axioms\n'Delivery.DenseCounting.loss_from_counts' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.final_band_bound' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.attaining_block_count' depends on axioms: [propext, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_two_move' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseCounting.complementary_blocks_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_witness_winning' does not depend on any axioms\n'Delivery.ProtectedRouting.protected_routing_universal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedRouting.protected_routing_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustTwoMove.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.ranked_envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.RobustLayers.safe_routing_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.witnesses' depends on axioms: [propext, Quot.sound]\n'Delivery.ElevenVertexDense.all_pairs_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ElevenVertexDense.indirect_count' does not depend on any axioms\n'Delivery.SmallDenseEnvelopes.every_intermediate_actual_delivery' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.SmallDenseEnvelopes.exact_endpoint_counts' depends on axioms: [propext]\n'Delivery.StagedEnvelopes.envelope_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.safe_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GuideAttachment.attachment_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.winningRegion_actual_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteGame.losingRegion_not_winning' does not depend on any axioms\n'Delivery.FiniteGame.losingRegion_not_guaranteed' does not depend on any axioms\n'Delivery.Extremal.score_le_missing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.Extremal.maximum_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExclusionCertificates.graph3_camping' depends on axioms: [propext, Quot.sound]\n'Delivery.ExclusionCertificates.three_vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.live_source_two_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.VertexBound.vertex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.maximum_twelve_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExtremalExamples.eleven_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.winning_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.losingRegion_never_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.eventual_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SemanticCompleteness.guaranteed_iff_actual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.maximum_from_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.winning_valid' does not depend on any axioms\n'Delivery.ExactScoreCertificates.FourVertex.losing_closed' depends on axioms: [propext, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.score_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ExactScoreCertificates.FourVertex.mixed_outcomes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.arc_bound_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.missing_count_lower_of_indirect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_above_dense_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.zero_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.initialGraph_arcCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseZero.maximum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseClassification.attainer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseClassification.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseEnvelopeClassification.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FunctionalEndpoint.maximum_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.DenseStaircase.bound_at_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.even_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseParity.odd_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseAttainment.maximum_twentyfour' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.GraphPadding.score_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.UnrestrictedNine.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SignedRankCertificate.classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseWitness9.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseWitness10.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseWitness11.exact_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CircleParameters.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.CircleGuardedConstruction.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.LocalArena.safe_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.LocalArena.delivery_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.LocalArena.transfer_then_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.FiniteExclusion.HamiltonianNormalization.normalized_cover' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Delivery.FiniteExclusion.FastBounds.upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.ProtectedParameters.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Delivery.SparseCropCoverage.coverage' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicWindow.internal_short' depends on axioms: [propext, Quot.sound]\n'Delivery.CyclicWindow.radius_six_entries' depends on axioms: [propext, Quot.sound]\n'Delivery.FiniteExclusion.HamiltonianSharp.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     }
   ],
   "all_passed": true,
-  "note": "Kernel-checked proofs; the certificate generator and external solver are not proof assumptions."
+  "note": "Every distributed module rebuilt sequentially with two workers. Kernel-checked proofs; producers and external solvers are not assumptions. Formal coverage is stated in README.md; no full-classification claim follows from the module count."
 }

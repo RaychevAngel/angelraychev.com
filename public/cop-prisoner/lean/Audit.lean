@@ -1,3 +1,21 @@
+import FiniteExclusionHamiltonianSharp
+import CyclicWindow
+import ProtectedParameters
+import SparseCropCoverage
+import DenseClassification
+import DenseEnvelopeClassification
+import SparseParity
+import SparseAttainment
+import FiniteExclusionUnrestrictedNine
+import SignedRankCertificate
+import SparseWitness9
+import SparseWitness10
+import SparseWitness11
+import CircleParameters
+import CircleGuardedConstruction
+import LocalArena
+import HamiltonianNormalization
+import FiniteExclusionFastBounds
 import DeliveryGame
 import SafeBranching
 import CampingObstruction
@@ -80,3 +98,35 @@ import DenseZero
 
 #print axioms Delivery.DenseZero.initialGraph_arcCount
 #print axioms Delivery.DenseZero.maximum_zero
+
+-- October2026 unconditional additions and newly verified interfaces.
+#print axioms Delivery.DenseClassification.attainer
+#print axioms Delivery.DenseClassification.maximum
+#print axioms Delivery.DenseEnvelopeClassification.maximum
+#print axioms Delivery.FunctionalEndpoint.maximum_endpoint
+#print axioms Delivery.DenseStaircase.bound_at_offset
+#print axioms Delivery.SparseParity.upper
+#print axioms Delivery.SparseParity.even_upper
+#print axioms Delivery.SparseParity.odd_upper
+#print axioms Delivery.SparseAttainment.maximum_twentyfour
+#print axioms Delivery.GraphPadding.score_eq
+#print axioms Delivery.FiniteExclusion.UnrestrictedNine.upper
+#print axioms Delivery.SignedRankCertificate.classification
+#print axioms Delivery.SparseWitness9.exact_score
+#print axioms Delivery.SparseWitness10.exact_score
+#print axioms Delivery.SparseWitness11.exact_score
+#print axioms Delivery.CircleParameters.maximum
+#print axioms Delivery.CircleGuardedConstruction.maximum
+#print axioms Delivery.LocalArena.safe_projection
+#print axioms Delivery.LocalArena.delivery_projection
+#print axioms Delivery.LocalArena.transfer_then_delivery
+#print axioms Delivery.FiniteExclusion.HamiltonianNormalization.normalized_cover
+#print axioms Delivery.FiniteExclusion.FastBounds.upper
+
+#print axioms Delivery.ProtectedParameters.maximum
+#print axioms Delivery.SparseCropCoverage.coverage
+
+#print axioms Delivery.CyclicWindow.internal_short
+#print axioms Delivery.CyclicWindow.radius_six_entries
+
+#print axioms Delivery.FiniteExclusion.HamiltonianSharp.maximum
