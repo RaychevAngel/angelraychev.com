@@ -40,6 +40,8 @@ Here $q_z$ is the candidate teaching distribution, $U_K$ is the prescribed $K$-s
 
 This is a meta-learning objective: improve the process that produces a learner's update. The proposer can be optimized by policy-gradient or preference methods, treating the update and evaluation as a black box. There is no need to differentiate through the entire student-training computation. There is still a real outer-loop bill: proposing candidates, scoring targets, cloning updates, and measuring their consequences.
 
+One cheaper outer-loop option scores a source-derived lesson directly on related tasks, skipping the cloned updates. This contextual reward could rank candidates or train the proposer, but its agreement with actual update value needs paired validation; the completed proposer run below used actual-update rewards.
+
 ## Learn the policy assignment rather than the lesson text
 
 Repeating that search after every ordinary experience would be expensive. Its second purpose is to generate targets for a **hindsight teacher**.
@@ -73,7 +75,7 @@ The implementation is built around the details that determine whether this exper
 
 **Every intervention must start from the same learner.** The system resets student adapters and optimizer state between candidate updates. Targets are detached, evaluation is causal, and the PI is absent from the adapted student's validation and query prompts. Query results do not select lessons or update settings within a comparison.
 
-**Future access and shared weights are different choices.** The completed fitted-teacher comparison uses separate rank-16 teacher and student LoRA adapters on a common frozen Qwen3.5-4B base. The teacher's eight full-attention layers can look across the completed sequence; the twenty-four DeltaNet operators remain causal, although they can consume already future-informed representations. This is a future-aware hybrid, not a model in which every layer has become bidirectional. A common base is also not a demonstration of a shared-weight learning loop.
+**Future access and shared weights are different choices.** A more self-contained endpoint would use the actor's own parameters for both causal action and hindsight scoring. The completed fitted-teacher comparison examines the components before coupling those roles: it uses separate rank-16 teacher and student LoRA adapters on a common frozen Qwen3.5-4B base. The teacher's eight full-attention layers can look across the completed sequence; the twenty-four DeltaNet operators remain causal, although they can consume already future-informed representations. This is a future-aware hybrid, not a model in which every layer has become bidirectional. A common base is also not a demonstration of a shared-weight learning loop.
 
 **A no-update decision must mean what it says.** The reference selector can choose a neutral causal distribution. An amortized teacher only approximates that distribution, however, and a small residual can still generate a nonzero parameter update. A reliable learning system needs to distinguish “approximately preserve the policy” from a literal no-op.
 
