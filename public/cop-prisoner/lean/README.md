@@ -6,6 +6,7 @@ is **not yet a Lean theorem**. The results below are unconditional Lean theorems
 unless a supplied hypothesis is explicitly stated. Module counts are not a
 measure of how much of the classification has been proved.
 
+
 ## Exact maxima with explicit attaining constructions
 
 - **Complete dense region, every order n≥20.**
@@ -37,6 +38,28 @@ measure of how much of the classification has been proved.
   the checked twelve-vertex witness, the unrestricted sparse upper bound
   and explicit isolate padding. The original `IsMaximum 12 24 108`
   theorem is retained.
+- **Uniform sparse even maxima from support order 85.**
+  `SixTypeConstruction.maximum_even` proves
+  `M(n,2s)=s(s−3)` for every support order `s≥85` and host order `n≥s`.
+  The prescribed six-type cyclic graph has exactly `s` vertices and `2s`
+  arrows. All 81 canonical local hole patterns and 552 local rank objectives
+  are instantiated, with complete pattern coverage, projection of every
+  actual cop reply (including an outside cop), safe transfer, terminal
+  delivery, composition and exact counts. Isolate padding gives every larger
+  host. The finite even bridge at supports 13..84 and the odd attaining family
+  are separate obligations.
+- **Main interval above three arrows per vertex, every order n≥79.**
+  `PairCodeOverlap.maximum` proves `M(n,m)=n(n−1)−m` throughout
+  `3n≤m≤n(n−3)`. Separated pair codes and the circle constructions have
+  explicit adjacency recipes, prescribed arithmetic parameter choices and
+  exact optional-prefix budgets. The arithmetic overlap is proved for all
+  these orders; it is not an assumption or a graph search.
+- **Complete main interval at order twelve.** `MainTwelve.maximum` proves
+  `M(12,m)=132−m` for every `24≤m≤108`. Thirty literal asymmetric stages
+  cover budgets 24..107, with every optional subset certified against all
+  upper-envelope cop replies; the pair-code construction supplies 108.
+  Actual adjacency counts and exact prefix budgets are proved. This closes
+  the twelve-vertex main interval, not the remaining lower-order bridge.
 - **Five-offset circles.** `CircleParameters.maximum` proves
   `M(n,m)=n(n−1)−m` for every `n≥16` divisible by four and every
   `5n≤m≤n(n/2−1)`. Its parameter is prescribed from `n`; modular escape,
@@ -45,7 +68,6 @@ measure of how much of the classification has been proved.
   closed arithmetic endpoint in `CircleGuardedConstruction`; its parameter
   conditions remain visible. These results do not establish the entire
   main interval from order twelve.
-
 
 - **Protected circles at every order n≥25.** `ProtectedParameters.maximum`
   proves the missing-pair maximum for `3n≤m≤n(ceil(n/7)−1)`. An arithmetic
@@ -81,7 +103,6 @@ all nine-vertex maxima. Further finite-checker modules prove soundness of
 optimistic partial-game pruning, bitset closure and cached loss unions;
 those interfaces alone do not establish a concrete exclusion.
 
-
 `FiniteExclusion.HamiltonianSharp.maximum` proves exact maximum 30 for the
 nine-vertex family consisting, up to isomorphism, of a directed Hamiltonian
 cycle and a disjoint loopless permutation. All members have eighteen arrows.
@@ -89,6 +110,15 @@ The complete normalized upper tree and an explicit isomorphism to the score 30
 witness establish both directions. The other seven first-factor cycle types
 are not included in this sharper theorem; the full two-regular bound remains
 an outstanding finite obligation.
+
+`IrregularTen14.positive_upper` proves `I(G)≤13` for every loopless
+**ten-vertex graph with fourteen arrows and positive in-degree and out-degree
+at every vertex**. The proof derives and normalizes the only potentially
+violating joint degree profile, then checks all row choices through a reusable
+prescribed-degree row-prefix kernel. Explicit symmetry maps, capacity pruning
+and closed losing regions justify complete branch coverage. This proves
+neither the unrestricted value `M_E(14)=13` nor the complete finite tables;
+other support and degree families remain necessary.
 
 `SignedRankCertificate` and `ExactScoreCertificates` check both winning and
 losing pairs. `SparseWitness9`, `SparseWitness10`, and `SparseWitness11`
@@ -121,16 +151,20 @@ all actual cop replies. Safe-transfer goals require survival after the cop's
 reply; terminal delivery alone waives collision at the recipient. Its local
 projection and sequential-composition theorems retain the concrete arena,
 projection and certificate premises until those are separately instantiated.
+`SixTypeConstruction` now supplies those concrete premises for its entire
+uniform even family, rather than only an empty-hole or bounded pilot.
 
 ## Remaining classification obligations
 
-The sparse infinite attaining families and their full finite bridges, the
-remaining main-interval construction chain and its parameter overlap, the
-complete staged finite lists, sharp small-order upper exclusions and tables,
-and final all-pairs assembly remain unfinished. The sharp dense threshold
-from order eleven is not implied by the verified uniform threshold twenty.
-Probabilistic existence, some alternative constructions and stronger
-supplementary guarantees also retain their ordinary proof boundaries.
+The sparse even bridge at supports 13..84, the odd attaining family and its
+finite bridge remain unfinished. In the main interval, the uniform low band
+`2n<m<3n` for `n≥115`, its finite bridge at orders 13..114, and the remaining
+upper bridge at orders 13..78 still need formal coverage. The sharp small-budget
+upper exclusions and tables, lower dense orders 11..19, and final quantified
+all-pairs assembly also remain open. The uniform dense threshold twenty does
+not imply the sharp threshold eleven. Probabilistic existence, some alternative
+constructions and stronger supplementary guarantees retain their ordinary
+proof boundaries.
 
 No theorem currently states the complete formula for every admissible `(n,m)`.
 Checking a graph's ranks does not prove exhaustive coverage of competing graphs.
@@ -152,6 +186,14 @@ with two Lean worker threads. It checks reported axioms, rejects proof holes and
 native proofs, verifies that sources did not change during the run, and writes
 `verification.json` with compiler/source hashes, outputs and elapsed times.
 Compiled object files are excluded from the archive and regenerated locally.
+
+The October campaign also uses `src/replay_lean_checkpoint.py` to stage a fresh
+bounded parallel replay. It reuses a successful compilation only when the
+current campaign's source, transitive dependencies, compiler and object hashes
+all match; changed inputs invalidate the affected modules. Its final pass
+covers the whole distributed dependency graph. This coordinator does not change
+`check.py`'s public sequential default or admit ordinary solver receipts as
+kernel evidence.
 
 Finite certificates use ordinary kernel reduction (`decide +kernel`). No
 external solver assertion, custom axiom, `sorry`, `admit`, or `native_decide`

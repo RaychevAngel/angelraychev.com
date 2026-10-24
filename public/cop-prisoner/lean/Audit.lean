@@ -1,3 +1,7 @@
+import MainTwelve
+import IrregularTenFourteen
+import SixTypeConstruction
+import PairCodeOverlap
 import FiniteExclusionHamiltonianSharp
 import CyclicWindow
 import ProtectedParameters
@@ -130,3 +134,12 @@ import DenseZero
 #print axioms Delivery.CyclicWindow.radius_six_entries
 
 #print axioms Delivery.FiniteExclusion.HamiltonianSharp.maximum
+
+-- October 23: actual irregular graphs, uniform sparse graphs, and main overlap.
+#print axioms Delivery.IrregularTen14.positive_upper
+#print axioms Delivery.SixTypeConstruction.core_exists
+#print axioms Delivery.SixTypeConstruction.maximum_even
+#print axioms Delivery.PairCodeConstruction.maximum
+#print axioms Delivery.PairCodeOverlap.maximum
+
+#print axioms Delivery.MainTwelve.maximum

@@ -75,9 +75,9 @@
 </ol>
 <h3 id="shared-formal-verification">Shared formal verification</h3>
 <ol type="1">
-<li><p><strong>Lean:</strong> twenty-one modules, Lean 4.33.1 and Std.</p>
+<li><p><strong>Lean:</strong> source-pinned complete module inventory, Lean 4.33.1 and Std.</p>
 <p><strong>Proof.</strong> <code>lean/README.md</code>.</p>
-<p><strong>Evidence and replay.</strong> <code>lean/check.py</code>, embedded <code>.lean</code> data, and <code>lean/verification.json</code>. Covers actual game semantics, selected structural implications, the 12-vertex sparse and 11-vertex dense examples, six small robust envelopes, and the generic position-dependent staged-envelope implication. The semantic equivalence, vertex upper bound and dense zero theorem are unconditional. Concrete staged tables and the complete extremal classification are not fully instantiated in Lean.</p></li>
+<p><strong>Evidence and replay.</strong> <code>lean/check.py</code>, embedded <code>.lean</code> data, and <code>lean/verification.json</code>. Covers actual-game equivalence, complete dense extrema from order20, sparse parity upper bounds, uniform six-type even attainers from support85, the full main interval above3n from order79, and every twelve-vertex main budget24..108. It also covers an unrestricted strict nine-vertex bound, the positive-degree ten-vertex/fourteen-arrow benchmark, and exact finite witness scores. The numerical theorem domains and remaining obligations are stated in <code>lean/README.md</code> and <code>research/LEAN_ROADMAP.md</code>; the complete extremal classification is not yet a Lean theorem. The new checkpoint is released only after every distributed module passes its source-pinned replay.</p></li>
 </ol>
 <p>The JSON index expands abbreviated filenames in these entries into complete path lists.</p>
 <h3 id="saved-certificate-replay">Saved-certificate replay</h3>
