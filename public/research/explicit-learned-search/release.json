@@ -7,20 +7,31 @@
   "article": "https://angelraychev.com/explicit-versus-learned-search/",
   "repository": "https://github.com/RaychevAngel/classical_vs_contextual_search",
   "historical_source_commit": "1a7fda10617d34ccd3a87c825cba71e4429de91a",
-  "companion_release_commit": "ac9939a5d47a43ea7b64d1970148c09e08ce5dee",
-  "release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/consolidated-report-2026-10-23",
+  "companion_release_commit": "bd4d592dcf70a592f04210a3370d65760c4e2382",
+  "release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/presentation-2026-10-24",
+  "original_release": "https://github.com/RaychevAngel/classical_vs_contextual_search/releases/tag/consolidated-report-2026-10-23",
   "artifacts": [
     {
       "file": "explicit-versus-learned-search.pdf",
       "pages": 15,
-      "sha256": "8a73d06d26e062b75798ef3eb71e73721b7772d71c695faec15380d80e01b665"
+      "sha256": "4027c501753236d5610d523c9127ab20a1c6696cfbd848805775599bd321a4ea"
     },
     {
       "file": "report-source.zip",
-      "contents": ["explicit-versus-learned-search.tex", "REPORT-SOURCE-README.txt", "figures/README.md", "figures/cs224n-training.png", "figures/cs224n-capacity-search.png", "figures/cs224r-training.png", "figures/cs224r-comparison.png", "figures/cs224n-search-135m.png", "figures/cs224n-search-360m.png", "figures/cs224n-search-1700m.png"],
-      "sha256": "33be95363a17b7dfb92839237c9f3571b95e0c4e0f3ff1f6395297c02064ddf2"
+      "contents": ["explicit-versus-learned-search.tex", "angel-publication.sty", "build-publication.py", "README-PRESENTATION.md", "presentation-manifest.json", "REPORT-SOURCE-README.txt", "figures/"],
+      "sha256": "128d6c8dc35446dab18ee0dd09be7c96511be99b78cfe3529095c9a6192298a2"
     }
   ],
+  "presentation_revision": {
+    "date": "2026-10-24",
+    "style": "angel-publication v1.0",
+    "style_sha256": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
+    "scope": "Presentation only: common layout and Overview/Code labels; scientific source, results, figures, equations and original report date preserved.",
+    "original_pdf": "/research/explicit-learned-search/archive/2026-10-23/explicit-versus-learned-search.pdf",
+    "original_pdf_sha256": "8a73d06d26e062b75798ef3eb71e73721b7772d71c695faec15380d80e01b665",
+    "original_source": "/research/explicit-learned-search/archive/2026-10-23/report-source.zip",
+    "original_source_sha256": "33be95363a17b7dfb92839237c9f3571b95e0c4e0f3ff1f6395297c02064ddf2"
+  },
   "verification": {
     "pdf": "All fifteen final pages visually inspected; final LaTeX build has no warnings, overflow boxes or unresolved references; all fonts embedded.",
     "source_archive": "Extracted and independently compiled to fifteen pages with identical page text; no model execution required.",

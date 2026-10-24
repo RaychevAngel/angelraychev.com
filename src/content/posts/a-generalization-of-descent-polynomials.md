@@ -8,8 +8,6 @@ updated: 2026-10-24
 
 *Sole-author research in enumerative combinatorics. Written in 2021; published in Discrete Mathematics in 2023.*
 
-[Paper (PDF)](/research/descent-polynomials/a-generalization-of-descent-polynomials.pdf) · [arXiv](https://arxiv.org/abs/2109.04519) · [Journal publication](https://doi.org/10.1016/j.disc.2022.113105) · [BibTeX](/research/descent-polynomials/citation.bib)
-
 A permutation records an order. Its **descent set** records exactly where that order falls: the positions at which an entry is larger than the next one. Fix those positions and count all permutations that realize them. Although the permutations become longer as the alphabet grows, their number is eventually governed by a polynomial.
 
 In this paper, I extended that counting problem to **multiset permutations**, where every label appears several times. The resulting family has two parameters: the number of distinct labels and their common multiplicity. I proved polynomiality in the first parameter, found the sharp point at which increasing the second stops changing the answer, and obtained an explicit formula for the stabilized polynomial. Its coefficients have a direct counting interpretation in a particular binomial basis, together with a sharp description of which shifts preserve nonnegativity.

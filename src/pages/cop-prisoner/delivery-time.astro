@@ -7,10 +7,10 @@ import { rerenderMathHtml } from '../../lib/math.mjs';
 const renderedDeliveryTimeHtml = rerenderMathHtml(deliveryTimeHtml, { label: 'delivery-time companion' });
 ---
 <Post title="Guaranteed delivery: delivery-time companion" description="Proved delivery-time bounds and partial fast constructions, retained separately from the exact-count classification." updated={release.publication_date}>
-  <p><a href="/cop-prisoner/">Exact-count overview</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/paper/">Paper and evidence</a> · <a href="/cop-prisoner/lean/">Lean coverage</a></p>
+  <p><a href="/cop-prisoner/">Exact-count overview</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/#resources">Main manuscript resources</a></p>
   <p class="note">Delivery-time optimization remains parked. The main project now determines the exact maximum <Math tex={String.raw`M(n,m)`} /> and an explicit attaining construction at every resource pair. This companion preserves the existing time bounds and explicitly partial fast constructions; the completed count classification does not settle those separate optimization questions.</p>
   <p>The main classification counts every pair with a strategy that delivers in finite time. This companion asks how quickly delivery can be guaranteed. Two-move routing arguments that establish attaining graphs still belong to the <a href="/cop-prisoner/proofs/">classification proofs</a>.</p>
-  <p>Read the <a href="/cop-prisoner/delivery-time-companion.pdf">{release.companions.delivery_time.pages}-page companion PDF</a> or download its <a href="/cop-prisoner/delivery-time-source.zip">LaTeX source archive</a>.</p>
+  <p>The selected {release.companions.delivery_time.pages}-page PDF is linked above; its LaTeX source is under <a href="#resources">Resources</a>.</p>
   <div class="cop-prisoner-companion-text" set:html={renderedDeliveryTimeHtml}/>
   <p>The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies ordinary proofs, finite certificates, and saved checks. A partial construction is not a universal delivery theorem.</p>
 </Post>

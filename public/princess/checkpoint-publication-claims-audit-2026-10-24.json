@@ -74,7 +74,7 @@
     "independently_replayed": false
   },
   "reviewed_artifact_sha256": {
-    "paper/main.tex": "dcf58ce5d2396e7506178302d9aa9860fe45dfdade5640ecff69dfa76fba6e83",
+    "paper/main.tex": "e859c085cb6078bb3bc7950d1ed5c88bc9de0640eb8131a6b27aa6d4755d9eb9",
     "paper/sections/introduction.tex": "6273dec16a2492504e56a0f927700b0d723ee02d2f031c101a266a95f7025b75",
     "paper/sections/october-checkpoint.tex": "2f5c046dae316881472e4fe294d8e360fc0345f58508526ad30c1ea6524dccab",
     "paper/sections/formalization.tex": "ca6afb4243a261c0899714542b255c49fca0af54ff7a32da2109e7ff1c6f187a",
@@ -86,10 +86,14 @@
     "research/BOX_RECONCILIATION.md": "63c3ea7c426c8b2d19cf30a9a9243133461b0e5b0726a3c4e04dcff8bc85a436",
     "publication/rectangle-coverage.json": "afb8c95f6362eb0c13fe1c6f3cc81a8ce1e8f43095134860977ed9730227c029",
     "publication/CHECKPOINT_EVIDENCE.md": "2f340a0398b0038c60c1f0fb8c47a1974294ab8c82075b022b887effc94f0053",
-    ".build/site-release/src/pages/princess.astro": "6a5076bebe62d814872f694c36c689143d9fc6144cc2440e9965fc86fcba7adb",
-    ".build/site-release/src/pages/princess/paper.md": "f975c3bba151774bdda01619621729e1f8e734b8cbf7bc1bf4323ec64777f5d6",
+    ".build/site-release/src/pages/princess.astro": "733ce0ac85e4bf090b60e6427b9927013bf0f73b53ff291a8f553828e4dee354",
+    ".build/site-release/src/pages/princess/paper.md": "cbb09dcdd4599f6ec7a7d61b9620516ccc6874d9c29df5149529cb31f6217670",
     ".build/site-release/src/pages/princess/checkpoint.md": "ace25307716daf852f3283db6494977d208dc866c876261797ee40e279687f33",
-    ".build/site-release/src/pages/princess/lean.md": "fb64a9cc72a74e7187f80765b3c01606347d53be0f6f1a918cc4755de92d0d75"
+    ".build/site-release/src/pages/princess/lean.md": "fb64a9cc72a74e7187f80765b3c01606347d53be0f6f1a918cc4755de92d0d75",
+    ".build/site-release/src/data/publications.json": "2b08f5d151a052548976baa2b788527a38eac569a20b3819f362545bbdbc8e24",
+    "paper/preamble.tex": "56387878098bf1921e80f239fddffeea4d61792c6d02f3b7f4c9888b61c6f68a",
+    "paper/angel-publication.sty": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
+    "paper/extensions.tex": "03325233871e73613b9cbfaf20930d80dcdadf3241e29af6bb78db299107ce3d"
   },
   "remaining_release_checks": "Build/PDF rendering, scoped-package and link checks, and served-byte verification are performed separately by the publication coordinator.",
   "post_audit_formatting_verification": {
@@ -101,5 +105,46 @@
     "verified": "Reconstructed exact prior bytes match original audit hash; removing whitespace yields byte-identical content; every other audited artifact hash is unchanged.",
     "mathematical_content_changed": false,
     "manuscript_pdf_changed_by_this_correction": false
+  },
+  "post_audit_presentation_integration": {
+    "checked_at_utc": "2026-10-24T22:19:51.715294+00:00",
+    "status": "PASS",
+    "changed_original_artifacts": {
+      "paper/main.tex": {
+        "before_sha256": "dcf58ce5d2396e7506178302d9aa9860fe45dfdade5640ecff69dfa76fba6e83",
+        "after_sha256": "e859c085cb6078bb3bc7950d1ed5c88bc9de0640eb8131a6b27aa6d4755d9eb9"
+      },
+      ".build/site-release/src/pages/princess.astro": {
+        "before_sha256": "6a5076bebe62d814872f694c36c689143d9fc6144cc2440e9965fc86fcba7adb",
+        "after_sha256": "733ce0ac85e4bf090b60e6427b9927013bf0f73b53ff291a8f553828e4dee354"
+      },
+      ".build/site-release/src/pages/princess/paper.md": {
+        "before_sha256": "f975c3bba151774bdda01619621729e1f8e734b8cbf7bc1bf4323ec64777f5d6",
+        "after_sha256": "cbb09dcdd4599f6ec7a7d61b9620516ccc6874d9c29df5149529cb31f6217670"
+      }
+    },
+    "verified_scientific_preservation": [
+      "Removing three running-title/author/status commands reproduces exact earlier audited main.tex bytes by SHA-256",
+      "Restoring only prior resource-navigation line reproduces exact earlier audited overview bytes by SHA-256",
+      "Restoring only prior resource-page title and download-link paragraph reproduces exact earlier audited paper-page bytes by SHA-256",
+      "Main and companion entrypoints plus shared preamble agree byte-for-byte with pre-style archive after only the documented presentation additions are removed",
+      "Pinned angel-publication.sty hash matches the house-style receipt; package adjusts presentation and preserves pre-existing theorem environments/scientific macros"
+    ],
+    "other_previously_reviewed_artifacts_unchanged": true,
+    "registry_checked": {
+      "file": ".build/site-release/src/data/publications.json",
+      "main_id": "capture-time",
+      "companion_id": "capture-time-extensions",
+      "manuscript_date": "2026-10-24",
+      "main_status": "Research checkpoint with uniform gap at most four, classification open, not submitted to arXiv",
+      "formal_boundary": "Paths/two rows complete; October general rectangle claims not new complete Lean theorems",
+      "candidate_boundary": "Discovery only; independent replay/interface incomplete; excluded from all accepted bounds",
+      "companion_status": "Parked, synchronized artifacts/presentation, no new extension research",
+      "corrected_note": "Removed inaccurate statement that research implementation remains private, since proof programs and computational evidence are distributed separately."
+    },
+    "house_style_receipt": "research/checkpoint-house-style-2026-10-24.json",
+    "new_mathematical_claims": false,
+    "new_lean_proofs": false,
+    "pdf_and_live_render_validation": "Separate coordinator receipts; not claimed by this content audit."
   }
 }

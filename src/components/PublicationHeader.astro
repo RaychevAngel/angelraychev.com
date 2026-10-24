@@ -1,0 +1,21 @@
+---
+import { primaryResources } from '../lib/publications.mjs';
+const { work } = Astro.props;
+const primary = primaryResources(work);
+---
+<div class="publication-header" data-publication={work.id}>
+  {work.authors.length > 0 && <p class="publication-authors">{work.authors.join(' · ')}</p>}
+  <p class="publication-status">
+    <span>{work.kind}</span>
+    {work.status && <><span aria-hidden="true"> · </span><span>{work.status}</span></>}
+    {work.records.map(record => <><span aria-hidden="true"> · </span><a href={record.url} data-record={record.kind}>{record.label}</a></>)}
+  </p>
+  {(primary.length > 0 || work.resources.length > 0) && <nav class="publication-primary" aria-label="Project resources">
+    <ul>
+      {primary.map(resource => <li><a href={resource.url} data-resource={resource.kind}>{resource.label}</a></li>)}
+      {work.resources.length > 0 && <li><a href="#resources" data-resources-jump>Resources</a></li>}
+    </ul>
+  </nav>}
+  {work.primary.pdf?.version && <p class="publication-version">PDF: {work.primary.pdf.version}.</p>}
+  {primary.filter(resource => resource.note).map(resource => <p class="publication-scope" data-resource-scope={resource.kind}>{resource.label}: {resource.note}</p>)}
+</div>

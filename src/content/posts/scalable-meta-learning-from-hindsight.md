@@ -12,8 +12,6 @@ This project asks whether we can **learn the teaching procedure itself**. The ob
 
 I designed and implemented two connected learning systems around that question. The outer system proposes source-derived lessons and measures the improvement their updates cause in matched students; its measured reward can train the proposer. The inner system learns to assign the selected full-vocabulary distributions directly from raw completed experience, then distills them into a causal student. The component study separates three achievements that can otherwise look deceptively similar: useful information in context, accurate imitation of a teaching distribution, and improvement retained in the student's parameters.
 
-[Read the technical report](/research/learning-from-hindsight/learning-from-hindsight.pdf) · [Code and evidence](https://github.com/RaychevAngel/learning-from-hindsight) · [LaTeX source](/research/learning-from-hindsight/report-source.zip)
-
 ## Judge teaching by the learning it causes
 
 Suppose a model gets an array-transformation problem wrong. A strong assistant can inspect the completed attempt and say, “Keep only the longest nonzero run; remove the isolated entries.” That may be an excellent instruction for solving another array. It does not follow that training on the original attempt under that instruction will teach the student to apply the rule independently.

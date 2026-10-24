@@ -17,7 +17,7 @@ const finiteArcHosts = [7,8,8,8,8,10,9,11,10,12,11,12];
   <div set:html={math(String.raw`M(n,m)=\max_{|V(G)|=n,\ |E(G)|=m}I(G),\qquad n\ge1,\quad0\le m\le n(n-1),`)} />
   <p>and give an explicit attaining construction at every pair of resources. This means concrete rules for the vertices and arrows, or a specified composition procedure, with all parameters determined from <Math tex={String.raw`(n,m)`} />. A certified, listed finite graph also qualifies. An existence statement, general graph search, or derandomization procedure alone does not complete this construction requirement. Isolated stations are allowed.</p>
   <p><strong>The classification is complete.</strong> Every feasible vertex and arrow count has an exact maximum and an explicit attaining graph. Four formulas cover every order from twelve; complete finite tables cover orders one through eleven. The <a href="#explicit-constructions">construction inventory</a> identifies the adjacency rules, specified compositions and certified listed graphs that attain the values.</p>
-  <p><a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/paper/">Paper and evidence</a> · <a href="/cop-prisoner/lean/">Lean coverage</a> · <a href="/cop-prisoner/delivery-time/">Delivery-time companion</a></p>
+  <p><a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="#resources">Resources</a></p>
 
   <h2>The rules and the counting bound</h2>
   <p>The graph is finite and directed, without loops or repeated arcs; opposite arrows are allowed. The messenger observes the pursuer's initial position and may adapt its strategy to it. Receipt wins immediately, even when the pursuer occupies the recipient. Every other collision loses, and evading forever does not count as delivery.</p>
@@ -99,5 +99,5 @@ const finiteArcHosts = [7,8,8,8,8,10,9,11,10,12,11,12];
 
   <h2>Where the work comes from</h2>
   <p>Alexandra Ignatova developed the original problem and layered construction in 2023 under Angel Raychev's mentorship; the retained manuscript is dated February 2024. The <a href="https://uchi.bas.bg/wp-content/uploads/2024/09/Knijka_reziumeta_2023.pdf">2023 student research abstracts, page 27</a> record that provenance. Ignatova and Raychev had already established the <Math tex={String.raw`n(n - 3)`} /> upper bound and investigated two-in/two-out constructions.</p>
-  <p>The September 2026 work corrects the layered counting argument and develops attaining families, extremal bounds, computational evidence, and formalization with assistance from Astra 6 through Codex. The <a href="/cop-prisoner/paper/">paper page</a> preserves that credit and the unresolved publication status.</p>
+  <p>The September 2026 work corrects the layered counting argument and develops attaining families, extremal bounds, computational evidence, and formalization with assistance from Astra 6 through Codex. The <a href="/cop-prisoner/paper/">resources page</a> preserves that credit and the unresolved publication status.</p>
 </Post>

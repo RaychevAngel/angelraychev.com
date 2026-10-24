@@ -6,12 +6,6 @@ imageAlt: "Scaling Laws for Generative Reward Models by Angel Raychev, Nathan Li
 updated: 2026-10-23
 ---
 
-**Angel Raychev · Nathan Lile · Rafael Rafailov**
-
-[arXiv:2610.30765](https://arxiv.org/abs/2610.30765) · [Paper (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767) · [Analysis and results](https://github.com/RaychevAngel/generative-reward-models) · [Implementation](#the-training-system-behind-the-study) · [Citation](#citation)
-
-<p class="note">arXiv preprint · v1 submitted 22 October 2026. First released on this site on 21 October.</p>
-
 **Static judge accuracy and downstream training quality can disagree.** In our
 matched online-DPO study, Answer-Only rewarders produce higher peak and top-five
 policy ratings than Thinking rewarders in seven of eight settings under the
@@ -214,24 +208,17 @@ and [evaluation through reward overoptimization](https://aclanthology.org/2025.a
 Our focus is the generative-rewarder loop: practical judge-training pipelines,
 rewarder/policy capacity, checkpoint selection and online-DPO dynamics.
 
-## Paper and citation
+## Manuscript and citation
 
-[Download Scaling Laws for Generative Reward Models (PDF)](/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767).
-The official preprint is [arXiv:2610.30765](https://arxiv.org/abs/2610.30765).
-The [versioned public analysis release](https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.23-analysis.1)
-provides the research artifacts under the public scope described above.
+The PDF linked at the top is the versioned arXiv manuscript. The public analysis
+release and source links are collected under [Resources](#resources).
 The manuscript contains the experimental setup, matched-condition comparisons,
 readable chronological training trajectories, and an expanded empirical appendix.
 It documents the Elo estimator and uncertainty procedure, and distinguishes
 descriptive scaling fits from independently validated laws.
-The [version record](/research/generative-reward-models/release.json) identifies
-the downloadable PDF.
-The [paper landing page](/research/generative-reward-models/) provides the exact
-abstract and machine-readable citation metadata.
-
-<iframe class="grm-pdf" src="/research/generative-reward-models/reader.html?v=43aabe398767" title="Scaling Laws for Generative Reward Models — full manuscript" loading="lazy"><a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767">Open the manuscript PDF</a>.</iframe>
-
-<p class="note">If your browser does not display the reader, <a href="/research/generative-reward-models/scaling-laws-for-generative-reward-models.pdf?v=43aabe398767">open or download the PDF directly</a>.</p>
+The [version record](/research/generative-reward-models/release.json) also retains
+the separately hashed website copy. It is not advertised as an identical second
+primary manuscript.
 
 <div id="citation"></div>
 

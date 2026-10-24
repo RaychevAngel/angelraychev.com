@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Post.astro"
-title: "Rectangle searches: manuscript and evidence"
+title: "Rectangle searches — resources"
 description: "The October 2026 rectangle checkpoint: proved uniform bounds, exact families, the unverified candidate, and precise formal coverage."
 updated: 2026-10-24
 ---
@@ -9,7 +9,7 @@ Angel Ivanov Raychev · checkpoint of 24 October 2026
 
 **Research manuscript in preparation. The accepted computable bounds differ by at most four days for every feasible rectangle. Uniform gap zero and the full fixed-size numerical expression remain open. No Princess paper has been submitted to arXiv.**
 
-[Read the rectangle paper](/princess/princess-searches.pdf) · [LaTeX sources](/princess/manuscript-source.zip) · [Mathematical sources and evidence](/princess/research-sources.zip)
+The [overview](/princess/) provides the selected PDF and Lean guide. Its [Resources](/princess/#resources) section collects LaTeX, companions and previous versions. The [mathematical evidence archive](/princess/research-sources.zip) supports the account below.
 
 [Overview](/princess/) · [Current checkpoint](/princess/checkpoint/) · [Progress reconciliation](/princess/reconciliation/) · [Manuscript-derived proofs](/princess/proofs/) · [Exact coverage and gaps](/princess/coverage/) · [Lean coverage](/princess/lean/) · [Parked extensions](/princess/extensions/)
 

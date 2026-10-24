@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "works": [
+    {
+      "id": "agent-platform",
+      "title": "Building a distributed platform for agent training and evaluation",
+      "overview": "/distributed-agent-training-and-evaluation/",
+      "kind": "Engineering article",
+      "authors": ["Angel Raychev"],
+      "status": "Deployed and exercised internally; not generally available",
+      "records": [],
+      "primary": {},
+      "resources": [
+        {"kind": "documentation", "url": "https://synthlabs.mintlify.app/concepts/product-model", "note": "Product model and architecture."},
+        {"kind": "documentation", "label": "Agent profiles", "url": "https://synthlabs.mintlify.app/concepts/profiles-and-candidates"},
+        {"kind": "documentation", "label": "Tasks and versions", "url": "https://synthlabs.mintlify.app/concepts/tasks-and-versions"},
+        {"kind": "documentation", "label": "Managed execution", "url": "https://synthlabs.mintlify.app/guides/managed-execution"},
+        {"kind": "documentation", "label": "Training and checkpoint comparison", "url": "https://synthlabs.mintlify.app/guides/managed-training"},
+        {"kind": "documentation", "label": "CLI reference", "url": "https://synthlabs.mintlify.app/reference/cli"},
+        {"kind": "releases", "url": "https://github.com/SynthLabsAI/synth-releases/releases", "note": "Downloadable CLI releases, not a public onboarding service."}
+      ]
+    },
+    {
+      "id": "generative-reward-models",
+      "title": "Scaling Laws for Generative Reward Models",
+      "manuscriptTitle": "Scaling Laws for Generative Reward Models",
+      "manuscriptDate": "2026-10-22",
+      "overview": "/scaling-laws-for-generative-reward-models/",
+      "kind": "Research paper",
+      "authors": ["Angel Raychev", "Nathan Lile", "Rafael Rafailov"],
+      "status": "Preprint",
+      "records": [{"kind": "arxiv", "label": "arXiv:2610.30765", "url": "https://arxiv.org/abs/2610.30765"}],
+      "primary": {
+        "pdf": {"url": "https://arxiv.org/pdf/2610.30765v1", "version": "arXiv v1 · 22 October 2026"},
+        "code": {"url": "https://github.com/RaychevAngel/generative-reward-models", "note": "Public analysis code and recorded research artifacts; the custom training implementation remains private."}
+      },
+      "resources": [
+        {"kind": "citation", "url": "/scaling-laws-for-generative-reward-models/#citation"},
+        {"kind": "releases", "url": "https://github.com/RaychevAngel/generative-reward-models/releases/tag/v2026.10.23-analysis.1", "note": "Versioned public analysis package."},
+        {"kind": "latex", "url": "https://arxiv.org/src/2610.30765v1", "note": "Source of the arXiv manuscript; not a release of the private trainer."},
+        {"kind": "versions", "url": "/research/generative-reward-models/release.json", "note": "Identifies the arXiv PDF and the separately hashed website manuscript copy."}
+      ]
+    },
+    {
+      "id": "specialist-agents",
+      "title": "From real software work to specialized agents",
+      "overview": "/from-software-work-to-specialized-agents/",
+      "kind": "Engineering article",
+      "authors": ["Angel Raychev"],
+      "status": "Task generation, profile construction and applied evaluation",
+      "records": [],
+      "primary": {},
+      "resources": [
+        {"kind": "documentation", "label": "Tasks and versions", "url": "https://synthlabs.mintlify.app/concepts/tasks-and-versions"},
+        {"kind": "documentation", "label": "Agent profiles", "url": "https://synthlabs.mintlify.app/concepts/profiles-and-candidates"},
+        {"kind": "documentation", "label": "CLI reference", "url": "https://synthlabs.mintlify.app/reference/cli"}
+      ]
+    },
+    {
+      "id": "model-specialization",
+      "title": "Model specialization and training agents",
+      "overview": "/model-specialization-and-training-agents/",
+      "kind": "Engineering article",
+      "authors": ["Angel Raychev"],
+      "status": "Domain training, distillation and agents that conduct training",
+      "records": [],
+      "primary": {},
+      "resources": [
+        {"kind": "related", "label": "Nemoral", "url": "/model-specialization-and-training-agents/#a-related-application-in-nemoral", "note": "The related Stanford team application and my contributions."},
+        {"kind": "source", "label": "Nemoral contribution", "url": "https://github.com/StanfordCS194/spr26-Team-26/pull/116", "note": "AutoResearch integration; a specific contribution rather than the complete application."}
+      ]
+    },
+    {
+      "id": "explicit-learned-search",
+      "artifactManifest": "/research/explicit-learned-search/release.json",
+      "title": "Explicit versus learned search",
+      "manuscriptTitle": "Explicit versus learned search",
+      "manuscriptDate": "2026-10-23",
+      "manuscriptModified": "2026-10-24",
+      "overview": "/explicit-versus-learned-search/",
+      "kind": "Technical report",
+      "authors": ["Angel Raychev"],
+      "status": "Consolidated retrospective on the Stanford team projects",
+      "records": [],
+      "primary": {
+        "pdf": {"url": "/research/explicit-learned-search/explicit-versus-learned-search.pdf", "version": "Report dated 23 October 2026 · presentation revision 24 October 2026"},
+        "code": {"url": "https://github.com/RaychevAngel/classical_vs_contextual_search"}
+      },
+      "resources": [
+        {"kind": "latex", "url": "/research/explicit-learned-search/report-source.zip"},
+        {"kind": "versions", "url": "/research/explicit-learned-search/release.json"},
+        {"kind": "archive", "label": "Earlier experiments", "url": "https://github.com/RaychevAngel/classical_vs_contextual_search/tree/main/results/archive", "note": "Historical records, not additional primary reports."},
+        {"kind": "models", "label": "Policy checkpoint", "url": "https://huggingface.co/AngelRaychev/0.5B-policy-iteration_6"},
+        {"kind": "models", "label": "Step-value checkpoint", "url": "https://huggingface.co/AngelRaychev/1.5B-value-iteration_2"},
+        {"kind": "models", "label": "Traversal-trained checkpoint", "url": "https://huggingface.co/AngelRaychev/0.5B-sos-iteration_1_b21_e42_epochs16"}
+      ]
+    },
+    {
+      "id": "learning-from-hindsight",
+      "artifactManifest": "/research/learning-from-hindsight/release.json",
+      "title": "Scalable meta-learning from hindsight",
+      "manuscriptTitle": "Scalable Meta-Learning from Hindsight",
+      "manuscriptDate": "2026-10-24",
+      "manuscriptModified": "2026-10-24",
+      "overview": "/scalable-meta-learning-from-hindsight/",
+      "kind": "Technical report",
+      "authors": ["Angel Raychev"],
+      "status": "Research and component study",
+      "records": [],
+      "primary": {
+        "pdf": {"url": "/research/learning-from-hindsight/learning-from-hindsight.pdf", "version": "Technical report · presentation revision 24 October 2026"},
+        "code": {"url": "https://github.com/RaychevAngel/learning-from-hindsight", "note": "Curated implementation, tests and retained evidence; large model weights and tensor artifacts are not bundled."}
+      },
+      "resources": [
+        {"kind": "latex", "url": "/research/learning-from-hindsight/report-source.zip"},
+        {"kind": "releases", "url": "https://github.com/RaychevAngel/learning-from-hindsight/releases/tag/v0.1.0", "note": "Original research-code release; the report presentation has since been standardized."},
+        {"kind": "versions", "url": "/research/learning-from-hindsight/release.json"}
+      ]
+    },
+    {
+      "id": "reviewer-journal",
+      "title": "Training a code reviewer we actually use",
+      "overview": "/training-a-code-reviewer-we-actually-use/",
+      "kind": "Engineering article",
+      "authors": ["Angel Raychev"],
+      "status": "Project journal",
+      "records": [],
+      "primary": {},
+      "resources": [
+        {"kind": "documentation", "label": "Assessment method", "url": "/training-a-code-reviewer-we-actually-use/method/"},
+        {"kind": "archive", "label": "Project progress", "url": "/training-a-code-reviewer-we-actually-use/progress/"}
+      ]
+    },
+    {
+      "id": "descent-polynomials",
+      "title": "A Generalization of Descent Polynomials",
+      "manuscriptTitle": "A Generalization of Descent Polynomials",
+      "manuscriptDate": "2021-09",
+      "overview": "/a-generalization-of-descent-polynomials/",
+      "kind": "Research paper",
+      "authors": ["Angel Raychev"],
+      "status": "Published in Discrete Mathematics · 2023",
+      "records": [
+        {"kind": "arxiv", "label": "arXiv:2109.04519", "url": "https://arxiv.org/abs/2109.04519"},
+        {"kind": "journal", "label": "Journal", "url": "https://doi.org/10.1016/j.disc.2022.113105"}
+      ],
+      "primary": {"pdf": {"url": "https://arxiv.org/pdf/2109.04519v1", "version": "September 2021 author preprint; not the publisher's typeset version"}},
+      "resources": [
+        {"kind": "citation", "url": "/research/descent-polynomials/citation.bib"},
+        {"kind": "latex", "url": "https://arxiv.org/src/2109.04519v1"},
+        {"kind": "versions", "url": "/research/descent-polynomials/release.json"}
+      ]
+    },
+    {
+      "id": "four-arm-polyominoes",
+      "title": "Four-arm polyominoes and Golomb’s hierarchy",
+      "manuscriptTitle": "Four-arm polyominoes in Golomb's hierarchy: A complete classification with Lean verification",
+      "manuscriptDate": "2026-09-12",
+      "overview": "/four-arm-polyominoes/",
+      "kind": "Research paper",
+      "authors": ["Angel Ivanov Raychev"],
+      "status": "Preprint",
+      "records": [{"kind": "arxiv", "label": "arXiv:2609.13641", "url": "https://arxiv.org/abs/2609.13641"}],
+      "primary": {
+        "pdf": {"url": "https://arxiv.org/pdf/2609.13641v1", "version": "arXiv v1 · 12 September 2026"},
+        "lean": {"url": "/polyominoes/formalization/", "note": "Complete formal classification; the guide identifies the checked theorem, toolchain and frozen source archive."}
+      },
+      "resources": [
+        {"kind": "latex", "url": "https://arxiv.org/src/2609.13641v1", "note": "Source of the selected arXiv manuscript."},
+        {"kind": "citation", "url": "/polyominoes/citation.bib"},
+        {"kind": "evidence", "label": "Proofs and research history", "url": "/polyominoes/paper/"},
+        {"kind": "versions", "url": "/polyominoes/arxiv-release.json", "note": "Website artifact identities, including the separately retained website manuscript."}
+      ]
+    },
+    {
+      "id": "capture-time",
+      "title": "Finding a princess on a rectangle",
+      "manuscriptTitle": "Capture time on rectangular grids with a constant inspection budget",
+      "manuscriptDate": "2026-10-24",
+      "overview": "/princess/",
+      "kind": "Research manuscript",
+      "authors": [
+        "Angel Ivanov Raychev"
+      ],
+      "status": "Research checkpoint · uniform gap at most four; exact classification remains open; not submitted to arXiv",
+      "records": [],
+      "primary": {
+        "pdf": {
+          "url": "/princess/princess-searches.pdf",
+          "version": "Website manuscript · 24 October 2026 checkpoint and presentation revision"
+        },
+        "lean": {
+          "url": "/princess/lean/",
+          "note": "Complete physical-game classifications for paths and two rows, plus supporting lemmas. October general-rectangle results are not new complete Lean theorems."
+        }
+      },
+      "resources": [
+        {
+          "kind": "latex",
+          "url": "/princess/manuscript-source.zip",
+          "note": "Buildable main manuscript sources; proof programs and computational evidence are listed separately below."
+        },
+        {
+          "kind": "evidence",
+          "label": "Checkpoint and proof status",
+          "url": "/princess/checkpoint/",
+          "note": "Accepted results, the unverified candidate, remaining gaps and review boundaries."
+        },
+        {
+          "kind": "evidence",
+          "label": "Mathematical sources and evidence",
+          "url": "/princess/research-sources.zip",
+          "note": "Preserved ordinary proofs, dependencies and computational evidence; inclusion is not theorem acceptance."
+        },
+        {
+          "kind": "supplement",
+          "label": "October checkpoint supplement",
+          "url": "/princess/checkpoint-sources-2026-10-24.zip",
+          "note": "Frozen proof notes, review receipts and research evidence, with file status guidance."
+        },
+        {
+          "kind": "source",
+          "label": "Unverified comparison candidate",
+          "url": "/princess/unverified-comparison-candidate-2026-10-24.zip",
+          "note": "Discovery record only. Independent replay and the physical interface remain incomplete; excluded from every accepted bound."
+        },
+        {
+          "kind": "evidence",
+          "label": "Formal-source coverage audit",
+          "url": "/princess/checkpoint-formal-coverage-2026-10-24.json",
+          "note": "Source and dependency comparison against the existing Lean compiler receipt; no new Lean compilation."
+        },
+        {
+          "kind": "documentation",
+          "label": "Manuscript and evidence guide",
+          "url": "/princess/paper/"
+        },
+        {
+          "kind": "supplement",
+          "label": "Higher-dimensional companion",
+          "url": "/princess/extensions/",
+          "note": "Separate parked work; no new extension research or second version of the rectangle manuscript."
+        },
+        {
+          "kind": "archive",
+          "label": "Previous published rectangle manuscript",
+          "url": "/princess/archive/2026-09-13-pre-october-release/princess-searches.pdf",
+          "note": "September release preserved before the October synchronization."
+        },
+        {
+          "kind": "archive",
+          "label": "Previous rectangle release manifest",
+          "url": "/princess/archive/2026-09-13-pre-october-release/archive-manifest.json",
+          "note": "Hashes identify the frozen earlier PDF and accompanying sources."
+        },
+        {
+          "kind": "archive",
+          "label": "Earlier combined manuscript",
+          "url": "/princess/archive/2026-09-13-combined/"
+        },
+        {
+          "kind": "versions",
+          "url": "/princess/release.json",
+          "note": "Hashes and evidence boundary for the selected manuscript and source packages."
+        }
+      ],
+      "manuscriptModified": "2026-10-24",
+      "artifactManifest": "/princess/release.json"
+    },
+    {
+      "id": "guaranteed-delivery",
+      "title": "Guaranteed indirect delivery: the exact maximum",
+      "manuscriptTitle": "Guaranteed indirect delivery in directed networks",
+      "overview": "/cop-prisoner/",
+      "kind": "Research manuscript",
+      "authors": ["Angel Ivanov Raychev", "Alexandra Ignatova"],
+      "status": "Prepared manuscript · not submitted to arXiv",
+      "records": [],
+      "primary": {
+        "pdf": {"url": "/cop-prisoner/guaranteed-indirect-delivery.pdf", "version": "Current website manuscript"},
+        "lean": {"url": "/cop-prisoner/lean/", "note": "Formal proofs of substantial domains; complete classification remains unfinished in Lean."}
+      },
+      "resources": [
+        {"kind": "latex", "url": "/cop-prisoner/manuscript-source.zip"},
+        {"kind": "evidence", "url": "/cop-prisoner/paper/", "note": "Certificates, research history, bibliography and verification records."},
+        {"kind": "supplement", "label": "Delivery-time companion", "url": "/cop-prisoner/delivery-time/", "note": "Separate parked work with explicitly partial results."},
+        {"kind": "versions", "url": "/cop-prisoner/release.json"}
+      ]
+    },
+    {
+      "id": "capture-time-extensions",
+      "title": "Princess searches: parked extensions",
+      "manuscriptTitle": "Moving-target search on boxes and cylinders: Parked extensions and preserved proofs",
+      "manuscriptDate": "2026-10-24",
+      "overview": "/princess/extensions/",
+      "kind": "Research companion",
+      "authors": [
+        "Angel Ivanov Raychev"
+      ],
+      "status": "Parked · references, artifacts and presentation synchronized; no new extension research",
+      "records": [],
+      "primary": {
+        "pdf": {
+          "url": "/princess/extensions/princess-extensions.pdf",
+          "version": "Parked companion · 24 October 2026 synchronization and presentation revision; mathematical results preserved"
+        },
+        "lean": {
+          "url": "/princess/extensions/lean/",
+          "note": "Scope and checked sources for the companion, not the main rectangle classification."
+        }
+      },
+      "resources": [
+        {
+          "kind": "latex",
+          "url": "/princess/extensions/extensions-source.zip"
+        },
+        {
+          "kind": "evidence",
+          "url": "/princess/extensions/extensions-research-sources.zip"
+        },
+        {
+          "kind": "related",
+          "label": "Rectangle overview",
+          "url": "/princess/"
+        },
+        {
+          "kind": "archive",
+          "label": "Restart notes",
+          "url": "/princess/extensions/handoff.md"
+        },
+        {
+          "kind": "versions",
+          "url": "/princess/extensions/release.json",
+          "note": "Selected companion PDF, buildable sources and preserved formal-evidence hashes."
+        }
+      ],
+      "manuscriptModified": "2026-10-24",
+      "artifactManifest": "/princess/extensions/release.json"
+    },
+    {
+      "id": "delivery-time-companion",
+      "title": "Guaranteed delivery: delivery-time companion",
+      "manuscriptTitle": "Delivery time and two-move sparsity in directed networks",
+      "manuscriptDate": "2026-09-13",
+      "overview": "/cop-prisoner/delivery-time/",
+      "kind": "Research companion",
+      "authors": [],
+      "status": "Parked · partial results, separate from the exact-count classification",
+      "records": [],
+      "primary": {"pdf": {"url": "/cop-prisoner/delivery-time-companion.pdf", "version": "Delivery-time companion"}},
+      "resources": [
+        {"kind": "latex", "url": "/cop-prisoner/delivery-time-source.zip"},
+        {"kind": "related", "label": "Exact-count overview", "url": "/cop-prisoner/"},
+        {"kind": "versions", "url": "/cop-prisoner/release.json"}
+      ]
+    },
+    {
+      "id": "capture-time-archive-20260913",
+      "title": "Princess searches — earlier combined manuscript",
+      "manuscriptTitle": "Optimal searches for a moving target on paths and grids",
+      "manuscriptDate": "2026-09",
+      "overview": "/princess/archive/2026-09-13-combined/",
+      "kind": "Historical archive",
+      "authors": ["Angel Ivanov Raychev"],
+      "status": "Frozen 13 September 2026 · not the current manuscript",
+      "records": [],
+      "primary": {"pdf": {"url": "/princess/archive/2026-09-13-combined/princess-searches.pdf", "version": "Frozen combined manuscript · 13 September 2026"}},
+      "resources": [
+        {"kind": "latex", "url": "/princess/archive/2026-09-13-combined/manuscript-source.zip"},
+        {"kind": "source", "label": "Historical Lean archive", "url": "/princess/archive/2026-09-13-combined/lean-proofs.zip", "note": "The contemporary checked scope is described on this page; not a new complete formalization."},
+        {"kind": "evidence", "url": "/princess/archive/2026-09-13-combined/research-sources.zip"},
+        {"kind": "related", "label": "Current rectangle overview", "url": "/princess/"}
+      ]
+    },
+    {
+      "id": "nemoral",
+      "title": "Nemoral agentic model training",
+      "overview": "/model-specialization-and-training-agents/#a-related-application-in-nemoral",
+      "kind": "Team project",
+      "authors": [],
+      "status": "Stanford CS194 · 2026",
+      "records": [],
+      "primary": {"code": {"url": "https://github.com/StanfordCS194/spr26-Team-26", "note": "Team application; the overview identifies my specific contributions."}},
+      "resources": []
+    }
+  ]
+}

@@ -26,6 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run test:math
       - run: npm run test:tables
+      - run: npm run test:publications
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

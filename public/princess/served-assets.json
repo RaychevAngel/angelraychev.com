@@ -71,7 +71,7 @@
     },
     "/princess/artifact-manifest.json": {
       "scope": "shared",
-      "bytes": 485365
+      "bytes": 485964
     },
     "/princess/box-reconciliation.md": {
       "scope": "main",
@@ -87,7 +87,7 @@
     },
     "/princess/checkpoint-publication-claims-audit-2026-10-24.json": {
       "scope": "shared",
-      "bytes": 7644
+      "bytes": 10870
     },
     "/princess/checkpoint-source-manifest.json": {
       "scope": "shared",
@@ -103,11 +103,11 @@
     },
     "/princess/extensions/extensions-research-sources.zip": {
       "scope": "parked",
-      "bytes": 637772
+      "bytes": 649800
     },
     "/princess/extensions/extensions-source.zip": {
       "scope": "parked",
-      "bytes": 87446
+      "bytes": 95301
     },
     "/princess/extensions/formal-artifact.md": {
       "scope": "parked",
@@ -123,11 +123,11 @@
     },
     "/princess/extensions/princess-extensions.pdf": {
       "scope": "parked",
-      "bytes": 479611
+      "bytes": 471622
     },
     "/princess/extensions/release.json": {
       "scope": "parked",
-      "bytes": 1115
+      "bytes": 2001
     },
     "/princess/figures/corner-memory.svg": {
       "scope": "main",
@@ -511,11 +511,11 @@
     },
     "/princess/manuscript-source.zip": {
       "scope": "main",
-      "bytes": 391168
+      "bytes": 393599
     },
     "/princess/princess-searches.pdf": {
       "scope": "main",
-      "bytes": 1275626
+      "bytes": 1401138
     },
     "/princess/proof-anchor-migration.json": {
       "scope": "shared",
@@ -543,7 +543,7 @@
     },
     "/princess/release.json": {
       "scope": "main",
-      "bytes": 2082
+      "bytes": 3591
     },
     "/princess/research-history.md": {
       "scope": "shared",
@@ -551,7 +551,7 @@
     },
     "/princess/research-sources.zip": {
       "scope": "main",
-      "bytes": 12485452
+      "bytes": 12493200
     },
     "/princess/scope.md": {
       "scope": "main",
@@ -563,7 +563,7 @@
     },
     "/princess/served-assets.json": {
       "scope": "shared",
-      "bytes": 15039
+      "bytes": 15044
     },
     "/princess/unverified-comparison-candidate-2026-10-24.zip": {
       "scope": "shared",

@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import { publicationForPath, primaryResources } from "../lib/publications.mjs";
 
 const introduction = "I'm an ML research engineer at SynthLabs. I build distributed training and evaluation systems, work on LLM post-training, and develop specialized agents.";
 
@@ -25,11 +26,12 @@ const posts = (await getCollection("posts")).filter((p) => !p.data.draft);
 
 const fmt = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).replace(/\bSept\b/, "Sep");
 
-const entries = posts
-  .map((p) => ({ title: p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) }))
+const sourceEntries = posts
+  .map((p) => ({ title: publicationForPath(`/${p.id}`)?.title ?? p.data.title, href: `/${p.id}`, when: fmt(p.data.updated) }))
   .concat([{ title: "Finding a princess on a rectangle", href: "/princess/", when: "24 Oct 2026" }])
   .concat([{ title: "Guaranteed delivery despite a pursuer", href: "/cop-prisoner/", when: "18 Sep 2026" }])
   .concat([{ title: "Sleep performance", href: "/sleep-notebook/", when: "13 Oct 2026" }]);
+const entries = sourceEntries.map(entry => ({...entry, title: publicationForPath(entry.href)?.title ?? entry.title}));
 
 // Subject groups and reading order; article URLs and content stay unchanged.
 const groups: { id: string; title: string; items: { href: string }[] }[] = [
@@ -96,6 +98,9 @@ const sections = groups.map((group) => ({
   entries: group.items.map(({ href }) => {
     const entry = entriesByHref.get(href);
     if (!entry) throw new Error(`Homepage group references an unpublished article: ${href}`);
+    if (["ai-and-machine-learning", "mathematics"].includes(group.id) && !publicationForPath(href)) {
+      throw new Error(`Register portfolio article resources before listing it: ${href}`);
+    }
     if (assigned.has(href)) throw new Error(`Article appears in two homepage groups: ${href}`);
     assigned.add(href);
     return entry;
@@ -114,7 +119,16 @@ if (ungrouped.length) {
       <ul class="idx">
         {section.entries.map((e) => (
           <li>
-            <a href={e.href}>{e.title}</a>
+            <div class="publication-card">
+              <a href={publicationForPath(e.href)?.overview ?? e.href}>{publicationForPath(e.href)?.title ?? e.title}</a>
+              {publicationForPath(e.href)?.records.length > 0 && <p class="publication-card-status">
+                {publicationForPath(e.href).status}
+                {publicationForPath(e.href).records.map(record => <><span aria-hidden="true"> · </span><a href={record.url}>{record.label}</a></>)}
+              </p>}
+              {primaryResources(publicationForPath(e.href)).length > 0 && <nav class="publication-card-links" aria-label={`${e.title} resources`}>
+                {primaryResources(publicationForPath(e.href)).map(resource => <a href={resource.url} data-resource={resource.kind}>{resource.label}</a>)}
+              </nav>}
+            </div>
             <span class="when">{e.when}</span>
           </li>
         ))}

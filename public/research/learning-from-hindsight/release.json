@@ -1,0 +1,22 @@
+{
+  "title": "Scalable Meta-Learning from Hindsight",
+  "author": "Angel Raychev",
+  "report_date": "2026-10-24",
+  "presentation_revision": "2026-10-24",
+  "style": "angel-publication v1.0",
+  "style_sha256": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
+  "overview": "https://angelraychev.com/scalable-meta-learning-from-hindsight/",
+  "repository": "https://github.com/RaychevAngel/learning-from-hindsight",
+  "report_source_commit": "63dc40c10b7d97d79e6c2440d2ab90bf9657482a",
+  "scope": "Layout and resource-label normalization only. Scientific statements, equations, original results, figures, attribution and report date are preserved. No new experiments.",
+  "artifacts": {
+    "learning-from-hindsight.pdf": {"pages": 13, "sha256": "1d8ec62441ee2ee94728ed59e01e9a1efcdec7124060d0d48834b05a97be93c7"},
+    "report-source.zip": {"sha256": "388e202450492fd3cc13d3004144681309e90f117e357e99768295d865e45594", "includes": "Manuscript, original figures/bibliography, pinned style, build helper and presentation manifest"}
+  },
+  "previous_presentation": {
+    "pdf": "/research/learning-from-hindsight/archive/2026-10-24-original/learning-from-hindsight.pdf",
+    "source": "/research/learning-from-hindsight/archive/2026-10-24-original/report-source.zip",
+    "source_sha256": "e23ab251032b26e6f3cd7877571750c5debd753fe9de84fa4a445f9bb0196d31"
+  },
+  "verification": "All thirteen pages rendered and visually reviewed; zero LaTeX warnings, overfull boxes, missing characters, unresolved references/citations; all fonts embedded and internal PDF destinations valid. Scientific source equivalence checked after declared layout wrappers."
+}

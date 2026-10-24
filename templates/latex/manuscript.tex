@@ -1,0 +1,144 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{angel-publication}
+\PublicationRunningTitle{Manuscript title}
+\PublicationRunningAuthor{Author name}
+\PublicationStatus{House-style template v1.0 - 24 October 2026}
+\hypersetup{pdftitle={Manuscript title - house-style specimen},pdfauthor={Author name}}
+\title{Manuscript Title\\[4pt]{\large\normalfont\color{black}Optional descriptive subtitle}}
+\author{Author Name\\\small Affiliation or independent researcher\\
+  \small\href{mailto:author@example.org}{author@example.org}}
+\date{24 October 2026\\[6pt]
+  \PublicationLinks{https://example.org/report/}{https://github.com/example/project}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This specimen demonstrates the shared presentation standard. Replace the example
+material with the manuscript's actual scientific content. State the question,
+method, result and limits directly; distinguish a proved statement from an
+experimental observation. The examples below are elementary formatting tests,
+not research results.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+Use a single column, 11-point body type, Latin Modern text and mathematics, and
+one-inch margins on US Letter paper. All document-specific notation belongs in
+this source file. The style package owns typography and page layout. A citation
+uses the manuscript's existing reference data, for example \citet{lamport}.
+
+\section{Definitions and results}
+\label{sec:results}
+\begin{definition}[Finite arithmetic mean]
+For real numbers $x_1,\ldots,x_n$ with $n\geq1$, define
+\begin{equation}
+  \overline{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
+  \label{eq:mean}
+\end{equation}
+\end{definition}
+
+\begin{lemma}
+\label{lem:constant}
+If $x_i=c$ for every $i\in\{1,\ldots,n\}$, then $\overline{x}=c$.
+\end{lemma}
+\begin{proof}
+Substitute $x_i=c$ into \eqref{eq:mean}. The sum is $nc$, and $n\ne0$.
+\end{proof}
+
+\begin{theorem}[Translation of a mean]
+\label{thm:translation}
+If $y_i=x_i+a$ for every $i$, then $\overline{y}=\overline{x}+a$.
+\end{theorem}
+\begin{proof}
+The algebra can be displayed without overlong single lines:
+\begin{align*}
+\overline{y}
+  &=\frac{1}{n}\sum_{i=1}^{n}(x_i+a)\\
+  &=\frac{1}{n}\sum_{i=1}^{n}x_i+\frac{na}{n}
+   =\overline{x}+a.\qedhere
+\end{align*}
+\end{proof}
+
+\begin{corollary}
+Centering the $x_i$ by subtracting $\overline{x}$ gives a mean of zero.
+\end{corollary}
+\begin{proof}
+Apply \cref{thm:translation} with $a=-\overline{x}$.
+\end{proof}
+\begin{remark}
+Theorem-like statements share a counter within each section. Proofs use the AMS
+proof environment, including a correctly placed end-of-proof mark.
+\end{remark}
+
+\section{Figures, tables and references}
+\label{sec:presentation}
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{1cm}
+  \begin{picture}(12,1.5)
+    \put(0,.2){\framebox(3,1){Inputs}}
+    \put(3,.7){\vector(1,0){1.5}}
+    \put(4.5,.2){\framebox(3,1){Declared method}}
+    \put(7.5,.7){\vector(1,0){1.5}}
+    \put(9,.2){\framebox(3,1){Measured result}}
+  \end{picture}
+  \caption{A vector diagram with labels at a readable size. The caption explains
+  the relationship and the role of each object.}
+  \label{fig:method}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Formatting examples only. Numeric columns are right aligned, use
+  consistent precision, and declare the quantity or unit in the header.}
+  \label{tab:example}
+  \begin{tabular}{@{}lrrr@{}}
+    \toprule
+    Case & Count & Mean (units) & Difference (units)\\
+    \midrule
+    A & 8 & 12.30 & $+0.20$\\
+    B & 16 & 9.75 & $-0.35$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Refer to objects by labels rather than hard-coded numbers:
+\cref{sec:results,lem:constant,fig:method,tab:example}; use
+\verb|\eqref| for a parenthesized equation reference. Keep units and precision
+consistent and preserve uncertainty, sample sizes and denominators. Use
+\verb|booktabs| rules, with no vertical rules. Put table captions above tables
+and figure captions below figures.
+
+Use \verb|[htbp]| for normal floats and explicit \verb|\FloatBarrier| only when
+the scientific reading order requires it. Oversized diagrams can use
+\verb|publicationdiagram|; this wrapper shrinks to the available width without
+changing labels or data. Reflow long equations rather than shrinking them.
+URLs remain live and wrap, for example
+\url{https://www.latex-project.org/help/documentation/}.
+
+\subsection{Resource links follow availability}
+The front matter uses Overview, Code and Lean in that order, omitting unavailable
+items. Empty arguments produce no link label or separator. These specimen rows
+exercise the optional formalization link and the absent-code cases:
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+Overview, code and formalization &
+\PublicationLinks[https://example.org/formalization/]{https://example.org/report/}{https://github.com/example/project}\\[4pt]
+Overview and formalization &
+\PublicationLinks[https://example.org/formalization/]{https://example.org/report/}{}\\[4pt]
+Overview only &
+\PublicationLinks{https://example.org/report/}{}
+\end{tabular}
+\end{center}
+
+\FloatBarrier
+\section{Bibliography and build acceptance}
+For a new manuscript use numbered natbib citations and \verb|plainnat|, as this
+specimen does. Existing manuscripts retain their complete bibliography and
+citation semantics when adopted. Compile until all references and citations
+resolve. Inspect the final PDF's pages, not only the compiler log.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

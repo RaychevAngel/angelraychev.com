@@ -2,7 +2,8 @@
 import Post from "../../layouts/Post.astro";
 import proofHtml from "../../content/generated/princess-proofs.html?raw";
 import { rerenderMathHtml } from "../../lib/math.mjs";
-const renderedProofHtml = rerenderMathHtml(proofHtml, { label: "Rectangle searches: detailed proofs" });
+import { restorePrincessProofTableHeaders } from "../../lib/princess-proof-tables.mjs";
+const renderedProofHtml = restorePrincessProofTableHeaders(rerenderMathHtml(proofHtml, { label: "Rectangle searches: detailed proofs" }));
 ---
 <Post title="Rectangle searches: detailed proofs" description="The active manuscript concerns two-dimensional rectangles, constant daily budgets, and full initial uncertainty. Exact evaluators are distinguished from the intended explicit value-and-strategy endpoint. The complete classification remains open." updated="2026-10-24">
   <p>The active manuscript concerns two-dimensional rectangles, constant daily budgets, and full initial uncertainty. Exact evaluators are distinguished from the intended explicit value-and-strategy endpoint. The complete classification remains open.</p>

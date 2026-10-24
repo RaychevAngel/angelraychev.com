@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Post.astro"
-title: "Four-arm polyominoes in Golomb’s hierarchy"
+title: "Four-arm polyominoes — resources"
 description: "A complete classification with Lean verification. Paper, LaTeX sources, formal proofs, citation, and research history."
 updated: 2026-09-14
 ---
@@ -11,9 +11,7 @@ Angel Ivanov Raychev · September 2026
 
 **Now available on [arXiv:2609.13641](https://arxiv.org/abs/2609.13641)** in Combinatorics (math.CO). Submitted 12 September 2026.
 
-[Paper PDF](/polyominoes/four-arm-polyominoes.pdf) · [LaTeX source](/polyominoes/arxiv-source.zip) · [BibTeX citation](/polyominoes/citation.bib)
-
-Start with the [interactive overview](/four-arm-polyominoes/) to try individual shapes. The paper presents the complete theorem and its proofs in a conventional mathematical format. The [expanded proof appendix](/polyominoes/proofs/) provides further coordinate details.
+Start with the [overview](/four-arm-polyominoes/) to try individual shapes and access the selected PDF, Lean guide, LaTeX and citation under [Resources](/four-arm-polyominoes/#resources). The paper presents the complete theorem and its proofs in a conventional mathematical format. The [expanded proof appendix](/polyominoes/proofs/) provides further coordinate details.
 
 ## Abstract
 

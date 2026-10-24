@@ -1319,8 +1319,8 @@
       "reason": "Rectangle proof sources, current or historical research, failed approaches, and reproducible evidence. Each file states its proof status; no new formal coverage implied."
     },
     "research/checkpoint-formal-coverage-2026-10-24.json": {
-      "scope": "main",
-      "reason": "October rectangle checkpoint evidence; status is per proof/review, not implied by package inclusion."
+      "scope": "shared",
+      "reason": "Canonical source and dependency audit for both main and companion Lean packages; no new compilation."
     },
     "research/checkpoint-publication-claims-audit-2026-10-24.json": {
       "scope": "main",
@@ -9112,6 +9112,16 @@
       "local_imports": [
         "src/odd_serial_first_order_attack.py"
       ]
+    },
+    "research/checkpoint-house-style-2026-10-24.json": {
+      "scope": "shared",
+      "reason": "Publication-only source-preservation and rendered PDF review receipt; no new mathematical or Lean claim.",
+      "local_imports": []
+    },
+    "research/checkpoint-pdf-visual-review-2026-10-24.json": {
+      "scope": "shared",
+      "reason": "Publication-only source-preservation and rendered PDF review receipt; no new mathematical or Lean claim.",
+      "local_imports": []
     }
   },
   "served_assets": {
@@ -9133,6 +9143,7 @@
     "main": {
       "entrypoint": "paper/main.tex",
       "sources": [
+        "paper/angel-publication.sty",
         "paper/main.tex",
         "paper/preamble.tex",
         "paper/sections/acknowledgments.tex",
@@ -9192,6 +9203,7 @@
     "extensions": {
       "entrypoint": "paper/extensions.tex",
       "sources": [
+        "paper/angel-publication.sty",
         "paper/extensions.tex",
         "paper/preamble.tex",
         "paper/sections/acknowledgments.tex",
@@ -9212,6 +9224,7 @@
     }
   },
   "shared_canonical_tex": [
+    "paper/angel-publication.sty",
     "paper/preamble.tex",
     "paper/sections/acknowledgments.tex",
     "paper/sections/odd-period-proof.tex"

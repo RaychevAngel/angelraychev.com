@@ -1,0 +1,12 @@
+---
+import { supportingResources } from '../lib/publications.mjs';
+const { work } = Astro.props;
+const resources = supportingResources(work);
+---
+{resources.length > 0 && <section class="publication-resources" aria-labelledby="resources" data-resource-section={work.id}>
+  <h2 id="resources">Resources</h2>
+  <ul>{resources.map(resource => <li>
+    <a href={resource.url} data-supporting-resource={resource.kind}>{resource.label}</a>
+    {resource.note && <span> — {resource.note}</span>}
+  </li>)}</ul>
+</section>}
