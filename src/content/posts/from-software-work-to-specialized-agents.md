@@ -497,13 +497,10 @@ The resulting capability is to turn existing software work and engineering
 knowledge into executable tasks and reusable specialists—and to improve the work,
 the worker and the assessment without rebuilding the entire system each time.
 
-## Further reading
+## Related articles
 
 - [Model specialization and training agents](/model-specialization-and-training-agents/) — the earlier work on model updates, executable training distributions and agents that conduct training.
 - [The distributed execution and learning platform](/distributed-agent-training-and-evaluation/)
-- [Task packages and versioning](https://synthlabs.mintlify.app/concepts/tasks-and-versions)
-- [Executable agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)
-- [Public CLI command reference](https://synthlabs.mintlify.app/reference/cli)
 
 <style>
   .specialist-contents { font-size: 12px; line-height: 2; margin: 30px 0 44px; }

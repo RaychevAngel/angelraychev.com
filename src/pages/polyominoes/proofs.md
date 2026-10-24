@@ -7,7 +7,7 @@ updated: 2026-09-11
 
 This appendix records the mathematical arguments and precise certificate boundaries. The [companion article](/four-arm-polyominoes/) provides the classification table and illustrations; the research log preserves conjectures, unsuccessful approaches, and independent attacks.
 
-The standalone [paper (PDF)](/polyominoes/four-arm-polyominoes.pdf) organizes the complete classification for publication. Its [paper page](/polyominoes/paper/) provides LaTeX sources, citation, verified references, research history, and acknowledgments.
+The standalone manuscript organizes the complete classification for publication. The [overview](/four-arm-polyominoes/) provides the selected PDF and Lean guide; [Resources](/four-arm-polyominoes/#resources) collects LaTeX, citation, verified references, research history, and acknowledgments.
 
 We identify cells with integer coordinates and use
 

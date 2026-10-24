@@ -611,17 +611,10 @@ cloud systems that expose them as one capability. I built this with the
 SynthLabs team and extensive use of coding agents, adopting existing execution
 and model-computation foundations where they fit.
 
-## Further reading
+## Related articles
 
 - [Model specialization and training agents](/model-specialization-and-training-agents/) — the earlier distillation, training-agent and data-factory work.
 - [From real software work to specialized agents](/from-software-work-to-specialized-agents/)
-- [How Synth fits together](https://synthlabs.mintlify.app/concepts/product-model)
-- [Agent profiles](https://synthlabs.mintlify.app/concepts/profiles-and-candidates)
-- [Tasks and versions](https://synthlabs.mintlify.app/concepts/tasks-and-versions)
-- [Managed execution](https://synthlabs.mintlify.app/guides/managed-execution)
-- [Training and checkpoint comparison](https://synthlabs.mintlify.app/guides/managed-training)
-- [CLI command reference](https://synthlabs.mintlify.app/reference/cli)
-- [Public CLI releases](https://github.com/SynthLabsAI/synth-releases/releases)
 
 <style>
   .platform-contents { font-size: 12px; line-height: 2; margin: 30px 0 44px; }

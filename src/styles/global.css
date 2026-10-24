@@ -98,6 +98,27 @@ ul.idx .idea { color: var(--dim); }
 
 .postmeta { color: var(--dim); margin: 0 0 28px; font-size: 13px; }
 
+/* Publication controls are generated from one registry, not authored in prose. */
+.publication-header { margin: -12px 0 22px; }
+.publication-authors { margin: 0 0 8px; font-size: 13px; }
+.publication-status, .publication-version, .publication-scope {
+  font-size: 12px; line-height: 1.7; margin: 0 0 8px;
+}
+.publication-status, .publication-version { color: var(--dim); }
+.publication-primary { margin: 16px 0 12px; }
+.publication-primary ul, .publication-card-links {
+  display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none;
+  padding: 0; margin: 0; align-items: baseline;
+}
+.publication-primary li { margin: 0; }
+.publication-primary a { display: inline-block; padding: 3px 0; font-size: 14px; }
+.publication-resources { margin-top: 52px; }
+.publication-resources h2 { margin-top: 0; }
+.publication-resources li { font-size: 13px; line-height: 1.8; }
+.publication-card { min-width: 0; }
+.publication-card-links { font-size: 12px; gap: 6px 16px; margin-top: 6px; }
+.publication-card-status { font-size: 12px; color: var(--dim); margin: 4px 0 0; line-height: 1.7; }
+
 footer.site { margin-top: 96px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--dim); font-size: 13px; }
 
 .vh { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

@@ -9,9 +9,7 @@ draft: false
 
 Start with one square and attach straight arms in the four compass directions. How much of the square grid can repeated copies cover? A rectangle is a much stronger achievement than the whole plane: its corners and edges impose constraints that an infinite tiling can avoid.
 
-This article studies a family that includes bars, L shapes, T shapes, and crosses. Angel Raychev's original research, from **October 2020 to March 2021**, classified the L shapes and all T shapes except two cases. The subsequent AI-assisted investigation reconstructed those results, completed the two cases, analyzed genuine crosses, and formalized the complete classification. The [paper page](/polyominoes/paper/#research-history-and-contributions) records the contributions and prior literature.
-
-**Read the paper on [arXiv:2609.13641](https://arxiv.org/abs/2609.13641)** (math.CO), download the [PDF](/polyominoes/four-arm-polyominoes.pdf) or [LaTeX sources](/polyominoes/arxiv-source.zip), or see [citation and formal artifacts](/polyominoes/paper/).
+This article studies a family that includes bars, L shapes, T shapes, and crosses. Angel Raychev's original research, from **October 2020 to March 2021**, classified the L shapes and all T shapes except two cases. The subsequent AI-assisted investigation reconstructed those results, completed the two cases, analyzed genuine crosses, and formalized the complete classification. The [research history](/polyominoes/paper/#research-history-and-contributions) records the contributions and prior literature.
 
 ## The shapes and the rules
 

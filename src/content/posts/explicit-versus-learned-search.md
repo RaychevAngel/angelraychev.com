@@ -6,8 +6,6 @@ updated: 2026-10-23
 
 *Neural-guided tree search and search-trace learning.*
 
-[Report (PDF)](/research/explicit-learned-search/explicit-versus-learned-search.pdf) · [Code](https://github.com/RaychevAngel/classical_vs_contextual_search)
-
 Giving a language model more computation does not specify how it should use it. An external controller can maintain a tree, revisit alternatives and ask learned models where to search next. Alternatively, the model can learn to perform the search in its own generated sequence: proposing branches, evaluating their consequences and returning to earlier decisions.
 
 In 2025, I built research systems for both approaches. The work began as a joint Stanford CS224N project with Yalcin Tur and Mihajlo Stojkovic and developed into my CS224R implementation of batched neural-guided Monte Carlo Tree Search, iterative policy/value training, and Stream-of-Search learning. I was the lead developer of the later system and conducted its experiments.

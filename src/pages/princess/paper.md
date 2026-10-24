@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Post.astro"
-title: "Rectangle searches: manuscript and evidence"
+title: "Rectangle searches — resources"
 description: "The rectangle capture-time manuscript, fixed-size numerical completion criterion, sources and exact proof boundaries."
 updated: 2026-09-13
 ---
@@ -9,7 +9,7 @@ Angel Ivanov Raychev · September 2026
 
 **Research manuscript in preparation. The full fixed-size closed-form rectangle classification remains open. No Princess paper has been submitted to arXiv.**
 
-[Read the rectangle paper](/princess/princess-searches.pdf) · [LaTeX sources](/princess/manuscript-source.zip) · [Mathematical sources and evidence](/princess/research-sources.zip)
+The [overview](/princess/) provides the selected PDF and Lean guide. Its [Resources](/princess/#resources) section collects LaTeX, companions and previous versions. The [mathematical evidence archive](/princess/research-sources.zip) supports the account below.
 
 [Overview](/princess/) · [Progress reconciliation](/princess/reconciliation/) · [Manuscript-derived proofs](/princess/proofs/) · [Exact coverage and gaps](/princess/coverage/) · [Lean coverage](/princess/lean/) · [Parked extensions](/princess/extensions/)
 

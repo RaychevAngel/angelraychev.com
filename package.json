@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run check:math-dependencies && astro build && node scripts/prepare-math-output.mjs && node scripts/prepare-table-output.mjs && npm run check:math && npm run check:tables",
+    "build": "npm run check:publication-data && npm run check:math-dependencies && astro build && node scripts/prepare-math-output.mjs && node scripts/prepare-table-output.mjs && npm run check:math && npm run check:tables && npm run check:publications",
+    "check:publication-data": "node scripts/publication-audit.mjs --source-only",
+    "check:publications": "node scripts/publication-audit.mjs",
+    "test:publications": "node --test scripts/publication-audit.test.mjs",
     "check:math-dependencies": "node scripts/math-audit.mjs --dependencies-only",
     "check:math": "node scripts/math-audit.mjs",
     "test:math": "node --test scripts/math-audit.test.mjs",

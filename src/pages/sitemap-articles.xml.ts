@@ -11,9 +11,11 @@ export async function GET() {
   const posts = (await getCollection("posts"))
     .filter((post) => !post.data.draft)
     .sort((a, b) => a.id.localeCompare(b.id));
-  // Explicit scholarly landing pages, not embedded readers or artifact folders.
+  // Canonical custom mathematical overviews; redirect aliases and resource hubs
+  // are not additional scholarly identities.
   const researchPages = [
-    { path: "/research/generative-reward-models/", updated: "2026-10-23" },
+    { path: "/princess/", updated: "2026-09-13" },
+    { path: "/cop-prisoner/", updated: "2026-10-23" },
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

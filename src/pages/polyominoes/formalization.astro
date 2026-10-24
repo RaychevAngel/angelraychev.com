@@ -1,0 +1,13 @@
+---
+import Post from '../../layouts/Post.astro';
+import artifact from '../../../public/polyominoes/formal-artifact.md?raw';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+const processor = await createMarkdownProcessor();
+const rendered = await processor.render(artifact.replace(/^# [^\n]+\n/, ''));
+---
+<Post title="Four-arm polyominoes — Lean formalization" description="Scope, checked theorem, frozen source archive and reproduction instructions for the complete formal classification.">
+  <p><a href="/four-arm-polyominoes/">Overview</a> · <a href="/polyominoes/paper/">Resources</a></p>
+  <p>The Lean development proves the complete eight-capability classification for every natural four-tuple. The accepted artifact is identified by its source hash and compiler receipts; this is not a claim that every later manuscript edit was recompiled in Lean.</p>
+  <p><a href="/polyominoes/formal-artifact.md">Verification and reproduction guide</a> · <a href="https://raw.githubusercontent.com/RaychevAngel/angelraychev.com/ec308bfcb092fa71a78cecd991be6e85e5b369b9/public/polyominoes/lean-proofs.zip">Frozen Lean source archive</a> · <a href="/polyominoes/lean/MainClassification.lean">Main theorem</a></p>
+  <div class="artifact-guide" set:html={rendered.code} />
+</Post>
