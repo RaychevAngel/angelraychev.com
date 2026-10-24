@@ -1,0 +1,64 @@
+---
+import Base from '../../../layouts/Base.astro';
+import release from '../../../../public/research/generative-reward-models/release.json';
+
+const title = 'Scaling Laws for Generative Reward Models';
+const url = 'https://angelraychev.com/research/generative-reward-models/';
+const pdfUrl = `${url}${release.pdf}`;
+const abstract = 'We study generative reward models (GenRMs) as online preference providers for policy optimization in creative writing. Across Qwen3 reward-model sizes from 0.6B to 14B, Thinking judges trained with GRPO have higher static Gold-label accuracy than Answer-Only judges trained with SFT. This ranking often reverses when the judges train policies through online DPO: Answer-Only rewarders yield higher peak and top-five-average policy Elo in seven of eight matched settings under a fixed, learned 32B Gold evaluator. Intermediate Thinking-judge checkpoints can also outperform later, more statically accurate checkpoints as rewarders. Sweeps over rewarder size, policy size, training duration and DPO regularization show substantial benefits from reward-model capacity, including judges larger than the policy. We analyze trajectories with evaluator-specific Elo arenas, conditional match-resampling intervals and descriptive scaling fits. These results demonstrate an evaluator–rewarder gap in the studied pipelines: fixed-distribution judging accuracy does not determine downstream optimization quality. The comparison changes judge-training objective as well as response format, and the main ranking is conditional on its learned reference rather than a universal human-quality result. A limited follow-up using a different learned judge is inconclusive overall.';
+const structured = {
+  '@context': 'https://schema.org',
+  '@type': 'ScholarlyArticle',
+  name: title,
+  headline: title,
+  author: release.authors.map(name => ({ '@type': 'Person', name })),
+  datePublished: release.publication_date,
+  dateModified: release.updated_date,
+  abstract,
+  url,
+  sameAs: release.arxiv_url,
+  identifier: { '@type': 'PropertyValue', propertyID: 'arXiv', value: release.arxiv_id },
+  isAccessibleForFree: true,
+  encoding: { '@type': 'MediaObject', encodingFormat: 'application/pdf', contentUrl: pdfUrl },
+};
+---
+<Base title={title} description="arXiv:2610.30765 by Angel Raychev, Nathan Lile and Rafael Rafailov: abstract, manuscript, analysis code and research artifacts." image="/assets/genrm/research-preview.png" imageAlt="Scaling Laws for Generative Reward Models — Angel Raychev, Nathan Lile and Rafael Rafailov." ogType="article">
+  <Fragment slot="head">
+    <meta name="citation_title" content={title} />
+    {release.authors.map(author => <meta name="citation_author" content={author} />)}
+    <meta name="citation_publication_date" content={release.arxiv_publication_date.replaceAll('-', '/')} />
+    <meta name="citation_arxiv_id" content={release.arxiv_id} />
+    <meta name="citation_pdf_url" content={pdfUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(structured)} />
+  </Fragment>
+  <article>
+    <h1>{title}</h1>
+    <p class="authors">{release.authors.join(' · ')}</p>
+    <p class="status">arXiv preprint · v1 submitted 22 October 2026. First released on this site on 21 October.</p>
+    <p class="links"><a href={release.arxiv_url}>arXiv:{release.arxiv_id}</a> · <a href={`${pdfUrl}?v=${release.sha256.slice(0, 12)}`}>Paper (PDF)</a> · <a href={release.source_repository}>Analysis and results</a> · <a href="/scaling-laws-for-generative-reward-models/">Research and systems overview</a></p>
+    <h2>Abstract</h2>
+    <p>{abstract}</p>
+    <h2>Research artifacts</h2>
+    <p>The <a href={`${release.source_repository}/releases/tag/${release.source_tag}`}>versioned public analysis release</a> provides derived numerical results, figures, prompt templates and manuscript artifacts. Its <a href={`${release.source_repository}/blob/main/docs/reproduction.md`}>reproduction guide</a> covers CPU analysis without model calls.</p>
+    <p>As of 23 October 2026, the public package excludes the custom training implementation and private training recipes. The paper's original implementation availability statement predates this packaging change. The <a href="/scaling-laws-for-generative-reward-models/#the-training-system-behind-the-study">systems overview</a> describes my implementation work and the separate scope of the public analysis.</p>
+    <p><a href={`./reader.html?v=${release.sha256.slice(0, 12)}`}>Read the manuscript in your browser</a> · <a href="./release.json">Version record and file hashes</a></p>
+    <h2>Citation</h2>
+    <pre><code>{`@misc{raychev2026scaling,
+  title  = {Scaling Laws for Generative Reward Models},
+  author = {Angel Raychev and Nathan Lile and Rafael Rafailov},
+  year   = {2026},
+  eprint = {${release.arxiv_id}},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  url    = {${release.arxiv_url}}
+}`}</code></pre>
+  </article>
+</Base>
+
+<style>
+  .authors { font-weight: 600; }
+  .status { color: var(--dim); }
+  article h1 { margin-bottom: 22px; }
+  article h2 { margin-top: 34px; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+</style>

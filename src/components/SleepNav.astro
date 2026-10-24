@@ -1,0 +1,21 @@
+---
+const { current } = Astro.props;
+const links = [
+  ["notebook", "/sleep-notebook/", "Sleep performance"],
+  ["targets", "/sleep/targets/", "Targets"],
+  ["record", "/sleep/record/", "Sleep record"],
+  ["measurements", "/sleep/measurements/", "Measurements"],
+  ["research", "/sleep/research/", "Investigations"],
+];
+---
+<nav class="sleep-nav" aria-label="Sleep pages">
+  {links.map(([id, href, title], i) => <>
+    {i > 0 && " · "}
+    {current === id ? <span aria-current="page">{title}</span> : <a href={href}>{title}</a>}
+  </>)}
+</nav>
+<style>
+  .sleep-nav { font-size: 13px; line-height: 1.9; margin: 0 0 32px; }
+  .sleep-nav a, .sleep-nav span { white-space: nowrap; }
+  :global(article h2[id]), :global(article h3[id]) { scroll-margin-top: 24px; }
+</style>

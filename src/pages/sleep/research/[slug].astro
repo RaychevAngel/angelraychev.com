@@ -1,0 +1,23 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+export function getStaticPaths() {
+  const pages = import.meta.glob("../../../data/sleep/investigations/*.md", { eager: true });
+  return Object.entries(pages).map(([path, page]) => ({ params: { slug: path.split("/").pop().replace(/\.md$/, "") }, props: { page } }));
+}
+const { page } = Astro.props;
+const { Content, frontmatter } = page;
+const headings = page.getHeadings().filter((heading) => heading.depth === 2);
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav />
+  {headings.length > 3 && <details class="page-index"><summary>In this investigation</summary><ul>{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul></details>}
+  <Content />
+  <p><a href="/sleep/research/">All sleep investigations</a></p>
+</Post>
+<style>
+  .page-index { font-size: 13px; margin-bottom: 28px; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  details[open] summary { margin-bottom: 16px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+</style>

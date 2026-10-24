@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+  <title id="title">A stale-read precondition bypasses a primary mutation</title>
+  <desc id="desc">In an evaluated historical OpenFGA snapshot, CreateStore commits on the primary before the replica catches up. DeleteStoreCommand then calls GetStore, which reads the replica and returns ErrNotFound. The command treats that as idempotent success and returns before calling the actual primary-bound deletion. The primary store remains. Later replication makes it visible on the replica. The defect is using a stale read as authority to skip a mutation, not the existence of replication lag itself.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px}.small{font-size:17px;fill:#444}.label{font-size:16px;fill:#444;letter-spacing:.03em}.node{fill:#fff;stroke:#222;stroke-width:1.5}.condition{fill:#f5f5f5;stroke:#777;stroke-width:1.2}.skipped{fill:#fafafa;stroke:#555;stroke-width:1.5;stroke-dasharray:5 5}.flow{fill:none;stroke:#222;stroke-width:1.7;marker-end:url(#arrow)}.relation{fill:none;stroke:#777;stroke-width:1.4;stroke-dasharray:3 5;marker-end:url(#arrow)}</style>
+  <rect width="1000" height="640" fill="#fff"/>
+  <text x="40" y="32" class="label">HISTORICAL SNAPSHOT · PRIMARY / REPLICA CONTRACT</text>
+
+  <rect class="condition" x="40" y="65" width="920" height="90"/>
+  <text x="65" y="101">CreateStore has committed on the primary.</text>
+  <text x="65" y="130" class="small">The replica has not caught up, so its lookup can still return “not found”.</text>
+  <path class="flow" d="M150 155 V220"/>
+
+  <rect class="node" x="40" y="220" width="220" height="95"/>
+  <text x="150" y="257" text-anchor="middle">Delete request</text>
+  <text x="150" y="286" text-anchor="middle" class="small">DeleteStoreCommand</text>
+  <path class="flow" d="M260 268 H310"/>
+  <rect class="node" x="310" y="220" width="250" height="95"/>
+  <text x="435" y="257" text-anchor="middle">GetStore(replica)</text>
+  <text x="435" y="286" text-anchor="middle" class="small">storage.ErrNotFound</text>
+  <path class="flow" d="M560 268 H650"/>
+  <text x="605" y="246" text-anchor="middle" class="small">branch</text>
+  <rect class="node" x="650" y="220" width="310" height="95"/>
+  <text x="805" y="257" text-anchor="middle">Return success</text>
+  <text x="805" y="286" text-anchor="middle" class="small">idempotent “already absent”</text>
+
+  <path class="relation" d="M435 315 V380"/>
+  <rect class="skipped" x="310" y="380" width="340" height="95"/>
+  <text x="480" y="418" text-anchor="middle">Primary delete is not called</text>
+  <text x="480" y="447" text-anchor="middle" class="small">the early return bypasses it</text>
+  <path class="relation" d="M650 428 H805 V505"/>
+  <rect class="condition" x="40" y="505" width="920" height="90"/>
+  <text x="65" y="541">The primary store remains; later the replica shows it too.</text>
+  <text x="65" y="570" class="small">The success response did not establish the mutation’s intended postcondition.</text>
+  <text x="40" y="625" class="small">A stale read was used as authority to skip a write.</text>
+</svg>

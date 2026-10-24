@@ -34,8 +34,9 @@ npm run dev      # http://localhost:4321
 npm run build    # → dist/
 ```
 
-Astro 7, static output, zero client-side JavaScript. No CSS framework, no UI library, no
-dependencies beyond Astro itself. Node 22+.
+Astro 7, static output, with small client-side scripts for interactive explorers
+and the reading-theme toggle. Markdown and KaTeX render the prose and formulas.
+No CSS framework or UI library. Node 22+.
 
 **Restart the dev server after changing `src/content.config.ts`** — collection config is
 cached, and stale content silently fails to appear. `npx astro dev stop` stops a
@@ -83,7 +84,7 @@ They are not displayed. To publish one, write the Markdown file, add its group e
 and remove the corresponding backlog string.
 
 The homepage groups published articles under **AI and machine learning**, **Mathematics**,
-and **Human agency**, in the explicit reading order in `src/pages/index.astro`. Each
+**Human agency**, and **Running**, in the explicit reading order in `src/pages/index.astro`. Each
 article has one entry; papers and supporting project pages remain beneath that entry.
 Each entry shows only its linked title and date, with no subtitles or descriptions.
 When publishing an article, assign its URL to a group; a build check prevents missing or
@@ -98,11 +99,14 @@ just imagine it as a book, which is just text."*
 
 - **Monospace throughout.** `ui-monospace, "SF Mono", SFMono-Regular, Menlo,
   "Cascadia Mono", "Roboto Mono", Consolas, monospace`. No second typeface anywhere.
-- **Pure black on pure white.** `--fg: #000`, `--bg: #fff`, one grey `--dim: #767676`
+- **Light: pure black on pure white.** `--fg: #000`, `--bg: #fff`, one grey `--dim: #767676`
   for de-emphasis, one hairline `--rule: #ddd`. **There is no accent colour and none
   should be added.**
-- **Single theme by design. No dark mode.** A deliberate decision, not an omission — do
-  not add `prefers-color-scheme` blocks.
+- **Light and dark reading themes.** On 13 October 2026 Angel requested a small
+  header button to switch modes, superseding the earlier single-theme decision.
+  Light remains the default; the explicit choice persists in local storage and
+  is applied before the page paints. Dark uses monochrome tokens, with original
+  diagram color encodings preserved on paper backdrops where needed.
 - Body 14.5px, line-height 1.8, measure capped at 660px.
 - Links underlined; hover inverts to white-on-black.
 - **No nav, no About page, no tagline, no cards or filters.** On 13 September 2026,
@@ -185,9 +189,129 @@ status belongs in the prose of the piece that needs it, not as site furniture.
   `public/`,** while real static hosts do. Relevant if static HTML is ever served from
   `public/` again — dev will 404 where production works.
 
+## Running content
+
+The running section follows a broader purpose: building exceptional physical
+capability and keeping it available throughout life. Connect this to human agency
+and the existing capability objective in `the-optimization-nobody-is-running.md`.
+Running spans 100 m through the marathon in that long-term horizon; the current
+800–5000 m, 800+ point project is one measurable part of it. Injury prevention,
+recovery and continuity belong in the main account of what success means.
+Keep health and longevity ambitions distinct from demonstrated training outcomes.
+A race time establishes running performance, not comprehensive organ health or a
+guaranteed lifespan. Do not turn this into a site-wide tagline or change its topic
+scope.
+
+The running section has three main entries:
+
+- `running-notebook.md`: the purpose, personal history and present position of the
+  living 800–5000 m project, followed by its goals, decisions, programme and
+  observations. Keep the score profile central; detailed rarity methodology and
+  physiological hypotheses can follow the practical account.
+- `what-should-a-running-workout-maximize.md`: the scientific argument and explicitly
+  proposed exposure models, with primary references and their practical consequences
+  for sustained training.
+- `running-makes-the-city-smaller.md`: the personal essay about running and mobility.
+
+The supporting running record starts at `/running/record/`. Its six period chapters
+are Markdown in `src/data/running/periods/`, rendered by
+`src/pages/running/record/[period].astro`. A chapter opens with a readable account
+and selected dated notes. `RunLedger.astro` adds expandable monthly tables beneath
+it, using the minimal public `src/data/running/recorded-runs.json` register. Separate
+warm-up, workout and cool-down uploads remain separate records; never treat the
+upload count as a count of physical sessions.
+
+`/running/record/results/` uses `src/data/running/race-results.json` for source-linked
+race history and `src/data/running/personal-bests.json` for the single canonical
+best-mark table. Keep personal-best summary tables on this page; the notebook
+links to it and keeps the goal profile and current interpretation. A meaningful
+dated account can still state its own result. Original best times/distances,
+race/training type, supported date basis and source stay visible. For an
+untabulated distance, keep its original value in the source context and make a
+clearly labelled same-pace comparison in the selected discipline. The main table
+uses the approved sixteen disciplines from 300 m through the marathon; smaller
+sprints and arbitrary interval lengths stay in dated training records. Track 5000 m
+and road 5 km are separate disciplines. The user explicitly approved scaling the
+documented 1600 m 5:08 up to the full mile: 5:09.80 / 388 points. Road 10/20 km
+comparisons scale longer source distances down; show the original
+distance/time and use full elapsed time, retaining GPS/course uncertainty. The 15 km
+reference sums fifteen native distance-triggered 1 km watch laps. Pace displays
+round to the nearest second/km; scores use the unrounded original or conversion.
+The half-marathon best is the user-reported 1:36:57 training split from 24 April
+2024 (4:36/km, 165 points), replacing the whole-run pace projection. Its reported
+1 m elevation display is distinct from the full 24.64 km run's 72 m recorded ascent.
+Keep the full-run summary as context; do not relabel the split as an official race
+or a reconstructed GPX result.
+Preserve older best-row IDs as forwarding anchors when narrowing the table.
+Derived comparisons do not establish additional achieved PBs. Pin the
+table edition, apply the lower-score rule and keep timing/course uncertainty
+beside the reference. Approximate marks must not become exact times or points.
+The current programme lives at `/running/record/2026/programme/`;
+the recovered historical sheet is at `/running/record/2022/programme/`. These are
+supporting pages, not additional homepage articles or RSS entries. Keep the three
+main reading paths and the existing child-page pattern.
+
+`src/pages/running-notebook/log.md` retains `/running-notebook/log/` and all 28
+previous heading IDs as links into the new record. Preserve those IDs and the
+period chapter IDs when refining prose; old bookmarks should remain useful.
+
+For a new session, update its dated chapter note first, then the current notebook
+only when the result changes the interpretation or next decision. Add an upload
+to the register when source material establishes it. Use its supported local date;
+retain and label UTC when no local date is established. Preserve the source's
+displayed distance and moving time without rescaling them into an intended track
+distance or race result. Zero-distance uploads are retained with a displayed dash.
+Keep original files, GPS, sensor streams, complete descriptions and provenance
+outside the public repository.
+
+Each results row links its time to the primary result and its date to the fuller
+account. Keep heat places separate from combined classifications, and chip, gun,
+moving and elapsed times distinct. An organizer's course label is not an added
+certification claim. Corrections should remain intelligible in the dated account.
+
+New months and ordinary cycles stay inside the relevant period. Start another
+chapter when the purpose or training phase materially changes. Before replacing a
+programme, preserve its dated version and keep the governing plan identifiable
+from the corresponding session notes. Completed training and planned transitions
+must remain separate, including when a planned session's date has already passed.
+
+Review the chapter's organization once it approaches twenty full dated session
+notes or 4,000 words of prose. This is an editorial review trigger, not an automatic
+page split. Routine repeats can retain exact work, rest and splits with one useful
+observation; the front chronology and comparisons should emphasize checkpoints.
+If a year genuinely needs several phase chapters, keep its year page as a concise
+contents page and preserve old session fragments as links to their new homes.
+`RunLedger.astro` currently filters by year only: add supported date bounds or
+explicit membership before splitting one year across chapters, so uploads appear
+once rather than being duplicated in every phase. Do not create empty future pages.
+
+The initial publication on 9 October 2026 includes completed sessions through
+8 October. When updating, keep future plans distinct from completed work, preserve
+the conditions behind workout comparisons, and leave historical observations available
+when the current programme changes. The LT and VO₂ ladders advance independently;
+each target is a graduation gate, not a compulsory first pace for the next structure.
+The physiological labels name intentions, not measurements inferred from split times.
+Do not publish the underlying chat archive or private research digests.
+
+The notebook's organizing ambition is 800+ World Athletics points across each
+listed 800–5000 m event, initially an equal 810-point curve. Keep numerical scores
+with the goal marks and meaningful historical/event comparisons. Pin the men's
+outdoor table edition and apply its lower-score lookup rule between thresholds;
+do not confuse table points with world-ranking points, age grading or a population
+percentile. A rarity claim needs a named population, year and complete enough
+denominator. Different historical dates do not form a simultaneous fitness curve.
+
+Longer repetitions and continuous efforts need per-kilometre pace beside their
+times. Short fast repetitions can stay split-focused. Pace from intended work
+distance is separate from a whole recording's moving-time/recorded-distance pace,
+which may include recoveries. Keep estimated distances/times and nominal laps
+labelled. Elevation gain and surface matter for hilly outings; vertical range is
+not ascent. Grade-adjusted pace needs an identified model or source and remains
+an estimate, not an inferred flat race result.
+
 ## Current state
 
-As of 13 September 2026, seven homepage entries are grouped by subject. The index
+As of 9 October 2026, ten homepage entries are grouped by subject. The index
 combines published Markdown articles with the princess and cop-prisoner project pages.
 The source-only ideas backlog remains hidden.
 

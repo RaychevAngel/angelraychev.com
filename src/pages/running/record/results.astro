@@ -1,0 +1,181 @@
+---
+import Post from "../../../layouts/Post.astro";
+import RunningRecordNav from "../../../components/RunningRecordNav.astro";
+import results from "../../../data/running/race-results.json";
+import bests from "../../../data/running/personal-bests.json";
+const frontmatter = {
+  title: "Personal bests and race history",
+  description: "My best known running marks in one place, with paces, World Athletics points, dates and the race or training context behind them.",
+  updated: "2026-10-10",
+};
+const groups = [
+  { kind: "track", title: "Track races", intro: "The men's national championships in June and U20 championships in July were separate meets. Placings below are the official combined classifications, rather than places within a heat." },
+  { kind: "park", title: "5kmrun and XL park races", intro: "Distances follow the organizer's edition-specific descriptions. They are race records, without an added claim of certified course length." },
+  { kind: "kids", title: "Kids Run", intro: "The two organized 2 km races are separate from the remembered sixth-grade neighbourhood effort." },
+  { kind: "sofia", title: "Sofia Marathon: short-distance events", intro: "Times below are chip times. The distance is the label in each edition's official results; the races are the short-distance event, rather than the full marathon." },
+  { kind: "marathon", title: "Marathon", intro: "The official chip time is the result. Recorded GPS distance and device time stay with the activity account." },
+];
+const date = (value) => new Date(`${value}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const time = (seconds, decimals = 1) => {
+  const factor = 10 ** decimals;
+  const units = Math.round(seconds * factor);
+  const whole = Math.floor(units / factor);
+  const hours = Math.floor(whole / 3600);
+  const minutes = Math.floor(whole % 3600 / 60);
+  const remainder = String(whole % 60).padStart(2, "0");
+  const fraction = decimals ? `.${String(units % factor).padStart(decimals, "0")}` : "";
+  return `${hours ? `${hours}:${String(minutes).padStart(2, "0")}` : minutes}:${remainder}${fraction}`;
+};
+const pace = (best) => best.seconds.map((seconds) => time(seconds * 1000 / best.distanceMeters, 0)).join("–");
+const points = (best) => best.score?.points.join("–") ?? "—";
+---
+<Post frontmatter={frontmatter}>
+  <RunningRecordNav />
+  <p>
+    My best known marks are organized by discipline, from 300 m to the marathon.
+    Races, time trials and training efforts keep their settings; same-pace
+    comparisons carry an asterisk and show the original distance and time.
+    The results come from different years. The notebook keeps the
+    {" "}<a href="/running-notebook/#the-runner-i-am-trying-to-build">800+ point goal profile</a>{" "}
+    I am working toward now.
+  </p>
+  <p>
+    Points use the men's columns of the
+    {" "}<a href={bests.source}>2025 revised World Athletics tables</a>, with the lower
+    score between thresholds. A time links to its source; the date leads to the
+    account or activity. Pace is rounded to the nearest second per kilometre;
+    points use the original time or unrounded conversion.
+    Dates marked UTC retain an unresolved local day from the export.
+  </p>
+  <p>
+    <a href="#personal-bests">Personal bests</a>{" · "}
+    <a href="#race-history">Race history</a>{" · "}
+    <a href="#measurement-notes">Measurement notes</a>{" · "}
+    <a href="#training-references">Training references</a>
+  </p>
+  <span id="race-bests"></span>
+  <h2 id="personal-bests">Personal bests by discipline</h2>
+  <div class="tablewrap"><table class="bests" role="table">
+    <thead><tr><th scope="col">Discipline</th><th scope="col">Time<br /><span class="small">pace / km</span></th><th scope="col">Points</th><th scope="col">Date and setting</th></tr></thead>
+    <tbody role="rowgroup">{bests.rows.map((best) => <tr id={best.id} role="row">
+      <th scope="row" role="rowheader">{best.aliases?.map((id) => <span id={id}></span>)}{best.distance}</th>
+      <td role="cell"><a class="mark" href={best.source}>{best.approximate && "~"}{best.time}</a>{best.score?.derived && <a href="#score-method" aria-label="Same-pace comparison">*</a>}<br /><span class="small">{pace(best)}</span></td>
+      <td role="cell"><span class="mark">{points(best)}{best.shortTimingUnknown && <a href="#timing-method" aria-label="Training timing method unestablished">†</a>}</span></td>
+      <td role="cell"><a href={best.note ?? best.source}>{date(best.date)}</a>{best.dateBasis === "utc" && <span class="small"> UTC</span>}<br />
+        <span class="small">{best.kind} · {best.context}</span>
+        {best.original && <><br /><span class="small">{best.score?.derived ? "Original" : "Whole run"}: {best.original.distance} in {best.original.time}</span></>}
+      </td>
+    </tr>)}</tbody>
+  </table></div>
+  <p>
+    * Same-pace comparisons retain the original distance and time; they do not
+    establish another completed race or finish split. Sofia's short-course length
+    remains unresolved. † Short training points are conditional on the unestablished
+    timing method. The <a href="#measurement-notes">measurement notes</a> keep
+    these limits and the scoring details together.
+  </p>
+  <h2 id="race-history">Race history</h2>
+  <p>
+    The full recovered race history follows. Original result times, course labels,
+    placings and the dated accounts remain here, including earlier marks that were
+    later improved. Chip times govern road results; gun times stay separately labelled.
+  </p>
+  {groups.map((group) => <section aria-labelledby={group.kind}>
+    <h2 id={group.kind}>{group.title}</h2>
+    <p>{group.intro}</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Finish</th></tr></thead>
+      <tbody>{results.filter((result) => result.kind === group.kind).sort((a,b) => a.date.localeCompare(b.date)).map((result) => <tr id={result.id}>
+        <td><a href={result.note}>{date(result.date)}</a></td>
+        <td>{result.event}<br />{result.distance.split(/([¹²])/).map((part) =>
+          part === "¹" ? <a href="#park-distance-note" aria-label="Park-course distance note">¹</a> :
+          part === "²" ? <a href="#sofia-distance-note" aria-label="Sofia course-distance note">²</a> : part
+        )}</td>
+        <td><a href={result.source}>{result.time}</a>{result.gunTime && <><br /><span class="dim">Gun {result.gunTime}</span></>}</td>
+        <td>{result.place}</td>
+      </tr>)}</tbody>
+    </table></div>
+  </section>)}
+  <h2 id="measurement-notes">Measurement and score notes</h2>
+  <p id="score-method">
+    * A comparison keeps the original effort's average pace over the named
+    discipline. The mile scales the documented 1600 m in 5:08 to 1609.344 m;
+    its comparison is 5:09.80, worth 388 points. The road comparisons scale
+    longer source distances down, using full elapsed time for recordings.
+    They do not establish an additional completed race or finish split.
+    Displayed comparison times round up to the event table's precision.
+    Sofia's course length remains unresolved: 291 points uses the official
+    results' 10.5 km label; 42:04 over 10 km would give 205.
+  </p>
+  <p>
+    The 15 km time sums the first fifteen 1 km watch laps. Its distance is
+    recorded by the device. The 20 km comparison also uses a GPS distance,
+    without a claim of a measured course. The half-marathon best is the
+    reported 1:36:57 training split within the April 24.64 km outing,
+    replacing the earlier whole-run pace comparison;
+    the separate{" "}<a href="/running/record/2023-2025/#autumn-2024-more-long-running">October 21.10 km in 1:38:14</a>{" "}
+    remains in the dated account. The 2000 m and 3000 m training paces both
+    round to 3:26/km; their unrounded difference is 0.3 seconds/km.
+  </p>
+  <p id="timing-method">
+    † Short training points compare the written mark. The short efforts' timing method,
+    start and wind have not been established. Official comparison of hand-timed
+    sprints at 300–400 m requires adding 0.14 seconds;
+    for example, a hand-timed 56.05 would be scored as 56.19, giving 531 rather
+    than the literal mark's 537.
+  </p>
+  <h3 id="park-distance-note">Park-course labels</h3>
+  <p>
+      ¹ North Park's current result page says 6.0 km. The organizer's
+      <a href="https://info.5kmrun.bg/4096-2/">report published on 7 December 2015</a>
+      describes the same short event as 5 km. I retain that contemporary label;
+      no exact historical course measurement has been recovered.
+    </p>
+  <h3 id="sofia-distance-note">The Sofia short-course label</h3>
+  <p>
+        ² The 2020 results say 10 km; the 2021 results say 10.5 km, while that
+        edition's map advertises 10 km. I remember the same route in those two
+        years. The exact measured length of the separate short course remains
+        unresolved, so the 42:04 is not listed as a certified 10,000 m best.
+      </p>
+      <p>
+        The <a href="https://sofia2018.bg/2017/10/10/%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B8%D1%80%D0%B0%D1%82-%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D0%B8-%D0%BD%D0%B0-wizz-air-%D1%81%D0%BE%D1%84%D0%B8%D1%8F-%D0%BC/">2017 instructions</a>
+        describe one short lap of the older four-lap marathon route, starting
+        outside Vasil Levski National Stadium. The later start was
+        <a href="https://www.sofia.bg/en/w/izvestni-atleti-pristigat-za-wizz-air-sofia-maraton-sledvasata-nedela">Battenberg Square</a>;
+        the <a href="https://www.sofia.bg/bg/web/guest/w/sofijskiat-maraton-startira-v-nedela-10-oktomvri">2021 maps</a>
+        show a two-lap marathon and a separate shorter loop. Dividing the
+        marathon distance by four would not recover the later short-course length.
+      </p>
+  {bests.retiredAnchors.map((id) => <span id={id}></span>)}
+  <h2 id="training-references">Training references</h2>
+  <p>
+    Other sprint distances and interval lengths stay with the dated training
+    record. The discipline table above keeps the selected best marks. Other dated
+    references stay with their accounts: the
+    <a href="/running/record/early/">childhood neighbourhood effort</a>, the
+    <a href="/running/record/2020/#30-december--a-reported-2-km-in-715">reported 2 km in 2020</a>
+    and the
+    <a href="/running/record/2026/#27-september--2000-m-time-trial">current 2000 m trial</a>.
+    Their dates, measurement limits and roles in the story remain visible there.
+  </p>
+  <p>
+    Repeated workouts have a different comparison: times, count and recovery
+    together. See the <a href="/running/record/2021/#the-repeated-900s">2021 900 m series</a>,
+    <a href="/running/record/2022/#19-january--the-mixed-rest-fast-template">mixed-rest fast work in 2022</a>
+    and <a href="/running/record/2026/#repeating-a-protocol">current protocol comparisons</a>.
+  </p>
+</Post>
+<style>
+  .bests th[scope="row"] { font-weight: 400; }
+  .small { font-size: 11.5px; }
+  .mark { white-space: nowrap; }
+  .bests td:last-child { min-width: 115px; }
+  @media (max-width: 480px) {
+    .bests, .bests thead, .bests tbody { display: block; }
+    .bests tr { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 10px; border-bottom: 1px solid var(--rule); padding: 12px 0; }
+    .bests th, .bests td { border: 0; padding: 0; min-width: 0; overflow-wrap: anywhere; }
+    .bests thead th:last-child { display: none; }
+    .bests tbody td:last-child { grid-column: 1 / -1; padding-top: 8px; min-width: 0; }
+  }
+</style>

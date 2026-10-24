@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1290" viewBox="0 0 420 1290" role="img" aria-labelledby="title desc">
+  <title id="title">Native harness, model-specific encoding and exact evidence, reflowed for mobile</title>
+  <desc id="desc">Claude Code keeps its tools and filesystem inside the task environment. Its request passes through a Proxy model-specific template and tokenizer to a sampling backend, then a model-specific parser returns thinking, text and tools to the native harness. Exact prompt IDs and sampled output IDs with their log probabilities branch to learning evidence. This depicts supported token-evidence routes rather than universal model compatibility.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px;font-weight:400}.small{font-size:18px;fill:#444}.heading{font-size:19px;font-weight:500}.node{fill:#fff;stroke:#222;stroke-width:1.5}.boundary{fill:none;stroke:#999;stroke-width:1.1}.flow{fill:none;stroke:#222;stroke-width:1.8;marker-end:url(#arrow)}.both{marker-start:url(#arrow)}.data{fill:none;stroke:#555;stroke-width:2;stroke-dasharray:2 7;stroke-linecap:round;marker-end:url(#arrow)}
+  </style>
+  <rect width="420" height="1290" fill="#fff"/>
+  <text x="40" y="34" class="heading">AGENT EXECUTION</text>
+  <rect class="boundary" x="40" y="60" width="340" height="260"/>
+  <text x="210" y="88" text-anchor="middle" class="small">TASK SANDBOX</text>
+  <rect class="node" x="60" y="105" width="300" height="80"/>
+  <text x="210" y="137" text-anchor="middle" class="heading">Native harness</text>
+  <text x="210" y="166" text-anchor="middle" class="small">Claude Code</text>
+  <path class="flow both" d="M210 185 V235"/>
+  <rect class="node" x="60" y="235" width="300" height="60"/>
+  <text x="210" y="272" text-anchor="middle">Tools + filesystem</text>
+
+  <text x="40" y="397" class="heading">MODEL COMPATIBILITY</text>
+  <path class="flow" d="M360 145 H390 V490 H360"/>
+  <text x="290" y="424" class="small">request</text>
+  <rect class="node" x="60" y="440" width="300" height="100"/>
+  <text x="210" y="478" text-anchor="middle" class="heading">Template + tokenizer</text>
+  <text x="210" y="511" text-anchor="middle" class="small">Proxy · selected model</text>
+  <path class="flow" d="M210 540 V610"/>
+  <text x="60" y="582" class="small">token prompt</text>
+  <circle cx="210" cy="575" r="3" fill="#222"/>
+  <rect class="node" x="60" y="610" width="300" height="90"/>
+  <text x="210" y="645" text-anchor="middle" class="heading">Sampling backend</text>
+  <text x="210" y="677" text-anchor="middle" class="small">Tinker / Fireworks</text>
+  <path class="flow" d="M210 700 V770"/>
+  <text x="40" y="746" class="small">sampled tokens</text>
+  <circle cx="210" cy="735" r="3" fill="#222"/>
+  <rect class="node" x="60" y="770" width="300" height="116"/>
+  <text x="210" y="805" text-anchor="middle" class="heading">Model-specific parser</text>
+  <text x="210" y="835" text-anchor="middle" class="small">Proxy → native response</text>
+  <text x="210" y="865" text-anchor="middle" class="small">thinking · text · tools</text>
+  <path class="flow" d="M60 828 H20 V145 H60"/>
+
+  <path class="data" d="M210 575 H400 V1073 H360"/>
+  <path class="data" d="M210 735 H380 V1103 H360"/>
+  <rect class="node" x="60" y="1000" width="300" height="140"/>
+  <text x="210" y="1034" text-anchor="middle" class="heading">Exact learning evidence</text>
+  <text x="210" y="1065" text-anchor="middle" class="small">prompt token IDs</text>
+  <text x="210" y="1091" text-anchor="middle" class="small">sampled output IDs</text>
+  <text x="210" y="1117" text-anchor="middle" class="small">sampling logprobs</text>
+  <text x="40" y="1190" class="small">Tools run in the task environment.</text>
+  <text x="40" y="1219" class="small">Supported token-evidence routes.</text>
+  <path d="M40 1251 H80" stroke="#555" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <text x="94" y="1257" class="small">recorded evidence</text>
+</svg>

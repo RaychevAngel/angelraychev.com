@@ -1,6 +1,6 @@
 # angelraychev.com
 
-Personal site. Astro, static output, deployed on Vercel.
+Personal site. Astro, static output, deployed on GitHub Pages.
 
 ## Writing
 

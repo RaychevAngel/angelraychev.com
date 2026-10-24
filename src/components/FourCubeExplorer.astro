@@ -84,12 +84,12 @@ load();
 </script>
 <style>
   .cube-explorer{border:1px solid var(--rule);padding:22px;margin:26px 0 38px}
-  h3{margin-top:0}.cube-explorer p{font-size:12px;line-height:1.7}label{font-size:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}input{width:80px;border:1px solid #999;border-radius:0;padding:7px;font:inherit;background:white;color:black}
+  h3{margin-top:0}.cube-explorer p{font-size:12px;line-height:1.7}label{font-size:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}input{width:80px;border:1px solid var(--control-border);border-radius:0;padding:7px;font:inherit;background:var(--bg);color:var(--fg)}
   .floors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:390px;margin:16px auto}
   .floors :global(p){margin:0 0 6px;font-size:11px}.floors :global(.floor-grid){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
-  .floors :global(.room){min-width:0;min-height:0;width:100%;box-sizing:border-box;border:1px solid var(--rule);aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#fafafa;font-size:15px}
-  .floors :global(.possible){border-color:#888;background:white}.floors :global(.inspected){outline:2px solid black;outline-offset:-2px;background:white;font-size:27px}
-  .legend{color:var(--dim);font-size:11px!important}.buttons{display:flex;flex-wrap:wrap;gap:6px}button{font:inherit;font-size:12px;background:white;color:black;border:1px solid #999;border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:#eee}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default}button:focus-visible,input:focus-visible{outline:2px solid black;outline-offset:2px}#cube-step{min-height:62px;margin-top:12px}.examples{margin-top:14px}
+  .floors :global(.room){min-width:0;min-height:0;width:100%;box-sizing:border-box;border:1px solid var(--rule);aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--surface);font-size:15px}
+  .floors :global(.possible){border-color:var(--control-border);background:var(--bg)}.floors :global(.inspected){outline:2px solid var(--fg);outline-offset:-2px;background:var(--bg);font-size:27px}
+  .legend{color:var(--dim);font-size:11px!important}.buttons{display:flex;flex-wrap:wrap;gap:6px}button{font:inherit;font-size:12px;background:var(--bg);color:var(--fg);border:1px solid var(--control-border);border-radius:0;padding:6px 10px;cursor:pointer}button:hover{background:var(--hover)}button:disabled{color:var(--dim);border-color:var(--rule);cursor:default}button:focus-visible,input:focus-visible{outline:2px solid var(--fg);outline-offset:2px}#cube-step{min-height:62px;margin-top:12px}.examples{margin-top:14px}
   @media(max-width:480px){.cube-explorer{padding:14px}}
   .jump{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
 </style>

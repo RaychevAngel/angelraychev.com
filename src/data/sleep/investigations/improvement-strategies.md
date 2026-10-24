@@ -1,0 +1,167 @@
+---
+title: "Strategies for improving sleep"
+description: "A ranked investigation of sleep opportunity, timing, light, stimulants, training and environment, with the limits of the evidence retained."
+updated: "2026-10-17"
+order: 3
+---
+
+**The first improvement is to identify the constraint.** More opportunity may help curtailed sleep; earlier caffeine may help a persistent exposure. Cooling an already comfortable room may add cost without benefit. The [first paired night](/sleep/record/#night-2026-10-13) identifies measurement questions but cannot choose the intervention.
+
+The [second night](/sleep/record/#night-2026-10-14) adds a reported constraint: cold legs and an early-morning cold awakening, followed by a larger blanket and possible excess warmth. That makes stable thermal comfort a practical first focus. The [current routine proposal](/sleep/research/personal-experiments/#the-current-routine-proposal) keeps the planned changes and the outcome that would justify retaining them explicit.
+
+The [third night](/sleep/record/#night-2026-10-15) felt comfortable and continuous but had much less obtained sleep. The next day's follow-up added several later periods of feeling sleepy or underslept. The [16 October record](/sleep/record/#night-2026-10-16) then reported a better, longer routine with the last meal around six hours before sleep, no remembered interruption until about 07:30 and a return to sleep until 09:05. Oura returned 90/100 and 8h37m30s estimated sleep after synchronization; COROS became available later, returning 98/100, 8h59 asleep and 7 minutes awake. Both record much longer sleep, while disagreeing on waking. The promising routine is worth repeating; meal timing, earlier opportunity and the other simultaneous changes remain separable questions.
+
+## The improvement queue
+
+| Candidate | What makes it worth testing | First comparison and main cost |
+|---|---|---|
+| Sleep opportunity | Repeated short nights, curtailed opportunity or impaired function | Longer-opportunity blocks; costs time reserved for sleep |
+| Caffeine timing/dose | Recorded use plausibly affecting sleep | Same habitual dose earlier; track any daytime performance cost |
+| Alcohol | Drinking nights with dose, timing and context recorded | Naturally occurring alcohol-free comparisons; social evenings remain confounded |
+| Regularity/alignment | Variable timing, poor function in an important window or evidence of misalignment | Stable repeated blocks; changes several schedule constraints |
+| Light exposure | A pattern that conflicts with the intended biological schedule | A repeatable day/evening contrast; precision measurement adds equipment burden |
+| Temperature, noise and sleep-room light | A disturbance actually interrupts sleep | One reversible adjustment; little recurring burden if effective |
+| Exercise interval × strain | Repeated difficulty after late strenuous sessions | Comparable work earlier; preserve training while changing its schedule |
+| Meal timing/size | A reproducible sleep, digestive or metabolic question | Match intake while changing timing; alters meal scheduling |
+
+The practical order is **sufficiency → identifiable disruption → timing/alignment → enhancement**. Establish whether ordinary sleep is curtailed, then seek a removable exposure. Investigate timing against waking performance. Novel supplements/devices have a less established added value in healthy sleepers.
+
+A clear problem changes priority: disruptive noise deserves immediate attention. Seek useful effects with low burden and repeatable comparisons. No caffeine, alcohol or environmental exposure has been assumed for the first night. [Experiment design](/sleep/research/personal-experiments/).
+
+The queue is conditional. If extra opportunity produces only more waking in bed, investigate the next constraint. If the only gain is an algorithm grade, record that achievement and evaluate its practical cost separately. A retained change should improve the chosen outcome enough to justify its burden.
+
+## Duration: find sufficiency before pursuing precision
+
+Adult guidance supports **at least seven hours regularly**, with longer sleep potentially appropriate in young adults or recovery. This is a population reference, not a measured personal optimum. [AASM/SRS consensus](https://pmc.ncbi.nlm.nih.gov/articles/PMC4442216/)
+
+Restriction to four or six hours in bed for fourteen nights caused accumulating cognitive deficits that subjective sleepiness did not fully track. Opportunity and obtained sleep are separate quantities. [Van Dongen et al.](https://pubmed.ncbi.nlm.nih.gov/12683469/)
+
+In a randomized fourteen-man crossover, six nights of extended opportunity increased obtained sleep from about seven to 8.2 hours and improved vigilance before subsequent deprivation. Mild prior debt could explain part of the benefit. [Arnal et al.](https://pubmed.ncbi.nlm.nih.gov/26194565/)
+
+A twelve-person middle-aged crossover found cerebral-oxygenation changes after six longer nights without detectable cognitive improvement. The small trial cannot settle a younger sleeper's response, but demonstrates that physiological change and improved function are different results. [Clark et al.](https://pubmed.ncbi.nlm.nih.gov/35266244/)
+
+Test additional opportunity against obtained sleep, alertness and function. One night near seven hours cannot distinguish sufficiency from debt; extra time awake in bed is not the intended gain.
+
+## Naps: a performance question with a time cost
+
+For afternoon function, a randomized 32-person crossover tested PSG-verified 10-, 30- and 60-minute naps after short habitual sleep. Mood/sleepiness improved; memory encoding benefited in the 30-minute comparison, but processing-speed benefits were not detected. Longer naps caused transient inertia. The following night was not measured. [Leong and Lau et al.](https://academic.oup.com/sleep/article/46/4/zsad025/7034889)
+
+Those were **minutes asleep**. Allocated time includes falling asleep and possibly recovering from inertia. Assess post-nap function, total time cost and subsequent main sleep; retain main-episode and daily totals separately. No nap has been tested here. The study had Singapore research/university/foundation support and declared no conflicts.
+
+## Caffeine: an interval, a dose and an individual response
+
+I own **200mg caffeine capsules**. In the 14 October follow-up I reported no caffeine, alcohol or naps on calendar 13 October, preceding the [sleep ending 14 October](/sleep/record/#night-2026-10-14). The [15 October follow-up](/sleep/record/#night-2026-10-15) also reported no caffeine or alcohol on calendar 14 October. Ownership is not consumption; other dates remain separate questions.
+
+A double-blind crossover in 23 young men tested 100mg and 400mg at four, eight and twelve hours before bed. At four hours, 400mg reduced estimated total sleep by about 51 minutes versus placebo. At twelve hours, some latency and architecture effects remained, but the total-sleep difference was not statistically significant. No significant 100mg effects were detected. Habitual morning intake was maintained. Neither result establishes a universal 200mg cutoff or guarantees that 100mg has no personal effect. [Gardiner et al.](https://academic.oup.com/sleep/article/48/4/zsae230/7815486)
+
+An evening-200mg double-blind crossover in 24 adults, including twelve aged 20–30, found longer latency and reduced duration/efficiency. [Drapeau et al.](https://pubmed.ncbi.nlm.nih.gov/16704567/)
+
+Record **all sources, milligrams, timing and interval before intended sleep**. Caffeine can delay actual onset, so define the exposure against planned opportunity. A timing test preserves dose; a dose test adds withdrawal/adaptation considerations. Compare the sleep gain with daytime performance. [Design and carryover](/sleep/research/personal-experiments/#a-caffeine-timing-comparison).
+
+## Alcohol: keep the whole evening visible
+
+A randomized 31-person laboratory crossover used substantial doses and found altered sleep and elevated nocturnal heart rate; it does not specify one drink's effect here. [Pabon et al.](https://pubmed.ncbi.nlm.nih.gov/35953878/)
+
+Retain coinciding meals, activity and sleep timing. Naturally occurring alcohol-free nights provide comparisons without introducing drinking. A larger deep-sleep estimate alone would miss other effects.
+
+The [sleep ending October 17](/sleep/record/#night-2026-10-17) supplies a drinking-night observation: approximately 2–3 oz vodka, late food around 01:00–02:00, a roughly 03:00 bedtime and uncomfortable floor/carpet sleep after a hard workout. Sleep was shorter, Oura’s sleeping pulse was higher and both providers returned lower HRV. The amount and timing are self-reported; alcohol concentration is unknown. Several conditions changed together, so this observation cannot attribute the differences to alcohol alone. I describe it as a social exception and intend to resume the earlier routine.
+
+## Timing contains three separate questions
+
+**Clock time** describes when sleep occurs; **regularity**, its variation; **alignment**, its relationship to internal phase. A stable late schedule can be regular without establishing alignment.
+
+A prospective UK Biobank study found regularity to predict mortality. Population/confounding limits remain; it cannot convert retiming into years of life gained. [Windred et al.](https://pubmed.ncbi.nlm.nih.gov/37738616/)
+
+A small forced-desynchrony laboratory study demonstrated metabolic and cardiovascular changes during major circadian misalignment. Its extreme manipulation does not establish that a stable late chronotype is harmful. [Scheer et al.](https://pubmed.ncbi.nlm.nih.gov/19255424/)
+
+Describe the pattern, light exposure and functioning, then test a defined phase/regularity hypothesis. A fixed wake time can become an intervention once it serves an outcome.
+
+A randomized study in 22 young adults with late chronotypes bundled sleep, light, meal, caffeine and exercise changes over three weeks. Timing and melatonin onset advanced about two hours; morning task performance improved without a significant duration change. The small, unblinded study cannot isolate bedtime or establish an all-day gain. Research funding and Stockgrand assay reagents supported it. [Facer-Childs et al.](https://pubmed.ncbi.nlm.nih.gov/31202686/)
+
+This supports **performance at the times that matter** as a timing target, once an actual demand or ambition defines the window.
+
+Regularity must coexist with sufficiency. In a randomized 52-person young-adult study, a variable short schedule with longer recovery/preparatory nights mitigated some vigilance deterioration versus uniformly short sleep. Both remained impairing. Making inadequate sleep more regular would miss the intended outcome. [Controlled comparison](https://pubmed.ncbi.nlm.nih.gov/38219041/)
+
+## Light is a physiological input
+
+A twelve-person randomized eReader/print crossover found melatonin, sleep and next-morning alertness differences after prolonged evening exposure. Brief screen use or a filter alone are different exposures. [Chang et al.](https://pubmed.ncbi.nlm.nih.gov/25535358/)
+
+Record daytime outdoor light, evening brightness and duration. For phase shifting, [biological timing](/sleep/research/beyond-the-wearable/#measuring-circadian-phase) adds information beyond clock time.
+
+There are quantitative exposure recommendations to investigate. A 2022 expert consensus proposes **at least 250 melanopic EDI lux during the day, no more than 10 in the three hours before bedtime and no more than 1 in the sleep environment**, measured at the eye. These are exposure references for healthy adults with regular daytime schedules, not demonstrated personal optima. Ordinary lux and melanopic EDI are different quantities. [Brown et al.](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001571)
+
+A small randomized room-light/dim-light laboratory comparison found acute cardiac and next-morning insulin-sensitivity differences. That exposure differs from a tiny status LED; the study did not establish chronic disease prevention. [Mason et al.](https://pubmed.ncbi.nlm.nih.gov/35286195/)
+
+## Exercise: preserve training while testing its timing
+
+A small PSG crossover detected no impairment after moderate aerobic/resistance exercise ending about ninety minutes before bed. It did not test all-out lifting. [Miller et al.](https://pubmed.ncbi.nlm.nih.gov/31072217/)
+
+A much larger observational WHOOP study associated later and more strenuous exercise with shorter sleep and altered overnight cardiac measures. Its proposed four-hour interval is not a randomized demonstration of a universal cutoff. Heart-rate-based strain may underestimate brief, high-effort strength work; attempted sleep and onset latency were not measured. Those limits matter when translating it to lifting. [Leota et al.](https://www.nature.com/articles/s41467-025-58271-x)
+
+Specify type, duration, intensity and interval before sleep. Early-easy versus late-hard sessions confound timing with strain. Cardiac changes alone do not establish worse sleep; retain functional recovery and training progression.
+
+## Presleep arousal and a breathing routine
+
+In young adults selected as good sleepers, a study randomized 70 people and analysed 64. Fifteen minutes of nightly slow breathing for thirty days reduced the subjective PSQI score from 3.31 to 2.91; equal-duration social-media controls changed from 3.44 to 3.75. The score ranges from 0 to 21, with lower better. The time-by-group effect was significant, but a 0.40-point within-group improvement is a modest absolute change. Overnight ECG high-frequency HRV also changed; no objective stages were measured. The comparator cannot isolate breathing from a quieter routine. German Sport University Cologne funded the study; authors declared no conflicts. [Laborde et al.](https://pubmed.ncbi.nlm.nih.gov/30736268/)
+
+For settling-down difficulty, test onset or next-day function against the routine's fifteen-minute nightly cost, or substitute it for an existing routine. An awake breathing routine and nightly respiratory rate are separate quantities.
+
+## Environment: measure the actual disturbance
+
+A home study in older adults found nonlinear temperature/sleep relationships and substantial individual differences using Oura-estimated sleep. Its aggregate temperature range is not a thermostat prescription for a young athlete or a PSG-validated optimum. Bedding and comfort belong in the record. [Baniassadi et al.](https://pubmed.ncbi.nlm.nih.gov/37474050/)
+
+Simulated intensive-care noise/light studies found disruption and protective-intervention benefits. Transfer to an already quiet, dark room remains unresolved. [Hu et al.](https://pubmed.ncbi.nlm.nih.gov/25887528/)
+
+Start with observation and reversible adjustment. Room, bed, finger-deviation and core temperatures are different measurements.
+
+A controlled thermosuit experiment in young and older participants found that a small increase in skin temperature, without changing core temperature, reduced nocturnal waking; effects were particularly pronounced in the older groups. This illustrates why lowering every temperature is not a coherent target. The artificial intervention does not supply an ideal bedroom setting or an effect size for adding a blanket here. The abstract supports that distinction; the full protocol and funding disclosures have not yet been audited. [Raymann et al.](https://pubmed.ncbi.nlm.nih.gov/18192289/)
+
+A 23-person home comparison, ages 23–54, applied showering and two bath conditions in random order, 1.5–2 hours before bed. One selected eligible night per condition was analysed; stress or illness could exclude a night. Longer bathing shortened actigraphy-estimated onset versus showering, without a detected difference in efficiency or wake after sleep onset. This does not show that my one-hour-before-bed shower caused later cold awakenings or that hotter is better. Two authors had Noritz R&D affiliations; the paper declares no competing interests and lists funding as not applicable. [Maeda et al.](https://link.springer.com/article/10.1186/s40101-023-00337-0)
+
+For the present question, record whether the room and bedding feel cold, comfortable or hot at bedtime and remembered awakenings. A comfortably cool room and warm-enough skin can coexist. A closed window removes one suspected source of cold but may also change ventilation; retain the actual experience rather than assuming the tradeoff is solved.
+
+Small balanced-order student-bedroom field interventions found sleep and some next-day benefits with better ventilation. CO₂ tracked the contrast alongside other air-quality changes; it was not an isolated CO₂ dose experiment. Opening a window can also alter noise, light and temperature. [Strøm-Tejsen et al.](https://pubmed.ncbi.nlm.nih.gov/26452168/)
+
+## Meals: retain the outcome distinction
+
+A twenty-person randomized crossover compared matched early/late dinners before fixed sleep. Acute glucose/lipid metabolism changed while architecture remained unchanged. Meal timing can therefore answer a metabolic question without demonstrating a sleep benefit. [Gu et al.](https://pubmed.ncbi.nlm.nih.gov/32525525/)
+
+Keep intake/composition comparable and record interval before sleep. Hunger, discomfort and recovery belong in the tradeoff. Choose the outcome before a restriction.
+
+A four-day randomized crossover in 13 healthy young women compared matched dinners ending one or five hours before habitual bedtime. Home two-channel EEG on the fourth night showed less sleep and poorer continuity after the later meal. One of 14 completers was excluded for prolonged onset; the small sample, menstrual-phase uncertainty and self-selected breakfast/lunch limit transfer. It does not establish a six-hour optimum or benefit from extending an existing four-to-five-hour gap. The Institute for Food and Health Science, Yazuya Co., Ltd. funded the study; authors declared no competing interests. [Enomoto et al., 2026](https://link.springer.com/article/10.1186/s40101-026-00430-0).
+
+The official practical reference is less rigid: avoid large meals within a few hours of bed; a light snack is permissible. Earlier main meals can be tested without compromising total intake or excluding a needed recovery snack. [NHLBI guidance](https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits).
+
+The October 15 follow-up puts dinner at 20:00–21:00, ending about 4h40 before the reported sleep attempt. There were **no drinks with dinner**: the water referred to tomato, half the yogurt tub and the bell pepper. Food water content was not measured. This is not an observed large evening drink load, and the urge at final waking does not establish water in food as the cause or identify a beneficial cutoff.
+
+That distinction does **not** exclude a bladder contribution or make earlier food timing unworthy of testing. Yogurt, fruit and vegetables contribute to fluid intake; absence of a beverage does not remove that water. Waking with an urge is compatible with bladder-driven waking, while an urge can also become noticeable after another awakening. This diary cannot assign a probability to either explanation. [NHS food-fluid guidance](https://www.kch.nhs.uk/patients-and-visitors/patients/hydration-matters/), [NHS explanation of nighttime waking and urination](https://www.guysandstthomas.nhs.uk/health-information/nocturia-getting-night-pee).
+
+The 4h40 gap is an observed starting condition, not a demonstrated personal optimum or upper limit. A six-, eight- or longer-hour interval can be an eligible personal experiment without being a universal requirement. [A concrete proposed comparison](/sleep/research/personal-experiments/#testing-earlier-food-and-water-timing) keeps the food-water and whole-meal questions distinct.
+
+For drinks generally, moving a large evening volume earlier is different from prohibiting fluids for eight hours. NIDDK advises avoiding dehydration and tying intake to activity, health and climate. Keep actual intake, bathroom events and daytime functioning visible before extending a restriction. [NIDDK guidance](https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment).
+
+## Bryan Johnson: a source of experiments
+
+Johnson's public routine is useful for generating comparisons. His reported benefit is a reason to investigate transfer to my circumstances; population proof is not a prerequisite for every reversible personal test. His claims still need to be distinguished from results obtained here.
+
+| Dated first-person source | Reported practice or recommendation | Candidate comparison here |
+|---|---|---|
+| [Evening routine, 1 June 2026](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Final food around noon; bed 20:30: about 8½ hours. He calls earlier eating his biggest improvement | Test a longer interval while retaining daily nutrition |
+| [Protocol, page dated 23 January 2026](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol) | Stops fluids at 16:00: 4½ hours before bed. Separately recommends food experiments at four and six hours | Keep food timing and beverage timing distinct; no eight-hour fluid requirement follows |
+| [Evening routine](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Screens off for 60 minutes; dim amber/red lamps; reading or walking | Compare a full screen-free settling hour with the current red-filter laptop work |
+| [Evening routine](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine) | Ten minutes of breathing, four seconds in and six out; 0.3 mg melatonin nightly | Breathing is a separate comparison; melatonin is reported practice, not an adopted intervention |
+| [Sleep habits, 16 February 2026](https://blueprint.bryanjohnson.com/en-gb/blogs/news/10-habits-for-sleep) | Consistent bedtime, enough opportunity, morning light, comfortable dark/quiet surroundings and tracking | Retain the comfortable room and investigate earlier opportunity alongside actual function |
+
+These are first-person reports on his commercial Blueprint site, checked 15 October 2026. The June account does not provide controlled raw comparisons establishing its claimed sleep-quality benefit. His personal pulse target and “perfect sleep” language do not establish biological optima for another person. The protocol also mixes general recommendations with personal practice and can change without its displayed date changing; these are dated-page snapshots, not independently observed adherence. Food at noon and fluids at 16:00 are different cutoffs. Neither is automatically the best schedule here.
+
+## When the question is a sleep disorder
+
+Persistent sleeping difficulty or daytime impairment creates a different investigation from enhancement. Multicomponent cognitive behavioural therapy is first-line for chronic insomnia; sleep hygiene alone is inadequate treatment. The first record does not establish that diagnosis. [AASM guideline](https://pubmed.ncbi.nlm.nih.gov/33164742/)
+
+The appropriate next measurement or treatment depends on the problem. [Measurement and validation](/sleep/research/measurement-and-validation/) and [beyond the wearable](/sleep/research/beyond-the-wearable/) develop those choices.
+
+## Evidence audit
+
+Designs, outcomes and transfer limits accompany each source; reported effects are not guaranteed personal gains.
+
+Gardiner's paper reports no disclosure conflicts; an explicit funding sponsor was not identified in the accessed text. Arnal had French defence research support and declared no industry support. Leota includes WHOOP-affiliated salaried authors and disclosed research support. Windred's disclosure lists lighting-related funding/consulting and a circadian-health company affiliation for some authors; the design remains observational regardless of those relationships. The alcohol study lists NIH support. The AASM guideline was society-funded and includes author industry disclosures. Brown's light-consensus workshop had BBSRC/university support, with lighting-industry relationships disclosed by some authors. Detailed funding and complete methods for every other linked paper have **not yet been fully audited**; an unverified disclosure is not a claim of independence.

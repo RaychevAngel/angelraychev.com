@@ -1,0 +1,19 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+const pages = import.meta.glob("../../../data/sleep/investigations/*.md", { eager: true });
+const entries = Object.entries(pages).map(([path, page]) => ({ slug: path.split("/").pop().replace(/\.md$/, ""), ...page.frontmatter })).sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
+const frontmatter = { title: "Sleep investigations", description: "Evidence connecting sleep, performance, measurement quality and the next optimization questions.", updated: "2026-10-13" };
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="research" />
+  <p>The project begins by deciding what is worth optimizing. These investigations connect outcomes, mechanisms, measurement validity and practical interventions. Each asks what the evidence actually establishes and what would make the next decision better.</p>
+  <ol class="investigation-list">{entries.map((entry) => <li><a href={`/sleep/research/${entry.slug}/`}>{entry.title}</a><p>{entry.description}</p></li>)}</ol>
+  <h2 id="evidence-rules">Reading the evidence</h2>
+  <p>A randomized restriction experiment, a cohort association, an animal mechanism and a manufacturer's grading rule carry different implications. Study population, comparison, duration, endpoint, uncertainty and commercial interests stay beside the claim. The absence of a precise target does not make a topic unimportant; it tells us which question remains open.</p>
+  <p>Research can refine the <a href="/sleep/targets/">targets</a>. The <a href="/sleep/record/">sleep record</a> preserves what happened before that interpretation changed.</p>
+</Post>
+<style>
+  .investigation-list li { margin-bottom: 28px; }
+  .investigation-list p { margin: 6px 0 0; font-size: 13px; color: var(--dim); }
+</style>

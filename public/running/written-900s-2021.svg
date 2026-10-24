@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 355" role="img" aria-labelledby="title description">
+<title id="title">Written 5×900 m sessions, March–May 2021</title>
+<desc id="description">Each horizontal line shows the minimum and maximum of five written repetition times; a dot shows their arithmetic mean. Open dots mark three sets with extra recovery. The questioned 19 March set is not plotted. The 30 April set has the fastest written mean, 2 minutes 48.2 seconds, with a two-second range.</desc>
+<rect width="340" height="355" fill="white"/>
+<g font-family="monospace" font-size="14" fill="#111">
+<text x="0" y="18" font-weight="bold">5×900 m · written splits</text>
+<line x1="78.00" y1="49" x2="78.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="78.00" y="41" text-anchor="middle">2:40</text>
+<line x1="118.00" y1="49" x2="118.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="118.00" y="41" text-anchor="middle">2:45</text>
+<line x1="158.00" y1="49" x2="158.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="158.00" y="41" text-anchor="middle">2:50</text>
+<line x1="198.00" y1="49" x2="198.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="198.00" y="41" text-anchor="middle">2:55</text>
+<line x1="238.00" y1="49" x2="238.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="238.00" y="41" text-anchor="middle">3:00</text>
+<line x1="278.00" y1="49" x2="278.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="278.00" y="41" text-anchor="middle">3:05</text>
+<line x1="318.00" y1="49" x2="318.00" y2="329" stroke="#ddd" stroke-width="1"/>
+<text x="318.00" y="41" text-anchor="middle">3:10</text>
+<text x="0" y="69">13 Mar</text>
+<g data-date="2021-03-13" data-mean="170.8" data-min="163" data-max="174">
+<line x1="102.00" y1="64" x2="190.00" y2="64" stroke="#111" stroke-width="1.5"/>
+<line x1="102.00" y1="61" x2="102.00" y2="67" stroke="#111" stroke-width="1.5"/>
+<line x1="190.00" y1="61" x2="190.00" y2="67" stroke="#111" stroke-width="1.5"/>
+<circle cx="164.40" cy="64" r="3.5" fill="white" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="92">19 Mar</text>
+<text x="90" y="92" font-size="13" fill="#555">questioned split</text>
+<text x="0" y="115">31 Mar</text>
+<g data-date="2021-03-31" data-mean="173.6" data-min="171" data-max="175">
+<line x1="166.00" y1="110" x2="198.00" y2="110" stroke="#111" stroke-width="1.5"/>
+<line x1="166.00" y1="107" x2="166.00" y2="113" stroke="#111" stroke-width="1.5"/>
+<line x1="198.00" y1="107" x2="198.00" y2="113" stroke="#111" stroke-width="1.5"/>
+<circle cx="186.80" cy="110" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="138">2 Apr</text>
+<g data-date="2021-04-02" data-mean="172.6" data-min="171" data-max="174">
+<line x1="166.00" y1="133" x2="190.00" y2="133" stroke="#111" stroke-width="1.5"/>
+<line x1="166.00" y1="130" x2="166.00" y2="136" stroke="#111" stroke-width="1.5"/>
+<line x1="190.00" y1="130" x2="190.00" y2="136" stroke="#111" stroke-width="1.5"/>
+<circle cx="178.80" cy="133" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="161">13 Apr</text>
+<g data-date="2021-04-13" data-mean="175.0" data-min="171" data-max="178">
+<line x1="166.00" y1="156" x2="222.00" y2="156" stroke="#111" stroke-width="1.5"/>
+<line x1="166.00" y1="153" x2="166.00" y2="159" stroke="#111" stroke-width="1.5"/>
+<line x1="222.00" y1="153" x2="222.00" y2="159" stroke="#111" stroke-width="1.5"/>
+<circle cx="198.00" cy="156" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="184">16 Apr</text>
+<g data-date="2021-04-16" data-mean="169.0" data-min="166" data-max="172">
+<line x1="126.00" y1="179" x2="174.00" y2="179" stroke="#111" stroke-width="1.5"/>
+<line x1="126.00" y1="176" x2="126.00" y2="182" stroke="#111" stroke-width="1.5"/>
+<line x1="174.00" y1="176" x2="174.00" y2="182" stroke="#111" stroke-width="1.5"/>
+<circle cx="150.00" cy="179" r="3.5" fill="white" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="207">22 Apr</text>
+<g data-date="2021-04-22" data-mean="170.8" data-min="169" data-max="174">
+<line x1="150.00" y1="202" x2="190.00" y2="202" stroke="#111" stroke-width="1.5"/>
+<line x1="150.00" y1="199" x2="150.00" y2="205" stroke="#111" stroke-width="1.5"/>
+<line x1="190.00" y1="199" x2="190.00" y2="205" stroke="#111" stroke-width="1.5"/>
+<circle cx="164.40" cy="202" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="230">25 Apr</text>
+<g data-date="2021-04-25" data-mean="171.6" data-min="167" data-max="176">
+<line x1="134.00" y1="225" x2="206.00" y2="225" stroke="#111" stroke-width="1.5"/>
+<line x1="134.00" y1="222" x2="134.00" y2="228" stroke="#111" stroke-width="1.5"/>
+<line x1="206.00" y1="222" x2="206.00" y2="228" stroke="#111" stroke-width="1.5"/>
+<circle cx="170.80" cy="225" r="3.5" fill="white" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="253">27 Apr</text>
+<g data-date="2021-04-27" data-mean="170.4" data-min="169" data-max="171">
+<line x1="150.00" y1="248" x2="166.00" y2="248" stroke="#111" stroke-width="1.5"/>
+<line x1="150.00" y1="245" x2="150.00" y2="251" stroke="#111" stroke-width="1.5"/>
+<line x1="166.00" y1="245" x2="166.00" y2="251" stroke="#111" stroke-width="1.5"/>
+<circle cx="161.20" cy="248" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="276" font-weight="bold">30 Apr</text>
+<g data-date="2021-04-30" data-mean="168.2" data-min="167" data-max="169">
+<line x1="134.00" y1="271" x2="150.00" y2="271" stroke="#111" stroke-width="1.5"/>
+<line x1="134.00" y1="268" x2="134.00" y2="274" stroke="#111" stroke-width="1.5"/>
+<line x1="150.00" y1="268" x2="150.00" y2="274" stroke="#111" stroke-width="1.5"/>
+<circle cx="143.60" cy="271" r="4.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="299">14 May</text>
+<g data-date="2021-05-14" data-mean="177.2" data-min="172" data-max="185">
+<line x1="174.00" y1="294" x2="278.00" y2="294" stroke="#111" stroke-width="1.5"/>
+<line x1="174.00" y1="291" x2="174.00" y2="297" stroke="#111" stroke-width="1.5"/>
+<line x1="278.00" y1="291" x2="278.00" y2="297" stroke="#111" stroke-width="1.5"/>
+<circle cx="215.60" cy="294" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+<text x="0" y="322">21 May</text>
+<g data-date="2021-05-21" data-mean="175.0" data-min="169" data-max="178">
+<line x1="150.00" y1="317" x2="222.00" y2="317" stroke="#111" stroke-width="1.5"/>
+<line x1="150.00" y1="314" x2="150.00" y2="320" stroke="#111" stroke-width="1.5"/>
+<line x1="222.00" y1="314" x2="222.00" y2="320" stroke="#111" stroke-width="1.5"/>
+<circle cx="198.00" cy="317" r="3.5" fill="#111" stroke="#111" stroke-width="1.5"/>
+</g>
+</g></svg>

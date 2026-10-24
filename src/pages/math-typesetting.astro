@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import Math from "../components/Math.astro";
+import { Content as MarkdownMath } from "../components/MathFixtures.md";
+import { renderMath, rerenderMathHtml } from "../lib/math.mjs";
+const cached = renderMath("x_i").replaceAll("katex-sizing", "sizing");
+---
+<Base title="Mathematical typesetting checks" description="Regression specimens for the site's shared mathematical typesetting.">
+  <meta slot="head" name="robots" content="noindex,follow" />
+  <article>
+    <h1>Mathematical typesetting checks</h1>
+    <p>This unlisted reference page exercises Markdown, direct components and imported mathematical content through the shared renderer.</p>
+    <h2>Script geometry</h2>
+    <p>Subscript: <span data-math-probe="subscript"><Math tex="x_i" /></span>;
+      superscript: <span data-math-probe="superscript"><Math tex="x^2" /></span>;
+      nested: <span data-math-probe="nested"><Math tex="x_{i_j}^{n+1}" /></span>.
+      Punctuation and adjacent prose must remain properly aligned.</p>
+    <h2>Fractions and large operators</h2>
+    <span data-math-probe="fraction"><Math tex="\frac{a+b}{\sqrt{c}}" display /></span>
+    <Math tex="\sum_{i=1}^{n}\frac{x_i^2}{1+x_i^2}+\int_{-\infty}^{\infty}e^{-x^2}\,\mathrm{d}x=\sqrt{\pi}+\sum_{i=1}^{n}\frac{x_i^2}{1+x_i^2}" display />
+    <h2>Matrices and accents</h2>
+    <Math tex="A=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix},\qquad \widehat{\theta}_{n+1}=\overline{x}+\vec{v}+\underbrace{x_1+\cdots+x_n}_{n\text{ terms}}" display />
+    <h2>Wide display and keyboard access</h2>
+    <p>At narrow widths, this display should scroll horizontally without moving the whole page or losing its beginning.</p>
+    <Math tex="\mathcal{L}(\theta)=\sum_{i=1}^{n}\sum_{j=1}^{m}\left(\frac{\partial f_\theta(x_i)}{\partial x_j}-y_{ij}\right)^2+\lambda\sum_{k=1}^{p}\lvert\theta_k\rvert+\mu\operatorname{KL}\!\left(\pi_\theta(\cdot\mid x_i)\,\middle\|\,\pi_{\mathrm{ref}}(\cdot\mid x_i)\right)" display />
+    <h2>Unbreakable inline expression</h2>
+    <p>A long tuple must remain intact and scroll locally on a narrow screen:
+      <span data-math-probe="wide-inline"><Math tex="\bigl(M(7,13),M(8,15),M(9,17),M(10,19),M(11,21),M(12,23)\bigr)" /></span>.
+      The surrounding page should never become wider than the screen.</p>
+    <MarkdownMath />
+    <h2>Imported markup refresh</h2>
+    <p>Cached markup with an obsolete script class is refreshed from its TeX source:
+      <span data-math-probe="subscript" set:html={rerenderMathHtml(cached)} />.</p>
+  </article>
+</Base>

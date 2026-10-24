@@ -1,7 +1,7 @@
 ---
 title: "The Optimization Nobody Is Running"
 description: "A person trying not to die is an agent running a reinforcement learning problem. Write the reward down properly and most of what follows is forced."
-updated: 2026-09-08
+updated: 2026-10-10
 ---
 
 ## What we are actually after
@@ -36,9 +36,9 @@ So write the objective.
 Here is the specification.
 
 There is no discount factor. Reward accrues continuously for as long as you are alive. At
-each instant there is a vector — call it Φ — of who you are at that moment: memories,
+each instant there is a vector — call it $\Phi$ — of who you are at that moment: memories,
 skills, language, muscle, aerobic capacity, everything mental and physical. Being alive
-pays. Losing part of Φ while alive costs. Death ends the stream.
+pays. Losing part of $\Phi$ while alive costs. Death ends the stream.
 
 That is four choices, and three of them are provably the right ones. It is worth being
 precise about which, because the reasons are stronger than the intuitions that produced
@@ -48,17 +48,22 @@ And here is where the derivation lands, stated plainly, so you can read the mach
 knowing what it is for.
 
 Reward is a rate rather than a number per step. It accrues for as long as you are alive,
-and what it pays for is the *level* of Φ — being capable, not becoming capable. No discount
+and what it pays for is the *level* of $\Phi$ — being capable, not becoming capable. No discount
 factor is written down, but there is one anyway, because the mortality hazard supplies it:
 the rate at which the future matters is state-dependent and therefore partly under your
 control. Losing capability costs strictly more than regaining it pays, and that asymmetry
 is not a psychological quirk but the condition that stops the objective being farmable.
 Survival is not a term in this sum at all — it is a constraint on which policies are
-allowed. Φ is a vector and cannot be collapsed into a score. And two things need separate
+allowed. $\Phi$ is a vector and cannot be collapsed into a score. And two things need separate
 terms because a rate cannot express them: a floor on the level, and whether you can still
 learn.
 
 Every section below is the argument that one of those is forced.
+
+My [running notebook](/running-notebook/) takes up one concrete part of this
+objective: building speed and endurance, then keeping that capability available
+throughout life. Race marks give me a comparable measure of running performance.
+The training also has to be something I can continue.
 
 ## Reward is a rate, not a number
 
@@ -67,13 +72,13 @@ each step. This is not a stylistic preference. A per-step reward silently encode
 modeller's choice of time step, and the time step is made up. Doya's continuous-time
 formulation makes the dependence explicit: the ordinary discrete Bellman equation is the
 backward-Euler discretisation of the continuous problem, and the translation only works
-after rescaling values by 1/Δt, with the discount factor appearing as γ = 1 − Δt/τ. A
+after rescaling values by $1/\Delta t$, with the discount factor appearing as $\gamma=1-\Delta t/\tau$. A
 per-step reward is not a statement about what is good. It is a statement about what is
 good *per tick*.
 
 The sharper result is that the per-step object degenerates entirely. Tallec, Blier and
-Ollivier proved in 2019 that as the time step shrinks, Q^π(s,a) = V^π(s) + O(δt) — the
-action-dependent part of the Q-function vanishes at rate δt and falls below function
+Ollivier proved in 2019 that as the time step shrinks, $Q^\pi(s,a)=V^\pi(s)+O(\delta t)$ — the
+action-dependent part of the Q-function vanishes at rate $\delta t$ and falls below function
 approximation error. In the continuous limit **the Q-function contains no information
 about which action to take at all.** What survives is the *advantage rate*. Their
 empirical demonstration is that standard deep RL algorithms collapse as the time step is
@@ -89,16 +94,16 @@ Refusing a discount factor looks like the hard part of the specification to defe
 not, because you do not actually get to refuse it.
 
 Write death as a hazard: at any moment, in state x under action u, the process terminates
-at rate λ(x,u). Then the expectation of anything over the surviving trajectories equals the
-expectation weighted by exp(−∫λ). **A state-dependent mortality hazard is exactly a
+at rate $\lambda(x,u)$. Then the expectation of anything over the surviving trajectories equals the
+expectation weighted by $\exp(-\int\lambda)$. **A state-dependent mortality hazard is exactly a
 state-dependent discount rate.** In the Hamilton–Jacobi–Bellman equation the hazard enters
-as −λ(x,u)·(V(x) − V_death), which with V_death set to zero is literally a discount term.
+as $-\lambda(x,u)\bigl(V(x)-V_{\mathrm{death}}\bigr)$, which with $V_{\mathrm{death}}$ set to zero is literally a discount term.
 
 This is not new mathematics; it is the standard move in three separate literatures.
 Boukas, Haurie and Michel reduced random-stopping-time control to an infinite-horizon
 problem in 1990. Blanchard's perpetual-youth model, building on Yaari, runs the whole of
-macroeconomics on a discount rate of ρ + p where p is the death rate. Martha White's
-transition-dependent discount γ(s,a,s′) is the reinforcement-learning version.
+macroeconomics on a discount rate of $\rho+p$ where p is the death rate. Martha White's
+transition-dependent discount $\gamma(s,a,s')$ is the reinforcement-learning version.
 
 The consequence is good news, and it is the most useful technical fact available here.
 You never have to defend a rate of time preference — the usual embarrassment of anyone
@@ -128,9 +133,9 @@ cannot rank anything. It is also not a utility function at all: an infinite valu
 continuity, so the von Neumann–Morgenstern axioms do not apply, and Skalse and Abate showed
 that lexicographic and constraint-satisfaction objectives cannot be scalarised except
 degenerately. The repair keeps the intent exactly: **survival is a constraint, not a term.**
-Maximise Φ inside the feasible set — a constrained Markov decision process, or a
-thresholded lexicographic order. Equivalently, use a large finite death value −M, which
-enters the HJB as a running penalty λ(x,u)·M and recovers the lexicographic solution as M
+Maximise $\Phi$ inside the feasible set — a constrained Markov decision process, or a
+thresholded lexicographic order. Equivalently, use a large finite death value $-M$, which
+enters the HJB as a running penalty $\lambda(x,u)M$ and recovers the lexicographic solution as M
 grows. Survival sitting *above* the objective rather than inside it is what was meant in
 the first place; this is how it is written so that it computes.
 
@@ -140,8 +145,8 @@ if all policies tie, nothing is preferred to anything. And the caution would be 
 the physiology too. Three weeks of strict bed rest in the Dallas study produced a decline
 in aerobic capacity comparable to decades of aging. Immobility is not the safe action.
 
-**Rewarding the change in Φ rewards nothing.** This is the deep one. If reward is the rate
-of change of Φ, then the undiscounted integral of that rate is Φ(end) − Φ(start). It
+**Rewarding the change in $\Phi$ rewards nothing.** This is the deep one. If reward is the rate
+of change of $\Phi$, then the undiscounted integral of that rate is $\Phi(\mathrm{end})-\Phi(\mathrm{start})$. It
 telescopes. By Ng, Harada and Russell's theorem, it is exactly potential-based shaping of
 the zero reward function — which is to say it is *policy-invariant*, and ranks lives only
 by the condition they end in. Seventy-nine years as a vegetable followed by one spectacular
@@ -149,16 +154,16 @@ year scores identically to eighty years of steady accumulation. That contradicts
 completely.
 
 **And the repair is the same fact as the hazard.** Integrating by parts, the discounted
-integral of the rate of change of Φ equals −Φ(0) plus ρ times the discounted integral of
-the *level* of Φ. So with any strictly positive rate, "reward = the change in who you are"
-and "reward = ρ × who you are" are the same objective. With the mortality hazard supplying
-ρ, rewarding *becoming* and rewarding *being* coincide. Without it, only the level works.
+integral of the rate of change of $\Phi$ equals $-\Phi(0)$ plus $\rho$ times the discounted integral of
+the *level* of $\Phi$. So with any strictly positive rate, "reward = the change in who you are"
+and "reward = $\rho$ × who you are" are the same objective. With the mortality hazard supplying
+$\rho$, rewarding *becoming* and rewarding *being* coincide. Without it, only the level works.
 The hazard is not an inconvenience bolted onto the objective — it is the thing that makes
 the level, and therefore time spent capable, matter at all.
 
-**A risk-neutral version is blind to variance.** If Φ moves with a diffusion component, its
+**A risk-neutral version is blind to variance.** If $\Phi$ moves with a diffusion component, its
 time derivative does not exist pathwise and the reward has to be written as the
-differential dΦ, whose martingale part contributes zero in expectation. Under that
+differential $d\Phi$, whose martingale part contributes zero in expectation. Under that
 objective an injury and a coin flip between two injuries score the same. For a repeated
 process that is fine. For one life it is wrong.
 
@@ -166,7 +171,7 @@ process that is fine. For one life it is wrong.
 exactly what regaining it pays, detrain-and-retrain cycling is free reward. This is the
 general form of a known failure — an agent that is itself the source of the variation can
 reward itself without making progress. The fix is an asymmetry: count losses more steeply
-than gains, κ > 1. That single change also breaks the telescoping, so the path matters
+than gains, $\kappa>1$. That single change also breaks the telescoping, so the path matters
 even before the discount is introduced.
 
 Which produces the sentence worth keeping: **loss aversion is the safety condition.** The
@@ -185,7 +190,7 @@ biological process that works by turnover.
 
 ## Who you are is not a number
 
-Φ has to be a vector, and this is also a theorem rather than a preference.
+$\Phi$ has to be a vector, and this is also a theorem rather than a preference.
 
 Skalse and Abate proved that a multi-objective criterion collapses to a scalar reward
 preserving the ordering over policies **if and only if** the collapse is a fixed linear
@@ -196,7 +201,7 @@ implements them.** The vector is a necessity.
 
 Two obstacles come with it that cannot be designed around.
 
-Debreu's representation theorem says an additive Φ requires every subset of attributes to
+Debreu's representation theorem says an additive $\Phi$ requires every subset of attributes to
 be preferentially independent of the rest. The obvious examples violate it: what a gain in
 aerobic capacity is worth depends on musculoskeletal state. Additivity is a convenience
 being assumed, not a property being used.
@@ -222,8 +227,8 @@ not advice.
 **Blocking is a theorem.** In infinite-horizon multi-objective problems, deterministic
 *non-stationary* policies can Pareto-dominate deterministic stationary policies that no
 other deterministic stationary policy dominates. The worked example is one state and three
-actions paying (3,0), (0,3) and (1,1); alternating the first two dominates the constant
-policy whenever the discount exceeds 0.5 — at γ = 0.9, (15.79, 14.21) against (10, 10).
+actions paying $(3,0)$, $(0,3)$ and $(1,1)$; alternating the first two dominates the constant
+policy whenever the discount exceeds 0.5 — at $\gamma=0.9$, $(15.79,14.21)$ against $(10,10)$.
 The usual escape is that stochastic stationary policies make mixtures available, and
 mixtures substitute for non-stationary ones. **But a mixture's value is an average across
 executions, and you get one.** In a single life the substitution is void and the
@@ -405,12 +410,12 @@ powerful but it is not omnipotent, and where it fails is not random: adaptation 
 systematically *incomplete* precisely where capability was destroyed. The editor can talk
 you out of a disappointment. It has not managed to talk anyone out of a disability. That
 bounds its reach, and the region it cannot reach is exactly the capability terms — which is
-the second reason to build the objective out of Φ rather than out of how you feel.
+the second reason to build the objective out of $\Phi$ rather than out of how you feel.
 
 ## What this leaves open
 
 The objective above is written as though it sits outside you. It does not. The weights on
-Φ, the value assigned to death, the reference the whole thing is measured against — all of
+$\Phi$, the value assigned to death, the reference the whole thing is measured against — all of
 them are inside the policy's reach. You can change what you want.
 
 That is a harder problem than this one and it deserves its own treatment, but the shape of

@@ -1,0 +1,24 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+export function getStaticPaths() {
+  const pages = import.meta.glob("../../../data/sleep/measurements/*.md", { eager: true });
+  return Object.entries(pages).map(([path, page]) => ({ params: { slug: path.split("/").pop().replace(/\.md$/, "") }, props: { page } }));
+}
+const { page } = Astro.props;
+const { Content, frontmatter } = page;
+const headings = page.getHeadings().filter((heading) => heading.depth === 2);
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav />
+  <p class="measurement-position"><strong>Role:</strong> {frontmatter.role} · <strong>Current decision:</strong> {frontmatter.attention}</p>
+  {headings.length > 2 && <details class="page-index"><summary>In this measurement</summary><ul>{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul></details>}
+  <Content />
+  <p><a href="/sleep/measurements/">All measurements</a> · <a href="/sleep/targets/">Current targets</a></p>
+</Post>
+<style>
+  .measurement-position, .page-index { font-size: 13px; margin-bottom: 28px; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  details[open] summary { margin-bottom: 16px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+</style>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1600" viewBox="0 0 420 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Construction and repeated use of a repository-specific reviewer</title>
+  <desc id="desc">Construction acquires searchable source and GitHub history from authorized repository URLs, assembles a creator task containing that material and a shared reviewer base, and runs a creator agent. The creator outputs semantic knowledge. Trusted assembly binds it to the unchanged executable base and stores a runnable reviewer. A separate PR input then creates an exact review task, and the selected reviewer returns a review and artifacts. Dashed nodes identify model research and investigation.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/></marker></defs>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111;font-size:19px}.small{font-size:18px;fill:#444}.label{font-size:17px;fill:#444;letter-spacing:.03em}.node{fill:#fff;stroke:#222;stroke-width:1.5}.research{fill:#fafafa;stroke:#222;stroke-width:1.5;stroke-dasharray:7 5}.trusted{fill:#f5f5f5;stroke:#222;stroke-width:1.5}.flow{fill:none;stroke:#222;stroke-width:1.7;marker-end:url(#arrow)}</style>
+  <rect width="420" height="1600" fill="#fff"/>
+  <text x="30" y="34" class="label">CONSTRUCT THE SPECIALIST</text>
+  <rect class="node" x="50" y="65" width="320" height="75"/>
+  <text x="210" y="98" text-anchor="middle">Repository URLs</text>
+  <text x="210" y="126" text-anchor="middle" class="small">authorized read access</text>
+  <path class="flow" d="M210 140 V178"/>
+  <rect class="node" x="50" y="178" width="320" height="90"/>
+  <text x="210" y="211" text-anchor="middle">History acquisition</text>
+  <text x="210" y="240" text-anchor="middle" class="small">Git + GitHub records</text>
+  <path class="flow" d="M210 268 V306"/>
+  <rect class="node" x="50" y="306" width="320" height="90"/>
+  <text x="210" y="339" text-anchor="middle">Creator task</text>
+  <text x="210" y="368" text-anchor="middle" class="small">source, history + base</text>
+  <path class="flow" d="M210 396 V434"/>
+  <rect class="research" x="50" y="434" width="320" height="90"/>
+  <text x="210" y="467" text-anchor="middle">Creator agent</text>
+  <text x="210" y="496" text-anchor="middle" class="small">repository research</text>
+  <path class="flow" d="M210 524 V562"/>
+  <rect class="node" x="50" y="562" width="320" height="105"/>
+  <text x="210" y="595" text-anchor="middle">Generated specialization</text>
+  <text x="210" y="624" text-anchor="middle" class="small">contracts + procedures</text>
+  <text x="210" y="650" text-anchor="middle" class="small">skills + source references</text>
+  <path class="flow" d="M210 667 V705"/>
+  <rect class="trusted" x="50" y="705" width="320" height="105"/>
+  <text x="210" y="738" text-anchor="middle">Trusted assembly</text>
+  <text x="210" y="767" text-anchor="middle" class="small">fixed base + generated data</text>
+  <text x="210" y="793" text-anchor="middle" class="small">validate + bind identities</text>
+  <path class="flow" d="M210 810 V848"/>
+  <rect class="node" x="50" y="848" width="320" height="90"/>
+  <text x="210" y="881" text-anchor="middle">Runnable reviewer profile</text>
+  <text x="210" y="910" text-anchor="middle" class="small">durably stored for reuse</text>
+
+  <path d="M30 978 H390" stroke="#bbb" stroke-width="1"/>
+  <text x="30" y="1015" class="label">REVIEW REPEATED WORK</text>
+  <rect class="node" x="50" y="1045" width="320" height="75"/>
+  <text x="210" y="1078" text-anchor="middle">PR URL + selected profile</text>
+  <text x="210" y="1106" text-anchor="middle" class="small">new work, same specialist</text>
+  <path class="flow" d="M210 1120 V1158"/>
+  <rect class="node" x="50" y="1158" width="320" height="90"/>
+  <text x="210" y="1191" text-anchor="middle">Review factory</text>
+  <text x="210" y="1220" text-anchor="middle" class="small">exact snapshot + review task</text>
+  <path class="flow" d="M210 1248 V1286"/>
+  <rect class="research" x="50" y="1286" width="320" height="90"/>
+  <text x="210" y="1319" text-anchor="middle">Reviewer agent</text>
+  <text x="210" y="1348" text-anchor="middle" class="small">profile + review task</text>
+  <path class="flow" d="M210 1376 V1414"/>
+  <rect class="node" x="50" y="1414" width="320" height="75"/>
+  <text x="210" y="1447" text-anchor="middle">Review + artifacts</text>
+  <text x="210" y="1475" text-anchor="middle" class="small">source and execution lineage</text>
+  <path d="M30 1531 H70" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="84" y="1537" class="small">model investigation</text>
+  <text x="30" y="1575" class="small">Trusted executable machinery.</text>
+</svg>

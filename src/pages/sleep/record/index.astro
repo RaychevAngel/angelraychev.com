@@ -1,0 +1,126 @@
+---
+import Post from "../../../layouts/Post.astro";
+import SleepNav from "../../../components/SleepNav.astro";
+import SleepEpisode from "../../../components/SleepEpisode.astro";
+import record from "../../../data/sleep/record.json";
+const frontmatter = { title: "Sleep record", description: "Dated sleep observations, device estimates, comparisons and corrections behind the sleep performance project.", updated: record.updated };
+const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
+const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
+const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
+const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
+const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
+const recent = record.entries.slice(-7);
+const ouraScoreCount = record.entries.filter((entry) => entry.oura?.score != null).length;
+const eligibleOuraScoreCount = record.entries.filter((entry) => entry.oura?.score != null && entry.oura.score_eligible !== false).length;
+const corosScoreCount = record.entries.filter((entry) => entry.coros?.sleep_score != null).length;
+const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM sleep", latency: "Latency", restfulness: "Restfulness", deep_sleep: "Deep sleep", efficiency: "Efficiency" };
+const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-day sleepiness", morning_sleepiness: "Experience after waking", dream_recall: "Dream recall", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress", breathing_exercise: "Breathing exercise", hydration_and_bathroom: "Hydration and bathroom context" };
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="record" />
+  <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
+  <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. This short record cannot establish a personal baseline, a trend or the cause of a result.</p>
+  <h2 id="recent-comparison">The recent observations</h2>
+  <p>Each available column keeps the provider's returned score beside its selected main episode. A diary can be recorded before either provider returns that date; pending data remains explicitly pending. Known incomplete recordings stay visible as partial estimates and are excluded from whole-night milestones. Additional episodes are described separately below. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
+  <div class="tablewrap"><table aria-label="Recent sleep observations and source availability"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
+    {recent.map((entry) => <tr>
+      <th scope="row"><a href={`#night-${entry.id}`}><time datetime={entry.wake_date}>{shortDate(entry.wake_date)}</time></a></th>
+      <td>{entry.oura ? <><strong>{entry.oura.score}/100{entry.oura.score_eligible === false && " — incomplete"}</strong><br />{entry.oura.score_eligible === false && <>Recorded portion only<br /></>}{duration(entry.oura.sleep.total_sleep_duration)} asleep<br />{minutes(entry.oura.sleep.awake_time)} awake</> : <><strong>Pending</strong><br />No returned sleep estimate</>}</td>
+      <td>{entry.coros ? <><strong>{entry.coros.sleep_score}/100</strong><br />{duration(entry.coros.main_sleep_minutes * 60)} asleep<br />{entry.coros.awake_minutes} min awake</> : <><strong>Pending</strong><br />No returned sleep estimate</>}</td>
+    </tr>)}
+  </tbody></table></div>
+  <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">routine proposal and dated follow-ups</a> connect the observations to the next decision.</p>
+  <h2 id="dated-accounts">The dated accounts</h2>
+  <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — {entry.status}</li>)}</ul>
+  {record.entries.map((entry) => {
+    const o = entry.oura;
+    const c = entry.coros;
+    const s = o?.sleep;
+    return <section aria-labelledby={`night-${entry.id}`}>
+      <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — {o?.score_eligible === false ? "incomplete Oura recording; COROS full-night estimate" : o && c ? "one night, two grading systems" : o || c ? "diary and one provider" : "the reported night; device data pending"}</h2>
+      {entry.story?.length > 0 && <><h3>The reported night</h3>{entry.story.map((paragraph) => <p>{paragraph}</p>)}</>}
+      {entry.nutrition_reference && <p>{entry.nutrition_context_note ? <><a href={entry.nutrition_reference}>Food and meal context</a>: {entry.nutrition_context_note}</> : <>The <a href={entry.nutrition_reference}>preceding food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</>}</p>}
+      {(!o || !c) && <><h3>Device data pending</h3>
+        {!o && <p><strong>Oura:</strong> {entry.provider_status?.oura ?? "No sleep data was returned for this wake date."}</p>}
+        {!c && <p><strong>COROS:</strong> {entry.provider_status?.coros ?? "No sleep data was returned for this wake date."}</p>}
+        <p>The narrative is retained as a self-report. Missing estimates are not zero, and earlier scores have not been assigned to this night.</p>
+      </>}
+      {o?.quality_note && <p><strong>Recording quality:</strong> {o.quality_note}</p>}
+      {o && c && <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>}
+      {(o || c) && <div class="tablewrap">
+        <table aria-label={`Available sleep estimates for ${entry.wake_date}`}>
+          <thead><tr><th scope="col">Measurement</th><th scope="col">{o?.model ?? "Oura — pending"}</th><th scope="col">{c?.model ?? "COROS — pending"}</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Sleep score</th><td>{o ? `${o.score} / 100${o.score_eligible === false ? " — incomplete recording" : ""}` : "Pending"}</td><td>{c ? `${c.sleep_score} / 100` : "Pending"}</td></tr>
+            <tr><th scope="row">Selected sleep window</th><td>{s ? `${time(s.bedtime_start)}–${time(s.bedtime_end)}` : "Pending"}</td><td>{c ? `${time(c.main_start)}–${time(c.main_end)}` : "Pending"}</td></tr>
+            <tr><th scope="row">Estimated time asleep</th><td>{s ? duration(s.total_sleep_duration) : "Pending"}</td><td>{c ? duration(c.main_sleep_minutes * 60) : "Pending"}</td></tr>
+            <tr><th scope="row">Episode including awake time</th><td>{s ? duration(s.time_in_bed) : "Pending"}</td><td>{c ? duration(c.main_period_minutes * 60) : "Pending"}</td></tr>
+            <tr><th scope="row">Estimated awake time in episode</th><td>{s ? minutes(s.awake_time) : "Pending"}</td><td>{c ? `${c.awake_minutes} min` : "Pending"}</td></tr>
+            <tr><th scope="row">Reported overnight HRV</th><td>{s ? `${s.average_hrv} ms` : "Pending"}</td><td>{c ? `${c.official_sleep_hrv_ms} ms` : "Pending"}</td></tr>
+          </tbody>
+        </table>
+      </div>}
+      {o && c && o.score_eligible !== false && <p>{s.average_hrv === entry.coros.official_sleep_hrv_ms ? "The identical HRV headline is agreement between provider summaries, not validation against ECG." : "The HRV headlines retain each provider's summary; neither is a reference ECG measurement."} Their sampling, accepted beats and averaging may differ. The {Math.abs(entry.oura.score - entry.coros.sleep_score)}-point score gap means that choosing which grading system to optimize is consequential.</p>}
+      {o?.score_eligible === false && <p>The Oura durations, physiological summaries and contributor grades below concern an incomplete recording. Their difference from COROS does not measure device accuracy across a shared full night. High contributor grades here are not counted as complete-night achievements.</p>}
+      {o && <SleepEpisode entry={entry} />}
+      {o?.additional_sleep_episodes?.length > 0 && <><h3>Additional Oura-detected episode</h3>{o.additional_sleep_episodes.map((episode) => <p>Oura returned another episode timed {date(episode.bedtime_start.slice(0, 10))}, {time(episode.bedtime_start)}–{time(episode.bedtime_end)}, assigned to provider day {date(episode.day)}. It estimated {minutes(episode.total_sleep_duration)} asleep; its API type was <code>{episode.type}</code>. {episode.confirmation} It remains separate from the main sleep above. Oura's returned daily score is retained without recalculation.</p>)}</>}
+      {entry.evening_hr && <details><summary>The evening heart-rate observation</summary>
+        <p>{entry.evening_hr.aggregation} Each row names the start of a half-hour bin in local time; a dash means no awake-labelled samples in that bin.</p>
+        <div class="tablewrap"><table aria-label={`Evening awake-labelled heart-rate samples before ${entry.wake_date}`}><thead><tr><th scope="col">Bin starting</th><th scope="col">Samples</th><th scope="col">Median bpm</th><th scope="col">Range bpm</th></tr></thead><tbody>{entry.evening_hr.rows.map((row) => <tr><th scope="row">{time(row.start)}</th><td>{row.sample_count}</td><td>{row.median_bpm ?? "—"}</td><td>{row.min_bpm === null ? "—" : `${row.min_bpm}–${row.max_bpm}`}</td></tr>)}</tbody></table></div>
+        <p>The focused query covered {entry.evening_hr.start_datetime} to {entry.evening_hr.end_datetime}. Samples labelled <code>workout</code> ({entry.evening_hr.excluded_source_counts.workout}) and <code>rest</code> ({entry.evening_hr.excluded_source_counts.rest}) were excluded from this awake-only comparison. {entry.evening_hr.note}</p>
+        <p>The sampled decline is compatible with several influences. It is not a continuous resting-HR curve, a meal-causation test or a target to push indefinitely lower. <a href="/sleep/measurements/cardiac/#the-evening-decline-is-a-different-measurement">Interpretation and source definitions</a>.</p>
+      </details>}
+      {o && <><h3 id={`oura-contributors-${entry.id}`}>What Oura graded</h3>
+      <p>{o.score_eligible === false && <strong>Partial-recording grades; excluded from whole-night milestones. </strong>}These are <strong>contributor scores out of 100</strong>. The efficiency contributor of {entry.oura.contributors.efficiency} is separate from the estimated sleep efficiency of {s.efficiency}%. The deep-sleep contributor of {entry.oura.contributors.deep_sleep} is separate from the estimated {duration(s.deep_sleep_duration)} of deep sleep.</p>
+      <div class="tablewrap"><table aria-label="Oura sleep contributor scores"><thead><tr><th scope="col">Contributor</th><th scope="col">Score / 100</th></tr></thead><tbody>
+        {Object.entries(labels).map(([key, name]) => <tr><th scope="row">{name}</th><td>{entry.oura.contributors[key]}</td></tr>)}
+      </tbody></table></div>
+      </>}
+      {entry.id === "2026-10-13" && <p>Timing and total sleep were the weaker contributors. This identifies where Oura's score has room to improve. It does not establish that a particular clock time is my optimal biological schedule or that more deep sleep should be the next objective. <a href="/sleep/targets/">Targets and their evidence</a>.</p>}
+      {entry.interpretation?.length > 0 && <><h3>What changed and what remains uncertain</h3>{entry.interpretation.map((paragraph) => <p>{paragraph}</p>)}</>}
+      {entry.plans?.length > 0 && <><h3>Reported plan for the next night</h3><ul>{entry.plans.map((plan) => <li>{plan}</li>)}</ul><p>These are planned changes, not completed observations. Several changed together would test the routine as a bundle; a better next night would not isolate one cause.</p></>}
+      {entry.next_focus?.length > 0 && <><h3>Practical focus</h3>{entry.next_focus.map((paragraph) => <p>{paragraph}</p>)}{entry.next_focus_references ? <p>{entry.next_focus_references.map((reference, index) => <>{index > 0 && "; "}<a href={reference.href}>{reference.label}</a></>)}</p> : <p><a href="https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Gynaecology/6497-1-Nocturia-getting-up-at-night-to-pass-urine.pdf">NHS guidance on nighttime urination</a> distinguishes waking to void from noticing an urge after another disturbance. <a href="https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment">NIDDK guidance</a> keeps fluid needs tied to activity and climate.</p>}</>}
+      <details>
+        <summary>Physiology, provenance and missing context</summary>
+        {o && <><h3>Oura physiology</h3>
+        <div class="tablewrap"><table aria-label="Oura physiological estimates"><thead><tr><th scope="col">Measurement</th><th scope="col">Reported value</th><th scope="col">Scope</th></tr></thead><tbody>
+          <tr><th scope="row">Average heart rate</th><td>{s.average_heart_rate.toFixed(1)} bpm</td><td>Selected sleep episode</td></tr>
+          <tr><th scope="row">Lowest heart rate</th><td>{s.lowest_heart_rate} bpm</td><td>Selected sleep episode</td></tr>
+          <tr><th scope="row">Average respiratory rate</th><td>{s.average_breath.toFixed(1)} / min</td><td>Oura estimate during sleep</td></tr>
+          <tr><th scope="row">Temperature deviation</th><td>{entry.oura.temperature_deviation_c.toFixed(2)} °C</td><td>Peripheral-temperature deviation from provider baseline; not core temperature</td></tr>
+          <tr><th scope="row">Average SpO₂</th><td>{entry.oura.spo2_average_percent == null ? "Unavailable" : `${entry.oura.spo2_average_percent.toFixed(1)}%`}</td><td>{entry.oura.spo2_status || "Provider daily sleep-oxygen summary"}</td></tr>
+          <tr><th scope="row">Breathing disturbance index</th><td>{entry.oura.breathing_disturbance_index}</td><td>Provider index; not a clinical apnea–hypopnea index</td></tr>
+          <tr><th scope="row">Readiness score</th><td>{entry.oura.readiness_score} / 100</td><td>Separate composite, not a second sleep score</td></tr>
+          <tr><th scope="row">Sleep latency</th><td>{minutes(s.latency)}</td><td>Provider estimate within selected episode</td></tr>
+        </tbody></table></div>
+        <p>The API's average and lowest heart-rate fields use 30-second samples; the app uses five-minute aggregates. An API-versus-app difference can therefore arise from the summary definition rather than a changed night. <a href="/sleep/measurements/cardiac/">Cardiac measurement details</a>.</p>
+        </>}
+        {c && <><h3>COROS summaries</h3>
+        {c.official_sleep_hrv_normal_range_ms && <p>Official sleep HRV assessment: <strong>{c.official_sleep_hrv_evaluation}</strong>, {c.official_sleep_hrv_ms} ms against COROS’s returned normal range {c.official_sleep_hrv_normal_range_ms[0]}–{c.official_sleep_hrv_normal_range_ms[1]} ms and baseline {c.official_sleep_hrv_baseline_ms} ms. These are provider-returned values, not recomputed from individual points. The COROS range is not applied to Oura.</p>}
+        <p>The connector reports deep {entry.coros.ratios_percent.deep}%, light {entry.coros.ratios_percent.light}%, REM {entry.coros.ratios_percent.rem}%, awake {entry.coros.ratios_percent.awake}%, with daily metric scope and {entry.coros.nap_minutes} nap minutes. Its exact percentage denominator was not supplied; these ratios have not been converted into exact stage minutes. It counted {entry.coros.awake_count_over_5min} awakening longer than five minutes. That definition is different from an unrestricted count of all awakenings.</p>
+        <p>COROS reported a daily minimum HR of {entry.coros.daily_min_hr_bpm} bpm, a daily average of {entry.coros.daily_average_hr_bpm} bpm and resting HR of {entry.coros.resting_hr_bpm} bpm. These are snapshots at retrieval, not matched sleep-window metrics or necessarily complete-day summaries. COROS defines its automatic resting-HR estimate as predicted seated HR shortly after waking, which differs from Oura's sleep minimum. <a href="https://coros.com/uk/stories/coros-metrics/c/resting-heart-rate-explained">COROS definition</a>.</p>
+        </>}
+        <h3>Context retained and context unknown</h3>
+        {entry.context.map((item) => <p><strong>{item.kind === "device_record" ? "Recorded context" : "Reported context"}:</strong> {item.observation}</p>)}
+        <p><strong>Not reported:</strong> {Object.entries(entry.self_report).filter(([, value]) => value === null).map(([key]) => reportLabels[key] ?? key).join(", ") || "None of the retained self-report fields"}. Missing reports remain unknown.</p>
+        {Object.entries(entry.self_report).filter(([, value]) => value !== null).map(([key, value]) => <p><strong>{reportLabels[key] ?? key}:</strong> {String(value)}</p>)}
+        <h3>Where these values came from</h3>
+        {o && <p>Authenticated Oura API V2 responses from <code>sleep</code>, <code>daily_sleep</code>, <code>daily_readiness</code> and <code>daily_spo2</code>, filtered to the requested wake date, with ring-configuration metadata. Oura reports hardware <code>{o.hardware_type}</code>, firmware {o.firmware_version}, and sleep algorithm version <code>{o.algorithm_version}</code>. The exact model revision remains unverified.</p>}
+        {c && <p>The official COROS connector's sleep overview, official HRV assessment and daily HR summaries supply the COROS observations. COROS firmware remains unverified.</p>}
+        {entry.provider_retrieved_at ? <p>Provider data retrieved separately: Oura {entry.provider_retrieved_at.oura}; COROS {entry.provider_retrieved_at.coros}.</p> : <p>{o || c ? "Available provider data retrieved" : "Provider availability checked"} {entry.retrieved_at}. {!(o && c) && "An absent provider supplies no score or physiological estimate for this entry. The narrative and reported timings come from Angel's account."}</p>}
+        <p>Credential material, device identifiers, source document IDs and raw physiological streams are excluded from this page. Hours-and-minutes displays round down to complete minutes; minute-only values retain one decimal. Prose may use rounded approximations; source values retain their original seconds.</p>
+      </details>
+      {entry.corrections.length > 0 && <><h3>Corrections and revisions</h3><ul>{entry.corrections.map((correction) => <li>{typeof correction === "string" ? correction : `${correction.date}: ${correction.reason}`}</li>)}</ul></>}
+    </section>;
+  })}
+  <h2 id="how-to-add-a-night">How a night is added</h2>
+  <p>An entry begins with an on-demand request for the relevant night. The canonical record retains original provider values and their scope. Measured signals, algorithmic estimates, self-reports and interpretations are named separately. Missing data is not zero; missing nights are not silently removed from a target window.</p>
+  <p>A correction adds the reason and retains the date on which an interpretation changed. Historical observations remain intelligible as the current <a href="/sleep/targets/">targets</a> and <a href="/sleep/research/">investigations</a> develop. The record has {record.entries.length} dated entries, {ouraScoreCount} returned Oura sleep scores ({eligibleOuraScoreCount} eligible for whole-night milestones) and {corosScoreCount} available COROS sleep scores. It has no scheduled synchronization.</p>
+</Post>
+<style>
+  details { margin: 32px 0; }
+  summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+  details[open] summary { margin-bottom: 24px; }
+  section { margin-bottom: 48px; }
+</style>
