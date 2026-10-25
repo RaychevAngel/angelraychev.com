@@ -12,23 +12,26 @@ import release from '../../../public/cop-prisoner/release.json';
     <li><strong>Every prescribed graph and its claimed score.</strong> For every admissible <Math tex={String.raw`(n,m)`} />, Lean verifies the specified graph's looplessness, exact arrow count and exact claimed score. Universal optimality additionally requires excluding better competing graphs.</li>
     <li><strong>The complete large-order classification.</strong> For every <Math tex={String.raw`n\ge12`} /> and admissible <Math tex={String.raw`m\ge24`} />, the maximum and an explicit attaining graph are verified. All finite main-interval and sparse-construction bridges are closed.</li>
     <li><strong>Sharp unrestricted small budgets.</strong> Budgets 0–14 and 22 have their sharp upper bounds over arbitrary finite hosts, including sources, sinks and isolates. These bounds have matching prescribed graphs at the stated support orders.</li>
-    <li><strong>Small hosts.</strong> Every budget at orders through six is verified. The additional seven-vertex budgets 13–15 and 18–42 and eight-vertex budgets 24–56 have proved upper bounds and attaining graphs. The latest cell is <Math tex={String.raw`M(7,15)=11`} />.</li>
+    <li><strong>Small hosts.</strong> Every budget at orders through six is verified. The additional seven-vertex budgets 13–16 and 18–42 and eight-vertex budgets 24–56 have proved upper bounds and attaining graphs. The latest cell is <Math tex={String.raw`M(7,16)=12`} />.</li>
     <li><strong>Further complete domains.</strong> The dense classification from order eleven, the functional endpoint at every order from two, the full zero band and all fifteen designated smaller dense exceptions remain verified, together with the previously stated stronger subset and delivery-time guarantees.</li>
   </ul>
 
-  <p>At the 25 October 2026, 10:22 UTC development checkpoint, Lean also proves <Math tex={String.raw`M(7,15)=11`} /> for every loopless seven-vertex graph with fifteen arrows. All 266 numerical positive-degree families, the complete catalogue, the actual source/sink reduction and an exact score-eleven graph are joined in a 9,060-module accepted closure. The final theorem has no numerical or normalization premise. An independent audit rechecked the complete source, object, compiler, dependency and provenance fingerprints.</p>
-  <p>At the 25 October 2026, 17:31 UTC development checkpoint, the independent twenty-arrow route has <strong>eleven of its sixteen target families accepted</strong>. Each accepted family has a complete Lean proof and an independent audit of its sources, compiler records and dependencies. Five target families and the unrestricted twenty-arrow theorem remain open.</p>
-  <p>For the separate seven-vertex, sixteen-arrow case, <strong>695 of 716 numerical degree-profile bounds are accepted</strong>. The latest batch adds 14 families; its complete 213-module aggregate passed Lean and an independent audit. All 716 profiles have independently audited ordinary certificates; 21 still need their numerical Lean proofs. The accepted catalogue and conditional assembly retain those obligations, so this does not yet prove the unrestricted cell.</p>
+  <p>At the 25 October 2026 development checkpoint, Lean proves <strong><Math tex={String.raw`M(7,16)=12`} /></strong> for every loopless seven-vertex graph with sixteen arrows. All 716 numerical positive-degree families, the complete catalogue, the actual source/sink reduction and an exact score-twelve graph are joined in a 5,720-module accepted closure. The final theorem has no numerical or normalization premise. An independent audit rechecked the complete source, object, compiler, dependency and provenance fingerprints.</p>
+  <p>The independent twenty-arrow route has <strong>eleven of its sixteen target families accepted</strong>. Each accepted family has a complete Lean proof and an independent audit of its sources, compiler records and dependencies. Five target families and the twenty-arrow theorem over arbitrary host sizes remain open.</p>
   <p>A general counting lemma for dominated source rows and saturated recipient columns is also now verified. It shortens repeated certificate checks while retaining proofs about every compatible graph and the actual delivery game. This supporting lemma adds no numerical case by itself.</p>
   <p>These are accepted development results newer than the downloadable snapshot below. The current source development uses Lean 4.33.1 and kernel checking. No external solver assertion, custom axiom, proof hole or native proof is accepted; reported logical axioms are confined to <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>.</p>
+  <details>
+    <summary>Earlier seven-vertex milestone: M(7,15)=11</summary>
+  <p>At the 25 October 2026, 10:22 UTC development checkpoint, Lean also proves <Math tex={String.raw`M(7,15)=11`} /> for every loopless seven-vertex graph with fifteen arrows. All 266 numerical positive-degree families, the complete catalogue, the actual source/sink reduction and an exact score-eleven graph are joined in a 9,060-module accepted closure. The final theorem has no numerical or normalization premise. An independent audit rechecked the complete source, object, compiler, dependency and provenance fingerprints.</p>
+  </details>
   <details>
     <summary>Earlier seven-vertex milestone: M(7,14)=10</summary>
   <p>At the 25 October 2026, 08:04 UTC development checkpoint, Lean proves the unrestricted maximum <Math tex={String.raw`M(7,14)=10`} />. The upper bound includes every loopless seven-vertex graph with fourteen arrows, including sources, sinks and isolates. It combines 154 positive and 417 zero-side degree families, complete coverage of the 571 hard joint degree profiles, and actual-graph normalization. A verified graph with exact score ten attains the bound.</p>
   </details>
   <h2>Exactly what remains</h2>
-  <p><strong>Eight sharp global budgets remain:</strong> 15–21 and 23. There are also <strong>23 separate fixed-host upper exclusions</strong>:</p>
+  <p><strong>Eight sharp global budgets remain:</strong> 15–21 and 23. There are also <strong>22 separate fixed-host upper exclusions</strong>:</p>
   <ul>
-    <li>Seven vertices: 16–17 arrows.</li>
+    <li>Seven vertices: 17 arrows.</li>
     <li>Eight vertices: 17–23 arrows.</li>
     <li>Nine vertices: 17 and 19–23 arrows.</li>
     <li>Ten vertices: 19 and 21–24 arrows.</li>
