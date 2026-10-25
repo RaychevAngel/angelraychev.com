@@ -12,14 +12,15 @@ import release from '../../../public/cop-prisoner/release.json';
     <li><strong>Every prescribed graph and its claimed score.</strong> For every admissible <Math tex={String.raw`(n,m)`} />, Lean verifies the specified graph's looplessness, exact arrow count and exact claimed score. Universal optimality additionally requires excluding better competing graphs.</li>
     <li><strong>The complete large-order classification.</strong> For every <Math tex={String.raw`n\ge12`} /> and admissible <Math tex={String.raw`m\ge24`} />, the maximum and an explicit attaining graph are verified. All finite main-interval and sparse-construction bridges are closed.</li>
     <li><strong>Sharp unrestricted small budgets.</strong> Budgets 0–14 and 22 have their sharp upper bounds over arbitrary finite hosts, including sources, sinks and isolates. These bounds have matching prescribed graphs at the stated support orders.</li>
-    <li><strong>Small hosts.</strong> Every budget at orders through six is verified. The seven-vertex budgets 18–42 and eight-vertex budgets 24–56 also have proved upper bounds and attaining graphs. The latest additional cell is <Math tex={String.raw`M(7,18)=14`} />.</li>
+    <li><strong>Small hosts.</strong> Every budget at orders through six is verified. The seven-vertex budgets 14 and 18–42 and eight-vertex budgets 24–56 also have proved upper bounds and attaining graphs. The latest additional cell is <Math tex={String.raw`M(7,14)=10`} />.</li>
     <li><strong>Further complete domains.</strong> The dense classification from order eleven, the functional endpoint at every order from two, the full zero band and all fifteen designated smaller dense exceptions remain verified, together with the previously stated stronger subset and delivery-time guarantees.</li>
   </ul>
+  <p>At the 25 October 2026, 08:04 UTC development checkpoint, Lean proves the unrestricted maximum <Math tex={String.raw`M(7,14)=10`} />. The upper bound includes every loopless seven-vertex graph with fourteen arrows, including sources, sinks and isolates. It combines 154 positive and 417 zero-side degree families, complete coverage of the 571 hard joint degree profiles, and actual-graph normalization. A verified graph with exact score ten attains the bound.</p>
   <p>These are accepted development results newer than the downloadable snapshot below. The current source development uses Lean 4.33.1 and kernel checking. No external solver assertion, custom axiom, proof hole or native proof is accepted; reported logical axioms are confined to <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>.</p>
   <h2>Exactly what remains</h2>
-  <p><strong>Eight sharp global budgets remain:</strong> 15–21 and 23. There are also <strong>25 separate fixed-host upper exclusions</strong>:</p>
+  <p><strong>Eight sharp global budgets remain:</strong> 15–21 and 23. There are also <strong>24 separate fixed-host upper exclusions</strong>:</p>
   <ul>
-    <li>Seven vertices: 14–17 arrows.</li>
+    <li>Seven vertices: 15–17 arrows.</li>
     <li>Eight vertices: 17–23 arrows.</li>
     <li>Nine vertices: 17 and 19–23 arrows.</li>
     <li>Ten vertices: 19 and 21–24 arrows.</li>
