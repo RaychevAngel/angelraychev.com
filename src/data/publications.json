@@ -273,19 +273,51 @@
       "manuscriptTitle": "Guaranteed indirect delivery in directed networks",
       "overview": "/cop-prisoner/",
       "kind": "Research manuscript",
-      "authors": ["Angel Ivanov Raychev", "Alexandra Ignatova"],
+      "authors": [
+        "Angel Ivanov Raychev"
+      ],
       "status": "Prepared manuscript · not submitted to arXiv",
       "records": [],
       "primary": {
-        "pdf": {"url": "/cop-prisoner/guaranteed-indirect-delivery.pdf", "version": "Current website manuscript"},
-        "lean": {"url": "/cop-prisoner/lean/", "note": "Formal proofs of substantial domains; complete classification remains unfinished in Lean."}
+        "pdf": {
+          "url": "/cop-prisoner/guaranteed-indirect-delivery.pdf",
+          "version": "Reviewed manuscript, 24 October 2026; 127 pages; not submitted"
+        },
+        "lean": {
+          "url": "/cop-prisoner/lean/",
+          "note": "Formal proofs of substantial domains; complete classification remains unfinished in Lean."
+        }
       },
       "resources": [
-        {"kind": "latex", "url": "/cop-prisoner/manuscript-source.zip"},
-        {"kind": "evidence", "url": "/cop-prisoner/paper/", "note": "Certificates, research history, bibliography and verification records."},
-        {"kind": "supplement", "label": "Delivery-time companion", "url": "/cop-prisoner/delivery-time/", "note": "Separate parked work with explicitly partial results."},
-        {"kind": "versions", "url": "/cop-prisoner/release.json"}
-      ]
+        {
+          "kind": "latex",
+          "url": "/cop-prisoner/manuscript-source.zip"
+        },
+        {
+          "kind": "evidence",
+          "url": "/cop-prisoner/paper/",
+          "note": "Certificates, research history, bibliography and verification records."
+        },
+        {
+          "kind": "supplement",
+          "label": "Delivery-time companion",
+          "url": "/cop-prisoner/delivery-time/",
+          "note": "Separate parked work with explicitly partial results."
+        },
+        {
+          "kind": "versions",
+          "url": "/cop-prisoner/release.json"
+        },
+        {
+          "kind": "archive",
+          "label": "23 October manuscript and sources",
+          "url": "/cop-prisoner/manuscript-2026-10-23.zip",
+          "note": "Prior manuscript, sources, bibliography, reader and release hashes, preserved unchanged."
+        }
+      ],
+      "manuscriptDate": "2026-10-24",
+      "manuscriptModified": "2026-10-24",
+      "artifactManifest": "/cop-prisoner/release.json"
     },
     {
       "id": "capture-time-extensions",
