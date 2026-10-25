@@ -11,7 +11,7 @@ const smallArcValues = [0,0,0,0,1,1,2,2,4,5,6,8];
 const finiteArcValues = [9,11,13,15,19,28,33,40,53,60,79,83];
 const finiteArcHosts = [7,8,8,8,8,10,9,11,10,12,11,12];
 ---
-<Post title="Guaranteed indirect delivery: the exact maximum" description="The complete maximum at every vertex and arc count, with explicit attaining constructions, four budget regimes, and full finite tables." updated={release.publication_date}>
+<Post title="Guaranteed indirect delivery: the exact maximum" description="The complete maximum at every vertex and arc count, with explicit attaining constructions, four budget regimes, and full finite tables." updated="2026-10-25">
   <p>A messenger has a message at one station of a directed network. A pursuer starts elsewhere. Both see each other and take turns following an arrow or waiting, with the messenger moving first. Which source–recipient pairs can always complete delivery?</p>
   <p>We count pairs with different endpoints and <strong>no direct arrow</strong> between them. Write <Math tex={String.raw`I(G)`} /> for the number that are guaranteed from every permitted pursuer starting position. The central problem is to determine</p>
   <div set:html={math(String.raw`M(n,m)=\max_{|V(G)|=n,\ |E(G)|=m}I(G),\qquad n\ge1,\quad0\le m\le n(n-1),`)} />
@@ -94,7 +94,7 @@ const finiteArcHosts = [7,8,8,8,8,10,9,11,10,12,11,12];
 
   <h2>Try the game and inspect the evidence</h2>
   <DeliveryExplorer />
-  <p>The general counting and construction theorems have ordinary proofs. The finite classification and main-interval bridges also use independently replayed certificates and complete exclusions. The approved registry separates literal graphs, stage intervals, upper proofs and support reductions. The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies those dependencies and distinguishes independent game replay from a second graph enumeration. The <a href="/cop-prisoner/lean/">Lean development</a> now proves complete dense domains, general sparse bounds, explicit construction families and a complete strict nine-vertex exclusion. The complete classification remains unfinished in Lean; the coverage page gives exact domains and remaining obligations.</p>
+  <p>The general counting and construction theorems have ordinary proofs. The finite classification and main-interval bridges also use independently replayed certificates and complete exclusions. The approved registry separates literal graphs, stage intervals, upper proofs and support reductions. The <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> identifies those dependencies and distinguishes independent game replay from a second graph enumeration. The <a href="/cop-prisoner/lean/">Lean development</a> verifies every prescribed graph and its claimed score, the exact maximum for every order from twelve with at least 24 arrows, and sharp unrestricted budgets 0–14 and 22. The latest additional fixed-host theorem is <Math tex={String.raw`M(7,15)=11`} />. Full Lean verification remains unfinished: eight global-budget bounds, 23 fixed-host bounds and final assembly remain at the 25 October, 10:22 UTC checkpoint.</p>
   <p>Optimizing the delivery time is a separate, parked companion problem. Its <a href="/cop-prisoner/delivery-time/">proved two-move bounds and partial fast constructions</a> remain available without enlarging the scope of the exact-count classification.</p>
 
   <h2>Where the work comes from</h2>

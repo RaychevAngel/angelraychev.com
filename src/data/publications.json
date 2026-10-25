@@ -285,7 +285,7 @@
         },
         "lean": {
           "url": "/cop-prisoner/lean/",
-          "note": "Formal proofs of substantial domains; complete classification remains unfinished in Lean."
+          "note": "Every prescribed graph and its claimed score are verified; complete classification remains unfinished in Lean."
         }
       },
       "resources": [
