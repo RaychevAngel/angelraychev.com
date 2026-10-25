@@ -4,10 +4,35 @@ import Post from '../../layouts/Post.astro';
 import verification from '../../../public/cop-prisoner/lean-verification.json';
 import release from '../../../public/cop-prisoner/release.json';
 ---
-<Post title="Guaranteed delivery: Lean verification" description="Exact theorem domains, remaining proof obligations and reproducible Lean sources." updated={release.publication_date}>
+<Post title="Guaranteed delivery: Lean verification" description="Exact theorem domains, remaining proof obligations and reproducible Lean sources." updated="2026-10-25">
   <p><a href="/cop-prisoner/">Overview</a> · <a href="/cop-prisoner/#resources">Resources</a> · <a href="/cop-prisoner/proofs/">Classification proofs</a> · <a href="/cop-prisoner/delivery-time/">Delivery-time companion</a></p>
-  <p><strong>Full Lean verification is in progress.</strong> The ordinary classification gives the exact maximum and an explicit attaining graph for every admissible pair. The formal proofs below establish substantial complete domains, but do not yet assemble that full classification.</p>
-  <p>The downloadable snapshot uses <strong>Lean 4.33.1 with Std only</strong>. All {verification.modules.length} distributed modules passed the recorded replay. The <a href="/cop-prisoner/lean-verification.json">receipt</a> identifies their source hashes, compiler, outputs and logical axioms. The module count is an inventory, not a percentage of completeness.</p>
+  <p><strong>The ordinary classification is complete; full Lean verification is in progress.</strong> The mathematical answer gives the exact maximum and an explicit attaining graph for every admissible pair. The accepted formal development now covers the complete construction side and substantial exact upper-bound domains. It has not yet proved the full universal maximum theorem.</p>
+  <h2>Current accepted results</h2>
+  <ul>
+    <li><strong>Every prescribed graph and its claimed score.</strong> For every admissible <Math tex={String.raw`(n,m)`} />, Lean verifies the specified graph's looplessness, exact arrow count and exact claimed score. Universal optimality additionally requires excluding better competing graphs.</li>
+    <li><strong>The complete large-order classification.</strong> For every <Math tex={String.raw`n\ge12`} /> and admissible <Math tex={String.raw`m\ge24`} />, the maximum and an explicit attaining graph are verified. All finite main-interval and sparse-construction bridges are closed.</li>
+    <li><strong>Sharp unrestricted small budgets.</strong> Budgets 0–14 and 22 have their sharp upper bounds over arbitrary finite hosts, including sources, sinks and isolates. These bounds have matching prescribed graphs at the stated support orders.</li>
+    <li><strong>Small hosts.</strong> Every budget at orders through six is verified. The seven-vertex budgets 19–42 and eight-vertex budgets 24–56 also have proved upper bounds and attaining graphs. The latest additional cell is <Math tex={String.raw`M(7,19)=15`} />.</li>
+    <li><strong>Further complete domains.</strong> The dense classification from order eleven, the functional endpoint at every order from two, the full zero band and all fifteen designated smaller dense exceptions remain verified, together with the previously stated stronger subset and delivery-time guarantees.</li>
+  </ul>
+  <p>These are accepted development results newer than the downloadable snapshot below. The current source development uses Lean 4.33.1 and kernel checking. No external solver assertion, custom axiom, proof hole or native proof is accepted; reported logical axioms are confined to <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>.</p>
+  <h2>Exactly what remains</h2>
+  <p><strong>Eight sharp global budgets remain:</strong> 15–21 and 23. There are also <strong>26 separate fixed-host upper exclusions</strong>:</p>
+  <ul>
+    <li>Seven vertices: 14–18 arrows.</li>
+    <li>Eight vertices: 17–23 arrows.</li>
+    <li>Nine vertices: 17 and 19–23 arrows.</li>
+    <li>Ten vertices: 19 and 21–24 arrows.</li>
+    <li>Eleven vertices: 21, 23 and 24 arrows.</li>
+  </ul>
+  <p>After these bounds, the final quantified maximum theorem and complete source-release reconciliation remain. Every graph and its claimed score are already verified; these outstanding obligations concern competing graphs. They are formal-proof gaps, not unknown numerical values.</p>
+  <p>Within the fifteen-arrow, eight-vertex component, 41 of the 80 hard degree families and the complete catalogue membership proof are accepted; 39 family bounds remain. Separately, an independent route to the sharp twenty-arrow bound now has prior-free weak bounds of 36, 44 and 53 at budgets 16, 18 and 19. One of its sixteen target-family exclusions is accepted; fifteen remain. Those weaker bounds do not close the sharp earlier budgets.</p>
+  <h2>Downloadable verified snapshot</h2>
+  <p>The existing <a href="/cop-prisoner/lean-proofs.zip">Lean source archive</a> and <a href="/cop-prisoner/lean-verification.json">verification receipt</a> identify the earlier released snapshot, dated {release.publication_date}. Its {verification.modules.length} distributed modules passed the recorded replay. Newer development claims above do not extend that archive's recorded scope. The module count is an inventory, not a completion percentage.</p>
+  <p>Extract the archive, install its pinned Lean 4.33.1 toolchain and run <code>python3 check.py</code> inside the extracted <code>lean</code> folder. Its receipt pins source hashes, compiler, successful checks and logical axioms. The <a href="/cop-prisoner/lean/README.md">released theorem guide</a> describes that snapshot's precise statements.</p>
+  <details>
+    <summary>Detailed theorem map and proof limits of the earlier downloadable snapshot</summary>
+    <p>The statements and outstanding obligations in this section describe that release. The current development's stronger domains and remaining obligations are listed above.</p>
   <h2>Exact maxima and explicit constructions already verified</h2>
   <ol>
     <li><strong>The uniform sparse construction from support order 85.</strong> For every <Math tex={String.raw`n\ge k\ge85`} />, Lean proves <Math tex={String.raw`M(n,2k)=k(k-3)`} />. The literal six-type cyclic graph, its local projection, all 552 strategy objectives in 81 covered patterns, global strategy composition, exact counts, and isolate padding are connected. Supports 12–18, 50, 55, 65, 70, 75 and 80 also follow from the finite main endpoints below. The remaining even bridge is stated explicitly at the end of this page. <a href="/cop-prisoner/lean/SixTypeConstruction.lean">SixTypeConstruction</a>.</li>
@@ -37,7 +62,7 @@ import release from '../../../public/cop-prisoner/release.json';
   <p>Both players may wait; the messenger moves first and receipt precedes collision. <a href="/cop-prisoner/lean/SemanticCompleteness.lean">SemanticCompleteness</a> proves equivalence between finite winning trees and one fixed messenger policy that eventually delivers against every permitted initial cop and every legal history-dependent cop policy. No time bound is assumed in the actual-play definition.</p>
   <p><a href="/cop-prisoner/lean/GraphPadding.lean">Padding</a> preserves scores exactly when adding isolates or sinks with at most one predecessor, including cops starting at or entering the new sink. <a href="/cop-prisoner/lean/LocalArena.lean">LocalArena</a> proves projection and sequential composition for separate messenger/cop state spaces. A safe transfer includes the cop reply before the next stage; only terminal receipt waives collision at the recipient. Concrete geometry and certificate premises remain visible until instantiated.</p>
   <p>All finite checks use Lean kernel reduction. No external solver assertion, custom axiom, proof hole or native proof is accepted. Reported axioms are confined to Lean's standard <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>. Certificate producers are untrusted and unnecessary for replaying the literal distributed sources.</p>
-  <h2>What remains to finish</h2>
+  <h2>Obligations outstanding at that earlier snapshot</h2>
   <ol>
     <li>Even sparse supports 19–84, excluding 50, 55, 65, 70, 75 and 80. Odd sparse supports 19–97, excluding 88, 89, 90, 94, 95 and 96. Each missing support case represents all larger hosts through padding.</li>
     <li>Main-interval budgets 38–94 at order 19, 40–99 at 20, 42–125 at 21, 44–109 at 22, 46–114 at 23 and 48–119 at 24; 111–149 at order 50; 122–164 at 55; and <Math tex={String.raw`2n\le m<3n`} /> at all other orders 25–114 except the ten completed orders 65, 70, 75, 80, 85, 90, 95, 100, 105 and 110.</li>
@@ -45,4 +70,5 @@ import release from '../../../public/cop-prisoner/release.json';
     <li>One quantified theorem and explicit constructor for every admissible <Math tex={String.raw`(n,m)`} />, with all finite dependencies discharged.</li>
   </ol>
   <p>Download the <a href="/cop-prisoner/lean-proofs.zip">Lean sources</a>, install the pinned toolchain and run <code>python3 check.py</code> inside the extracted <code>lean</code> folder. It rebuilds every distributed module one module at a time, with two Lean workers and rejects source changes during replay. The <a href="/cop-prisoner/lean/README.md">theorem and replay guide</a> gives precise statements. The research archive contains the dependency-ordered roadmap; the <a href="/cop-prisoner/paper/#evidence-guide">evidence guide</a> separately describes the ordinary and external computational proofs.</p>
+  </details>
 </Post>
