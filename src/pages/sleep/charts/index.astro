@@ -1,0 +1,148 @@
+---
+import Post from '../../../layouts/Post.astro';
+import SleepNav from '../../../components/SleepNav.astro';
+import record from '../../../data/sleep/record.json';
+import timelines from '../../../data/sleep/timelines.json';
+import {stageSVG,pulseSVG,trendSVG,metrics} from '../../../lib/sleep-charts.mjs';
+const latest=timelines.entries.at(-1);
+const chartEntries=record.entries.map(e=>({id:e.id,wake_date:e.wake_date,status:e.status,
+  oura:e.oura?{score:e.oura.score,score_eligible:e.oura.score_eligible,sleep:{total_sleep_duration:e.oura.sleep.total_sleep_duration,awake_time:e.oura.sleep.awake_time,average_hrv:e.oura.sleep.average_hrv}}:null,
+  coros:e.coros?{sleep_score:e.coros.sleep_score,main_sleep_minutes:e.coros.main_sleep_minutes,awake_minutes:e.coros.awake_minutes,official_sleep_hrv_ms:e.coros.official_sleep_hrv_ms}:null}));
+const frontmatter={title:'Sleep curves',description:'Explore sleep stages, overnight pulse and separate Oura/COROS trends alongside the diary.',updated:record.updated};
+---
+<Post frontmatter={frontmatter}>
+  <SleepNav current="charts" compact />
+  <p>See how a night unfolded, then compare it with the other nights. The curves show device estimates; the diary records how sleep actually felt.</p>
+  <nav class="chart-jumps" aria-label="Chart sections"><a href="#overnight">Inside a night</a> · <a href="#trends">Across nights</a> · <a href="#reading">How to read the curves</a></nav>
+  <div aria-hidden="true">{record.entries.map(e=><span id={`night-${e.id}`}></span>)}</div>
+  <section id="overnight" aria-labelledby="overnight-heading">
+    <h2 id="overnight-heading">Inside a night</h2>
+    <div class="controls"><button type="button" id="previous-night" aria-label="Previous night">←</button><label for="night-select">Wake date</label><select id="night-select">{[...record.entries].reverse().map(t=><option value={t.id} selected={t.id===latest.date}>{t.wake_date}{t.oura?.score_eligible===false?' · incomplete':''}</option>)}</select><button type="button" id="next-night" aria-label="Next night">→</button></div>
+    <p id="night-context">{record.entries.at(-1)?.status}</p>
+    <p class="chart-note" id="coverage-note"></p>
+    <p class="chart-note"><a id="night-diary" href={`/sleep/record/#night-${latest.date}`}>Open this night’s diary and measurements</a></p>
+    <figure><h3>Sleep stages · Oura</h3><div class="plot" id="stage-plot" set:html={stageSVG(latest)}></div><figcaption>Chronological 30-second labels: awake at the top, deep sleep at the bottom. These are estimated stages, separate from remembered awakenings.</figcaption></figure>
+    <figure><h3>Heart rate · Oura <span class="chart-note">bpm</span></h3><div class="plot" id="pulse-plot" set:html={pulseSVG(latest)}></div><figcaption>Five-minute samples on the same clock axis. Gaps stay blank; the pulse axis adapts to each night. No smoothing or filled-in measurements.</figcaption></figure>
+    <div class="inspection"><label for="time-probe">Inspect time — drag the slider, use its arrow keys, or move across either curve</label><input type="range" id="time-probe" min="0" max={latest.stages.length-1} value="0" step="1"/><output id="probe-readout" for="time-probe" aria-live="off">Select a point to inspect its time, stage and nearby pulse sample.</output></div>
+    <noscript><p>The latest night’s curves are shown above. Enable JavaScript to select another date or inspect individual samples. All dated summaries remain in the <a href="/sleep/record/">sleep record</a>.</p></noscript>
+  </section>
+  <section id="trends" aria-labelledby="trends-heading">
+    <h2 id="trends-heading">Across nights</h2>
+    <label for="metric-select">Compare</label> <select id="metric-select">{Object.entries(metrics).map(([k,v])=><option value={k}>{v.label} · {v.unit}</option>)}</select>
+    <p class="legend"><span class="key oura-key"></span> Oura <span class="key coros-key"></span> COROS</p>
+    <div class="plot" id="trend-plot" set:html={trendSVG(record.entries,'score')}></div>
+    <p class="chart-note">Wake dates · {record.entries[0].wake_date} to {record.entries.at(-1)?.wake_date}. Oura’s October 22 battery-truncated night is a gap in every whole-night trend. COROS remains a separate series. Select a dot to inspect that night, or use the exact values below.</p>
+    <output id="trend-readout" class="chart-note" aria-live="polite">Select a dot for its exact value and the corresponding overnight curves.</output>
+    <p class="chart-note"><a href="#overnight">Jump to the selected night’s curves ↑</a></p>
+    <details><summary>Exact plotted values and diary context</summary><div class="tablewrap"><table aria-label="Sleep curve values"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th><th scope="col">Diary</th></tr></thead><tbody id="trend-values">{record.entries.map(e=><tr><th scope="row"><a href={`#night-${e.id}`}>{e.wake_date}</a></th><td>{e.oura?.score_eligible===false?'Incomplete':e.oura?.score??'Missing'}</td><td>{e.coros?.sleep_score??'Missing'}</td><td>{e.status}</td></tr>)}</tbody></table></div></details>
+  </section>
+  <section id="reading" aria-labelledby="reading-heading"><h2 id="reading-heading">Look for patterns, then check the diary</h2>
+    <ul><li>Are awake labels isolated or clustered? Compare their timing with what you remember.</li><li>Does pulse settle early or stay elevated? Compare with reported meals, training, illness and alcohol without assigning a cause from one night.</li><li>Do the devices move together across nights? A disagreement remains visible rather than being averaged away.</li><li>Does better grading coincide with better experienced sleep? October 26 had higher scores alongside reported bad sleep, waking sleepiness and body pains.</li></ul>
+    <p>COROS’s connector exposes nightly summaries, not a stage-by-stage timeline. The overnight curves therefore use Oura only. Additional rest/nap detections are excluded from these main-night curves; disputed detections remain in their dated accounts.</p>
+    <details><summary>Sources, gaps and update rules</summary><p>Thirty-second Oura stage labels and sampled pulse were retrieved on {timelines.retrieved_at.slice(0,10)}, for the 14 logged main episodes. Each timeline matches the existing record’s exact episode boundaries and summary values. The stage sequence is anchored at the provider’s episode start; any final partial epoch is clipped at the episode end, and uncovered seconds stay blank. Pulse uses each sample object’s own timestamp and interval. Missing pulse samples break the line.</p><p>Daily comparisons use the canonical <a href="/sleep/record/">record</a>, including separate provider scopes and the incomplete-recording exclusion. No COROS stages are reconstructed from percentages. The curves do not measure EEG or validate the sleep labels. All clock times use America/Los_Angeles. New daily entries appear in the trends automatically; a missing overnight timeline is kept unavailable until fetched on demand. No scheduled sync is added.</p><p><a href="https://cloud.ouraring.com/v2/docs">Oura API definitions</a> · <a href="/sleep/research/measurement-and-validation/">Measurement limits</a> · <a href="/sleep/measurements/functioning/">Experienced and measured function</a></p></details>
+  </section>
+  <script id="sleep-curve-data" type="application/json" set:html={JSON.stringify({entries:chartEntries,timelines:timelines.entries}).replace(/</g,'\\u003c')} />
+</Post>
+<script>
+  import {stageSVG,pulseSVG,trendSVG,metrics,clock,stageName,trendValue,samplePoints,LEFT} from '../../../lib/sleep-charts.mjs';
+  const data=JSON.parse(document.getElementById('sleep-curve-data')!.textContent!);
+  const select=document.getElementById('night-select') as HTMLSelectElement;
+  const metric=document.getElementById('metric-select') as HTMLSelectElement;
+  const probe=document.getElementById('time-probe') as HTMLInputElement;
+  const $=(id:string)=>document.getElementById(id)!;
+  const previous=$('previous-night') as HTMLButtonElement,next=$('next-night') as HTMLButtonElement;
+  let current=data.timelines.at(-1);
+  let currentDate=current.date;
+  function inspect(index:number){
+    if(!current?.stages)return;
+    index=Math.max(0,Math.min(index,current.stages.length-1));probe.value=String(index);
+    const start=Date.parse(current.start),end=Date.parse(current.end),t=start+index*30000;
+    const samples=samplePoints(current.heart_rate,start,end);
+    const closest=samples.reduce((best,p)=>Math.abs(p.t-t)<Math.abs(best.t-t)?p:best,samples[0]);
+    $('probe-readout').textContent=`${clock(t,true)} · ${stageName[current.stages[index]]} · ${closest&&Math.abs(closest.t-t)<=150000&&closest.value!=null?`${closest.value} bpm (sample ${clock(closest.t,true)})`:'No nearby pulse sample'}`;
+    for(const line of document.querySelectorAll('#stage-plot .probe, #pulse-plot .probe')){
+      const x=LEFT+(642-LEFT)*(t-start)/(end-start);line.setAttribute('x1',String(x));line.setAttribute('x2',String(x));line.removeAttribute('hidden');
+    }
+  }
+  function showNight(date:string,writeHash=true){
+    const e=data.entries.find(e=>e.id===date);if(!e)return;
+    const timeline=data.timelines.find(t=>t.date===date);
+    currentDate=date;select.value=date;
+    const idx=data.entries.indexOf(e);previous.disabled=idx===0;next.disabled=idx===data.entries.length-1;
+    ($('night-diary') as HTMLAnchorElement).href=`/sleep/record/#night-${date}`;
+    if(!timeline){
+      current=null;probe.disabled=true;
+      $('night-context').textContent=e.status;
+      $('coverage-note').textContent='The nightly summary exists, but its overnight timeline has not been retrieved. No earlier night is substituted.';
+      $('stage-plot').textContent='Stage timeline unavailable for this date.';
+      $('pulse-plot').textContent='Pulse timeline unavailable for this date.';
+      $('probe-readout').textContent='No timeline to inspect.';
+      if(writeHash)history.replaceState(null,'',`#night-${date}`);return;
+    }
+    current=timeline;probe.disabled=false;probe.max=String(current.stages.length-1);
+    $('night-context').textContent=e.status;
+    $('coverage-note').textContent=e.oura?.score_eligible===false?'Incomplete Oura recording: battery stopped during this night. The curve ends at the recording cutoff, not the actual final waking.':'';
+    ($('night-diary') as HTMLAnchorElement).href=`/sleep/record/#night-${date}`;
+    $('stage-plot').innerHTML=stageSVG(current);$('pulse-plot').innerHTML=pulseSVG(current);
+    
+    for(const plot of document.querySelectorAll('#stage-plot svg, #pulse-plot svg')) plot.addEventListener('pointermove',(event:PointerEvent)=>{
+      const box=plot.getBoundingClientRect(),sx=(event.clientX-box.left)/box.width*660;
+      inspect(Math.round((sx-LEFT)/(642-LEFT)*(Date.parse(current.end)-Date.parse(current.start))/30000));
+    });
+    inspect(0);if(writeHash)history.replaceState(null,'',`#night-${date}`);
+  }
+  function showTrend(){
+    const key=metric.value;$('trend-plot').innerHTML=trendSVG(data.entries,key);
+    const tbody=$('trend-values');tbody.replaceChildren();
+    for(const e of data.entries){const tr=document.createElement('tr'),th=document.createElement('th');th.scope='row';
+      const link=document.createElement('a');link.href=`#night-${e.id}`;link.textContent=e.wake_date;th.append(link);tr.append(th);
+      for(const p of ['oura','coros']){const td=document.createElement('td'),v=trendValue(e,key,p);td.textContent=v==null?(p==='oura'&&e.oura?.score_eligible===false?'Incomplete':'Missing'):`${v.toFixed(key==='duration'?2:1)} ${metrics[key].unit}`;tr.append(td);}
+      const td=document.createElement('td');td.textContent=e.status;tr.append(td);tbody.append(tr);
+    }
+  }
+  function selectPoint(target:EventTarget|null){
+    const dot=(target as Element)?.closest?.('[data-date]');if(!dot)return;
+    const e=data.entries.find(e=>e.id===dot.getAttribute('data-date'));
+    const values=['oura','coros'].map(p=>{const v=trendValue(e,metric.value,p);return `${p==='oura'?'Oura':'COROS'} ${v==null?'unavailable':v.toFixed(metric.value==='duration'?2:1)+' '+metrics[metric.value].unit}`;});
+    $('trend-readout').textContent=`${e.wake_date} · ${values.join(' · ')}. Overnight curves selected above.`;
+    showNight(dot.getAttribute('data-date')!);
+  }
+  $('trend-plot').addEventListener('click',e=>selectPoint(e.target));
+  $('trend-plot').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPoint(e.target);}});
+  select.addEventListener('change',()=>showNight(select.value));
+  previous.addEventListener('click',()=>showNight(data.entries[data.entries.findIndex(e=>e.id===currentDate)-1].id));
+  next.addEventListener('click',()=>showNight(data.entries[data.entries.findIndex(e=>e.id===currentDate)+1].id));
+  probe.addEventListener('input',()=>inspect(Number(probe.value)));metric.addEventListener('change',showTrend);
+  function fromHash(){if(!location.hash.startsWith('#night-'))return;const d=location.hash.replace('#night-','');if(data.entries.some(e=>e.id===d))showNight(d,false);}
+  window.addEventListener('hashchange',fromHash);showNight(data.entries.at(-1).id,false);fromHash();showTrend();
+</script>
+<style>
+  section { scroll-margin-top:24px; }
+  .chart-jumps,.chart-note { font-size:12px; line-height:1.7; }
+  .chart-note { color:var(--dim); }
+  .controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:20px; }
+  button,select { font:inherit; font-size:13px; color:var(--fg); background:var(--bg); border:1px solid var(--control-border); padding:8px; min-height:42px; max-width:100%; }
+  button { cursor:pointer; min-width:42px; }
+  button:disabled { opacity:.3; cursor:default; }
+  button:focus-visible,select:focus-visible,input:focus-visible { outline:2px solid var(--fg); outline-offset:3px; }
+  figure { margin:28px 0; } figure h3 { margin:0 0 12px; }
+  .plot { width:100%; } .plot :global(svg) { width:100%; overflow:visible; touch-action:pan-y; }
+  .plot :global(text) { fill:var(--dim); font-family:inherit; font-size:12px; }
+  .plot :global(.grid) { stroke:var(--rule); stroke-width:1; }
+  .plot :global(.stage-line),.plot :global(.pulse-line),.plot :global(.trend-oura),.plot :global(.trend-coros) { fill:none; stroke:var(--fg); stroke-width:1.7; vector-effect:non-scaling-stroke; }
+  .plot :global(.phase) { fill:var(--fg); opacity:.12; }
+  .plot :global(.phase-4) { opacity:.5; }
+  .plot :global(.pulse-dot),.plot :global(.dot-oura) { fill:var(--fg); }
+  .plot :global(.dot-coros) { fill:var(--bg); stroke:var(--fg); stroke-width:1.5; }
+  .plot :global(.trend-coros) { stroke-dasharray:5 5; opacity:.6; }
+  .plot :global(.probe) { stroke:var(--dim); stroke-dasharray:3 4; }
+  .plot :global(.probe[hidden]) { display:none; }
+  .inspection { padding:16px; border:1px solid var(--rule); margin:24px 0; font-size:12px; }
+  .inspection input { width:100%; accent-color:var(--fg); display:block; margin:16px 0; }
+  output { display:block; min-height:3.4em; }
+  .legend { display:flex; gap:10px; align-items:center; font-size:12px; margin:18px 0 8px; }
+  .key { width:28px; border-top:2px solid var(--fg); display:inline-block; }
+  .coros-key { border-top-style:dashed; margin-left:20px; opacity:.6; }
+  details { margin:28px 0; } summary { cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+  @media(max-width:460px){.controls { gap:7px; } .controls label { font-size:12px; } .controls select { flex:1; min-width:0; }.plot :global(text){font-size:22px;}figcaption{font-size:12px;}}
+</style>

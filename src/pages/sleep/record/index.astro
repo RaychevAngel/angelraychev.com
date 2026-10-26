@@ -27,6 +27,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
   <SleepNav current="record" compact />
   <RecordDisclosure />
   <p>A personal diary alongside separate Oura and COROS estimates, with {record.entries.length} nights recorded since 13 October 2026. Dates are the <strong>wake-up date</strong>; clock times use <strong>America/Los_Angeles</strong>.</p>
+  <p><a href="/sleep/charts/">Explore sleep stages, overnight pulse and nightly trends →</a></p>
   <h2 id="recent-comparison">Recent nights</h2>
   <p>The latest seven recorded nights, newest first. Incomplete recordings and missing provider data stay visible; an omitted date is unrecorded.</p>
   <div class="tablewrap"><table aria-label="Recent sleep observations and source availability"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
@@ -55,6 +56,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
       <section aria-labelledby={`night-${entry.id}`}>
       <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — {o?.score_eligible === false ? "incomplete Oura recording; COROS full-night estimate" : o && c ? "one night, two grading systems" : corosUnavailable ? "Oura record; COROS unavailable" : o || c ? "diary and one provider" : "the reported night; device data pending"}</h2>
       <p class="entry-status">{entry.status}</p>
+      <p class="record-links"><a href={`/sleep/charts/#night-${entry.id}`}>View this night’s sleep curves</a></p>
       {entry.story?.length > 0 && <><h3>The reported night</h3>{entry.story.map((paragraph) => <p>{paragraph}</p>)}</>}
       {entry.nutrition_reference && <p>{entry.nutrition_context_note ? <><a href={entry.nutrition_reference}>Food and meal context</a>: {entry.nutrition_context_note}</> : <>The <a href={entry.nutrition_reference}>preceding food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</>}</p>}
       {(!o || !c) && <><h3>{corosUnavailable ? "Provider access unavailable" : "Device data pending"}</h3>
@@ -125,7 +127,7 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
         {o && <p>Authenticated Oura API V2 responses from <code>sleep</code>, <code>daily_sleep</code>, <code>daily_readiness</code> and <code>daily_spo2</code>, filtered to the requested wake date, with ring-configuration metadata. Oura reports hardware <code>{o.hardware_type}</code>, firmware {o.firmware_version}, and sleep algorithm version <code>{o.algorithm_version}</code>. The exact model revision remains unverified.</p>}
         {c && <p>The official COROS connector's sleep overview, official HRV assessment and daily HR summaries supply the COROS observations. COROS firmware remains unverified.</p>}
         {entry.provider_retrieved_at ? <p>Provider data retrieved separately: Oura {entry.provider_retrieved_at.oura ?? "not retrieved"}; COROS {entry.provider_retrieved_at.coros ?? "not retrieved"}.</p> : <p>{o || c ? "Available provider data retrieved" : "Provider availability checked"} {entry.retrieved_at}. {!(o && c) && "An absent provider supplies no score or physiological estimate for this entry. Any diary narrative and reported timings come from Angel's account; absent self-reports remain unknown."}</p>}
-        <p>Credential material, device identifiers, source document IDs and raw physiological streams are excluded from this page. Hours-and-minutes displays round down to complete minutes; minute-only values retain one decimal. Prose may use rounded approximations; source values retain their original seconds.</p>
+        <p>Credential material, device identifiers and source document IDs are excluded. Selected main-night stage labels and sampled pulse are available on the linked sleep-curves page. Hours-and-minutes displays round down to complete minutes; minute-only values retain one decimal. Prose may use rounded approximations; source values retain their original seconds.</p>
       </details>
       {entry.corrections.length > 0 && <><h3>Corrections and revisions</h3><ul>{entry.corrections.map((correction) => <li>{typeof correction === "string" ? correction : `${correction.date}: ${correction.reason}`}</li>)}</ul></>}
     </section></details>;
