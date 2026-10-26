@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { parse } from 'parse5';
 import registry from '../src/data/publications.json' with { type: 'json' };
 import { primaryResources, supportingResources, validatePublicationRegistry } from '../src/lib/publications.mjs';
-import { inspectPublicationSemantics } from '../src/lib/publication-html.mjs';
+import { inspectHomepagePublication, inspectPublicationSemantics } from '../src/lib/publication-html.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const issues = validatePublicationRegistry(registry);
@@ -77,15 +77,9 @@ if (!process.argv.includes('--source-only') && !issues.length) {
     const elements = children(article ?? {}).filter(node => node.tagName);
     if (elements[0]?.tagName !== 'h1' || attr(elements[1] ?? {}, 'data-publication') !== work.id) issues.push(`${work.id}: header is not immediately after title.`);
   }
-  const home = documentFor('/');
+  const homepageHtml = fs.readFileSync(path.join(root, 'dist', 'index.html'), 'utf8');
   for (const work of registry.works) {
-    const overviewLinks = all(home, node => node.tagName === 'a' && attr(node, 'href')?.replace(/\/$/, '') === work.overview.replace(/\/$/, ''));
-    if (!overviewLinks.length) continue; // Companions and inline subprojects are not homepage entries.
-    const card = overviewLinks[0].parentNode;
-    if (content(overviewLinks[0]) !== work.title) issues.push(`${work.id}: homepage title differs from registry.`);
-    const actual = all(card, node => Boolean(attr(node, 'data-resource'))).map(node => ({kind: attr(node, 'data-resource'), url: attr(node, 'href'), label: content(node)}));
-    const expected = primaryResources(work).map(({kind,url,label}) => ({kind,url,label}));
-    if (JSON.stringify(actual) !== JSON.stringify(expected)) issues.push(`${work.id}: homepage resource links differ from registry.`);
+    issues.push(...inspectHomepagePublication(homepageHtml, work).map(issue => `${work.id}: ${issue}`));
   }
 }
 

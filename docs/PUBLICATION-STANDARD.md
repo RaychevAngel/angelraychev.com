@@ -61,10 +61,16 @@ historical versions belong under Resources. Descriptive labels distinguish
 different documents within a category. A bibliography of cited works is not the
 same thing as a BibTeX citation for the project itself.
 
-On the homepage and resume, project titles link to their website overview. The
-same available PDF/Code/Lean links follow in the same order. A publication venue
-may link to its publication record. Preserve title typography and hierarchy;
-making a heading a link is not a reason to shrink it to resource-link text size.
+On the homepage, AI and Mathematics entries contain only one linked title and
+the quiet article-update date. Titles open the website overview; publication
+status, subtitles and PDF/Code/Lean or record links stay on the destination page.
+Entries may wrap naturally on small screens. Other homepage sections keep their
+own presentation.
+
+On the resume, project titles also link to their website overview, followed by
+the available PDF/Code/Lean links in that order. A publication venue may link to
+its publication record. Preserve title typography and hierarchy; making a heading
+a link is not a reason to shrink it to resource-link text size.
 
 ## Canonical manuscript and versions
 

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import registry from '../src/data/publications.json' with {type: 'json'};
 import { validatePublicationRegistry, primaryResources, publicationForPath } from '../src/lib/publications.mjs';
-import { inspectPublicationSemantics } from '../src/lib/publication-html.mjs';
+import { inspectHomepagePublication, inspectPublicationSemantics } from '../src/lib/publication-html.mjs';
 
 test('current registry has valid, distinct publication identities', () => assert.deepEqual(validatePublicationRegistry(registry), []));
 test('primary ordering is independent of object authoring order', () => assert.deepEqual(primaryResources({primary:{lean:{url:'/guide/'},pdf:{url:'/paper.pdf'},code:{url:'https://github.com/a/b'}}}).map(r=>r.label), ['PDF','Code','Lean']));
@@ -44,6 +44,26 @@ for (const [name, mutate, expected] of [
 });
 
 const specimen = registry.works.find(work=>work.id==='generative-reward-models');
+const compactHome = `<ul class="idx"><li><a href="${specimen.overview}">${specimen.title}</a><span class="when">23 Oct 2026</span></li></ul>`;
+test('homepage accepts only the linked overview title and quiet date', () => {
+  assert.deepEqual(inspectHomepagePublication(compactHome, specimen), []);
+});
+test('homepage rejects extra artifact links', () => {
+  const extra = compactHome.replace('</li>', `<a href="${specimen.primary.pdf.url}" data-resource="pdf">PDF</a></li>`);
+  assert.ok(inspectHomepagePublication(extra, specimen).some(issue=>/one overview link/.test(issue)));
+});
+test('homepage rejects status rows even without another link', () => {
+  const extra = compactHome.replace('</li>', '<p class="publication-card-status">Preprint</p></li>');
+  assert.ok(inspectHomepagePublication(extra, specimen).some(issue=>/only its linked title/.test(issue)));
+});
+test('homepage rejects changed titles, missing dates and duplicate entries', () => {
+  assert.ok(inspectHomepagePublication(compactHome.replace(specimen.title, 'Different title'), specimen).some(issue=>/title differs/.test(issue)));
+  assert.ok(inspectHomepagePublication(compactHome.replace('<span class="when">23 Oct 2026</span>', ''), specimen).some(issue=>/quiet update date/.test(issue)));
+  assert.ok(inspectHomepagePublication(compactHome + compactHome, specimen).some(issue=>/exactly once/.test(issue)));
+});
+test('homepage does not require companion projects to be listed', () => {
+  assert.deepEqual(inspectHomepagePublication('<p>Other content</p>', specimen), []);
+});
 const scholarly = {name:specimen.manuscriptTitle, author:specimen.authors.map(name=>({name})), datePublished:specimen.manuscriptDate, encoding:{contentUrl:specimen.primary.pdf.url}};
 const validHtml = `<html><head><meta name="citation_title" content="${specimen.manuscriptTitle}">${specimen.authors.map(author=>`<meta name="citation_author" content="${author}">`).join('')}<meta name="citation_publication_date" content="2026/10/22"><meta name="citation_arxiv_id" content="2610.30765"><meta name="citation_pdf_url" content="${specimen.primary.pdf.url}"><script type="application/ld+json">${JSON.stringify(scholarly)}</script></head><body><article><h1>${specimen.title}</h1><div data-publication="${specimen.id}"><p class="publication-status"><a data-record="arxiv" href="${specimen.records[0].url}">arXiv:2610.30765</a></p><a data-resource="pdf" href="${specimen.primary.pdf.url}">PDF</a><a data-resource="code" href="${specimen.primary.code.url}">Code</a></div></article></body></html>`;
 test('rendered semantic specimen is accepted', () => assert.deepEqual(inspectPublicationSemantics(validHtml, specimen), []));

@@ -1,9 +1,35 @@
 import { parse } from 'parse5';
-import { absoluteResourceUrl, PRIMARY_KINDS, RESOURCE_LABELS } from './publications.mjs';
+import { absoluteResourceUrl, normalizePath, PRIMARY_KINDS, RESOURCE_LABELS } from './publications.mjs';
 
 const attr = (node, name) => node.attrs?.find(value => value.name === name)?.value;
 const walk = (node) => [node, ...(node.childNodes ?? []).flatMap(walk)];
 const text = (node) => node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join('');
+
+/** Homepage research entries expose the overview, not its resource inventory. */
+export function inspectHomepagePublication(html, work) {
+  const links = walk(parse(html)).filter(node => node.tagName === 'a'
+    && normalizePath(attr(node, 'href') ?? '') === normalizePath(work.overview));
+  if (!links.length) return []; // Companions and inline projects are not homepage entries.
+  const issues = [];
+  if (links.length !== 1) issues.push('Homepage overview must appear exactly once.');
+  const title = links[0];
+  if (text(title) !== work.title) issues.push('Homepage title differs from registry.');
+  let entry = title.parentNode;
+  while (entry && entry.tagName !== 'li') entry = entry.parentNode;
+  if (!entry) return [...issues, 'Homepage overview must be a list entry.'];
+  const visibleChildren = (entry.childNodes ?? []).filter(node => node.tagName
+    || (node.nodeName === '#text' && node.value.trim()));
+  const date = visibleChildren[1];
+  if (visibleChildren.length !== 2 || visibleChildren[0] !== title
+    || date?.tagName !== 'span' || !(attr(date, 'class') ?? '').split(/\s+/).includes('when')
+    || !text(date).trim() || (date.childNodes ?? []).some(node => node.tagName)) {
+    issues.push('Homepage entry must contain only its linked title and quiet update date.');
+  }
+  if (walk(entry).filter(node => node.tagName === 'a').length !== 1) {
+    issues.push('Homepage entry must have one overview link, without artifact or record links.');
+  }
+  return issues;
+}
 
 /** Semantic checks deliberately include untagged author-written HTML. */
 export function inspectPublicationSemantics(html, work) {

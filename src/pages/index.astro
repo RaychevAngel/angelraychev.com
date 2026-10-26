@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { publicationForPath, primaryResources } from "../lib/publications.mjs";
+import { publicationForPath } from "../lib/publications.mjs";
 
 const introduction = "I'm an ML research engineer at SynthLabs. I build distributed training and evaluation systems, work on LLM post-training, and develop specialized agents.";
 
@@ -120,16 +120,7 @@ const writing = sections.find(section => section.id === "human-agency")!;
       <ul class="idx">
         {section.entries.map((e) => (
           <li>
-            <div class="publication-card">
-              <a href={publicationForPath(e.href)?.overview ?? e.href}>{publicationForPath(e.href)?.title ?? e.title}</a>
-              {publicationForPath(e.href)?.records.length > 0 && <p class="publication-card-status">
-                {publicationForPath(e.href).status}
-                {publicationForPath(e.href).records.map(record => <><span aria-hidden="true"> · </span><a href={record.url}>{record.label}</a></>)}
-              </p>}
-              {primaryResources(publicationForPath(e.href)).length > 0 && <nav class="publication-card-links" aria-label={`${e.title} resources`}>
-                {primaryResources(publicationForPath(e.href)).map(resource => <a href={resource.url} data-resource={resource.kind}>{resource.label}</a>)}
-              </nav>}
-            </div>
+            <a href={publicationForPath(e.href)?.overview ?? e.href}>{publicationForPath(e.href)?.title ?? e.title}</a>
             <span class="when">{e.when}</span>
           </li>
         ))}
