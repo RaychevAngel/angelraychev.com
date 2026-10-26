@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-23"
+updated: "2026-10-26"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -68,6 +68,10 @@ The [October 22 record](/sleep/record/#night-2026-10-22) has **COROS official HR
 ## October 23: full main episode and matching HRV summaries
 
 On [October 23](/sleep/record/#night-2026-10-23), Oura mean sleeping HR was **49.125 bpm**, minimum **46**, and HRV **62 ms**. COROS official sleep HRV was also **62 ms, Normal**, against its returned **49–69 ms range and 59 ms baseline**. Both main windows extend to about 09:28; identical summary HRV does not validate beat-level agreement. COROS daily HR averaged 54 bpm with minimum 45 at retrieval; predicted seated resting HR was 52. Today’s Oura values cover a longer window than the known incomplete October22 recording, so their similarity alone is not a matched-window comparison.
+
+## October 24–25: a change needing context
+
+The [October 24](/sleep/record/#night-2026-10-24) and [October 25](/sleep/record/#night-2026-10-25) retrievals returned Oura average sleeping HR **49.875 and 65.75 bpm**, minimum **45 and 59**, HRV **51 and 37 ms**, and peripheral-temperature deviations **+0.15 and +1.34 °C**. Readiness was **90 and 42**. The summaries moved together but do not isolate one mechanism, measure core temperature or establish illness severity. The follow-up specifically reports sickness, alcohol, late bedtime and pre-bed emotions for October 25. Their separate effects are unresolved. COROS comparison is unavailable to this retrieval. No individual beat series or device agreement is inferred.
 
 ## How much confidence is justified?
 

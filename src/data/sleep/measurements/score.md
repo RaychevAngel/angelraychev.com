@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-23"
+updated: "2026-10-26"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -32,6 +32,8 @@ The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 
 This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
+
+The October 26 retrieval adds **Oura 86 on [October 24](/sleep/record/#night-2026-10-24)** and **69 on [October 25](/sleep/record/#night-2026-10-25)**. October 24’s higher grade coexists with 78 minutes estimated awake; October 25 has timing 15, restfulness 67 and REM 60, while efficiency and latency contributors are88 and 91. Its high component grades do not erase lower grading elsewhere. Thirteen dated entries contain twelve eligible Oura scores; the battery-truncated October 22 remains excluded and no October 26 response has yet been returned. Coverage alone does not complete a calendar window or award a sustained milestone. COROS is unavailable to this retrieval, so no newer watch grade is inferred.
 
 The [October 23 record](/sleep/record/#night-2026-10-23) returns **Oura 83 / COROS 88**, with both episodes ending around 09:28. The diary reports a cleaner-triggered awakening around 09:30–09:40. Oura contributors are total sleep **81**, deep **96**, REM **88**, efficiency **97**, restfulness **85**, latency **83** and timing **52**. Today’s Oura score is eligible for whole-night milestones; yesterday’s incomplete 73 remains excluded rather than serving as the comparison for an apparent improvement. Eleven dated entries contain ten eligible Oura scores, insufficient to assess the established sustained windows.
 

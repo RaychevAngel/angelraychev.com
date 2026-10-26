@@ -1,13 +1,17 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-23"
+updated: "2026-10-26"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**26 October retrieval — October 24–25 added; no new routine inferred.** Oura returned **86 / 8h26m30s asleep** for October 24 and **69 / 7h19m** for October 25. COROS is unavailable to this retrieval, not confirmed empty in its app; October 26 has no Oura record yet. The [newest available record](/sleep/record/#night-2026-10-25) includes a later 02:48–11:15 window, higher sleeping pulse and temperature deviation, and lower HRV.
+
+The follow-up explicitly attributes **alcohol, sickness, late bedtime and emotions before bed to October 25**. These coincided with the measured changes; no single exposure is established as the cause. Experienced sleep quality, morning sleepiness and recovery remain unknown. Earlier bedtime remains the prior direction; a device window alone does not establish a completed change in intended schedule. No food, drink or training intervention is adopted from these measurements.
 
 **23 October 2026 — cleaner-triggered awakening after a late gym.** Reported last food around 20:00, gym 21:30–23:00, shower around midnight and bed around 01:00. The cleaner woke me around 09:30–09:40. This supplies an external waking trigger, not a count of earlier interruptions. In the follow-up, I confirmed **staying awake**, feeling **sleepy on waking** and remaining **a little sleepy at the time of reply**. The elapsed interval, eventual resolution and effects on work or training remain unspecified. The prior dates’ 10–15-minute recovery is not assumed repeated.
 

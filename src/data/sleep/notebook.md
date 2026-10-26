@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-23"
+updated: "2026-10-26"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,10 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**26 October update — two new Oura records, with October 25 context added.** The query returned the sleeps ending [October 24](/sleep/record/#night-2026-10-24) and [October 25](/sleep/record/#night-2026-10-25), but no October 26 record yet. COROS could not be queried through the current connector environment; its absence here does not establish missing watch data. Earlier watch values remain on their original dates.
+
+October 24 returned **Sleep 86, 8h26m30s asleep and 78 minutes awake**; October 25 returned **Sleep 69, 7h19m asleep and 68m30s awake**. The latter window was **02:48–11:15**. Average sleeping HR changed **49.875 → 65.75 bpm**, HRV **51 → 37 ms** and temperature deviation **+0.15 → +1.34 °C**; Readiness fell **90 → 42**. These are provider estimates and deviations, without an established cause. In the follow-up I attributed **alcohol, sickness, late bedtime and emotions before bed specifically to October 25**. Those conditions coincided; their individual contributions are not isolated. No subjective quality rating, illness severity or recovery duration is assumed. The record now has thirteen dates and twelve eligible Oura scores; neither a completed 14-day assessment nor a sustained milestone is claimed at this update.
 
 The [night ending 23 October](/sleep/record/#night-2026-10-23) ended with a **reported cleaner-triggered awakening around 09:30–09:40**. Last food was around **20:00**, gym **21:30–23:00**, shower around **midnight** and bed around **01:00**. The follow-up confirms that I **stayed awake**, felt **sleepy on waking** and was **still a little sleepy** when I replied. The elapsed interval, eventual resolution and effect on performance remain unspecified; this is not a reported return to normal within 10–15 minutes.
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-23",
+  "updated": "2026-10-26",
   "entries": [
     {
       "id": "2026-10-13",
@@ -1823,6 +1823,232 @@
           "reason": "Follow-up confirms staying awake after the cleaner awakening, sleepiness on waking and still feeling a little sleepy at reply. Kept elapsed time, resolution, performance effect and exact out-of-bed time unknown. Native provider fields, retrieval timestamps and score eligibility unchanged."
         }
       ]
+    },
+    {
+      "id": "2026-10-24",
+      "wake_date": "2026-10-24",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Oura provider wake-up date; no date-specific diary timings supplied",
+      "status": "Oura record retrieved; COROS unavailable to this retrieval; date-specific diary pending",
+      "retrieved_at": "2026-10-26T07:02:01.627033+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-10-26T07:02:01.627033+00:00"
+      },
+      "provider_status": {
+        "coros": "COROS access was unavailable when this entry was updated. This does not establish missing data in the watch or app. No earlier watch values are reused."
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.25,
+          "average_heart_rate": 49.875,
+          "average_hrv": 51,
+          "awake_time": 4680,
+          "bedtime_end": "2026-10-24T10:30:59.000-07:00",
+          "bedtime_start": "2026-10-24T00:46:29.000-07:00",
+          "day": "2026-10-24",
+          "deep_sleep_duration": 6840,
+          "efficiency": 87,
+          "latency": 810,
+          "light_sleep_duration": 16050,
+          "lowest_heart_rate": 45,
+          "rem_sleep_duration": 7500,
+          "time_in_bed": 35070,
+          "total_sleep_duration": 30390,
+          "type": "long_sleep"
+        },
+        "additional_sleep_episodes": [],
+        "score": 86,
+        "contributors": {
+          "deep_sleep": 96,
+          "efficiency": 88,
+          "latency": 94,
+          "rem_sleep": 96,
+          "restfulness": 78,
+          "timing": 52,
+          "total_sleep": 91
+        },
+        "readiness_score": 90,
+        "temperature_deviation_c": 0.15,
+        "spo2_average_percent": 95.68,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; October24–26 query with pagination exhausted; exact provider date retained"
+      },
+      "coros": null,
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null
+      },
+      "context": [
+        {
+          "kind": "measurement_provenance",
+          "observation": "On-demand retrieval on October 26 returned Oura for this wake date, with no COROS query possible in the current connector environment. No raw sensor stream or identifiers are published."
+        }
+      ],
+      "story": [],
+      "interpretation": [
+        "Oura returned Sleep 86, estimating 8h26m30s asleep within 00:46:29–10:30:59 PDT. The episode lasted 9h44m30s with 1h18m estimated awake time. These native episode boundaries are not user-reported bed or wake times.",
+        "Estimated stages were 1h54m deep, 2h05m REM and 4h27m30s light, with 13.5 minutes latency and 87% efficiency. Contributor grades were total sleep 91, deep 96, REM 96, efficiency 88, restfulness 78, latency 94 and timing 52. These are estimates and grades, not independently verified sleep stages.",
+        "Average sleeping HR was 49.875 bpm, minimum 45, and sleep HRV 51 ms. Readiness was 90, a separate composite. Peripheral-temperature deviation was +0.15 °C from Oura’s baseline; it is not a measured core temperature or a diagnosis. Breathing rate averaged 12.25/min, saturation 95.68% and breathing disturbance index 0.",
+        "COROS is unavailable to this retrieval rather than confirmed absent from the watch/app. No paired score, stage, HRV or awake-time comparison is inferred. Oura firmware 2.1.36 and exposed sleep algorithm v2 match the preceding retrieval.",
+        "No date-specific diary was supplied before this retrieval. Food and water timing, training, alcohol, illness, room conditions, emotional context, remembered awakenings, morning experience and later-day function are not copied from another night. The follow-up attributes alcohol, sickness, late bedtime and emotions specifically to October 25; those details are not assigned to October 24.",
+        "Compared with October 23, Oura’s score rose 83 → 86 and estimated sleep increased by 42 minutes, while its awake estimate increased from 39 to 78 minutes and efficiency fell 92% → 87%. A higher composite does not establish improved experienced continuity; no diary quality rating is available for this date."
+      ],
+      "plans": [],
+      "next_focus": [
+        "Add date-specific subjective experience and exposure context before interpreting the measured changes. Preserve the separate provider series and the October 22 incomplete-recording exclusion."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/research/personal-experiments/#the-current-routine-proposal",
+          "label": "Routine history and comparisons"
+        },
+        {
+          "href": "/sleep/measurements/cardiac/",
+          "label": "Cardiac summaries and scope"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Milestone inclusion rules"
+        }
+      ],
+      "corrections": [],
+      "provider_availability": {
+        "coros": "unavailable"
+      }
+    },
+    {
+      "id": "2026-10-25",
+      "wake_date": "2026-10-25",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Oura provider wake-up date; no date-specific diary timings supplied",
+      "status": "Alcohol, sickness, late bedtime and pre-bed emotions reported; Oura 69/Readiness 42; COROS unavailable to this retrieval",
+      "retrieved_at": "2026-10-26T07:02:01.627033+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-10-26T07:02:01.627033+00:00"
+      },
+      "provider_status": {
+        "coros": "COROS access was unavailable when this entry was updated. This does not establish missing data in the watch or app. No earlier watch values are reused."
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 14.125,
+          "average_heart_rate": 65.75,
+          "average_hrv": 37,
+          "awake_time": 4110,
+          "bedtime_end": "2026-10-25T11:15:31.000-07:00",
+          "bedtime_start": "2026-10-25T02:48:01.000-07:00",
+          "day": "2026-10-25",
+          "deep_sleep_duration": 4770,
+          "efficiency": 87,
+          "latency": 1050,
+          "light_sleep_duration": 17100,
+          "lowest_heart_rate": 59,
+          "rem_sleep_duration": 4470,
+          "time_in_bed": 30450,
+          "total_sleep_duration": 26340,
+          "type": "long_sleep"
+        },
+        "additional_sleep_episodes": [],
+        "score": 69,
+        "contributors": {
+          "deep_sleep": 76,
+          "efficiency": 88,
+          "latency": 91,
+          "rem_sleep": 60,
+          "restfulness": 67,
+          "timing": 15,
+          "total_sleep": 75
+        },
+        "readiness_score": 42,
+        "temperature_deviation_c": 1.34,
+        "spo2_average_percent": 95.476,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; October24–26 query with pagination exhausted; exact provider date retained"
+      },
+      "coros": null,
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": "Alcohol reported for the sleep ending October 25. Amount, type and timing not specified.",
+        "naps": null,
+        "intended_bedtime": "Reported going to bed late; no exact diary bedtime or final waking supplied. Device episode boundaries remain separate.",
+        "environment": null,
+        "stress": "Emotions before bedtime reported for this night; nature and intensity not specified.",
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": "Sickness reported for the sleep ending October 25; symptoms, onset, duration and severity not specified."
+      },
+      "context": [
+        {
+          "kind": "measurement_provenance",
+          "observation": "On-demand retrieval on October 26 returned Oura for this wake date, with no COROS query possible in the current connector environment. No raw sensor stream or identifiers are published."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Follow-up explicitly assigns alcohol, sickness, late bedtime and emotions before bed to October 25, not October 24. These concurrent exposures do not isolate one cause of the device changes."
+        }
+      ],
+      "story": [
+        "For the sleep ending October 25, I reported alcohol, sickness, going to bed late and emotions before bedtime. I did not specify the amount or timing of alcohol, symptoms, or how I felt after waking."
+      ],
+      "interpretation": [
+        "Oura returned Sleep 69, estimating 7h19m asleep within 02:48:01–11:15:31 PDT. The episode lasted 8h27m30s with 1h08m30s estimated awake time. These native episode boundaries are not user-reported bed or wake times.",
+        "Estimated stages were 1h19m30s deep, 1h14m30s REM and 4h45m light, with 17.5 minutes latency and 87% efficiency. Contributor grades were total sleep 75, deep 76, REM 60, efficiency 88, restfulness 67, latency 91 and timing 15. These are estimates and grades, not independently verified sleep stages.",
+        "Average sleeping HR was 65.75 bpm, minimum 59, and sleep HRV 37 ms. Readiness was 42, a separate composite. Peripheral-temperature deviation was +1.34 °C from Oura’s baseline; it is not a measured core temperature or a diagnosis. Breathing rate averaged 14.125/min, saturation 95.476% and breathing disturbance index 0.",
+        "COROS is unavailable to this retrieval rather than confirmed absent from the watch/app. No paired score, stage, HRV or awake-time comparison is inferred. Oura firmware 2.1.36 and exposed sleep algorithm v2 match the preceding retrieval.",
+        "The follow-up reports alcohol, sickness, late bedtime and emotions before bed for this date. Amounts, timing, symptoms and severity remain unspecified. Food/water timing, training, room conditions, remembered awakenings, morning experience and later-day function remain unknown; earlier diary details are not carried forward.",
+        "Compared with October 24, average sleeping HR rose 49.875 → 65.75 bpm, HRV fell 51 → 37 ms and temperature deviation rose +0.15 → +1.34 °C. Sleep fell 86 → 69, Readiness 90 → 42, and estimated sleep shortened by 1h07m30s. Several summaries moved together; this does not identify a single cause, establish illness severity or measure core body temperature. The follow-up reports alcohol, sickness, late bedtime and emotions before this sleep. These coincided; their individual contributions are not isolated."
+      ],
+      "plans": [],
+      "next_focus": [
+        "Keep the reported sickness, alcohol, late bedtime and emotional pre-bed period beside the lower scores and changed cardiac/temperature summaries. They occurred together, so no single cause is assigned. Symptoms and recovery after this night remain unreported; a low score does not itself prescribe a training or medical decision."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/research/personal-experiments/#the-current-routine-proposal",
+          "label": "Routine history and comparisons"
+        },
+        {
+          "href": "/sleep/measurements/cardiac/",
+          "label": "Cardiac summaries and scope"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Milestone inclusion rules"
+        }
+      ],
+      "corrections": [
+        {
+          "date": "2026-10-26",
+          "reason": "Follow-up reports alcohol, sickness, late bedtime and emotions before bed and explicitly attributes them to October 25. Quantities, symptoms, subjective sleep quality and later-day function remain unknown. Native provider data and retrieval times are unchanged."
+        }
+      ],
+      "provider_availability": {
+        "coros": "unavailable"
+      }
     }
   ]
 }
