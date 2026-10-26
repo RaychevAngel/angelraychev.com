@@ -2132,7 +2132,7 @@
       "wake_date": "2026-10-26",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 26, with additional provider-detected episodes retained separately",
-      "status": "Oura 85/COROS 94; longer main sleep and readings nearer earlier values; subjective recovery unreported",
+      "status": "Slept badly, woke sleepy, ongoing body pains and unhappy overall despite Oura 85/COROS 94; reports no naps",
       "retrieved_at": "2026-10-26T18:48:36.167284+00:00",
       "provider_retrieved_at": {
         "oura": "2026-10-26T18:48:36.167284+00:00",
@@ -2181,7 +2181,7 @@
             "time_in_bed": 4590,
             "total_sleep_duration": 1650,
             "type": "rest",
-            "confirmation": "Provider-detected rest episode; no diary confirmation of sleeping or dozing was supplied. This is not the COROS 23:30–00:01 nap window."
+            "confirmation": "The follow-up reports no naps. This separate Oura rest detection is not confirmed as actual sleep; its window differs from COROS’s disputed nap."
           }
         ],
         "score": 85,
@@ -2227,7 +2227,7 @@
             "end": "2026-10-26T00:01:00-07:00",
             "asleep_minutes": 24,
             "period_minutes": 31,
-            "confirmation": "Provider-detected nap; no diary confirmation supplied."
+            "confirmation": "Disputed: the user explicitly reports no naps. The native detection is preserved as a provider classification."
           }
         ],
         "official_sleep_hrv_ms": 51,
@@ -2245,19 +2245,19 @@
         "source": "Official COROS connector: sleep overview, official sleep HRV, daily HR and predicted seated resting HR; exact returned wake date20261026 checked. Daily sleep includes detected nap; main sleep retained separately."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "Slept badly; not happy in general.",
+        "morning_sleepiness": "Woke up sleepy; duration and subsequent resolution not supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
-        "naps": null,
+        "naps": "Reports no naps, disputing the COROS 23:30–00:01 nap detection. No additional sleep is confirmed by the diary.",
         "intended_bedtime": null,
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
-        "illness": null
+        "illness": "Still has pains in the body. Cause, severity, other symptoms and recovery duration not specified."
       },
       "context": [
         {
@@ -2266,26 +2266,28 @@
         },
         {
           "kind": "device_record",
-          "observation": "COROS daily sleep is9h19m, comprising 8h55m main sleep plus 24 minutes detected nap. Its nap window 23:30–00:01 is not independently confirmed. Oura separately detects a rest episode 19:48:02–21:04:32 on October 25, assigned providerday October26; 27m30s estimated asleep within 1h16m30s. These are different windows, not agreement on the same nap."
+          "observation": "COROS daily sleep is9h19m, comprising 8h55m main sleep plus 24 minutes detected nap. Its nap window 23:30–00:01 is not independently confirmed. Oura separately detects a rest episode 19:48:02–21:04:32 on October 25, assigned providerday October26; 27m30s estimated asleep within 1h16m30s. These are different windows, not agreement on the same nap. In the subsequent follow-up the user reports no naps, disputing the COROS nap detection; neither extra window is confirmed as actual sleep."
         },
         {
           "kind": "self_report",
-          "observation": "No diary details supplied for this main sleep at retrieval. The preceding October 25 report of alcohol, sickness, late bedtime and emotions is not automatically assigned to this date. Current symptoms, perceived recovery and actual dozing in the detected episodes remain unknown."
+          "observation": "The follow-up reports ongoing body pains, bad sleep, sleepiness on waking and feeling unhappy overall, plus no naps. Sleepiness duration and later-day functioning remain unspecified. October 25 alcohol and pre-bed emotions are not assumed repeated."
         }
       ],
-      "story": [],
+      "story": [
+        "I still have pains in my body. I slept badly and woke up sleepy. I am not happy in general. I did not nap."
+      ],
       "interpretation": [
         "Oura returned 85 with 8h33m estimated main sleep in 01:18:02–10:32:02, a 9h14m episode with 41 minutes estimated awake. COROS returned 94 with 8h55m main sleep in 01:20–10:31, a 9h11m period with 16 minutes awake. Sleep totals differ by 22 minutes and awake estimates by 25 minutes despite close boundaries.",
         "Oura estimated 2h04m30s deep, 1h43m REM and 4h45m30s light sleep, 10m30s latency and 93% efficiency. Contributor grades were total sleep 92, deep 98, REM 83, efficiency 98, restfulness 82, latency 86 and timing 36. Timing remains the lowest grade; near-ceiling stage/efficiency grades do not establish a physiological optimum.",
-        "Compared with October 25, Oura estimated 1h14m more main sleep and graded 69 → 85; COROS estimated one hour more main sleep and graded 65 → 94. Oura awake time fell 68m30s → 41 minutes and COROS 20 → 16 minutes. No diary is available to establish whether remembered interruptions or subjective sleep quality also improved.",
-        "Oura average sleeping HR fell 65.75 → 53.25 bpm, minimum 59 → 48, HRV rose 37 → 53 ms, temperature deviation fell +1.34 → +0.01 °C and Readiness rose 42 → 87. COROS official sleep HRV rose 40 → 51 ms, now Normal against 47–67 ms and baseline 57. These are movements toward earlier readings, not proof that illness has resolved, a particular exposure caused the changes, or performance is restored.",
-        "COROS reports 9h19m daily sleep, including 24 minutes in a detected 23:30–00:01 nap, separate from 8h55m main sleep. Its daily stage ratios 21/50/26/3 cannot be treated as exact main-sleep stage percentages with an established denominator. Oura’s separate 19:48–21:04 rest detection contains 27m30s estimated asleep and has no diary confirmation. These detections should not be merged or silently treated as confirmed naps.",
+        "Compared with October 25, Oura estimated 1h14m more main sleep and graded 69 → 85; COROS estimated one hour more main sleep and graded 65 → 94. Oura awake time fell 68m30s → 41 minutes and COROS 20 → 16 minutes. The follow-up instead reports sleeping badly and waking sleepy. No count of interruptions or duration of morning sleepiness was supplied. Higher grades do not establish better experienced sleep.",
+        "Oura average sleeping HR fell 65.75 → 53.25 bpm, minimum 59 → 48, HRV rose 37 → 53 ms, temperature deviation fell +1.34 → +0.01 °C and Readiness rose 42 → 87. COROS official sleep HRV rose 40 → 51 ms, now Normal against 47–67 ms and baseline 57. These are movements toward earlier readings, not proof that illness has resolved, a particular exposure caused the changes, or performance is restored. Ongoing body pains are now explicitly reported; the near-baseline temperature deviation does not override those symptoms.",
+        "COROS reports 9h19m daily sleep, including 24 minutes in a detected 23:30–00:01 nap, separate from 8h55m main sleep. Its daily stage ratios 21/50/26/3 cannot be treated as exact main-sleep stage percentages with an established denominator. Oura’s separate 19:48–21:04 rest detection contains 27m30s estimated asleep and is not confirmed as actual sleep. The user explicitly reports no naps, disputing the COROS detection. These classifications remain separate from the diary and are not counted as confirmed additional sleep; no native totals or scores are recalculated.",
         "Oura average breathing rate was 12.375/min, oxygen saturation 95.245% and breathing disturbance index zero. COROS daily HR snapshot averaged 56 bpm with minimum 45, while predicted seated resting HR was 56. These daily measures differ in scope from Oura’s main-sleep pulse. Exposed Oura firmware 2.1.36/algorithm v2 match the preceding retrieval.",
         "The first calendar window, October 13–26, now has 13 eligible Oura scores across 14 dates. Their sum 1070 divided by 13 gives 82.3077, displayed 82.31. The October 22 battery-truncated score 73 is retained as an ineligible coverage gap; all other recorded nights, including difficult nights, stay included. Coverage 13/14 meets the proposed minimum 12, but the observed valid-score mean is below 85. This window does not achieve the milestone; missing values are not imputed and the 28-day target remains unassessed."
       ],
       "plans": [],
       "next_focus": [
-        "Compare current symptoms, morning alertness and later-day functioning with the changed measurements before calling this recovery. Confirm or dispute the extra detected sleep windows; keep main sleep, daily sleep and provider labels separate.",
+        "Keep bad experienced sleep, waking sleepiness and ongoing body pains alongside the improved readings. Track whether sleepiness clears and how the day goes; do not label this recovered or successful sleep based on the scores. Retain the disputed nap classifications separately.",
         "The first 14-date window has adequate observed-score coverage but a mean 82.31 below the 85 benchmark. Keep difficult nights and the battery gap visible; continue the earlier timing/comfort comparison without changing thresholds or selectively omitting dates."
       ],
       "next_focus_references": [
@@ -2302,7 +2304,12 @@
           "label": "Milestone assessment"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-26",
+          "reason": "Added direct follow-up: slept badly, woke sleepy, ongoing body pains, unhappy overall and no naps. Replaced pending subjective recovery with the reported experience and marked the COROS nap disputed. Native measurements, retrieval times, score eligibility and milestone assessment unchanged."
+        }
+      ]
     }
   ],
   "milestone_assessments": [

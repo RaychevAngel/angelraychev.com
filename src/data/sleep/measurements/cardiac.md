@@ -75,7 +75,7 @@ The [October 24](/sleep/record/#night-2026-10-24) and [October 25](/sleep/record
 
 ## October 26: main-night readings move toward earlier values
 
-On [October 26](/sleep/record/#night-2026-10-26), Oura average sleeping HR was **53.25 bpm**, minimum **48**, HRV **53 ms** and peripheral-temperature deviation **+0.01 °C**. COROS official sleep HRV was **51 ms Normal**, range **47–67**, baseline **57**. These move toward earlier readings after October 25’s changed summaries, without establishing symptom resolution or performance recovery. COROS daily HR averaged 56 bpm, minimum 45; predicted seated resting HR was 56. The Oura evening rest episode has its own HR/HRV and is not merged into the main sleep.
+On [October 26](/sleep/record/#night-2026-10-26), Oura average sleeping HR was **53.25 bpm**, minimum **48**, HRV **53 ms** and peripheral-temperature deviation **+0.01 °C**. COROS official sleep HRV was **51 ms Normal**, range **47–67**, baseline **57**. These move toward earlier readings after October 25’s changed summaries. The follow-up nevertheless reports ongoing body pains, bad sleep, waking sleepy and feeling unhappy overall. Near-baseline temperature deviation and improved HRV do not override those symptoms or establish performance recovery. COROS daily HR averaged 56 bpm, minimum 45; predicted seated resting HR was 56. The Oura evening rest episode has its own HR/HRV and is not merged into the main sleep.
 
 ## How much confidence is justified?
 

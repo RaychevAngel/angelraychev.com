@@ -1,7 +1,7 @@
 ---
 title: "Measurement and validation"
 description: "How close are these signals to the processes we intend to optimize, and which reference would resolve the uncertainty?"
-updated: "2026-10-16"
+updated: "2026-10-26"
 order: 2
 ---
 
@@ -14,6 +14,8 @@ The actual account reports **Oura Ring 5, hardware `or5`, firmware `2.1.25`**, p
 As of October 13, 2026, this research has **not verified independent peer-reviewed validation of the exact Ring 5 or PACE 4 hardware for sleep staging**. That is a limitation of the available evidence, not proof that either device is inaccurate. Published findings from predecessors remain labeled by the hardware and algorithm actually tested.
 
 ## Quiet waking and extra sleep detections
+
+The [October 26 follow-up](/sleep/record/#night-2026-10-26) adds another disagreement: COROS detected 24 minutes of nap sleep in 23:30–00:01, while I explicitly report **no naps**. Oura separately labeled 19:48–21:04 as rest, with 27m30s estimated asleep; that different window is not confirmed as actual sleep either. Preserve the native classifications and the contradictory diary separately. This is not agreement on a nap or a measured overall error rate. Oura 85/COROS 94 also coexist with reported bad sleep, waking sleepiness, ongoing body pains and feeling unhappy overall; improved grades do not establish the experienced outcome.
 
 Oura infers sleep from peripheral signals rather than measuring EEG. Its own support guidance acknowledges that very still wakefulness can resemble sleep in movement, heart rate and average body temperature. That supplies a plausible error mechanism, not the exact classifier reasoning for a particular episode. [Oura's explanation](https://support.ouraring.com/hc/en-us/articles/360025445994-Edit-Bedtime-and-Wake-Up-Time).
 
