@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import registry from '../src/data/publications.json' with {type: 'json'};
 import { validatePublicationRegistry, primaryResources, publicationForPath } from '../src/lib/publications.mjs';
 import { inspectPublicationSemantics } from '../src/lib/publication-html.mjs';
@@ -12,12 +13,28 @@ test('overview lookup does not attach main resources to descendants or fragments
   assert.equal(publicationForPath('/princess/proofs/'), undefined);
   assert.equal(publicationForPath('/model-specialization-and-training-agents/').id, 'model-specialization');
 });
+test('retired reviewer-training journal is absent without removing later specialist-agent work', () => {
+  const slug = 'training-a-code-reviewer-we-actually-use';
+  assert.equal(registry.works.some(work => work.id === 'reviewer-journal'), false);
+  assert.equal(publicationForPath(`/${slug}/`), undefined);
+  for (const source of [
+    `../src/content/posts/${slug}.md`,
+    `../src/pages/${slug}/method.md`,
+    `../src/pages/${slug}/progress.md`,
+  ]) assert.equal(fs.existsSync(new URL(source, import.meta.url)), false, source);
+  const homepage = fs.readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
+  assert.equal(homepage.includes(slug), false);
+  const retained = '/from-software-work-to-specialized-agents';
+  assert.equal(publicationForPath(`${retained}/`)?.id, 'specialist-agents');
+  assert.ok(homepage.includes(retained));
+  assert.ok(fs.existsSync(new URL(`../src/content/posts${retained}.md`, import.meta.url)));
+});
 for (const [name, mutate, expected] of [
   ['PDF cannot be abstract record', data=>{data.works[1].primary.pdf.url='https://arxiv.org/abs/2610.30765';}, /PDF must open a PDF/],
   ['arXiv PDF must pin version', data=>{data.works[1].primary.pdf.url='https://arxiv.org/pdf/2610.30765';}, /pin a version/],
   ['arXiv record cannot be PDF', data=>{data.works[1].records[0].url='https://arxiv.org/pdf/2610.30765v1';}, /publication record/],
   ['Code cannot be a PR', data=>{data.works[1].primary.code.url='https://github.com/a/b/pull/1';}, /project repository/],
-  ['Lean cannot be ZIP', data=>{data.works[8].primary.lean.url='/proofs.zip';}, /scope\/reproduction guide/],
+  ['Lean cannot be ZIP', data=>{data.works.find(work=>work.id==='four-arm-polyominoes').primary.lean.url='/proofs.zip';}, /scope\/reproduction guide/],
   ['PDF version cannot be omitted', data=>{delete data.works[1].primary.pdf.version;}, /version must be identified/],
   ['primary labels cannot drift', data=>{data.works[1].primary.pdf.label='Read paper';}, /not overridable/],
   ['duplicate identities rejected', data=>{data.works.push(data.works[0]);}, /duplicate ID/],

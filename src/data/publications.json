@@ -118,20 +118,6 @@
       ]
     },
     {
-      "id": "reviewer-journal",
-      "title": "Training a code reviewer we actually use",
-      "overview": "/training-a-code-reviewer-we-actually-use/",
-      "kind": "Engineering article",
-      "authors": ["Angel Raychev"],
-      "status": "Project journal",
-      "records": [],
-      "primary": {},
-      "resources": [
-        {"kind": "documentation", "label": "Assessment method", "url": "/training-a-code-reviewer-we-actually-use/method/"},
-        {"kind": "archive", "label": "Project progress", "url": "/training-a-code-reviewer-we-actually-use/progress/"}
-      ]
-    },
-    {
       "id": "descent-polynomials",
       "title": "A Generalization of Descent Polynomials",
       "manuscriptTitle": "A Generalization of Descent Polynomials",
