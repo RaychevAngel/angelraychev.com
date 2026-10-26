@@ -1829,13 +1829,11 @@
       "wake_date": "2026-10-24",
       "timezone": "America/Los_Angeles",
       "date_basis": "Oura provider wake-up date; no date-specific diary timings supplied",
-      "status": "Oura record retrieved; COROS unavailable to this retrieval; date-specific diary pending",
+      "status": "Oura 86/COROS 94; no date-specific subjective diary supplied",
       "retrieved_at": "2026-10-26T07:02:01.627033+00:00",
       "provider_retrieved_at": {
-        "oura": "2026-10-26T07:02:01.627033+00:00"
-      },
-      "provider_status": {
-        "coros": "COROS access was unavailable when this entry was updated. This does not establish missing data in the watch or app. No earlier watch values are reused."
+        "oura": "2026-10-26T07:02:01.627033+00:00",
+        "coros": "2026-10-26T07:21:42.270Z"
       },
       "oura": {
         "model": "Oura Ring 5",
@@ -1878,7 +1876,40 @@
         "breathing_disturbance_index": 0,
         "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; October24–26 query with pagination exhausted; exact provider date retained"
       },
-      "coros": null,
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 94,
+        "daily_sleep_minutes": 546,
+        "main_sleep_minutes": 546,
+        "main_period_minutes": 561,
+        "main_start": "2026-10-24T00:49:00-07:00",
+        "main_end": "2026-10-24T10:10:00-07:00",
+        "ratios_percent": {
+          "deep": 24,
+          "light": 55,
+          "rem": 18,
+          "awake": 3
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 15,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 55,
+        "official_sleep_hrv_normal_range_ms": [
+          49,
+          69
+        ],
+        "official_sleep_hrv_baseline_ms": 59,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, baseline and normal range; none recomputed from returned points",
+        "daily_min_hr_bpm": 43,
+        "daily_average_hr_bpm": 66,
+        "resting_hr_bpm": 54,
+        "heart_rate_scope_note": "Daily snapshot at this later retrieval, not a matched sleep-window measure; resting HR is predicted seated HR",
+        "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR; explicit October24–26 query, main episode retained for the exact wake date"
+      },
       "self_report": {
         "restfulness": null,
         "morning_sleepiness": null,
@@ -1896,17 +1927,23 @@
       "context": [
         {
           "kind": "measurement_provenance",
+          "observation": "Oura was retrieved first. COROS tools became available afterward and the exact-date provider summaries were then added, with their own retrieval timestamp. The earlier unavailable-access state did not mean absent watch data. Oura fields and original timestamps remain unchanged."
+        },
+        {
+          "kind": "measurement_provenance",
           "observation": "On-demand retrieval on October 26 returned Oura for this wake date, with no COROS query possible in the current connector environment. No raw sensor stream or identifiers are published."
         }
       ],
       "story": [],
       "interpretation": [
         "Oura returned Sleep 86, estimating 8h26m30s asleep within 00:46:29–10:30:59 PDT. The episode lasted 9h44m30s with 1h18m estimated awake time. These native episode boundaries are not user-reported bed or wake times.",
+        "COROS was retrieved after access became available. It returns 94, 9h06m asleep and 15 minutes awake, within 00:49–10:10 PDT. Its main period is 9h21m; no naps and no awakening longer than five minutes are reported for this date. These definitions do not exclude brief awakenings.",
         "Estimated stages were 1h54m deep, 2h05m REM and 4h27m30s light, with 13.5 minutes latency and 87% efficiency. Contributor grades were total sleep 91, deep 96, REM 96, efficiency 88, restfulness 78, latency 94 and timing 52. These are estimates and grades, not independently verified sleep stages.",
         "Average sleeping HR was 49.875 bpm, minimum 45, and sleep HRV 51 ms. Readiness was 90, a separate composite. Peripheral-temperature deviation was +0.15 °C from Oura’s baseline; it is not a measured core temperature or a diagnosis. Breathing rate averaged 12.25/min, saturation 95.68% and breathing disturbance index 0.",
-        "COROS is unavailable to this retrieval rather than confirmed absent from the watch/app. No paired score, stage, HRV or awake-time comparison is inferred. Oura firmware 2.1.36 and exposed sleep algorithm v2 match the preceding retrieval.",
         "No date-specific diary was supplied before this retrieval. Food and water timing, training, alcohol, illness, room conditions, emotional context, remembered awakenings, morning experience and later-day function are not copied from another night. The follow-up attributes alcohol, sickness, late bedtime and emotions specifically to October 25; those details are not assigned to October 24.",
-        "Compared with October 23, Oura’s score rose 83 → 86 and estimated sleep increased by 42 minutes, while its awake estimate increased from 39 to 78 minutes and efficiency fell 92% → 87%. A higher composite does not establish improved experienced continuity; no diary quality rating is available for this date."
+        "Compared with October 23, Oura’s score rose 83 → 86 and estimated sleep increased by 42 minutes, while its awake estimate increased from 39 to 78 minutes and efficiency fell 92% → 87%. A higher composite does not establish improved experienced continuity; no diary quality rating is available for this date.",
+        "COROS official sleep HRV is 55 ms, Normal, against its returned 49–69 ms range and 59 ms baseline. Its daily HR snapshot averaged 66 bpm with minimum 43; predicted seated resting HR was 54. The daily HR scope differs from Oura’s selected sleeping mean; neither HRV nor HR is recomputed from raw points.",
+        "COROS estimates 39m30s more sleep and 63 minutes less waking than Oura. Oura’s episode extends 20m59s later in the morning; timing and classification both differ. The 86/94 grades and HRV 51/55 ms remain separate provider estimates without a subjective quality rating to compare."
       ],
       "plans": [],
       "next_focus": [
@@ -1926,23 +1963,23 @@
           "label": "Milestone inclusion rules"
         }
       ],
-      "corrections": [],
-      "provider_availability": {
-        "coros": "unavailable"
-      }
+      "corrections": [
+        {
+          "date": "2026-10-26",
+          "reason": "COROS access became available; added native main-sleep estimates, official HRV assessment and daily HR summaries for this exact date. Replaced unavailable labels, retained separate retrieval timestamps and preserved all Oura values, self-reports and score eligibility."
+        }
+      ]
     },
     {
       "id": "2026-10-25",
       "wake_date": "2026-10-25",
       "timezone": "America/Los_Angeles",
       "date_basis": "Oura provider wake-up date; no date-specific diary timings supplied",
-      "status": "Alcohol, sickness, late bedtime and pre-bed emotions reported; Oura 69/Readiness 42; COROS unavailable to this retrieval",
+      "status": "Alcohol, sickness, late bedtime and pre-bed emotions reported; Oura 69/COROS 65",
       "retrieved_at": "2026-10-26T07:02:01.627033+00:00",
       "provider_retrieved_at": {
-        "oura": "2026-10-26T07:02:01.627033+00:00"
-      },
-      "provider_status": {
-        "coros": "COROS access was unavailable when this entry was updated. This does not establish missing data in the watch or app. No earlier watch values are reused."
+        "oura": "2026-10-26T07:02:01.627033+00:00",
+        "coros": "2026-10-26T07:21:42.270Z"
       },
       "oura": {
         "model": "Oura Ring 5",
@@ -1985,7 +2022,40 @@
         "breathing_disturbance_index": 0,
         "source": "Authenticated Oura API V2 selected sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration fields; October24–26 query with pagination exhausted; exact provider date retained"
       },
-      "coros": null,
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 65,
+        "daily_sleep_minutes": 475,
+        "main_sleep_minutes": 475,
+        "main_period_minutes": 495,
+        "main_start": "2026-10-25T02:57:00-07:00",
+        "main_end": "2026-10-25T11:12:00-07:00",
+        "ratios_percent": {
+          "deep": 13,
+          "light": 54,
+          "rem": 29,
+          "awake": 4
+        },
+        "ratio_denominator": "Connector reports daily scope; exact ratio denominator not explicitly supplied",
+        "awake_minutes": 20,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "official_sleep_hrv_ms": 40,
+        "official_sleep_hrv_normal_range_ms": [
+          50,
+          68
+        ],
+        "official_sleep_hrv_baseline_ms": 59,
+        "official_sleep_hrv_evaluation": "Low",
+        "sleep_hrv_definition": "Official daily assessment, baseline and normal range; none recomputed from returned points",
+        "daily_min_hr_bpm": 53,
+        "daily_average_hr_bpm": 73,
+        "resting_hr_bpm": 61,
+        "heart_rate_scope_note": "Daily snapshot at this later retrieval, not a matched sleep-window measure; resting HR is predicted seated HR",
+        "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR; explicit October24–26 query, main episode retained for the exact wake date"
+      },
       "self_report": {
         "restfulness": null,
         "morning_sleepiness": null,
@@ -2004,6 +2074,10 @@
       "context": [
         {
           "kind": "measurement_provenance",
+          "observation": "Oura was retrieved first. COROS tools became available afterward and the exact-date provider summaries were then added, with their own retrieval timestamp. The earlier unavailable-access state did not mean absent watch data. Oura fields and original timestamps remain unchanged."
+        },
+        {
+          "kind": "measurement_provenance",
           "observation": "On-demand retrieval on October 26 returned Oura for this wake date, with no COROS query possible in the current connector environment. No raw sensor stream or identifiers are published."
         },
         {
@@ -2016,11 +2090,13 @@
       ],
       "interpretation": [
         "Oura returned Sleep 69, estimating 7h19m asleep within 02:48:01–11:15:31 PDT. The episode lasted 8h27m30s with 1h08m30s estimated awake time. These native episode boundaries are not user-reported bed or wake times.",
+        "COROS was retrieved after access became available. It returns 65, 7h55m asleep and 20 minutes awake, within 02:57–11:12 PDT. Its main period is 8h15m; no naps and no awakening longer than five minutes are reported for this date. These definitions do not exclude brief awakenings.",
         "Estimated stages were 1h19m30s deep, 1h14m30s REM and 4h45m light, with 17.5 minutes latency and 87% efficiency. Contributor grades were total sleep 75, deep 76, REM 60, efficiency 88, restfulness 67, latency 91 and timing 15. These are estimates and grades, not independently verified sleep stages.",
         "Average sleeping HR was 65.75 bpm, minimum 59, and sleep HRV 37 ms. Readiness was 42, a separate composite. Peripheral-temperature deviation was +1.34 °C from Oura’s baseline; it is not a measured core temperature or a diagnosis. Breathing rate averaged 14.125/min, saturation 95.476% and breathing disturbance index 0.",
-        "COROS is unavailable to this retrieval rather than confirmed absent from the watch/app. No paired score, stage, HRV or awake-time comparison is inferred. Oura firmware 2.1.36 and exposed sleep algorithm v2 match the preceding retrieval.",
         "The follow-up reports alcohol, sickness, late bedtime and emotions before bed for this date. Amounts, timing, symptoms and severity remain unspecified. Food/water timing, training, room conditions, remembered awakenings, morning experience and later-day function remain unknown; earlier diary details are not carried forward.",
-        "Compared with October 24, average sleeping HR rose 49.875 → 65.75 bpm, HRV fell 51 → 37 ms and temperature deviation rose +0.15 → +1.34 °C. Sleep fell 86 → 69, Readiness 90 → 42, and estimated sleep shortened by 1h07m30s. Several summaries moved together; this does not identify a single cause, establish illness severity or measure core body temperature. The follow-up reports alcohol, sickness, late bedtime and emotions before this sleep. These coincided; their individual contributions are not isolated."
+        "Compared with October 24, average sleeping HR rose 49.875 → 65.75 bpm, HRV fell 51 → 37 ms and temperature deviation rose +0.15 → +1.34 °C. Sleep fell 86 → 69, Readiness 90 → 42, and estimated sleep shortened by 1h07m30s. Several summaries moved together; this does not identify a single cause, establish illness severity or measure core body temperature. The follow-up reports alcohol, sickness, late bedtime and emotions before this sleep. These coincided; their individual contributions are not isolated.",
+        "COROS official sleep HRV is 40 ms, Low, against its returned 50–68 ms range and 59 ms baseline. Its daily HR snapshot averaged 73 bpm with minimum 53; predicted seated resting HR was 61. The daily HR scope differs from Oura’s selected sleeping mean; neither HRV nor HR is recomputed from raw points.",
+        "Both providers grade October 25 lower than October 24: Oura 86 → 69, COROS 94 → 65. Sleep HRV falls 51 → 37 ms and 55 → 40 ms, respectively. COROS estimates 36 minutes more sleep and 48m30s less waking than Oura. The reported alcohol, sickness, late bedtime and emotions provide concurrent context, without isolating their effects or validating either device’s exact sleep/wake classification."
       ],
       "plans": [],
       "next_focus": [
@@ -2044,11 +2120,12 @@
         {
           "date": "2026-10-26",
           "reason": "Follow-up reports alcohol, sickness, late bedtime and emotions before bed and explicitly attributes them to October 25. Quantities, symptoms, subjective sleep quality and later-day function remain unknown. Native provider data and retrieval times are unchanged."
+        },
+        {
+          "date": "2026-10-26",
+          "reason": "COROS access became available; added native main-sleep estimates, official HRV assessment and daily HR summaries for this exact date. Replaced unavailable labels, retained separate retrieval timestamps and preserved all Oura values, self-reports and score eligibility."
         }
-      ],
-      "provider_availability": {
-        "coros": "unavailable"
-      }
+      ]
     }
   ]
 }

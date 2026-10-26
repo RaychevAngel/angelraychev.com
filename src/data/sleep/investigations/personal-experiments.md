@@ -9,7 +9,7 @@ order: 4
 
 ## The current routine proposal
 
-**26 October retrieval — October 24–25 added; no new routine inferred.** Oura returned **86 / 8h26m30s asleep** for October 24 and **69 / 7h19m** for October 25. COROS is unavailable to this retrieval, not confirmed empty in its app; October 26 has no Oura record yet. The [newest available record](/sleep/record/#night-2026-10-25) includes a later 02:48–11:15 window, higher sleeping pulse and temperature deviation, and lower HRV.
+**26 October retrieval — October 24–25 added; no new routine inferred.** Oura returned **86 / 8h26m30s asleep** for October 24 and **69 / 7h19m** for October 25. A later successful COROS retrieval adds **94 / 9h06m asleep** and **65 / 7h55m**, respectively. Its official HRV falls 55 → 40 ms. October 26 has no Oura record yet; COROS has only an unconfirmed detected nap spanning 23:30–00:01, without a valid main-night score. The [newest available record](/sleep/record/#night-2026-10-25) includes a later 02:48–11:15 window, higher sleeping pulse and temperature deviation, and lower HRV.
 
 The follow-up explicitly attributes **alcohol, sickness, late bedtime and emotions before bed to October 25**. These coincided with the measured changes; no single exposure is established as the cause. Experienced sleep quality, morning sleepiness and recovery remain unknown. Earlier bedtime remains the prior direction; a device window alone does not establish a completed change in intended schedule. No food, drink or training intervention is adopted from these measurements.
 
