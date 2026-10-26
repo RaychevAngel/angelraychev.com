@@ -109,10 +109,12 @@ const ungrouped = entries.filter((entry) => !assigned.has(entry.href));
 if (ungrouped.length) {
   throw new Error(`Assign new articles to a homepage group: ${ungrouped.map((entry) => entry.href).join(", ")}`);
 }
+const mainSections = sections.filter(section => ["ai-and-machine-learning", "mathematics"].includes(section.id));
+const writing = sections.find(section => section.id === "human-agency")!;
 ---
 <Base home={true} description={introduction}>
   <p class="intro">{introduction}</p>
-  {sections.map((section) => (
+  {mainSections.map((section) => (
     <section aria-labelledby={section.id}>
       <h2 id={section.id}>{section.title}</h2>
       <ul class="idx">
@@ -132,15 +134,35 @@ if (ungrouped.length) {
           </li>
         ))}
       </ul>
-      {section.id === "running" && <p class="running-record"><a href="/running/record/">Training and race record</a> · <a href="/running/record/2026/">Latest sessions</a></p>}
-      {section.id === "food-and-nutrition" && <p class="running-record"><a href="/nutrition/guide/">Nutrient guide</a> · <a href="/nutrition/record/">Food record</a> · <a href="/nutrition/research/">Investigations</a></p>}
-      {section.id === "sleep" && <p class="running-record"><a href="/sleep/targets/">Targets</a> · <a href="/sleep/record/">Sleep record</a> · <a href="/sleep/measurements/">Measurements</a> · <a href="/sleep/research/">Investigations</a></p>}
     </section>
   ))}
+  <div class="secondary">
+    <section aria-labelledby="writing">
+      <span id="human-agency" class="anchor-alias" aria-hidden="true"></span>
+      <h2 id="writing">Writing</h2>
+      <ul class="writing-links">
+        {writing.entries.map(entry => <li><a href={entry.href}>{entry.title}</a></li>)}
+      </ul>
+    </section>
+    <section aria-labelledby="running">
+      <h2 id="running"><a href="/running/record/">Running</a></h2>
+      <p>An ongoing 800–5000 m project: training decisions, progress and the race record.</p>
+    </section>
+    <p class="personal-records" id="personal-records">
+      <strong>Personal records</strong><span aria-hidden="true"> · </span>
+      <a id="food-and-nutrition" href="/nutrition/record/">Food</a><span aria-hidden="true"> · </span><a id="sleep" href="/sleep/record/">Sleep</a>
+    </p>
+  </div>
 </Base>
 
 <style>
   .intro { margin-bottom: 48px; }
   section:first-of-type h2 { margin-top: 0; }
-  .running-record { margin-top: 20px; font-size: 13px; }
+  .secondary { border-top: 1px solid var(--rule); margin-top: 56px; padding-top: 12px; font-size: 13px; }
+  .secondary h2 { font-size: 13px; margin-top: 28px; margin-bottom: 10px; }
+  .secondary p { margin-bottom: 0; }
+  .writing-links { list-style: none; padding: 0; margin: 0; }
+  .writing-links li { margin-bottom: 6px; }
+  .personal-records { margin-top: 28px; }
+  .anchor-alias { display: block; scroll-margin-top: 24px; }
 </style>

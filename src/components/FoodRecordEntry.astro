@@ -20,6 +20,7 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
 <section class="food-entry" aria-labelledby={entry.id}>
   <h2 id={entry.id}>{entry.title}</h2>
   <p class="entry-date">{entry.food_date ? `Food date ${entry.food_date}` : "Food date unconfirmed"} · Report received {entry.recorded_local_date ?? 'unreported'}</p>
+  <p class="entry-permalink"><a href={`#${entry.id}`}>Link to this entry</a></p>
   <p>{entry.summary}</p>
   {isPurchaseLed && <p class="dim">This day began as a shopping report. Later messages confirm eating and describe taste and appetite; finishing every purchased item was not confirmed.</p>}
   {entry.context.filter((row) => row.observation !== "Not reported for this day.").length > 0 && <ul class="observations">
@@ -92,6 +93,7 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
   .food-entry { border-top: 1px solid var(--rule); margin-top: 44px; padding-top: 8px; }
   .food-entry > h2 { margin-top: 24px; margin-bottom: 8px; }
   .entry-date { font-size: 13px; color: var(--dim); margin-bottom: 24px; }
+  .entry-permalink { font-size: 12px; margin-top: -16px; margin-bottom: 24px; }
   .observations { margin-bottom: 28px; }
   details { margin: 24px 0; }
   summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }

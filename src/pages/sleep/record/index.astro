@@ -2,6 +2,7 @@
 import Post from "../../../layouts/Post.astro";
 import SleepNav from "../../../components/SleepNav.astro";
 import SleepEpisode from "../../../components/SleepEpisode.astro";
+import RecordDisclosure from "../../../components/RecordDisclosure.astro";
 import record from "../../../data/sleep/record.json";
 const frontmatter = { title: "Sleep record", description: "Dated sleep observations, device estimates, comparisons and corrections behind the sleep performance project.", updated: record.updated };
 const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
@@ -9,7 +10,13 @@ const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
 const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
 const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
 const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
-const recent = record.entries.slice(-7);
+const newestFirst = [...record.entries].reverse();
+const recent = newestFirst.slice(0, 7);
+const latest = newestFirst[0];
+const providerSummary = (entry: typeof record.entries[number]) => [
+  entry.oura ? `Oura ${entry.oura.score}${entry.oura.score_eligible === false ? " (incomplete)" : ""}` : "Oura pending",
+  entry.coros ? `COROS ${entry.coros.sleep_score}` : entry.provider_availability?.coros === "unavailable" ? "COROS unavailable" : "COROS pending",
+].join(" · ");
 const ouraScoreCount = record.entries.filter((entry) => entry.oura?.score != null).length;
 const eligibleOuraScoreCount = record.entries.filter((entry) => entry.oura?.score != null && entry.oura.score_eligible !== false).length;
 const corosScoreCount = record.entries.filter((entry) => entry.coros?.sleep_score != null).length;
@@ -17,11 +24,11 @@ const labels = { timing: "Timing", total_sleep: "Total sleep", rem_sleep: "REM s
 const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-day sleepiness", morning_sleepiness: "Experience after waking", dream_recall: "Dream recall", caffeine_mg_and_time: "caffeine dose and timing", alcohol_and_time: "alcohol", naps: "naps", intended_bedtime: "intended bedtime", environment: "bedroom conditions", stress: "stress", breathing_exercise: "Breathing exercise", hydration_and_bathroom: "Hydration and bathroom context", illness: "Reported illness" };
 ---
 <Post frontmatter={frontmatter}>
-  <SleepNav current="record" />
-  <p>The record begins with the sleep ending <strong>13 October 2026</strong>. Both devices are retained as separate observations. A score describes a provider's grading; it does not establish the true sleep stages or the benefit to my health.</p>
-  <p>Nights use their <strong>wake-up date</strong>, with clock times in <strong>America/Los_Angeles</strong>. Missing self-reports remain unknown. This short record cannot establish a personal baseline, a trend or the cause of a result.</p>
-  <h2 id="recent-comparison">The recent observations</h2>
-  <p>Each available column keeps the provider's returned score beside its selected main episode. A diary can be recorded before either provider returns that date; pending data remains explicitly pending. Known incomplete recordings stay visible as partial estimates and are excluded from whole-night milestones. Additional episodes are described separately below. {record.entries.length > 7 && "The table shows the seven most recently recorded nights; earlier accounts remain below."} An omitted calendar date is unrecorded, not a zero or an implied good night.</p>
+  <SleepNav current="record" compact />
+  <RecordDisclosure />
+  <p>A personal diary alongside separate Oura and COROS estimates, with {record.entries.length} nights recorded since 13 October 2026. Dates are the <strong>wake-up date</strong>; clock times use <strong>America/Los_Angeles</strong>.</p>
+  <h2 id="recent-comparison">Recent nights</h2>
+  <p>The latest seven recorded nights, newest first. Incomplete recordings and missing provider data stay visible; an omitted date is unrecorded.</p>
   <div class="tablewrap"><table aria-label="Recent sleep observations and source availability"><thead><tr><th scope="col">Wake date</th><th scope="col">Oura</th><th scope="col">COROS</th></tr></thead><tbody>
     {recent.map((entry) => <tr>
       <th scope="row"><a href={`#night-${entry.id}`}><time datetime={entry.wake_date}>{shortDate(entry.wake_date)}</time></a></th>
@@ -29,17 +36,25 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
       <td>{entry.coros ? <><strong>{entry.coros.sleep_score}/100</strong><br />{duration(entry.coros.main_sleep_minutes * 60)} asleep<br />{entry.coros.awake_minutes} min awake</> : <><strong>{entry.provider_availability?.coros === "unavailable" ? "Unavailable" : "Pending"}</strong><br />{entry.provider_availability?.coros === "unavailable" ? "Connector access unavailable" : "No returned sleep estimate"}</>}</td>
     </tr>)}
   </tbody></table></div>
-  <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>. The <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">routine proposal and dated follow-ups</a> connect the observations to the next decision.</p>
-  <h2 id="dated-accounts">The dated accounts</h2>
-  <ul>{record.entries.map((entry) => <li><a href={`#night-${entry.id}`}>Sleep ending {entry.wake_date}</a> — {entry.status}</li>)}</ul>
-  {record.entries.map((entry) => {
+  <p class="record-links"><a href="#dated-accounts">All dated accounts</a> · <a href="/sleep/measurements/continuity/">Measurement definitions</a> · <a href="/sleep/research/personal-experiments/#the-current-routine-proposal">Routine and follow-ups</a></p>
+  {latest?.next_focus?.length > 0 && <section class="latest-focus" aria-labelledby="latest-focus">
+    <h2 id="latest-focus">Current practical focus</h2>
+    <p class="focus-date">From the <a href={`#night-${latest.id}`}>{date(latest.wake_date)} account</a>.</p>
+    {latest.next_focus.map((paragraph) => <p>{paragraph}</p>)}
+  </section>}
+  <h2 id="dated-accounts">Dated accounts</h2>
+  <p>Open a night for its diary, measurements, interpretation and sources.</p>
+  {newestFirst.map((entry) => {
     const o = entry.oura;
     const c = entry.coros;
     const s = o?.sleep;
     const corosUnavailable = entry.provider_availability?.coros === "unavailable";
     const corosMissing = corosUnavailable ? "Unavailable" : "Pending";
-    return <section aria-labelledby={`night-${entry.id}`}>
+    return <details data-record-entry class="record-day">
+      <summary><strong><time datetime={entry.wake_date}>{date(entry.wake_date)}</time></strong><span class="day-status">{providerSummary(entry)}</span></summary>
+      <section aria-labelledby={`night-${entry.id}`}>
       <h2 id={`night-${entry.id}`}>{date(entry.wake_date)} — {o?.score_eligible === false ? "incomplete Oura recording; COROS full-night estimate" : o && c ? "one night, two grading systems" : corosUnavailable ? "Oura record; COROS unavailable" : o || c ? "diary and one provider" : "the reported night; device data pending"}</h2>
+      <p class="entry-status">{entry.status}</p>
       {entry.story?.length > 0 && <><h3>The reported night</h3>{entry.story.map((paragraph) => <p>{paragraph}</p>)}</>}
       {entry.nutrition_reference && <p>{entry.nutrition_context_note ? <><a href={entry.nutrition_reference}>Food and meal context</a>: {entry.nutrition_context_note}</> : <>The <a href={entry.nutrition_reference}>preceding food record</a> retains the foods and portions. Meal timing here comes from the sleep account; food water content and drink volumes were not measured.</>}</p>}
       {(!o || !c) && <><h3>{corosUnavailable ? "Provider access unavailable" : "Device data pending"}</h3>
@@ -113,16 +128,35 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
         <p>Credential material, device identifiers, source document IDs and raw physiological streams are excluded from this page. Hours-and-minutes displays round down to complete minutes; minute-only values retain one decimal. Prose may use rounded approximations; source values retain their original seconds.</p>
       </details>
       {entry.corrections.length > 0 && <><h3>Corrections and revisions</h3><ul>{entry.corrections.map((correction) => <li>{typeof correction === "string" ? correction : `${correction.date}: ${correction.reason}`}</li>)}</ul></>}
-    </section>;
+    </section></details>;
   })}
+  <details class="reading-notes">
+    <summary>Reading the record</summary>
+    <p>A provider score describes its grading; it does not establish true sleep stages or a benefit to health. The short record cannot establish a personal baseline, a trend or the cause of a result.</p>
+    <p>The recent table pairs each provider's returned score with its selected main episode. Diaries may precede provider returns. Known incomplete recordings remain partial estimates and are excluded from whole-night milestones; additional episodes remain separate inside each account.</p>
+    <p>Awake totals concern the whole selected episode; they have not been reconstructed as exact wake after sleep onset. Missing self-reports remain unknown. <a href="/sleep/measurements/continuity/">Definitions and continuity</a>.</p>
   <h2 id="how-to-add-a-night">How a night is added</h2>
   <p>An entry begins with an on-demand request for the relevant night. The canonical record retains original provider values and their scope. Measured signals, algorithmic estimates, self-reports and interpretations are named separately. Missing data is not zero; missing nights are not silently removed from a target window.</p>
   <p>A correction adds the reason and retains the date on which an interpretation changed. Historical observations remain intelligible as the current <a href="/sleep/targets/">targets</a> and <a href="/sleep/research/">investigations</a> develop. The record has {record.entries.length} dated entries, {ouraScoreCount} returned Oura sleep scores ({eligibleOuraScoreCount} eligible for whole-night milestones) and {corosScoreCount} available COROS sleep scores. It has no scheduled synchronization.</p>
+  </details>
 </Post>
 <style>
   details { margin: 32px 0; }
   summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
   summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
-  details[open] summary { margin-bottom: 24px; }
+  details[open] > summary { margin-bottom: 24px; }
   section { margin-bottom: 48px; }
+  .record-links { font-size: 13px; }
+  .focus-date { color: var(--dim); font-size: 13px; margin-bottom: 12px; }
+  .latest-focus { margin-bottom: 36px; }
+  .record-day { margin: 0; border-top: 1px solid var(--rule); }
+  .record-day:last-of-type { border-bottom: 1px solid var(--rule); }
+  .record-day > summary { padding: 16px 0; text-decoration: none; line-height: 1.7; }
+  .record-day > summary:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+  .record-day > summary .day-status { display: block; color: var(--dim); font-size: 12px; padding-left: 16px; }
+  .record-day[open] > summary { margin-bottom: 16px; }
+  .record-day > section { margin-bottom: 36px; }
+  .record-day > section > h2 { margin-top: 24px; }
+  .entry-status { font-size: 13px; color: var(--dim); }
+  .reading-notes { margin-top: 36px; }
 </style>

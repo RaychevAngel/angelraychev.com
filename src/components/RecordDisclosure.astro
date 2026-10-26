@@ -1,0 +1,28 @@
+<script>
+  // Keep existing record fragments useful when their full account is collapsed.
+  function revealRecord(hash = window.location.hash) {
+    if (!hash || hash === "#") return;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
+    if (!target) return;
+    let element: HTMLElement | null = target;
+    while (element) {
+      if (element instanceof HTMLDetailsElement) element.open = true;
+      element = element.parentElement;
+    }
+    requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+  }
+  revealRecord();
+  window.addEventListener("hashchange", () => revealRecord());
+  document.addEventListener("click", event => {
+    if (!(event.target instanceof Element)) return;
+    const link = event.target.closest("a[href]");
+    if (!(link instanceof HTMLAnchorElement)) return;
+    const destination = new URL(link.href);
+    if (destination.origin === window.location.origin && destination.pathname === window.location.pathname && destination.search === window.location.search && destination.hash) {
+      // Also handles a second click after the same target was manually closed.
+      revealRecord(destination.hash);
+    }
+  });
+</script>
