@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-26"
+updated: "2026-10-27"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,10 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**October 27 — earlier main sleep, with experience still to be reported.** The [record](/sleep/record/#night-2026-10-27) returns **Oura 91 / 9h39m30s asleep** and **COROS 90 / 9h50m**. Main windows start around **23:50–23:56**, earlier than October 26, but end differently: 10:22 versus 09:55. Waking estimates are **47 versus 15 minutes**. HRV is **64/63 ms**; Oura Readiness is **94**, temperature deviation **−0.12 °C**. These readings do not establish symptom resolution or a better experienced night. Yesterday’s bad sleep and body pains remain yesterday’s report.
+
+The [new curves](/sleep/charts/#night-2026-10-27) include the main episode’s 30-second stages and five-minute pulse samples. Oura separately detected **13 minutes asleep in 23:25–23:51**, while COROS reports no naps; this remains unconfirmed by diary and excluded from the main-night curves. The first fixed October 13–26 milestone assessment remains unchanged.
 
 **October 26 main sleep is now available.** The [new record](/sleep/record/#night-2026-10-26) returns **Oura 85 / 8h33m main sleep** and **COROS 94 / 8h55m**, with close main windows around 01:18–10:32. Waking estimates remain different: 41 minutes versus 16. HRV is **53/51 ms** and Oura temperature deviation **+0.01 °C**, compared with +1.34 °C the preceding night; Readiness is 87. These readings moved toward earlier values, but the follow-up reports **bad sleep, waking sleepy, ongoing body pains and feeling unhappy overall**. The improved readings did not match a good experienced night. Sleepiness duration and later-day functioning remain unreported; symptom recovery is not established.
 

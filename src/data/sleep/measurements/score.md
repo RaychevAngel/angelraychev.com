@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-26"
+updated: "2026-10-27"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -32,6 +32,8 @@ The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 
 This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
+
+The [October 27 record](/sleep/record/#night-2026-10-27) returns **Oura 91 / COROS 90**. Oura total-sleep/deep contributors are **100**, REM **87**, efficiency **97**, restfulness **91**, latency **78** and timing **64**. Oura rises 85 → 91 while COROS falls 94 → 90; their grades remain separate. No subjective report yet establishes better experienced sleep, especially after October 26’s explicitly bad night despite high grades. The first October 13–26 assessment remains fixed at **82.31**; the new date does not revise it or complete the 28-day window.
 
 The [October 26 main-night record](/sleep/record/#night-2026-10-26) returns **Oura 85/COROS 94**, superseding the earlier nap-only COROS response with invalid −1 grade. Oura contributors are total sleep 92, deep 98, REM 83, efficiency 98, restfulness 82, latency 86 and timing 36. Daily scores remain provider-native; neither extra detected episode is added as another nightly score. The follow-up reports bad sleep, waking sleepy, ongoing body pains and feeling unhappy overall despite the higher grades. It also reports no naps, disputing COROS’s detection. This is a clear score–experience mismatch; no period of recovery or good later-day function is inferred. The first fixed **October 13–26 assessment** has 13 eligible Oura scores, sum 1070 and observed mean **82.31**. Coverage 13/14 meets the minimum 12, but the mean is below 85, so the milestone is **not achieved**. The battery-truncated October 22 remains excluded with its date visible; all other eligible dates, including difficult nights, remain included.
 

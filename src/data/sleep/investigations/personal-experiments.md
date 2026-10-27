@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-26"
+updated: "2026-10-27"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**October 27 — earlier device window; no new routine report.** Oura **91 / 9h39m30s** and COROS **90 / 9h50m** have main starts around 23:50–23:56, roughly 1½ hours earlier than the previous night. Oura timing rose **36 → 64** and restfulness **82 → 91**, while awake estimates remain different (**47/15 minutes**). HRV is **64/63 ms**. [Curves and samples](/sleep/charts/#night-2026-10-27) show chronological detail without reconciling the devices. Current sleep quality, morning/later-day functioning, body pains and evening routine remain unreported; no recovery or completed behavioral change is inferred. The separate Oura 23:25–23:51 detection is unconfirmed. No new intervention follows from this night alone.
 
 **October 26 main-night follow-up — readings improved, but sleep felt bad.** Oura now returns 85 and 8h33m main sleep, COROS 94 and 8h55m. The [record](/sleep/record/#night-2026-10-26) keeps daily sleep 9h19m separate from the COROS 24-minute nap detection and retains Oura’s different evening rest episode. The follow-up explicitly reports no naps, disputing COROS’s detection; neither extra window is confirmed as actual sleep. Oura HRV rose 37 → 53 ms and temperature deviation fell +1.34 → +0.01 °C; COROS HRV rose 40 → 51 ms. The follow-up reports **ongoing body pains, bad sleep, waking sleepy and feeling unhappy overall**. Sleepiness duration, later-day functioning and the evening routine remain unspecified; the October 25 exposures are not carried forward. This is a mismatch between higher grades and experienced sleep, not a reported recovery. No new intervention is adopted.
 
