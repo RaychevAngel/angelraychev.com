@@ -2316,7 +2316,7 @@
       "wake_date": "2026-10-27",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 27, with separate pre-main episode retained as provider detection",
-      "status": "Oura 91/COROS 90; earlier main sleep and more estimated sleep; experienced quality and current symptoms unreported",
+      "status": "Felt good during the night and in the morning; almost all body pains gone; tried sleeping around 23:10 but initially could not fall asleep; Oura 91/COROS 90",
       "retrieved_at": "2026-10-27T17:29:15.267711+00:00",
       "provider_retrieved_at": {
         "oura": "2026-10-27T17:29:15.267711+00:00",
@@ -2365,7 +2365,7 @@
             "time_in_bed": 1560,
             "total_sleep_duration": 780,
             "type": "sleep",
-            "confirmation": "Provider-detected separate episode before the main night; no diary confirmation of actual sleeping or dozing was supplied."
+            "confirmation": "The follow-up describes trying to sleep around 23:10 but initially being unable to fall asleep. It does not explicitly confirm these 13 minutes as actual sleep or give an exact onset; this detection remains unconfirmed."
           }
         ],
         "score": 91,
@@ -2420,19 +2420,19 @@
         "source": "Official COROS connector sleep overview, sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261027 checked."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "Felt good during the night.",
+        "morning_sleepiness": "Felt good in the morning; no quantified sleepiness rating or waking-to-alert interval supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
-        "naps": null,
-        "intended_bedtime": null,
+        "naps": "Described difficulty falling asleep after the 23:10 attempt; did not explicitly confirm the separate 23:25–23:51 sleep detection. Actual dozing remains uncertain.",
+        "intended_bedtime": "Lay in bed around 23:10 and tried to sleep but initially could not fall asleep. Actual sleep onset and delay not quantified.",
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
-        "illness": null
+        "illness": "Almost all body pains are gone; complete symptom resolution was not claimed."
       },
       "context": [
         {
@@ -2441,21 +2441,23 @@
         },
         {
           "kind": "self_report",
-          "observation": "No diary supplied yet for October 27. October 26 bad sleep, waking sleepiness, body pains and no-nap report remain attributed to that date. Current symptoms, sleep quality, routine and actual pre-main dozing are unknown."
+          "observation": "Follow-up: lay in bed around 23:10 and tried sleeping but initially could not fall asleep; felt good during the night and in the morning; almost all body pains are gone. No exact onset, final wake time or sustained later-day functioning supplied. Earlier alcohol, food, fluid and exercise details are not assumed repeated."
         }
       ],
-      "story": [],
+      "story": [
+        "I lay in bed around 23:10 and tried to go to sleep, but initially could not fall asleep. I felt good during the night and in the morning. Almost all body pains are gone."
+      ],
       "interpretation": [
         "Oura returned 91 with 9h39m30s estimated main sleep in 23:55:58–10:22:28, a 10h26m30s episode with 47 minutes awake. COROS returned 90 with 9h50m asleep in 23:50–09:55, a 10h05m period with 15 minutes awake. COROS estimates 10m30s more asleep despite its shorter window; Oura ends 27m28s later. The 32-minute waking difference remains visible.",
-        "Compared with October 26, Oura main sleep starts 1h22m04s earlier and its estimated sleep grows 1h06m30s; COROS starts 1h30m earlier and estimates 55 minutes more sleep. Oura score rises 85 → 91 while COROS falls 94 → 90. These are separate grading systems; no diary yet establishes improved experienced sleep or a deliberate routine change.",
-        "Oura estimated 2h26m deep, 1h48m REM, 5h25m30s light, 7m30s latency and 92% efficiency. Contributor scores were total sleep 100, deep 100, REM 87, efficiency 97, restfulness 91, latency 78 and timing 64. Timing rose 36 → 64 and restfulness 82 → 91, while the latency and efficiency grades fell. Earlier timing and higher grades do not independently validate the stage labels or explain remembered awakenings.",
-        "Oura average sleeping HR was 47.875 bpm, minimum 44, HRV 64 ms, Readiness 94 and peripheral-temperature deviation −0.12 °C. COROS official sleep HRV was 63 ms Normal against 47–67 ms and baseline 57. These readings do not establish that the previously reported body pains or poor sleep have resolved. Oura breathing rate was 12/min, SpO2 average 96.753% and breathing disturbance index zero; these are device summaries, not a clinical assessment.",
-        "Oura separately classified 13 minutes asleep before the main episode, with another 13 minutes awake. Its type is sleep, while COROS reports zero nap minutes. Do not merge that window with main sleep or label it a confirmed nap without the diary. The new stage and sampled-pulse curves show only the main episode, preserving missing samples.",
+        "Compared with October 26, Oura main sleep starts 1h22m04s earlier and its estimated sleep grows 1h06m30s; COROS starts 1h30m earlier and estimates 55 minutes more sleep. Oura score rises 85 → 91 while COROS falls 94 → 90. These remain separate grading systems. The follow-up now reports feeling good during the night and in the morning, and almost all body pains gone, contrasting with October 26’s bad experienced night. This is reported improvement alongside the readings, without isolating a cause.",
+        "Oura estimated 2h26m deep, 1h48m REM, 5h25m30s light, 7m30s latency and 92% efficiency. Contributor scores were total sleep 100, deep 100, REM 87, efficiency 97, restfulness 91, latency 78 and timing 64. Timing rose 36 → 64 and restfulness 82 → 91, while the latency and efficiency grades fell. Earlier timing and higher grades do not independently validate the stage labels or explain remembered awakenings. The reported 23:10 sleep attempt precedes Oura’s main episode start at 23:55:58. Its 7m30s main-episode latency does not measure the full delay from that attempt; exact onset is unknown, especially with a separate earlier sleep classification.",
+        "Oura average sleeping HR was 47.875 bpm, minimum 44, HRV 64 ms, Readiness 94 and peripheral-temperature deviation −0.12 °C. COROS official sleep HRV was 63 ms Normal against 47–67 ms and baseline 57. The follow-up separately reports feeling good and almost all body pains gone. Improvement is supported by that report; the measurements alone do not establish complete recovery or an absence of residual symptoms. Oura breathing rate was 12/min, SpO2 average 96.753% and breathing disturbance index zero; these are device summaries, not a clinical assessment.",
+        "Oura separately classified 13 minutes asleep before the main episode, with another 13 minutes awake. Its type is sleep, while COROS reports zero nap minutes. The diary describes initial difficulty sleeping after lying down around 23:10, without an exact onset or explicit confirmation of those 13 minutes. Keep the detection separate and unconfirmed; neither a definite nap nor definite wakefulness throughout that window is established. The new stage and sampled-pulse curves show only the main episode, preserving missing samples.",
         "The first fixed October 13–26 milestone assessment remains 82.31 from 13 eligible scores and below 85. Adding October 27 does not change that completed window. The October 22 battery-truncated recording remains excluded, and the 28-day benchmark is not yet assessable."
       ],
       "plans": [],
       "next_focus": [
-        "Compare today’s experienced sleep, waking alertness and later-day functioning with the earlier device window. Clarify whether body pains continue and whether the short pre-main detection was actual dozing; higher HRV and Readiness do not settle those questions.",
+        "Retain the positive experienced night, good morning and almost-resolved body pains alongside the readings. Compare whether this repeats and how the rest of the day goes. Keep initial difficulty falling asleep separate from Oura’s main-episode latency; exact onset and any brief pre-main dozing remain uncertain.",
         "Use the aligned stage/pulse curves to inspect the timing of awake labels, while retaining the diary and COROS’s different window. No new meal, fluid, training or bedtime rule is adopted from this night alone."
       ],
       "next_focus_references": [
@@ -2472,7 +2474,12 @@
           "label": "Score benchmarks"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-27",
+          "reason": "Added direct follow-up: 23:10 sleep attempt with initial difficulty falling asleep, good night and morning, almost all pains gone. Clarified that main-episode latency is not the full delay from the reported attempt; pre-main detection remains unconfirmed. Native values, retrieval times, curves, eligibility and milestone assessment unchanged."
+        }
+      ]
     }
   ],
   "milestone_assessments": [
