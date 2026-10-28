@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-23
+updated: 2026-10-27
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 23 October 2026.** The upcoming
+**This version includes completed training through 27 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -342,6 +342,24 @@ under tension afterwards, without changing my walking, and were already
 easing by the discussion. The result is progress towards **6:08 per 1600
 (3:50/km)**, with conditions and recovery kept alongside the times.
 
+After three days without running while unwell, the
+[second 3×900 m on 27 October](/running/record/2026/#27-october--vo-3900-m--nominal-530)
+was **2:57.25, 2:57.58, 3:01.57**: **2:58.80 average (3:18.67/km)**.
+Actual recoveries were **5:00.20 and 5:04.03**. I felt composed and finished
+strongly, with my ankles feeling fine. What was missing was access to faster
+running from the start. Opening in 2:57 felt slow, yet I did not feel I could
+choose to run 2:50. October 19's quicker opening had felt like flying before
+the later breakdown; today's experience was different.
+
+The average was **1.80 seconds per rep slower**, with slightly shorter rests;
+the third rep differed by just **0.52 seconds**. I interpret it as a return
+after the short illness and expect the next efforts to feel sharper. That is
+an expectation, not an identified cause or a demonstrated loss of fitness.
+The next **3×1600 m** is intended for October 28. **X = 4+4×200 m** remains
+open for Thursday, October 29, depending on how I feel after LT and on my
+legs and ankles. The [programme](/running/record/2026/programme/#the-current-calendar)
+keeps the remaining provisional dates, including the November 3 800 m trial.
+
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
 remaining training develops. In the same 2025 men's outdoor tables, 2:16.00
@@ -431,18 +449,23 @@ observations that can inform the next decision.
 ## The next checkpoint
 
 **The second 3×1600 m is complete on October 23**, following the first on
-October 16. The 900s retain their opening reference from October 19.
+October 16. The second 900s are complete on **October 27**, after three
+days without running while unwell.
 They stay at those formats, with the later **6:08** and
 **2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-The next **3×900 m is provisionally on October 24**, subject to recovery
-after today's ankle tension and residual soreness.
+The next intended session is **3×1600 m on October 28**.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
-and X remains flexible. My current intention is **another 4+4×200 in X**,
+and X remains flexible. **Another 4+4×200 in X on October 29** remains open
+until I have seen how the LT leaves me and how my legs and ankles feel on
+Thursday. My current intention is to repeat that format,
 after initially predicting sub-30 for the opening four. My latest stretch
 ambition is **under 29 for the first four and around 30 for the second four**.
 Those are future ambitions, not achieved results or formal graduation gates.
-The recurring F and FA allocation stays in place for this cycle.
+The recurring F and FA allocation stays in place for this cycle. My current
+provisional endpoint is an **800 m TT on November 3**, with **6×200 m on
+November 4**. I am treating the trial as a checkpoint within normal training,
+without a formal taper; the dates remain subject to how the preceding work goes.
 
 Two LT slots remain before the time trial. If the longer work continues to
 lag, **five LT sessions and three VO₂ sessions** is a possible reallocation

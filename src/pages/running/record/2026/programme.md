@@ -1,17 +1,18 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The 18-day cycle begun on October 15, progress in the second 1600 m session, and the next conditional 900s."
-updated: 2026-10-23
+description: "The cycle begun on October 15: the return to 900s after illness, unchanged progression gates, and the provisional calendar through the 800 m trial."
+updated: 2026-10-27
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **23 October**. The first cycle began on **15 October**. Its first
+updated through **27 October**. The first cycle began on **15 October**. Its first
 two blocks are complete: block two's VO₂ session was run on **19 October**,
-and FA on **21 October**. Block three's LT is complete on **23 October**.
-Its VO₂ session remains provisional for **24 October**. The other sessions are planned; no completed
+and FA on **21 October**. Block three is complete with LT on **23 October**
+and VO₂ on **27 October**, after three days without running while unwell.
+The other sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
 
@@ -28,6 +29,7 @@ recovery is not a continuous race mark to score against the event table.
 [Current choices](#current-choices) ·
 [Transition](#the-transition-into-the-first-cycle) ·
 [Cycle](#the-18-day-cycle) ·
+[Current calendar](#the-current-calendar) ·
 [Progressions](#two-independently-earned-progressions)
 
 ## Current choices
@@ -62,6 +64,15 @@ a strong headwind and deteriorating form accompanied the slowing. The
 at three 900s, aiming for a lower average and more even execution. The
 nominal recovery remains 5:30; that session's shorter rests do not redefine it.
 
+The [second 900s on 27 October](/running/record/2026/#27-october--vo-3900-m--nominal-530)
+were **2:57.25, 2:57.58, 3:01.57**: **2:58.80 average (3:18.67/km)**.
+Actual recoveries were **5:00.20 and 5:04.03**. After three days off while
+unwell, I felt composed and finished strongly, but could not access faster
+running from the outset. The mean was **1.80 seconds per rep slower** than
+October 19; I did not report the same breakdown. I see this as a return
+session and hope to feel sharper in the next pair. **Three 900s and the
+2:55.5 gate remain unchanged.**
+
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
 averaged **~30.31 then 30.50**, using a labelled distance correction for the
@@ -69,10 +80,11 @@ third repetition. The set break was **4:56.05**; the recovery before repetition
 seven includes an aborted start and return. Early repetitions were controlled;
 the wet track, slipping shoes and severe late stiffness made holding the speed
 very hard. Right-ankle tension afterwards changed my walking for a couple of
-hours despite no ankle pain, and had settled by the discussion. I planned
-October 22 as a rest day; the October 23 LT is now complete. **The October 24
-900s remain provisional**, depending on recovery. **Another 4+4×200 is the
-intended X choice**. After the initial sub-30 prediction, the latest stretch
+hours despite no ankle pain, and had settled by the discussion. October 22
+was the planned rest day; the October 23 LT and October 27 VO₂ are now
+complete. **Another 4+4×200 remains the intended X choice**, provisionally
+October 29. I will decide after the October 28 LT and according to how my
+legs and ankles feel on Thursday. After the initial sub-30 prediction, the latest stretch
 ambition is **under 29 on average for the opening four and around 30 for the
 second four**. This adds no formal progression gate.
 
@@ -99,10 +111,16 @@ remaining scheduled sessions into completed work.
 
 Block two's VO₂ session was originally due on October 18 and was completed
 on **October 19**. The October 20 FA attempt was blocked by an event at the
-track; I completed the workout on **October 21**. The proposed three training
-days in a row will not happen: I have committed to rest on October 22 after
-this effort. The sequence is retained; completed dates and the next reported
+track; I completed the workout on **October 21**. The proposal to train three
+days in a row was superseded by the October 22 rest intention after
+that effort. Completed dates and the next reported
 intention replace assumptions based on an uninterrupted calendar.
+
+After the October 23 LT, I did not run on October 24–26 while unwell. The
+October 27 900s completed block three. The current calendar below records
+my proposed return to the remaining sessions, including a conditional third
+consecutive training day. That is a change from the usual rest placement,
+not a claim that the original block calendar ran without interruption.
 
 ## The 18-day cycle
 
@@ -154,6 +172,30 @@ The session count does not describe the whole load. A time trial, relaxed fast
 repetitions and an experimental sprint set can cost very different amounts. One
 recent chill day still included a short backpack run; my plan for another rest day
 included running to the gym and back. The label cannot erase that activity.
+
+## The current calendar
+
+This is my intention as of **27 October**, not a list of completed work.
+Thursday's X remains undecided until I have seen how Wednesday's LT leaves
+me and how my legs and ankles feel on Thursday. I hope to be back at the
+previous level or quicker in the weekend pair, but personal bests are aims,
+not requirements imposed by the dates.
+
+| Date | Intended session | Status |
+| --- | --- | --- |
+| Wednesday 28 October | LT · 3×1600 m | Planned |
+| Thursday 29 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Conditional on response to LT and how legs and ankles feel |
+| Friday 30 October | Rest | Planned |
+| Saturday 31 October | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
+| Sunday 1 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |
+| Monday 2 November | Rest | Planned |
+| Tuesday 3 November | 800 m time trial | Provisional checkpoint |
+| Wednesday 4 November | F · 6×200 m / 3 min | Planned |
+
+I am treating the 800 m trial as a checkpoint within normal training,
+without adding a formal taper. The planned Monday rest remains. Illness,
+ankle response or accumulated fatigue can still change a session or its date;
+the table is my current intention rather than evidence of readiness.
 
 ## Two independently earned progressions
 
