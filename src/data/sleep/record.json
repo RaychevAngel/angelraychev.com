@@ -2486,7 +2486,7 @@
       "wake_date": "2026-10-28",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 28",
-      "status": "Oura 91/COROS 94; less estimated waking and later main start; experienced sleep and current symptoms unreported",
+      "status": "Tried sleeping around 00:30 after a social day; night okay, morning good, possible brief awakenings; late food/lights and pulse felt suboptimal; Oura 91/COROS 94",
       "retrieved_at": "2026-10-28T21:28:45.527203+00:00",
       "provider_retrieved_at": {
         "oura": "2026-10-28T21:28:45.527203+00:00",
@@ -2569,15 +2569,15 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261028 checked."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "The night was okay and the rest felt good. May have woken a few times, but nothing notable; exact count and duration unknown.",
+        "morning_sleepiness": "The morning felt good; no quantified sleepiness rating or waking-to-alert interval supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": null,
-        "environment": null,
+        "intended_bedtime": "Tried to sleep around 00:30. Wanted an earlier attempt, but meeting people throughout the day prevented it; no exact earlier target specified.",
+        "environment": "There were lights close to bedtime, considered suboptimal; brightness, sources and exact timing not specified.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
@@ -2590,21 +2590,25 @@
         },
         {
           "kind": "self_report",
-          "observation": "No subjective report supplied yet for October 28. The October 27 report of a good night/morning, almost-resolved pains and initial difficulty sleeping after a 23:10 attempt remains on that prior date. Current sleep quality, sleep attempt, symptoms, awakenings and routine remain unknown."
+          "observation": "The follow-up supplies a roughly 00:30 sleep attempt delayed by meeting people throughout the day, food and lights before bed, pulse not as settled as desired, an okay night and good morning, and possible few unremarkable awakenings. Exact food/light timing and quantities, presleep pulse, sleep onset, final waking, current body pains and later-day function remain unspecified."
         }
       ],
-      "story": [],
+      "story": [
+        "I tried to sleep around 00:30. I wanted to do it earlier, but I had been meeting people all day and could not. I ate before bed and there were lights; I considered those conditions suboptimal. My pulse did not settle as much as I wanted.",
+        "The night was okay and the rest was good. The morning was good. I may have woken up a few times, but nothing special. I still see room to improve."
+      ],
       "interpretation": [
         "Oura returned 91 with 9h estimated asleep in 00:44–10:14, a 9h30m episode with 30 minutes awake. COROS returned 94 with 9h16m asleep in 00:47–10:13, a 9h26m period with 10 minutes awake. Main boundaries are close, while estimated sleep differs by 16 minutes and awake totals by 20 minutes. Neither provider corrects the other.",
-        "Compared with October 27, Oura main sleep starts 48m02s later and estimates 39m30s less sleep; COROS starts 57 minutes later and estimates 34 minutes less. Awake estimates fall 47 → 30 minutes on Oura and 15 → 10 on COROS. Oura’s overall score stays 91 while COROS rises 90 → 94. No diary yet establishes whether experienced continuity or alertness also changed.",
-        "Oura estimated 1h43m deep, 1h52m30s REM, 5h24m30s light, 13-minute latency and 95% efficiency. Its efficiency contributor reaches 100, distinct from 95% estimated efficiency. Other contributor scores are total sleep 97, deep 95, REM 91, restfulness 92, latency 94 and timing 48. Timing falls 64 → 48 while latency rises 78 → 94 and restfulness 91 → 92. The unchanged composite hides these different changes; no exact physiological optimum follows from a 100-point contributor.",
-        "Oura average sleeping HR is 51.75 bpm, minimum 46, HRV 55 ms, Readiness 89 and peripheral-temperature deviation −0.02 °C. COROS official sleep HRV is 54 ms Normal against 47–67 ms and baseline 57. HRV is lower than the preceding 64/63 ms pair, without establishing worse experienced recovery. Current symptoms remain unreported. Oura breathing rate is 12.125/min, SpO2 average 96.154% and breathing disturbance index zero; these are device summaries, not clinical findings.",
+        "Compared with October 27, Oura main sleep starts 48m02s later and estimates 39m30s less sleep; COROS starts 57 minutes later and estimates 34 minutes less. Awake estimates fall 47 → 30 minutes on Oura and 15 → 10 on COROS. Oura’s overall score stays 91 while COROS rises 90 → 94. The follow-up reports an okay night, good rest and a good morning, with possibly a few unremarkable awakenings. It does not supply a timed waking sequence, so lower device awake estimates are not independently validated.",
+        "Oura estimated 1h43m deep, 1h52m30s REM, 5h24m30s light, 13-minute latency and 95% efficiency. Its efficiency contributor reaches 100, distinct from 95% estimated efficiency. Other contributor scores are total sleep 97, deep 95, REM 91, restfulness 92, latency 94 and timing 48. Timing falls 64 → 48 while latency rises 78 → 94 and restfulness 91 → 92. The unchanged composite hides these different changes; no exact physiological optimum follows from a 100-point contributor. The approximately 00:30 reported sleep attempt precedes Oura’s 00:44 main-episode start; its 13-minute latency should not be treated as the full delay from that attempt. Exact actual onset remains unknown.",
+        "Oura average sleeping HR is 51.75 bpm, minimum 46, HRV 55 ms, Readiness 89 and peripheral-temperature deviation −0.02 °C. COROS official sleep HRV is 54 ms Normal against 47–67 ms and baseline 57. HRV is lower than the preceding 64/63 ms pair, without establishing worse experienced recovery. The reported morning was good despite the lower HRV. Body pains and sustained later-day functioning remain unreported. The feeling that pulse had not settled enough refers to the presleep experience, not a matched objective comparison of presleep HR. Oura breathing rate is 12.125/min, SpO2 average 96.154% and breathing disturbance index zero; these are device summaries, not clinical findings.",
+        "The social day constrained the desired earlier sleep attempt. Food and lights before bed were described as suboptimal; exact exposure details were not supplied. Those conditions and the presleep pulse impression are reported together without establishing that one caused the readings. A desired earlier attempt is not a newly adopted fixed clock target, food cutoff or completed change in routine.",
         "Only one Oura sleep episode was returned for this wake date; COROS daily and main sleep both total 9h16m with zero detected naps. The main-night stage and pulse curves are added without changing earlier series, filling gaps or deriving COROS stages from daily ratios. COROS daily HR averages 55 bpm with minimum 45, and predicted seated resting HR is 52, separate from Oura’s sleep scope.",
         "The first fixed October 13–26 milestone assessment remains 82.31 from 13 eligible Oura scores, below 85. Sixteen dates now contain 15 eligible Oura whole-night scores; October 22 remains battery-truncated and excluded. No new rolling criterion or completed 28-day result is inferred."
       ],
       "plans": [],
       "next_focus": [
-        "Compare the new awake-label pattern and later main start with the experienced night and morning. Keep the 100-point efficiency contributor separate from 95% estimated efficiency, and clarify current symptoms and the actual sleep attempt before attributing any change.",
+        "Compare an earlier feasible sleep attempt and a calmer, dimmer pre-bed period while keeping the experienced outcome alongside the scores. Retain the okay night, good morning and possible few brief awakenings. Exact food/light exposure and current body pains remain unknown; the presleep pulse impression is not a causal test.",
         "Use the chronological stage/pulse curves and the separate provider trends to inspect changes without replacing the diary. No new food, fluid, training or fixed bedtime rule is adopted from these measurements alone."
       ],
       "next_focus_references": [
@@ -2621,7 +2625,12 @@
           "label": "Score benchmarks"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-28",
+          "reason": "Added follow-up received during publication: roughly 00:30 attempt delayed by a social day, food/lights before bed, pulse less settled than desired, okay night/good rest and morning, possible few unremarkable awakenings. Actual onset, current body pains and later-day functioning remain unknown. Native measurements, curves, retrieval times and milestones unchanged."
+        }
+      ]
     }
   ],
   "milestone_assessments": [
