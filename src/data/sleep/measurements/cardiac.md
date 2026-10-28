@@ -1,7 +1,7 @@
 ---
 title: "Heart rate and heart-rate variability"
 description: "Overnight pulse and beat-interval measurements can track change, provided their sampling and definitions remain visible."
-updated: "2026-10-27"
+updated: "2026-10-28"
 order: 6
 role: "Trend"
 attention: "Match the measurement window"
@@ -78,6 +78,8 @@ The [October 24](/sleep/record/#night-2026-10-24) and [October 25](/sleep/record
 On [October 26](/sleep/record/#night-2026-10-26), Oura average sleeping HR was **53.25 bpm**, minimum **48**, HRV **53 ms** and peripheral-temperature deviation **+0.01 °C**. COROS official sleep HRV was **51 ms Normal**, range **47–67**, baseline **57**. These move toward earlier readings after October 25’s changed summaries. The follow-up nevertheless reports ongoing body pains, bad sleep, waking sleepy and feeling unhappy overall. Near-baseline temperature deviation and improved HRV do not override those symptoms or establish performance recovery. COROS daily HR averaged 56 bpm, minimum 45; predicted seated resting HR was 56. The Oura evening rest episode has its own HR/HRV and is not merged into the main sleep.
 
 ## How much confidence is justified?
+
+**October 28:** Oura mean sleeping HR **51.75 bpm**, minimum **46**, HRV **55 ms**, Readiness **89**, temperature deviation **−0.02 °C**. COROS official HRV is **54 ms Normal**, range **47–67**, baseline **57**. HRV fell from 64/63 ms without establishing poorer experienced recovery. Current symptoms and functioning are unreported. COROS daily HR snapshot is **55 bpm average / 45 minimum**, predicted seated resting HR **52**, separate from sleep-window HR. [Record and curves](/sleep/charts/#night-2026-10-28).
 
 **October 27:** Oura mean sleeping HR **47.875 bpm**, minimum **44**, HRV **64 ms**, Readiness **94**, temperature deviation **−0.12 °C**. COROS official sleep HRV is **63 ms Normal**, range **47–67**, baseline **57**. Its daily HR snapshot is **48 bpm average / 41 minimum**, predicted seated resting HR **49**, separate from Oura’s sleep scope. The follow-up independently reports feeling good during the night and in the morning, with almost all body pains gone. This supplies experienced improvement alongside the measurements, while complete symptom resolution and sustained later-day functioning remain unestablished. [Record and curves](/sleep/charts/#night-2026-10-27).
 

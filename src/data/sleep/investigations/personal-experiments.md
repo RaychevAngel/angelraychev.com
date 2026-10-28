@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-27"
+updated: "2026-10-28"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**October 28 — later main window, less estimated waking, experience pending.** Oura **91 / 9h** and COROS **94 / 9h16m** begin around **00:44–00:47**, later than the preceding night. Estimated awake totals fall to **30/10 minutes**; Oura timing falls to **48**, efficiency contributor reaches **100**, and restfulness is **92**. HRV is **55/54 ms**. [Curves](/sleep/charts/#night-2026-10-28) retain the actual estimates; no current sleep attempt, routine, experienced quality, symptoms or daytime outcome has been reported. The preceding 23:10 attempt and good night are not assumed repeated. No new intervention is adopted.
 
 **October 27 — earlier attempt, good experienced sleep and morning.** Oura **91 / 9h39m30s** and COROS **90 / 9h50m** have main starts around 23:50–23:56, roughly 1½ hours earlier than the previous night. Oura timing rose **36 → 64** and restfulness **82 → 91**, while awake estimates remain different (**47/15 minutes**). HRV is **64/63 ms**. [Curves and samples](/sleep/charts/#night-2026-10-27) show chronological detail without reconciling the devices. The follow-up reports lying in bed and trying to sleep around **23:10**, initially being unable to fall asleep, then **feeling good during the night and in the morning**, with **almost all body pains gone**. Exact onset, final waking, sustained later-day functioning and the preceding routine remain unspecified. Oura’s 7m30s latency concerns its main episode starting 23:55:58, not the full delay from 23:10. The separate 23:25–23:51 detection is not explicitly confirmed as actual sleep. This is a positive experienced night alongside the measurements, without isolating a cause or establishing complete recovery. No new intervention follows from this night alone.
 

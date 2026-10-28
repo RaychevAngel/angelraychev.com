@@ -1,7 +1,7 @@
 ---
 title: "Sleep score"
 description: "A useful grading benchmark whose biological interpretation depends on its components and scoring rules."
-updated: "2026-10-27"
+updated: "2026-10-28"
 order: 1
 role: "Benchmark"
 attention: "Proposed milestones"
@@ -32,6 +32,8 @@ The second night's composite rose to 84. Total-sleep grading rose from 71 to 91 
 This is why the project retains the score, its components and personal experience. The next decision concerns a [comfortable routine and unwanted waking](/sleep/research/personal-experiments/#the-current-routine-proposal), with score improvement as a supporting result. A causal or sustained benefit has not yet been demonstrated.
 
 ## Measurement and interpretation
+
+The [October 28 record](/sleep/record/#night-2026-10-28) returns **Oura 91 / COROS 94**. Oura’s composite stays 91 despite efficiency **97 → 100**, latency **78 → 94**, restfulness **91 → 92**, timing **64 → 48**, deep **100 → 95** and total sleep **100 → 97**. REM is **91**. The 100-point efficiency contributor differs from the **95% efficiency estimate**. Current subjective quality remains unreported; the unchanged composite does not establish an unchanged experienced night. The fixed October 13–26 assessment stays **82.31**.
 
 The [October 27 record](/sleep/record/#night-2026-10-27) returns **Oura 91 / COROS 90**. Oura total-sleep/deep contributors are **100**, REM **87**, efficiency **97**, restfulness **91**, latency **78** and timing **64**. Oura rises 85 → 91 while COROS falls 94 → 90; their grades remain separate. The follow-up reports feeling good during the night and in the morning, and almost all body pains gone, contrasting with October 26’s explicitly bad experienced night. The reported 23:10 attempt and initial inability to fall asleep also show why a 78-point latency grade and 7m30s main-episode latency do not describe the full experience of trying to sleep. The first October 13–26 assessment remains fixed at **82.31**; the new date does not revise it or complete the 28-day window.
 

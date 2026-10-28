@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-27"
+updated: "2026-10-28"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**October 28 — same Oura score, different components.** The [record](/sleep/record/#night-2026-10-28) returns **Oura 91 / 9h asleep** and **COROS 94 / 9h16m**, with windows **00:44–10:14 / 00:47–10:13** and awake estimates **30/10 minutes**. Oura efficiency reaches **100 as a contributor**, while estimated efficiency is **95%**; timing falls **64 → 48** and restfulness rises **91 → 92**. HRV is **55/54 ms**. The [new curves](/sleep/charts/#night-2026-10-28) show the chronological labels and sampled pulse. Experienced quality, morning/later-day alertness and current body pains remain unreported. The prior positive report stays on October 27; no current recovery verdict or causal routine claim is inferred.
 
 **October 27 — a good experienced night and morning, with almost all body pains gone.** The [record](/sleep/record/#night-2026-10-27) returns **Oura 91 / 9h39m30s asleep** and **COROS 90 / 9h50m**. Main windows start around **23:50–23:56**, earlier than October 26, but end differently: 10:22 versus 09:55. Waking estimates are **47 versus 15 minutes**. HRV is **64/63 ms**; Oura Readiness is **94**, temperature deviation **−0.12 °C**. The follow-up reports **feeling good during the night and in the morning, with almost all body pains gone**. I lay in bed around **23:10** and tried to sleep but initially could not fall asleep. This is reported improvement from yesterday, without an exact onset or complete symptom resolution. Oura’s **7m30s main-episode latency** starts from its later main window and does not describe the full delay from 23:10.
 
