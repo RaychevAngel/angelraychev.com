@@ -1,0 +1,89 @@
+{
+  "prepared_at_utc": "2026-10-24T22:25:34.222221+00:00",
+  "status": "Paused rectangle research checkpoint; fixed-size value-and-strategy classification remains open; not submitted to arXiv.",
+  "scope": "main",
+  "pages": 164,
+  "figures": 6,
+  "lean_modules": 43,
+  "lean_evidence": "Unchanged source hashes and import closure checked against the existing compilation receipt; no new Lean compilation.",
+  "lean_original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
+  "lean_check_seconds": 112.82624904369004,
+  "files": {
+    "princess-searches.pdf": {
+      "sha256": "7c8103589cb8fac03d8da60e2f52f2eae738e9ea06e385105f93e4a0491c767e",
+      "bytes": 1401138
+    },
+    "manuscript-source.zip": {
+      "sha256": "8dcc28734607515b509f07d3d87d9d8b4c7915fcc6b58f3213a1882daafa24e6",
+      "bytes": 393599
+    },
+    "lean-proofs.zip": {
+      "sha256": "37236eaafa46ab9f34778a1b7b3eb2539fd8635eab711014f3f1a70674601a39",
+      "bytes": 279181
+    },
+    "research-sources.zip": {
+      "sha256": "d5dba28acec7e808859c0286ec97d934e00b552370cec996b58d78ca49b780bc",
+      "bytes": 12493200
+    },
+    "checkpoint-sources-2026-10-24.zip": {
+      "sha256": "04c329b80ebe7b8b7bcffc5c3e073f2cd863f6f4f54ad3ee8a79afb38b52bc00",
+      "bytes": 8246372
+    },
+    "unverified-comparison-candidate-2026-10-24.zip": {
+      "sha256": "70633d324f1e0b27e6b4567bec9ebd78346d7761c3b53cc881d8423119eb1a0f",
+      "bytes": 88137
+    },
+    "checkpoint-source-manifest.json": {
+      "sha256": "a20286faabad52b3b9e4ac4a84beebdb502c9873fe73e767cd7fdce7f6d52313",
+      "bytes": 146918
+    },
+    "checkpoint-formal-coverage-2026-10-24.json": {
+      "sha256": "414076ea46e70e57c36077a7fa8c64d8abe01bd203dd4456a7d60a40febc3fdd",
+      "bytes": 25643
+    }
+  },
+  "research_checkpoint": "2026-10-24",
+  "accepted_uniform_gap": 4,
+  "evidence_boundary": "October results have ordinary proofs and internal independent reviews with exact certificates where stated. The symbolic comparison closure remains unverified and is excluded from accepted bounds. No new Lean result or compiler run.",
+  "artifacts": {
+    "princess-searches.pdf": {
+      "sha256": "7c8103589cb8fac03d8da60e2f52f2eae738e9ea06e385105f93e4a0491c767e",
+      "bytes": 1401138
+    },
+    "manuscript-source.zip": {
+      "sha256": "8dcc28734607515b509f07d3d87d9d8b4c7915fcc6b58f3213a1882daafa24e6",
+      "bytes": 393599
+    },
+    "lean-proofs.zip": {
+      "sha256": "37236eaafa46ab9f34778a1b7b3eb2539fd8635eab711014f3f1a70674601a39",
+      "bytes": 279181
+    },
+    "research-sources.zip": {
+      "sha256": "d5dba28acec7e808859c0286ec97d934e00b552370cec996b58d78ca49b780bc",
+      "bytes": 12493200
+    },
+    "checkpoint-sources-2026-10-24.zip": {
+      "sha256": "04c329b80ebe7b8b7bcffc5c3e073f2cd863f6f4f54ad3ee8a79afb38b52bc00",
+      "bytes": 8246372
+    },
+    "unverified-comparison-candidate-2026-10-24.zip": {
+      "sha256": "70633d324f1e0b27e6b4567bec9ebd78346d7761c3b53cc881d8423119eb1a0f",
+      "bytes": 88137
+    },
+    "checkpoint-source-manifest.json": {
+      "sha256": "a20286faabad52b3b9e4ac4a84beebdb502c9873fe73e767cd7fdce7f6d52313",
+      "bytes": 146918
+    },
+    "checkpoint-formal-coverage-2026-10-24.json": {
+      "sha256": "414076ea46e70e57c36077a7fa8c64d8abe01bd203dd4456a7d60a40febc3fdd",
+      "bytes": 25643
+    }
+  },
+  "presentation": {
+    "style": "angel-publication v1.0",
+    "pinned_source": "angel-publication.sty",
+    "sha256": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
+    "revision_date": "2026-10-24",
+    "mathematical_checkpoint_unchanged": true
+  }
+}

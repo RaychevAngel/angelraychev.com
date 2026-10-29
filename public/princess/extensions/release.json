@@ -1,54 +1,54 @@
 {
-  "prepared_at_utc": "2026-10-24T22:25:34.385726+00:00",
+  "prepared_at_utc": "2026-10-29T17:04:47.167102+00:00",
   "status": "Parked companion; independent extensions are not completion requirements for the rectangle project.",
   "scope": "extensions",
   "pages": 29,
   "figures": 2,
   "lean_modules": 51,
-  "lean_evidence": "Unchanged source hashes and import closure checked against the existing compilation receipt; no new Lean compilation.",
-  "lean_original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
-  "lean_check_seconds": 244.7014829562977,
+  "lean_evidence": "All 84 canonical modules freshly compiled with Lean 4.33.1; source hashes and import closures checked. PairedCompression is the new abstract theorem. The companion has no new mathematical formalization.",
+  "lean_original_checked_at_utc": "2026-10-29T16:55:12.711230+00:00",
+  "lean_check_seconds": 241.68359312601388,
   "files": {
     "princess-extensions.pdf": {
-      "sha256": "6e0e275551bbd3fabef5c0ea5ef5d63a611b9702bc01370af5572aa01f77bd8f",
-      "bytes": 471622
+      "sha256": "60bd41b4685669ae166f593ea28d3d4c2f544855b009569dc89bac82daeff4b9",
+      "bytes": 472748
     },
     "extensions-source.zip": {
-      "sha256": "ab3d3c8ce748b28ce403c8e6150ddc831cee783ce619ab7a54f6f4ac33ffd08f",
-      "bytes": 95301
+      "sha256": "21700b9d322c4113289c2b491ec868843fdca475694a97a83a715e26cc0667f0",
+      "bytes": 96264
     },
     "extensions-lean-proofs.zip": {
-      "sha256": "8a17e26470a95a6bf88215f5c58bdb1a042f1809b4637c97559defbead08cbfd",
-      "bytes": 197325
+      "sha256": "90f96c73faefffc58d064ba120981558710b02339daa5955eadc671744dde660",
+      "bytes": 197287
     },
     "extensions-research-sources.zip": {
-      "sha256": "9102febb943b73a2c8dd301ffe474511ce440a519fa4cbb99106640ca7e8bc94",
-      "bytes": 649800
+      "sha256": "fa858725db4a434d9969f1a14f71b64d9d92d08d85375c622418c60e4c01cb88",
+      "bytes": 669611
     }
   },
   "artifacts": {
     "princess-extensions.pdf": {
-      "sha256": "6e0e275551bbd3fabef5c0ea5ef5d63a611b9702bc01370af5572aa01f77bd8f",
-      "bytes": 471622
+      "sha256": "60bd41b4685669ae166f593ea28d3d4c2f544855b009569dc89bac82daeff4b9",
+      "bytes": 472748
     },
     "extensions-source.zip": {
-      "sha256": "ab3d3c8ce748b28ce403c8e6150ddc831cee783ce619ab7a54f6f4ac33ffd08f",
-      "bytes": 95301
+      "sha256": "21700b9d322c4113289c2b491ec868843fdca475694a97a83a715e26cc0667f0",
+      "bytes": 96264
     },
     "extensions-lean-proofs.zip": {
-      "sha256": "8a17e26470a95a6bf88215f5c58bdb1a042f1809b4637c97559defbead08cbfd",
-      "bytes": 197325
+      "sha256": "90f96c73faefffc58d064ba120981558710b02339daa5955eadc671744dde660",
+      "bytes": 197287
     },
     "extensions-research-sources.zip": {
-      "sha256": "9102febb943b73a2c8dd301ffe474511ce440a519fa4cbb99106640ca7e8bc94",
-      "bytes": 649800
+      "sha256": "fa858725db4a434d9969f1a14f71b64d9d92d08d85375c622418c60e4c01cb88",
+      "bytes": 669611
     }
   },
   "presentation": {
     "style": "angel-publication v1.0",
     "pinned_source": "angel-publication.sty",
     "sha256": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
-    "revision_date": "2026-10-24",
+    "revision_date": "2026-10-29",
     "mathematical_checkpoint_unchanged": true
   }
 }

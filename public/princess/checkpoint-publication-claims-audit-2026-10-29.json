@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-29T16:58:16.617657+00:00",
+  "operation": "Publication reconciliation, not new research",
+  "accepted_uniform_gap": 2,
+  "global_gap_zero_proved": false,
+  "fixed_operation_expression_complete": false,
+  "ordinary_review_boundary": "Existing accepted source proofs and named internal independent reviews; no external peer review claim",
+  "new_lean_module": "PairedCompression",
+  "complete_general_rectangle_lean_classification": false,
+  "former_comparison_candidate": "Independently verified in later24October continuation; historical discovery snapshot preserved",
+  "reviewed_artifact_sha256": {
+    "paper/main.tex": "35ba3030d49bba922cde5a17c19d755713d38731c061ee6bd1774c5400dae4c5",
+    "paper/sections/introduction.tex": "470d22d5790b51bb2a934b4bcabcecc8ce9a4b24f4d04d2c61ea32afbdeb73de",
+    "paper/sections/october-checkpoint.tex": "1efd042bb0ec292063385854dd76c8d02b664d60e79ce3d800feaed78a676f90",
+    "paper/sections/paired-boundary-checkpoint.tex": "497ccd51483b6a01d5d61ad7c7234f61fb9267f1709926bfe5bb81a8ae4f61ed",
+    "paper/sections/formalization.tex": "efdf9985d4d39dff59855ed0f9cec5ce7f9cfd470053257031bc700f1a989539",
+    "research/RECTANGLE_COVERAGE.md": "49b58318000dd396fd757a67c887827ddcba342f7369b4c065943636e3817974",
+    "research/RECTANGLE_GAPS.md": "e134ac5a43221416a625de585134c192da2ec64461e3164a0496db0391f2cfad",
+    "research/BOX_RECONCILIATION.md": "06c87702384573e4cecfada6a6c73d59f08b3cf830bb9b9b056a6e9cddb0914b",
+    "FORMAL_ARTIFACT.md": "57595d178c990ec3fb05ed281cfd50c04d427372ef8d97c11a56f0e37bf6232d",
+    "lean/PairedCompression.lean": "58d9b12523baadce98a5c049e61675474e33e7cf59123eba5ffeb285655d2641",
+    "research/paired-regional-2026-10-28/RESULTS.md": "a1de9e07eeb829127b6a89e8e6c8d7bdd9b5dd0ffefa5f4c19faa20c0ec981d1",
+    "research/paired-regional-2026-10-28/phase/large-odd-width-all-budget-exact-capture.md": "da3cd1cc314989b071693f2b48ecbd6c51ee1cc8fe73b4729d7af3c00d713209",
+    "research/paired-regional-2026-10-28/compression/odd-width-uniform-two-day-gap.md": "762e9d7c7e92a316e67f21f86d72a6fb1dbcaf36a2d36b1256a38bc8b7deaca1",
+    "research/publication-2026-10-29/packaging-source-integrity.json": "6cfea1183b3b92f6ab296b87d829aa88e6c53de633df6dab1f267a0c0b291675",
+    "research/publication-2026-10-29/packaging-lean-source-review.json": "1309d024ef871fdc6f371896d12668ae36f6a7673d92858aa7eb339f9d0ea3e1"
+  },
+  "source_integrity_receipt": "research/publication-2026-10-29/packaging-source-integrity.json"
+}

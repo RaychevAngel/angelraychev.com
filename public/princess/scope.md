@@ -2,7 +2,7 @@
 
 The fixed-size numerical objective was ratified on 13 September 2026.
 This scope and priority statement is synchronized to the frozen research
-checkpoint of 24 October 2026. This publication pass performs no new
+checkpoint of 29 October 2026. This publication pass performs no new
 mathematical searches, arXiv submission, or outreach.
 
 ## Current priority
@@ -10,8 +10,8 @@ mathematical searches, arXiv submission, or outreach.
 First obtain matching, computable lower and constructive upper bounds for
 EVERY w<=n and EVERY feasible k>=floor(w/2)+1. Recurrences, finite endpoint
 minima, and parameter-dependent preprocessing are acceptable intermediate
-answers. The current accepted combined gap is at most four days throughout
-that domain; stronger two-day and exact regions remain part of the answer.
+answers. The current accepted combined gap is at most two days throughout
+that domain; stronger one-day and exact regions remain part of the answer.
 Do not begin simplifying the general numerical expression until the bounds
 match everywhere. The fixed-size goal below remains unchanged and is not
 claimed to be achieved.

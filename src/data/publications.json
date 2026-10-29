@@ -162,22 +162,22 @@
       "id": "capture-time",
       "title": "Finding a princess on a rectangle",
       "manuscriptTitle": "Capture time on rectangular grids with a constant inspection budget",
-      "manuscriptDate": "2026-10-24",
+      "manuscriptDate": "2026-10-29",
       "overview": "/princess/",
       "kind": "Research manuscript",
       "authors": [
         "Angel Ivanov Raychev"
       ],
-      "status": "Research checkpoint · uniform gap at most four; exact classification remains open; not submitted to arXiv",
+      "status": "Research checkpoint · uniform gap at most two; exact classification remains open; not submitted to arXiv",
       "records": [],
       "primary": {
         "pdf": {
           "url": "/princess/princess-searches.pdf",
-          "version": "Website manuscript · 24 October 2026 checkpoint and presentation revision"
+          "version": "Website manuscript · 29 October 2026 research checkpoint"
         },
         "lean": {
           "url": "/princess/lean/",
-          "note": "Complete physical-game classifications for paths and two rows, plus supporting lemmas. October general-rectangle results are not new complete Lean theorems."
+          "note": "Complete physical-game classifications for paths and two rows; new conditional paired-compression theorem. General rectangle capture-time claims remain ordinary proofs."
         }
       },
       "resources": [
@@ -190,7 +190,7 @@
           "kind": "evidence",
           "label": "Checkpoint and proof status",
           "url": "/princess/checkpoint/",
-          "note": "Accepted results, the unverified candidate, remaining gaps and review boundaries."
+          "note": "Accepted two-day bound, exact ranges, evidence levels and remaining reachability gaps."
         },
         {
           "kind": "evidence",
@@ -200,21 +200,21 @@
         },
         {
           "kind": "supplement",
-          "label": "October checkpoint supplement",
-          "url": "/princess/checkpoint-sources-2026-10-24.zip",
+          "label": "29 October checkpoint supplement",
+          "url": "/princess/checkpoint-sources-2026-10-29.zip",
           "note": "Frozen proof notes, review receipts and research evidence, with file status guidance."
         },
         {
-          "kind": "source",
-          "label": "Unverified comparison candidate",
+          "kind": "archive",
+          "label": "Historical comparison discovery",
           "url": "/princess/unverified-comparison-candidate-2026-10-24.zip",
-          "note": "Discovery record only. Independent replay and the physical interface remain incomplete; excluded from every accepted bound."
+          "note": "Original unverified snapshot. Subsequent independent verification is recorded in the current checkpoint supplement."
         },
         {
           "kind": "evidence",
           "label": "Formal-source coverage audit",
-          "url": "/princess/checkpoint-formal-coverage-2026-10-24.json",
-          "note": "Source and dependency comparison against the existing Lean compiler receipt; no new Lean compilation."
+          "url": "/princess/checkpoint-formal-coverage-2026-10-29.json",
+          "note": "Exact formal scope, source hashes and current compiler evidence, including the new paired-compression module."
         },
         {
           "kind": "documentation",
@@ -248,9 +248,15 @@
           "kind": "versions",
           "url": "/princess/release.json",
           "note": "Hashes and evidence boundary for the selected manuscript and source packages."
+        },
+        {
+          "kind": "archive",
+          "label": "24 October rectangle manuscript",
+          "url": "/princess/archive/2026-10-24-pre-october29-release/princess-searches.pdf",
+          "note": "Previous four-day-bound public checkpoint, preserved unchanged."
         }
       ],
-      "manuscriptModified": "2026-10-24",
+      "manuscriptModified": "2026-10-29",
       "artifactManifest": "/princess/release.json"
     },
     {
@@ -326,7 +332,7 @@
       "primary": {
         "pdf": {
           "url": "/princess/extensions/princess-extensions.pdf",
-          "version": "Parked companion · 24 October 2026 synchronization and presentation revision; mathematical results preserved"
+          "version": "Parked companion · 29 October 2026 cross-reference synchronization; mathematical results preserved"
         },
         "lean": {
           "url": "/princess/extensions/lean/",
@@ -358,7 +364,7 @@
           "note": "Selected companion PDF, buildable sources and preserved formal-evidence hashes."
         }
       ],
-      "manuscriptModified": "2026-10-24",
+      "manuscriptModified": "2026-10-29",
       "artifactManifest": "/princess/extensions/release.json"
     },
     {

@@ -1,89 +1,94 @@
 {
-  "prepared_at_utc": "2026-10-24T22:25:34.222221+00:00",
+  "prepared_at_utc": "2026-10-29T17:04:45.518434+00:00",
   "status": "Paused rectangle research checkpoint; fixed-size value-and-strategy classification remains open; not submitted to arXiv.",
   "scope": "main",
-  "pages": 164,
+  "pages": 172,
   "figures": 6,
-  "lean_modules": 43,
-  "lean_evidence": "Unchanged source hashes and import closure checked against the existing compilation receipt; no new Lean compilation.",
-  "lean_original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
-  "lean_check_seconds": 112.82624904369004,
+  "lean_modules": 44,
+  "lean_evidence": "All 84 canonical modules freshly compiled with Lean 4.33.1; source hashes and import closures checked. PairedCompression is the new abstract theorem. The companion has no new mathematical formalization.",
+  "lean_original_checked_at_utc": "2026-10-29T16:55:12.711230+00:00",
+  "lean_check_seconds": 113.68049929011613,
   "files": {
     "princess-searches.pdf": {
-      "sha256": "7c8103589cb8fac03d8da60e2f52f2eae738e9ea06e385105f93e4a0491c767e",
-      "bytes": 1401138
+      "sha256": "12c254d156c071d0763d547e6f98e684adc302d3718a919378e6c0ed83be85e6",
+      "bytes": 1444467
     },
     "manuscript-source.zip": {
-      "sha256": "8dcc28734607515b509f07d3d87d9d8b4c7915fcc6b58f3213a1882daafa24e6",
-      "bytes": 393599
+      "sha256": "14be6a999d989bd64d7e2c378d31a99fa8816a71ca7c2efec173cd42e19eef44",
+      "bytes": 405532
     },
     "lean-proofs.zip": {
-      "sha256": "37236eaafa46ab9f34778a1b7b3eb2539fd8635eab711014f3f1a70674601a39",
-      "bytes": 279181
+      "sha256": "c7a777c5bcc04a026a410d42e71b840f81a12b69c7b6cbf9ba7cc1873425ddc6",
+      "bytes": 282826
     },
     "research-sources.zip": {
-      "sha256": "d5dba28acec7e808859c0286ec97d934e00b552370cec996b58d78ca49b780bc",
-      "bytes": 12493200
+      "sha256": "54050a3250ff587e4e022f58bb7931bcaab7c80677a07855f70f5c5c2f3e2dc7",
+      "bytes": 15420657
     },
-    "checkpoint-sources-2026-10-24.zip": {
-      "sha256": "04c329b80ebe7b8b7bcffc5c3e073f2cd863f6f4f54ad3ee8a79afb38b52bc00",
-      "bytes": 8246372
+    "checkpoint-sources-2026-10-29.zip": {
+      "sha256": "d7b7cea5d52a9b123f0758cba11f8026dcfd5e056337d1389b792eb595dabfeb",
+      "bytes": 13563877
     },
     "unverified-comparison-candidate-2026-10-24.zip": {
       "sha256": "70633d324f1e0b27e6b4567bec9ebd78346d7761c3b53cc881d8423119eb1a0f",
       "bytes": 88137
     },
     "checkpoint-source-manifest.json": {
-      "sha256": "a20286faabad52b3b9e4ac4a84beebdb502c9873fe73e767cd7fdce7f6d52313",
-      "bytes": 146918
+      "sha256": "7ff1d0276e94c35fd14f998887880672f375deba172941c3068baf333d6f8f8b",
+      "bytes": 311644
     },
-    "checkpoint-formal-coverage-2026-10-24.json": {
-      "sha256": "414076ea46e70e57c36077a7fa8c64d8abe01bd203dd4456a7d60a40febc3fdd",
-      "bytes": 25643
+    "checkpoint-formal-coverage-2026-10-29.json": {
+      "sha256": "3a0ca746f760bb6b44c0bb89264f148224ebd3cd72c1702b412aedeea1e09a40",
+      "bytes": 15542
     }
   },
-  "research_checkpoint": "2026-10-24",
-  "accepted_uniform_gap": 4,
-  "evidence_boundary": "October results have ordinary proofs and internal independent reviews with exact certificates where stated. The symbolic comparison closure remains unverified and is excluded from accepted bounds. No new Lean result or compiler run.",
+  "research_checkpoint": "2026-10-29",
+  "accepted_uniform_gap": 2,
+  "evidence_boundary": "The two-day uniform bound and new exact families have ordinary proofs, internal independent reviews, and stated exact certificates. The former comparison candidate has independent acceptance. PairedCompression is newly compiled in Lean; the wider rectangle capture classifications remain ordinary proofs.",
+  "new_lean_modules": [
+    "PairedCompression"
+  ],
+  "all_canonical_lean_modules_freshly_compiled": 84,
+  "global_gap_zero_proved": false,
   "artifacts": {
     "princess-searches.pdf": {
-      "sha256": "7c8103589cb8fac03d8da60e2f52f2eae738e9ea06e385105f93e4a0491c767e",
-      "bytes": 1401138
+      "sha256": "12c254d156c071d0763d547e6f98e684adc302d3718a919378e6c0ed83be85e6",
+      "bytes": 1444467
     },
     "manuscript-source.zip": {
-      "sha256": "8dcc28734607515b509f07d3d87d9d8b4c7915fcc6b58f3213a1882daafa24e6",
-      "bytes": 393599
+      "sha256": "14be6a999d989bd64d7e2c378d31a99fa8816a71ca7c2efec173cd42e19eef44",
+      "bytes": 405532
     },
     "lean-proofs.zip": {
-      "sha256": "37236eaafa46ab9f34778a1b7b3eb2539fd8635eab711014f3f1a70674601a39",
-      "bytes": 279181
+      "sha256": "c7a777c5bcc04a026a410d42e71b840f81a12b69c7b6cbf9ba7cc1873425ddc6",
+      "bytes": 282826
     },
     "research-sources.zip": {
-      "sha256": "d5dba28acec7e808859c0286ec97d934e00b552370cec996b58d78ca49b780bc",
-      "bytes": 12493200
+      "sha256": "54050a3250ff587e4e022f58bb7931bcaab7c80677a07855f70f5c5c2f3e2dc7",
+      "bytes": 15420657
     },
-    "checkpoint-sources-2026-10-24.zip": {
-      "sha256": "04c329b80ebe7b8b7bcffc5c3e073f2cd863f6f4f54ad3ee8a79afb38b52bc00",
-      "bytes": 8246372
+    "checkpoint-sources-2026-10-29.zip": {
+      "sha256": "d7b7cea5d52a9b123f0758cba11f8026dcfd5e056337d1389b792eb595dabfeb",
+      "bytes": 13563877
     },
     "unverified-comparison-candidate-2026-10-24.zip": {
       "sha256": "70633d324f1e0b27e6b4567bec9ebd78346d7761c3b53cc881d8423119eb1a0f",
       "bytes": 88137
     },
     "checkpoint-source-manifest.json": {
-      "sha256": "a20286faabad52b3b9e4ac4a84beebdb502c9873fe73e767cd7fdce7f6d52313",
-      "bytes": 146918
+      "sha256": "7ff1d0276e94c35fd14f998887880672f375deba172941c3068baf333d6f8f8b",
+      "bytes": 311644
     },
-    "checkpoint-formal-coverage-2026-10-24.json": {
-      "sha256": "414076ea46e70e57c36077a7fa8c64d8abe01bd203dd4456a7d60a40febc3fdd",
-      "bytes": 25643
+    "checkpoint-formal-coverage-2026-10-29.json": {
+      "sha256": "3a0ca746f760bb6b44c0bb89264f148224ebd3cd72c1702b412aedeea1e09a40",
+      "bytes": 15542
     }
   },
   "presentation": {
     "style": "angel-publication v1.0",
     "pinned_source": "angel-publication.sty",
     "sha256": "b9d8c4d865e43d8f4b32ee6bd5e7515f26b7deee7c9680c1f9441210830db94e",
-    "revision_date": "2026-10-24",
-    "mathematical_checkpoint_unchanged": true
+    "revision_date": "2026-10-29",
+    "mathematical_checkpoint_unchanged": false
   }
 }

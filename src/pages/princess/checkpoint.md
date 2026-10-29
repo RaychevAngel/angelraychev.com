@@ -1,57 +1,72 @@
 ---
 layout: "../../layouts/Post.astro"
-title: "Rectangle capture time: the October checkpoint"
-description: "Proved uniform bounds, new exact families, the unverified comparison candidate, and the remaining gap."
-updated: 2026-10-24
+title: "Rectangle capture time: the 29 October checkpoint"
+description: "A two-day uniform bracket, an all-budget exact range, actual boundary constructions, and precise remaining gaps."
+updated: 2026-10-29
 ---
 
-[Overview](/princess/) · [Coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Paper and sources](/princess/paper/) · [Lean coverage](/princess/lean/)
+[Overview](/princess/) · [Coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Manuscript](/princess/paper/) · [Lean coverage](/princess/lean/)
 
-**The proved lower and constructive upper bounds differ by at most four days for every rectangle and every feasible budget. Matching them everywhere remains open.** This is the frozen research checkpoint of 24 October 2026. This publication pass records the results; it does not continue the mathematical search.
+**The proved lower and constructive upper bounds now differ by at most two days for every rectangle and every feasible constant budget. Global gap zero remains open.** This release incorporates the research completed on 29 October and preserves the previous public release as a dated archive.
 
-Write $w\le n$ for the side lengths and $k$ for the constant daily inspection budget. The bounds cover the entire requested domain $k\ge\lfloor w/2\rfloor+1$. Stronger previously established results are retained by taking the maximum of proved lower bounds and the minimum of constructive upper bounds.
+## The whole-domain result
 
-## Accepted results
+For $w\le n$ and $k\ge\lfloor w/2\rfloor+1$,
 
-The global bracket is
+$$L_k(w,n)\le T_k(w,n)\le U_k(w,n),\qquad U_k(w,n)-L_k(w,n)\le2.$$
 
-$$L_k(w,n)\le T_k(w,n)\le U_k(w,n),\qquad U_k(w,n)-L_k(w,n)\le4.$$
+The lower bound applies to arbitrary inspection histories and the upper bound comes with real inspections. Retain the strongest lower and upper bounds across every accepted result. The improvement is from the last public four-day ceiling, through the subsequent private three-day ceiling, to two. It is not a claim that every individual instance improved by two days.
 
-For every even width $w\ge64$, every length $n\ge w$, and every feasible budget, the gap is at most **two**. The same two-day bound holds for odd $w=2b+1\ge65$, even $n$, and $k\ge2b$. Widths at most 64 retain their earlier gap of at most three, together with all sharper cases. Odd-by-odd rectangles retain their earlier exact algorithmic evaluation.
+For odd $w=2b+1$ with $b\ge2$, even $n$, $b+1\le k<Z=wn/2-b^2$, and $0\le c\le k$, the new uniform comparison gives $\max(0,P(c)-1)\le g(c)\le P(c)$ between the unrestricted gate lower clock and the compatible physical-prefix clock. Writing $p=P(k)$ and $q=P(\lfloor k/2\rfloor)$ gives
 
-For even width $w=2b$ with $b\ge32$, the new bounds coincide at $k=b+1$ for **every** $n\ge2b$. They also coincide at $k=b+d$ for $2\le d\le b-1$ and every $n\ge2b+2d-2$. The value is $J(k)+J(\lfloor k/2\rfloor)+1$, where $J$ is the ordinary endpoint recurrence and finite endpoint minimum stated in the manuscript. Once that minimum is evaluated, the reflection construction specifies attaining inspections.
+$$\max(2p-1,2q-2)\le T_k(w,n)\le\min(2p+2,2q+1),\qquad q\in\{p,p+1\}.$$
 
-For odd width $w=2b+1$, even length $n=2\ell$, and budget $k=b+d$, the exact value is
+This has width two. Widths one and three and the range $k\ge Z$ use retained exact formulas. The earlier even-width results cover all even widths, and odd-by-odd boards retain exact joint evaluation. Every stronger narrow-board, high-budget or finite certified result remains available.
 
-$$T_k(w,n)=P(k)+P(\lfloor k/2\rfloor)+1$$
+## Every budget at every odd width at least 8,193, with even length
 
-whenever $d\ge1$, $b\ge4d+8$, and $(2b+1)(\ell-b)>2d^2$. Here $P$ is the physical prefix gate recurrence in the manuscript. This includes every permitted length when also $b\ge d^2$, and in particular every odd width at least 25 at minimum budget. A stronger criterion uses the actual central phase span instead of its worst-case bound. The [coverage assessment](/princess/coverage/) states it precisely.
+Let $w=2b+1$, $b\ge4096$, and let $n\ge w$ be any even length. Put $h=wn/2$ and $B=b(b+1)$.
 
-These are ordinary mathematical proofs with internal independent reviews and exact computational certificates where stated. They are **not new Lean theorems**, and internal review is not external peer review. The endpoint minima and recurrences are exact algorithms; they do not meet the eventual fixed-operation numerical goal.
+- $k\le b$: impossible.
+- $b+1\le k\le B$: $T_k(w,n)=P(k)+P(\lfloor k/2\rfloor)+1$, attained by the prescribed prefix/palindrome strategy.
+- $B+1\le k<h$: the retained exact high-budget numerical formula applies.
+- $h\le k<2h$: two days; $k\ge2h$: one day.
 
-## Unverified candidate
+The theorem covers every allowed length, not just sufficiently long boards. The low- and middle-budget answer is recurrence-based and does not meet the final O(1)-operation criterion. A further exact band at $b\ge512$ and $3b\le k\le\lfloor15b/4\rfloor$ supplies additional smaller-width coverage.
 
-The comparison branch has a finite symbolic closure with 751 final nondominated profiles and 850 processed states, for its stated range $b\ge32$, $2\le d\le b-3$. These numbers describe the discovery computation. They do not certify a new capture-time theorem.
+The proof uses geometric history constraints and exact finite certificates, including a 924-signature tail reduction. That finite reduction represents its infinite parameter range; it is not merely a sample of boards. The [manuscript proofs](/princess/proofs/#sec:paired-boundary-checkpoint) state the dependencies and guards.
 
-Independent replay with a separate encoding, entrance and late-marker applicability, primitive range checks including lagging inputs, the stopping rule, and the physical full-gate assembly remain outstanding. The candidate is **not used** in the accepted four-day or two-day bounds. Budgets $d=b-2,b-1$ are not covered by this candidate.
+## Physical strategies that beat the old fixed-corner construction
 
-[Download the unverified candidate and its frozen dependency record](/princess/unverified-comparison-candidate-2026-10-24.zip).
+$$T_{48}(64,93)=285,\qquad T_{72}(102,124)=413.$$
 
-## Remaining gaps
+Both have matching lower bounds and actual whole-board inspection words checked by a separate bit-grid verifier that imports no discovery code. The older fixed-corner construction takes 286 and 414. Its universal optimality is therefore false.
 
-Gap zero still requires a common phase-compatible argument on the remaining short boards. The accepted exact odd-board proof forces two real full-front ancestors at a common cut; outside its length/span conditions, localized ancestors can occur. The existing erosion, overlap and phase-ledger lemmas have not yet been assembled into a uniform zero-gap theorem there.
+The general construction joins an actual head and actual suffix through a middle interpolation, preserving their phase and shared overlap allowance. A paired raw-boundary sufficient criterion gives legal inspections when its endpoint, occupancy and regularity guards hold. It is not a classification of every reachable boundary shape.
 
-For even widths, the static critical-set classification still needs the dynamic short-board joining argument. Exact squares retain a separate unresolved geometric analysis. The conditional normalized $17/16$ overlap inequality lacks its finite-board and physical assembly; the stronger $9/8$ conjecture failed. Neither is an extra capture-time theorem.
+A counterexample shows why the arrival premise cannot be dropped: on 12-by-12 with budget seven, a particular 22-cell proper-root notch has scalar estimate eight updates but actual arrival ten. Two independent exact enumerations of 888,030 predecessors give minimum shadow 26 where arrival at eight would require at most 25. This concerns a specified partial state, not the board's capture time. The proof includes the repaired strict-collar projection needed at this budget.
 
-The next mathematical objective remains matching bounds throughout the domain. Simplifying to an expression with an absolute $O(1)$ number of standard numerical operations is deferred until that objective is achieved. Independent higher-dimensional questions remain [parked](/princess/extensions/).
+## What is still missing
 
-## Evidence and preserved releases
+The remaining common obligation is **paired boundary reachability at the required actual clocks**. We need either compatible boundary profiles with physical head and suffix words meeting a proved middle criterion, or a necessary history constraint ruling out the proposed full-board deadline. Every budget, phase and activation branch must remain covered.
 
-- [Current manuscript PDF](/princess/princess-searches.pdf) and [manuscript-derived web proofs](/princess/proofs/).
-- [Complete mathematical source package](/princess/research-sources.zip), including the earlier dependencies.
-- [October checkpoint supplement](/princess/checkpoint-sources-2026-10-24.zip), with proof notes, reviews, computational evidence, failed approaches and explicit status guidance. [File hashes](/princess/checkpoint-source-manifest.json).
-- [Evidence guide](/princess/checkpoint-evidence.md), [frozen source-review audit](/princess/wrap-source-review-audit.json), and [explicit reconciliation of one historical review-metadata hash](/princess/wrap-review-metadata-reconciliation.json). The corresponding mathematical source was unchanged; the original receipt is preserved.
-- [Current formal-source audit](/princess/checkpoint-formal-coverage-2026-10-24.json). All 83 canonical Lean sources still match the September compiler receipt. No fresh compilation or additional formalization is claimed.
-- [Previous published rectangle PDF](/princess/archive/2026-09-13-pre-october-release/princess-searches.pdf), [its sources](/princess/archive/2026-09-13-pre-october-release/research-sources.zip), and [immutable archive manifest](/princess/archive/2026-09-13-pre-october-release/archive-manifest.json).
+The 25 October literal cutset and endpoint-intersection algorithms preserve physical shapes and reconstruct optimal inspections in their stated exact state spaces. They can be costly, and some ranges degenerate to generic finite-state search. Exact computability does not mean that the inexpensive bounds match or that the final numerical goal is solved.
 
-Historical notes retain their original language, including “proposed” headings predating their reviews. The current manuscript, coverage assessment, frozen result summary and named review receipts identify what was accepted. Inclusion in a source archive does not turn an experiment or candidate into a proved result.
+General expression simplification remains deferred until the bounds match everywhere. The eventual goal still requires a fixed-size expression using O(1) standard numerical operations, plus directly specified optimal inspections. Independent extensions remain [parked](/princess/extensions/).
+
+## Evidence levels
+
+The new global bound and exact ranges have ordinary proofs, internal independent reviews and reproducible exact certificates where stated. Internal review is not external peer review. Diagnostic integer models are used to find candidates, not to certify impossibility; successful constructions receive actual-game checks.
+
+The old 751-profile comparison candidate was independently verified in the later 24 October continuation: 4,507 universal obligations and the physical interface were checked. The historical candidate archive retains its original name and date; it no longer describes the acceptance status of that subsequently verified comparison.
+
+**New Lean verification:** `PairedCompression.lean` checks complement-dual compression, the reversed time-dependent compatibility direction, preservation of daily budgets and actual prefix histories, and contraction of the paired endpoint overlap. It requires a supplied valid compression; it does not construct the missing rectangle operator. The uniform two-day bound and new exact capture families are not complete Lean theorems. Paths and two rows retain their complete physical-game formalization.
+
+## Sources and preserved releases
+
+- [Current manuscript PDF](/princess/princess-searches.pdf) and [readable proofs](/princess/proofs/).
+- [29 October proof and evidence supplement](/princess/checkpoint-sources-2026-10-29.zip), [file hashes](/princess/checkpoint-source-manifest.json) and [evidence guide](/princess/checkpoint-evidence.md).
+- [Complete mathematical sources](/princess/research-sources.zip) and [precise formal coverage](/princess/lean/).
+- [Previous 24 October PDF](/princess/archive/2026-10-24-pre-october29-release/princess-searches.pdf) and [archive manifest](/princess/archive/2026-10-24-pre-october29-release/archive-manifest.json).
+
+Historical research records keep their original wording and dates. Their inclusion does not promote experiments or abandoned candidates to accepted theorems. The current assessments and named reviews give the acceptance boundary. No Princess paper has been submitted to arXiv.

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source_authority": "lean/ (one canonical source directory)",
-  "receipt_policy": "Existing 83-module compilation receipt is retained. Separation verifies source hashes and local import closure; it is not a new compilation or a new formalization.",
+  "receipt_policy": "All 84 canonical source modules were freshly compiled on 29 October 2026; hashes and import closure determine the packaged 44-module main and 51-module companion subsets. PairedCompression is the only new mathematical module. The 83 retained modules preserve their earlier mathematical coverage, and the new abstract interface does not formalize the October rectangle classification.",
   "main_complete_physical": [
     "PathClassification",
     "LadderGame"
@@ -28,6 +28,7 @@
     "LadderGame",
     "LadderGeometry",
     "MiddleIntervalTransfer",
+    "PairedCompression",
     "PathClassification",
     "PathCohorts",
     "PathEvenRank",
@@ -409,6 +410,13 @@
       "file": "lean/MiddleIntervalTransfer.lean",
       "scope": "main",
       "imports": []
+    },
+    "PairedCompression": {
+      "file": "lean/PairedCompression.lean",
+      "scope": "main",
+      "imports": [
+        "StrategyCompression"
+      ]
     },
     "PathClassification": {
       "file": "lean/PathClassification.lean",

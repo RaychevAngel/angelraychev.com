@@ -1,14 +1,17 @@
 {
-  "checked_at_utc": "2026-10-24T22:25:33.957770+00:00",
+  "checked_at_utc": "2026-10-29T17:04:41.623877+00:00",
   "all_passed": true,
   "source_hashes_unchanged": true,
   "local_import_closures_passed": true,
-  "new_compilation": false,
-  "original_checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
-  "original_receipt_sha256": "0b45a268fde292d52c1372b3a93ce3cb82cdcce827ad427426317c57e8921372",
+  "new_compilation": true,
+  "new_modules": [
+    "PairedCompression"
+  ],
+  "original_checked_at_utc": "2026-10-29T16:55:12.711230+00:00",
+  "original_receipt_sha256": "a6116aa3610c7d2641341e456d1d76a5e2877b24a929a80c1925e6eba81e8433",
   "module_counts": {
-    "main": 43,
+    "main": 44,
     "extensions": 51
   },
-  "canonical_module_count": 83
+  "canonical_module_count": 84
 }

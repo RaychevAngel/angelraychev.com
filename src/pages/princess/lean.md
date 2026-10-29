@@ -2,7 +2,7 @@
 layout: "../../layouts/Post.astro"
 title: "Princess searches: verified proofs"
 description: "What Lean verifies, what still has ordinary proofs, and how to reproduce the formal checks."
-updated: 2026-10-24
+updated: 2026-10-29
 ---
 
 [Overview](/princess/) · [Readable proofs](/princess/proofs/) · [Paper](/princess/paper/) · [Parked formal results](/princess/extensions/lean/)
@@ -11,25 +11,15 @@ updated: 2026-10-24
 
 [**Download the Lean sources**](/princess/lean-proofs.zip) · [Verification receipt](/princess/lean-verification.json) · [Artifact guide](/princess/formal-artifact.md)
 
-## What changed on 24 October 2026
+## What changed on 29 October 2026
 
-The mathematical checkpoint now proves a **uniform gap of at most four days**
-for every rectangle and feasible budget, with stated two-day refinements and
-new exact even-width and odd-width/even-length families. These are ordinary
-proofs with independent reviews. **None of these new capture-time statements
-has a complete physical-game Lean proof.** The supporting new phase-history,
-localized-erosion and overlap arguments also remain ordinary mathematics.
+The new [PairedCompression.lean](/princess/lean/PairedCompression.lean) proves complement-dual compression and the correct reversed compatibility for time-dependent operators. It explicitly constructs transformed inspections, preserves each daily cap, identifies the resulting states with actual possible-position histories, and proves that the two endpoint envelopes overlap no more than before. Both prefixes may start with full uncertainty.
 
-The symbolic interlaced comparison closure is an **unverified candidate**,
-excluded from all accepted bounds. Its completed discovery run does not
-replace independent replay, entrance and primitive-range checks, the stopping
-rule, or the physical gate assembly. It is not a Lean certificate.
+The theorem requires a supplied valid monotone, cardinality-preserving, neighborhood-compatible compression on a finite undirected graph. **It does not construct such an operator for the unresolved rectangles.** It is a checked proof tool, not a new complete capture-time classification.
 
-The [24 October coverage audit](/princess/checkpoint-formal-coverage-2026-10-24.json)
-checks all 83 current mathematical source hashes against the successful
-**13 September 2026** compiler receipt, every recorded local import, and both
-package import closures. All match. No formal source changed, and no new
-Lean compilation or formalization was performed for this update.
+The uniform two-day bound, the new all-budget exact large-odd-width range, the paired-boundary geometric constructions and the two improved physical strategies have ordinary proofs and independent internal reviews. They remain outside complete Lean coverage. The previously unverified symbolic comparison has since passed ordinary independent checks; that does not make it a Lean theorem.
+
+The [29 October formal-source audit](/princess/checkpoint-formal-coverage-2026-10-29.json) and [compiler receipt](/princess/lean-verification.json) identify the exact checked sources and dates. The historical compiler receipts remain preserved in the dated source archives.
 
 ## Complete physical classifications
 
@@ -65,11 +55,11 @@ The five-row proofs have verified scalar inequalities in [FiveRowRankArithmetic.
 
 [FastestAncestry.lean](/princess/lean/FastestAncestry.lean) verifies the shared-quota recurrence, persistence of low-total states, fastest ancestry after pure resets, and a composed midpoint obstruction. The profile inequalities and secondary-size bounds are explicit hypotheses. Their geometric rectangle instances and the final all-width time law remain ordinary proofs.
 
-## Source separation and existing verification
+## Source separation and verification
 
-The historical compiler receipt covers the unchanged 83-module combined development. This synchronization checks each source hash and the import closure of the two packages; it does not claim a new compiler run or a new formal theorem. The [scope manifest](/princess/lean-scope.json) assigns every module to rectangle, shared or parked use. The rectangle package contains 43 modules and the companion contains 51, with eleven shared dependencies; their union is the original 83 modules. The source files have one authoritative home; overlapping dependencies in downloadable packages are distribution copies.
+There are now **84 canonical Lean modules**. The rectangle package contains 44 and the parked companion 51, with eleven shared dependencies. PairedCompression is the one new module. The [scope manifest](/princess/lean-scope.json) assigns each module and its imports; the source files have one authoritative home, while downloadable packages contain distribution copies.
 
-Complete cube classifications remain available in the [parked companion](/princess/extensions/lean/). Their verification is preserved and is not counted as completion of the rectangle theorem. Matching bounds everywhere, the eventual fixed-size numerical goal, and complete physical-game rectangle formalization remain open.
+All 84 canonical modules passed a fresh sequential Lean 4.33.1 compilation on 29 October 2026. The current compiler receipt records each source hash, exit status and axiom report. The complete path and two-row classifications retain their physical-game interpretation. The complete cube classifications remain in the [parked companion](/princess/extensions/lean/) and are not counted as completion of the rectangle theorem.
 
 ## Reproduce the check
 

@@ -17,8 +17,8 @@ Generic strategy compression, finite subset certificates, physical belief semant
 
 The general odd-box nesting theorem, the general side-of-length-two application, the $3\times4\times4$ classification, the $3\times3\times n$ families and the broader cylinder laws have ordinary mathematical proofs or finite certificates at their stated boundaries. They are **not** all completely formalized by the cube results or by the aggregate compiler receipt.
 
-The existing source-specific check passed 83 modules in the combined development. This release checks that the distributed sources still match those hashes and that imports are closed. To reproduce a fresh compiler check, extract this package and run `python3 src/check_lean.py --lean /path/to/lean` with Lean 4.33.1. Read the included guide for its exact scope.
+All 84 canonical modules, including these 51 companion sources, passed a fresh Lean 4.33.1 compilation on 29 October 2026. The companion mathematical content is unchanged; only the rectangle package adds a new paired-compression theorem. The release also checks source hashes and closed imports. To reproduce a fresh compiler check, extract this package and run `python3 src/check_lean.py --lean /path/to/lean` with Lean 4.33.1. Read the included guide for its exact scope.
 
 The unresolved formalization of independent companion geometry is parked. It is not a condition for completing the main rectangle paper.
 
-The companion package contains 51 modules, including eleven dependencies shared with the 43-module rectangle package. There are 83 canonical modules in total; distribution copies are not separate authoritative proofs.
+The companion package contains 51 modules, including eleven dependencies shared with the 44-module rectangle package. There are 84 canonical modules in total; distribution copies are not separate authoritative proofs.

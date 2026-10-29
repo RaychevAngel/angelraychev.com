@@ -1,40 +1,25 @@
 ---
 layout: "../../layouts/Post.astro"
-title: "Rectangle searches — resources"
-description: "The October 2026 rectangle checkpoint: proved uniform bounds, exact families, the unverified candidate, and precise formal coverage."
-updated: 2026-10-24
+title: "Rectangle searches — manuscript and resources"
+description: "The 29 October 2026 manuscript, proof sources, two-day uniform bound and precise Lean coverage."
+updated: 2026-10-29
 ---
 
-Angel Ivanov Raychev · checkpoint of 24 October 2026
+Angel Ivanov Raychev · checkpoint of 29 October 2026
 
-**Research manuscript in preparation. The accepted computable bounds differ by at most four days for every feasible rectangle. Uniform gap zero and the full fixed-size numerical expression remain open. No Princess paper has been submitted to arXiv.**
+**Research manuscript in preparation. The proved computable bounds have a gap at most two everywhere. Global gap zero and the fixed-size numerical expression remain open. No Princess paper has been submitted to arXiv.**
 
-The [overview](/princess/) provides the selected PDF and Lean guide. Its [Resources](/princess/#resources) section collects LaTeX, companions and previous versions. The [mathematical evidence archive](/princess/research-sources.zip) supports the account below.
+The [overview](/princess/) supplies the selected PDF and Lean guide through the shared publication header. Its [Resources](/princess/#resources) section collects buildable LaTeX, proof evidence, companions and archived versions.
 
-[Overview](/princess/) · [Current checkpoint](/princess/checkpoint/) · [Progress reconciliation](/princess/reconciliation/) · [Manuscript-derived proofs](/princess/proofs/) · [Exact coverage and gaps](/princess/coverage/) · [Lean coverage](/princess/lean/) · [Parked extensions](/princess/extensions/)
+[Current checkpoint](/princess/checkpoint/) · [Readable proofs](/princess/proofs/) · [Exact coverage](/princess/coverage/) · [Remaining gaps](/princess/gaps/) · [Lean coverage](/princess/lean/)
 
-## What is proved at this checkpoint
+## What this release adds
 
-For every rectangle with shorter side $w$, longer side $n\ge w$, and every feasible constant daily budget $k\ge\lfloor w/2\rfloor+1$, the accepted bounds satisfy
+The manuscript integrates the two-day whole-domain bracket, exact capture at every budget and every even length for odd widths at least 8,193, and the new paired-boundary construction. Actual strategies with matching lower bounds establish the 285-day and 413-day examples that disprove universal optimality of the older fixed-corner construction. A partial-state arrival counterexample records the remaining reachability obstacle.
 
-$$L_k(w,n)\le T_k(w,n)\le U_k(w,n),\qquad U_k(w,n)-L_k(w,n)\le4.$$
+The [checkpoint](/princess/checkpoint/) gives exact parameter guards and evidence levels. The [source supplement](/princess/checkpoint-sources-2026-10-29.zip) preserves proofs, dependencies, independent reviews, exact checks and failed approaches. The [previous public PDF](/princess/archive/2026-10-24-pre-october29-release/princess-searches.pdf) remains a dated archive.
 
-The lower applies to arbitrary physical searches; the upper is supplied by actual inspections. This improves the preceding uniform eight-day ceiling. Every even width $w\ge64$ has gap at most two at every length and feasible budget. Odd widths $w=2b+1\ge65$ with even length also have gap at most two for $k\ge2b$. Widths at most 64 retain the earlier three-day ceiling, and every stronger exact or one-day result is retained. Odd-by-odd rectangles retain their earlier exact joint evaluator.
-
-Two new exact families have attaining physical constructions:
-
-- For $w=2b$, $b\ge32$, and $k=b+d$, every length is exact when $d=1$; for $2\le d\le b-1$, exactness holds when $n\ge2b+2d-2$. The value is $J(k)+J(\lfloor k/2\rfloor)+1$, with $J$ an explicit recurrence and finite endpoint minimum. Selecting minimizing endpoints selects the physical reflection-transport construction. This is still parameter-dependent optimization over endpoints.
-- For $w=2b+1$, $n=2\ell\ge w$, and $k=b+d$, exactness holds when $d\ge1$, $b\ge4d+8$, and $(2b+1)(\ell-b)>2d^2$. The value is $P(k)+P(\lfloor k/2\rfloor)+1$, with $P$ the physical prefix recurrence and a prescribed concatenation/palindrome strategy. It covers every admissible length if also $b\ge d^2$, including minimum budget on every odd width at least 25 and every even length.
-
-Under the same natural guard $b\ge4d+8$, a stronger odd-width criterion uses the actual central span $G$ of the capped recurrence: with $h=wn/2$, require $h-k-2b^2>2G(d-1)+d$. The proof gives $1\le G\le d$; a computed $G\le3$ suffices at every length under the natural guard. It does not assert $G\le3$ for every input.
-
-These are reviewed ordinary results with their stated arithmetic certificates and physical constructions. Their recurrence evaluations are not fixed-size numerical expressions. Their full physical-game theorems have not been added to Lean. The [checkpoint page](/princess/checkpoint/) provides the precise accepted statements and [frozen proof/review bundle](/princess/checkpoint-sources-2026-10-24.zip).
-
-## The unverified candidate is separate
-
-A symbolic discovery for odd $w=2b+1$, $b\ge32$, even $n\ge w$, and $2\le d=k-b\le b-3$ closed 751 nondominated profiles in 850 processed states. It proposes a sharper middle comparison. Independent replay, primitive-table ranges, actual entrance and stopping conditions, and the physical full-gate interface remain outstanding. The budgets $d=b-2,b-1$ are outside its stated range.
-
-**This is a candidate certificate, not an accepted theorem. It is not used in the four-day global bound, the two-day refinements, or any exact family.** The [separate candidate archive](/princess/unverified-comparison-candidate-2026-10-24.zip) preserves the discovery and failed earlier abstractions for a future verification pass.
+One new Lean module proves conditional paired compression and real-history overlap preservation. Its claims are separate from the ordinary proofs of the new capture-time theorems.
 
 ## Fixed scope and completion criterion
 
@@ -52,13 +37,13 @@ The main manuscript retains the complete formulas for paths and widths through f
 
 The all-odd minimum-budget constant still uses a width-dependent clock. Exact odd joint evaluation can still select inspections by optimization outside the direct scalar regions. The general even-area representation still requires parameter-dependent boundary optimization. These remain substantial intermediate results, with distinct value, evaluation and construction boundaries. The [coverage assessment](/princess/coverage/) gives their exact ranges; the [reconciliation](/princess/reconciliation/) separates new progress from what was already known at the fixed-scope baseline.
 
-The new common-cut argument retains the phases and unused allowance of one actual history. Accepted localized-erosion, phase-wall and overlap tools support it. They do not by themselves complete the remaining short-board proof. The static even-square separator analysis is unreviewed, and the conditional normalized $17/16$ overlap inequality has not been assembled with its finite-board physical premises. The [gap assessment](/princess/gaps/) records these limitations, failed approaches and the next dependencies.
+The latest paired-boundary construction retains actual arrival times, phases and inherited overlap. Its remaining generalization is a uniform reachability or impossibility theorem at every unresolved deadline. The [gap assessment](/princess/gaps/) records current limitations and failed approaches.
 
 Independent higher-dimensional applications, cube classifications, varying-budget classifications and general-cylinder extensions remain in the [parked companion](/princess/extensions/), with their proofs, sources, demonstrations and formal guide. Shared lemmas needed for rectangles remain in the main project. The [previous combined release](/princess/archive/2026-09-13-combined/) remains frozen. Separating those applications was scope selection; the new common-history proofs are mathematical consolidation. This publication pass does not resume the parked work.
 
 ## Proof and verification boundaries
 
-Paths and two-row grids have complete physical-game Lean proofs at positive budgets. Wider-board statements have reviewed ordinary proofs and selected formally verified supporting components. **The October global bound, exact transport and natural-range families, phase-wall and overlap results add no complete physical-game Lean theorem in this checkpoint.** The symbolic candidate has not passed ordinary independent acceptance either.
+Paths and two-row grids have complete physical-game Lean proofs at positive budgets. Wider-board statements have reviewed ordinary proofs and selected formally verified supporting components. **The global two-day bound and wider exact families remain ordinary proofs. The new PairedCompression module verifies an abstract supporting theorem, not those classifications.** The former symbolic candidate has since passed the independent checks recorded in the current source supplement.
 
 - [Rectangle Lean package](/princess/lean-proofs.zip)
 - [Exact module roles and shared dependencies](/princess/lean-scope.json)

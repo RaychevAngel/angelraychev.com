@@ -332,3 +332,10 @@ formalization. It preserves the unverified symbolic candidate as candidate
 work, not part of the accepted bounds. Higher-dimensional extensions remain
 parked. The prior published rectangle release and original combined release
 remain available as dated archives.
+
+
+## 29 October 2026: paired boundary research and publication
+
+The nine-hour continuation in `research/paired-regional-2026-10-28/` reduced the whole-domain constructive gap from three to two. It established exact capture at every budget for odd widths at least8193 and every even length, preserved all earlier exact ranges, and constructed independently replayed285- and413-day optimal searches that disprove universal optimality of the previous fixed-corner construction. A specified proper-root notch also disproves free arrival at scalar size clocks. These statements have ordinary proofs and the named internal independent reviews, not complete Lean classification proofs. Global gap zero remains open.
+
+The subsequent publication pass synchronized the main manuscript, website, source packages and precise formalization coverage while preserving the24October public release as a dated archive. It added `PairedCompression.lean`, a conditional abstract theorem preserving actual prefix budgets and joining overlap. The new geometric rectangle results are not silently promoted to Lean coverage. Independent extensions remain parked. See the release receipts for compilation and deployment evidence.

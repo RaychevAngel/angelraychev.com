@@ -1,0 +1,805 @@
+{
+  "schema": 1,
+  "checkpoint_date": "2026-10-24",
+  "checked_at_utc": "2026-10-24T22:09:13.603513+00:00",
+  "status": "PASS",
+  "scope": "Current canonical Lean source identity, package import closure, and evidence-boundary audit. No Lean compilation and no new theorem formalization performed.",
+  "new_compilation": false,
+  "new_formalization": false,
+  "historical_compilation": {
+    "receipt": "research/lean-verification.json",
+    "sha256": "0b45a268fde292d52c1372b3a93ce3cb82cdcce827ad427426317c57e8921372",
+    "checked_at_utc": "2026-09-13T08:55:32.433527+00:00",
+    "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "all_passed": true
+  },
+  "source_hashes_unchanged": true,
+  "all_local_imports_match_manifest": true,
+  "both_package_import_closures_passed": true,
+  "canonical_module_count": 83,
+  "module_counts": {
+    "main": 43,
+    "extensions": 51
+  },
+  "shared_module_count": 11,
+  "external_imports": [
+    "Std"
+  ],
+  "historical_printed_axiom_dependencies": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "complete_rectangle_physical_classifications": [
+    "PathClassification",
+    "LadderGame"
+  ],
+  "parked_complete_physical_classifications": [
+    "ThreeCubeTimeClassification",
+    "FourCubeClassification"
+  ],
+  "checkpoint_claims_not_completely_lean_formalized": [
+    "Uniform whole-domain U-L <= 4, including the stated gap-two refinements",
+    "Exact even-width transport families of 24 October 2026",
+    "Exact odd-width/even-length terminal-quota gate families and central-span refinement",
+    "Localized erosion, phase-wall variation, whole-front and mixed overlap tools",
+    "Actual even-width critical-set classifications and conditional normalized two-ancestor inequality"
+  ],
+  "unverified_candidate": {
+    "source": "research/phase-dependencies-2026-10-24/comparison-checkpoint-wrap.md",
+    "status": "Discovery certificate only; neither accepted mathematical theorem nor Lean-verified result",
+    "excluded_from_accepted_bounds": true,
+    "open_checks": [
+      "Independent inductive replay with separate encoding",
+      "Entrance box and late-marker applicability",
+      "Primitive-table outer ranges including lagging inputs",
+      "Stopping rule",
+      "Physical full-gate assembly"
+    ]
+  },
+  "files": [
+    {
+      "file": "lean/BeliefSemantics.lean",
+      "sha256": "7865796f17d4c759fd9f336ce562d02da08c93eaa7ec30589bac9ace86759e72",
+      "scope": "shared",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/BipartiteProfileDuality.lean",
+      "sha256": "5cbfc68197f7dd272f908be26d77de65916755d46ae0340c1eac0e7bdb9370a0",
+      "scope": "main",
+      "local_imports": [
+        "LadderCardinality",
+        "ProfileInverse"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/CaptureRecurrence.lean",
+      "sha256": "f9e3d3b6f28c8f177f7ea90cfde0a7c324acf580d23259a3a05686958cfab052",
+      "scope": "shared",
+      "local_imports": [
+        "BeliefSemantics"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ClippedPyramidErosion.lean",
+      "sha256": "80cc533d3dd92a86cb7829cbae924f5298b547e6d27cbcf11b1678922533a281",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ConvexCapacityConvolution.lean",
+      "sha256": "30c532ea1413a79b2c708412763f4e9d44ed713db8ae74772cc557a30827ec7e",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FastestAncestry.lean",
+      "sha256": "1a6c165c55684744f722fd9cf9e3493f0454437f1b55c25e8406d27f328a50e8",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiniteIdealCertificates.lean",
+      "sha256": "e435e342d97939e4344ad999fa6c394dc70348803973c94107594f382b835008",
+      "scope": "parked",
+      "local_imports": [
+        "FiniteSubsetProfiles"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiniteSubsetProfiles.lean",
+      "sha256": "90bcc2e4b279abb64e5212d88ceb1f5ecce78fea57e5c812c36f8668ee385680",
+      "scope": "parked",
+      "local_imports": [
+        "LadderCardinality"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowDeficitArithmetic.lean",
+      "sha256": "8f2acab0cdfcc50f671fa877d195ddad7416f4a8a5cf19cd69506c132f907829",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowFourProbeArithmetic.lean",
+      "sha256": "c7be14ca9374dc3603f508da83647f8adaaa806adf9fb45a32ed95d34da84a24",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowFourProbeEquality.lean",
+      "sha256": "94b5172e57a0c47a2b29fb4ede5afbada4707d89333e7053b0f43a64fcc688e9",
+      "scope": "main",
+      "local_imports": [
+        "FiveRowFourProbeArithmetic"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowHighBudgetArithmetic.lean",
+      "sha256": "8e64f7254260951b5b1804c52ee440bbae1e865f958a94bf8e58d091fbee020c",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowOddRankArithmetic.lean",
+      "sha256": "3d9c7ed4ece3871eb8fb935869eeacacf3674da117ca11b1eb5263d727ade079",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FiveRowRankArithmetic.lean",
+      "sha256": "721f99c6a8c2ab0fa323f39e1da9f8b93930b295e8e951d852d15e958ae697a6",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeAllLower.lean",
+      "sha256": "1454d15336d2160ef85b20d5bc5ee1ab88e91bd0ec58c96f34d46c8aee6e7434",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounter",
+        "FourCubeProfileGeometry",
+        "FourCubeCriticalLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeAllUpper.lean",
+      "sha256": "6d8fed45713fb6dd35159978021edfe959e8bf502b89dfd3cd393e94dca7b5f1",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeUpper"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeClassification.lean",
+      "sha256": "8567dc4a00f246371b63e5cde914b0c294457d8c78d5a313f9bd98661284c1dc",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeAllLower",
+        "FourCubeAllUpper"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeCompression.lean",
+      "sha256": "92d2784b14f2b3217f52bf05011963874d53bcf27e424919b6483c2cfec984da",
+      "scope": "parked",
+      "local_imports": [
+        "SquareCompressionFourEnergy",
+        "ProductCompressionRelabel"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeCriticalLower.lean",
+      "sha256": "4979aaffdbe65ff9867891052b9745d42935201e00ebc54d16fcb63375740ac5",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialState"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeIdealData.lean",
+      "sha256": "fea0eca0de6e6fb701c905b6f5ef5f4acf8556fbc025fc0f447325bee2517c67",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeNormalForm",
+        "FiniteIdealCertificates"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeIdeals.lean",
+      "sha256": "66857fcd5fc691b7a4177d6729c2be2e59ba5382fa4301c770a74217549b673c",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeIdealData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeNormalForm.lean",
+      "sha256": "145d321c8102a8c45296ff105afae0e1e45dba76dd60564ad758c9a01266572c",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeCompression"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubePotentialCertificate.lean",
+      "sha256": "245c5a1372462d42dfefe746aef2ac7b91a1e8fc20930f9ab94cde86bc86391e",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubePotentialData.lean",
+      "sha256": "766df219c0a3b1b71ad24a2c65a62b3348a15e225c1deb1f40c8ddfda31a887c",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeIdeals"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubePotentialSemantics.lean",
+      "sha256": "51a8646e5445970c339ae1cc81e6bd18c05daf1ef577e0ae9313341aa71c4ae5",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialCertificate"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubePotentialState.lean",
+      "sha256": "9dd7e6b87c2f3818c66143152840fe8b77ca3374e7d621a0c78164b3ed596143",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialSemantics"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeProfileGeometry.lean",
+      "sha256": "075d9aa625ca82c46140f4432a991fb033b8c2765d61fdb1a368888c1843e7d2",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter.lean",
+      "sha256": "d0b20661db5e31b3c9442835fc787f98000694b8bc693396599f7ce9c6c83436",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounter0",
+        "FourCubeTimeCounter1",
+        "FourCubeTimeCounter2",
+        "FourCubeTimeCounter3",
+        "FourCubeTimeCounter4",
+        "FourCubeTimeCounter5",
+        "FourCubeTimeCounter6",
+        "FourCubeTimeCounter7",
+        "FourCubeTimeCounter8",
+        "FourCubeTimeCounter9"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter0.lean",
+      "sha256": "9709c3688794ecb92bf3f864c76e85a82d69bbc511c45b2b2d0d92d61955608d",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter1.lean",
+      "sha256": "098cb143713363c4be32f9e7ee837a96dec62f65b5836580e724d4b009e68e59",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter2.lean",
+      "sha256": "22860b9c6124dba4acbed76744936288aa0803b15856161245935aa5c654cae9",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter3.lean",
+      "sha256": "e381ffeb8037c0020105ef25e784e8e65097441b856aeaf9e2bcdd8166e5f973",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter4.lean",
+      "sha256": "13a933cb53a975ceabccf5ba841c4a4b940743e0381e510d6d5c90a7240af5c7",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter5.lean",
+      "sha256": "ba159f1f163feb0b53a748545a73820f932757ab2583ee9bf8f2b3dca498550a",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter6.lean",
+      "sha256": "e5b0980d25cd07c01155acadf069d8152870f789da08de5811dde0360e83e2f6",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter7.lean",
+      "sha256": "bb7faee376f801ca4e596d8db8095f10e5ee0ff4cb1e8e0b995361f0a159b8ec",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter8.lean",
+      "sha256": "7d7fae4be6d649e6c7162b0cd0789cc72b2a3a2064a08adac4b794cc254e7402",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounter9.lean",
+      "sha256": "d1621474983fc4f1546287e383df2ae992c25b9be13fc7ea5edbbad6c48756fe",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubeTimeCounterData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeTimeCounterData.lean",
+      "sha256": "5b4bc7aa8a3bb528ef66b5f0884d8e5481664ada4e871688cb766f1a059e937f",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialState"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/FourCubeUpper.lean",
+      "sha256": "ac9fe800136d9e085e7ddf6eee201023962cea089c58c1b50f31dfda67d1b113",
+      "scope": "parked",
+      "local_imports": [
+        "FourCubePotentialSemantics"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/LadderCardinality.lean",
+      "sha256": "5e5c0a14453c53824afcbbd477d77e465c963e555134b5e30da8b450ade2889e",
+      "scope": "shared",
+      "local_imports": [
+        "LadderCounters",
+        "LadderGeometry"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/LadderCounters.lean",
+      "sha256": "6cbb864e3a7ca8287b194f23487d5bb9115eb8470bed494590ead6f7c2bba674",
+      "scope": "shared",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/LadderGame.lean",
+      "sha256": "601d03b51607b7870c08989a9c028802160fafa7f8804329178fa7a911dfdcca",
+      "scope": "main",
+      "local_imports": [
+        "LadderCardinality",
+        "BeliefSemantics"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/LadderGeometry.lean",
+      "sha256": "acc0d793a7ae5debd3a9a1dc53483758cacdea044f771089167cd9b2930272eb",
+      "scope": "shared",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/MiddleIntervalTransfer.lean",
+      "sha256": "93d5316f6b704786ceb9b75e0316996f25e79a1009dff946fe1aca333e1accdc",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathClassification.lean",
+      "sha256": "adea1acfac9221eb82f4507bf89a1b4d9521944fb2d24c4b6ef9c84e3605e15f",
+      "scope": "main",
+      "local_imports": [
+        "PathEvenRank",
+        "PathOddBridge"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathCohorts.lean",
+      "sha256": "edb6dc79f02947dffa81f77c19476baa8b9fc25702132947ed729472d0e22051",
+      "scope": "main",
+      "local_imports": [
+        "PathLowerGeometry"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathEvenRank.lean",
+      "sha256": "778aaddf8e25e5897aeb5715767724429bdda6b686cac00c51b8549309885964",
+      "scope": "main",
+      "local_imports": [
+        "PathCohorts",
+        "PathRankLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathGeometry.lean",
+      "sha256": "564b5ff095e49f219614261d13aa356df6c65fed3d9bb9aa0395af521ba15668",
+      "scope": "main",
+      "local_imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathLowerGeometry.lean",
+      "sha256": "650fc3bf5c1426c1e5a6bc9d75e0b145a4bac44234fd0e80925cc31041f26c3c",
+      "scope": "main",
+      "local_imports": [
+        "PathUpper"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathOEIS.lean",
+      "sha256": "beb82ca57f4b9b62a5dcbc5bf4a9a8c5cb04d0a971890913834a70f54062ee14",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathOddBridge.lean",
+      "sha256": "753ac54a1adbb9f0a2e4b4cecff1333fc795d44d464c4c1ab8b2982e6aa98577",
+      "scope": "main",
+      "local_imports": [
+        "PathOddRank",
+        "PathOddRankLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathOddGeometry.lean",
+      "sha256": "d30baad254737c8aacd0e9b89fd17fa5bfcacdc7a410341be9cde4bdd7a317ff",
+      "scope": "main",
+      "local_imports": [
+        "PathCohorts"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathOddRank.lean",
+      "sha256": "ebe71f1a67e9877c277e71acfd00efb1d1f1a8b8103c4c3b503bdef2c5608350",
+      "scope": "main",
+      "local_imports": [
+        "PathOddGeometry",
+        "PathRankLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathOddRankLower.lean",
+      "sha256": "3a74942b9caec9687cdd525c9409a3e18ba8228c1607a8cdd41f711093e63846",
+      "scope": "main",
+      "local_imports": [
+        "PathRankLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathRankLower.lean",
+      "sha256": "1e45a1e383ada770d928ad90f22525c552f0fd2b3a0a5d04fc3f6c9a6864a50a",
+      "scope": "main",
+      "local_imports": [
+        "PathUpperArithmetic"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathSweep.lean",
+      "sha256": "3f9bf41a0d56390602c0e8fa345b56dc81e076ae574d35ad88d0a0c274c187b3",
+      "scope": "main",
+      "local_imports": [
+        "PathGeometry",
+        "PathUpperArithmetic"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathUpper.lean",
+      "sha256": "ab2dccbdf244341d4dcacbec2c54342ab6d3d7dc9d9a22fea0da39ad88431827",
+      "scope": "main",
+      "local_imports": [
+        "PathSweep"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/PathUpperArithmetic.lean",
+      "sha256": "f79c910a69893a5a772de19ce2c3095f46f9d53bb92d3291ff1c91cb49fd14a4",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProbeLocalization.lean",
+      "sha256": "eba08b308b7e969ed68becb5bc10d362c60c3dc39ac17a4426f91acf306704bf",
+      "scope": "main",
+      "local_imports": [
+        "BeliefSemantics"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProductCompression.lean",
+      "sha256": "c384eb6efc8291951862bfbcf467238bfce1dfb1e67e7f61b46436d87ce7f8bb",
+      "scope": "shared",
+      "local_imports": [
+        "StrategyCompression",
+        "SurvivorEnvelope"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProductCompressionEnergy.lean",
+      "sha256": "cef816cc70b3e34a0ff59bc17538bdc916d7e925f0d08a61337a8db144823bd4",
+      "scope": "shared",
+      "local_imports": [
+        "ProductCompressionNormalization"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProductCompressionNormalization.lean",
+      "sha256": "a54c8fff1f68dee42986959b20382c3bbe0dbd10030097f3e29f35ba432f02c3",
+      "scope": "shared",
+      "local_imports": [
+        "ProductCompression"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProductCompressionRelabel.lean",
+      "sha256": "e4ace3ba75d9de6b5074f05fa1c5ba03adc9548d95d5a3c56e6214d050152370",
+      "scope": "shared",
+      "local_imports": [
+        "ProductCompressionEnergy"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ProfileInverse.lean",
+      "sha256": "61c97c039ce2e9040536b56333fde16759074559e43cf563ea05651f7893d477",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/RecurrenceBridgeOddFiveFive.lean",
+      "sha256": "508b7f9bd0d1a66aeabaed3048ca18eea8702858eafd3be9b9b73d94ac036343",
+      "scope": "main",
+      "local_imports": [
+        "RecurrenceBridgeOddFiveFour"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/RecurrenceBridgeOddFiveFour.lean",
+      "sha256": "96313de110704630ad9a4fa87f2efca56f914741c135c72c9ab6978ed8fa4ee9",
+      "scope": "main",
+      "local_imports": [
+        "FiveRowFourProbeArithmetic"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/RootConvolution.lean",
+      "sha256": "dbc25d2bdb8e2a841f9c9275078abf0e765201994a046057e8bdbc5c23554e45",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/SquareCompressionFour.lean",
+      "sha256": "9525f64759d384edf9081e4ef4645de542886a6b45767cd63d0a659b75b047fd",
+      "scope": "parked",
+      "local_imports": [
+        "SquareCompressionFourData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/SquareCompressionFourData.lean",
+      "sha256": "11c14353717fd1616b7713132735c8e967db715c98c5077a694bf1fcd6b69e89",
+      "scope": "parked",
+      "local_imports": [
+        "ProductCompression",
+        "FiniteSubsetProfiles"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/SquareCompressionFourEnergy.lean",
+      "sha256": "30ddfed50cac651013c8f2ba1d5d8060336051333296322f05f33f622ffd103c",
+      "scope": "parked",
+      "local_imports": [
+        "SquareCompressionFourEnergyData"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/SquareCompressionFourEnergyData.lean",
+      "sha256": "a12c4a927b2b04b21d3158fc66bdcf9531fcb1bf3d1c19081d87846f4bf44086",
+      "scope": "parked",
+      "local_imports": [
+        "SquareCompressionFour",
+        "ProductCompressionEnergy"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/StrategyCompression.lean",
+      "sha256": "5be296e0dea4412ecbf4a4082645c6122ce253a3eb467a968fb1dd3503596dc4",
+      "scope": "shared",
+      "local_imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/SurvivorEnvelope.lean",
+      "sha256": "1288ce2e12410084e9b1eaeb04bebf341597679396cfcb3e2beaed434a2cd672",
+      "scope": "shared",
+      "local_imports": [
+        "CaptureRecurrence",
+        "LadderCardinality"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeLower.lean",
+      "sha256": "1a053096d00dd0001e4a84496e5196c7b527d36bfcb83c0b09ae07b5d5fc5cd2",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeTrap",
+        "LadderCardinality"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeClassification.lean",
+      "sha256": "f4559c3a2fd076172a9017dc409a09338f4369402b94275460f7dfed80dd076e",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeTimeColors",
+        "ThreeCubeTimeCounter",
+        "ThreeCubeTimeIsoperimetry"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeColors.lean",
+      "sha256": "4358067b2bc0daadc6784f175ff9b9b1c3f8381de4c1fcb11861518f27b2adea",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeTimeUpper"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeCounter.lean",
+      "sha256": "d88de2e87f7af71cda612b46193ab162d16d801565f8b1ff42977db998c903fc",
+      "scope": "parked",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeIsoperimetry.lean",
+      "sha256": "76a318f0f917dbd5730b6fff9f42227e68350aae63b0ae5c5323703c38e8b9d1",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeTimeProfiles"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeProfiles.lean",
+      "sha256": "627c15061a837a93f7ecf5d851fad9d2ae02828f88d4a8d4a4dae0f901c12904",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeLower",
+        "FiniteSubsetProfiles"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTimeUpper.lean",
+      "sha256": "8cffbb86dec010010d408619bfe332cc1f8f183a78b1b40a6097ea7ec960e2f4",
+      "scope": "parked",
+      "local_imports": [
+        "ThreeCubeLower"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/ThreeCubeTrap.lean",
+      "sha256": "ebe270a9216ce0882db409ab47922e6353e84d19871058c5e5d23be018ce2514",
+      "scope": "parked",
+      "local_imports": [
+        "CaptureRecurrence"
+      ],
+      "historical_compilation_exit_code": 0
+    },
+    {
+      "file": "lean/UniformOddRank.lean",
+      "sha256": "2ff8b32b27d63052512c66ce4393474990319a32806fffc9ddae0b5d855eb92e",
+      "scope": "main",
+      "local_imports": [],
+      "historical_compilation_exit_code": 0
+    }
+  ]
+}

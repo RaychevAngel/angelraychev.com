@@ -1,0 +1,23 @@
+{
+  "release_date": "2026-10-24",
+  "archived_at_utc": "2026-10-29T16:46:15.381564+00:00",
+  "purpose": "Immediately preceding public release, frozen before October 29 integration.",
+  "files": {
+    "artifact-manifest.json": "f5049844327f061bd9b231742d4c87ffdff0097a89a8ba9a69d0bbd157a2d280",
+    "checkpoint-evidence.md": "2f340a0398b0038c60c1f0fb8c47a1974294ab8c82075b022b887effc94f0053",
+    "checkpoint-formal-coverage-2026-10-24.json": "414076ea46e70e57c36077a7fa8c64d8abe01bd203dd4456a7d60a40febc3fdd",
+    "checkpoint-publication-claims-audit-2026-10-24.json": "f8c695027b5c4aed6dd7fc028cb58f0858757ecac699a34bed513d03bb76beeb",
+    "checkpoint-source-manifest.json": "a20286faabad52b3b9e4ac4a84beebdb502c9873fe73e767cd7fdce7f6d52313",
+    "checkpoint-sources-2026-10-24.zip": "04c329b80ebe7b8b7bcffc5c3e073f2cd863f6f4f54ad3ee8a79afb38b52bc00",
+    "formal-artifact.md": "03682e14415a00463e16615a27bb047cc1faf72fdfaa0a121a2af6d88e9d7f8c",
+    "lean-proofs.zip": "37236eaafa46ab9f34778a1b7b3eb2539fd8635eab711014f3f1a70674601a39",
+    "lean-scope.json": "482b0334c220b8e17851cf788168ef1d9968b3b58d952d6aa691feb51f306e9e",
+    "lean-verification.json": "5144e8c9001fbb7993c23ad450021ab8dd886d19168ebf98cfc674b9718085af",
+    "manuscript-source.zip": "8dcc28734607515b509f07d3d87d9d8b4c7915fcc6b58f3213a1882daafa24e6",
+    "princess-searches.pdf": "7c8103589cb8fac03d8da60e2f52f2eae738e9ea06e385105f93e4a0491c767e",
+    "release.json": "10dcde40e83b0eda1b040e1b49fad950af55773352bb93feff583e172217f376",
+    "research-sources.zip": "d5dba28acec7e808859c0286ec97d934e00b552370cec996b58d78ca49b780bc",
+    "unverified-comparison-candidate-2026-10-24.zip": "70633d324f1e0b27e6b4567bec9ebd78346d7761c3b53cc881d8423119eb1a0f",
+    "proofs-source.zip": "febff82ea66425cb9639f4444b2e8561e9f0fba08ec20368778d35b2ac2b9393"
+  }
+}
