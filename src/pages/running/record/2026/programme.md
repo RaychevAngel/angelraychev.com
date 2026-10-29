@@ -1,7 +1,7 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The cycle begun on October 15: a controlled third 1600 m session after the return to 900s, unchanged progression gates, and the provisional calendar through the 800 m trial."
+description: "The cycle begun on October 15: a controlled third 1600 m session, an October 29 rest decision after inner-ankle tension, and the remaining provisional calendar."
 updated: 2026-10-28
 ---
 
@@ -12,7 +12,8 @@ updated through **28 October**. The first cycle began on **15 October**. Its fir
 two blocks are complete: block two's VO₂ session was run on **19 October**,
 and FA on **21 October**. Block three is complete with LT on **23 October**
 and VO₂ on **27 October**, after three days without running while unwell.
-Block four's LT is complete on **28 October**; its X remains conditional.
+Block four's LT is complete on **28 October**. **29 October is now a planned
+rest day** after right inner-ankle tension; X remains pending without a new date.
 The other sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
@@ -92,9 +93,11 @@ the wet track, slipping shoes and severe late stiffness made holding the speed
 very hard. Right-ankle tension afterwards changed my walking for a couple of
 hours despite no ankle pain, and had settled by the discussion. October 22
 was the planned rest day; the October 23 and 28 LTs and October 27 VO₂ are now
-complete. **Another 4+4×200 remains the intended X choice**, provisionally
-October 29. I will decide according to my response to the October 28 LT and how my
-legs and ankles feel on Thursday. After the initial sub-30 prediction, the latest stretch
+complete. **Another 4+4×200 remains the intended X choice**, but I have
+chosen **rest on October 29** after lightly feeling right inner-ankle tension
+during and after the LT. The sensation had settled by the later discussion;
+its cause is unconfirmed. **X remains pending, without a replacement date.**
+After the initial sub-30 prediction, the latest stretch
 ambition is **under 29 on average for the opening four and around 30 for the
 second four**. This adds no formal progression gate.
 
@@ -128,9 +131,9 @@ intention replace assumptions based on an uninterrupted calendar.
 
 After the October 23 LT, I did not run on October 24–26 while unwell. The
 October 27 900s completed block three; October 28's LT began block four.
-The current calendar below records the remaining sessions, including a
-conditional third consecutive training day. That is a change from the usual rest placement,
-not a claim that the original block calendar ran without interruption.
+I considered a third consecutive training day for X, then chose **rest on
+October 29** after the right inner-ankle tension. The calendar records that
+change; the original block calendar has not run without interruption.
 
 ## The 18-day cycle
 
@@ -186,15 +189,15 @@ included running to the gym and back. The label cannot erase that activity.
 ## The current calendar
 
 Updated through **28 October**: Wednesday's LT is complete; the later rows
-are plans. Thursday's X remains undecided, depending on my response to the
-LT and how my legs and ankles feel on Thursday. I hope to be back at the
+are plans. **Thursday, October 29 is now a rest day.** X remains pending;
+I have not moved it to another date. I hope to be back at the
 previous level or quicker in the weekend pair, but personal bests are aims,
 not requirements imposed by the dates.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
 | Wednesday 28 October | LT · 3×1600 m | Complete · 6:18.77 average (3:56.73/km) |
-| Thursday 29 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Conditional on response to LT and how legs and ankles feel |
+| Thursday 29 October | Rest | Planned · replaces the proposed 4+4×200 m after right inner-ankle tension |
 | Friday 30 October | Rest | Planned |
 | Saturday 31 October | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
 | Sunday 1 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |

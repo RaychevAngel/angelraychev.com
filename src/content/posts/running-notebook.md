@@ -365,8 +365,10 @@ each rep. I kept my posture and composure, then was less cautious in the
 quicker final rep. I think I might have used that pace earlier; repeating it
 across all three remains untested.
 
-**X = 4+4×200 m** remains open for Thursday, October 29, depending on my
-response to LT and how my legs and ankles feel. The
+I also lightly felt tension along the inner right lower leg, just above the
+ankle bump, during and after the run. It had settled by the later discussion,
+but I decided to **rest on Thursday, October 29**. **X = 4+4×200 m remains
+pending**, with no replacement date. The
 [programme](/running/record/2026/programme/#the-current-calendar) keeps the
 remaining provisional dates, including the November 3 800 m trial.
 
@@ -463,12 +465,12 @@ observations that can inform the next decision.
 running while unwell.
 They stay at those formats, with the later **6:08** and
 **2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-The next possible session is **X on October 29**, still conditional.
+**October 29 is now a planned rest day**, following right inner-ankle tension
+during and after the latest LT. The tension later settled.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
-and X remains flexible. **Another 4+4×200 in X on October 29** remains open
-until I have seen how the LT leaves me and how my legs and ankles feel on
-Thursday. My current intention is to repeat that format,
+and X remains flexible. **Another 4+4×200 in X is pending**, with no
+replacement date assigned. My intended format remains the same,
 after initially predicting sub-30 for the opening four. My latest stretch
 ambition is **under 29 for the first four and around 30 for the second four**.
 Those are future ambitions, not achieved results or formal graduation gates.
