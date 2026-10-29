@@ -1,7 +1,7 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The cycle begun on October 15: a controlled third 1600 m session, an October 29 rest decision after inner-ankle tension, and the remaining provisional calendar."
+description: "The cycle begun on October 15: rest on October 29 before 4+4×200 m on October 30, with the remaining sequence shifted forward by one day."
 updated: 2026-10-28
 ---
 
@@ -13,7 +13,8 @@ two blocks are complete: block two's VO₂ session was run on **19 October**,
 and FA on **21 October**. Block three is complete with LT on **23 October**
 and VO₂ on **27 October**, after three days without running while unwell.
 Block four's LT is complete on **28 October**. **29 October is now a planned
-rest day** after right inner-ankle tension; X remains pending without a new date.
+rest day** after right inner-ankle tension, before **X on 30 October**. The
+remaining sequence shifts forward by one day.
 The other sessions are planned; no completed
 full cycle has yet demonstrated that I can sustain this allocation. Completed work
 stays on the [2026 record](/running/record/2026/).
@@ -96,7 +97,8 @@ was the planned rest day; the October 23 and 28 LTs and October 27 VO₂ are now
 complete. **Another 4+4×200 remains the intended X choice**, but I have
 chosen **rest on October 29** after lightly feeling right inner-ankle tension
 during and after the LT. The sensation had settled by the later discussion;
-its cause is unconfirmed. **X remains pending, without a replacement date.**
+its cause is unconfirmed. **X is now planned for October 30**, followed by
+the existing workout and rest-day sequence shifted forward by one day.
 After the initial sub-30 prediction, the latest stretch
 ambition is **under 29 on average for the opening four and around 30 for the
 second four**. This adds no formal progression gate.
@@ -132,8 +134,9 @@ intention replace assumptions based on an uninterrupted calendar.
 After the October 23 LT, I did not run on October 24–26 while unwell. The
 October 27 900s completed block three; October 28's LT began block four.
 I considered a third consecutive training day for X, then chose **rest on
-October 29** after the right inner-ankle tension. The calendar records that
-change; the original block calendar has not run without interruption.
+October 29** after the right inner-ankle tension, before **X on October 30**.
+This inserts one rest day and shifts the remaining sequence forward by one
+day; the rest days after X and the next VO₂/LT pair are retained.
 
 ## The 18-day cycle
 
@@ -189,24 +192,27 @@ included running to the gym and back. The label cannot erase that activity.
 ## The current calendar
 
 Updated through **28 October**: Wednesday's LT is complete; the later rows
-are plans. **Thursday, October 29 is now a rest day.** X remains pending;
-I have not moved it to another date. I hope to be back at the
-previous level or quicker in the weekend pair, but personal bests are aims,
+are plans. **Thursday, October 29 is a rest day before X on Friday,
+October 30.** The remaining workouts and rest days move forward by one day.
+I hope to be back at the previous level or quicker in the next VO₂/LT pair,
+but personal bests are aims,
 not requirements imposed by the dates.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
 | Wednesday 28 October | LT · 3×1600 m | Complete · 6:18.77 average (3:56.73/km) |
-| Thursday 29 October | Rest | Planned · replaces the proposed 4+4×200 m after right inner-ankle tension |
-| Friday 30 October | Rest | Planned |
-| Saturday 31 October | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
-| Sunday 1 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |
-| Monday 2 November | Rest | Planned |
-| Tuesday 3 November | 800 m time trial | Provisional checkpoint |
-| Wednesday 4 November | F · 6×200 m / 3 min | Planned |
+| Thursday 29 October | Rest | Planned · inserted before X after right inner-ankle tension |
+| Friday 30 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Planned |
+| Saturday 31 October | Rest | Planned |
+| Sunday 1 November | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
+| Monday 2 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |
+| Tuesday 3 November | Rest | Planned |
+| Wednesday 4 November | 800 m time trial | Provisional checkpoint |
+| Thursday 5 November | F · 6×200 m / 3 min | Planned |
 
 I am treating the 800 m trial as a checkpoint within normal training,
-without adding a formal taper. The planned Monday rest remains. Illness,
+without adding a formal taper. The rest day before the trial is now Tuesday.
+Illness,
 ankle response or accumulated fatigue can still change a session or its date;
 the table is my current intention rather than evidence of readiness.
 

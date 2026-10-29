@@ -367,10 +367,11 @@ across all three remains untested.
 
 I also lightly felt tension along the inner right lower leg, just above the
 ankle bump, during and after the run. It had settled by the later discussion,
-but I decided to **rest on Thursday, October 29**. **X = 4+4×200 m remains
-pending**, with no replacement date. The
+but I decided to **rest on Thursday, October 29**, then do **X = 4+4×200 m
+on Friday, October 30**. The remaining sequence moves forward by one day.
+The
 [programme](/running/record/2026/programme/#the-current-calendar) keeps the
-remaining provisional dates, including the November 3 800 m trial.
+remaining provisional dates, including the November 4 800 m trial.
 
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
@@ -469,14 +470,15 @@ They stay at those formats, with the later **6:08** and
 during and after the latest LT. The tension later settled.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
-and X remains flexible. **Another 4+4×200 in X is pending**, with no
-replacement date assigned. My intended format remains the same,
+and X remains flexible. **Another 4+4×200 in X is now planned for October 30**,
+with the remaining sessions and their rest days shifted forward by one day.
+My intended format remains the same,
 after initially predicting sub-30 for the opening four. My latest stretch
 ambition is **under 29 for the first four and around 30 for the second four**.
 Those are future ambitions, not achieved results or formal graduation gates.
 The recurring F and FA allocation stays in place for this cycle. My current
-provisional endpoint is an **800 m TT on November 3**, with **6×200 m on
-November 4**. I am treating the trial as a checkpoint within normal training,
+provisional endpoint is an **800 m TT on November 4**, with **6×200 m on
+November 5**. I am treating the trial as a checkpoint within normal training,
 without a formal taper; the dates remain subject to how the preceding work goes.
 
 One LT slot remains before the time trial. If the longer work continues to
