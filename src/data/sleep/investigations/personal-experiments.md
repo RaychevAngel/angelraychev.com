@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-28"
+updated: "2026-10-29"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**October 29 — first return after the two-night intention.** Earlier bedtime and finishing food earlier were planned. Actual meal timing and sleep attempt remain unknown. [Oura 88 / COROS 86](/sleep/record/#night-2026-10-29) show main starts near **23:54–23:56**, about 50 minutes earlier, with Oura timing **86**, restfulness **95**, efficiency contributor **100** (estimated efficiency **95%**), total-sleep contributor **86** and REM **70**. Endings disagree: **08:27 versus 09:19**. The [curves](/sleep/charts/#night-2026-10-29) stop at each available source boundary. Resolve final waking/coverage and collect experience before judging the routine; planned changes are not recorded as completed interventions.
 
 **October 28 — later main window, less estimated waking, okay night and good morning.** Oura **91 / 9h** and COROS **94 / 9h16m** begin around **00:44–00:47**, later than the preceding night. Estimated awake totals fall to **30/10 minutes**; Oura timing falls to **48**, efficiency contributor reaches **100**, and restfulness is **92**. HRV is **55/54 ms**. [Curves](/sleep/charts/#night-2026-10-28) retain the actual estimates. The follow-up reports trying to sleep around **00:30**, later than desired after meeting people all day, eating and lights before bed, and pulse not as settled as wanted. The **night was okay, rest and morning good**, with possibly a few unremarkable awakenings. Exact exposures, actual onset, body pains and later-day functioning remain unspecified. Oura’s 13-minute latency concerns its main episode beginning 00:44, not the full delay from the reported attempt. This supports repeating a more favorable feasible routine without isolating any cause or inventing a fixed food, fluid or bedtime cutoff.
 

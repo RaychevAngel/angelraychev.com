@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-28"
+updated: "2026-10-29"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**October 29 — earlier timing, lower grades, different recorded endings.** The [record](/sleep/record/#night-2026-10-29) returns **Oura 88 / 8h05m30s asleep** and **COROS 86 / 9h09m**. Main starts move about **50 minutes earlier**, to **23:54–23:56**; Oura timing improves **48 → 86**, restfulness **92 → 95**, while REM falls **91 → 70** and total sleep **97 → 86**. Efficiency remains **100/100 as a contributor and 95% as an estimate**. Oura ends at **08:27**, COROS at **09:19**: the [curves](/sleep/charts/#night-2026-10-29) retain that coverage disagreement. HRV is **61/63 ms**, Oura mean sleeping HR **49.625 bpm**. Earlier food/bedtime were planned, but actual adherence, final waking and experienced sleep remain unreported. Oura returned no usable oxygen saturation value. These changes do not establish a meal effect or a worse experienced night.
 
 **October 28 — same Oura score, different components.** The [record](/sleep/record/#night-2026-10-28) returns **Oura 91 / 9h asleep** and **COROS 94 / 9h16m**, with windows **00:44–10:14 / 00:47–10:13** and awake estimates **30/10 minutes**. Oura efficiency reaches **100 as a contributor**, while estimated efficiency is **95%**; timing falls **64 → 48** and restfulness rises **91 → 92**. HRV is **55/54 ms**. The [new curves](/sleep/charts/#night-2026-10-28) show the chronological labels and sampled pulse. The follow-up reports a **00:30 sleep attempt**, later than desired because of meeting people all day. I ate before bed, there were lights, and my pulse had not settled as much as I wanted. The **night was okay, the rest and morning were good**, with possibly a few unremarkable awakenings. Current body pains and later-day functioning remain unspecified. Exact food/light timing and presleep pulse were not supplied; no isolated cause is inferred.
 

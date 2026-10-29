@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "entries": [
     {
       "id": "2026-10-13",
@@ -2631,6 +2631,150 @@
           "reason": "Added follow-up received during publication: roughly 00:30 attempt delayed by a social day, food/lights before bed, pulse less settled than desired, okay night/good rest and morning, possible few unremarkable awakenings. Actual onset, current body pains and later-day functioning remain unknown. Native measurements, curves, retrieval times and milestones unchanged."
         }
       ]
+    },
+    {
+      "id": "2026-10-29",
+      "wake_date": "2026-10-29",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider wake-up date; main sleep ending October 28",
+      "status": "Oura 88/COROS 86; earlier main start, differing end times 08:27/09:19; experience pending",
+      "retrieved_at": "2026-10-29T16:42:05.150951+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-10-29T16:42:05.150951+00:00",
+        "coros": "2026-10-29T16:41:58.137Z"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.0,
+          "average_heart_rate": 49.625,
+          "average_hrv": 61,
+          "awake_time": 1620,
+          "bedtime_end": "2026-10-29T08:26:59.000-07:00",
+          "bedtime_start": "2026-10-28T23:54:29.000-07:00",
+          "day": "2026-10-29",
+          "deep_sleep_duration": 5820,
+          "efficiency": 95,
+          "latency": 690,
+          "light_sleep_duration": 18090,
+          "lowest_heart_rate": 45,
+          "rem_sleep_duration": 5220,
+          "time_in_bed": 30750,
+          "total_sleep_duration": 29130,
+          "type": "long_sleep"
+        },
+        "additional_sleep_episodes": [],
+        "score": 88,
+        "contributors": {
+          "deep_sleep": 93,
+          "efficiency": 100,
+          "latency": 89,
+          "rem_sleep": 70,
+          "restfulness": 95,
+          "timing": 86,
+          "total_sleep": 86
+        },
+        "readiness_score": 87,
+        "temperature_deviation_c": 0.04,
+        "spo2_average_percent": null,
+        "breathing_disturbance_index": 0,
+        "source": "Authenticated Oura API V2 exact-date sleep/daily_sleep/daily_readiness/daily_spo2 plus ring configuration; pagination exhausted. Only one main episode returned.",
+        "spo2_raw_average_percent": 0.0,
+        "spo2_status": "API returned 0.0%; no usable oxygen saturation measurement. Raw zero retained as missing, not a physiological reading."
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 86,
+        "daily_sleep_minutes": 549,
+        "main_sleep_minutes": 549,
+        "main_period_minutes": 563,
+        "main_start": "2026-10-28T23:56:00-07:00",
+        "main_end": "2026-10-29T09:19:00-07:00",
+        "ratios_percent": {
+          "deep": 27,
+          "light": 57,
+          "rem": 14,
+          "awake": 2
+        },
+        "ratio_denominator": "Daily metric scope; no detected nap this date. Exact percentage denominator not explicitly supplied; do not reconstruct exact stage minutes.",
+        "awake_minutes": 14,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 63,
+        "official_sleep_hrv_normal_range_ms": [
+          48,
+          66
+        ],
+        "official_sleep_hrv_baseline_ms": 57,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline; not recomputed from time-series points",
+        "daily_min_hr_bpm": 44,
+        "daily_average_hr_bpm": 51,
+        "resting_hr_bpm": 51,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not matched sleep-window HR; resting HR is predicted seated HR",
+        "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261029 checked."
+      },
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "context": [
+        {
+          "kind": "device_record",
+          "observation": "Main starts nearly agree (23:54:29 Oura / 23:56 COROS), but ends differ by 52m01s (08:26:59 / 09:19). Actual final waking and possible ring coverage issue are not yet reported. No additional Oura episodes or COROS naps returned."
+        },
+        {
+          "kind": "planned_change",
+          "observation": "Before this night, the user planned earlier bedtime and finishing food earlier over two nights in pursuit of higher Oura scores. These remain intentions: actual food timing, sleep attempt and adherence have not yet been reported."
+        }
+      ],
+      "story": [],
+      "interpretation": [
+        "Oura returned 88 with 8h05m30s asleep in 23:54:29–08:26:59, a period of 8h32m30s with 27 minutes awake. COROS returned 86 with 9h09m asleep in 23:56–09:19, a 9h23m period with 14 minutes awake. COROS estimates 1h03m30s more sleep. The 52m01s end-time disagreement limits comparison: these are different windows, not two classifications of exactly the same interval. No battery failure or correct final waking is assumed.",
+        "Compared with October 28, the recorded main starts move earlier by 49m31s on Oura and 51 minutes on COROS. Oura timing improves 48 → 86 and restfulness 92 → 95, while total-sleep contributor falls 97 → 86 and REM 91 → 70. The overall score falls 91 → 88. COROS falls 94 → 86 despite a similar estimated sleep duration (9h16m → 9h09m). Earlier timing and a higher overall grade are separate outcomes.",
+        "Oura estimated 1h37m deep, 1h27m REM and 5h01m30s light. Its efficiency contributor is again 100/100, while estimated efficiency remains 95%. Latency is 11m30s with contributor 89; deep contributor is 93. Actual sleep attempt and perceived onset remain unreported. COROS daily stage ratios are 27% deep, 57% light, 14% REM and 2% awake; exact stage minutes are not reconstructed.",
+        "Oura mean sleeping HR is 49.625 bpm, minimum 45, and HRV 61 ms; COROS official HRV is 63 ms Normal against range 48–66 and baseline 57. These move from the preceding 51.75 bpm and 55/54 ms pair without establishing a meal-timing effect or improved experienced recovery. Readiness is 87, temperature deviation +0.04 °C and breathing rate 12/min. The daily oxygen response contains 0.0%: no usable oxygen measurement is displayed, with the raw response retained. Its breathing disturbance index is returned as zero, which cannot resolve the missing oxygen measurement.",
+        "The planned earlier bedtime and earlier food finish provide context for an experiment, not evidence that those changes occurred. Current meal timing, awakenings, subjective sleep, morning and later-day function remain unknown. Previous symptoms and routine are not carried forward. Main-night Oura stage/pulse curves preserve their returned end; no COROS-only interval is filled with Oura stages.",
+        "The fixed October 13–26 assessment remains unchanged at 82.31 from 13 eligible scores, below 85. The new Oura score is retained as returned; unlike the confirmed October 22 battery truncation, today’s coverage discrepancy has no established explanation yet. A subsequent report or revised API return may qualify it."
+      ],
+      "plans": [],
+      "next_focus": [
+        "Check actual final waking against Oura 08:27 and COROS 09:19, and whether ring battery or removal affected coverage. Compare the actual sleep attempt and last meal with the planned earlier routine, then assess morning and later-day function alongside the grades.",
+        "Inspect the new curves without extending Oura past its returned end or treating 100-point efficiency as 100% sleep efficiency."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/charts/#night-2026-10-29",
+          "label": "October 29 curves"
+        },
+        {
+          "href": "/sleep/research/personal-experiments/#the-current-routine-proposal",
+          "label": "Routine comparisons"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Score benchmarks"
+        }
+      ],
+      "corrections": []
     }
   ],
   "milestone_assessments": [
