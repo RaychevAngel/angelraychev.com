@@ -1,12 +1,12 @@
 {
-  "prepared_at_utc": "2026-10-25T05:43:34.089272+00:00",
+  "prepared_at_utc": "2026-10-29T06:21:08.566323+00:00",
   "status": "Reviewed manuscript prepared for arXiv; not submitted. Lean verification remains partial.",
-  "publication_date": "2026-10-24",
+  "publication_date": "2026-10-28",
   "chapters": 8,
   "source_parts": 49,
-  "pages": 127,
+  "pages": 128,
   "figures": 9,
-  "math_formulas": 4112,
+  "math_formulas": 4128,
   "pdf_overfull_warnings": [],
   "companions": {
     "delivery_time": {
@@ -34,12 +34,12 @@
   },
   "files": {
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 959255,
-      "sha256": "0960fa973678ac3f7980c77d38e56b9aa8de28387516a8b99a3c6db5b877c49d"
+      "bytes": 966933,
+      "sha256": "2377da1c52e7dc4c1abf452f17d6ca064f00cb233b8cf5933e280344c0b9def3"
     },
     "manuscript-source.zip": {
-      "bytes": 276862,
-      "sha256": "f667ef59782bb8411a6b784e4d128d03db6ee662d457e8f49aab3c327b8c6be0"
+      "bytes": 280388,
+      "sha256": "6942283217e2e9118a604754e40be4768e89ba24f954c6184a7f41189d461338"
     },
     "lean-proofs.zip": {
       "bytes": 48483469,
@@ -58,8 +58,8 @@
       "sha256": "8fdb5b76916c096df3e943396704de68aca8ceea4dcd7ac41452657304720903"
     },
     "references.bib": {
-      "bytes": 4659,
-      "sha256": "c44b8a78c2f5850640286517b76b3a94df44321fb532e2e3fb287ca7d042fd00"
+      "bytes": 7859,
+      "sha256": "fc6ddd26e6aca16d05155d22fc5b41337beebdd0810546571d2d4eb6abf2e940"
     },
     "explorer-graphs.json": {
       "bytes": 497,
@@ -128,8 +128,8 @@
       "sha256": "8fdb5b76916c096df3e943396704de68aca8ceea4dcd7ac41452657304720903"
     },
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 959255,
-      "sha256": "0960fa973678ac3f7980c77d38e56b9aa8de28387516a8b99a3c6db5b877c49d"
+      "bytes": 966933,
+      "sha256": "2377da1c52e7dc4c1abf452f17d6ca064f00cb233b8cf5933e280344c0b9def3"
     },
     "lean-proofs.zip": {
       "bytes": 48483469,
@@ -26364,12 +26364,12 @@
       "sha256": "de081cf0af03f87934e076c0edca30d668868a112b2b1861aac32a7d5bd804bf"
     },
     "manuscript-source.zip": {
-      "bytes": 276862,
-      "sha256": "f667ef59782bb8411a6b784e4d128d03db6ee662d457e8f49aab3c327b8c6be0"
+      "bytes": 280388,
+      "sha256": "6942283217e2e9118a604754e40be4768e89ba24f954c6184a7f41189d461338"
     },
     "references.bib": {
-      "bytes": 4659,
-      "sha256": "c44b8a78c2f5850640286517b76b3a94df44321fb532e2e3fb287ca7d042fd00"
+      "bytes": 7859,
+      "sha256": "fc6ddd26e6aca16d05155d22fc5b41337beebdd0810546571d2d4eb6abf2e940"
     },
     "research-sources.zip": {
       "bytes": 101867699,
@@ -26378,6 +26378,10 @@
     "manuscript-2026-10-23.zip": {
       "bytes": 1863465,
       "sha256": "9199900dd25dd6b05572e07bd8f1956888864a67d0452bbf262c9ccf074d97e5"
+    },
+    "manuscript-2026-10-24.zip": {
+      "bytes": 1872704,
+      "sha256": "a549f553504e238a52966342aea39cb019c7db3df879d413cc7dfc4e6df2fe9c"
     }
   },
   "manuscript": {
@@ -26385,10 +26389,11 @@
     "authors": [
       "Angel Ivanov Raychev"
     ],
-    "source": "Reviewed arXiv preparation package, unchanged PDF/source bytes",
-    "bibliography_entries": 13,
-    "reader_source_sha256": "df45637b25653a071d3e89781a553a9f234d06179fae756559cfc27246268869",
-    "reader_html_sha256": "5265221fcd9f1ab5853e865e927a7f6182cf433047d115deefda0946c093f365",
+    "source": "Reviewed 28 October literature revision; mathematical statements unchanged",
+    "modified": "2026-10-28",
+    "bibliography_entries": 22,
+    "reader_source_sha256": "ad6fcb8942b091099aef041254aca8133c2f6f330f2650347205738484bc7122",
+    "reader_html_sha256": "cacc4dd549a732195e178d3aa7f19c464fca7f889cfb7ee4f8a6a4b5088f72e2",
     "arxiv_submission_status": "not_submitted"
   },
   "artifact_snapshots": {
@@ -26409,20 +26414,26 @@
       "url": "/cop-prisoner/manuscript-2026-10-23.zip",
       "scope": "Prior126-page two-author manuscript, sources, bibliography, reader and release record; unchanged original bytes.",
       "sha256": "9199900dd25dd6b05572e07bd8f1956888864a67d0452bbf262c9ccf074d97e5"
+    },
+    {
+      "date": "2026-10-24",
+      "url": "/cop-prisoner/manuscript-2026-10-24.zip",
+      "scope": "Prior 127-page reviewed manuscript, sources, bibliography, reader and release record; unchanged original bytes.",
+      "sha256": "a549f553504e238a52966342aea39cb019c7db3df879d413cc7dfc4e6df2fe9c"
     }
   ],
   "artifacts": {
     "guaranteed-indirect-delivery.pdf": {
-      "bytes": 959255,
-      "sha256": "0960fa973678ac3f7980c77d38e56b9aa8de28387516a8b99a3c6db5b877c49d"
+      "bytes": 966933,
+      "sha256": "2377da1c52e7dc4c1abf452f17d6ca064f00cb233b8cf5933e280344c0b9def3"
     },
     "manuscript-source.zip": {
-      "bytes": 276862,
-      "sha256": "f667ef59782bb8411a6b784e4d128d03db6ee662d457e8f49aab3c327b8c6be0"
+      "bytes": 280388,
+      "sha256": "6942283217e2e9118a604754e40be4768e89ba24f954c6184a7f41189d461338"
     },
     "references.bib": {
-      "bytes": 4659,
-      "sha256": "c44b8a78c2f5850640286517b76b3a94df44321fb532e2e3fb287ca7d042fd00"
+      "bytes": 7859,
+      "sha256": "fc6ddd26e6aca16d05155d22fc5b41337beebdd0810546571d2d4eb6abf2e940"
     }
   }
 }

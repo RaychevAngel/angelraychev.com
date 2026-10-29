@@ -267,7 +267,7 @@
       "primary": {
         "pdf": {
           "url": "/cop-prisoner/guaranteed-indirect-delivery.pdf",
-          "version": "Reviewed manuscript, 24 October 2026; 127 pages; not submitted"
+          "version": "Reviewed manuscript, 28 October 2026; 128 pages; not submitted"
         },
         "lean": {
           "url": "/cop-prisoner/lean/",
@@ -296,13 +296,19 @@
         },
         {
           "kind": "archive",
+          "label": "24 October manuscript and sources",
+          "url": "/cop-prisoner/manuscript-2026-10-24.zip",
+          "note": "Pre-literature-revision manuscript, sources, bibliography, reader and release hashes, preserved unchanged."
+        },
+        {
+          "kind": "archive",
           "label": "23 October manuscript and sources",
           "url": "/cop-prisoner/manuscript-2026-10-23.zip",
           "note": "Prior manuscript, sources, bibliography, reader and release hashes, preserved unchanged."
         }
       ],
       "manuscriptDate": "2026-10-24",
-      "manuscriptModified": "2026-10-24",
+      "manuscriptModified": "2026-10-28",
       "artifactManifest": "/cop-prisoner/release.json"
     },
     {
