@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-27
+updated: 2026-10-28
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 27 October 2026.** The upcoming
+**This version includes completed training through 28 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -355,10 +355,20 @@ The average was **1.80 seconds per rep slower**, with slightly shorter rests;
 the third rep differed by just **0.52 seconds**. I interpret it as a return
 after the short illness and expect the next efforts to feel sharper. That is
 an expectation, not an identified cause or a demonstrated loss of fitness.
-The next **3×1600 m** is intended for October 28. **X = 4+4×200 m** remains
-open for Thursday, October 29, depending on how I feel after LT and on my
-legs and ankles. The [programme](/running/record/2026/programme/#the-current-calendar)
-keeps the remaining provisional dates, including the November 3 800 m trial.
+
+The [third 3×1600 m on 28 October](/running/record/2026/#28-october--lt-31600-m--nominal-1-min)
+was **6:19.82, 6:20.62, 6:15.86**: **6:18.77 average (3:56.73/km)**,
+with **57.42 seconds and 1:06.01** recovery. That almost matched October 23,
+but I had deliberately paced conservatively. After struggling in the final
+900s, I was unsure whether my legs would hold and wanted to feel good in
+each rep. I kept my posture and composure, then was less cautious in the
+quicker final rep. I think I might have used that pace earlier; repeating it
+across all three remains untested.
+
+**X = 4+4×200 m** remains open for Thursday, October 29, depending on my
+response to LT and how my legs and ankles feel. The
+[programme](/running/record/2026/programme/#the-current-calendar) keeps the
+remaining provisional dates, including the November 3 800 m trial.
 
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
@@ -448,12 +458,12 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**The second 3×1600 m is complete on October 23**, following the first on
-October 16. The second 900s are complete on **October 27**, after three
-days without running while unwell.
+**The third 3×1600 m is complete on October 28**, following October 16 and
+23. The second 900s are complete on **October 27**, after three days without
+running while unwell.
 They stay at those formats, with the later **6:08** and
 **2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-The next intended session is **3×1600 m on October 28**.
+The next possible session is **X on October 29**, still conditional.
 
 The remaining 18-day structure stays committed. Later workouts are plans,
 and X remains flexible. **Another 4+4×200 in X on October 29** remains open
@@ -467,7 +477,7 @@ provisional endpoint is an **800 m TT on November 3**, with **6×200 m on
 November 4**. I am treating the trial as a checkpoint within normal training,
 without a formal taper; the dates remain subject to how the preceding work goes.
 
-Two LT slots remain before the time trial. If the longer work continues to
+One LT slot remains before the time trial. If the longer work continues to
 lag, **five LT sessions and three VO₂ sessions** is a possible reallocation
 for the next cycle. I want the remaining LT results and actual time trial
 before deciding; the current four-and-four allocation remains in force.
