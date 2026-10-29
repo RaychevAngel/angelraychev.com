@@ -15,7 +15,7 @@ const supplementText = (row) => {
   return `${row.name}: ${row.status.replaceAll("_", " ")}`;
 };
 const showSupplementColumn = entry.nutrition?.nutrients.some((row) => row.logged_supplement_total > 0 || row.logged_supplement_unknown);
-const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kcal', 'protein_g', 'carbohydrate_g', 'fat_g'].includes(row.id) && (row.known_food_count < row.food_count || row.partial_food_count > 0));
+const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kcal', 'protein_g', 'carbohydrate_g', 'fat_g'].includes(row.id) && row.known_food_count < row.food_count);
 ---
 <section class="food-entry" aria-labelledby={entry.id}>
   <h2 id={entry.id}>{entry.title}</h2>
@@ -23,9 +23,6 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
   <p class="entry-permalink"><a href={`#${entry.id}`}>Link to this entry</a></p>
   <p>{entry.summary}</p>
   {isPurchaseLed && <p class="dim">This day began as a shopping report. Later messages confirm eating and describe taste and appetite; finishing every purchased item was not confirmed.</p>}
-  {entry.context.filter((row) => row.observation !== "Not reported for this day.").length > 0 && <ul class="observations">
-    {entry.context.filter((row) => row.observation !== "Not reported for this day.").map((row) => <li><strong>{row.field.replaceAll("_", " ")}:</strong> {row.observation}</li>)}
-  </ul>}
   <details>
     <summary>{isPattern ? "Foods in the described pattern" : isPurchaseLed ? "Foods described and purchased portions" : "Foods and reported portions"}</summary>
     {isPurchaseLed && <p>Counts below were described alongside purchases. A described count does not prove that the entire amount was eaten.</p>}
@@ -35,6 +32,9 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
         <td>{item.name}</td><td>{amount(item)}</td><td>{item.note ?? item.portion_status}</td>
       </tr>)}</tbody>
     </table></div>
+  {entry.context.filter((row) => row.observation !== "Not reported for this day.").length > 0 && <ul class="observations">
+    {entry.context.filter((row) => row.observation !== "Not reported for this day.").map((row) => <li><strong>{row.field.replaceAll("_", " ")}:</strong> {row.observation}</li>)}
+  </ul>}
     <p class="dim">{entry.coverage}. {entry.date_note}</p>
   </details>
   {entry.supplements.length > 0 && <p><strong>Supplements:</strong> {entry.supplements.map(supplementText).join("; ")}. Other supplement use is unreported.</p>}
@@ -53,11 +53,11 @@ const partialMacroSummary = entry.nutrition?.nutrients.some((row) => ['energy_kc
     {entry.purchase_total_usd != null && <p>Receipt total: ${entry.purchase_total_usd.toFixed(2)}. {entry.purchase_total_note}</p>}
   </details>}
   {entry.nutrition ? <>
-    <p class="macro-summary"><strong>{partialMacroSummary ? 'Available-value subtotal:' : 'Model estimate:'}</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
+    <p class="macro-summary"><strong>{isPattern ? 'Pattern estimate:' : entry.record_scope === 'partial_day_report' ? 'Partial-report estimate:' : partialMacroSummary ? 'Available-value subtotal:' : 'Model estimate:'}</strong> {format(entry.nutrition.summary.energy_kcal, 0)} kcal · {format(entry.nutrition.summary.protein_g, 0)} g protein · {format(entry.nutrition.summary.carbohydrate_g, 0)} g carbohydrate · {format(entry.nutrition.summary.fat_g, 0)} g fat.</p>
     <p>These figures use the assumptions below. They describe estimated intake and do not establish an energy requirement.</p>
-    {entry.nutrition.source_note && <p>{entry.nutrition.source_note}</p>}
     <details>
       <summary>Calculation portions and assumptions</summary>
+      {entry.nutrition.source_note && <p>{entry.nutrition.source_note}</p>}
       <div class="tablewrap"><table aria-label={`${entry.title}: calculation portions`}>
         <thead><tr><th scope="col">Food</th><th scope="col">Model amount</th><th scope="col">Status</th></tr></thead>
         <tbody>{entry.nutrition.foods.map((row) => <tr>

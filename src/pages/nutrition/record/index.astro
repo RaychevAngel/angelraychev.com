@@ -6,17 +6,46 @@ import RecordDisclosure from "../../../components/RecordDisclosure.astro";
 import record from "../../../data/nutrition/record.json";
 import guide from "../../../data/nutrition/guide.json";
 const guideEntry = record.entries.find((entry) => guide.record_href.endsWith(`#${entry.id}`));
-const latestEntry = record.entries.at(-1);
+type Entry = (typeof record.entries)[number];
+type Day = { stamp: string; entries: Entry[] };
 const month = (stamp: string) => new Date(`${stamp.slice(0, 7)}-15T12:00:00Z`).toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
 const date = (stamp: string) => new Date(`${stamp}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
-const history = [...record.entries].reverse().reduce((groups, entry) => {
-  const stamp = entry.food_date ?? entry.recorded_local_date;
-  const key = stamp.slice(0, 7);
-  const last = groups.at(-1);
-  if (last?.key === key) last.entries.push(entry);
-  else groups.push({ key, title: month(stamp), entries: [entry] });
-  return groups;
-}, [] as { key: string; title: string; entries: typeof record.entries }[]);
+const number = (value: number) => Math.round(value).toLocaleString("en-US");
+const datedEntries = record.entries.filter(entry => entry.food_date && entry.kind !== "reported_pattern");
+const undatedEntries = [...record.entries].filter(entry => !entry.food_date && entry.kind !== "reported_pattern").reverse();
+const patterns = record.entries.filter(entry => entry.kind === "reported_pattern");
+const latestEntry = [...datedEntries].sort((a, b) => b.food_date!.localeCompare(a.food_date!))[0];
+const byDate = new Map<string, Entry[]>();
+for (const entry of datedEntries) {
+  const stamp = entry.food_date!;
+  byDate.set(stamp, [...(byDate.get(stamp) ?? []), entry]);
+}
+const monthKeys = [...new Set([...byDate.keys()].map(stamp => stamp.slice(0, 7)))].sort().reverse();
+const history = monthKeys.map(key => {
+  const stamps = [...byDate.keys()].filter(stamp => stamp.startsWith(key)).sort();
+  const first = stamps[0];
+  const last = stamps.at(-1)!;
+  const days: Day[] = [];
+  const cursor = new Date(`${first}T12:00:00Z`);
+  while (cursor.toISOString().slice(0, 10) <= last) {
+    const stamp = cursor.toISOString().slice(0, 10);
+    days.push({ stamp, entries: byDate.get(stamp) ?? [] });
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+  return { key, title: month(first), first, last, days: days.reverse() };
+});
+const currentMonth = history[0];
+const loggedDays = currentMonth?.days.filter(day => day.entries.length) ?? [];
+const missingDays = currentMonth?.days.filter(day => !day.entries.length) ?? [];
+const estimatedDays = loggedDays.filter(day => day.entries.some(entry => entry.nutrition?.summary.energy_kcal != null));
+const energySummary = (entry: Entry) => {
+  if (!entry.nutrition || entry.nutrition.summary.energy_kcal == null) return "Estimate pending";
+  const energy = entry.nutrition.nutrients.find(row => row.id === "energy_kcal");
+  const partial = energy && energy.known_food_count < energy.food_count;
+  const label = entry.record_scope === "partial_day_report" ? "Partial report · est." : partial ? "Subtotal" : "Est.";
+  return `${label} ${number(entry.nutrition.summary.energy_kcal)} kcal · ${number(entry.nutrition.summary.protein_g)} g protein`;
+};
+const shortTitle = (entry: Entry) => entry.title.replace(/^[A-Z][a-z]+ \d+: /, "");
 const frontmatter = {
   title: "Food record",
   description: "The reported eating days, portions, appetite, taste and training behind my nutrition notebook.",
@@ -25,26 +54,48 @@ const frontmatter = {
 ---
 <Post frontmatter={frontmatter}>
   <NutritionNav current="record" compact />
-  <p>A personal eating log, with the full food lists, estimates and corrections available inside each entry.</p>
-  <p><strong>The usual pattern:</strong> yogurt, fruit, nuts and small fish during the day; chicken and rice with avocado, tomatoes, a red pepper and herbs. Actual portions, substitutions, restaurant meals and supplements belong to their dated reports.</p>
-  {latestEntry && <aside class="latest-entry" aria-label="Latest food report">
-    <p><strong>Latest report:</strong> <a href={`#${latestEntry.id}`}>{latestEntry.title}</a></p>
-    <p>{latestEntry.summary}</p>
+  <p>A personal eating log. Each calendar date has one place below; open it for foods, estimates and corrections.</p>
+  <p><strong>The usual pattern:</strong> yogurt, fruit, nuts and small fish during the day; chicken and rice with avocado, tomatoes, a red pepper and herbs. Actual portions, substitutions, restaurant meals and supplements belong to their eating dates.</p>
+  {currentMonth && <aside class="coverage-summary" aria-label="Food log coverage">
+    <p class="coverage-period">{date(currentMonth.first)}–{date(currentMonth.last)} {currentMonth.key.slice(0, 4)}</p>
+    <p><strong>{loggedDays.length} of {currentMonth.days.length} days logged</strong> · {estimatedDays.length} with calorie estimates</p>
+    <p class="dim">{missingDays.length ? <>No food log for {missingDays.map(day => date(day.stamp)).join(", ")}. </> : <>Every date in this period has a food log. </>}A missing log means unknown intake. Earlier reports without an established eating date are kept <a href="#undated-reports">separately</a>.</p>
   </aside>}
-  <h2 id="record-index">History</h2>
-  <p class="dim history-note">Most recently reported first. Open a date for the full account and nutrient tables. Unconfirmed eating dates are identified separately.</p>
+  {latestEntry && <p class="latest-link"><strong>Latest:</strong> <a href={`#${latestEntry.id}`}>{date(latestEntry.food_date!)} — {shortTitle(latestEntry)}</a></p>}
+  <h2 id="record-index">Daily history</h2>
+  <p class="dim history-note">Eating dates, newest first. Calories and protein use portion and recipe estimates; a subtotal omits foods without a usable estimate. These are intake records, not measurements of health or progress.</p>
   {history.map(group => <section aria-labelledby={`food-month-${group.key}`}>
     <h3 id={`food-month-${group.key}`} class="month-heading">{group.title}</h3>
-    {group.entries.map(entry => <details data-record-entry class="record-day">
+    {group.days.map(day => day.entries.length ? <details data-record-entry data-food-date={day.stamp} class="record-day">
       <summary>
-        <span class="record-date">{date(entry.food_date ?? entry.recorded_local_date)}{!entry.food_date && <span class="date-kind">report date</span>}</span>
-        <span class="record-title">{entry.title.replace(/^October \d+: /, "")}</span>
+        <span class="record-date">{date(day.stamp)}</span>
+        <span class="record-description">
+          <span class="record-title">{day.entries.length === 1 ? shortTitle(day.entries[0]) : `${day.entries.length} reports for this eating day`}</span>
+          <span class="record-estimate">{day.entries.length === 1 ? energySummary(day.entries[0]) : "Reports kept together; estimates are not added twice"}</span>
+        </span>
       </summary>
-      <FoodRecordEntry entry={entry} />
-    </details>)}
+      {day.entries.map(entry => <FoodRecordEntry entry={entry} />)}
+    </details> : <div class="record-gap" data-missing-food-date={day.stamp}>
+      <span class="record-date">{date(day.stamp)}</span>
+      <span>No food log <span class="gap-note">· intake unknown</span></span>
+    </div>)}
   </section>)}
+  <h2 id="undated-reports">Reports without an eating date</h2>
+  <p class="dim history-note">The dates here show when a report was received. They do not create a second eating day, fill a calendar gap or enter the coverage count above.</p>
+  {undatedEntries.map(entry => <details data-undated-record class="record-day">
+    <summary>
+      <span class="record-date">Received<span class="date-kind">{date(entry.recorded_local_date)}</span></span>
+      <span class="record-description"><span class="record-title">{entry.title}</span><span class="record-estimate">Eating date unconfirmed · {energySummary(entry)}</span></span>
+    </summary>
+    <FoodRecordEntry entry={entry} />
+  </details>)}
   <details class="reference-notes">
     <summary>Background and how to read the record</summary>
+    {patterns.length > 0 && <>
+      <h2 id="reported-patterns">Reported patterns</h2>
+      <p>These describe a routine rather than a particular eating day.</p>
+      {patterns.map(entry => <details><summary>{entry.title}</summary><FoodRecordEntry entry={entry} /></details>)}
+    </>}
     <h2 id="background">Background and planned changes</h2>
     <p>These observations explain the progression. They are separate from the foods actually eaten on a particular day.</p>
     {record.background?.map(entry => <details id={entry.id}>
@@ -63,20 +114,27 @@ const frontmatter = {
   summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
   summary:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
   details[open] summary { margin-bottom: 20px; }
-  .latest-entry { border-left: 1px solid var(--rule); padding-left: 16px; margin: 28px 0 36px; }
-  .latest-entry p { margin-bottom: 10px; }
+  .coverage-summary { border-left: 1px solid var(--rule); padding-left: 16px; margin: 28px 0 20px; }
+  .coverage-summary p { margin-bottom: 8px; }
+  .coverage-summary .dim { font-size: 13px; }
+  .coverage-period { color: var(--dim); font-size: 13px; }
+  .latest-link { font-size: 13px; margin-bottom: 32px; }
   .history-note { font-size: 13px; }
   .month-heading { margin-top: 28px; margin-bottom: 12px; }
   .record-day { margin: 0; border-top: 1px solid var(--rule); }
-  .record-day:last-child { border-bottom: 1px solid var(--rule); }
+  .record-day:last-child, .record-gap:last-child { border-bottom: 1px solid var(--rule); }
   .record-day :global(.food-entry) { border-top: 0; margin-top: 0; padding-top: 0; }
   .record-day > summary { display: grid; grid-template-columns: 72px 1fr; gap: 12px; padding: 14px 0; text-decoration: none; list-style: none; }
   .record-day > summary::-webkit-details-marker { display: none; }
+  .record-description { min-width: 0; }
+  .record-estimate { display: block; color: var(--dim); font-size: 12px; margin-top: 3px; }
+  .record-gap { display: grid; grid-template-columns: 72px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--rule); color: var(--dim); font-size: 13px; }
+  .gap-note { font-size: 12px; }
   .record-title { text-decoration: underline; text-underline-offset: 3px; }
   .record-title::after { content: " +"; color: var(--dim); }
   .record-day[open] > summary .record-title::after { content: " −"; }
   .record-date { color: var(--dim); font-size: 13px; }
   .date-kind { display: block; font-size: 11px; line-height: 1.5; }
   .reference-notes { margin-top: 40px; }
-  @media (max-width: 480px) { .record-day > summary { grid-template-columns: 60px 1fr; gap: 10px; } }
+  @media (max-width: 480px) { .record-day > summary, .record-gap { grid-template-columns: 60px 1fr; gap: 10px; } }
 </style>
