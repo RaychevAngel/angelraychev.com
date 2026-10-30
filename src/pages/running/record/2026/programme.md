@@ -1,23 +1,17 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "The cycle begun on October 15: rest on October 29 before 4+4×200 m on October 30, with the remaining sequence shifted forward by one day."
-updated: 2026-10-28
+description: "Eight of twelve workouts complete in the cycle begun October 15: X repeated the mixed-rest 200s on October 30; four workouts remain before the closing chill day."
+updated: 2026-10-30
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**, with the current decisions
-updated through **28 October**. The first cycle began on **15 October**. Its first
-two blocks are complete: block two's VO₂ session was run on **19 October**,
-and FA on **21 October**. Block three is complete with LT on **23 October**
-and VO₂ on **27 October**, after three days without running while unwell.
-Block four's LT is complete on **28 October**. **29 October is now a planned
-rest day** after right inner-ankle tension, before **X on 30 October**. The
-remaining sequence shifts forward by one day.
-The other sessions are planned; no completed
-full cycle has yet demonstrated that I can sustain this allocation. Completed work
-stays on the [2026 record](/running/record/2026/).
+This is the programme agreed by **8 October 2026**, updated through
+**30 October**. The first cycle began on **15 October**. Its first four
+blocks are complete: **eight of twelve workouts**, including X on October 30.
+Four workouts remain: VO₂, LT, the 800 m time trial and F. The remaining dates
+are plans; completed work stays on the [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
 maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
@@ -93,15 +87,20 @@ seven includes an aborted start and return. Early repetitions were controlled;
 the wet track, slipping shoes and severe late stiffness made holding the speed
 very hard. Right-ankle tension afterwards changed my walking for a couple of
 hours despite no ankle pain, and had settled by the discussion. October 22
-was the planned rest day; the October 23 and 28 LTs and October 27 VO₂ are now
-complete. **Another 4+4×200 remains the intended X choice**, but I have
-chosen **rest on October 29** after lightly feeling right inner-ankle tension
-during and after the LT. The sensation had settled by the later discussion;
-its cause is unconfirmed. **X is now planned for October 30**, followed by
-the existing workout and rest-day sequence shifted forward by one day.
-After the initial sub-30 prediction, the latest stretch
-ambition is **under 29 on average for the opening four and around 30 for the
-second four**. This adds no formal progression gate.
+was the planned rest day. After the October 28 LT, I chose to insert rest
+on October 29 following right inner-ankle tension that later settled.
+
+**X is complete on October 30**, repeating the
+[4+4×200 m format](/running/record/2026/#30-october--x-4200-m--3-min--4200-m--90-seconds).
+Recorded set averages were **30.36 and 30.40**; my estimates of late button
+presses in reps one and three give an illustrative **~30.13** opening average.
+The record preserves both the original times and the uncertainty. The set
+break was **3:03.23**, versus October 21's **4:56.05**, with close-to-90-second
+recoveries throughout the second set. I tried to stay relaxed late in rep
+seven, then went all out in rep eight, finishing in **30.11** and completely
+spent. Before the repeat, I had predicted a sub-30 opening average, then
+proposed under 29 as a stretch ambition. This adds a completed repeat; it does not change the
+current cycle's allocation or create a new progression gate.
 
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 is complete: **19:59 reported, 3:59.8/km, 161 points**, with the finish estimated
@@ -135,8 +134,9 @@ After the October 23 LT, I did not run on October 24–26 while unwell. The
 October 27 900s completed block three; October 28's LT began block four.
 I considered a third consecutive training day for X, then chose **rest on
 October 29** after the right inner-ankle tension, before **X on October 30**.
-This inserts one rest day and shifts the remaining sequence forward by one
-day; the rest days after X and the next VO₂/LT pair are retained.
+That decision inserted one rest day and shifted the remaining sequence forward
+by one day. X was completed on October 30; the planned rest days after X and
+the next VO₂/LT pair are retained.
 
 ## The 18-day cycle
 
@@ -155,8 +155,8 @@ rest or easy movement according to how I feel, without another quality session:
 That is four LT sessions, four VO₂ sessions, and one each of F, FA, TT and X,
 with six chill days.
 
-**The eleven specified workouts stay committed for this cycle. Only X remains
-open to a change of format at any point.** LT and VO₂ retain their independently
+**The cycle retains its eleven specified workouts and one flexible X slot.**
+X was completed as mixed-rest 200s on October 30. LT and VO₂ retain their independently
 earned progressions. Changes to the allocation or recurring F/FA formats wait
 for the next cycle's review.
 
@@ -169,9 +169,9 @@ near-even times do not establish preserved movement. I see a connection to the
 final metres of the 900s; whether that practice transfers remains a question.
 **TT** is an event time trial; the transition's 5000 m is complete, and the first
 full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open.
-After October 21, my intention is to repeat **4+4×200 m** in that slot, subject
-to recovery. Dense 10/10 running, 300 m repetitions and 2×3×500 m remain earlier
-alternatives. X has not yet been completed. F remains the stable 6×200 m benchmark.
+I chose to repeat **4+4×200 m** in X and completed it on October 30.
+Dense 10/10 running, 300 m repetitions and 2×3×500 m remain earlier alternatives.
+F remains the stable 6×200 m benchmark.
 
 The allocation has some freedom built in. Three LT–VO₂ pairs, F, FA, TT and X
 form the backbone; two remaining slots are currently occupied by another LT and
@@ -191,24 +191,25 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Updated through **28 October**: Wednesday's LT is complete; the later rows
-are plans. **Thursday, October 29 is a rest day before X on Friday,
-October 30.** The remaining workouts and rest days move forward by one day.
-I hope to be back at the previous level or quicker in the next VO₂/LT pair,
-but personal bests are aims,
-not requirements imposed by the dates.
+Updated through **30 October**: LT on October 28 and X on October 30 are
+complete. October 29 was the inserted rest-day decision. Four workouts remain
+in the intended sequence below.
+The original eighteen-day structure now spans **23 calendar days** if the
+closing chill day is included, from October 15 to November 6. The final
+workout is planned for November 5. These dates remain provisional.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
 | Wednesday 28 October | LT · 3×1600 m | Complete · 6:18.77 average (3:56.73/km) |
-| Thursday 29 October | Rest | Planned · inserted before X after right inner-ankle tension |
-| Friday 30 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Planned |
+| Thursday 29 October | Rest | Inserted rest-day decision after right inner-ankle tension |
+| Friday 30 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Complete · 30.36 / 30.40 recorded averages; first-set timing uncertainty |
 | Saturday 31 October | Rest | Planned |
 | Sunday 1 November | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
 | Monday 2 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |
 | Tuesday 3 November | Rest | Planned |
 | Wednesday 4 November | 800 m time trial | Provisional checkpoint |
 | Thursday 5 November | F · 6×200 m / 3 min | Planned |
+| Friday 6 November | Closing chill day | Planned · final day of the six-block structure |
 
 I am treating the 800 m trial as a checkpoint within normal training,
 without adding a formal taper. The rest day before the trial is now Tuesday.

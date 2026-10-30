@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-28
+updated: 2026-10-30
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 28 October 2026.** The upcoming
+**This version includes completed training through 30 October 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -373,6 +373,16 @@ The
 [programme](/running/record/2026/programme/#the-current-calendar) keeps the
 remaining provisional dates, including the November 4 800 m trial.
 
+On [30 October](/running/record/2026/#30-october--x-4200-m--3-min--4200-m--90-seconds),
+I completed X by repeating the **4+4×200 m**. Recorded set averages were
+**30.36 and 30.40**. Late button presses in the first and third reps make
+the opening set uncertain; my more likely delay estimates give **~30.13**,
+with the original times preserved in the record. The **3:03.23** set break
+was almost two minutes shorter than October 21's. In rep seven I tried to
+stay relaxed on the straight; in rep eight I committed everything and ran
+**30.11**, finishing completely spent. It is an encouraging repeat at similar
+speed with less recovery and a maximal finishing effort.
+
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
 remaining training develops. In the same 2025 men's outdoor tables, 2:16.00
@@ -461,25 +471,18 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**The third 3×1600 m is complete on October 28**, following October 16 and
-23. The second 900s are complete on **October 27**, after three days without
-running while unwell.
-They stay at those formats, with the later **6:08** and
-**2:55.5 average** gates still ahead. Nominal VO₂ recovery remains **5:30**.
-**October 29 is now a planned rest day**, following right inner-ankle tension
-during and after the latest LT. The tension later settled.
+**Eight of twelve workouts are complete in the cycle begun October 15.**
+The third 3×1600 m was completed on October 28; X followed on October 30,
+repeating the mixed-rest 200s after the inserted rest-day decision. The
+record keeps timing uncertainty and the all-out finish beside the comparison.
 
-The remaining 18-day structure stays committed. Later workouts are plans,
-and X remains flexible. **Another 4+4×200 in X is now planned for October 30**,
-with the remaining sessions and their rest days shifted forward by one day.
-My intended format remains the same,
-after initially predicting sub-30 for the opening four. My latest stretch
-ambition is **under 29 for the first four and around 30 for the second four**.
-Those are future ambitions, not achieved results or formal graduation gates.
-The recurring F and FA allocation stays in place for this cycle. My current
-provisional endpoint is an **800 m TT on November 4**, with **6×200 m on
-November 5**. I am treating the trial as a checkpoint within normal training,
-without a formal taper; the dates remain subject to how the preceding work goes.
+Four workouts remain: **3×900 m on November 1, LT on November 2, the 800 m
+TT on November 4 and 6×200 m on November 5**, with rest planned on October 31
+and November 3, and the closing chill day on November 6. LT stays at
+**3×1600 m**, VO₂ at **3×900 m / nominal 5:30**; the later **6:08** and
+**2:55.5 average** gates remain ahead. The current allocation stays in force.
+I am treating the trial as a checkpoint within normal training, without a
+formal taper; dates remain subject to how the preceding work goes.
 
 One LT slot remains before the time trial. If the longer work continues to
 lag, **five LT sessions and three VO₂ sessions** is a possible reallocation
@@ -494,9 +497,9 @@ The next efforts ask three immediate questions:
 - **How do pace and movement hold up together?** The 5000 supplies a continuous
   event reference. I want to follow the ability to maintain my stride alongside
   the splits as the efforts become longer.
-- **How do speed and its cost change when I repeat the 200s?** The first FA
-  supplied eight repetitions around thirty seconds, with severe late stiffness.
-  I want to follow the times, when movement deteriorates and recovery afterwards.
+- **How do speed and its cost change when I repeat the 200s?** The October 30
+  repeat held similar speed with a shorter set break, timing uncertainty and
+  an all-out finish. Whether this helps the longer efforts remains untested.
   The separate F benchmark stays at six reps with three-minute rests.
 
 I had hoped for a 5000 around 19:30. The reported 19:59 is the result of testing
