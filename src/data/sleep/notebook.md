@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-29"
+updated: "2026-10-30"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**October 30 — stronger REM and HRV, lower Oura grade.** The [record](/sleep/record/#night-2026-10-30) returns **Oura 85 /8h10m asleep** and **COROS 89 /8h20m**, with close windows **00:45–09:25 /00:49–09:22**. Oura estimates **29 minutes awake**, COROS **13**. Compared with the revised October 29 night, Oura’s main start is about 51 minutes later and sleep is 47m30s shorter. Timing falls **73 → 61**, restfulness **90 → 81**, total sleep **97 → 87**, while REM improves **80 → 96**. HRV rises to **69/68 ms** and Oura mean sleeping HR is **47.375 bpm**. The [curves](/sleep/charts/#night-2026-10-30) preserve the new chronological estimates. Actual routine, experienced quality and morning function remain unreported; higher HRV or REM is not treated as a complete verdict on the night.
 
 **October 29 — Oura revised after the missing final stretch.** The user confirms being asleep during **08:27–09:19**. The [recheck](/sleep/record/#night-2026-10-29) extends Oura’s main episode from **08:27 to 09:37**, revising **88 → 90** and **8h05m30s → 8h57m30s asleep**. COROS remains **86 / 9h09m**, ending 09:19. The [curves](/sleep/charts/#night-2026-10-29) now use the revised Oura sequence. Current contributors include **timing 73, total sleep 97, REM 80, restfulness 90 and efficiency 97**; estimated efficiency is **92%**. The earlier 100-point efficiency/timing 86 values are superseded. Main sleep still starts about 50 minutes earlier than October 28, but exact final waking, actual meal/bedtime routine and experienced quality remain unspecified. No battery cause or meal effect is inferred. The oxygen return remains unusable.
 

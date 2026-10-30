@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-29"
+updated: "2026-10-30"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**October 30 — the intended earlier routine still needs an actual diary.** [Oura 85 / COROS 89](/sleep/record/#night-2026-10-30) estimate **8h10m/8h20m asleep** with starts **00:45–00:49**, about 51–53 minutes later than October 29. Oura timing is **61**, total sleep **87**, restfulness **81**, REM **96** and efficiency **99** (estimated efficiency **94%**). HRV is **69/68 ms**. The [new curves](/sleep/charts/#night-2026-10-30) retain labels and pulse without assigning a cause. Actual sleep attempt, meal timing, adherence and experienced outcomes remain unknown. The two-night intention is not declared a completed experiment or failure from the returned clock times alone.
 
 **October 29 — revised return, confirmed sleep in the previously missing interval.** Earlier bedtime and food finish were planned; actual timings remain unreported. The user confirms being asleep **08:27–09:19**. [Oura’s recheck](/sleep/record/#night-2026-10-29) now extends through **09:37**, score **90**, asleep **8h57m30s**, awake **45m30s**. COROS remains **86 / 9h09m**, ending 09:19. Updated contributors include timing **73** (versus 48 the prior night), REM **80**, restfulness **90** and efficiency **97** (estimated efficiency **92%**). The original shorter response and its 88/100-efficiency values are superseded, with the revision retained in the diary. [Curves](/sleep/charts/#night-2026-10-29) use the new native data. The confirmed interval establishes missing coverage in the first response, not a battery failure or a causal effect of the intended routine.
 
