@@ -2796,7 +2796,7 @@
       "wake_date": "2026-10-30",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 30",
-      "status": "Oura 85/COROS 89; 8h10m/8h20m asleep; close end times; experience pending",
+      "status": "Felt good; sleep attempt around 00:30, waking around 09:15–09:30, last meal 18:00; Oura 85/COROS 89",
       "retrieved_at": "2026-10-30T22:46:22.337212+00:00",
       "provider_retrieved_at": {
         "oura": "2026-10-30T22:46:22.337212+00:00",
@@ -2880,14 +2880,14 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261030 checked."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "Reported feeling good overall in the follow-up; no separate night-quality or morning rating supplied.",
+        "morning_sleepiness": "Reported feeling good overall; no quantified sleepiness rating or waking-to-alert interval supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": null,
+        "intended_bedtime": "Tried to sleep around 00:30. Exact actual sleep onset not supplied.",
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
@@ -2901,21 +2901,23 @@
         },
         {
           "kind": "self_report",
-          "observation": "No subjective report yet for October 30. Earlier bedtime and earlier food finish were previously planned, but actual meal timing, sleep attempt, awakenings, quality and morning function for this night remain unknown. October 29’s confirmed 08:27–09:19 sleep interval is not assigned to this date."
+          "observation": "The follow-up reports feeling good, trying to sleep around 00:30, waking around 09:15–09:30 and finishing the last meal at 18:00. The last-meal-to-attempt interval is about 6h30m. Exact sleep onset, remembered awakenings, fluids, other routine changes and later-day function remain unspecified."
         }
       ],
-      "story": [],
+      "story": [
+        "I felt good. I tried to sleep around 00:30 and woke around 09:15–09:30. My last meal was at 18:00."
+      ],
       "interpretation": [
-        "Oura returned 85 with 8h10m estimated asleep and 29 minutes awake within 00:45:33–09:24:33, an 8h39m episode. COROS returned 89 with 8h20m asleep and 13 minutes awake within 00:49–09:22, an 8h33m period. Starts differ by 3m27s and ends by 2m33s; COROS estimates 10 minutes more sleep and Oura 16 minutes more waking. Close boundaries do not validate either set of sleep/wake labels.",
+        "Oura returned 85 with 8h10m estimated asleep and 29 minutes awake within 00:45:33–09:24:33, an 8h39m episode. COROS returned 89 with 8h20m asleep and 13 minutes awake within 00:49–09:22, an 8h33m period. Starts differ by 3m27s and ends by 2m33s; COROS estimates 10 minutes more sleep and Oura 16 minutes more waking. Close boundaries do not validate either set of sleep/wake labels. The reported waking interval 09:15–09:30 contains both device episode ends. This agreement supports the broad boundary comparison, without validating every stage or awake label.",
         "Compared with the revised October 29 Oura record, the main start is 51m04s later and estimated sleep is 47m30s shorter. Oura’s score changes 90 → 85, total-sleep contributor 97 → 87, timing 73 → 61, and restfulness 90 → 81. COROS begins 53 minutes later, estimates 49 minutes less sleep and changes 86 → 89. The two grading systems move in opposite directions; neither is selected because its result looks better.",
-        "Oura estimated 1h35m deep,2h06m30s REM and 4h28m30s light. REM contributor improves 80 → 96, deep 90 → 91 and efficiency 97 → 99; estimated efficiency is 94%, separate from that 99-point grade. Native latency is 5 minutes with contributor 72, compared with 11 minutes and 89 previously. A shorter detected latency did not produce a higher latency grade. The actual sleep attempt and perceived onset are not yet reported.",
-        "Oura average sleeping HR is 47.375 bpm, minimum 44, HRV 69 ms, Readiness 88 and peripheral-temperature deviation−0.29 °C. COROS official sleep HRV is 68 ms, labeled Above normal against its returned 48–66 ms range and baseline 57. Both HRV summaries rise from 61/63 ms despite Oura’s lower sleep score. These observations do not establish better recovery, an optimal HRV level or an effect of an unreported routine. COROS daily HR is 60 bpm average/minimum 42, with predicted seated resting HR 50; its daily scope differs from Oura’s sleep mean.",
-        "Oura breathing rate is 11.625/min, average SpO 2 is 97.404% and breathing disturbance index 1. Today has a usable returned oxygen value; October 29’s zero remains explicitly unavailable. These wearable summaries are not clinical measurements. Only one main Oura episode and zero COROS detected naps were returned. The main-night Oura stage/pulse curves are added without inferring COROS stages or filling missing pulse samples.",
-        "Experienced night quality, final waking, remembered awakenings, meal timing, sleep attempt and morning/later-day functioning remain unknown. Planned earlier food and bedtime are not marked completed. The fixed October 13–26 milestone stays 82.31 from 13 eligible scores, below 85; no new rolling success rule or completed 28-day result is inferred."
+        "Oura estimated 1h35m deep, 2h06m30s REM and 4h28m30s light. REM contributor improves 80 → 96, deep 90 → 91 and efficiency 97 → 99; estimated efficiency is 94%, separate from that 99-point grade. Native latency is 5 minutes with contributor 72, compared with 11 minutes and 89 previously. A shorter detected latency did not produce a higher latency grade. The reported 00:30 attempt precedes Oura’s 00:45:33 main-episode start. Its five-minute latency therefore does not describe the complete delay from the reported attempt. Exact actual onset remains unknown.",
+        "Oura average sleeping HR is 47.375 bpm, minimum 44, HRV 69 ms, Readiness 88 and peripheral-temperature deviation −0.29 °C. COROS official sleep HRV is 68 ms, labeled Above normal against its returned 48–66 ms range and baseline 57. Both HRV summaries rise from 61/63 ms despite Oura’s lower sleep score. These observations do not establish better recovery, an optimal HRV level or a meal-timing effect. The user reports feeling good despite the lower Oura score; no separate functional test or sustained later-day outcome is supplied. COROS daily HR is 60 bpm average/minimum 42, with predicted seated resting HR 50; its daily scope differs from Oura’s sleep mean.",
+        "Oura breathing rate is 11.625/min, average SpO₂ is 97.404% and breathing disturbance index 1. Today has a usable returned oxygen value; October 29’s zero remains explicitly unavailable. These wearable summaries are not clinical measurements. Only one main Oura episode and zero COROS detected naps were returned. The main-night Oura stage/pulse curves are added without inferring COROS stages or filling missing pulse samples.",
+        "The last meal was reported at 18:00, about 6h30m before the 00:30 sleep attempt. The user felt good and reported waking around 09:15–09:30. This supplies actual meal timing, but does not isolate its effect on HRV, sleep stages or quality; fluid timing and the other evening exposures remain unknown. Remembered awakenings and later-day function were not specified. The fixed October 13–26 milestone stays 82.31 from 13 eligible scores, below 85; no new rolling success rule or completed 28-day result is inferred."
       ],
       "plans": [],
       "next_focus": [
-        "Compare the recorded 00:45–00:49 start with the actual sleep attempt, last meal and intended earlier routine. Record night quality and morning/later-day alertness before judging whether the higher HRV and REM estimate reflect a better experienced night.",
+        "Retain the good experienced outcome alongside the lower Oura score and higher REM/HRV. Last meal 18:00 and attempted sleep 00:30 establish a roughly 6h30m interval, but no optimal food cutoff or meal effect. Track actual sleep opportunity and later-day function in further comparisons.",
         "Use the new curves to inspect awake-label placement and pulse. Preserve the close main windows and different awake totals, and distinguish 99/100 efficiency contributor from 94% estimated efficiency."
       ],
       "next_focus_references": [
@@ -2932,7 +2934,12 @@
           "label": "Score benchmarks"
         }
       ],
-      "corrections": []
+      "corrections": [
+        {
+          "date": "2026-10-30",
+          "reason": "Added follow-up: felt good, attempted sleep around 00:30, woke around 09:15–09:30, last meal 18:00. Exact onset, awakenings, fluid timing and later-day function remain unspecified. Native provider data, curves and milestone assessments unchanged."
+        }
+      ]
     }
   ],
   "milestone_assessments": [
