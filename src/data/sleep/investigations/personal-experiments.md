@@ -15,7 +15,7 @@ order: 4
 
 ### Recurring cold feet and excess starting warmth
 
-The October 31 follow-up describes several nights with a comfortable midnight room and light blanket, then cold feet around 07:30 and an added blanket. More starting insulation can make falling asleep too hot, or be removed during sleep. This is a reported recurring pattern; no thermometer trace, exact recurrence dates or confirmed trigger for each awakening were supplied. The good overall night and morning remain part of the same account.
+The October 31 follow-up describes several nights with a comfortable midnight room and light blanket, then cold feet around 07:30 and an added blanket. More starting insulation can make falling asleep too hot, or be removed during sleep. The user clarifies that the feet are **still covered by the light blanket** at the cold awakening. Blanket loss is therefore not the reported explanation for that recurring episode; heavier starting bedding and its overheating/removal are a separate condition. This is a reported recurring pattern; no thermometer trace, exact recurrence dates or confirmed trigger for each awakening were supplied. The good overall night and morning remain part of the same account.
 
 The target is comfortable coverage across the night. The user is considering an earlier schedule. That could avoid the late cold interval if final waking also shifts earlier while enough sleep opportunity is preserved. If the room can be controlled, reducing its overnight temperature swing is a separate comparison. More blanket coverage from midnight has already proved uncomfortable in the report; keeping an extra blanket nearby helps respond after waking but does not demonstrate prevention of the waking.
 
