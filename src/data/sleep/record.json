@@ -3059,7 +3059,7 @@
         "alcohol_and_time": null,
         "naps": "No naps. This disputes the separate Oura prior-evening two-minute sleep detection.",
         "intended_bedtime": "Reported falling asleep around midnight. The actual sleep-attempt time was not supplied.",
-        "environment": "Reports a recurring pattern across several unspecified nights: room comfortable around midnight with a light blanket, waking around 07:30 with cold feet and adding another blanket. Extra bedding from the start can be too hot, prevent falling asleep, or be removed during sleep. Believes the room loses heat overnight; no measured room-temperature trace supplied. Clarified that the feet are still covered by the light blanket when cold around 07:30; the heavier-blanket overheating/removal is a different starting-bedding condition.",
+        "environment": "Reports that the room temperature drops overnight. One blanket is comfortable initially but leaves feet cold around 07:30 while still covered. Starting with two is too hot to fall asleep or leads to removing one early, leaving the same insufficient coverage by morning as the room cools. Recurs across several unspecified nights. No numerical room-temperature measurements supplied. Staying in an old hotel building with no room-temperature control available.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
@@ -3080,7 +3080,7 @@
         },
         {
           "kind": "self_report",
-          "observation": "When feet are cold around 07:30, they are still covered by the light blanket. Blanket loss is therefore not the reported explanation for these cold-feet episodes; this does not independently measure room cooling or identify its physiological cause."
+          "observation": "The user explicitly identifies overnight room cooling as the problem. Two blankets are too hot initially; one is insufficient by morning despite feet remaining covered. This is the user’s environmental observation, not an established physiological change in warmth requirement."
         }
       ],
       "story": [
@@ -3095,16 +3095,16 @@
         "Oura estimated 2h23m30s deep,2h18m30s REM and 4h15m30s light. Contributors are deep 99, REM 98, total sleep 97, efficiency 97, restfulness 90, latency 94 and timing 69. COROS daily ratios are deep 18%, light 44%, REM 33% and awake 5%, without a supplied exact denominator; exact stage minutes are not reconstructed. Timing remains Oura’s lowest contributor. The later follow-up reports good overall sleep and a good morning, with time lying in bed thinking. This is a positive experienced outcome alongside the different grades; it does not independently validate exact stage durations.",
         "Oura mean sleeping HR is 49.5 bpm, minimum 45, HRV 62 ms and Readiness 93. COROS official sleep HRV is 60 ms Normal against 49–67 and baseline 58; neither value is recalculated from individual points. Both HRV headlines are lower than October 30’s69/68 ms despite the higher Oura sleep score. COROS daily HR snapshot is 55 bpm average/minimum 45 and predicted seated resting HR 52, separate from Oura’s overnight scope. Oura temperature deviation is−0.20 °C, breathing 12.125/min, average SpO₂ 95.367% and breathing disturbance index 1; these are provider estimates, not clinical findings.",
         "The no-nap report explicitly disputes Oura’s separate 19:32–19:52 detection on October 30, with two minutes estimated light sleep and 18 minutes awake. The original classification and duration remain visible, while it is not counted as a confirmed nap or merged into the main-night curves. COROS reports zero detected nap minutes. The initial COROS unavailable-detail placeholder is superseded by a valid main record, not treated as a prior zero score.",
-        "The reported recurring cold-feet pattern identifies a comfort mismatch: sufficient insulation at midnight can be insufficient later, while a heavier starting blanket can be too hot or be removed. Simply increasing starting bedding is therefore a poor fit to the reported experience. An earlier schedule could avoid the late cold period only if final waking also moves earlier while sufficient sleep opportunity is preserved. The clock time of cold feet, measured room temperature, exact awakening cause and individual recurrence dates are not established by the ring temperature-deviation summary.",
-        "The follow-up clarifies that the feet remain covered by the light blanket at the cold awakening. The recurring cold sensation is therefore not explained in the report by that blanket simply coming off. Heavier starting bedding is a separate condition that can overheat or be removed. Steadier overnight conditions, an earlier complete sleep window, or a tolerable foot-only adjustment remain different proposed comparisons; no intervention has yet been tested under measured conditions.",
+        "The user identifies the room cooling overnight as the problem: one blanket is initially comfortable, then insufficient by morning. Two from bedtime are too hot or lead to removing one early. The direct environmental target is to prevent the room-temperature drop while retaining comfortable conditions at bedtime. Its magnitude has not been measured.",
+        "Feet remain covered when cold. The reported problem is overnight room cooling, not loss of all blanket coverage. The user clarifies that room-temperature control is unavailable in the old hotel building. An earlier complete sleep window could avoid part of the cold period but would not fix room cooling. No intervention outcome is established.",
         "Last food was reported at 19:00, about five hours before the reported midnight onset. Food timing and earlier detected onset are known for this date, but fluid timing, most other exposures and later-day functioning remain unknown. Overall sleep and the morning are now reported good. No meal effect or successful personal intervention is inferred. The fixed October 13–26 milestone remains 82.31 from 13 eligible scores, below 85; the new single-night high does not change that completed assessment. Nineteen dates now have 19 Oura records (18 eligible whole-night scores) and 19 COROS records."
       ],
       "plans": [
         "Considering an earlier sleep schedule in response to the recurring cold-feet/blanket pattern. No exact new schedule or completed trial reported."
       ],
       "next_focus": [
-        "Keep the good night/morning beside Oura 93 and COROS 83. The main unresolved comfort issue is a light blanket being adequate initially but insufficient later, while heavier starting bedding can overheat or be removed. The feet are still covered by the light blanket when cold, so preventing blanket loss alone would not address the reported recurring episodes.",
-        "Compare an earlier sleep-and-wake schedule with preserving sleep opportunity, or steadier overnight room conditions if controllable. Avoid assuming more starting insulation solves the reported problem. Track bedtime comfort, clock time of cold feet, added/removed bedding and room temperature if measurable; the aim is fewer unwanted thermal interruptions without new heat discomfort. These are proposed comparisons, not completed interventions."
+        "Keep the good night/morning beside Oura 93 and COROS 83. The user identifies overnight room cooling as the problem: one blanket comfortable early becomes insufficient by morning, while two are too hot early.",
+        "Room-temperature control is unavailable in the old hotel building. The user’s earlier sleep-and-wake proposal is a feasible workaround to test, preserving sleep duration while aiming to finish before the usual cold period. More starting blankets already cause excessive warmth. No outcome of this schedule change is established."
       ],
       "next_focus_references": [
         {
@@ -3132,6 +3132,18 @@
         {
           "date": "2026-10-31",
           "reason": "Clarified that feet remain covered by the light blanket during the recurring cold-feet awakening. Kept heavier-starting-bedding overheating/removal as a distinct condition. Native measurements and curves unchanged."
+        },
+        {
+          "date": "2026-10-31",
+          "reason": "Clarified the sequence: two blankets too hot early or one removed early, then covered feet cold by morning with one remaining. Avoid treating these as unrelated conditions. Provider values and curves unchanged."
+        },
+        {
+          "date": "2026-10-31",
+          "reason": "User explicitly identifies room-temperature drop as the problem. Replaced framing about changing warmth requirement with the reported environmental cause. No native data changed; no measured magnitude or successful intervention invented."
+        },
+        {
+          "date": "2026-10-31",
+          "reason": "User clarifies the old hotel building offers no room-temperature control. Removed thermostat/reception heating suggestions from the current plan. Earlier sleep-and-wake timing remains a proposed workaround, not a tested result."
         }
       ]
     }
