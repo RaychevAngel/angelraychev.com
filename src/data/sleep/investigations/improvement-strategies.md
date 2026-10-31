@@ -1,7 +1,7 @@
 ---
 title: "Strategies for improving sleep"
 description: "A ranked investigation of sleep opportunity, timing, light, stimulants, training and environment, with the limits of the evidence retained."
-updated: "2026-10-17"
+updated: "2026-10-31"
 order: 3
 ---
 
@@ -113,6 +113,8 @@ A home study in older adults found nonlinear temperature/sleep relationships and
 Simulated intensive-care noise/light studies found disruption and protective-intervention benefits. Transfer to an already quiet, dark room remains unresolved. [Hu et al.](https://pubmed.ncbi.nlm.nih.gov/25887528/)
 
 Start with observation and reversible adjustment. Room, bed, finger-deviation and core temperatures are different measurements.
+
+A small randomized-order comparison in **six young men** tested loose bed socks versus no socks during seven-hour laboratory sleep at 23°C, with the same clothing and bedding. Foot warming improved actigraphy-estimated sleep measures, while subjective questionnaire ratings and core temperature did not differ significantly. This supports a comfort experiment, with substantial uncertainty from the small sample and actigraphy rather than EEG; it does not establish a personal bedroom temperature or prove that socks will solve the reported late cold-feet/early overheating pattern. [Ko and Lee 2018](https://pubmed.ncbi.nlm.nih.gov/29699592/).
 
 A controlled thermosuit experiment in young and older participants found that a small increase in skin temperature, without changing core temperature, reduced nocturnal waking; effects were particularly pronounced in the older groups. This illustrates why lowering every temperature is not a coherent target. The artificial intervention does not supply an ideal bedroom setting or an effect size for adding a blanket here. The abstract supports that distinction; the full protocol and funding disclosures have not yet been audited. [Raymann et al.](https://pubmed.ncbi.nlm.nih.gov/18192289/)
 

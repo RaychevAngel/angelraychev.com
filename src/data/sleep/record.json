@@ -2946,7 +2946,7 @@
       "wake_date": "2026-10-31",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 31, with separate prior-evening detection retained",
-      "status": "Oura 93/COROS 83; reported midnight onset, waking 09:15–09:30, last food 19:00 and no naps; experienced quality unreported",
+      "status": "Good overall sleep and morning; midnight onset, waking 09:15–09:30, last food 19:00, no naps; recurring cold-feet/blanket mismatch; Oura 93/COROS 83",
       "retrieved_at": "2026-10-31T20:11:56.966Z",
       "provider_retrieved_at": {
         "oura": "2026-10-31T20:09:15.682755+00:00",
@@ -3051,15 +3051,15 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261031 checked."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "Overall sleep was good.",
+        "morning_sleepiness": "Felt good in the morning and spent some time lying in bed thinking. No exact out-of-bed time or waking-to-alert interval supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": "No naps. This disputes the separate Oura prior-evening two-minute sleep detection.",
         "intended_bedtime": "Reported falling asleep around midnight. The actual sleep-attempt time was not supplied.",
-        "environment": null,
+        "environment": "Reports a recurring pattern across several unspecified nights: room comfortable around midnight with a light blanket, waking around 07:30 with cold feet and adding another blanket. Extra bedding from the start can be too hot, prevent falling asleep, or be removed during sleep. Believes the room loses heat overnight; no measured room-temperature trace supplied.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
@@ -3073,24 +3073,33 @@
         {
           "kind": "self_report",
           "observation": "The user reports falling asleep around midnight, waking around 09:15–09:30, last food 19:00 and no naps. That is about five hours from last food to reported onset. Exact sleep attempt, experienced quality, morning/later-day function and remembered awakenings remain unspecified."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Later follow-up supplies good overall sleep and morning, plus time lying in bed thinking. The recurring thermal pattern spans several nights without identifying each date or exact count; it is not retroactively assigned to every prior record. Extra insulation from bedtime can overheat or be removed. Room cooling is reported rather than quantified. An earlier schedule is the user’s proposed response, not a demonstrated remedy."
         }
       ],
       "story": [
-        "I did not nap. I fell asleep around midnight, last ate at 19:00, and woke around 09:15–09:30."
+        "I did not nap. I fell asleep around midnight, last ate at 19:00, and woke around 09:15–09:30.",
+        "Overall sleep was good and I felt good in the morning. I spent some time lying in bed thinking.",
+        "Across several nights, I have noticed that a light blanket is enough around midnight, but I wake around 07:30 with cold feet and add another blanket. Extra bedding from bedtime can make me too hot to fall asleep, or I remove it during sleep. I think the room loses heat overnight. I am considering an earlier schedule."
       ],
       "interpretation": [
         "Oura returned 93, the highest eligible sleep score recorded so far, with 8h57m30s asleep and 46 minutes awake in 23:59:01–09:42:31. COROS became available on recheck with 83,8h47m asleep and 27 minutes awake in 00:02–09:16. Oura estimates 10m30s more sleep over a29m30s longer episode, and 19 minutes more awake. The ten-point score gap remains a provider disagreement, not an average or a choice of whichever grade looks best.",
         "The user reports falling asleep around midnight and waking around 09:15–09:30. COROS’s09:16 ending falls within that range, while Oura’s09:42:31 ending lies 12m31s–27m31s later. This supports closer COROS end-time agreement with the approximate diary; it does not validate every awake or sleep-stage label. Actual sleep-attempt time remains unknown, and the coarse onset report does not independently validate Oura’s13m30s latency.",
         "Compared with October 30, Oura starts 46m32s earlier, estimates 47m30s more sleep and changes 85 → 93. COROS starts 47 minutes earlier, estimates 27 minutes more sleep and changes 89 → 83. Oura timing improves 61 → 69, total sleep 87 → 97 and restfulness 81 → 90; its awake estimate nevertheless rises 29 → 46 minutes and efficiency falls 94% → 92%. COROS awake time rises 13 → 27 minutes, with one detected awakening longer than five minutes versus zero previously. No remembered-awakening count was supplied.",
-        "Oura estimated 2h23m30s deep,2h18m30s REM and 4h15m30s light. Contributors are deep 99, REM 98, total sleep 97, efficiency 97, restfulness 90, latency 94 and timing 69. COROS daily ratios are deep 18%, light 44%, REM 33% and awake 5%, without a supplied exact denominator; exact stage minutes are not reconstructed. Timing remains Oura’s lowest contributor. The user did not separately report experienced night quality or morning alertness.",
+        "Oura estimated 2h23m30s deep,2h18m30s REM and 4h15m30s light. Contributors are deep 99, REM 98, total sleep 97, efficiency 97, restfulness 90, latency 94 and timing 69. COROS daily ratios are deep 18%, light 44%, REM 33% and awake 5%, without a supplied exact denominator; exact stage minutes are not reconstructed. Timing remains Oura’s lowest contributor. The later follow-up reports good overall sleep and a good morning, with time lying in bed thinking. This is a positive experienced outcome alongside the different grades; it does not independently validate exact stage durations.",
         "Oura mean sleeping HR is 49.5 bpm, minimum 45, HRV 62 ms and Readiness 93. COROS official sleep HRV is 60 ms Normal against 49–67 and baseline 58; neither value is recalculated from individual points. Both HRV headlines are lower than October 30’s69/68 ms despite the higher Oura sleep score. COROS daily HR snapshot is 55 bpm average/minimum 45 and predicted seated resting HR 52, separate from Oura’s overnight scope. Oura temperature deviation is−0.20 °C, breathing 12.125/min, average SpO₂ 95.367% and breathing disturbance index 1; these are provider estimates, not clinical findings.",
         "The no-nap report explicitly disputes Oura’s separate 19:32–19:52 detection on October 30, with two minutes estimated light sleep and 18 minutes awake. The original classification and duration remain visible, while it is not counted as a confirmed nap or merged into the main-night curves. COROS reports zero detected nap minutes. The initial COROS unavailable-detail placeholder is superseded by a valid main record, not treated as a prior zero score.",
-        "Last food was reported at 19:00, about five hours before the reported midnight onset. Food timing and earlier detected onset are known for this date, but fluid timing, other exposures, subjective quality and later-day functioning are not. No meal effect or successful personal intervention is inferred. The fixed October 13–26 milestone remains 82.31 from 13 eligible scores, below 85; the new single-night high does not change that completed assessment. Nineteen dates now have 19 Oura records (18 eligible whole-night scores) and 19 COROS records."
+        "The reported recurring cold-feet pattern identifies a comfort mismatch: sufficient insulation at midnight can be insufficient later, while a heavier starting blanket can be too hot or be removed. Simply increasing starting bedding is therefore a poor fit to the reported experience. An earlier schedule could avoid the late cold period only if final waking also moves earlier while sufficient sleep opportunity is preserved. The clock time of cold feet, measured room temperature, exact awakening cause and individual recurrence dates are not established by the ring temperature-deviation summary.",
+        "Last food was reported at 19:00, about five hours before the reported midnight onset. Food timing and earlier detected onset are known for this date, but fluid timing, most other exposures and later-day functioning remain unknown. Overall sleep and the morning are now reported good. No meal effect or successful personal intervention is inferred. The fixed October 13–26 milestone remains 82.31 from 13 eligible scores, below 85; the new single-night high does not change that completed assessment. Nineteen dates now have 19 Oura records (18 eligible whole-night scores) and 19 COROS records."
       ],
-      "plans": [],
+      "plans": [
+        "Considering an earlier sleep schedule in response to the recurring cold-feet/blanket pattern. No exact new schedule or completed trial reported."
+      ],
       "next_focus": [
-        "Retain the reported midnight onset,19:00 last food and 09:15–09:30 waking beside both provider windows. The COROS end fits the diary more closely, but the grade gap 93/83 needs to remain visible. Current experienced quality and morning/later-day alertness are still unknown.",
-        "Use the main-night curves to inspect estimates; the disputed two-minute evening detection remains separate. No new food cutoff or intervention effect is declared from this night."
+        "Keep the good night/morning beside Oura 93 and COROS 83. The main unresolved comfort issue is a light blanket being adequate initially but insufficient later, while heavier starting bedding can overheat or be removed.",
+        "Compare an earlier sleep-and-wake schedule with preserving sleep opportunity, or steadier overnight room conditions if controllable. Avoid assuming more starting insulation solves the reported problem. Track bedtime comfort, clock time of cold feet, added/removed bedding and room temperature if measurable; the aim is fewer unwanted thermal interruptions without new heat discomfort. These are proposed comparisons, not completed interventions."
       ],
       "next_focus_references": [
         {
@@ -3110,6 +3119,10 @@
         {
           "date": "2026-10-31",
           "reason": "Added follow-up: no naps, reported onset around midnight, last food 19:00, wake 09:15–09:30. Marked prior-evening Oura detection disputed, retaining its native values. COROS recheck now returns 83 /8h47m,00:02–09:16,awake 27m,officialHRV 60 ms Normal. Replaces the pending state; no placeholder zero counted. Oura main values/curves and fixed milestone unchanged."
+        },
+        {
+          "date": "2026-10-31",
+          "reason": "Added later follow-up: good overall sleep/morning, time lying in bed thinking, recurring cold feet around 07:30 with added blanket across unspecified nights, and excess starting warmth or blanket removal. Earlier schedule is a proposed response. No exact out-of-bed time, measured room-temperature drop or specific recurrence dates assumed. Device data and curves unchanged."
         }
       ]
     }
