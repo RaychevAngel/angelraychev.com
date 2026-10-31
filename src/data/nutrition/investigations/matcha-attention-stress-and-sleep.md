@@ -9,7 +9,7 @@ category: foods
 
 ## Why it remains an optional purchase
 
-I asked about matcha because I was interested in effects beyond vitamins and minerals. I already own 200 mg caffeine capsules, although ownership does not establish that I take them. For my daily hotel shopping, matcha can be an enjoyable drink to try. The research does not make it another item I need to fit into food I want to eat and can comfortably finish.
+I asked about matcha because I was interested in effects beyond vitamins and minerals. I already own 200 mg caffeine capsules, although ownership does not establish that I take them. For my daily shopping, matcha can be an enjoyable drink to try. The research does not make it another item I need to fit into food I want to eat and can comfortably finish.
 
 The useful questions are whether whole matcha improves something I care about, whether it outperforms caffeine, and whether its effect is large enough to matter. A faster response on one computer task, a saliva measurement and a better night's sleep are different outcomes.
 

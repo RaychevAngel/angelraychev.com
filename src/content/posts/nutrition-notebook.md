@@ -6,7 +6,7 @@ updated: 2026-10-10
 
 [Nutrient guide](/nutrition/guide/) · [Food record](/nutrition/record/) · [Investigations](/nutrition/research/)
 
-I want food to support training, recovery and health while remaining enjoyable to eat. The practical beginning is a hotel room, a daily stop at Trader Joe's, and roast chicken from RT. Storage and appetite are real constraints. A diet assembled to fill every cell in a nutrient table can still fail as a meal.
+I want food to support training, recovery and health while remaining enjoyable to eat. The practical beginning is a daily stop at Trader Joe's and roast chicken from RT. Storage and appetite are real constraints. A diet assembled to fill every cell in a nutrient table can still fail as a meal.
 
 This notebook holds the current pattern and the decisions behind it. The [food record](/nutrition/record/) preserves what happened, including portions I did not measure and food I could not finish. The [nutrient guide](/nutrition/guide/) gives each nutrient its own explanation, with the applicable intake references, the current estimate and the evidence behind a judgment. The [investigations](/nutrition/research/) connect questions that span several nutrients or concern a food, supplement or experimental intervention.
 

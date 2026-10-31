@@ -3,8 +3,8 @@
   "updated": "2026-10-31",
   "entries": [
     {
-      "id": "first-hotel-day",
-      "title": "The first hotel shopping day",
+      "id": "first-reported-day",
+      "title": "The first reported shopping day",
       "kind": "food_report",
       "food_date": "2026-09-19",
       "recorded_local_date": "2026-09-19",
@@ -62,7 +62,7 @@
         {
           "field": "storage",
           "kind": "self_reported",
-          "observation": "Hotel setting made preparing and eating foods awkward."
+          "observation": "Preparing and eating some foods was awkward."
         }
       ],
       "supplements": [],
@@ -1383,7 +1383,7 @@
       }
     },
     {
-      "id": "third-hotel-day",
+      "id": "third-reported-day",
       "title": "Third diary report",
       "kind": "food_report",
       "food_date": "2026-09-21",

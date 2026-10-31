@@ -46,7 +46,7 @@ Fat content, fermentation and the amounts of protein and calcium are separate pr
 
 ## What would make a dairy change worthwhile now
 
-For the hotel routine, keeping enjoyable plain yogurt is a reasonable choice. **No clear improvement requires switching to full-fat or adding another dairy food.** A different product becomes useful if it tastes better, costs less, provides a more practical container, or fits an actual portion change.
+For the daily routine, keeping enjoyable plain yogurt is a reasonable choice. **No clear improvement requires switching to full-fat or adding another dairy food.** A different product becomes useful if it tastes better, costs less, provides a more practical container, or fits an actual portion change.
 
 Compare the label per amount I will finish: protein, calories, saturated fat, calcium, added sugars and any vitamin D fortification. A smaller, more concentrated product may change protein per container without preserving the same calcium total. Those values need checking; the word “Greek,” “organic” or “fermented” is not a complete nutrient comparison. Replacing the yogurt means updating its catalog entry, not carrying forward the current numbers.
 

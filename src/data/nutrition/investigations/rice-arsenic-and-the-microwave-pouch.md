@@ -8,7 +8,7 @@ category: foods
 
 ## The practical question
 
-The basmati pouch makes a simple chicken meal possible with a microwave. That convenience matters in the current hotel routine. A useful quality question is whether repeatedly relying on one grain changes contaminant exposure, and whether a realistic substitution or preparation would improve it. No arsenic measurement is available for my actual pouch, and none is added to the [food record](/nutrition/record/) as a guessed value.
+The basmati pouch makes a simple chicken meal possible with a microwave. That convenience matters in the current routine. A useful quality question is whether repeatedly relying on one grain changes contaminant exposure, and whether a realistic substitution or preparation would improve it. No arsenic measurement is available for my actual pouch, and none is added to the [food record](/nutrition/record/) as a guessed value.
 
 Rice can accumulate arsenic from its growing environment. FDA advises a varied diet and says rice can remain part of a balanced eating pattern. That supports considering a grain rotation; it does not require discarding a food that makes the routine work. [FDA practical guidance](https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic).
 

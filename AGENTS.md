@@ -1,5 +1,10 @@
 # Portfolio maintenance
 
+Do not publish personal accommodation details, lodging type, lodging names or
+addresses, or where the user is staying. Keep relevant sleep/food constraints in
+neutral terms. This applies to prose, record identifiers, downloads and embedded
+data. Third-party study settings are not personal accommodation disclosures.
+
 Use `docs/PUBLICATION-STANDARD.md` for publication and resource presentation.
 `src/data/publications.json` is authoritative for work identities, overview URLs,
 resource types, publication records and selected PDF versions. Use the shared

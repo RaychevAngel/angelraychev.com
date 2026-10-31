@@ -52,6 +52,6 @@ The [iron guide](/nutrition/guide/iron/) develops my food estimate. Dietary tota
 
 The research makes deliberate calorie restriction a question about several outcomes: metabolic risk, body weight, bone, function and an unconfirmed lifespan benefit. Multiple papers here analyze **one trial**, so their number should not be mistaken for independent replication.
 
-For the current hotel routine, an enjoyable, repeatable amount of food remains the useful starting point. Record appetite and training context, then add a consistent weight trend if feasible. If intentional weight loss becomes a goal, evaluate it against performance, recovery and the practical ability to eat enough; a biological-aging score alone supplies a weak reason to begin.
+For the current routine, an enjoyable, repeatable amount of food remains the useful starting point. Record appetite and training context, then add a consistent weight trend if feasible. If intentional weight loss becomes a goal, evaluate it against performance, recovery and the practical ability to eat enough; a biological-aging score alone supplies a weak reason to begin.
 
 The immediate priority is making the existing food pattern work. The [food notebook](/nutrition-notebook/) keeps those decisions visible, including the information still needed before its nutrient estimates can support a more precise change.

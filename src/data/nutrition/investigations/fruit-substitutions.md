@@ -8,7 +8,7 @@ category: foods
 
 ## Start with a replacement that fits
 
-I liked the raspberries, bananas, orange and apple. I am open to replacing the apple with kiwi, and interested in mango, melon, pomegranate, grapes and pineapple. The earlier mango was awkward to eat in a hotel; a later large yogurt-and-fruit portion was difficult to finish. Those observations favor one useful substitution over another large addition.
+I liked the raspberries, bananas, orange and apple. I am open to replacing the apple with kiwi, and interested in mango, melon, pomegranate, grapes and pineapple. The earlier mango was awkward to prepare and eat; a later large yogurt-and-fruit portion was difficult to finish. Those observations favor one useful substitution over another large addition.
 
 The latest saved estimate already contains about **400 mg vitamin C**, under its stated fruit and pepper portions. That is an estimate with an unquantified sauce, not a laboratory measurement, but it gives little reason to increase fruit simply to obtain more vitamin C. The available vitamin A estimate is lower than the age/sex recommendation, so a fruit change addressing provitamin A would answer a different question. Neither observation diagnoses a deficiency.
 
