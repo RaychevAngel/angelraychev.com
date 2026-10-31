@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-10-30"
+updated: "2026-10-31"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**October 31 — a new single-night high, experience pending.** [Oura 93](/sleep/record/#night-2026-10-31) is the highest eligible sleep score recorded so far, with **8h57m30s asleep** in **23:59–09:43**. Deep is **2h23m30s**, REM **2h18m30s**, and Readiness **93**. Contributors include deep **99**, REM **98**, total sleep/efficiency **97**, latency **94**, restfulness **90** and timing **69**. Compared with October 30, the detected start is about 47 minutes earlier and sleep 47m30s longer, while awake time rises **29 → 46 minutes** and estimated efficiency falls **94% → 92%**. The [new curves](/sleep/charts/#night-2026-10-31) retain these different changes. HRV is **62 ms**. COROS sleep detail and official HRV are **pending**, not zero. The separate **19:32–19:52** detection, with two minutes estimated sleep, is unconfirmed. Actual routine, experienced quality and morning function remain unreported; a single high score does not establish a sustained target.
 
 **October 30 — stronger REM and HRV, lower Oura grade.** The [record](/sleep/record/#night-2026-10-30) returns **Oura 85 /8h10m asleep** and **COROS 89 /8h20m**, with close windows **00:45–09:25 /00:49–09:22**. Oura estimates **29 minutes awake**, COROS **13**. Compared with the revised October 29 night, Oura’s main start is about 51 minutes later and sleep is 47m30s shorter. Timing falls **73 → 61**, restfulness **90 → 81**, total sleep **97 → 87**, while REM improves **80 → 96**. HRV rises to **69/68 ms** and Oura mean sleeping HR is **47.375 bpm**. The [curves](/sleep/charts/#night-2026-10-30) preserve the new chronological estimates. The follow-up reports **feeling good**, a **00:30 sleep attempt**, waking around **09:15–09:30**, and last meal at **18:00**—about **6h30m before the attempt**. Both device endings fall within the reported waking interval. Oura’s five-minute latency begins from its later main episode and does not measure the full delay from 00:30. Exact onset, remembered awakenings, fluid timing and later-day function remain unspecified. A good experienced outcome stays alongside the lower score; no meal effect is isolated.
 

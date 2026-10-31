@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-30"
+updated: "2026-10-31"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**October 31 — higher grade with an earlier detected window.** [Oura 93 /8h57m30s](/sleep/record/#night-2026-10-31) begins around **23:59**, about 47 minutes earlier than October 30; sleep is 47m30s longer. Timing improves **61 → 69**, restfulness **81 → 90**, while the awake estimate grows **29 → 46 minutes**. Deep/REM contributors reach **99/98**. The [curve](/sleep/charts/#night-2026-10-31) preserves native labels and pulse. There is no new diary yet: October 30’s meal 18:00, attempt 00:30 and good experience are not carried forward. The prior-evening two-minute sleep detection remains unconfirmed; COROS sleep/HRV remain pending. The new high is not attributed to an unreported meal or bedtime routine.
 
 **October 30 — a good experienced outcome, with a reported meal gap.** [Oura 85 / COROS 89](/sleep/record/#night-2026-10-30) estimate **8h10m/8h20m asleep** with starts **00:45–00:49**, about 51–53 minutes later than October 29. Oura timing is **61**, total sleep **87**, restfulness **81**, REM **96** and efficiency **99** (estimated efficiency **94%**). HRV is **69/68 ms**. The [new curves](/sleep/charts/#night-2026-10-30) retain labels and pulse without assigning a cause. The follow-up supplies **last meal 18:00, sleep attempt 00:30, waking around 09:15–09:30 and feeling good**. The meal-to-attempt gap is about **6h30m**. Both device endings fit the reported waking interval, but exact onset and individual awake labels remain unverified. Oura’s five-minute latency concerns a main episode beginning 00:45:33, rather than the full interval from the reported attempt. Fluids, remembered awakenings and sustained later-day function remain unspecified. One favorable experience does not establish an optimal food cutoff or isolate a meal effect.
 
