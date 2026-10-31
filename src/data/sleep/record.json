@@ -2946,11 +2946,11 @@
       "wake_date": "2026-10-31",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; main sleep ending October 31, with separate prior-evening detection retained",
-      "status": "Oura 93, highest recorded score; 8h57m30s asleep; COROS pending; experience unreported",
-      "retrieved_at": "2026-10-31T20:09:15.682755+00:00",
+      "status": "Oura 93/COROS 83; reported midnight onset, waking 09:15–09:30, last food 19:00 and no naps; experienced quality unreported",
+      "retrieved_at": "2026-10-31T20:11:56.966Z",
       "provider_retrieved_at": {
         "oura": "2026-10-31T20:09:15.682755+00:00",
-        "coros": "2026-10-31T20:09:13.065Z"
+        "coros": "2026-10-31T20:11:56.966Z"
       },
       "oura": {
         "model": "Oura Ring 5",
@@ -2995,7 +2995,7 @@
             "time_in_bed": 1200,
             "total_sleep_duration": 120,
             "type": "sleep",
-            "confirmation": "Provider-detected prior-evening episode; actual sleep or dozing remains unconfirmed by the user."
+            "confirmation": "User explicitly reports no naps, disputing this two-minute prior-evening sleep detection. Native classification and duration retained."
           }
         ],
         "score": 93,
@@ -3015,7 +3015,41 @@
         "source": "Authenticated Oura API V2 exact-date sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration; pagination exhausted. Main night and separate prior-evening detection retained without merging.",
         "spo2_status": "Provider daily sleep-oxygen summary"
       },
-      "coros": null,
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 83,
+        "daily_sleep_minutes": 527,
+        "main_sleep_minutes": 527,
+        "main_period_minutes": 554,
+        "main_start": "2026-10-31T00:02:00-07:00",
+        "main_end": "2026-10-31T09:16:00-07:00",
+        "ratios_percent": {
+          "deep": 18,
+          "light": 44,
+          "rem": 33,
+          "awake": 5
+        },
+        "ratio_denominator": "Daily metric scope; no detected nap this date. Exact percentage denominator not explicitly supplied; do not reconstruct exact stage minutes.",
+        "awake_minutes": 27,
+        "awake_count_over_5min": 1,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 60,
+        "official_sleep_hrv_normal_range_ms": [
+          49,
+          67
+        ],
+        "official_sleep_hrv_baseline_ms": 58,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline; not recomputed from time-series points",
+        "daily_min_hr_bpm": 45,
+        "daily_average_hr_bpm": 55,
+        "resting_hr_bpm": 52,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not matched sleep-window HR; resting HR is predicted seated HR",
+        "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact returned wake date 20261031 checked."
+      },
       "self_report": {
         "restfulness": null,
         "morning_sleepiness": null,
@@ -3023,8 +3057,8 @@
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
-        "naps": null,
-        "intended_bedtime": null,
+        "naps": "No naps. This disputes the separate Oura prior-evening two-minute sleep detection.",
+        "intended_bedtime": "Reported falling asleep around midnight. The actual sleep-attempt time was not supplied.",
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
@@ -3034,27 +3068,29 @@
       "context": [
         {
           "kind": "device_record",
-          "observation": "Oura main episode spans October 30 23:59:01 to October 31 09:42:31. A separate October 30 19:32:01–19:52:01 detection contains two minutes estimated light sleep and 18 minutes awake, assigned by Oura to wake date October 31; it is unconfirmed and excluded from the main-night curve."
+          "observation": "Oura main window is 23:59:01–09:42:31; COROS is 00:02–09:16. Oura’s separate 19:32:01–19:52:01 detection on October 30 remains native type sleep with two minutes estimated asleep, now disputed by the no-nap report. COROS reports zero detected naps."
         },
         {
           "kind": "self_report",
-          "observation": "No diary supplied yet for October 31. October 30’s good overall experience,00:30 attempt,09:15–09:30 waking and 18:00 last meal remain on that prior date. Current attempt, final waking, night/morning experience, food timing and actual evening dozing are unknown."
+          "observation": "The user reports falling asleep around midnight, waking around 09:15–09:30, last food 19:00 and no naps. That is about five hours from last food to reported onset. Exact sleep attempt, experienced quality, morning/later-day function and remembered awakenings remain unspecified."
         }
       ],
-      "story": [],
+      "story": [
+        "I did not nap. I fell asleep around midnight, last ate at 19:00, and woke around 09:15–09:30."
+      ],
       "interpretation": [
-        "Oura returned 93, the highest eligible sleep score recorded in this notebook so far. It estimates 8h57m30s asleep within 23:59:01–09:42:31, a9h43m30s episode with 46 minutes awake. The grade and detected duration are observations; experienced sleep and morning function have not yet been reported.",
-        "Compared with October 30, Oura main sleep starts 46m32s earlier and estimates 47m30s more sleep. The score rises 85 → 93, timing 61 → 69, total sleep 87 → 97 and restfulness 81 → 90. Estimated awake time also rises 29 → 46 minutes, while efficiency falls 94% → 92%. A better composite therefore does not mean that every dimension improved or that remembered awakenings were fewer.",
-        "Oura estimated 2h23m30s deep,2h18m30s REM and 4h15m30s light. Contributors are deep 99, REM 98, total sleep 97, efficiency 97, restfulness 90, latency 94 and timing 69. Main-episode latency is 13m30s. The actual sleep attempt remains unknown; that native latency is not assumed to cover an unreported earlier attempt. Timing is the lowest contributor despite the new overall high.",
-        "Oura average sleeping HR is 49.5 bpm, minimum 45, HRV 62 ms, Readiness 93 and peripheral-temperature deviation −0.20 °C. HRV falls from 69 ms despite the higher sleep score and Readiness; lower or higher values are not treated as a complete recovery verdict. Breathing rate is 12.125/min, average SpO₂ 95.367% and breathing disturbance index 1. These are provider estimates, not clinical findings or a cause attribution.",
-        "COROS has no usable sleep episode or official HRV assessment yet for this exact wake date. The connector’s sleep-score zero accompanies an explicit unavailable-detail message; it is not stored as a zero-point night. No earlier score, HRV or sleep window is assigned to October 31. The connector itself answered successfully; missing sleep data are distinct from lost account access.",
-        "The separate 19:32–19:52 detection on October 30 contains only two minutes estimated asleep, with 18 minutes awake. It remains an unconfirmed provider detection, not a confirmed nap, and is not added to main sleep or the overnight curves. The main chronological stages and pulse use native timestamps and retain missing samples.",
-        "The fixed October 13–26 milestone stays 82.31 from 13 eligible scores, below 85. A new single-night high does not change that completed assessment or establish a sustained milestone. The record now includes 19 dates,18 eligible Oura whole-night grades and 18 available COROS sleep grades. No completed 28-day result is inferred."
+        "Oura returned 93, the highest eligible sleep score recorded so far, with 8h57m30s asleep and 46 minutes awake in 23:59:01–09:42:31. COROS became available on recheck with 83,8h47m asleep and 27 minutes awake in 00:02–09:16. Oura estimates 10m30s more sleep over a29m30s longer episode, and 19 minutes more awake. The ten-point score gap remains a provider disagreement, not an average or a choice of whichever grade looks best.",
+        "The user reports falling asleep around midnight and waking around 09:15–09:30. COROS’s09:16 ending falls within that range, while Oura’s09:42:31 ending lies 12m31s–27m31s later. This supports closer COROS end-time agreement with the approximate diary; it does not validate every awake or sleep-stage label. Actual sleep-attempt time remains unknown, and the coarse onset report does not independently validate Oura’s13m30s latency.",
+        "Compared with October 30, Oura starts 46m32s earlier, estimates 47m30s more sleep and changes 85 → 93. COROS starts 47 minutes earlier, estimates 27 minutes more sleep and changes 89 → 83. Oura timing improves 61 → 69, total sleep 87 → 97 and restfulness 81 → 90; its awake estimate nevertheless rises 29 → 46 minutes and efficiency falls 94% → 92%. COROS awake time rises 13 → 27 minutes, with one detected awakening longer than five minutes versus zero previously. No remembered-awakening count was supplied.",
+        "Oura estimated 2h23m30s deep,2h18m30s REM and 4h15m30s light. Contributors are deep 99, REM 98, total sleep 97, efficiency 97, restfulness 90, latency 94 and timing 69. COROS daily ratios are deep 18%, light 44%, REM 33% and awake 5%, without a supplied exact denominator; exact stage minutes are not reconstructed. Timing remains Oura’s lowest contributor. The user did not separately report experienced night quality or morning alertness.",
+        "Oura mean sleeping HR is 49.5 bpm, minimum 45, HRV 62 ms and Readiness 93. COROS official sleep HRV is 60 ms Normal against 49–67 and baseline 58; neither value is recalculated from individual points. Both HRV headlines are lower than October 30’s69/68 ms despite the higher Oura sleep score. COROS daily HR snapshot is 55 bpm average/minimum 45 and predicted seated resting HR 52, separate from Oura’s overnight scope. Oura temperature deviation is−0.20 °C, breathing 12.125/min, average SpO₂ 95.367% and breathing disturbance index 1; these are provider estimates, not clinical findings.",
+        "The no-nap report explicitly disputes Oura’s separate 19:32–19:52 detection on October 30, with two minutes estimated light sleep and 18 minutes awake. The original classification and duration remain visible, while it is not counted as a confirmed nap or merged into the main-night curves. COROS reports zero detected nap minutes. The initial COROS unavailable-detail placeholder is superseded by a valid main record, not treated as a prior zero score.",
+        "Last food was reported at 19:00, about five hours before the reported midnight onset. Food timing and earlier detected onset are known for this date, but fluid timing, other exposures, subjective quality and later-day functioning are not. No meal effect or successful personal intervention is inferred. The fixed October 13–26 milestone remains 82.31 from 13 eligible scores, below 85; the new single-night high does not change that completed assessment. Nineteen dates now have 19 Oura records (18 eligible whole-night scores) and 19 COROS records."
       ],
       "plans": [],
       "next_focus": [
-        "Compare the new highest grade with the experienced night, final waking and morning/later-day alertness. Clarify the actual sleep attempt and meal timing, and whether the brief prior-evening detection was real dozing. Previous-day routine is not assumed repeated.",
-        "Add COROS after its sleep record reaches the connector. Use the new main-night curve meanwhile; missing COROS is a gap, and the unconfirmed evening detection stays separate."
+        "Retain the reported midnight onset,19:00 last food and 09:15–09:30 waking beside both provider windows. The COROS end fits the diary more closely, but the grade gap 93/83 needs to remain visible. Current experienced quality and morning/later-day alertness are still unknown.",
+        "Use the main-night curves to inspect estimates; the disputed two-minute evening detection remains separate. No new food cutoff or intervention effect is declared from this night."
       ],
       "next_focus_references": [
         {
@@ -3070,10 +3106,12 @@
           "label": "Score benchmarks"
         }
       ],
-      "corrections": [],
-      "provider_status": {
-        "coros": "Official COROS connector returned no sleep detail for wake date 20261031 and no official sleep HRV assessment. Its zero score is an unavailable-detail placeholder, not a scored night."
-      }
+      "corrections": [
+        {
+          "date": "2026-10-31",
+          "reason": "Added follow-up: no naps, reported onset around midnight, last food 19:00, wake 09:15–09:30. Marked prior-evening Oura detection disputed, retaining its native values. COROS recheck now returns 83 /8h47m,00:02–09:16,awake 27m,officialHRV 60 ms Normal. Replaces the pending state; no placeholder zero counted. Oura main values/curves and fixed milestone unchanged."
+        }
+      ]
     }
   ],
   "milestone_assessments": [
