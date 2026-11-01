@@ -1,9 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {stageSegments,samplePoints,linePaths,trendValue,trendPoints,stageSVG,pulseSVG,trendSVG} from '../src/lib/sleep-charts.mjs';
+import {stageSegments,samplePoints,linePaths,trendValue,trendPoints,stageSVG,pulseSVG,trendSVG,clock,clockWithZone,crossesClockChange} from '../src/lib/sleep-charts.mjs';
 const record=JSON.parse(readFileSync(new URL('../src/data/sleep/record.json',import.meta.url)));
 const timelines=JSON.parse(readFileSync(new URL('../src/data/sleep/timelines.json',import.meta.url)));
+test('repeated autumn hour retains distinct instants and PDT/PST labels',()=>{
+ const before='2026-11-01T01:30:00-07:00',after='2026-11-01T01:30:00-08:00';
+ assert.equal(clock(before),clock(after));
+ assert.equal(Date.parse(after)-Date.parse(before),3600000);
+ assert.equal(clockWithZone(before),'01:30 PDT');
+ assert.equal(clockWithZone(after),'01:30 PST');
+ assert.equal(crossesClockChange(before,after),true);
+ const timeline=timelines.entries.find(t=>t.date==='2026-11-01');
+ assert.equal(Date.parse(timeline.end)-Date.parse(timeline.start),39090000);
+ assert.match(stageSVG(timeline),/23:35 PDT/);assert.match(stageSVG(timeline),/09:26 PST/);
+});
 test('stage runs preserve chronological labels and clip the final partial epoch',()=>{
  const t={start:'2026-10-26T00:00:00Z',end:'2026-10-26T00:01:10Z',stage_interval_seconds:30,stages:'4411'};
  const runs=stageSegments(t);assert.deepEqual(runs.map(x=>[x.stage,(x.end-x.start)/1000]),[['4',60],['1',10]]);

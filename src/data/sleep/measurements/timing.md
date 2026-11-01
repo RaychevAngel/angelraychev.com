@@ -1,7 +1,7 @@
 ---
 title: "Timing, regularity and circadian alignment"
 description: "Clock time, stability and biological phase need different measurements and different questions."
-updated: "2026-10-13"
+updated: "2026-11-01"
 order: 3
 role: "Investigate"
 attention: "Separate the three questions"
@@ -34,3 +34,10 @@ Oura's timing score can be retained as one provider judgment. Its grading and an
 If a phase question becomes consequential, dim-light melatonin onset can assess circadian phase under a controlled collection protocol. It is a different measurement from a questionnaire chronotype or a low timing contributor. Collection conditions, timing and assay validity matter. [Reference-measurement discussion](/sleep/research/measurement-and-validation/#measuring-biological-phase).
 
 The initial target is to characterize the schedule and investigate avoidable misalignment or variation. A later experiment can specify a schedule change and its desired outcome. Choosing a preferred hour before that question is resolved would prematurely define the optimum.
+
+
+## Clock changes and elapsed time
+
+The [November 1 record](/sleep/record/#night-2026-11-01) crosses the Los Angeles autumn clock rollback. An hour appears twice on the wall clock. Durations and curves must use elapsed instants, while displayed times identify PDT or PST. The original Oura timestamps and samples remain unchanged; its −08:00 start represents 23:35 PDT when converted to the actual local offset at that instant.
+
+COROS’s connector returned 23:40–10:22 plus a 10h42m period. Applying the local offset at each displayed boundary gives 11h42m, a one-hour conflict. The record keeps the reported durations and wall-clock text, leaves absolute endpoints unresolved, and does not assume which label or duration should be corrected. A diary waking time can help investigate agreement but does not independently validate every device duration.

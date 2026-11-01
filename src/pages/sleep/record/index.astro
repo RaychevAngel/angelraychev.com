@@ -8,6 +8,7 @@ const frontmatter = { title: "Sleep record", description: "Dated sleep observati
 const duration = (seconds: number) => `${Math.floor(seconds / 3600)}h ${String(Math.floor((seconds % 3600) / 60)).padStart(2, "0")}m`;
 const minutes = (seconds: number) => `${(seconds / 60).toFixed(1)} min`;
 const time = (stamp: string) => new Date(stamp).toLocaleTimeString("en-GB", { timeZone: "America/Los_Angeles", hour: "2-digit", minute: "2-digit", hour12: false });
+const corosWindow = (c: { main_window_reported?: string; main_start?: string | null; main_end?: string | null }) => c.main_window_reported ?? (c.main_start && c.main_end ? `${time(c.main_start)}–${time(c.main_end)}` : "Clock window unresolved");
 const date = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
 const shortDate = (day: string) => new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" });
 const newestFirst = [...record.entries].reverse();
@@ -65,13 +66,14 @@ const reportLabels = { restfulness: "Restfulness", daytime_sleepiness: "later-da
         <p>Provider estimates and any self-report remain separate. Missing estimates are not zero, and earlier scores have not been assigned to this night.</p>
       </>}
       {o?.quality_note && <p><strong>Recording quality:</strong> {o.quality_note}</p>}
-      {o && c && <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS selected {time(entry.coros.main_start)}–{time(entry.coros.main_end)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>}
+      {o && c && <p>Oura recorded an episode from {time(s.bedtime_start)} to {time(s.bedtime_end)}. COROS reports {corosWindow(c)}. {entry.id === "2026-10-13" && "The windows end together and start five minutes apart. Their sleep estimates and scores differ."}</p>}
+      {c?.main_window_note && <p><strong>Clock-time limitation:</strong> {c.main_window_note}</p>}
       {(o || c) && <div class="tablewrap">
         <table aria-label={`Available sleep estimates for ${entry.wake_date}`}>
           <thead><tr><th scope="col">Measurement</th><th scope="col">{o?.model ?? "Oura — pending"}</th><th scope="col">{c?.model ?? `COROS — ${corosMissing.toLowerCase()}`}</th></tr></thead>
           <tbody>
             <tr><th scope="row">Sleep score</th><td>{o ? `${o.score} / 100${o.score_eligible === false ? " — incomplete recording" : ""}` : "Pending"}</td><td>{c ? `${c.sleep_score} / 100` : corosMissing}</td></tr>
-            <tr><th scope="row">Selected sleep window</th><td>{s ? `${time(s.bedtime_start)}–${time(s.bedtime_end)}` : "Pending"}</td><td>{c ? `${time(c.main_start)}–${time(c.main_end)}` : corosMissing}</td></tr>
+            <tr><th scope="row">Selected sleep window</th><td>{s ? `${time(s.bedtime_start)}–${time(s.bedtime_end)}` : "Pending"}</td><td>{c ? corosWindow(c) : corosMissing}</td></tr>
             <tr><th scope="row">Estimated time asleep</th><td>{s ? duration(s.total_sleep_duration) : "Pending"}</td><td>{c ? duration(c.main_sleep_minutes * 60) : corosMissing}</td></tr>
             <tr><th scope="row">Episode including awake time</th><td>{s ? duration(s.time_in_bed) : "Pending"}</td><td>{c ? duration(c.main_period_minutes * 60) : corosMissing}</td></tr>
             <tr><th scope="row">Estimated awake time in episode</th><td>{s ? minutes(s.awake_time) : "Pending"}</td><td>{c ? `${c.awake_minutes} min` : corosMissing}</td></tr>

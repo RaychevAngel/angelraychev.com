@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-10-31"
+updated: "2026-11-01"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 1 — a higher grade is not yet a confirmed routine result.** [Oura 96 / COROS 87](/sleep/record/#night-2026-11-01) estimate **9h59m30s / 10h26m asleep**. Oura timing reaches **96**, total sleep **100**, but restfulness falls to **83** and awake time grows to **52 minutes**. The [curve](/sleep/charts/#night-2026-11-01) preserves elapsed time through the clock rollback. COROS’s returned clock window has a one-hour offset ambiguity; the diary keeps its native duration and labels separate. No November 1 routine or experienced outcome has been reported. The earlier-schedule proposal and recurring cold-feet account below are earlier context, not confirmed conditions or results for this night.
 
 **October 31 — reported timing supplied, provider grading still differs.** The user reports **last food 19:00, onset around midnight, waking 09:15–09:30 and no naps**. That gives roughly five hours from last food to reported onset; actual attempt, fluid timing and later-day outcome remain unknown. Overall sleep and the morning are now reported good, with time lying in bed thinking. [Oura 93/COROS 83](/sleep/record/#night-2026-10-31) estimate **8h57m30s/8h47m asleep**. COROS’s09:16 ending fits the reported range, while Oura ends 09:42. The [curve](/sleep/charts/#night-2026-10-31) retains the original Oura main sequence; its separate two-minute evening detection is disputed and kept outside the main night. Earlier detected starts and more estimated sleep accompany opposite score changes. No causal food or bedtime effect is isolated.
 

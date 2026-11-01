@@ -1,6 +1,9 @@
 export const WIDTH = 660;
 export const LEFT = 90, RIGHT = 642;
 export const clock = (stamp,seconds=false) => new Date(stamp).toLocaleTimeString('en-GB', {timeZone:'America/Los_Angeles',hour:'2-digit',minute:'2-digit',...(seconds?{second:'2-digit'}:{}),hour12:false});
+const zoneLabel = stamp => new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',timeZoneName:'short'}).formatToParts(new Date(stamp)).find(p=>p.type==='timeZoneName').value;
+export const clockWithZone = (stamp,seconds=false) => `${clock(stamp,seconds)} ${zoneLabel(stamp)}`;
+export const crossesClockChange = (start,end) => zoneLabel(start)!==zoneLabel(end);
 export const stageName = {'1':'Deep','2':'Light','3':'REM','4':'Awake'};
 const stageY = {'4':34,'3':78,'2':122,'1':166};
 const esc = x => String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -34,7 +37,8 @@ const axis=(start,end,y) => {
   const ticks=[start]; const hour=3600000;
   for(let t=Math.ceil(start/hour)*hour;t<end;t+=hour*2) if(t-start>Math.max(hour,(end-start)*.14)&&end-t>Math.max(hour,(end-start)*.14))ticks.push(t);
   ticks.push(end);
-  return ticks.map(t=>`<text x="${X(t,start,end)}" y="${y}" text-anchor="${t===start?'start':t===end?'end':'middle'}">${clock(t)}</text>`).join('');
+  const label=crossesClockChange(start,end)?clockWithZone:clock;
+  return ticks.map(t=>`<text x="${X(t,start,end)}" y="${y}" text-anchor="${t===start?'start':t===end?'end':'middle'}">${label(t)}</text>`).join('');
 };
 const svg=(label,desc,height,inner) => `<svg viewBox="0 0 660 ${height}" role="img" aria-label="${esc(label)}"><title>${esc(label)}</title><desc>${esc(desc)}</desc>${inner}</svg>`;
 export function stageSVG(timeline) {
