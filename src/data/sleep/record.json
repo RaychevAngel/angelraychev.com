@@ -3152,7 +3152,7 @@
       "wake_date": "2026-11-01",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; overnight clock rollback handled using explicit Oura offsets. COROS clock labels remain unresolved.",
-      "status": "Oura 96 / COROS 87; reported bed around 23:00–23:30, feeling as if falling asleep from 22:30, waking around 09:30. COROS clock ambiguity remains; experienced quality unreported.",
+      "status": "Good experienced sleep despite less controlled conditions; Oura 96 / COROS 87. Reported bed 23:00–23:30, drowsiness from 22:30, wake 09:30; incoming light reportedly caused an earlier awakening; COROS clock ambiguity remains.",
       "retrieved_at": "2026-11-01T18:28:56.943Z",
       "provider_retrieved_at": {
         "oura": "2026-11-01T18:27:44.530227+00:00",
@@ -3243,7 +3243,7 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, daily HR and predicted seated resting HR. Exact wake date 20261101 checked; clock labels retained with unresolved daylight-saving offset ambiguity."
       },
       "self_report": {
-        "restfulness": null,
+        "restfulness": "It was a good sleep, despite conditions that did not look favorable beforehand.",
         "morning_sleepiness": "Woke around 09:30. Morning sleepiness, alertness and waking-to-normal interval were not supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
@@ -3251,20 +3251,25 @@
         "alcohol_and_time": null,
         "naps": null,
         "intended_bedtime": "Went to bed maybe around 23:00–23:30; felt kind of falling asleep from around 22:30. Approximate report, not a confirmed continuous sleep interval or precise onset.",
-        "environment": null,
+        "environment": "Reports full artificial room lighting immediately before sleep, background traffic noise overnight, light entering in the morning and waking him earlier, limited room to turn, daytime clothes and nonstandard bedding. Light/noise levels, the light-related awakening time and its relationship to final waking were not measured or specified.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
         "illness": null
       },
       "story": [
-        "I woke around 09:30. I went to bed maybe around 23:00–23:30, although I felt kind of falling asleep from around 22:30."
+        "I woke around 09:30. I went to bed maybe around 23:00–23:30, although I felt kind of falling asleep from around 22:30.",
+        "I describe this as a good sleep despite conditions that did not look favorable beforehand. There was limited room to turn, I wore daytime clothes, and the bedding was improvised. I heard background traffic noise, and incoming morning light woke me earlier. The room had full artificial lighting before I went to sleep, without the gradual dim-light transition used on some earlier nights."
       ],
       "plans": [],
       "corrections": [
         {
           "date": "2026-11-01",
-          "reason": "Added user-reported bed around23:00–23:30, feeling kind of falling asleep from22:30, waking around09:30. Approximate times retained; no confirmed nap, continuous22:30 sleep, exact onset, quality or cold awakening inferred. Native provider objects, retrieval times and curves unchanged."
+          "reason": "Added user-reported bed around23:00–23:30, feeling kind of falling asleep from 22:30, waking around09:30. Approximate times retained; no confirmed nap, continuous22:30 sleep, exact onset, quality or cold awakening inferred. Native provider objects, retrieval times and curves unchanged."
+        },
+        {
+          "date": "2026-11-01",
+          "reason": "Added good experienced sleep plus neutral reports of limited turning room, daytime clothes, improvised bedding, background noise, morning light associated with an earlier awakening and full artificial lighting immediately before sleep. Awakening time, morning/daytime alertness, meal timing and cold awakenings remain unknown. Provider values and curves unchanged."
         }
       ],
       "context": [
@@ -3278,11 +3283,17 @@
         },
         {
           "kind": "self_report",
-          "observation": "November 1 follow-up supplies approximate bed 23:00–23:30, feeling kind of falling asleep from 22:30 and wake 09:30. This does not establish continuous sleep from 22:30, a nap, exact sleep onset, out-of-bed time or perceived sleep quality. Meal/fluid timing, remembered cold awakenings and morning/later-day functioning remain unreported."
+          "observation": "The November 1 follow-ups supply approximate bed 23:00–23:30, feeling kind of falling asleep from 22:30, wake 09:30 and good experienced sleep. The drowsiness report does not confirm continuous sleep from 22:30, a nap or exact onset. Meal/fluid timing, cold awakenings and morning/later-day alertness remain unreported."
+        },
+        {
+          "kind": "self_report",
+          "observation": "Less controlled sleep conditions are described in neutral terms only: restricted turning room, daytime clothes, improvised bedding, background noise, incoming morning light and full artificial lighting just before sleep. The user attributes an earlier awakening to light; its time and whether it was the final waking remain unspecified."
         }
       ],
       "interpretation": [
         "Oura 96 is the highest eligible single-night sleep score currently recorded, exceeding October 31’s 93. It estimates 9h 59m 30s asleep, 52 minutes awake and 10h 51m 30s in the selected episode. Compared with October 31, estimated sleep rises by 1h 02m and awake time by six minutes. A higher score does not mean every contributor or remembered aspect improved.",
+        "The user now explicitly reports good sleep. This positive experienced outcome belongs beside Oura 96 and COROS 87 even though the reported conditions looked unfavorable beforehand. It is a counterexample to treating a particular dark-room or wind-down routine as a necessary condition for a good night. It does not establish the average effect of noise, light, bedding or limited movement, or that a quieter/darker comparison would produce no improvement.",
+        "There is also a reported cost: incoming morning light woke the user earlier. The specific awakening time and relationship to the approximate 09:30 final waking are unknown. Do not substitute one of the device awake labels for that event, or infer no cold awakenings because none were reported. Morning and later-day alertness remain separate from the report of good sleep.",
         "Timing rises 69 → 96 and total sleep 97 → 100. Deep/REM contributors are 97/96, down from 99/98; restfulness falls 90 → 83. Efficiency and latency contributors remain 97/94. Estimated sleep efficiency is 92%, separate from the contributor. Estimated stages are deep 1h 56m 30s, REM 2h 04m and light 5h 59m; those are wearable classifications, not EEG measurements.",
         "COROS grades the night 87, estimates 10h 26m asleep and 16 minutes awake in a reported 10h 42m period, with no detected naps. Its daily deep/light/REM/awake ratios are 19/66/13/2%. The absolute clock window is unresolved across the rollback; its different duration is retained rather than corrected or averaged with Oura.",
         "Oura mean sleeping HR is 50.125 bpm, minimum 47 and HRV 55 ms; COROS official sleep HRV is 58 ms Normal against 49–67, baseline 58. Both HRV summaries are lower than October 31’s 62/60 ms despite higher sleep scores. Oura Readiness is 93, temperature deviation +0.20°C, breathing 11.875/min, average SpO₂ 96.945% and breathing disturbance index 0. COROS daily HR 53 bpm, minimum 45 and predicted seated resting HR 53 concern different scopes.",
@@ -3290,8 +3301,8 @@
         "Twenty wake dates now have 20 Oura and 20 COROS records, with 19 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. A new single-night high does not establish the sustained milestone."
       ],
       "next_focus": [
-        "The diary now supplies approximate bedtime 23:00–23:30, an impression of falling asleep from 22:30 and waking 09:30. Keep initial drowsiness distinct from confirmed sleep. Quality, morning/later-day alertness and any cold awakenings remain unreported.",
-        "The reported waking is close to Oura’s ending. Preserve the unresolved COROS connector clock labels and its native duration; the diary alone does not establish which provider duration is more accurate or a successful earlier-schedule intervention."
+        "Recognize this as a good experienced night alongside the new Oura high. Judge future routines by repeatability, sleep experience and functioning rather than by whether every environmental condition looks ideal beforehand.",
+        "Incoming morning light is the specifically reported unwanted disturbance. Its timing and effect on final waking remain unknown. Keep earlier dim-light practices as possible comparisons, not prerequisites this night had to satisfy. COROS’s native clock-window ambiguity remains unresolved."
       ],
       "next_focus_references": [
         {
