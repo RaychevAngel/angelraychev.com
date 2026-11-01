@@ -3152,7 +3152,7 @@
       "wake_date": "2026-11-01",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; overnight clock rollback handled using explicit Oura offsets. COROS clock labels remain unresolved.",
-      "status": "Good sleep with comfortable, stable temperature and comfortable pillow and blanket; Oura 96 / COROS 87. Main meal 19:30–20:00, desserts around 20:00/21:30, about 60 minutes walking afterward and a social evening. COROS clock ambiguity remains.",
+      "status": "Good experienced sleep, Oura 96 / COROS 87. Sleeping surface uncomfortable; pillow better, blanket comparable, temperature much better and stable. Background noise felt helpful. Light and late food remain perceived drawbacks, with their relative impact unproven.",
       "retrieved_at": "2026-11-01T18:28:56.943Z",
       "provider_retrieved_at": {
         "oura": "2026-11-01T18:27:44.530227+00:00",
@@ -3251,7 +3251,7 @@
         "alcohol_and_time": null,
         "naps": null,
         "intended_bedtime": "Went to bed maybe around 23:00–23:30; felt kind of falling asleep from around 22:30. Approximate report, not a confirmed continuous sleep interval or precise onset.",
-        "environment": "The pillow felt better than usual, the temperature felt perfect and stable, and the blanket felt good. Other reported conditions included limited room to turn, daytime clothes, background traffic noise, full artificial lighting immediately before sleep and incoming morning light associated with an earlier awakening. Nonstandard bedding did not mean uncomfortable bedding. Exposure levels, awakening time and relationship to final waking remain unspecified.",
+        "environment": "The sleeping surface felt uncomfortable because it was short and restricted turning. The pillow felt better than usual, the blanket was comparable, and temperature felt much better: perfect and stable. Background traffic noise felt helpful as a steady background. Full artificial lighting immediately before sleep was viewed as a drawback; incoming morning light reportedly woke the user earlier. Exposure levels, awakening time and relationship to final waking remain unspecified.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
@@ -3259,8 +3259,9 @@
       },
       "story": [
         "I woke around 09:30. I went to bed maybe around 23:00–23:30, although I felt kind of falling asleep from around 22:30.",
-        "I describe this as a good sleep despite some conditions that did not look favorable beforehand. There was limited room to turn, I wore daytime clothes, and the bedding was nonstandard. However, the pillow felt better than usual, the temperature was perfect and stable, and the blanket felt good. There was background traffic noise, incoming morning light woke me earlier, and the room had full artificial lighting before I went to sleep.",
-        "I ate a large sushi meal around 19:30–20:00, a small dessert around 20:00 and another small dessert around 21:30. I walked for about 60 minutes after eating and met with friends. I consider the social part worth noting too."
+        "I describe this as a good sleep. The sleeping surface was uncomfortable: it was short and I could not turn properly. The pillow was better than usual, the blanket was comparable, and temperature was much better: perfect and stable. I think the traffic noise was actually helpful as background sound. I wore daytime clothes. There was full artificial lighting before sleep, and incoming morning light woke me earlier.",
+        "I ate a large sushi meal around 19:30–20:00, a small dessert around 20:00 and another small dessert around 21:30. I walked for about 60 minutes after eating and met with friends. I consider the social part worth noting too.",
+        "I still consider bright light before bed and late eating drawbacks, but I do not think they are the highest-impact optimizations for me. This is my current view of the priorities, not a measured ranking of their effects."
       ],
       "plans": [],
       "corrections": [
@@ -3275,6 +3276,10 @@
         {
           "date": "2026-11-01",
           "reason": "Added meal/dessert times, approximately 60 minutes of post-food walking, social contact, and explicit good pillow/blanket and perfect stable temperature. Reframed the conditions as mixed rather than uniformly poor. Neutral comfort wording preserves privacy. Did not assign specific dessert names to times, infer causal effects, or change provider data/curves."
+        },
+        {
+          "date": "2026-11-01",
+          "reason": "Clarified that the short sleeping surface and restricted turning were uncomfortable, background noise felt helpful, the pillow was better and blanket comparable, and temperature much better. Removed the prior overgeneralization that the whole setup was comfortable. Preserved the user’s relative-impact opinion about light and food as a hypothesis. Accommodation/location omitted; providers, curves and prior records unchanged."
         }
       ],
       "context": [
@@ -3292,7 +3297,7 @@
         },
         {
           "kind": "self_report",
-          "observation": "The conditions were mixed, rather than uniformly uncomfortable: the user explicitly says the pillow felt better than usual, the blanket was good, and temperature was perfect and stable. Restricted turning room, daytime clothes, noise and lighting are retained. Incoming light is a reported earlier-awakening trigger with no exact event time."
+          "observation": "The user distinguishes separate conditions: the short sleeping surface and restricted turning were uncomfortable; pillow better, blanket comparable and temperature much better and stable. Background noise felt helpful. Bright pre-bed light and late eating remain perceived drawbacks, but the user believes they may be lower-impact priorities. This ranking is a personal hypothesis, not a result isolated by this night."
         },
         {
           "kind": "self_report",
@@ -3301,9 +3306,9 @@
       ],
       "interpretation": [
         "Oura 96 is the highest eligible single-night sleep score currently recorded, exceeding October 31’s 93. It estimates 9h 59m 30s asleep, 52 minutes awake and 10h 51m 30s in the selected episode. Compared with October 31, estimated sleep rises by 1h 02m and awake time by six minutes. A higher score does not mean every contributor or remembered aspect improved.",
-        "The user explicitly reports good sleep with both favorable and less favorable conditions. The pillow felt better than usual, the blanket felt good, and temperature was perfect and stable. Nonstandard bedding therefore should not be described as poor comfort. Noise, lighting and limited turning room coexisted with good experienced sleep. This night does not isolate any single environmental cause.",
+        "Good experienced sleep coexisted with an uncomfortable sleeping surface, a better pillow, a comparable blanket and much better stable temperature. Background noise was experienced as helpful, not as a disturbance. These are separate observations: a good pillow does not imply a comfortable surface, and an unconventional setting does not make every condition adverse. The user still considers pre-bed light and late eating drawbacks, while questioning their relative importance. This one night cannot establish the size or ordering of those effects.",
         "The large sushi meal ended around 19:30–20:00; reported bed 23:00–23:30 gives an approximate 3–4-hour meal-to-bed interval. The last reported small dessert around 21:30 was approximately 1.5–2 hours before bed. These intervals concern the reported bedtime, not a proven sleep onset. A very long food-free interval was not a prerequisite for this observed good night; an optimal cutoff is not established.",
-        "About 60 minutes of walking after food and a social evening are additional reported differences. They are plausible factors to investigate, alongside stable comfortable temperature and bedding, rather than causes identified by this one night. Subjective stress, fluid intake, cold awakenings and morning/later-day alertness were not specified.",
+        "About 60 minutes of walking after food and a social evening are additional reported differences. A useful next comparison is whether comfort and stable temperature are more consistently associated with good sleep than further tightening light and meal timing. This develops the user’s priority hypothesis; it is not a causal ranking from this night. Social contact does not establish a stress rating; fluid intake, cold awakenings and morning/later-day alertness remain unspecified.",
         "There is also a reported cost: incoming morning light woke the user earlier. The specific awakening time and relationship to the approximate 09:30 final waking are unknown. Do not substitute one of the device awake labels for that event, or infer no cold awakenings because none were reported. Morning and later-day alertness remain separate from the report of good sleep.",
         "Timing rises 69 → 96 and total sleep 97 → 100. Deep/REM contributors are 97/96, down from 99/98; restfulness falls 90 → 83. Efficiency and latency contributors remain 97/94. Estimated sleep efficiency is 92%, separate from the contributor. Estimated stages are deep 1h 56m 30s, REM 2h 04m and light 5h 59m; those are wearable classifications, not EEG measurements.",
         "COROS grades the night 87, estimates 10h 26m asleep and 16 minutes awake in a reported 10h 42m period, with no detected naps. Its daily deep/light/REM/awake ratios are 19/66/13/2%. The absolute clock window is unresolved across the rollback; its different duration is retained rather than corrected or averaged with Oura.",
@@ -3312,7 +3317,7 @@
         "Twenty wake dates now have 20 Oura and 20 COROS records, with 19 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. A new single-night high does not establish the sustained milestone."
       ],
       "next_focus": [
-        "Treat this as good sleep in mixed conditions. Comfortable stable temperature, a good-feeling pillow and blanket were explicit positives. Do not label an unfamiliar or nonstandard setup as uncomfortable when the user says it felt good.",
+        "Keep conditions separate: stable comfortable temperature and the better pillow were positives; blanket comparable; the short sleeping surface and limited turning were uncomfortable; background noise felt helpful. Prioritize repeatable comfort and temperature while tracking whether light and food timing add a noticeable benefit. This is a proposed priority, not an established ranking of effect sizes.",
         "The main meal was roughly 3–4 hours before reported bed, with a later small dessert 1.5–2 hours before bed, plus about 60 minutes walking and social contact. Keep these factors together in the diary; compare repeatability before attributing the result to any one of them or imposing a universal meal cutoff. Incoming light remains the specifically reported disturbance; COROS’s clock discrepancy remains unresolved."
       ],
       "next_focus_references": [
