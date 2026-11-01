@@ -3152,7 +3152,7 @@
       "wake_date": "2026-11-01",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider wake-up date; overnight clock rollback handled using explicit Oura offsets. COROS clock labels remain unresolved.",
-      "status": "Oura 96, highest recorded score; 9h59m30s asleep. COROS 87 / 10h26m. Clock-change limitation; experience unreported.",
+      "status": "Oura 96 / COROS 87; reported bed around 23:00–23:30, feeling as if falling asleep from 22:30, waking around 09:30. COROS clock ambiguity remains; experienced quality unreported.",
       "retrieved_at": "2026-11-01T18:28:56.943Z",
       "provider_retrieved_at": {
         "oura": "2026-11-01T18:27:44.530227+00:00",
@@ -3244,47 +3244,54 @@
       },
       "self_report": {
         "restfulness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "Woke around 09:30. Morning sleepiness, alertness and waking-to-normal interval were not supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": null,
+        "intended_bedtime": "Went to bed maybe around 23:00–23:30; felt kind of falling asleep from around 22:30. Approximate report, not a confirmed continuous sleep interval or precise onset.",
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
+      "story": [
+        "I woke around 09:30. I went to bed maybe around 23:00–23:30, although I felt kind of falling asleep from around 22:30."
+      ],
       "plans": [],
-      "corrections": [],
+      "corrections": [
+        {
+          "date": "2026-11-01",
+          "reason": "Added user-reported bed around23:00–23:30, feeling kind of falling asleep from22:30, waking around09:30. Approximate times retained; no confirmed nap, continuous22:30 sleep, exact onset, quality or cold awakening inferred. Native provider objects, retrieval times and curves unchanged."
+        }
+      ],
       "context": [
         {
           "kind": "device_record",
-          "observation": "Oura returned 22:35:23–09:26:53 with −08:00 on both timestamps. Interpreting its explicit offsets gives 23:35:23 PDT on October 31 to 09:26:53 PST on November 1, elapsed 10h51m30s. Original timestamp strings remain unchanged."
+          "observation": "Oura returned 22:35:23–09:26:53 with −08:00 on both timestamps. Interpreting its explicit offsets gives 23:35:23 PDT on October 31 to 09:26:53 PST on November 1, elapsed 10h 51m 30s. Original timestamp strings remain unchanged."
         },
         {
           "kind": "device_record",
-          "observation": "The connector reports 23:40–10:22 and a 10h42m episode. Across the Los Angeles clock rollback, those wall times would span 11h42m if interpreted with the local offset at each boundary. Absolute COROS start/end timestamps are therefore left unresolved; the reported durations and clock labels are retained without adding or subtracting an hour. Do not infer actual final waking or compare endpoint alignment from these labels."
+          "observation": "The connector reports 23:40–10:22 and a 10h 42m episode. Across the Los Angeles clock rollback, those wall times would span 11h 42m if interpreted with the local offset at each boundary. Absolute COROS start/end timestamps are therefore left unresolved; the reported durations and clock labels are retained without adding or subtracting an hour. Do not infer actual final waking or compare endpoint alignment from these labels."
         },
         {
           "kind": "self_report",
-          "observation": "No diary supplied yet for November 1. Actual sleep attempt, final waking, night/morning experience, meal and fluid timing, remembered cold awakenings and adopted routine changes remain unknown. October 31 experience and plans are not carried forward."
+          "observation": "November 1 follow-up supplies approximate bed 23:00–23:30, feeling kind of falling asleep from 22:30 and wake 09:30. This does not establish continuous sleep from 22:30, a nap, exact sleep onset, out-of-bed time or perceived sleep quality. Meal/fluid timing, remembered cold awakenings and morning/later-day functioning remain unreported."
         }
       ],
       "interpretation": [
-        "Oura 96 is the highest eligible single-night sleep score currently recorded, exceeding October 31’s 93. It estimates 9h59m30s asleep, 52 minutes awake and 10h51m30s in the selected episode. Compared with October 31, estimated sleep rises by 1h02m and awake time by six minutes. A higher score does not mean every contributor or remembered aspect improved.",
-        "Timing rises 69 → 96 and total sleep 97 → 100. Deep/REM contributors are 97/96, down from 99/98; restfulness falls 90 → 83. Efficiency and latency contributors remain 97/94. Estimated sleep efficiency is 92%, separate from the contributor. Estimated stages are deep 1h56m30s, REM 2h04m and light 5h59m; those are wearable classifications, not EEG measurements.",
-        "COROS grades the night 87, estimates 10h26m asleep and 16 minutes awake in a reported 10h42m period, with no detected naps. Its daily deep/light/REM/awake ratios are 19/66/13/2%. The absolute clock window is unresolved across the rollback; its different duration is retained rather than corrected or averaged with Oura.",
+        "Oura 96 is the highest eligible single-night sleep score currently recorded, exceeding October 31’s 93. It estimates 9h 59m 30s asleep, 52 minutes awake and 10h 51m 30s in the selected episode. Compared with October 31, estimated sleep rises by 1h 02m and awake time by six minutes. A higher score does not mean every contributor or remembered aspect improved.",
+        "Timing rises 69 → 96 and total sleep 97 → 100. Deep/REM contributors are 97/96, down from 99/98; restfulness falls 90 → 83. Efficiency and latency contributors remain 97/94. Estimated sleep efficiency is 92%, separate from the contributor. Estimated stages are deep 1h 56m 30s, REM 2h 04m and light 5h 59m; those are wearable classifications, not EEG measurements.",
+        "COROS grades the night 87, estimates 10h 26m asleep and 16 minutes awake in a reported 10h 42m period, with no detected naps. Its daily deep/light/REM/awake ratios are 19/66/13/2%. The absolute clock window is unresolved across the rollback; its different duration is retained rather than corrected or averaged with Oura.",
         "Oura mean sleeping HR is 50.125 bpm, minimum 47 and HRV 55 ms; COROS official sleep HRV is 58 ms Normal against 49–67, baseline 58. Both HRV summaries are lower than October 31’s 62/60 ms despite higher sleep scores. Oura Readiness is 93, temperature deviation +0.20°C, breathing 11.875/min, average SpO₂ 96.945% and breathing disturbance index 0. COROS daily HR 53 bpm, minimum 45 and predicted seated resting HR 53 concern different scopes.",
-        "The Oura curve uses elapsed instants with PDT/PST labels, preserving the repeated hour instead of dropping or inserting samples. The connector’s COROS labels and 10h42m period disagree by one hour when local offsets are applied. Actual timing and the experienced outcome need the diary; no earlier-bedtime, meal-timing or room-comfort effect is established.",
+        "The approximate 09:30 reported waking is close to Oura’s 09:26:53 local ending. Reported bed 23:00–23:30 precedes Oura’s explicit-offset start 23:35:23 PDT, but the impression of falling asleep from 22:30 does not establish a precise onset or continuous sleep. Oura’s 13m 30s latency belongs to its selected episode, not the full period from the first drowsiness or bedtime. COROS’s connector clock ambiguity remains unresolved; neither its clock labels nor native durations have been adjusted.",
         "Twenty wake dates now have 20 Oura and 20 COROS records, with 19 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. A new single-night high does not establish the sustained milestone."
       ],
       "next_focus": [
-        "Pair the new Oura 96 and COROS 87 with actual sleep/wake times and morning/later-day alertness. A good experience or reduced cold awakenings has not yet been reported for this date.",
-        "Clarify the final waking clock time after the rollback before judging provider endpoint agreement. Keep the COROS duration and ambiguous clock labels separate; no one-hour adjustment is assumed."
+        "The diary now supplies approximate bedtime 23:00–23:30, an impression of falling asleep from 22:30 and waking 09:30. Keep initial drowsiness distinct from confirmed sleep. Quality, morning/later-day alertness and any cold awakenings remain unreported.",
+        "The reported waking is close to Oura’s ending. Preserve the unresolved COROS connector clock labels and its native duration; the diary alone does not establish which provider duration is more accurate or a successful earlier-schedule intervention."
       ],
       "next_focus_references": [
         {
