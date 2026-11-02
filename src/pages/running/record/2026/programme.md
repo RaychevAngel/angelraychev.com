@@ -1,17 +1,19 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "Eight of twelve workouts complete in the cycle begun October 15: X repeated the mixed-rest 200s on October 30; four workouts remain before the closing chill day."
-updated: 2026-10-30
+description: "Nine original workouts complete through November 1; an extra VO₂ repeat is planned for November 2 and LT moves to November 3 after a session disrupted by stomach discomfort."
+updated: 2026-11-02
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**, updated through
-**30 October**. The first cycle began on **15 October**. Its first four
-blocks are complete: **eight of twelve workouts**, including X on October 30.
-Four workouts remain: VO₂, LT, the 800 m time trial and F. The remaining dates
-are plans; completed work stays on the [2026 record](/running/record/2026/).
+This is the programme agreed by **8 October 2026**, with completed training
+through **1 November** and decisions updated on **2 November**. The cycle
+began on **15 October**. **Nine of its original twelve workouts are complete.**
+After stomach discomfort disrupted the latest 900s, I chose an **extra VO₂
+repeat on November 2**, moving **LT to November 3**. The repeat would take
+the planned total to thirteen workouts. Later sessions remain plans;
+completed work stays on the [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
 maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
@@ -79,6 +81,16 @@ October 19; I did not report the same breakdown. I see this as a return
 session and hope to feel sharper in the next pair. **Three 900s and the
 2:55.5 gate remain unchanged.**
 
+The [third 900s on 1 November](/running/record/2026/#1-november--vo-3900-m--nominal-530)
+were **3:03.63, 2:58.33 and 3:06.34**: **3:02.77 average (3:23.07/km)**,
+with **5:11.14 and 10:48.17** recorded recovery. I felt nauseated after
+eating too much at lunch, urgently needed the toilet and stopped around the
+second repetition. It was a cold night on an unlit track, and I felt awful
+while running. The slower result remains completed training; the conditions
+limit the comparison with the earlier sessions. **I chose a repeat on
+November 2 and LT on November 3.** These are plans. The **2:55.5** gate
+and nominal **5:30** recovery are unchanged.
+
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
 averaged **~30.31 then 30.50**, using a labelled distance correction for the
@@ -135,8 +147,10 @@ October 27 900s completed block three; October 28's LT began block four.
 I considered a third consecutive training day for X, then chose **rest on
 October 29** after the right inner-ankle tension, before **X on October 30**.
 That decision inserted one rest day and shifted the remaining sequence forward
-by one day. X was completed on October 30; the planned rest days after X and
-the next VO₂/LT pair are retained.
+by one day. X was completed on October 30, followed by the November 1 VO₂
+session. On November 2 I chose to add a repeat of the 900s and move LT from
+November 2 to November 3, which had previously been a planned rest day.
+The original calendar and the completed sessions remain distinguishable.
 
 ## The 18-day cycle
 
@@ -152,13 +166,15 @@ rest or easy movement according to how I feel, without another quality session:
 | 5 | VO₂ | LT |
 | 6 | TT | F |
 
-That is four LT sessions, four VO₂ sessions, and one each of F, FA, TT and X,
-with six chill days.
+The original template contains four LT sessions, four VO₂ sessions, and one
+each of F, FA, TT and X, with six chill days. **The additional November 2
+VO₂ repeat is a dated departure from that template**, bringing the intended
+total to thirteen workouts, including five VO₂ sessions. It does not erase
+November 1's completed session.
 
-**The cycle retains its eleven specified workouts and one flexible X slot.**
-X was completed as mixed-rest 200s on October 30. LT and VO₂ retain their independently
-earned progressions. Changes to the allocation or recurring F/FA formats wait
-for the next cycle's review.
+The original eleven specified workouts and flexible X slot remain identifiable;
+X was completed as mixed-rest 200s on October 30. LT and VO₂ retain their
+independently earned progressions. The recurring F/FA formats remain unchanged.
 
 **FA** is fast running with a second, shorter-recovery set: the current template
 is 4×200 m with three-minute rests, followed by 4×200 m with 90-second rests.
@@ -182,7 +198,8 @@ automatically.
 One possible **next-cycle** change is **five LT sessions and three VO₂
 sessions**, reallocating an existing slot if LT progress continues to lag.
 That remains a proposal to assess after the remaining LT sessions and actual
-time trial. The current cycle retains four of each; no change is adopted here.
+time trial. That reallocation is not adopted; this cycle's additional VO₂ repeat
+is a separate decision.
 
 The session count does not describe the whole load. A time trial, relaxed fast
 repetitions and an experimental sprint set can cost very different amounts. One
@@ -191,31 +208,26 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Updated through **30 October**: LT on October 28 and X on October 30 are
-complete. October 29 was the inserted rest-day decision. Four workouts remain
-in the intended sequence below.
-The original eighteen-day structure now spans **23 calendar days** if the
-closing chill day is included, from October 15 to November 6. The final
-workout is planned for November 5. These dates remain provisional.
+Completed training is recorded through **1 November**. On **November 2** I
+chose to repeat the 900s that day and do LT on November 3, replacing that
+date's earlier rest intention. **Nine original workouts are complete; the
+extra repeat is planned.** Four sessions remain when the repeat is included:
+VO₂, LT, the 800 m trial and F.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
-| Wednesday 28 October | LT · 3×1600 m | Complete · 6:18.77 average (3:56.73/km) |
-| Thursday 29 October | Rest | Inserted rest-day decision after right inner-ankle tension |
-| Friday 30 October | X · 4×200 m / 3 min + 4×200 m / 90 seconds | Complete · 30.36 / 30.40 recorded averages; first-set timing uncertainty |
-| Saturday 31 October | Rest | Planned |
-| Sunday 1 November | VO₂ · 3×900 m | Planned; current format, unless an earlier session earns progression |
-| Monday 2 November | LT | Planned; current 3×1600 m format, unless the earlier LT earns progression |
-| Tuesday 3 November | Rest | Planned |
-| Wednesday 4 November | 800 m time trial | Provisional checkpoint |
-| Thursday 5 November | F · 6×200 m / 3 min | Planned |
-| Friday 6 November | Closing chill day | Planned · final day of the six-block structure |
+| Sunday 1 November | VO₂ · 3×900 m | Complete · 3:02.77 average (3:23.07/km); stomach discomfort and toilet stop |
+| Monday 2 November | Extra VO₂ repeat · 3×900 m / 5:30 | Planned · added after November 1; previously the LT date |
+| Tuesday 3 November | LT · 3×1600 m / nominal 1 min | Planned · moved from November 2; replaces earlier rest intention |
+| Wednesday 4 November | 800 m time trial | Earlier provisional date; subject to the intervening sessions |
+| Thursday 5 November | F · 6×200 m / 3 min | Earlier provisional date |
+| Friday 6 November | Closing chill day | Earlier provisional date |
 
-I am treating the 800 m trial as a checkpoint within normal training,
-without adding a formal taper. The rest day before the trial is now Tuesday.
-Illness,
-ankle response or accumulated fatigue can still change a session or its date;
-the table is my current intention rather than evidence of readiness.
+If the remaining dates hold, the cycle spans **23 calendar days**, October 15
+through November 6 including the closing chill day, with **thirteen workouts**
+instead of the original twelve. I am treating the 800 m trial as a checkpoint
+within normal training, without adding a formal taper. The old November 3
+rest day is now the intended LT session; later dates remain provisional.
 
 ## Two independently earned progressions
 

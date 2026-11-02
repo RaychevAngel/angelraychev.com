@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-10-30
+updated: 2026-11-02
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 30 October 2026.** The upcoming
+**This version includes completed training through 1 November 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -168,16 +168,17 @@ need not show a training improvement each time.
 
 ## A programme that earns its next step
 
-The present plan uses **18 days**: six blocks of two training days followed by a
-chill day. Across the cycle there are four LT sessions, four VO₂ sessions, one
+The original template uses **18 days**: six blocks of two training days followed by a
+chill day. It contains four LT sessions, four VO₂ sessions, one
 stable F session, one mixed-rest **FA**, one event time trial and one **X**
 experiment. The [programme page](/running/record/2026/programme/) keeps the exact
 order, templates and progression tables.
 
-The cycle began on **15 October**. Its eleven specified workouts stay committed
-through this cycle; **X** remains flexible, and structural changes wait for the
-next cycle's review. I have not yet completed a full cycle and shown that I can
-sustain it. Its cost also extends beyond the listed workouts:
+The cycle began on **15 October**. Its original eleven specified workouts and
+flexible **X** remain identifiable. On November 2 I chose an extra VO₂ repeat
+after a session disrupted by stomach discomfort, moving LT to the following
+day. That adds a thirteenth planned workout. I have not yet completed the
+cycle and shown that I can sustain it. Its cost also extends beyond the listed workouts:
 running to the gym, carrying a backpack and a hard bike commute still count as
 movement, even on a day whose programme says chill.
 
@@ -383,6 +384,16 @@ stay relaxed on the straight; in rep eight I committed everything and ran
 **30.11**, finishing completely spent. It is an encouraging repeat at similar
 speed with less recovery and a maximal finishing effort.
 
+The [1 November 900s](/running/record/2026/#1-november--vo-3900-m--nominal-530)
+were **3:03.63, 2:58.33 and 3:06.34**: **3:02.77 average (3:23.07/km)**,
+with **5:11.14 and 10:48.17** recorded recovery. I had eaten too much at
+lunch and felt nauseated, urgently needed the toilet, and stopped around
+the second repetition. I ran at night in the cold on an unlit track and
+felt awful while running. This differs from October 27's missing faster
+gear: the slower times came with severe stomach discomfort and an
+interrupted session. I chose to repeat VO₂ on November 2 and move LT to
+November 3. Those are plans, not completed results.
+
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
 remaining training develops. In the same 2025 men's outdoor tables, 2:16.00
@@ -471,23 +482,22 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Eight of twelve workouts are complete in the cycle begun October 15.**
-The third 3×1600 m was completed on October 28; X followed on October 30,
-repeating the mixed-rest 200s after the inserted rest-day decision. The
-record keeps timing uncertainty and the all-out finish beside the comparison.
+**Nine of the original twelve workouts are complete**, through November 1.
+The latest 900s were compromised by nausea and bowel urgency. I chose to
+**repeat 3×900 m / 5:30 on November 2**, then do **LT on November 3**.
+That is an additional VO₂ session, bringing the intended total to thirteen
+workouts if the remaining work is completed. November 1 stays in the record.
 
-Four workouts remain: **3×900 m on November 1, LT on November 2, the 800 m
-TT on November 4 and 6×200 m on November 5**, with rest planned on October 31
-and November 3, and the closing chill day on November 6. LT stays at
-**3×1600 m**, VO₂ at **3×900 m / nominal 5:30**; the later **6:08** and
-**2:55.5 average** gates remain ahead. The current allocation stays in force.
-I am treating the trial as a checkpoint within normal training, without a
-formal taper; dates remain subject to how the preceding work goes.
+LT remains **3×1600 m**, with **6:08** as its later average gate. VO₂ remains
+**3×900 m / nominal 5:30**, with **2:55.5** as its gate. The earlier **November 4
+800 m TT, November 5 6×200 m and November 6 closing chill day** remain
+provisional after this change. I am treating the trial as a checkpoint within
+normal training, without a formal taper.
 
-One LT slot remains before the time trial. If the longer work continues to
-lag, **five LT sessions and three VO₂ sessions** is a possible reallocation
-for the next cycle. I want the remaining LT results and actual time trial
-before deciding; the current four-and-four allocation remains in force.
+One LT slot remains before the time trial. **Five LT sessions and three VO₂
+sessions** remains a possible reallocation for the next cycle, to assess
+after the remaining work and actual trial. The added repeat this cycle is
+a separate decision.
 
 The next efforts ask three immediate questions:
 
