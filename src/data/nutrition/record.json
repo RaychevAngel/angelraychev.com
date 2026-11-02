@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "entries": [
     {
       "id": "first-reported-day",
@@ -22514,6 +22514,707 @@
         "version": 2,
         "reviewed_date": "2026-11-01",
         "revision_note": "User correction: October31 excludes both chicken and its accompanying chimichurri; other foods and estimates unchanged."
+      }
+    },
+    {
+      "id": "november-1-bosnian-grill-and-chocolate",
+      "title": "November 1: Bosnian grill, kefir and chocolate",
+      "kind": "food_report",
+      "food_date": "2026-11-01",
+      "recorded_local_date": "2026-11-02",
+      "date_status": "user_confirmed_date",
+      "summary": "A large Bosnian combination meal around 1–2pm, plus an extra spicy sausage, cevapi and chicken skewer; one garlic-cheese bread, half the mushroom portion and kefir. Later around 8–9 individually wrapped Lindt sea-salt pieces and half a 250g Balconi Cubi Cacao packet. Reported prolonged fullness, feeling unwell and a great amount of water. Portions use broad estimates.",
+      "items_reported_eaten": [
+        {
+          "name": "Euro Grill combination: five cevapi, two sausages, one chicken skewer, small patty, bread and sides",
+          "amount": 1,
+          "unit": "combination meal; component masses estimated",
+          "portion_status": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. Included lepina, ajvar, sour cream and onion assumed eaten. Distinct additional garlic bread is counted separately."
+        },
+        {
+          "name": "Additional spicy sausage, one cevapi and one chicken skewer",
+          "amount": 1,
+          "unit": "extra sausage +1cevapi +1chicken skewer",
+          "portion_status": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. These are only the three reported extras; the combination already contains the other meat pieces. Across both entries the total is6cevapi,3sausages,2chickenskewers,1smallpatty;645g central cooked meat,465–1000g scenarios."
+        },
+        {
+          "name": "Garlic and three-cheese lepina bread",
+          "amount": 1,
+          "unit": "garlic-cheese bread; serving weight estimated",
+          "portion_status": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. One separate garlic bread order; central120g lepina,35g cheese and10g butter proxies."
+        },
+        {
+          "name": "Half of the stuffed-mushroom portion",
+          "amount": "1/2",
+          "unit": "mushroom dish assumed; meaning uncertain",
+          "portion_status": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. User says half the mushroom; model interprets half the dish, not a verified cap count. Half a single small mushroom could be lower."
+        },
+        {
+          "name": "Restaurant kefir, one drink",
+          "amount": 1,
+          "unit": "drink;250mL central proxy",
+          "portion_status": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. Central250mL, selected200–330mL and nominal1g/mL display conversion. Plain whole-milk kefir manufacturer composition is a comparator; actual brand, fat content and fortification unknown. No vitaminD credited."
+        },
+        {
+          "name": "Lindt EXCELLENCE Touch of Sea Salt, individually wrapped pieces",
+          "amount": "8–9",
+          "unit": "individually wrapped pieces;8.5 midpoint,85.5g nominal",
+          "portion_status": "User identifies17-piece individually wrapped sea-salt format and reports around8–9pieces. Matching retailer-hosted product image declares171g per17pieces; nominal10.0588g perpiece,85.5g at8.5pieces centrally. Actual wrapped-pouch nutrition panel remains unverified: conflicting retailer text excluded. Standard same-flavour Lindt bar160kcal/30g is an explicit composition proxy, not the exact pouch label. Selected8–9piece scenarios only reflect count, not all recipe uncertainty."
+        },
+        {
+          "name": "Balconi Cubi Cacao wafers, half the 250g packet",
+          "amount": "1/2",
+          "unit": "250g packet; nominal125g eaten",
+          "portion_status": "User identified250g red Cubi Cacao-Cocoa wafer packet and reports half eaten: nominal125g. Selected517kcal/100g is an exact250gSKU retailer label reproduction; current manufacturer page lists502kcal/100g and125gformat. Both panels retained as alternatives; neither is the actual user-bag back panel. Sodium calculated from salt/2.5, not a separate assay. Fibre and unlisted micronutrients unknown. Supersedes preliminary Manner75g comparator, which is not counted."
+        }
+      ],
+      "context": [
+        {
+          "field": "digestion",
+          "observation": "Reported completely filling himself at the restaurant and prolonged fullness/difficulty digesting through the rest of the day; felt bad. This records a subjective experience, not a diagnosis."
+        },
+        {
+          "field": "meal_time",
+          "observation": "Restaurant visit around1–2pm as reported, despite initial morning wording."
+        },
+        {
+          "field": "fluids",
+          "observation": "Reported a great amount of water; volume unreported and no litre estimate assigned."
+        },
+        {
+          "field": "portion_evidence",
+          "observation": "Combination menu plus one extra sausage, cevapi and chicken skewer; one garlic bread, half the mushroom portion, kefir, around8–9 individually wrapped Lindt pieces and half of the identified250g Balconi packet. No usual base foods carried forward."
+        },
+        {
+          "field": "recipe_uncertainty",
+          "observation": "Cooked meat sizes, added fats, bread weights, mushroom share and kefir volume/fat content unknown. Central645g meat and selected465–1000g scenarios retain the initial roughly1kg impression as a larger case."
+        },
+        {
+          "field": "supplement_use",
+          "observation": "Not reported; no vitaminD supplement counted."
+        },
+        {
+          "field": "brand_uncertainty",
+          "observation": "Euro Grill inferred from exact menu match. Lindt17piece wrapped format identified by user;171g reference pouch image determines nominal piece mass, while the standard same-flavour bar composition remains a proxy. Balconi package identified; available nutrition versions differ."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "Every listed food has a rough energy estimate. Menu counts and wafer fraction are reported; restaurant grams/recipes, mushroom share, kefir volume and Lindt wrapped-piece mass are estimated. Other intake and supplements are unreported.",
+      "date_note": "November1 explicitly named by the user; report and clarifications received November2.",
+      "corrections": [
+        "Menu details clarify total meat counts; the rough1kg impression is not additional meat.",
+        "Half the identified250g Balconi wafer packet supersedes the earlier unknown mini-waffle amount; preliminary Manner comparator is excluded.",
+        "Lindt format clarified as individually wrapped17piece pouch, around8–9pieces eaten; previous standard-bar-square assumption superseded before publication."
+      ],
+      "record_scope": "reported_consumption",
+      "nutrition": {
+        "summary": {
+          "energy_kcal": 4245.92,
+          "protein_g": 228.31050000000002,
+          "carbohydrate_g": 310.147,
+          "fat_g": 229.4695
+        },
+        "foods": [
+          {
+            "name": "Euro Grill combination: five cevapi, two sausages, one chicken skewer, small patty, bread and sides",
+            "grams": 726.5,
+            "quantity_status": "reported_dish_or_count_assumed_mass_and_recipe",
+            "notes": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. Included lepina, ajvar, sour cream and onion assumed eaten. Distinct additional garlic bread is counted separately."
+          },
+          {
+            "name": "Additional spicy sausage, one cevapi and one chicken skewer",
+            "grams": 191.5,
+            "quantity_status": "reported_dish_or_count_assumed_mass_and_recipe",
+            "notes": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. These are only the three reported extras; the combination already contains the other meat pieces. Across both entries the total is6cevapi,3sausages,2chickenskewers,1smallpatty;645g central cooked meat,465–1000g scenarios."
+          },
+          {
+            "name": "Garlic and three-cheese lepina bread",
+            "grams": 165.0,
+            "quantity_status": "reported_dish_or_count_assumed_mass_and_recipe",
+            "notes": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. One separate garlic bread order; central120g lepina,35g cheese and10g butter proxies."
+          },
+          {
+            "name": "Half of the stuffed-mushroom portion",
+            "grams": 150.0,
+            "quantity_status": "reported_dish_or_count_assumed_mass_and_recipe",
+            "notes": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. User says half the mushroom; model interprets half the dish, not a verified cap count. Half a single small mushroom could be lower."
+          },
+          {
+            "name": "Restaurant kefir, one drink",
+            "grams": 250.0,
+            "quantity_status": "reported_dish_or_count_assumed_mass_and_recipe",
+            "notes": "Menu defines components, not nutritional values or weighed servings. Recipe composition uses USDA comparators; all portion weights and oil/cheese/cream amounts are analyst assumptions. Restaurant salt and unsupported micronutrients remain unknown. Selected scenarios are not confidence intervals. Central250mL, selected200–330mL and nominal1g/mL display conversion. Plain whole-milk kefir manufacturer composition is a comparator; actual brand, fat content and fortification unknown. No vitaminD credited."
+          },
+          {
+            "name": "Lindt EXCELLENCE Touch of Sea Salt, individually wrapped pieces",
+            "grams": 85.5,
+            "quantity_status": "reported_approximate_8_to9_wrapped_pieces_midpoint",
+            "notes": "User identifies17-piece individually wrapped sea-salt format and reports around8–9pieces. Matching retailer-hosted product image declares171g per17pieces; nominal10.0588g perpiece,85.5g at8.5pieces centrally. Actual wrapped-pouch nutrition panel remains unverified: conflicting retailer text excluded. Standard same-flavour Lindt bar160kcal/30g is an explicit composition proxy, not the exact pouch label. Selected8–9piece scenarios only reflect count, not all recipe uncertainty."
+          },
+          {
+            "name": "Balconi Cubi Cacao wafers, half the 250g packet",
+            "grams": 125.0,
+            "quantity_status": "reported_half_identified250g_packet",
+            "notes": "User identified250g red Cubi Cacao-Cocoa wafer packet and reports half eaten: nominal125g. Selected517kcal/100g is an exact250gSKU retailer label reproduction; current manufacturer page lists502kcal/100g and125gformat. Both panels retained as alternatives; neither is the actual user-bag back panel. Sodium calculated from salt/2.5, not a separate assay. Fibre and unlisted micronutrients unknown. Supersedes preliminary Manner75g comparator, which is not counted."
+          }
+        ],
+        "nutrients": [
+          {
+            "id": "energy_kcal",
+            "name": "Calories",
+            "unit": "kcal",
+            "category": "macronutrients",
+            "food_total": 4245.92,
+            "known_food_count": 7,
+            "food_count": 7,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 4245.92
+          },
+          {
+            "id": "protein_g",
+            "name": "Protein",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 228.31050000000002,
+            "known_food_count": 7,
+            "food_count": 7,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 228.31050000000002
+          },
+          {
+            "id": "carbohydrate_g",
+            "name": "Carbohydrate",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 310.147,
+            "known_food_count": 7,
+            "food_count": 7,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 310.147
+          },
+          {
+            "id": "fat_g",
+            "name": "Total fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 229.4695,
+            "known_food_count": 7,
+            "food_count": 7,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 229.4695
+          },
+          {
+            "id": "fiber_g",
+            "name": "Dietary fiber",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 14.085,
+            "known_food_count": 6,
+            "food_count": 7,
+            "partial_food_count": 6,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 14.085
+          },
+          {
+            "id": "saturated_fat_g",
+            "name": "Saturated fat",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 114.13279,
+            "known_food_count": 7,
+            "food_count": 7,
+            "partial_food_count": 7,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 114.13279
+          },
+          {
+            "id": "total_sugars_g",
+            "name": "Total sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": 81.15,
+            "known_food_count": 2,
+            "food_count": 7,
+            "partial_food_count": 2,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 81.15
+          },
+          {
+            "id": "added_sugars_g",
+            "name": "Added sugars",
+            "unit": "g",
+            "category": "macronutrients",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_a_mcg_rae",
+            "name": "Vitamin A",
+            "unit": "µg RAE",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_c_mg",
+            "name": "Vitamin C",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_d_mcg",
+            "name": "Vitamin D",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_e_mg",
+            "name": "Vitamin E",
+            "unit": "mg α-tocopherol",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_k_mcg",
+            "name": "Vitamin K1 phylloquinone",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "thiamin_mg",
+            "name": "Vitamin B1 thiamin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "riboflavin_mg",
+            "name": "Vitamin B2 riboflavin",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "niacin_mg",
+            "name": "Vitamin B3 niacin",
+            "unit": "mg niacin",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "pantothenic_acid_mg",
+            "name": "Vitamin B5 pantothenic acid",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_b6_mg",
+            "name": "Vitamin B6",
+            "unit": "mg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "biotin_mcg",
+            "name": "Vitamin B7 biotin",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "folate_mcg_dfe",
+            "name": "Vitamin B9 folate",
+            "unit": "µg DFE",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "vitamin_b12_mcg",
+            "name": "Vitamin B12",
+            "unit": "µg",
+            "category": "vitamins",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "calcium_mg",
+            "name": "Calcium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "iron_mg",
+            "name": "Iron",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "magnesium_mg",
+            "name": "Magnesium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "phosphorus_mg",
+            "name": "Phosphorus",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "potassium_mg",
+            "name": "Potassium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "sodium_mg",
+            "name": "Sodium",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": 264.0,
+            "known_food_count": 2,
+            "food_count": 7,
+            "partial_food_count": 2,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": 264.0
+          },
+          {
+            "id": "zinc_mg",
+            "name": "Zinc",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "copper_mg",
+            "name": "Copper",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "manganese_mg",
+            "name": "Manganese",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "selenium_mcg",
+            "name": "Selenium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "iodine_mcg",
+            "name": "Iodine",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chloride_mg",
+            "name": "Chloride",
+            "unit": "mg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "chromium_mcg",
+            "name": "Chromium",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "molybdenum_mcg",
+            "name": "Molybdenum",
+            "unit": "µg",
+            "category": "minerals",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "choline_mg",
+            "name": "Choline",
+            "unit": "mg",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "cholesterol_mg",
+            "name": "Cholesterol",
+            "unit": "mg",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "ala_g",
+            "name": "Omega 3 ALA",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "epa_g",
+            "name": "Omega 3 EPA",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "dha_g",
+            "name": "Omega 3 DHA",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "omega3_total_g",
+            "name": "Omega 3 total reported",
+            "unit": "g",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          },
+          {
+            "id": "caffeine_mg",
+            "name": "Caffeine in reported foods",
+            "unit": "mg",
+            "category": "other",
+            "food_total": null,
+            "known_food_count": 0,
+            "food_count": 7,
+            "partial_food_count": 0,
+            "logged_supplement_total": 0,
+            "logged_supplement_unknown": false,
+            "recorded_total": null
+          }
+        ],
+        "supplements": [],
+        "scenario_note": "Selected portion/recipe scenarios span approximately 3,186–6,056 kcal. It is not a confidence interval and does not cover every uncertainty. Restaurant smaller/larger ingredient scenarios including465–1000g cooked meat, bread/cheese/cream/oil, uncertain halfmushroom interpretation and200–330mL kefir; Lindt8–9piece count at nominal171g/17pieces; Balconi502–517kcal/100g label-version alternatives at125g. These selected scenarios are not confidence intervals, measured food weights or full-day bounds. Restaurant salt and unsupported micronutrients remain unknown.",
+        "source_note": "November1 explicitly reported, received November2. Menu match indicates Euro Grill combination plus one extra sausage,cevapi and chicken skewer:6cevapi,3sausages,2skewers and1smallpatty total. Included combination lepina/ajvar/sourcream/onion, separate garlic-cheese bread, half mushroom portion and kefir. Generic USDA recipe models use645g central cooked meat; original roughly1kg retained as high portion case, not extra meat. Half mushroom modeled as half dish, actual cap/share uncertain. Kefir250mL plain whole-milk comparator; actual brand/fat/volume unknown. User Balconi250g packet half=125g; selected517kcal/100g retailer exact-SKU reproduction differs from current manufacturer502 panel; actualbagbacklabel unseen. User identifies17piece wrapped Lindt and8–9eaten;171g referencepouch yields85.5g at8.5 midpoint. Exactwrappednutrition unavailable; manufacturer standard same-flavour bar composition is explicitly a proxy. Preliminary75gManner and eight-bar-square models excluded. Water quantity and supplements unreported; no routinefoods carried. Prolonged fullness and feelingunwell recorded as subjective context, not diagnosis.",
+        "version": 1,
+        "reviewed_date": "2026-11-02",
+        "revision_note": "November1 Bosnian meal and chocolate, reconciled with supplied menu,125g Balconi wafers and8–9wrapped Lindt pieces; digestion experience retained."
       }
     }
   ],
