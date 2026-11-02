@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-01"
+updated: "2026-11-02"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 2 — lower grading needs the experienced outcome.** [Oura 83 / COROS 88](/sleep/record/#night-2026-11-02) estimate **8h11m / 8h37m asleep**, ending at **09:44 PST** with starts three minutes apart. Waking estimates differ **30 / 7 minutes**. Oura timing and REM contributors fall to **50/74**; both HRV summaries are **44 ms**. The [curves](/sleep/charts/#night-2026-11-02) add the new native sequence. Sleep-attempt time, night/morning experience and current food, light, walking, social and thermal conditions remain unknown. November 1’s good experience and proposed ranking of optimization priorities are not assumed repeated or refuted by today’s readings.
 
 **November 1 — a good night with several changes together.** [Oura 96 / COROS 87](/sleep/record/#night-2026-11-01) estimate **9h59m30s / 10h26m asleep**. Oura timing reaches **96**, total sleep **100**, but restfulness falls to **83** and awake time grows to **52 minutes**. The [curve](/sleep/charts/#night-2026-11-01) preserves elapsed time through the clock rollback. COROS’s returned clock window has a one-hour offset ambiguity; the diary keeps its native duration and labels separate. The follow-up supplies **bed around 23:00–23:30**, feeling kind of falling asleep from **22:30** and **waking around 09:30**, close to Oura’s 09:26:53 ending. This does not confirm continuous sleep from 22:30 or resolve COROS’s clock ambiguity. The latest clarification separates the conditions: **the short sleeping surface and restricted turning were uncomfortable; the pillow was better, the blanket comparable, and temperature much better, perfect and stable**. Background noise felt helpful as steady background sound. The user still views pre-bed light and late food as drawbacks, but suspects they are not the highest-impact priorities. That is a working hypothesis about relative importance, not an effect-size ranking established by this night. Main meal 19:30–20:00, small desserts 20:00/21:30, about 60 minutes walking after food and a social evening are also reported. Main-meal-to-bed and last-dessert-to-bed intervals were roughly 3–4 and 1.5–2 hours. Several factors changed together; this night identifies neither a cause nor an optimal food cutoff. Morning/later-day alertness, fluids and cold awakenings remain unreported. The recurring cold-feet account below remains earlier context.
 
