@@ -3342,7 +3342,7 @@
       "wake_date": "2026-11-02",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider sleep wake-up date; both main episodes occur after the clock rollback in PST.",
-      "status": "Oura 83 / COROS 88; matching 09:44 endings, different sleep/awake estimates. HRV 44 ms on both; experienced outcome unreported.",
+      "status": "Sleep attempt around 01:00, waking around 09:45; reports not sleeping well. Oura 83 / COROS 88. Device windows fit the approximate report; sleep/awake estimates still differ.",
       "retrieved_at": "2026-11-02T21:00:28.015Z",
       "provider_retrieved_at": {
         "oura": "2026-11-02T21:00:24.868469+00:00",
@@ -3425,40 +3425,47 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, exact-date daily HR and one-day resting HR response explicitly dated November 2. Clock labels interpreted as Los Angeles PST; no clock change in this episode."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "Did not sleep well.",
+        "morning_sleepiness": "Woke around 09:45. Morning sleepiness, alertness and waking-to-normal interval not specified.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": null,
+        "intended_bedtime": "Tried to sleep around 01:00. Approximate report; exact sleep onset and attempt-to-onset latency not supplied.",
         "environment": null,
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
+      "story": [
+        "I tried to sleep around 01:00 and woke around 09:45. I did not sleep well."
+      ],
       "plans": [],
-      "corrections": [],
+      "corrections": [
+        {
+          "date": "2026-11-02",
+          "reason": "Added approximate 01:00 sleep attempt, 09:45 waking and explicit poor experienced sleep. Exact onset, remembered awakenings, morning/daytime function and evening conditions remain unspecified. Native providers, retrievals, curves, prior records and milestone unchanged."
+        }
+      ],
       "context": [
         {
           "kind": "self_report",
-          "observation": "New sleep data announced; no November 2 diary supplied yet. Attempt/final-waking times, experienced night/morning, later-day alertness, food, fluids, exercise, noise, pillow, blanket and temperature remain unreported. Prior-night conditions and opinions are not carried forward."
+          "observation": "The follow-up reports a sleep attempt around 01:00, waking around 09:45 and not sleeping well. Exact onset, remembered awakenings, morning/later-day alertness, food, fluids, exercise and environmental conditions remain unreported. Prior-night conditions are not carried forward."
         }
       ],
       "interpretation": [
-        "Oura returns 83, down from November 1’s 96, with 8h11m estimated asleep and 30 minutes awake in an 8h41m episode. Estimated sleep is 1h48m30s shorter than the preceding Oura record, while estimated waking is 22 minutes lower. A lower score does not mean every component deteriorated or establish how the night felt.",
-        "Both devices end at 09:44 PST. Oura starts at 01:03, COROS at 01:00. Those close boundaries coexist with 8h11m versus 8h37m estimated sleep and 30 versus seven minutes awake. A 26-minute sleep difference and 23-minute waking difference remain; matching endings do not validate the sleep/wake labels. November 1’s separate COROS daylight-saving ambiguity remains unresolved and is not transferred to this night.",
-        "Oura timing falls 96 → 50, REM 96 → 74 and total sleep 100 → 87. Deep sleep is 95, restfulness 81, latency 86 and efficiency 99. The efficiency contributor improves from 97 even though the composite falls; estimated sleep efficiency is 94%, a separate quantity. Main-episode latency is 10 minutes, not a diary-confirmed delay from an actual sleep attempt.",
+        "Oura returns 83, down from November 1’s 96, with 8h11m estimated asleep and 30 minutes awake in an 8h41m episode. Estimated sleep is 1h48m30s shorter than the preceding Oura record, while estimated waking is 22 minutes lower. The follow-up now explicitly reports poor experienced sleep. Oura’s lower score and that report point in the same direction; COROS rises 87 → 88 despite the worse reported night. Neither grade replaces the experienced outcome.",
+        "Both devices end at 09:44 PST. Oura starts at 01:03, COROS at 01:00. Those close boundaries coexist with 8h11m versus 8h37m estimated sleep and 30 versus seven minutes awake. A 26-minute sleep difference and 23-minute waking difference remain; matching endings do not validate the sleep/wake labels. November 1’s separate COROS daylight-saving ambiguity remains unresolved and is not transferred to this night. The approximately 01:00 attempt and 09:45 waking fit both windows closely. This timing agreement does not settle which awake estimate is closer to experience.",
+        "Oura timing falls 96 → 50, REM 96 → 74 and total sleep 100 → 87. Deep sleep is 95, restfulness 81, latency 86 and efficiency 99. The efficiency contributor improves from 97 even though the composite falls; estimated sleep efficiency is 94%, a separate quantity. Main-episode latency is 10 minutes. The approximate 01:00 attempt is now reported, but exact onset and attempt-to-onset latency remain unconfirmed.",
         "Oura estimates deep sleep 1h42m, REM 1h31m30s and light sleep 4h57m30s. COROS reports daily deep/light/REM/awake ratios of 23/47/29/1%, seven minutes awake, zero awakenings over five minutes and no detected naps. Zero long awakenings does not imply zero short awakenings. Exact COROS stage durations are not reconstructed from rounded daily ratios.",
         "Oura mean sleeping HR is 54.875 bpm, minimum 48 and HRV 44 ms. Mean sleeping HR is 4.75 bpm higher than November 1, while HRV falls from 55 to 44 ms. COROS’s official HRV is also 44 ms, Below normal against its returned 49–67 ms range and 58 ms baseline, down from 58. Agreement between two summaries is not independent validation or a diagnosis; no cause is assigned without diary context.",
         "Oura Readiness is 82, temperature deviation +0.20°C, breathing 12/min, average SpO₂ 95.425% and breathing disturbance index 0. These are wearable estimates. COROS daily HR average 62/minimum 48 and predicted seated resting HR 55 concern different scopes and a snapshot at retrieval, not matched sleeping-HR averages.",
         "Twenty-one wake dates now have 21 Oura and 21 COROS records, with 20 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. Neither yesterday’s high nor today’s decline changes the fixed milestone criteria or establishes the relative impact of light, meal timing, comfort or temperature."
       ],
       "next_focus": [
-        "Add actual attempt/final-waking times and how the night and morning felt before judging whether the lower Oura grade matched experience. Any recalled short awakenings remain unknown.",
+        "Keep the poor experienced night alongside Oura 83 and COROS 88. Both main windows fit the approximate 01:00 attempt and 09:45 waking, but remembered awakenings, exact onset and morning/later-day function remain unspecified.",
         "Use the new stage/pulse curves and separate provider trends to inspect the later recorded episode and lower HRV. Do not infer late food, light, alcohol, illness, exercise or a temperature problem from those readings alone."
       ],
       "next_focus_references": [
