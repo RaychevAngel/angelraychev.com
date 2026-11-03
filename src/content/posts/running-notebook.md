@@ -407,9 +407,9 @@ progressively faster reps and my experience line up positively.
 I then joined another group for **three 200s with walk-back recovery**,
 estimated around **30 seconds each by feel**. The group timed them, but I
 did not obtain the splits. My ankles felt good. The recorded 900 average
-is only **0.20 seconds per rep above 2:55.5**; I see the execution as
-effectively at the graduation standard, while preserving the actual times
-and leaving **4×900 m** for the cycle review.
+is **0.20 seconds per rep above 2:55.5**: **close to the target, not
+graduated**. It is a good result. I aim to cement the graduation target next
+cycle; **3×900 m remains the current format** until the gate is earned.
 
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
@@ -504,10 +504,15 @@ That is nine of the original twelve plus the extra 900 session. The repeated
 900s are now the best reference at that format; the additional three 200s
 belong to the same session.
 
-**LT on November 3 remains planned at 3×1600 m**, with **6:08** as its later
-average gate. The 900s' recorded **2:55.70** and the **2:55.5** numerical
-target stay visible beside the practical progression judgement. The next
-proposed VO₂ format is **4×900 m**, to assess at the cycle review.
+**LT on November 3 remains planned at 3×1600 m**. After **6:18.77 average
+(3:56.73/km)** last time, I want to move towards the **low 6:10s**: open a
+little more confidently, aiming under **6:15**, then try to accelerate across
+the set. Around **1:33 per lap** means **4:39 through 1200 m** and **6:12
+for 1600 m (3:52.5/km)**. The **6:08 average** LT gate is unchanged.
+
+The 900s' **2:55.70** remains close to the **2:55.5** target, without
+graduation. I aim to cement that next cycle; **3×900 m** stays current,
+with 4×900 m waiting until the gate is earned.
 
 The earlier **November 4 800 m TT, November 5 6×200 m and November 6 closing
 chill day** remain provisional. I am treating the trial as a checkpoint

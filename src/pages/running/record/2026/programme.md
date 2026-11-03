@@ -60,6 +60,13 @@ rep. The average almost matched October 23; the possibility of holding the
 last rep's pace throughout remains untested. **3×1600 m and the 6:08 gate
 remain unchanged. One LT slot remains before the time trial.**
 
+For **November 3**, I want to move from **6:18.77 average (3:56.73/km)**
+towards the **low 6:10s**. The intention is a more confident first 1600,
+aiming under **6:15** without an aggressive start, then trying to accelerate
+across the set. Around **1:33 per lap** gives **4:39 through 1200 m** and
+**6:12 for 1600 m (3:52.5/km)**. These are planned checkpoints; **6:08
+average remains the LT graduation gate**.
+
 **VO₂ is now at 3×900 m with nominal 5:30 recovery.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
 **2:35.55 (3:14.4/km)**, earned the change. The
@@ -98,11 +105,10 @@ rep and afterwards. Three subsequent 200s with walk-back recovery were
 estimated around **30 seconds each by feel**; the group's stopwatch times
 were not obtained. My ankles felt good.
 
-The recorded mean is **0.20 seconds per rep above the 2:55.5 gate**. I regard
-the execution as effectively at that standard in practice, keeping the
-actual times and unequal rests visible. **4×900 m** is the next proposed
-format to assess at the cycle review; no further VO₂ slot is added here.
-Nominal recovery remains **5:30**.
+**Close to the target, not graduated.** The recorded mean remains **2:55.70**,
+or **0.20 seconds per rep above the 2:55.5 gate**. I want to cement that
+graduation target next cycle. **3×900 m remains current**; 4×900 m waits
+until the gate is earned. Nominal recovery remains **5:30**.
 
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
@@ -231,7 +237,7 @@ the same session.
 | --- | --- | --- |
 | Sunday 1 November | VO₂ · 3×900 m | Complete · 3:02.77 average (3:23.07/km); stomach discomfort and toilet stop |
 | Monday 2 November | Extra VO₂ repeat · 3×900 m; then 3×200 m | Complete · 2:55.70 average (3:15.22/km); 200s ~30 s by feel |
-| Tuesday 3 November | LT · 3×1600 m / nominal 1 min | Planned · moved from November 2; replaces earlier rest intention |
+| Tuesday 3 November | LT · 3×1600 m / nominal 1 min | Planned · opener under 6:15, then aim towards low 6:10s; around 1:33/lap |
 | Wednesday 4 November | 800 m time trial | Earlier provisional date; subject to the intervening sessions |
 | Thursday 5 November | F · 6×200 m / 3 min | Earlier provisional date |
 | Friday 6 November | Closing chill day | Earlier provisional date |
