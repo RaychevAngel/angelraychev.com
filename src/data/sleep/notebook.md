@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-02"
+updated: "2026-11-03"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 3 — earlier windows and higher grades, experience still to add.** The [record](/sleep/record/#night-2026-11-03) returns **Oura 93 / COROS 89**, estimated sleep **8h58m / 9h18m**, and waking **31 / 6 minutes**. Main windows are **23:39–09:08 / 23:42–09:06 PST**. Oura timing rises **50 → 79**, REM **74 → 89** and restfulness **81 → 93**. Its efficiency contributor reaches **100**, with **95% estimated efficiency** and 31 minutes estimated awake. Deep/REM estimates are **1h52m / 1h51m**. HRV rises to **54/50 ms**, mean Oura sleeping pulse falls to **51.375 bpm**, and Readiness is **89**. The [new curves](/sleep/charts/#night-2026-11-03) retain the native sequence. No experienced night/morning or current routine has been reported. Yesterday’s poor sleep and timing/thoughts attribution are not assigned to today; the fixed milestone assessment is unchanged.
 
 **November 2 — poor experienced sleep despite closely matching boundaries.** The [record](/sleep/record/#night-2026-11-02) returns **Oura 83 / COROS 88**, estimated sleep **8h11m / 8h37m**, and waking **30 / 7 minutes**. Main windows are **01:03–09:44 / 01:00–09:44 PST**. Oura timing falls **96 → 50**, REM **96 → 74** and total sleep **100 → 87**, while efficiency improves to **99/100** with **94% estimated efficiency**. Deep/REM estimates are **1h42m / 1h31m30s**. Both HRV summaries are **44 ms**; COROS labels its value Below normal. Oura mean sleeping pulse is **54.875 bpm**, Readiness **82**. The [new curves](/sleep/charts/#night-2026-11-02) retain the native stage and pulse sequence. The follow-up reports a **sleep attempt around 01:00, waking around 09:45 and not sleeping well**. Both device windows fit those approximate times. Oura’s score falls 96 → 83 while COROS rises 87 → 88; poor experienced sleep remains beside both. Exact onset, remembered awakenings and morning/later-day alertness are unspecified. No prior meal, light or comfort conditions are assigned to it, and the fixed milestone assessment is unchanged. The further follow-up reports **many thoughts before bed** and identifies timing as the main suspected contributor. This is the user’s working explanation; Oura’s timing grade is not a measured causal share of poor sleep.
 

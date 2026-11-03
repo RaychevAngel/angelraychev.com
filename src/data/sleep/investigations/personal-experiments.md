@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-02"
+updated: "2026-11-03"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 3 — a candidate comparison, not a confirmed intervention result.** [Oura 93 / COROS 89](/sleep/record/#night-2026-11-03) estimate **8h58m / 9h18m asleep**, with recorded windows **23:39–09:08 / 23:42–09:06 PST** and waking estimates **31 / 6 minutes**. Timing rises to **79**, restfulness to **93**, and HRV to **54/50 ms**. The [new curve](/sleep/charts/#night-2026-11-03) retains Oura’s stage and pulse samples. Actual attempt/waking times, experienced outcomes, pre-bed mental activity and current evening conditions remain unreported. The earlier recorded window and higher grades do not isolate a timing effect or establish whether yesterday’s many thoughts recurred.
 
 **November 2 — poor experienced sleep, with different score directions.** [Oura 83 / COROS 88](/sleep/record/#night-2026-11-02) estimate **8h11m / 8h37m asleep**, ending at **09:44 PST** with starts three minutes apart. Waking estimates differ **30 / 7 minutes**. Oura timing and REM contributors fall to **50/74**; both HRV summaries are **44 ms**. The [curves](/sleep/charts/#night-2026-11-02) add the new native sequence. The follow-up reports **attempting sleep around 01:00, waking around 09:45 and not sleeping well**. Those approximate boundaries fit both devices, but their awake totals remain different. Oura falls 96 → 83 while COROS rises 87 → 88. Exact onset, recalled awakenings, morning/later-day function and current food, light, walking, social and thermal conditions remain unknown. November 1’s good experience and proposed ranking of optimization priorities are not assumed repeated or refuted by today’s readings. The further follow-up reports **many thoughts before bed** and identifies timing as the main suspected contributor. This is the user’s working explanation; Oura’s timing grade is not a measured causal share of poor sleep.
 

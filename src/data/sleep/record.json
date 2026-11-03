@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "entries": [
     {
       "id": "2026-10-13",
@@ -3478,6 +3478,141 @@
         {
           "href": "/sleep/charts/#night-2026-11-02",
           "label": "November 2 curves"
+        },
+        {
+          "href": "/sleep/targets/#score-milestones",
+          "label": "Score benchmarks"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-03",
+      "wake_date": "2026-11-03",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider sleep wake-up date; local windows use PST.",
+      "status": "Oura 93 / COROS 89; earlier recorded windows around 23:40–09:07 and more estimated sleep. HRV 54 / 50 ms; experienced outcome unreported.",
+      "retrieved_at": "2026-11-03T17:54:54.103781+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-11-03T17:54:54.103781+00:00",
+        "coros": "2026-11-03T17:54:50.227Z"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.0,
+          "average_heart_rate": 51.375,
+          "average_hrv": 54,
+          "awake_time": 1860,
+          "bedtime_end": "2026-11-03T09:08:00.000-08:00",
+          "bedtime_start": "2026-11-02T23:39:00.000-08:00",
+          "day": "2026-11-03",
+          "deep_sleep_duration": 6720,
+          "efficiency": 95,
+          "latency": 600,
+          "light_sleep_duration": 18900,
+          "lowest_heart_rate": 47,
+          "rem_sleep_duration": 6660,
+          "time_in_bed": 34140,
+          "total_sleep_duration": 32280,
+          "type": "long_sleep"
+        },
+        "score": 93,
+        "contributors": {
+          "deep_sleep": 96,
+          "efficiency": 100,
+          "latency": 86,
+          "rem_sleep": 89,
+          "restfulness": 93,
+          "timing": 79,
+          "total_sleep": 97
+        },
+        "readiness_score": 89,
+        "temperature_deviation_c": -0.04,
+        "spo2_average_percent": 97.02,
+        "breathing_disturbance_index": 0,
+        "additional_sleep_episodes": [],
+        "source": "Authenticated Oura API V2 exact-date sleep/daily_sleep/daily_readiness/daily_spo2 and ring configuration; pagination exhausted. Main episode selected by native November 3 day. Out-of-day returns excluded from this entry; native values and main-night samples retained."
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 89,
+        "daily_sleep_minutes": 558,
+        "main_sleep_minutes": 558,
+        "main_period_minutes": 564,
+        "main_start": "2026-11-02T23:42:00-08:00",
+        "main_end": "2026-11-03T09:06:00-08:00",
+        "ratios_percent": {
+          "deep": 21,
+          "light": 58,
+          "rem": 20,
+          "awake": 1
+        },
+        "ratio_denominator": "Daily metric scope; no detected naps. Exact ratio denominator not supplied; no exact stage minutes reconstructed.",
+        "awake_minutes": 6,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 50,
+        "official_sleep_hrv_normal_range_ms": [
+          48,
+          66
+        ],
+        "official_sleep_hrv_baseline_ms": 57,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline; not recomputed from time-series points",
+        "daily_min_hr_bpm": 44,
+        "daily_average_hr_bpm": 54,
+        "resting_hr_bpm": 53,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not matched sleep-window HR; resting HR is predicted seated HR",
+        "source": "Official COROS connector sleep overview, official sleep HRV assessment, exact-date daily HR and one-day resting HR response explicitly dated November 3. Clock labels interpreted as Los Angeles PST."
+      },
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "story": [],
+      "plans": [],
+      "corrections": [],
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "New data announced; no November 3 diary supplied yet. Actual attempt/final waking, experienced night/morning, remembered awakenings, later-day functioning and evening conditions remain unknown. November 2’s poor sleep, timing attribution and many pre-bed thoughts are not assumed repeated."
+        }
+      ],
+      "interpretation": [
+        "Oura rises 83 → 93 and COROS 88 → 89. Oura estimates 8h58m asleep, 47 minutes more than November 2, with 31 minutes awake in a 9h29m episode. COROS estimates 9h18m asleep, 41 minutes more, with six minutes awake in a 9h24m period. The experienced night and morning remain unreported, so these changes are not yet a confirmed improvement in felt sleep.",
+        "The recorded windows are 23:39–09:08 PST for Oura and 23:42–09:06 for COROS. Both begin earlier on the clock and end earlier than the preceding night. Starts differ by three minutes and endings by two, yet estimated sleep differs by 20 minutes and awake time by 25. Close boundaries do not independently validate the sleep/wake labels or establish actual sleep-attempt and final-waking times.",
+        "Oura timing rises 50 → 79, REM 74 → 89, total sleep 87 → 97 and restfulness 81 → 93. Deep sleep is 96, latency 86 and efficiency 100. The 100-point efficiency contributor is distinct from estimated sleep efficiency of 95%; it does not mean no waking. Main-episode latency is 10 minutes, not a confirmed delay from a reported attempt.",
+        "Oura estimates deep sleep 1h52m, REM 1h51m and light sleep 5h15m. COROS reports daily deep/light/REM/awake ratios of 21/58/20/1%, six minutes awake, zero awakenings over five minutes and no detected naps. Zero long awakenings does not imply zero short awakenings. Exact COROS stage minutes are not reconstructed from rounded ratios.",
+        "Oura mean sleeping HR falls 54.875 → 51.375 bpm, minimum 47, while HRV rises 44 → 54 ms. COROS’s official sleep HRV rises 44 → 50 ms, now Normal against its returned 48–66 ms range and 57 ms baseline. Those are distinct provider summaries; the label and range are not recomputed. Neither these changes nor the earlier windows identify whether pre-bed thoughts, timing, training, food or another factor contributed.",
+        "Oura Readiness is 89, temperature deviation −0.04°C, breathing 12/min, average SpO₂ 97.02% and breathing disturbance index 0. These are wearable estimates. COROS daily HR average 54/minimum 44 and predicted seated resting HR 53 concern different scopes and a snapshot at retrieval, not matched sleeping-HR averages.",
+        "Twenty-two wake dates now have 22 Oura and 22 COROS records, with 21 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. Today’s higher grades neither complete a sustained milestone nor confirm an effect of an earlier bedtime or quieter pre-bed thoughts."
+      ],
+      "next_focus": [
+        "Pair the earlier recorded window and higher grades with actual attempt/waking times, experienced sleep and morning/later-day function. Do not infer that yesterday’s timing or pre-bed-thoughts hypothesis has been confirmed.",
+        "Inspect the new native stage and pulse curves alongside the separate provider trends. Keep remembered awakenings, meals, fluids, training, light and temperature unknown until reported."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/charts/#night-2026-11-03",
+          "label": "November 3 curves"
         },
         {
           "href": "/sleep/targets/#score-milestones",
