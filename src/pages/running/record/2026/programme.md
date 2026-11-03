@@ -1,19 +1,18 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "Nine original workouts complete through November 1; an extra VO₂ repeat is planned for November 2 and LT moves to November 3 after a session disrupted by stomach discomfort."
+description: "Ten workouts complete through November 2: the repeated 900s averaged 2:55.70 with a strong finish, followed by three 200s with estimated times. LT remains planned for November 3."
 updated: 2026-11-02
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**, with completed training
-through **1 November** and decisions updated on **2 November**. The cycle
-began on **15 October**. **Nine of its original twelve workouts are complete.**
-After stomach discomfort disrupted the latest 900s, I chose an **extra VO₂
-repeat on November 2**, moving **LT to November 3**. The repeat would take
-the planned total to thirteen workouts. Later sessions remain plans;
-completed work stays on the [2026 record](/running/record/2026/).
+This is the programme agreed by **8 October 2026**, updated through
+**2 November**. The cycle began on **15 October**. **Ten workouts are
+complete**: nine of the original twelve, plus the extra VO₂ repeat on
+November 2. The intended total is thirteen. LT remains planned for November 3;
+the later trial and F dates are provisional. Completed work stays on the
+[2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
 maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
@@ -88,8 +87,22 @@ eating too much at lunch, urgently needed the toilet and stopped around the
 second repetition. It was a cold night on an unlit track, and I felt awful
 while running. The slower result remains completed training; the conditions
 limit the comparison with the earlier sessions. **I chose a repeat on
-November 2 and LT on November 3.** These are plans. The **2:55.5** gate
-and nominal **5:30** recovery are unchanged.
+November 2 and LT on November 3.** The repeat is now complete; LT remains planned.
+
+The [extra 900s on 2 November](/running/record/2026/#2-november--extra-vo-3900-m--nominal-530)
+were **2:56.82, 2:55.43 and 2:54.84**: **2:55.70 average (3:15.22/km)**,
+with **4:59.86 and 6:03.16** recorded recovery. Crowds prompted the longer
+wait before the last rep, which included repeated outside passes, including
+excursions towards lane three on the bends. I felt good through the fastest
+rep and afterwards. Three subsequent 200s with walk-back recovery were
+estimated around **30 seconds each by feel**; the group's stopwatch times
+were not obtained. My ankles felt good.
+
+The recorded mean is **0.20 seconds per rep above the 2:55.5 gate**. I regard
+the execution as effectively at that standard in practice, keeping the
+actual times and unequal rests visible. **4×900 m** is the next proposed
+format to assess at the cycle review; no further VO₂ slot is added here.
+Nominal recovery remains **5:30**.
 
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
@@ -168,7 +181,7 @@ rest or easy movement according to how I feel, without another quality session:
 
 The original template contains four LT sessions, four VO₂ sessions, and one
 each of F, FA, TT and X, with six chill days. **The additional November 2
-VO₂ repeat is a dated departure from that template**, bringing the intended
+VO₂ repeat is a completed departure from that template**, bringing the intended
 total to thirteen workouts, including five VO₂ sessions. It does not erase
 November 1's completed session.
 
@@ -208,16 +221,16 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Completed training is recorded through **1 November**. On **November 2** I
-chose to repeat the 900s that day and do LT on November 3, replacing that
-date's earlier rest intention. **Nine original workouts are complete; the
-extra repeat is planned.** Four sessions remain when the repeat is included:
-VO₂, LT, the 800 m trial and F.
+Completed training is recorded through **2 November**. The extra VO₂ repeat
+is complete, following November 1's stomach-disrupted session. **Ten workouts
+are complete: nine original slots plus the repeat.** Three planned workouts
+remain: LT, the 800 m trial and F. The extra 200s after the 900s are part of
+the same session.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
 | Sunday 1 November | VO₂ · 3×900 m | Complete · 3:02.77 average (3:23.07/km); stomach discomfort and toilet stop |
-| Monday 2 November | Extra VO₂ repeat · 3×900 m / 5:30 | Planned · added after November 1; previously the LT date |
+| Monday 2 November | Extra VO₂ repeat · 3×900 m; then 3×200 m | Complete · 2:55.70 average (3:15.22/km); 200s ~30 s by feel |
 | Tuesday 3 November | LT · 3×1600 m / nominal 1 min | Planned · moved from November 2; replaces earlier rest intention |
 | Wednesday 4 November | 800 m time trial | Earlier provisional date; subject to the intervening sessions |
 | Thursday 5 November | F · 6×200 m / 3 min | Earlier provisional date |

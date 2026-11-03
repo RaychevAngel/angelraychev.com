@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 1 November 2026.** The upcoming
+**This version includes completed training through 2 November 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -392,7 +392,24 @@ the second repetition. I ran at night in the cold on an unlit track and
 felt awful while running. This differs from October 27's missing faster
 gear: the slower times came with severe stomach discomfort and an
 interrupted session. I chose to repeat VO₂ on November 2 and move LT to
-November 3. Those are plans, not completed results.
+November 3. The repeat was subsequently completed on
+[November 2](/running/record/2026/#2-november--extra-vo-3900-m--nominal-530).
+
+The [repeat on 2 November](/running/record/2026/#2-november--extra-vo-3900-m--nominal-530)
+was **2:56.82, 2:55.43, 2:54.84**: **2:55.70 average (3:15.22/km)**,
+with **4:59.86 and 6:03.16** recorded recovery. Crowds prompted the longer
+wait before the final rep, which still required many outside passes,
+including towards lane three on the bends. I felt good through that fastest
+rep and afterwards. The mean improved on October 19 by **1.31 seconds per
+rep**; the finish improved by **6.21 seconds**. This time the quicker average,
+progressively faster reps and my experience line up positively.
+
+I then joined another group for **three 200s with walk-back recovery**,
+estimated around **30 seconds each by feel**. The group timed them, but I
+did not obtain the splits. My ankles felt good. The recorded 900 average
+is only **0.20 seconds per rep above 2:55.5**; I see the execution as
+effectively at the graduation standard, while preserving the actual times
+and leaving **4×900 m** for the cycle review.
 
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
@@ -482,17 +499,19 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Nine of the original twelve workouts are complete**, through November 1.
-The latest 900s were compromised by nausea and bowel urgency. I chose to
-**repeat 3×900 m / 5:30 on November 2**, then do **LT on November 3**.
-That is an additional VO₂ session, bringing the intended total to thirteen
-workouts if the remaining work is completed. November 1 stays in the record.
+**Ten of thirteen intended workouts are complete**, through November 2.
+That is nine of the original twelve plus the extra 900 session. The repeated
+900s are now the best reference at that format; the additional three 200s
+belong to the same session.
 
-LT remains **3×1600 m**, with **6:08** as its later average gate. VO₂ remains
-**3×900 m / nominal 5:30**, with **2:55.5** as its gate. The earlier **November 4
-800 m TT, November 5 6×200 m and November 6 closing chill day** remain
-provisional after this change. I am treating the trial as a checkpoint within
-normal training, without a formal taper.
+**LT on November 3 remains planned at 3×1600 m**, with **6:08** as its later
+average gate. The 900s' recorded **2:55.70** and the **2:55.5** numerical
+target stay visible beside the practical progression judgement. The next
+proposed VO₂ format is **4×900 m**, to assess at the cycle review.
+
+The earlier **November 4 800 m TT, November 5 6×200 m and November 6 closing
+chill day** remain provisional. I am treating the trial as a checkpoint
+within normal training, without a formal taper.
 
 One LT slot remains before the time trial. **Five LT sessions and three VO₂
 sessions** remains a possible reallocation for the next cycle, to assess
