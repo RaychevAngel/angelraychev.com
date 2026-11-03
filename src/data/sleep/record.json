@@ -3490,7 +3490,7 @@
       "wake_date": "2026-11-03",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider sleep wake-up date; local windows use PST.",
-      "status": "Oura 93 / COROS 89; earlier recorded windows around 23:40–09:07 and more estimated sleep. HRV 54 / 50 ms; experienced outcome unreported.",
+      "status": "Reports roughly 23:30–09:05, an okay night and feeling fine on waking; different blanket felt good. User considers the timing consistent with the device windows. Oura 93 / COROS 89; aims to go to bed earlier.",
       "retrieved_at": "2026-11-03T17:54:54.103781+00:00",
       "provider_retrieved_at": {
         "oura": "2026-11-03T17:54:54.103781+00:00",
@@ -3573,41 +3573,52 @@
         "source": "Official COROS connector sleep overview, official sleep HRV assessment, exact-date daily HR and one-day resting HR response explicitly dated November 3. Clock labels interpreted as Los Angeles PST."
       },
       "self_report": {
-        "restfulness": null,
-        "morning_sleepiness": null,
+        "restfulness": "The night was okay and otherwise calm, with one abrupt awakening.",
+        "morning_sleepiness": "Woke around 09:05 and felt fine. Exact out-of-bed time and waking-to-normal interval not supplied.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
         "naps": null,
-        "intended_bedtime": null,
-        "environment": null,
+        "intended_bedtime": "Sleep attempt around 23:30. Approximate report; exact onset and attempt-to-onset delay not supplied.",
+        "environment": "Used a different blanket; it felt good. Room temperature was not specified.",
         "stress": null,
         "breathing_exercise": null,
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
-      "plans": [],
-      "corrections": [],
+      "story": [
+        "I tried to sleep around 23:30 and woke around 09:05. The night was okay, with one abrupt awakening; beyond that it was calm. I woke up fine.",
+        "I used a different blanket, which felt good. I consider the timing consistent with what the devices recorded."
+      ],
+      "plans": [
+        "Aim to go to bed earlier; no new target time specified."
+      ],
+      "corrections": [
+        {
+          "date": "2026-11-03",
+          "reason": "Added approximate 23:30 attempt and 09:05 waking, okay experienced night, fine waking, generic abrupt awakening, comfortable different blanket and earlier-bedtime intention. User confirms timing coincides with the recorded windows. Only the supplied sleep context is included; no cause is assigned. Native measurements, retrievals, curves, earlier entries and milestone unchanged."
+        }
+      ],
       "context": [
         {
           "kind": "self_report",
-          "observation": "New data announced; no November 3 diary supplied yet. Actual attempt/final waking, experienced night/morning, remembered awakenings, later-day functioning and evening conditions remain unknown. November 2’s poor sleep, timing attribution and many pre-bed thoughts are not assumed repeated."
+          "observation": "The user reports roughly 23:30–09:05, an okay night with one abrupt awakening, otherwise calm sleep and fine waking. A different blanket felt good. The user considers the times consistent with the devices and aims for an earlier bedtime. Exact onset, event time, later-day function, pre-bed mental activity, meals, fluids, exercise, light and room temperature remain unspecified."
         }
       ],
       "interpretation": [
-        "Oura rises 83 → 93 and COROS 88 → 89. Oura estimates 8h58m asleep, 47 minutes more than November 2, with 31 minutes awake in a 9h29m episode. COROS estimates 9h18m asleep, 41 minutes more, with six minutes awake in a 9h24m period. The experienced night and morning remain unreported, so these changes are not yet a confirmed improvement in felt sleep.",
-        "The recorded windows are 23:39–09:08 PST for Oura and 23:42–09:06 for COROS. Both begin earlier on the clock and end earlier than the preceding night. Starts differ by three minutes and endings by two, yet estimated sleep differs by 20 minutes and awake time by 25. Close boundaries do not independently validate the sleep/wake labels or establish actual sleep-attempt and final-waking times.",
-        "Oura timing rises 50 → 79, REM 74 → 89, total sleep 87 → 97 and restfulness 81 → 93. Deep sleep is 96, latency 86 and efficiency 100. The 100-point efficiency contributor is distinct from estimated sleep efficiency of 95%; it does not mean no waking. Main-episode latency is 10 minutes, not a confirmed delay from a reported attempt.",
+        "Oura rises 83 → 93 and COROS 88 → 89. Oura estimates 8h58m asleep, 47 minutes more than November 2, with 31 minutes awake in a 9h29m episode. COROS estimates 9h18m asleep, 41 minutes more, with six minutes awake in a 9h24m period. The follow-up now reports an okay night and fine waking, a more positive experience than November 2’s poor sleep. Higher grades coexist with that improvement; the report includes an abrupt awakening, so it is not described as uninterrupted sleep.",
+        "The recorded windows are 23:39–09:08 PST for Oura and 23:42–09:06 for COROS. Both begin earlier on the clock and end earlier than the preceding night. Starts differ by three minutes and endings by two, yet estimated sleep differs by 20 minutes and awake time by 25. Close boundaries do not independently validate the sleep/wake labels or establish actual sleep-attempt and final-waking times. The reported attempt around 23:30 and waking around 09:05 fit these approximate boundaries, and the user explicitly considers the timing consistent. This agreement does not independently validate exact sleep onset or either device’s awake total.",
+        "Oura timing rises 50 → 79, REM 74 → 89, total sleep 87 → 97 and restfulness 81 → 93. Deep sleep is 96, latency 86 and efficiency 100. The 100-point efficiency contributor is distinct from estimated sleep efficiency of 95%; it does not mean no waking. Main-episode latency is 10 minutes. It belongs to Oura’s selected episode, not a confirmed delay from the approximately 23:30 attempt; exact onset remains unreported.",
         "Oura estimates deep sleep 1h52m, REM 1h51m and light sleep 5h15m. COROS reports daily deep/light/REM/awake ratios of 21/58/20/1%, six minutes awake, zero awakenings over five minutes and no detected naps. Zero long awakenings does not imply zero short awakenings. Exact COROS stage minutes are not reconstructed from rounded ratios.",
+        "The different blanket felt good and the user aims to go to bed earlier. These are reported comfort and a future intention, respectively. Room temperature and pre-bed mental activity are still unspecified; neither a blanket effect nor a quieter-mind effect is isolated. The abrupt awakening has no reported clock time and is not mapped onto a particular wearable stage.",
         "Oura mean sleeping HR falls 54.875 → 51.375 bpm, minimum 47, while HRV rises 44 → 54 ms. COROS’s official sleep HRV rises 44 → 50 ms, now Normal against its returned 48–66 ms range and 57 ms baseline. Those are distinct provider summaries; the label and range are not recomputed. Neither these changes nor the earlier windows identify whether pre-bed thoughts, timing, training, food or another factor contributed.",
         "Oura Readiness is 89, temperature deviation −0.04°C, breathing 12/min, average SpO₂ 97.02% and breathing disturbance index 0. These are wearable estimates. COROS daily HR average 54/minimum 44 and predicted seated resting HR 53 concern different scopes and a snapshot at retrieval, not matched sleeping-HR averages.",
         "Twenty-two wake dates now have 22 Oura and 22 COROS records, with 21 eligible Oura whole-night scores. The completed October 13–26 assessment remains 82.31 from 13 eligible scores. Today’s higher grades neither complete a sustained milestone nor confirm an effect of an earlier bedtime or quieter pre-bed thoughts."
       ],
       "next_focus": [
-        "Pair the earlier recorded window and higher grades with actual attempt/waking times, experienced sleep and morning/later-day function. Do not infer that yesterday’s timing or pre-bed-thoughts hypothesis has been confirmed.",
-        "Inspect the new native stage and pulse curves alongside the separate provider trends. Keep remembered awakenings, meals, fluids, training, light and temperature unknown until reported."
+        "Keep the okay night and fine waking alongside Oura 93 and COROS 89. The user confirms approximate timing agreement; retain the abrupt awakening and different awake totals without assigning an exact stage or event time.",
+        "Record the intention to go to bed earlier and repeat comparisons that retain blanket comfort, experienced sleep and next-day functioning. No specific new bedtime or isolated intervention result has been established; current pre-bed thoughts and other evening conditions remain unreported."
       ],
       "next_focus_references": [
         {
