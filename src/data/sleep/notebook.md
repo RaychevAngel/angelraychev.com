@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-03"
+updated: "2026-11-04"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 4 — good sleep and morning, with no notable awakenings reported.** The [record](/sleep/record/#night-2026-11-04) returns **Oura 93 / COROS 88**, estimated sleep **8h39m30s / 8h55m**, and awake totals **39 / 4 minutes**. The user reports **roughly 23:30–08:45, good sleep and a good morning**, with no notable awakenings or changes in routine/blanket comfort. Device windows are **23:29:59–08:48:29 / 23:42–08:41 PST**. Oura timing rises to **87**, restfulness to **95** and Readiness to **92**; HRV is **58/56 ms** and mean Oura sleeping pulse **48.375 bpm**. Deep/REM estimates are **2h06m / 1h43m**. The [new curves](/sleep/charts/#night-2026-11-04) preserve native samples. No notable remembered awakenings does not mean no device-labelled waking. The attempt remains around 23:30; no isolated cause or sustained milestone follows.
 
 **November 3 — earlier timing, an okay night and fine waking.** The [record](/sleep/record/#night-2026-11-03) returns **Oura 93 / COROS 89**, estimated sleep **8h58m / 9h18m**, and waking **31 / 6 minutes**. Main windows are **23:39–09:08 / 23:42–09:06 PST**. Oura timing rises **50 → 79**, REM **74 → 89** and restfulness **81 → 93**. Its efficiency contributor reaches **100**, with **95% estimated efficiency** and 31 minutes estimated awake. Deep/REM estimates are **1h52m / 1h51m**. HRV rises to **54/50 ms**, mean Oura sleeping pulse falls to **51.375 bpm**, and Readiness is **89**. The [new curves](/sleep/charts/#night-2026-11-03) retain the native sequence. The follow-up reports **roughly 23:30–09:05, an okay night, one abrupt awakening and fine waking**. A **different blanket felt good**, and the user considers the times consistent with the device windows. An earlier bedtime remains the next intention, without a new target time. Exact onset, later-day function, room temperature and pre-bed mental activity remain unspecified; no individual cause or fixed-milestone change is established.
 

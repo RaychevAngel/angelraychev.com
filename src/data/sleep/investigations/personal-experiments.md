@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-03"
+updated: "2026-11-04"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 4 — repeat a good experienced result without erasing device disagreement.** [Oura 93 / COROS 88](/sleep/record/#night-2026-11-04) estimate **8h39m30s / 8h55m asleep**, with awake estimates **39 / 4 minutes**. The diary reports **a roughly 23:30 attempt, 08:45 waking, good sleep and a good morning**, no notable awakenings and no changes in evening routine or blanket comfort. Oura timing/restfulness reach **87/95**, HRV **58/56 ms**. The [new curve](/sleep/charts/#night-2026-11-04) retains the native sequence. The same approximate attempt time as November 3 is reported despite a different Oura start and timing grade. A good experience does not settle the two awake totals; exact onset, later-day function and specific current food/light/temperature/thought exposures remain unspecified.
 
 **November 3 — a candidate comparison, not a confirmed intervention result.** [Oura 93 / COROS 89](/sleep/record/#night-2026-11-03) estimate **8h58m / 9h18m asleep**, with recorded windows **23:39–09:08 / 23:42–09:06 PST** and waking estimates **31 / 6 minutes**. Timing rises to **79**, restfulness to **93**, and HRV to **54/50 ms**. The [new curve](/sleep/charts/#night-2026-11-03) retains Oura’s stage and pulse samples. The follow-up reports **a roughly 23:30 attempt, 09:05 waking, an okay night with one abrupt awakening and fine waking**. A different blanket felt good. The user confirms the times coincide with the recorded windows and aims to go to bed earlier, without a new target hour. The more positive experienced outcome belongs beside the higher grades; pre-bed mental activity, room temperature and later-day function are still unspecified. Neither timing nor blanket comfort is isolated as its cause.
 
