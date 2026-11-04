@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-02
+updated: 2026-11-04
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 2 November 2026.** The upcoming
+**This version includes completed training through 4 November 2026.** The upcoming
 sessions are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
@@ -372,7 +372,7 @@ but I decided to **rest on Thursday, October 29**, then do **X = 4+4×200 m
 on Friday, October 30**. The remaining sequence moves forward by one day.
 The
 [programme](/running/record/2026/programme/#the-current-calendar) keeps the
-remaining provisional dates, including the November 4 800 m trial.
+provisional dates as they evolve; the later changes are recorded below.
 
 On [30 October](/running/record/2026/#30-october--x-4200-m--3-min--4200-m--90-seconds),
 I completed X by repeating the **4+4×200 m**. Recorded set averages were
@@ -410,6 +410,23 @@ did not obtain the splits. My ankles felt good. The recorded 900 average
 is **0.20 seconds per rep above 2:55.5**: **close to the target, not
 graduated**. It is a good result. I aim to cement the graduation target next
 cycle; **3×900 m remains the current format** until the gate is earned.
+
+The [fourth 1600 session on 4 November](/running/record/2026/#4-november--lt-31600-m--nominal-1-min)
+was **6:09.14, 6:11.76 and 6:05.31**: **6:08.74 average (3:50.46/km)**,
+with **1:01.03 and 1:00.61** recovery. I missed the previous day for lack
+of time. The average was **10.03 seconds per rep quicker than October 28**.
+The final rep felt composed and fast. Successive groups from what appeared
+to be a college or high-school team provided a rhythm to follow from its
+start; after being passed by the last group, I held them about 5–10 m ahead.
+Some lane two running added unquantified distance. The recorded time stands
+without a correction or a claim that I would necessarily reproduce it alone.
+
+That is the LT improvement I wanted: a much quicker opener and a faster,
+composed finish after two repetitions. **Both ladders are now right at their
+gates**, with **6:08.74 versus 6:08** for LT and **2:55.70 versus 2:55.5**
+for VO₂. Neither has graduated. Next cycle I want to clear both, then move
+towards **3×2000 m** and **4×900 m** respectively. The full session and its
+pacing context remain in the dated record.
 
 The returning speed makes the shape of the performance curve interesting.
 I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
@@ -499,29 +516,22 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Ten of thirteen intended workouts are complete**, through November 2.
-That is nine of the original twelve plus the extra 900 session. The repeated
-900s are now the best reference at that format; the additional three 200s
-belong to the same session.
+**Eleven of thirteen intended workouts are complete**, through November 4:
+ten original slots plus the extra 900 session. The final LT is complete;
+the remaining workouts are the **800 m time trial** and **6×200 m / 3 min**.
 
-**LT on November 3 remains planned at 3×1600 m**. After **6:18.77 average
-(3:56.73/km)** last time, I want to move towards the **low 6:10s**: open a
-little more confidently, aiming under **6:15**, then try to accelerate across
-the set. Around **1:33 per lap** means **4:39 through 1200 m** and **6:12
-for 1600 m (3:52.5/km)**. The **6:08 average** LT gate is unchanged.
+I plan the **800 m TT on November 5 if I feel good**, then the 6×200 m.
+I am willing to rest before the trial or before the 200s. These are conditional
+plans; I am treating the trial as a checkpoint within normal training, without
+a formal taper.
 
-The 900s' **2:55.70** remains close to the **2:55.5** target, without
-graduation. I aim to cement that next cycle; **3×900 m** stays current,
-with 4×900 m waiting until the gate is earned.
+**3×1600 m and 3×900 m remain the current formats.** Both averages are now
+just above their gates. Next cycle I want to cement **6:08** and **2:55.5**,
+then progress independently towards **3×2000 m** and **4×900 m**. The next
+formats' own gates are later targets, not compulsory opening paces.
 
-The earlier **November 4 800 m TT, November 5 6×200 m and November 6 closing
-chill day** remain provisional. I am treating the trial as a checkpoint
-within normal training, without a formal taper.
-
-One LT slot remains before the time trial. **Five LT sessions and three VO₂
-sessions** remains a possible reallocation for the next cycle, to assess
-after the remaining work and actual trial. The added repeat this cycle is
-a separate decision.
+**Five LT sessions and three VO₂ sessions** remains a possible next-cycle
+reallocation to assess after the actual trial; it has not been adopted.
 
 The next efforts ask three immediate questions:
 

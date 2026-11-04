@@ -1,17 +1,18 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "Ten workouts complete through November 2: the repeated 900s averaged 2:55.70 with a strong finish, followed by three 200s with estimated times. LT remains planned for November 3."
-updated: 2026-11-02
+description: "Eleven workouts complete through November 4: both the 900s and 1600s are close to their gates. An 800 m trial and 6×200 m remain, with rest days available before either."
+updated: 2026-11-04
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, updated through
-**2 November**. The cycle began on **15 October**. **Ten workouts are
-complete**: nine of the original twelve, plus the extra VO₂ repeat on
-November 2. The intended total is thirteen. LT remains planned for November 3;
-the later trial and F dates are provisional. Completed work stays on the
+**4 November**. The cycle began on **15 October**. **Eleven workouts are
+complete**: ten of the original twelve, plus the extra VO₂ repeat on
+November 2. The intended total is thirteen. Both the 900s and 1600s are now
+right at their gates. The 800 m trial and F remain, with a rest day available
+before either. Completed work stays on the
 [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
@@ -58,14 +59,22 @@ the difficult final 900s had left me unsure whether my legs would hold.
 I kept good posture and composure, then was less cautious in the faster final
 rep. The average almost matched October 23; the possibility of holding the
 last rep's pace throughout remains untested. **3×1600 m and the 6:08 gate
-remain unchanged. One LT slot remains before the time trial.**
+remained unchanged at that point.**
 
-For **November 3**, I want to move from **6:18.77 average (3:56.73/km)**
-towards the **low 6:10s**. The intention is a more confident first 1600,
-aiming under **6:15** without an aggressive start, then trying to accelerate
-across the set. Around **1:33 per lap** gives **4:39 through 1200 m** and
-**6:12 for 1600 m (3:52.5/km)**. These are planned checkpoints; **6:08
-average remains the LT graduation gate**.
+The intention for November 3 was a more confident opener under **6:15**,
+then moving towards the **low 6:10s**: **1:33 per lap**, **4:39 through
+1200 m**, **6:12 for 1600 m (3:52.5/km)**. I missed that day for lack of
+time and completed the [fourth 1600 session on November 4](/running/record/2026/#4-november--lt-31600-m--nominal-1-min):
+**6:09.14, 6:11.76, 6:05.31**, or **6:08.74 average (3:50.46/km)**,
+with **1:01.03 and 1:00.61** recovery. This was **10.03 seconds per rep
+quicker than October 28**. The final rep felt composed and fast, with
+successive groups providing pacing help from its beginning and some extra
+distance from lane two running. No distance-adjusted time is inferred.
+
+**Right at the gate, not graduated:** the mean remains **0.74 seconds per
+rep above 6:08**. All four LT slots in this cycle are now complete.
+**3×1600 m remains current**; next cycle I want to clear the gate, then
+move to **3×2000 m**, with its own later target.
 
 **VO₂ is now at 3×900 m with nominal 5:30 recovery.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
@@ -94,7 +103,7 @@ eating too much at lunch, urgently needed the toilet and stopped around the
 second repetition. It was a cold night on an unlit track, and I felt awful
 while running. The slower result remains completed training; the conditions
 limit the comparison with the earlier sessions. **I chose a repeat on
-November 2 and LT on November 3.** The repeat is now complete; LT remains planned.
+November 2 and LT on November 3.** The repeat is complete; LT followed on November 4 after November 3 was missed for lack of time.
 
 The [extra 900s on 2 November](/running/record/2026/#2-november--extra-vo-3900-m--nominal-530)
 were **2:56.82, 2:55.43 and 2:54.84**: **2:55.70 average (3:15.22/km)**,
@@ -169,7 +178,7 @@ That decision inserted one rest day and shifted the remaining sequence forward
 by one day. X was completed on October 30, followed by the November 1 VO₂
 session. On November 2 I chose to add a repeat of the 900s and move LT from
 November 2 to November 3, which had previously been a planned rest day.
-The original calendar and the completed sessions remain distinguishable.
+I missed November 3 for lack of time and completed LT on November 4. The TT and F now follow conditionally, with a rest day available before either. The original calendar and the completed sessions remain distinguishable.
 
 ## The 18-day cycle
 
@@ -216,8 +225,7 @@ automatically.
 
 One possible **next-cycle** change is **five LT sessions and three VO₂
 sessions**, reallocating an existing slot if LT progress continues to lag.
-That remains a proposal to assess after the remaining LT sessions and actual
-time trial. That reallocation is not adopted; this cycle's additional VO₂ repeat
+That remains a proposal to assess after the actual time trial. That reallocation is not adopted; this cycle's additional VO₂ repeat
 is a separate decision.
 
 The session count does not describe the whole load. A time trial, relaxed fast
@@ -227,26 +235,33 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Completed training is recorded through **2 November**. The extra VO₂ repeat
-is complete, following November 1's stomach-disrupted session. **Ten workouts
-are complete: nine original slots plus the repeat.** Three planned workouts
-remain: LT, the 800 m trial and F. The extra 200s after the 900s are part of
-the same session.
+Completed training is recorded through **4 November**. **Eleven workouts
+are complete: ten original slots plus the extra VO₂ repeat.** Two planned
+workouts remain: the **800 m trial** and **F**. The additional November 2
+200s belong to the same physical session as its 900s.
 
 | Date | Intended session | Status |
 | --- | --- | --- |
 | Sunday 1 November | VO₂ · 3×900 m | Complete · 3:02.77 average (3:23.07/km); stomach discomfort and toilet stop |
 | Monday 2 November | Extra VO₂ repeat · 3×900 m; then 3×200 m | Complete · 2:55.70 average (3:15.22/km); 200s ~30 s by feel |
-| Tuesday 3 November | LT · 3×1600 m / nominal 1 min | Planned · opener under 6:15, then aim towards low 6:10s; around 1:33/lap |
-| Wednesday 4 November | 800 m time trial | Earlier provisional date; subject to the intervening sessions |
-| Thursday 5 November | F · 6×200 m / 3 min | Earlier provisional date |
-| Friday 6 November | Closing chill day | Earlier provisional date |
+| Tuesday 3 November | LT · 3×1600 m | Missed · no time to reach the track; moved to November 4 |
+| Wednesday 4 November | LT · 3×1600 m / nominal 1 min | Complete · 6:08.74 average (3:50.46/km); final 6:05.31 composed and fast |
+| Thursday 5 November, if feeling good | 800 m time trial | Planned · a rest day beforehand remains an option |
+| After the trial | F · 6×200 m / 3 min | Planned · the following day if ready, or after a rest day |
+| After F | Closing chill day | Planned · date depends on the intervening rest choices |
 
-If the remaining dates hold, the cycle spans **23 calendar days**, October 15
-through November 6 including the closing chill day, with **thirteen workouts**
-instead of the original twelve. I am treating the 800 m trial as a checkpoint
-within normal training, without adding a formal taper. The old November 3
-rest day is now the intended LT session; later dates remain provisional.
+The original 18-day template has stretched with missed days and the extra
+VO₂ repeat. The intended total remains **thirteen workouts**, rather than
+twelve. If TT is November 5 and F November 6, the closing chill day would be
+November 7: **24 calendar days** from October 15, inclusive. Rest before
+either remaining workout would move the finish later. I am treating the
+800 m trial as a checkpoint within normal training, without adding a formal
+taper.
+
+**Both ladders are right at their gates, still narrowly above them.** Next
+cycle I want to clear **2:55.5 average for 3×900 m** and **6:08 average for
+3×1600 m**, then move independently towards **4×900 m** and **3×2000 m**.
+The next structures are earned transitions, not changes already adopted.
 
 ## Two independently earned progressions
 
