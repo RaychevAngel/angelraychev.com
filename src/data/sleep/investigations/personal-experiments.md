@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-04"
+updated: "2026-11-05"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 5 — protect the opportunity to sleep.** After working until around **03:00**, the user describes the worst sleep so far. [Oura falls 93 → 64](/sleep/record/#night-2026-11-05), with **6h09m asleep**, down **2h30m30s**, and a **03:05–10:12 PST** episode. Timing/REM/total-sleep grades are **23/34/59**, versus deep sleep **94**; wearable REM is **42m30s**. This points the practical focus toward the work-to-bed boundary and sufficient sleep opportunity, without assigning an exact causal share to work or choosing a new cutoff on the user’s behalf. HRV remains **57 ms**. The [new curve](/sleep/charts/#night-2026-11-05) preserves main-night samples; an earlier 90-second sleep detection is unconfirmed. COROS access is unavailable in this chat; current morning/daytime function remains unreported.
 
 **November 4 — repeat a good experienced result without erasing device disagreement.** [Oura 93 / COROS 88](/sleep/record/#night-2026-11-04) estimate **8h39m30s / 8h55m asleep**, with awake estimates **39 / 4 minutes**. The diary reports **a roughly 23:30 attempt, 08:45 waking, good sleep and a good morning**, no notable awakenings and no changes in evening routine or blanket comfort. Oura timing/restfulness reach **87/95**, HRV **58/56 ms**. The [new curve](/sleep/charts/#night-2026-11-04) retains the native sequence. The same approximate attempt time as November 3 is reported despite a different Oura start and timing grade. A good experience does not settle the two awake totals; exact onset, later-day function and specific current food/light/temperature/thought exposures remain unspecified.
 
