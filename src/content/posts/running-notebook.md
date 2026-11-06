@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-04
+updated: 2026-11-06
 draft: false
 ---
 
@@ -31,8 +31,9 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**This version includes completed training through 4 November 2026.** The upcoming
-sessions are plans. The current record keeps the chronology, splits and
+**Structured training is recorded through 4 November 2026**, with city running
+through November 5 and the plan updated on November 6. The upcoming sessions
+are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
 [Starting point](#where-i-am-starting) · [Goals](#the-runner-i-am-trying-to-build) · [Programme](#a-programme-that-earns-its-next-step) · [Observations](#what-the-observations-now-tell-me) · [Next checkpoint](#the-next-checkpoint) · [Model](#the-working-model) · [Scoring notes](#scores-and-rarity)
@@ -520,10 +521,19 @@ observations that can inform the next decision.
 ten original slots plus the extra 900 session. The final LT is complete;
 the remaining workouts are the **800 m time trial** and **6×200 m / 3 min**.
 
-I plan the **800 m TT on November 5 if I feel good**, then the 6×200 m.
-I am willing to rest before the trial or before the 200s. These are conditional
-plans; I am treating the trial as a checkpoint within normal training, without
-a formal taper.
+**Plan updated November 6:** I took November 5 off structured training to
+be fresh for the **800 m TT, now planned for Friday, November 6**. The
+**6×200 m / 3 min is planned for Saturday, November 7**, to complete the cycle's
+workouts. Neither result has been supplied. I am treating the trial as a
+checkpoint within normal training, without a formal taper.
+
+Rest from the programme still included city running. Oura recorded separate
+evening running windows of **15 minutes on November 4 (estimated 1.43 km)**
+and **20 minutes on November 5 (estimated 2.79 km)**. These are provider
+summaries, not verified moving times or measured route lengths; the
+[dated note](/running/record/2026/#45-november--city-running-and-rest-before-the-trial)
+keeps the source limitations. The outings do not add completed quality sessions
+to the cycle count or replace November 4's structured workout.
 
 **3×1600 m and 3×900 m remain the current formats.** Both averages are now
 just above their gates. Next cycle I want to cement **6:08** and **2:55.5**,
