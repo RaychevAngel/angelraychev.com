@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "entries": [
     {
       "id": "first-reported-day",
@@ -25563,6 +25563,82 @@
         "reviewed_date": "2026-11-05",
         "revision_note": "Reviewed November4 normal-day-except report plus independently estimated meals and snacks."
       }
+    },
+    {
+      "id": "november-5-stanford-meals-unquantified",
+      "title": "November 5: Stanford meals",
+      "kind": "food_report",
+      "food_date": "2026-11-05",
+      "recorded_local_date": "2026-11-06",
+      "date_status": "user_confirmed_date",
+      "summary": "A chaotic day eating at Stanford: chicken and rice for lunch; beef, chicken and some pasta for dinner; chocolate brownies and chocolate cake for dessert. Amounts are unreported.",
+      "items_reported_eaten": [
+        {
+          "name": "Chicken",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Lunch; amount unreported."
+        },
+        {
+          "name": "Rice",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Lunch; amount unreported."
+        },
+        {
+          "name": "Beef",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Dinner; amount unreported."
+        },
+        {
+          "name": "Chicken",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Dinner; amount unreported."
+        },
+        {
+          "name": "Pasta",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Dinner; some reported; amount unreported."
+        },
+        {
+          "name": "Chocolate brownies",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Dessert; some reported; amount unreported."
+        },
+        {
+          "name": "Chocolate cake",
+          "amount": null,
+          "unit": null,
+          "portion_status": "Dessert; some reported; amount unreported."
+        }
+      ],
+      "context": [
+        {
+          "field": "location",
+          "observation": "All reported eating occurred at Stanford."
+        },
+        {
+          "field": "day",
+          "observation": "Described the day as chaotic."
+        },
+        {
+          "field": "quantities",
+          "observation": "Amounts are unknown; no calorie or nutrient totals estimated."
+        }
+      ],
+      "supplements": [],
+      "leftovers": [],
+      "purchases": [],
+      "plans": [],
+      "coverage": "Foods reported; amounts, preparations and nutrient totals are unknown",
+      "date_note": "November 5 explicitly identified as the eating date; report received November 6.",
+      "corrections": [],
+      "record_scope": "reported_consumption",
+      "nutrition": null
     }
   ],
   "background": [
