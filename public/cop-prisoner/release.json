@@ -1,6 +1,12 @@
 {
   "prepared_at_utc": "2026-10-29T06:21:08.566323+00:00",
-  "status": "Reviewed manuscript prepared for arXiv; not submitted. Lean verification remains partial.",
+  "status": "Available on arXiv as arXiv:2610.39469, submitted 29 October 2026. Lean verification remains partial.",
+  "arxiv": {
+    "identifier": "2610.39469",
+    "public_url": "https://arxiv.org/abs/2610.39469",
+    "version": "v1",
+    "submitted_at": "2026-10-29T06:40:41Z"
+  },
   "publication_date": "2026-10-28",
   "chapters": 8,
   "source_parts": 49,
@@ -26394,7 +26400,7 @@
     "bibliography_entries": 22,
     "reader_source_sha256": "ad6fcb8942b091099aef041254aca8133c2f6f330f2650347205738484bc7122",
     "reader_html_sha256": "cacc4dd549a732195e178d3aa7f19c464fca7f889cfb7ee4f8a6a4b5088f72e2",
-    "arxiv_submission_status": "not_submitted"
+    "arxiv_submission_status": "submitted"
   },
   "artifact_snapshots": {
     "lean": {

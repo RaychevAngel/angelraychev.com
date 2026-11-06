@@ -262,18 +262,18 @@
     {
       "id": "guaranteed-delivery",
       "title": "Guaranteed indirect delivery: the exact maximum",
-      "manuscriptTitle": "Guaranteed indirect delivery in directed networks",
+      "manuscriptTitle": "Guaranteed indirect delivery in directed networks: The joint extremal function and explicit attaining constructions",
       "overview": "/cop-prisoner/",
       "kind": "Research manuscript",
       "authors": [
         "Angel Ivanov Raychev"
       ],
-      "status": "Prepared manuscript · not submitted to arXiv",
-      "records": [],
+      "status": "Preprint · submitted to arXiv 29 October 2026",
+      "records": [{"kind": "arxiv", "label": "arXiv:2610.39469", "url": "https://arxiv.org/abs/2610.39469"}],
       "primary": {
         "pdf": {
-          "url": "/cop-prisoner/guaranteed-indirect-delivery.pdf",
-          "version": "Reviewed manuscript, 28 October 2026; 128 pages; not submitted"
+          "url": "https://arxiv.org/pdf/2610.39469v1",
+          "version": "arXiv v1 · 29 October 2026; 128 pages"
         },
         "lean": {
           "url": "/cop-prisoner/lean/",
@@ -282,8 +282,15 @@
       },
       "resources": [
         {
+          "kind": "archive",
+          "label": "28 October website manuscript",
+          "url": "/cop-prisoner/guaranteed-indirect-delivery.pdf",
+          "note": "Retained website PDF; its file identity is recorded in the release manifest."
+        },
+        {
           "kind": "latex",
-          "url": "/cop-prisoner/manuscript-source.zip"
+          "url": "/cop-prisoner/manuscript-source.zip",
+          "note": "Reviewed 28 October website manuscript sources, retained separately from the arXiv version."
         },
         {
           "kind": "evidence",
