@@ -1,20 +1,18 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The programme: October 2026"
-description: "Plan updated November 6: rest from structured training on November 5, 800 m trial planned November 6 and 6×200 m November 7. Eleven quality workouts are complete; city runs are recorded separately."
+description: "Twelve workouts complete through November 6: the 800 m trial was 2:14.83, worth 440 points. Only 6×200 m on November 7 remains planned; both interval progression gates are still narrowly unmet."
 updated: 2026-11-06
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, updated through
-**6 November**, with structured sessions complete through November 4.
-The cycle began on **15 October**. **Eleven workouts are
-complete**: ten of the original twelve, plus the extra VO₂ repeat on
-November 2. The intended total is thirteen. Both the 900s and 1600s are now
-right at their gates. After November 5 off structured training, the 800 m
-trial is planned for November 6 and F for November 7. Neither result has been
-supplied. Completed work stays on the
+**6 November**, including the completed **800 m trial in 2:14.83 / 440 points**.
+The cycle began on **15 October**. **Twelve workouts are complete**: eleven
+of the original twelve, plus the extra VO₂ repeat on November 2. The intended
+total is thirteen. Both the 900s and 1600s remain right at their gates.
+Only **F = 6×200 m / 3 min**, planned for **November 7**, remains. Completed work stays on the
 [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
@@ -150,6 +148,15 @@ after a phone failure. It adds a continuous event benchmark alongside the
 interval observations. It does not establish a measured lactate threshold for
 the LT-labelled repetitions; their role is to support longer track performance.
 
+The [6 November 800 m trial](/running/record/2026/#6-november--800-m-time-trial)
+is complete: **2:14.83 (2:48.5/km), 440 points**. I saw 66 on the watch at
+400 m; that is not an exact 66.00 split. I committed early, used the image
+of Rudisha's London 2012 final on the second lap, and finished hard with
+posture and composure intact. A small finishing acceleration left me feeling
+perhaps half a second remained; that is a subjective reserve estimate, not
+an adjusted result. The trial adds a shorter event benchmark without changing
+the independently earned **6:08 LT** and **2:55.5 VO₂** gates.
+
 ## The transition into the first cycle
 
 The 9 October 3×800 m, 11 October 5000 m trial and
@@ -227,7 +234,7 @@ automatically.
 
 One possible **next-cycle** change is **five LT sessions and three VO₂
 sessions**, reallocating an existing slot if LT progress continues to lag.
-That remains a proposal to assess after the actual time trial. That reallocation is not adopted; this cycle's additional VO₂ repeat
+That remains a proposal to assess in the cycle review. That reallocation is not adopted; this cycle's additional VO₂ repeat
 is a separate decision.
 
 The session count does not describe the whole load. A time trial, relaxed fast
@@ -237,10 +244,9 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Structured training is recorded through **4 November**, with city running
-through **November 5** and this plan updated on **November 6**. **Eleven workouts
-are complete: ten original slots plus the extra VO₂ repeat.** Two planned
-workouts remain: the **800 m trial** and **F**. The additional November 2
+Structured training is recorded through **6 November**, with city running
+through **November 5**. **Twelve workouts are complete: eleven original
+slots plus the extra VO₂ repeat.** Only **F** remains planned. The additional November 2
 200s belong to the same physical session as its 900s. Separate city runs on
 November 4 and 5 do not add quality workouts to this count. Oura recorded
 15-minute and 20-minute evening windows, with estimated distances of 1.43 km
@@ -254,14 +260,14 @@ keeps their times and measurement limits.
 | Tuesday 3 November | LT · 3×1600 m | Missed · no time to reach the track; moved to November 4 |
 | Wednesday 4 November | LT · 3×1600 m / nominal 1 min | Complete · 6:08.74 average (3:50.46/km); final 6:05.31 composed and fast |
 | Thursday 5 November | Rest from structured training | Taken to be fresh for the trial; city running recorded separately |
-| Friday 6 November | 800 m time trial | Planned · no result supplied |
+| Friday 6 November | 800 m time trial | Complete · 2:14.83 (2:48.5/km), 440 points |
 | Saturday 7 November | F · 6×200 m / 3 min | Planned · completes the cycle's workouts if carried out |
 | After F | Closing chill day | Planned · follows the final workout |
 
 The original 18-day template has stretched with missed days and the extra
 VO₂ repeat. The intended total remains **thirteen workouts**, rather than
 twelve. The November 6 update replaces the earlier November 5 trial plan.
-If TT is November 6 and F November 7, the last workout falls on **day 24**
+The TT is complete on November 6. If F is completed November 7, the last workout falls on **day 24**
 from October 15, inclusive; the template's closing chill day would be November 8,
 **day 25**. These are planned endpoints, not a completed cycle. I am treating
 the 800 m trial as a checkpoint within normal training, without adding a

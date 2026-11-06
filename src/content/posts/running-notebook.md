@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**Structured training is recorded through 4 November 2026**, with city running
+**Structured training is recorded through 6 November 2026**, with city running
 through November 5 and the plan updated on November 6. The upcoming sessions
 are plans. The current record keeps the chronology, splits and
 conditions behind the summaries here.
@@ -73,8 +73,10 @@ point from which later training and tests can mean something.
 The [11 October 5000 m trial](/running/record/2026/#11-october--5000-m-time-trial)
 now adds a continuous longer-distance reference: **19:59 reported, 3:59.8/km,
 161 points**, beside the **810-point 15:00 goal**. The phone failed near the
-finish; the dated account keeps that estimate with the splits. These two
-different events locate the current return within the larger project.
+finish; the dated account keeps that estimate with the splits. The [6 November 800 m trial](/running/record/2026/#6-november--800-m-time-trial)
+adds **2:14.83, 2:48.5/km, 440 points**, beside the **862-point 1:56 goal**.
+I saw 66 on the watch through 400 and finished hard with my posture intact.
+These differently dated tests locate the return within the larger project.
 
 My [personal bests and recorded best efforts](/running/record/results/#personal-bests)
 have one table of original times, paces, World Athletics points, dates and race
@@ -429,13 +431,27 @@ for VO₂. Neither has graduated. Next cycle I want to clear both, then move
 towards **3×2000 m** and **4×900 m** respectively. The full session and its
 pacing context remain in the dated record.
 
-The returning speed makes the shape of the performance curve interesting.
-I hope to challenge 2:20 in the 800 m trial, and possibly **2:16** as the
-remaining training develops. In the same 2025 men's outdoor tables, 2:16.00
-would score **418 points**, equal in score to **4:43.60 for 1500 m,
-6:29.56 for 2000 m and 17:32.09 for 5000 m**. That would be 257 points above
-the October 11 5000's 161. The 800 is still an ambition; differently dated
-tests during a comeback do not establish a simultaneous fitness profile.
+The [6 November 800 m trial](/running/record/2026/#6-november--800-m-time-trial)
+was **2:14.83 (2:48.5/km), worth 440 points**. Before it, I hoped to challenge
+2:20, with **2:16** as a stretch ambition. I committed from the first lap;
+my watch showed **66 at 400 m**, without an exact fraction. The second lap
+was approximately **68–69 seconds**. On its backstretch, Rudisha's London
+2012 final was in my head: torso up, arms working, stride open, fast and
+composed. I finished hard with my posture intact and no blowout.
+
+I felt a little reserve remained. Deciding “now I sprint” produced a small
+acceleration that then faded; I recognise that deliberation as different
+from the automatic commitment I remember in races. Perhaps **half a second**
+was left, by feel. That is my account of the effort; **2:14.83 remains the
+recorded result**, without an adjusted time or score.
+
+The 440-point equivalents in the same 2025 men's outdoor tables are
+**4:40.97 for 1500 m, 6:25.96 for 2000 m and 17:22.02 for 5000 m**. They
+are score comparisons, not performance predictions. The **279-point** gap
+from October 11's 161-point 5000 supports the stronger short end, while
+**26 days of comeback training** separate the tests. November 4's much
+quicker 1600s add an encouraging longer-work reference; these observations
+do not form a simultaneous scored fitness curve.
 
 Goals, plan and log belong together because each constrains the interpretation
 of the others. The goals explain why these observations matter. The plan makes
@@ -517,15 +533,14 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Eleven of thirteen intended workouts are complete**, through November 4:
-ten original slots plus the extra 900 session. The final LT is complete;
-the remaining workouts are the **800 m time trial** and **6×200 m / 3 min**.
+**Twelve of thirteen intended workouts are complete**, through November 6:
+eleven original slots plus the extra 900 session. The final LT and **800 m
+trial are complete**. Only **6×200 m / 3 min**, planned for **Saturday,
+November 7**, remains before the cycle's workouts are complete.
 
-**Plan updated November 6:** I took November 5 off structured training to
-be fresh for the **800 m TT, now planned for Friday, November 6**. The
-**6×200 m / 3 min is planned for Saturday, November 7**, to complete the cycle's
-workouts. Neither result has been supplied. I am treating the trial as a
-checkpoint within normal training, without a formal taper.
+The **2:14.83 / 440-point** trial follows November 5 off structured training.
+I treated it as a checkpoint within normal training, without a formal taper.
+The final fast session remains planned, not completed.
 
 Rest from the programme still included city running. Oura recorded separate
 evening running windows of **15 minutes on November 4 (estimated 1.43 km)**
@@ -541,7 +556,7 @@ then progress independently towards **3×2000 m** and **4×900 m**. The next
 formats' own gates are later targets, not compulsory opening paces.
 
 **Five LT sessions and three VO₂ sessions** remains a possible next-cycle
-reallocation to assess after the actual trial; it has not been adopted.
+reallocation to assess in the cycle review; it has not been adopted.
 
 The next efforts ask three immediate questions:
 
