@@ -1,7 +1,7 @@
 ---
 title: "What should a running workout maximize?"
 description: "Pace and repetitions describe a workout. I want to know which internal state they create, whether time in that state predicts adaptation, and what the adaptation buys me."
-updated: 2026-10-10
+updated: 2026-11-07
 draft: false
 ---
 
@@ -153,7 +153,9 @@ That is a planning principle I am adopting, rather than a formula the cited expe
 
 The immediate discipline is simpler. Name the adaptation I want. Specify the internal state I think will promote it. Choose controls that plausibly create that state. Record what happened, including the circumstances that could change the comparison. Then test whether performance actually improved, at a cost that lets the training continue.
 
-The current choices put that principle to work. On [8 October](/running/record/2026/#8-october--lt-31200-m--1-min), my three 1200 m LT repetitions averaged **4:42.17 (3:55.1/km)** with one-minute recoveries, and I felt another repetition was available. That passed the gate for the next LT workout to become three 1600s. VO₂ remains at three 800s with 5:30 between them; its own gate is a 2:40 average without a major final-repetition collapse. These are independent decisions based on completed work and how it felt; neither establishes that my physiological explanation was right. The [running notebook](/running-notebook/) keeps the choices and their evidence together.
+On October 8, three 1200 m repetitions averaged **4:42.17 (3:55.1/km)** with one-minute recoveries. I felt I could run another, and the session earned the move to 1600s. On October 15, **2:35.55 average for three 800s** with a composed finish earned the separate move to 900s. [October 8 LT](/running/record/2026/#8-october--lt-31200-m--1-min) · [October 15 VO₂](/running/record/2026/#15-october--vo-3800-m--530)
+
+By November 2 the three 900s averaged **2:55.70 (3:15.22/km)**. The November 4 three 1600s averaged **6:08.74 (3:50.46/km)**, with a composed final rep. Both were close to their respective gates. The progression decisions use repeatable field performances and felt effort. The programme keeps the current status of each ladder. [Current programme](/running/record/2026/programme/#current-choices)
 
 Continuity also makes the surrounding activity relevant. A hard bike commute can change what the same track workout costs me. Running to the gym and carrying a backpack belong in the same life as the formal sessions. A programme I can keep using has to account for that movement too.
 

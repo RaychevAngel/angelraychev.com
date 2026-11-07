@@ -2,10 +2,21 @@
 import Post from "../../../layouts/Post.astro";
 import RecordDisclosure from "../../../components/RecordDisclosure.astro";
 import bests from "../../../data/running/personal-bests.json";
+import runs from "../../../data/running/recorded-runs.json";
+import { compiledContent, frontmatter as record } from "../../../data/running/periods/2026.md";
+import { readRunningRecord } from "../../../lib/running-record.mjs";
+import RunningBenchmarks from "../../../components/RunningBenchmarks.astro";
+
+const { sessions, summaryHtml } = readRunningRecord(await compiledContent(), record.years[0]);
+const latest = sessions.at(-1);
+const recent = sessions.slice(-3).reverse();
+const dateLabel = (value) => new Date(value).toLocaleDateString("en-GB", {
+  day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
+});
 const frontmatter = {
   title: "Running record",
   description: "A lifelong running project: current training, progress, personal bests and the full dated history.",
-  updated: "2026-10-26",
+  updated: record.updated,
 };
 const selectedBests = ["best-800", "best-1500", "best-5000-track"].map((id) => bests.rows.find((best) => best.id === id));
 ---
@@ -23,36 +34,23 @@ const selectedBests = ["best-800", "best-1500", "best-5000-track"].map((id) => b
   </p>
 
   <h2 id="current-training">Current training</h2>
-  <p class="as-of">Latest completed session in this record: 23 October 2026</p>
-  <p>
-    The current cycle combines repeatable LT, VO₂ and fast sessions. The longer
-    repetitions are now <strong>3×1600 m and 3×900 m</strong>, after independently
-    earning their next steps. The latest LT session was quicker and more composed;
-    ankle tension afterwards keeps the next session conditional on recovery.
-    The <a href="/running-notebook/#what-the-observations-now-tell-me">notebook</a>{" "}
-    explains the decisions; the <a href="/running/record/2026/programme/">programme</a>{" "}
-    retains the planned cycle and progression gates.
-  </p>
+  <p class="as-of">Latest completed session in this record: {dateLabel(latest.timestamp)}</p>
+  <Fragment set:html={summaryHtml} />
 
   <h2 id="recent-sessions">Recent sessions</h2>
   <ul class="recent-sessions">
-    <li>
-      <a href="/running/record/2026/#23-october--lt-31600-m--nominal-1-min"><strong>23 October</strong> · LT, 3×1600 m</a>
-      <span>6:18.46 average · quicker closing laps and good posture; ankle tension afterwards.</span>
-    </li>
-    <li>
-      <a href="/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds"><strong>21 October</strong> · mixed-rest 4+4×200 m</a>
-      <span>About 30.41 per 200 m · speed held through increasing stiffness; one longer rep converted to 200 m.</span>
-    </li>
-    <li>
-      <a href="/running/record/2026/#19-october--vo-3900-m--nominal-530"><strong>19 October</strong> · VO₂, 3×900 m</a>
-      <span>2:57.00 average · smooth opening, then heavy legs and a difficult headwind.</span>
-    </li>
+    {recent.map((entry) => <li>
+      <a href={entry.href}><strong>{entry.date}</strong> · {entry.session}</a>
+      <span class="session-result" set:html={entry.resultHtml} />
+      <span>{entry.observation}</span>
+    </li>)}
   </ul>
   <p>
     <a href="/running/record/2026/#repeating-a-protocol">Compare repeated workouts</a>{" · "}
     <a href="/running/record/2026/#the-completed-sessions">All current sessions</a>
   </p>
+
+  <RunningBenchmarks sessions={sessions} />
 
   <h2 id="selected-bests">Selected best marks</h2>
   <dl class="selected-bests">
@@ -132,11 +130,11 @@ const selectedBests = ["best-800", "best-1500", "best-5000-track"].map((id) => b
   </p>
   <p>
     Each period opens with the story and selected dated details. Beneath them,
-    monthly lists preserve all 375 running activity uploads in the supplied history,
-    through 8 October 2026 locally. Warm-ups and cool-downs can have their own
-    recordings; several uploads can belong to one outing. The lists therefore
-    count recordings rather than physical training sessions. Earlier races and
-    unrecorded memories can still have a place here.
+    the activity ledger contains {runs.length} source-linked uploads. It combines
+    the original Strava export through 8 October 2026 with later
+    uploads verified individually. The dated notes also cover workouts recorded
+    on COROS and everyday running. Warm-ups, workouts and cool-downs can have
+    separate uploads from one outing.
   </p>
   <p>
     This history reaches from childhood park races to the present return to the
@@ -159,6 +157,7 @@ const selectedBests = ["best-800", "best-1500", "best-5000-track"].map((id) => b
   .recent-sessions { list-style: none; padding-left: 0; }
   .recent-sessions li { margin-bottom: 14px; }
   .recent-sessions span { display: block; color: var(--dim); margin-top: 3px; }
+  .recent-sessions .session-result { color: var(--fg); }
   .selected-bests { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
   .selected-bests div { border-top: 1px solid var(--rule); padding-top: 10px; }
   .selected-bests dt { margin-bottom: 6px; }

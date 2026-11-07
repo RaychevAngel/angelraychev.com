@@ -255,6 +255,13 @@ main reading paths and the existing child-page pattern.
 previous heading IDs as links into the new record. Preserve those IDs and the
 period chapter IDs when refining prose; old bookmarks should remain useful.
 
+The Running overview reads the current chapter's completed-session chronology
+(`completed-session-chronology`) and `current-cycle-summary` at build time.
+Add completed workouts to that chronology with a date, link to the dated note,
+result and observation. Mark event benchmarks with `data-event-benchmark` to
+include them in the shared overview and results tables. The hub's latest date
+and recent list follow the chronology automatically.
+
 For a new session, update its dated chapter note first, then the current notebook
 only when the result changes the interpretation or next decision. Add an upload
 to the register when source material establishes it. Use its supported local date;

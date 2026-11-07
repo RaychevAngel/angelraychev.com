@@ -1,7 +1,7 @@
 ---
 title: "Running makes the city smaller"
-description: "Returning to running means recovering a way to explore, get somewhere, and move through a city with very little to carry."
-updated: 2026-10-10
+description: "Returning to running means recovering a way to explore and get somewhere, even when the trip calls for a full backpack."
+updated: 2026-11-07
 draft: false
 ---
 
@@ -53,15 +53,17 @@ I am already bringing small pieces of that back. On October 2, I ran to the gym
 in Nob Hill and back. Later I ran to Mission to get a burrito and returned. These
 were useful journeys, and running fit inside them.
 
-The longer outings are still ahead. An hour of comfortable running used to fit
-inside my life. Recovering that ease, with a pace around 4:30 per kilometre
-feeling enjoyable and familiar again, would bring much more of the city within
-reach. I cannot assume that pace today.
+On November 5 I ran to catch a late train. It was the middle of the night,
+and my backpack was full. I was confident I would make it, so I ran smoothly,
+opened my stride and breathed comfortably. I estimate **1.8 miles in about
+13 minutes**, or **4:29/km**. [The dated account](/running/record/2026/#45-november--city-running-and-rest-before-the-trial)
+keeps the trip alongside the recorded evening activity.
 
-For now, the habit can begin with ten or fifteen minutes around the block. Then
-fifteen or twenty-five minutes somewhere a little farther away. I can become
-accustomed to the activity before deciding that every free evening needs to
-produce an impressive route.
+In spring I remember running about **1.5 miles in 12 minutes (4:58/km)** to the
+station with a much lighter bag and arriving completely spent. This time I
+covered more ground, faster, carrying more, and felt at ease. An hour of
+comfortable running used to fit into my life. I want to carry the ease I felt
+on this short trip into longer outings.
 
 ## The track and the city
 
@@ -109,9 +111,9 @@ environment. The example I have in mind is the computer cluster at Stanford:
 arrive somewhere equipped to work, instead of carrying the equipment everywhere.
 I have not solved the equivalent arrangement for everyday life here.
 
-For now, the laptop gives different journeys different requirements. Some trips
-can be light enough to run. Others need the things in the backpack. Becoming fit
-enough to cross town will not, by itself, remove that distinction.
+The late train trip showed me that a laptop and a full backpack can come along
+on a short run. I still have to weigh what I need to carry, how far I am going,
+and how much running I have already done that day.
 
 I want leaving home to require a decision about where to go, and very little else.
 

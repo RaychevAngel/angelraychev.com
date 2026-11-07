@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-06
+updated: 2026-11-07
 draft: false
 ---
 
@@ -32,8 +32,8 @@ ambition into something I can actually do.
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
 **Structured training is recorded through 6 November 2026**, with city running
-through November 5 and the plan updated on November 6. The upcoming sessions
-are plans. The current record keeps the chronology, splits and
+through November 5. The [programme](/running/record/2026/programme/#the-next-cycle)
+keeps the next-cycle aims and tentative trial timing. The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
 [Starting point](#where-i-am-starting) · [Goals](#the-runner-i-am-trying-to-build) · [Programme](#a-programme-that-earns-its-next-step) · [Observations](#what-the-observations-now-tell-me) · [Next checkpoint](#the-next-checkpoint) · [Model](#the-working-model) · [Scoring notes](#scores-and-rarity)
@@ -76,7 +76,8 @@ now adds a continuous longer-distance reference: **19:59 reported, 3:59.8/km,
 finish; the dated account keeps that estimate with the splits. The [6 November 800 m trial](/running/record/2026/#6-november--800-m-time-trial)
 adds **2:14.83, 2:48.5/km, 440 points**, beside the **862-point 1:56 goal**.
 I saw 66 on the watch through 400 and finished hard with my posture intact.
-These differently dated tests locate the return within the larger project.
+The [current benchmark table](/running/record/results/#current-benchmarks)
+puts the three dates and scores together.
 
 My [personal bests and recorded best efforts](/running/record/results/#personal-bests)
 have one table of original times, paces, World Athletics points, dates and race
@@ -179,8 +180,8 @@ order, templates and progression tables.
 
 The cycle began on **15 October**. Its original eleven specified workouts and
 flexible **X** remain identifiable. On November 2 I chose an extra VO₂ repeat
-after a session disrupted by stomach discomfort, moving LT to the following
-day. That adds a thirteenth planned workout. I have not yet completed the
+after a session disrupted by stomach discomfort. I planned LT for November 3
+and completed it on November 4. The repeat brought the cycle to thirteen workouts. I have not yet completed the
 cycle and shown that I can sustain it. Its cost also extends beyond the listed workouts:
 running to the gym, carrying a backpack and a hard bike commute still count as
 movement, even on a day whose programme says chill.
@@ -555,8 +556,18 @@ just above their gates. Next cycle I want to cement **6:08** and **2:55.5**,
 then progress independently towards **3×2000 m** and **4×900 m**. The next
 formats' own gates are later targets, not compulsory opening paces.
 
-**Five LT sessions and three VO₂ sessions** remains a possible next-cycle
-reallocation to assess in the cycle review; it has not been adopted.
+My next trial is **2000 m in late November**, roughly twenty days after the
+800. **400 points would take 6:32.57**, more than forty seconds quicker than
+September's 7:16.67. I want to see how the familiar 900 m pace carries over
+to five uninterrupted laps. The 900s may be closer to my current 1500 m race
+pace. The [next-cycle programme](/running/record/2026/programme/#the-next-cycle)
+keeps the pace comparisons, volume increases and stretch aims together.
+
+The move from 1600 to 2000 m matters to me especially for the 5000. Each rep
+would give me another lap to keep my stride together under effort. I have
+already begun to feel that ease returning away from the track, including a
+[late run to catch a train with a full backpack](/running/record/2026/#45-november--city-running-and-rest-before-the-trial).
+The session allocation belongs to the cycle review.
 
 The next efforts ask three immediate questions:
 

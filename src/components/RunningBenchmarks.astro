@@ -1,0 +1,22 @@
+---
+const { sessions } = Astro.props;
+const benchmarks = sessions.filter((session) => session.benchmark);
+---
+
+<h2 id="current-benchmarks">Current event benchmarks</h2>
+<div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Time, pace and points</th></tr></thead>
+    <tbody>
+      {benchmarks.map((entry) => <tr>
+        <td><a href={entry.href}>{entry.date}</a></td>
+        <th scope="row">{entry.session.replace(/ time trial$/, "")}</th>
+        <td><Fragment set:html={entry.resultHtml} /><br /><span class="dim">{entry.observation}</span></td>
+      </tr>)}
+    </tbody>
+  </table>
+</div>
+<p>
+  These trials took place on different dates during the return to training.
+  Points use the 2025 men's outdoor World Athletics tables.
+</p>

@@ -3,10 +3,15 @@ import Post from "../../../layouts/Post.astro";
 import RunningRecordNav from "../../../components/RunningRecordNav.astro";
 import results from "../../../data/running/race-results.json";
 import bests from "../../../data/running/personal-bests.json";
+import { compiledContent, frontmatter as record } from "../../../data/running/periods/2026.md";
+import { readRunningRecord } from "../../../lib/running-record.mjs";
+import RunningBenchmarks from "../../../components/RunningBenchmarks.astro";
+
+const { sessions } = readRunningRecord(await compiledContent(), record.years[0]);
 const frontmatter = {
   title: "Personal bests and race history",
   description: "My best known running marks in one place, with paces, World Athletics points, dates and the race or training context behind them.",
-  updated: "2026-10-10",
+  updated: record.updated,
 };
 const groups = [
   { kind: "track", title: "Track races", intro: "The men's national championships in June and U20 championships in July were separate meets. Placings below are the official combined classifications, rather than places within a heat." },
@@ -48,11 +53,14 @@ const points = (best) => best.score?.points.join("–") ?? "—";
     Dates marked UTC retain an unresolved local day from the export.
   </p>
   <p>
+    <a href="#current-benchmarks">Current benchmarks</a>{" · "}
     <a href="#personal-bests">Personal bests</a>{" · "}
     <a href="#race-history">Race history</a>{" · "}
     <a href="#measurement-notes">Measurement notes</a>{" · "}
     <a href="#training-references">Training references</a>
   </p>
+  <RunningBenchmarks sessions={sessions} />
+
   <span id="race-bests"></span>
   <h2 id="personal-bests">Personal bests by discipline</h2>
   <div class="tablewrap"><table class="bests" role="table">
@@ -155,9 +163,8 @@ const points = (best) => best.score?.points.join("–") ?? "—";
     references stay with their accounts: the
     <a href="/running/record/early/">childhood neighbourhood effort</a>, the
     <a href="/running/record/2020/#30-december--a-reported-2-km-in-715">reported 2 km in 2020</a>
-    and the
-    <a href="/running/record/2026/#27-september--2000-m-time-trial">current 2000 m trial</a>.
-    Their dates, measurement limits and roles in the story remain visible there.
+    and the <a href="#current-benchmarks">current trial profile</a>.
+    The date in each benchmark row leads to its full account.
   </p>
   <p>
     Repeated workouts have a different comparison: times, count and recovery

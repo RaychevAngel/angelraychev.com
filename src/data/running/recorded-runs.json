@@ -3455,5 +3455,155 @@
     "distanceKm": 3.6,
     "movingSeconds": 846.0,
     "note": "/running/record/2026/#8-october--lt-31200-m--1-min"
+  },
+  {
+    "id": "20522387538",
+    "url": "https://www.strava.com/activities/20522387538",
+    "title": "3x800m/5'30'' Vo2max",
+    "date": "2026-10-09",
+    "dateBasis": "reported-local",
+    "distanceKm": 2.4,
+    "movingSeconds": 482,
+    "note": "/running/record/2026/#9-october--vo-3800-m-with-interrupted-timing"
+  },
+  {
+    "id": "20549288370",
+    "url": "https://www.strava.com/activities/20549288370",
+    "title": "5000m TT - 19:59",
+    "date": "2026-10-11",
+    "dateBasis": "reported-local",
+    "distanceKm": 5,
+    "movingSeconds": 1199,
+    "note": "/running/record/2026/#11-october--5000-m-time-trial"
+  },
+  {
+    "id": "20563002185",
+    "url": "https://www.strava.com/activities/20563002185",
+    "title": "6x200m/3' Speed",
+    "date": "2026-10-12",
+    "dateBasis": "reported-local",
+    "distanceKm": 2.86,
+    "movingSeconds": 1116,
+    "note": "/running/record/2026/#12-october--f-6200-m--3-min"
+  },
+  {
+    "id": "20601567126",
+    "url": "https://www.strava.com/activities/20601567126",
+    "title": "3x800m/5'30'' Vo2max",
+    "date": "2026-10-15",
+    "dateBasis": "reported-local",
+    "distanceKm": 3.48,
+    "movingSeconds": 948,
+    "note": "/running/record/2026/#15-october--vo-3800-m--530"
+  },
+  {
+    "id": "20612585858",
+    "url": "https://www.strava.com/activities/20612585858",
+    "title": "3x1600m/1' LT",
+    "date": "2026-10-16",
+    "dateBasis": "reported-local",
+    "distanceKm": 5.1,
+    "movingSeconds": 1342,
+    "note": "/running/record/2026/#16-october--lt-31600-m--100-m-walks"
+  },
+  {
+    "id": "20654699834",
+    "url": "https://www.strava.com/activities/20654699834",
+    "title": "3x900m/5' Vo2max",
+    "date": "2026-10-19",
+    "dateBasis": "reported-local",
+    "distanceKm": 4.48,
+    "movingSeconds": 1422,
+    "note": "/running/record/2026/#19-october--vo-3900-m--nominal-530"
+  },
+  {
+    "id": "20682638560",
+    "url": "https://www.strava.com/activities/20682638560",
+    "title": "4x200m/3' + 4x200m/90''",
+    "date": "2026-10-21",
+    "dateBasis": "reported-local",
+    "distanceKm": 3.81,
+    "movingSeconds": 1256,
+    "note": "/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds"
+  },
+  {
+    "id": "20704652606",
+    "url": "https://www.strava.com/activities/20704652606",
+    "title": "3x1600m/1' LT",
+    "date": "2026-10-23",
+    "dateBasis": "reported-local",
+    "distanceKm": 5.83,
+    "movingSeconds": 1550,
+    "note": "/running/record/2026/#23-october--lt-31600-m--nominal-1-min"
+  },
+  {
+    "id": "20758319644",
+    "url": "https://www.strava.com/activities/20758319644",
+    "title": "3x900m/5' Vo2max",
+    "date": "2026-10-27",
+    "dateBasis": "reported-local",
+    "distanceKm": 3.28,
+    "movingSeconds": 867,
+    "note": "/running/record/2026/#27-october--vo-3900-m--nominal-530"
+  },
+  {
+    "id": "20772847742",
+    "url": "https://www.strava.com/activities/20772847742",
+    "title": "3x1600m/1' LT",
+    "date": "2026-10-28",
+    "dateBasis": "reported-local",
+    "distanceKm": 6.05,
+    "movingSeconds": 1702,
+    "note": "/running/record/2026/#28-october--lt-31600-m--nominal-1-min"
+  },
+  {
+    "id": "20796116562",
+    "url": "https://www.strava.com/activities/20796116562",
+    "title": "4x200m/3' + 4x200m/90''",
+    "date": "2026-10-30",
+    "dateBasis": "reported-local",
+    "distanceKm": 3.89,
+    "movingSeconds": 1215,
+    "note": "/running/record/2026/#30-october--x-4200-m--3-min--4200-m--90-seconds"
+  },
+  {
+    "id": "20824930863",
+    "url": "https://www.strava.com/activities/20824930863",
+    "title": "900m/5'/900m/11'/900m",
+    "date": "2026-11-01",
+    "dateBasis": "reported-local",
+    "distanceKm": 4.56,
+    "movingSeconds": 1284,
+    "note": "/running/record/2026/#1-november--vo-3900-m--nominal-530"
+  },
+  {
+    "id": "20837463350",
+    "url": "https://www.strava.com/activities/20837463350",
+    "title": "3x900m/5' Vo2max",
+    "date": "2026-11-02",
+    "dateBasis": "reported-local",
+    "distanceKm": 4.36,
+    "movingSeconds": 1251,
+    "note": "/running/record/2026/#2-november--extra-vo-3900-m--nominal-530"
+  },
+  {
+    "id": "20860661476",
+    "url": "https://www.strava.com/activities/20860661476",
+    "title": "3x1600m/1' LT",
+    "date": "2026-11-04",
+    "dateBasis": "reported-local",
+    "distanceKm": 6.26,
+    "movingSeconds": 1683,
+    "note": "/running/record/2026/#4-november--lt-31600-m--nominal-1-min"
+  },
+  {
+    "id": "20888038312",
+    "url": "https://www.strava.com/activities/20888038312",
+    "title": "800m TT - 2:14.83",
+    "date": "2026-11-06",
+    "dateBasis": "reported-local",
+    "distanceKm": 2.44,
+    "movingSeconds": 715,
+    "note": "/running/record/2026/#6-november--800-m-time-trial"
   }
 ]

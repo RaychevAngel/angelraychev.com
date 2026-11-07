@@ -1,8 +1,8 @@
 ---
 layout: "../../../../layouts/Post.astro"
-title: "The programme: October 2026"
+title: "The running programme"
 description: "Twelve workouts complete through November 6: the 800 m trial was 2:14.83, worth 440 points. Only 6×200 m on November 7 remains planned; both interval progression gates are still narrowly unmet."
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
@@ -29,7 +29,8 @@ recovery is not a continuous race mark to score against the event table.
 [Transition](#the-transition-into-the-first-cycle) ·
 [Cycle](#the-18-day-cycle) ·
 [Current calendar](#the-current-calendar) ·
-[Progressions](#two-independently-earned-progressions)
+[Progressions](#two-independently-earned-progressions) ·
+[Next cycle](#the-next-cycle)
 
 ## Current choices
 
@@ -187,7 +188,9 @@ That decision inserted one rest day and shifted the remaining sequence forward
 by one day. X was completed on October 30, followed by the November 1 VO₂
 session. On November 2 I chose to add a repeat of the 900s and move LT from
 November 2 to November 3, which had previously been a planned rest day.
-I missed November 3 for lack of time and completed LT on November 4. The TT and F now follow conditionally, with a rest day available before either. The original calendar and the completed sessions remain distinguishable.
+I missed November 3 for lack of time and completed LT on November 4. I took
+November 5 off structured training and ran the 800 m trial on November 6.
+The final fast session is planned for November 7.
 
 ## The 18-day cycle
 
@@ -221,7 +224,7 @@ The first completed session held speed through severe late stiffness; the
 near-even times do not establish preserved movement. I see a connection to the
 final metres of the 900s; whether that practice transfers remains a question.
 **TT** is an event time trial; the transition's 5000 m is complete, and the first
-full cycle's proposed endpoint is 800 m. **X** keeps an experimental place open.
+full cycle's 800 m trial was completed on November 6. **X** keeps an experimental place open.
 I chose to repeat **4+4×200 m** in X and completed it on October 30.
 Dense 10/10 running, 300 m repetitions and 2×3×500 m remain earlier alternatives.
 F remains the stable 6×200 m benchmark.
@@ -319,6 +322,38 @@ graduation times.
 The later rows are ambitious proposals, rather than evidence that these exact
 steps are optimal or already tolerable. Their role is to make the direction and
 next decision clear. The training still has to earn them.
+
+## The next cycle
+
+The next trial I want to run is **2000 m**, around **November 26**, about
+20 days after the 800. **400+ points** would be a substantial improvement
+from **7:16.67 and 181 points** on September 27. The time targets use the
+same men's outdoor scoring table as the [current benchmarks](/running/record/results/#current-benchmarks).
+
+| Points | 2000 m | Pace per km | Average 400 m |
+| ---: | ---: | ---: | ---: |
+| 400 | 6:32.57 | 3:16.3 | 78.51 s |
+| 450 | 6:24.35 | 3:12.2 | 76.87 s |
+| 500 | 6:16.58 | 3:08.3 | 75.32 s |
+| 550 | 6:09.19 | 3:04.6 | 73.84 s |
+
+Matching the 800's **440 points** would take **6:25.96 (3:13.0/km)**.
+The latest 900s averaged **2:55.70 (3:15.22/km)**. That pace is close to
+the 400-point 2000 m target, and I think it may be nearer my current 1500 m
+race pace. The trial will show how much of that speed I can sustain for
+five laps continuously.
+
+I want to clear **3×900 m at 2:55.5 average**, then build into **4×900 m**.
+The fourth repetition increases the work from **2700 to 3600 m**. If the
+cycle goes smoothly, I would like to approach **2:51 average across four**,
+with **sub-2:50** as a stretch ambition. The nominal recovery is **5:30**.
+
+For LT, I want to clear **3×1600 m at 6:08 average** and move to **3×2000 m**.
+Each repetition adds a lap, taking the session from **4800 to 6000 m**.
+That longer uninterrupted work is especially relevant to my 5000 m goal.
+I want to carry posture and an open stride further into an effort, where
+I struggled to maintain them in the October trial. **7:20 average** is the
+later gate for the 2000s. The cycle review will settle the session allocation.
 
 ## When to revise it
 
