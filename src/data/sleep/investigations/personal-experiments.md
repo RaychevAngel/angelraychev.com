@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-06"
+updated: "2026-11-07"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 7 — go to sleep earlier.** Both device episodes started about three hours earlier than November 6. Oura estimated **7h47m asleep** and COROS **8h17m**. Scores rose to **83 / 87**, with Oura timing at **54**. The user says he should go to sleep earlier. His morning experience and the evening activities for this date remain unreported. [Diary](/sleep/record/#night-2026-11-07) · [Curves](/sleep/charts/#night-2026-11-07)
 
 **November 6 — return to the established bedtime, with the experienced outcome visible.** [Oura 76 / COROS 53](/sleep/record/#night-2026-11-06) estimate **7h35m / 8h asleep**, more than yesterday, but the user **felt bad on waking** and wants his normal bedtime back. Both windows are around **04:00–12:15 PST**, substantially later than the earlier reported roughly 23:30 attempts. Oura timing reaches **5** even as its total-sleep/REM/deep grades improve. HRV stays near yesterday at **56/57 ms**. The [new curve](/sleep/charts/#night-2026-11-06) preserves the main sequence. The follow-up confirms that work kept him up late today, the roughly 04:00–12:15 times fit, and the bad waking feeling lasted about 30 minutes. The restored November 5 COROS score is **62**, with **6h23m asleep**; its good reported morning/daytime experience is retained separately.
 

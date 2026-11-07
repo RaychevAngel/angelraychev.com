@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-06"
+updated: "2026-11-07"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 7 — earlier device windows and higher scores.** Both devices recorded an episode around **01:03–09:35 PST**. Oura rose **76 → 83** with **7h47m asleep** and COROS rose **53 → 87** with **8h17m asleep**. Oura timing improved **5 → 54** and HRV reached **60 / 63 ms**. Awake estimates were **45 / 13 minutes**. The user wants to go to sleep earlier. Actual attempt and waking times and the morning experience remain unreported. [Diary](/sleep/record/#night-2026-11-07) · [Curves](/sleep/charts/#night-2026-11-07)
 
 **November 6 — more estimated sleep, a bad waking experience, and very late timing.** The [new record](/sleep/record/#night-2026-11-06) returns **Oura 76 / COROS 53**, with **7h35m / 8h asleep** in closely agreeing windows around **04:00–12:15 PST**. The user **felt bad on waking and wants his normal bedtime back**; the earlier November 3–4 attempts were around 23:30. Oura timing is **5**, while deep/REM/total-sleep grades improve to **97/76/79**. Awake estimates remain different at **38 / 7 minutes**; HRV is **56 / 57 ms**. The [new curves](/sleep/charts/#night-2026-11-06) preserve native samples. The user confirms the roughly 04:00–12:15 times fit, work kept him up late, and the bad waking feeling lasted about 30 minutes. **COROS access is restored:** [November 5](/sleep/record/#night-2026-11-05) now includes **62, 6h23m asleep and HRV 58 ms**. Its good morning/daytime report and disputed pre-main Oura detection remain unchanged. More estimated sleep today does not explain the worse reported morning or settle the opposite score changes.
 

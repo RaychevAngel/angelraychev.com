@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "entries": [
     {
       "id": "2026-10-13",
@@ -4068,6 +4068,143 @@
         {
           "href": "/sleep/record/#night-2026-11-04",
           "label": "Earlier regular bedtime comparison"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-07",
+      "wake_date": "2026-11-07",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider wake-up date. Device windows use PST.",
+      "status": "Oura 83 / COROS 87, with device windows around 01:03–09:35. The user wants to go to sleep earlier.",
+      "retrieved_at": "2026-11-07T19:03:04.763Z",
+      "provider_retrieved_at": {
+        "oura": "2026-11-07T19:02:58.655671+00:00",
+        "coros": "2026-11-07T19:03:04.763Z"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.25,
+          "average_heart_rate": 47.875,
+          "average_hrv": 60,
+          "awake_time": 2700,
+          "bedtime_end": "2026-11-07T09:35:08.000-08:00",
+          "bedtime_start": "2026-11-07T01:03:08.000-08:00",
+          "day": "2026-11-07",
+          "deep_sleep_duration": 6900,
+          "efficiency": 91,
+          "latency": 900,
+          "light_sleep_duration": 15660,
+          "lowest_heart_rate": 44,
+          "rem_sleep_duration": 5460,
+          "time_in_bed": 30720,
+          "total_sleep_duration": 28020,
+          "type": "long_sleep"
+        },
+        "score": 83,
+        "contributors": {
+          "deep_sleep": 97,
+          "efficiency": 96,
+          "latency": 99,
+          "rem_sleep": 73,
+          "restfulness": 83,
+          "timing": 54,
+          "total_sleep": 81
+        },
+        "readiness_score": 87,
+        "temperature_deviation_c": 0.07,
+        "spo2_average_percent": 96.418,
+        "breathing_disturbance_index": 0,
+        "additional_sleep_episodes": [],
+        "source": "Authenticated Oura API V2 with November 7–8 date filters and pagination exhausted. One November 7 main episode. The record and curves retain the returned values."
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 87,
+        "daily_sleep_minutes": 497,
+        "main_sleep_minutes": 497,
+        "main_period_minutes": 510,
+        "main_start": "2026-11-07T01:05:00-08:00",
+        "main_end": "2026-11-07T09:35:00-08:00",
+        "ratios_percent": {
+          "deep": 27,
+          "light": 55,
+          "rem": 15,
+          "awake": 3
+        },
+        "ratio_denominator": "Daily metric scope with no detected naps. The connector supplies rounded ratios.",
+        "awake_minutes": 13,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 63,
+        "official_sleep_hrv_normal_range_ms": [
+          49,
+          65
+        ],
+        "official_sleep_hrv_baseline_ms": 57,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline from the connector.",
+        "daily_min_hr_bpm": 44,
+        "daily_average_hr_bpm": 52,
+        "resting_hr_bpm": 51,
+        "heart_rate_scope_note": "Daily HR reflects the snapshot at retrieval. Resting HR is predicted seated HR.",
+        "source": "Official COROS sleep overview, sleep HRV assessment and daily HR for the November 7 wake date. The one-day resting HR response explicitly dates the reading November 7."
+      },
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "story": [
+        "I should go to sleep earlier."
+      ],
+      "plans": [
+        "Go to sleep earlier."
+      ],
+      "corrections": [],
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "The user wants to go to sleep earlier. Their sleep attempt, final waking, remembered awakenings and morning experience are unreported for November 7."
+        }
+      ],
+      "interpretation": [
+        "Both scores rise from November 6. Oura moves from 76 to 83 and COROS from 53 to 87. Oura estimates 7h47m asleep, up 12 minutes, and COROS estimates 8h17m, up 17 minutes.",
+        "The device windows start about three hours earlier than the previous night. Oura records 01:03:08–09:35:08 and COROS 01:05–09:35 PST. Their estimates differ by 30 minutes asleep and 32 minutes awake despite closely agreeing boundaries. The user wants to go to sleep earlier and has not confirmed their attempt and waking times.",
+        "Oura timing rises from 5 to 54 and latency from 78 to 99. The main episode latency estimate is 15 minutes. Oura estimates 91% sleep efficiency and assigns its efficiency contributor 96 points. Deep, REM and total sleep grades are 97, 73 and 81.",
+        "Oura estimates 1h55m deep sleep, 1h31m REM, 4h21m light sleep and 45 minutes awake. COROS reports 27% deep, 55% light, 15% REM and 3% awake, with 13 minutes awake and zero awakenings over five minutes. COROS detects zero naps and Oura returns one episode.",
+        "Oura sleeping pulse averages 47.875 bpm with a minimum of 44. Overnight HRV is 60 ms on Oura and 63 ms on COROS, up from 56 and 57 ms respectively. COROS grades HRV Normal against 49–65 ms and a baseline of 57. COROS daily average HR is 52 bpm, daily minimum 44 bpm and predicted seated resting HR 51 bpm.",
+        "Oura Readiness is 87, temperature deviation +0.07°C, respiratory rate 12.25/min, average SpO₂ 96.418% and breathing disturbance index 0. The morning experience is unknown for this night."
+      ],
+      "next_focus": [
+        "Follow the plan to go to sleep earlier. Compare subsequent device windows and morning experience with the previous routine."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/charts/#night-2026-11-07",
+          "label": "November 7 curves"
+        },
+        {
+          "href": "/sleep/record/#night-2026-11-06",
+          "label": "November 6 comparison"
         }
       ]
     }
