@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "entries": [
     {
       "id": "2026-10-13",
@@ -3775,17 +3775,11 @@
       "wake_date": "2026-11-05",
       "timezone": "America/Los_Angeles",
       "date_basis": "Provider sleep wake-up date; native local windows use PST.",
-      "status": "Working until around 03:00; calls this “my worst ever,” but reports feeling good on waking and still good afterward. Oura 64 ties the lowest eligible whole-night score; COROS connector unavailable. The small pre-main sleep detection is disputed: still working.",
-      "retrieved_at": "2026-11-05T19:13:02.527068+00:00",
+      "status": "Working until around 03:00; called this “my worst ever,” but felt good on waking and afterward. Oura 64 / COROS 62. The pre-main Oura sleep detection remains disputed: still working.",
+      "retrieved_at": "2026-11-06T20:40:06.198Z",
       "provider_retrieved_at": {
         "oura": "2026-11-05T19:13:02.527068+00:00",
-        "coros": null
-      },
-      "provider_availability": {
-        "coros": "unavailable"
-      },
-      "provider_status": {
-        "coros": "The official COROS connector was not exposed in this chat for this retrieval. Connector discovery returned no available COROS integration. No current-date COROS request succeeded; availability of the underlying sleep record is unknown."
+        "coros": "2026-11-06T20:40:06.198Z"
       },
       "oura": {
         "model": "Oura Ring 5",
@@ -3848,7 +3842,41 @@
         ],
         "source": "Authenticated Oura API V2 exact November 5–6 date query for sleep/daily_sleep/daily_readiness/daily_spo2, plus ring configuration; pagination exhausted. November 5 long_sleep selected as main episode; additional detection retained separately."
       },
-      "coros": null,
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 62,
+        "daily_sleep_minutes": 383,
+        "main_sleep_minutes": 383,
+        "main_period_minutes": 393,
+        "main_start": "2026-11-05T03:08:00-08:00",
+        "main_end": "2026-11-05T09:41:00-08:00",
+        "ratios_percent": {
+          "deep": 30,
+          "light": 54,
+          "rem": 13,
+          "awake": 3
+        },
+        "ratio_denominator": "Daily metric scope; no detected naps. Exact ratio denominator not supplied; no exact stage minutes reconstructed.",
+        "awake_minutes": 10,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 58,
+        "official_sleep_hrv_normal_range_ms": [
+          48,
+          66
+        ],
+        "official_sleep_hrv_baseline_ms": 57,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline; not recomputed from time-series points",
+        "daily_min_hr_bpm": 45,
+        "daily_average_hr_bpm": 64,
+        "resting_hr_bpm": 53,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not matched sleep-window HR; resting HR is predicted seated HR",
+        "source": "Official COROS connector, explicit November 5–6 wake-date sleep overview, official sleep HRV assessment and daily HR; two-day resting-HR return explicitly dates both values. Native local windows interpreted as PST. Daily HR snapshots and predicted seated resting HR are separate from sleeping HR."
+      },
       "self_report": {
         "restfulness": "Calls the latest result “my worst ever,” but reports feeling good on waking and afterward. Experienced night quality and remembered awakenings are not separately specified.",
         "morning_sleepiness": "Felt good in the morning. Exact waking and waking-to-normal interval not supplied.",
@@ -3870,7 +3898,8 @@
       ],
       "plans": [],
       "corrections": [
-        "Follow-up: the user was still working during the 02:21–02:41 detection, felt good in the morning and still felt good afterward. Native device labels and measurements are unchanged."
+        "Follow-up: the user was still working during the 02:21–02:41 detection, felt good in the morning and still felt good afterward. Native device labels and measurements are unchanged.",
+        "November 6 retrieval: official COROS access is restored. The November 5 record returns score 62, main sleep 6h23m, 10 minutes awake and HRV 58 ms. This supersedes the earlier access-unavailable status; the Oura record and good morning/daytime report are unchanged."
       ],
       "context": [
         {
@@ -3879,13 +3908,13 @@
         }
       ],
       "interpretation": [
-        "Oura falls 93 → 64, tying October 17 for the lowest eligible whole-night Oura score in the recorded series. The user calls this “my worst ever,” yet felt good in the morning and still good at follow-up. The low grade and good reported waking/daytime experience coexist; neither is substituted for the other. No quantitative alertness or performance test was supplied.",
+        "Oura falls 93 → 64, tying October 17 for the lowest eligible whole-night Oura score in this log. The restored COROS record returns 62. The user called this “my worst ever,” yet felt good in the morning and still good at follow-up. The grades and good reported waking/daytime experience coexist; no quantitative performance test was supplied.",
         "The main episode runs 03:05:31–10:12:01 PST, a 7h06m30s period with 6h09m estimated sleep and 57m30s awake. Estimated sleep falls 2h30m30s from November 4. Working until around 03:00 fits the late device window, but exact attempted sleep and waking have not been confirmed.",
         "The most reduced contributor grades are timing 23, REM 34 and total sleep 59; restfulness is 74, latency 78 and efficiency 88. Deep sleep remains 94. These grades identify where the proprietary score is low; their exact weighted contribution to the 29-point change is not known.",
         "Oura estimates 1h37m30s deep sleep, 42m30s REM and 3h49m light sleep. REM is 1h00m30s below the preceding night’s estimate, while deep sleep is 28m30s lower. Estimated efficiency is 87%, distinct from the 88-point efficiency grade; main-episode latency is 7m30s. Stage labels are wearable estimates, not laboratory measurements.",
         "The ring also labels 02:21:01–02:41:01 as a separate sleep episode with 90 seconds of light sleep and 18m30s awake. The user confirms still working during that interval, so the detection is disputed and is not counted as a confirmed nap. The provider-native label is retained separately from the main curve and main-night duration. Oura’s returned daily score is not recalculated.",
         "Mean sleeping HR is 51.5 bpm, minimum 48, and HRV 57 ms, compared with 48.375/45 bpm and 58 ms on November 4. HRV barely changes despite the large score drop: the sleep score and this cardiac summary are different outcomes. Readiness is 76, temperature deviation −0.43°C, breathing 12.375/min, SpO₂ average 97.383% and breathing disturbance index 0. These values do not establish a cause or diagnose a condition.",
-        "COROS access is unavailable in this chat. No previous COROS values are copied into this date, and absence of access does not mean absence of a watch record. Twenty-four wake dates now contain 24 Oura records, 23 eligible whole-night Oura scores and 23 COROS records. The fixed October 13–26 milestone assessment is unchanged."
+        "COROS access was unavailable at the first retrieval and was restored on November 6. Its November 5 return is 62, with 6h23m asleep and 10 minutes awake in a 03:08–09:41 PST window. Oura ends about 31 minutes later, estimates 14 minutes less sleep and 47m30s more awake time. COROS HRV is 58 ms, Normal against 48–66 ms, baseline 57. Daily HR average 64/minimum 45 and predicted seated resting HR 53 have different scopes from sleeping HR. No prior values were imputed during the access gap; the later return is now available."
       ],
       "next_focus": [
         "The immediate opportunity is protecting the sleep window from work running until 03:00. This night’s weakest Oura grades are timing, total sleep and REM; deep sleep is not the main score bottleneck. Exact work cutoff and bedtime remain decisions, not newly adopted rules.",
@@ -3899,6 +3928,146 @@
         {
           "href": "/sleep/record/#night-2026-10-17",
           "label": "Previous 64-point night"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06",
+      "wake_date": "2026-11-06",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Provider wake-up date; native windows use PST.",
+      "status": "Work delayed bedtime until roughly 04:00; woke roughly 12:15 and felt bad for about 30 minutes. The user confirms the device times fit and wants his normal bedtime back. Oura 76 / COROS 53.",
+      "retrieved_at": "2026-11-06T20:40:06.198Z",
+      "provider_retrieved_at": {
+        "oura": "2026-11-06T20:39:55.818839+00:00",
+        "coros": "2026-11-06T20:40:06.198Z"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.1.36",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.125,
+          "average_heart_rate": 48.75,
+          "average_hrv": 56,
+          "awake_time": 2280,
+          "bedtime_end": "2026-11-06T12:14:29.000-08:00",
+          "bedtime_start": "2026-11-06T04:01:29.000-08:00",
+          "day": "2026-11-06",
+          "deep_sleep_duration": 7110,
+          "efficiency": 92,
+          "latency": 450,
+          "light_sleep_duration": 14490,
+          "lowest_heart_rate": 43,
+          "rem_sleep_duration": 5700,
+          "time_in_bed": 29580,
+          "total_sleep_duration": 27300,
+          "type": "long_sleep"
+        },
+        "score": 76,
+        "contributors": {
+          "deep_sleep": 97,
+          "efficiency": 97,
+          "latency": 78,
+          "rem_sleep": 76,
+          "restfulness": 88,
+          "timing": 5,
+          "total_sleep": 79
+        },
+        "readiness_score": 87,
+        "temperature_deviation_c": 0.11,
+        "spo2_average_percent": 98.304,
+        "breathing_disturbance_index": 1,
+        "additional_sleep_episodes": [],
+        "source": "Authenticated Oura API V2 exact November 6–7 date query for sleep/daily_sleep/daily_readiness/daily_spo2, plus ring configuration; pagination exhausted. One November 6 long_sleep; native summaries and main-night samples retained."
+      },
+      "coros": {
+        "model": "COROS PACE 4",
+        "firmware_version": null,
+        "algorithm_version": null,
+        "sleep_score": 53,
+        "daily_sleep_minutes": 480,
+        "main_sleep_minutes": 480,
+        "main_period_minutes": 487,
+        "main_start": "2026-11-06T04:04:00-08:00",
+        "main_end": "2026-11-06T12:11:00-08:00",
+        "ratios_percent": {
+          "deep": 18,
+          "light": 52,
+          "rem": 29,
+          "awake": 1
+        },
+        "ratio_denominator": "Daily metric scope; no detected naps. Exact ratio denominator not supplied; no exact stage minutes reconstructed.",
+        "awake_minutes": 7,
+        "awake_count_over_5min": 0,
+        "nap_minutes": 0,
+        "nap_windows": [],
+        "official_sleep_hrv_ms": 57,
+        "official_sleep_hrv_normal_range_ms": [
+          48,
+          66
+        ],
+        "official_sleep_hrv_baseline_ms": 57,
+        "official_sleep_hrv_evaluation": "Normal",
+        "sleep_hrv_definition": "Official daily assessment, range and baseline; not recomputed from time-series points",
+        "daily_min_hr_bpm": 42,
+        "daily_average_hr_bpm": 55,
+        "resting_hr_bpm": 54,
+        "heart_rate_scope_note": "Daily snapshot at retrieval, not matched sleep-window HR; resting HR is predicted seated HR",
+        "source": "Official COROS connector, explicit November 5–6 wake-date sleep overview, official sleep HRV assessment and daily HR; two-day resting-HR return explicitly dates both values. Native local windows interpreted as PST. Daily HR snapshots and predicted seated resting HR are separate from sleeping HR."
+      },
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": "Felt bad on waking for about 30 minutes. Specific symptoms and quantitative performance were not supplied.",
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": "Confirms the roughly 04:00–12:15 device times fit the sleep attempt and final waking. Work kept him up late; wants to return to his normal bedtime. Times remain approximate.",
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "story": [
+        "Work kept me up late. The roughly 04:00–12:15 recorded times fit.",
+        "I felt bad on waking for about 30 minutes. I want to return to my normal bedtime."
+      ],
+      "plans": [
+        "Return to my normal bedtime. No exact target hour or new evening cutoff was specified."
+      ],
+      "corrections": [],
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "The user confirms the roughly 04:00–12:15 window, work as the reason for staying up late, and about 30 minutes of feeling bad on waking. This is separate from November 5’s good morning and continued good feeling. Specific symptoms, subsequent performance and other evening exposures remain unspecified."
+        }
+      ],
+      "interpretation": [
+        "Oura rises 64 → 76 while COROS falls 62 → 53. Both estimate more sleep than November 5: Oura 7h35m, up 1h26m; COROS 8h, up 1h37m. The user reports feeling bad on waking today, unlike yesterday’s good waking/daytime report. More estimated sleep and a higher Oura grade did not coincide with a better reported morning in this pair.",
+        "Oura records 04:01:29–12:14:29 PST, an 8h13m period with 38 minutes awake. COROS reports 04:04–12:11, an 8h07m period with seven minutes awake. The user confirms that these roughly 04:00–12:15 times fit. Boundaries agree within a few minutes, while estimated sleep differs by 25 minutes and awake time by 31 minutes. The self-report remains approximate and does not validate exact stage or sleep/wake labels.",
+        "Oura timing falls 23 → 5, its weakest contributor. Total sleep improves 59 → 79, REM 34 → 76, restfulness 74 → 88, efficiency 88 → 97 and deep sleep 94 → 97; latency remains 78. These are proprietary grades, with no known exact weighted attribution of the total change. The COROS overview does not return component scores explaining its 53.",
+        "Oura estimates deep sleep 1h58m30s, REM 1h35m and light sleep 4h01m30s. Estimated sleep efficiency is 92%, distinct from its 97-point contributor; main-episode latency is 7m30s. COROS daily deep/light/REM/awake ratios are 18/52/29/1%; exact stage minutes are not reconstructed from rounded ratios. Both return no additional sleep episodes or naps for this date.",
+        "Oura mean sleeping HR is 48.75 bpm, minimum 43, with HRV 56 ms. COROS official HRV is 57 ms, Normal against its 48–66 ms range and baseline 57. These HRV values are close to November 5’s 57/58 ms despite different scores and reported mornings. Oura Readiness is 87, temperature deviation +0.11°C, breathing 12.125/min, SpO₂ average 98.304% and breathing disturbance index 1. No clinical cause for feeling bad is established by these wearable summaries.",
+        "Work kept the user up late; he confirms roughly 04:00–12:15 fits and reports about 30 minutes of feeling bad on waking. He wants his normal bedtime back. The preceding regular November 3–4 diary attempts were around 23:30, providing an existing personal comparison. Today’s cause of the late bedtime is now reported directly rather than carried forward from November 5. The individual effects of work, timing and other unreported conditions remain unresolved.",
+        "Twenty-five wake dates now have both providers available after restoring November 5 COROS: 25 Oura records, 24 eligible whole-night Oura scores and 25 COROS records. COROS 53 is its lowest recorded grade in this log. The completed October 13–26 milestone assessment remains unchanged."
+      ],
+      "next_focus": [
+        "Return toward the previously established normal bedtime while preserving sufficient sleep opportunity. Keep actual attempt/waking and morning/daytime experience alongside each provider’s score; the new timing grade of 5 identifies a clear Oura scoring weakness without proving the cause of feeling bad.",
+        "Track the return toward normal bedtime alongside the roughly 30-minute waking experience, subsequent daytime function and both provider grades. Work is the reported reason for the delay; current meal, alcohol, illness and room conditions remain unspecified."
+      ],
+      "next_focus_references": [
+        {
+          "href": "/sleep/charts/#night-2026-11-06",
+          "label": "November 6 curves"
+        },
+        {
+          "href": "/sleep/record/#night-2026-11-04",
+          "label": "Earlier regular bedtime comparison"
         }
       ]
     }
