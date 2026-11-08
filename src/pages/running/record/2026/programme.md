@@ -1,14 +1,15 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The running programme"
-description: "The first cycle closed on November 7 with 13 workouts in 24 days, a 440-point 800 m trial and a 29.78 average for the final 6×200 m."
-updated: 2026-11-07
+description: "The second running cycle starts November 9, with a 2000 m time trial on November 24 and a target of 441 World Athletics points or more."
+updated: 2026-11-08
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-This is the programme agreed by **8 October 2026**, updated through
-**7 November**. The first cycle took **24 days** from October 15 and included
+The [second cycle](#the-next-cycle) is planned for **November 9–26**, with a
+**2000 m time trial on November 24**. The first cycle took **24 days**
+from October 15 and included
 **13 workouts**, one more than the original schedule. I ran the 800 m trial
 in **2:14.83 (440 points)** on November 6 and closed the cycle the next day
 with **6×200 m averaging 29.78**. Both interval formats remain close to
@@ -24,12 +25,12 @@ The larger aim is the notebook's [800+ World Athletics point profile across
 gates below are workout milestones toward that aim. A repetition pace with
 recovery is not a continuous race mark to score against the event table.
 
+[Second cycle schedule and goals](#the-next-cycle) ·
 [Current choices](#current-choices) ·
 [Transition](#the-transition-into-the-first-cycle) ·
 [Cycle](#the-18-day-cycle) ·
-[Current calendar](#the-current-calendar) ·
-[Progressions](#two-independently-earned-progressions) ·
-[Next cycle](#the-next-cycle)
+[First cycle calendar](#the-current-calendar) ·
+[Progressions](#two-independently-earned-progressions)
 
 ## Current choices
 
@@ -234,17 +235,15 @@ another VO₂. Those could later change if the results justify a different empha
 For now, I want to see how this allocation behaves over cycles before changing it
 automatically.
 
-One possible **next-cycle** change is **five LT sessions and three VO₂
-sessions**, reallocating an existing slot if LT progress continues to lag.
-That remains a proposal to assess in the cycle review. That reallocation is not adopted; this cycle's additional VO₂ repeat
-is a separate decision.
+I considered five LT sessions and three VO₂ sessions. For the second cycle I
+chose to keep four slots for each, following the first cycle's template.
 
 The session count does not describe the whole load. A time trial, relaxed fast
 repetitions and an experimental sprint set can cost very different amounts. One
 recent chill day still included a short backpack run; my plan for another rest day
 included running to the gym and back. The label cannot erase that activity.
 
-## The current calendar
+<h2 id="the-current-calendar">First cycle calendar</h2>
 
 The cycle ended on **7 November** after **thirteen workouts**. The additional
 November 2 200s belong to the same physical session as its 900s. Separate city runs on
@@ -308,8 +307,9 @@ progression.
 | 5×900 m | 3:05/km | 2:46.5 |
 | 5×1000 m | 3:00/km | 3:00 |
 
-**A row is a workout and its graduation target.** Passing it unlocks the next
-workout; the next row's pace is the next gate, not a compulsory entry pace.
+**A row is a workout and its graduation target.** Within the cycle's volume
+limits, passing a gate unlocks the next format. The next row's pace is a
+later target.
 October 8 unlocked **3×1600 m**, and October 15 unlocked **3×900 m**. The first
 attempts at those larger sessions do not require their later 6:08 and 2:55.5
 graduation times.
@@ -320,35 +320,68 @@ next decision clear. The training still has to earn them.
 
 ## The next cycle
 
-The next trial I want to run is **2000 m**, around **November 26**, about
-20 days after the 800. **400+ points** would be a substantial improvement
-from **7:16.67 and 181 points** on September 27. The time targets use the
-same men's outdoor scoring table as the [current benchmarks](/running/record/results/#current-benchmarks).
+The second cycle starts **Monday, November 9**. I am keeping the two-days-on,
+one-day-off rhythm. The first cycle took longer than planned as I adjusted
+to the quality volume and dealt with illness and scheduling delays. My
+ankles felt good in the last few sessions, so I want to try the original
+spacing again. The 4+4 fills all three fast-running slots this time.
+
+**Sequence** · `120 | 130 | 210 | 230 | 120 | 430`
+
+**Key** · 0 rest, 1 VO₂, 2 LT, 3 4+4×200 m, 4 time trial.
+
+| Dates | Day one | Day two | Day three |
+| --- | --- | --- | --- |
+| Nov 9–11 | Nov 9 · VO₂ | Nov 10 · LT | Nov 11 · Rest |
+| Nov 12–14 | Nov 12 · VO₂ | Nov 13 · 4+4 | Nov 14 · Rest |
+| Nov 15–17 | Nov 15 · LT | Nov 16 · VO₂ | Nov 17 · Rest |
+| Nov 18–20 | Nov 18 · LT | Nov 19 · 4+4 | Nov 20 · Rest |
+| Nov 21–23 | Nov 21 · VO₂ | Nov 22 · LT | Nov 23 · Rest |
+| Nov 24–26 | Nov 24 · **2000 m TT** | Nov 25 · 4+4 | Nov 26 · Rest |
+
+### Second-cycle goals
+
+1. **Clear both current gates.** Average **2:55.5 or faster** for **3×900 m**
+   and **6:08 or faster** for **3×1600 m**, with good execution through the
+   final repetition. Each format advances independently.
+2. **Bring the four 900s into the low 2:50s on average**, with **5:30 recovery**.
+3. **Average under 7:30 for 3×2000 m**, with **one-minute walking recoveries**.
+   That is faster than **3:45/km** or **90 seconds per lap**.
+4. **Average low 28s in the first four 200s and mid 29s in the second four**,
+   with **3:00** and **1:30** between reps, respectively.
+5. **Beat the 800 m score in the 2000 m trial on November 24.** The target is
+   **441 points or more**, which takes **6:25.80 or faster**.
+
+**4×900 m and 3×2000 m are the volume ceilings for this cycle.** They already
+increase work distance from 2700 to 3600 m and from 4800 to 6000 m,
+respectively. If I average **under 2:51** or **under 7:20**, I will keep
+repeating the same format and consolidate it.
+
+### November 24 · 2000 m time trial
+
+September's trial was **7:16.67 and 181 points**. Breaking **6:30** would
+take more than 46 seconds off that mark. To beat the November 6 800 m score,
+I need five laps averaging **77.16 seconds**. The targets use the
+[2025 men's outdoor World Athletics scoring tables](https://worldathletics.org/download/download?filename=4f77dcb3-2945-4c58-ad8b-955a999b13e8.pdf&urlslug=World+Athletics+Scoring+Tables+of+Athletics#page=178).
 
 | Points | 2000 m | Pace per km | Average 400 m |
 | ---: | ---: | ---: | ---: |
 | 400 | 6:32.57 | 3:16.3 | 78.51 s |
+| 440 | 6:25.96 | 3:13.0 | 77.19 s |
+| **441** | **6:25.80** | **3:12.9** | **77.16 s** |
 | 450 | 6:24.35 | 3:12.2 | 76.87 s |
 | 500 | 6:16.58 | 3:08.3 | 75.32 s |
 | 550 | 6:09.19 | 3:04.6 | 73.84 s |
 
-Matching the 800's **440 points** would take **6:25.96 (3:13.0/km)**.
-The latest 900s averaged **2:55.70 (3:15.22/km)**. That pace is close to
-the 400-point 2000 m target, and I think it may be nearer my current 1500 m
-race pace. The trial will show how much of that speed I can sustain for
-five laps continuously.
+The latest 900s averaged **2:55.70**. At **441-point pace**, 900 m takes
+**2:53.61**. I think the 900s may be closer to my current 1500 m race pace.
+The trial asks how much speed I can carry through five uninterrupted laps.
 
-I want to clear **3×900 m at 2:55.5 average**, then build into **4×900 m**.
-The fourth repetition increases the work from **2700 to 3600 m**. If the
-cycle goes smoothly, I would like to approach **2:51 average across four**,
-with **sub-2:50** as a stretch ambition. The nominal recovery is **5:30**.
-
-For LT, I want to clear **3×1600 m at 6:08 average** and move to **3×2000 m**.
-Each repetition adds a lap, taking the session from **4800 to 6000 m**.
-That longer uninterrupted work is especially relevant to my 5000 m goal.
-I want to carry posture and an open stride further into an effort, where
-I struggled to maintain them in the October trial. **7:20 average** is the
-later gate for the 2000s. The cycle review will settle the session allocation.
+The longer LT format has a different job. At **7:30 per rep**, if each
+one-minute walk covers about 100 m, I would cover **5 km in 20:00 elapsed**,
+800 m into the third rep. I would still have 1200 m of running left. I want
+to hold posture and an open stride into those last laps, where my form began
+to go in the October 5000 m trial.
 
 ## When to revise it
 

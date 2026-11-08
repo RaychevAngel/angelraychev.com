@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-07
+updated: 2026-11-08
 draft: false
 ---
 
@@ -33,7 +33,8 @@ ambition into something I can actually do.
 
 **Structured training is recorded through 7 November 2026**, with city running
 through November 5. The [programme](/running/record/2026/programme/#the-next-cycle)
-keeps the next-cycle aims and tentative trial timing. The current record keeps the chronology, splits and
+gives the November 9 start, the November 24 trial and the goals for the second cycle.
+The current record keeps the chronology, splits and
 conditions behind the summaries here.
 
 [Starting point](#where-i-am-starting) · [Goals](#the-runner-i-am-trying-to-build) · [Programme](#a-programme-that-earns-its-next-step) · [Observations](#what-the-observations-now-tell-me) · [Next checkpoint](#the-next-checkpoint) · [Model](#the-working-model) · [Scoring notes](#scores-and-rarity)
@@ -554,22 +555,24 @@ keeps the source limitations. The outings do not add completed quality sessions
 to the cycle count or replace November 4's structured workout.
 
 **3×1600 m and 3×900 m remain the current formats.** Both averages are now
-just above their gates. Next cycle I want to cement **6:08** and **2:55.5**,
-then progress independently towards **3×2000 m** and **4×900 m**. The next
-formats' own gates are later targets, not compulsory opening paces.
+just above their gates. The second cycle starts **November 9**. I want to
+clear **6:08** and **2:55.5**, then work towards **sub-7:30 across three 2000s**
+and **low 2:50s across four 900s**. I will stay with those volumes through
+the end of the cycle, even if I get under **7:20** or **2:51**.
 
-My next trial is **2000 m in late November**, roughly twenty days after the
-800. **400 points would take 6:32.57**, more than forty seconds quicker than
-September's 7:16.67. I want to see how the familiar 900 m pace carries over
-to five uninterrupted laps. The 900s may be closer to my current 1500 m race
-pace. The [next-cycle programme](/running/record/2026/programme/#the-next-cycle)
-keeps the pace comparisons, volume increases and stretch aims together.
+My next trial is **2000 m on November 24**, 18 days after the 800. Breaking
+**6:30** would take more than 46 seconds off September's 7:16.67. My goal
+is to beat the 800's score with **441 points or more**, which takes
+**6:25.80 or faster**. I want to see how the familiar 900 m rhythm carries
+over to five uninterrupted laps. The [second-cycle programme](/running/record/2026/programme/#the-next-cycle)
+has the full schedule and targets.
 
 The move from 1600 to 2000 m matters to me especially for the 5000. Each rep
 would give me another lap to keep my stride together under effort. I have
 already begun to feel that ease returning away from the track, including a
 [late run to catch a train with a full backpack](/running/record/2026/#45-november--city-running-and-rest-before-the-trial).
-The session allocation belongs to the cycle review.
+I am keeping four LT and four VO₂ slots in the original two-on, one-off
+rhythm, with three 4+4s around the other work.
 
 The next efforts ask three immediate questions:
 
@@ -582,7 +585,7 @@ The next efforts ask three immediate questions:
 - **How do speed and its cost change when I repeat the 200s?** The October 30
   repeat held similar speed with a shorter set break, timing uncertainty and
   an all-out finish. Whether this helps the longer efforts remains untested.
-  The separate F benchmark stays at six reps with three-minute rests.
+  This cycle I want low 28s in the first set and mid 29s in the second.
 
 I had hoped for a 5000 around 19:30. The reported 19:59 is the result of testing
 that hope. Even 3:55/km continuously would give 19:35; the controlled interval
