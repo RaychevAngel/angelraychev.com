@@ -1,19 +1,18 @@
 ---
 layout: "../../../../layouts/Post.astro"
 title: "The running programme"
-description: "Twelve workouts complete through November 6: the 800 m trial was 2:14.83, worth 440 points. Only 6×200 m on November 7 remains planned; both interval progression gates are still narrowly unmet."
+description: "The first cycle closed on November 7 with 13 workouts in 24 days, a 440-point 800 m trial and a 29.78 average for the final 6×200 m."
 updated: 2026-11-07
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 This is the programme agreed by **8 October 2026**, updated through
-**6 November**, including the completed **800 m trial in 2:14.83 / 440 points**.
-The cycle began on **15 October**. **Twelve workouts are complete**: eleven
-of the original twelve, plus the extra VO₂ repeat on November 2. The intended
-total is thirteen. Both the 900s and 1600s remain right at their gates.
-Only **F = 6×200 m / 3 min**, planned for **November 7**, remains. Completed work stays on the
-[2026 record](/running/record/2026/).
+**7 November**. The first cycle took **24 days** from October 15 and included
+**13 workouts**, one more than the original schedule. I ran the 800 m trial
+in **2:14.83 (440 points)** on November 6 and closed the cycle the next day
+with **6×200 m averaging 29.78**. Both interval formats remain close to
+their gates. The splits and circumstances are in the [2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
 maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
@@ -190,7 +189,7 @@ session. On November 2 I chose to add a repeat of the 900s and move LT from
 November 2 to November 3, which had previously been a planned rest day.
 I missed November 3 for lack of time and completed LT on November 4. I took
 November 5 off structured training and ran the 800 m trial on November 6.
-The final fast session is planned for November 7.
+I completed the final fast session on November 7 with variable recovery.
 
 ## The 18-day cycle
 
@@ -247,10 +246,8 @@ included running to the gym and back. The label cannot erase that activity.
 
 ## The current calendar
 
-Structured training is recorded through **6 November**, with city running
-through **November 5**. **Twelve workouts are complete: eleven original
-slots plus the extra VO₂ repeat.** Only **F** remains planned. The additional November 2
-200s belong to the same physical session as its 900s. Separate city runs on
+The cycle ended on **7 November** after **thirteen workouts**. The additional
+November 2 200s belong to the same physical session as its 900s. Separate city runs on
 November 4 and 5 do not add quality workouts to this count. Oura recorded
 15-minute and 20-minute evening windows, with estimated distances of 1.43 km
 and 2.79 km respectively; the [dated record](/running/record/2026/#45-november--city-running-and-rest-before-the-trial)
@@ -264,17 +261,15 @@ keeps their times and measurement limits.
 | Wednesday 4 November | LT · 3×1600 m / nominal 1 min | Complete · 6:08.74 average (3:50.46/km); final 6:05.31 composed and fast |
 | Thursday 5 November | Rest from structured training | Taken to be fresh for the trial; city running recorded separately |
 | Friday 6 November | 800 m time trial | Complete · 2:14.83 (2:48.5/km), 440 points |
-| Saturday 7 November | F · 6×200 m / 3 min | Planned · completes the cycle's workouts if carried out |
-| After F | Closing chill day | Planned · follows the final workout |
+| Saturday 7 November | F · 6×200 m / nominal 3 min | Complete · 29.78 average with variable recovery |
+| After F | Closing chill day | Planned recovery after the final workout |
 
-The original 18-day template has stretched with missed days and the extra
-VO₂ repeat. The intended total remains **thirteen workouts**, rather than
-twelve. The November 6 update replaces the earlier November 5 trial plan.
-The TT is complete on November 6. If F is completed November 7, the last workout falls on **day 24**
-from October 15, inclusive; the template's closing chill day would be November 8,
-**day 25**. These are planned endpoints, not a completed cycle. I am treating
-the 800 m trial as a checkpoint within normal training, without adding a
-formal taper.
+Illness, scheduling delays and extra rest stretched the original 18-day
+template. The November 2 VO₂ repeat brought the total to 13 workouts. I ran
+the 800 m trial as a checkpoint within normal training, with November 5 off
+structured work. The [final fast session](/running/record/2026/#7-november--f-6200-m--variable-recovery)
+fell on **day 24** counting from October 15. The template calls for a recovery
+day after that final workout.
 
 **Both ladders are right at their gates, still narrowly above them.** Next
 cycle I want to clear **2:55.5 average for 3×900 m** and **6:08 average for

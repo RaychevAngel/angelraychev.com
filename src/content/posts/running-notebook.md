@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**Structured training is recorded through 6 November 2026**, with city running
+**Structured training is recorded through 7 November 2026**, with city running
 through November 5. The [programme](/running/record/2026/programme/#the-next-cycle)
 keeps the next-cycle aims and tentative trial timing. The current record keeps the chronology, splits and
 conditions behind the summaries here.
@@ -181,8 +181,9 @@ order, templates and progression tables.
 The cycle began on **15 October**. Its original eleven specified workouts and
 flexible **X** remain identifiable. On November 2 I chose an extra VO₂ repeat
 after a session disrupted by stomach discomfort. I planned LT for November 3
-and completed it on November 4. The repeat brought the cycle to thirteen workouts. I have not yet completed the
-cycle and shown that I can sustain it. Its cost also extends beyond the listed workouts:
+and completed it on November 4. The repeat brought the cycle to thirteen workouts.
+I finished on November 7, day 24 of the cycle.
+The training load also extends beyond the listed workouts:
 running to the gym, carrying a backpack and a hard bike commute still count as
 movement, even on a day whose programme says chill.
 
@@ -534,14 +535,15 @@ observations that can inform the next decision.
 
 ## The next checkpoint
 
-**Twelve of thirteen intended workouts are complete**, through November 6:
-eleven original slots plus the extra 900 session. The final LT and **800 m
-trial are complete**. Only **6×200 m / 3 min**, planned for **Saturday,
-November 7**, remains before the cycle's workouts are complete.
+**The first cycle closed on November 7 with 13 workouts in 24 days.**
+Illness, scheduling conflicts and extra rest stretched the 18-day template.
+The final [6×200 m](/running/record/2026/#7-november--f-6200-m--variable-recovery)
+averaged **29.78**, with five straight sub-30s and variable recoveries.
+In October, I found that speed on the last rep. This time I had it on rep two
+and spent the rest of the set working to hold it down the straight.
 
 The **2:14.83 / 440-point** trial follows November 5 off structured training.
 I treated it as a checkpoint within normal training, without a formal taper.
-The final fast session remains planned, not completed.
 
 Rest from the programme still included city running. Oura recorded separate
 evening running windows of **15 minutes on November 4 (estimated 1.43 km)**

@@ -3605,5 +3605,15 @@
     "distanceKm": 2.44,
     "movingSeconds": 715,
     "note": "/running/record/2026/#6-november--800-m-time-trial"
+  },
+  {
+    "id": "20903294143",
+    "url": "https://www.strava.com/activities/20903294143",
+    "title": "6x200m/~3'",
+    "date": "2026-11-07",
+    "dateBasis": "reported-local",
+    "distanceKm": 2.02,
+    "movingSeconds": 749,
+    "note": "/running/record/2026/#7-november--f-6200-m--variable-recovery"
   }
 ]
