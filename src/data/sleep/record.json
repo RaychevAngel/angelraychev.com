@@ -4311,7 +4311,9 @@
         "illness": null
       },
       "story": [],
-      "plans": [],
+      "plans": [
+        "Go to bed significantly earlier."
+      ],
       "corrections": [],
       "context": [],
       "interpretation": [
