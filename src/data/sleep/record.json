@@ -4415,7 +4415,7 @@
       },
       "self_report": {
         "restfulness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "Felt good on waking.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
@@ -4431,9 +4431,14 @@
       "story": [],
       "plans": [],
       "corrections": [],
-      "context": [],
+      "context": [
+        {
+          "kind": "self_report",
+          "observation": "Getting work done makes it hard to go to bed earlier, and bedtime has been drifting later."
+        }
+      ],
       "interpretation": [
-        "Both devices began the main episode around 02:12 PST, about 1h20m later than November 8, when the user planned to go to bed significantly earlier. Both episodes ended around 11:19 PST. Actual sleep attempt, final waking and morning experience are unreported.",
+        "Both devices began the main episode around 02:12 PST, about 1h20m later than November 8, when the user planned to go to bed significantly earlier. Both episodes ended around 11:19 PST. The user felt good on waking. Actual sleep attempt and final waking times are unreported.",
         "Oura falls from 88 to 82 and estimates 8h27m30s asleep, down 35 minutes. COROS falls from 94 to 85 and estimates 8h52m asleep, down 34 minutes. Oura timing moves from 42 to 19.",
         "Oura estimates 1h51m deep sleep, 1h40m REM, 4h56m30s light sleep and 39m30s awake. COROS reports 14 minutes awake, one awakening over five minutes and no detected naps.",
         "Both devices report 55 ms HRV, up from 50 ms. COROS grades it Normal against its 49–65 ms range and 57 ms baseline. Oura sleeping pulse averages 49.375 bpm, down from 51.25 bpm. The Oura oxygen-saturation average is unavailable."
