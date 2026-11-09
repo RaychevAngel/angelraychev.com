@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-08
+updated: 2026-11-09
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**Structured training is recorded through 7 November 2026**, with city running
+**Structured training is recorded through 9 November 2026**, with city running
 through November 5. The [programme](/running/record/2026/programme/#the-next-cycle)
 gives the November 9 start, the November 24 trial and the goals for the second cycle.
 The current record keeps the chronology, splits and
@@ -414,8 +414,7 @@ I then joined another group for **three 200s with walk-back recovery**,
 estimated around **30 seconds each by feel**. The group timed them, but I
 did not obtain the splits. My ankles felt good. The recorded 900 average
 is **0.20 seconds per rep above 2:55.5**: **close to the target, not
-graduated**. It is a good result. I aim to cement the graduation target next
-cycle; **3×900 m remains the current format** until the gate is earned.
+graduated**. That kept the format at **3×900 m** for the start of the next cycle.
 
 The [fourth 1600 session on 4 November](/running/record/2026/#4-november--lt-31600-m--nominal-1-min)
 was **6:09.14, 6:11.76 and 6:05.31**: **6:08.74 average (3:50.46/km)**,
@@ -428,11 +427,9 @@ Some lane two running added unquantified distance. The recorded time stands
 without a correction or a claim that I would necessarily reproduce it alone.
 
 That is the LT improvement I wanted: a much quicker opener and a faster,
-composed finish after two repetitions. **Both ladders are now right at their
-gates**, with **6:08.74 versus 6:08** for LT and **2:55.70 versus 2:55.5**
-for VO₂. Neither has graduated. Next cycle I want to clear both, then move
-towards **3×2000 m** and **4×900 m** respectively. The full session and its
-pacing context remain in the dated record.
+composed finish after two repetitions. Both formats ended the first cycle
+close to their gates, with **6:08.74 versus 6:08** for LT and
+**2:55.70 versus 2:55.5** for VO₂.
 
 The [6 November 800 m trial](/running/record/2026/#6-november--800-m-time-trial)
 was **2:14.83 (2:48.5/km), worth 440 points**. Before it, I hoped to challenge
@@ -554,10 +551,13 @@ summaries, not verified moving times or measured route lengths; the
 keeps the source limitations. The outings do not add completed quality sessions
 to the cycle count or replace November 4's structured workout.
 
-**3×1600 m and 3×900 m remain the current formats.** Both averages are now
-just above their gates. The second cycle starts **November 9**. I want to
-clear **6:08** and **2:55.5**, then work towards **sub-7:30 across three 2000s**
-and **low 2:50s across four 900s**. I will stay with those volumes through
+The [November 9 900s](/running/record/2026/#9-november--vo-3900-m--5-min)
+averaged **2:54.60**, clearing the **2:55.5** gate. I held back on the second
+lap of the first two reps, then ran a steadier opening 800 on the third and
+kept my posture through the finish. That earns **4×900 m** for November 12.
+LT stays at **3×1600 m** until I earn **6:08**. The goals are still
+**sub-7:30 across three 2000s** and **low 2:50s across four 900s**.
+I will stay with those volumes through
 the end of the cycle, even if I get under **7:20** or **2:51**.
 
 My next trial is **2000 m on November 24**, 18 days after the 800. Breaking

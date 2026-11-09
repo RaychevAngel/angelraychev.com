@@ -2,18 +2,19 @@
 layout: "../../../../layouts/Post.astro"
 title: "The running programme"
 description: "The second running cycle starts November 9, with a 2000 m time trial on November 24 and a target of 441 World Athletics points or more."
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
-The [second cycle](#the-next-cycle) is planned for **November 9–26**, with a
-**2000 m time trial on November 24**. The first cycle took **24 days**
+The [second cycle](#the-next-cycle) opened on **November 9** with a
+**2:54.60 average for 3×900 m**, earning **4×900 m** for November 12.
+The **2000 m time trial is planned for November 24**. The first cycle took **24 days**
 from October 15 and included
 **13 workouts**, one more than the original schedule. I ran the 800 m trial
 in **2:14.83 (440 points)** on November 6 and closed the cycle the next day
-with **6×200 m averaging 29.78**. Both interval formats remain close to
-their gates. The splits and circumstances are in the [2026 record](/running/record/2026/).
+with **6×200 m averaging 29.78**. The splits and circumstances are in the
+[2026 record](/running/record/2026/).
 
 **LT** aims at sustainable high lactate turnover. **VO₂** aims at time near
 maximal oxygen uptake. **F** is repeatable fast running; **FA** adds a
@@ -77,7 +78,7 @@ rep above 6:08**. All four LT slots in this cycle are now complete.
 **3×1600 m remains current**; next cycle I want to clear the gate, then
 move to **3×2000 m**, with its own later target.
 
-**VO₂ is now at 3×900 m with nominal 5:30 recovery.** The
+**VO₂ opened the second cycle at 3×900 m.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
 **2:35.55 (3:14.4/km)**, earned the change. The
 [first 900s on 19 October](/running/record/2026/#19-october--vo-3900-m--nominal-530)
@@ -115,10 +116,11 @@ rep and afterwards. Three subsequent 200s with walk-back recovery were
 estimated around **30 seconds each by feel**; the group's stopwatch times
 were not obtained. My ankles felt good.
 
-**Close to the target, not graduated.** The recorded mean remains **2:55.70**,
-or **0.20 seconds per rep above the 2:55.5 gate**. I want to cement that
-graduation target next cycle. **3×900 m remains current**; 4×900 m waits
-until the gate is earned. Nominal recovery remains **5:30**.
+That left the recorded mean **0.20 seconds per rep above the 2:55.5 gate**.
+The [November 9 opener](/running/record/2026/#9-november--vo-3900-m--5-min)
+cleared it with **2:55.23, 2:54.33 and 2:54.24**, averaging **2:54.60**
+with roughly five minutes between reps. I kept my stride and posture
+while pushing the last 100 m. **4×900 m / 5:30** is next on November 12.
 
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
@@ -270,10 +272,8 @@ structured work. The [final fast session](/running/record/2026/#7-november--f-62
 fell on **day 24** counting from October 15. The template calls for a recovery
 day after that final workout.
 
-**Both ladders are right at their gates, still narrowly above them.** Next
-cycle I want to clear **2:55.5 average for 3×900 m** and **6:08 average for
-3×1600 m**, then move independently towards **4×900 m** and **3×2000 m**.
-The next structures are earned transitions, not changes already adopted.
+At the end of the first cycle, both averages sat just above their gates:
+**2:55.5 for 3×900 m** and **6:08 for 3×1600 m**. They advance independently.
 
 ## Two independently earned progressions
 
@@ -320,7 +320,7 @@ next decision clear. The training still has to earn them.
 
 ## The next cycle
 
-The second cycle starts **Monday, November 9**. I am keeping the two-days-on,
+The second cycle started **Monday, November 9**. I am keeping the two-days-on,
 one-day-off rhythm. The first cycle took longer than planned as I adjusted
 to the quality volume and dealt with illness and scheduling delays. My
 ankles felt good in the last few sessions, so I want to try the original
@@ -332,8 +332,8 @@ spacing again. The 4+4 fills all three fast-running slots this time.
 
 | Dates | Day one | Day two | Day three |
 | --- | --- | --- | --- |
-| Nov 9–11 | Nov 9 · VO₂ | Nov 10 · LT | Nov 11 · Rest |
-| Nov 12–14 | Nov 12 · VO₂ | Nov 13 · 4+4 | Nov 14 · Rest |
+| Nov 9–11 | Nov 9 · [VO₂ complete](/running/record/2026/#9-november--vo-3900-m--5-min) | Nov 10 · LT | Nov 11 · Rest |
+| Nov 12–14 | Nov 12 · VO₂ (4×900 m) | Nov 13 · 4+4 | Nov 14 · Rest |
 | Nov 15–17 | Nov 15 · LT | Nov 16 · VO₂ | Nov 17 · Rest |
 | Nov 18–20 | Nov 18 · LT | Nov 19 · 4+4 | Nov 20 · Rest |
 | Nov 21–23 | Nov 21 · VO₂ | Nov 22 · LT | Nov 23 · Rest |
@@ -343,7 +343,7 @@ spacing again. The 4+4 fills all three fast-running slots this time.
 
 1. **Clear both current gates.** Average **2:55.5 or faster** for **3×900 m**
    and **6:08 or faster** for **3×1600 m**, with good execution through the
-   final repetition. Each format advances independently.
+   final repetition. VO₂ cleared its gate on November 9. The LT gate is ahead.
 2. **Bring the four 900s into the low 2:50s on average**, with **5:30 recovery**.
 3. **Average under 7:30 for 3×2000 m**, with **one-minute walking recoveries**.
    That is faster than **3:45/km** or **90 seconds per lap**.
@@ -373,7 +373,7 @@ I need five laps averaging **77.16 seconds**. The targets use the
 | 500 | 6:16.58 | 3:08.3 | 75.32 s |
 | 550 | 6:09.19 | 3:04.6 | 73.84 s |
 
-The latest 900s averaged **2:55.70**. At **441-point pace**, 900 m takes
+The latest 900s averaged **2:54.60**. At **441-point pace**, 900 m takes
 **2:53.61**. I think the 900s may be closer to my current 1500 m race pace.
 The trial asks how much speed I can carry through five uninterrupted laps.
 
