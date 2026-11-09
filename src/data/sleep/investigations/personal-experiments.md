@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-08"
+updated: "2026-11-09"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 9 — earlier bedtime remains the priority.** After the November 8 plan to go to bed significantly earlier, both devices recorded their main episode starting around **02:12 PST**, roughly **1h20m later**. Actual lights-out and morning experience are unreported. [Diary](/sleep/record/#night-2026-11-09) · [Curves](/sleep/charts/#night-2026-11-09)
 
 **November 8 — duration and timing moved in different directions.** The device windows began 10–12 minutes earlier and ended about 55 minutes later than November 7. The longer recorded sleep coincided with higher overall scores and a lower Oura timing grade. [Diary](/sleep/record/#night-2026-11-08) · [Curves](/sleep/charts/#night-2026-11-08)
 

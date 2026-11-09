@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-08"
+updated: "2026-11-09"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 9 — later start and shorter sleep.** Both devices recorded a start around **02:12 PST**, about **1h20m later** than November 8. Oura returned **82** with **8h27m30s asleep** and COROS **85** with **8h52m asleep**. Oura timing fell from **42 to 19**. Both devices reported **55 ms HRV**. [Diary](/sleep/record/#night-2026-11-09) · [Curves](/sleep/charts/#night-2026-11-09)
 
 **November 8 — longer sleep, higher scores.** Oura returned **88** with **9h02m30s asleep** and COROS **94** with **9h26m asleep**. Both windows ended around **10:31 PST**, about 55 minutes later than November 7. Oura timing fell from **54 to 42**. Both devices reported **50 ms HRV**. Morning experience is unreported. [Diary](/sleep/record/#night-2026-11-08) · [Curves](/sleep/charts/#night-2026-11-08)
 
