@@ -4535,7 +4535,7 @@
       },
       "self_report": {
         "restfulness": null,
-        "morning_sleepiness": null,
+        "morning_sleepiness": "A little sleepy on waking and back to normal in about 15 minutes.",
         "daytime_sleepiness": null,
         "dream_recall": null,
         "caffeine_mg_and_time": null,
@@ -4548,12 +4548,16 @@
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
-      "plans": [],
+      "story": [
+        "I got into bed at 23:45 and read about cybersecurity, hoping to remember more of what I read the next day."
+      ],
+      "plans": [
+        "Go to bed even earlier."
+      ],
       "corrections": [],
       "context": [],
       "interpretation": [
-        "Oura recorded the main episode from 00:41:42 to 10:34:12 PST and COROS from 00:46 to 10:34. These windows started 1h31m and 1h26m earlier than November 9, respectively. Actual sleep attempt, final waking and morning experience are unreported.",
+        "Oura recorded the main episode from 00:41:42 to 10:34:12 PST and COROS from 00:46 to 10:34. These windows started 1h31m and 1h26m earlier than November 9, respectively. The reported 23:45 time is when the user got into bed to read. The time they tried to sleep and their final waking time are unreported.",
         "Oura rose from 82 to 91 and estimated 9h15m30s asleep, up 48 minutes. COROS rose from 85 to 98 and estimated 9h38m asleep, up 46 minutes. Oura timing rose from 19 to 41 and its total-sleep contributor rose from 91 to 100.",
         "Oura estimated 2h17m deep sleep, 1h56m REM, 5h02m30s light sleep and 37 minutes awake. COROS reported 10 minutes awake, zero awakenings over five minutes and no detected naps.",
         "Oura sleeping pulse averaged 48.625 bpm and HRV was 54 ms. COROS sleep HRV was 50 ms, graded Normal against its 49–65 ms range and 57 ms baseline."

@@ -17,7 +17,7 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 
 ## What the observations show
 
-**November 10 — earlier start and longer sleep.** The main episodes started around **00:42–00:46 PST**, roughly 90 minutes earlier than November 9. Oura returned **91** with **9h15m30s asleep** and COROS **98** with **9h38m asleep**. Oura timing rose from **19 to 41** and total sleep reached **100**. Morning experience is unreported. [Diary](/sleep/record/#night-2026-11-10) · [Curves](/sleep/charts/#night-2026-11-10)
+**November 10 — earlier start and longer sleep.** The main episodes started around **00:42–00:46 PST**, roughly 90 minutes earlier than November 9. Oura returned **91** with **9h15m30s asleep** and COROS **98** with **9h38m asleep**. Oura timing rose from **19 to 41** and total sleep reached **100**. The user felt a little sleepy on waking and was back to normal in about 15 minutes. [Diary](/sleep/record/#night-2026-11-10) · [Curves](/sleep/charts/#night-2026-11-10)
 
 **November 9 — later start and shorter sleep.** Both devices recorded a start around **02:12 PST**, about **1h20m later** than November 8. Oura returned **82** with **8h27m30s asleep** and COROS **85** with **8h52m asleep**. Oura timing fell from **42 to 19**. Both devices reported **55 ms HRV**. [Diary](/sleep/record/#night-2026-11-09) · [Curves](/sleep/charts/#night-2026-11-09)
 

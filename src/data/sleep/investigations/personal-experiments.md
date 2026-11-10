@@ -9,7 +9,7 @@ order: 4
 
 ## The current routine proposal
 
-**November 10 — an earlier recorded window.** Both devices recorded the main sleep window starting roughly 90 minutes earlier than November 9. Estimated sleep increased by 48 minutes on Oura and 46 minutes on COROS. The diary has no report yet on how the evening went or how it felt to wake. [Diary](/sleep/record/#night-2026-11-10) · [Curves](/sleep/charts/#night-2026-11-10)
+**November 10 — an earlier recorded window.** Both devices recorded the main sleep window starting roughly 90 minutes earlier than November 9. Estimated sleep increased by 48 minutes on Oura and 46 minutes on COROS. The user got into bed at 23:45 to read and felt back to normal about 15 minutes after waking. The time they tried to sleep remains unknown. [Diary](/sleep/record/#night-2026-11-10) · [Curves](/sleep/charts/#night-2026-11-10)
 
 **November 9 — earlier bedtime remains the priority.** After the November 8 plan to go to bed significantly earlier, both devices recorded their main episode starting around **02:12 PST**, roughly **1h20m later**. The user felt good on waking and says getting work done makes the earlier bedtime difficult. Actual lights-out remains unreported. [Diary](/sleep/record/#night-2026-11-09) · [Curves](/sleep/charts/#night-2026-11-09)
 
