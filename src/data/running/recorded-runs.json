@@ -3625,5 +3625,15 @@
     "distanceKm": 4.36,
     "movingSeconds": 1293,
     "note": "/running/record/2026/#9-november--vo-3900-m--5-min"
+  },
+  {
+    "id": "20938510580",
+    "url": "https://www.strava.com/activities/20938510580",
+    "title": "3x1600m/1-2' LT",
+    "date": "2026-11-10",
+    "dateBasis": "reported-local",
+    "distanceKm": 5.54,
+    "movingSeconds": 1452,
+    "note": "/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks"
   }
 ]

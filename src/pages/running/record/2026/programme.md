@@ -2,13 +2,16 @@
 layout: "../../../../layouts/Post.astro"
 title: "The running programme"
 description: "The second running cycle starts November 9, with a 2000 m time trial on November 24 and a target of 441 World Athletics points or more."
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 The [second cycle](#the-next-cycle) opened on **November 9** with a
 **2:54.60 average for 3×900 m**, earning **4×900 m** for November 12.
+The November 10 LT averaged **6:07.77 for 3×1600 m**, with an extra minute
+in the second walk. I will repeat the format to clear the **6:08** gate
+with both one-minute walks.
 The **2000 m time trial is planned for November 24**. The first cycle took **24 days**
 from October 15 and included
 **13 workouts**, one more than the original schedule. I ran the 800 m trial
@@ -73,10 +76,16 @@ quicker than October 28**. The final rep felt composed and fast, with
 successive groups providing pacing help from its beginning and some extra
 distance from lane two running. No distance-adjusted time is inferred.
 
-**Right at the gate, not graduated:** the mean remains **0.74 seconds per
-rep above 6:08**. All four LT slots in this cycle are now complete.
-**3×1600 m remains current**; next cycle I want to clear the gate, then
-move to **3×2000 m**, with its own later target.
+That completed the first cycle's four LT slots, with the mean **0.74
+seconds per rep above 6:08**.
+
+The [November 10 1600s](/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks)
+were **6:07.39, 6:09.40 and 6:06.52**, averaging **6:07.77 (3:49.86/km)**.
+The walks took **1:03.49 and 2:00.93**. I tried an extra minute in the shade
+after feeling myself overheat in rep two. It did not cool me down enough.
+Rep three brought maximal breathing from lap two onward, while I held
+posture and pace. **3×1600 m stays current for November 15**. I want to
+clear the gate with both walks around one minute.
 
 **VO₂ opened the second cycle at 3×900 m.** The
 [15 October 3×800 m](/running/record/2026/#15-october--vo-3800-m--530), averaging
@@ -332,9 +341,9 @@ spacing again. The 4+4 fills all three fast-running slots this time.
 
 | Dates | Day one | Day two | Day three |
 | --- | --- | --- | --- |
-| Nov 9–11 | Nov 9 · [VO₂ complete](/running/record/2026/#9-november--vo-3900-m--5-min) | Nov 10 · LT | Nov 11 · Rest |
+| Nov 9–11 | Nov 9 · [VO₂ complete](/running/record/2026/#9-november--vo-3900-m--5-min) | Nov 10 · [LT complete](/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks) | Nov 11 · Rest |
 | Nov 12–14 | Nov 12 · VO₂ (4×900 m) | Nov 13 · 4+4 | Nov 14 · Rest |
-| Nov 15–17 | Nov 15 · LT | Nov 16 · VO₂ | Nov 17 · Rest |
+| Nov 15–17 | Nov 15 · LT (3×1600 m) | Nov 16 · VO₂ | Nov 17 · Rest |
 | Nov 18–20 | Nov 18 · LT | Nov 19 · 4+4 | Nov 20 · Rest |
 | Nov 21–23 | Nov 21 · VO₂ | Nov 22 · LT | Nov 23 · Rest |
 | Nov 24–26 | Nov 24 · **2000 m TT** | Nov 25 · 4+4 | Nov 26 · Rest |
@@ -343,7 +352,8 @@ spacing again. The 4+4 fills all three fast-running slots this time.
 
 1. **Clear both current gates.** Average **2:55.5 or faster** for **3×900 m**
    and **6:08 or faster** for **3×1600 m**, with good execution through the
-   final repetition. VO₂ cleared its gate on November 9. The LT gate is ahead.
+   final repetition. VO₂ cleared its gate on November 9. The LT gate
+   remains pending after November 10's extra minute of walking.
 2. **Bring the four 900s into the low 2:50s on average**, with **5:30 recovery**.
 3. **Average under 7:30 for 3×2000 m**, with **one-minute walking recoveries**.
    That is faster than **3:45/km** or **90 seconds per lap**.

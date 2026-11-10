@@ -1,7 +1,7 @@
 ---
 title: "800–5000 m: a running notebook"
 description: "An 800+ point middle-distance project within a larger ambition for lifelong physical capability: goals, training decisions, and the observations that change them."
-updated: 2026-11-09
+updated: 2026-11-10
 draft: false
 ---
 
@@ -31,7 +31,7 @@ ambition into something I can actually do.
 
 *Living project · [Current training](/running/record/2026/) · [Programme](/running/record/2026/programme/) · [Personal bests](/running/record/results/#personal-bests) · [Running record](/running/record/)*
 
-**Structured training is recorded through 9 November 2026**, with city running
+**Structured training is recorded through 10 November 2026**, with city running
 through November 5. The [programme](/running/record/2026/programme/#the-next-cycle)
 gives the November 9 start, the November 24 trial and the goals for the second cycle.
 The current record keeps the chronology, splits and
@@ -555,7 +555,13 @@ The [November 9 900s](/running/record/2026/#9-november--vo-3900-m--5-min)
 averaged **2:54.60**, clearing the **2:55.5** gate. I held back on the second
 lap of the first two reps, then ran a steadier opening 800 on the third and
 kept my posture through the finish. That earns **4×900 m** for November 12.
-LT stays at **3×1600 m** until I earn **6:08**. The goals are still
+The [November 10 1600s](/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks)
+averaged **6:07.77**. I sensed overheating in rep two and tried an extra minute
+in the shade before the third. It did not cool me down enough. My running
+still felt like **3:50/km**, while my breathing reached what I associate
+with **3:30–3:40/km** from lap two onward. I kept my posture through the
+fastest rep. I will repeat **3×1600 m on November 15** to earn **6:08**
+with both one-minute walks. The goals are still
 **sub-7:30 across three 2000s** and **low 2:50s across four 900s**.
 I will stay with those volumes through
 the end of the cycle, even if I get under **7:20** or **2:51**.
