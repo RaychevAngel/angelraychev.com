@@ -4748,7 +4748,7 @@
             "time_in_bed": 3390,
             "total_sleep_duration": 1380,
             "type": "sleep",
-            "confirmation": "Unconfirmed. The user has not reported whether this detected episode was actual sleep."
+            "confirmation": "Disputed. The user reports not dozing during this interval."
           }
         ],
         "source": "Authenticated Oura API V2 with November 11–13 date filters and pagination exhausted. Main episode selected for the 2026-11-12 provider day. Additional detections retained separately."
@@ -4795,7 +4795,7 @@
         "dream_recall": null,
         "caffeine_mg_and_time": null,
         "alcohol_and_time": null,
-        "naps": null,
+        "naps": "No dozing reported. The user disputes the prior-evening Oura sleep detection.",
         "intended_bedtime": null,
         "environment": null,
         "stress": null,
@@ -4803,17 +4803,19 @@
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
+      "story": [
+        "I stayed in bed after waking, but I was awake. I did not doze."
+      ],
       "plans": [],
       "corrections": [],
       "context": [],
       "interpretation": [
         "The main episode started at 03:31:31 PST on Oura and 03:40 on COROS, about 1h45m–1h51m earlier than November 11. Actual sleep attempt, final waking and morning experience are unreported.",
         "Oura rose from 62 to 77 and estimated 7h58m asleep, up 2h10m. COROS rose from 47 to 65 and estimated 8h30m asleep, up 2h13m. Oura timing rose from 1 to 8.",
-        "Oura ended its episode at 13:41:31, while COROS ended at 12:20. Oura estimated 2h12m awake and COROS 10 minutes. The later Oura endpoint and much larger awake estimate need comparison with the user’s account. Both native windows and the Oura curve are preserved.",
+        "Oura ended its episode at 13:41:31, while COROS ended at 12:20. Oura estimated 2h12m awake and COROS 10 minutes. The user confirms staying in bed awake after waking, which supplies context for the later Oura endpoint. Exact final waking and out-of-bed times remain unspecified.",
         "Oura estimated 2h16m deep sleep, 1h34m30s REM and 4h07m30s light sleep. Its estimated sleep efficiency was 78%, while its efficiency contributor was 67 points. COROS reported no awakenings over five minutes and no detected naps.",
         "Both devices reported 57 ms sleep HRV. COROS graded it Normal against a 48–64 ms range and a 56 ms baseline.",
-        "Oura also assigned a separate prior-evening episode, 21:31:31–22:28:01 on November 11, to provider day November 12. It estimated 23 minutes asleep. The user has not confirmed dozing during this interval."
+        "Oura also assigned a separate prior-evening episode, 21:31:31–22:28:01 on November 11, to provider day November 12. It estimated 23 minutes asleep. The user reports not dozing, disputing this detection."
       ],
       "next_focus": [],
       "next_focus_references": []
