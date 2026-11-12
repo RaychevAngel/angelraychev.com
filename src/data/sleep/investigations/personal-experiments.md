@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-10"
+updated: "2026-11-12"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 11–12 — compare recorded timing with the intended earlier bedtime.** Both dates remained later than the November 10 main episode. November 12 started about 1h45m–1h51m earlier than November 11 and included over two hours more estimated sleep. Its Oura and COROS endpoints differ by over 80 minutes. Actual sleep attempts, waking times and morning experience remain unreported. [November 11 diary](/sleep/record/#night-2026-11-11) · [November 12 diary](/sleep/record/#night-2026-11-12) · [Curves](/sleep/charts/#night-2026-11-12)
 
 **November 10 — an earlier recorded window.** Both devices recorded the main sleep window starting roughly 90 minutes earlier than November 9. Estimated sleep increased by 48 minutes on Oura and 46 minutes on COROS. The user got into bed at 23:45 to read and felt back to normal about 15 minutes after waking. The time they tried to sleep remains unknown. [Diary](/sleep/record/#night-2026-11-10) · [Curves](/sleep/charts/#night-2026-11-10)
 
