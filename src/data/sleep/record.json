@@ -4653,7 +4653,7 @@
         "source": "Official COROS sleep overview, sleep HRV assessment and daily HR for the 2026-11-11 wake date. The two-day resting HR response explicitly dates each reading."
       },
       "self_report": {
-        "restfulness": null,
+        "restfulness": "Pretty bad sleep.",
         "morning_sleepiness": null,
         "daytime_sleepiness": null,
         "dream_recall": null,
@@ -4667,12 +4667,14 @@
         "hydration_and_bathroom": null,
         "illness": null
       },
-      "story": [],
+      "story": [
+        "The sleep was pretty bad."
+      ],
       "plans": [],
       "corrections": [],
       "context": [],
       "interpretation": [
-        "Both devices recorded the main sleep window starting around 05:23–05:25 PST, more than four and a half hours later than November 10. Actual sleep attempt, final waking and morning experience are unreported.",
+        "Both devices recorded the main sleep window starting around 05:23–05:25 PST, more than four and a half hours later than November 10. Actual sleep attempt, final waking and morning alertness are unreported.",
         "Oura fell from 91 to 62 and estimated 5h48m asleep, down 3h27m30s. COROS fell from 98 to 47 and estimated 6h17m asleep, down 3h21m. Oura timing fell from 41 to 1 and total sleep from 100 to 54.",
         "Oura estimated 1h38m30s deep sleep, 57 minutes REM, 3h12m30s light sleep and 49 minutes awake. COROS reported 14 minutes awake, no awakenings over five minutes and no detected naps.",
         "Oura sleeping HRV was 47 ms and COROS sleep HRV was 46 ms. COROS graded its HRV Below normal against a 49–65 ms range and a 57 ms baseline."
@@ -4789,7 +4791,7 @@
         "source": "Official COROS sleep overview, sleep HRV assessment and daily HR for the 2026-11-12 wake date. The two-day resting HR response explicitly dates each reading."
       },
       "self_report": {
-        "restfulness": null,
+        "restfulness": "Pretty bad sleep.",
         "morning_sleepiness": null,
         "daytime_sleepiness": null,
         "dream_recall": null,
@@ -4804,13 +4806,14 @@
         "illness": null
       },
       "story": [
-        "I stayed in bed after waking, but I was awake. I did not doze."
+        "I stayed in bed after waking, but I was awake. I did not doze.",
+        "The sleep was pretty bad."
       ],
       "plans": [],
       "corrections": [],
       "context": [],
       "interpretation": [
-        "The main episode started at 03:31:31 PST on Oura and 03:40 on COROS, about 1h45m–1h51m earlier than November 11. Actual sleep attempt, final waking and morning experience are unreported.",
+        "The main episode started at 03:31:31 PST on Oura and 03:40 on COROS, about 1h45m–1h51m earlier than November 11. Actual sleep attempt, final waking and morning alertness are unreported.",
         "Oura rose from 62 to 77 and estimated 7h58m asleep, up 2h10m. COROS rose from 47 to 65 and estimated 8h30m asleep, up 2h13m. Oura timing rose from 1 to 8.",
         "Oura ended its episode at 13:41:31, while COROS ended at 12:20. Oura estimated 2h12m awake and COROS 10 minutes. The user confirms staying in bed awake after waking, which supplies context for the later Oura endpoint. Exact final waking and out-of-bed times remain unspecified.",
         "Oura estimated 2h16m deep sleep, 1h34m30s REM and 4h07m30s light sleep. Its estimated sleep efficiency was 78%, while its efficiency contributor was 67 points. COROS reported no awakenings over five minutes and no detected naps.",
