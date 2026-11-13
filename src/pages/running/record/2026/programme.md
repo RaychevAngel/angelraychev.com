@@ -2,13 +2,15 @@
 layout: "../../../../layouts/Post.astro"
 title: "The running programme"
 description: "The second running cycle starts November 9, with a 2000 m time trial on November 24 and a target of 441 World Athletics points or more."
-updated: 2026-11-10
+updated: 2026-11-12
 ---
 
 [Running notebook](/running-notebook/) · [2026 record](/running/record/2026/) · [Running record](/running/record/)
 
 The [second cycle](#the-next-cycle) opened on **November 9** with a
-**2:54.60 average for 3×900 m**, earning **4×900 m** for November 12.
+**2:54.60 average for 3×900 m**, earning **4×900 m**. On November 12 I
+completed three of the planned four and chose to stop after a hard third rep
+in windy conditions. The next VO₂ slot on **November 16** stays at four reps.
 The November 10 LT averaged **6:07.77 for 3×1600 m**, with an extra minute
 in the second walk. I will repeat the format to clear the **6:08** gate
 with both one-minute walks.
@@ -129,7 +131,13 @@ That left the recorded mean **0.20 seconds per rep above the 2:55.5 gate**.
 The [November 9 opener](/running/record/2026/#9-november--vo-3900-m--5-min)
 cleared it with **2:55.23, 2:54.33 and 2:54.24**, averaging **2:54.60**
 with roughly five minutes between reps. I kept my stride and posture
-while pushing the last 100 m. **4×900 m / 5:30** is next on November 12.
+while pushing the last 100 m.
+
+On [November 12](/running/record/2026/#12-november--vo-three-of-four-900-m)
+I completed **2:54.99, 2:53.14 and 2:56.56**, averaging **2:54.90**,
+with **5:00.53 and 4:53.99** recovery. I went deep in the third rep in
+windy, cold conditions and chose to finish there, with other things on my mind.
+**4×900 m / 5:30 remains next, on November 16**.
 
 **The first FA session is complete.** The
 [21 October 4+4×200 m](/running/record/2026/#21-october--fa-4200-m--3-min--4200-m--90-seconds)
@@ -342,8 +350,8 @@ spacing again. The 4+4 fills all three fast-running slots this time.
 | Dates | Day one | Day two | Day three |
 | --- | --- | --- | --- |
 | Nov 9–11 | Nov 9 · [VO₂ complete](/running/record/2026/#9-november--vo-3900-m--5-min) | Nov 10 · [LT complete](/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks) | Nov 11 · Rest |
-| Nov 12–14 | Nov 12 · VO₂ (4×900 m) | Nov 13 · 4+4 | Nov 14 · Rest |
-| Nov 15–17 | Nov 15 · LT (3×1600 m) | Nov 16 · VO₂ | Nov 17 · Rest |
+| Nov 12–14 | Nov 12 · [VO₂, 3 of 4 reps](/running/record/2026/#12-november--vo-three-of-four-900-m) | Nov 13 · 4+4 | Nov 14 · Rest |
+| Nov 15–17 | Nov 15 · LT (3×1600 m) | Nov 16 · VO₂ (4×900 m) | Nov 17 · Rest |
 | Nov 18–20 | Nov 18 · LT | Nov 19 · 4+4 | Nov 20 · Rest |
 | Nov 21–23 | Nov 21 · VO₂ | Nov 22 · LT | Nov 23 · Rest |
 | Nov 24–26 | Nov 24 · **2000 m TT** | Nov 25 · 4+4 | Nov 26 · Rest |
@@ -383,7 +391,7 @@ I need five laps averaging **77.16 seconds**. The targets use the
 | 500 | 6:16.58 | 3:08.3 | 75.32 s |
 | 550 | 6:09.19 | 3:04.6 | 73.84 s |
 
-The latest 900s averaged **2:54.60**. At **441-point pace**, 900 m takes
+The latest three 900s averaged **2:54.90**. At **441-point pace**, 900 m takes
 **2:53.61**. I think the 900s may be closer to my current 1500 m race pace.
 The trial asks how much speed I can carry through five uninterrupted laps.
 

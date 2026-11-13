@@ -3635,5 +3635,15 @@
     "distanceKm": 5.54,
     "movingSeconds": 1452,
     "note": "/running/record/2026/#10-november--lt-31600-m--1-and-2-min-walks"
+  },
+  {
+    "id": "20968685048",
+    "url": "https://www.strava.com/activities/20968685048",
+    "title": "3x900m/5' Vo2max",
+    "date": "2026-11-12",
+    "dateBasis": "reported-local",
+    "distanceKm": 4.85,
+    "movingSeconds": 1545,
+    "note": "/running/record/2026/#12-november--vo-three-of-four-900-m"
   }
 ]
