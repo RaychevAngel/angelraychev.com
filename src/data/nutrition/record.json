@@ -30202,7 +30202,7 @@
       "food_date": "2026-11-12",
       "recorded_local_date": "2026-11-13",
       "date_status": "user_relative_date",
-      "summary": "Orange, bell pepper, raspberries, two bananas, walnuts, almonds and sardines; one mushroom and one meat-lovers pizza slice; hot matcha and choco-matcha cake; vitamin D.",
+      "summary": "Orange, bell pepper, raspberries, two bananas, walnuts, almonds and sardines; one mushroom-and-meat and one meat-lovers pizza slice; hot matcha and choco-matcha cake; vitamin D.",
       "items_reported_eaten": [
         {
           "name": "Navel orange",
@@ -30247,16 +30247,16 @@
           "portion_status": "Food reported; usual portion and recent product assumed where not restated. Food explicitly reported; usual portion and product assumed where not restated. Food explicitly included in November7 list; saved product and usual portion assumed. Photographed Trader Joe’s sardines in olive oil with smoke flavor. One entire drained85g can assumed; quantity and oil handling not separately stated. Label values refer to drained fish."
         },
         {
-          "name": "Hole in the Wall mushroom pizza slice",
+          "name": "Hole in the Wall mushroom and meat pizza slice",
           "amount": 1,
           "unit": "slice_proxy",
-          "portion_status": "One mushroom slice reported. 160 g slice proxy with cheese, tomato and mushrooms; recipe and actual size unknown. 260–520 kcal selected uncertainty. No additional meat presumed."
+          "portion_status": "User confirmed mushroom slice also had meat; type not recalled. Restaurant menu offers pepperoni-mushroom slice and photos show large slices, but identification is uncertain. Model roughly 200g, 500kcal (350–650 selected), with 17-inch NY pepperoni comparator; not a weighed or restaurant label value."
         },
         {
           "name": "Hole in the Wall meat lovers pizza slice",
           "amount": 1,
           "unit": "slice_proxy",
-          "portion_status": "One meat-lovers slice reported. Menu lists salami, pepperoni, ham, bacon, Italian sausage and mozzarella. 180 g slice proxy; unknown actual toppings and mass. 340–650 kcal selected uncertainty."
+          "portion_status": "One meat-lovers slice. Restaurant photo shows large thin slice with multiple meats and cheese; location unknown. Model roughly 210g, 550kcal (400–750 selected); Sbarro NY meat-slice benchmark 600kcal. Actual slice mass, meat and cheese amount unknown."
         },
         {
           "name": "OH Dessert Cafe choco-matcha mille crêpe cake",
@@ -30290,14 +30290,16 @@
       "plans": [],
       "coverage": "Only reported foods; usual product and quantity assumptions and uncertain restaurant estimates noted.",
       "date_note": "User reported yesterday on November 13 Pacific date.",
-      "corrections": [],
+      "corrections": [
+        "Follow-up confirmed the mushroom slice also had meat; pizza portions re-estimated using photos and a different restaurant comparator."
+      ],
       "record_scope": "reported_consumption",
       "nutrition": {
         "summary": {
-          "energy_kcal": 2385.2022857142856,
-          "protein_g": 90.98151714285714,
-          "carbohydrate_g": 280.87956285714284,
-          "fat_g": 104.39353428571428
+          "energy_kcal": 2575.2022857142856,
+          "protein_g": 98.98151714285714,
+          "carbohydrate_g": 291.87956285714284,
+          "fat_g": 114.39353428571428
         },
         "foods": [
           {
@@ -30343,16 +30345,16 @@
             "notes": "Food reported; usual portion and recent product assumed where not restated. Food explicitly reported; usual portion and product assumed where not restated. Food explicitly included in November7 list; saved product and usual portion assumed. Photographed Trader Joe’s sardines in olive oil with smoke flavor. One entire drained85g can assumed; quantity and oil handling not separately stated. Label values refer to drained fish."
           },
           {
-            "name": "Hole in the Wall mushroom pizza slice",
-            "grams": 160.0,
-            "quantity_status": "reported_food_portion_estimated",
-            "notes": "One mushroom slice reported. 160 g slice proxy with cheese, tomato and mushrooms; recipe and actual size unknown. 260–520 kcal selected uncertainty. No additional meat presumed."
+            "name": "Hole in the Wall mushroom and meat pizza slice",
+            "grams": 200.0,
+            "quantity_status": "reported_food_photo_and_comparator_estimate",
+            "notes": "User confirmed mushroom slice also had meat; type not recalled. Restaurant menu offers pepperoni-mushroom slice and photos show large slices, but identification is uncertain. Model roughly 200g, 500kcal (350–650 selected), with 17-inch NY pepperoni comparator; not a weighed or restaurant label value."
           },
           {
             "name": "Hole in the Wall meat lovers pizza slice",
-            "grams": 180.0,
-            "quantity_status": "reported_food_portion_estimated",
-            "notes": "One meat-lovers slice reported. Menu lists salami, pepperoni, ham, bacon, Italian sausage and mozzarella. 180 g slice proxy; unknown actual toppings and mass. 340–650 kcal selected uncertainty."
+            "grams": 210.0,
+            "quantity_status": "reported_food_photo_and_comparator_estimate",
+            "notes": "One meat-lovers slice. Restaurant photo shows large thin slice with multiple meats and cheese; location unknown. Model roughly 210g, 550kcal (400–750 selected); Sbarro NY meat-slice benchmark 600kcal. Actual slice mass, meat and cheese amount unknown."
           },
           {
             "name": "OH Dessert Cafe choco-matcha mille crêpe cake",
@@ -30373,52 +30375,52 @@
             "name": "Calories",
             "unit": "kcal",
             "category": "macronutrients",
-            "food_total": 2385.2022857142856,
+            "food_total": 2575.2022857142856,
             "known_food_count": 11,
             "food_count": 11,
             "partial_food_count": 5,
             "logged_supplement_total": 0,
             "logged_supplement_unknown": false,
-            "recorded_total": 2385.2022857142856
+            "recorded_total": 2575.2022857142856
           },
           {
             "id": "protein_g",
             "name": "Protein",
             "unit": "g",
             "category": "macronutrients",
-            "food_total": 90.98151714285714,
+            "food_total": 98.98151714285714,
             "known_food_count": 11,
             "food_count": 11,
             "partial_food_count": 5,
             "logged_supplement_total": 0,
             "logged_supplement_unknown": false,
-            "recorded_total": 90.98151714285714
+            "recorded_total": 98.98151714285714
           },
           {
             "id": "carbohydrate_g",
             "name": "Carbohydrate",
             "unit": "g",
             "category": "macronutrients",
-            "food_total": 280.87956285714284,
+            "food_total": 291.87956285714284,
             "known_food_count": 11,
             "food_count": 11,
             "partial_food_count": 5,
             "logged_supplement_total": 0,
             "logged_supplement_unknown": false,
-            "recorded_total": 280.87956285714284
+            "recorded_total": 291.87956285714284
           },
           {
             "id": "fat_g",
             "name": "Total fat",
             "unit": "g",
             "category": "macronutrients",
-            "food_total": 104.39353428571428,
+            "food_total": 114.39353428571428,
             "known_food_count": 11,
             "food_count": 11,
             "partial_food_count": 5,
             "logged_supplement_total": 0,
             "logged_supplement_unknown": false,
-            "recorded_total": 104.39353428571428
+            "recorded_total": 114.39353428571428
           },
           {
             "id": "fiber_g",
@@ -30923,11 +30925,11 @@
             "unit": "µg"
           }
         ],
-        "scenario_note": "Selected portion/recipe scenarios span approximately 1,750–3,015 kcal. It is not a confidence interval and does not cover every uncertainty. Pizza, cake and matcha selected low and high examples; do not capture all uncertainty or represent confidence bounds.",
-        "source_note": "One mushroom and one meat-lovers pizza slice; full choco-matcha mille crepe slice confirmed. Cafe menu lists a hot matcha latte; milk, sugar and size unconfirmed and latte used as a provisional estimate, with low alternative for plain tea. Pizza and cake recipes and portions unweighed; usual nuts, berries and sardines assumed. Vitamin D explicitly taken; usual 25 mcg assumed.",
-        "version": 1,
+        "scenario_note": "Selected portion/recipe scenarios span approximately 1,900–3,245 kcal. It is not a confidence interval and does not cover every uncertainty. Pizza slice 350–650 and 400–750 kcal; cake 300–700 kcal; matcha 5–300 kcal; selected examples not full-day bounds.",
+        "source_note": "User confirmed mushroom slice contained meat, type unknown; revised to 500 kcal and 200 g proxy. Meat-lovers slice revised to 550 kcal and 210 g proxy after examining restaurant photos and comparing Sbarro published 552 kcal pepperoni and 600 kcal meat primo NY slices. Actual weights, recipe and location unknown; figures are estimates, not restaurant nutrition facts. Other foods and assumptions preserved.",
+        "version": 2,
         "reviewed_date": "2026-11-13",
-        "revision_note": "Recorded November 12 reported foods and confirmed full crepe slice."
+        "revision_note": "Confirmed meat on mushroom slice and revised two large slice estimates against restaurant photos and Sbarro comparator."
       }
     },
     {
