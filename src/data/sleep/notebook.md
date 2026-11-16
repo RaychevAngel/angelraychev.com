@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-12"
+updated: "2026-11-16"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 13–16 — a busy period and later sleep windows.** The user reports rough days and difficulty sleeping on time while busy. COROS main episodes started **04:39, 04:32, 05:13 and 06:15 PST**, with scores **50, 54, 49 and 48**. Oura returned **68, 75 and 76** through November 15; November 16 main sleep and score are still pending after a recheck. Today’s COROS sleep estimate is **7h11m** and HRV **44 ms**, graded Below normal. [Latest diary](/sleep/record/#night-2026-11-16) · [Available overnight curves](/sleep/charts/#night-2026-11-15)
 
 **November 11–12 — late windows and a recovery in estimated duration.** November 11 returned **Oura 62 / COROS 47**, with **5h48m / 6h17m asleep** after starts around **05:23–05:25 PST**. November 12 returned **77 / 65**, with **7h58m / 8h30m asleep** after starts around **03:32–03:40**. Today’s endpoints disagree, **13:41 / 12:20**, as do awake estimates, **132 / 10 minutes**. The user describes both nights as pretty bad, confirms staying in bed awake after waking on November 12 and disputes the prior-evening Oura sleep detection. Exact waking and out-of-bed times remain unspecified. [November 11](/sleep/record/#night-2026-11-11) · [November 12](/sleep/record/#night-2026-11-12) · [Curves](/sleep/charts/#night-2026-11-12)
 
