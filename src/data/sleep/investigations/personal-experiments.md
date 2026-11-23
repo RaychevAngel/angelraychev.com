@@ -1,13 +1,15 @@
 ---
 title: "Learning from personal experiments"
 description: "How a sleep improvement becomes a repeatable result: baselines, targets, controlled comparisons, functional outcomes and honest uncertainty."
-updated: "2026-11-20"
+updated: "2026-11-23"
 order: 4
 ---
 
 **A convincing result is a useful effect that survives repetition under described conditions.** This page connects the [targets](/sleep/targets/) and [strategy queue](/sleep/research/improvement-strategies/) to a decision: what to change, how to test it and whether to keep it. The first entry is a baseline observation; no personal intervention has yet been validated.
 
 ## The current routine proposal
+
+**November 23 retrieval — establish coverage before interpreting the short record.** November 22 returned **Oura 39** with **3h17m** estimated sleep in a **10:10–14:16 PST** main episode. Actual sleep timing, travel or time-zone context and morning experience remain unreported. The record asks whether sleep is missing from this window. Earlier detections remain unconfirmed, and COROS access is unavailable. No November 23 main episode or score was returned. [Diary](/sleep/record/#night-2026-11-22) · [Curves](/sleep/charts/#night-2026-11-22)
 
 **November 17–20 — duration and timing remain separate observations.** Today’s windows start around **04:17–04:19 PST**, with **9h38m30s / 10h16m** estimated sleep and **Oura 81 / COROS 72**. Oura total sleep reached **100**, while timing remained **1**. Earlier-bedtime intentions remain prior context; no new routine or individual-night subjective outcome has been supplied. November 19’s split Oura coverage is retained in the diary. [Latest diary](/sleep/record/#night-2026-11-20) · [November 19](/sleep/record/#night-2026-11-19) · [Curves](/sleep/charts/#night-2026-11-20)
 

@@ -1,6 +1,6 @@
 ---
 title: "Sleep performance"
-updated: "2026-11-20"
+updated: "2026-11-23"
 ---
 
 ## The target has to survive scrutiny
@@ -16,6 +16,8 @@ A fixed wake time is not the initial goal. Clock timing, regularity and alignmen
 <span id="what-the-first-two-observations-show"></span>
 
 ## What the observations show
+
+**November 21–22 — a short latest recording needs context.** Oura returned **79 / 8h29m30s asleep** for November 21 and **39 / 3h17m asleep** for November 22. The latter main episode is **10:10–14:16 PST**, with **3m30s estimated REM**. Whether it covers the full actual sleep period is unconfirmed. Additional detections remain separate. No November 23 main episode or daily score was returned in the November 23 query. COROS access is unavailable for this retrieval. [November 21](/sleep/record/#night-2026-11-21) · [November 22](/sleep/record/#night-2026-11-22) · [Curves](/sleep/charts/#night-2026-11-22)
 
 **November 17–20 — long sleep today, with late recorded windows.** Oura scores were **77, 75, 73 and 81**, and COROS **62, 64, 72 and 72**. November 20 returned **9h38m30s / 10h16m asleep**, in closely agreeing windows around **04:17–14:44 PST**. Oura timing remained **1**. November 19 needs a separate comparison because Oura split an earlier **03:30–05:13** episode from its **06:00–13:17** main episode, while COROS used **03:16–13:17**. Actual attempts, waking and morning experience remain unreported. [Latest diary](/sleep/record/#night-2026-11-20) · [November 19 comparison](/sleep/record/#night-2026-11-19) · [Curves](/sleep/charts/#night-2026-11-20)
 

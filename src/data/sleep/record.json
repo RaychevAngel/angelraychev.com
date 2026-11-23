@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "entries": [
     {
       "id": "2026-10-13",
@@ -5848,6 +5848,244 @@
       "provider_availability": {
         "oura": "available",
         "coros": "available"
+      }
+    },
+    {
+      "id": "2026-11-21",
+      "wake_date": "2026-11-21",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Oura provider day with the native episode offset of UTC−08:00. Actual travel or local time-zone context is unreported.",
+      "status": "Oura 79. Main episode 03:44–13:11 PST. COROS access unavailable.",
+      "retrieved_at": "2026-11-23T16:29:57.852958+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-11-23T16:29:57.852958+00:00"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.2.2",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.5,
+          "average_heart_rate": 51.75,
+          "average_hrv": 54,
+          "awake_time": 3450,
+          "bedtime_end": "2026-11-21T13:11:31.000-08:00",
+          "bedtime_start": "2026-11-21T03:44:31.000-08:00",
+          "day": "2026-11-21",
+          "deep_sleep_duration": 5580,
+          "efficiency": 90,
+          "latency": 750,
+          "light_sleep_duration": 19410,
+          "lowest_heart_rate": 48,
+          "rem_sleep_duration": 5580,
+          "time_in_bed": 34020,
+          "total_sleep_duration": 30570,
+          "type": "long_sleep"
+        },
+        "score": 79,
+        "contributors": {
+          "deep_sleep": 89,
+          "efficiency": 95,
+          "latency": 91,
+          "rem_sleep": 75,
+          "restfulness": 83,
+          "timing": 1,
+          "total_sleep": 91
+        },
+        "readiness_score": 82,
+        "temperature_deviation_c": 0.04,
+        "spo2_average_percent": 96.363,
+        "breathing_disturbance_index": 1,
+        "additional_sleep_episodes": [
+          {
+            "average_breath": null,
+            "average_heart_rate": 69.375,
+            "average_hrv": 22,
+            "awake_time": 1800,
+            "bedtime_end": "2026-11-21T00:47:01.000-08:00",
+            "bedtime_start": "2026-11-20T23:51:01.000-08:00",
+            "day": "2026-11-21",
+            "deep_sleep_duration": 120,
+            "efficiency": 46,
+            "latency": 1350,
+            "light_sleep_duration": 1440,
+            "lowest_heart_rate": 68,
+            "rem_sleep_duration": 0,
+            "sleep_algorithm_version": "v2",
+            "time_in_bed": 3360,
+            "total_sleep_duration": 1560,
+            "type": "rest",
+            "confirmation": "Unconfirmed. The user has not reported whether this detection was actual sleep."
+          },
+          {
+            "average_breath": null,
+            "average_heart_rate": 61.625,
+            "average_hrv": 42,
+            "awake_time": 660,
+            "bedtime_end": "2026-11-21T02:35:01.000-08:00",
+            "bedtime_start": "2026-11-21T02:10:31.000-08:00",
+            "day": "2026-11-21",
+            "deep_sleep_duration": 0,
+            "efficiency": 55,
+            "latency": 360,
+            "light_sleep_duration": 810,
+            "lowest_heart_rate": 60,
+            "rem_sleep_duration": 0,
+            "sleep_algorithm_version": "v2",
+            "time_in_bed": 1470,
+            "total_sleep_duration": 810,
+            "type": "sleep",
+            "confirmation": "Unconfirmed. The user has not reported whether this detection was actual sleep."
+          }
+        ],
+        "source": "Authenticated Oura API V2 with November 21–24 date filters and pagination exhausted. Main episode selected for provider day 2026-11-21; other detections retained separately."
+      },
+      "coros": null,
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "story": [],
+      "plans": [],
+      "corrections": [],
+      "context": [],
+      "interpretation": [
+        "Oura estimated 8h29m30s asleep and 57m30s awake in a 03:44:31–13:11:31 PST main window. It estimated 1h33m deep sleep, 1h33m REM and 5h23m30s light sleep.",
+        "Its daily sleep score was 79, with timing 1, total sleep 91, REM 75, deep sleep 89, efficiency 95, latency 91 and restfulness 83. Estimated sleep efficiency was 90%.",
+        "Two earlier detections remain separate from the main episode. Oura estimated 26 minutes asleep in 23:51:01–00:47:01 and 13m30s asleep in 02:10:31–02:35:01. Actual sleep during these periods is unconfirmed.",
+        "Oura sleeping HRV averaged 54 ms and pulse 51.75 bpm. Actual sleep attempt, final waking and experienced sleep quality remain unreported."
+      ],
+      "next_focus": [],
+      "next_focus_references": [],
+      "provider_availability": {
+        "oura": "available",
+        "coros": "unavailable"
+      },
+      "provider_status": {
+        "coros": "COROS connector access is unavailable for this retrieval. No new COROS account data could be requested."
+      }
+    },
+    {
+      "id": "2026-11-22",
+      "wake_date": "2026-11-22",
+      "timezone": "America/Los_Angeles",
+      "date_basis": "Oura provider day with the native episode offset of UTC−08:00. Actual travel or local time-zone context is unreported.",
+      "status": "Oura 39, with 3h17m estimated sleep in a 10:10–14:16 PST main episode. Recording coverage awaits the user’s account.",
+      "retrieved_at": "2026-11-23T16:29:57.852958+00:00",
+      "provider_retrieved_at": {
+        "oura": "2026-11-23T16:29:57.852958+00:00"
+      },
+      "oura": {
+        "model": "Oura Ring 5",
+        "hardware_type": "or5",
+        "firmware_version": "2.2.2",
+        "algorithm_version": "v2",
+        "score_eligible": true,
+        "sleep": {
+          "average_breath": 12.75,
+          "average_heart_rate": 51.875,
+          "average_hrv": 52,
+          "awake_time": 2910,
+          "bedtime_end": "2026-11-22T14:16:02.000-08:00",
+          "bedtime_start": "2026-11-22T10:10:32.000-08:00",
+          "day": "2026-11-22",
+          "deep_sleep_duration": 3390,
+          "efficiency": 80,
+          "latency": 210,
+          "light_sleep_duration": 8220,
+          "lowest_heart_rate": 48,
+          "rem_sleep_duration": 210,
+          "time_in_bed": 14730,
+          "total_sleep_duration": 11820,
+          "type": "long_sleep"
+        },
+        "score": 39,
+        "contributors": {
+          "deep_sleep": 54,
+          "efficiency": 72,
+          "latency": 67,
+          "rem_sleep": 3,
+          "restfulness": 79,
+          "timing": 1,
+          "total_sleep": 22
+        },
+        "readiness_score": 63,
+        "temperature_deviation_c": -0.4,
+        "spo2_average_percent": 97.923,
+        "breathing_disturbance_index": 0,
+        "additional_sleep_episodes": [
+          {
+            "average_breath": null,
+            "average_heart_rate": null,
+            "average_hrv": null,
+            "awake_time": 750,
+            "bedtime_end": "2026-11-22T06:43:02.000-08:00",
+            "bedtime_start": "2026-11-22T06:20:32.000-08:00",
+            "day": "2026-11-22",
+            "deep_sleep_duration": 0,
+            "efficiency": 44,
+            "latency": 750,
+            "light_sleep_duration": 600,
+            "lowest_heart_rate": null,
+            "rem_sleep_duration": 0,
+            "sleep_algorithm_version": "v2",
+            "time_in_bed": 1350,
+            "total_sleep_duration": 600,
+            "type": "sleep",
+            "confirmation": "Unconfirmed. The user has not reported whether this detection was actual sleep."
+          }
+        ],
+        "source": "Authenticated Oura API V2 with November 21–24 date filters and pagination exhausted. Main episode selected for provider day 2026-11-22; other detections retained separately.",
+        "quality_note": "The main episode is much shorter and later than recent nights. Whether it covers the full actual sleep period is unconfirmed. A separate ten-minute detection is retained below."
+      },
+      "coros": null,
+      "self_report": {
+        "restfulness": null,
+        "morning_sleepiness": null,
+        "daytime_sleepiness": null,
+        "dream_recall": null,
+        "caffeine_mg_and_time": null,
+        "alcohol_and_time": null,
+        "naps": null,
+        "intended_bedtime": null,
+        "environment": null,
+        "stress": null,
+        "breathing_exercise": null,
+        "hydration_and_bathroom": null,
+        "illness": null
+      },
+      "story": [],
+      "plans": [],
+      "corrections": [],
+      "context": [],
+      "interpretation": [
+        "Oura estimated 3h17m asleep and 48m30s awake in a 10:10:32–14:16:02 PST main window. It estimated 56m30s deep sleep, 3m30s REM and 2h17m light sleep.",
+        "The daily sleep score was 39, with total sleep 22, REM 3, deep sleep 54, timing 1, efficiency 72, latency 67 and restfulness 79. Estimated sleep efficiency was 80%. These measurements describe the returned recording; its coverage of actual sleep is unconfirmed.",
+        "A separate 06:20:32–06:43:02 detection estimated ten minutes asleep. Actual sleep during this interval is unconfirmed.",
+        "Oura sleeping HRV averaged 52 ms and pulse 51.875 bpm. Readiness was 63. The user has not yet supplied sleep attempts, waking times or morning experience.",
+        "The current API query also requested November 23 but returned no main sleep or daily score for that provider day."
+      ],
+      "next_focus": [],
+      "next_focus_references": [],
+      "provider_availability": {
+        "oura": "available",
+        "coros": "unavailable"
+      },
+      "provider_status": {
+        "coros": "COROS connector access is unavailable for this retrieval. No new COROS account data could be requested."
       }
     }
   ],
