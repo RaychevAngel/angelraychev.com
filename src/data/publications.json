@@ -289,8 +289,19 @@
         },
         {
           "kind": "latex",
+          "url": "https://arxiv.org/src/2610.39469v1",
+          "note": "Source of the selected arXiv version 1."
+        },
+        {
+          "kind": "citation",
+          "label": "BibTeX citation",
+          "url": "/cop-prisoner/citation.bib"
+        },
+        {
+          "kind": "archive",
+          "label": "28 October website manuscript sources",
           "url": "/cop-prisoner/manuscript-source.zip",
-          "note": "Reviewed 28 October website manuscript sources, retained separately from the arXiv version."
+          "note": "Reviewed website sources, retained separately from the arXiv version."
         },
         {
           "kind": "evidence",

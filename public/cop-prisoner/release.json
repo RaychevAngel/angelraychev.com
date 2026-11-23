@@ -5,7 +5,15 @@
     "identifier": "2610.39469",
     "public_url": "https://arxiv.org/abs/2610.39469",
     "version": "v1",
-    "submitted_at": "2026-10-29T06:40:41Z"
+    "submitted_at": "2026-10-29T06:40:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.39469v1",
+    "source_url": "https://arxiv.org/src/2610.39469v1",
+    "doi": "10.48550/arXiv.2610.39469",
+    "primary_category": "math.CO",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "status": "public",
+    "verified_at_utc": "2026-11-23T19:05:02.885117+00:00"
   },
   "publication_date": "2026-10-28",
   "chapters": 8,
@@ -78,6 +86,10 @@
     "delivery-time-source.zip": {
       "bytes": 11259,
       "sha256": "d0685a60f4b4ff4b493e7469b210b6bd900cc7b173aadebbe72938f1bdec5f83"
+    },
+    "citation.bib": {
+      "bytes": 372,
+      "sha256": "028cb4570b011926876df7c92aa42c10d509f38625352038817f96c8cd556d5c"
     }
   },
   "assets": {
@@ -26388,6 +26400,10 @@
     "manuscript-2026-10-24.zip": {
       "bytes": 1872704,
       "sha256": "a549f553504e238a52966342aea39cb019c7db3df879d413cc7dfc4e6df2fe9c"
+    },
+    "citation.bib": {
+      "bytes": 372,
+      "sha256": "028cb4570b011926876df7c92aa42c10d509f38625352038817f96c8cd556d5c"
     }
   },
   "manuscript": {
@@ -26440,6 +26456,11 @@
     "references.bib": {
       "bytes": 7859,
       "sha256": "fc6ddd26e6aca16d05155d22fc5b41337beebdd0810546571d2d4eb6abf2e940"
+    },
+    "citation.bib": {
+      "bytes": 372,
+      "sha256": "028cb4570b011926876df7c92aa42c10d509f38625352038817f96c8cd556d5c"
     }
-  }
+  },
+  "publication_status_verified_at_utc": "2026-11-23T19:05:02.885117+00:00"
 }
